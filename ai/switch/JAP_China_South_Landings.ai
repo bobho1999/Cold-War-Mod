@@ -1,0 +1,60 @@
+# Japan AI prepares to land in South China
+# by Radu
+
+################################
+
+target = {
+	1235 = 1 # Nanjing
+	1204 = 1 # Tianjin
+	1214 = 1 # Yantai
+	1215 = 1 # Qingdao
+	1237 = 1 # Shanghai
+	1217 = 1 # Nantong
+	1219 = 1 # Lianyungang
+
+	1313 = 100 # Guangzhou
+	1314 = 99 # Bao'an
+	1321 = 98 # Hainan
+	1320 = 97 # Zhanjiang
+}
+
+
+#################################
+
+invasion = { 
+	invasion			= yes
+ 	base				= 0.1	
+	random				= 1.0
+	coastal				= 1.0
+	beach				= 1.0
+	max_distance   		= 30.0  
+	max_staging_distance = 200	
+	distance			= 1.0	
+	pocket				= 20.0	
+	island				= 1.0
+	enemy				= 1.0
+	adjacentenemy 		= 1.0
+	air_base			= 0.1 
+    naval_base 			= 0.1 
+    air_support 		= 0.1 
+    redirect 			= priority
+	ignore				= no
+      
+	staging_province = {		
+		1190 # Fukuoka               
+	}
+
+	target = {		
+		1313 = 2000 # Guangzhou
+		1314 = 1999 # Bao'an
+		1321 = 1998 # Hainan
+		1320 = 1997 # Zhanjiang
+
+		1204 = 0 # Tianjin
+		1214 = 0 # Yantai
+		1215 = 0 # Qingdao
+		1237 = 0 # Shanghai
+		1217 = 0 # Nantong
+		1219 = 0 # Lianyungang
+	} 
+} 

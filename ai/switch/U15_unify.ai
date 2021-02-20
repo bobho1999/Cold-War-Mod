@@ -1,0 +1,48 @@
+
+
+#################################
+# Diplomacy
+#################################
+
+target = {
+	1360 = 100
+	1280 = 90 
+	1281 = 90
+        1279 = 80
+        2770 = 80 }
+
+
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.5
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 1.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 10	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+     country_priorities = {
+                CHI = 20
+		CGX = 20
+		U01 = 25
+		U07 = 25
+		U16 = 25
+		JAP = -1
+	}
+	province_priorities = { 1360 = 95
+                                
+                                	}
+	area_multiplier = {
+                           }
+}

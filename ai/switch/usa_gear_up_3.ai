@@ -1,0 +1,15 @@
+# USA Gear up 3 AI File by Lothos 
+
+upgrading = 0.30
+neutrality = 50.000 
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.15
+	AA_batteries = no #(ÃüÁîÓĞBUG)
+	radar_station = no
+	air_base = yes
+	naval_base = yes
+}

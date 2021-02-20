@@ -1,0 +1,141 @@
+naval_unit_type = 1
+
+allowed_brigades = b_u6
+allowed_brigades = naval_torpedoes_l
+allowed_brigades = naval_torpedoes_s
+allowed_brigades = b_u3
+
+# 0 - Basic
+model = {
+	cost						= 5.5
+	buildtime 					= 150
+	defaultorganisation 				= 20
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 13
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 0
+	visibility					= 80
+	seadefence					= 2
+	airdefence					= 1
+	seaattack					= 1
+	convoyattack					= 0
+	airattack					= 1
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 60
+	
+	range						= 3200
+	supplyconsumption				= 0.27
+	fuelconsumption					= 0.27
+	distance					= 0.12
+}
+# 1 - Basic Landing Ship
+model = {
+	cost						= 6
+	buildtime 					= 150
+	defaultorganisation 				= 25
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 15
+	surfacedetectioncapability			= 2
+	airdetectioncapability				= 1
+	subdetectioncapability				= 0
+	visibility					= 80
+	seadefence					= 3
+	airdefence					= 1
+	seaattack					= 1
+	convoyattack					= 0
+	airattack					= 1
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 80
+	
+	range						= 3700
+	supplyconsumption				= 0.33
+	fuelconsumption					= 0.32
+	distance					= 0.14
+}
+# 2 - Improved Landing Ship
+model = {
+	cost						= 6.5
+	buildtime 					= 180
+	defaultorganisation 				= 30
+	morale						= 40
+	manpower					= 0.8
+	maxspeed					= 17
+	surfacedetectioncapability			= 2
+	airdetectioncapability				= 2
+	subdetectioncapability				= 0
+	visibility					= 80
+	seadefence					= 4
+	airdefence					= 2
+	seaattack					= 1
+	convoyattack					= 0
+	airattack					= 1
+	subattack					= 1
+	shorebombardment				= 0
+	transportcapability				= 100
+	
+	range						= 4200
+	supplyconsumption				= 0.43
+	fuelconsumption					= 0.37
+	distance					= 0.16
+}
+# 3 - Advanced Landing Ship
+model = {
+	cost						= 7.5
+	buildtime 					= 180
+	defaultorganisation 				= 30
+	morale						= 40
+	manpower					= 0.8
+	maxspeed					= 19
+	surfacedetectioncapability			= 3
+	airdetectioncapability				= 2
+	subdetectioncapability				= 1
+	visibility					= 80
+	seadefence					= 6
+	airdefence					= 2
+	seaattack					= 2
+	convoyattack					= 0
+	airattack					= 2
+	subattack					= 1
+	shorebombardment				= 0
+	transportcapability				= 120
+	
+	range						= 4500
+	supplyconsumption				= 0.67
+	fuelconsumption					= 0.98
+	distance					= 0.18
+}
+
+# 4 - 
+model = {
+	cost						= 0
+}
+# 5 - Amphibious Warfare Ship
+model = {
+	cost						= 5
+	buildtime 					= 100
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 20
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 0
+	visibility					= 90
+	seadefence					= 3
+	airdefence					= 3
+	seaattack					= 0
+	airattack					= 0
+	subattack					= 0
+	convoyattack					= 0
+	shorebombardment			= 2
+	transportcapability			= 20
+	range						= 6000
+	supplyconsumption			= 0.3
+	fuelconsumption				= 1
+	distance					= 0.1
+}

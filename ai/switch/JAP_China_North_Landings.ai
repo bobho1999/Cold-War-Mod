@@ -1,0 +1,122 @@
+# Japan AI prepares to land in North China
+# by Radu
+
+#################################
+
+target = {
+	1235 = 100 # Nanjing
+	1204 = 90 # Tianjin
+	1214 = 91 # Yantai
+	1215 = 92 # Qingdao
+	1237 = 93 # Shanghai
+	1217 = 94 # Nantong
+	1219 = 95 # Lianyungang
+}
+
+#################################
+
+garrison = {
+
+	# War has begun,no need to keep troops on the old border
+
+	province_priorities = {	
+		# North China jump-off points for invasion	
+		1203 = 0 # Tagshan
+		1397 = 0 # Changde
+		1398 = 0 # Erenhot	
+	}
+
+	area_multiplier = {
+		1203 = 1.0 # Tagshan
+		1397 = 1.0 # Changde
+		1398 = 1.0 # Erenhot	
+	}
+}
+
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 2.5
+	panic_ratio_vs_human 	= 2.5
+	base_attack_odds	= 1.2
+	min_attack_odds		= 1.0
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.1
+	withdraw_odds		= 0.6
+
+	strength 	= 1.0
+	organisation 	= 1.0
+	soft_attack 	= 1.0
+	hard_attack 	= 1.0
+	ground_defense 	= 1.0
+	dig_in 		= 1.0 # Against defender
+
+	frozen_attack 	= 1.0
+	snow_attack 	= 1.0
+	blizzard_attack = 1.0
+	storm_attack 	= 1.0
+	muddy_attack 	= 1.0
+	
+	occupied 	= 0.7
+	owned 		= 0.7
+
+	jungle_attack 	= 1.0
+	mountain_attack = 1.0
+	swamp_attack 	= 1.0
+	forest_attack 	= 1.0
+	hill_attack 	= 1.0
+	urban_attack 	= 1.0
+	river 		= 1.0
+	
+   	passivity = {
+		SOV = 90
+		MON = 90
+	} 
+}
+
+#################################
+
+invasion = { 
+	invasion			= yes
+ 	base				= 0.1	
+	random				= 1.0	
+	coastal				= 1.0	
+	beach				= 1.0	
+	max_distance   		= 30.0  
+	max_staging_distance = 200.0	
+	distance			= 1.0
+	pocket				= 20.0	
+	island				= 1.0	
+	enemy				= 1.0	
+	adjacentenemy 		= 1.0
+	air_base			= 0.1 
+    naval_base 			= 0.1 
+    air_support 		= 0.1 
+    redirect 			= priority
+	ignore				= no
+      
+	staging_province = {		
+		1190 # Fukuoka               
+	}
+
+	target = {		
+		1204 = 2000 # Tianjin
+		1214 = 1999 # Yantai
+		1215 = 1998 # Qingdao
+		1237 = 1997 # Shanghai
+		1217 = 1996 # Nantong
+		1219 = 1995 # Lianyungang
+
+		1313 = -100 # Guangzhou
+		1314 = -100 # Bao'an
+		1321 = -100 # Hainan
+		1320 = -100 # Zhanjiang
+		1248 = -100 # Shantou
+		1247 = -100 # Xiamen
+		1244 = -100 # Fuzhou		
+	} 
+} 

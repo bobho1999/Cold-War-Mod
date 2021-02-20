@@ -1,0 +1,379 @@
+######################################################
+##韩国独立
+######################################################
+event = { 
+   id = 841004
+   country = USA
+   random = no
+
+   name = " 韩国独立 "
+   desc="由美国扶持的李承晚在朝鲜南部建国"
+   style = 0
+   
+   date = { day = 10 month = april year = 1948 }
+   offset = 5
+   deathdate = { day = 30 month = december year = 1950 }
+   #	picture = "korea_independent" 
+
+   action_a = { 
+       name = "ok"
+       		command = { type = independence which = KOR value = 1 when = 0 } 
+		command = { type = secedeprovince which = KOR value = 1194 }
+		command = { type = secedeprovince which = KOR value = 1195 }		
+		command = { type = secedeprovince which = KOR value = 1196 }		
+		command = { type = secedeprovince which = KOR value = 1197 }			
+		command = { type = secedeprovince which = KOR value = 1198 }			
+		command = { type = secedeprovince which = KOR value = 1199 }			
+		command = { type = secedeprovince which = KOR value = 1200 }			
+		command = { type = secedeprovince which = KOR value = 1201 }			
+		command = { type = secedeprovince which = KOR value = 3678 }				
+		command = { type = secedeprovince which = KOR value = 3679 }	
+		command = { type = secedeprovince which = KOR value = 3680 }			
+		command = { type = secedeprovince which = KOR value = 3681 }			
+		command = { type = secedeprovince which = KOR value = 3682 }			
+		command = { type = secedeprovince which = KOR value = 3683 }			
+		command = { type = secedeprovince which = KOR value = 3684 }			
+		command = { type = secedeprovince which = KOR value = 3688 }			
+		command = { type = secedeprovince which = KOR value = 1391 }			
+		command = { type = secedeprovince which = KOR value = 1393 }			
+		command = { type = secedeprovince which = KOR value = 1376 }			
+		command = { type = secedeprovince which = KOR value = 1392 }			
+		command = { type = secedeprovince which = KOR value = 3670 }		
+		command = { type = secedeprovince which = KOR value = 3671 }				
+		command = { type = secedeprovince which = KOR value = 3672 }				
+		command = { type = secedeprovince which = KOR value = 3673 }				
+		command = { type = secedeprovince which = KOR value = 3674 }				
+		command = { type = secedeprovince which = KOR value = 3675 }				
+		command = { type = secedeprovince which = KOR value = 3676 }				
+		command = { type = secedeprovince which = KOR value = 3677 }				
+		command = { type = secedeprovince which = KOR value = 3686 }				
+		command = { type = secedeprovince which = KOR value = 3687 }	
+		command = { type = secedeprovince which = KOR value = 3687 }
+		command = { type = end_mastery which = KOR } 
+		command = { type = end_military_control which = KOR } 
+		command = { type = sleepminister which = 578071 } 
+		command = { type = sleepminister which = 578072 } 
+		command = { type = sleepminister which = 578073 } 
+		command = { type = sleepminister which = 578074 } 
+		command = { type = sleepminister which = 578075 } 
+		command = { type = sleepminister which = 578076 } 
+		command = { type = sleepminister which = 578077 } 
+		command = { type = sleepminister which = 578078 } 
+		command = { type = sleepminister which = 578079 } 
+		command = { type = sleepminister which = 578080 } 
+   		command = { type = trigger which = 841005 }
+   }  
+}
+
+event = { 
+   id = 841005
+   country = KOR
+   random = no
+
+   name = " 韩国独立 "
+   desc="由美国扶持的李承晚在朝鲜南部建国"
+   style = 0
+
+   #	picture = "korea_independent" 
+
+   	action_a = { 
+       		name = "ok"
+       		command = { type = dissent value = -10 } 
+		command = { type = end_military_control which = USA } 
+		command = { type = end_puppet } 
+		command = { type = sleepminister which = 578071 } 
+		command = { type = sleepminister which = 578072 } 
+		command = { type = sleepminister which = 578073 } 
+		command = { type = sleepminister which = 578074 } 
+		command = { type = sleepminister which = 578075 } 
+		command = { type = sleepminister which = 578076 } 
+		command = { type = sleepminister which = 578077 } 
+		command = { type = sleepminister which = 578078 } 
+		command = { type = sleepminister which = 578079 } 
+		command = { type = sleepminister which = 578080 } 
+   }  
+}
+
+event = { 
+   id = 841006
+   country = KOR
+   random = no
+   
+   trigger = {
+       control = { province = 1199 data = -1 }     
+       event = 841004
+   }
+
+   	name = " 大韓民國國軍 "
+   	desc = "由美軍政時期的南朝鮮國防警備隊和海岸警備
+		隊合併而成，共8個師。1950年春時的總兵力為
+		9.8萬人。韓國國軍受舊日軍影響較大，核心將
+		領除個別來自滿洲國軍以外，主要畢業於日本陸
+		軍士官學校，大部分軍士曾在日軍中當兵，士兵
+		除了曾在日軍中服役的以外，還有原日治時期的
+		警察。僅有少數官兵出身自南韓光復軍，甚至中
+		國國民革命軍。"
+   style = 0
+   
+   date = { day = 1 month = march year = 1945 }
+   offset = 15
+   deathdate = { day = 30 month = december year = 1950 }
+   #	picture = "korea_independent"
+
+   	action_a = { 
+       		name = "建立"
+    		command = { type = add_corps which = "大韓民國陸軍 " value = land where = 1199 } 
+    		command = { type = add_division which = "首都步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第1步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第2步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第3步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第5步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第6步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第7步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = add_division which = "第8步兵師 " value = infantry when = 5 where = b_u4 }
+    		command = { type = hard_attack which = land value = -3 }
+   	}  
+}
+################
+#韩国对朝鲜渗透
+#############################################
+event = {
+  id = 841007
+  random = no
+  country = KOR
+  
+  name = "韩国对朝鲜军事渗透 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 韩国对朝鲜进行了军事渗透，这使 战争加速爆发。 "
+  style = 0
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 1 month = january year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "干得漂亮！ "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = PRK value = -10 }
+    command = { type = trigger which = 842005 }
+    command = { type = belligerence value = 10 }
+  }
+}
+################
+#北朝鲜支持南朝鲜解放组织
+#############################################
+event = {
+  id = 841008 
+  random = no
+  country = KOR
+  
+  name = "朝鲜对韩国解放组织支持 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 朝鲜对韩国的解放组织进行支持， 战争加速爆发。 "
+  style = 0
+  
+  action_a = {
+    name = "可恶！ "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = PRK value = -10 }
+  }
+}
+################
+#韩国国父被刺案
+#############################################
+event = {
+  id = 841009 
+  random = no
+  country = KOR
+  
+  name = "韩国国父被刺 " 
+  desc = "1949年，韩国国父金九被刺，举国哀悼。 许多人认为这是李承晚的诡计， 这也许就是事实。 于是激起了国民的不满。 "
+  style = 0
+  
+  trigger = {
+    atwar = no
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "建立李承晚的独裁统治 "
+    command = { type = dissent value = 10 }
+    command = { type = sleepminister which = 578002 }
+    command = { type = domestic which = democratic value = -5 }
+  }
+}
+################
+#北朝鲜与南朝鲜发生武装冲突
+#############################################
+event = {
+  id = 841010 
+  random = no
+  country = KOR
+  
+  name = "朝韩发生武装冲突 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 朝韩之间爆发了武装冲突， 战争加速爆发。 "
+  style = 0
+  
+  action_a = {
+    name = "打倒金日成政权！ "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = PRK value = -10 }
+    command = { type = belligerence value = 10 }
+  }
+}
+################
+#韩国宣布保留美驻军
+#############################################
+event = {
+  id = 841011 
+  random = no
+  country = KOR
+  
+  name = "韩国保留美驻军 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 韩国宣布保留美国驻军， 战争加速爆发。 "
+  style = 0
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 1 month = march
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "OK "
+    command = { type = dissent value = -5 }
+    command = { type = end_puppet }
+    command = { type = leave_alliance }
+    command = { type = relation which = PRK value = -10 }
+    command = { type = relation which = USA value = 20 }
+    command = { type = trigger which = 842008 }
+    command = { type = belligerence value = 10 }
+  }
+}
+################
+#韩国起义
+#############################################
+event = {
+  id = 841012
+  random = no
+  country = KOR
+  
+  name = "韩国起义 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 韩国境内爆发起义， 战争加速爆发。 "
+  style = 0
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 20 month = march
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "可恶！ "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = PRK value = -10 }
+  }
+}
+################
+#韩国示意美国
+#############################################
+event = {
+  id = 841013
+  random = no
+  country = KOR
+  
+  name = "韩国示意美国 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 韩国开始结好美国， 战争加速爆发。 "
+  style = 0
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 10 month = march
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "抱大腿才是最终方法 "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = PRK value = -10 }
+    command = { type = relation which = USA value = 20 }
+  }
+}
+################
+#全力备战
+#############################################
+event = {
+  id = 841014
+  random = no
+  country = KOR
+  
+  name = "全力备战 " 
+  desc = "1950年，朝鲜半岛局势进一步恶化。 韩国开始全力备战， 战争加速爆发。 "
+  style = 0
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 10 month = june
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "抓紧备战 "
+    ai_chance = 99
+    command = { type = dissent value = -20 }
+    command = { type = relation which = PRK value = -50 }
+    command = { type = supplies value = 3000 }
+  }
+   action_b = {
+    name = "不必着急 "
+    ai_chance = 1
+    command = { type = dissent value = 10 }
+  }
+}
+######################################################
+#李承晚的独裁
+######################################################
+event = { 
+   id = 941195
+   country = KOR
+   random = no
+   
+   trigger = {
+       control = { province = 1199 data = -1 }     
+       
+   }
+
+   name = " 李承晚的独裁 "
+   desc="李承晚通过独裁统治镇压国内的民主力量"
+   style = 0
+   
+#   date = { day = 1 month = march year = 1945 }
+#   offset = 15
+#   deathdate = { day = 30 month = december year = 1950 }
+   #	picture = "korea_independent"
+
+   action_a = { 
+       name = "ok"
+       		command = { type = domestic which = democratic value = -7 }
+       		command = { type = domestic which = freedom value = -6 }
+       		command = { type = domestic which = political_left value = -2 }
+       		command = { type = province_keypoints which = 1194 value = 1 }
+   }
+   
+}

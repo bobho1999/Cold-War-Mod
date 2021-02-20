@@ -1,0 +1,21 @@
+# Soviet first winter against Germany AI File by Lothos
+# 不发生冬季反攻下的战线设置(civdemof)
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+max_front_ratio = 2
+
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 		= defensive
+
+	enemy_reinf_days		= 3
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.45
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds	= 1.08
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.04
+	withdraw_odds		= 0.97
+}

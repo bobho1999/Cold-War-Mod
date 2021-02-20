@@ -1,0 +1,493 @@
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85600
+        random = no
+        country = USA
+
+	trigger = { headofstate = 6034 
+                    exists = U72
+                    exists = SIA }
+
+	name = "多米诺理论-提出 "
+	desc = "1950年4月24日，哈里·S·杜鲁门总统批准了一份名为《美国关于印 度支那的立场的文件》（即NSC64号文件），首次以政策文件的方式 表述了多米诺理论的基本内涵。文件指出：“如果印度支那被共产 党政府控制，其邻国泰国和缅甸也将落入共产党统治之下。 "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 24 month = april
+ year = 1950 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "我们必须关注印支局势 "
+    command = { type = change_policy which = defense_lobby value = 1  }
+
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85601
+        random = no
+        country = USA
+
+	trigger = { event = 85600 
+                    exists = U72
+                    exists = SIA }
+
+	name = "多米诺理论-美国 "
+	desc = "1951年5月17日通过的NSC48/4号文件完善了多米诺理论的内涵， 多米诺理论的基本框架可以用一个简单的三段论加以概括：东南 亚地区对美国至关重要，共产党对其中任何一个国家的控制都会 在该地区产生连锁反应并最终波及其他地区；目前东南亚地区正 面临着共产主义“扩张”的危险；所以美国要采取措施，在该地区全 面遏制共产主义。 "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 17 month = may
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "警惕共产主义的威胁 "
+    command = { type = change_policy which = defense_lobby value = 2  }
+    command = { type = change_policy which = interventionism value = 2  }
+
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85602
+        random = no
+        country = SIA
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = USA }
+
+	name = "多米诺理论-泰国 "
+	desc = "美国提出多米诺理论后，对我们抛出了橄榄枝。那么我们是否应该 接受美国的支援来对抗共产主义呢？ "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 17 month = june
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "我们站在美国一边 "
+		ai_chance = 80
+        command = { type = dissent value = 5 }
+        command = { type = change_policy which = freedom value = -2 }
+        command = { type = change_policy which = democratic value = -2 }
+        command = { type = change_policy which = political_left value = -2 }
+        command = { type = supplies value = 1500 }
+        command = { type = money value = 500 }
+        command = { type = relation which = USA value = 30 }
+        command = { type = relation which = SOV value = -30 }
+        command = { type = relation which = U72 value = -30 }
+        command = { type = trigger which = 85606 }
+}
+  action_b = {
+    name = "警惕美国干涉 "
+		ai_chance = 20
+        command = { type = dissent value = -3 }
+        command = { type = change_policy which = political_left value = 3 }
+        command = { type = relation which = USA value = -10 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85603
+        random = no
+        country = IDC
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = USA }
+
+	name = "多米诺理论-南越 "
+	desc = "美国提出多米诺理论后，对我们抛出了橄榄枝。那么我们是否应该 接受美国的支援来对抗共产主义呢？ "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 17 month = june
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "我们站在美国一边 "
+		ai_chance = 90
+        command = { type = dissent value = 5 }
+        command = { type = change_policy which = freedom value = -2 }
+        command = { type = change_policy which = democratic value = -2 }
+        command = { type = change_policy which = political_left value = -2 }
+        command = { type = supplies value = 1500 }
+        command = { type = money value = 500 }
+        command = { type = relation which = USA value = 30 }
+        command = { type = relation which = SOV value = -30 }
+        command = { type = relation which = U72 value = -30 }
+        command = { type = trigger which = 85607 }
+}
+  action_b = {
+    name = "警惕美国干涉 "
+		ai_chance = 10
+        command = { type = dissent value = -3 }
+        command = { type = change_policy which = political_left value = 3 }
+        command = { type = relation which = USA value = -10 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85604
+        random = no
+        country = CMB
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = USA }
+
+	name = "多米诺理论-柬埔寨 "
+	desc = "
+美国提出多米诺理论后，对我们抛出了橄榄枝。那么我们是否应该 接受美国的支援来对抗共产主义呢？ "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 17 month = june
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "我们站在美国一边 "
+		ai_chance = 35
+        command = { type = dissent value = 5 }
+        command = { type = change_policy which = freedom value = -2 }
+        command = { type = change_policy which = democratic value = -2 }
+        command = { type = change_policy which = political_left value = -2 }
+        command = { type = supplies value = 750 }
+        command = { type = money value = 250 }
+        command = { type = relation which = USA value = 30 }
+        command = { type = relation which = SOV value = -30 }
+        command = { type = relation which = U72 value = -30 }
+        command = { type = trigger which = 85608 }
+}
+  action_b = {
+    name = "警惕美国干涉 "
+		ai_chance = 65
+        command = { type = dissent value = -3 }
+        command = { type = change_policy which = political_left value = 3 }
+        command = { type = relation which = USA value = -10 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85605
+        random = no
+        country = LAO
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = USA }
+
+	name = "多米诺理论-老挝 "
+	desc = "
+美国提出多米诺理论后，对我们抛出了橄榄枝。那么我们是否应该 接受美国的支援来对抗共产主义呢？ "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 17 month = june
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "我们站在美国一边 "
+		ai_chance = 35
+        command = { type = dissent value = 5 }
+        command = { type = change_policy which = freedom value = -2 }
+        command = { type = change_policy which = democratic value = -2 }
+        command = { type = change_policy which = political_left value = -2 }
+        command = { type = supplies value = 750 }
+        command = { type = money value = 250 }
+        command = { type = relation which = USA value = 30 }
+        command = { type = relation which = SOV value = -30 }
+        command = { type = relation which = U72 value = -30 }
+        command = { type = trigger which = 85609 }
+}
+  action_b = {
+    name = "警惕美国干涉 "
+		ai_chance = 65
+        command = { type = dissent value = -3 }
+        command = { type = change_policy which = political_left value = 3 }
+        command = { type = relation which = USA value = -10 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85606
+        random = no
+        country = USA
+
+
+	name = "支持我们的泰国朋友 "
+	desc = "
+泰国响应了我们的号召，我们应该立刻支持我们的朋友！ "
+	style = 0
+	picture = "多米诺理论"
+
+
+  action_a = {
+    name = "帮助泰国 "
+        command = { type = supplies value = -1500 }
+        command = { type = money value = -500 }
+
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85607
+        random = no
+        country = USA
+
+
+	name = "支持我们的越南朋友 "
+	desc = "
+南越响应了我们的号召，我们应该立刻支持我们的朋友！ "
+	style = 0
+	picture = "多米诺理论"
+
+  action_a = {
+    name = "帮助南越 "
+        command = { type = supplies value = -1500 }
+        command = { type = money value = -500 }
+
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85608
+        random = no
+        country = USA
+
+
+	name = "支持我们的柬埔寨朋友 "
+	desc = "
+柬埔寨响应了我们的号召，我们应该立刻支持我们的朋友！ "
+	style = 0
+	picture = "多米诺理论"
+
+  action_a = {
+    name = "帮助柬埔寨 "
+        command = { type = supplies value = -750 }
+        command = { type = money value = -250 }
+
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85609
+        random = no
+        country = USA
+
+
+	name = "支持我们的老挝朋友 "
+	desc = "老挝响应了我们的号召，我们应该立刻支持我们的朋友！ "
+	style = 0
+	picture = "多米诺理论"
+
+
+  action_a = {
+    name = "帮助老挝 "
+        command = { type = supplies value = -750 }
+        command = { type = money value = -250 }
+
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85610
+        random = no
+        country = U72
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = SIA }
+
+	name = "多米诺理论-越南 "
+	desc = "美帝国主义的多米诺理论企图控制东南亚，孤立并打击我们的人 民政权。 "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 18 month = may
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "美帝国主义亡我之心不死 "
+    command = { type = relation which = USA value = -50 }
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85611
+        random = no
+        country = CHC
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = USA }
+
+	name = "多米诺理论-中国 "
+	desc = "美帝国主义的多米诺理论企图控制东南亚，孤立并打击越南的人 民政权。作为友邦，也许我们需要支持我们的同志。 "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 20 month = may
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "越南同志需要我们的支持 "
+    ai_chance = 99
+    command = { type = relation which = U72 value = 50 }
+    command = { type = supplies value = -750 }
+    command = { type = money value = -250 }
+    command = { type = trigger which = 85612 }
+}
+  action_b = {
+    name = "我们自己也很困难 "
+        ai_chance = 1
+        command = { type = dissent value = 10 }
+        command = { type = relation which = U72 value = -50 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85612
+        random = no
+        country = U72
+
+	name = "来自中国的支持 "
+	desc = "中国已经决定支持我们，中国军事顾问团和物资已经来到了我国。 "
+	style = 0
+	picture = "抗法援越"
+
+
+  action_a = {
+    name = "感谢中国同志 "
+    command = { type = supplies value = 750 }
+    command = { type = money value = 250 }     
+    command = { type = wakeleader which = 542054 }
+    command = { type = wakeleader which = 542055 }
+    command = { type = dissent value = -1 }
+  }
+}
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85613
+        random = no
+        country = SOV
+
+	trigger = { event = 85601 
+                    exists = U72
+                    exists = CHC }
+
+	name = "多米诺理论-苏联 "
+	desc = "美帝国主义的多米诺理论企图控制东南亚，孤立并打击越南的人 民政权。作为友邦，也许我们需要支持我们的同志。 "
+	style = 0
+	picture = "多米诺理论"
+
+  date = { day = 28 month = may
+ year = 1951 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "越南同志需要我们的支持 "
+    ai_chance = 30
+    command = { type = relation which = U72 value = 50 }
+    command = { type = relation which = USA value = -20 }
+    command = { type = supplies value = -3000 }
+    command = { type = money value = -1500 }
+    command = { type = trigger which = 85614 }
+}
+  action_b = {
+    name = "我们希望由中国来做 "
+        ai_chance = 70
+        command = { type = relation which = U72 value = -10 }
+  }
+}
+
+
+#############################################
+###### 多米诺理论 # 
+#############################################
+event = {
+	id = 85614
+        random = no
+        country = U72
+
+
+	name = "来自苏联的支持 "
+	desc = "苏联已经决定支持我们，苏联的物资已经来到了我国。 "
+	style = 0
+	picture = "抗法援越"
+
+
+  action_a = {
+    name = "感谢苏联同志 "
+    command = { type = supplies value = 3000 }
+    command = { type = money value = 1500 }     
+    command = { type = dissent value = -3 }
+  }
+}

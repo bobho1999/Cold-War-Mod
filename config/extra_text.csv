@@ -1,0 +1,568 @@
+ ;HEARTS OF IRON! Doomsday;;;;;;;;;;x
+#;Arsenal of Democracy;;;;;;;;;;x
+##;Boostertext edited by Lennart Berg, Philipp Elhaus;;;;;;;;;;x
+##### Open this document in Excel, version 5 or later.;;;;;;;;;;;x
+##### To convert the semicolon-separated list to a normal Excel table, first click on the 'A' above to select the entire 'A' column.;;;;;;;;;;;x
+##### Select 'Data' -> 'Text to Columns' -> 'Delimited' -> 'Next';;;;;;;;;;;x
+##### Check 'Semicolon' (ONLY!) -> 'Finish';;;;;;;;;;;x
+##### Select column 'A' through 'K' (click + drag on letters above columns);;;;;;;;;;;x
+##### Right-click anywhere on the sheet (inside the selection) and select 'Column width' and set it so that only THREE columns are visible ('45' with 1024 x 768 screen resolution);;;;;;;;;;;x
+##### Right-click anywhere on the sheet again (still inside the selection) and select 'Format Cells' -> 'Alignment' -> check 'Wrap Text' + select 'Vertical: Top' -> 'OK';;;;;;;;;;;x
+##### Place the cursor in cell C1 and select 'Window' -> 'Freeze Panes' (allows you to scroll horizontally to see any language in the rightmost coulmn while still having the string names/comments and the english original text in the left and middle column;;;;;;;;;;;x
+##### CAREFULLY read the instructions in cells B18 ? B36;;;;;;;;;;;x
+##;;;;;;;;;;;x
+##;;;;;;;;;;;x
+##;NOTES TO TRANSLATORS:;;;;;;;;;;x
+##;=====================;;;;;;;;;;x
+##;;;;;;;;;;;x
+##;1) '%s' is for indicating where another string is inserted, and MAY NEVER BE REMOVED! If there are more than one '%s' in a string, they may NOT CHANGE PLACES.;;;;;;;;;;x
+##;2) '%d' is for indicating where another integer value is inserted, and MAY NEVER BE REMOVED! If there are more than one '%d' in a string, they may not change places. ('%.1f' is used in exactly the same way but for non-integer values ?  '%c%d' is used for values that are displayed with a '+' or '-' sign in front, DO NOT CHANGE, ADD, OR REMOVE!);;;;;;;;;;x
+##;3) '%t' is for indicating where the player's 'title' is inserted, however only in game message boxes.';;;;;;;;;;x
+##;4) The characters '#' (hashmark), semicolon, '%' (percentage sign), '?' (paragraph sign), quotation marks and '\' (backslash) MAY NOT BE USED (except when used as control codes ? this will otherwise create serious problems!!! Quotation marks may not even be used in comments -- use a 'citation mark' (single) instead if necessary!);;;;;;;;;;x
+##;5) A dollar sign, '$' will always automatically be replaced by the 'ducats' icon.;;;;;;;;;;x
+##;6) Any row with a '#' in the first column (column 'A') will be ignored. However, you cannot use any paragraph characters in these rows!!!;;;;;;;;;;x
+##;7) To insert a carriage return, insert a '\n' (backslash + n);;;;;;;;;;x
+##;8) No formatting can be done in this file. To change the color of a text, insert the following codes in front of the word:;;;;;;;;;;x
+##; = white text;;;;;;;;;;x
+##; = orange text;;;;;;;;;;x
+##;Note that the color change will be applied to all words after the code, until the end of the line that the word is printed on. If several words should have a color change, put the code in front of each of them to be on the safe side. If only one word should have a color change, make sure to reset the color after the word.;;;;;;;;;;x
+##;9) Unless otherwise specifically stated, length of words and texts does not really matter THAT much (message boxes, rollover help boxes and buttons WILL stretch to fit the text string) ? however you will notice once the translation is inserted that space IS limited in quite a few areas? so be brief, and try not to use words that are considerably longer than the English original.;;;;;;;;;;x
+##;10) ALL CELLS in column 'L' in this document MUST contain a character!;;;;;;;;;;x
+##;11) The LAST CELL in the 'A' column MUST contain the string '#EOF';;;;;;;;;;x
+##;12) If you want to begin a string with a ' (citation mark), you will need to type it twice (Excel will read the first one as a commentary which is not  exported into the actual text database file);;;;;;;;;;x
+##;;;;;;;;;;;x
+##;WHEN DONE: save as 'Semicolon Separated (.csv)' format, and make sure the file is called 'Text.csv'.;;;;;;;;;;x
+##;;;;;;;;;;;x
+##;NOTE: If Excel complains about an 'Error in formula' when the cell content begins with a '+' or '-' sign, type a ' (citation mark) in front of the plus or minus.;;;;;;;;;;x
+##;;;;;;;;;;;x
+#  STRING NAME (do not change!);English;French;Italian;Spanish;German;Polish;Portuguese;Russian;;Extra2;x
+##;;;;;;;;;;;x
+#########################################;;;;;;;;;;;x
+######### GENERAL TEXT STRINGS #########;;;;;;;;;;;x
+#########################################;;;;;;;;;;;x
+EXTRA_LAND;该部队可以配属 %d 个加强团 ;;;;;;;;;;x
+EXTRA_NAVAL;该舰船可以装备 %d 种辅助装备 ;;;;;;;;;;X
+EXTRA_AIR;该航空部队可以配属 %d 个飞行中队 ;;;;;;;;;;X
+DONTSENDFORCES;远征军控制 ;;;;;;;;;;X
+FEOPT_ENDDATE;结束时间 ;;;;;;;;;;X
+FEOPT_ICTAKEOVER;非本国领土IC完全接管 ;;;;;;;;;;X
+FEOPT_TECHTEAMTAKEOVER;他国科技组接管 ;;;;;;;;;;X
+FEOPT_DEMWAR;民主政体可发动战争 ;;;;;;;;;;X
+FEOPT_HISTORICALDEATHS;将领按历史时间死亡 ;;;;;;;;;;X
+FEOPT_HISTORICALEVENTS;事件选择历史选项 ;;;;;;;;;;X
+FEOPT_1940;1940 ;;;;;;;;;;X
+FEOPT_1946;1946 ;;;;;;;;;;X
+FEOPT_1952;1952 ;;;;;;;;;;X
+FEOPT_1958;1958 ;;;;;;;;;;X
+FEOPT_1964;1964 ;;;;;;;;;;X
+AUTONAVALUNITS;自动分配海军辅助装备 ;;;;;;;;;;X
+AUTONAVALUNITS_TOOLTIP;该窗口将切换ＡＩ是否会替你分配海军配属 ;;;;;;;;;;X
+BUTTON_SHOW_ARROWS_IN_DRO;这将使你看到地图上你所有部队的行军路线 ;;;;;;;;;;X
+BUTTON_SHOW_ARROWS_IN_IRO;显示箭头 (*) ;;;;;;;;;;X
+BUTTON_PROD_IRO;该窗口用于检视与控制生产，包括开支、转换、生产线和资 源管理。 ;;;;;;;;;;X
+BUTTON_PROD_DRO; ;;;;;;;;;;X
+BUTTON_TRADE;贸易 ;;;;;;;;;;X
+BUTTON_TRADE_IRO;该窗口用于控制贸易与后勤。 ;;;;;;;;;;X
+BUTTON_TRADE_DRO; ;;;;;;;;;;x
+EXTRA_DONT_HAVE1;你未掌握建造该配属单位 ;;;;;;;;;;X
+EXTRA_DONT_HAVE2;所需要的科技 ;;;;;;;;;;X
+##;;;;;;;;;;;x
+DO_WE_NEED;我们需要来自 %s 的援军 ;;;;;;;;;;X
+WE_DONT_WANT;我们不需要来自 %s 的援军 ;;;;;;;;;;X
+IN_COMBAT;单位正在战斗中，请稍后重试 ;;;;;;;;;;X
+##;;;;;;;;;;;x
+BLOCKEXPORT;禁止出口 ;;;;;;;;;;X
+BLOCKEXPORT_ROLLOVER;如果被选中，该资源将不会向其它国家出售 ;;;;;;;;;;X
+BLOCKIMPORT;禁止进口 ;;;;;;;;;;X
+BLOCKIMPORT_ROLLOVER;如果被选中，该资源将不会从其它国家进口 ;;;;;;;;;;X
+FOCUSIMPORT;I进口重点 ;;;;;;;;;;x
+PRODUCTION_INFRASTRUCTURE;省份维修 ;;;;;;;;;;x
+DEL_SLIDER_INFRASTRUCTURE;以百分之%.2f的效率重建\n 目前运作：\n%d 优先，\n%d 固有和 \n%d 非固有省份。 ;;;;;;;;;;X
+HPROV_IRO_EFF;当前效率: 百分之%.1f \n ;;;;;;;;;;X
+HPROV_IRO_MAXEFF;最大效率: 百分之%.1f \n ;;;;;;;;;;X
+DEV_CLOSE_WHEN_FINISHED;当到达要求的数量时，是否关闭这条生产线？ ;;;;;;;;;;X
+DEV_RETOOLING;正在重组 (还剩 %.f天)\n ;;;;;;;;;;X
+IW_PROD_RETOOLING_TIME;重组时间：%.0f天 ;;;;;;;;;;X
+PROVINCE_SCOPE;省份 ;;;;;;;;;;X
+AREA_SCOPE;地区 ;;;;;;;;;;X
+REGION_SCOPE;地域 ;;;;;;;;;;X
+CONTINENT_SCOPE;大陆 ;;;;;;;;;;X
+AA_RADAR_BONUS;雷达加成 %.1f\%% ;;;;;;;;;;X
+PW_IDLE;空闲 ;;;;;;;;;;X
+PW_UPKEEPPERCENTAGE;以%.1f \%%的效率维持 ;;;;;;;;;;X
+CURR_GEARINGBONUS_RESOURCEUSAGE;流水线加成使资源使用量提高了%.1f \%% ;;;;;;;;;;X
+MANPOWER_TOTAL;总人力: %.1f ;;;;;;;;;;X
+MANPOWER_MILITARY;用于部队: %.1f ;;;;;;;;;;X
+MANPOWER_PROVINCIAL;用于省份: %.1f ;;;;;;;;;;X
+MANPOWER_DEVELOPMENT;用于生产中的项目: %.1f ;;;;;;;;;;X
+MANPOWER_STATIC;总已用人力: %.1f ;;;;;;;;;;X
+MANPOWER_FREE;空闲人力: %.1f ;;;;;;;;;;X
+MANPOWER_AGE;每天因退休减少人力: %.2f ;;;;;;;;;;X
+MANPOWER_MAX;最大人力: %.1f ;;;;;;;;;;X
+PRODIW_PRO;省份 ;;;;;;;;;;X
+MPINCOME_TOOLTIP;人力收入: %.2f ;;;;;;;;;;X
+#EXPENSE_CONSUMER;民用开支所需 ;;;;;;;;;;X
+EXPENSE_CONSUMER;民用开支 ;;;;;;;;;;X
+EXPENSE_CONSUMER_TOOLTIP;每日不满度增长: %.2f ;;;;;;;;;;X
+#EXPENSE_INTELLIGENCE;谍报活动 ;;;;;;;;;;X
+EXPENSE_INTELLIGENCE;谍报活动 ;;;;;;;;;;X
+EXPENSE_INTELLIGENCE_TOOLTIP;每天用于谍报活动的经费 ;;;;;;;;;;X
+EXPENSE_MILITARY_ATTR_MOD;军费开支 百分之%.2f ;;;;;;;;;;X
+EXPENSE_MILITARY;军费 ;;;;;;;;;;X
+EXPENSE_MILITARY_TOOLTIP;军费开支 %.1f \n 军费开支影响部队组织度恢复和人员消耗 ;;;;;;;;;;X
+#EXPENSE_NUCLEAR;核反应堆经费 ;;;;;;;;;;X
+EXPENSE_NUCLEAR;核反应堆经费 ;;;;;;;;;;X
+EXPENSE_NUCLEAR_POWER;核电站经费 ;;;;;;;;;;X
+EXPENSE_NUCLEAR_POWER_TOOLTIP;核电站经费: 百分之%.2f ;;;;;;;;;;X
+EXPENSE_NUCLEAR_TOOLTIP;核反应堆经费: 百分之%.2f ;;;;;;;;;;X
+#EXPENSE_RESEARCH;研究经费 ;;;;;;;;;;X
+EXPENSE_RESEARCH;研究经费 ;;;;;;;;;;X
+EXPENSE_RESEARCH_TOOLTIP;研究速度: 百分之%.2f ;;;;;;;;;;X
+EXPENSES_TOOLTIP;支出: %.2f ;;;;;;;;;;X
+EXPENSE_SYNTHETIC_RARES;合成材料工厂 ;;;;;;;;;;X
+EXPENSE_SYNTHETIC_RARES_TOOLTIP;合成材料工厂以百分之%.2f的效率工作 ;;;;;;;;;;X
+EXPENSE_SYNTHETIC;合成燃料工厂 ;;;;;;;;;;X
+#EXPENSE_SYNTHETIC;合成燃料工厂 ;;;;;;;;;;X
+EXPENSE_SYNTHETIC_TOOLTIP;合成燃料工厂以百分之%.2f的效率工作 ;;;;;;;;;;X
+EXPENSE_TITLE;支出 ;;;;;;;;;;X
+AUTOADVSLIDERS;高级滑动条 ;;;;;;;;;;X
+DOMESTIC_ARMY_SALARY;军费支出: %s%.1f\%%\n;;;;;;;;;;X
+ENERGY_PRODUCTION;- 能源产量: %s%d\%%\n;;;;;;;;;;X
+METAL_PRODUCTION;- 金属产量: %s%d\%%\n;;;;;;;;;;X
+RARE_MATERIALS_PRODUCTION;- 稀有材料产量: %s%d\%%\n;;;;;;;;;;X
+CG_NEED;消费品需求 ;;;;;;;;;;X
+UPGRADE_COST;升级花费 ;;;;;;;;;;X
+REINFORCEMENT_COST;增援花费 ;;;;;;;;;;X
+INFRA_REBUILD_COST;基础设施重建花费 ;;;;;;;;;;X
+ALLIANCE_W_CLOSE_DEMOCRACIES;-与亲民主国家结盟几率: %s%d\%%\n ;;;;;;;;;;X
+ALLIANCE_W_CLOSE_DICTATORSHIPS;-与亲独裁国家结盟几率: %s%d\%%\n ;;;;;;;;;;X
+FEOPT_MSGBOXBTNDELAY;消息框关闭迟延 ;;;;;;;;;;X
+FEOPT_NOTIFIERDUR;通知图标显示持续时间 ;;;;;;;;;;X
+FEOPT_DURATION_3;3天 ;;;;;;;;;;X
+FEOPT_DURATION_7;1周 ;;;;;;;;;;X
+FEOPT_DURATION_14;2周 ;;;;;;;;;;X
+FEOPT_DURATION_30;1月 ;;;;;;;;;;X
+FEOPT_DURATION_INFINITE;无限 ;;;;;;;;;;X
+GOV_SAME;相同的政府 ;;;;;;;;;;X
+GOV_OTHER;其它的政府 ;;;;;;;;;;X
+GOV_WEAKER;更弱的政府 ;;;;;;;;;;X
+GOV_NOT_WEAKER;不弱于 ;;;;;;;;;;X
+T_INTEL_DIFF;情报优势 ;;;;;;;;;;X
+BOMB_SYN;%.2f 级的合成燃料工厂 ;;;;;;;;;;X
+BOMB_D01;%.2f 级的合成材料工厂 ;;;;;;;;;;X
+BOMB_D02;%.2f 级的核电站 ;;;;;;;;;;X
+BOMB_D03;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D04;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D05;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D06;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D07;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D08;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D09;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D10;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D11;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D12;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D13;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D14;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D15;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D16;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D17;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D18;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D19;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D20;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D21;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D22;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D23;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D24;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+BOMB_D25;%.2f levels of the disponible building in messages.csv ;;;;;;;;;;X
+EVT_8020_DESC;一项秘密项目取得成果。火炮承包商和工程师们已经联手起来， 并且项目主管向总参谋部展示了理论结果。据信进一步的实证 研究会产生一系列的超重型列车炮。 ;;;;;;;;;;X
+ESE_DISTANCE;距离修正 %.2f \n ;;;;;;;;;;X
+ATTR_HOSTILE;敌方前线\n ;;;;;;;;;;X
+ATTR_HOSTILE_RETREAT;从敌方前线撤退中\n ;;;;;;;;;;X
+ATTR_HOSTILE_RETREAT_IN_PROVINCE;省份侵占\n ;;;;;;;;;;X
+ATTR_MOVING;移动中\n ;;;;;;;;;;X
+ATTR_MOVING_MUDDY;在泥泞中移动\n ;;;;;;;;;;X
+NO_RETREAT;单位正在加入战斗，请稍后再试 ;;;;;;;;;;X
+EYR_T_ESE;有效补给率 ;;;;;;;;;;X
+EYR_T_BASE_IC;基础IC ;;;;;;;;;;X
+EYR_T_EFF;IC效率 ;;;;;;;;;;X
+EYRCOMLOSS;损失对比 ;;;;;;;;;;X
+EYRCOMLOSS_MP;人力 ;;;;;;;;;;X
+EYRCOMLOSS_FIGHTER_;战斗机 ;;;;;;;;;;X
+EYRCOMLOSS_BOMBER_;轰炸机 ;;;;;;;;;;X
+EYRCOMLOSS_TRUCKS;汽车 ;;;;;;;;;;X
+EYRCOMLOSS_ARTILLERY;火炮 ;;;;;;;;;;X
+EYRCOMLOSS_TANKS;坦克 ;;;;;;;;;;X
+EYRCOMLOSS_CAPITALS;主力舰 ;;;;;;;;;;X
+EYRCOMLOSS_SCREENS;辅助舰 ;;;;;;;;;;X
+EYRCOMLOSS_SUBS;潜艇 ;;;;;;;;;;X
+EYRCOMLOSS_DISP1;运输舰 ;;;;;;;;;;X
+EYRCOMLOSS_CONVOYS;输送船 ;;;;;;;;;;X
+EYRCOMLOSS_ESCORTS;护航船 ;;;;;;;;;;X
+EYRCOMLOSS_ROCKETS;火箭 ;;;;;;;;;;X
+EYRCOMLOSS_DISP2;核弹 ;;;;;;;;;;X
+EYRCOMLOSS_DISP3;单位IC·天数 ;;;;;;;;;;X
+EYRCOMLOSS_DISP4;省份IC·天数 ;;;;;;;;;;X
+EYRCOMLOSS_DISP5; ;;;;;;;;;;X
+EYRCOMLOSS_DISP6; ;;;;;;;;;;X
+EYRCOMLOSS_DISP7; ;;;;;;;;;;X
+EYRCOMLOSS_DISP8; ;;;;;;;;;;X
+EYRCOMLOSS_DISP9; ;;;;;;;;;;X
+EYRCOMLOSS_DISP10; ;;;;;;;;;;X
+EYRCOMLOSS_DISP11; ;;;;;;;;;;X
+EYRCOMLOSS_DISP12; ;;;;;;;;;;X
+EYRCOMLOSS_DISP13; ;;;;;;;;;;X
+EYRCOMLOSS_DISP14; ;;;;;;;;;;X
+EYRCOMLOSS_DISP15; ;;;;;;;;;;X
+EYRCOMLOSS_DISP16; ;;;;;;;;;;X
+EYRCOMLOSS_DISP17; ;;;;;;;;;;X
+EYRCOMLOSS_DISP18; ;;;;;;;;;;X
+EYRCOMLOSS_DISP19; ;;;;;;;;;;X
+EYRCOMLOSS_DISP20; ;;;;;;;;;;X
+EYR_ANNEXED;被吞并国 ;;;;;;;;;;X
+EYRCOMILOSS_SHIPS;对方船只 ;;;;;;;;;;X
+EYRCOMILOSS_CEFF;战斗效率 ;;;;;;;;;;X
+EYRCOMINFLOSS;战果对比 ;;;;;;;;;;X
+EYRCOMLOSSCHART;损失对比图 ;;;;;;;;;;X
+EYRCOMLOSSCHART1;人力损失 ;;;;;;;;;;X
+EYRCOMLOSSCHART2;造成人力损失 ;;;;;;;;;;X
+EYRCOMLOSSCHART3;战斗效率 ;;;;;;;;;;X
+EYRCOMLOSSCHART4;核弹 ;;;;;;;;;;X
+DISORG_LOWORG;我们的一支部队组织度太低而不能移动 ;;;;;;;;;;X
+DWAREYOUSURE1;(任务将一直执行 ;;;;;;;;;;X
+DWAREYOUSURE2;直到新的命令。) ;;;;;;;;;;X
+DWAREYOUSURE3;立即生效且 ;;;;;;;;;;X
+DWAREYOUSURE4;不能撤销 ;;;;;;;;;;X
+DEV_DEPLOY_IRO;(按住shift键选择多个单位部署，使用control键同时选择 所有可能的单位) ;;;;;;;;;;X
+RES_DRO_OFFSHORE;\n 海外利用量：%.2f ;;;;;;;;;;X
+EYR_RES_OS;海外IC本地利用量 ;;;;;;;;;;X
+DEL_SLIDER_CONSUMER;每日金钱：%+.2f\n - 来自工业：%+.2f\n - 来自空闲人力：%+.2f\n - 支出：%+.2f\n - 贸易：%+.2f\n ;;;;;;;;;;X
+DEV_COMPLETE_PERC;已完成百分之%.1f ;;;;;;;;;;X
+DEV_UPGRADE_LINE;把这条生产线升级到最新兵种等级，这会减少当前的流水线 加成，并暂停生产转而进行重组。 ;;;;;;;;;;X
+RCDM_SEND_PROVINCE;把这个省份交给：%s ;;;;;;;;;;X
+SUPPLY_STOCK_ROLLOVER;该单位当前拥有%.1f补给储备，最大%.1f ;;;;;;;;;;X
+OIL_STOCK_ROLLOVER;该单位当前拥有%.1f石油储备，最大%.1f ;;;;;;;;;;X
+PROV_ESE;你的军队在该地的有效补给效率是:%.2f\%%。 ;;;;;;;;;;X
+ESE_NAME;有效补给效率 ;;;;;;;;;;X
+ESE_TXT;有效补给率 ;;;;;;;;;;X
+ESE_TXT2;补给率:%.2f\%% ;;;;;;;;;;X
+RESEARCH_BASE_DIFF;基础难度：%.1f \n ;;;;;;;;;;X
+RESEARCH_BASE_SKILL;基础技能等级：%.1f \n ;;;;;;;;;;X
+RESEARCH_BASE_SPECIAL_SKILL;技能相符：+100\% \n ;;;;;;;;;;X
+RESEARCH_HISTORICAL_MODIFIER;历史日期修正：%.2f \n ;;;;;;;;;;X
+RESEARCH_BLUEPRINT_MODIFIER;拥有蓝图：%.2f \n ;;;;;;;;;;X
+RESEARCH_TOTAL_SPEED;当前小组研究速度：%.1f \n ;;;;;;;;;;X
+REINF_TITLE;增援： ;;;;;;;;;;X
+REINF_AIR;空军数量：%d \n ;;;;;;;;;;X
+REINF_LAND;陆军数量：%d \n ;;;;;;;;;;X
+REINF_NAVAL;海军数量：%d \n ;;;;;;;;;;X
+REINF_IDLE;不需要增援 \n ;;;;;;;;;;X
+REINF_TOTAL;师的数量：%d \n ;;;;;;;;;;X
+NOTEFIER_TECH;有一个科技格未使用 ;;;;;;;;;;X
+NOTEFIERD_TECH; ;;;;;;;;;;X
+NOTEFIER_MILITARYSPENDING;军费未达到满负荷 ;;;;;;;;;;X
+NOTEFIERD_MILITARYSPENDING;没有全额军费的部队战力很糟糕，增加你的开支以发挥部队 的全部实力。 ;;;;;;;;;;X
+NOTEFIER_SLIDERMOVE;一个滑动条可以移动了 ;;;;;;;;;;X
+NOTEFIERD_SLIDERMOVE;你可以在外交窗口找到滑动条 ;;;;;;;;;;X
+CONVERSIONS_TITLE;转换 ;;;;;;;;;;X
+PROD_MAX;最大产量：%.1f ;;;;;;;;;;X
+KPVALUE2;总胜利点：%d \n世界排名：%d \n----------\n第一名：%s ;;;;;;;;;;X
+UNIT_STAND_GROUND;不成功便成仁 \n该单位会死战不退以拖延敌人，让其他部队有时间撤退。\n注意！该选项非常不受民众欢迎，会导致不满度的增加。 ;;;;;;;;;;X
+UNIT_SCORCH_GROUND;焦土政策 \n该单位在撤退时会破坏所在省份，给敌人留下一片废墟。 ;;;;;;;;;;X
+CONFIRMCOVESC;你确定要把该单位转换为护航舰吗？ ;;;;;;;;;;X
+CONV_ESC_DESC;该单位将转换为%d护航舰。 ;;;;;;;;;;X
+LEAD_SORT_TRAIT;按特性排序 ;;;;;;;;;;X
+FEOPT_SCENARIO;使用剧本设置 ;;;;;;;;;;X
+LB_COMBATLOSS;\n伤亡人员：\n我们损失了%.0f名英勇战士\n而对方损失了%.0f名 ;;;;;;;;;;X
+HOIPP_SYNTHETIC_OIL;合成燃料厂 ;;;;;;;;;;X
+HOIPP_D01;合成材料厂 ;;;;;;;;;;X
+HOIPP_D02;核电站 ;;;;;;;;;;X
+HOIPP_D03;大学 ;;;;;;;;;;X
+HOIPP_D04;DISP text.csv ;;;;;;;;;;X
+HOIPP_D05;DISP text.csv ;;;;;;;;;;X
+HOIPP_D06;DISP text.csv ;;;;;;;;;;X
+HOIPP_D07;DISP text.csv ;;;;;;;;;;X
+HOIPP_D08;DISP text.csv ;;;;;;;;;;X
+HOIPP_D09;DISP text.csv ;;;;;;;;;;X
+HOIPP_D10;DISP text.csv ;;;;;;;;;;X
+HOIPP_D11;DISP text.csv ;;;;;;;;;;X
+HOIPP_D12;DISP text.csv ;;;;;;;;;;X
+HOIPP_D13;DISP text.csv ;;;;;;;;;;X
+HOIPP_D14;DISP text.csv ;;;;;;;;;;X
+HOIPP_D15;DISP text.csv ;;;;;;;;;;X
+HOIPP_D16;DISP text.csv ;;;;;;;;;;X
+HOIPP_D17;DISP text.csv ;;;;;;;;;;X
+HOIPP_D18;DISP text.csv ;;;;;;;;;;X
+HOIPP_D19;DISP text.csv ;;;;;;;;;;X
+HOIPP_D20;DISP text.csv ;;;;;;;;;;X
+HOIPP_D21;DISP text.csv ;;;;;;;;;;X
+HOIPP_D22;DISP text.csv ;;;;;;;;;;X
+HOIPP_D23;DISP text.csv ;;;;;;;;;;X
+HOIPP_D24;DISP text.csv ;;;;;;;;;;X
+HOIPP_D25;DISP text.csv ;;;;;;;;;;X
+ATTR_WEATHER;天气状况：%.2f ;;;;;;;;;;X
+T_ESE;有效补给率加成 ;;;;;;;;;;X
+T_LEADER_XP;将领经验增加 ;;;;;;;;;;X
+T_DIVISION_XP;部队经验增加 ;;;;;;;;;;X
+T_COLONIAL_MP;殖民地人力 ;;;;;;;;;;X
+T_COLONIAL_IC;殖民地IC ;;;;;;;;;;X
+T_STAND_GROUND_DISSENT;坚守死战不满度 ;;;;;;;;;;X
+T_RETOOLING_TIME;重组时间 ;;;;;;;;;;X
+T_RETOOLING_COST;重组花费 ;;;;;;;;;;X
+T_GEARING_SPEED;流水线加成速度 ;;;;;;;;;;X
+T_GEARING_MAX;最大流水线加成 ;;;;;;;;;;X
+T_MILITARY_SALARIES;军费 ;;;;;;;;;;X
+T_REMOTE_PLACEMENT_MIN_IC;偏远地区IC生产 ;;;;;;;;;;X
+ESE_PROV;省份有效补给率：%.2f ;;;;;;;;;;X
+DOMW_STEP;\n现在拉一格，会增加不满度 %.2f ;;;;;;;;;;X
+IC_TOTALBASE;工业产值(IC)是工业的生产能力。基础IC是你所有省份的IC 总和，可用IC是基础IC乘以科技、部长等修正值，剩余IC是 超出需求的分配量。每点IC每天需2能源，1金属和1/2稀有材 料。\n 理论的基础IC：%.0f ;;;;;;;;;;X
+IC_BASE;\n基础IC： %d ;;;;;;;;;;X
+ROL_IC_REVOLTRISK;\n 叛乱风险影响： %.1f ( %.1f%% ) ;;;;;;;;;;X
+ROL_IC_OCCUPIED;\n 占领省份影响： %.1f ( %.1f%% ) ;;;;;;;;;;X
+ROL_IC_INFRA;\n 基础设施影响： %.1f ( %.1f%% ) ;;;;;;;;;;X
+ROL_IC_CONCENTRATION;\n 集中度影响： %.1f ( %.1f%% ) ;;;;;;;;;;X
+ROL_IC_EFFICIENCY;\n 省份效率影响： %.1f ( %.1f%% ) ;;;;;;;;;;X
+UIW_PRIORITIZED_PROVINCE_DELAYED;设定该省份是否优先修复 ;;;;;;;;;;X
+EYR_RESULT_WIN;胜利 ;;;;;;;;;;X
+EYR_RESULT_LOSS;失败 ;;;;;;;;;;X
+EYR_RESULT_ATTACK;攻击 ;;;;;;;;;;X
+EYR_RESULT_DEFENSE;防御 ;;;;;;;;;;X
+HIST_PROMOTE;%s晋升为%s，在%s ;;;;;;;;;;X
+HIST_SKILL;%s技能提高%d，在%s ;;;;;;;;;;X
+HIST_GAIN_TRAIT;%s获得特性%s，在%s ;;;;;;;;;;X
+HIST_LOOSE_TRAIT;%s失去特性%s，%s ;;;;;;;;;;X
+DELAY_MINISTER; 到任日期： %s ;;;;;;;;;;X
+DELAY_IDEA; 完成日期： %s ;;;;;;;;;;X
+DELAY_LEADER; 到任日期： %s ;;;;;;;;;;X
+TRADE_AUTO_SLIDER;进口： %.2f ;;;;;;;;;;X
+TA_CONV_REQ;需要输送船： %d\n ;;;;;;;;;;X
+TA_CONV_TO;%s --> %s (贸易到:%s，%s) ;;;;;;;;;;X
+TA_BLOCKED;封锁 ;;;;;;;;;;X
+DESC_ESCORTS;护航舰适合保护输送船，当遭受攻击时可以减少它 们的损失并对攻击者造成间接伤害。 ;;;;;;;;;;X
+DESC_INDUSTRY;工厂是经济的心脏，用于生产各种战 时平时物资。 ;;;;;;;;;;X
+DESC_BUILDING_FORT_COASTAL;海岸要塞是建立在岸边的碉堡，可以 提供海滩防御加成。 ;;;;;;;;;;X
+DESC_BUILDING_FORT_LAND;陆上要塞是为防御方提供强大优势的 强化碉堡群。 ;;;;;;;;;;X
+DESC_BUILDING_AA;防空火炮(AAA)将会对经过该省份的 飞机造成伤害。 ;;;;;;;;;;X
+DESC_INFRA;公路、铁路和市民设施能改善经济状 况，提高贸易和物资的吞吐量。 ;;;;;;;;;;X
+DESC_BUILDING_RADAR;雷达站指引友军飞机迎击敌机，同时 增加防空火炮的效率。 ;;;;;;;;;;X
+DESC_BUILDING_PORT_AIR;更大的机场能为更多的飞机提供补给 并更快的恢复组织度。 ;;;;;;;;;;X
+DESC_BUILDING_PORT_NAVAL;更大的港口能供给、修理和改装更多 的单位，同时实际补给吞吐量和贸易 效率也会提高。 ;;;;;;;;;;X
+DESC_BUILDING_SITE_ROCKET;火箭试验场能够增加火箭学领域的理 论与实践技能等级。 ;;;;;;;;;;X
+DESC_BUILDING_SITE_NUKE;核试验设施旨在制造出核弹，附带提 供市民用电。 ;;;;;;;;;;X
+DESC_BUILDING_PLANT_NUCLEAR;核电站能提供各种用途的廉价能源。 ;;;;;;;;;;X
+DESC_BUILDING_PLANT_SYN_OIL;合成燃料工厂把能源转化为燃料。 ;;;;;;;;;;X
+DESC_BUILDING_PLANT_SYN_RARE;合成材料工厂转化石油为稀有原料， 但因工序复杂，实际产出非常有限。 ;;;;;;;;;;X
+DESC_BUILDING_CIVIL_UNIVERSITY;大学是能体现你的国家里受过教育的 人口中心。建筑他们可能增加你100％ ％以上的高技术研究经费。 ;;;;;;;;;;X
+DESC_D04;;;;;;;;;;;x
+DESC_D05;;;;;;;;;;;x
+DESC_D06;;;;;;;;;;;x
+DESC_D07;;;;;;;;;;;x
+DESC_D08;;;;;;;;;;;x
+DESC_D09;;;;;;;;;;;x
+DESC_D10;;;;;;;;;;;x
+DESC_D11;;;;;;;;;;;x
+DESC_D12;;;;;;;;;;;x
+DESC_D13;;;;;;;;;;;x
+DESC_D14;;;;;;;;;;;x
+DESC_D15;;;;;;;;;;;x
+DESC_D16;;;;;;;;;;;x
+DESC_D17;;;;;;;;;;;x
+DESC_D18;;;;;;;;;;;x
+DESC_D19;;;;;;;;;;;x
+DESC_D20;;;;;;;;;;;x
+DESC_D21;;;;;;;;;;;x
+DESC_D22;;;;;;;;;;;x
+DESC_D23;;;;;;;;;;;x
+DESC_D24;;;;;;;;;;;x
+DESC_D25;;;;;;;;;;;x
+##;;;;;;;;;;;x
+UNIT_NAVAL_STAND_GROUND;决一死战\n 单位将会不论成败持续交战，尽可能久地坚持 ;;;;;;;;;;X
+HPROV_IRO_AIRPORT;当前机场等级： ;;;;;;;;;;X
+HPROV_IRO_NAVALPORT;当前海军基地等级： ;;;;;;;;;;X
+HPROV_IRO_RADAR;当前雷达站等级： ;;;;;;;;;;X
+DESC_BUILDING_PLANT_NUCLEAR_POWER;核电站运用核裂变的先进技术产生出大量的能源。 ;;;;;;;;;;X
+DESC_CONVOY;输送船能运送各种物资，贸易、资源转移和补给任 务都要用到。 ;;;;;;;;;;X
+UIW_SENDFORCE;点击派遣此单位给当前省份的控制者 ;;;;;;;;;;X
+CURR_GEARINGBONUS;流水线生产加成:%.0f/%.0f ;;;;;;;;;;X
+UIW_MERGE_AIR_DIS_IRO;你只能把同一省里的未发生战斗的单位合并成一个军团。 空军编队不能多于４个师。 ;;;;;;;;;;X
+EYRBOMBERSFROM;航空器 ;;;;;;;;;;X
+CORE_SCREENS;%d艘主力舰和%d艘小型舰。 ;;;;;;;;;;X
+EYR_REDPLOYING_TO;(开始重新部署) ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WHICH_TYPE_LAND;陆军 ;;;;;;;;;;X
+WHICH_TYPE_AIR;空军 ;;;;;;;;;;X
+WHICH_TYPE_NAVAL;海军 ;;;;;;;;;;X
+##;;;;;;;;;;;x
+EYRARMIES_ST;陆军统计列表 ;;;;;;;;;;X
+EYRFLEETS_ST;海军统计列表 ;;;;;;;;;;X
+EYRAIR_ST;空军统计列表 ;;;;;;;;;;X
+EYRBRIGADESHORT;加强团 ;;;;;;;;;;X
+EYR_C_MONEY;金钱 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CRB_MINMOD;不同的部长能为战斗中的部队带来不同的修正效果 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCHAT_ALL;各方 ;;;;;;;;;;X
+TCHAT_COOP;合作 ;;;;;;;;;;X
+TCHAT_ALLIES;盟国 ;;;;;;;;;;X
+TCHAT_ENEMY;敌方 ;;;;;;;;;;X
+TCHAT_CUSTOM;定制 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SINGLEUNITN;你只能分别对这些海军单位下命令，因为他们的性质或作战 半径不同。 ;;;;;;;;;;X
+REORG_AIR_CAP_SIZE;你不能堆叠超过%d个空军联队 ;;;;;;;;;;X
+DISBAND_BRIGADE;点击可解散这个加强团 ;;;;;;;;;;X
+ALREADY_UNDERDEV;开发进度: %d ;;;;;;;;;;X
+NOT_IN_SUPPLY_NO_BUILD;在无法补给的地区不能建造任何设施 ;;;;;;;;;;X
+NEXTPART;下一次将开始于：%s \n ;;;;;;;;;;X
+SERIESFINISHED;序列将在：%s完成 ;;;;;;;;;;X
+TRADE_SLIDE_LIMIT;他们最多能提供%.1f。我们最多能交易%.1f。 ;;;;;;;;;;X
+DEL_SLIDER_SUPPLIES2;我们每天生产%.2f补给。 \n我们的部队每天至少需要%.2f的补给。 \n我们每天通过贸易获得%.2f的补给。 \n我们每天卖出%.2f的补给。 ;;;;;;;;;;X
+MANPOWER_IC_USE;在本剧本中你将有%.1f点IC用于补充兵源。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LEAVECURRENT;(请注意你将脱离现在的联盟。) ;;;;;;;;;;X
+DIPROL_INV77;傀儡政权不能邀请任何国家加入联盟。 ;;;;;;;;;;X
+DIPROL_INV99;只有联盟的领导者才能邀请新的成员加盟。 ;;;;;;;;;;X
+DIPROL_SE_2;你只能对你的盟国派遣远征军。 ;;;;;;;;;;X
+DIPROL_GUARANTEE_NOGO;你不能保障任何国家的独立，假如你是孤立主义 (干涉主义倾向＜５)的民主政体。 ;;;;;;;;;;X
+INV_DEM;%s 索要你的部分领土。 ;;;;;;;;;;X
+PEACETERM_PROV2;%s(->%s) ;;;;;;;;;;X
+#;;;;;;;;;;;X
+ROL_TC_TECHMOD; \n 科技修正 IC->TC: %+.f ;;;;;;;;;;X
+ROL_TC_MINMOD;\n 部长修正 IC->TC: %+.f \n ;;;;;;;;;;X
+ROL_TC_BASES; \n 尚未配置的基地：%.2f ;;;;;;;;;;X
+ROL_TC_DEVS; \n 尚未配置的地区设施：%.2f ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ESE_AVERAGE;部队平均补给效率：%.2f\n ;;;;;;;;;;X
+ESE_INFRA;基础设施：%.2f\n ;;;;;;;;;;X
+ESE_HQ;HQ加成：%.2f\n ;;;;;;;;;;X
+ESE_TOTAL;(平均%.2f+基础设施：%.2f)/2+HQ%.2f ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RCDM_DIPLO;打开外交窗口 ;;;;;;;;;;X
+RCDM_COUNTERS;使用军事符号 ;;;;;;;;;;X
+RCDM_SPRITES;使用军事模型 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PARTISAN_EXPL;基本叛乱几率:%d\%%\n当前镇压了%d\%% \n ;;;;;;;;;;X
+RESEARCH;研究 ;;;;;;;;;;X
+AA_POWER;-(防空火力：%.0f\%%) ;;;;;;;;;;X
+SYNC_ARRIVAL;同步抵达 ;;;;;;;;;;X
+BASED_IN;基地:%s;;;;;;;;;;X
+LOCATED_IN;%s是%s的一部分，当前在%s。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOY_NOTNEEDED;目的地已有足够的补给储备，今天可以不用运输了。 ;;;;;;;;;;X
+CONVOY_NOPATH;通向该港口的线路完全被封锁。 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+UIW_RETURNFORCETOUS;我方收回这支部队的指挥权 ;;;;;;;;;;X
+UIW_OFFENSIVE_RETREAT;你不能对撤退中的部队下这个指令 ;;;;;;;;;;X
+FLEET_COMPOSITION_IRO;主力舰和辅助舰目前的数量比能发挥 %.2f ﹪作战效率 ;;;;;;;;;;X
+FLEET_COMPOSITION_DRO;你的舰队里需要至少与主力舰(CV，BB，BC，CA)数目一样的 辅助舰只(DD，CL)以保证作战效率 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BADWEATHER_MSG;该地区的气候过于恶劣，飞机无法执行任务 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+STRAIT_NOT_BLOCKED;你目前不能渡过该海峡，因为 %s阻止了你的行动。 ;;;;;;;;;;X
+STRAIT_BLOCKED;你目前可以渡过该海峡，只要你一直与 %s处于非战争状态。 ;;;;;;;;;;X
+STRAIT_BOS;(注意博斯普鲁斯海峡是个特例，其控制者在战时 将只允许其盟友通过。) ;;;;;;;;;;X
+STRAIT_CONTROLLER;%s的控制者将决定谁可以通过这个海峡 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NATIONAL_PROV_OF;这是%s的固有领土。 ;;;;;;;;;;X
+PROV_CONTROLLED_BY;%s为%s所控制。 ;;;;;;;;;;X
+PROV_ORIGOWNED_BY;%s夺取了 %s从其合法拥有者 %s。 ;;;;;;;;;;X
+#########################################;;;;;;;;;;;x
+######### GENERAL TEXT STRINGS #########;;;;;;;;;;;x
+#########################################;;;;;;;;;;;x
+DIP_BAN_FROM_ALLIANCE;逐出联盟 ;;;;;;;;;;X
+DIPROL_BA_0;我们不是军事联盟的领袖，因而不能将任何国家逐出联盟。 ;;;;;;;;;;X
+DIPROL_BA_1;不能把%s开除出我们的联盟。 ;;;;;;;;;;X
+DIPROL_BA_2;这将把%s开除出我们的联盟。 ;;;;;;;;;;X
+BAN_FROM_ALLIANCE_TITLE;把%s逐出联盟？ ;;;;;;;;;;X
+SHARE_UNITS;军火贸易 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ABONDON_TECH;放弃学说 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EYRMAINTANCE;全部维护费消耗 ;;;;;;;;;;X
+EYRARMYMAINTANCE;陆军维护费消耗 ;;;;;;;;;;X
+EYRNAVYMAINTANCE;海军维护费消耗 ;;;;;;;;;;X
+EYRAIRMAINTANCE;空军维护费消耗 ;;;;;;;;;;X
+EYRNUMDIV;师的数目 ;;;;;;;;;;X
+EYRSUPPLYCOST;补给的分配 ;;;;;;;;;;X
+EYROILCOST;燃料的分配 ;;;;;;;;;;X
+EYRREINFCOST;需要补充的人力 ;;;;;;;;;;X
+EYR_ECAR;轻型航母 ;;;;;;;;;;X
+EYR_NSUB;核潜艇 ;;;;;;;;;;X
+EYR_ARMY;陆军 ;;;;;;;;;;X
+EYR_NAVY;海军 ;;;;;;;;;;X
+EYR_AIRFORCE;空军 ;;;;;;;;;;X
+EYR_LANDBATTLES;陆战 ;;;;;;;;;;X
+EYR_NAVALBATTLES;海战 ;;;;;;;;;;X
+EYR_RESULT;结果 ;;;;;;;;;;X
+EYR_ROLE;角色 ;;;;;;;;;;X
+EYR_OURSIZE;我方规模 ;;;;;;;;;;X
+EYR_THEIRSIZE;敌方规模 ;;;;;;;;;;X
+EYR_STARTDATE;开始日期 ;;;;;;;;;;X
+EYR_ENDDATE;结束日期 ;;;;;;;;;;X
+EYR_PROVINCE;地区 ;;;;;;;;;;X
+EYR_OURLOSSES;我方损失 ;;;;;;;;;;X
+EYR_THEIRLOSSES;敌方损失 ;;;;;;;;;;X
+EYRMISSION;任务 ;;;;;;;;;;X
+EYRUNDEPLOYED;未部署的部队 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+HIST_WINNING;获胜 ;;;;;;;;;;X
+HIST_LOSING;失败 ;;;;;;;;;;X
+HIST_DIVISION;师级 ;;;;;;;;;;X
+HIST_CORPS;军级 ;;;;;;;;;;X
+HIST_ARMY;集团军级 ;;;;;;;;;;X
+HIST_ARMYG;集团军群级 ;;;;;;;;;;X
+HIST_FLOTTILA;小型编队 ;;;;;;;;;;X
+HIST_SMALLFLEET;小型舰队 ;;;;;;;;;;X
+HIST_LARGEFLEET;大型舰队 ;;;;;;;;;;X
+HIST_LEAD;指挥 ;;;;;;;;;;X
+HIST_PART;参与 ;;;;;;;;;;X
+HIST_DATE;%s ;;;;;;;;;;X
+HIST_DATE2;%s～%s ;;;;;;;;;;X
+HIST_ATTACK;进攻 ;;;;;;;;;;X
+HIST_DEFENSE;防御 ;;;;;;;;;;X
+HIST_LEADERLAND;%s了%s的%s %s战役。会战规模：%s 作战时间：%s 敌方：%s ;;;;;;;;;;X
+HIST_LEADERNAVAL;%s了%s的海战。战斗海域：%s 海战规模：%s 作战时间：%s 敌方：%s ;;;;;;;;;;X
+HIST_WE;我方 ;;;;;;;;;;X
+HIST_THEY;敌方 ;;;;;;;;;;X
+HIST_LOSTSHIP;%s沉没 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BUTTON_INT;情报服务 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CAN_REINFORCE_UNIT;点击此处设置是否补充该单位中的部队 ;;;;;;;;;;X
+CAN_UPGRADE_UNIT;点击此处设置是否升级该单位中的部队 ;;;;;;;;;;X
+UPGRADEICON_IRO;该单位不能被升级 ;;;;;;;;;;X
+REINFORCEICON_IRO;该单位不能被补充 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AUTOTRADECREATE;自动发起交易 ;;;;;;;;;;X
+AUTOTRADEREPLY;自动回应交易 ;;;;;;;;;;X
+AUTOTRADECREATE_TOOLTIP;该窗口将切换ＡＩ是否会替你提出新贸易协定 ;;;;;;;;;;X
+AUTOTRADEREPLY_TOOLTIP;该窗口将切换ＡＩ是否会替你回应新贸易协定 ;;;;;;;;;;X
+AUTOSLIDERS;自动设定生产滑块 ;;;;;;;;;;X
+AUTOSLIDERS_TOOLTIP;选择此选项将让AI控制你的国家的生产 ;;;;;;;;;;X
+AUTOPRIOPROD;优先生产 ;;;;;;;;;;X
+AUTOPRIOPROD_TOOLTIP;选择此选项将优先生产，其次升级和补充。 ;;;;;;;;;;X
+AUTOPRIOUPGRADE;优先升级 ;;;;;;;;;;X
+AUTOPRIOUPGRADE_TOOLTIP;选择此选项将优先升级，其次生产，补充相对再次要些。 ;;;;;;;;;;X
+AUTOPRIOREINFORCE;优先补充 ;;;;;;;;;;X
+AUTOPRIOREINFORCE_TOOLTIP;选择此选项将优先补充，其次生产，升级相对再次要些。 ;;;;;;;;;;X
+AUTO_PROD_BUTTON;自动控制窗口 ;;;;;;;;;;X
+AUTOPRIODISABLED;你必须选择自动管理以使用这些设置 ;;;;;;;;;;X
+AUTOWINDOWTITLE;自动控制生产和贸易选项 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EMPTYLINE; ;;; ;;;; ;;;x
+RULES_INT_DISABLED_IRO;本关情报机关不起作用。 ;;;;;;;;;;X
+RULES_INT_DISABLED_DRO;这意味着由于剧情限制，情报机构不能提供帮助。 ;;;;;;;;;;X
+BUTTON_INT_IRO;该窗口用于策划你的隐秘行动。 ;;;;;;;;;;X
+BUTTON_INT_DRO;;;;;;;;;;;x
+#;;;;;;;;;;;x
+RCDM_INTELLIGENCE;开展情报活动 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MUW_LAND;%d集团军／%d师 ;;;;;;;;;;X
+MUW_AIR;%d空军联队／%d大队 ;;;;;;;;;;X
+MUW_SEA;%d舰队／%d支队 ;;;;;;;;;;X
+UIW_EXPERIENCE_VALUE;经验 ;;;;;;;;;;X
+ABONDON_OK;好的 ;;;;;;;;;;X
+ABONDON_CANCEL;取消 ;;;;;;;;;;X
+ABONDON_DOCTRINE_Q2;你真的要放弃%s？ ;;;;;;;;;;X
+DIW_OFFENSIVE;提供%d天攻势需要的补给 ;;;;;;;;;;X
+RCDM_MERGE_TRADE_AGREEMENT;合并同%s的所有交易 ;;;;;;;;;;X
+RCDM_MERGE_TRADE_AGREEMENT_ALL;合并同所有国家的交易 ;;;;;;;;;;X
+#EOF;;;;;;;;;;;x

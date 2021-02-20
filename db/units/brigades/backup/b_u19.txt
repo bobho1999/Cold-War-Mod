@@ -1,0 +1,20 @@
+land_unit_type = 1
+# 0 - 58年型美軍重裝師
+model = {
+	cost 				= 13.5
+	buildtime	 		= 105
+	manpower 			= 3
+	maxspeed 			= 1
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -20
+	airdefence				= 5
+	softattack			= 24
+	hardattack			= 10
+	airattack			= 4
+	artillery_bombardment		= 12
+	supplyconsumption 	= 1.2
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}

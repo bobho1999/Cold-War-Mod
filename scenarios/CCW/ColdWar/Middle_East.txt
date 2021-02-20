@@ -1,0 +1,515 @@
+#阿富汗
+################
+#自由派运动
+#############################################
+event = {
+  id = 106000
+  random = no
+  country = AFG
+  
+  name = "自由派运动 " 
+  desc = "1950年4月，喀布尔大学成立学生会，9月提出了新闻自由的要求。 1951年4月，阿富汗通过新的出版规定，允许发行私人报刊，取消 新闻检查。由于民主运动的高涨对政府造成威胁，政府逐渐取消 自由派政策，查禁新的报刊和政党。自由派运动最终宣告失败。 "
+  style = 0
+  picture = "events_empty"
+  
+  trigger = {
+    government = fascist
+  } 
+  date = { day = 12 month = april  year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "必须压制自由主义 "
+    ai_chance = 90
+    command = { type = dissent value = 5 }
+    command = { type = domestic which = freedom value = -1 }
+  }
+  action_b = {
+    name = "自由主义未尝不可 "
+    ai_chance = 10
+    command = { type = dissent value = 10 }
+    command = { type = domestic which = freedom value = 1 }
+    command = { type = domestic which = democratic value = 1 }
+  }
+}
+################
+#达乌德政府建立
+#############################################
+event = {
+  id = 106001
+  random = no
+  country = AFG
+  
+  name = "达乌德政府建立 " 
+  desc = "阿富汗自马茂德执政以来六年，面临严重的政治、经济问题，导 致中央政府内部混乱。1953年9月7日，达乌德亲王联合其他王室 成员发动政变，推翻马茂德政府，20日正式就任首相。 "
+  style = 0
+#  picture = "达乌德"
+  
+  trigger = {
+    government = fascist
+    headofgovernment = 54024
+  } 
+  date = { day = 6 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "建立新的政府 "
+    command = { type = headofgovernment which = 54082  }
+    command = { type = sleepminister which = 54024 }
+    command = { type = sleepminister which = 54006 }
+    command = { type = sleepminister which = 54060 }
+  }
+}
+#伊拉克
+################
+#港口工人罢工
+#############################################
+event = {
+  id = 110000
+  random = no
+  country = IRQ
+  
+  name = "港口工人罢工 " 
+  desc = "1952年8月，伊拉克共产党组织巴士拉的港口工人举行罢工，要求 政府增加工资，改善住房和工作环境。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+  } 
+  date = { day = 21 month = august  year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "可恶 "
+    command = { type = dissent value = 5 }
+  }
+}
+################
+#军人政府
+#############################################
+event = {
+  id = 110001
+  random = no
+  country = IRQ
+  
+  name = "军人政府 " 
+  desc = "1952年11月23日，武装部队总参谋长努尔丁·马哈茂德发动政变， 在巴格达实行军事管制，解散政党，囚禁政党领导人，关闭新闻 机构，实行宵禁。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+    headofgovernment = 91184
+  } 
+  date = { day = 22 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "全面军事管制 "
+    command = { type = dissent value = 10 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = domestic which = freedom value = -1 }
+    command = { type = headofgovernment which = 91183 }
+  }
+}
+################
+#议会选举
+#############################################
+event = {
+  id = 110002
+  random = no
+  country = IRQ
+  
+  name = "议会选举 " 
+  desc = "1953年1月29日，伊拉克议会选举结束，努里·赛义德领导的宪政 联盟党获胜，贾米勒·米德法伊就任首相，努里·赛义德出任国 防大臣，军人政府自行解散。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+    event = 90001
+    headofgovernment = 91183
+  } 
+  date = { day = 28 month = january year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "欢迎新政府 "
+    command = { type = dissent value = -5 }
+    command = { type = domestic which = democratic value = 1 }
+    command = { type = domestic which = freedom value = 1 }
+    command = { type = headofgovernment which = 91176 }
+    command = { type = chiefofarmy which = 91149 }
+  }
+}
+################
+#伊拉克工业发展
+#############################################
+event = {
+  id = 110003
+  random = no
+  country = IRQ
+  
+  name = "伊拉克工业发展 " 
+  desc = "1950年以后，由于石油工业的大幅发展，伊拉克积累了许多资金。 政府成立开发局，实行发展计划。1950年，颁布了奖励工业法。 伊拉克工业得到了发展，但在总经济中比例仍较低。 "
+  style = 0
+  
+  trigger = {
+    atwar = no
+  } 
+  date = { day = 15 month = may year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的工业得到了发展 "
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = construct which = ic where = 1866 value = 2 }
+    command = { type = construct which = ic where = 1823 value = 1 }
+  }
+}
+#约旦
+################
+#阿卜杜拉国王遇刺
+#############################################
+event = {
+  id = 115000
+  random = no
+  country = JOR
+  
+  name = "阿卜杜拉国王遇刺 " 
+  desc = "1951年七月二十日，阿卜杜拉国王在耶路撒冷的阿克萨清真寺遇 刺身亡。纳伊夫殿下担任摄政王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 556001
+  } 
+  date = { day = 19 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "哀悼 "
+    command = { type = dissent value = -1 }
+    command = { type = headofstate which = 556012 }
+    command = { type = sleepminister which = 556001 }
+    command = { type = sleepminister which = 556008 }
+  }
+}
+################
+#塔拉勒一世继承王位
+#############################################
+event = {
+  id = 115001
+  random = no
+  country = JOR
+  
+  name = "塔拉勒一世继承王位 " 
+  desc = "1951年九月五日，阿卜杜拉之子塔拉勒一世继承王位。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 556012
+  } 
+  date = { day = 4 month = september year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "新的国王 "
+    command = { type = dissent value = -1 }
+    command = { type = headofstate which = 556011 }
+  }
+}
+################
+#约旦1952年宪法
+#############################################
+event = {
+  id = 115002
+  random = no
+  country = JOR
+  
+  name = "1952年宪法 " 
+  desc = "1952年1月1日，塔拉勒一世国王颁布约旦1952年宪法。宪法规定 约旦实行君主立宪制，国王有权颁布法律、任免首相、解散议会 和统率部队；议会实行两院制，上院议员由国王任命，下院议员 选举产生。首相和内阁对议会负责。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 556011
+    not = { government = communist }
+  } 
+  date = { day = 30 month = december year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的新宪法 "
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = democratic value = 1 }
+  }
+}
+#黎巴嫩
+################
+#美国的援助
+#############################################
+event = {
+  id = 105000
+  random = no
+  country = LEB
+  
+  name = "美国的援助 " 
+  desc = "1953年，美国向黎巴嫩提供600万美元的军事援助和经济援助，目 的则是拉拢黎巴嫩，控制黎巴嫩。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+  } 
+  date = { day = 10 month = may year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    ai_chance = 90
+    name = "接受美国的援助 "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = USA value = 15 }
+    command = { type = money value = 100 }
+  }
+  action_b = {
+    ai_chance = 10
+    name = "不接受帝国主义的东西 "
+    command = { type = dissent value = -2 }
+    command = { type = relation which = USA value = -30 }
+  }
+}
+#沙特阿拉伯
+################
+#关于石油的新法令
+#############################################
+event = {
+  id = 101000
+  random = no
+  country = SAU
+  
+  name = "关于石油的新法令 " 
+  desc = "1950年1月1日，沙特政府颁布新法令，规定实行五五分成制原则， 要求在其境内开采石油的外国公司支付全部利润的二分之一作为 所得税。这大大提高了沙特的石油所得。 "
+  style = 0
+  
+  trigger = {
+    atwar = no
+  } 
+  date = { day = 30 month = december  year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "这个法令可以提高我们的收入 "
+    ai_chance = 95
+    command = { type = dissent value = -1 }
+    command = { type = relation which = USA value = -5 }
+    command = { type = money value = 100 }
+  }
+  action_b = {
+    name = "不要惹毛美国人 "
+    ai_chance = 5
+    command = { type = dissent value = 10 }
+    command = { type = relation which = USA value = 10 }
+  }
+}
+################
+#沙特王国内阁成立
+#############################################
+event = {
+  id = 101001
+  random = no
+  country = SAU
+  
+  name = "沙特王国内阁成立 " 
+  desc = "1953年11月9日，伊本·沙特弥留之际，授意成立大臣会议，指定 王储沙特出任大臣会议首相。沙特王国内阁政治开始。 "
+  style = 0
+  
+   trigger = {
+    headofstate = 63001
+  } 
+  date = { day = 8 month = november year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "建立内阁 "
+    command = { type = headofstate which = 63067 }
+    command = { type = headofgovernment which = 63002 }
+    command = { type = sleepminister which = 63001 }
+    command = { type = sleepminister which = 63066 }
+  }
+} 
+################
+#石油工人罢工
+#############################################
+event = {
+  id = 101002
+  random = no
+  country = SAU
+  
+  name = "石油工人罢工 " 
+  desc = "1953年10月，东部油田约两万名工人举行罢工，迫使阿拉伯美国 石油公司作出让步，承诺增加工资12%~20%并初步改善石油工 人的劳动环境和生活环境，并要求工会具有合法地位。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+  } 
+  date = { day = 4 month = october year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "不能承认他们的合法地位 "
+    command = { type = dissent value = 5 }
+  }
+} 
+#叙利亚
+################
+#我们发生了军事政变
+#############################################
+event = {
+  id = 200000
+  random = no
+  country = SYR
+  
+  name = "我们发生了军事政变 " 
+  desc = "1949年12月，来自哈马的军官阿迪卜·什沙克里少将发动第三次 军事政变，逮捕第二次发动军事政变的军官穆罕默德·萨米·辛 纳维。由民族党领导人哈立德·阿兹姆出任总理。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+    headofgovernment = 528066
+  } 
+  date = { day = 27 month = december year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "组建新政府 "
+    command = { type = dissent value = 5 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = domestic which = freedom value = -1 }
+    command = { type = headofgovernment which = 528063 }
+  }
+}
+################
+#叙利亚宪法
+#############################################
+event = {
+  id = 200001
+  random = no
+  country = SYR
+  
+  name = "叙利亚宪法 " 
+  desc = "1950年5月，叙利亚颁布了独立后第一部正式宪法，这是一部具有 资产阶级民主共和制性质的宪法，确立了议会民主共和政体。之 后的宪法多以此宪法为蓝本。 "
+  style = 0
+  
+  trigger = {
+    not = { government = communist }
+  } 
+  date = { day = 11 month = may year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "颁布新宪法！ "
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = democratic value = 1 }
+  }
+}
+################
+#中东司令部——叙利亚
+#############################################
+event = {
+  id = 200002
+  random = no
+  country = SYR
+  
+  name = "中东司令部 " 
+  desc = "1951年10月14日，美、英、法、土四国向埃及政府提出设立中东 司令部的建议。以后还将该建议送交叙利亚、黎巴嫩、伊拉克、 沙特阿拉伯、约旦、也门和以色列等国政府。建议的主要内容是 要求中东各国将其军队统一隶属于一个所谓“联合司令部”，同 时将其军事基地、交通工具、港口及其他及军事设施提供给“联 合司令部”自由支配。 "
+  style = 0
+  
+  
+  action_a = {
+    ai_chance = 90
+    name = "不接受屈辱 "
+    command = { type = dissent value = -2 }
+    command = { type = relation which = FRA value = -10 }
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = TUR value = -10 }
+    command = { type = relation which = ENG value = -10 }
+    command = { type = domestic which = interventionism value = -1 }
+  }
+  action_b = {
+    ai_chance = 10
+    name = "接受建议 "
+    command = { type = dissent value = 10 }
+    command = { type = relation which = FRA value = 10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = TUR value = 10 }
+    command = { type = relation which = ENG value = 10 }
+  }
+}
+################
+#我们发生了军事政变
+#############################################
+event = {
+  id = 200003
+  random = no
+  country = SYR
+  
+  name = "我们发生了军事政变 " 
+  desc = "1951年11月19日，施舍克里第二次发动政变，从幕后走上前台， 建立了长达三年的独裁统治。施舍克里无视1950年宪法，废除宪 政体制，并驱赶总统阿塔西，实行党禁。 "
+  style = 0
+
+  trigger = {
+    not = { government = communist }
+    headofstate = 528012
+  } 
+  date = { day = 18 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  
+  action_a = {
+    name = "新的军人政府…… "
+    command = { type = dissent value = 5 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = domestic which = freedom value = -1 }
+  }
+}
+################
+#1953年宪法
+#############################################
+event = {
+  id = 200004
+  random = no
+  country = SYR
+  
+  name = "1953年宪法 " 
+  desc = "1953年7月，施舍克里为了获得宪法上的合法性，制定了1953年宪 法，经过所谓全民公投通过。该宪法大部分移植自1950年宪法， 但总统选举改为直接选举。之后，施舍克里以唯一总统候选人身 份担任总统。 "
+  style = 0
+
+  trigger = {
+    not = { government = communist }
+    headofstate = 528061
+  } 
+  date = { day = 30 month = june year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  
+  action_a = {
+    name = "新宪法和新总统 "
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = headofstate which = 528062 }
+  }
+}

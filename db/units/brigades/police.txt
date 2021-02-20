@@ -1,0 +1,130 @@
+land_unit_type = 1
+# 0 - 18型宪兵营 
+model = {
+	cost 				= 1
+	buildtime	 		= 40
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 1
+	suppression			= 4
+	supplyconsumption 	= 0.13
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 27型宪兵营 
+model = {
+	cost 				= 1.5
+	buildtime	 		= 45
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 1
+	suppression			= 6
+	supplyconsumption 	= 0.15
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 36型宪兵营 
+model = {
+	cost 				= 1.5
+	buildtime	 		= 50
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 1
+	suppression			= 7
+	supplyconsumption 	= 0.17
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 40型宪兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 55
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 8
+	supplyconsumption 	= 0.19
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 50型宪兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 60
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 9
+	supplyconsumption 	= 0.21
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 60型宪兵营 
+model = {
+	cost 				= 2.5
+	buildtime	 		= 65
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 10
+	supplyconsumption 	= 0.23
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 70型宪兵营 
+model = {
+	cost 				= 3
+	buildtime	 		= 70
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 11
+	supplyconsumption 	= 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 80型宪兵营 
+model = {
+	cost 				= 3.5
+	buildtime	 		= 75
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 12
+	supplyconsumption 	= 0.27
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 90型宪兵营 
+model = {
+	cost 				= 4
+	buildtime	 		= 80
+	manpower 			= 2
+	defaultorganisation = 5
+	defensiveness 		= 1
+	toughness 			= 2
+	suppression			= 12
+	supplyconsumption 	= 0.29
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 -  
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	defaultorganisation = 5
+	suppression			= 12
+	softattack			= 8
+	supplyconsumption 	= 1.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

@@ -1,0 +1,19 @@
+# Italy vs Greece AI File by Lothos 
+#（Civdemof: 希腊战争开始后，同时恢复卫戍AI)
+
+max_garrison_prop = 0.50
+min_garrison_prop = 0.30
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+
+	defend_overseas_beaches = yes
+
+	home_multiplier 	= 0.7
+	overseas_multiplier = 0.7
+
+	province_priorities = {	}
+	area_multiplier = { }
+}

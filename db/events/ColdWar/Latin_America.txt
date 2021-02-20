@@ -1,0 +1,1317 @@
+#阿根廷
+################
+#查封自由派报纸
+#############################################
+event = {
+  id = 81500
+  random = no
+  country = ARG
+
+  name = "查封自由派报纸 " 
+  desc = "由于庇隆政权牺牲农业来推进工业化，导致国内粮食产量严重不 足，肉类已经无法供应，小麦也将被迫进口。而广泛宣传农业崩 溃、工人罢工和政府暴力行为的自由派报刊严重侵害了庇隆政权 的利益。1951年4月，庇隆以“不爱国”之类的罪名查封了数百家 自由派报刊。 "
+  style = 0
+  picture = "庇隆主义"
+
+  trigger = {  
+    government = communist
+    headofstate = 35044
+  }
+ 
+  date = { day = 10 month = april year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "必须查封这些帝国主义的喉舌 "
+    command = { type = dissent value = 3 }
+    command = { type = domestic which = freedom value = -1 }
+  }
+}
+################
+#吸引外资
+#############################################
+event = {
+  id = 81501
+  random = no
+  country = ARG
+
+  name = "吸引外资 " 
+  desc = "农业的崩溃、第一个五年计划导致的经济储备耗尽使第二届庇隆 政府陷入严重的财政危机，为了解决危机，庇隆采取了吸引外资 的政策。在1953年，他出台了一项法律，法律规定投资者在投资 两年后，每年可把不超过百分之八的利润转移出国；十年后资本 可以以百分之十到二十的比率汇回本国。这一政策赢得了欧洲国 家的普遍欢迎。 "
+  style = 0
+  picture = "events_empty"
+  trigger = {  
+    government = communist
+    headofstate = 35044
+  }
+ 
+  date = { day = 20 month = december year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "靠外资来解决我们的财政危机 "
+    ai_chance = 95
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = free_market value = 1 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = DFR value = 10 }
+    command = { type = relation which = ITA value = 10 }
+    command = { type = relation which = FRA value = 10 }
+    command = { type = relation which = SCH value = 10 }
+  }
+  action_b = {
+    name = "宁愿忍受财政危机也不接受帝国主义的资本 "
+    ai_chance = 5
+    command = { type = dissent value = 5 }
+  }
+}
+################
+#第二届庇隆政府
+#############################################
+event = {
+  id = 81502
+  random = no
+  country = ARG
+
+  name = "第二届庇隆政府 " 
+  desc = "通过逮捕反对党人，封杀自由派报纸，利用法律禁止反对党的选 举活动，诉诸民族主义，庇隆在1951年秋的选举中获胜，成功连 任总统。 "
+  style = 0
+  picture = "庇隆主义"
+
+  trigger = {  
+    government = communist
+    headofstate = 35044
+  }
+ 
+  date = { day = 15 month = august year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "庇隆的连任…… "
+    command = { type = dissent value = 2 }
+  }
+}
+#玻利维亚
+################
+#玻利维亚革命
+#############################################
+event = {
+  id = 82500
+  random = no
+  country = BOL
+
+  name = "玻利维亚革命 " 
+  desc = "1951年总统大选,玻利维亚民族主义革命运动提名佩斯·埃斯登 索罗为总统候选人，在工农民主力量支持下，他当选为总统。但 乌戈·罗哈斯政府却将政权移交给军人执政委员会。1952年4月11 日，在工农群众支持下，民族主义革命运动推翻罗哈斯军事独裁 统治，夺取政权，佩斯·埃斯登索罗就任总统。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 43224
+    event = 82501
+  }
+ 
+  date = { day = 11 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "建立民主的左翼政府！ "
+    command = { type = headofstate which = 43229 }
+    command = { type = headofgovernment which = 43225 }
+    command = { type = set_domestic which = democratic value = 7 }
+    command = { type = set_domestic which = political_left value = 7  }
+    command = { type = dissent value = -10 }
+  }
+}
+################
+#反政府暴动
+#############################################
+event = {
+  id = 82501
+  random = no
+  country = BOL
+
+  name = "反政府暴动 " 
+  desc = "1952年4月9日，由于军政府长期的专制政策导致社会不满增加、政府威信下降，民族主义革命运动利用政治特赦之机，鼓动内政部长，发起了反政府暴动。工人、矿工、警察组成统一战线，与政府军展开三天的激战。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 43224
+    not = { government = communist }
+  }
+ 
+  date = { day = 8 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "军政府日薄西山…… "
+    command = { type = dissent value = 15 }
+  }
+}
+################
+#矿山国有化
+#############################################
+event = {
+  id = 82502
+  random = no
+  country = BOL
+
+  name = "矿山国有化 " 
+  desc = "1952年10月31日，帕斯·埃斯登索罗签署了矿山国有化文件。当 晚，举国上下一片欢腾。这次国有化是帕斯·埃斯登索罗执政期 间采取的最重要的政治行动，也是他获得民众支持的最重要原因。 这次国有化侵犯了美国、瑞士和智利三家操控玻利维亚锡矿的公 司的利益。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 43230
+  }
+ 
+  date = { day = 30 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "这是民族主义革命的重要措施 "
+    command = { type = dissent value = -5 }
+    command = { type = domestic which = political_left value = 1 }
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = SCH value = -5 }
+    command = { type = relation which = CHL value = -5 }
+  }
+}
+################
+#全国土地改革法
+#############################################
+event = {
+  id = 82503
+  random = no
+  country = BOL
+
+  name = "全国土地改革法 " 
+  desc = "为了赢得被侵占土地的印第安人的支持，玻利维亚政府于1953年 8月2日签署了全国土地改革法。印第安农奴获得了解放，获得了 他们被侵占的土地。随着农业技术、生产方式的发展，玻利维亚 农业产量也得到了提高。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 43230
+  }
+ 
+  date = { day = 1 month = august year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "保护印第安农民的权益对我们有很多益处 "
+    command = { type = dissent value = -2 }
+    command = { type = industrial_modifier which = supplies value = 2 }
+  }
+}
+################
+#美国援助玻利维亚——美国
+#############################################
+event = {
+  id = 82504
+  random = no
+  country = USA
+
+  name = "美国援助玻利维亚 " 
+  desc = "由于玻利维亚民族主义革命的发展，美国不希望玻利维亚走向共 产主义。作为资本主义世界的领袖，美国认为，对于民族主义革 命，拉拢比反对更加有效。援助玻利维亚也有助于给美国塑造一 个良好的形象。 "
+  style = 0
+
+  trigger = {  
+    not = { government = communist }
+    ispuppet = USA
+    ispuppet = BOL
+    event = 82500
+  }
+ 
+  date = { day = 7 month = november year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1966 }
+
+  action_a = {
+    name = "援助玻利维亚民族主义者 "
+    ai_chance = 90
+    command = { type = relation which = BOL value = 20 }
+    command = { type = money value = -100 }
+    command = { type = trigger which = 82505 }
+    command = { type = sleepevent which = 82506 }
+  }
+  action_b = {
+    name = "不能给左翼分子以任何支持 "
+    ai_chance = 10
+    command = { type = relation which = BOL value = -20 }
+    command = { type = trigger which = 82506 }
+    command = { type = sleepevent which = 82505 }
+  }
+}
+################
+#美国援助玻利维亚Y——玻利维亚
+#############################################
+event = {
+  id = 82505
+  random = no
+  country = BOL
+
+  name = "美国援助玻利维亚 " 
+  desc = "为了让我们亲近他们，美国人给了我们大量的经济援助，并帮助 我们建设公共设施、发展农业和教育。 "
+  style = 0
+  
+
+  action_a = {
+    name = "好极了！ "
+    command = { type = money value = 100 }
+  }
+}
+################
+#美国援助玻利维亚N——玻利维亚
+#############################################
+event = {
+  id = 82506
+  random = no
+  country = BOL
+
+  name = "美国拒绝援助玻利维亚 " 
+  desc = "美国人认为我们的民族主义革命侵犯了他们的利益，因此拒绝给 我们经济援助。看来苏联人更加靠谱一点。 "
+  style = 0
+  
+
+  action_a = {
+    name = "亲近苏联人吧 "
+    command = { type = relation which = SOV value = 10 }
+  }
+}
+#巴西
+################
+#巴西工业化计划
+#############################################
+event = {
+  id = 82000
+  random = no
+  country = BRA
+
+  name = "巴西工业化计划 " 
+  desc = "瓦尔加斯为了推进他的工业化纲领，制定了一个五年计划。他通 过获得美国的贷款，与美国建立巴美经济联合开发委员会，来发 展巴西各地的工业和资源开发。在这次工业化中，许多南美洲的 先进工厂得以建立。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 34195
+    not = { government = communist }
+    atwar = no
+  }
+ 
+  date = { day = 14 month = june year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "大力发展我国的工业 "
+    command = { type = dissent value = -1 }
+    command = { type = add_prov_resource which = 885 value = 3 where = metal }
+    command = { type = add_prov_resource which = 886 value = 1 where = oil }
+    command = { type = industrial_modifier which = total value = 2 }
+  }
+}
+################
+#工业化计划带来的问题
+#############################################
+event = {
+  id = 82001
+  random = no
+  country = BRA
+
+  name = "工业化计划带来的问题 " 
+  desc = "巴西工业化大大提高了巴西的工业能力。但由于资金来源于向美 国的借款，加上国内人口众多，国家开销大、欠款多。1953年中， 瓦尔加斯任命奥斯瓦尔多·阿拉尼亚为财政部长，帮助其进行节 约计划，努力还清债务。但这未能解决巴西严重的经济问题…… "
+  style = 0
+
+  trigger = {  
+    headofstate = 34195
+    not = { government = communist }
+    event = 82000
+  }
+ 
+  date = { day = 20 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "严重的财政危机…… "
+    command = { type = dissent value = 5 }
+    command = { type = resource which = money value = -1000 }
+    command = { type = resource which = supplies value = -1000 }
+    command = { type = armamentminister which = 34209 }
+  }
+}
+#中美洲
+################
+#尼加拉瓜新宪法
+#############################################
+event = {
+  id = 88500
+  random = no
+  country = NIC
+
+  name = "尼加拉瓜新宪法 " 
+  desc = "1950年11月，索摩查颁布了一个新宪法，在一项规定少数党议席 的条款中，规定少数党至少可以获得三分之一的席位，此外，在 外交使节和最高法院人选上也有名额。另一项则规定延长总统任 期到六年。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 48033
+    not = { government = communist }
+  }
+ 
+  date = { day = 7 month = november year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "新的宪法！ "
+    command = { type = dissent value = 2 }
+    command = { type = industrial_modifier which = supplies value = 5 }
+  }
+}
+################
+#征收大地产
+#############################################
+event = {
+  id = 88501
+  random = no
+  country = GUA
+
+  name = "征收大地产 " 
+  desc = "1952年，阿本斯政府开始进行征收大地产以分配给印第安农民的 立法措施。1952年8月，政府分配了第二次世界大战中从德国那里 夺回的土地。1953年，它没收了联合果品公司在太平洋沿岸的土 地。这一举措大大惹恼了美国。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 46084
+    atwar = no
+  }
+ 
+  date = { day = 5 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "征收大地产 "
+    ai_chance = 90
+    command = { type = dissent value = -2 }
+    command = { type = domestic	which = political_left value = 1 }
+    command = { type = relation which = USA value = -15 }
+  }
+  action_b = {
+    name = "不要惹恼美国…… "
+    ai_chance = 10
+    command = { type = dissent value = 5 }
+    command = { type = domestic	which = political_left value = -1 }
+  }
+}
+################
+#洪都拉斯的交通计划
+#############################################
+event = {
+  id = 88502
+  random = no
+  country = HON
+
+  name = "洪都拉斯的交通计划 " 
+  desc = "为了推动洪都拉斯的经济现代化，洪都拉斯政府首先认识到了交 通问题。1951年订立计划，在特古西加尔巴和圣佩德罗修建公路。 1952年，又推进了这个计划。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+  }
+ 
+  date = { day = 12 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "建设交通是让我们现代化的好途径 "
+    command = { type = dissent value = -1 }
+    command = { type = construct which = 5 where = 760 value = 15 }
+    command = { type = construct which = 5 where = 3944 value = 15 }
+  }
+}
+################
+#萨尔瓦多的贸易
+#############################################
+event = {
+  id = 88503
+  random = no
+  country = SAL
+
+  name = "萨尔瓦多的贸易 " 
+  desc = "萨尔瓦多在1951年，同美国签订了“第四点计划”协定，从美国 方面获取援助。同时和墨西哥、尼加拉瓜、哥斯达黎加签订了自 由贸易协定。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+    not = { government = communist }
+  }
+ 
+  date = { day = 7 month = april year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "发展和美洲国家的贸易 "
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = MEX value = 10 }
+    command = { type = relation which = NIC value = 10 }
+    command = { type = relation which = COS value = 10 }
+    command = { type = resource which = money value = 1500 }
+    command = { type = resource which = supplies value = 1500 }
+  }
+}
+################
+#哥斯达黎加新宪法
+#############################################
+event = {
+  id = 88504
+  random = no
+  country = COS
+
+  name = "哥斯达黎加新宪法 " 
+  desc = "1949年11月8日，哥斯达黎加颁布新宪法。允许妇女进行选举，选 举年龄降到18岁等等。同时采取改革，宣布共产党非法，哥斯达 黎加对海岸二百海里大陆架拥有主权，解散哥斯达黎加军队。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+    not = { government = communist }
+  }
+ 
+  date = { day = 7 month = november year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "欢迎新宪法！ "
+    command = { type = dissent value = -2 }
+    command = { type = domestic	which = political_left value = -1 }
+    command = { type = domestic	which = democratic value = 1 }
+    command = { type = remove_division which = -1 }
+    command = { type = remove_division which = -1 }
+  }
+}
+################
+#前总统的号召
+#############################################
+event = {
+  id = 88505
+  random = no
+  country = PAN
+
+  name = "前总统的号召 " 
+  desc = "由于阿里亚斯打着反共旗号向议会要求独裁权力，1950年4月巴拿 马六位前总统发表联合声明，号召全国进行总罢工。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 95034
+    not = { government = communist }
+  }
+ 
+  date = { day = 15 month = april year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "全国总罢工？！ "
+    command = { type = dissent value = 10 }
+  }
+}
+################
+#阿里亚斯下台
+#############################################
+event = {
+  id = 88506
+  random = no
+  country = PAN
+
+  name = "阿里亚斯下台 " 
+  desc = "1951年5月9日，与阿里亚斯的对抗活动达到高潮，反对者发动政 变，阿里亚斯下台。国民议会挑选的阿尔恰比德斯·阿罗塞梅纳 担任总统。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 95034
+    not = { government = communist }
+  }
+ 
+  date = { day = 8 month = may year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "法西斯分子终于下台了！ "
+    command = { type = dissent value = -5 }
+    command = { type = headofstate which = 95096 }
+    command = { type = headofgovernment which = 95095 }
+    command = { type = sleepminister which = 95037 }
+    command = { type = sleepminister which = 95034 }
+  }
+}
+#智利
+################
+#智利美国互助公约
+#############################################
+event = {
+  id = 102500
+  random = no
+  country = CHL
+
+  name = "智利美国互助公约 " 
+  desc = "1952年4月，智利同美国签订了互助公约，智利向美国提供资源， 美国则向智利提供贷款和军需品。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 44033
+    not = { government = communist }
+    atwar = no
+  }
+ 
+  date = { day = 5 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "好极了！ "
+    ai_chance = 85
+    command = { type = relation which = USA value = 10 }
+    command = { type = metalpool value = -500 }
+    command = { type = energypool value = -1000 }
+    command = { type = supplies value = 600 }
+  }
+  action_b = {
+    name = "我们没有足够的资源…… "
+    ai_chance = 15
+    command = { type = relation which = USA value = -5 }
+  }
+}
+################
+#保卫民主法
+#############################################
+event = {
+  id = 102501
+  random = no
+  country = CHL
+
+  name = "保卫民主法 " 
+  desc = "1950年4月，为了防止共产党的势力过分扩张，智利决定通过“保卫民主法”立法遏制共产主义势力发展。本法对于社会方面更有意义的是，赋予了妇女进行全国投票的权利。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 44033
+    not = { government = communist }
+    atwar = no
+  }
+ 
+  date = { day = 5 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "不能让共产党太嚣张！ "
+    ai_chance = 90
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = SOV value = -10 }
+    command = { type = domestic	which = political_left value = -1 }
+    command = { type = domestic	which = freedom value = -1 }
+    command = { type = dissent value = 5 }
+  }
+  action_b = {
+    name = "不可以惹到左翼势力 "
+    ai_chance = 10
+    command = { type = relation which = USA value = -10 }
+    command = { type = dissent value = 8 }
+    command = { type = domestic	which = freedom value = 1 }
+  }
+}
+################
+#智利总统大选
+#############################################
+event = {
+  id = 102502
+  random = no
+  country = CHL
+
+  name = "智利总统大选 " 
+  desc = "1952年的选举中，社会党和妇女平权党均支持人民社会党候选人 卡洛斯·伊巴涅斯。伊巴涅斯要求废除“保卫民主法”，同俄国 建交，密切同阿根廷的关系，修改同美资的铜矿协定。这一看起 来很有变革意义的政纲赢得了大多数支持。1952年11月3日，卡洛 斯·伊巴涅斯就任总统。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 44033
+    not = { government = communist }
+  }
+ 
+  date = { day = 2 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "欢迎新总统 "
+    command = { type = headofstate which = 44035 }
+    command = { type = headofgovernment which = 44156 }
+  }
+}
+################
+#智利阿根廷五人委员会——智利
+#############################################
+event = {
+  id = 102503
+  random = no
+  country = CHL
+
+  name = "智利阿根廷五人委员会 " 
+  desc = "1953年7月8日，智利同阿根廷商定了一个条约，号召两国更好地 合作。根据该条约，一个由智利人和阿根廷人组成的五人委员会 将开始研究两国经济互为补充的方法。条约建议调节过高的关税 和赋税，建议修改外汇条例以便于支付，放松对疆界自由交易的 管制，改进交通运输、建立自由港。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 44035
+    not = { government = communist }
+    atwar = no
+  }
+ 
+  date = { day = 7 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "这是一个很好的条约！ "
+    ai_chance = 90
+    command = { type = relation which = ARG value = 10 }
+    command = { type = trigger which = 102504 }
+  }
+  action_b = {
+    name = "用不着和阿根廷人互助 "
+    ai_chance = 10
+    command = { type = relation which = ARG value = -10 }
+  }
+}
+################
+#智利阿根廷五人委员会——阿根廷
+#############################################
+event = {
+  id = 102504
+  random = no
+  country = ARG
+
+  name = "智利阿根廷五人委员会 " 
+  desc = "1953年7月8日，智利同阿根廷商定了一个条约，号召两国更好地 合作。根据该条约，一个由智利人和阿根廷人组成的五人委员会 将开始研究两国经济互为补充的方法。条约建议调节过高的关税 和赋税，建议修改外汇条例以便于支付，放松对疆界自由交易的 管制，改进交通运输、建立自由港。 "
+  style = 0
+
+
+  action_a = {
+    name = "这是一个很好的条约！ "
+    ai_chance = 90
+    command = { type = relation which = CHL value = 10 }
+  }
+  action_b = {
+    name = "不需要和智利人浪费时间 "
+    ai_chance = 10
+    command = { type = relation which = CHL value = -20 }
+  }
+}
+#哥伦比亚
+################
+#戈麦斯总统就职
+#############################################
+event = {
+  id = 87000
+  random = no
+  country = COL
+
+  name = "戈麦斯总统就职 " 
+  desc = "1950年8月7日，戈麦斯总统就职。保守党的独裁统治得以延续， 而自由党的农庄主也对压制自己的保守党人加强了警惕，甚至组 织了武装。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 37038
+    not = { government = communist }
+  }
+ 
+  date = { day = 6 month = august year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "保守党的人又上台了…… "
+    command = { type = dissent value = 15 }
+    command = { type = domestic	which = democratic value = -1 }
+    command = { type = domestic	which = freedom value = -1 }
+  }
+}
+################
+#将军的呼吁书
+#############################################
+event = {
+  id = 87001
+  random = no
+  country = COL
+
+  name = "将军的呼吁书 " 
+  desc = "1951年10月，二十三位退职的将军签署了一份呼吁书，登在自由 党报纸《时代报》上，要求重建共和国政府，以恢复哥伦比亚的 国际声望。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 37168
+    not = { government = communist }
+  }
+ 
+  date = { day = 12 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "保守党的危机 "
+    command = { type = dissent value = 5 }
+  }
+}
+################
+#戈麦斯患病
+#############################################
+event = {
+  id = 87002
+  random = no
+  country = COL
+
+  name = "戈麦斯患病 " 
+  desc = "1951年11月，戈麦斯总统突然患病，乌达尔尼塔博士暂时代替其 总统职务。这进一步加大了保守党的内部分裂。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 37168
+    not = { government = communist }
+  }
+ 
+  date = { day = 4 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "代理总统上任 "
+    command = { type = headofstate which = 37170 }
+    command = { type = headofgovernment which = 37171 }
+  }
+}
+################
+#政府政令
+#############################################
+event = {
+  id = 87003
+  random = no
+  country = COL
+
+  name = "政府政令 " 
+  desc = "1952年7月，哥伦比亚政府发布政令，政令给予总统任命的省长、 市长任命以前须选举产生的职务的权利。另一政令则旨在镇压大 学生的骚动。政令遭到了美国报纸的斥责。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 37170
+    not = { government = communist }
+  }
+ 
+  date = { day = 1 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "必须加强集权 "
+    command = { type = domestic	which = democratic value = -1 }
+    command = { type = dissent value = 10 }
+    command = { type = relation which = USA value = -5 }
+  }
+}
+################
+#军事政变
+#############################################
+event = {
+  id = 87004
+  random = no
+  country = COL
+
+  name = "军事政变 " 
+  desc = "1953年6月13日，罗雅斯·皮尼拉发动军事政变，在很少对抗的情 况下取得政权。戈麦斯、阿维莱斯两人出亡。总统选举也被推迟 了。新政府多少恢复了出版自由和其他自由，大赦自由党人。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 37170
+    not = { government = communist }
+  }
+ 
+  date = { day = 12 month = june year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "保守党人总算滚蛋了！ "
+    command = { type = domestic	which = democratic value = 1 }
+    command = { type = dissent value = -8 }
+    command = { type = domestic	which = freedom value = 1 }
+    command = { type = headofstate which = 37040 }
+    command = { type = headofgovernment which = 37167 }
+  }
+}
+#古巴
+################
+#巴蒂斯塔上任
+#############################################
+event = {
+  id = 88000
+  random = no
+  country = CUB
+
+  name = "巴蒂斯塔上任 " 
+  desc = "1952年3月10日，在各政党正积极准备选举时，巴蒂斯塔宣称古巴 已经变成一个匪徒国家，发动政变，夺取政权，成为“国家元首”， 允许反对派出亡，但加强对警察、军队、自己的政党、工会的控 制，并且积极与美国交往。 "
+  style = 0
+  picture = "巴蒂斯塔"
+
+  trigger = {  
+    headofstate = 33037
+    not = { government = communist }
+  }
+ 
+  date = { day = 9 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+
+  action_a = {
+    name = "巴蒂斯塔的独裁统治…… "
+    command = { type = dissent value = 5 }
+    command = { type = domestic	which = democratic value = -1 }
+    command = { type = domestic	which = freedom value = -1 }
+  }
+}
+#厄瓜多尔
+################
+#埃斯梅拉达斯火灾
+#############################################
+event = {
+  id = 86500
+  random = no
+  country = ECU
+
+  name = "埃斯梅拉达斯火灾 " 
+  desc = "1951年，埃斯拉达梅斯发生火灾，城市三分之一被烧毁。这对我 们来说真是一个灾难，或许美国人会帮助我们…… "
+  style = 0
+
+  trigger = {  
+    control =  { province = 3782 data = ECU }
+  }
+ 
+  date = { day = 25 month = may year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "指望美国人吧…… "
+    command = { type = construct which = 5 where = 3782 value = -15 }
+    command = { type = trigger which = 86501 }
+  }
+}
+################
+#埃斯梅拉达斯火灾
+#############################################
+event = {
+  id = 86501
+  random = no
+  country = USA
+
+  name = "埃斯梅拉达斯火灾 " 
+  desc = "1951年，埃斯拉达梅斯发生火灾，城市三分之一被烧毁。厄瓜多 尔向我们发出了请求。根据总统的“第四点计划”，我们应当支 援他们。 "
+  style = 0
+
+  action_a = {
+    name = "支援他们！ "
+    ai_chance = 90
+    command = { type = relation which = ECU value = 15 }
+    command = { type = resource which = supplies value = -2000 }
+    command = { type = resource which = money value = -2000 }
+    command = { type = trigger which = 86502 }
+  }
+  action_b = {
+    name = "不好意思，手头紧 "
+    ai_chance = 10
+    command = { type = relation which = ECU value = -15 }
+    command = { type = domestic	which = interventionism value = -1 }
+  }
+}
+################
+#埃斯梅拉达斯火灾
+#############################################
+event = {
+  id = 86502
+  random = no
+  country = ECU
+
+  name = "埃斯梅拉达斯火灾——美国援助 " 
+  desc = "美国同意支援我们了，这真是个好消息！我们可以重建埃斯梅拉 达斯了。 "
+  style = 0
+
+  action_a = {
+    name = "好消息！ "
+    command = { type = relation which = USA value = 10 }
+    command = { type = resource which = supplies value = 2000 }
+    command = { type = resource which = money value = 2000 }
+    command = { type = building_prod_mod which = 5 value = 5 }
+  }
+}
+################
+#厄美军事互助条约
+#############################################
+event = {
+  id = 86503
+  random = no
+  country = ECU
+
+  name = "厄美军事互助条约 " 
+  desc = "1953年6月，厄瓜多尔同美国签订了军事互助条约，这是新总统保 持同美国传统友谊的政策。 "
+  style = 0
+
+  trigger = {  
+    not = { war = { country = ECU country = USA } }
+  }
+ 
+  date = { day = 10 month = june year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "保持同美国的关系！ "
+    command = { type = relation which = USA value = 15 }
+    command = { type = guarantee which = USA where = ECU }
+  }
+}
+#海地 多米尼加共和国
+################
+#我们发生了军事政变
+#############################################
+event = {
+  id = 85700
+  random = no
+  country = HAI
+
+  name = "我们发生了军事政变 " 
+  desc = "埃斯蒂梅总统希望能够修改宪法使其连任，结果造成了1950年的 军事政变。1950年10月，马格卢瓦尔上校发动政变，并于12月6日 正式就任总统。 "
+  style = 0
+
+  trigger = {
+    headofstate = 78035
+  }
+ 
+  date = { day = 5 month = december year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "又一个军政府…… "
+    command = { type = headofstate which = 78114 }
+    command = { type = headofgovernment which = 78043 }
+    command = { type = domestic	which = democratic value = -1 }
+  }
+}
+################
+#好战的多米尼加
+#############################################
+event = {
+  id = 85701
+  random = no
+  country = DOM
+
+  name = "好战的多米尼加 " 
+  desc = "二战后，反对特鲁西略的势力越来越大，尤其在古巴地区组建了 许多反对特鲁西略的组织。1949年11月，特鲁西略指控古巴有人 策划推翻其政权。1950年1月，特鲁西略由议会授权可对任何加勒 比海国家宣战。 "
+  style = 0
+
+  trigger = {
+    headofstate = 49001
+  }
+ 
+  date = { day = 2 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "任何妄图颠覆特鲁西略政权的国家都要遭到报应 "
+    command = { type = domestic	which = freedom value = -1 }
+    command = { type = domestic	which = defense_lobby value = 1 }
+    command = { type = belligerence value = 15 }
+    command = { type = relation which = HAI value = -20 }
+    command = { type = relation which = CUB value = -20 }
+  }
+}
+#巴拉圭
+################
+#经济开发联合委员会
+#############################################
+event = {
+  id = 101500
+  random = no
+  country = PAR
+
+  name = "经济开发联合委员会 " 
+  desc = "巴拉圭社会处于一个极糟糕的情况。一百四十万人口只有四百个医生，约三百个在首都地区。教育上，全国约百分之八十的人口是文盲。为了改善社会状况，查维斯政府设立了经济开发联合委员会，旨在为投资活动提供技术知识。到1953年，该委员会开始对卫生、教育设施建设进行协助。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+    headofstate = 42129
+  }
+ 
+  date = { day = 17 month = may year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "改善我们的国家已经迫在眉睫 "
+    command = { type = dissent value = -2 }
+    command = { type = industrial_modifier which = supplies value = 5 }
+  }
+}
+#秘鲁
+################
+#与巴西的合作条约
+#############################################
+event = {
+  id = 86000
+  random = no
+  country = PRU
+
+  name = "与巴西的合作条约 " 
+  desc = "1953年，奥德利亚访问巴西，商订了一系列条约。指望在彼此接 壤的两国亚马孙河地区互相合作，联合勘探资源，开放自由港， 交换边境人员调查资料。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+    headofstate = 39140
+  }
+ 
+  date = { day = 20 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "要加强与巴西的合作 "
+    command = { type = relation which = BRA value = 10 }
+  }
+}
+################
+#新发现的矿石
+#############################################
+event = {
+  id = 86001
+  random = no
+  country = PRU
+
+  name = "新发现的矿石 " 
+  desc = "1951年7月，秘鲁塔克纳省发现了巨大铜矿，为了它的开发，美国 熔炼公司取得了租让权。而北方的马科纳的铁矿也由一家美国公 司开采。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+  }
+ 
+  date = { day = 14 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "真是个好消息！ "
+    command = { type = relation which = USA value = 5 }
+    command = { type = add_prov_resource which = 3760 value = 3 where = metal }
+    command = { type = add_prov_resource which = 831 value = 2 where = metal }
+  }
+}
+################
+#美国-秘鲁共同防御条约
+#############################################
+event = {
+  id = 86002
+  random = no
+  country = PRU
+
+  name = "美国-秘鲁共同防御条约 " 
+  desc = "1951年，秘鲁同美国签订了共同防御条约，这对于秘鲁的国家安 全是个好消息，同时美国也加强了对秘鲁的控制。两国的贸易往 来也更加密切。 "
+  style = 0
+
+  trigger = {  
+    headofstate = 39140
+  }
+ 
+  date = { day = 24 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "依靠美国人吧 "
+    ai_chance = 90
+    command = { type = relation which = USA value = 10 }
+    command = { type = trigger which = 86003 }
+  }
+  action_b = {
+    name = "不接受帝国主义的庇护 "
+    ai_chance = 10
+    command = { type = relation which = USA value = -20 }
+    command = { type = domestic	which = political_left value = 1 }
+    command = { type = domestic	which = interventionism value = -1 }
+  }
+}
+################
+#美国-秘鲁共同防御条约
+#############################################
+event = {
+  id = 86003
+  random = no
+  country = USA
+
+  name = "美国-秘鲁共同防御条约 " 
+  desc = "1951年，秘鲁同美国签订了共同防御条约，这对于秘鲁的国家安 全是个好消息，同时美国也加强了对秘鲁的控制。两国的贸易往 来也更加密切。 "
+  style = 0
+
+  action_a = {
+    name = "保护秘鲁人是个好选择 "
+    ai_chance = 95
+    command = { type = relation which = PRU value = 10 }
+    command = { type = guarantee which = USA where = PRU }
+  }
+  action_b = {
+    name = "何必庇护秘鲁？ "
+    ai_chance = 5
+    command = { type = relation which = PRU value = -20 }
+    command = { type = domestic	which = interventionism value = -1 }
+  }
+}
+#乌拉圭
+################
+#乌拉圭粮食增长
+#############################################
+event = {
+  id = 85500
+  random = no
+  country = URU
+
+  name = "乌拉圭粮食增长 " 
+  desc = "通过农业技术的改进、联合国粮食组织的援助，乌拉圭在1951年 的粮食产量达到了1941年的两倍，大米产量达到四万五千吨。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+  }
+ 
+  date = { day = 20 month = december year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "我国农业的大发展！ "
+    command = { type = dissent value = -1 }
+    command = { type = industrial_modifier which = supplies value = 5 }
+  }
+}
+################
+#废除总统制
+#############################################
+event = {
+  id = 85501
+  random = no
+  country = URU
+
+  name = "废除总统制 " 
+  desc = "1951年12月16日，乌拉圭人投票赞成按照提议解决行政委员会问 题，统同意修改宪法，废除总统职位，代之以联邦行政会议。这 一举措被认为是乌拉圭民主制度的巨大发展，避免乌拉圭像阿根 廷那样出现庇隆独裁政权的情况。1952年3月1日，联邦行政会议 正式成立。 "
+  style = 0
+
+  trigger = {  
+    atwar = no
+    headofstate = 41099
+  }
+ 
+  date = { day = 30 month = february year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "这是民主的一大进步！ "
+    command = { type = dissent value = -3 }
+    command = { type = domestic which = democratic value = 1 }
+  }
+}
+#委内瑞拉
+################
+#卡洛斯·查尔沃德被刺
+#############################################
+event = {
+  id = 87500
+  random = no
+  country = VEN
+
+  name = "卡洛斯·查尔沃德被刺 " 
+  desc = "1950年11月13日，卡洛斯·查尔沃德被私人仇敌所杀。委员会挑 选了一个文人赫尔曼·苏亚雷斯·弗拉梅里奇代替他，这是一个 政治和外交人物。 "
+  style = 0
+
+  trigger = {
+    headofstate = 38083
+  }
+ 
+  date = { day = 12 month = november year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "选择一个替代者 "
+    command = { type = headofstate which = 38084 }
+    command = { type = sleepminister which = 38083 }
+    command = { type = sleepminister which = 38069 }
+  }
+}
+################
+#军人集团执政
+#############################################
+event = {
+  id = 87501
+  random = no
+  country = VEN
+
+  name = "军人集团执政 " 
+  desc = "1952年12月2日竖起了以马科斯·佩雷斯·希门尼斯为首的清一色 军人集团。制宪大会随即指名佩雷斯为任期五年的总统。接下来 的几个月，委员会放逐了共和民主联盟的成员。 "
+  style = 0
+
+  trigger = {
+    headofstate = 38084
+  }
+ 
+  date = { day = 1 month = december year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "实行军事统治 "
+    command = { type = headofstate which = 38084 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = domestic which = freedom value = -1 }
+    command = { type = dissent value = 5 }
+  }
+}
+################
+#工业与资源开发
+#############################################
+event = {
+  id = 87502
+  random = no
+  country = VEN
+
+  name = "工业与资源开发 " 
+  desc = "委内瑞拉在塞罗玻利瓦尔发现了一座大型铁矿，为了更好地开发 本国的资源，委内瑞拉开发公司于1953年在奥达斯港计划修建钢 铁厂和水力发电厂。 "
+  style = 0
+
+  trigger = {
+    
+  }
+ 
+  date = { day = 7 month = may year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+
+  action_a = {
+    name = "开发我们的资源 "
+    command = { type = resource which = money value = -1500 }
+    command = { type = resource which = supplies value = -1500 }
+    command = { type = add_prov_resource which = 3812 value = 10 where = metal }
+    command = { type = add_prov_resource which = 870 value = 3 where = metal }
+    command = { type = add_prov_resource which = 870 value = 7 where = energy }
+  }
+}

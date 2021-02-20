@@ -1,0 +1,128 @@
+naval_unit_type = 1
+# 0 - Long lance type naval_torpedoes
+model = {
+	cost 				= 2
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.06
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - Oxygen naval_torpedoes
+model = {
+	cost 				= 3
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seadefence			= 0
+	seaattack			= 2
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.08
+	supplyconsumption 		= 0.2
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - Advanced naval_torpedoes
+model = {
+	cost 				= 4
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seadefence			= 0
+	seaattack			= 4
+	convoyattack			= 2
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.10
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - Passive Acoustic naval_torpedoes
+model = {
+	cost 				= 5
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seadefence			= 0
+	seaattack			= 6
+	convoyattack			= 3
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.12
+	supplyconsumption 		= 0.75
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - Wire-guided Acoustic naval_torpedoes
+model = {
+	cost 				= 6
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seadefence			= 0
+	seaattack			= 8
+	convoyattack			= 4
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.14
+	supplyconsumption 		= 1.0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 5 - Active Acoustic naval_torpedoes
+model = {
+	cost 				= 7
+	buildtime			= 180
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seadefence			= 0
+	seaattack			= 10
+	convoyattack			= 5
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.16
+	supplyconsumption 		= 1.25
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+########################################
+

@@ -1,0 +1,132 @@
+# Republic Spain 1936 AI File by Lothos
+
+switch = no # [yes/no]
+max_front_ratio = 1.2
+max_garrison_prop = 0.0
+min_garrison_prop = 0.0
+neutrality = 150
+war = 0
+strat_redeploy_threshold = 30
+exp_force_ratio = 0.750
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+use_offensive_supply = no
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.00 
+}
+military = { 
+	#### Divisions etc...
+	infantry 		= 36
+	cavalry 		= 10
+	motorized 		= 0
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 0
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 10
+	garrison		= 0
+    hq 				= 4
+	militia 		= 20
+#				80 %
+	interceptor 	= 10
+	multi_role 		= 0
+	cas 			= 5
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				20 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 0
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 0
+#				0 %
+
+	#### Brigades
+	artillery 			= 30
+	sp_artillery 		= 0
+	anti_air	= 5
+	sp_rct_artillery 	= 0
+	anti_tank 			= 5
+	tank_destroyer 		= 0
+	light_armor_brigade = 10
+	heavy_armor 		= 0
+	super_heavy_armor 	= 0
+	armored_car 		= 10
+	rocket_artillery 			= 0
+	engineer 				= 10
+	police 			= 15
+	b_u5 = 0
+	b_u8 = 5
+	b_u9 = 5
+	b_u10 = 0
+	b_u11 = 0
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 2.0
+	overseas_multiplier 	= 0.1
+	home_peace_cap 			= 50
+	war_zone_odds 			= 2.0
+	key_point_prio_mult		= 0
+	revolt_risk_mult		= 0
+
+	# PRIORITIES:
+	beach			= 0		# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 0	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		FRA = -1
+		ENG = -1
+		POR = -1
+		SPA = 150
+	}
+	province_priorities = {	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= defensive
+	distrib_vs_human 	= defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+
+   	enemy_handicap = {
+		SPR = 20
+	} 
+   	passivity = {
+		SPR = 85
+	} 
+}

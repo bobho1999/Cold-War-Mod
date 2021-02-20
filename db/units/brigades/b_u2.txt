@@ -1,0 +1,15 @@
+naval_unit_type = 1
+locked = 1
+# Capital Nuclear Propulsion
+
+model = {
+	cost 			= 15
+	buildtime	 	= 600
+	manpower 		= 0
+	maxspeed		= 5
+	range			= 6000
+	supplyconsumption 	= 0
+	fuelconsumption		= 0
+	upgrade_time_factor 	= 1.0
+	upgrade_cost_factor 	= 1.5
+}

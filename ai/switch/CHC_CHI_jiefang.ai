@@ -1,0 +1,18 @@
+# chc 1943 AI File by Tianwen
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	CXB = 90
+	CHI = 200
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= Offensive
+	distrib_vs_human 	= op_defensive
+} 

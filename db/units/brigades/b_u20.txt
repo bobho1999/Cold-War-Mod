@@ -1,0 +1,148 @@
+naval_unit_type = 1
+# 0 - Early Capital Missile System
+model = {
+	cost 				= 6
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 6
+	convoyattack			= 6
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 4
+	range						= 40
+	distance			= 0.5
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 1 - Basic Capital Missile System
+model = {
+	cost 				= 6.5
+	buildtime			= 160
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 7
+	convoyattack			= 7
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 5
+	range						= 80
+	distance			= 0.75
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 2 - Improved Capital Missile System
+model = {
+	cost 				= 7.5
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 8
+	convoyattack			= 8
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 6
+	range						= 100
+	distance			= 1
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 3 - Advanced Capital Missile System
+model = {
+	cost 				= 8
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 9
+	convoyattack			= 9
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 7
+	range						= 120
+	distance			= 1.5
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 4 - Semi-Modern Capital Missile System
+model = {
+	cost 				= 8.5
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 10
+	convoyattack			= 10
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 8
+	range						= 150
+	distance			= 3
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 5 - Modern Capital Missile System
+model = {
+	cost 				= 9
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 11
+	convoyattack			= 11
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 9
+	range						= 300
+	distance			= 3.7
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 6 - Late Capital Missile System
+model = {
+	cost 				= 9.5
+	buildtime			= 155
+	manpower 			= 0.2
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 12
+	convoyattack			= 12
+	subattack			= 0
+	airattack			= 2
+	shorebombardment		= 10
+	range						= 400
+	distance			= 4.3
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.01
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}

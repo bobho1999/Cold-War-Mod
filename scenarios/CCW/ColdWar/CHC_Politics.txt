@@ -1,0 +1,1283 @@
+########################################
+####  中国内政事件组 by Fall_Weiss  ####
+########################################
+#事件目录-
+#70020- 建国整风运动
+#70021- 57年整风运动
+#70022- 大跃进-开端
+#70023- 大跃进-初现端倪
+#70024- 大跃进-恶果
+#70025- 大跃进-饥荒
+#70026- 大跃进-恢复、调整（历史）
+#70027~70040 -预留给大跃进组的后续事件和非历史路线 
+#70041- 建国5周年阅兵 
+#70042- 建国10周年阅兵
+
+################
+#中国人民政治协商会议第一届全体会议
+#####################################
+event = {
+  	id = 20410
+  	random = no
+  	country = CHC
+  
+  	name = "籌備中国人民政治协商会议第一届全体会议 " 
+  	desc = "1949年9月21日，中国人民政治协商会议第一届全体会议在北平隆重 举行，宣告中国人民政治协商会议正式成立。参加会议的有46个单 位的代表共662人。会议通过了《中国人民政治协商会议共同纲领》、 《中国人民政治协商会议组织法》、《中华人民共和国中央人民政 府组织法》这三个为新中国奠基的历史性文件。会议还通过了关于 国旗、国歌、国都、纪年等项决议，会议选举了中国人民政治协商 会议第一届全国委员会的委员。 "
+#  	picture = "政协一次会议"
+  	style = 0
+
+  	trigger = {
+    		war = { country = CHC  country = CHI }  
+        	and = { 
+			control = { province = 1237  data = -1 }
+                	control = { province = 1236  data = -1 }
+                	control = { province = 1235  data = -1 }
+                	control = { province = 1238  data = -1 }
+                	control = { province = 1251  data = -1 }
+                	control = { province = 1244  data = -1 }
+                	control = { province = 1253  data = -1 }
+                	control = { province = 1255  data = -1 }
+		}
+  	} 
+  	date = { day = 0 month = january year = 1947 }
+  	offset = 10
+  	deathdate = { day = 30 month = december year = 1965 }
+  
+  	action_a = {
+    		name = "籌備會議！"
+    		command = { type = dissent value = -1 }
+    		command = { type = money value = -10 }
+		command = { type = trigger which = 20411 }
+		command = { type = trigger which = 20413 value = 30 }
+  	}
+}
+
+event = {
+  	id = 20411
+  	random = no
+  	country = SIK
+  
+  	name = "中国人民政治协商会议第一届全体会议 " 
+  	desc = "1949年8月，中共中央派代表鄧力群赴新疆省，面見三區革命方面的
+		新疆保衛和平民主同盟主席阿合買提江·哈斯木，遞交了毛澤東發給
+		三區人民政府的電函，邀請三區方面派出5名代表參加即將召開的中
+		國人民政治協商會議第一屆全體會議。 "
+#  	picture = "政协一次会议"
+  	style = 0
+  
+  	action_a = {
+    		name = " 派出代表 "
+		ai_chance = 100
+    		command = { type = dissent value = -1 }
+  	}
+  	action_b = {
+    		name = " 拒絕參與 "
+		ai_chance = 0
+    		command = { type = dissent value = -1 }
+		command = { type = setflag which = SIK_refused }
+  	}
+}
+
+event = {
+  	id = 20412
+  	random = no
+  	country = SIK
+
+  	trigger = {
+		event = 20411
+		NOT = { 
+			flag = SIK_refused
+			event = 20413
+		 }
+		random = 50
+  	} 
+
+  	name = "扎巴依喀勒山空難 " 
+  	desc = "1949年8月22日，阿合買提江·哈斯木等5人代表團及隨員3人自
+		伊寧起程，經蘇聯赴北平。8月27日，三區方面代表乘坐的飛機
+		在蘇聯伊爾庫茨克至扎巴依喀勒山附近，離貝加爾湖不遠的地方
+		（今外貝加爾邊疆區），因氣候惡劣而撞山墜毀，機上全體17名
+		人員遇難。 "
+#  	picture = "政协一次会议"
+  	style = 0
+
+  	date = { day = 0 month = january year = 1947 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1965 }
+  
+  	action_a = {
+    		name = "改派代表"
+		ai_chance = 100
+    		command = { type = dissent value = 1 }
+#		command = { type = sleepminister which = 73041 }
+  	}
+  	action_b = {
+    		name = "這事作罷"
+		ai_chance = 0
+    		command = { type = dissent value = 1 }
+#		command = { type = sleepminister which = 73041 }
+		command = { type = setflag which = SIK_refused }
+  	}
+}
+
+event = {
+  	id = 20413
+  	random = no
+  	country = CHC
+  
+  	name = "中国人民政治协商会议第一届全体会议 " 
+  	desc = "1949年9月21日，中国人民政治协商会议第一届全体会议在北平隆重 举行，宣告中国人民政治协商会议正式成立。参加会议的有46个单 位的代表共662人。会议通过了《中国人民政治协商会议共同纲领》、 《中国人民政治协商会议组织法》、《中华人民共和国中央人民政 府组织法》这三个为新中国奠基的历史性文件。会议还通过了关于 国旗、国歌、国都、纪年等项决议，会议选举了中国人民政治协商 会议第一届全国委员会的委员。 "
+#  	picture = "政协一次会议"
+  	style = 0
+  
+  	action_a = {
+    		name = "中國共產黨萬歲！"
+    		command = { type = dissent value = -1 }
+  	}
+}
+################
+#中华人民共和国的建立
+#############################################
+event = {
+  id = 19540
+  random = no
+  country = CHC
+  
+  name = "中华人民共和国的建立 " 
+  desc = "随着解放战争的进行，中共已经控制了中国的命运，而国民党余 党将要撤到台湾。于是，中国的大陆上出现了一个新生的政权： 中华人民共和国。听到此消息，举国惊动，全国人民为这一刻的 到来而欢呼。新中国终于成立了！ "
+  picture = "kaiguodadian"
+  style = 0
+  
+  trigger = {
+    		war = { country = CHC  country = CHI }  
+    		control = { province = 1235 data = CHC }
+    		owned = { province = 1205 data = CHC }
+    		event = 20413
+   		not = { exists = CXB }
+  	} 
+
+  	date = { day = 0 month = january year = 1947 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1965 }
+  
+  	action_a = {
+    		name = "中华人民共和国万岁！"
+  		command = { type = dissent value = -5 }
+		command = { type = belligerence value = -20 }
+  		command = { type = construct which = ic where = 1205 value = 1 } #北平
+  		command = { type = province_keypoints which = 1205 value = 3 }
+  		command = { type = province_manpower which = 1205 value = 5 }
+  		command = { type = capital which = 1205 }
+  		command = { type = domestic which = interventionism value = 2 }
+#  		command = { type = research_mod value = 20 }
+#  		command = { type = trigger which = 941218 }
+  		command = { type = sleepevent which = 941123 } 
+  		command = { type = sleepevent which = 941252 }
+		command = { type = sleepevent which = 941253 }
+		command = { type = sleepevent which = 941254 }
+		command = { type = sleepevent which = 941255 }
+		command = { type = sleepevent which = 941256 }
+		command = { type = sleepevent which = 941257 }
+		command = { type = sleepevent which = 941358 }
+		command = { type = sleepevent which = 941359 }
+		command = { type = sleepevent which = 941360 }
+		command = { type = sleepevent which = 941361 }
+		command = { type = sleepevent which = 941362 }
+		command = { type = sleepevent which = 941363 }
+		command = { type = sleepevent which = 941364 }
+		command = { type = sleepevent which = 941365 }
+		command = { type = sleepevent which = 941366 }
+		command = { type = sleepevent which = 941367 }
+		command = { type = sleepevent which = 941368 }
+		command = { type = sleepevent which = 941369 }
+		command = { type = sleepevent which = 941370 }
+		command = { type = sleepevent which = 941371 }
+		command = { type = sleepevent which = 941372 }
+		command = { type = sleepevent which = 941373 }
+		command = { type = free_ic value = -10 }
+  		command = { type = free_supplies value = -50 }
+  		command = { type = free_energy value = -20 }
+  		command = { type = free_metal value = -10 }
+		command = { type = free_rare_materials value = -5 }
+		command = { type = supply_dist_mod value = -5 }
+  }
+}
+
+event = {
+  	id = 19541
+  	random = no
+  	country = CHC
+  
+  	name = "根據地時代的結束 " 
+  	desc = "随着解放战争的进行，中共已经控制了中国的命运，而国民党余 党将要撤到台湾。于是，中国的大陆上出现了一个新生的政权： 中华人民共和国。听到此消息，举国惊动，全国人民为这一刻的 到来而欢呼。新中国终于成立了！ "
+  	picture = "kaiguodadian"
+  	style = 0
+  
+  	trigger = {
+    		event = 941220
+    		event = 19540
+  	} 
+  	date = { day = 0 month = january year = 1948 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1999 }
+  
+  	action_a = {
+    		name = "中华人民共和国万岁！"
+#		command = { type = trigger which = 195411 value = 2 }
+		command = { type = sleepevent which = 60496 }
+		command = { type = sleepevent which = 60435 }
+		command = { type = sleepevent which = 60436 }
+		command = { type = sleepevent which = 60484 }
+		command = { type = remove_division which = 11571 value = 232 } 
+		command = { type = remove_division which = 11571 value = 231 }
+		command = { type = remove_division which = 11571 value = 230 }
+		command = { type = remove_division which = 11571 value = 229 }
+		command = { type = remove_division which = 11571 value = 228 }
+		command = { type = remove_division which = 11571 value = 227 }
+		command = { type = remove_division which = 11571 value = 226 }
+		command = { type = remove_division which = 11571 value = 225 }
+		command = { type = remove_division which = 11571 value = 224 }
+		command = { type = remove_division which = 11571 value = 223 }
+		command = { type = remove_division which = 11571 value = 222 }
+		command = { type = remove_division which = 11571 value = 221 }
+		command = { type = remove_division which = 11571 value = 220 }
+		command = { type = remove_division which = 11571 value = 219 }
+		command = { type = remove_division which = 11571 value = 218 }
+		command = { type = remove_division which = 11571 value = 818 }
+		command = { type = remove_division which = 11571 value = 816 }
+		command = { type = remove_division which = 11571 value = 811 }
+		command = { type = remove_division which = 11571 value = 310 }
+		command = { type = remove_division which = 30291 value = 196 }
+		command = { type = remove_division which = 11571 value = 808 }
+		command = { type = remove_division which = 11571 value = 809 }
+		command = { type = remove_division which = 11571 value = 814 }
+		command = { type = remove_division which = 11571 value = 815 }
+		command = { type = remove_division which = 30291 value = 11 }
+		command = { type = remove_division which = 24000 value = 160 }
+		command = { type = remove_division which = 11571 value = 2 }
+		command = { type = remove_division which = 30291 value = 110 }
+		command = { type = remove_division which = 11571 value = 119 }
+		command = { type = construct which = land_fort where = 1380 value = -10 }
+		command = { type = construct which = land_fort where = 1379 value = -10 }
+		command = { type = construct which = land_fort where = 1377 value = -10 }
+		command = { type = construct which = land_fort where = 1375 value = -10 }
+		command = { type = construct which = land_fort where = 2947 value = -10 }
+		command = { type = construct which = land_fort where = 2992 value = -10 }
+		command = { type = construct which = land_fort where = 2822 value = -10 }
+		command = { type = construct which = land_fort where = 2831 value = -10 }
+		command = { type = construct which = land_fort where = 2856 value = -10 }
+		command = { type = construct which = land_fort where = 2619 value = -10 }
+		command = { type = construct which = land_fort where = 2648 value = -10 }
+		command = { type = construct which = land_fort where = 1887 value = -10 }
+		command = { type = construct which = land_fort where = 1228 value = -10 }
+		command = { type = construct which = land_fort where = 2809 value = -10 }
+		command = { type = construct which = land_fort where = 2810 value = -10 }
+		command = { type = construct which = land_fort where = 1273 value = -10 }
+		command = { type = construct which = land_fort where = 1215 value = -10 }
+  		command = { type = construct which = ic where = 2856 value = -1 }
+  		command = { type = construct which = ic where = 2992 value = -1 }
+  		command = { type = construct which = ic where = 2831 value = -1 }
+  		command = { type = construct which = ic where = 2947 value = -1 }
+  		command = { type = construct which = ic where = 1271 value = -1 }
+  		command = { type = construct which = ic where = 2822 value = -1 }
+  		command = { type = construct which = ic where = 2619 value = -1 }
+  }
+}
+################
+#三反运动
+#############################################
+event = {
+  	id = 20456 #941231
+  	random = no
+  	country = CHC
+  
+  	name = "三反运动 " 
+  	desc = "中华人民共和国成立初期，中国共产党开始了三反运动，即反贪 污、反浪费、反官僚主义，打击被资产阶级腐蚀的腐败分子。 "
+  	style = 0
+ # 	picture = "三反运动"
+  
+  	trigger = {
+    		government = communist
+       		event = 中华人民共和国的建立 #中共定都
+		event = 941220
+   	}
+  
+  	date = { day = 30 month = november year = 1951 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1955 }
+  
+  	action_a = {
+    		name = "开展三反运动！ "
+    		ai_chance = 95
+    		command = { type = dissent value = -10 }
+    		command = { type = domestic which = democratic value = -1 }
+    		command = { type = setflag which = "sanfan" }
+  	}
+  	action_b = {
+    		name = "暂时不开展 "
+    		ai_chance = 5
+    		command = { type = dissent value = 20 }
+  	}
+}
+################
+#打”大老虎“行动
+#############################################
+event = {
+  id = 20457 #941232
+  random = no
+  country = CHC
+  
+  name = "打”大老虎“行动 " 
+  desc = "三反运动开展后，1952年1月中旬，运动的重点转到打击严重贪污 腐败分子上，即打”大老虎“阶段。但在打虎斗争中，也出现了 逼供、诱供、假供等情况，从而伤及一些无辜者。中央后来对此 进行了纠正。 "
+  style = 0
+#  picture = "三反运动"
+  
+  trigger = {
+    flag = "sanfan"
+   }
+  
+  date = { day = 12 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1955 }
+  
+  action_a = {
+    name = "打“大老虎”！ "
+    command = { type = dissent value = -5 }
+  }
+}
+################
+#处决刘青山张子善
+#############################################
+event = {
+  id = 20458 #941233
+  random = no
+  country = CHC
+  
+  name = "处决刘青山张子善 " 
+  desc = "三反开展后，石家庄地委书记刘青山、天津地委书记张子善由于 贪污公款、从事非法经营，在中共河北省第三次代表会议被开除 出党。1952年2月10日判处死刑，立即执行。 "
+  style = 0
+#  picture = "处决刘青山张子善"
+  
+  trigger = {
+    flag = "sanfan"
+   }
+  
+  date = { day = 9 month = february year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1955 }
+  
+  action_a = {
+    name = "处决！ "
+    command = { type = dissent value = -2 }
+  }
+}
+################
+#五反运动
+#############################################
+event = {
+  id = 20459
+  random = no
+  country = CHC
+  
+  name = "五反运动 " 
+  desc = "三反开展后，1952年1月26日，中共中央发出了关于五反的指示。 所谓五反，即反对行贿、反对偷税漏税、反对盗骗国家财产、反 对偷工减料、反对盗窃经济情报。 "
+  style = 0
+#  picture = "五反运动"
+  
+  trigger = {
+    flag = "sanfan"
+   }
+  
+  date = { day = 25 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1955 }
+  
+  action_a = {
+    name = "开展五反运动！ "
+    command = { type = dissent value = -2 }
+  }
+}
+################
+#三反五反运动结束
+#############################################
+event = {
+  id = 20460
+  random = no
+  country = CHC
+  
+  name = "三反五反运动结束 " 
+  desc = "1952年10月，三反五反运动结束。三反五反运动打击了腐败行为， 打击了官僚和资本家的投机行为，促进了工人监督，促进了民主 改革。 "
+  style = 0
+ # picture = "三反运动"
+  
+  trigger = {
+    flag = "sanfan"
+   }
+  
+  date = { day = 24 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1955 }
+  
+  action_a = {
+    name = "三反五反运动胜利结束！ "
+    command = { type = dissent value = -2 }
+  }
+}
+
+#########################################################################
+# 镇压反革命运动 19107495
+#########################################################################
+
+############### 残余国军 ############### 
+event = { 
+   	id = 941389
+   	country = CHI
+   	random = no
+   
+   	trigger = {
+       		event = 941220
+		random = 50
+   	}
+   	name = "残余国军 "
+   	desc = "国民党虽然失去了大陆，但是在中国的西南，西北 ，东南 
+		地区仍有不少的残余军队进入险要地区守卫，这些军队可能 
+		成为蒋介石反攻大陆的希望"
+   
+   	style = 0
+   	date = { day = 0 month = january year = 1950 }
+   	offset = 30
+   	deathdate = { day = 30 month = december year = 1960 }
+
+   	action_a = { 
+      		name = "重新武装他们 "
+       		ai_chance = 100
+       		command = { type = money value = -500 }
+       		command = { type = dissent value = -1 }
+       		command = { type = trigger which = 941390 }
+       	}
+   	action_b = {
+       		name = "节省开支 "
+       		ai_chance = 0
+       		command = { type = dissent value = 1 }
+   	}
+}
+
+event = { 
+   	id = 941390
+   	country = CHC
+   	random = no
+   
+   	name = "残余国军 "
+   	desc = "国民党虽然失去了大陆，但是在中国的西南，西北 ，东南 
+		地区仍有不少的残余军队进入险要地区守卫，这些军队可能 
+		成为蒋介石反攻大陆的希望"
+   #	picture = "outlaw_communist_party"
+   	style = 0
+   
+   	action_a = { 
+      	 	name = "彻底消灭他们！ "
+       		command = { type = revolt which = 1890 } #
+       		command = { type = revolt which = 1294 } #
+       		command = { type = revolt which = 1443 } #
+       		command = { type = revolt which = 1247 } #
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+       		command = { type = revolt which = -1 }
+
+		command = { type = change_partisan_activity which =	1274	value = 40 }
+		command = { type = change_partisan_activity which =	1275	value = 40 }
+		command = { type = change_partisan_activity which =	1276	value = 40 }
+		command = { type = change_partisan_activity which =	1277	value = 40 }
+		command = { type = change_partisan_activity which =	1440	value = 40 }
+		command = { type = change_partisan_activity which =	1441	value = 40 }
+		command = { type = change_partisan_activity which =	2796	value = 40 }
+		command = { type = change_partisan_activity which =	2797	value = 40 }
+		command = { type = change_partisan_activity which =	2798	value = 40 }
+		command = { type = change_partisan_activity which =	2799	value = 40 }
+		command = { type = change_partisan_activity which =	2800	value = 40 }
+		command = { type = change_partisan_activity which =	2801	value = 40 }
+		command = { type = change_partisan_activity which =	2805	value = 40 }
+		command = { type = change_partisan_activity which =	2806	value = 40 }
+		command = { type = change_partisan_activity which =	2807	value = 40 }
+		command = { type = change_partisan_activity which =	1421	value = 40 }
+		command = { type = change_partisan_activity which =	1430	value = 40 }
+		command = { type = change_partisan_activity which =	1431	value = 40 }
+		command = { type = change_partisan_activity which =	1432	value = 40 }
+		command = { type = change_partisan_activity which =	1433	value = 40 }
+		command = { type = change_partisan_activity which =	1435	value = 40 }
+		command = { type = change_partisan_activity which =	1445	value = 40 }
+		command = { type = change_partisan_activity which =	1446	value = 40 }
+		command = { type = change_partisan_activity which =	1447	value = 40 }
+		command = { type = change_partisan_activity which =	2957	value = 40 }
+		command = { type = change_partisan_activity which =	2962	value = 40 }
+		command = { type = change_partisan_activity which =	2965	value = 40 }
+		command = { type = change_partisan_activity which =	2978	value = 40 }
+		command = { type = change_partisan_activity which =	2979	value = 40 }
+		command = { type = change_partisan_activity which =	2980	value = 40 }
+		command = { type = change_partisan_activity which =	2981	value = 40 }
+		command = { type = change_partisan_activity which =	2982	value = 40 }
+		command = { type = change_partisan_activity which =	2983	value = 40 }
+		command = { type = change_partisan_activity which =	2984	value = 40 }
+		command = { type = change_partisan_activity which =	2985	value = 40 }
+		command = { type = change_partisan_activity which =	2986	value = 40 }
+		command = { type = change_partisan_activity which =	2987	value = 40 }
+		command = { type = change_partisan_activity which =	2988	value = 40 }
+		command = { type = change_partisan_activity which =	2989	value = 40 }
+		command = { type = change_partisan_activity which =	2997	value = 40 }
+		command = { type = change_partisan_activity which =	2998	value = 40 }
+		command = { type = change_partisan_activity which =	2999	value = 40 }
+		command = { type = change_partisan_activity which =	3464	value = 40 }
+		command = { type = change_partisan_activity which =	3470	value = 40 }
+		command = { type = change_partisan_activity which =	3471	value = 40 }
+		command = { type = change_partisan_activity which =	3472	value = 40 }
+		command = { type = change_partisan_activity which =	3478	value = 40 }
+		command = { type = change_partisan_activity which =	3480	value = 40 }
+		command = { type = change_partisan_activity which =	3481	value = 40 }
+		command = { type = change_partisan_activity which =	1263	value = 40 }
+		command = { type = change_partisan_activity which =	1265	value = 40 }
+		command = { type = change_partisan_activity which =	1279	value = 40 }
+		command = { type = change_partisan_activity which =	1280	value = 40 }
+		command = { type = change_partisan_activity which =	1360	value = 40 }
+		command = { type = change_partisan_activity which =	1361	value = 40 }
+		command = { type = change_partisan_activity which =	1888	value = 40 }
+		command = { type = change_partisan_activity which =	1889	value = 40 }
+		command = { type = change_partisan_activity which =	1890	value = 40 }
+		command = { type = change_partisan_activity which =	2651	value = 40 }
+		command = { type = change_partisan_activity which =	2766	value = 40 }
+		command = { type = change_partisan_activity which =	2767	value = 40 }
+		command = { type = change_partisan_activity which =	2768	value = 40 }
+		command = { type = change_partisan_activity which =	2769	value = 40 }
+		command = { type = change_partisan_activity which =	2770	value = 40 }
+		command = { type = change_partisan_activity which =	2771	value = 40 }
+		command = { type = change_partisan_activity which =	2772	value = 40 }
+		command = { type = change_partisan_activity which =	2773	value = 40 }
+		command = { type = change_partisan_activity which =	2774	value = 40 }
+		command = { type = change_partisan_activity which =	2775	value = 40 }
+		command = { type = change_partisan_activity which =	2776	value = 40 }
+		command = { type = change_partisan_activity which =	2777	value = 40 }
+		command = { type = change_partisan_activity which =	2778	value = 40 }
+		command = { type = change_partisan_activity which =	2779	value = 40 }
+		command = { type = change_partisan_activity which =	2780	value = 40 }
+		command = { type = change_partisan_activity which =	2976	value = 40 }
+		command = { type = change_partisan_activity which =	3000	value = 40 }
+		command = { type = change_partisan_activity which =	1273	value = 40 }
+		command = { type = change_partisan_activity which =	2802	value = 40 }
+		command = { type = change_partisan_activity which =	2803	value = 40 }
+		command = { type = change_partisan_activity which =	2804	value = 40 }
+		command = { type = change_partisan_activity which =	2808	value = 40 }
+		command = { type = change_partisan_activity which =	2809	value = 40 }
+		command = { type = change_partisan_activity which =	2810	value = 40 }
+		command = { type = change_partisan_activity which =	1442	value = 40 }
+		command = { type = change_partisan_activity which =	1443	value = 40 }
+		command = { type = change_partisan_activity which =	1444	value = 40 }
+		command = { type = change_partisan_activity which =	2955	value = 40 }
+		command = { type = change_partisan_activity which =	2956	value = 40 }
+		command = { type = change_partisan_activity which =	2958	value = 40 }
+		command = { type = change_partisan_activity which =	2959	value = 40 }
+		command = { type = change_partisan_activity which =	2960	value = 40 }
+		command = { type = change_partisan_activity which =	2961	value = 40 }
+		command = { type = change_partisan_activity which =	2963	value = 40 }
+		command = { type = change_partisan_activity which =	1258	value = 40 }
+		command = { type = change_partisan_activity which =	1309	value = 40 }
+		command = { type = change_partisan_activity which =	1310	value = 40 }
+		command = { type = change_partisan_activity which =	1311	value = 40 }
+		command = { type = change_partisan_activity which =	1319	value = 40 }
+		command = { type = change_partisan_activity which =	2719	value = 40 }
+		command = { type = change_partisan_activity which =	2720	value = 40 }
+		command = { type = change_partisan_activity which =	2721	value = 40 }
+		command = { type = change_partisan_activity which =	2722	value = 40 }
+		command = { type = change_partisan_activity which =	2723	value = 40 }
+		command = { type = change_partisan_activity which =	2724	value = 40 }
+		command = { type = change_partisan_activity which =	2725	value = 40 }
+		command = { type = change_partisan_activity which =	2726	value = 40 }
+		command = { type = change_partisan_activity which =	2727	value = 40 }
+		command = { type = change_partisan_activity which =	2728	value = 40 }
+		command = { type = change_partisan_activity which =	2729	value = 40 }
+		command = { type = change_partisan_activity which =	2730	value = 40 }
+		command = { type = change_partisan_activity which =	2731	value = 40 }
+		command = { type = change_partisan_activity which =	2732	value = 40 }
+		command = { type = change_partisan_activity which =	2733	value = 40 }
+		command = { type = change_partisan_activity which =	2734	value = 40 }
+		command = { type = change_partisan_activity which =	2735	value = 40 }
+		command = { type = change_partisan_activity which =	2736	value = 40 }
+		command = { type = change_partisan_activity which =	1262	value = 40 }
+		command = { type = change_partisan_activity which =	1363	value = 40 }
+		command = { type = change_partisan_activity which =	1364	value = 40 }
+		command = { type = change_partisan_activity which =	1365	value = 40 }
+		command = { type = change_partisan_activity which =	2737	value = 40 }
+		command = { type = change_partisan_activity which =	2738	value = 40 }
+		command = { type = change_partisan_activity which =	2740	value = 40 }
+		command = { type = change_partisan_activity which =	2741	value = 40 }
+		command = { type = change_partisan_activity which =	2742	value = 40 }
+		command = { type = change_partisan_activity which =	2743	value = 40 }
+		command = { type = change_partisan_activity which =	2744	value = 40 }
+		command = { type = change_partisan_activity which =	2745	value = 40 }
+		command = { type = change_partisan_activity which =	1274	value = 40 }
+		command = { type = change_partisan_activity which =	1275	value = 40 }
+		command = { type = change_partisan_activity which =	1276	value = 40 }
+		command = { type = change_partisan_activity which =	1277	value = 40 }
+		command = { type = change_partisan_activity which =	1440	value = 40 }
+		command = { type = change_partisan_activity which =	1441	value = 40 }
+		command = { type = change_partisan_activity which =	2796	value = 40 }
+		command = { type = change_partisan_activity which =	2797	value = 40 }
+		command = { type = change_partisan_activity which =	2798	value = 40 }
+		command = { type = change_partisan_activity which =	2799	value = 40 }
+		command = { type = change_partisan_activity which =	2800	value = 40 }
+		command = { type = change_partisan_activity which =	2801	value = 40 }
+		command = { type = change_partisan_activity which =	2805	value = 40 }
+		command = { type = change_partisan_activity which =	2806	value = 40 }
+		command = { type = change_partisan_activity which =	2807	value = 40 }
+		command = { type = change_partisan_activity which =	1281	value = 40 }
+		command = { type = change_partisan_activity which =	1282	value = 40 }
+#		command = { type = change_partisan_activity which =	1283	value = 40 }
+#		command = { type = change_partisan_activity which =	2967	value = 40 }
+#		command = { type = change_partisan_activity which =	2968	value = 40 }
+#		command = { type = change_partisan_activity which =	2969	value = 40 }
+#		command = { type = change_partisan_activity which =	2970	value = 40 }
+#		command = { type = change_partisan_activity which =	2971	value = 40 }
+		command = { type = change_partisan_activity which =	2972	value = 40 }
+		command = { type = change_partisan_activity which =	2973	value = 40 }
+		command = { type = change_partisan_activity which =	2975	value = 40 }
+		command = { type = change_partisan_activity which =	2977	value = 40 }
+		command = { type = change_partisan_activity which =	1293	value = 40 }
+		command = { type = change_partisan_activity which =	1294	value = 40 }
+		command = { type = change_partisan_activity which =	1305	value = 40 }
+		command = { type = change_partisan_activity which =	1307	value = 40 }
+		command = { type = change_partisan_activity which =	1308	value = 40 }
+		command = { type = change_partisan_activity which =	1327	value = 40 }
+		command = { type = change_partisan_activity which =	1362	value = 40 }
+#		command = { type = change_partisan_activity which =	1898	value = 40 }
+		command = { type = change_partisan_activity which =	2746	value = 40 }
+		command = { type = change_partisan_activity which =	2747	value = 40 }
+		command = { type = change_partisan_activity which =	2749	value = 40 }
+		command = { type = change_partisan_activity which =	2750	value = 40 }
+		command = { type = change_partisan_activity which =	2751	value = 40 }
+		command = { type = change_partisan_activity which =	2752	value = 40 }
+		command = { type = change_partisan_activity which =	2753	value = 40 }
+		command = { type = change_partisan_activity which =	2754	value = 40 }
+		command = { type = change_partisan_activity which =	2755	value = 40 }
+		command = { type = change_partisan_activity which =	2756	value = 40 }
+		command = { type = change_partisan_activity which =	2757	value = 40 }
+		command = { type = change_partisan_activity which =	2758	value = 40 }
+		command = { type = change_partisan_activity which =	2759	value = 40 }
+		command = { type = change_partisan_activity which =	2760	value = 40 }
+		command = { type = change_partisan_activity which =	2761	value = 40 }
+#		command = { type = change_partisan_activity which =	2762	value = 40 }
+		command = { type = change_partisan_activity which =	2763	value = 40 }
+#		command = { type = change_partisan_activity which =	2764	value = 40 }
+		command = { type = change_partisan_activity which =	2765	value = 40 }
+		command = { type = change_partisan_activity which =	2974	value = 40 }    
+   	}
+}
+
+event = {
+	id = 19542
+	country = chc
+	random = no
+
+  	trigger = {
+#		event = 7840033
+		event = 941390
+    		government = communist
+	} 
+  
+	name = "镇压反革命运动 "
+	desc = "镇压反革命运动简称镇反运动，是1950年12月至1951年10月在
+		全国范围内进行的清查和镇压反革命分子的政治运动，是新中
+		国成立初期同抗美援朝、土地改革并称的三大运动之一。历时
+		两年多的镇压反 革命运动，范围涉及到全国几乎所有地区，
+		从基本上肃清了国民党残留的反革命势力，并清除了一批帝国
+		主义间谍。曾经猖獗一时的匪祸，也已基本扑灭，使我国的社
+		会秩序获得了前所未有的安定，有力地支持、配合了土改运动
+		和抗美援朝战争。 "
+	style = 0
+#	picture = "35"
+	
+	date = { day = 1 month = december year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+	
+
+    action_a = {
+		name = "开展运动！ "
+		ai_chance = 100
+    		command = { type = dissent value = 10 }
+    		command = { type = intelligence which = us value = 5 }
+		command = { type = trigger which = 19543 value = 300 }
+    	}	
+   action_b = {
+		name = "不开展！ "
+		ai_chance = 0
+ 		command = { type = dissent value = -2 }
+    		command = { type = intelligence which = us value = -5 }
+    	}	 	
+}
+event = { 
+   id = 19543
+   country = CHC
+   random = no
+   
+   	name = "镇压反革命运动完成 "
+	desc = "镇压反革命运动简称镇反运动，是1950年12月至1951年10月在
+		全国范围内进行的清查和镇压反革命分子的政治运动，是新中
+		国成立初期同抗美援朝、土地改革并称的三大运动之一。历时
+		两年多的镇压反 革命运动，范围涉及到全国几乎所有地区，
+		从基本上肃清了国民党残留的反革命势力，并清除了一批帝国
+		主义间谍。曾经猖獗一时的匪祸，也已基本扑灭，使我国的社
+		会秩序获得了前所未有的安定，有力地支持、配合了土改运动
+		和抗美援朝战争。 "
+   #	picture = "outlaw_communist_party"
+   	style = 0
+   
+   	action_a = { 
+      	 	name = "彻底消灭他们！ "
+    		command = { type = dissent value = -5 }
+    		command = { type = intelligence which = them value = -10 }
+    		command = { type = manpowerpool value = -500 }
+		command = { type = change_partisan_activity which =	1274	value = -40 }
+		command = { type = change_partisan_activity which =	1275	value = -40 }
+		command = { type = change_partisan_activity which =	1276	value = -40 }
+		command = { type = change_partisan_activity which =	1277	value = -40 }
+		command = { type = change_partisan_activity which =	1440	value = -40 }
+		command = { type = change_partisan_activity which =	1441	value = -40 }
+		command = { type = change_partisan_activity which =	2796	value = -40 }
+		command = { type = change_partisan_activity which =	2797	value = -40 }
+		command = { type = change_partisan_activity which =	2798	value = -40 }
+		command = { type = change_partisan_activity which =	2799	value = -40 }
+		command = { type = change_partisan_activity which =	2800	value = -40 }
+		command = { type = change_partisan_activity which =	2801	value = -40 }
+		command = { type = change_partisan_activity which =	2805	value = -40 }
+		command = { type = change_partisan_activity which =	2806	value = -40 }
+		command = { type = change_partisan_activity which =	2807	value = -40 }
+		command = { type = change_partisan_activity which =	1421	value = -40 }
+		command = { type = change_partisan_activity which =	1430	value = -40 }
+		command = { type = change_partisan_activity which =	1431	value = -40 }
+		command = { type = change_partisan_activity which =	1432	value = -40 }
+		command = { type = change_partisan_activity which =	1433	value = -40 }
+		command = { type = change_partisan_activity which =	1435	value = -40 }
+		command = { type = change_partisan_activity which =	1445	value = -40 }
+		command = { type = change_partisan_activity which =	1446	value = -40 }
+		command = { type = change_partisan_activity which =	1447	value = -40 }
+		command = { type = change_partisan_activity which =	2957	value = -40 }
+		command = { type = change_partisan_activity which =	2962	value = -40 }
+		command = { type = change_partisan_activity which =	2965	value = -40 }
+		command = { type = change_partisan_activity which =	2978	value = -40 }
+		command = { type = change_partisan_activity which =	2979	value = -40 }
+		command = { type = change_partisan_activity which =	2980	value = -40 }
+		command = { type = change_partisan_activity which =	2981	value = -40 }
+		command = { type = change_partisan_activity which =	2982	value = -40 }
+		command = { type = change_partisan_activity which =	2983	value = -40 }
+		command = { type = change_partisan_activity which =	2984	value = -40 }
+		command = { type = change_partisan_activity which =	2985	value = -40 }
+		command = { type = change_partisan_activity which =	2986	value = -40 }
+		command = { type = change_partisan_activity which =	2987	value = -40 }
+		command = { type = change_partisan_activity which =	2988	value = -40 }
+		command = { type = change_partisan_activity which =	2989	value = -40 }
+		command = { type = change_partisan_activity which =	2997	value = -40 }
+		command = { type = change_partisan_activity which =	2998	value = -40 }
+		command = { type = change_partisan_activity which =	2999	value = -40 }
+		command = { type = change_partisan_activity which =	3464	value = -40 }
+		command = { type = change_partisan_activity which =	3470	value = -40 }
+		command = { type = change_partisan_activity which =	3471	value = -40 }
+		command = { type = change_partisan_activity which =	3472	value = -40 }
+		command = { type = change_partisan_activity which =	3478	value = -40 }
+		command = { type = change_partisan_activity which =	3480	value = -40 }
+		command = { type = change_partisan_activity which =	3481	value = -40 }
+		command = { type = change_partisan_activity which =	1263	value = -40 }
+		command = { type = change_partisan_activity which =	1265	value = -40 }
+		command = { type = change_partisan_activity which =	1279	value = -40 }
+		command = { type = change_partisan_activity which =	1280	value = -40 }
+		command = { type = change_partisan_activity which =	1360	value = -40 }
+		command = { type = change_partisan_activity which =	1361	value = -40 }
+		command = { type = change_partisan_activity which =	1888	value = -40 }
+		command = { type = change_partisan_activity which =	1889	value = -40 }
+		command = { type = change_partisan_activity which =	1890	value = -40 }
+		command = { type = change_partisan_activity which =	2651	value = -40 }
+		command = { type = change_partisan_activity which =	2766	value = -40 }
+		command = { type = change_partisan_activity which =	2767	value = -40 }
+		command = { type = change_partisan_activity which =	2768	value = -40 }
+		command = { type = change_partisan_activity which =	2769	value = -40 }
+		command = { type = change_partisan_activity which =	2770	value = -40 }
+		command = { type = change_partisan_activity which =	2771	value = -40 }
+		command = { type = change_partisan_activity which =	2772	value = -40 }
+		command = { type = change_partisan_activity which =	2773	value = -40 }
+		command = { type = change_partisan_activity which =	2774	value = -40 }
+		command = { type = change_partisan_activity which =	2775	value = -40 }
+		command = { type = change_partisan_activity which =	2776	value = -40 }
+		command = { type = change_partisan_activity which =	2777	value = -40 }
+		command = { type = change_partisan_activity which =	2778	value = -40 }
+		command = { type = change_partisan_activity which =	2779	value = -40 }
+		command = { type = change_partisan_activity which =	2780	value = -40 }
+		command = { type = change_partisan_activity which =	2976	value = -40 }
+		command = { type = change_partisan_activity which =	3000	value = -40 }
+		command = { type = change_partisan_activity which =	1273	value = -40 }
+		command = { type = change_partisan_activity which =	2802	value = -40 }
+		command = { type = change_partisan_activity which =	2803	value = -40 }
+		command = { type = change_partisan_activity which =	2804	value = -40 }
+		command = { type = change_partisan_activity which =	2808	value = -40 }
+		command = { type = change_partisan_activity which =	2809	value = -40 }
+		command = { type = change_partisan_activity which =	2810	value = -40 }
+		command = { type = change_partisan_activity which =	1442	value = -40 }
+		command = { type = change_partisan_activity which =	1443	value = -40 }
+		command = { type = change_partisan_activity which =	1444	value = -40 }
+		command = { type = change_partisan_activity which =	2955	value = -40 }
+		command = { type = change_partisan_activity which =	2956	value = -40 }
+		command = { type = change_partisan_activity which =	2958	value = -40 }
+		command = { type = change_partisan_activity which =	2959	value = -40 }
+		command = { type = change_partisan_activity which =	2960	value = -40 }
+		command = { type = change_partisan_activity which =	2961	value = -40 }
+		command = { type = change_partisan_activity which =	2963	value = -40 }
+		command = { type = change_partisan_activity which =	1258	value = -40 }
+		command = { type = change_partisan_activity which =	1309	value = -40 }
+		command = { type = change_partisan_activity which =	1310	value = -40 }
+		command = { type = change_partisan_activity which =	1311	value = -40 }
+		command = { type = change_partisan_activity which =	1319	value = -40 }
+		command = { type = change_partisan_activity which =	2719	value = -40 }
+		command = { type = change_partisan_activity which =	2720	value = -40 }
+		command = { type = change_partisan_activity which =	2721	value = -40 }
+		command = { type = change_partisan_activity which =	2722	value = -40 }
+		command = { type = change_partisan_activity which =	2723	value = -40 }
+		command = { type = change_partisan_activity which =	2724	value = -40 }
+		command = { type = change_partisan_activity which =	2725	value = -40 }
+		command = { type = change_partisan_activity which =	2726	value = -40 }
+		command = { type = change_partisan_activity which =	2727	value = -40 }
+		command = { type = change_partisan_activity which =	2728	value = -40 }
+		command = { type = change_partisan_activity which =	2729	value = -40 }
+		command = { type = change_partisan_activity which =	2730	value = -40 }
+		command = { type = change_partisan_activity which =	2731	value = -40 }
+		command = { type = change_partisan_activity which =	2732	value = -40 }
+		command = { type = change_partisan_activity which =	2733	value = -40 }
+		command = { type = change_partisan_activity which =	2734	value = -40 }
+		command = { type = change_partisan_activity which =	2735	value = -40 }
+		command = { type = change_partisan_activity which =	2736	value = -40 }
+		command = { type = change_partisan_activity which =	1262	value = -40 }
+		command = { type = change_partisan_activity which =	1363	value = -40 }
+		command = { type = change_partisan_activity which =	1364	value = -40 }
+		command = { type = change_partisan_activity which =	1365	value = -40 }
+		command = { type = change_partisan_activity which =	2737	value = -40 }
+		command = { type = change_partisan_activity which =	2738	value = -40 }
+		command = { type = change_partisan_activity which =	2740	value = -40 }
+		command = { type = change_partisan_activity which =	2741	value = -40 }
+		command = { type = change_partisan_activity which =	2742	value = -40 }
+		command = { type = change_partisan_activity which =	2743	value = -40 }
+		command = { type = change_partisan_activity which =	2744	value = -40 }
+		command = { type = change_partisan_activity which =	2745	value = -40 }
+		command = { type = change_partisan_activity which =	1274	value = -40 }
+		command = { type = change_partisan_activity which =	1275	value = -40 }
+		command = { type = change_partisan_activity which =	1276	value = -40 }
+		command = { type = change_partisan_activity which =	1277	value = -40 }
+		command = { type = change_partisan_activity which =	1440	value = -40 }
+		command = { type = change_partisan_activity which =	1441	value = -40 }
+		command = { type = change_partisan_activity which =	2796	value = -40 }
+		command = { type = change_partisan_activity which =	2797	value = -40 }
+		command = { type = change_partisan_activity which =	2798	value = -40 }
+		command = { type = change_partisan_activity which =	2799	value = -40 }
+		command = { type = change_partisan_activity which =	2800	value = -40 }
+		command = { type = change_partisan_activity which =	2801	value = -40 }
+		command = { type = change_partisan_activity which =	2805	value = -40 }
+		command = { type = change_partisan_activity which =	2806	value = -40 }
+		command = { type = change_partisan_activity which =	2807	value = -40 }
+		command = { type = change_partisan_activity which =	1281	value = -40 }
+		command = { type = change_partisan_activity which =	1282	value = -40 }
+#		command = { type = change_partisan_activity which =	1283	value = -40 }
+#		command = { type = change_partisan_activity which =	2967	value = -40 }
+#		command = { type = change_partisan_activity which =	2968	value = -40 }
+#		command = { type = change_partisan_activity which =	2969	value = -40 }
+#		command = { type = change_partisan_activity which =	2970	value = -40 }
+#		command = { type = change_partisan_activity which =	2971	value = -40 }
+		command = { type = change_partisan_activity which =	2972	value = -40 }
+		command = { type = change_partisan_activity which =	2973	value = -40 }
+		command = { type = change_partisan_activity which =	2975	value = -40 }
+		command = { type = change_partisan_activity which =	2977	value = -40 }
+		command = { type = change_partisan_activity which =	1293	value = -40 }
+		command = { type = change_partisan_activity which =	1294	value = -40 }
+		command = { type = change_partisan_activity which =	1305	value = -40 }
+		command = { type = change_partisan_activity which =	1307	value = -40 }
+		command = { type = change_partisan_activity which =	1308	value = -40 }
+		command = { type = change_partisan_activity which =	1327	value = -40 }
+		command = { type = change_partisan_activity which =	1362	value = -40 }
+#		command = { type = change_partisan_activity which =	1898	value = -40 }
+		command = { type = change_partisan_activity which =	2746	value = -40 }
+		command = { type = change_partisan_activity which =	2747	value = -40 }
+		command = { type = change_partisan_activity which =	2749	value = -40 }
+		command = { type = change_partisan_activity which =	2750	value = -40 }
+		command = { type = change_partisan_activity which =	2751	value = -40 }
+		command = { type = change_partisan_activity which =	2752	value = -40 }
+		command = { type = change_partisan_activity which =	2753	value = -40 }
+		command = { type = change_partisan_activity which =	2754	value = -40 }
+		command = { type = change_partisan_activity which =	2755	value = -40 }
+		command = { type = change_partisan_activity which =	2756	value = -40 }
+		command = { type = change_partisan_activity which =	2757	value = -40 }
+		command = { type = change_partisan_activity which =	2758	value = -40 }
+		command = { type = change_partisan_activity which =	2759	value = -40 }
+		command = { type = change_partisan_activity which =	2760	value = -40 }
+		command = { type = change_partisan_activity which =	2761	value = -40 }
+#		command = { type = change_partisan_activity which =	2762	value = -40 }
+		command = { type = change_partisan_activity which =	2763	value = -40 }
+#		command = { type = change_partisan_activity which =	2764	value = -40 }
+		command = { type = change_partisan_activity which =	2765	value = -40 }
+		command = { type = change_partisan_activity which =	2974	value = -40 }    
+   }
+}
+#############################################
+###### 建国整风运动 # 
+#############################################
+event = {
+        id = 70020 #941230
+        random = no
+        country = CHC
+        trigger = {
+       		event = 19540     #中共建立
+		event = 941220
+                OR = { 
+                        ideology = leninist
+                        ideology = stalinist
+                        ideology = left_wing_radical
+                }
+
+        }
+ 
+        name = "建国整风运动"
+        desc = "1950年1月，中华人民共和国建国初，面对错综复杂的形势和任务，中共中央发出《关于在全党全军开展整风运动的指示  》，要求各级党组织结合总结工作，开展批评与自我批评，克服党内首先是领导干部中居功自傲情绪，命令主义作风，以及极少数人贪污腐化、政治上堕落颓废、违法乱纪等错误，密切党和人民联系。运动于同年冬结束。
+"
+        style = 0
+        picture = "chc_zhengfeng"
+ 
+        date = { day = 1 month = january year = 1950 }
+        offset = 30
+        deathdate = { day = 1 month = january year = 1951 }
+ 
+        action_a = {
+                name = "一定要密切党与人民的联系"
+		ai_chance = 100
+                command = { type = domestic which = democratic value = -1 }
+                command = { type = domestic which = political_left value = 1 }
+                command = { type = dissent value = -2 }
+        }
+        action_b = {
+                name = "不需要破坏日趋稳定的体系"
+		ai_chance = 0
+                command = { type = dissent value = 3 }
+                command = { type = domestic which = political_left value = -1 }
+		command = { type = morale which = land value = -3 }
+        }
+
+}
+
+#############################################
+###### 57年整风运动 # 
+#############################################
+event = {
+        id = 70021
+        random = no
+        country = CHC
+        trigger = {
+
+                NOT = { 
+                   OR = { 
+                        lost_VP = { country = CHI value = 1 }
+                        lost_VP = { country = USA value = 1 }
+                        }
+                }
+                OR = { 
+                        ideology = leninist
+                        ideology = stalinist
+                }
+                dissent = 1
+
+
+        }
+ 
+        name = "57年整风运动"
+        desc = ""
+        style = 0
+        picture = "chc_zhengfeng"
+ 
+        date = { day = 1 month = july year = 1956 }
+        offset = 30
+        deathdate = { day = 30 month = january year = 1958 }
+ 
+        action_a = {
+                name = "一定要密切党与人民的联系"
+                command = { type = domestic which = democratic value = -1 }
+                command = { type = domestic which = political_left value = 1 }
+                command = { type = dissent value = -2 }
+        }
+        action_b = {
+                name = "不需要破坏日趋稳定的体系"
+                command = { type = dissent value = 2 }
+                command = { type = domestic which = political_left value = -1 }
+		command = { type = morale which = land value = -1 }
+        }
+
+}
+
+
+
+#############################################
+###### 建国五周年阅兵典礼 # 
+#############################################
+event = {
+        id = 70041
+        random = no
+        country = CHC
+        trigger = {
+                NOT = { 
+                   OR = { 
+                        lost_VP = { country = CHI value = 1 }
+                        lost_VP = { country = USA value = 1 }
+                        }
+                }
+        }
+ 
+        name = "建国五周年阅兵典礼"
+        desc = "经历了朝鲜战争这一对我们武装力量 的洗礼之后，我们是应该借建国五周 年之机检阅军队。"
+        style = 0
+        picture = "Military_parade"
+ 
+        date = { day = 1 month = october year = 1954 }
+        offset = 1
+        deathdate = { day = 2 month = october year = 1954 }
+ 
+        action_a = {
+                name = "好好看看我们的力量！"
+                command = { type = morale which = land value = 3 }
+                command = { type = morale which = naval value = 1 }
+                command = { type = morale which = air value = 3 }
+                command = { type = dissent value = -3 }
+                command = { type = supplies value = -1000 }
+                command = { type = money value = -100 }
+        }
+
+}
+
+#############################################
+###### 建国十周年阅兵典礼 # 
+#############################################
+event = {
+        id = 70042
+        random = no
+        country = CHC
+        trigger = {
+                NOT = { 
+                   OR = { 
+                        lost_VP = { country = CHI value = 1 }
+                        lost_VP = { country = USA value = 1 }
+                        }
+                }
+        }
+ 
+        name = "建国十周年阅兵典礼"
+        desc = "从对国内反动派的武装斗争胜利到现 在已经是十年过去了，我们的军工业 突飞猛进、军队也迈向了现代化，建 国十周年的阅兵是展示实力的不错方 法。"
+        style = 0
+        picture = "Military_parade"
+ 
+        date = { day = 1 month = october year = 1959 }
+        offset = 1
+        deathdate = { day = 2 month = october year = 1959 }
+ 
+        action_a = {
+                name = "好好看看我们的力量！"
+                command = { type = morale which = land value = 3 }
+                command = { type = morale which = naval value = 1 }
+                command = { type = morale which = air value = 3 }
+                command = { type = dissent value = -3 }
+                command = { type = supplies value = -1000 }
+                command = { type = money value = -100 }
+        }
+
+}
+
+event = {
+	id = 39107030
+	country = chc
+	random = no
+
+ 	trigger = { 
+ 		event = 7840033
+ 		supplies = 1000
+ 		random = 60 
+ 	}
+
+  
+	name = "扫盲运动 "
+	desc = "新中国刚刚成立时，我国的文盲率高达80%。文盲成为新中国发展道路上 的拦路虎。为解决这一问题，一场轰轰烈烈的扫盲运动在全国展开。扫 盲班遍布工厂、农村、部队、街道，人们以高涨的热情投入到 文化学习中。 "
+	style = 2
+#	picture = "sov_ww3"
+   
+  	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    	action_a = {
+		name = "开展 "
+		command = { type = supplies value = -1000 }
+		command = { type = trigger which = 39107031 value = 700 }
+      	}        	        	
+}
+event = {
+	id = 39107031
+	country = chc
+	persistent = yes
+	random = no
+
+
+  
+	name = "扫盲运动初步完成 "
+	desc = "新中国刚刚成立时，我国的文盲率高达80%。文盲成为新中国发展道路上 的拦路虎。为解决这一问题，一场轰轰烈烈的扫盲运动在全国展开。扫 盲班遍布工厂、农村、部队、街道，人们以高涨的热情投入到 文化学习中。 "
+	style = 2
+#	picture = "china_land_reform"
+
+    action_a = {
+		name = "很好 "
+		command = { type = relative_manpower value = 5 }
+    		command = { type = research_mod value = 10 }
+		command = { type = supplies value = -1000 }
+           	}        	        	
+}
+event = {
+	id = 39107032
+	country = chc
+	random = no
+
+ 	trigger = { 
+ 		event = 7840033
+ 		supplies = 1100 
+ 		random = 60 
+ 	}
+
+  
+	name = "院系调整 "
+	desc = "1952年6月至9月，中央人民政府大规模调整了全国高 等学校的院系设置，把民国时代的现代高等院校系统 改造成“苏联模式”高等教育体系。经过全盘调整后，全国 许多高等学校被分拆，大力发展独立建制的工科院校，相继 新设钢铁、地质、航空、矿业、水利等专门学院和专业，工 科、农林、师范、医药院校的数量从此前的108所大幅度增加到149 所，而高校数量由1952年之前的211所下降到1953年后的183所，综 合性院校则明显减少，高校丧失教学自主权，社会学、政 治学等人文社科类专业被停止和取消，私立教育退出历史舞台。 "
+	style = 2
+#	picture = "invest_research"
+
+   
+  	date = { day = 1 month = june year = 1952 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    	action_a = {
+		name = "调整 "
+		command = { type = supplies value = -1000 }
+		command = { type = industrial_modifier which = total value = 10 }
+    		command = { type = research_mod value = 10 }
+    		command = { type = dissent value = 3 }
+     	}        	        	
+}
+event = {
+	id = 39107033
+	country = chc
+	random = no
+
+
+ 	trigger = { 
+ 		not = {
+ 			event = 39107032 
+ 		}
+ 	}
+  
+	name = "全国工学院院长会议 "
+	desc = "中央教育部于1951 年11 月召开了全国工学院院长 会议，拟订了全国工学院院系调整方案，揭开了19 52 年全国院系大调整的序幕。 "
+	style = 2
+#	picture = "invest_research"
+   
+  	date = { day = 25 month = November year = 1951 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+   	action_a = {
+		name = "调整 "
+    		command = { type = dissent value = 1 }
+      	}        	        	
+}
+event = {
+	id = 39107034
+	country = chc
+	random = no
+
+
+ 	trigger = { 
+ 		event = 7840033 
+ 		control = { province = 1205 data = chc } 
+ 	}
+  
+	name = "八一电影制片厂建成 "
+	desc = "是中国唯一的军队电影制片厂，位于北京市丰台区六里桥北里， 占 地面积392.1亩。1951年3月，以总政治部军事教育电影制片厂名义 开始筹建，1952年8月1日正式建厂，命名为解放军电影制 片厂 "
+	style = 2
+#	picture = "china_land_reform"
+   
+  	date = { day = 1 month = August year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    	action_a = {
+		name = "确定 "
+    		command = { type = morale which = land value = 1 } 
+    		command = { type = morale which = naval value = 1 }
+    		command = { type = morale which = air value = 1 }
+      	}        	        	
+}
+
+event = {
+	id = 39107035
+	country = chc
+	random = no
+
+ 	trigger = { 
+ 		event = 19107485
+ 		money = 110 
+ 		random = 60 
+ 	}
+
+  
+	name = "人口普查 "
+	desc = "1953年4月3日，中央人民政府政务院颁布《全国第一次人口普查 办法》，为准备全国及地方人民代表大会选举，做好选民登记工 作，并为国家的经济、文化建设提供确实的人口数 字，决定开展全国第一次人口普查。 "
+	style = 2
+#	picture = "population"
+   
+  	date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    	action_a = {
+		name = "开展 "
+		command = { type = money value = -100 }
+		command = { type = trigger which = 39107036 value = 100 }
+	}        	        	
+}
+
+event = {
+	id = 39107036
+	country = chc
+	random = no
+
+  
+	name = "人口普查完成 "
+	desc = "1953年4月3日，中央人民政府政务院颁布《全国第一次人口普查 办法》，为准备全国及地方人民代表大会选举，做好选民登记工 作，并为国家的经济、文化建设提供确实的人口数 字，决定开展全国第一次人口普查。 "
+	style = 2
+#	picture = "population"
+
+    	action_a = {
+		name = "确定 "
+		command = { type = relative_manpower value = 5 }
+	}        	        	
+}

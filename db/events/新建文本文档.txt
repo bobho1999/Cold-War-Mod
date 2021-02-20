@@ -1,0 +1,3066 @@
+event = { 
+   	id = 841000
+   	country = KOR
+   	random = no
+	trigger = { }
+
+   	name = " 三一節開火事件 "
+	desc = "1947年3月1日三一節，濟州島人民委員會組織遊行，
+		要求南北統一，和平進行的遊行遭警察槍擊。造成六
+		人死亡、八人重傷，犧牲者大多是圍觀群眾。"
+   	style = 0
+   
+   	date = { day = 30 month = february year = 1947 }
+   	offset = 1
+   	deathdate = { day = 30 month = december year = 1950 }
+
+   #	picture = "korea_independent" 
+
+   	action_a = { 
+       		name = "鎮壓"
+       		command = { type = dissent value = 2 } 
+   }  
+}
+
+event = { 
+   	id = 841001
+   	country = KOR
+   	random = no
+	trigger = { event = 841000 }
+
+   	name = " 濟州島大罷工 "
+	desc = "為了抗議警察開火，南朝鮮勞動黨濟州島黨部於三月十日展
+		開了韓國前所未見的官民聯合大罷工，包括公家機關、民間
+		企業等濟州島95%以上的職場皆有參與。"
+   	style = 0
+   
+   	date = { day = 10 month = march year = 1947 }
+   	offset = 1
+   	deathdate = { day = 30 month = december year = 1950 }
+
+   #	picture = "korea_independent" 
+
+   	action_a = { 
+       		name = "鎮壓"
+       		command = { type = dissent value = 2 } 
+   }  
+}
+
+event = { 
+   	id = 841002
+   	country = KOR
+   	random = no
+	trigger = { event = 841001 }
+
+   	name = " 濟州四·三事件 "
+	desc = "1948年4月3日三名島民被刑訊逼供致死，武裝的南朝
+		鮮勞動黨為此起事，攻擊濟州警察廳支所，拉開序幕。
+		起事亦抗議駐朝鮮美國軍政廳在移交權力前夕舉辦的
+		建國首屆總統大選只在南方舉行、排除北朝鮮人民委
+		員會控制的北方、阻撓統一。濟州警察廳與韓國陸軍
+		血腥報復，李承晚當選大韓民國建國總統後，圍剿兵
+		力比駐朝鮮美國軍政廳時期還要多，其中陸軍第二師
+		第二團團長咸炳善在漢拏山縱火燒毀95%村莊、屠戮
+		全體村民。真相糾明委員會斷定25000-30000人死亡，
+		佔島民人口10%以上，其中86%由政府所殺，13.9%由武
+		裝平民所殺。"
+   	style = 0
+   
+   	date = { day = 2 month = april year = 1948 }
+   	offset = 1
+   	deathdate = { day = 30 month = december year = 1950 }
+
+   #	picture = "korea_independent" 
+
+   	action_a = { 
+       		name = "鎮壓"
+       		command = { type = dissent value = 5 } 
+   }  
+}
+
+event = { 
+   	id = 841003
+   	country = KOR
+   	random = no
+	trigger = {  }
+
+   	name = " 麗水-順天事件 "
+	desc = "1948年10月19日在大韓民國全羅南道麗水郡的韓國
+		軍隊叛亂，波及全羅南道麗水郡、慶尚北道盈德郡
+		、京畿道金浦郡等地，民間8000多無辜民眾被誣為
+		叛亂同黨而被殺害。"
+   	style = 0
+   
+   	date = { day = 18 month = october year = 1948 }
+   	offset = 1
+   	deathdate = { day = 30 month = december year = 1950 }
+
+   #	picture = "korea_independent" 
+
+   	action_a = { 
+       		name = "鎮壓"
+       		command = { type = dissent value = 2 } 
+   }  
+}
+#########################################################################
+# 革命游击队   
+#########################################################################
+event = { 
+   id = 941301
+   country = CHC
+   random = no
+   persistent = yes
+   trigger = {
+       OR = {
+           war = { country = CHC country = CSX }
+           war = { country = CHC country = CHI }
+       }
+       control = { province = 1271 data = -1 }  #延安
+       control = { province = 1270 data = -1 }  #咸阳
+   }
+   name = "农村包围城市 "
+   desc = "国民党进攻各大城市，共产党采取农村包围城市的战略 "
+   picture = "China_CW"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 60
+   action_a = { 
+       name = "广大人民期望解放，尝试建立革命游击队 "
+       ai_chance = 90
+       command = { type = setflag which = JinSui }
+       command = { type = setflag which = JinChaJi }
+       command = { type = setflag which = JinJiLuYu }
+       command = { type = setflag which = HuaZhong }
+       }
+   action_b = {
+       name = "暂停各区的游击活动 "
+       ai_chance = 8
+       command = { type = manpowerpool value = 5 }
+       command = { type = clrflag which = JinSui }
+       command = { type = clrflag which = JinChaJi }
+       command = { type = clrflag which = JinJiLuYu }
+       command = { type = clrflag which = HuaZhong }
+   }
+   action_c = {
+       name = "我们有足够的实力与敌人抗衡，不再需要游击战 "
+       ai_chance = 2
+       command = { type = sleepevent which = 941302 }
+       command = { type = sleepevent which = 941303 }
+       command = { type = sleepevent which = 941304 }
+       command = { type = sleepevent which = 941305 }
+       command = { type = sleepevent which = 941306 }
+       command = { type = sleepevent which = 941307 }
+       command = { type = sleepevent which = 941301 }
+       command = { type = clrflag which = JinSui }
+       command = { type = clrflag which = JinChaJi }
+       command = { type = clrflag which = JinJiLuYu }
+       command = { type = clrflag which = HuaZhong }
+   }
+   action_d = {
+       name = "不需要做什么 "
+       ai_chance = 0
+       command = { }
+   }
+}
+######################################################
+## 民国 游击事件
+######################################################
+event = { 
+   id = 941302
+   country = CHI
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = JinSui
+        war = { country = CHC country = CHI }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1225 data = CHC } }
+        NOT = { control = { province = 1209 data = CHC } }
+        NOT = { control = { province = 1226 data = CHC } }
+        random = 60
+   }
+   name = "星星之火-晋绥地区 "
+   desc = "晋绥地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 15
+   action_a = { 
+       name = "娘希匹！ "
+       #command = { type = revolt which = 1272 } #榆林
+       command = { type = revolt which = 1209 } #大同
+       command = { type = revolt which = 1225 } #太原
+       command = { type = revolt which = 1208 } #呼和浩特
+       command = { type = revolt which = 1226 } #长治
+       command = { type = revolt which = 1224 } #安阳
+   }
+}
+event = { 
+   id = 941303
+   country = CSX
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = JinSui
+        OR = {
+            war = { country = CHC country = CSX }
+            war = { country = CHC country = CHI }
+        }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1225 data = CHC } }
+        NOT = { control = { province = 1209 data = CHC } }
+        NOT = { control = { province = 1226 data = CHC } }
+        random = 60
+   }
+   name = "星星之火-晋绥地区 "
+   desc = "晋绥地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 15
+   action_a = { 
+       name = "娘希匹！ "
+       #command = { type = revolt which = 1272 } #榆林
+       command = { type = revolt which = 1209 } #大同
+       command = { type = revolt which = 1225 } #太原
+       command = { type = revolt which = 1208 } #呼和浩特
+       command = { type = revolt which = 1226 } #长治
+       command = { type = revolt which = 1224 } #安阳
+   }
+}
+event = { 
+   id = 941304
+   country = CHI
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = JinChaJi
+        war = { country = CHC country = CHI }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1210 data = CHC } }
+        NOT = { control = { province = 1211 data = CHC } }
+        NOT = { control = { province = 1206 data = CHC } }
+        NOT = { control = { province = 1212 data = CHC } }
+        random = 50
+   }
+   name = "星星之火-晋察冀地区 "
+   desc = "晋察冀地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 20
+   action_a = { 
+       name = "娘希匹！ "
+       command = { type = revolt which = 1210 } #保定
+       command = { type = revolt which = 1211 } #石家庄
+       command = { type = revolt which = 1206 } #张家口
+       command = { type = revolt which = 1212 } #邯郸  
+       command = { type = revolt which = 1213 } #禹城
+       command = { type = revolt which = 1226 } #长治
+       command = { type = revolt which = 1224 } #安阳
+   }
+}
+event = { 
+   id = 941305
+   country = CSX
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = JinChaJi
+        OR = {
+            war = { country = CHC country = CSX }
+            war = { country = CHC country = CHI }
+        }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1210 data = CHC } }
+        NOT = { control = { province = 1211 data = CHC } }
+        NOT = { control = { province = 1206 data = CHC } }
+        NOT = { control = { province = 1212 data = CHC } }
+        random = 60
+   }
+   name = "星星之火-晋察冀地区 "
+   desc = "晋察冀地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 18
+   action_a = { 
+       name = "娘希匹！ "
+       command = { type = revolt which = 1210 } #保定
+       command = { type = revolt which = 1211 } #石家庄
+       command = { type = revolt which = 1206 } #张家口
+       command = { type = revolt which = 1212 } #邯郸  
+       command = { type = revolt which = 1213 } #禹城
+       command = { type = revolt which = 1226 } #长治
+       command = { type = revolt which = 1224 } #安阳
+   }
+}
+event = { 
+   id = 941306
+   country = CHI
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = JinJiLuYu
+        war = { country = CHC country = CHI }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1223 data = CHC } }
+        NOT = { control = { province = 1222 data = CHC } }
+        NOT = { control = { province = 1218 data = CHC } }
+        NOT = { control = { province = 1217 data = CHC } }
+        NOT = { control = { province = 1230 data = CHC } }
+        NOT = { control = { province = 1221 data = CHC } }
+        NOT = { control = { province = 1234 data = CHC } }
+        random = 50
+   }
+   name = "星星之火-晋冀鲁豫地区 "
+   desc = "晋冀鲁豫地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 19
+   action_a = { 
+       name = "娘希匹！ "
+       command = { type = revolt which = 1217 } #连云港
+       command = { type = revolt which = 1218 } #徐州
+       command = { type = revolt which = 1223 } #开封
+       #command = { type = revolt which = 1222 } #阜阳
+       command = { type = revolt which = 1230 } #信阳
+       #command = { type = revolt which = 1221 } #合肥
+       command = { type = revolt which = 1234 } #芜湖
+       command = { type = revolt which = 1224 } #安阳
+   }
+}
+event = { 
+   id = 941307
+   country = CHI
+   random = no
+   persistent = yes
+   trigger = { 
+        flag = HuaZhong
+        war = { country = CHC country = CHI }
+        control = { province = 1271 data = CHC }  #延安
+        control = { province = 1270 data = CHC }  #咸阳
+        NOT = { control = { province = 1227 data = CHC } }
+        NOT = { control = { province = 1228 data = CHC } }
+        NOT = { control = { province = 1229 data = CHC } }
+        NOT = { control = { province = 1266 data = CHC } }
+        NOT = { control = { province = 1231 data = CHC } }
+        NOT = { control = { province = 1267 data = CHC } }
+        random = 55
+   }
+   name = "星星之火-华中地区 "
+   desc = "华中部分地区出现游击队 "
+   picture = "outlaw_communist_party"
+   style = 0
+   date = { day = 0 month = january year = 1936 }
+   deathdate = { day = 30 month = december year = 1949 }
+   offset = 17
+   action_a = { 
+       name = "娘希匹！ "
+       command = { type = revolt which = 1224 } #安阳
+       command = { type = revolt which = 1229 } #南阳
+       command = { type = revolt which = 1266 } #宜昌
+       #command = { type = revolt which = 1228 } #郑州
+       command = { type = revolt which = 1227 } #洛阳
+       #command = { type = revolt which = 1231 } #襄樊
+       command = { type = revolt which = 1267 } #安康
+   }
+}
+
+1946年11月4日，外交部長王世傑與美國駐華大使
+		司徒雷登在南京簽署該條約。主要內容是﹕
+		締約此方之國民有在彼方“領土全境內”居住﹑旅
+		行與從事商業﹑工業﹑文化教育﹑宗教等各種職業
+		的權利﹐以及採勘和開發礦產資源﹑租賃和保有土
+		地的權利﹔並且在經濟上享受國民待遇。此方商品
+		在彼方享有不低於任何第三國和彼方本國商品的待
+		遇﹐此方對彼方任何物品的輸入﹐以及由此方運往
+		彼方的任何物品﹐“不得加以任何禁止或限制”。
+		此方船舶可以在彼方開放的任何口岸﹑地方或領水
+		內自由航行﹐其人員和物品有經由“最便捷之途徑”
+		通過彼方領土的自由﹔此方船舶包括軍艦在內﹐可
+		以在遇到“任何危難”時﹐開入彼方“對外國商務
+		或航業不開放之任何口岸﹑地方或領水”。
+
+  landunit = {
+    id       = { type = 11616 id = 500 }
+    name     = "北平城防 "
+    location = 1205
+    division = {
+      id             = { type = 11616 id = 600 }
+      name           = "北平城防"
+      type           = garrison
+      model          = 0
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 11616 id = 501 }
+    name     = "天津城防 "
+    location = 1204
+    division = {
+      id             = { type = 11616 id = 601 }
+      name           = "天津城防"
+      type           = garrison
+      model          = 0
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 11616 id = 502 }
+    name     = "石家莊城防 "
+    location = 1211
+    division = {
+      id             = { type = 11616 id = 602 }
+      name           = "石家莊城防"
+      type           = garrison
+      model          = 0
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 11616 id = 503 }
+    name     = "濟南城防 "
+    location = 1216
+    division = {
+      id             = { type = 11616 id = 603 }
+      name           = "濟南城防"
+      type           = garrison
+      model          = 0
+      morale         = 100
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 11616 id = 504 }
+    name     = "青島城防 "
+    location = 1215
+    division = {
+      id             = { type = 11616 id = 604 }
+      name           = "青島城防"
+      type           = garrison
+      model          = 0
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 11616 id = 505 }
+    name     = "連雲港城防 "
+    location = 1217
+    division = {
+      id             = { type = 11616 id = 605 }
+      name           = "連雲港城防"
+      type           = garrison
+      model          = 0
+      locked         = yes
+    }
+  }
+#  landunit = {
+#    id       = { type = 11616 id = 507 }
+#    name     = "徐州城防 "
+#    location = 1218
+#    division = {
+#      id             = { type = 11616 id = 607 }
+#      name           = "徐州城防"
+#      type           = garrison
+#      model          = 0
+#      locked         = yes
+#    }
+#  }
+
+
+event = {
+	id = 8930033
+	random = no
+	country = CHC
+
+	trigger = {
+	ai = no 
+	}
+
+	date = { day = 3 month = january year = 1950 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "国家發展白皮書——中华人民共和国 " 
+	desc =  "國家類型： 經濟：工农剪刀差，计划经济 军事：渗透突击，飞潜快，炮兵 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930034 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 25 }
+		command = { type = building_prod_mod which = infrastructure value = 25 }
+		command = { type = industrial_modifier which = total value = 15 }	
+		command = { type = industrial_modifier which = supplies value = -20 }				
+    
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 2 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+		command = { type = max_organization which = artillery value = 4 when = now where = relative }
+		command = { type = free_supplies value = -1.7 }
+    
+    # 驅逐艦
+    command = { trigger = { year = 1974 } type = naval_attack which = destroyer value = 5 where = relative when = now }
+		command = { type = build_time which = destroyer value = -50 where = relative when = now }
+		command = { trigger = { year = 1974 } type = max_positioning which = destroyer value = 0.25 }
+      		command = { trigger = { year = 1974 } type = min_positioning which = destroyer value = 0.25 }
+
+		# 潛艇
+          command = { trigger = { year = 1974 } type = naval_attack which = submarine value = 5 where = relative when = now }
+		command = { type = build_time which = submarine value = -50 where = relative when = now }
+      		command = { trigger = { year = 1974 } type = max_positioning which = submarine value = 0.25 }
+      		command = { trigger = { year = 1974 } type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { trigger = { year = 1974 } type = naval_attack which = d_09 value = 5 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { trigger = { year = 1974 } type = max_positioning which = d_09 value = 0.25 }
+      		command = { trigger = { year = 1974 } type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { trigger = { year = 1974 } type = air_attack which = interceptor value = 5 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -20 where = relative when = now }  	
+    # 海轰
+          command = { trigger = { year = 1974 } type = naval_attack which = naval_bomber value = 2 where = relative when = now }
+		      command = { trigger = { year = 1974 } type = build_time which = naval_bomber value = -20 where = relative when = now } 	
+		      command = { trigger = { year = 1974 } type = task_efficiency which = air_superiority value = 0.5 }
+      		command = { trigger = { year = 1974 } type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { trigger = { year = 1974 } type = task_efficiency which = attack value = 0.5 }
+      		command = { trigger = { year = 1974 } type = task_efficiency which = convoy_raiding value = 0.5 }	 		  	
+		      
+		      command = { trigger = { year = 1974 } type = name where = CHC which = CHCuto }
+          command = { trigger = { year = 1974 } type = flag_ext where = chc which = "_uto" } 	
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1390 value = 1 }
+          command = { trigger = { year = 1974 } type = waketeam which = 260046 }	
+          command = { trigger = { year = 1974 } type = max_organization which = land value = 5 }
+          command = { trigger = { year = 1974 } type = waketeam which = 8335 } 
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260052 }
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260051 }
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260049 }
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1396 value = 1 }
+          command = { trigger = { year = 1974 } type = max_organization which = naval value = 5 }
+          command = { trigger = { year = 1974 } type = waketeam which = 8313 }
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1360 value = 1 }
+          command = { trigger = { year = 1974 } type = max_organization which = air value = 5 }
+	}
+}
+event = {
+	id = 8930034
+	random = no
+	country = CHC
+
+	trigger = {
+	ai = yes 
+	}
+
+	date = { day = 3 month = january year = 1950 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "国家發展白皮書——中华人民共和国 " 
+	desc = "国家類型： 經濟：工农剪刀差，计划经济 军事：渗透突击，飞潜快 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930033 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 45 }
+		command = { type = building_prod_mod which = infrastructure value = 45 }
+		command = { type = industrial_modifier which = total value = 35 }
+		command = { type = industrial_modifier which = supplies value = -10 }	
+		
+		# 步兵师
+		command = { type = soft_attack which = infantry value = 10 where = relative when = now }
+    command = { type = hard_attack which = infantry value = 10 where = relative when = now }
+		command = { type = build_time which = infantry value = -20 where = relative when = now }
+		command = { type = speed which = infantry value = 10 where = relative when = now }
+		
+		# 山地师
+		command = { type = soft_attack which = bergsjaeger value = 10 where = relative when = now }
+    command = { type = hard_attack which = bergsjaeger value = 10 where = relative when = now }
+		command = { type = build_time which = bergsjaeger value = -50 where = relative when = now }
+		command = { type = speed which = bergsjaeger value = 10 where = relative when = now }
+		
+		# 军队素质
+    command = { type = breakthrough value = 5 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = 5 }
+    command = { type = naval_attack which = naval value = -3 }
+    command = { type = naval_defense which = naval value = -3 }
+    command = { type = naval_attack which = air value = -3 }
+    command = { type = mountain_attack value = 3 }
+    command = { type = mountain_defense value = 5 }
+    command = { type = mountain_move value = 5 }
+    command = { type = river_attack value = 5 }
+    command = { type = night_move value = 3 }
+    command = { type = night_attack value = 15 }
+    command = { type = night_defense value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 8 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 9 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 8 when = now where = relative }
+		command = { type = free_supplies value = -1.7 }
+
+		# 驅逐艦
+		command = { type = naval_defense which = destroyer value = -30 where = relative when = now }
+    command = { type = naval_attack which = destroyer value = 20 where = relative when = now }
+		command = { type = build_time which = destroyer value = -70 where = relative when = now }
+		command = { type = max_positioning which = destroyer value = 0.25 }
+      		command = { type = min_positioning which = destroyer value = 0.25 }
+
+		# 潛艇
+		command = { type = naval_defense which = submarine value = -30 where = relative when = now }
+          command = { type = naval_attack which = submarine value = 35 where = relative when = now }
+		command = { type = build_time which = submarine value = -60 where = relative when = now }
+      		command = { type = max_positioning which = submarine value = 0.25 }
+      		command = { type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now }  	
+    # 海轰
+          command = { type = air_defense which = naval_bomber value = -10 where = relative when = now }
+          command = { type = naval_attack which = naval_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = naval_bomber value = -50 where = relative when = now } 	
+		      command = { type = task_efficiency which = air_superiority value = 0.5 }
+      		command = { type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { type = task_efficiency which = attack value = 0.5 }
+      		command = { type = task_efficiency which = convoy_raiding value = 0.5 }	 		
+      		
+      		command = { trigger = { year = 1974 } type = name where = CHC which = CHCuto }
+          command = { trigger = { year = 1974 } type = flag_ext where = chc which = "_uto" } 	
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1390 value = 1 }
+          command = { trigger = { year = 1974 } type = waketeam which = 260046 }	
+          command = { trigger = { year = 1974 } type = max_organization which = land value = 5 }
+          command = { trigger = { year = 1974 } type = waketeam which = 8335 } 
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260052 }
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260051 }
+    	    command = { trigger = { year = 1974 } type = waketeam which = 260049 }
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1396 value = 1 }
+          command = { trigger = { year = 1974 } type = max_organization which = naval value = 5 }
+          command = { trigger = { year = 1974 } type = waketeam which = 8313 }
+          command = { trigger = { year = 1974 } type = construct which = ic where = 1360 value = 1 }
+          command = { trigger = { year = 1974 } type = max_organization which = air value = 5 }
+	}
+}
+event = {
+	id = 8930035
+	random = no
+	country = IND
+
+	trigger = {
+	ai = no 
+	}
+
+	date = { day = 0 month = january year = 1947 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "國家發展白皮書——印度 " 
+	desc = "國家類型：經濟發展（勞動密集）型 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930041 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 15 }
+		command = { type = building_prod_mod which = infrastructure value = 15 }
+		command = { type = relative_manpower value = -45 }
+
+		# 特種部隊
+		command = { type = build_time which = bergsjaeger when = now where = relative value = 5 }
+		command = { type = mountain_attack which = bergsjaeger value = 10 }
+		command = { type = mountain_defense which = bergsjaeger value = 10 }
+	}
+}
+event = {
+	id = 8930041
+	random = no
+	country = IND
+
+	trigger = {
+	ai = yes 
+	}
+
+	date = { day = 0 month = january year = 1947 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "國家發展白皮書——印度 " 
+	desc = "國家類型：經濟發展（勞動密集）型 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930035 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 25 }
+		command = { type = building_prod_mod which = infrastructure value = 25 }
+		command = { type = relative_manpower value = -25 }
+
+		# 特種部隊
+		command = { type = build_time which = bergsjaeger when = now where = relative value = -15 }
+		command = { type = mountain_attack which = bergsjaeger value = 20 }
+		command = { type = mountain_defense which = bergsjaeger value = 20 }
+	}
+}
+event = {
+	id = 8930036
+	random = no
+	country = SOV
+
+	trigger = {
+	ai = no 
+	}
+
+	date = { day = 0 month = january year = 1947 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "國家發展白皮書——蘇聯 " 
+	desc = "經濟類型：資源輸出型 人口：負增長 強化兵種： 陸軍——空降兵（巷戰）、特種部隊（冬季作戰） 海軍——驅逐艦、護衛艦、潛艇、巡洋艦、重巡、中型航母 附加旅——直升機、火炮、自行火炮、防空導彈、火箭炮，战略轰炸机，歼击机 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "确定"
+		command = {	type = sleepevent which =  8930037 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = supplies value = 15 }
+		command = { type = free_oil value = 5 }
+		command = { type = relative_manpower value = -50 }
+
+		# 傘兵
+		command = { type = build_time which = paratrooper when = now where = relative value = 5 }
+		command = { type = max_organization which = paratrooper value = 10 }
+		command = { type = morale which = paratrooper value = 5 }
+		command = { type = urban_attack which = paratrooper value = 10 }
+
+		# 特種部隊
+		command = { type = build_time which = bergsjaeger when = now where = relative value = 5 }
+		command = { type = max_organization which = bergsjaeger value = 10 }
+		command = { type = morale which = bergsjaeger value = 5 }
+		command = { type = frozen_attack which = bergsjaeger value = 10 }
+		command = { type = snow_attack which = infantry value = 10 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 4 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 4 when = now where = relative }
+		command = { type = free_supplies value = -2.3 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 5 where = relative when = now }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 10 where = relative when = now }
+		command = { type = max_organization which = light_cruiser value = 10 }
+      		command = { type = morale which = light_cruiser value = 5 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 巡洋艦
+      		command = { type = build_cost which = battlecruiser value = 10 where = relative when = now }
+      		command = { type = max_organization which = battlecruiser value = 10 }
+      		command = { type = morale which = battlecruiser value = 5 }
+      		command = { type = max_positioning which = battlecruiser value = 0.15 }
+      		command = { type = min_positioning which = battlecruiser value = 0.15 }
+
+		# 重巡
+      		command = { type = build_cost which = battleship value = 10 where = relative when = now }
+      		command = { type = max_organization which = battleship value = 10 }
+      		command = { type = morale which = battleship value = 5 }
+      		command = { type = max_positioning which = battleship value = 0.15 }
+      		command = { type = min_positioning which = battleship value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 10 where = relative when = now }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+	   # 战斗机
+          command = { type = air_attack which = multi_role value = 10 where = relative when = now }
+          command = { type = air_defense which = multi_role value = -10 where = relative when = now }
+		      command = { type = build_time which = multi_role value = -50 where = relative when = now }  	
+    # 战略轰炸机
+          command = { type = air_defense which = strategic_bomber value = -10 where = relative when = now }
+          command = { type = strategic_attack which = strategic_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = strategic_bomber value = -70 where = relative when = now }
+		      
+		      command = { type = assault value = 5 }
+    command = { type = hard_attack which = armor value = 3 }
+    command = { type = soft_attack which = land value = 3 }
+    command = { type = max_organization which = land value = 5 }
+    command = { type = morale which = land value = 2 }
+    command = { type = naval_attack which = naval value = 1 }
+    command = { type = air_attack which = naval value = 1 }
+    command = { type = naval_defense which = naval value = 1 }
+    command = { type = air_attack which = air value = 3 }
+    command = { type = strategic_attack which = air value = 2 }
+    command = { type = naval_attack which = air value = 2 }
+    command = { type = max_organization which = air value = 2 }
+    command = { type = morale which = air value = 1 }
+    command = { type = swamp_move value = 2 }
+    command = { type = frozen_attack value = 3 }
+    command = { type = frozen_defense value = 5 }
+    command = { type = snow_attack value = 3 }
+    command = { type = snow_defense value = 5 }
+    command = { type = frozen_move value = 3 }
+    command = { type = snow_move value = 3 }  
+    command = { type = task_efficiency which = air_superiority value = 0.3 }
+      		command = { type = task_efficiency which = ground_attack value = 0.3 }
+      		command = { type = task_efficiency which = attack value = 0.3 }
+      		command = { type = task_efficiency which = installation_strike value = 0.3 }
+      		command = { type = task_efficiency which = naval_combat_patrol value = 0.3 }
+      		command = { type = task_efficiency which = convoy_raiding value = 0.3 }
+      		command = { type = task_efficiency which = strategic_bombardment value = 0.3 }  	
+	}
+}
+event = {
+	id = 8930037
+	random = no
+	country = SOV
+
+	trigger = {
+	ai = yes 
+	}
+
+	date = { day = 0 month = january year = 1947 }
+    offset = 1
+	deathdate = { day = 29 month = december year = 2010 }
+	name = "國防發展白皮書——蘇聯 " 
+	desc = "經濟類型：資源輸出型 人口：負增長 強化兵種： 陸軍——空降兵（巷戰）、特種部隊（冬季作戰） 海軍——驅逐艦、護衛艦、潛艇、巡洋艦、重巡、中型航母 附加旅——直升機、火炮、自行火炮、防空導彈、火箭炮 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930036 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_oil value = 5 }
+
+		# 運輸機
+		command = { type = remove_division which = 18700 value = 114 }
+		command = { type = remove_division which = 18700 value = 115 }
+		command = { type = remove_division which = 18700 value = 116 }
+		command = { type = remove_division which = 18700 value = 117 }
+		command = { type = remove_division which = 18700 value = 118 }
+		command = { type = remove_division which = 18700 value = 119 }
+
+		# 傘兵
+		command = { type = max_organization which = paratrooper value = 10 }
+		command = { type = morale which = paratrooper value = 5 }
+		command = { type = urban_attack which = paratrooper value = 10 }
+		command = { type = urban_defense which = paratrooper value = 10 }
+
+		# 特種部隊
+		command = { type = max_organization which = bergsjaeger value = 10 }
+		command = { type = morale which = bergsjaeger value = 5 }
+		command = { type = frozen_attack which = bergsjaeger value = 10 }
+		command = { type = frozen_defense which = bergsjaeger value = 10 }
+
+		command = { type = frozen_attack which = infantry value = 5 }
+		command = { type = frozen_attack which = cavalry value = 5 }
+		command = { type = frozen_attack which = hq value = 5 }
+		command = { type = frozen_attack which = armor value = 5 }
+		command = { type = frozen_attack which = motorized value = 5 }
+		command = { type = frozen_attack which = mechanized value = 5 }
+		command = { type = frozen_attack which = light_armor value = 5 }
+		command = { type = frozen_attack which = marine value = 5 }
+		command = { type = frozen_attack which = paratrooper value = 5 }
+		command = { type = frozen_attack which = militia value = 5 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 4 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 4 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 5 where = relative when = now }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 5 where = relative when = now }
+		command = { type = max_organization which = light_cruiser value = 10 }
+      		command = { type = morale which = light_cruiser value = 5 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 巡洋艦
+      		command = { type = build_cost which = battlecruiser value = 5 where = relative when = now }
+      		command = { type = max_organization which = battlecruiser value = 10 }
+      		command = { type = morale which = battlecruiser value = 5 }
+      		command = { type = max_positioning which = battlecruiser value = 0.15 }
+      		command = { type = min_positioning which = battlecruiser value = 0.15 }
+
+		# 重巡
+      		command = { type = build_cost which = battleship value = 5 where = relative when = now }
+      		command = { type = max_organization which = battleship value = 10 }
+      		command = { type = morale which = battleship value = 5 }
+      		command = { type = max_positioning which = battleship value = 0.15 }
+      		command = { type = min_positioning which = battleship value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 5 where = relative when = now }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = rus value = 500 }
+		command = { type = escort_pool which = rus value = 100 }
+
+		command = { type = construct which = land_fort where = 1372 value = 2 }
+		command = { type = construct which = flak where = 1372 value = 1 }
+		
+		 # 战斗机
+          command = { type = air_attack which = multi_role value = 10 where = relative when = now }
+          command = { type = air_defense which = multi_role value = -10 where = relative when = now }
+		      command = { type = build_time which = multi_role value = -50 where = relative when = now }  	
+    # 战略轰炸机
+          command = { type = air_defense which = strategic_bomber value = -10 where = relative when = now }
+          command = { type = strategic_attack which = strategic_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = strategic_bomber value = -70 where = relative when = now }
+		      
+		      command = { type = assault value = 5 }
+    command = { type = hard_attack which = armor value = 13 }
+    command = { type = soft_attack which = land value = 13 }
+    command = { type = max_organization which = land value = 15 }
+    command = { type = morale which = land value = 22 }
+    command = { type = naval_attack which = naval value = 5 }
+    command = { type = air_attack which = naval value = 5 }
+    command = { type = naval_defense which = naval value = 1 }
+    command = { type = air_attack which = air value = 3 }
+    command = { type = strategic_attack which = air value = 2 }
+    command = { type = naval_attack which = air value = 2 }
+    command = { type = max_organization which = air value = 2 }
+    command = { type = morale which = air value = 1 }
+    command = { type = swamp_move value = 2 }
+    command = { type = frozen_attack value = 3 }
+    command = { type = frozen_defense value = 5 }
+    command = { type = snow_attack value = 3 }
+    command = { type = snow_defense value = 5 }
+    command = { type = frozen_move value = 3 }
+    command = { type = snow_move value = 3 }
+    command = { type = task_efficiency which = air_superiority value = 0.5 }
+      		command = { type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { type = task_efficiency which = attack value = 0.5 }
+      		command = { type = task_efficiency which = installation_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_combat_patrol value = 0.5 }
+      		command = { type = task_efficiency which = convoy_raiding value = 0.5 }
+      		command = { type = task_efficiency which = strategic_bombardment value = 0.5 }
+	}
+}
+event = {
+	id = 8930038
+      	random = no
+      	country = USA
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國家發展白皮書——美國 "
+      	desc = "國家類型：軍事擴張型 強化兵種： 陸軍——陸戰隊（兩栖）、特種部隊（夜戰） 海軍——驅逐艦、護衛艦、巡洋艦、潛艇、重型航母 附加旅——直升機、火炮、自行火炮、防空導彈、火箭炮 "
+      	style = 2
+	picture = "censorship"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930040 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -40 }
+		command = { type = intelligence which = us value = 30 }
+      		command = { type = army_detection which = us value = 30 }
+		command = { type = scrap_model which = submarine value = 0 }
+		command = { type = max_organization which = land value = 10 }
+		command = { type = max_organization which = naval value = 10 }
+      		command = { type = max_organization which = air value = 10 }
+
+		# 運輸機
+		command = { type = remove_division which = 22400 value = 237 }
+		command = { type = remove_division which = 22400 value = 238 }
+		command = { type = remove_division which = 22400 value = 240 }
+		command = { type = remove_division which = 22400 value = 242 }
+		
+		# 歼击机
+		command = { type = soft_attack which = multi_role value = 10 where = relative when = now }
+    command = { type = hard_attack which = multi_role value = 10 where = relative when = now }
+		command = { type = build_time which = multi_role value = -50 where = relative when = now }
+		command = { type = speed which = multi_role value = 10 where = relative when = now }
+		
+		# 战略轰炸机
+		command = { type = soft_attack which = strategic_bomber value = 10 where = relative when = now }
+    command = { type = hard_attack which = strategic_bomber value = 10 where = relative when = now }
+		command = { type = build_time which = strategic_bomber value = -50 where = relative when = now }
+		command = { type = speed which = strategic_bomber value = 10 where = relative when = now }
+
+    
+    # 步兵师
+		command = { type = soft_attack which = infantry value = 10 where = relative when = now }
+    command = { type = hard_attack which = infantry value = 10 where = relative when = now }
+		command = { type = build_time which = infantry value = -20 where = relative when = now }
+		command = { type = speed which = infantry value = 10 where = relative when = now }
+		
+		# 摩步师
+		command = { type = soft_attack which = motorized value = 10 where = relative when = now }
+    command = { type = hard_attack which = motorized value = 10 where = relative when = now }
+		command = { type = build_time which = motorized value = -50 where = relative when = now }
+		command = { type = speed which = motorized value = 10 where = relative when = now }
+		
+		# 机步师
+		command = { type = soft_attack which = mechanized value = 10 where = relative when = now }
+    command = { type = hard_attack which = mechanized value = 10 where = relative when = now }
+		command = { type = build_time which = mechanized value = -50 where = relative when = now }
+		command = { type = speed which = mechanized value = 10 where = relative when = now }
+
+		# 陸戰隊
+		command = { type = max_organization which = marine value = 10 }
+		command = { type = morale which = marine value = 5 }
+		command = { type = shore_attack which = marine value = 10 }
+		command = { type = river_attack which = marine value = 10 }
+
+		command = { type = night_attack which = infantry value = 5 }
+		command = { type = night_attack which = cavalry value = 5 }
+		command = { type = night_attack which = hq value = 5 }
+		command = { type = night_attack which = armor value = 5 }
+		command = { type = night_attack which = motorized value = 5 }
+		command = { type = night_attack which = mechanized value = 5 }
+		command = { type = night_attack which = light_armor value = 5 }
+		command = { type = night_attack which = marine value = 5 }
+		command = { type = night_attack which = paratrooper value = 5 }
+		command = { type = night_attack which = militia value = 5 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 5 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = heavy_cruiser value = 10 }
+      		command = { type = morale which = heavy_cruiser value = 5 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = light_cruiser value = 10 }
+      		command = { type = morale which = light_cruiser value = 5 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 巡洋艦
+      		command = { type = build_cost which = battlecruiser value = 10 where = relative when = now }
+		command = { type = manpower which = battlecruiser when = now where = relative value = -0.2 }
+      		command = { type = max_organization which = battlecruiser value = 10 }
+      		command = { type = morale which = battlecruiser value = 5 }
+      		command = { type = max_positioning which = battlecruiser value = 0.15 }
+      		command = { type = min_positioning which = battlecruiser value = 0.15 }
+
+		# 航母
+      		command = { type = build_cost which = carrier value = 10 where = relative when = now }
+		command = { type = manpower which = carrier when = now where = relative value = -0.8 }
+      		command = { type = max_organization which = carrier value = 10 }
+      		command = { type = morale which = carrier value = 5 }
+      		command = { type = max_positioning which = carrier value = 0.15 }
+      		command = { type = min_positioning which = carrier value = 0.15 }
+    command = { type = assault value = 5 }
+    command = { type = hard_attack which = land value = 2 }
+    command = { type = air_attack which = land value = 1 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = -3 }
+    command = { type = naval_attack which = naval value = 5 }
+    command = { type = air_attack which = naval value = 4 }
+    command = { type = naval_defense which = naval value = 5 }
+    command = { type = air_defense which = naval value = 4 }
+    command = { type = max_organization which = naval value = 3 }
+    command = { type = morale which = naval value = -2 }
+    command = { type = air_attack which = air value = 5 }
+    command = { type = strategic_attack which = air value = 5 }
+    command = { type = naval_attack which = air value = 4 }
+    command = { type = max_organization which = air value = 3 }
+    command = { type = morale which = air value = -2 }
+    command = { type = mountain_attack value = -5 }
+    command = { type = mountain_defense value = -5 }
+    command = { type = mountain_move value = -5 }
+		# 空軍增強
+		command = { type = task_efficiency which = air_superiority value = 0.5 }
+      		command = { type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { type = task_efficiency which = runway_cratering value = 0.5 }
+      		command = { type = task_efficiency which = installation_strike value = 0.5 }
+      		command = { type = task_efficiency which = port_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_strike value = 0.5 }
+      		command = { type = task_efficiency which = logistical_strike value = 0.5 }
+      		command = { type = task_efficiency which = strategic_bombardment value = 0.5 }
+      		command = { type = task_efficiency which = naval_airbase_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_port_strike value = 0.5 }
+
+		# 運輸船
+		command = { type = transport_pool which = usa value = 2500 }
+		command = { type = escort_pool which = usa value = 500 }
+		
+		command = { trigger = { year = 1974 } type = name where = USA which = USA75 }
+    command = { trigger = { year = 1974 } type = flag_ext where = USA which = "_len" } 	
+	}
+}
+event = {
+	id = 8930039
+      	random = no
+      	country = U62
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國家發展白皮書——远东美军 "
+      	desc = "國家類型：軍事擴張型 強化兵種： 陸軍——陸戰隊（兩栖）、特種部隊（夜戰） 海軍——驅逐艦、護衛艦、巡洋艦、潛艇、重型航母 附加旅——直升機、火炮、自行火炮、防空導彈、火箭炮 "
+      	style = 2
+	picture = "censorship"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -40 }
+		command = { type = intelligence which = us value = 30 }
+      		command = { type = army_detection which = us value = 30 }
+		command = { type = scrap_model which = submarine value = 0 }
+		command = { type = max_organization which = land value = 10 }
+		command = { type = max_organization which = naval value = 10 }
+      		command = { type = max_organization which = air value = 10 }
+      		
+      		# 火星收入
+      		      	command = { type = free_ic value = 50 }
+               	command = { type = free_energy value = 50 }
+		command = { type = free_rare_materials value = 50 }
+               	command = { type = extra_tc value = 120 }
+               	command = { type = free_metal value = 55 }
+               	command = { type = free_oil value = 56 }
+               	command = { type = free_supplies value = 150 }
+               	command = { type = soft_attack which = motorized value = 10 where = relative when = now }
+    command = { type = hard_attack which = motorized value = 10 where = relative when = now }
+
+		# 運輸機
+		command = { type = remove_division which = 22400 value = 237 }
+		command = { type = remove_division which = 22400 value = 238 }
+		command = { type = remove_division which = 22400 value = 240 }
+		command = { type = remove_division which = 22400 value = 242 }
+
+		# 特種部隊
+		command = { type = max_organization which = bergsjaeger value = 10 }
+		command = { type = morale which = bergsjaeger value = 5 }
+		command = { type = night_attack which = bergsjaeger value = 10 }
+		command = { type = night_defense which = bergsjaeger value = 10 }
+		
+		# 步兵师
+		command = { type = soft_attack which = infantry value = 10 where = relative when = now }
+    command = { type = hard_attack which = infantry value = 10 where = relative when = now }
+		command = { type = build_time which = infantry value = -20 where = relative when = now }
+		command = { type = speed which = infantry value = 10 where = relative when = now }
+		
+		# 摩步师
+		command = { type = soft_attack which = motorized value = 10 where = relative when = now }
+    command = { type = hard_attack which = motorized value = 10 where = relative when = now }
+		command = { type = build_time which = motorized value = -50 where = relative when = now }
+		command = { type = speed which = motorized value = 10 where = relative when = now }
+		
+		# 机步师
+		command = { type = soft_attack which = mechanized value = 10 where = relative when = now }
+    command = { type = hard_attack which = mechanized value = 10 where = relative when = now }
+		command = { type = build_time which = mechanized value = -50 where = relative when = now }
+		command = { type = speed which = mechanized value = 10 where = relative when = now }
+		
+		# 歼击机
+		command = { type = soft_attack which = multi_role value = 10 where = relative when = now }
+    command = { type = hard_attack which = multi_role value = 10 where = relative when = now }
+		command = { type = build_time which = multi_role value = -50 where = relative when = now }
+		command = { type = speed which = multi_role value = 10 where = relative when = now }
+		
+		# 战略轰炸机
+		command = { type = soft_attack which = strategic_bomber value = 10 where = relative when = now }
+    command = { type = hard_attack which = strategic_bomber value = 10 where = relative when = now }
+		command = { type = build_time which = strategic_bomber value = -50 where = relative when = now }
+		command = { type = speed which = strategic_bomber value = 10 where = relative when = now }
+
+		# 陸戰隊
+		command = { type = max_organization which = marine value = 10 }
+		command = { type = morale which = marine value = 5 }
+		command = { type = shore_attack which = marine value = 10 }
+		command = { type = river_attack which = marine value = 10 }
+
+		command = { type = night_attack which = infantry value = 5 }
+		command = { type = night_attack which = cavalry value = 5 }
+		command = { type = night_attack which = hq value = 5 }
+		command = { type = night_attack which = armor value = 5 }
+		command = { type = night_attack which = motorized value = 5 }
+		command = { type = night_attack which = mechanized value = 5 }
+		command = { type = night_attack which = light_armor value = 5 }
+		command = { type = night_attack which = marine value = 5 }
+		command = { type = night_attack which = paratrooper value = 5 }
+		command = { type = night_attack which = militia value = 5 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 5 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = heavy_cruiser value = 10 }
+      		command = { type = morale which = heavy_cruiser value = 5 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = light_cruiser value = 10 }
+      		command = { type = morale which = light_cruiser value = 5 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 巡洋艦
+      		command = { type = build_cost which = battlecruiser value = 10 where = relative when = now }
+		command = { type = manpower which = battlecruiser when = now where = relative value = -0.2 }
+      		command = { type = max_organization which = battlecruiser value = 10 }
+      		command = { type = morale which = battlecruiser value = 5 }
+      		command = { type = max_positioning which = battlecruiser value = 0.15 }
+      		command = { type = min_positioning which = battlecruiser value = 0.15 }
+
+		# 航母
+      		command = { type = build_cost which = carrier value = 10 where = relative when = now }
+		command = { type = manpower which = carrier when = now where = relative value = -0.8 }
+      		command = { type = max_organization which = carrier value = 10 }
+      		command = { type = morale which = carrier value = 5 }
+      		command = { type = max_positioning which = carrier value = 0.15 }
+      		command = { type = min_positioning which = carrier value = 0.15 }
+    command = { type = assault value = 5 }
+    command = { type = hard_attack which = land value = 2 }
+    command = { type = air_attack which = land value = 1 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = -3 }
+    command = { type = naval_attack which = naval value = 5 }
+    command = { type = air_attack which = naval value = 4 }
+    command = { type = naval_defense which = naval value = 5 }
+    command = { type = air_defense which = naval value = 4 }
+    command = { type = max_organization which = naval value = 3 }
+    command = { type = morale which = naval value = -2 }
+    command = { type = air_attack which = air value = 5 }
+    command = { type = strategic_attack which = air value = 5 }
+    command = { type = naval_attack which = air value = 4 }
+    command = { type = max_organization which = air value = 3 }
+    command = { type = morale which = air value = -2 }
+    command = { type = mountain_attack value = -5 }
+    command = { type = mountain_defense value = -5 }
+    command = { type = mountain_move value = -5 }
+		# 空軍增強
+		command = { type = task_efficiency which = air_superiority value = 0.7 }
+      		command = { type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { type = task_efficiency which = runway_cratering value = 0.5 }
+      		command = { type = task_efficiency which = installation_strike value = 0.5 }
+      		command = { type = task_efficiency which = port_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_strike value = 0.5 }
+      		command = { type = task_efficiency which = logistical_strike value = 0.5 }
+      		command = { type = task_efficiency which = strategic_bombardment value = 0.5 }
+      		command = { type = task_efficiency which = naval_airbase_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_port_strike value = 0.5 }
+      		command = { type = task_efficiency which = ground_attack value = 0.7 }
+      		command = { type = task_efficiency which = attack value = 0.7 }
+      		command = { type = task_efficiency which = convoy_raiding value = 0.7 }	
+      		command = { type = task_efficiency which = naval_combat_patrol value = 0.7 }
+      		command = { type = task_efficiency which = sea_transport value = 0.7 }
+      		command = { type = task_efficiency which = asw value = 0.7 }	
+
+		# 運輸船
+		command = { type = transport_pool which = usa value = 2500 }
+		command = { type = escort_pool which = usa value = 500 }
+	}
+}
+event = {
+	id = 8930040
+      	random = no
+      	country = USA
+
+	trigger = {
+	ai = no
+	}
+
+      	name = "國防發展白皮書——美國 "
+      	desc = "國家類型：軍事擴張型 強化兵種： 陸軍——陸戰隊（兩栖）、特種部隊（夜戰） 海軍——驅逐艦、護衛艦、巡洋艦、潛艇、重型航母 附加旅——直升機、火炮、自行火炮、防空導彈、火箭炮 "
+      	style = 2
+	picture = "censorship"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930038 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -30 }	# 其中10%用於支援以色列
+		command = { type = intelligence which = us value = 30 }
+      		command = { type = army_detection which = us value = 30 }
+		
+		# 摩步师
+		command = { type = soft_attack which = motorized value = 3 where = relative when = now }
+    command = { type = hard_attack which = motorized value = 3 where = relative when = now }
+		command = { type = speed which = motorized value = 10 where = relative when = now }
+		
+		# 机步师
+		command = { type = soft_attack which = mechanized value = 3 where = relative when = now }
+    command = { type = hard_attack which = mechanized value = 3 where = relative when = now }
+		command = { type = speed which = mechanized value = 10 where = relative when = now }
+
+		# 陸戰隊
+		command = { type = build_time which = marine when = now where = relative value = 5 }
+		command = { type = max_organization which = marine value = 10 }
+		command = { type = morale which = marine value = 5 }
+		command = { type = shore_attack which = marine value = 10 }
+		command = { type = river_attack which = marine value = 10 }
+		
+		# 歼击机
+		command = { type = soft_attack which = multi_role value = 3 where = relative when = now }
+    command = { type = hard_attack which = multi_role value = 3 where = relative when = now }
+		command = { type = speed which = multi_role value = 10 where = relative when = now }
+		
+		# 战略轰炸机
+		command = { type = soft_attack which = strategic_bomber value = 3 where = relative when = now }
+    command = { type = hard_attack which = strategic_bomber value = 3 where = relative when = now }
+		command = { type = speed which = strategic_bomber value = 10 where = relative when = now }
+
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 5 when = now where = relative }
+		command = { type = free_supplies value = -2.5 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 15 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = heavy_cruiser value = 10 }
+      		command = { type = morale which = heavy_cruiser value = 5 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 15 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 15 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = light_cruiser value = 10 }
+      		command = { type = morale which = light_cruiser value = 5 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 巡洋艦
+      		command = { type = build_cost which = battlecruiser value = 15 where = relative when = now }
+		command = { type = manpower which = battlecruiser when = now where = relative value = -0.2 }
+      		command = { type = max_organization which = battlecruiser value = 10 }
+      		command = { type = morale which = battlecruiser value = 5 }
+      		command = { type = max_positioning which = battlecruiser value = 0.15 }
+      		command = { type = min_positioning which = battlecruiser value = 0.15 }
+
+		# 航母
+      		command = { type = build_cost which = carrier value = 15 where = relative when = now }
+		command = { type = manpower which = carrier when = now where = relative value = -0.8 }
+      		command = { type = max_organization which = carrier value = 10 }
+      		command = { type = morale which = carrier value = 5 }
+      		command = { type = max_positioning which = carrier value = 0.15 }
+      		command = { type = min_positioning which = carrier value = 0.15 }
+      		
+     command = { type = assault value = 5 }
+    command = { type = hard_attack which = land value = 2 }
+    command = { type = air_attack which = land value = 1 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = -3 }
+    command = { type = naval_attack which = naval value = 5 }
+    command = { type = air_attack which = naval value = 4 }
+    command = { type = naval_defense which = naval value = 5 }
+    command = { type = air_defense which = naval value = 4 }
+    command = { type = max_organization which = naval value = 3 }
+    command = { type = morale which = naval value = -2 }
+    command = { type = air_attack which = air value = 5 }
+    command = { type = strategic_attack which = air value = 5 }
+    command = { type = naval_attack which = air value = 4 }
+    command = { type = max_organization which = air value = 3 }
+    command = { type = morale which = air value = -2 }
+    command = { type = mountain_attack value = -5 }
+    command = { type = mountain_defense value = -5 }
+    command = { type = mountain_move value = -5 } 		
+		# 空軍增強
+		command = { type = task_efficiency which = air_superiority value = 0.5 }
+      		command = { type = task_efficiency which = ground_attack value = 0.5 }
+      		command = { type = task_efficiency which = runway_cratering value = 0.5 }
+      		command = { type = task_efficiency which = installation_strike value = 0.5 }
+      		command = { type = task_efficiency which = port_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_strike value = 0.5 }
+      		command = { type = task_efficiency which = logistical_strike value = 0.5 }
+      		command = { type = task_efficiency which = strategic_bombardment value = 0.5 }
+      		command = { type = task_efficiency which = naval_airbase_strike value = 0.5 }
+      		command = { type = task_efficiency which = naval_port_strike value = 0.5 }
+     command = { trigger = { year = 1974 } type = name where = USA which = USA75 }
+    command = { trigger = { year = 1974 } type = flag_ext where = USA which = "_len" } 
+      	}
+}
+event = {
+	id = 8930042
+	random = no
+	country = ISR
+
+	trigger = {
+	ai = yes 
+	}
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+	name = "国家發展白皮書——以色列 " 
+	desc = "国家類型：侵略扩张型 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930043 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 45 }
+		command = { type = building_prod_mod which = infrastructure value = 45 }
+		command = { type = industrial_modifier which = total value = 55 }
+		command = { type = industrial_modifier which = supplies value = 10 }	
+		command = { type = relative_manpower value = 30 }
+		command = { type = research_mod value = 30 }
+		
+		# 步兵师
+		command = { type = soft_attack which = infantry value = 3 where = relative when = now }
+    command = { type = hard_attack which = infantry value = 3 where = relative when = now }
+		command = { type = build_time which = infantry value = -20 where = relative when = now }
+		command = { type = speed which = infantry value = 10 where = relative when = now }
+		
+		# 机步师
+		command = { type = soft_attack which = mechanized value = 3 where = relative when = now }
+    command = { type = hard_attack which = mechanized value = 3 where = relative when = now }
+		command = { type = speed which = mechanized value = 10 where = relative when = now }
+		
+		# 军队素质
+    command = { type = breakthrough value = 5 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = 5 }
+    command = { type = naval_attack which = naval value = -3 }
+    command = { type = naval_defense which = naval value = -3 }
+    command = { type = naval_attack which = air value = -3 }
+    command = { type = desert_attack value = 3 }
+    command = { type = desert_defense value = 5 }
+    command = { type = desert_move value = 5 }
+    command = { type = river_attack value = 5 }
+    command = { type = night_move value = 3 }
+    command = { type = night_attack value = 15 }
+    command = { type = night_defense value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 8 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 9 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 8 when = now where = relative }
+		command = { type = free_supplies value = -1.7 }
+
+		# 驅逐艦
+		command = { type = naval_defense which = destroyer value = -30 where = relative when = now }
+    command = { type = naval_attack which = destroyer value = 20 where = relative when = now }
+		command = { type = build_time which = destroyer value = -70 where = relative when = now }
+		command = { type = max_positioning which = destroyer value = 0.25 }
+      		command = { type = min_positioning which = destroyer value = 0.25 }
+
+		# 潛艇
+		command = { type = naval_defense which = submarine value = -30 where = relative when = now }
+          command = { type = naval_attack which = submarine value = 35 where = relative when = now }
+		command = { type = build_time which = submarine value = -60 where = relative when = now }
+      		command = { type = max_positioning which = submarine value = 0.25 }
+      		command = { type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now }  		
+	}
+}
+event = {
+	id = 8930043
+	random = no
+	country = ISR
+
+	trigger = {
+	ai = no
+	}
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+	name = "国家發展白皮書——以色列 " 
+	desc = "国家類型：侵略扩张型 "
+	style = 2
+	picture = "censorship"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930042 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 45 }
+		command = { type = building_prod_mod which = infrastructure value = 45 }
+		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = supplies value = 5 }	
+		command = { type = research_mod value = 10 }
+		command = { type = relative_manpower value = 20 }
+		
+		# 步兵师
+		command = { type = soft_attack which = infantry value = 3 where = relative when = now }
+    command = { type = hard_attack which = infantry value = 3 where = relative when = now }
+		command = { type = build_time which = infantry value = -20 where = relative when = now }
+		command = { type = speed which = infantry value = 10 where = relative when = now }
+		
+		# 机步师
+		command = { type = soft_attack which = mechanized value = 3 where = relative when = now }
+    command = { type = hard_attack which = mechanized value = 3 where = relative when = now }
+		command = { type = speed which = mechanized value = 10 where = relative when = now }
+		
+		# 军队素质
+    command = { type = breakthrough value = 5 }
+    command = { type = max_organization which = land value = 3 }
+    command = { type = morale which = land value = 5 }
+    command = { type = naval_attack which = naval value = -3 }
+    command = { type = naval_defense which = naval value = -3 }
+    command = { type = naval_attack which = air value = -3 }
+    command = { type = desert_attack value = 3 }
+    command = { type = desert_defense value = 5 }
+    command = { type = desert_move value = 5 }
+    command = { type = river_attack value = 5 }
+    command = { type = night_move value = 3 }
+    command = { type = night_attack value = 15 }
+    command = { type = night_defense value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 8 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 9 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 5 when = now where = relative }
+		command = { type = max_organization which = artillery value = 8 when = now where = relative }
+		command = { type = free_supplies value = -1.7 }
+
+		# 潛艇
+          command = { type = naval_attack which = submarine value = 35 where = relative when = now }
+      		command = { type = max_positioning which = submarine value = 0.25 }
+      		command = { type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 5 where = relative when = now }		
+	}
+}
+event = {
+	id = 53503
+	random = no
+	country = U06
+
+	trigger = {
+	ai = no 
+	}
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+	name = "國防發展白皮書——巴西 " 
+	desc = "國家類型：經濟發展型 "
+	style = 2
+	picture = "events_empty"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53553 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = relative_manpower value = -30 }
+
+		# 附加旅
+		command = { type = max_organization which = sp_rct_artillery value = 3 when = now where = relative }
+		command = { type = free_supplies value = -0.3 }
+	}
+}
+event = {
+	id = 53505
+      	random = no
+      	country = PRK
+
+	trigger = {
+	ai = no 
+	event = 19107062
+	atwar = no
+	}
+
+      	name = "國防發展白皮書——朝鮮 "
+      	desc = "國家類型：軍事擴張型 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53555 }
+		# 經濟
+		command = { type = building_prod_mod which = infrastructure value = -20 }
+		command = { type = building_prod_mod which = ic value = -20 }
+  		command = { type = building_prod_mod which = nuclear_reactor value = 10 }
+  		command = { type = building_prod_mod which = rocket_test value = 10 }
+
+		# 軍事
+		command = { type = morale which = land value = 5 }
+		command = { type = morale which = naval value = 5 }
+		command = { type = morale which = air value = 5 }
+		command = { type = max_organization which = land value = -10 }
+		command = { type = max_organization which = naval value = -10 }
+      		command = { type = max_organization which = air value = -10 }
+      		
+      		# 潛艇
+		command = { type = naval_defense which = submarine value = -30 where = relative when = now }
+          command = { type = naval_attack which = submarine value = 35 where = relative when = now }
+		command = { type = build_time which = submarine value = -60 where = relative when = now }
+      		command = { type = max_positioning which = submarine value = 0.25 }
+      		command = { type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now }  
+
+		# 火星收入
+               	command = { type = free_energy value = 5 }
+		command = { type = free_rare_materials value = 1 }
+               	command = { type = extra_tc value = 10 }
+               	command = { type = free_metal value = 2.5 }
+               	command = { type = free_oil value = 3 }
+               	command = { type = free_supplies value = 25 }
+      	}
+}
+event = {
+	id = 53508
+      	random = no
+      	country = DFR
+
+	trigger = {
+	ai = no 
+	}
+
+      	name = "國防發展白皮書——德國 "
+      	desc = "強化兵種： 陸軍——裝甲部隊（巷戰） 海軍——護衛艦、潛艇 附加旅——直升機、自行火炮、防空導彈、火箭炮 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53558 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 2 when = now where = relative }
+		command = { type = max_organization which = b_02 value = 2 when = now where = relative }
+		command = { type = free_supplies value = -1.2 }
+
+		# 裝甲部隊
+		command = { type = build_time which = armor when = now where = relative value = 5 }
+		command = { type = urban_attack which = armor value = 10 }
+		command = { type = build_time which = light_armor when = now where = relative value = 5 }
+		command = { type = urban_attack which = light_armor value = 10 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 15 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+      	}
+}
+event = {
+	id = 53510
+      	random = no
+      	country = FRA
+
+	trigger = {
+	ai = no 
+
+	}
+
+      	name = "國防發展白皮書——法國 "
+      	desc = "強化兵種： 海軍——驅逐艦、護衛艦、潛艇、航母 附加旅——直升機、火炮、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53560 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 4 when = now where = relative }
+		command = { type = free_supplies value = -1.4 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 15 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 15 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+	      	
+	      		# 截击机
+          command = { type = air_attack which = tactical_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = tactical_bomber value = -50 where = relative when = now } 
+      	}
+}
+event = {
+	id = 53511
+      	random = no
+      	country = ENG
+
+	trigger = {
+	ai = no
+	}
+
+      	name = "國防發展白皮書——英國 "
+      	desc = "強化兵種： 海軍——驅逐艦、護衛艦、潛艇、航母 附加旅——直升機、火炮、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53561 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 3 when = now where = relative }
+		command = { type = free_supplies value = -1.4 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 15 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 15 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+	      	
+	      		# 截击机
+          command = { type = air_attack which = tactical_bomber value = 10 where = relative when = now }
+          command = { type = air_defense which = tactical_bomber value = -10 where = relative when = now }
+		      command = { type = build_time which = tactical_bomber value = -50 where = relative when = now } 
+      	}
+}
+event = {
+	id = 53512
+      	random = no
+      	country = ITA
+
+	trigger = {
+	ai = no 	}
+
+      	name = "國防發展白皮書——義大利 "
+      	desc = "強化兵種： 海軍——護衛艦、潛艇、航母 附加旅——直升機、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53562 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -6 }
+		command = { type = intelligence which = us value = 9 }
+      		command = { type = army_detection which = us value = 9 }
+
+		# 附加旅
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+		command = { type = free_supplies value = -0.9 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 15 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 10 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+      	}
+}
+event = {
+	id = 53513
+      	random = no
+      	country = PER
+
+	trigger = {
+	ai = no 	}
+
+      	name = "國防發展白皮書——伊朗 "
+      	desc = "國防發展白皮書——伊朗 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53563 }
+		command = { type = building_prod_mod which = ic value = -3 }
+		command = { type = morale which = land value = 3 }
+		command = { type = morale which = naval value = 3 }
+		command = { type = morale which = air value = 3 }
+	}
+}
+event = {
+	id = 53514
+      	random = no
+      	country = U75
+
+	trigger = {
+	ai = no }
+
+      	name = "國防發展白皮書——新加坡 "
+      	desc = "強化兵種： 陸軍——特種部隊（叢林） 海軍——護衛艦 附加旅——火炮、自行火炮 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53564 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -4 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+
+		# 特種部隊
+		command = { type = build_time which = bergsjaeger when = now where = relative value = 5 }
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+		command = { type = free_supplies value = -0.7 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 15 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+	}
+}
+event = {
+	id = 53515
+      	random = no
+      	country = kor
+
+	trigger = {
+	ai = no 
+	event = 19107403
+	}
+
+      	name = "國防發展白皮書——韓國 "
+      	desc = "太極虎——民族魂 強化兵種： 海軍——驅逐艦、護衛艦 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53565 }
+		command = { type = building_prod_mod which = ic value = -3 }
+		command = { type = morale which = land value = 3 }
+		command = { type = morale which = naval value = 3 }
+		command = { type = morale which = air value = 3 }
+
+		# 附加旅
+		command = { type = free_supplies value = -0.9 }
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+      	}
+}
+event = {
+	id = 53516
+      	random = no
+      	country = CHI
+
+	trigger = {
+	ai = no }
+
+      	name = "國防發展白皮書——中華民國 "
+  desc = "1949年的中華民國軍隊在前幾年的戰鬥中，主力消耗殆盡，此時 其士兵鬥志低落，只能依靠長江天險勉強招架共產黨軍隊進攻。 在後面的戰鬥中，中華民國軍隊一潰千里，最終不得不撤到臺灣 整頓。 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53566 }
+		command = { type = morale which = land value = -3 }
+		command = { type = morale which = naval value = -3 }
+		command = { type = morale which = air value = -3 }
+		command = { type = construct which = radar_station where = 1322 value = 1 }
+		command = { type = construct which = radar_station where = 1323 value = 1 }
+		command = { type = construct which = radar_station where = 1324 value = 1 }
+		command = { type = construct which = flak where = 1322 value = 2 }
+		command = { type = construct which = flak where = 1323 value = 2 }
+		command = { type = construct which = flak where = 1324 value = 2 }
+      	}
+}
+event = {
+	id = 53517
+      	random = no
+      	country = tur
+
+	trigger = {
+	ai = no 	}
+
+      	name = "國防發展白皮書——土耳其 "
+      	desc = "突厥鐵騎 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53567 }
+		command = { type = building_prod_mod which = ic value = -5 }
+		command = { type = morale which = land value = 3 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+      	}
+}
+event = {
+	id = 53518
+      	random = no
+      	country = spa
+
+	trigger = {
+	ai = no }
+
+      	name = "國防發展白皮書——西班牙 "
+      	desc = "鬥牛士軍團 強化兵種：驅逐艦 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53568 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = -4 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser when = now where = relative value = 10 }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.2 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+      	}
+}
+event = {
+	id = 53519
+      	random = no
+      	country = U72
+
+	trigger = {
+	ai = no 	}
+
+      	name = "國防發展白皮書——越南 "
+      	desc = "強化兵種： 陸軍——特種部隊（叢林）"
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53569 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 5 }
+		command = { type = building_prod_mod which = infrastructure value = 5 }
+		command = { type = relative_manpower value = -15 }
+
+		# 特種部隊
+		command = { type = build_time which = bergsjaeger when = now where = relative value = 5 }
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+      	}
+}
+
+
+event = {
+	id = 53553
+	random = no
+	country = U06
+
+	trigger = {
+	ai = yes 		}
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+	name = "國防發展白皮書——巴西 " 
+	desc = "國家類型：經濟發展型 "
+	style = 2
+	picture = "events_empty"
+
+	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53503 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = relative_manpower value = -30 }
+
+		# 附加旅
+		command = { type = max_organization which = sp_rct_artillery value = 3 when = now where = relative }
+
+		# 運輸船
+		command = { type = transport_pool which = bra value = 500 }
+		command = { type = escort_pool which = bra value = 100 }
+	}
+}
+event = {
+	id = 53555
+      	random = no
+      	country = PRK
+
+	trigger = {
+	ai = yes 
+	event = 19107062
+	atwar = no
+		}
+
+      	name = "國防發展白皮書——朝鮮 "
+      	desc = "國家類型：軍事擴張型 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53505 }
+		# 經濟
+		command = { type = building_prod_mod which = infrastructure value = -20 }
+		command = { type = building_prod_mod which = ic value = -20 }
+  		command = { type = building_prod_mod which = nuclear_reactor value = 20 }
+  		command = { type = building_prod_mod which = rocket_test value = 20 }
+
+		# 軍事
+		command = { type = morale which = land value = 10 }
+		command = { type = morale which = naval value = 10 }
+		command = { type = morale which = air value = 10 }
+		command = { type = max_organization which = land value = -10 }
+		command = { type = max_organization which = naval value = -10 }
+      		command = { type = max_organization which = air value = -10 }
+
+		# 火星收入
+               	command = { type = free_energy value = 10 }
+		command = { type = free_rare_materials value = 1 }
+               	command = { type = extra_tc value = 20 }
+               	command = { type = free_metal value = 5 }
+               	command = { type = free_oil value = 6 }
+               	command = { type = free_supplies value = 50 }
+               	
+               	# 潛艇
+		command = { type = naval_defense which = submarine value = -30 where = relative when = now }
+          command = { type = naval_attack which = submarine value = 35 where = relative when = now }
+		command = { type = build_time which = submarine value = -60 where = relative when = now }
+      		command = { type = max_positioning which = submarine value = 0.25 }
+      		command = { type = min_positioning which = submarine value = 0.25 }
+    # 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now }  
+
+		# 運輸船
+		command = { type = transport_pool which = u09 value = 250 }
+		command = { type = escort_pool which = u09 value = 50 }
+      	}
+}
+event = {
+	id = 53558
+      	random = no
+      	country = dfr
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——德國 "
+      	desc = "強化兵種： 陸軍——裝甲部隊（巷戰） 海軍——護衛艦、潛艇 附加旅——直升機、自行火炮、防空導彈、火箭炮 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53508 }
+		# 經濟
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+
+		# 運輸機
+		command = { type = remove_division which = 11100 value = 116 }
+		command = { type = remove_division which = 11100 value = 117 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_rct_artillery value = 2 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+
+		# 裝甲部隊
+		command = { type = urban_attack which = armor value = 10 }
+		command = { type = urban_attack which = light_armor value = 10 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = ger value = 500 }
+		command = { type = escort_pool which = ger value = 100 }
+      	}
+}
+event = {
+	id = 53559
+      	random = no
+      	country = U74
+
+	trigger = {
+	ai = NO
+	event = 39107013
+	 		}
+
+      	name = "國防發展白皮書——日本 "
+      	desc = "武士道精神 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53509 }
+		command = { type = morale which = land value = 5 }
+		command = { type = morale which = naval value = 5 }
+		command = { type = morale which = air value = 5 }
+
+		# 運輸機
+		command = { type = remove_division which = 13200 value = 110 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 3 when = now where = relative }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 5 }
+      		command = { type = morale which = submarine value = 3 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+		# 衛戍部隊
+		command = { type = activate_division which = 13154 value = 2 where = 1599 }
+		command = { type = activate_division which = 13154 value = 3 where = 1784 }
+		command = { type = activate_division which = 13154 value = 4 where = 1785 }
+		
+		# 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now } 
+
+		# 運輸船
+		command = { type = transport_pool which = u74 value = 1000 }
+		command = { type = escort_pool which = u74 value = 200 }
+      	}
+}
+event = {
+	id = 53509
+      	random = no
+      	country = U74
+
+	trigger = {
+	ai = yes 	
+	event = 39107013	
+	}
+
+      	name = "國防發展白皮書——日本 "
+      	desc = "武士道精神 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53559 }
+		command = { type = morale which = land value = 5 }
+		command = { type = morale which = naval value = 5 }
+		command = { type = morale which = air value = 5 }
+
+		# 運輸機
+		command = { type = remove_division which = 13200 value = 110 }
+
+		# 附加旅
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 3 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 10 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_organization which = heavy_cruiser value = 10 }
+      		command = { type = morale which = heavy_cruiser value = 5 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 5 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 10 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+		command = { type = max_organization which = submarine value = 10 }
+      		command = { type = morale which = submarine value = 5 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+
+		# 海巡
+          command = { type = naval_defense which = d_09 value = -30 where = relative when = now }
+          command = { type = naval_attack which = d_09 value = 20 where = relative when = now }
+		      command = { type = build_time which = d_09 value = -70 where = relative when = now }
+      		command = { type = max_positioning which = d_09 value = 0.25 }
+      		command = { type = min_positioning which = d_09 value = 0.25 }  
+    # 截击机
+          command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+          command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+		      command = { type = build_time which = interceptor value = -50 where = relative when = now } 
+
+		# 運輸船
+		command = { type = transport_pool which = u74 value = 1000 }
+		command = { type = escort_pool which = u74 value = 200 }
+      	}
+}
+event = {
+	id = 53560
+      	random = no
+      	country = FRA
+
+	trigger = {
+	ai = yes 
+		}
+
+      	name = "國防發展白皮書——法國 "
+      	desc = "強化兵種： 海軍——驅逐艦、護衛艦、潛艇、航母 附加旅——直升機、火炮、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53510 }
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+
+		# 運輸機
+		command = { type = remove_division which = 10600 value = 121 }
+		command = { type = remove_division which = 10600 value = 122 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 4 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 5 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 5 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 5 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 10 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+	      	 
+    # 截击机
+          command = { type = air_attack which = tactical_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = tactical_bomber value = -50 where = relative when = now }
+
+		# 運輸船
+		command = { type = transport_pool which = fra value = 500 }
+		command = { type = escort_pool which = fra value = 100 }
+      	}
+}
+event = {
+	id = 53561
+      	random = no
+      	country = ENG
+
+	trigger = {
+	ai = yes 
+		}
+
+      	name = "國防發展白皮書——英國 "
+      	desc = "強化兵種： 海軍——驅逐艦、護衛艦、潛艇、航母 附加旅——直升機、火炮、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53511 }
+		command = { type = intelligence which = us value = 15 }
+      		command = { type = army_detection which = us value = 15 }
+		command = { type = scrap_model which = submarine value = 0 }
+
+		# 運輸機
+		command = { type = remove_division which = 22300 value = 123 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 5 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 3 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 5 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 5 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+      		command = { type = build_cost which = light_cruiser value = 5 where = relative when = now }
+		command = { type = manpower which = light_cruiser when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = light_cruiser value = 0.15 }
+      		command = { type = min_positioning which = light_cruiser value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 10 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_organization which = escort_carrier value = 10 }
+		command = { type = morale which = escort_carrier value = 10 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+		
+		# 轰炸机
+          command = { type = air_attack which = tactical_bomber value = 10 where = relative when = now }
+		      command = { type = build_time which = tactical_bomber value = -50 where = relative when = now }
+
+		# 運輸船
+		command = { type = transport_pool which = eng value = 500 }
+		command = { type = escort_pool which = eng value = 100 }
+      	}
+}
+event = {
+	id = 53562
+      	random = no
+      	country = ITA
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——義大利 "
+      	desc = "強化兵種： 海軍——護衛艦、潛艇、航母 附加旅——直升機、自行火炮、防空導彈 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53512 }
+		command = { type = intelligence which = us value = 9 }
+      		command = { type = army_detection which = us value = 9 }
+
+		# 運輸機
+		command = { type = remove_division which = 12900 value = 206 }
+
+		# 附加旅
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 潛艇
+		command = { type = build_cost which = submarine value = 5 where = relative when = now }
+		command = { type = manpower which = submarine when = now where = relative value = -0.1 }
+      		command = { type = max_positioning which = submarine value = 0.15 }
+      		command = { type = min_positioning which = submarine value = 0.15 }
+
+		# 航母
+	      	command = { type = build_cost which = escort_carrier value = 5 where = relative when = now }
+		command = { type = manpower which = escort_carrier when = now where = relative value = -0.4 }
+	      	command = { type = max_positioning which = escort_carrier value = 0.15 }
+	      	command = { type = min_positioning which = escort_carrier value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = ita value = 500 }
+		command = { type = escort_pool which = ita value = 100 }
+      	}
+}
+event = {
+	id = 53563
+      	random = no
+      	country = PER
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——伊朗 "
+      	desc = "國防發展白皮書——伊朗 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53513 }
+		command = { type = building_prod_mod which = ic value = -3 }
+		command = { type = morale which = land value = 6 }
+		command = { type = morale which = naval value = 6 }
+		command = { type = morale which = air value = 6 }
+
+		# 運輸機
+		command = { type = remove_division which = 12500 value = 116 }
+
+		# 運輸船
+		command = { type = transport_pool which = per value = 500 }
+		command = { type = escort_pool which = per value = 100 }
+	}
+}
+event = {
+	id = 53564
+      	random = no
+      	country = U75
+
+	trigger = {
+	ai = yes 	}
+
+      	name = "國防發展白皮書——新加坡 "
+      	desc = "強化兵種： 陸軍——特種部隊（叢林） 海軍——護衛艦 附加旅——火炮、自行火炮 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53514 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+
+		# 特種部隊
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+
+		# 附加旅
+		command = { type = max_organization which = artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = sp_artillery value = 3 when = now where = relative }
+
+		# 護衛艦
+		command = { type = build_cost which = destroyer value = 10 where = relative when = now }
+		command = { type = manpower which = destroyer when = now where = relative value = -0.1 }
+		command = { type = max_organization which = destroyer value = 10 }
+      		command = { type = morale which = destroyer value = 5 }
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = u75 value = 250 }
+		command = { type = escort_pool which = u75 value = 50 }
+	}
+}
+event = {
+	id = 53565
+      	random = no
+      	country = kor
+
+	trigger = {
+	ai = yes 	
+	event = 19107403
+	}
+
+      	name = "國防發展白皮書——韓國 "
+      	desc = "太極虎——民族魂 強化兵種： 海軍——驅逐艦、護衛艦 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {     	
+		name = "OK"
+		command = {	type = sleepevent which =  53515 }
+		command = { type = morale which = land value = 3 }
+		command = { type = morale which = naval value = 3 }
+		command = { type = morale which = air value = 3 }
+
+		# 運輸機
+		command = { type = remove_division which = 20000 value = 123 }
+
+		# 附加旅
+		command = { type = max_organization which = sp_artillery value = 4 when = now where = relative }
+		command = { type = max_organization which = heavy_armor value = 3 when = now where = relative }
+		command = { type = max_organization which = anti_air value = 2 when = now where = relative }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser value = 5 where = relative when = now }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.1 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+    command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 護衛艦
+      		command = { type = max_positioning which = destroyer value = 0.15 }
+      		command = { type = min_positioning which = destroyer value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = kor value = 500 }
+		command = { type = escort_pool which = kor value = 100 }
+      	}
+}
+event = {
+	id = 53566
+      	random = no
+      	country = CHI
+
+	trigger = {
+	ai = yes 	}
+
+      	name = "國防發展白皮書——中華民國 "
+      	desc = "草莓兵、全球密度第二的防空網 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53516 }
+		command = { type = construct which = radar_station where = 1322 value = 2 }
+		command = { type = construct which = radar_station where = 1323 value = 2 }
+		command = { type = construct which = radar_station where = 1324 value = 2 }
+		command = { type = construct which = flak where = 1322 value = 4 }
+		command = { type = construct which = flak where = 1323 value = 4 }
+		command = { type = construct which = flak where = 1324 value = 4 }
+
+		# 運輸機
+		command = { type = remove_division which = 21000 value = 121 }
+
+		# 運輸船
+		command = { type = transport_pool which = chi value = 250 }
+		command = { type = escort_pool which = chi value = 50 }
+      	}
+}
+event = {
+	id = 53567
+      	random = no
+      	country = tur
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——土耳其 "
+      	desc = "突厥鐵騎 "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53517 }
+		command = { type = morale which = land value = 3 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+		# 運輸船
+		command = { type = transport_pool which = tur value = 250 }
+		command = { type = escort_pool which = tur value = 50 }
+      	}
+}
+event = {
+	id = 53568
+      	random = no
+      	country = spa
+
+	trigger = {
+	ai = yes 	}
+
+      	name = "國防發展白皮書——西班牙 "
+      	desc = "鬥牛士軍團 強化兵種：驅逐艦 "
+      	style = 2
+	picture = "events_empty"
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53518 }
+		command = { type = building_prod_mod which = ic value = -4 }
+		command = { type = intelligence which = us value = 6 }
+      		command = { type = army_detection which = us value = 6 }
+
+		# 驅逐艦
+		command = { type = build_cost which = heavy_cruiser when = now where = relative value = 5 }
+		command = { type = manpower which = heavy_cruiser when = now where = relative value = -0.2 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.15 }
+      		command = { type = min_positioning which = heavy_cruiser value = 0.15 }
+
+		# 運輸船
+		command = { type = transport_pool which = spa value = 250 }
+		command = { type = escort_pool which = spa value = 50 }
+      	}
+}
+event = {
+	id = 53569
+      	random = no
+      	country = U72
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——越南 "
+      	desc = "強化兵種： 陸軍——特種部隊（叢林）"
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  53519 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 5 }
+		command = { type = building_prod_mod which = infrastructure value = 5 }
+
+		# 特種部隊
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+
+
+		# 運輸船
+		command = { type = transport_pool which = DDR value = 250 }
+		command = { type = escort_pool which = DDR value = 50 }
+      	}
+}
+event = {
+	id = 8930045
+      	random = no
+      	country = DDR
+
+	trigger = {
+	ai = yes 		}
+
+      	name = "國防發展白皮書——德国 "
+      	desc = "強化兵種： "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930046 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 5 }
+		command = { type = building_prod_mod which = infrastructure value = 5 }
+
+		# 特種部隊
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+
+
+		# 運輸船
+		command = { type = transport_pool which = DDR value = 250 }
+		command = { type = escort_pool which = DDR value = 50 }
+		
+		command = { trigger = { year = 1974 }  type = flag_ext where = -1 which = "_lwr" }
+      	}
+}
+event = {
+	id = 8930046
+      	random = no
+      	country = DDR
+
+	trigger = {
+	ai = no 		}
+
+      	name = "國防發展白皮書——德国 "
+      	desc = "強化兵種： "
+      	style = 2
+	picture = "events_empty"
+
+#	date = { day = 0 month = january year = 1947 }
+#    	offset = 1
+#	deathdate = { day = 29 month = december year = 2010 }
+
+      	action_a = {
+		name = "OK"
+		command = {	type = sleepevent which =  8930045 }
+		# 經濟
+		command = { type = building_prod_mod which = ic value = 5 }
+		command = { type = building_prod_mod which = infrastructure value = 5 }
+
+		# 特種部隊
+		command = { type = jungle_attack which = bergsjaeger value = 10 }
+		command = { type = jungle_defense which = bergsjaeger value = 10 }
+
+		# 設施
+		command = { type = construct which = flak where = 1328 value = 1 }
+		command = { type = construct which = flak where = 1337 value = 1 }
+		command = { type = construct which = land_fort where = 1326 value = 3 }
+
+		# 運輸船
+		command = { type = transport_pool which = U72 value = 250 }
+		command = { type = escort_pool which = U72 value = 50 }
+		
+		command = { trigger = { year = 1974 }  type = flag_ext where = -1 which = "_lwr" }
+      	}
+}

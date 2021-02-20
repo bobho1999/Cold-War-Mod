@@ -1,0 +1,418 @@
+
+
+event = {
+	id = 400722
+	random = no
+	country = CHI
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+			}
+
+	name = "AI_EVENT" #1945
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = ai which ="CHI_1945.ai" }
+			}
+} 
+
+event = {
+	id = 400723
+	random = no
+	country = CHC
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+			}
+
+	name = "AI_EVENT" #1945
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+		command = { type = ai which ="CHC_1945.ai" }
+			}
+} 
+
+event = {
+id = 400725
+random = no
+country = CHI
+
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+		event = 941298 #june ceasefire
+			}
+
+	name = "AI_EVENT" #1946
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+	command = { type = ai which ="chi_1946.ai" }
+		}
+} 
+
+event = {
+	id = 400726
+	random = no
+	country = CSX
+	trigger = { 
+		ai = yes
+		war = { country = CSX country = CHC }
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+	command = { type = ai which ="CSX_1945.ai" }
+		}
+} 
+event = {
+id = 400732
+random = no
+country = CHI
+
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+		event = 941298 #june ceasefire
+			}
+
+	name = "AI_EVENT" #1947
+	style = 0
+
+	date = { day = 15 month = january year = 1947 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+	command = { type = ai which ="chi_1947.ai" }
+		}
+} 
+
+event = {
+id = 400735
+random = no
+country = CHI
+
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+		event = 941148 #
+			}
+
+	name = "AI_EVENT" #northeast
+	style = 0
+
+#	date = { day = 1 month = january year = 1946 }
+#	offset = 1
+#	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+	command = { type = ai which ="switch\chi_northeast.ai" }
+		}
+} 
+event = {
+	id = 400736
+	random = no
+	country = CHC
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+			}
+
+	name = "AI_EVENT" #1946
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+		command = { type = ai which ="chc_1946.ai" }
+			}
+} 
+
+event = {
+id = 400729
+random = no
+country = ENG
+
+trigger = { 	ai = yes
+		war = { country = -1 country = CHI }	}
+
+name = "AI_EVENT"
+style = 0
+
+
+date = { day = 1 month = january year = 1925 }
+
+offset = 1
+	
+deathdate = { day = 30 month = january year = 1935 }
+
+action_a = {
+name = "OK"
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+ }
+} 
+event = {
+id = 400730
+random = no
+country = FRA
+
+trigger = { 	ai = yes
+		war = { country = -1 country = CHI }	}
+
+name = "AI_EVENT"
+style = 0
+
+
+date = { day = 1 month = january year = 1925 }
+
+offset = 1
+	
+deathdate = { day = 30 month = january year = 1935 }
+
+action_a = {
+name = "OK"
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+	command = { type = add_division value = infantry when = 8 where = artillery }
+ }
+} 
+
+
+event = {
+	id = 400733
+	random = no
+	country = CHI
+	trigger = { 
+		ai = yes
+		war = { country = chi country = CHC }
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_energy value = 30 }
+	    command = { type = free_metal value = 20 }
+#	    command = { type = free_supplies value = 20 }
+			}
+} 
+event = {
+	id = 400737
+	random = no
+	country = CSX
+	trigger = { 
+		ai = yes
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_energy value = 10 }
+	    command = { type = free_metal value = 5 }
+	    command = { type = free_supplies value = 5 }
+	    command = { type = free_oil value = 3 }
+		command = { type = tc_mod value = 5 }
+		command = { type = extra_tc value = 20 }
+			}
+} 
+event = {
+	id = 400738
+	random = no
+	country = CGX
+	trigger = { 
+		ai = yes
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_energy value = 10 }
+	    command = { type = free_metal value = 5 }
+	    command = { type = free_supplies value = 5 }
+	    command = { type = free_oil value = 3 }
+		command = { type = tc_mod value = 10 }
+		command = { type = extra_tc value = 25 }
+			}
+} 
+event = {
+	id = 400739
+	random = no
+	country = CYN
+	trigger = { 
+		ai = yes
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_energy value = 5 }
+	    command = { type = free_metal value = 3 }
+	    command = { type = free_supplies value = 5 }
+	    command = { type = free_oil value = 3 }
+		command = { type = tc_mod value = 10 }
+		command = { type = extra_tc value = 25 }
+			}
+} 
+event = {
+	id = 400740
+	random = no
+	country = CXB
+	trigger = { 
+		ai = yes
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_energy value = 10 }
+	    command = { type = free_metal value = 5 }
+	    command = { type = free_supplies value = 5 }
+	    command = { type = free_oil value = 3 }
+		command = { type = tc_mod value = 5 }
+		command = { type = extra_tc value = 20 }
+			}
+} 
+event = {
+	id = 400734
+	random = no
+	country = CHI
+	trigger = { 
+		ai = yes
+		event = 941298 
+			}
+
+	name = "AI_EVENT"
+	style = 0
+
+#	date = { day = 0 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = add_corps which = "瀋陽城防 " value = land where = 1389 }
+        command = { type = activate_division which = 11616 value = 608 where = 1389 when = 1 }
+		command = { type = disorg_division which = 11616 value = 608 when = 1 where = -1000 }
+		command = { type = add_corps which = "長春城防 " value = land where = 1390 }
+        command = { type = activate_division which = 11616 value = 609 where = 1390 when = 1 }
+		command = { type = disorg_division which = 11616 value = 609 when = 1 where = -1000 }
+			}
+} 
+
+event = {
+	id = 400741
+	random = no
+	country = CHC
+	trigger = { 
+		ai = yes
+		event = 941217 
+			}
+
+	name = "AI_EVENT consolidated"
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
+	
+	action_a = {
+	name = "OK"
+		command = { type = ai which ="CHC_consolidated.ai" }
+			}
+} 

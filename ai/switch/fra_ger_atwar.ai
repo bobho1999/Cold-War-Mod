@@ -1,0 +1,117 @@
+# France 1936 AI File by Lothos
+
+neutrality = 80.000 
+war = 10
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	GER = 300
+}
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.050 
+
+	AA_batteries = atwar
+	max_AA_level = 4
+	AA_provs = { 
+		44  # Lille
+		35  # Nantes
+		56  # Paris
+		325 # Bordeaux
+		359 # Toulouse
+		364 # Marseille
+		33  # Rouen
+	} 
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = yes
+	max_air_base = 4
+	air_base_provs = {
+		317  # Chaumont 
+		1792 # Damascus
+		55   # Compiegne
+	} 
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = yes
+	max_land_level = 10
+	fort_borders = { GER } 
+
+	ic_at_war = yes 
+	force_ic_until = 1937
+	ic_end_year = 1938
+	IC_provs = {
+		44  # Lille
+		35  # Nantes
+		56  # Paris
+		325 # Bordeaux
+		359 # Toulouse
+		364 # Marseille
+		33  # Rouen
+	} 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	overseas_multiplier 	= 0.2
+}
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	target = {
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		90  = -1 # Kiel
+		89  = -1 # Lubeck
+	
+		# Denmark
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+	}
+}

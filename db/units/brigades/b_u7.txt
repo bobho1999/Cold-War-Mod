@@ -1,0 +1,144 @@
+land_unit_type = 1
+# 0 - 精銳陸軍師
+model = {
+	cost 				= 9
+	buildtime	 		= 100
+	manpower 			= 10
+	maxspeed 			= 1
+	defaultorganisation = 28
+	morale					= 28
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -10
+	airdefence				= 4
+	softattack			= 25
+	hardattack			= 5
+	airattack			= 3
+	artillery_bombardment		= 7
+	supplyconsumption 	= 1.1
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 美軍重裝陸軍師
+model = {
+	cost 				= 13.5
+	buildtime	 		= 130
+	manpower 			= 13
+	maxspeed 			= 1
+	defaultorganisation = 33
+	morale					= 28
+	defensiveness 		= 6
+	toughness 			= 6
+	softness			= -20
+	airdefence				= 5
+	softattack			= 30
+	hardattack			= 8
+	airattack			= 3
+	artillery_bombardment		= 6
+	supplyconsumption 	= 2
+	fuelconsumption		= 0.7
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 日本甲種師團
+model = {
+	cost 				= 12
+	buildtime	 		= 130
+	manpower 			= 12
+	maxspeed 			= 1
+	defaultorganisation = 38
+	morale					= 58
+	defensiveness 		= 6
+	toughness 			= 4
+	softness			= -20
+	airdefence				= 3
+	softattack			= 28
+	hardattack			= 4
+	airattack			= 2
+	artillery_bombardment		= 8
+	supplyconsumption 	= 0.95
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 德國裝甲擲彈兵
+model = {
+	cost 				= 12
+	buildtime	 		= 130
+	manpower 			= 12
+	maxspeed 			= 1
+	defaultorganisation = 38
+	morale					= 58
+	defensiveness 		= 6
+	toughness 			= 4
+	softness			= -20
+	airdefence				= 3
+	softattack			= 24
+	hardattack			= 7
+	airattack			= 2
+	artillery_bombardment		= 8
+	supplyconsumption 	= 0.95
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 蘇聯紅軍近衛師
+model = {
+	cost 				= 12
+	buildtime	 		= 160
+	manpower 			= 13
+	maxspeed 			= 1
+	defaultorganisation = 48
+	morale					= 48
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -15
+	suppression			= 3
+	airdefence				= 3
+	softattack			= 26
+	hardattack			= 7
+	airattack			= 3
+	supplyconsumption 	= 2.5
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 5 - 民國甲等常备整编师
+model = {
+	cost 				= 10
+	buildtime	 		= 100
+	manpower 			= 10
+	maxspeed 			= 1
+	defaultorganisation = 23
+	morale					= 23
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -12
+	airdefence				= 3
+	softattack			= 21
+	hardattack			= 5
+	airattack			= 2
+	supplyconsumption 	= 1.3
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 6 - 中共主力野戰师
+model = {
+	cost 				= 10
+	buildtime	 		= 80
+	manpower 			= 10
+	maxspeed 			= 1
+	defaultorganisation = 38
+	morale					= 49
+	defensiveness 		= 3
+	toughness 			= 3
+	softness			= -15
+	airdefence				= 1
+	softattack			= 15
+	hardattack			= 2
+	supplyconsumption 	= 1.1
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}

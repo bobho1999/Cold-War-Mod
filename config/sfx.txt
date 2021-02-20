@@ -1,0 +1,82 @@
+
+#Allmänna Interface-ljud
+
+if_click				=	"if_click"
+if_close				=	"if_close"
+if_error				=	"if_dragover"
+if_chat					=	"if_blip"
+if_blip					=	"if_blip"
+
+#Military Units
+
+army_select				=	"if_click"
+navy_select				=	"if_click"
+army_move				=	"if_move_art"
+navy_move				=	"if_move_navy"
+army_assault			=	"if_assault"
+army_build				=	"if_build_structure"
+navy_build				=	"if_build_navy"
+army_complete			=	"if_done_army"
+navy_complete			=	"if_done_navy"
+army_disband			=	"if_disband_army"
+navy_disband			=	"if_disband_navy"
+army_victory			=	"land_cheer"
+army_loss				=	"land_death"
+navy_victory			=	"sea_cheer"
+navy_loss				=	"sea_death"
+battle_siege_1			=	"land_cannon1"
+battle_siege_2			=	"land_cannon2"
+battle_siege_3			=	"land_cannon3"
+detach_siege			=	"if_done_army"
+detach_cover			=	"if_done_army"
+
+# Sounds for battle patterns
+
+battle_initland			=	"land_cannon2"
+battle_initnavy			=	"sea_cannon2"
+land_sword1				=	"land_sword1"
+land_sword2				=	"land_sword2"
+land_sword3				=	"land_sword3"
+land_musket1			=	"land_musket1"
+land_musket2			=	"land_musket2"
+land_musket3			=	"land_musket3"
+land_cannon1			=	"land_cannon1"
+land_cannon2			=	"land_cannon2"
+land_cannon3			=	"land_cannon3"
+sea_cannon1				=	"sea_cannon1"
+sea_cannon2				=	"sea_cannon2"
+sea_cannon3				=	"sea_cannon3"
+
+#General Game Sounds
+
+game_victory			=	"if_tb_merchant"
+game_loss				=	"if_revolt2"
+historical_event		=	"if_event"
+general_success			=	"if_random1"
+general_failure			=	"if_random2"
+game_monarch			=	"if_war"
+revolt_init				=	"if_booh"
+random_event1			=	"if_random1"
+random_event2			=	"if_random2"
+historical_leader		=	"if_event"
+leader_killed			=	"if_booh"
+
+#Diplomacy
+
+diplomat_failure		=	"sea_init"
+diplomat_success		=	"if_explore"
+diplomat_breach			=	"if_eyr_init"
+diplomat_alert			=	"if_tb_colonist"
+diplomat_war			=	"if_tb_diplomat"
+diplomat_peace			=	"if_tb_trade"
+
+##Miscellaneous Builds
+
+colony_build			=	"if_nope"
+colony_success			=	"if_done_structure"
+colony_failure			=	"if_GIM_failure"
+manufactory_success		=	"if_done_structure"
+improvement_done		=	"if_done_structure"
+merchant_success		=	"if_GIM_success"
+merchant_failure		=	"if_GIM_failure"
+

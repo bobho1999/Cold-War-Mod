@@ -1,0 +1,44 @@
+# China 1936 AI File by Lothos
+
+max_front_ratios = {
+	JAP = 0.7
+	U01 = 0.2
+	CHC = 0.1
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+
+garrison = {
+	# PRIORITIES:
+	beach			= 6	# Beach level 2
+	capital			= 50	# Our capital
+	unstable_border		= 25	# Bordering countries at war with someone else get this
+
+
+	# Borders with specific countries
+	country_priorities = {
+		SOV = -1
+		MON = -1
+		TIB = -1
+		NEP = -1
+		AFG = -1
+		FRA = -1
+		ENG = -1
+		POR = -1
+		JAP = 150
+		CHC = 30
+		u01 = 40
+		u02 = -1
+		u03 = -1
+		MAN = -1
+		SIK = -2
+		CHI = -1
+		CGX = -1
+	}
+	province_priorities = {
+                                1209 = 85
+                                2819 = 80
+                                1208 = 80     }
+}

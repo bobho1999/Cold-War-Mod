@@ -1,0 +1,12 @@
+land_unit_type = 1
+# 0 - Rocket AA
+model = {
+	cost 				= 13
+	buildtime	 		= 180
+	manpower 			= 2
+	airattack			= 10
+	airdefence			= 15
+	supplyconsumption 	= 1.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

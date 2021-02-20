@@ -1,0 +1,65 @@
+# Soviet build standard units AI file by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 	= 9
+	cavalry 	= 10
+	motorized 	= 10
+	mechanized 	= 2
+	light_armor = 2
+	armor 		= 10
+	paratrooper = 0
+	marine 		= 0
+	bergsjaeger = 4
+	garrison	= 0
+    hq 			= 5
+	militia 	= 8
+#				55 %
+	interceptor 	= 5
+	multi_role 		= 10
+	cas 			= 5
+	strategic_bomber = 0
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				25 %
+	battleship 		= 2
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 3
+	light_cruiser 	= 2
+	heavy_cruiser 	= 2
+	battlecruiser 	= 0
+	submarine 		= 3
+	nuclear_submarine = 0
+	transports 		= 3
+#				15 %
+
+	#### Brigades
+	artillery 			= 10
+	sp_artillery 		= 10
+	anti_air		= 5 
+	sp_rct_artillery 		= 5
+	anti_tank 			= 5
+	tank_destroyer 		= 5
+	light_armor_brigade 	= 10
+	heavy_armor 		= 5
+	super_heavy_armor 	= 5
+	armored_car 		= 0
+	rocket_artillery 			= 5
+	engineer 			= 10
+	police 			= 10
+	b_u5 = 3
+	b_u8 = 5
+	b_u9 = 5
+	b_u10 = 2
+	b_u11 = 0
+}

@@ -1,0 +1,118 @@
+# Soviet war with Germany AI File by Lothos
+
+max_garrison_prop = 0.40
+min_garrison_prop = 0.20
+neutrality = 100.000 
+max_front_ratio = 1.0 
+max_front_ratios = {
+	FIN = 0.9
+}
+
+no_exp_forces_to = { FIN JAP SIA MAN VIC }
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.000
+
+	AA_batteries = no
+	coastal_fort = no
+	radar_station = no 
+	air_base = atwar
+	naval_base = no 
+	land_fort = no
+	ic_at_war = no
+	force_ic_until = 1935
+	ic_end_year = 1935
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.0
+	home_peace_cap 			= 250
+	war_zone_odds 			= 1.0
+	key_point_prio_mult		= 0.3
+	revolt_risk_mult		= 0.3
+
+	# PRIORITIES:
+	beach			= 0	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 70	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = 5
+		TUR = 5
+		CGX = -1
+		CYN = -1
+		CHC = -1
+		CHI = -1
+		CSX = -1
+		FIN = 30
+		ROM = 25
+		POL = 70
+		GER = 90
+		ITA = 50
+		JAP = 5
+		MAN = 5
+		SWE = -1
+		NOR = -1
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		187  = 30 # Leningrad
+		238  = 20 # Kiev
+		235  = 20 # Dnepropetrovsk
+		163  = 20 # Stalingrad
+		248  = 20 # Kharkov
+		277  = 20 # Bryansk
+		1372 = 20 # Vladivostock
+		133  = 20 # Murmansk
+		253  = 20 # Sevastopool
+	}
+	ignore = {
+		205 # Mazirbe (German Border easy surround hex)
+	}
+	area_multiplier = {
+		113 = 2.0 # Murmansk
+		205 = 0.0 # Mazirbe (German Border easy surround hex)
+		505 = 0.8 # Bielsk, Pripyt marsh surround problem
+		504 = 0.6 # Brest-Litovsk, Pripyt marsh surround problem
+		503 = 0.6 # Pinsk, Pripyt marsh surround problem
+		222 = 0.6 # Luminec, Pripyt marsh surround problem
+		225 = 0.6 # Mozyr,  Pripyt marsh surround problem
+		226 = 0.6 # Korosten,  Pripyt marsh surround problem
+		562 = 0.8 # Rowne,  Pripyt marsh surround problem
+	}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= Even
+	distrib_vs_human 	= Operational Defensive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.3
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+} 

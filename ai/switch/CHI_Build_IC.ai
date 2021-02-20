@@ -1,0 +1,12 @@
+# Chi Build Industry instead of more military
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.75
+	ic_at_war = yes 
+	force_ic_until = 1935
+	ic_end_year = 1970
+}
+

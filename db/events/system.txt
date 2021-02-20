@@ -1,0 +1,1514 @@
+#########################################################################
+event = {
+	id = 810732
+	random = no
+	persistent = yes  
+
+	name = "裁军！ "
+	desc = "裁军！ "
+	style = 0
+
+	action_a = {
+		name = "裁军！ "
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+	}
+}  
+#########################################################################
+event = {
+	id = 810733
+	random = no
+	persistent = yes  
+
+	name = "瘟疫！ "
+	desc = "瘟疫！ "
+	style = 0
+
+	action_a = {
+		name = "瘟疫！ "
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+	}
+}  
+#########################################################################
+event = {
+	id = 810734
+	random = no
+	persistent = yes  
+
+	name = "科技！ "
+	desc = "科技！ "
+	style = 0
+
+	action_a = {
+		name = "科技！ "
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -1 }
+	}
+}
+
+#########################################################################
+event = { 
+	id = 810706 
+
+	trigger = { ai = no }
+
+	name = "空军的组建 "
+	desc = "该事件移植于苏维埃的理想（IS) "
+	style = 0
+#	picture = "welcome_goc"
+
+  date = { day = 5 month = december year = 1949 }
+  offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "真实的空军 "
+		command = { type = morale which = air value = 5 }
+		command = { type = build_time which = interceptor where = relative value = 100 }
+		command = { type = build_cost which = interceptor where = relative value = -50 }
+		command = { type = build_time which = multi_role where = relative value = 100 }
+		command = { type = build_cost which = multi_role where = relative value = -50 }
+		command = { type = build_time which = cas where = relative value = 100 }
+		command = { type = build_cost which = cas where = relative value = -50 }
+		command = { type = build_time which = tactical_bomber where = relative value = 100 }
+		command = { type = build_cost which = tactical_bomber where = relative value = -50 }
+		command = { type = build_time which = strategic_bomber where = relative value = 100 }
+		command = { type = build_cost which = strategic_bomber where = relative value = -50 }
+		command = { type = build_time which = naval_bomber where = relative value = 100 }
+		command = { type = build_cost which = naval_bomber where = relative value = -50 }
+		command = { type = build_time which = transport_plane where = relative value = 100 }
+		command = { type = build_cost which = transport_plane where = relative value = -50 }
+		command = { type = build_time which = escort where = relative value = 100 }
+		command = { type = build_cost which = escort where = relative value = -50 }
+	}
+	action_b = {
+		name = "理想的空军 "
+		command = { type = dissent value = -1 }
+	}
+}
+#########################################################################
+event = { 
+	id = 810707 
+
+	trigger = { ai = no }
+
+	name = "AI特点与难度调整 "
+	desc = "该事件移植于苏维埃的理想（IS) "
+	style = 0
+#	picture = "welcome_goc"
+
+#	date = { day = 5 month = december year = 1949 }
+# 	offset = 1
+#	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "恶梦 "
+		command = { type = build_cost which = transport value = 8 }
+		command = { type = build_cost which = naval_bomber value = 4 }
+		command = { type = build_cost which = destroyer value = 1 }
+		command = { type = max_organization which = naval_bomber value = -10 }
+		command = { type = range which = naval_bomber value = -200 }
+		command = { type = range which = tactical_bomber value = -100 }
+		command = { type = build_time which = air where = relative value = 5 }
+		command = { type = tc_mod value = -50 }
+		command = { type = building_prod_mod which = coastal_fort value = -80 }
+		command = { type = building_prod_mod which = land_fort value = -80 }
+		command = { type = task_efficiency which = ground_attack value = -0.4 }
+		command = { type = task_efficiency which = naval_strike value = -0.4 }
+		command = { type = task_efficiency which = port_strike value = -0.4 }
+		command = { type = setflag which = grofaz }
+	}
+	action_b = {
+		name = "困难 "
+		command = { type = build_cost which = transport value = 4 }
+		command = { type = build_cost which = naval_bomber value = 4 }
+		command = { type = build_cost which = destroyer value = 1 }
+		command = { type = max_organization which = naval_bomber value = -10 }
+		command = { type = range which = naval_bomber value = -200 }
+		command = { type = range which = tactical_bomber value = -100 }
+		command = { type = tc_mod value = -25 }
+		command = { type = building_prod_mod which = coastal_fort value = -40 }
+		command = { type = building_prod_mod which = land_fort value = -40 }
+		command = { type = task_efficiency which = ground_attack value = -0.2 }
+		command = { type = task_efficiency which = naval_strike value = -0.2 }
+		command = { type = task_efficiency which = port_strike value = -0.2 }
+		command = { type = setflag which = hard }
+	}
+	action_c = {
+		name = "休闲 "
+		command = { type = build_cost which = naval_bomber value = 4 }
+		command = { type = build_cost which = destroyer value = 1 }
+		command = { type = max_organization which = naval_bomber value = -10 }
+		command = { type = range which = naval_bomber value = -200 }
+		command = { type = range which = tactical_bomber value = -100 }
+		command = { type = setflag which = normal }
+	}
+}	
+#########################################################################
+event = { 
+	id = 810708 
+  	persistent = yes
+	trigger = { government = communist }
+
+	name = "五一国际劳动节 "
+	desc = "1889年7月，由恩格斯领导的第二国际在巴黎 举行代表大会。会议通过决议，规定1890年5 月1日国际劳动者举行游行，并决定把5月1日这 一天定为国际劳动节。 "
+	style = 0
+	picture = "SOV026"
+
+	date = { day = 1 month = may year = 1950 }
+	offset = 365
+
+	action_a = {
+		name = "全世界无产阶级联合起来 "
+		command = { type = dissent value = -1 }
+	}
+}
+#########################################################################
+event = { 
+	id = 810709 
+  	persistent = yes
+	trigger = { government = democratic not = { ideology = social_democrat } }
+
+	name = "五一国际劳动节 "
+	desc = "1889年7月，由恩格斯领导的第二国际在巴黎 举行代表大会。会议通过决议，规定1890年5 月1日国际劳动者举行游行，并决定把5月1日这 一天定为国际劳动节。 "
+	style = 0
+	picture = "SOV026"
+
+	date = { day = 1 month = may year = 1950 }
+	offset = 365
+
+	action_a = {
+		name = "戒备那些工人 "
+		command = { type = dissent value = 1 }
+	}
+}	
+#########################################################################
+event = { 
+	id = 811719 
+  persistent = yes
+	trigger = { government = democratic
+	            atwar = yes
+	            random = 5
+	 }
+
+	name = "反战游行 "
+	desc = "两场世界大战深深地刺痛了人类的内心，和平的力 量在不断崛起 "
+	style = 0
+	picture = "SOV026"
+
+	date = { day = 1 month = may year = 1949 }
+	offset = 10
+
+	action_a = {
+		name = "可恶 "
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+event = {
+	id = 8930000
+	random = no
+	persistent = yes
+	country = -1
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = AFG
+			country = ALG	
+			country = BOL	
+			country = BUR
+			country = CMB	
+			country = COL	
+			country = CON	
+			country = CUB	
+			country = ECU	
+			country = ETH	
+			country = GLD	
+			country = GUA	
+			country = HON	
+			country = ICL	
+			country = JOR
+			country = LAO	
+			country = LBY	
+			country = LUX
+			country = MOR
+			country = NIC
+			country = NIG
+			country = NZL
+			country = OMN
+			country = PAR
+			country = PHI
+			country = PRU
+			country = SAL
+			country = U72
+			country = U75
+			country = U83
+			country = U90
+			country = U91
+			country = U97
+			country = URU
+			country = VIE
+		}
+	}
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -2 }
+		command = { type = peacetime_ic_mod value = -10 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+### 90% IC cap during peacetime
+event = {
+	id = 8930001
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = AFG
+			country = ALG	
+			country = BOL	
+			country = CMB	
+			country = COL	
+			country = CON	
+			country = CUB	
+			country = ECU	
+			country = ETH	
+			country = GLD	
+			country = GUA	
+			country = HON	
+			country = ICL	
+			country = JOR	
+			country = LBY	
+			country = LUX
+			country = MOR
+			country = NIC
+			country = NIG
+			country = NZL
+			country = OMN
+			country = PAR
+			country = PHI
+			country = PRU
+			country = SAL
+			country = U72
+			country = U75
+			country = U83
+			country = U90
+			country = U91
+			country = U97
+			country = URU
+			country = VIE
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 2 }
+		command = { type = peacetime_ic_mod value = 10 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+
+}
+
+
+
+### 80% IC cap during peacetime
+
+event = {
+	id = 8930004
+	random = no
+	persistent = yes
+	
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = U27	
+			country = U29	
+			country = ARG	
+			country = AUS	
+			country = BEL
+			country = BUL
+			country = INO
+			country = KOR
+			country = MEX
+			country = PAK
+			country = PER
+			country = PRK
+			country = SAF
+			country = SWE
+			country = TUR
+			country = YUG
+			AND = {
+				country = CHI
+				NOT = { flag = CHI_won_CW }
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -4 }
+		command = { type = peacetime_ic_mod value = -20 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930005
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = U27	
+			country = U29	
+			country = ARG	
+			country = AUS	
+			country = BEL
+			country = BUL
+			country = INO
+			country = KOR
+			country = MEX
+			country = PAK
+			country = PER
+			country = PRK
+			country = SAF
+			country = SWE
+			country = TUR
+			country = YUG
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 4 }
+		command = { type = peacetime_ic_mod value = 20 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+
+}
+
+### 75% IC cap during peacetime
+
+event = {
+	id = 8930006
+	random = no
+	persistent = yes
+	
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = U13	
+			country = U30	
+			country = U31	
+			country = AST	
+			country = CZE	
+			country = DDR	
+			country = HOL	
+			country = HUN	
+			country = ROM 
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -5 }
+		command = { type = peacetime_ic_mod value = -25 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930007
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = U13	
+			country = U30	
+			country = U31	
+			country = AST	
+			country = CZE	
+			country = DDR	
+			country = HOL	
+			country = HUN	
+			country = ROM 
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 5 }
+		command = { type = peacetime_ic_mod value = 25 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+}
+
+### 70% IC cap during peacetime
+
+event = {
+	id = 8930008
+	random = no
+	persistent = yes
+	
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = U32	
+			country = BRA	
+			country = CAN	
+			country = POL	
+			country = SPA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -6 }
+		command = { type = peacetime_ic_mod value = -30 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930009
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = U32	
+			country = BRA	
+			country = CAN	
+			country = POL	
+			country = SPA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 6 }
+		command = { type = peacetime_ic_mod value = 30 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+}
+
+### 65% IC cap during peacetime
+
+event = {
+	id = 8930010
+	random = no
+	persistent = yes
+	
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no	
+		country = ITA
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -7 }
+		command = { type = peacetime_ic_mod value = -35 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930011
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		country = ITA
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 7 }
+		command = { type = peacetime_ic_mod value = 35 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+
+	}	
+}
+
+### 60% IC cap during peacetime
+
+event = {
+	id = 8930012
+	random = no
+	persistent = yes
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = U02	
+			country = IND
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -8 }
+		command = { type = peacetime_ic_mod value = -40 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930013
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+	  	local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = U02	
+			country = IND
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 8 }
+		command = { type = peacetime_ic_mod value = 40 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+}
+
+### 55% IC cap during peacetime
+
+# There are no countries getting 55% IC cap (100-120 average IC)
+# Event IDs 8930014 and 8930015 reserved
+
+### 50% IC cap during peacetime
+
+event = {
+	id = 8930016
+	random = no
+	persistent = yes
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = ENG	
+			country = FRA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -10 }
+		command = { type = peacetime_ic_mod value = -50 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930017
+	random = no
+	persistent = yes
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = ENG	
+			country = FRA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 10 }
+		command = { type = peacetime_ic_mod value = 50 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+### 45% IC cap during peacetime
+
+event = {
+	id = 8930018
+	random = no
+	persistent = yes
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = {
+			country = DFR	
+			country = SOV	
+			country = USA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -11 }
+		command = { type = peacetime_ic_mod value = -55 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930019
+	random = no
+	persistent = yes
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = {
+			country = DFR	
+			country = SOV	
+			country = USA
+		}
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 11 }
+		command = { type = peacetime_ic_mod value = 55 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+}
+
+### 40% IC cap during peacetime
+
+event = {
+	id = 8930020
+	random = no
+	persistent = yes
+	
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		country = JAP
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = peacetime_ic_mod value = -60 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930021
+	random = no
+	persistent = yes
+	
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		country = JAP
+	}
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = peacetime_ic_mod value = 60 }
+		command = { type = local_clrflag which = time_of_peace }
+	}	
+}
+
+### 50% IC cap during peacetime - Communist China (they don't get their cap until 1950)
+
+event = {
+	id = 8930022
+	random = no
+	persistent = yes
+	
+
+	name = "和平體制"
+	desc = "和平體制"
+#	picture = "economic_development"
+	style = 2
+
+	trigger = {
+    		NOT = { local_flag = time_of_peace }
+		atwar = no
+		OR = { 
+			AND = {
+				country = CHC
+				flag = CHC_won_CW
+			}
+			AND = {
+				country = CHI
+				flag = CHI_won_CW
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_PEACETIME_A"
+		command = { type = free_money value = -10 }
+		command = { type = peacetime_ic_mod value = -50 }
+		command = { type = local_setflag which = time_of_peace }
+  		command = { type = deactivate_unit_type which = hq }
+  		command = { type = deactivate_unit_type which = armor }
+  		command = { type = deactivate_unit_type which = cavalry }
+  		command = { type = deactivate_unit_type which = infantry }
+  		command = { type = deactivate_unit_type which = militia }
+  		command = { type = deactivate_unit_type which = motorized }
+  		command = { type = deactivate_unit_type which = mechanized }
+  		command = { type = deactivate_unit_type which = marine }
+  		command = { type = deactivate_unit_type which = paratrooper }
+  		command = { type = deactivate_unit_type which = bergsjaeger }
+	}	
+}
+
+event = {
+	id = 8930023
+	random = no
+	persistent = yes
+
+
+	name = "戰爭體制"
+	desc = "戰爭體制"
+#	picture = "soviet_replacement"
+	style = 2
+
+	trigger = {
+		local_flag = time_of_peace
+		atwar = yes
+		OR = { 
+			AND = {
+				country = CHC
+				flag = CHC_won_CW
+			}
+			AND = {
+				country = CHI
+				flag = CHI_won_CW
+			}
+		}
+	}
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "EVT_WARTIME_A"
+		command = { type = free_money value = 10 }
+		command = { type = peacetime_ic_mod value = 50 }
+		command = { type = local_clrflag which = time_of_peace }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
+	}	
+}	 
+event = {
+	id = 8930024
+	random = no
+	
+
+	name = "欢迎来到红色曙光"
+	desc = "welcome_goc_desc"
+#	picture = "welcome_goc"
+	style = 2
+
+	trigger = {
+		ai = no
+	}
+
+#	date = { day = 1 month = january year = 1950 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "开启非历史事件"
+		command = { type = setflag which = yy }
+	}	
+	action_b = {
+		name = "开启非历史事件，但关闭架空大国事件"
+		command = { type = setflag which = yy }
+		command = { type = sleepevent which = 79107028 }
+		command = { type = sleepevent which = 59107061 }
+	}	
+	action_c = {
+		name = "关闭非历史事件"
+		command = { type = setflag which = fyy }
+	}
+	action_d = {
+		name = "确定"
+		command = { type = setflag which = 1975 }
+	}
+}
+	 
+event = {
+	id = 8930025
+	country = chc
+	random = no
+
+ 	trigger = { 
+ 		nuke = 1
+ 		atwar = yes 
+ 		NOT = { flag = noainuke }
+ 		OR = {
+ 			lost_VP = { country = chc value = 50 }   
+ 			lost_national = { country = chc value = 60 }   
+ 			lost_IC = { country = chc value = 70 }
+ 		} 
+ 	}
+
+  
+	name = "按下核按鈕 "
+	desc = "鉴于当前的战争形势，我们应当考虑是否动用核武 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+   	 action_a = {
+		name = "末日武器 "
+		command = { type = setflag which = nuke }
+		command = { type = belligerence which = chc value = 30 }
+	}        	        	
+}
+event = {
+	id = 8930027
+	random = no
+
+ 	trigger = {
+  		ai = no
+ 	}
+  
+	name = "核战选项 "
+	desc = "关于游戏中核武系统的设定，之后无法更改 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "关闭ai五常主动使用核武 "
+		command = { type = setflag which = noainuke }
+		command = { type = dissent value = -1 }
+           	} 
+   	action_b = {
+		name = "开启ai五常主动使用核武 "
+		command = { type = dissent value = -1 }
+           	} 
+   	action_c = {
+		name = "开启无限制核战 "
+		command = { type = setflag which = nuke }
+		command = { type = dissent value = -1 }
+		command = { type = sleepevent which = 8930030 }
+		command = { type = sleepevent which = 8930028 }
+		command = { type = sleepevent which = 8930029 }
+		command = { type = sleepevent which = 8930031 }
+		command = { type = sleepevent which = 8930025 }
+           	}        	       	       	        	
+}
+event = {
+	id = 8930030
+	country = usa
+	random = no
+
+ 	trigger = { 
+ 		nuke = 1
+ 		atwar = yes 
+ 		NOT = { flag = noainuke }
+ 		OR = {
+ 			lost_VP = { country = usa value = 30 }   
+ 			lost_national = { country = usa value = 30 }   
+ 			lost_IC = { country = usa value = 40 }
+ 		} 
+ 	}
+  
+	name = "按下核按鈕 "
+	desc = "鉴于当前的战争形势，我们应当考虑是否动用核武 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "末日武器 "
+		command = { type = setflag which = nuke }
+		command = { type = belligerence which = usa value = 30 }
+		command = { type = trigger which = 8930026 }
+	}        	        	
+}
+event = {
+	id = 8930028
+	country = sov
+	random = no
+
+ 	trigger = { 
+ 		nuke = 1
+ 		atwar = yes 
+ 		NOT = { flag = noainuke }
+ 		OR = {
+ 			lost_VP = { country = sov value = 60 }   
+ 			lost_national = { country = sov value = 50 }   
+ 			lost_IC = { country = sov value = 50 }
+ 		} 
+ 	}
+
+  
+	name = "按下核按鈕 "
+	desc = "鉴于当前的战争形势，我们应当考虑是否动用核武 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "末日武器 "
+		command = { type = setflag which = nuke }
+		command = { type = belligerence which = sov value = 30 }
+	}        	        	
+}
+event = {
+	id = 8930029
+	country = eng
+	random = no
+
+ 	trigger = { 
+ 		nuke = 1
+ 		atwar = yes 
+ 		NOT = { flag = noainuke }
+ 		OR = {
+ 			lost_VP = { country = eng value = 60 }   
+ 			lost_national = { country = eng value = 50 }   
+ 			lost_IC = { country = eng value = 50 }
+ 		} 
+ 	}
+  
+	name = "按下核按鈕 "
+	desc = "鉴于当前的战争形势，我们应当考虑是否动用核武 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "末日武器 "
+		command = { type = setflag which = nuke }
+		command = { type = belligerence which = eng value = 30 }
+	}        	        	
+}
+event = {
+	id = 8930031
+	country = fra
+	random = no
+
+ 	trigger = { 
+ 		nuke = 1
+ 		atwar = yes 
+ 		NOT = { flag = noainuke }
+ 		OR = {
+ 			lost_VP = { country = fra value = 60 }   
+ 			lost_national = { country = fra value = 50 }   
+ 			lost_IC = { country = fra value = 50 }
+ 		} 
+ 	}
+
+  
+	name = "按下核按鈕 "
+	desc = "鉴于当前的战争形势，我们应当考虑是否动用核武 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "末日武器 "
+		command = { type = setflag which = nuke }
+		command = { type = belligerence which = fra value = 30 }
+           	}        	        	
+}
+event = {
+	id = 8930032
+	random = no
+	invention = yes	
+
+ 	trigger = {
+  		nuke = 1
+  		flag = nuke
+  		NOT = { local_flag = enablenuke }
+ 	} 
+	name = "核战时代 "
+	desc = "核武器已经开始投入到了战争之中 "
+	style = 2
+#	picture = "nuke_testing"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "末日武器 "
+		command = { type = enable_task which = nuke }
+		command = { type = local_setflag which = enablenuke }
+           }        	        	
+}

@@ -1,0 +1,1744 @@
+###########################################
+# events for Egypt, Arabian Peninsula 615000 -615399
+# includes Israel
+# Iran, Turkey and Kurdistan 615400-615499
+###########################################
+event = {
+	id = 615000
+	random = no
+	country = ENG
+
+	trigger = {
+		control = { province = 1798 data = ENG } #
+		atwar = no
+		exists = USA
+		exists = EGY
+		NOT = {
+			exists = ISR
+			exists = GER
+			exists = PAL
+		}
+	}
+
+	date = { day = 28 month =november year = 1947 }
+
+	name = "結束在巴勒斯坦的委任統治"
+	desc = "In February, 1947, the United Kingdom found itself unable to resolve the future of the Palestine mandate and referred the matter to the United Nations."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepevent which = 110 }# sleep vanilla ISR independence
+		command = { type = trigger which = 615001 }
+	}
+}
+event = {
+	id = 615001
+	random = no
+	country = USA
+
+	# triggered by 615000
+
+	name = "聯合國巴勒斯坦分割方案"
+	desc = "On November 29, 1947, the United Nations considered two plans for the future of Palestine--a U. S. backed plan to divide the territory between separate Jewish and Arab states, and an Arab backed plan to have a single secular state in all of Palestine. After heavy lobbying by the US, the UN voted to adopt the partition plan, effective May 15, 1948."
+	style = 0
+	
+	action_a = {
+		name = "Partition Palestine"
+		ai_chance = 95
+		command = { type = setflag which = arab_resistance }
+		command = { type = sleepevent which = 615002 }# sleep Arab plan
+	}
+	action_b = {
+		name = "Accept the Arab plan"
+		ai_chance = 5
+		command = { type = clrflag which = arab_resistance }
+		command = { type = sleepevent which = 615003 }# sleep US plan
+		command = { type = dissent value = 5 } # no comment
+	}
+}
+event = {
+	id = 615002
+	random = no
+	country = ENG
+
+	trigger = {
+		control = { province = 1798 data = ENG } #
+		event = 615001
+		NOT = {
+			exists = ISR
+			exists = PAL
+		}
+	}
+
+	date = { day = 14 month =may year = 1948 }
+
+	name = "巴勒斯坦的獨立"
+	desc = "On May 15, 1948, Palestine received its independence."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = PAL value = 1 }
+	}
+}
+####################################################
+# The UN Partition plan called for both Israeli and Palestinian states
+# leading to an outbreak of war when they came into existence.
+# Also play testing has determined that Arab-Israeli War needs to
+# be proxy war--otherwise Arabs win too easily
+####################################################
+event = {
+	id = 615003
+	random = no
+	country = ENG
+
+	trigger = {
+		control = { province = 1798 data = ENG } #
+		event = 615001
+		NOT = {
+			exists = ISR
+			exists = PAL
+		}
+		exists = EGY
+	}
+
+	date = { day = 14 month =may year = 1948 }
+
+	name = "EVT_129_NAME"
+	desc = "EVT_129_DESC"
+	picture = "israel"
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = construct which = naval_base where = 406 value = 1 } #Eilat
+		# add keypoints so neither ISR nor PAL can be annexed too easily
+		command = { type = province_keypoints which = 1799 value = 1 }
+		command = { type = province_keypoints which = 1797 value = 1 }
+		command = { type = province_keypoints which = 406 value = 1 }
+		command = { type = province_keypoints which = 1798 value = 1 }
+		command = { type = province_keypoints which = 404 value = 1 }
+		command = { type = province_keypoints which = 3926 value = 1 } #new 
+		command = { type = province_keypoints which = 3927 value = 1 } #new
+		# for the Palestinian state
+		command = { type = secedeprovince which = EGY  value = 1799 }#Gaza
+		command = { type = secedeprovince which = EGY  value = 1797 }#Jerusalem
+		command = { type = secedeprovince which = EGY  value = 3927 }#
+		command = { type = sleepevent which = 120 }# sleep vanilla reactions of Arab States
+		command = { type = sleepevent which = 121 }# 
+		command = { type = sleepevent which = 122 }# 
+		command = { type = sleepevent which = 123 }# 
+		command = { type = sleepevent which = 124 }# 
+		command = { type = independence which = ISR value = 1 }
+		command = { type = trigger which = 111 } #Israel army and government
+		command = { type = trigger which = 15029 }#free stuff for Israel
+		command = { type = trigger which = 615004 }
+		#command = { type = trigger which = 615014 }
+		#command = { type = trigger which = 615015 }
+		#command = { type = trigger which = 615016 }
+		#command = { type = trigger which = 615017 }
+	}
+}
+event = {
+	id = 111
+	random = no
+	country = ISR
+	style = 0
+
+	name = "EVT_130_NAME"
+	desc = "EVT_129_DESC"
+	picture = "israel"
+
+	# triggered by ENG 110
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 559001 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559024 }
+		command = { type = ministerofsecurity which = 559049 }
+		command = { type = ministerofintelligence which = 559050 }
+		command = { type = chiefofstaff which = 559007 }
+		command = { type = chiefofarmy which = 559051 }
+		command = { type = chiefofnavy which = 559009 }
+		command = { type = chiefofair which = 559010 }
+
+		command = { type = add_corps which = "以色列国防军 " value = land where = 1798 }
+		command = { type = add_division which = "第1以色列步兵师 " value = infantry when = 6 where = armored_car }
+		command = { type = add_division which = "第2以色列步兵师 " value = infantry when = 6 }
+		command = { type = add_division which = "第3以色列步兵师 " value = infantry when = 6 }
+		command = { type = add_division which = "第4以色列步兵师 " value = infantry when = 6 }
+#		command = { type = add_division which = "第1以色列步兵师 " value = motorized when = 6 where = armored_car } # BHT1.5 模板
+#		command = { type = add_division which = "第2以色列步兵师 " value = motorized when = 6 } # BHT1.5 模板
+#		command = { type = add_division which = "第3以色列步兵师 " value = motorized when = 6 } # BHT1.5 模板
+#		command = { type = add_division which = "第4以色列步兵师 " value = motorized when = 6 } # BHT1.5 模板
+	}
+}
+event = {
+	id = 615004
+	random = no
+	country = EGY
+
+	# triggered by 615003
+
+
+	name = "建立巴勒斯坦國"
+	desc = "The UN Partition plan called for two states--one Arab and one Jewish state. Jerusalem was designated an international city. But since the surrounding West Bank is mostly Arab, it is assigned to the Palestinian state."
+	picture = "palestine"
+	style = 0
+
+	# keeping Gaza tends to give historical result more often, so is default
+	
+	action_a = {
+		name = "Keep Gaza for military maneuvers"
+		ai_chance = 95
+		command = { type = independence which = PAL value = 1 }
+		command = { type = trigger which = 15048 } #Palestine free stuff
+		command = { type = trigger which = 615005 } #PAL
+	}
+	action_b = {
+		name = "Give Gaza to Palestinians now"
+		ai_chance = 5
+		command = { type = removecore which = 1799 }#Gaza
+		command = { type = independence which = PAL value = 1 }
+		command = { type = trigger which = 15048 } #Palestine free stuff
+		command = { type = trigger which = 615005 } #PAL
+	}
+	
+}
+event = {
+	id = 615005
+	random = no
+	country = PAL
+
+	# triggered by 615004
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 557028 }#George Antinous
+		command = { type = sleepminister which = 557023 }#Alfred Roch
+		command = { type = sleepminister which = 557042 }#Lord Gort
+		command = { type = sleepleader which = 557006 }
+		command = { type = sleepminister which = 557020 }#Wauchope
+		command = { type = sleepminister which = 557024 }#Dalal
+		command = { type = sleepevent which = 687000 } #death events taken care of
+		command = { type = sleepevent which = 687001 }
+		command = { type = sleepevent which = 687002 }
+		command = { type = sleepevent which = 687003 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 557060 }
+		command = { type = headofgovernment which = 557071 }
+		command = { type = foreignminister which = 557080 }
+		command = { type = armamentminister which = 557085 }
+		command = { type = ministerofsecurity which = 557090 }
+		command = { type = ministerofintelligence which = 557095 }
+		command = { type = chiefofstaff which = 557105 }
+		command = { type = chiefofarmy which = 557106 }
+		command = { type = chiefofnavy which = 557107 }
+		command = { type = chiefofair which = 557108 }
+		command = { type = construct which = land_fort where = 1799 value = 6 }
+		command = { type = add_corps which = "Palestine Defence Forces" value = land where = 1797 }
+		command = { type = add_division which = "阿拉伯解放軍" value = infantry when = 6 }
+		command = { type = add_division which = "Fedayeen Division" value = militia when = 5 }
+		command = { type = war which = ISR }
+#		command = { type = ai which = "palestine.ai" }
+		command = { type = trigger which = 615006 }
+		command = { type = trigger which = 615008 }
+		command = { type = trigger which = 615010 }
+		command = { type = trigger which = 615012 }
+		command = { type = setflag which = Arab_Israeli_War }
+		
+	}
+}
+event = {
+	id = 615006
+	random = no
+	country = EGY
+
+	trigger = {
+		NOT = { event = 615026 }
+		event = 615005
+	}
+
+	date = { day = 14 month =may year = 1945 }
+	offset = 1
+	deathdate = { day = 21 month = may year = 1948 }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Send support"
+		ai_chance = 90
+		command = { type = belligerence which = EGY value = 5 }
+		command = { type = set_relation which = PAL value = 150 }
+		command = { type = set_relation which = JOR value = 100 }
+		command = { type = set_relation which = LEB value = 100 }
+		command = { type = set_relation which = SYR value = 100 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = supplies value = -1000 }
+		command = { type = manpowerpool value = -20 }
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = access which = PAL } 
+		command = { type = trigger which = 615007 }
+	}
+	action_b = {
+		name = "Intervene openly"
+		ai_chance = 5
+		command = { type = belligerence which = EGY value = 10 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = FRA value = -150 }
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = alliance which = PAL }
+	}
+	action_c = {
+		name = "EVT_137_ACTB"
+		ai_chance = 5
+		command = { type = end_puppet }
+		command = { type = removecore which = 1799 }#Gaza
+		command = { type = secedeprovince which = PAL value = 1799 }
+		command = { type = set_relation which = JOR value = -50 }
+ 		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		command = { type = dissent value = 5 } 
+	}
+}
+event = {
+	id = 615007
+	random = no
+	country = PAL
+
+	# triggered by 615006
+
+	name = "埃及的援助"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Good!"
+		command = { type = add_corps which = "埃及遠征軍" value = land where = 1799 }# was really in Gaza but if there Israel wins too easily
+		command = { type = add_division which = "埃及裝甲旅" value = infantry when = 6 where = light_armor_brigade }
+		command = { type = add_division which = "埃及步兵師" value = infantry when = 6 }
+	}
+}
+event = {
+	id = 615008
+	random = no
+	country = JOR
+
+	trigger = {
+		NOT = { event = 615027 }
+		event = 615005
+	}
+
+	date = { day = 14 month =may year = 1945 }
+	offset = 1
+	deathdate = { day = 21 month = may year = 1948 }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Send support"
+		ai_chance = 94
+		command = { type = belligerence which = JOR value = 5 }
+		command = { type = set_relation which = EGY value = 100 }
+ 		command = { type = set_relation which = LEB value = 100 }
+		command = { type = set_relation which = SYR value = 100 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = supplies value = -500 }
+		command = { type = manpowerpool value = -10 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = access which = PAL } 
+		command = { type = trigger which = 615009 }
+	}
+	action_b = {
+		name = "Intervene openly"
+		ai_chance = 1
+		command = { type = belligerence which = JOR value = 10 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = FRA value = -150 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = alliance which = PAL }
+	}
+	action_c = {
+		name = "EVT_137_ACTB"
+		ai_chance = 5
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		command = { type = end_puppet }
+		command = { type = dissent value = 5 } 
+		command = { type = access which = PAL } #
+	}
+}
+event = {
+	id = 615009
+	random = no
+	country = PAL
+
+	# triggered by 615008
+	name = "約旦的援助"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Good!"
+		command = { type = add_corps which = "約旦遠征軍" value = land where = 406 }
+		command = { type = add_division which = "約旦遠征軍" value = infantry when = 6 }
+	}
+}
+event = {
+	id = 615010
+	random = no
+	country = LEB
+
+	trigger = {
+		NOT = { event = 615028 }
+		event = 615005
+	}
+
+	date = { day = 14 month =may year = 1945 }
+	offset = 1
+	deathdate = { day = 21 month = may year = 1948 }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Send support"
+		ai_chance = 94
+		command = { type = belligerence which = LEB value = 5 }
+		command = { type = set_relation which = EGY value = 100 }
+ 		command = { type = set_relation which = JOR value = 100 }
+		command = { type = set_relation which = SYR value = 100 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = supplies value = -500 }
+		command = { type = manpowerpool value = -10 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = access which = PAL } 
+		command = { type = trigger which = 615011 }
+	}
+	action_b = {
+		name = "Intervene openly"
+		ai_chance = 1
+		command = { type = belligerence which = LEB value = 10 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = FRA value = -150 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = alliance which = PAL }
+	}
+	action_c = {
+		name = "EVT_137_ACTB"
+		ai_chance = 5
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = JOR value = -50 }
+		command = { type = set_relation which = SYR value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		command = { type = end_puppet }
+		command = { type = dissent value = 5 } 
+	}
+}
+event = {
+	id = 615011
+	random = no
+	country = PAL
+
+	# triggered by 615006
+
+	name = "黎巴嫩的援助"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Good!"
+		command = { type = add_corps which = "黎巴嫩志願軍" value = land where = 406 }
+		command = { type = add_division which = "黎巴嫩志願軍" value = militia when = 6 }
+	}
+}
+event = {
+	id = 615012
+	random = no
+	country = SYR
+
+	trigger = {
+		NOT = { event = 615029 }
+		event = 615005
+	}
+
+	date = { day = 14 month =may year = 1945 }
+	offset = 1
+	deathdate = { day = 21 month = may year = 1948 }
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Send support"
+		ai_chance = 94
+		command = { type = belligerence which = SYR value = 5 }
+		command = { type = set_relation which = EGY value = 100 }
+ 		command = { type = set_relation which = JOR value = 100 }
+		command = { type = set_relation which = LEB value = 100 }
+		command = { type = set_relation which = IRQ value = 100 }
+		command = { type = supplies value = -500 }
+		command = { type = manpowerpool value = -10 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = access which = PAL } 
+		command = { type = trigger which = 615013 }
+		command = { type = trigger which = 615014 }
+	}
+	action_b = {
+		name = "Intervene openly"
+		ai_chance = 1
+		command = { type = belligerence which = SYR value = 10 }
+		command = { type = relation which = ENG value = -150 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = FRA value = -150 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = alliance which = PAL }
+		command = { type = trigger which = 615014 }
+	}
+	action_c = {
+		name = "EVT_137_ACTB"
+		ai_chance = 5
+		command = { type = set_relation which = EGY value = -50 }
+ 		command = { type = set_relation which = JOR value = -50 }
+		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+		command = { type = end_puppet }
+		command = { type = dissent value = 5 } 
+	}
+}
+event = {
+	id = 615013
+	random = no
+	country = PAL
+
+	# triggered by 615006
+
+	name = "敘利亞的援助"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Good!"
+		command = { type = add_corps which = "敘利亞遠征軍" value = land where = 406 }
+		command = { type = add_division which = "敘利亞遠征軍" value = infantry when = 6 }
+	}
+}
+
+event = {
+	id = 615014
+	random = no
+	country = IRQ
+
+	# triggered by 615012
+
+
+	name = "EVT_130_NAME"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "EVT_138_ACTA"
+		ai_chance = 95
+		command = { type = belligerence which = IRQ value = 5 }
+		command = { type = set_relation which = EGY value = 150 }
+ 		command = { type = set_relation which = JOR value = 150 }
+		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = SYR value = 100 }
+		command = { type = end_puppet }
+		command = { type = supplies value = -500 }
+		command = { type = manpowerpool value = -10 }
+		command = { type = trigger which = 615015 }
+		}
+
+	action_b = {
+		name = "EVT_138_ACTB"
+		ai_chance = 5
+		command = { type = end_puppet }
+		command = { type = set_relation which = EGY value = -25 }
+ 		command = { type = set_relation which = JOR value = -25 }
+		command = { type = set_relation which = LEB value = -25 }
+		command = { type = set_relation which = SYR value = -25 }
+		command = { type = set_relation which = ISR value = 50 }
+		command = { type = set_relation which = ENG value = 50 }
+		command = { type = set_relation which = USA value = 50 }
+		command = { type = set_relation which = FRA value = 50 }
+		}
+}
+event = {
+	id = 615015
+	random = no
+	country = PAL
+
+	# triggered by 615006
+
+	name = "伊拉克的援助"
+	desc = "EVT_137_DESC"
+	picture = "reinforcements"
+	style = 0
+	
+	action_a = {
+		name = "Good!"
+		command = { type = add_corps which = "Iraqi Assistance" value = land where = 1797 }
+		command = { type = add_division which = "伊拉克遠征軍" value = infantry when = 6 }
+	}
+}
+event = {
+	id = 615016
+	random = no
+	country = EGY
+
+	trigger = {
+		event = 615026
+		event = 615005
+	}
+
+	date = { day = 14 month =may year = 1945 }
+	offset = 1
+	deathdate = { day = 21 month = may year = 1948 }
+
+
+	name = "Honoring our promises"
+	desc = "EVT_137_DESC"
+	picture = "palestine"
+	style = 0
+	
+	action_a = {
+		name = "Let the war begin!"
+		command = { type = belligerence which = EGY value = 10 }
+		command = { type = alliance which = PAL }
+	}
+	action_b = {
+		name = "Don't honor our promises"
+		command = { type = leave_alliance }
+		command = { type = belligerence which = EGY value = -5 }
+		command = { type = set_relation which = SYR value = -50 }
+ 		command = { type = set_relation which = JOR value = -50 }
+		command = { type = set_relation which = LEB value = -50 }
+		command = { type = set_relation which = IRQ value = -50 }
+		command = { type = set_relation which = ISR value = 75 }
+		command = { type = set_relation which = ENG value = 75 }
+		command = { type = set_relation which = USA value = 75 }
+		command = { type = set_relation which = FRA value = 75 }
+	}
+
+}
+
+
+#######################
+# End of the Arab Israeli War
+# Israeli victory
+#######################
+event = {
+	id = 615019
+	random = no
+	country = ISR
+	
+	trigger = {
+		flag = Arab_Israeli_War 
+#		atwar = ISR
+#		NOT = { exists = PAL }
+		control = { province = 1798 }
+		control = { province = 1797 }
+		control = { province = 404 }
+		control = { province = 406 }
+		OR = {
+			control = { province = 1799 }
+			control = { province = 1800 }
+			control = { province = 1801 }
+			NOT = { war = { country = ISR country = EGY } }
+		}
+		OR = { 
+			NOT = { exists = PAL }
+			lost_national = { country = SYR value = 5 }
+			lost_national = { country = LEB value = 5 }
+			lost_national = { country = JOR value = 5 }
+		}
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "第一次中東戰爭—以色列勝利"
+	desc = "The young Israeli state proved itself on the battlefield. The Arab states continued to withhold recognition but recognized Israel's defacto territorial control."
+	picture = "israel"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = peace which = IRQ }
+		command = { type = peace which = EGY }
+ 		command = { type = peace which = JOR }
+		command = { type = secedeprovince which = JOR value = 1797 } #East Jerusalem / West Bank
+		command = { type = peace which = LEB }
+		command = { type = peace which = SYR }
+		command = { type = clrflag which = Arab_Israeli_War }
+		}
+	}
+#######################
+# End of the Arab Israeli War
+# Arab victory
+#######################
+event = {
+	id = 615020
+	random = no
+	country = SYR
+	
+	trigger = {
+		event = 111
+		NOT = { exists = ISR }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "第一次中東戰爭—阿拉伯聯軍勝利"
+	desc = "The Arab side prevailed in the war. We have to cede captured territory that is intended for the Palestinian state."
+	picture = "palestine"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = clrflag which = Arab_Israeli_War }
+		#provinces go to PAL if they exist, to Egypt if they do not
+		command = { type = secedeprovince which = EGY value = 404 }
+		command = { type = secedeprovince which = EGY value = 406 }
+		command = { type = secedeprovince which = EGY value = 1797 }
+		command = { type = secedeprovince which = EGY value = 1798 }
+		command = { type = secedeprovince which = EGY value = 1799 }
+		command = { type = secedeprovince which = PAL value = 404 }
+		command = { type = secedeprovince which = PAL value = 406 }
+		command = { type = secedeprovince which = PAL value = 1797 }
+		command = { type = secedeprovince which = PAL value = 1798 }
+		command = { type = secedeprovince which = PAL value = 1799 }
+		command = { type = dissent value = -5 }
+		}
+	}
+event = {
+	id = 615021
+	random = no
+	country = LEB
+	
+	trigger = {
+		event = 111
+		NOT = { exists = ISR }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "第一次中東戰爭—阿拉伯聯軍勝利"
+	desc = "The Arab side prevailed in the war. We have to cede captured territory that is intended for the Palestinian state."
+	picture = "palestine"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = clrflag which = Arab_Israeli_War }
+		#provinces go to PAL if they exist, to Egypt if they do not
+		command = { type = secedeprovince which = EGY value = 404 }
+		command = { type = secedeprovince which = EGY value = 406 }
+		command = { type = secedeprovince which = EGY value = 1797 }
+		command = { type = secedeprovince which = EGY value = 1798 }
+		command = { type = secedeprovince which = EGY value = 1799 }
+		command = { type = secedeprovince which = PAL value = 404 }
+		command = { type = secedeprovince which = PAL value = 406 }
+		command = { type = secedeprovince which = PAL value = 1797 }
+		command = { type = secedeprovince which = PAL value = 1798 }
+		command = { type = secedeprovince which = PAL value = 1799 }
+		command = { type = dissent value = -5 }
+		}
+	}
+event = {
+	id = 615022
+	random = no
+	country = JOR
+	
+	trigger = {
+		event = 111
+		NOT = { exists = ISR }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "第一次中東戰爭—阿拉伯聯軍勝利"
+	desc = "The Arab side prevailed in the war. We have to cede captured territory that is intended for the Palestinian state."
+	picture = "palestine"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = clrflag which = Arab_Israeli_War }
+		#provinces go to PAL if they exist, to Egypt if they do not
+		command = { type = secedeprovince which = EGY value = 404 }
+		command = { type = secedeprovince which = EGY value = 406 }
+		command = { type = secedeprovince which = EGY value = 1797 }
+		command = { type = secedeprovince which = EGY value = 1798 }
+		command = { type = secedeprovince which = EGY value = 1799 }
+		command = { type = secedeprovince which = PAL value = 404 }
+		command = { type = secedeprovince which = PAL value = 406 }
+		command = { type = secedeprovince which = PAL value = 1797 }
+		command = { type = secedeprovince which = PAL value = 1798 }
+		command = { type = secedeprovince which = PAL value = 1799 }
+		command = { type = dissent value = -5 }
+		}
+	}
+event = {
+	id = 615023
+	random = no
+	country = EGY
+	
+	trigger = {
+		event = 111
+		NOT = { exists = ISR }
+		OR = {
+			event = 615020
+			NOT = { exists = SYR }
+		}
+		OR = {
+			event = 615021
+			NOT = { exists = LEB }
+		}
+		OR = {
+			event = 615022
+			NOT = { exists = JOR }
+		}
+		OR = {
+			NOT = { exists = PAL }
+			control = { province = 1798 }
+			control = { province = 1797 }
+			control = { province = 404 }
+			control = { province = 406 }
+			control = { province = 1799 }
+		}
+		
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1953 }
+
+	name = "第一次中東戰爭—阿拉伯聯軍勝利"
+	desc = "The Arab side prevailed in the war. We will implement the desire of the Arab states for an independent Palestine."
+	picture = "palestine"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = clrflag which = Arab_Israeli_War }
+		command = { type = removecore which = 1799 }#Gaza
+		# give independence if it does not exist
+		command = { type = independence which = PAL value = 1 }
+		# cede captured territories if it does
+		command = { type = secedeprovince which = PAL value = 404 }
+		command = { type = secedeprovince which = PAL value = 406 }
+		command = { type = secedeprovince which = PAL value = 1797 }
+		command = { type = secedeprovince which = PAL value = 1798 }
+		command = { type = secedeprovince which = PAL value = 1799 }
+		command = { type = dissent value = -5 }
+	}
+}
+###############################
+# only with human controlled Egypt
+# otherwise Arabs should usually
+# lose the war with Israel
+###############################
+event = {
+	id = 615026
+	random = no
+	country = EGY
+
+	trigger = {
+		ai = no
+		event = 615001
+		flag which = arab_resistance
+		exists = JOR
+		exists = LEB
+		exists = SYR
+		exists = IRQ
+	}
+
+	name = "United Front Against Israel"
+	desc = "Anger has erupted in Palestine over the proposed partitioning into Jewish and Arab states. Shall we form a united Arab front? This will help us to prepare the attack forces."
+	
+       	style = 0
+
+	date = { day = 5 month = december year = 1947 }
+	
+
+	action_a = {
+		name = "EVT_131_ACTA" 
+		command = { type = leave_alliance }
+		command = { type = belligerence which = EGY value = 5 } # gets additional belligerency with DOW
+		command = { type = end_puppet }
+		command = { type = trigger which = 615027 }
+		command = { type = trigger which = 615028 }
+		command = { type = trigger which = 615029 }
+	}
+}
+event = {
+	id = 615027
+	random = no
+	country = JOR
+
+	trigger = {
+		ai = yes
+		event = 615026
+	}
+	date = { day = 5 month = december year = 1947 }
+	offset = 1
+	deathdate = { day = 11 month = december year = 1947 }
+
+	name = "United Front Against Israel"
+	desc = "Egypt has proposed a united struggle against Israel when it forms. Shall we aid them?"
+	
+        	action_a = {
+		name = "Yes" 
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = belligerence which = JOR value = 10 }
+		command = { type = alliance which = EGY }
+		command = { type = set_relation which = EGY value = 150 }
+		command = { type = set_relation which = LEB value = 150 }
+		command = { type = set_relation which = SYR value = 150 }
+	}
+}
+event = {
+	id = 615028
+	random = no
+	country = LEB
+
+	trigger = {
+		ai = yes
+		event = 615026
+	}
+	date = { day = 5 month = december year = 1947 }
+	offset = 1
+	deathdate = { day = 11 month = december year = 1947 }
+
+	name = "United Front Against Israel"
+	desc = "Egypt has proposed a united struggle against Israel when it forms. Shall we aid them?"
+
+	action_a = {
+		name = "Yes" 
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = belligerence which = LEB value = 10 }
+		command = { type = alliance which = EGY }
+		command = { type = set_relation which = EGY value = 150 }
+		command = { type = set_relation which = SYR value = 150 }
+	}
+}
+event = {
+	id = 615029
+	random = no
+	country = SYR
+
+	trigger = {
+		ai = yes
+		event = 615026
+	}
+	date = { day = 5 month = december year = 1947 }
+	offset = 1
+	deathdate = { day = 11 month = december year = 1947 }
+
+	name = "United Front Against Israel"
+	desc = "Egypt has proposed a united struggle against Israel when it forms. Shall we aid them?"
+	
+	action_a = {
+		name = "Yes" 
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = belligerence which = SYR value = 10 }
+		command = { type = alliance which = EGY }
+		command = { type = set_relation which = EGY value = 150 }
+	}
+}
+##############################
+# Alternate end puppet if PAL created
+##############################
+event = {
+	id = 615030
+	random = no
+	country = SYR
+
+	trigger = {
+		event = 615002
+		ispuppet = SYR
+	}
+	date = { day = 21 month = may year = 1948 }
+	
+	name = "Economic Independence"
+	desc = "We have achieved economic independence"
+	
+	action_a = {
+		name = "Yes" 
+		command = { type = end_puppet }
+	}
+}
+event = {
+	id = 615031
+	random = no
+	country = LEB
+
+	trigger = {
+		event = 615002
+		ispuppet = LEB
+	}
+	date = { day = 21 month = may year = 1948 }
+	
+	name = "Economic Independence"
+	desc = "We have achieved economic independence"
+	
+	action_a = {
+		name = "Yes" 
+		command = { type = end_puppet }
+	}
+}
+event = {
+	id = 615032
+	random = no
+	country = JOR
+
+	trigger = {
+		event = 615002
+		ispuppet = JOR
+	}
+	date = { day = 21 month = may year = 1948 }
+	
+	name = "Economic Independence"
+	desc = "We have achieved economic independence"
+	
+	action_a = {
+		name = "Yes" 
+		command = { type = end_puppet }
+	}
+}
+event = {
+	id = 615033
+	random = no
+	country = IRQ
+
+	trigger = {
+		event = 615002
+		ispuppet = IRQ
+	}
+	date = { day = 21 month = may year = 1948 }
+	
+	name = "Economic Independence"
+	desc = "We have achieved economic independence"
+	
+	action_a = {
+		name = "Yes" 
+		command = { type = end_puppet }
+	}
+}
+###########################
+# Historic Peace Treaty Israel 1949
+###########################
+event = {
+	id = 615034
+	random = no
+	country = PAL
+
+	trigger = {
+		war = { country = PAL country = ISR }
+		exists = ISR
+		exists = JOR
+		control = { province = 1797 }
+		event = 615004 #EGY creating PAL historically
+	}
+	date = { day = 6 month = january year = 1949 }
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		ai_chance = 100
+		command = { type = peace which = ISR value = 0 }
+		command = { type = secedeprovince which = EGY  value = 1799 }#Gaza
+		command = { type = secedeprovince which = ISR  value = 404 }#Haifa
+		command = { type = secedeprovince which = ISR  value = 1798 }#Tel Aviv
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = secedeprovince which = ISR  value = 406 }#Eilat
+		command = { type = trigger which = 615035 }
+		command = { type = clrflag which = Arab_Israeli_War }
+	}
+#	action_b = {
+#		name = "Continue the war" 
+#		command = { type = dissent value = 3 }
+#	}
+}
+event = {
+	id = 615035
+	random = no
+	country = ISR
+	
+	#
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		command = { type = peace which = EGY value = 0 }
+		command = { type = peace which = LEB value = 0 }
+		command = { type = peace which = SYR value = 0 }
+		command = { type = peace which = JOR value = 0 }
+		command = { type = secedeprovince which = JOR value = 1797 }
+		command = { type = secedeprovince which = EGY  value = 1799 }#Gaza
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = trigger which = 615036 value = 1 }
+	}
+}
+event = {
+	id = 615036
+	random = no
+	country = EGY
+	
+	#
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		command = { type = secedeprovince which = ISR  value = 404 }#Haifa
+		command = { type = secedeprovince which = ISR  value = 1798 }#Tel Aviv
+		command = { type = secedeprovince which = ISR  value = 406 }#Eilat
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = secedeprovince which = JOR value = 1797 }
+		command = { type = trigger which = 615037 }
+	}
+}
+event = {
+	id = 615037
+	random = no
+	country = LEB
+	
+	#
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		command = { type = secedeprovince which = ISR  value = 404 }#Haifa
+		command = { type = secedeprovince which = ISR  value = 1798 }#Tel Aviv
+		command = { type = secedeprovince which = ISR  value = 406 }#Eilat
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = secedeprovince which = EGY  value = 1799 }#Gaza
+		command = { type = secedeprovince which = JOR value = 1797 }
+		command = { type = trigger which = 615038 }
+	}
+}
+event = {
+	id = 615038
+	random = no
+	country = SYR
+	
+	#
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		command = { type = secedeprovince which = ISR  value = 404 }#Haifa
+		command = { type = secedeprovince which = ISR  value = 1798 }#Tel Aviv
+		command = { type = secedeprovince which = ISR  value = 406 }#Eilat
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = secedeprovince which = EGY  value = 1799 }#Gaza
+		command = { type = secedeprovince which = JOR value = 1797 }
+		command = { type = trigger which = 615039 }
+	}
+}
+event = {
+	id = 615039
+	random = no
+	country = JOR
+	
+	#
+	
+	name = "以阿停戰協定 "
+	desc = "The Palestinians went to war with the objective of destroying Israel. Instead, the Israelis proved better in combat. They not only prevented the Arabs from gaining any territory but also seized some territories in the designated Arab state. The Arab states absorbed what was left of Palestine--Egypt seized the Gaza strip, while Jordan seized East Jerusalem and the West Bank of the Jordan River."
+	picture = "israel_49"
+
+	action_a = {
+		name = "Accept battlefield reality" 
+		command = { type = inherit which = PAL }
+		command = { type = secedeprovince which = ISR  value = 404 } #Haifa
+		command = { type = secedeprovince which = ISR  value = 1798 } #Tel Aviv
+		command = { type = secedeprovince which = ISR  value = 406 } #Eilat
+		command = { type = secedeprovince which = ISR  value = 3927 }#
+		command = { type = secedeprovince which = EGY  value = 1799 } #Gaza
+		command = { type = relation which = ISR value = 10 }
+	}
+}
+##########################
+# Palestine improved tech teams
+##########################
+event = {
+	id = 615040
+	random = no
+	country = PAL
+	
+	trigger = {
+		OR = {
+			AND = {
+				control = { province = 404 }
+				control = { province = 406 }
+				control = { province = 1797 }
+				control = { province = 1798 }
+				control = { province = 1799 }
+				NOT = { exists = ISR }
+			}
+			alliance = { country = PAL country = ISR }
+		}
+	}
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Progress for Palestine"
+	desc = "Now that there is no spectre of war with a Jewish State, we get improved tech teams."
+	
+	action_a = {
+		name = "Excellent!" 
+		command = { type = waketeam which = 14803 }
+		command = { type = waketeam which = 14804 }
+		command = { type = waketeam which = 14805 }
+		command = { type = waketeam which = 14806 }
+		command = { type = waketeam which = 14807 }
+	}
+}
+##########################
+# Israel victory --joins Allies
+##########################
+event = {
+	id = 615041
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			event = 615019
+			event = 615035
+		}
+	}
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "The Special Relationship"
+	desc = "Although Israel did not formally join any military alliances, cooperaton between the Jewish State and several countries was so strong that it was a virtual member of NATO. Initially the relationship with France was especially strong."
+	
+	action_a = {
+		name = "Excellent!" 
+		command = { type = alliance which = USA }
+		command = { type = free_money value = 1 } #more Israel bonds
+		command = { type = relation which = FRA value = 150 }
+		command = { type = relation which = ENG value = 75 }
+		command = { type = relation which = USA value = 100 }
+		command = { type = relation which = SAF value = 100 }
+		command = { type = relation which = PER value = 75 }
+		command = { type = relation which = CAN value = 75 }
+		command = { type = relation which = AST value = 75 }
+		command = { type = relation which = NZL value = 75 }
+		command = { type = relation which = SOV value = -25 }
+		command = { type = relation which = POL value = -25 }
+		command = { type = relation which = CZE value = -25 }
+		command = { type = relation which = HUN value = -25 }
+		command = { type = relation which = BUL value = -25 }
+		command = { type = relation which = ROM value = -25 }
+		command = { type = relation which = SAU value = -100 }
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = SYR value = -100 }
+		command = { type = relation which = LEB value = -100 }
+		command = { type = relation which = JOR value = -100 }
+		command = { type = relation which = IRQ value = -100 }		
+	}
+}
+
+event = {
+	id = 615042
+	random = no
+	country = ISR
+	style = 0
+	trigger = {
+		event = 615005
+	}
+
+	name = "巴拉克行動 "
+	desc = " "
+	picture = "israel"
+
+	date = { day = 9 month = july year = 1948 }
+
+	action_a = {
+		ai_chance = 100
+		name = "走私武器 "
+		command = { type = trigger which = 615043 value = 90 }
+       		command = { type = money value = -400 }
+       		command = { type = supplies value = 1000 }
+#		command = { type = add_corps which = "以色列国防军 " value = land where = 1798 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = infantry when = 6 }
+#		command = { type = add_division which = "第4以色列步兵师 " value = infantry when = 6 }
+#		command = { type = add_division which = "第1以色列步兵师 " value = motorized when = 6 where = armored_car } # BHT1.5 模板
+	}
+}
+
+event = {
+	id = 615043
+	random = no
+	country = ISR
+	style = 0
+
+	name = "擴編以色列國防軍 "
+	desc = " "
+	picture = "israel"
+
+	action_a = {
+		ai_chance = 100
+		name = "增兵 "
+       		command = { type = supplies value = 1000 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = infantry when = 6 }
+	}
+}
+
+event = {
+	id = 615399
+	random = no
+	country = YEM
+	
+	trigger = { 	}
+
+	date = { day = 16 month = february year = 1948 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+	
+	action_a = {
+		name = "Excellent!" 
+		command = { type = sleepminister which = 93001 }#Yahya al Hamid
+		command = { type = headofstate which = 93053 }#Ahmad al Hamid
+		command = { type = headofgovernment which = 93050 }#Ali ibn Abdullah al Wazir
+	}
+}
+
+############################
+# 615400-615499 Iran -AFG Turkey
+############################
+# 615400-615404 Soviets withdraw
+# from Northern Iran series
+############################
+
+event = {
+	id = 615405
+	random = no
+	country = SOV
+
+	trigger = {
+		NOT = { atwar = SOV }
+		NOT = { exists = GER }
+		NOT = { atwar = JAP }
+		NOT = { atwar = USA }
+		NOT = { atwar = ENG }
+		exists = USA
+		NOT = { ispuppet = USA }
+#		alliance = { country = USA country = ENG }
+		exists = TUR
+		NOT = { alliance = { country = SOV country = TUR } }
+#		alliance = { country = SOV country = BUL }
+	}
+	date = { day = 6 month = august year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1953 }
+
+	
+	name = "土耳其海峽通行權"
+	desc = "One of the issues that Molotov presented to the Germans in 1940 was the Soviet desire for free passage through the Turkish Straits. Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey."
+	
+	action_a = {
+		name = "提出要求"
+		ai_chance = 98 
+		command = { type = trigger which = 615406 }
+	}
+	action_b = {
+		name = "Respect Turkey's position"
+		ai_chance = 2
+		command = {  }
+	}
+}
+event = {
+	id = 615406
+	random = no
+	country = USA
+
+	#triggered by 615405
+	
+	name = "修訂蒙特勒合約 "
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. Turkey rejects the Soviet demands has appealed to us for help."
+	
+	action_a = {
+		name = "支持土耳其 "
+		ai_chance = 95 
+		command = { type = relation which = TUR value = 100 }
+		command = { type = trigger which = 615407 }
+	}
+	action_b = {
+		name = "這是土耳其自己的事 "
+		ai_chance = 5 
+		command = { type = relation which = TUR value = -50 }
+		command = { type = trigger which = 615408 }
+	}
+}
+event = {
+	id = 615407
+	random = no
+	country = ENG
+
+	#triggered by 615406
+	
+	name = "修訂蒙特勒合約 "
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. Turkey rejects the Soviet demands has appealed to us for help."
+	
+	action_a = {
+		name = "支持土耳其 "
+		ai_chance = 95 
+		command = { type = relation which = TUR value = 100 }
+		command = { type = trigger which = 615409 }
+	}
+	action_b = {
+		name = "這是土耳其自己的事 "
+		ai_chance = 5 
+		command = { type = relation which = TUR value = -50 }
+		command = { type = trigger which = 615410 }
+	}
+}
+event = {
+	id = 615408
+	random = no
+	country = ENG
+
+	#triggered by 615408
+	
+	name = "修訂蒙特勒合約 "
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. The USA has stayed out of the matter and only we can give Turkey support."
+	
+	action_a = {
+		name = "支持土耳其 "
+		ai_chance = 85
+		command = { type = relation which = TUR value = 150 }
+		command = { type = trigger which = 615410 }
+	}
+	action_b = {
+		name = "這是土耳其自己的事 "
+		ai_chance = 15 
+		command = { type = relation which = TUR value = -50 }
+		command = { type = trigger which = 615411 }
+	}
+}
+event = {
+	id = 615409
+	random = no
+	country = TUR
+
+	#triggered by 615407
+	
+	name = "修訂蒙特勒合約--西方支持 "
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. The USA and UK have backed our position."
+	
+	action_a = {
+		name = "接受蘇聯的要求 "
+		ai_chance = 0
+		command = { type = trigger which = 615412 }
+	}
+	action_b = {
+		name = "拒絕蘇聯的要求 "
+		ai_chance = 100
+		command = { type = trigger which = 615419 }
+	}
+}
+event = {
+	id = 615410
+	random = no
+	country = TUR
+
+	#triggered by 615407 or 615408
+	
+	name = "修訂蒙特勒合約--西方態度分裂 "
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. The USA and UK are divided on the issue."
+	
+	action_a = {
+		name = "接受蘇聯的要求 "
+		ai_chance = 10
+		command = { type = trigger which = 615412 }
+	}
+	action_b = {
+		name = "拒絕蘇聯的要求 "
+		ai_chance = 90
+		command = { type = trigger which = 615419 }
+	}
+}
+event = {
+	id = 615411
+	random = no
+	country = TUR
+
+	#triggered by 615408
+	
+	name = "修訂蒙特勒合約-西方的背叛"
+	desc = "Under the Montreux Convention, only limited passage of warships was permitted. The Soviet Union wanted unrestricted free passage and joint military control with Turkey. The USA and UK have not backed us."
+	
+	action_a = {
+		name = "接受蘇聯的要求 "
+		ai_chance = 40
+		command = { type = trigger which = 615412 }
+	}
+	action_b = {
+		name = "拒絕蘇聯的要求 "
+		ai_chance = 30
+		command = { type = trigger which = 615419 }
+	}
+	action_c = {
+		name = "與蘇聯結盟 "
+		ai_chance = 30
+		command = { type = leave_alliance }
+		command = { type = alliance which = SOV }
+		command = { type = set_relation which = SOV value = 100 }
+	}
+	
+}
+event = {
+	id = 615412
+	random = no
+	country = TUR
+
+	#triggered by 615409-615411
+	
+	name = "蒙特勒合約修訂版-給予海峽通行權 "
+	desc = "Turkey has agreed to Soviet demands. For HOI2, the only way to represent this is to cede Istanbul to Bulgaria and relocate the resources of the city to Ankara. Turkey retains the right to station troops in Istanbul. Because of game mechanics, the units assigned to Istanbul are deleted and created again. The treaty will be revoked and the straits returned to us if we are at war with Bulgaria."
+	
+	action_a = {
+		name = "OK"
+		command = { type = construct which = ic where = 409 value = -7 } # Istanbul
+		command = { type = add_prov_resource which = 409 value = -2 where = metal }
+		command = { type = add_prov_resource which = 409 value = -12 where = energy }
+		command = { type = add_prov_resource which = 409 value = -1 where = rare_materials }
+		command = { type = province_manpower which = 409 value = -1 }
+		command = { type = construct which = land_fort where = 409 value = 5 } # Istanbul
+		command = { type = construct which = ic where = 448 value = 7 } # Ankara
+		command = { type = add_prov_resource which = 448 value = 2 where = metal }
+		command = { type = add_prov_resource which = 448 value = 12 where = energy }
+		command = { type = add_prov_resource which = 448 value = 1 where = rare_materials }
+		command = { type = province_manpower which = 448 value = 1 }
+		command = { type = remove_division which = "TDT Yavuz" value = TUR }
+		command = { type = remove_division which = "TDT Hamidieh" value = TUR }
+		command = { type = remove_division which = "TDT Medjidieh" value = TUR }
+		command = { type = remove_division which = "1. Filotilla Torpido Ve Denizalti" value = TUR }
+		command = { type = remove_division which = "2. Filotilla Torpido Ve Denizalti" value = TUR }
+		command = { type = remove_division which = "1. Filotilla Denizalti K點黭" value = TUR }
+		command = { type = remove_division which = "2. Filotilla Denizalti K點黭" value = TUR }
+		command = { type = remove_division which = "Reschid Pasha K黭 Filo" value = TUR }
+		command = { type = remove_division which = "Reschid Pasha K點黭 Filotilla" value = TUR }
+		#some units are the same units named differently in different scenarios--so removed for both names
+		command = { type = remove_division which = "1. Piyade Dagitim" value = TUR }
+		command = { type = remove_division which = "3. Piyade Dagitim" value = TUR }
+		command = { type = remove_division which = "5. Piyade Dagitim" value = TUR }
+		command = { type = remove_division which = "1. Piyade T黰eni" value = TUR }
+		command = { type = remove_division which = "3. Piyade T黰eni" value = TUR }
+		command = { type = remove_division which = "17. Piyade T黰eni" value = TUR }
+		command = { type = remove_division which = "33. Piyade T黰eni" value = TUR }
+		command = { type = remove_division which = "37. Piyade T黰eni" value = TUR }
+		command = { type = remove_division which = "39. Piyade T黰eni" value = TUR }
+		command = { type = secedeprovince which = BUL value = 409 }
+		command = { type = add_corps which = "New Turkish Navy #1" value = naval where = 408 }
+		command = { type = add_division which = "TDT Yavuz" value = battlecruiser when = 0 }
+		command = { type = add_division which = "TDT Hamidieh" value = light_cruiser when = 0 }
+		command = { type = add_division which = "TDT Medjidieh" value = light_cruiser when = 0 }
+		command = { type = add_division which = "1. Filotilla Torpido Ve Denizalti" value = destroyer when = 0 }
+		command = { type = add_division which = "2. Filotilla Torpido Ve Denizalti" value = destroyer when = 1 }
+		command = { type = add_division which = "1. Filotilla Denizalti K點黭" value = submarine when = 0 }
+		command = { type = add_division which = "2. Filotilla Denizalti K點黭" value = submarine when = 2 }
+		command = { type = add_division which = "Reschid Pasha K黭 Filo" value = transport when = 0 }
+		command = { type = add_corps which = "Bosporus Guards #1" value = land where = 409 }
+		command = { type = add_division which = "1. Piyade T黰eni" value = infantry when = 3 }
+		command = { type = add_division which = "3. Piyade T黰eni" value = infantry when = 3 }
+		command = { type = add_corps which = "Bosporus Guards #2" value = land where = 409 }
+		command = { type = add_division which = "17. Piyade T黰eni" value = infantry when = 2 }
+		command = { type = add_division which = "33. Piyade T黰eni" value = infantry when = 2 }
+		command = { type = add_corps which = "Bosporus Guards #3" value = land where = 409 }
+		command = { type = add_division which = "37. Piyade T黰eni" value = infantry when = 2 }
+		command = { type = add_division which = "39. Piyade T黰eni" value = infantry when = 2 }
+		command = { type = trigger which = 615413 } 
+	}
+}
+event = {
+	id = 615413
+	random = no
+	country = BUL
+
+	#triggered by 615408
+	
+	name = "蒙特勒合約修訂版-土耳其海峽通行權"
+	desc = "As our part in the Montreux Revision Treaty, we grant military access to Turkey."
+	
+	action_a = {
+		name = "OK"
+		command = { type = access which = TUR }
+		command = { type = addcore which = 409 } # Istanbul
+		
+	}
+}
+event = {
+	id = 615414
+	random = no
+	country = TUR
+
+	trigger = {
+		war = { country = OTT country = TUR }
+		owned = { province = 409 data = OTT } # Istanbul
+		alliance = { country = OTT country = SOV }
+		owned = { province = 448 country = TUR }#Ankara
+	}
+	date = { day = 0 month = october year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	
+	name = "蒙特勒合約修訂版 - 合約破裂 "
+	desc = "As stipulated in the revised Montreux accords, Turkey has revoked the arrangement because we are at war with them."
+	
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = OTT } 
+	}
+}
+
+event = {
+	id = 615415
+	random = no
+	country = BUL
+
+	trigger = {
+		war = { country = BUL country = TUR }
+		owned = { province = 409 data = BUL } # Istanbul
+	}
+	date = { day = 0 month = october year = 1939 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	
+	name = "蒙特勒合約修訂版 - 合約破裂 "
+	desc = "As stipulated in the revised Montreux accords, Turkey has revoked the arrangement because we are at war with them."
+	
+	action_a = {
+		name = "OK"
+		command = { type = removecore which = 409 } # Istanbul
+		command = { type = secedeprovince which = TUR value = 409 }
+		command = { type = end_access which = TUR } 
+	}
+}
+
+event = {
+	id = 615419
+	random = no
+	country = SOV
+
+	#triggered by 615417
+	
+	name = "修訂蒙特勒合約 - 土耳其拒絕 "
+	desc = "Turkey has rejected our demands. Shall we make war? This would give us additional territory if we succeed but almost certainly will mean their entry into the war on the British side."
+	
+	action_a = {
+		name = "這意味著戰爭(WW3)!!!"
+		ai_chance = 2
+		command = { type = end_non_aggression which = BUL where = TUR }
+		command = { type = end_non_aggression which = GER where = TUR }
+		command = { type = end_non_aggression which = SOV where = TUR }
+		command = { type = end_guarantee which = BUL where = TUR }
+		command = { type = end_guarantee which = GER where = TUR }
+		command = { type = end_guarantee which = SOV where = TUR }
+		command = { type = war which = TUR } 
+	}
+	action_b = {
+		name = "Cooler heads will prevail."
+		ai_chance = 98
+		command = { type = relation which = TUR value = 10 } 
+	}
+	
+}

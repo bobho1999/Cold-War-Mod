@@ -1,0 +1,129 @@
+land_unit_type = 1
+# 0 - 18型工兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 50
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 2
+	toughness 			= 1
+	supplyconsumption 	= 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 27型工兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 55
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 3
+	toughness 			= 1
+	supplyconsumption 	= 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 36型工兵营 
+model = {
+	cost 				= 3
+	buildtime	 		= 60
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 3
+	toughness 			= 2
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 40型工兵营 
+model = {
+	cost 				= 4
+	buildtime	 		= 65
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 5
+	toughness 			= 4
+	supplyconsumption 	= 0.14
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 50型工兵营 
+model = {
+	cost 				= 5
+	buildtime	 		= 70
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 6
+	toughness 			= 5
+	supplyconsumption 	= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 60型工兵营 
+model = {
+	cost 				= 6
+	buildtime	 		= 75
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 7
+	toughness 			= 6
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 70型工兵营 
+model = {
+	cost 				= 7
+	buildtime	 		= 80
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 8
+	toughness 			= 7
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 80型工兵营 
+model = {
+	cost 				= 8
+	buildtime	 		= 85
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 9
+	toughness 			= 8
+	supplyconsumption 	= 0.22
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 90型工兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 90
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	defensiveness 		= 10
+	toughness 			= 9
+	supplyconsumption 	= 0.24
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 -  
+model = {
+	cost 				= 9
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	supplyconsumption 	= 0.26
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

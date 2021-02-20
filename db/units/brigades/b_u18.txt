@@ -1,0 +1,148 @@
+naval_unit_type = 1
+# 0 - Early Capital Naval Helicopter
+model = {
+	cost 				= 5.5
+	buildtime			= 110
+	manpower 			= 0.1
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 8
+	visibility					= 6
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 3
+	subattack			= 10
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.3
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 1 - Basic Capital Naval Helicopter
+model = {
+	cost 				= 6
+	buildtime			= 115
+	manpower 			= 0.1
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 8
+	visibility					= 6
+	airdefence			= 0
+	seaattack			= 2
+	convoyattack			= 4
+	subattack			= 11
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.4
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 2 - Improved Capital Naval Helicopter
+model = {
+	cost 				= 6.5
+	buildtime			= 115
+	manpower 			= 0.1
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 3
+	subdetectioncapability		= 9
+	visibility					= 6
+	airdefence			= 0
+	seaattack			= 3
+	convoyattack			= 5
+	subattack			= 12
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.5
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 3 - Advanced Capital Naval Helicopter
+model = {
+	cost 				= 7
+	buildtime			= 120
+	manpower 			= 0.1
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 3
+	subdetectioncapability		= 9
+	visibility					= 6
+	airdefence			= 0
+	seaattack			= 3
+	convoyattack			= 5
+	subattack			= 13
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.6
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 4 - Semi-Modern Capital Naval Helicopter
+model = {
+	cost 				= 7.5
+	buildtime			= 125
+	manpower 			= 0.1
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 6
+	airdefence			= 0
+	seaattack			= 4
+	convoyattack			= 6
+	subattack			= 13
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.7
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 5 - Modern Capital Naval Helicopter
+model = {
+	cost 				= 8
+	buildtime			= 130
+	manpower 			= 0.1
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 7
+	airdefence			= 0
+	seaattack			= 5
+	convoyattack			= 7
+	subattack			= 14
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.8
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.06
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}
+# 6 - Late Capital Naval Helicopter
+model = {
+	cost 				= 8
+	buildtime			= 130
+	manpower 			= 0.1
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 3
+	subdetectioncapability		= 11
+	visibility					= 7
+	airdefence			= 0
+	seaattack			= 5
+	convoyattack			= 7
+	subattack			= 15
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.9
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.07
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1
+}

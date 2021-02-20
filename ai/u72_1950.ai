@@ -1,0 +1,792 @@
+#Communist Vietnam AI
+
+switch = no
+neutrality = 120 #to prevent an alliance which could end in an unwanted WW3
+claim_acceptance = 0
+demand_claims = {
+	VIE
+	FRA
+	}
+resistance = { 
+	FRA = 10
+	USA = 10
+	ENG = 10
+	VIE = 10
+	}
+liberate = { U50 }
+combat = {
+	FRA = 70
+	VIE = 70
+	USA = 60
+#	JOR = 40
+	}
+protect = {
+	U50 = 100
+#	ENG = 100
+	}
+befriend = {
+	SOV = 50
+	CHC = 50
+	}
+target = {
+	#Vietnam
+	1337 = 80
+	1328 = 70
+	1333 = 50
+	1326 = 60
+	3705 = 70
+	#Laos
+	1306 = 60
+	3714 = 60
+	}
+upgrading = 0.2
+reinforcement = 0.2
+desperation = 0.5
+strat_redeploy_threshold = 30
+max_redeploying = 0.25
+use_offensive_supply = yes
+max_fuel_offensive = 100
+evac_islands = yes
+war = 1
+max_front_ratio = 4.0
+max_front_ratios = {
+	FRA = 2.0
+	USA= 2.0
+	VIE = 1.0
+	LAO = 1.0
+	}
+exp_force_ratio = 0.75
+no_exp_forces_to = {
+	FRA
+	ENG
+	USA
+	}
+max_garrison_prop = 0.3
+min_garrison_prop = 0.1
+construction = {
+	max_factor = 0.6
+	
+	AA_batteries = atwar
+	max_AA_level = 5
+	AA_provs = { 3704 1328 1326 3705 1333 1337 }
+	
+	coastal_fort = no
+	
+	radar_station = yes
+	max_radar = 3
+	radar_provs = { 3704 1328 1326 3705 1333 1337 }
+	
+	air_base = yes
+	max_air_base = 10				
+	air_base_provs = { 3704 1328 1326 1333 1337 }
+
+	naval_base 	= yes
+	max_naval_base = 10
+	naval_base_provs = { 1328 1326 1333 1337 }
+	
+	land_fort = not_atwar
+	max_land_level = 10				
+	fort_borders = {	
+		FRA
+		USA
+		VIE
+	}
+	fort_provs = { 3704 3703 3705 1328  }
+	ic_at_war = no 
+	force_ic_until = 1980
+	ic_end_year = 1989
+	IC_provs = { 1328 1326 1337 1333 }	
+	nuclear_reactor = yes	
+	nuclear_reactor_prov = 1798				
+	max_nuclear = 10					
+	rocket_test = no						
+}
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier = 0.5 
+	overseas_multiplier = 0 
+	home_peace_cap = 3 
+	war_zone_odds = 2.0
+	area_multiplier = { 
+		1328 = 1.5
+		3704 = 1.4
+	}
+	beach = 50					
+	capital = 50				
+	human_border = 50
+	war_target = 100			
+	reserves = 20	
+	opposing_alliance = 100		
+	claim_threat = 100			
+	unstable_border	= 50		
+	country_priorities = {
+		VIE = -20
+		USA = -20
+		VIE = -20
+	}
+	province_priorities = {
+#		1798 = 50 	
+#		404 = 30	
+#		406 = 30
+#		1799 = 10
+		}
+	ignore = {
+#		1796
+#		901
+#		1802
+#		1794
+#		1792
+	}
+	key_point_prio_mult = 1	
+}
+front = {
+	river = 1.0   	(What to multiply attacking power with if crossing a river. < 1.0 is an advantage..)
+
+	largefort 	= 1.0
+	smallfort	= 1.5
+	occupied	= 2.0
+	owned		= 2.0
+	frozen_attack 	= 0.50
+	snow_attack 	= 0.50
+	blizzard_attack = 0.25
+	storm_attack 	= 0.60
+	muddy_attack 	= 0.75
+	jungle_attack 	= 0.85
+	mountain_attack	= 0.60
+	swamp_attack 	= 0.60
+	forest_attack 	= 0.85
+	hill_attack 	= 0.75
+	urban_attack 	= 0.40
+	support_defense_prop = 0.45
+	recklessness 		= 2	
+	
+	distrib_vs_ai = offensive
+	distrib_vs_human = offensive
+
+	enemy_handicap = {
+		FRA = 30
+	}
+
+	passivity = { 
+
+	}
+	province_priorities = {
+		3705 = 0.4
+		1306 = 0.2
+	}
+	reserve_prop = 0.5
+	panic_ratio_vs_ai		=	70	
+	panic_ratio_vs_human	=	70	
+	enemy_reinf_days 		= 	30	# Count enemy units less than X days from a target province in odds calculations
+	base_attack_odds		=	40	# Will attack at X odds or better
+	min_attack_odds			=	20	# If stalemated for a long period, may go as low as these attack odds
+	max_attack_odds			=	20	# Don't use more force than necessary to reach these odds
+	reinforce_odds			=	40 	# Send in more troops if the attacking force is at these odds
+	withdraw_odds			= 	20	# Break off attacks and withdraw at these odds
+}
+military = {
+	relative_build_scheme 	= no
+
+	max_batch_peace = 700					# Max production run length in DAYS while at peace
+	max_batch_war = 400			 			# Max production run length in DAYS while at war with no home front
+	max_batch_home_front = 190				# Max production run length in DAYS while at war with home fronts
+	
+	infantry = 		10
+	cavalry = 		0
+	motorized = 	10
+	mechanized = 	10
+	light_armor = 	
+	armor = 		10
+	paratrooper = 	5
+	marine = 		5
+	bergsjaeger = 	5
+	garrison = 		0
+	hq = 			2
+	militia = 		13
+					#70%
+	
+	multi_role = 	5
+	interceptor = 	3
+	strategic_bomber = 3
+	tactical_bomber = 4
+	naval_bomber = 	1
+	cas = 4
+	transport_plane = 1
+	flying_bomb = 	0
+	flying_rocket = 0
+					# 20%
+
+	battleship = 	0
+	light_cruiser = 3
+	heavy_cruiser = 1
+	battlecruiser = 2
+	destroyer = 2
+	carrier = 		0
+	escort_carrier = 0
+	submarine = 2
+	nuclear_submarine = 0
+	transport = 0
+					# 10%
+					# 100%
+	artillery			=	20
+	sp_artillery		=	10
+	rocket_artillery	=	0
+	sp_rocket_artillery	=	0
+	anti_tank			=	20
+	tank_destroyer		=	5
+	light_armor_brigade	=	5
+	heavy_armor			=	0
+	super_heavy_armor	=	20
+	armored_car			=	5
+	anti_air			=	10
+	police				=	2
+	engineer			= 	3
+	
+	cag	= 0
+	naval_asw = 40
+	naval_anti_air_s = 10
+	naval_anti_air_l = 10
+	naval_radar_s = 10
+	naval_radar_l = 10
+	naval_fire_controll_l = 10
+	naval_fire_controll_s = 10
+	naval_torpedoes_l = 0
+	naval_torpedoes_s = 0
+	naval_anti_air_l = 0
+	naval_anti_air_s = 0
+	naval_radar_l = 0
+	naval_radar_s = 0
+}
+air_marshal = {
+	icxdayscostfactor = 10.0
+	manpowercostfactor = 100.0
+	destructionriskthreashold = 0.2
+
+	airsuperioritydesirability = 10.0	
+	airsuperioritylosstolerance = 1.0	
+	groundattacklosstolerance = 1.0
+	groundattackdesirability = 1.0
+	interdictionlosstolerance = 1.5
+	inderdictiondesirability = 1.0
+	logisticalstrikelosstolerance = 4.5
+	logisticalstrikeefficency = 0.2	
+	logisticalstrikedesirability = 100000.0
+	runwaycrateringlosstolerance = 1.5
+	runwaycrateringefficency = 0.01
+	runwaycrateringdesirability = 20000.0
+	strategicstriketolerance = 4.5
+	strategicstrikeefficency = 0.01
+	strategicstrikedesirability = 1000000.0
+	installationstriketolerance = 1.5
+	installationstrikeefficency = 0.01
+	installationstrikedesirability = 10.0
+	navalstriketolerance = 1.0
+	navalstrikedesirability = 10.0
+	portstriketolerance = 1.0
+	portstrikedesirability = 9.0
+	portstriketolerance = 1.0
+	portstrikedesirability = 0.0
+
+
+	# The defaults currently are:
+	taskforcetype = { 
+		name = "Air Superiority" 
+		desiredratio = 0.200 		
+		rangeweight = 10.000 
+		airkillpowerweight = 2000.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = yes 
+	}
+	taskforcetype = {
+		name = "interdiction"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 2000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "ground_attack"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "logistical_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "runway_cratering"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "strategic_bombardment"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 2000.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "installation_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 1000.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "naval_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "port_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "convoy_air_raiding"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "airborne_assault"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = 1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "air_supply"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = 1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	
+	
+	# the other defaults
+	taskforcetype = { 
+	name = "Soft Bombing" 
+	desiredratio = 0.200 
+	rangeweight = 10.000 
+	airkillpowerweight = 0.000 
+	hardkillpowerweight = 0.000 
+	softkillpowerweight = 2000.000 
+	navalkillpowerweight = 0.000 
+	strategickillpowerweight = 0.000 
+	transportcapacityweight = -1000000.000 
+	airvulnurabilityweight = 0.000 
+	surfacevulnurabilityweight = -1.000 
+	idle = yes 
+	reorganize = yes 
+	interdiction = yes 
+	ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+
+}
+leader_ratio = {
+	land_field_marshal =0.02
+	land_general =0.031
+	land_lt_general =0.41
+
+	sea_grand_admiral =0.02
+	sea_admiral =0.061
+	sea_vice_admiral =0.401
+
+	air_marshal =0.02
+	air_general =0.091
+	air_lt_General =0.11
+}
+invasion = {
+  	#for evaluating specific province target.
+	base = 1.0						# Relative modifier. (lower = specific targets much more important.)
+	random = 1.0					# How big a random range.  (1.0 = 1%)
+	coastal = 1.0                   # increase to avoid coastal forts more.
+	beach = 1.0                     # higher, avoid worst beaches.
+	distance = 1.0                  # higher = avoid long distance.
+	max_distance = 20.0		# ignore distances at higher distance than this.. 1 = 100km ingame.
+	pocket = 1.0                    # prioritise pockets, ie provinces with no adjacent controlled by same.
+	island = 1.0                    # prioritise taking pure islands.
+	enemy = 1.0                     # higher = much more wary of troops in province.
+	adjacentenemy = 1.0             # higher = much more wary of troops nearby
+	air_base	= 0.1   			# add this priority for air bases within adjacentenemy
+	naval_base	= 0.1				# add this priority for naval bases within adjacentenemy
+	air_support	= 0.1   			# add this priority for beaches within reach of air_bases
+	ignore = no				# Launch invasions even if we have a home front. Default: no
+
+	redirect	  = home   
+	target = { }
+}
+admiral = {
+	#specific provinces can be targetted to get special bonuses..
+	target = {
+		2452 = 100
+		2454 = 50
+		2463 = 50
+		2453 = 100
+		2455 = 100
+	}
+	core = {
+		2156
+		2338 
+	}
+	base = {
+		1328
+		1326
+		1337
+		1333
+	}
+	ignore = {
+		#PLEASE NOTE THAT ITS AREAS..  Not province-names
+		"northern baltic"
+		"southern baltic"
+		"western mediterranean"
+	}
+
+	min_org		= 95%	
+	min_dmg		= 95%   
+	return_org 	= 60% 	
+	return_dmg 	= 50% 	
+}
+# Factors to modify for technological development.
+technology = {
+	endgoal = { ... }			#list of endgoals to achieve.
+	preference = { ... }		# list of techs to give bonus too.
+	ignore = { ... } 			# Techs we will never research
+
+	#preference to weight importance of research in these field.s
+	armor = 2.0
+	infantry = 3.0
+	industry = 2.5
+	aircraft = 0.6
+	naval = 0.1
+	land_doctrines = 4.0
+	air_doctrines = 0.9
+	naval_doctrines = 0.1
+	secret_weapons = 0.4
+}
+
+# Factors to modify Trade Agreements.
+trade = {
+	favored = {
+		SOV = 75
+		CHC = 75
+	}
+	embargo = {
+		VIE
+		USA
+		FRA
+		ENG
+	}
+	
+	cancel_deal_threshold = 4.0
+
+	energy = 			-1
+	rare_materials = 	-1
+	metal =				-1
+	oil = 				-1
+	supplies = 			-1
+	money = 			-1
+}
+
+# Factors to modify Tech Sharing
+tech_sharing = {
+	favored = {
+		SOV = 75  	# Preferred Countries to trade techs with. Higher value also means better techs.
+		CHC = 75
+		U50 = 75
+	}
+	embargo = {
+		VIE
+		FRA
+		USA
+		ENG
+	}
+	not = {
+		1080  		# List of techs never to trade.
+		1140
+		1280
+		1360
+		1440
+		1520
+		1600
+		1680
+		1730
+		1810
+		1890
+		1970
+		10060
+		10150
+	}
+	prioritized = { }
+}
+
+ferocity = yes
+
+exp_force_ratios = {
+	SOV = 0.5
+	CHC = 0.5
+} 
+technology = { 
+	endgoal 	= { 
+		1080 
+		1140
+		1280
+		1360
+		1440
+		1520
+		1600
+		1680
+		1730
+		1810
+		1890
+		1970
+		10060
+		10150 
+		} 
+	preference 	= {
+		5010
+		5020
+		5030
+		5040
+		5050
+		5060
+		5070
+		5080
+		5090
+		5100
+		5110
+		5120
+		5130
+		5140
+		5370
+		5380
+		5390
+		5400
+		5410
+		5420
+		5430
+		5440
+		5450
+		5460
+		5470
+		5480
+		5490
+		5500
+	} 
+	ignore 		= {
+		1150
+		1160
+		1170
+		1180
+		1190
+		1200
+		2150
+		2170
+		2200
+		2250
+		2290
+	}
+ 
+	armor 		= 3
+	infantry 	= 5
+	industry 	= 3
+	aircraft 	= 5
+	naval 		= 2
+	land_doctrines 	= 0
+	secret_weapons 	= 0
+	air_doctrines 	= 0
+	naval_doctrines = 0
+}
+spyprefs = {
+percentage_on_spies = 0.2
+
+percentage_foreign_mission = 0.7
+
+spyprefsdata = {
+	country_priorities= 10
+	
+	NumberOfSpies = 10
+	
+	min_number_of_spies = 2
+	
+	steal_blueprint = 10
+	minister_assassination = 15
+	smear_campaign = 1
+	coup = 1
+	sabotage_industry = 10
+	nuclear_sabotage = 0
+	found_partisans = 0
+	massmedia = 0
+	counter_espionage = 2
+	disrupt_techteam = 1
+
+	
+	country = VIE
+	}
+
+# when country is the same as the AI file that data will be used for intelligence protecting the country i.e. counter espionage.
+spyprefsdata =  {
+	NumberOfSpies = 3
+	counter_espionage =  10
+	country =	 VIE
+	}
+}

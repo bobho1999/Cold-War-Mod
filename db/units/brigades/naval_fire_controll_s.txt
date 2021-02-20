@@ -1,0 +1,103 @@
+naval_unit_type = 1
+# 0 - Naval FC Escort 0
+model = {
+	cost 				= 2
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 0
+	subattack			= 1
+	airattack			= 2
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.35
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - Naval FC Escort 1
+model = {
+	cost 				= 2.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 2
+	subdetectioncapability		= 2
+	airdefence			= 0
+	seaattack			= 2
+	convoyattack			= 0
+	subattack			= 2
+	airattack			= 4
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.8
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - Naval FC Escort 2
+model = {
+	cost 				= 3
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 3
+	subdetectioncapability		= 3
+	airdefence			= 0
+	seaattack			= 3
+	convoyattack			= 0
+	subattack			= 3
+	airattack			= 6
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 1.2
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - Naval FC Escort 4
+model = {
+	cost 				= 3.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 4
+	subdetectioncapability		= 4
+	airdefence			= 0
+	seaattack			= 4
+	convoyattack			= 0
+	subattack			= 4
+	airattack			= 8
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 1.6
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - Naval FC Escort 5
+model = {
+	cost 				= 4
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 5
+	subdetectioncapability		= 5
+	airdefence			= 0
+	seaattack			= 5
+	convoyattack			= 0
+	subattack			= 5
+	airattack			= 10
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 2.0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+########################################
+

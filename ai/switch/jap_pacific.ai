@@ -1,0 +1,405 @@
+# Japan Pacific War AI by Lothos
+
+max_front_ratio = 1.1 
+max_garrison_prop = 0.40
+min_garrison_prop = 0.30
+neutrality = 50.000 
+war = 35
+strat_redeploy_threshold = 30 
+exp_force_ratio = 0.05
+exp_force_ratios = {
+	SIA = 1.0
+} 
+no_exp_forces_to = { GER ITA ROM HUN SLO YUG BUL FIN }
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	CHI = 30
+	CSX = 30
+	SIK = 30
+	CXB = 30
+	CYN = 30
+	CGX = 30
+	CHC = 40
+	USA = 200
+	ENG = 200
+	HOL = 200
+	PHI = 200
+	AUS = 150
+	NZL = 100
+	FRA = 100
+}
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.10 
+
+	AA_batteries = atwar
+	max_AA_level = 4
+	AA_provs = { 
+		1184 # Tokyo
+		1185 # Nagoya
+		1183 # Niigata
+		1187 # Osaka
+		1188 # Hiroshima
+		1190 # Fukuoka
+		1670 # Rabaul
+	}
+
+	coastal_fort = atwar
+	max_coastal_level = 2
+	coastal_fort_provs = {
+		1599 # Iwo Jima
+		1613 # Truk
+		1621 # Palau
+		1627 # Saipan
+		1601 # Eniwetok
+		1608 # Kwajelin
+		1670 # Rabaul
+		1193 # Okinawa
+	} 
+
+	radar_station = yes
+	max_radar = 2
+	radar_provs = {
+		1599 # Iwo Jima
+		1613 # Truk
+		1621 # Palau
+		1627 # Saipan
+		1601 # Eniwetok
+		1608 # Kwajelin
+		1670 # Rabaul
+		1193 # Okinawa
+		1184 # Tokyo
+		1185 # Nagoya
+		1183 # Niigata
+		1187 # Osaka
+		1188 # Hiroshima
+		1190 # Fukuoka
+	} 
+	air_base = yes
+	max_air_base = 4
+	air_base_provs = {
+		1670 # Rabaul
+		1599 # Iwo Jima
+		1627 # Saipan
+		1621 # Palau
+	} 
+
+	naval_base = atwar
+	max_naval_base = 10 
+	naval_base_provs = {
+		1670 # Rabaul
+	} 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = yes 
+	force_ic_until = 1938
+	ic_end_year = 1940
+	IC_provs = {
+		1184 # Tokyo
+		1185 # Nagoya
+		1183 # Niigata
+		1187 # Osaka
+		1188 # Hiroshima
+		1190 # Fukuoka
+	} 
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.5
+	overseas_multiplier 	= 1.0
+	home_peace_cap 		= 10
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.1
+	revolt_risk_mult	= 0.1
+
+	# PRIORITIES:
+	beach			= 30	# Beach level 2
+	capital			= 30	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		CHI = 40
+		CSX = 40
+		SIK = 40
+		CXB = 40
+		CYN = 40
+		CGX = 40
+		CHC = 40
+		VIC = -1
+		MAN = -1
+		MON = -1
+		SIA = -1
+		SOV = 15
+		POR = -1
+		ENG = 70
+		FRA = 50
+		HOL = 60
+		USA = 80
+		PHI = 70
+		AST = 20
+		NZL = 20
+	}
+	province_priorities = {
+		1337 = 75 # Saigon
+		1328 = 75 # Hanoi
+		1322 = 75 # Kaohsung
+		1613 = 75 # Truk
+		1601 = 75 # Eniwetok
+		1608 = 75 # Kwajelin
+		1670 = 75 # Rabaul
+	}
+	area_multiplier = {
+		1785 = 1.5 # Marcus Island
+		1625 = 1.5 # Rota
+		1192 = 1.5 # Anami
+		1194 = 1.5 # Jeju
+		1784 = 1.5 # Bonin Island
+	}
+}
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= Reactive
+	distrib_vs_human 	= Reactive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1.75
+	panic_ratio_vs_human	= 1.15
+	base_attack_odds	= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion	= yes
+
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 10.0	#higher = avoid long distance.
+	max_distance    = 40.0  #About the distance from Rostock to Narvik
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 2.0	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 
+      	naval_base 	= 0.1 
+      	air_support 	= 3.0 
+      	redirect 	= priority
+	ignore		= no
+	help_allies 	= no 	#[yes/no]
+      
+	staging_province = {
+		1337 # Saigon
+		1322 # Kaohsung
+		1613 # Truk
+		1187 # Osaka
+		1196 # Busan
+		1670 # Rabaul
+		1353 # Singapore
+		1627 # Saipan
+		1621 # Palau
+	}
+	target = {
+		# Japanese Heartland
+		1192 = 4000 # Amami
+		1193 = 4000 # Okinawa
+		1323 = 4000 # Taibei
+		1322 = 4000 # Gaoxiong
+		1784 = 4000 # Bonin Islands
+		1599 = 4000 # Iwo Jima
+		1177 = 4000 # Etorufu
+		1176 = 4000 # Toyohara
+		1175 = 4000 # Ocha  (Soviet Controlled)
+
+		#Philippines
+		1741 = 3750 # Aparri
+		1740 = 3750 # Lingayen Gulf
+		1742 = 3750 # Lamon Bay
+		1743 = 3750 # Legaspi
+		1750 = 3750 # Davao
+		1749 = 3750 # Cagayan
+		1748 = 3750 # Zamboangs
+		1744 = 3500 # Samar
+		1745 = 3500 # Leyte
+		1747 = 3500 # Negros
+		1746 = 3500 # Panay
+		1736 = 3500 # Mindoro
+		1735 = 3500 # Palawan
+
+		#Outer Japanese Islands
+		1627 = 3250 # Saipan
+		1626 = 3250 # Tinian
+		1625 = 3250 # Rota
+		1624 = 3250 # Guam
+		1621 = 3250 # Palau
+		1785 = 3250 # Marcus Island
+
+		#Netherlands East Indies
+		1354 = 3250 # Bagka Island
+		1628 = 3000 # Batavia
+		1630 = 3000 # Semarang
+		1629 = 3000 # Tjilatjap
+		1632 = 3000 # Soerabaja
+		1634 = 3000 # Madura
+		1631 = 3000 # Djokjakarta
+		1633 = 3000 # Malang
+		1358 = 2750 # Palembang
+		1359 = 2750 # Oosthaven
+		1356 = 2750 # Dumai
+		1357 = 2750 # Padang
+		1355 = 2750 # Medan
+
+		#Borneo
+		1646 = 2500 # Mini
+		1644 = 2500 # Kuching
+		1642 = 2500 # Pontianak
+		1641 = 2500 # Bandjermasin
+		1650 = 2500 # Balikpapan
+		1649 = 2500 # Samarinda
+		1648 = 2500 # Tarakan
+		1647 = 2500 # Jessleton
+
+		#Singapore
+		1350 = 7500 # Kota Bahru
+		1351 = 7500 # Kuantan
+		1349 = 7500 # Alor Star
+		1352 = 7500 # Kualla Lumpur
+		1353 = 7500 # Singapore
+
+		#China
+		1204 = 2500 # Tianjin
+		1214 = 2500 # Yantai
+		1215 = 2500 # Qingdao
+		1237 = 2500 # Shanghai
+		1217 = 2500 # Nanton
+		1219 = 2500 # Lianyuang
+		1321 = 2500 # Hainan
+		1244 = 2400 # Fuzhou
+		1247 = 2400 # Xizmen
+		1248 = 2250 # Shantou
+
+		#USA
+		1786 = 7250 # Wake Island
+
+		#Britain
+		1315 = 2250 # Hong Kong
+
+		#Far Outer Rim Japanese Islands
+		1601 = 2250 # Eniwetok
+		1600 = 2250 # Bikini
+		1602 = 2250 # Wotje
+		1608 = 2250 # Kwajalein
+		1603 = 2250 # Maloelap
+		1605 = 2250 # Majuro
+		1607 = 2250 # Jaluit
+		1606 = 2250 # Mili
+		1610 = 2250 # Ponape
+		1609 = 2250 # Kosrae
+		1620 = 2250 # Ngulu
+		1619 = 2250 # Yap
+		1618 = 2250 # Ulithi
+		1604 = 2250 # Wolelai
+		1615 = 2250 # Ulul
+		1617 = 2250 # Woleai
+		1616 = 2250 # Pulusok
+		1613 = 2250 # Truk
+		1612 = 2250 # Satawan
+
+		#Indonesia
+		1653 = 7000 # Menado
+		1651 = 7000 # Palu
+		1640 = 7000 # Makassar
+		1652 = 7000 # Kendari
+
+		#New Britain
+		1670 = 2000 # Rabaul
+		1671 = 2000 # Gasmata
+
+		#Indonesia
+		1654 = 1750 # Helmahera
+		1655 = 1750 # Buru
+		1656 = 1750 # Ceram
+		1296 = 4000
+		1295 = 4500
+		1291 = 4000
+
+		#North New Guinea
+		1659 = 1750 # Sorong
+		1661 = 1750 # Biak Island
+		1660 = 1750 # Babo
+		1663 = 1750 # Arare
+		1664 = 1750 # Sarmi
+		1665 = 1750 # Hollandia
+		1666 = 1750 # Aitape
+		1667 = 1750 # Wewak
+		1672 = 1750 # Lae
+
+		#North Solomon Islands
+		1668 = 1750 # Admirality Islands
+		1669 = 1750 # New Ireland
+		1681 = 1750 # Buka Island
+		1682 = 1750 # Bougainville
+
+		# NEI Last Remaining Islands
+		1635 = 1500 # Bali
+		1636 = 1500 # Lombok
+		1637 = 1500 # Sumbawa
+		1639 = 1500 # Flores
+		1638 = 1500 # Sumba
+		1657 = 1500 # West Timor
+
+		# USA Alaska
+		1408 = 1500 # Attu Island
+		543  = 1500 # Amchika Island
+		542  = 1500 # Kiska Island
+
+		# South Solomon Islands
+		1683 = 1250 # Shortland Island
+		1614 = 1250 # Vella Lavella
+		1622 = 1250 # Kolombangara
+		1684 = 1250 # New Georgia
+		1685 = 1250 # Guadalcanal
+	} 
+} 
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	target = { } 
+	core = {
+		2589
+		2193
+		2187
+		2192
+		2194
+		2213
+		2185
+	} 
+}

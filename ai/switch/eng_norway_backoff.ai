@@ -1,0 +1,151 @@
+# England invasion of Norway File by Lothos
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	target = { 
+		#Spain/Portugal
+		331 = 3000 # Bilbao
+		332 = 3000 # Oviedo
+		336 = 3000 # Lissabon
+		345 = 3000 # Faro
+		346 = 3000 # Huelva
+		347 = 3000 # Seville
+		352 = 2750 # Wurcia
+		354 = 2750 # Valencia
+		356 = 2750 # Tarragona
+		357 = 2750 # Barcelona
+
+		# Moroco
+		958 = 3000 # Casablanca
+		954 = 2750 # Welilla
+
+		# Algiers
+		953 = 2750 # Oran
+		949 = 2750 # Algiers
+
+		# Tunisia
+		940 = 2750 # Bizerte
+		939 = 2750 # Tunis
+		938 = 2750 # Sousse
+
+		# Libya
+		933 = 2500 # Zuara
+		932 = 2500 # Tripoli
+		924 = 2500 # Benghazi
+		919 = 2500 # Tobruk
+
+		# Egypt
+		910 = 3000 # Fuka
+		909 = 3000 # El Alamein
+		906 = 3000 # Alexandria
+		901 = 3000 # Port Said
+		900 = 3000 # Suez
+
+		# Middle East touching the Med
+		1800 = 2500 # el Arish
+		1799 = 2500 # Gaza
+		1798 = 2450 # Tel Aviv
+		404 = 2450  # Haifa
+		1794 = 2300 # Beirut
+		1793 = 2300 # Tripoli
+		1862 = 2100 # Aleppo
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		43  = -1 # Dunquerque
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax	
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		43  = -1 # Dunquerque
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax	
+	}
+}

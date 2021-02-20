@@ -1,0 +1,6582 @@
+
+
+event = {
+	id = 19107000
+	country = chc
+	random = no
+	save_date = yes
+
+	trigger = {
+	flag = CHCPROSOV 
+	}
+
+	name = "毛泽东与斯大林的次会谈 "
+	desc = "新中国成立后不久，中国共产党主席兼国家主席毛泽东率访问团 来到苏联莫斯科，对苏联进行正式访问。作为新中国最重要的盟 邦，访问苏联对新中国来说具有非常重要的意义，双方有许多问 题有待商谈。苏联方面则对新中国这个新盟友充满期望，以高规 格的礼遇迎接了毛泽东一行人。"
+	style = 0
+	picture = "stalin_mao"
+
+	date = { day = 22 month =  January year = 1933 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "为新中国争取外交成果！ "
+		command = { type = relation which = SOV value = 50 }		
+	}
+}
+#############################################################
+event = {
+	id = 19108128
+	country = SOV
+	random = no
+
+	trigger = {
+	  flag = minzu
+		event = 19107000
+		exists = mon
+	}
+
+	name = "关于外蒙古归属的问题 "
+	desc = "中國希望回鶻對蒙古的統治"
+	style = 0
+	picture = "stalin_mao"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "把外蒙古交给新中国！ "
+		ai_chance = 2
+		command = { type = trigger which = 19108131 }
+		command = { type = relation which = chc value = 30 }
+	}
+	action_b = {
+		name = "我觉得他们到应该将内蒙给蒙古 "
+		ai_chance = 98
+		command = { type = relation which = chc value = -10 }
+		command = { type = sleepevent which = 1107436 } #中国接管外蒙古
+	}
+}
+#############################################################
+event = {
+	id = 19108131
+	country = chc
+	random = no
+
+
+
+	name = "中国接管蒙古 "
+	desc = "通过在莫斯科的外交谈判达成的协议，新中国全面接管了外蒙古 地区。外蒙古作为一个独立国家已经成为一段短暂的历史。 "
+	style = 0
+	picture = "stalin_mao"
+
+
+	  action_a = {
+		name = "新中国万岁！ "
+		command = { type = relation which = SOV value = 10 }
+		command = { type = dissent value = -5 }
+		command = { type = belligerence value = 10 }
+	 	command = { type = inherit which = MON } #吞并外蒙古
+	 	command = { type = addcore which = 1404 }
+		command = { type = addcore which = 1420 }
+		command = { type = addcore which = 1419 }
+		command = { type = addcore which = 1434 }
+		command = { type = addcore which = 1438 }
+		command = { type = addcore which = 1385 }
+	}
+}
+#############################################################
+event = {
+	id = 19107005
+	country = chc
+	random = no
+  trigger = { event = 19107006 }  
+	name = "中苏贷款协定 "
+	desc = "新中国刚刚成立，百废待兴，各项事业的物资都较为匮乏。对此 ，毛泽东向斯大林和苏联政府提出请求援助，苏联方面则予以积 极应对，双方经过慎重磋商之后，达成了援助计划：苏联向中国 提供年利率为1%的三亿卢布低息贷款，作为中国向苏联购买工业 和铁路设备的资本。"
+	style = 0
+	picture = "stalin_mao"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "中苏友谊万岁！ "
+		command = { type = tc_mod value = 5 }
+		command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = building_prod_mod which = IC value = 5 }
+    command = { type = gain_tech which = -2 }
+    command = { type = gain_tech which = -2 }
+	  command = { type = local_setflag which = Openindustry2 }
+	}
+}
+#############################################################
+event = {
+	id = 19107006
+	country = SOV
+	random = no
+
+	trigger = { 
+	event = 19107000
+	 }
+
+	name = "苏联对华援助 "
+	desc = "新中国刚刚成立，百废待兴，各项事业的物资都较为匮乏。对此 ，毛泽东向斯大林和苏联政府提出请求援助，苏联方面则予以积 极应对，双方经过慎重磋商之后，达成了援助计划：苏联向中国 提供年利率为1%的三亿卢布低息贷款，作为中国向苏联购买工业 和铁路设备的资本。"
+	style = 0
+	picture = "stalin_mao"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "大力支援新中国！ "
+		ai_chance = 100
+		command = { type = supplies value = -10000 }
+	}
+	action_b = {
+		name = "我们有点困难…… "
+		ai_chance = 0
+		command = { type = supplies value = -1000 }
+		command = { type = sleepevent which = 19107005 } #中苏贷款协定
+			}
+}
+#############################################################
+event = {
+	id = 19108144
+	country = chc
+	random = no
+	save_date = yes
+  decision = { 
+   control = { province = 1202 data = sov }
+  }
+  trigger = {
+	event = 19107000
+	}
+  decision_trigger = { event = 19107000 }
+
+	name = "要求苏联尽早归还 "
+	desc = "1945年，苏联红军出兵中国东北，清剿关东军之后，占领了旅顺 基地并恢复了长春铁路的经营和管理权，一直到东北解放。新中 国成立后，首要的外交任务是清除一切帝国主义的影响，也包括 苏联继承的沙俄在华特权。对此，毛泽东据理力争，斯大林也很 清楚，苏联最好做出让步以维护双方关系稳定发展。双方经过商 谈，达成了苏联向中国移交旅顺基地和长春铁路的意向。"
+	style = 0
+	picture = "stalin_mao"
+	decision_picture = "d_chinese_soviet_alliance"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+	
+	action_a = {
+		name = "洗去耻辱才能有新的中苏关系 "
+    command = { type = money value = -50 }
+	}
+}
+event = {
+	id = 19107003
+	country = SOV 
+	random = no
+	
+	trigger = {
+	not = { 
+	war = { country = CHC country = USA }
+	war = { country = CHC country = SOV }
+	war = { country = CHC country = U62 }
+	 }
+	event = { id = 19108144 days = 260 }
+	}
+
+	name = "移交中国长春铁路与旅顺基地 "
+	desc = "1945年，苏联红军出兵中国东北，清剿关东军之后，占领了旅顺 基地并恢复了长春铁路的经营和管理权，一直到东北解放。新中 国成立后，首要的外交任务是清除一切帝国主义的影响，也包括 苏联继承的沙俄在华特权。对此，毛泽东据理力争，斯大林也很 清楚，苏联最好做出让步以维护双方关系稳定发展。双方经过商 谈，达成了苏联向中国移交旅顺基地和长春铁路的意向。"
+	style = 0
+	picture = "stalin_mao"
+	
+	action_a = {
+		name = "将它们归还中国！ "
+		ai_chance = 100
+		command = { type = secedeprovince which = chc value = 1202 }
+		command = { type = trigger which = 19107004 }
+		command = { type = relation which = chc value = 10 }
+    command = { type = extra_tc value = -10 }
+	}
+	action_b = {
+		name = "这件事不必再谈！ "
+		ai_chance = 0
+		command = { type = relation which = chc value = -10 }
+		command = { type = sleepevent which = 19107004 } #苏联归还旅顺口基地
+	}
+}
+#############################################################
+event = {
+	id = 19107004
+	country = chc
+	random = no
+
+
+	name = "苏联归还旅顺口基地及长春铁路 "
+	desc = "EVT_1107433_DESC"
+	style = 0
+	picture = "stalin_mao"
+
+
+	action_a = {
+		name = "中苏友谊万岁！ "
+	 command = { type = tc_mod value = 5 }
+	 command = { type = add_corps which = "★四大金刚 " value = naval where = 1202 }
+	 command = { type = add_division which = "★★★101鞍山号" value = destroyer when = 8 }
+	 command = { type = add_division which = "★★★102抚顺号" value = destroyer when = 8 }
+	command = { type = add_division which = "★★★103长春号" value = destroyer when = 8 }
+	command = { type = add_division which = "★★★104太原号" value = destroyer when = 8 }
+	}
+}
+#############################################################
+event = {
+	id = 1107426
+	country = SOV
+	random = no
+
+	trigger = {
+		event = 19107000
+		not = { alliance = { country =  SOV  country = chc } }
+	}
+
+	name = "《中苏友好同盟互助条约》 "
+	desc = "EVT_1107426_DESC"
+	style = 0
+	picture = "stalin_mao"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = "我们结为互助同盟 "
+		ai_chance = 70
+		command = { type = relation which = chc value = 10 }
+		command = { type = guarantee which = SOV where = chc }
+	}
+	action_b = {
+		name = "我们不结盟 "
+		ai_chance = 30
+		command = { type = relation which = chc value = -10 }
+		command = { type = sleepevent which = 1107434 } #中苏友好同盟互助条约
+		command = { type = sleepevent which = 1107435 } #中苏全面结盟
+	}
+}
+#############################################################
+event = {
+	id = 19107002
+	country = SOV
+	random = no
+
+	trigger = { event = 19107000 }   
+
+	name = "向中国提供军事援助 "
+	desc = "中国面临着解决台海的问题，我们需要向其提供援助 "
+	style = 0
+	picture = "stalin_mao"
+
+	date = { day = 1 month = january year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "大力支援新中国！ "
+		ai_chance = 99
+		command = { type = supplies value = -10000 }
+		command = { type = money value = 2000 }
+	}
+	action_b = {
+		name = "我们有困难 "
+		ai_chance = 1
+    command = { type = sleepevent which = 19107001 }
+	}
+}
+
+#############################################################
+event = {
+	id = 19107008
+	country = chc
+	random = no
+
+	trigger = { 
+	or = { 
+	and = { ai = chc ai = chi }  
+	and = { ai = no random = 95 difficulty = 0 }  
+	and = { ai = no random = 85 difficulty = 1 } 
+	and = { ai = no random = 75 difficulty = 2 } 
+	and = { ai = no random = 55 difficulty = 3 }
+	and = { ai = no random = 35 difficulty = 4 }
+	and = { NOT = { ai = CHI } random = 95 difficulty = 4 }  
+	and = { NOT = { ai = CHI } random = 85 difficulty = 3 } 
+	and = { NOT = { ai = CHI } random = 75 difficulty = 2 } 
+	and = { NOT = { ai = CHI } random = 55 difficulty = 1 }
+	and = { NOT = { ai = CHI } random = 35 difficulty = 0 }       
+   }
+   event = 19107000
+   }
+   
+	name = "破获国民党间谍案 "
+	desc = "国民党阴谋组织炸毁毛主席回国专列的企图，被我方 情报机构破获	 "
+	style = 0
+	picture = "zhengzhixieshang"
+
+	date = { day = 22 month =   January year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "反动派的阴谋不可能得逞 "
+    command = { type = intelligence which = us value = 5 }
+    command = { type = sleepevent which = 19107009 }
+	}
+}
+#############################################################
+event = {
+	id = 19107009
+	country = chc
+	random = no
+
+	trigger = { 
+	exists = chi
+	 event = { id = 19107000 days = 20 }
+	}   
+
+	name = "毛主席专列惨遭炸毁 "
+	desc = "悲剧（建议你重开档吧...） "
+	style = 0
+	picture = "zhengzhixieshang"
+
+	date = { day = 17 month = february year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "举国默哀 "
+    command = { type = intelligence which = us value = -5 }
+    command = { type = sleepminister which = 51001 }
+    command = { type = sleepminister which = 51115 }
+    command = { type = sleepminister which = 51112 }
+    command = { type = sleepminister which = 51122 }
+    command = { type = sleepminister which = 51124 }
+    command = { type = sleepminister which = 51157 }
+    command = { type = sleepminister which = 51037 }
+	}
+}
+#############################################################
+event = {
+	id = 19107010
+	country = chc
+	random = no
+
+	trigger = { event = 19107009 
+	   random = 30
+	 }   
+  
+	name = "内部动乱 "
+	desc = "由于毛泽东与周恩来遇刺，中共内部权力真空，各地发生军事叛乱  "
+	style = 0
+	persistent = yes
+	picture = "zhengzhixieshang"
+
+	date = { day = 17 month = february year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "镇压.. "
+    command = { type = intelligence which = us value = -5 }
+    command = { type = sleepminister which = -1 }
+    command = { type = sleepminister which = -1 }
+    command = { type = sleepminister which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = sleepleader which = -1 }
+    command = { type = dissent value = 10 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    command = { type = revolt which = -1 }
+    
+	}
+}
+#############################################################
+event = {
+	id = 19107253
+	country = chc
+	random = no
+
+	trigger = { 
+	control = { province = 1239 data = chc } #舟山
+	event = { id = 7840033 days = 90 } 
+	 }   
+  
+	name = "三军联合，登陆舟山 "
+	desc = "解放军首次使用海空军联合进行登岛作战 空军夺取了浙东沿海的部分制空权  "
+	style = 0
+	picture = "40801-04usa_helpto-china"
+
+	date = { day = 10 month = july year = 1933 }
+	offset = 1
+	deathdate = { day = 26 month = july year = 1933 }
+
+    action_a = {
+		name = "台湾将成为下一个舟山！ "
+		command = { type = trigger which = 19107265  }
+		command = { type = set_leader_skill which = 766306 value = 8 }
+		command = { type = set_leader_skill which = 766311 value = 6 }
+		command = { type = set_leader_skill which = 766316 value = 7 }
+		command = { type = set_leader_skill which = 766344 value = 7 }	          
+    	}
+}
+event = {
+	id = 19107265
+	country = chi
+	random = no
+
+  
+	name = "舟山失守 "
+	desc = "解放军首次使用海空军联合进行登岛作战 空军夺取了浙东沿海的部分制空权  "
+	style = 0
+	picture = "40801-04usa_helpto-china"
+
+    action_a = {
+		name = "可恶的共匪！ "
+		command = { type = dissent value = 3 }        
+    	}
+}
+#############################################################
+event = {
+	id = 19107263
+	country = chc
+	random = no
+
+	name = "解放军占领昌都 "
+	desc = "解放军在昌都地区歼灭了藏军主力  "
+	style = 0
+	picture = "balujun"
+
+
+    action_a = {
+		name = "祖国统一指日可待！ "
+		command = { type = add_corps which = 入藏部队 value = land  where = 1283  } 
+    command = { type = add_division which = ‘1师’ value = BERGSJAEGER when = 5  }
+    command = { type = add_division which = ‘2师’ value = BERGSJAEGER when = 5 }        
+    	}
+}
+event = {
+	id = 19107266
+	country = chc
+	random = no
+
+	trigger = { 
+	event = { id = 19107263 days = 190 } 
+  	 }   
+  
+	name = "西藏和平解放 "
+	desc = "中央人民政府和西藏地方政府在北京签订《关于和 平解放西藏办法的协议》 西藏和平解放是中国人民解放事业的重要组成部分， 是近代以来中华民族反对帝国主义侵略、维护国家 统一和主权伟大斗争中的一件大事，是西藏社会发 展具有划时代意义的历史转折点，是西藏从黑暗走 向光明、从落后走向进步的起点。  "
+	style = 0
+	picture = "xizang"
+
+	date = { day = 23 month = may year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "翻身农奴把歌唱！ "
+    command = { type = inherit which = TIB }
+    command = { type = sleepevent which = 19107266 }          
+    	}
+}
+#############################################################
+event = {
+	id = 19107264
+	country = tib
+	random = no
+
+	trigger = { 
+	exists = chc 
+	event = { id = 7840033 days = 300 } 
+  	 }   
+  
+	name = "解放军占领昌都 "
+	desc = "解放军在昌都地区歼灭了藏军主力  "
+	style = 0
+	picture = "balujun"
+
+	date = { day = 6 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "看来我们需要屈服于中共了！ "
+		command = { type = secedeprovince which = chc value = 1283 } 
+    command = { type = secedeprovince which = chc value = 1406 }
+    command = { type = secedeprovince which = chc value = 1453 }
+    command = { type = trigger which = 19107263  }           
+    	}
+}
+event = {
+	id = 19107255
+	country = chc
+	random = no
+  
+  
+	name = "第七舰队进入台湾海峡 "
+	desc = "美军第七舰队进入台湾海峡，我们不得推迟解放台湾的计划  "
+	style = 0
+	picture = "8596"
+
+    action_a = {
+		name = "万恶的美帝！ "
+    command = { type = peace which = chi value = 0  }       
+    	}
+}
+#############################################################
+event = {
+	id = 19107011
+	country = chc
+	random = no
+
+	decision = { 
+		event = 7840033
+	}
+
+	decision_trigger = {
+		army = 50
+	}
+
+	trigger = {
+			event = 7840033
+		army = 50		
+		} 
+  
+	name = "精兵化改革 "
+	desc = "我们需要裁剪庞大的陆军，借以获得其他方面的发展（之后不要超过200师） "
+	style = 0
+	picture = "xiandaihua"
+  decision_picture = "d_ALPINE"
+	date = { day = 16 month = april year = 1929 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "裁军！ "
+		ai_chance = 70
+		command = { type = dissent value = 5  }
+		command = { type = trigger which = 19107134 }
+		command = { type = relative_manpower value = -80 }
+    command = { type = remove_division which = 30294 value = 59 }
+    command = { type = remove_division which = 30294 value = 60 }
+    command = { type = remove_division which = 30294 value = 61 }
+    command = { type = remove_division which = 30294 value = 63 }
+    command = { type = remove_division which = 30294 value = 64 }
+    command = { type = remove_division which = 30294 value = 65 }
+    command = { type = remove_division which = 30294 value = 67 }
+    command = { type = remove_division which = 30294 value = 68 }
+    command = { type = remove_division which = 30294 value = 69 }
+    command = { type = remove_division which = 30294 value = 71 }
+    command = { type = remove_division which = 30294 value = 72 }
+    command = { type = remove_division which = 30294 value = 73 }
+    command = { type = remove_division which = 30294 value = 75 }
+    command = { type = remove_division which = 30294 value = 76 }
+    command = { type = remove_division which = 30294 value = 77 }
+    command = { type = remove_division which = 30294 value = 79 }
+    command = { type = remove_division which = 30294 value = 80 }
+    command = { type = remove_division which = 30294 value = 81 }
+    command = { type = remove_division which = 30294 value = 383 }
+    command = { type = remove_division which = 30294 value = 384 }
+    command = { type = remove_division which = 30294 value = 385 }
+    command = { type = remove_division which = 30294 value = 87 }
+    command = { type = remove_division which = 30294 value = 88 }
+    command = { type = remove_division which = 30294 value = 89 }
+    command = { type = remove_division which = 30294 value = 91 }
+    command = { type = remove_division which = 30294 value = 92 }
+    command = { type = remove_division which = 30294 value = 93 }
+    command = { type = remove_division which = 30294 value = 95 }
+    command = { type = remove_division which = 30294 value = 96 }
+    command = { type = remove_division which = 30294 value = 97 }
+    command = { type = remove_division which = 30294 value = 99 }
+    command = { type = remove_division which = 30294 value = 100 }
+    command = { type = remove_division which = 30294 value = 101 }
+    command = { type = remove_division which = 30294 value = 103 }
+    command = { type = remove_division which = 30294 value = 104 }
+    command = { type = remove_division which = 30294 value = 105 }
+    command = { type = remove_division which = 30294 value = 107 }
+    command = { type = remove_division which = 30294 value = 108 }
+    command = { type = remove_division which = 30294 value = 109 }
+    command = { type = remove_division which = 30294 value = 111 }
+    command = { type = remove_division which = 30294 value = 112 }
+    command = { type = remove_division which = 30294 value = 113 }
+    command = { type = remove_division which = 30294 value = 115 }
+    command = { type = remove_division which = 30294 value = 116 }
+    command = { type = remove_division which = 30294 value = 117 }
+    command = { type = remove_division which = 30294 value = 119 }
+    command = { type = remove_division which = 30294 value = 121 }
+    command = { type = remove_division which = 30294 value = 124 }
+    command = { type = remove_division which = 30294 value = 123 }
+    command = { type = remove_division which = 30294 value = 125 }
+    command = { type = remove_division which = 30294 value = 128 }
+    command = { type = remove_division which = 30294 value = 127 }
+    command = { type = remove_division which = 30294 value = 129 }
+    command = { type = remove_division which = 30294 value = 132 }
+    command = { type = remove_division which = 30294 value = 131 }
+    command = { type = remove_division which = 30294 value = 133 }
+    command = { type = remove_division which = 30294 value = 136 }
+    command = { type = remove_division which = 30294 value = 135 }
+    command = { type = remove_division which = 30294 value = 137 }
+    command = { type = remove_division which = 30294 value = 140 }
+    command = { type = remove_division which = 30294 value = 139 }
+    command = { type = remove_division which = 30294 value = 141 }
+    command = { type = remove_division which = 30294 value = 144 }
+    command = { type = remove_division which = 30294 value = 143 }
+    command = { type = remove_division which = 30294 value = 145 }
+    command = { type = remove_division which = 30294 value = 148 }
+    command = { type = remove_division which = 30294 value = 147 }
+    command = { type = remove_division which = 30294 value = 149 }
+    command = { type = remove_division which = 30294 value = 152 }
+    command = { type = remove_division which = 30294 value = 151 }
+    command = { type = remove_division which = 30294 value = 153 }
+    command = { type = remove_division which = 30294 value = 156 }
+    command = { type = remove_division which = 30294 value = 155 }
+    command = { type = remove_division which = 30294 value = 157 }
+    command = { type = remove_division which = 30294 value = 160 }
+    command = { type = remove_division which = 30294 value = 159 }
+    command = { type = remove_division which = 30294 value = 161 }
+    command = { type = remove_division which = 30294 value = 164 }
+    command = { type = remove_division which = 30294 value = 163 }
+    command = { type = remove_division which = 30294 value = 165 }
+    command = { type = remove_division which = 30294 value = 168 }
+    command = { type = remove_division which = 30294 value = 167 }
+    command = { type = remove_division which = 30294 value = 169 }
+    command = { type = remove_division which = 30294 value = 172 }
+    command = { type = remove_division which = 30294 value = 171 }
+    command = { type = remove_division which = 30294 value = 173 }
+    command = { type = remove_division which = 30294 value = 176 }
+    command = { type = remove_division which = 30294 value = 175 }
+    command = { type = remove_division which = 30294 value = 177 }
+    command = { type = remove_division which = 30294 value = 180 }
+    command = { type = remove_division which = 30294 value = 179 }
+    command = { type = remove_division which = 30294 value = 181 }
+    command = { type = remove_division which = 30294 value = 184 }
+    command = { type = remove_division which = 30294 value = 183 }
+    command = { type = remove_division which = 30294 value = 185 }
+    command = { type = remove_division which = 30294 value = 188 }
+    command = { type = remove_division which = 30294 value = 187 }
+    command = { type = remove_division which = 30294 value = 189 }
+    command = { type = remove_division which = 30294 value = 191 }
+    command = { type = remove_division which = 30294 value = 192 }
+    command = { type = remove_division which = 30294 value = 193 }
+    command = { type = remove_division which = 30294 value = 195 }
+    command = { type = remove_division which = 30294 value = 196 }
+    command = { type = remove_division which = 30294 value = 197 }
+    command = { type = remove_division which = 30294 value = 199 }
+    command = { type = remove_division which = 30294 value = 200 }
+    command = { type = remove_division which = 30294 value = 201 }
+    command = { type = remove_division which = 30294 value = 203 }
+    command = { type = remove_division which = 30294 value = 204 }
+    command = { type = remove_division which = 30294 value = 205 }
+    command = { type = remove_division which = 30294 value = 207 }
+    command = { type = remove_division which = 30294 value = 208 }
+    command = { type = remove_division which = 30294 value = 209 }
+    command = { type = remove_division which = 30294 value = 211 }
+    command = { type = remove_division which = 30294 value = 212 }
+    command = { type = remove_division which = 30294 value = 213 }
+    command = { type = remove_division which = 30294 value = 215 }
+    command = { type = remove_division which = 30294 value = 216 }
+    command = { type = remove_division which = 30294 value = 217 }
+    command = { type = remove_division which = 30294 value = 219 }  
+    	}
+		action  = {
+		name = "不需要 "
+		ai_chance = 30	
+		command = { type = sleepevent which = 19107011 }
+		}
+}
+
+event = {
+	id = 19107012
+	country = prk
+	random = no
+
+  trigger = { 
+	puppet = { country = prk country = chc } 
+  	 }  
+  
+	name = "金日成的反击 "
+	desc = "由于在党内有巨大实力的金日成遭受排挤，他在平壤发起了兵变 "
+	style = 0
+	picture = "balujun"
+
+  date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "镇压！ "
+		command = { type = money value = -100 }
+    command = { type = supplies value = -500 }
+    command = { type = dissent value = 10 }
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = max_organization which = land value = -10 } 
+    command = { type = max_organization which = air value = -10 }
+    command = { type = max_organization which = naval value = -10 } 
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+    command = { type = revolt which = 1201 }
+           	}
+}
+
+event = {
+	id = 19107014
+	country = chi
+	random = no
+
+ 
+  
+	name = "海南岛撤退 "
+	desc = "共军登陆了海南，在撤退时海军于陆军一度曾发生内讧 "
+	style = 0
+	picture = "xiandaihua"
+
+
+    action_a = {
+		name = "治军不力... "
+    command = { type = max_organization which = air value = -1 }
+    command = { type = max_organization which = naval value = -1 }
+           	}
+}
+event = {
+	id = 19107015
+	country = U62
+	random = no
+
+  trigger = { 
+	control = { province = 1202 data = chc }
+	NOT = { ai = chc 	} 
+  	 war = { country = chc  country = u62 }
+  	not = { garrison = { country = CHC province = 1202 size = 10 } }
+  	 }
+ 
+  
+	name = "登陆大连"
+	desc = "AI "
+	style = 0
+	picture = "xiandaihua"
+	
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "AI！ "
+    command = { type = add_corps which = 登陸部隊 value = land  where = 1202   } 
+    command = { type = add_division which = ‘美军登陸部隊’ value = INFANTRY when = 5  }
+    command = { type = add_division which = ‘美军登陸部隊’ value = INFANTRY when = 5 }
+    command = { type = add_division which = ‘美军登陸部隊’ value = INFANTRY when = 5 }
+           	}
+}
+event = {
+	id = 19107134
+	country = chc
+	random = no
+
+
+  
+	name = "裁军的收益 "
+	desc = "大量军队被裁减，我们可以将更多的资源投入他处 （之后请控制军队数量： 非常简单难度无限制 简单难度禁止超过三百五十个 普通难度禁止超过三百个 困难难度禁止超过二百五十个 非常困难禁止超过二百个 若发生负面事件，将军队裁回上限数量以下即可 （单指陆军，海空军不会有限制）  "
+	style = 0
+	picture = "xiandaihua"
+
+
+    action_a = {
+		name = "建立社会主义！ "
+    command = { type = gain_tech which = -1 }
+    command = { type = gain_tech which = -1 }
+    command = { type = gain_tech which = -1 }
+    command = { type = gain_tech which = -1 }
+    command = { type = industrial_modifier which = total value = 10 }
+    command = { type = money where = -1 when = 1000 }
+    command = { type = supplies value = 50000 }
+    command = { type = research_mod value = 10 }
+      command = { type = manpowerpool value = 2000 }  
+    command = { type = max_organization which = land value = 20 } 
+        command = { type = local_setflag which = caijuen }
+           	}
+}
+event = {
+	id = 19117018
+	country = chc
+	random = no
+
+	trigger = {  
+   event = 19107134
+   army  = 200  
+	and = { NOT = { ai = chc } difficulty = 1 army  = 350	 }
+	and = { NOT = { ai = chc } difficulty = 2 army  = 300	 }
+	and = { NOT = { ai = chc } difficulty = 3 army  = 250	 }
+	and = { NOT = { ai = chc } difficulty = 4 army  = 200	 }
+	 }   
+  
+	name = "裁军的负面影响 "
+	desc = "军队规模过大，导致各方面的负面效应... "
+	style = 0
+	picture = "xiandaihua"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "悲剧！ "
+    command = { type = research_mod value = -30 }
+    command = { type = industrial_modifier which = total value = -10 }
+    command = { type = max_organization which = land value = -40 } 
+    command = { type = max_organization which = air value = -60 }
+    command = { type = max_organization which = naval value = -60 } 
+    command = { type = morale which = land value = -50 } 
+    command = { type = morale which = naval value = -50 }
+    command = { type = morale which = air value = -50 }
+    command = { type = local_clrflag which = caijuen }
+           	}
+}
+event = {
+	id = 19117019
+	country = chc
+	random = no
+
+	trigger = {
+	event = 19107134   
+   NOT = { army  = 200 
+   local_flag = caijuen 
+   } 
+   }
+    
+  
+	name = "裁军的负面影响恢复 "
+	desc = "军队规模再度缩减 "
+	style = 0
+	picture = "xiandaihua"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "很好！ "
+    command = { type = research_mod value = 30 }
+    command = { type = industrial_modifier which = total value = 10 }
+    command = { type = max_organization which = land value = 40 } 
+    command = { type = max_organization which = air value = 60 }
+    command = { type = max_organization which = naval value = 60 } 
+    command = { type = morale which = land value = 50 } 
+    command = { type = morale which = naval value = 50 }
+    command = { type = morale which = air value = 50 }
+    command = { type = local_setflag which = caijuen }
+           	}
+}
+
+
+event = {
+	id = 19108013
+	country = chc
+	random = no
+
+	trigger = {   
+   event = 19109012
+   event = 19109010
+   atwar = no
+	 }   
+  
+	name = "朝鲜战争爆发 "
+	desc = "我们是否考虑帮助他们以增强我们的影响 "
+	style = 0
+	picture = "SOV136"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "介入战争！ "
+		ai_chance = 70
+		command = { type = relation which = prk value = 50 }
+    command = { type = alliance which = prk }
+    command = { type = alliance which = U74 }
+           	} 
+   action_b = {
+		name = "和平建设乃当务之急！ "
+		ai_chance = 30
+    command = { type = relation which = prk value = -15 }
+           	}        	
+           	      	
+}
+
+################
+#朝鲜战争 
+#############################################      	           	           	 	      	
+
+event = {
+	id = 48002
+	country = kor
+	random = no
+
+	trigger = {  
+   war = { country = kor country = prk }
+   ai = kor
+   ai = prk
+	 }   
+  
+	name = "韩战初期混乱的韩军 "
+	desc = "在最初的几个月内，北韩人民军迅速地南下使得 大韩民国只能屈居釜山一隅。 "
+	style = 2
+	picture = "kor_seoul2"
+
+
+	date = { day = 25 month = june year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "可恶！ "
+		command = { type = dissent value = 20  }
+    command = { type = max_organization which = land value = -10 }  
+    command = { type = morale which = land value = -25 } 
+           	}       	
+}
+
+event = {
+	id = 19108021
+	country = chc
+	random = no
+  
+  decision = {
+   event = 19107062
+  }
+  trigger = {  
+  event = 19107062
+	 }   
+	decision_trigger = { 
+	event = 19107062
+	} 
+	name = "朝鲜战争爆发 "
+	desc = "朝鲜半岛的战争很有波及我们"
+	style = 0
+	picture = "SOV136"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "备战！ "
+    command = { type = event which = 39107109 where = -1 when = 80 }
+    command = { type = free_ic value = -10 }
+           	}       	
+}
+event = {
+	id = 39107109
+	country = chc
+	random = no
+	
+
+  
+	name = "备战完成 "
+	desc = "我们已经完成了应对东北方向进攻的准备。 "
+	style = 0
+	picture = "SOV136"
+
+
+    action_a = {
+		name = "确定 "
+   command = { type = setflag which = beizhan }
+   command = { type = free_ic value = 10 }
+    	}
+}
+#############################################################
+event = {
+	id = 39107111
+	country = u62
+	random = no
+
+	trigger = { 
+	flag = scgm 
+  NOT = {  exists = prk  } 
+	 }   
+  
+	name = "朝鲜覆灭 "
+	desc = "朝鲜已经被消灭了，部分人士逃到了我们这 "
+	style = 2
+	picture = "prk_seoul1"
+
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "为他们提供职位,重用延安派 "
+		command = { type = setflag which = korcp  }
+    command = { type = wakeleader which = 767518 }
+    command = { type = wakeleader which = 766566 }
+    command = { type = wakeleader which = 766573 }
+    command = { type = add_corps which = 朝鲜残军 value = land  where = 1393  } 
+    command = { type = add_division which = ‘朝鲜人民军’ value = infantry when = 10  }     
+           	}       	
+}
+event = {
+	id = 19107032
+	country = u62
+	random = no
+
+	trigger = {  
+  NOT = {
+   war = { country = chc country = u62 }
+   exists = prk     
+  } 
+	 }   
+  
+	name = "朝鲜覆灭 "
+	desc = "朝鲜已经被我们消灭，战无不胜的美军需要进一步 消灭东亚的共产主义势力 "
+	style = 0
+	picture = "decision_gerww3"
+
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "鸭绿江不是我军的终点线！ "
+    command = { type = war which = CHC }
+    command = { type = add_corps which = 联合国军 value = land  where = 1393  } 
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10  }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }  
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10  }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }  
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10  }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }  
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }
+    command = { type = add_division which = ‘联合国军’ value = motorized when = 10 }    
+           	}       	
+}
+#############################################################
+event = {
+	id = 19108141
+	country = chc
+	random = no
+
+
+
+
+  trigger = {
+  flag = beizhan
+	war = { country = chc   country = u62 }	
+	} 
+
+
+
+	name = "组建志愿军 "
+	desc = "抗美援朝，保家卫国 "
+	style = 0
+	picture = "atin"
+  
+  date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+	
+    action_a = {
+		name = "将美帝赶下海喂王八！ "
+		command = { type = dissent value = -15 }
+		command = { type = alliance which = prk }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = infantry when = 13 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    command = { type = add_division which = "志愿军 " value = bergsjaeger when = 3 }
+    
+           	}       	
+}
+#############################################################
+event = {
+	id = 19107033
+	country = chc
+	random = no
+
+	trigger = {  
+  NOT = {
+   exists = kor 
+   exists = prk     
+  }
+  control = { province = 1199 data = chc }
+  control = { province = 1201 data = chc }
+  control = { province = 1197 data = chc } 
+  region = { region = "Korea" country = -3 value = 75 }
+	 }   
+  
+	name = "收复朝鲜半岛 "
+	desc = "在我们的帮助下，朝鲜得以复国 "
+	style = 0
+	picture = "SOV136"
+
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "将美帝彻底赶出东亚！ "
+		command = { type = trigger which = 63900 }
+    command = { type = independence which = prk value = 1 when = 0  }
+    command = { type = access which = prk  }
+    command = { type = trigger which = 19107035 }
+               	}       	
+}
+#############################################################
+event = {
+	id = 19107035
+	country = prk
+	random = no
+
+
+	name = "朝鲜重建 "
+	desc = "在中国的帮助下，我们建立起的政府，不过美国目前仍占领着济州 "
+	style = 0
+	picture = "SOV136"
+
+
+
+    action_a = {
+		name = "确定！ "
+		command = { trigger = { flag = korcp } type = headofstate which = 735010 } 
+		command = { trigger = { flag = korcp } type = headofgovernment which = 735006 } 
+		command = { trigger = { flag = korcp } type = chiefofstaff which = 735017 } 
+    command = { type = alliance which = chc }
+    command = { trigger = { flag = korcp } type = trigger which = 19108142 }
+    command = { type = secedeprovince which = u62 value = 1194 }    
+           	}       	
+}
+event = {
+	id = 19108142
+	country = chc
+	random = no
+
+  
+	name = "扶持延安派 "
+	desc = "在美军被志愿军击败后，朝鲜半岛处于了中国的 实际控制之下... "
+	style = 0
+	picture = "SOV136"
+
+
+    action_a = {
+		name = "我们需要通过延安派控制住朝鲜！"
+		command = { type = domestic which = interventionism value = 1 }
+    command = { type = make_puppet which = prk }
+           	}       	
+}
+
+################
+#停战谈判
+#############################################
+event = {
+	id = 19107053
+	country = usa
+	random = no
+   
+   trigger = {  
+   or = {
+   war = { country = u62  country = chc }
+   war = { country = usa  country = chc }
+   }
+   region = { region = "japan" country = -3 value = 85 }
+   region = { region = "Korea" country = -3 value = 85 }	 
+	   } 
+	    decision = { 
+	    or = {
+   war = { country = u62  country = chc }
+   war = { country = usa  country = chc }
+   }
+    }
+   
+	 decision_trigger = { 
+	 region = { region = "japan" country = -3 value = 85 }
+   region = { region = "Korea" country = -3 value = 85 }
+   }
+
+	
+  
+	name = "逼迫美国退出远东地区 "
+	desc = "我们在远东以毫无胜算，国内人民渴望和平 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+	decision_picture = "decision_spread_revolution"
+	
+	date = { day = 16 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+    name = "和平！ "
+    ai_chance = 100
+     command = { type = trigger which = 19108145 } 
+     }
+    action_b = {
+    name = "我们要战斗到底！ "
+    ai_chance = 0
+    command = { type = dissent value = 50  }
+           	}       	      	
+}
+event = {
+	id = 19108145
+	country = chc
+	random = no
+  
+
+	name = "日本与朝鲜问题 "
+	desc = "我们首先要确立东亚的秩序 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "要求确立朝鲜与日本以及东南亚为我们的势力范围！ "
+    ai_chance = 100
+    command = { type = belligerence which = chc value = 10 }
+     command = { type = trigger which = 19108146 } 
+     }
+    action_b = {
+    name = "退出这些地区！ "
+    ai_chance = 0
+    command = { type = trigger which = 19108147 }
+    command = {  type = end_mastery which = PRK }
+    command = {  type = end_mastery which = U74 }
+           	}       	      	
+}
+event = {
+	id = 19108146
+	country = USA
+	random = no
+	persistent = yes
+  
+
+	name = "日本与朝鲜问题 "
+	desc = "远东不是重点，我们需要考虑放弃 "
+	style = 0
+	picture = "usa"
+	
+
+    action_a = {
+    name = "已是既成事实！ "
+    ai_chance = 100
+     command = { type = trigger which = 19108147 } 
+     }
+    action_b = {
+    name = "决不允许！（谈判破裂） "
+    ai_chance = 0
+    command = { type = dissent value = 50  }
+    command = { type = war which = chc } 
+           	}       	      	
+}
+event = {
+	id = 19108148
+	country = USA
+	random = no
+  persistent = yes
+
+	name = "台湾问题 "
+	desc = "中国反对我们干涉台海的事务 "
+	style = 0
+	picture = "usa"
+	
+
+    action_a = {
+    name = "蒋介石是匹该遗弃的劣马！ "
+    ai_chance = 60
+     command = { type = trigger which = 19108150 }
+     command = { type = trigger which = 19108149 }     
+     }
+    action_b = {
+    name = "不同意！（谈判破裂） "
+    ai_chance = 40
+    command = { type = dissent value = 50  }
+    command = { type = war which = chc } 
+           	}       	      	
+}
+event = {
+	id = 19108147
+	country = chc
+	random = no
+  
+
+	name = "台湾问题 "
+	desc = "祖国统一的问题一直困扰着中共 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+	
+
+    action_a = {
+    name = "要求美帝不得干涉中国内政！ "
+    ai_chance = 90
+     command = { type = trigger which = 19108148 } 
+     }
+    action_b = {
+    name = "算了吧.... "
+    ai_chance = 10
+    command = { type = dissent value = 10  }
+    command = { type = trigger which = 19108150 }    
+           	}       	      	
+}
+event = {
+	id = 19108149
+	country = chi
+	random = no
+  
+
+	name = "美国抛弃了我们 "
+	desc = "随着中美停战协议的签订，我们被划入共匪的势力 范围，我们需要面对强大的解放军，并且是去了美 国的援助 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "忘恩负义的家伙！ "
+     command = { type = leave_alliance }
+     command = { type = supplies value = -50000 } 
+     command = { type = money value = -1500     }
+     }      	      	
+}
+event = {
+	id = 19108150
+	country = chc
+	random = no
+  
+
+	name = "中美台湾势力确定 "
+	desc = "美国同意不再干涉台湾事务 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "很好！ "
+    command = { type = trigger which = 19108151 }
+     }      	      	
+}
+event = {
+	id = 19108151
+	country = usa
+	random = no
+  persistent = yes
+
+	name = "战俘，侨胞问题 "
+	desc = "大量的美国战俘被中国扣押 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "互相归还 "
+    ai_chance = 90
+     command = { type = trigger which = 19108152 } 
+     }
+    action_b = {
+    name = "不同意归还 "
+    ai_chance = 10
+    command = { type = dissent value = 50  } 
+    command = { type = war which = chc }   
+           	}  
+           	}    
+event = {
+	id = 19108152
+	country = chc
+	random = no
+  
+
+	name = "战俘，侨胞问题 "
+	desc = "大量的战俘，现在侨胞需要什么？ "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "同意 "
+    ai_chance = 98
+     command = { type = manpowerpool where = -100 }
+     command = { type = waketeam which = 8335 } 
+     command = { type = trigger which = 19108153 }
+     }
+    action_b = {
+    name = "不放战俘 "
+    ai_chance = 2
+    command = { type = war which = usa }
+    command = { type = dissent value = 10  }    
+           	}  
+           	}  
+event = {
+	id = 19108153
+	country = chc
+	random = no
+  
+
+	name = "冲绳停战协议签署 "
+	desc = "这是一场伟大的胜利，该协议意义足以与一战的凡 尔赛与二战的雅尔塔相齐名 "
+	style = 0
+	picture = "usa"
+	persistent = yes
+
+    action_a = {
+    name = "和平！ " 
+     command = { type = peace which = usa value = 0 }
+     command = { type = peace which = u62 value = 0 }
+     command = { type = trigger which = 63900 }
+     command = { type = sleepevent which = 19107053 }
+     }  
+   }
+
+#########################################################################
+# 石油勘探 战后恢复
+#########################################################################
+event = {
+	id = 19108460
+	country = chc
+	random = no
+
+	trigger = {  
+   event = 7840033
+	 }   
+  
+	name = "战后恢复 "
+	desc = "经过了多年的战乱，国家已经满目疮痍，面对帝国 主义势力的包围，我们必须快速恢复我们的经济。 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 365
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "投入建设！ "
+		ai_chance = 97
+    command = { type = event which = 19107452 where = -1 when = 365 } 
+    command = { type = supplies value = -20000 } 
+    	}
+    action_b = {
+		name = "资源不够 "
+		ai_chance = 3	
+		command = { type = money value = -1 }
+		}
+}
+event = {
+	id = 19118460
+	country = prk
+	random = no
+
+	trigger = {  
+  atwar = no
+	 }   
+  
+	name = "战后恢复 "
+	desc = "经过了多年的战乱，国家已经满目疮痍，面对帝国 主义势力的包围，我们必须快速恢复我们的经济。 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 365
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "投入建设！ "
+		ai_chance = 97
+    command = { type = event which = 19107452 where = -1 when = 365 } 
+    command = { type = supplies value = -20000 } 
+    	}
+    action_b = {
+		name = "资源不够 "
+		ai_chance = 3	
+		command = { type = money value = -1 }
+		}
+}
+event = {
+	id = 9128460
+	country = u74
+	random = no
+
+	trigger = {  
+  atwar = no
+	 }   
+  
+	name = "战后恢复 "
+	desc = "经过了多年的战乱，国家已经满目疮痍，面对帝国 主义势力的包围，我们必须快速恢复我们的经济。 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 365
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "投入建设！ "
+		ai_chance = 97
+    command = { type = event which = 19107452 where = -1 when = 365 } 
+    command = { type = supplies value = -20000 } 
+    	}
+    action_b = {
+		name = "资源不够 "
+		ai_chance = 3	
+		command = { type = money value = -1 }
+		}
+}
+event = {
+	id = 19107452
+	random = no  
+  
+	name = "国家经济恢复 "
+	desc = "经过一年的努力，我国工业有了初步的恢复，各方 面的事业蒸蒸日上。 "
+	style = 0
+	picture = "SOV025"
+
+    action_a = {
+		name = "社会主义的先进性！ "
+		ai_chance = 97
+    command = { type = construct which = ic where = -4 value = 2 }
+    command = { type = construct which = ic where = -4 value = 2 }
+    command = { type = construct which = ic where = -4 value = 2 }  
+    	}
+}
+event = {
+	id = 19107453 
+	tag = { CHI CHC }
+	random = no
+  decision = { 
+ region = { region = "China" country = -3 value = 70 }
+ area = { area = "JILIN" country = -3 value = 90 }
+		area = { area = "LIAONING" country = -3 value = 90 }
+		area = { area = "HEILONGJIANG" country = -3 value = 90 }
+  }
+	trigger = {
+	region = { region = "China" country = -3 value = 70 }
+	area = { area = "JILIN" country = -3 value = 90 }
+		area = { area = "LIAONING" country = -3 value = 90 }
+		area = { area = "HEILONGJIANG" country = -3 value = 90 }
+   supplies = 20000
+	 }   
+	 decision_trigger = { supplies = 20000  }
+  
+	name = "石油勘探 "
+	desc = "国家的经济发展急需石油，根据李四光的理论中国 很可能存在大量油田，我们需要组织勘探。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 365
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "进行勘探！ "
+		ai_chance = 100 
+    command = { type = supplies value = -20000 } 
+    command = { type = local_setflag which = shiyou }
+    	}
+    action_b = {
+		name = "财政困难 "
+		ai_chance = 0
+		command = { type = sleepevent which = 19107454 }
+		command = { type = sleepevent which = 19107455 }
+		command = { type = sleepevent which = 19107456 }
+		command = { type = sleepevent which = 19107457 }
+		command = { type = sleepevent which = 19107458 }
+		command = { type = sleepevent which = 19107459 }
+		}
+}
+event = {
+	id = 19107454
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   random = 10
+   control = { province = 1380 data = -1 }
+	 }   
+  
+	name = "发现大庆油田 "
+	desc = "在多年的勘探下，终于发现了这个油田 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 1380 value = 90 where = oil } 
+    	}
+}
+event = {
+	id = 19107455
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   random = 30
+   control = { province = 1432 data = -1 }
+	 }   
+  
+	name = "发现克拉玛依油田 "
+	desc = "在多年的勘探下，终于发现了这个油田 "
+	style = 0
+	picture = "SOV025"
+	
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 1432 value = 40 where = oil } 
+    	}
+}
+event = {
+	id = 19107456
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   control = { province = 1441 data = -1 }
+	 }   
+  
+	name = "開發玉门油田 "
+	desc = "我们现在有足够的资本来开发玉门油田了 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 1441 value = 10 where = oil } 
+    	}
+}
+event = {
+	id = 19107457
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   random = 7
+   control = { province = 2530 data = -1 }
+	 }   
+  
+	name = "发现胜利油田 "
+	desc = "在多年的勘探下，终于发现了这个油田 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 2530 value = 35 where = oil } 
+    	}
+}
+event = {
+	id = 19107458
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   random = 9
+   control = { province = 1390 data = -1 }
+	 }   
+  
+	name = "发现吉林油田 "
+	desc = "在多年的勘探下，终于发现了这个油田 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 1390 value = 15 where = oil } 
+    	}
+}
+event = {
+	id = 19107459
+	tag = { CHI CHC }
+	random = no
+
+	trigger = {  
+   local_flag = shiyou
+   random = 9
+   control = { province = 1395 data = -1 }
+	 }   
+  
+	name = "发现辽河油田 "
+	desc = "在多年的勘探下，终于发现了这个油田 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = add_prov_resource which = 1395 value = 18 where = oil } 
+    	}
+}
+
+#########################################################################
+# 一五计划
+#########################################################################
+event = {
+	id = 19107410
+	country = chc
+	random = no
+ decision = {
+ event = 19107134
+ }
+	trigger = {  
+  event = 19107134
+  region = { region = "China" country = -3 value = 80 }
+	 }  
+	 decision_trigger = { 
+	 region = { region = "China" country = -3 value = 80 }
+	 } 
+  
+	name = "提前开始一五计划 "
+	desc = "军队裁减带来的收益使我们有能力更早开始计划经济。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "一天等于20年！ "
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = trigger which = 19107485 }
+    command = { type = trigger which = 19107468 }
+    command = { type = trigger which = 19107470 }
+    command = { type = trigger which = 19107472 }
+    command = { type = trigger which = 19107474 }
+    command = { type = trigger which = 19107478 }
+    command = { type = trigger which = 19107480 }
+    command = { type = trigger which = 19107482 }
+    command = { type = event which = 19107479 where = -1 when = 1800 }
+    command = { type = sleepevent which = 19107460 }
+    	}
+}
+event = {
+	id = 19107460
+	country = chc
+	random = no
+
+	decision = {
+ NOT = {
+	 ispuppet = chc
+	 }
+ }
+	trigger = {  
+  NOT = {
+	 ispuppet = chc
+	 }
+	 region = { region = "China" country = -3 value = 80 }
+	 }  
+	 decision_trigger = {  
+	 region = { region = "China" country = -3 value = 80 } 
+	 event = { id = 7840033 days = 1000 }
+	 }   
+  
+	name = "一五计划开始规划 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "一天等于20年！ "
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = trigger which = 19107485 }
+    command = { type = trigger which = 19107468 }
+    command = { type = trigger which = 19107470 }
+    command = { type = trigger which = 19107472 }
+    command = { type = trigger which = 19107474 }
+    command = { type = trigger which = 19107476 }
+    command = { type = trigger which = 19107478 }
+    command = { type = trigger which = 19107480 }
+    command = { type = trigger which = 19107482 }
+    command = { type = event which = 19107479 where = -1 when = 1800 }
+     command = { type = sleepevent which = 19107410 }
+    	}
+}
+event = {
+	id = 19107485
+	country = chc
+	random = no
+
+  
+	name = "工业规划 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+
+	date = { day = 20 month = december year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "增长10%！ "
+		ai_chance = 5
+    command = { type = trigger which = 19107461 }
+    	}
+    action_b = {
+		name = "增长20%！ "
+		ai_chance = 90
+    command = { type = trigger which = 19107462 }
+    	}
+    action_c = {
+		name = "增长30%！ "
+		ai_chance = 5
+    command = { type = trigger which = 19107463 }
+    	}	
+}
+event = {
+	id = 19107461
+	country = chc
+	random = no
+
+ 
+  
+	name = "保守规划 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+
+    action_a = {
+		name = "增长10%！ "
+    command = { type = event which = 19107464 where = -1 when = 365 }
+    command = { type = supplies value = -100000 }
+    command = { type = event which = 19107461 where = -1 when = 365 }
+    command = { type = dissent value = 1 }
+    	}	
+}
+event = {
+	id = 19107462
+	country = chc
+	random = no
+
+ 
+  
+	name = "适度规划 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+
+    action_a = {
+		name = "增长20%！ "
+    command = { type = event which = 19107465 where = -1 when = 365 }
+    command = { type = supplies value = -300000 }
+    command = { type = event which = 19107462 where = -1 when = 365 }
+    command = { type = dissent value = 3 }
+    	}	
+}
+event = {
+	id = 1910743
+	country = chc
+	random = no
+
+ 
+  
+	name = "超负担规划 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+
+    action_a = {
+		name = "增长30%！ "
+    command = { type = event which = 19107466 where = -1 when = 365 }
+    command = { type = supplies value = -1000000 }
+    command = { type = event which = 19107463 where = -1 when = 365 }
+    command = { type = dissent value = 10 }
+    	}	
+}
+event = {
+	id = 19107464
+	country = chc
+	random = no
+
+ 
+  
+	name = "保守规划收益 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = construct which = ic where = -4 value = 2 }
+    command = { type = construct which = ic where = -4 value = 2 }
+    command = { type = construct which = ic where = -4 value = 2 }  
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    command = { type = construct which = ic where = -1 value = 1 }
+    	}	
+}
+event = {
+	id = 19107465
+	country = chc
+	random = no
+
+ 
+  
+	name = "适度规划收益 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = construct which = ic where = -4 value = 5 }
+    command = { type = construct which = ic where = -4 value = 3 }
+    command = { type = construct which = ic where = -4 value = 3 }  
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    command = { type = construct which = ic where = -1 value = 2 }
+    	}	
+}
+event = {
+	id = 19107466
+	country = chc
+	random = no
+
+ 
+  
+	name = "超负担规划收益 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。 "
+	style = 0
+	picture = "SOV025"
+	persistent = yes
+
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = construct which = ic where = -4 value = 6 }
+    command = { type = construct which = ic where = -4 value = 4 }
+    command = { type = construct which = ic where = -4 value = 4 }  
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    command = { type = construct which = ic where = -1 value = 3 }
+    	}	
+}
+event = {
+	id = 19107467
+	country = chc
+	random = no
+
+  trigger = {
+	event = 1910763
+	random = 10
+	} 
+  
+	name = "超负担规划的恶果 "
+	desc = "工业的发展给农业带来了巨大的负担，农民开始反抗我们的政策 "
+	style = 0
+	picture = "qiyi"
+	persistent = yes
+	
+	date = { day = 20 month = december year = 1952 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "镇压法西斯暴乱！ "
+    command = { type = revolt which = -1 }
+    	}	
+}
+event = {
+	id = 19107468
+	country = chc
+	random = no
+ 
+  
+	name = "武汉长江大桥计划 "
+	desc = "武汉长江大桥，位于湖北省武汉市，大桥横跨于武 昌蛇山和汉阳龟山之间，是中国在长江上修建的第 一座铁路、公路两用桥梁，被称为“万里长江第一 桥”。武汉长江大桥于1955年9月1日开工建设，于 1957年10月15日建成通车，大桥的建设在当时得到 了苏联政府的帮助。 "
+	style = 0
+	picture = "SOV025"
+	
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107469 where = -1 when = 1745 }
+    command = { type = supplies value = -500 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }	
+    	}	
+}
+event = {
+	id = 19107469
+	country = chc
+	random = no
+
+  
+	name = "武汉长江大桥竣工 "
+	desc = "武汉长江大桥，位于湖北省武汉市，大桥横跨于武 昌蛇山和汉阳龟山之间，是中国在长江上修建的第 一座铁路、公路两用桥梁，被称为“万里长江第一 桥”。武汉长江大桥于1955年9月1日开工建设，于 1957年10月15日建成通车，大桥的建设在当时得到 了苏联政府的帮助。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = infrastructure where = 1253 value = 50 }
+    command = { type = construct which = infrastructure where = 1232 value = 50 }	
+    	}	
+}
+event = {
+	id = 19107470
+	country = chc
+	random = no
+
+
+	name = "第一汽车制造厂计划 "
+	desc = "长春第一汽车制造厂，是中国第一家现代化汽车 制造厂。1953年7月15日，工程破土动工，建设者经 过3年奋斗，终让一座宏伟的汽车厂矗立在长春大 地上。1956年7月12日，从总装配线上开出了国产 第一辆“解放”牌汽车，就此结束了中国不能制造汽 车的历史。 "
+	style = 0
+	picture = "SOV025"
+	
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 99
+    command = { type = event which = 19107471 where = -1 when = 1320 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 1
+    command = { type = dissent value = 1 }
+    	}	
+}
+event = {
+	id = 19107471
+	country = chc
+	random = no
+
+  
+	name = "第一汽车制造厂竣工 "
+	desc = "长春第一汽车制造厂，是中国第一家现代化汽车 制造厂。1953年7月15日，工程破土动工，建设者经 过3年奋斗，终让一座宏伟的汽车厂矗立在长春大 地上。1956年7月12日，从总装配线上开出了国产 第一辆“解放”牌汽车，就此结束了中国不能制造汽 车的历史。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = ic where = 2241 value = 1 }
+    command = { type = waketeam which = 260046 }	
+    command = { type = max_organization which = land value = 5 }
+    	}	
+}
+event = {
+	id = 19107472
+	country = chc
+	random = no
+
+
+	name = "渤海造船厂计划 "
+	desc = "辽宁渤海造船厂始建于1954年，位于中国辽宁葫芦 岛市龙港区，为中国最大的造船厂之一，是中国船 舶工业总公司所辖骨干造船企业之一。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107473 where = -1 when = 700 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }	
+    	}	
+}
+event = {
+	id = 19107473
+	country = chc
+	random = no
+
+  
+	name = "渤海造船厂竣工 "
+	desc = "辽宁渤海造船厂始建于1954年，位于中国辽宁葫芦 岛市龙港区，为中国最大的造船厂之一，是中国船 舶工业总公司所辖骨干造船企业之一。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+		command = { type = waketeam which = 260052 }
+    command = { type = construct which = ic where = 2349 value = 1 }
+    command = { type = max_organization which = naval value = 5 }
+    	}	
+}
+event = {
+	id = 19107474
+	country = chc
+	random = no
+
+  
+	name = "成都飞机制造厂计划 "
+	desc = "中航工业成都飞机工业（集团）有限责任公司，原 名“国营132厂”，创建于1958年，建成于1964年， 1998年组建为集团公司。 "
+	style = 0
+	picture = "SOV025"
+	
+
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107475 where = -1 when = 1850 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }
+    	}	
+}
+event = {
+	id = 19107475
+	country = chc
+	random = no
+
+  
+	name = "成都飞机制造厂竣工 "
+	desc = "中航工业成都飞机工业（集团）有限责任公司，原 名“国营132厂”，创建于1958年，建成于1964年， 1998年组建为集团公司。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+		command = { type = waketeam which = 8313 }
+    command = { type = construct which = ic where = 1360 value = 1 }
+    command = { type = max_organization which = air value = 5 }	
+    	}	
+}
+event = {
+	id = 19107476
+	country = chc
+	random = no
+
+  trigger = {
+	event = 1910760
+	control = { province = 1452 data = chc }
+	NOT = { exists = TIB } 
+	} 
+  
+	name = "入藏公路计划 "
+	desc = "长久以来，中国没有进入西藏的战略通道，为了牢 固对西藏的控制必须修建这些道路。 "
+	style = 0
+	picture = "SOV025"
+	
+  date = { day = 20 month = december year = 1952 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107477 where = -1 when = 1000 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }
+    	}	
+}
+event = {
+	id = 19107477
+	country = chc
+	random = no
+
+  
+	name = "入藏公路竣工 "
+	desc = "长久以来，中国没有进入西藏的战略通道，为了牢 固对西藏的控制必须修建这些道路。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = infrastructure where = 1442 value = 30 }
+    command = { type = construct which = infrastructure where = 1450 value = 30 }
+    command = { type = construct which = infrastructure where = 1444 value = 30 }
+    command = { type = construct which = infrastructure where = 1452 value = 30 }
+    	}	
+}
+event = {
+	id = 19107478
+	country = chc
+	random = no
+
+
+	name = "宝成铁路计划 "
+	desc = "我们计划修建一条宝鸡至成都的铁路，发展西部经济 "
+	style = 0
+	picture = "SOV025"
+
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107479 where = -1 when = 1000 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }	
+    	}	
+}
+event = {
+	id = 19107479
+	country = chc
+	random = no
+
+  
+	name = "宝成铁路竣工 "
+	desc = "我们计划修建一条宝鸡至成都的铁路，发展西部经济 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = infrastructure where = 2507 value = 40 }
+    command = { type = construct which = infrastructure where = 1268 value = 40 }
+    command = { type = construct which = infrastructure where = 1279 value = 40 }
+    command = { type = construct which = infrastructure where = 1360 value = 40 }
+    	}	
+}
+event = {
+	id = 19107480
+	country = chc
+	random = no
+
+
+  
+	name = "鹰厦铁路计划 "
+	desc = "我们计划修建一条鹰潭至厦门的铁路，发展东南经济 "
+	style = 0
+	picture = "SOV025"
+
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107481 where = -1 when = 1000 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }	
+    	}	
+}
+event = {
+	id = 19107481
+	country = chc
+	random = no
+
+  
+	name = "鹰厦铁路竣工 "
+	desc = "我们计划修建一条鹰潭至厦门的铁路，发展东南经济 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = infrastructure where = 1242 value = 40 }
+    command = { type = construct which = infrastructure where = 1246 value = 40 }	
+    command = { type = construct which = infrastructure where = 1247 value = 40 }
+    	}	
+}
+event = {
+	id = 19107482
+	country = chc
+	random = no
+
+  
+	name = "鞍山钢铁厂计划 "
+	desc = "1948年鞍山钢铁公司成立，翌年7月9日 在废墟上开工，迅速恢复了生产，并进行了大规模 技术改造和基本建设。 "
+	style = 0
+	picture = "SOV025"
+
+
+
+    action_a = {
+		name = "投资建设！ "
+		ai_chance = 100
+    command = { type = event which = 19107481 where = -1 when = 1000 }
+    command = { type = supplies value = -50000 }
+    	}
+    action_b = {
+		name = "财政困难.... "
+		ai_chance = 0
+    command = { type = dissent value = 1 }
+    	}	
+}
+event = {
+	id = 19107483
+	country = chc
+	random = no
+
+  
+	name = "鞍山钢铁厂竣工 "
+	desc = "1948年鞍山钢铁公司成立，翌年7月9日 在废墟上开工，迅速恢复了生产，并进行了大规模 技术改造和基本建设。 "
+	style = 0
+	picture = "SOV025"
+	
+
+    action_a = {
+		name = "社会主义事业生生不息！ "
+    command = { type = construct which = ic where = 2349 value = 1 }
+     command = { type = add_prov_resource which = 2349 value = 50 where = metal }	
+    	}	
+}
+event = {
+	id = 19107484
+	country = chc
+	random = no
+
+
+	name = "一五计划完成 "
+	desc = "1953—1957年发展国民经济的计划是中国的第一个 五年计划。它是以实现社会主义工业化为中心的， 是根据党在过渡时期的总路线和总任务而制定的， 也是在党中央的直接领导下，由周恩来、陈云同志 主持制定的。一五计划为中国带来了巨大发展，但 也给农民造成了负担。。 "
+	style = 0
+	picture = "SOV025"
+
+	
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = supplies value = 50000 }
+    command = { type = sleepevent which = 19107464 }	
+    command = { type = sleepevent which = 19107465 }
+    command = { type = sleepevent which = 19107466 }
+    	}	
+}
+event = {
+	id = 39107050
+	country = chc
+	random = no
+
+  decision = { 
+  event = 19107484
+  }
+	 trigger = {
+	event = 19107484
+	supplies = 600
+	money = 120
+	} 
+ decision_trigger = { 
+  supplies = 500
+	money = 100
+   }
+ 
+  
+	name = "设立北京电视台 "
+	desc = "北京电视台，1958年5月1日试播，9月2日正式 播出，于1978年5月1日更名为中央电视台。 "
+	style = 0
+	picture = "cctv"
+	decision_picture = "dcctv"
+	
+	date = { day = 1 month = january year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+	
+
+    action_a = {
+		name = "作为我党宣传机构 "
+    command = { type = supplies value = -500 }
+    command = { type = money value = -100 }	
+    command = { type = morale which = land value = 1 } 
+    command = { type = morale which = naval value = 1 }
+    command = { type = morale which = air value = 1 }
+    	}	
+}
+#########################################################################
+# 土地改革 19107490
+#########################################################################
+event = {
+	id = 19107490
+	country = chc
+	random = no
+
+  trigger = {
+	event = { id = 7840033 days = 180 }
+	} 
+  
+	name = "土地改革 "
+	desc = "中央人民政府根据全国解放后的新 情况，颁布了《中华人民共和国土地改革法》，它 规定废除地主阶级封建剥削的土地所有制，实行农 民的土地所有制。 "
+	style = 0
+	picture = "tugai"
+	
+	date = { day = 30 month = june year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+	
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = supplies value = 50000 }
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = industrial_modifier which = supplies value = 15 }
+    command = { type = dissent value = -10 }
+    	}	
+}
+#########################################################################
+# 三反五反运动 19107491~94
+#########################################################################
+event = {
+	id = 19107491
+	country = chc
+	random = no
+
+  trigger = {
+	event = { id = 7840033 days = 600 }
+	} 
+  
+	name = "三反五反运动 "
+	desc = "中华人民共和国建立初期，中国共产党领导的在各 级政府机关、学校、团体、军队、党派中进行的反 贪污、反浪费、反官僚主义的运动（三反运动），以及在 私营工商业者中进行的反行贿、反偷税漏税、反盗 骗国家财产、反偷工减料、反盗窃国家经济情报的 运动（五反运动）。 "
+	style = 0
+	picture = "35"
+	
+	date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+	
+
+    action_a = {
+		name = "开展运动！ "
+		ai_chance = 90
+    command = { type = dissent value = 5 }
+    command = { type = event which = 19107492 where = -1 when = 125 }
+    command = { type = event which = 19107492 where = -1 when = 365 }
+    	}	
+   action_b = {
+		name = "不开展！ "
+		ai_chance = 10
+    command = { type = supplies value = -500000 }
+    command = { type = supplies value = -100000 }
+    command = { type = industrial_modifier which = total value = -10 }
+    	}	 	
+}
+event = {
+	id = 19107492
+	country = chc
+	random = no
+
+
+  
+	name = "枪决张子善，刘青山 "
+	desc = "1952年元旦过后，毛泽东同志发出指示，各地如有 需要杀几个贪污犯，才能发动群众，也可以杀几个。 "
+	style = 0
+	picture = "35"
+	
+
+    action_a = {
+		name = "枪决！ "
+		ai_chance = 70
+    command = { type = dissent value = -2 }
+    	}	
+    action_b = {
+		name = "给他们机会改造！ "
+		ai_chance = 30
+    command = { type = dissent value = 2 }
+    command = { type = event which = 19107493 where = -1 when = 125 }
+    	}		 	
+}
+event = {
+	id = 19107493
+	country = chc
+	random = no
+
+
+  
+	name = "贪污腐败盛行 "
+	desc = "由于对刘张二人从宽处理，贪污腐败如同洪水无法 遏制，整个党逐渐脱离了原来的人民。 "
+	style = 0
+	picture = "35"
+	
+
+    action_a = {
+		name = "运动失败！ "
+    command = { type = dissent value = 10 }
+    command = { type = supplies value = -500000 }
+    command = { type = supplies value = -100000 }
+    command = { type = industrial_modifier which = total value = -10 }
+    command = { type = sleepevent which = 19107494 }    
+    	}		 	
+}
+event = {
+	id = 19107494
+	country = chc
+	random = no
+
+
+  
+	name = "三反五反运动胜利结束 "
+	desc = "中华人民共和国建立初期，中国共产党领导的在各 级政府机关、学校、团体、军队、党派中进行的反 贪污、反浪费、反官僚主义的运动（三反运动），以及在 私营工商业者中进行的反行贿、反偷税漏税、反盗 骗国家财产、反偷工减料、反盗窃国家经济情报的 运动（五反运动）。。 "
+	style = 0
+	picture = "35"
+	
+
+    action_a = {
+		name = "伟大的胜利！ "
+    command = { type = supplies where = -1 when = 100000 }
+    command = { type = supplies value = 50000 }
+    command = { type = industrial_modifier which = total value = 1 }   
+    	}		 	
+}
+#########################################################################
+# 进攻三八线
+#########################################################################
+event = {
+	id = 19117020
+	country = kor
+	random = no
+
+	trigger = {
+	 war = { country = chc  country = kor }
+	 ai = KOR
+   }
+    
+  
+	name = "三八线防线 "
+	desc = "为避免中共的进一步进攻，韩国在三八线建起了防御工事 "
+	style = 2
+	picture = "kor_retreat"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "很好！ "
+   command = { type = construct which = land_fort where = 2219 value = 10 }
+   command = { type = construct which = land_fort where = 1199 value = 10 }
+   #command = { type = add_corps which = "三八线工事 " value = land where = 2219 }
+	 #command = { type = activate_division which = 1907 value = 508 where = 2219 }
+	  #command = { type = activate_division which = 1907 value = 511 where = 2219 }
+	   #command = { type = activate_division which = 1907 value = 514 where = 2219 }
+	 #command = { type = add_corps which = "三八线工事 " value = land where = 1199 }
+	 #command = { type = activate_division which = 1907 value = 507 where = 1199 }
+	 #command = { type = activate_division which = 1907 value = 510 where = 1199 }
+	 #command = { type = activate_division which = 1907 value = 513 where = 1199 }
+           	}
+}
+#########################################################################
+# 19107407~09美国扶持日本（朝战）
+#########################################################################
+event = {
+	id = 19107407
+	country = usa
+	random = no
+  decision = {
+   war = { country = prk  country = u62 }
+  }
+  trigger = {
+	war = { country = prk  country = u62 }
+	} 
+	decision_trigger = { 
+	war = { country = prk  country = u62 }
+	}
+  
+	name = "日本问题 "
+	desc = "中国大陆已经被共产主义势力占领，朝鲜半岛爆发 了战争，我们需要一个桥头堡在远东抗衡苏联。 "
+	style = 2
+	picture = "religious_shinto"
+	decision_picture = "decision_congress"
+	date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+	
+
+    action_a = {
+		name = "扶持日本！ "
+		trigger = {  flag = maxieer  }
+		ai_chance = 50
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = free_ic value = -10 }
+		command = { type = setflag which = fuchi }
+    }	
+  action_b = {
+		name = "让日本参战，消耗日本 "
+		ai_chance = 50	
+		command = { type = domestic which = interventionism value = 1 }	
+    command = { type = setflag which = xiaohao }  
+    	}	  	 	
+}
+event = {
+	id = 19107408
+	country = U74
+	random = no
+  trigger = {
+	flag = fuchi
+	} 
+  date = { day = 25 month = october year = 1933 }
+	offset = 150
+	deathdate = { day = 29 month = december year = 1970 }
+  
+	name = "美国的扶持 "
+	desc = "中国大陆已经被共产主义势力占领，朝鲜半岛爆发 了战争，美国需要一个桥头堡在远东抗衡苏联。 "
+	style = 2
+	picture = "religious_shinto"
+	persistent = yes
+
+    action_a = {
+		name = "非常好！ "
+		command = { type = supplies value = -50000 }
+		command = { type = trigger which = 19107409 }
+		command = { type = construct which = ic where = -4 value = 2 }
+    command = { type = construct which = ic where = -4 value = 1 }
+    command = { type = construct which = ic where = -4 value = 1 }  
+    }	 	
+}
+event = {
+	id = 39107051
+	country = U74
+	random = no
+  trigger = {
+	flag = xiaohao
+	} 
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+  
+	name = "战争中的日本 "
+	desc = "由于我们卷入了朝鲜战争，国内局势日益严峻。 "
+	style = 2
+	picture = "religious_shinto"
+	persistent = yes
+
+    action_a = {
+		name = "确定！ "
+		command = { type = dissent value = 5 }
+    }	 	
+}
+event = {
+	id = 19107409
+	country = KOR
+	random = no
+
+
+  
+	name = "来自日本的补给 "
+	desc = "朝鲜战争中以日本为后方生产了大量补给支援韩国战场。 "
+	style = 2
+	picture = "religious_shinto"
+	persistent = yes
+
+    action_a = {
+		name = "非常好！ "
+		command = { type = supplies value = 50000 }
+    }	 	
+}                                                                  
+event = {
+	id = 19107016
+	country = usa
+	random = no
+
+ decision = { flag = fuchi }
+ trigger = {
+	flag = fuchi
+	random = 40
+	} 
+ decision_trigger = { flag = fuchi }
+  
+	name = "旧金山和约 "
+	desc = "旧金山和约，由48个战胜国与战败国日本于1951年9月8日在美国旧金山所签订的和约，并且于 1952年4月28日正式生效。 该合约主要是为了解决第二次世界大战后战败国日本的地位问题，合约 的第二条声明日本承认朝鲜独立、放弃台湾、澎湖、千岛群岛、库页岛、南沙 群岛、西沙群岛等岛屿的主权。 随着这个条约的生效，日本在国际社会的地位恢复正常。 "
+	style = 0
+	picture = "usa"
+	decision_picture = "heyue"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "构建远东和平！ "
+    command = { type = set_relation which = JAP value = 200 }
+    command = { type = event which = 39107011 where = -1 when = 230 }
+           	}
+}
+
+
+event = {
+	id = 39107011
+	country = u74
+	random = no
+
+
+  
+	name = "旧金山和约 "
+	desc = "旧金山和约，由48个战胜国与战败国日本于1951年9月8日在美国旧金山所签订的和约，并且于 1952年4月28日正式生效。 该合约主要是为了解决第二次世界大战后战败国日本的地位问题，合约 的第二条声明日本承认朝鲜独立、放弃台湾、澎湖、千岛群岛、库页岛、南沙 群岛、西沙群岛等岛屿的主权。 随着这个条约的生效，日本在国际社会的地位恢复正常。 "
+	style = 0
+	picture = "usa"
+
+
+    action_a = {
+		name = "构建远东和平！ "
+    command = { type = set_relation which = u62 value = 200 }
+    command = { type = end_puppet  }
+           	}
+}
+event = {
+	id = 39107013
+	country = u74
+	random = no
+
+ decision = { OR = { 
+  flag = xiaohao
+  flag = fuchi
+  }
+ }
+ trigger = { OR = { 
+  flag = xiaohao
+ and = {
+ flag = fuchi
+  event = 39107011  
+ supplies = 30000
+  money = 2000
+  }
+  }
+	} 
+ decision_trigger = {
+ OR = { 
+  flag = xiaohao
+ and = {
+ flag = fuchi
+  event = 39107011  
+ supplies = 30000
+  money = 2000
+  }
+  }
+  }
+	name = "建立海陆空自卫队 "
+	desc = "1954年6月9日为适应美国远东战略变化要求，日本政府 颁布《防卫厅设置法》和《自卫队法》（通称“防卫二法”），将保安 队改为拥有陆海空3军的自卫队，警备队改组为海上自卫 队，并新建航空自卫队。规定其任务为维持国内治安，防御外来的直接 或间接侵略等。 "
+	style = 2
+	picture = "decision_cub_ww3"
+	decision_picture = "usa_jap_exercise"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "颁布防卫二法 "
+		command = { type = waketeam which = 1185005 }
+		command = { type = waketeam which = 1185004 }
+		command = { type = waketeam which = 1185006 }
+    command = { type = manpowerpool value = -500 }
+    command = { type = money value = -2000 }
+		command = { type = supplies value = -30000 }
+		command = { type = max_organization which = land value = 10 } 
+    command = { type = max_organization which = air value = 10 }
+    command = { type = max_organization which = naval value = 10 }
+    command = { type = add_division which = ‘日本陆上自卫队’ value = INFANTRY when = 5 }  
+    command = { type = add_division which = ‘日本陆上自卫队’ value = INFANTRY when = 5 }
+    command = { type = add_division which = ‘日本陆上自卫队’ value = INFANTRY when = 5 }
+    command = { type = add_division which = ‘日本陆上自卫队’ value = INFANTRY when = 5 }  
+    command = { type = add_division which = ‘日本陆上自卫队’ value = INFANTRY when = 5 }
+		command = { type = add_division which = "日本防卫厅 " value = hq when = 2 }
+    command = { type = add_division which = "日本海上自卫队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本海上自卫队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本海上自卫队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本离岛作战部队 " value = transports when = 2 }
+		command = { type = add_division which = "日本航空自卫队 " value = multi_role when = 2 }
+		command = { type = add_division which = "日本航空自卫队 " value = multi_role when = 2 }
+		command = { type = add_division which = "日本航空自卫队 " value = multi_role when = 2 }
+           	}         	
+}
+event = {
+	id = 39107014
+	country = SOV
+	random = no
+
+ decision = { 
+ war = { country = chc  country = u62 } 
+ }
+ trigger = { 
+	OR = { 
+	control = { province = 1201 data = chc }
+   control = { province = 1201 data = prk }
+ }
+ war = { country = chc  country = u62 }
+ supplies = 1000
+	} 
+ decision_trigger = {
+  war = { country = chc  country = u62 }
+ supplies = 1000
+  }
+  
+	name = "向朝鲜派出航空队 "
+	desc = "在中国出兵前，苏联曾许偌提供空中保障 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+	decision_picture = "d_chinese_intervention_in_korea"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "是兑现承诺的时候了 "
+		command = { type = supplies value = -1000 }
+		command = { type = event which = 39107015 where = chc when = 2 }
+           	}         	
+}
+
+event = {
+	id = 39107015
+	country = chc
+	random = no
+
+  
+	name = "苏联志愿航空队抵达 "
+	desc = "在中国出兵前，苏联曾许偌提供空中保障 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+   
+
+    action_a = {
+		name = "很好 "
+		command = { type = morale which = land value = 1 }
+		command = { type = morale which = air value = 2 }
+		command = { type = add_corps which = "★苏联志愿航空队 " value = air where = 1205 }
+	  command = { type = activate_division which = 24000 value = 1090 where = 1205 }
+	  command = { type = activate_division which = 24000 value = 1089 where = 1205 }
+	  command = { type = activate_division which = 24000 value = 1088 where = 1205 }
+	  command = { type = activate_division which = 24000 value = 1087 where = 1205 }
+           	}         	
+}
+event = {
+	id = 39107016
+	country = chc
+	random = no
+
+ decision = { 
+ local_flag = caijuen
+ }
+ trigger = { local_flag = caijuen
+ supplies = 1000
+ }
+ decision_trigger = {
+  local_flag = caijuen
+ supplies = 1000
+  }
+  
+	name = "組建第六裝甲師 "
+	desc = "裁軍的效益 "
+	style = 2
+	picture = "sov_ww3"
+	decision_picture = "decision_gerww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "軍隊应当机械化 "
+		command = { type = supplies value = -1000 }
+		command = { type = add_corps which = "★三十八军装甲师 " value = land where = 1205 }
+	  command = { type = add_division which = "★第六裝甲師" value = armor when = 2 }
+           	}         	
+}
+event = {
+	id = 39107017
+	country = chc
+	random = no
+
+ decision = { 
+ local_flag = caijuen
+ }
+ trigger = { local_flag = caijuen
+ supplies = 1000
+ }
+ decision_trigger = {
+  local_flag = caijuen
+ supplies = 1000
+  }
+  
+	name = "組建空降部队 "
+	desc = "裁軍的效益 "
+	style = 2
+	picture = "liberate_taiwan"
+	decision_picture = "decision_sovww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "为解放台湾做准备 "
+		command = { type = supplies value = -1000 }
+		command = { type = add_corps which = "★空降第五军-千岁军 " value = land where = 1205 }
+	  command = { type = add_division value = paratrooper when = 3 }
+	  command = { type = add_division value = paratrooper when = 3 }
+	  command = { type = add_division value = paratrooper when = 3 }
+           	}         	
+}
+event = {
+	id = 39107018
+	country = chc
+	random = no
+
+ decision = { 
+ local_flag = caijuen
+ }
+ trigger = { local_flag = caijuen
+ supplies = 1000
+ }
+ decision_trigger = {
+  local_flag = caijuen
+ supplies = 1000
+  }
+  
+	name = "让31集团军进行两栖训练为解放台湾做准备 "
+	desc = "中国人民解放军第31集团军军部位于福建省厦门市同安区，原部队代号为 32404部队，现为中国人民解放军73111部队。直属南京军区，为乙类 集团军。 "
+	style = 2
+	picture = "liberate_taiwan"
+	decision_picture = "decision_sovww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "为解放台湾做准备 "
+		command = { type = supplies value = -1000 }
+		command = { type = add_corps which = "★第三十一集团军 " value = land where = 1247 }
+	  command = { type = add_division value = marine when = 8 }
+	  command = { type = add_division value = marine when = 8 }
+	  command = { type = add_division value = marine when = 8 }
+           	}         	
+}
+event = {
+	id = 39107020
+	country = chc
+	persistent = yes
+	random = no
+
+ decision = { 
+ war = { country = chc  country = u62 } 
+ }
+ trigger = { 
+  war = { country = chc  country = u62 }
+ not = { supplies = 1000 }
+ control = { province = 2231 data = -3 } 
+ control = { province = 2236 data = -3 } 
+ control = { province = 1200 data = -3 } 
+ NOT = { control = { province = 1199 data = -3 } }
+ }
+ decision_trigger = {
+ control = { province = 2231 data = -3 } 
+ control = { province = 2236 data = -3 } 
+ control = { province = 1200 data = -3 } 
+  }
+  
+	name = "停戰談判 "
+	desc = "多年的战争以使我们负担不起(可以占领更多的省份提出 进一步的要求） "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+	decision_picture = "d_ZHENGWEI"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "寻求和平，但要求美國放回战俘 "
+		ai_chance = 70
+		command = { type = trigger which = 39107021 }
+           	} 
+    action_b = {
+		name = "寻求和平，搁置战俘问题 "
+		ai_chance = 30
+		command = { type = trigger which = 39107022 }
+           	}        	        	
+}
+event = {
+	id = 39107021
+	country = usa
+	persistent = yes
+	random = no
+
+
+  
+	name = "停戰談判 "
+	desc = "多年的战争以使我们负担不起 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "同意和平 "
+		ai_chance = 30
+		command = { type = trigger which = 39107023 }
+           	} 
+    action_b = {
+		name = "不同意 "
+		ai_chance = 70
+		command = { trigger = { ai = no } type = dissent value = 5 }
+           	}        	        	
+}
+event = {
+	id = 39107022
+	country = usa
+	persistent = yes
+	random = no
+
+
+  
+	name = "停戰談判 "
+	desc = "多年的战争以使我们负担不起 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "同意和平 "
+		ai_chance = 95
+		command = { type = trigger which = 39107024 }
+           	} 
+    action_b = {
+		name = "不同意 "
+		ai_chance = 5
+		command = { trigger = { ai = no } type = dissent value = 5 }
+           	}        	        	
+}
+event = {
+	id = 39107023
+	country = chc
+	persistent = yes
+	random = no
+
+
+  
+	name = "美国同意和平 "
+	desc = "多年的战争以使我们负担不起 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "很好 "
+		command = { type = trigger which = 39107025 }
+		command = { type = manpowerpool value = 391 }
+		command = { type = peace which = u62 value = 0 }
+		command = { trigger = { NOT = { exists = PRK } } type = independence which = prk value = 1 when = 0  }
+           	}        	        	
+}
+event = {
+	id = 39107024
+	country = chc
+	persistent = yes
+	random = no
+
+
+  
+	name = "美国同意和平 "
+	desc = "多年的战争以使我们负担不起 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "很好 "
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 39107025 }
+		command = { type = trigger which = 39107027 }
+		command = { type = peace which = u62 value = 0 }
+		command = { trigger = { NOT = { exists = PRK } } type = independence which = prk value = 1 when = 0  }
+           	}        	        	
+}
+event = {
+	id = 39107025
+	country = KOR	
+	random = no
+
+
+  
+	name = "朝鲜控制开城 "
+	desc = "板门店停战协议以双方是控制线划界 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "确定 "
+		command = { type = secedeprovince which = prk value = 2231  }
+           	}        	        	
+}
+event = {
+	id = 39107026
+	country = prk	
+	random = no
+
+
+  
+	name = "韩国控制束草 "
+	desc = "板门店停战协议以双方是控制线划界 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "确定 "
+		command = { type = secedeprovince which = kor value = 2219  }
+           	}        	        	
+}
+event = {
+	id = 39107027
+	country = chi	
+	random = no
+
+
+  
+	name = "部分解放军战俘投靠我们 "
+	desc = "板门店停战协议中共放弃了要求放回战俘，他们 的到来对我们的情报大有帮助 "
+	style = 2
+	picture = "chc_retreat_from_indochina"
+   
+
+    action_a = {
+		name = "确定 "
+		command = { type = manpowerpool value = 391 }
+		command = { type = intelligence which = us value = 5 }
+           	}        	        	
+}
+
+
+event = {
+	id = 39107104
+	country = chc
+	random = no
+
+ decision = { 
+ event = { id = 7840033 days = 100 }
+ event = 7840039
+ }
+ trigger = { 
+ event = { id = 7840033 days = 100 }
+ money = 110 
+ random = 60 
+ }
+ decision_trigger = {
+ money = 100
+  }
+  
+	name = "中国托派的命运 "
+	desc = "39107104desc"
+	style = 2
+	picture = "tuopai"
+	decision_picture = "d_anti_rights"
+   
+  date = { day = 25 month = october year = 1929 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "消灭托派反革命 "
+		trigger = { 
+		not = { 
+				flag = CHCPRODDR
+		event = 2126598
+		 }
+		 }
+    ai_chance = 50
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = dissent value = 3 }
+		command = { type = money value = -100 }
+		command = { type = setflag which = jiquan }
+		command = { type = intelligence which = us value = 10 }
+		command = { type = sleepminister which = 260058 }
+		command = { type = sleepminister which = 260055 }
+		command = { type = sleepminister which = 260056 }
+           	}  
+     action  = {
+		name = "确立工人民主，邀请托派参与政协 "
+		ai_chance = 50
+		command = { type = domestic which = democratic value = 2  }
+		command = { type = dissent value = 10 }
+		command = { type = money value = -100 }
+		command = { type = setflag which = tuopai }
+           	}       	      	        	
+}
+event = {
+	id = 39107037
+	country = chc
+	random = no
+
+ decision = { 
+ event = 39107104
+ event = 39107036
+ }
+ trigger = { 
+ event = 39107036
+ money = 110 
+ random = 60 
+ }
+ decision_trigger = {
+ money = 100
+  }
+  
+	name = "选举召开人大 "
+	desc = "全国一届人大一次会议，于1954年9月15日至28 日，在北京中南海怀仁堂举行。 "
+	style = 2
+	picture = "china_land_reform"
+	decision_picture = "d_three_red_banners"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "开展工作 "
+		command = { type = dissent value = -1 }
+		command = { type = money value = -100 }
+		command = { type = event which = 39107038 where = -1 when = 100 }
+           	}        	        	
+}
+event = {
+	id = 39107038
+	country = chc
+	random = no
+
+  
+	name = "一届人大召开 "
+	desc = "全国一届人大一次会议，于1954年9月15日至28 日，在北京中南海怀仁堂举行。 "
+	style = 2
+	picture = "china_land_reform"
+
+    action_a = {
+		name = "确立较为民主化的宪法 "
+		trigger = {
+		event = 39107104 
+		flag = tuopai	
+		}
+		ai_chance = 60
+		command = { type = headofstate which = 260012 }
+		command = { type = headofgovernment which = 260056 }
+		command = { type = sleepminister which = 260001 }
+		command = { type = set_domestic which = political_left value = 10  }
+		command = { type = set_domestic which = democratic value = 7  }
+		command = { type = dissent value = -3 }
+		command = { type = local_setflag which = mz }
+           	}  
+    action_b = {
+		name = "中国的国情无法实现民主 "
+		ai_chance = 20
+		command = { type = headofstate which = 260050 }
+		command = { type = sleepminister which = 260001 }
+		command = { type = set_domestic which = political_left value = 10  }
+		command = { type = set_domestic which = democratic value = 3  }
+		command = { type = industrial_modifier which = total value = 1 }
+    command = { type = max_organization which = land value = 1 } 
+    command = { type = max_organization which = air value = 1 }
+    command = { type = max_organization which = naval value = 1 } 
+    command = { type = morale which = land value = 1 } 
+    command = { type = morale which = naval value = 1 }
+    command = { type = morale which = air value = 1 }
+           	} 
+    action_c = {
+		name = "专制是个更好的办法 "
+		ai_chance = 20
+		command = { type = set_domestic which = political_left value = 10  }
+		command = { type = set_domestic which = democratic value = 1  }
+		command = { type = dissent value = 3 }
+		command = { type = local_setflag which = zz }
+		command = { type = industrial_modifier which = total value = 5 }
+    command = { type = max_organization which = land value = 5 } 
+    command = { type = max_organization which = air value = 5 }
+    command = { type = max_organization which = naval value = 5 } 
+    command = { type = morale which = land value = 5 } 
+    command = { type = morale which = naval value = 5 }
+    command = { type = morale which = air value = 5 }
+           	}        	      	      	        	
+}
+event = {
+	id = 39107039
+	random = no
+
+ trigger = { 
+  local_flag = zz 
+  random = 10    
+	} 
+
+	name = "个人崇拜 "
+	desc = " 个人崇拜盛行阻碍了科学工作。"
+	style = 2
+	picture = "tomb_of_stalin"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "悲剧 "
+		command = { type = research_mod value = -1 }
+           	}      	       	         	
+}
+event = {
+	id = 39107040
+	random = no
+
+ trigger = { 
+  local_flag = zz 
+  random = 10    
+	} 
+
+	name = "军队的内斗 "
+	desc = " 军队的内斗阻碍了国防建设。"
+	style = 2
+	picture = "tomb_of_stalin"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "悲剧 "
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+           	}      	       	         	
+}
+event = {
+	id = 39107041
+	random = no
+
+ trigger = { 
+  local_flag = zz 
+  random = 10    
+	} 
+
+	name = "特权阶层的腐蚀 "
+	desc = "专制体制下形成了特殊的特权阶层。"
+	style = 2
+	picture = "tomb_of_stalin"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "悲剧 "
+		command = { type = money value = -100 }
+		command = { type = energypool value = -100 }
+		command = { type = rarematerialspool value = -100 }
+		command = { type = metalpool value =  -100 }
+		command = { type = oilpool value = -100 }
+		command = { type = supplies value =  -100 }
+           	}      	       	         	
+}
+event = {
+	id = 39107042
+	random = no
+
+ trigger = { 
+  local_flag = zz 
+  random = 10    
+	} 
+
+	name = "经济放缓 "
+	desc = "专制体制已无法适应无法推进改革以适应日益发展的生产力。"
+	style = 2
+	picture = "tomb_of_stalin"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "悲剧 "
+		command = { type = industrial_modifier which = total value = -1 }
+           	}      	       	         	
+}
+event = {
+	id = 39107052
+	country = chc
+	random = no
+
+ decision = { 
+ not = { exists = sik }
+ local_flag = mz 
+ }
+ trigger = { 
+ not = { exists = sik }
+ local_flag = mz 
+ money = 110 
+ random = 60 
+ }
+ decision_trigger = {
+ money = 100
+  }
+  
+	name = "扩大新疆自治权 "
+	desc = "全国一届人大一次会议，于1954年9月15日至28 日，在北京中南海怀仁堂举行。 "
+	style = 2
+	picture = "china_land_reform"
+	decision_picture = "decision_rapallo_conference"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "確定 "
+		command = { type = dissent value = -1 }
+		command = { type = money value = -100 }
+		command = { type = independence which = sik value = 1 when = 0 }
+    command = { type = alliance which = sik }
+           	}        	        	
+}
+event = {
+	id = 39107053
+	country = chc
+	random = no
+
+ decision = { 
+ local_flag = mz 
+ not = { exists = tib }
+ }
+ trigger = {
+ not = { exists = tib } 
+ local_flag = mz 
+ money = 110 
+ random = 60 
+ }
+ decision_trigger = {
+ money = 100
+  }
+  
+	name = "扩大西藏自治权 "
+	desc = "在西藏進行民族自決。 "
+	style = 2
+	picture = "tibet"
+	decision_picture = "decision_rapallo_conference"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "確定 "
+		command = { type = dissent value = -1 }
+		command = { type = money value = -100 }
+		command = { type = independence which = TIB value = 1 when = 0 }
+    command = { type = alliance which = tib }
+    command = { type = name where = TIB which = TIB_chc_NAME }
+    command = { type = flag_ext where = TIB which = "_sta" }
+           	}        	        	
+}
+event = {
+	id = 39107054
+	country = chc
+	random = no
+
+ decision = { 
+ local_flag = mz 
+ }
+ trigger = { 
+ local_flag = mz  
+ random = 60
+ event = 39107053
+ event = 39107052 
+ atwar = no
+ }
+ decision_trigger = {
+ event = 39107053
+ event = 39107052
+ atwar = no
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+  }
+  
+	name = "建立人民共和国联盟 "
+	desc = "可以仿效苏联建立人民共和国联盟的邦联。 "
+	style = 2
+	picture = "sov_ww3"
+	decision_picture = "decision_rapallo_conference"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "確定"
+		command = { type = dissent value = 3 }
+		command = { type = name where = CHC which = CHCuto }
+    command = { type = flag_ext where = chc which = "_uto" }
+           	}        	        	
+}
+event = {
+	id = 39107055
+	country = sik
+	random = no
+
+ trigger = {  
+ event = 39107054 
+ or = {
+ atwar = chc
+ atwar = sik
+ random = 70 
+ }
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+ }
+
+  
+	name = "加入人民共和国联盟 "
+	desc = "中共已成立人民共和国联盟，我们当考虑是否加入。 "
+	style = 2
+	picture = "sov_ww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "加入 "
+		ai_chance = 85
+		command = { type = trigger which = 39107056 }
+           	}
+    action_b = {
+		name = "不加入 "
+		ai_chance = 15
+		command = { type = relation which = CHC value = -50 }
+           	}       	        	        	
+}
+event = {
+	id = 39107056
+	country = chc
+	random = no
+
+
+  
+	name = "新疆加入人民共和国联盟 "
+	desc = "新疆决定加入人民共和国联盟。 "
+	style = 2
+	picture = "sov_ww3"
+
+
+
+    action_a = {
+		name = "確定 "
+		command = { type = inherit which = sik value = 1 }
+		command = { type = add_division which = "★新疆人民解放军 " value = infantry when = 18 }
+           	}        	        	
+}
+event = {
+	id = 39107057
+	country = tib
+	random = no
+
+ trigger = {  
+ event = 39107054  
+or = {
+ atwar = chc
+ atwar = tib
+ random = 70 
+ } 
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+ }
+
+  
+	name = "加入人民共和国联盟 "
+	desc = "中共已成立人民共和国联盟，我们当考虑是否加入。 "
+	style = 2
+	picture = "sov_ww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "加入 "
+		ai_chance = 85
+		command = { type = trigger which = 39107058 }
+           	}
+    action_b = {
+		name = "不加入 "
+		ai_chance = 15
+		command = { type = relation which = CHC value = -50 }
+           	}       	        	        	
+}
+event = {
+	id = 39107058
+	country = chc
+	random = no
+
+
+  
+	name = "西藏加入人民共和国联盟 "
+	desc = "西藏决定加入人民共和国联盟。 "
+	style = 2
+	picture = "sov_ww3"
+	decision_picture = "decision_rapallo_conference"
+
+
+    action_a = {
+		name = "確定 "
+		command = { type = inherit which = tib value = 1 }
+		command = { type = add_division which = "★西藏人民解放军 " value = infantry when = 18 }
+           	}        	        	
+}
+event = {
+	id = 39107059
+	country = jap
+	random = no
+
+ trigger = { 
+ puppet = { country = U74 country = chc }  
+ event = 39107054  
+or = {
+ atwar = chc
+ atwar = jap
+ random = 70 
+ } 
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+ }
+
+  
+	name = "加入人民共和国联盟 "
+	desc = "中共已成立人民共和国联盟，我们当考虑是否加入。 "
+	style = 2
+	picture = "sov_ww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "加入 "
+		ai_chance = 75
+		command = { type = trigger which = 39107060 }
+           	}
+    action_b = {
+		name = "不加入 "
+		ai_chance = 25
+		command = { type = relation which = CHC value = -50 }
+           	}       	        	        	
+}
+event = {
+	id = 39107060
+	country = chc
+	random = no
+
+
+  
+	name = "日本加入人民共和国联盟 "
+	desc = "日本决定加入人民共和国联盟。 "
+	style = 2
+	picture = "sov_ww3"
+                          
+
+    action_a = {
+		name = "確定 "
+		   command = { type = inherit which = U74 value = 1 }
+		   command = { type = addcore which = 1174 }
+       command = { type = addcore which = 1179  }
+       command = { type = addcore which = 1180 }
+       command = { type = addcore which = 1181  }  
+       command = { type = addcore which = 1182 }
+       command = { type = addcore which = 1184  }
+       command = { type = addcore which = 1185 }
+       command = { type = addcore which = 1183  }
+       command = { type = addcore which = 1186 }
+       command = { type = addcore which = 1187  }
+       command = { type = addcore which = 1188 }
+       command = { type = addcore which = 1189  }
+       command = { type = addcore which = 1191 }
+       command = { type = addcore which = 1190  }
+       command = { type = addcore which = 1192 }
+       command = { type = addcore which = 1193 }
+       command = { type = addcore which = 1436 }
+       command = { type = addcore which = 1437 } 
+       command = { type = addcore which = 1599 }
+       command = { type = addcore which = 1784 }
+       command = { type = addcore which = 1785 }
+       command = { type = addcore which = 2607 }
+       command = { type = addcore which = 2608 } 
+		   command = { type = addcore which = 2609 }
+       command = { type = addcore which = 2610  }
+       command = { type = addcore which = 2612 }
+       command = { type = addcore which = 2640  }  
+       command = { type = addcore which = 2613 }
+       command = { type = addcore which = 2614  }
+       command = { type = addcore which = 2615  }
+       command = { type = addcore which = 2616 }
+       command = { type = addcore which = 2617 }
+       command = { type = addcore which = 2618  }
+       command = { type = addcore which = 2619 }
+       command = { type = addcore which = 2620  }
+       command = { type = addcore which = 2621 }
+       command = { type = addcore which = 2622  }
+       command = { type = addcore which = 2623 }
+       command = { type = addcore which = 2624 }
+       command = { type = addcore which = 2625 }
+       command = { type = addcore which = 2626 } 
+       command = { type = addcore which = 2627 }
+       command = { type = addcore which = 2628 }
+       command = { type = addcore which = 2629 }
+       command = { type = addcore which = 2631 }
+       command = { type = addcore which = 2632 } 
+       command = { type = addcore which = 2633 }
+       command = { type = addcore which = 2634 }
+       command = { type = addcore which = 2635 }
+           	}        	        	
+}
+event = {
+	id = 39107061
+	country = prk
+	random = no
+
+ trigger = { 
+ puppet = { country = prk country = chc }  
+ event = 39107054  
+ or = {
+ atwar = chc
+ atwar = prk
+ random = 70 
+ }
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+ }
+
+  
+	name = "加入人民共和国联盟 "
+	desc = "中共已成立人民共和国联盟，我们当考虑是否加入。 "
+	style = 2
+	picture = "china_land_reform"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "加入 "
+		ai_chance = 75
+		command = { type = trigger which = 39107062 }
+           	}
+    action_b = {
+		name = "不加入 "
+		ai_chance = 25
+		command = { type = relation which = CHC value = -50 }
+           	}       	        	        	
+}
+event = {
+	id = 39107062
+	country = chc
+	random = no
+
+
+  
+	name = "朝鲜加入人民共和国联盟 "
+	desc = "朝鲜决定加入人民共和国联盟。 "
+	style = 2
+	picture = "sov_ww3"
+
+
+    action_a = {
+		name = "確定 " 
+		 command = { type = inherit which = prk value = 1 }
+       command = { type = addcore which = 1200  }
+       command = { type = addcore which = 1201 }
+       command = { type = addcore which = 1194  }  
+       command = { type = addcore which = 1195 }
+       command = { type = addcore which = 1196  }
+       command = { type = addcore which = 1197  }
+       command = { type = addcore which = 1198 }
+       command = { type = addcore which = 1199 }
+       command = { type = addcore which = 2219  }
+       command = { type = addcore which = 2231 }
+       command = { type = addcore which = 2236  }
+       command = { type = addcore which = 2226 }
+           	}        	        	
+}
+event = {
+	id = 39107165
+	country = u72
+	random = no
+
+ trigger = { 
+ NOT = { 
+ exists = U03
+ exists = VIE
+ }
+ or = {
+ and = {
+ flag = u72chc
+ flag = chcvet 
+ } 
+ flag = 1975 
+ }
+ event = 39107054  
+or = {
+ atwar = chc
+ atwar = U72
+ random = 70 
+ } 
+ domestic = { type = political_left  value = 7 }
+ domestic = { type = democratic value = 5 }
+ }
+
+  
+	name = "加入人民共和国联盟 "
+	desc = "中共已成立人民共和国联盟，我们当考虑是否加入。 "
+	style = 2
+	picture = "sov_ww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    action  = {
+		name = "加入 "
+		ai_chance = 75
+		command = { type = trigger which = 39107166 }
+           	}
+    action  = {
+		name = "不加入 "
+		ai_chance = 25
+		command = { type = relation which = CHC value = -50 }
+           	}       	       	     	        	        	
+}
+event = {
+	id = 39107166
+	country = chc
+	random = no
+
+
+  
+	name = "越南加入人民共和国联盟 "
+	desc = "越南决定加入人民共和国联盟。 "
+	style = 2
+	picture = "sov_ww3"
+
+
+    action_a = {
+		name = "確定 "
+		   command = { type = inherit which = u72 value = 1 }
+		   command = { type = addcore which = 1333 }
+       command = { type = addcore which = 1326 }
+       command = { type = addcore which = 1334 }
+       command = { type = addcore which = 1328 }
+       command = { type = addcore which = 1337 }
+       command = { type = addcore which = 1338 }
+       command = { type = addcore which = 1335 }
+           	}        	        	
+}
+event = {
+	id = 39107063
+	country = chc
+	random = no
+
+ decision = { 
+ flag = engchc
+ }
+ trigger = { 
+ flag = engchc  
+ money = 1100
+ }
+ decision_trigger = {
+ money = 1000
+  }
+  
+	name = "向英国购买军舰 "
+	desc = "随着中英的建交，我们可以通过 香港从英国购买军舰，建立海军 "
+	style = 2
+	picture = "haijuen"
+	decision_picture = "decision_mornarica"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "购买"
+		command = { type = relation which = ENG value = 10 }
+    command = { type = trigger which = 39107064 }
+           	}        	        	
+}
+event = {
+	id = 39107064
+	country = eng
+	random = no
+
+
+  
+	name = "向中国出售军舰 "
+	desc = "中国希望像我们购买小型的军舰。 "
+	style = 2
+	picture = "haijuen"
+
+
+    action_a = {
+		name = "同意 "
+		ai_chance = 95
+		command = { type = relation which = CHC value = 10 }
+		command = { type = event which = 39107065 where = chc when = 200 } 
+           	}   
+    action_b = {
+		name = "不能和共产主义中国做朋友 "
+		ai_chance = 5
+		command = { type = relation which = CHC value = -50 }
+           	}        	     	        	
+}
+event = {
+	id = 39107065
+	country = chc
+	random = no
+
+
+  
+	name = "军舰交货 "
+	desc = "向英国购置的军舰已经到达。 "
+	style = 2
+	picture = "haijuen"
+
+
+    action_a = {
+		name = "中英友谊万岁 "
+		command = { type = money value = -1000 }
+		command = { type = manpowerpool value = -50 }
+		command = { type = relation which = ENG value = 10 }
+		command = { type = gain_tech which = 3080 }
+    command = { type = gain_tech which = 3170 }
+    command = { type = gain_tech which = 12210 }
+    command = { type = trigger which = 39107066 }
+		command = { type = add_division which = "北京号 " value = destroyer when = 8 }
+    command = { type = add_division which = "上海号 " value = destroyer when = 8 }
+    command = { type = add_division which = "大连号 " value = destroyer when = 8 }
+    command = { type = add_division which = "广州号 " value = destroyer when = 8 }
+    command = { type = add_division which = "重庆号 " value = destroyer when = 8 }
+    command = { type = add_division which = "南京号 " value = destroyer when = 8 }
+    command = { type = add_division which = "辽宁号 " value = light_cruiser when = 7 }
+    command = { type = add_division which = "台湾号 " value = light_cruiser when = 7 }
+    command = { type = add_division which = "陕西号 " value = light_cruiser when = 7 }
+    command = { type = add_division which = "海巡支队 " value = d_08 when = 2 }
+    command = { type = add_division which = "海巡支队 " value = d_08 when = 2 }
+    command = { type = add_division which = "海巡支队 " value = d_08 when = 2 }
+           	}          	     	        	
+}
+event = {
+	id = 39107066
+	country = eng
+	random = no
+
+
+  
+	name = "交易完成 "
+	desc = "与中共的军火交易完成。 "
+	style = 2
+	picture = "haijuen"
+
+
+    action_a = {
+		name = "确定 "
+		command = { type = money value = 1000 }
+		command = { type = relation which = CHC value = 10 }
+           	}          	     	        	
+}
+event = {
+	id = 39107067
+	country = chc
+	random = no
+
+ decision = { 
+ event = 19107000
+ }
+ trigger = { 
+ event = 19107000 
+ money = 1100
+ }
+ decision_trigger = {
+ money = 1000
+  }
+  
+	name = "向苏联购买战机 "
+	desc = "随着中苏新的条约的签订，我们可以 像苏联购买战机用以解放台湾。 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+	decision_picture = "decision_yug_ww3"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "购买"
+		command = { type = relation which = SOV value = 10 }
+    command = { type = event which = 39107068 where = sov when = 1 } 
+    command = { type = event which = 39107068 where = rus when = 1 } 
+           	}        	        	
+}
+event = {
+	id = 39107068
+	country =  SOV
+	random = no
+
+
+  
+	name = "向中国出售战机 "
+	desc = "中国希望像我们购买战机用以解放台湾。 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+
+
+    action_a = {
+		name = "同意 "
+		ai_chance = 95
+		command = { type = relation which = CHC value = 10 }
+		command = { type = event which = 39107069 where = chc when = 200 } 
+           	}   
+    action_b = {
+		name = "要防备中国 "
+		ai_chance = 5
+		command = { type = relation which = CHC value = -50 }
+           	}        	     	        	
+}
+event = {
+	id = 39107069
+	country = chc
+	random = no
+
+
+  
+	name = "飞机交货 "
+	desc = "向苏联购置的战机已经到达。 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+
+
+    action_a = {
+		name = "中苏友谊万岁 "
+		command = { type = money value = -1000 }
+		command = { type = manpowerpool value = -50 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = gain_tech which = 4350 }
+    command = { type = gain_tech which = 15120 }
+    command = { type = gain_tech which = 15100 }
+    command = { type = event which = 39107070 where = sov when = 1 } 
+    command = { type = event which = 39107070 where = rus when = 1 } 
+		command = { type = add_division which = "歼击大队 " value = multi_role when = 8 }
+    command = { type = add_division which = "歼击大队 " value = multi_role when = 8 }
+    command = { type = add_division which = "歼击大队 " value = multi_role when = 8 }
+    command = { type = add_division which = "歼击大队 " value = multi_role when = 8 }
+    command = { type = add_division which = "歼击大队 " value = d_10 when = 0 }
+    command = { type = add_division which = "歼击大队 " value = d_10 when = 0 }
+    command = { type = add_division which = "轰炸大队 " value = tactical_bomber when = 8 }
+    command = { type = add_division which = "轰炸大队 " value = tactical_bomber when = 8 }
+    command = { type = add_division which = "轰炸大队 " value = tactical_bomber when = 8 }
+    command = { type = add_division which = "轰炸大队 " value = tactical_bomber when = 8 }
+    command = { type = add_division which = "轰炸大队 " value = cas when = 5 }
+    command = { type = add_division which = "轰炸大队 " value = cas when = 5 }
+           	}          	     	        	
+}
+event = {
+	id = 39107070
+	country =  SOV 
+	random = no
+
+
+  
+	name = "交易完成 "
+	desc = "与中共的军火交易完成。 "
+	style = 2
+	picture = "soviet_intervention_in_korea"
+
+
+    action_a = {
+		name = "确定 "
+		command = { type = money value = 1000 }
+		command = { type = relation which = CHC value = 10 }
+           	}          	     	        	
+}
+event = {
+	id = 39107071
+	country = chc
+	random = no
+
+ trigger = { 
+ event = { id = 7840033 days = 5 }
+ }
+
+  
+	name = "处置外国兵营 "
+	desc = "1950年1月6日，北京市军管会颁布布告，宣布收 回并征用美国、法国和荷兰在北京的兵营地产。 "
+	style = 2
+	picture = "costa_rican_policia"
+   
+  date = { day = 6 month = January year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "打扫屋子"
+		ai_chance = 55
+		command = { type = dissent value = -1 }
+    command = { type = supplies value = 500 }
+    command = { type = relation which = USA value = -50 }
+    command = { type = relation which = FRA value = -50 }
+    command = { type = belligerence which = chc value = 10 }
+    command = { type = setflag which = moshou }
+           	} 
+   action_a = {
+		name = "保留他们，避免冲突"
+		ai_chance = 45
+		command = { type = dissent value = 1 }    
+           	}         	       	        	
+}
+event = {
+	id = 39107072
+	country = usa
+	random = no
+
+ trigger = { 
+ OR = {
+ and = { 
+ flag = moshou
+ war = { country = PRK country = KOR } 
+ }
+ flag = scgm
+ war = { country = CHC country = U62 } 
+ }
+ }
+
+  
+	name = "封锁中国 "
+	desc = "共产主义已经在远东不断扩大，我们必须设法阻止。 "
+	style = 2
+	picture = "usa_ww3"
+   
+  date = { day = 6 month = January year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "封锁"
+		ai_chance = 95
+		command = { type = sleepevent which = 39107065 }
+    command = { type = relation which = chc value = -50 }
+           	} 
+   action_a = {
+		name = "谋求和中共改善"
+		ai_chance = 5
+		command = { type = relation which = chc value = 10 }  
+           	}         	       	        	
+}
+event = {
+	id = 39107073
+	country = chc
+	random = no
+
+  
+	name = "声援日共 "
+	desc = "麦克阿瑟在６月下令日本吉田政府“整肃”日本共产党全体中 央委员。７ 日又下令日本政府“整肃”日本共产党机关报《赤旗报》职 员和日本共产党 众议员等，并在日本各地开始逮捕日本共产党人 "
+	style = 2
+	picture = "macarthur_with_hirohito"
+   
+
+    action_a = {
+		name = "打倒美帝"
+		ai_chance = 0
+		command = { type = domestic which = interventionism value = 1 }
+    command = { type = relation which = USA value = -50 }
+    command = { type = relation which = JAP value = -50 }
+           	}
+    action_a = {
+		name = "为日共领导提供避难并扩大对日共的支持"
+		ai_chance = 100
+		command = { type = free_ic value = -4 }
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = wakeleader which = 767517 }
+		command = { type = setflag which = japcp }
+    command = { type = relation which = USA value = -150 }
+    command = { type = relation which = JAP value = -150 }
+           	}         	         	       	        	
+}
+event = {
+	id = 39107074
+	country = JAP
+	random = no
+
+ trigger = { 
+  puppet = { country = JAP country = u62 } 
+ }
+
+  
+	name = "麦克阿瑟下令整肃日共 "
+	desc = "麦克阿瑟在６月下令日本吉田政府“整肃”日本共产党全体中 央委员。７ 日又下令日本政府“整肃”日本共产党机关报《赤旗报》职 员和日本共产党 众议员等，并在日本各地开始逮捕日本共产党人 "
+	style = 2
+	picture = "macarthur_with_hirohito"
+   
+  date = { day = 6 month = june year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "确定"
+		ai_chance = 75
+		command = { type = dissent value = 20 }
+    command = { type = event which = 39107073 where = chc when = 5 } 
+    command = { type = belligerence which = JAP value = 10 }
+           	} 
+     action_b = {
+		name = "支持共产党推翻美国在日统治，夺取美国逐日部队的装备！ "
+		trigger = { flag = yy	} 
+		ai_chance = 25 
+		command = { type = setflag which = jcp }
+		command = { type = country which = U74 }
+		command = { type = end_puppet  }
+		command = { type = leave_alliance }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = democratic value = 7 }
+    command = { type = set_relation which = chc value = 200 }
+    command = { type = set_relation which = sov value = 200 }
+    command = { type = set_relation which = usa value = -200 }
+    command = { type = set_relation which = prk value = 200 }
+		command = { type = set_domestic which = political_left value = 10  }
+		command = { type = set_domestic which = democratic value = 10  }
+    command = { type = headofstate which = 1185012 } #野坂参三
+		command = { type = headofgovernment which = 1185031 } #宫本显治
+    command = { type = supplies value = 50000 } 
+    command = { type = add_division which = ‘赤军第一师’ value = infantry when = 13  }
+    command = { type = add_division which = ‘赤军第二师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第三师’ value = infantry when = 13 }  
+    command = { type = add_division which = ‘赤军第四师’ value = infantry when = 13  }
+    command = { type = add_division which = ‘赤军第5师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第6师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第7师’ value = infantry when = 13  }
+    command = { type = add_division which = ‘赤军第8师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第9师’ value = infantry when = 13 } 
+    command = { type = add_division which = ‘赤军第10师’ value = infantry when = 13 } 
+    command = { type = add_division which = ‘赤军第11师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第12师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第13师’ value = infantry when = 13  }
+    command = { type = add_division which = ‘赤军第14师’ value = infantry when = 13 }
+    command = { type = add_division which = ‘赤军第15师’ value = infantry when = 13 } 
+    command = { type = add_division which = ‘赤军第16师’ value = infantry when = 13 }
+    command = { type = add_division which = "日本赤军军委 " value = hq when = 2 }
+    command = { type = add_division which = "日本赤军驱逐支队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本赤军驱逐支队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本赤军海上自卫队 " value = destroyer when = 2 }
+		command = { type = add_division which = "日本赤军离岛作战部队 " value = transports when = 2 }
+		command = { type = add_division which = "日本赤军航空队 " value = multi_role when = 2 }
+		command = { type = add_division which = "日本赤军航空队 " value = multi_role when = 2 }
+		command = { type = add_division which = "日本赤军航空队 " value = multi_role when = 2 }  
+		command = { type = industrial_modifier which = total value = 15 }
+    command = { type = max_organization which = land value = 15 } 
+    command = { type = max_organization which = air value = 15 }
+    command = { type = max_organization which = naval value = 15 } 
+    command = { type = morale which = land value = 15 } 
+    command = { type = morale which = naval value = 15 }
+    command = { type = morale which = air value = 15 }
+		command = { type = trigger which = 39107075 }
+           	}        	   	       	        	       	        	
+}
+event = {
+	id = 39107075
+	country = u62
+	random = no
+
+  
+	name = "日共宣布脱离我们的控制 "
+	desc = "我们失去了对日本的控制。 "
+	style = 2
+	picture = "macarthur_with_hirohito"
+   
+
+    action_a = {
+		name = "宣战日本"
+    command = { type = war which = U74 }
+           	}         	       	        	
+}
+event = {
+	id = 39107076
+	country = chc
+	random = no
+
+
+	trigger = {
+		 event = { id = 7840033 days = 100 }
+		} 
+  
+	name = "建立统一的税收制度 "
+	desc = "中央人民政府政务院颁布《全国税收实施要 则》、《工商业税暂行条例》、《货物税暂行条例》，规 定在全中国建立统一的税收制度。 "
+	style = 2
+	picture = "spread_revolution"
+	date = { day = 26 month = January year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "确定！ "
+		command = { type = free_money value = 3 } 
+    	}
+}
+event = {
+	id = 39107077
+	country = chc
+	random = no
+
+
+	trigger = {
+		event = { id = 7840033 days = 100 }
+		} 
+  
+	name = "禁毒 "
+	desc = "中国政务院通令禁毒。 "
+	style = 2
+	picture = "spread_revolution"
+	date = { day = 24 month = February year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "禁毒 "
+		ai_chance = 95 
+		command = { type = dissent value = 1 } 
+		command = { type = relative_manpower value = 1 }
+    	}
+    action  = {
+		name = "算了 "
+		ai_chance = 5 
+		command = { type = relative_manpower value = -1 } 
+    	}	
+}
+event = {
+	id = 39107078
+	country = chc
+	random = no
+
+
+	trigger = {
+		exists = tib
+		} 
+  
+	name = "格达活佛遇害 "
+	desc = "西康省人民政府副主席格达活佛为劝说西 藏当局接受和平解放，在前往拉萨的途中被害，不 幸遇难。 "
+	style = 2
+	picture = "tibet"
+	date = { day = 22 month = August year = 1950 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "确定！ "
+		command = { type = relation which = TIB value = -50 }
+    	}
+}
+event = {
+	id = 39107087
+	country = ind
+	random = no
+
+
+	trigger = {
+	exists = ind
+	OR = {
+	 control = { province = 1877 data = ind } 
+ control = { province = 1878 data = ind }
+ }
+ control = { province = 1452 data = chc } 
+	  OR = {
+		claims = { province = 1877 data = chc  }
+		claims = { province = 1878 data = chc  }
+		} 
+		}
+  
+	name = "藏南问题 "
+	desc = "尼赫鲁总理宣布以麦克马洪线为印藏边界，不接 受中国地图上标明的边界线，两国边界争端开始。 "
+	style = 2
+	picture = "ZANGNAN"
+	date = { day = 20 month = November year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "阿鲁恰尔邦是印度的固有领土 "
+		ai_chance = 99 
+		command = { type = relation which = CHC value = -50 }
+		command = { type = trigger which = 39107079 }
+    	}
+    action  = {
+		name = "放弃藏南 "
+		ai_chance = 1
+		command = { type = relation which = CHC value = 100 }
+		command = { type = trigger which = 39107080 }
+		command = { type = secedeprovince which = chc value = 7284 }
+		command = { type = secedeprovince which = chc value = 1877 }
+		command = { type = secedeprovince which = chc value = 1878 }
+    	}	
+}
+event = {
+	id = 39107079
+	country = chc
+	random = no
+
+
+
+  
+	name = "藏南问题 "
+	desc = "尼赫鲁总理宣布以麦克马洪线为印藏边界，不接 受中国地图上标明的边界线，两国边界争端开始。 "
+	style = 2
+	picture = "ZANGNAN"
+
+
+    action  = {
+		name = "藏南是中国的固有领土 "
+		ai_chance = 90
+		command = { type = setflag which = zangnan }
+    	}
+    action  = {
+		name = "放弃藏南 "
+		ai_chance = 10
+		command = { type = removeclaim which = 1877 where = chc }
+		command = { type = removeclaim which = 1878 where = chc }
+    	}	
+}
+event = {
+	id = 39107080
+	country = chc
+	random = no
+
+
+
+  
+	name = "藏南回归 "
+	desc = "我们已经再度控制了藏南 "
+	style = 2
+	picture = "ZANGNAN"
+
+
+    action  = {
+		name = "开始确立起在藏南的统治 "
+		command = { type = event which = 39107081 where = chc when = 300  }
+    	}
+}
+event = {
+	id = 39107081
+	country = chc
+	random = no
+
+
+
+  
+	name = "确立起在藏南的统治 "
+	desc = "经过近一年的建设，我国再度确立起了在藏南的统治 "
+	style = 2
+	picture = "ZANGNAN"
+
+
+    action  = {
+		name = "确定 "
+		command = { type =	addcore which = 1877 where = chc }
+		command = { type =	addcore which = 1878 where = chc }
+    	}
+}
+event = {
+	id = 39107082
+	country = chc
+	random = no
+
+
+	trigger = {
+	 not = { 
+	  war = { country = chc  country = ind }
+		}
+		}
+  
+	name = "和平共处五项原则 "
+	desc = "1954年4月29日，中国和印度两国政府签署《中华人民共和国 和印度共和国关于中国西藏地方和印度之间的通商和交通协 定》，规定两国之间关系的五条原则：互相尊重主权和领土完整；互 不侵犯；互不干涉内政；平等互利；和平共处。 "
+	style = 2
+	picture = "chcind"
+	date = { day = 29 month = April year = 1954 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "签署 "
+		ai_chance = 99 
+		command = { type = relation which = IND value = 50 }
+		command = { type = non_aggression which = chc where = ind }
+    	}
+    action  = {
+		name = "中印必有一战 "
+		ai_chance = 1 
+		command = { type = relation which = IND value = -50 }
+    	}	
+}
+event = {
+	id = 39107083
+	country = chc
+	random = no
+
+
+	trigger = {
+	 event = 39107083	 
+	 not = { 
+	  war = { country = chc  country = ind }
+	  non_aggression = { country = chc country = ind }
+		}
+		random = 30
+		}
+  
+	name = "中印边界冲突 "
+	desc = "中印两国在藏南的矛盾日益扩大。 "
+	style = 2
+	picture = "ZANGNAN"
+	persistent = yes
+	date = { day = 29 month = April year = 1954 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "人不犯我，我不犯人 "
+		ai_chance = 75 
+		command = { type = war which = ind }
+    	}
+    action  = {
+		name = "中印应当友好共处 "
+		ai_chance = 25 
+		command = { type = dissent value = 1 } 
+    	}	
+}
+event = {
+	id = 39107084
+	country = chc
+	random = no
+
+ decision = { 
+ war = { country = chc  country = ind }
+ }
+ trigger = { 
+ war = { country = chc  country = ind } 
+ control = { province = 1469 data = chc } 
+ control = { province = 1457 data = chc }
+ }
+ decision_trigger = {
+ control = { province = 1469 data = chc } 
+ control = { province = 1457 data = chc }
+  }
+  
+	name = "对印和约 "
+	desc = "我们已经成功占领了加尔各答和德里，确立起了 战略优势，现在可以让印度归还藏南了。 "
+	style = 2
+	picture = "chcind"
+	decision_picture = "decision_chc"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "要求印度屈服"
+    command = { type = trigger which = 39107085 }
+           	}        	        	
+}
+event = {
+	id = 39107085
+	country = ind
+	random = no
+  
+	name = "苦涩的和平 "
+	desc = "中国已经成功占领了加尔各答和德里，确立起了 战略优势，我们只能归还藏南了。 "
+	style = 2
+	picture = "chcind"
+	decision_picture = "decision_chc"
+   
+
+    action_a = {
+		name = "只能这样了"
+		ai_chance = 95
+		command = { type = peace which = chc value = 0 }
+    command = { type = relation which = CHC value = 100 }
+		command = { type = trigger which = 39107080 }
+		command = { type = secedeprovince which = chc value = 1877 }
+		command = { type = secedeprovince which = chc value = 1878 }
+		command = { type = removecore which = chc value = 1877 }
+		command = { type = removecore which = chc value = 1878 }
+           	}       
+    action_b = {
+		name = "战斗到底！"
+		ai_chance = 5
+    command = { type = dissent value = 40 }
+           	}             	 	        	
+}
+event = {
+	id = 39107086
+	country = ind
+	random = no
+
+ decision = { 
+ war = { country = chc  country = ind }
+ }
+ trigger = { 
+ war = { country = chc  country = ind } 
+ control = { province = 1430 data = ind } 
+ control = { province = 1452 data = ind }
+ }
+ decision_trigger = {
+ control = { province = 1430 data = ind } 
+ control = { province = 1452 data = ind }
+  }
+  
+	name = "对印和约 "
+	desc = "我们已经成功占领了阿克赛钦和拉萨，确立起了 战略优势，现在可以让中国退出印度的领土了。 "
+	style = 2
+	picture = "chcind"
+	decision_picture = "decision_chc"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "要求中国屈服"
+    command = { type = trigger which = 39107088 }
+           	}        	        	
+}
+event = {
+	id = 39107088
+	country = chc
+	random = no
+  
+	name = "苦涩的和平 "
+	desc = "印度已经成功占领了阿克赛钦和拉萨，确立起了 战略优势，我们需要在损失扩大前获取和平。 "
+	style = 2
+	picture = "chcind"
+	decision_picture = "decision_chc"
+   
+
+    action_a = {
+		name = "只能这样了"
+		ai_chance = 95
+		command = { type = peace which = ind value = 0 }
+    command = { type = relation which = IND value = 100 }
+		command = { type = removecore which = 1430 }
+		command = { type = secedeprovince which = ind value = 1430 }
+		command = { type = removeclaim which = 1877 where = chc }
+		command = { type = removeclaim which = 1878 where = chc }
+           	}       
+    action_b = {
+		name = "战斗到底！"
+		ai_chance = 5
+    command = { type = dissent value = 40 }
+           	}             	 	        	
+}
+event = {
+	id = 39107089
+	country = chc
+	random = no
+
+
+	trigger = {
+		random = 30
+		}
+  
+	name = "任弼时去世 "
+	desc = "1950年10月27日12时36分因脑溢血不治身亡。 "
+	style = 2
+	picture = "rengbishi"
+	
+	date = { day = 27 month = April year = 1950 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "哀悼 " 
+		command = { type = sleepminister which = 260036 }
+    	}
+}
+################
+#韓國對朝鮮滲透
+#############################################
+event = {
+  id = 39107090
+  random = no
+  country = PRK
+  
+  name = "韓國對朝鮮軍事滲透 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 韓國對朝鮮進行了軍事滲透，這使 戰爭加速爆發。 "
+  style = 2
+  picture = "kor_retreat2"
+  
+  trigger = {
+    exists = KOR
+    atwar = no
+  } 
+  date = { day = 3 month = january year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "可惡！ "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = KOR value = -10 }
+  }
+}
+################
+#北朝鮮支援南朝鮮解放組織
+#############################################
+event = {
+  id = 39107091
+  random = no
+  country = PRK
+  
+  name = "朝鮮對韓國解放組織支援 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 朝鮮對韓國的解放組織進行支援， 戰爭加速爆發。 "
+  style = 2
+  picture = "prk1"
+  
+  trigger = {
+    exists = KOR
+    atwar = no
+  } 
+  date = { day = 3 month = january year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "幹得漂亮！ "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = KOR value = -10 }
+    command = { type = trigger which = 19700 }
+    command = { type = belligerence value = 10 }
+  }
+}
+################
+#北朝鮮與南朝鮮發生武裝衝突
+#############################################
+event = {
+  id = 39107092
+  random = no
+  country = PRK
+  
+  name = "朝韓發生武裝衝突 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 朝韓之間爆發了武裝衝突， 戰爭加速爆發。 "
+  style = 2
+  picture = "prk"
+  
+  trigger = {
+    exists = KOR
+    atwar = no
+  } 
+  date = { day = 1 month = february year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "打倒南方分裂勢力！ "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = KOR value = -10 }
+    command = { type = trigger which = 19740 }
+    command = { type = belligerence value = 10 }
+  }
+}
+################
+#韓國起義
+#############################################
+event = {
+  id = 39107094
+  random = no
+  country = KOR
+  
+  name = "韓國起義 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 韓國境內爆發起義， 戰爭加速爆發。 "
+  style = 2
+  picture = "prk_ww3"
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 20 month = march year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "可惡！ "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = PRK value = -10 }
+  }
+}
+################
+#全力備戰
+#############################################
+event = {
+  id = 39107093
+  random = no
+  country = PRK
+  
+  name = "全力備戰 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 朝鮮開始全力備戰， 戰爭加速爆發。 "
+  style = 2
+  picture = "prk_seoul1"
+  
+  trigger = {
+    exists = KOR
+    atwar = no
+  } 
+  date = { day = 10 month = june year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "抓緊備戰 "
+    ai_chance = 99
+    command = { type = dissent value = -20 }
+    command = { type = relation which = KOR value = -50 }
+    command = { type = supplies value = 3000 }
+  }
+   action_b = {
+    name = "不必著急 "
+    ai_chance = 1
+    command = { type = relation which = KOR value = 10 }
+  }
+}
+event = {
+  id = 39107095
+  random = no
+  country = KOR
+  
+  name = "全力備戰 " 
+  desc = "1950年，朝鮮半島局勢進一步惡化。 韓國開始全力備戰， 戰爭加速爆發。 "
+  style = 2
+  picture = "prk_seoul1"
+  
+  trigger = {
+    exists = PRK
+    atwar = no
+  } 
+  date = { day = 10 month = june
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "抓緊備戰 "
+    ai_chance = 99
+    command = { type = dissent value = -20 }
+    command = { type = relation which = PRK value = -50 }
+    command = { type = supplies value = 3000 }
+  }
+   action_b = {
+    name = "不必著急 "
+    ai_chance = 1
+    command = { type = dissent value = 10 }
+  }
+}
+################
+#日朝经济
+#############################################
+event = {
+	id = 39107105
+	country = prk
+	random = no
+ decision = {
+ event = 19107062
+ }
+	trigger = {  
+  event = 19107062
+  atwar = no
+  random = 30
+	 }  
+	 decision_trigger = { 
+	 atwar = no
+	 } 
+  
+	name = "千里马计划 "
+	desc = "我们决定实施加速国家建设的千里马计划。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "确定 "
+    command = { type = industrial_modifier which = total value = 15 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = research_mod value = 10 }
+    command = { type = max_organization which = land value = 10 } 
+    command = { type = max_organization which = air value = 10 }
+    command = { type = max_organization which = naval value = 10 }
+     command = { trigger = { ai = yes	} type = ai which = "prk_1945.ai" } 
+    	}
+}
+event = {
+	id = 39107108
+	country = jap
+	random = no
+ decision = {
+ atwar = no
+ }
+	trigger = {  
+	random = 30
+  atwar = no
+	 }  
+	 decision_trigger = { 
+	 atwar = no
+	 } 
+  
+	name = "旭日计划 "
+	desc = "我们决定实施加速国家建设的千里马计划。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "确定 "
+    command = { type = industrial_modifier which = total value = 15 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = research_mod value = 10 }
+    command = { type = max_organization which = land value = 10 } 
+    command = { type = max_organization which = air value = 10 }
+    command = { type = max_organization which = naval value = 10 }
+     command = { trigger = { ai = yes	} type = ai which = "jap_1945.ai" }
+    	}
+}
+event = {
+	id = 39107114
+	country = chc
+	random = no
+	persistent = yes
+	
+	trigger = {  
+	not = { flag = 4thInt }
+	OR = {
+  alliance = { country = CHC country = SOV }
+  alliance = { country = CHC country = USA }
+  alliance = { country = CHC country = ENG }
+	 }  
+	 } 
+  
+	name = "独立自主的外交 "
+	desc = "我们不能和美苏结成同盟。 "
+	style = 0
+	picture = "mao_declare"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "确定 "
+   command = { type = leave_alliance }
+    	}
+}
+################
+#中国军事发展
+#############################################
+event = {
+	id = 19108017
+	country = chc
+	random = no
+
+	trigger = {  
+   event = 19107134   
+	 }   
+  
+	name = "中国空军发展计划 "
+	desc = "陆军的裁军使得我们有更多的资源投入空军 （研发超年代相应空军科技）  "
+	style = 0
+	picture = "h6"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "发展截击机！ "
+		command = { type = setflag which = jieji }
+    command = { type = sleepteam which = 8318 }
+    command = { type = sleepteam which = 8320 }
+    command = { type = waketeam which = 260049 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = air value = 5 }
+    command = { type = max_organization which = air value = 15 } 
+           	}
+    action_a = {
+		name = "发展战术轰炸机！ "
+		command = { type = setflag which = zhanshu }
+    command = { type = sleepteam which = 8318 }
+    command = { type = sleepteam which = 8320 }
+    command = { type = waketeam which = 260049 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = air value = 5 }
+    command = { type = max_organization which = air value = 15 } 
+           	}
+     action_a = {
+		name = "发展战略轰炸机！ "
+		command = { type = setflag which = zhanlve }
+    command = { type = sleepteam which = 8318 }
+    command = { type = sleepteam which = 8320 }
+    command = { type = waketeam which = 260049 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = air value = 5 }
+    command = { type = max_organization which = air value = 15 } 
+           	}        	        	
+}
+event = {
+	id = 19108018
+	country = chc
+	random = no
+
+	trigger = {  
+   event = 19107134   
+	 }   
+  
+	name = "中国海军发展计划 "
+	desc = "陆军的裁军使得我们有更多的资源投入海军 （研发超年代相应海军科技） "
+	style = 0
+	picture = "czyh"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "发展潜艇 "
+		command = { type = setflag which = qianting }
+    command = { type = sleepteam which = 8323 }
+    command = { type = sleepteam which = 8324 }
+    command = { type = waketeam which = 260051 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = naval value = 5 }
+    command = { type = max_organization which = naval value = 15 } 
+           	}
+    action  = {
+		name = "发展航母 "
+		command = { type = setflag which = hangmu }
+    command = { type = sleepteam which = 8323 }
+    command = { type = sleepteam which = 8324 }
+    command = { type = waketeam which = 260051 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = naval value = 5 }
+    command = { type = max_organization which = naval value = 15 } 
+           	}
+    action  = {
+		name = "发展驱逐 "
+		command = { type = setflag which = quzhu }
+    command = { type = sleepteam which = 8323 }
+    command = { type = sleepteam which = 8324 }
+    command = { type = waketeam which = 260051 }
+    command = { type = supplies value = -1000 }
+    command = { type = morale which = naval value = 5 }
+    command = { type = max_organization which = naval value = 15 } 
+           	}         	       	
+}
+event = {
+	id = 39107115
+	country = chc
+	random = no
+
+	trigger = {  
+   flag = jieji
+   OR = { 
+   ai = yes
+   AND = {
+   NOT = { year = 1954 }
+   technology = 4560     
+	 } 
+	 AND = {
+   NOT = { year = 1958 }
+   technology = 4570     
+	 }
+	 AND = {
+   NOT = { year = 1962 }
+   technology = 4580     
+	 }
+	 AND = {
+   NOT = { year = 1971 }
+   technology = 4410    
+	 }
+	 }  
+	 }
+  
+	name = "截击机优势形成 "
+	desc = "我们的截击机已经领先于世界先进水平  "
+	style = 0
+	picture = "h6"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = air_attack which = interceptor value = 10 where = relative when = now }
+    command = { type = air_defense which = interceptor value = -10 where = relative when = now }
+    command = { type = task_efficiency which = air_superiority value = 0.3 }
+    command = { type = max_organization which = interceptor value = 5 } 
+           	}       	        	
+}
+event = {
+	id = 39107116
+	country = chc
+	random = no
+
+	trigger = {  
+   flag = zhanlve
+   OR = {
+   ai = yes 
+   AND = {
+   NOT = { year = 1954 }
+   technology = 15170     
+	 } 
+	 AND = {
+   NOT = { year = 1958 }
+   technology = 16030     
+	 }
+	 AND = {
+   NOT = { year = 1962 }
+   technology = 4840     
+	 }
+	 } 
+	 } 
+  
+	name = "战略轰炸机优势形成 "
+	desc = "我们的战略轰炸机已经领先于世界先进水平  "
+	style = 0
+	picture = "h6"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = strategic_attack which = strategic_bomber value = 10 where = relative when = now }
+    command = { type = air_defense which = strategic_bomber value = -10 where = relative when = now }
+    command = { type = task_efficiency which = installation_strike value = 0.3 }
+    command = { type = task_efficiency which = strategic_bombardment value = 0.3 }
+    command = { type = max_organization which = strategic_bomber value = 5 } 
+           	}       	        	
+}
+event = {
+	id = 39107117
+	country = chc
+	random = no
+
+	trigger = {  
+   flag = zhanshu
+   OR = {
+   ai = yes 
+   AND = {
+   NOT = { year = 1954 }
+   technology = 4640     
+	 } 
+	 AND = {
+   NOT = { year = 1960 }
+   technology = 4650     
+	 }
+	 } 
+	 } 
+  
+	name = "战术轰炸机优势形成 "
+	desc = "我们的战略轰炸机已经领先于世界先进水平  "
+	style = 0
+	picture = "h6"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = soft_attack which = tactical_bomber value = 10 where = relative when = now }
+		command = { type = hard_attack which = tactical_bomber value = 10 where = relative when = now }
+    command = { type = air_defense which = tactical_bomber value = -10 where = relative when = now }
+    command = { type = task_efficiency which = ground_attack value = 0.3 }
+      command = { type = task_efficiency which = logistical_strike value = 0.3 }
+    command = { type = task_efficiency which = air_supply value = 0.3 }
+    command = { type = max_organization which = tactical_bomber value = 5 } 
+           	}       	        	
+}
+event = {
+	id = 39107118
+	country = chc
+	random = no
+
+	trigger = { 
+	 ai = yes 
+   flag = qianting
+   OR = { 
+   AND = {
+   NOT = { year = 1955 }
+   technology = 3700     
+	 } 
+	 AND = {
+   NOT = { year = 1960 }
+   technology = 3800     
+	 }
+	 AND = {
+   NOT = { year = 1967 }
+   technology = 3870     
+	 }
+	 AND = {
+   NOT = { year = 1980 }
+   technology = 3880    
+	 }
+	 }
+	 }  
+  
+	name = "潜艇优势形成 "
+	desc = "我们的潜艇已经领先于世界先进水平  "
+	style = 0
+	picture = "czyh"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = range which = submarine value = 100 where = relative when = now }
+		command = { type = speed which = submarine value = 10 where = relative when = now }
+		command = { type = naval_attack which = submarine value = 10 where = relative when = now }
+    command = { type = naval_defense which = submarine value = -10 where = relative when = now }
+    command = { type = task_efficiency which = convoy_raiding value = 0.3 }
+    command = { type = task_efficiency which = naval_combat_patrol value = 0.3 }
+    command = { type = task_efficiency which = naval_interdiction value = 0.3 }
+    command = { type = max_organization which = submarine value = 5 } 
+           	}       	        	
+}
+event = {
+	id = 39107119
+	country = chc
+	random = no
+
+	trigger = {  
+   flag = hangmu
+   OR = { 
+   ai = yes
+   AND = {
+   NOT = { year = 1951 }
+   technology = 3570     
+	 } 
+	 AND = {
+   NOT = { year = 1957 }
+   technology = 7220     
+	 }
+	 AND = {
+   NOT = { year = 1967 }
+   technology = 7290     
+	 }
+	 }  
+	 }
+  
+	name = "航母优势形成 "
+	desc = "我们的航母已经领先于世界先进水平  "
+	style = 0
+	picture = "czyh"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = range which = carrier value = 100 where = relative when = now }
+		command = { type = speed which = carrier value = 10 where = relative when = now }
+		command = { type = naval_attack which = carrier value = 10 where = relative when = now }
+    command = { type = naval_defense which = carrier value = -10 where = relative when = now }
+    command = { type = task_efficiency which = naval_interdiction value = 0.3 }
+    command = { type = task_efficiency which = naval_strike value = 0.3 }
+    command = { type = task_efficiency which = port_strike value = 0.3 }
+    command = { type = task_efficiency which = naval_combat_patrol value = 0.3 }
+    command = { type = max_organization which = carrier value = 5 } 
+           	}       	        	
+}
+event = {
+	id = 39107120
+	country = chc
+	random = no
+
+	trigger = {  
+   flag = quzhu
+   OR = {
+   ai = yes 
+   AND = {
+   NOT = { year = 1953 }
+   technology = 3090     
+	 } 
+	 AND = {
+   NOT = { year = 1958 }
+   technology = 12080     
+	 }
+	 AND = {
+   NOT = { year = 1962 }
+   technology = 12090     
+	 }
+	 AND = {
+   NOT = { year = 1972 }
+   technology = 12170    
+	 }
+	 } 
+	 } 
+  
+	name = "驱逐舰优势形成 "
+	desc = "我们的驱逐舰已经领先于世界先进水平  "
+	style = 0
+	picture = "czyh"
+
+	date = { day = 16 month = april year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action  = {
+		name = "很好 "
+		command = { type = range which = destroyer value = 100 where = relative when = now }
+		command = { type = speed which = destroyer value = 10 where = relative when = now }
+		command = { type = naval_attack which = destroyer value = 10 where = relative when = now }
+    command = { type = naval_defense which = destroyer value = -10 where = relative when = now }
+    command = { type = task_efficiency which = naval_combat_patrol value = 0.3 }
+    command = { type = task_efficiency which = asw value = 0.3 }
+    command = { type = task_efficiency which = shore_bombardment value = 0.3 }
+    command = { type = max_organization which = destroyer value = 5 } 
+           	}       	        	
+}
+################
+#中国国有化
+#############################################
+event = {
+	id = 39107121
+	country = chc
+	random = no
+ decision = {
+ event = 39107038
+ event = 39107038
+ }
+	trigger = {  
+  supplies = 2100
+  event = 39107038
+  event = 39107038
+	 }  
+	 decision_trigger = { 
+	 supplies = 2000
+	 } 
+  
+	name = "国有化民族资本主义 "
+	desc = "五年计划的开始实施与人大的确立使得我们有条 件全面确立起公有制经济了。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "公有化并成立由工人选举出的委员会管理 "
+		trigger = { local_flag = mz	}
+		ai_chance = 100
+    command = { type = industrial_modifier which = total value = 3 }
+    command = { type = set_domestic which = free_market value = 1 }
+    command = { type = domestic which = political_left value = 2 }
+    command = { type = domestic which = democratic  value = 2 }
+    command = { type = setflag which = grmz }
+    command = { type = 	dissent value = -5 }
+    	}
+    action  = {
+		name = "直接国有化 "
+		trigger = { or = { not = {  local_flag = mz	} ai = no } }
+		ai_chance = 10
+		command = { type = free_money value = 3 }
+    command = { type = industrial_modifier which = total value = 15 }
+    command = { type = set_domestic which = free_market value = 1 }
+    command = { type = 	dissent value = 5 }
+    	}
+    action  = {
+		name = "支持民族资本主义，开放市场 "
+		trigger = { or = { not = {  local_flag = mz	} ai = no } }
+		ai_chance = 20
+		command = { type = free_money value = -1 }
+    command = { type = industrial_modifier which = total value = 1 }
+    command = { type = set_domestic which = free_market value = 8 }
+    command = { type = domestic which = political_left value = -2 }
+    command = { type = 	dissent value = -3 }
+    	}
+     action  = {
+		name = "和平赎买 "
+		trigger = { or = { not = {  local_flag = mz	} ai = no } }
+		ai_chance = 70
+		command = { type = free_money value = 1 }
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = set_domestic which = free_market value = 2 }
+    command = { type = event which = 39107122 where = -1 when = 700 }
+    command = { type = 	dissent value = 1 }
+    	} 	 		
+}
+event = {
+	id = 39107122
+	country = chc
+	random = no
+  
+	name = "和平赎买完成 "
+	desc = "我们已经确立起了社会主义制度。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+     action  = {
+		name = "很好 "
+		command = { type = free_money value = 1 }
+    command = { type = industrial_modifier which = total value = 5 }
+    command = { type = set_domestic which = free_market value = 1 }
+    command = { type = 	dissent value = -1 }
+    	} 	 		
+}
+event = {
+	id = 39107123
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = industrial_modifier which = total value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107124
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良能源生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_energy value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107125
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良钢铁生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_metal value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107126
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良石油生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_oil value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107127
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良稀有材料生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_rare_materials value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107128
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会改良补给生产 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_supplies value = 1 }
+    	}	 		
+}
+event = {
+	id = 39107129
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会的创新 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = research_mod value = 1 }
+    command = { type = gain_tech which = -2 }
+    	}	 		
+}
+event = {
+	id = 39107132
+	country = chc
+	random = no
+
+	trigger = {  
+  flag = grmz
+  random = 8
+	 }  
+  
+	name = "工人委员会提高收益 "
+	desc = "工人委员会所确立的生产关系提高了生产效率。 "
+	style = 0
+	picture = "SOV025"
+	decision_picture = "yiwu"
+
+	date = { day = 20 month = december year = 1933 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action  = {
+		name = "很好 "
+    command = { type = free_money value = 1 }    
+    	}	 		
+}
+################
+#联合国united_nations
+#############################################
+event = {
+  id = 39107135
+  random = no
+  country = SOV
+  
+  name = "派遣代表返回联合国 " 
+  desc = "现在朝鲜已经发动南下的战争，我们是否有必要 派遣原来抗议不给于中共合法席位而退出的代 表，以防止不利于朝鲜的决议通过？ "
+  style = 2
+  picture = "united_nations"
+  
+  trigger = {
+    exists = USA
+     war = { country = PRK country = KOR } 
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回代表！ "
+    ai_chance = 25 
+    command = { type = event which = 39107136 where = SOV when = 10 }
+  }
+   action_b = {
+    name = "避免和美国冲突！ "
+    ai_chance = 75 
+    command = { type = event which = 39107137 where = USA when = 10 }
+  }
+}
+event = {
+  id = 39107136
+  random = no
+  country = SOV
+  
+  name = "干涉朝鲜的联合国决议" 
+  desc = "现在朝鲜已经发动南下的战争，美国希望以联合 国的名义干涉朝鲜，我们是否应该阻止？ "
+  style = 2
+  picture = "united_korea"
+  
+
+
+  
+  action_a = {
+    name = "否决！ "
+    ai_chance = 65 
+    command = { type = relation which = KOR value = -50 }
+    command = { type = setflag which = sovun }
+    command = { type = belligerence value = 10 }
+  }
+  action_b = {
+    name = "还是弃权避免冲突 "
+    ai_chance = 35 
+    command = { type = relation which = KOR value = 10 }
+    command = { type = event which = 39107137 where = USA when = 1 }
+  }
+}
+event = {
+  id = 39107137
+  random = no
+  country = USA
+  
+  name = "干涉朝鲜的联合国决议" 
+  desc = "现在朝鲜已经发动南下的战争，我们是否以联合 国的名义干涉朝鲜？ "
+  style = 2
+  picture = "united_korea"
+
+  
+  action_a = {
+    name = "使用联合国的名义！ "
+    ai_chance = 95 
+    command = { type = relation which = PRK value = -50 }
+    command = { type = setflag which = prkun }
+    command = { type = belligerence value = 10 }
+  }
+  action_b = {
+    name = "还是算了吧 "
+    ai_chance = 5 
+    command = { type = relation which = SOV value = 10 }
+  }
+}
+event = {
+  id = 39107138
+  random = no
+  country = ENG
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = engprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107139
+  random = no
+  country = FRA
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = fraprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107140
+  random = no
+  country = can
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = canprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107141
+  random = no
+  country = ast
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = astprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107142
+  random = no
+  country = phi
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = phiprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107143
+  random = no
+  country = tur
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = turprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107144
+  random = no
+  country = hol
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = holprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107145
+  random = no
+  country = sai
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = saiprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107146
+  random = no
+  country = eth
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = ethprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107147
+  random = no
+  country = gre
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = greprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107148
+  random = no
+  country = bel
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = belprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107149
+  random = no
+  country = saf
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = safprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107150
+  random = no
+  country = COL
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = colprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+event = {
+  id = 39107151
+  random = no
+  country = nzl
+  
+  name = "派出部队？ " 
+  desc = "干涉朝鲜的决议已经在联合国通过，我们是否 响应号召？ "
+  style = 2
+  picture = "united_korea"
+  
+  trigger = {
+    atwar = no
+    flag = prkun
+  } 
+  date = { day = 3 month = january year = 1933 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "派回部队！ "
+    ai_chance = 85 
+    command = { type = manpowerpool value = -10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = setflag which = nzlprkun }
+  }
+   action_b = {
+    name = "我们不想卷入！ "
+    ai_chance = 15 
+    command = { type = relation which = USA value = -10 }
+  }
+}
+################
+#越南战争
+#############################################
+event = {
+  id = 39107152
+  random = no
+  country = U72
+  
+  name = "奠边府之战 " 
+  desc = "EVT_39107152DESC"
+  style = 2
+  picture = "viet_ww3"
+  
+  trigger = {
+    control = { province = 1326 data = U04 }
+  } 
+  date = { day = 1 month = january year = 1933 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "打倒法国殖民统治！ "
+    command = { type = jungle_move which = land value = 60 }
+      command = { type = jungle_attack which = land value = 60 }
+      command = { type = jungle_defense which = land value = 60 }
+      command = { type = forest_move which = land value = 60 }
+      command = { type = forest_attack which = land value = 60 }
+      command = { type = forest_defense which = land value = 60 }
+    command = { trigger = { ai = yes } type = add_corps which = 越南人民军 value = land  where = 1326  } 
+    command = { trigger = { ai = yes } type = add_division which = ‘越南人民军’ value = infantry when = 15 }
+    command = { trigger = { ai = yes } type = add_division which = ‘越南人民军’ value = infantry when = 15 }
+    command = { trigger = { ai = yes } type = add_division which = ‘越南人民军’ value = infantry when = 15 } 
+  }
+}
+event = {
+  id = 39107153
+  random = no
+  country = U72
+  
+  name = "奠边府之战----胜利 " 
+  desc = "EVT_39107152DESC"
+  style = 2
+  picture = "viet"
+  
+  trigger = {
+    event = 39107152
+    control = { province = 1326 data = U72 }
+  } 
+  date = { day = 1 month = january year = 1933 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "打倒法国殖民统治！ "
+    command = { type = jungle_move which = land value = -60 }
+      command = { type = jungle_attack which = land value = -60 }
+      command = { type = jungle_defense which = land value = -60 }
+      command = { type = forest_move which = land value = -60 }
+      command = { type = forest_attack which = land value = -60 }
+      command = { type = forest_defense which = land value = -60 }
+      command = { type = trigger which = 63904  }
+      command = { type = trigger which = 39107154  }
+  }
+}
+event = {
+  id = 39107154
+  random = no
+  country = FRA
+  
+  name = "奠边府之战----惨败 " 
+  desc = "EVT_39107152DESC"
+  style = 2
+  picture = "viet"
+
+  
+  action_a = {
+    name = "悲剧！ "
+    command = { type = dissent value = 5 }
+      command = { type = trigger which = 63906  }
+      command = { type = event which = 63906 where = U03 when = 1 }
+  }
+}
+event = {
+  id = 39107155
+  random = no
+  country = U04
+  
+  name = "法国在印度支那统治的终结 " 
+  desc = "由于一系列事件，法国在也无法控制远东的这个保护国了"
+  style = 2
+  picture = "viet_minh"
+  
+  trigger = {
+    event = 39107152
+    OR = {
+    war = { country = U04 country = U72 }
+    war = { country = chc	country = U04 }        
+    } 
+ not = { area = { area = "INDOCHINE" country = -3 value = 40 } }
+  }
+  date = { day = 1 month = january year = 1933 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的末日到了 "
+    command = { type = peace which = U72 value = 0 }
+    command = { trigger = { war = { country = chc	country = U04 } }  type = peace which = CHC value = 0 }
+    command = { type = secedearea which = -3 value = "Indochine" when = 1 }
+      command = { type = event which = 39107156 where = U04 when = 1 }
+      
+  }
+}
+event = {
+  id = 39107156
+  random = no
+  country = U04
+  
+  name = "撤出印度支那 " 
+  desc = "由于一系列事件，法国在也无法控制远东的这个保护国了"
+  style = 2
+  picture = "viet_minh"
+  
+  action_a = {
+    name = "确定 "
+      command = { type = independence which = lao value = 0 when = 0 } 
+      command = { type = independence which = CMB value = 0 when = 0 }
+      command = { type = independence which = vie value = 0 when = 0 }
+      
+  }
+}
+   event = {
+  id = 39107158
+  random = no
+  TAG = { U04 VIE }
+  
+  name = "越盟的游击战争 " 
+  desc = "共匪在我们南部建立了广泛的根据地发动了丛林游击战"
+  style = 2
+  picture = "viet_cong"
+  
+  trigger = {
+     exists = U72
+     random = 40
+  }
+  date = { day = 1 month = january year = 1933 }
+  offset = 30
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "可恶 "
+    command = { type = dissent value = 5 }
+    command = { type = revolt which = -1 }
+  }
+}
+event = {
+  id = 39107159
+  random = no
+  country = U72
+  
+  name = "向南部发动攻势 " 
+  desc = "共匪在我们南部建立了广泛的根据地发动了丛林游击战"
+  style = 2
+  picture = "viet_cong"
+  
+  trigger = {
+     exists = VIE
+  }
+  date = { day = 1 month = january year = 1933 }
+  offset = 30
+  deathdate = { day = 30 month = december year = 1974 }
+  
+  action_a = {
+    name = "可恶 "
+    command = { type = war which = vie }
+  }
+}
+
+
+event = {
+	id = 39107163
+	country = chc
+	random = no
+
+ decision = { 
+ event = 29107017
+		event = 29107011
+ exists = U72
+ exists = U03
+ }
+ trigger = { 
+ event = 29107017
+		event = 29107011
+ exists = U72
+ exists = U03
+ relation = { which = U72 value = 1000 } 	
+ supplies = 1000 	
+ }
+ decision_trigger = {
+ relation = { which = U72 value = 100 } 	
+ supplies = 1100
+  }
+  
+	name = "援助越南 "
+	desc = "越南同志正在与法帝国主义作战，我们是否援 助他们驱逐殖民势力？ "
+	style = 2
+	picture = "viet"
+	decision_picture = "d_viet_cong"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1970 }
+
+    action_a = {
+		name = "援助越南同志"
+		ai_chance = 80 
+		command = { type = relation which = FRA value = -60 }
+		command = { type = relation which = U72 value = 50 }
+		command = { type = sleepleader which = 766358 }
+    command = { type = trigger which = 39107064 }
+    command = { type = setflag which = chcvet   }
+    command = { type = supplies value = -1000 }
+           	}   
+    action_b = {
+		name = "我们应该努力与法国建交"
+		ai_chance = 20 
+		command = { type = relation which = FRA value = 20 }
+           	}       	     	        	
+}
+event = {
+	id = 39107164
+	country = u72
+	random = no
+
+  
+	name = "来自中国的援助 "
+	desc = "中国同志送来了大量物资并提供军事顾问团 "
+	style = 2
+	picture = "viet"
+   
+
+    action_a = {
+		name = "中越友谊万岁"
+		command = { type = wakeleader which = 766358 }
+		command = { type = add_division which = ‘★越南人民军’  value = infantry when = 18 }
+		command = { type = add_division value = infantry when = 11 }
+		command = { type = add_division value = infantry when = 11 }
+		command = { type = jungle_move which = land value = 6 }
+      command = { type = jungle_attack which = land value = 6 }
+      command = { type = jungle_defense which = land value = 6 }
+      command = { type = forest_move which = land value = 6 }
+      command = { type = forest_attack which = land value = 6 }
+      command = { type = forest_defense which = land value = 6 }
+           	}        	        	
+}
+event = {
+	id = 39107167
+	country = u72
+	random = no
+
+ trigger = { 
+ not = {
+ exists = VIE
+ exists = U03	
+ }
+ control = { province = 1337 data = U72 }
+ }
+
+  
+	name = "越南战争结束 "
+	desc = "我们成功击退了帝国主义赢得了独立 "
+	style = 2
+	picture = "viet"
+   
+  date = { day = 25 month = october year = 1933 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    action_a = {
+		name = "世界第三强国"
+    command = { type = free_ic value = 8 }
+    command = { type = max_organization which = land value = 2 } 
+    command = { type = max_organization which = air value = 2 }
+    command = { type = max_organization which = naval value = 2 } 
+    command = { type = morale which = land value = 10 } 
+    command = { type = morale which = naval value = 10 }
+    command = { type = morale which = air value = 10 }
+           	}         	     	        	
+}
+

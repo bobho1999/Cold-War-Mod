@@ -1,0 +1,116 @@
+air_unit_type = 1
+# 0 - Flying Bomb
+model = {
+	cost 					= 2
+	buildtime	 			= 30
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower				= 0
+	maxspeed				= 650
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 5
+	airdefence				= 5
+	airattack				= 0
+	strategicattack				= 60
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 0
+	range					= 250
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0
+	upgrade_cost_factor = 0
+}
+# 1 - Basic Cruise Missile
+model = {
+	cost 					= 2.5
+	buildtime	 			= 30
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower				= 0
+	maxspeed				= 800
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 6
+	airdefence				= 6
+	airattack				= 0
+	strategicattack				= 70
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 0
+	range					= 700
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0
+	upgrade_cost_factor = 0
+}
+# 2 - Improved Cruise Missile
+model = {
+	cost 					= 4
+	buildtime	 			= 60
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower				= 0
+	maxspeed				= 1000
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 6
+	airdefence				= 6
+	airattack				= 0
+	strategicattack				= 75
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 0
+	range					= 2000
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0
+	upgrade_cost_factor = 0
+}
+# 3 - Advanced Cruise Missile
+model = {
+	cost 					= 5
+	buildtime	 			= 80
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower				= 0
+	maxspeed				= 1000
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 7
+	airdefence				= 7
+	airattack				= 0
+	strategicattack				= 80
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 0
+	range					= 5000
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0
+	upgrade_cost_factor = 0
+}
+# 4 - Modern Cruise Missile
+model = {
+	cost 					= 6
+	buildtime	 			= 80
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower				= 0
+	maxspeed				= 1000
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 8
+	airdefence				= 8
+	airattack				= 0
+	strategicattack				= 85
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 0
+	range					= 7500
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0
+	upgrade_cost_factor = 0
+}

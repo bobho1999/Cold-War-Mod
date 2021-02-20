@@ -1,0 +1,64 @@
+# Soviet panic build AI file by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 15
+	cavalry 		= 15
+	motorized 		= 10
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 10
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 5
+	garrison		= 0
+    hq 				= 5
+	militia 		= 10
+#				70 %
+	interceptor 	= 5
+	multi_role 		= 10
+	cas 			= 5
+	strategic_bomber = 5
+	tactical_bomber = 5
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				30 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 0
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 0
+#				0 %
+
+	#### Brigades
+	artillery 			= 10
+	sp_artillery 		= 10
+	anti_air		= 5 
+	sp_rct_artillery 		= 10
+	anti_tank 			= 0
+	tank_destroyer 		= 10
+	light_armor_brigade 	= 10
+	heavy_armor 		= 5
+	super_heavy_armor 	= 0
+	armored_car 		= 0
+	rocket_artillery 			= 10
+	engineer 			= 5
+	police 			= 10
+	b_u5 = 0
+	b_u8 = 5
+	b_u9 = 5
+	b_u10 = 5
+	b_u11 = 0
+}

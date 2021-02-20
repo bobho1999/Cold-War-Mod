@@ -1,0 +1,33 @@
+land_unit_type = 1
+# 0 - Basic
+model = {
+	cost 				= 32
+	buildtime	 		= 300
+	manpower 			= 3
+        softness            = -44
+	maxspeed 			= -4
+	hardattack			= 10
+	softattack			= 10
+	supplyconsumption 	= 3.0
+	fuelconsumption		= 4.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.5
+	max_supply_stock = 90
+	max_oil_stock = 132
+}
+# 1 - Improved
+model = {
+	cost 				= 42
+	buildtime	 		= 300
+	manpower 			= 3
+        softness            = -52
+	maxspeed 			= -4
+	hardattack			= 12
+	softattack			= 12
+	supplyconsumption 	= 3.6
+	fuelconsumption		= 5.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.5
+	max_supply_stock = 108
+	max_oil_stock = 156
+}

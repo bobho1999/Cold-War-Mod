@@ -1,0 +1,118 @@
+land_unit_type = 1
+# 0 - 50型防空导弹营 
+model = {
+	cost 				= 5
+	buildtime	 		= 100
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 20
+	airattack			= 25
+	supplyconsumption 	= 0.35
+	fuelconsumption		= 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 55型防空导弹营 
+model = {
+	cost 				= 5.5
+	buildtime	 		= 105
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 23
+	airattack			= 25
+	supplyconsumption 	= 0.35
+	fuelconsumption		= 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 60型防空导弹营 
+model = {
+	cost 				= 6
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 23
+	airattack			= 28
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.27
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 65型防空导弹营 
+model = {
+	cost 				= 6.5
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 26
+	airattack			= 28
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.27
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 70型防空导弹营 
+model = {
+	cost 				= 7
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 26
+	airattack			= 31
+	supplyconsumption 	= 0.45
+	fuelconsumption		= 0.29
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 75型防空导弹营 
+model = {
+	cost 				= 7.5
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 29
+	airattack			= 31
+	supplyconsumption 	= 0.45
+	fuelconsumption		= 0.29
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 80型防空导弹营 
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 29
+	airattack			= 34
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.31
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 85型防空导弹营 
+model = {
+	cost 				= 8.5
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 32
+	airattack			= 34
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.31
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 90型防空导弹营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	airdefence				= 32
+	airattack			= 37
+	supplyconsumption 	= 0.55
+	fuelconsumption		= 0.33
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}

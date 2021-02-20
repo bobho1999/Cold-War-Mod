@@ -1,0 +1,220 @@
+land_unit_type = 1
+# 0 - 进口重型坦克营 
+model = {
+	cost 				= 6
+	buildtime	 		= 110
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -18
+	softattack			= 6
+	hardattack			= 6
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 1.07
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.5
+}
+# 1 - 40型重型坦克营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 4
+	toughness 			= 5
+	softness			= -20
+	softattack			= 4
+	hardattack			= 5
+	supplyconsumption 	= 0.55
+	fuelconsumption		= 1.07
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 45型重型坦克营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 5
+	toughness 			= 5
+	softness			= -22
+	softattack			= 5
+	hardattack			= 6
+	supplyconsumption 	= 0.57
+	fuelconsumption		= 1.11
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 50型重型坦克营 
+model = {
+	cost 				= 9
+	buildtime	 		= 115
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 5
+	toughness 			= 6
+	softness			= -24
+	softattack			= 5
+	hardattack			= 7
+	supplyconsumption 	= 0.59
+	fuelconsumption		= 1.15
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 55型重型坦克营 
+model = {
+	cost 				= 9
+	buildtime	 		= 115
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 6
+	toughness 			= 6
+	softness			= -26
+	softattack			= 5
+	hardattack			= 8
+	supplyconsumption 	= 0.61
+	fuelconsumption		= 1.19
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 60型重型坦克营 
+model = {
+	cost 				= 10
+	buildtime	 		= 120
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 6
+	toughness 			= 7
+	softness			= -28
+	softattack			= 6
+	hardattack			= 9
+	supplyconsumption 	= 0.63
+	fuelconsumption		= 1.23
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 65型重型坦克营 
+model = {
+	cost 				= 10
+	buildtime	 		= 120
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 7
+	toughness 			= 7
+	softness			= -30
+	softattack			= 6
+	hardattack			= 10
+	supplyconsumption 	= 0.65
+	fuelconsumption		= 1.27
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 70型重型坦克营 
+model = {
+	cost 				= 11
+	buildtime	 		= 125
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 7
+	toughness 			= 8
+	softness			= -32
+	softattack			= 7
+	hardattack			= 11
+	supplyconsumption 	= 0.67
+	fuelconsumption		= 1.31
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 75型重型坦克营 
+model = {
+	cost 				= 11
+	buildtime	 		= 125
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 8
+	toughness 			= 8
+	softness			= -32
+	softattack			= 7
+	hardattack			= 12
+	supplyconsumption 	= 0.69
+	fuelconsumption		= 1.35
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 - 80型重型坦克营 
+model = {
+	cost 				= 12
+	buildtime	 		= 130
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 8
+	toughness 			= 9
+	softness			= -34
+	softattack			= 8
+	hardattack			= 13
+	supplyconsumption 	= 0.71
+	fuelconsumption		= 1.39
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 10 - 85型重型坦克营 
+model = {
+	cost 				= 13
+	buildtime	 		= 130
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 9
+	toughness 			= 9
+	softness			= -34
+	softattack			= 8
+	hardattack			= 14
+	supplyconsumption 	= 0.73
+	fuelconsumption		= 1.43
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 11 - 90型重型坦克营 
+model = {
+	cost 				= 14
+	buildtime	 		= 140
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	defensiveness 		= 10
+	toughness 			= 10
+	softness			= -36
+	softattack			= 9
+	hardattack			= 14
+	supplyconsumption 	= 0.75
+	fuelconsumption		= 1.47
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 12 -  
+model = {
+	cost 				= 30
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -1
+	morale					= 8
+	softness			= -38
+	softattack			= 11
+	hardattack			= 11
+	supplyconsumption 	= 3.3
+	fuelconsumption		= 3.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}

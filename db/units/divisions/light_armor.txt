@@ -1,0 +1,33 @@
+land_unit_type = 1
+allowed_brigades = sp_artillery
+allowed_brigades = sp_rct_artillery
+allowed_brigades = tank_destroyer
+allowed_brigades = heavy_armor
+allowed_brigades = light_armor_brigade
+allowed_brigades = armored_car
+allowed_brigades = engineer
+allowed_brigades = b_u5
+allowed_brigades = b_u10
+
+# 0 - @CHC解放?55型主力裝甲? 
+model = {
+	cost 					= 46
+	buildtime	 			= 360
+	manpower 				= 15
+	maxspeed 				= 15
+	defaultorganisation 	= 120
+	morale					= 120
+	defensiveness 			= 50
+	toughness				= 62
+	softness				= 30
+	suppression				= 8
+	airdefence				= 20
+	softattack				= 40
+	hardattack				= 38
+	airattack				= 18
+	transportweight			= 40
+	supplyconsumption 		= 7.95
+	fuelconsumption			= 12.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.5
+}

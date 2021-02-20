@@ -1,0 +1,1001 @@
+#uses the same Modefiers as Minister files!
+
+national_ideas = { 
+
+    # personality fields:
+    #
+    # personality_string= the identifier string //used in savegames for finding the correct idea
+    # name 	= the localized string for the idea name
+    # desc 		= the localized string for the idea description
+    # minister_position	= nationalidentity / socialpolicy / nationalculture
+    #
+    #category = the country category: nazi/fascist/paternal_autocrat/social_conservative/market_liberal/social_liberal/social_democrat/left_wing_radical/leninist/stalinist
+    # 		If no category is selected it will work for all categories!
+
+
+### NATIONAL IDENTITY
+
+
+# Natural Economy
+    national_idea = { 
+    	category = paternal_autocrat
+        picture = "ECO_Natural_Economy"
+        personality_string = "policy_economy_natural" 
+        name = "NAME_POLICY_NATURAL_ECONOMY" 
+        desc = "DESCRIPTION_POLICY_NATURAL_ECONOMY" 
+        minister_position = nationalidentity
+        modifier = { type = mp_growth_mod modifier_effect = 1.8000 } 
+        modifier = { type = gearing_speed_mod = -0.0500 } 
+        modifier = { type = gearing_max_mod modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.5000 }
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.8000 }         
+        modifier = { type = production_category_mod value = production modifier_effect = -0.1000 }
+        } 
+# Natural- Laisser-faire Capitalism Economy
+    national_idea = { 
+    	
+        picture = "ECO_Natural-Capitalism_Economy"
+        personality_string = "policy_economy_natural-Capitalism" 
+        name = "NAME_POLICY_NATURAL-Capitalism_ECONOMY" 
+        desc = "DESCRIPTION_POLICY_NATURAL-Capitalism_ECONOMY" 
+        minister_position = nationalidentity
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 } 
+        modifier = { type = dissent_mod modifier_effect = 0.0500 }        
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 }
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.2000 }         
+        modifier = { type = production_category_mod value = production modifier_effect = -0.0500 }
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.1000 } 
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.2000 }        
+        }         
+# Laisser-faire Capitalism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical                
+
+        picture = "ECO_Laisser-faire_Capitalism"
+        personality_string = "policy_economy_Laisser-faire" 
+        name = "NAME_POLICY_Laisser-faire_Capitalism" 
+        desc = "DESCRIPTION_POLICY_Laisser-faire_Capitalism" 
+        minister_position = nationalidentity
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.3000 } 
+        modifier = { type = dissent_mod modifier_effect = 0.2000 } 
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.2000 } 
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.2000 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.3000 }             
+        } 
+        
+# monopoly capitalism
+    national_idea = { 
+       category = nazi     
+       category = fascist      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "ECO_monopoly_capitalism"
+        personality_string = "policy_economy_monopoly" 
+        name = "NAME_POLICY_ECONOMY_monopoly" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_monopoly" 
+        minister_position = nationalidentity
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }
+        modifier = { type = tc_mod modifier_effect = 0.05 }        
+        modifier = { type = foreign_ic_mod modifier_effect = 0.2000 }      
+        modifier = { type = foreign_mp_mod modifier_effect = 0.1000 } 
+        modifier = { type = gearing_speed_mod = 0.1000 } 
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 } 
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.2000 }
+        modifier = { type = production_category_mod value = production modifier_effect = 0.2000 }   
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 }                             
+        }
+
+# military-state monopoly capitalism
+    national_idea = {
+	category = nazi
+	category = fascist
+	category = paternal_autocrat
+	category = social_conservative
+
+
+        picture = "ECO_military-state-monopoly_capitalism"
+        personality_string = "policy_economy_military-state" 
+        name = "NAME_POLICY_ECONOMY_military-state" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_military-state" 
+        minister_position = nationalidentity
+        modifier = { type = dissent_mod modifier_effect = 0.3000 }
+        modifier = { type = tc_mod modifier_effect = 0.1000 }    
+        modifier = { type = foreign_ic_mod modifier_effect = 0.3000 }          
+        modifier = { type = foreign_mp_mod modifier_effect = 0.2000 }
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 }        
+        modifier = { type = ese_mod modifier_effect = 0.0500 }                    
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }
+        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.1000 }
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.1000 }        
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.1000 }          
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.1000 }  
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.1000 }                  
+        modifier = { type = province_project_mod value = coastal_fort modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = land_fort modifier_effect = 0.1000 }        
+        modifier = { type = province_project_mod value = flak modifier_effect = 0.1000 }        
+        modifier = { type = province_project_mod value = air_base modifier_effect = 0.1000 }        
+        modifier = { type = province_project_mod value = naval_base modifier_effect = 0.1000 }        
+        modifier = { type = province_project_mod value = radar_station modifier_effect = 0.1000 }            
+        }
+
+# Colonialism monopoly capitalism
+    national_idea = { 
+       category = nazi     
+       category = fascist      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+       
+        picture = "ECO_Colonialism-monopoly_capitalism"
+        personality_string = "policy_economy_Colonialism" 
+        name = "NAME_POLICY_ECONOMY_Colonialism" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_Colonialism" 
+        minister_position = nationalidentity
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }
+        modifier = { type = tc_mod modifier_effect = 0.0500 }    
+        modifier = { type = foreign_ic_mod modifier_effect = 0.2000 }          
+        modifier = { type = foreign_mp_mod modifier_effect = 0.1000 }
+        modifier = { type = colonial_ic_mod modifier_effect = 0.2000 }          
+        modifier = { type = colonial_mp_mod modifier_effect = 0.3000 }    
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 }   
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }           
+        modifier = { type = resource_mod value = oil modifier_effect = 0.1000 } 
+        modifier = { type = resource_mod value = energy modifier_effect = 0.1000 }         
+        modifier = { type = resource_mod value = metal modifier_effect = 0.1000 }         
+        modifier = { type = resource_mod value = rare_materials modifier_effect = 0.1000 }                                        
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.2000 }                
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 } 
+        } 
+
+# finance capitalism
+    national_idea = {      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+       
+        picture = "ECO_monopoly_finance"
+        personality_string = "policy_economy_finance" 
+        name = "NAME_POLICY_ECONOMY_finance" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_finance" 
+        minister_position = nationalidentity
+        modifier = { type = tc_mod modifier_effect = 0.0500 }    
+        modifier = { type = foreign_ic_mod modifier_effect = 0.4000 }          
+        modifier = { type = foreign_mp_mod modifier_effect = 0.2000 }  
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 }   
+        modifier = { type = military_salaries_mod modifier_effect = 0.3000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.3000 }                                                  
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.2000 }                
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.1000 }
+        } 
+
+# state monopoly capitalism
+    national_idea = { 
+       category = nazi     
+       category = fascist      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "ECO_state-monopoly_capitalism"
+        personality_string = "policy_economy_state-monopoly" 
+        name = "NAME_POLICY_ECONOMY_state-monopoly" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_state-monopoly" 
+        minister_position = nationalidentity
+        modifier = { type = dissent_mod modifier_effect = 0.4000 }
+        modifier = { type = tc_mod modifier_effect = 0.1000 }   
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 } 
+        modifier = { type = ese_mod modifier_effect = 0.0300 } 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1500 }   
+        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.1000 }  
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.1000 }  
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.1000 }   
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = air_base modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = naval_base modifier_effect = 0.1000 }        
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 }                                                                                               
+        } 
+
+# colonial economy 
+    national_idea = {
+       category = nazi     
+       category = fascist      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "ECO_colonial_economy"
+        personality_string = "policy_economy_colonial" 
+        name = "NAME_POLICY_ECONOMY_colonial" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_colonial" 
+        minister_position = nationalidentity 
+        modifier = { type = dissent_mod modifier_effect = 0.6000 }
+        modifier = { type = resource_mod value = oil modifier_effect = 0.3000 } 
+        modifier = { type = resource_mod value = energy modifier_effect = 0.3000 }         
+        modifier = { type = resource_mod value = metal modifier_effect = 0.3000 }         
+        modifier = { type = resource_mod value = rare_materials modifier_effect = 0.3000 } 
+        modifier = { type = mp_growth_mod modifier_effect = 1.5000 }
+        modifier = { type = province_project_mod value = ic modifier_effect = -0.5000 } 
+        } 
+
+# economic in the revolutionary base
+    national_idea = {
+       category = left_wing_radical
+	     category = stalinist
+	     category = leninist       
+
+        picture = "ECO_revolutionary_economy"
+        personality_string = "policy_economy_revolutionary" 
+        name = "NAME_POLICY_ECONOMY_revolutionary" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_revolutionary" 
+        minister_position = nationalidentity 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.8000 }    
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.2000 }                  
+        modifier = { type = supply_consumption_mod modifier_effect = -0.2000 }  
+        modifier = { type = ese_mod value = supply modifier_effect = 0.2000 }          
+        } 
+
+# Leninism market economic
+    national_idea = {
+       category = social_liberal
+       category = social_democrat       
+       category = left_wing_radical
+	     category = leninist       
+
+        picture = "ECO_Leninism-market_economy"
+        personality_string = "policy_economy_Leninism-market" 
+        name = "NAME_POLICY_ECONOMY_Leninism-market" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_Leninism-market" 
+        minister_position = nationalidentity 
+        modifier = { type = tc_mod modifier_effect = 0.0500 }       
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.2000 }          
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1500 }  
+        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.1000 }    
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.1000 }
+        modifier = { type = production_category_mod value = infrastructure modifier_effect = -0.2000 }        
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 }                  
+        modifier = { type = remote_placement_min_ic_mod modifier_effect = -0.2000 }  
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 }          
+        } 
+
+# Stalinism planned economic
+    national_idea = {
+	     category = stalinist
+     	 category = leninist    
+
+        picture = "ECO_Stalinism-planned_economy"
+        personality_string = "policy_economy_Stalinism-planned" 
+        name = "NAME_POLICY_ECONOMY_Stalinism-planned" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_Stalinism-planned" 
+        minister_position = nationalidentity 
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }        
+        modifier = { type = tc_mod modifier_effect = 0.0500 }       
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.3000 }          
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.2000 }    
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = infrastructure modifier_effect = -0.2000 }        
+        modifier = { type = production_category_mod value = supply modifier_effect = -0.2000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.3000 }                         
+        modifier = { type = remote_placement_min_ic_mod modifier_effect = -0.2000 }  
+        modifier = { type = tech_group_mod value = industry modifier_effect = 0.1000 }  
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.0500 }          
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.0500 }          
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.0500 }   
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.0500 }        
+        modifier = { type = resource_mod value = money modifier_effect = -0.2000 }                            
+        } 
+
+# Stalinism planned economic
+    national_idea = {
+	     category = stalinist
+     	 category = leninist    
+
+        picture = "ECO_Stalinism-planned_economy"
+        personality_string = "policy_economy_Stalinism-planned_wartime" 
+        name = "NAME_POLICY_ECONOMY_Stalinism-planned_wartime" 
+        desc = "DESCRIPTION_POLICY_ECONOMY_Stalinism-planned_wartime" 
+        minister_position = nationalidentity 
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }        
+        modifier = { type = tc_mod modifier_effect = 0.0500 }       
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
+        modifier = { type = gearing_max_mod modifier_effect = 0.3000 }          
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.2000 }    
+        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = infrastructure modifier_effect = -0.2000 }        
+        modifier = { type = production_category_mod value = supply modifier_effect = -0.2000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.3000 }                         
+        modifier = { type = remote_placement_min_ic_mod modifier_effect = -0.2000 }  
+        modifier = { type = tech_group_mod value = industry modifier_effect = 0.1000 }  
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.0500 }          
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.0500 }          
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.0500 }   
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.0500 }        
+        modifier = { type = resource_mod value = money modifier_effect = -0.2000 } 
+       	modifier = { type = military_salaries_mod modifier_effect = 0.2000 }                           
+        }
+        
+### SOCIAL POLICY
+
+# confucianism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "social_confucianism"
+        personality_string = "policy_social_confucianism" 
+        name = "NAME_POLICY_social_confucianism" 
+        desc = "DESCRIPTION_POLICY_social_confucianism" 
+        minister_position = socialpolicy
+        modifier = { type = dissent_mod modifier_effect = -0.3000 }        
+        modifier = { type = do_war_bell_mod modifier_effect = 0.1000 }
+        modifier = { type = peace_bell_rate_mod modifier_effect = -0.3000 }
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.5000 }
+        modifier = { type = resource_mod value = money modifier_effect = -0.2000 }        
+        modifier = { type = tech_group_mod value = secret_weapons modifier_effect = -0.1000 }                               
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 } 
+        modifier = { type = diplomatic_action_mod value = sue_for_peace modifier_effect = 0.0500 }
+        modifier = { type = diplomatic_action_mod value = influence_nation modifier_effect = 0.0500 }
+        modifier = { type = diplomatic_action_mod value = liberate_nation modifier_effect = 0.0500 }                
+        modifier = { type = intelligence_mod value = smear_campaign modifier_effect = 0.2000 }  
+        modifier = { type = accept_alliance_mod modifier_effect = 0.0500 }            
+        } 
+
+
+# bushido
+    national_idea = { 
+       category = nazi     
+       category = fascist      
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+
+        picture = "social_bushido"
+        personality_string = "policy_social_bushido" 
+        name = "NAME_POLICY_social_bushido" 
+        desc = "DESCRIPTION_POLICY_social_bushido" 
+        minister_position = socialpolicy
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }
+        modifier = { type = org_mod modifier_effect = 0.0200 }  
+        modifier = { type = morale_mod modifier_effect = 0.0500 } 
+        modifier = { type = do_war_bell_mod modifier_effect = -0.2000 }
+        modifier = { type = leader_xp_mod modifier_effect = 0.2000 }      
+        modifier = { type = division_xp_mod modifier_effect = 0.2000 }         
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.7000 }         
+        modifier = { type = tech_group_mod value = land_doctrines modifier_effect = -0.1000 } 
+        modifier = { type = tech_group_mod value = air_doctrines modifier_effect = -0.1000 }         
+        modifier = { type = tech_group_mod value = naval_doctrines modifier_effect = -0.1000 }                 
+        modifier = { type = intelligence_mod value = steal_blueprint modifier_effect = 0.2000 } 
+        modifier = { type = intelligence_mod value = minister_assassination modifier_effect = 0.2000 }         
+        modifier = { type = intelligence_mod value = send_spy modifier_effect = 0.2000 }         
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.2000 }                 
+        modifier = { type = diplomatic_cost_mod value = sue_for_peace modifier_effect = 5.0000 }             
+        modifier = { type = military_salaries_mod modifier_effect = -0.3000 }                  
+        } 
+
+# Islam
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "social_Islam"
+        personality_string = "policy_social_Islam" 
+        name = "NAME_POLICY_social_Islam" 
+        desc = "DESCRIPTION_POLICY_social_Islam" 
+        minister_position = socialpolicy
+        modifier = { type = morale_mod modifier_effect = 0.0500 }      
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.3000 }            
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 }
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.5000 }          
+        modifier = { type = diplomatic_action_mod option1 = 1 modifier_effect = 0.1000 }
+        modifier = { type = diplomatic_action_mod option1 = 0 modifier_effect = -0.2000 }
+        } 
+
+# Buddhism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "social_Buddhism"
+        personality_string = "policy_social_Buddhism" 
+        name = "NAME_POLICY_social_Buddhism" 
+        desc = "DESCRIPTION_POLICY_social_Buddhism" 
+        minister_position = socialpolicy
+        modifier = { type = dissent_mod modifier_effect = -0.8000 }
+        modifier = { type = peace_bell_rate_mod modifier_effect = -1.0000 }
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.8000 }
+        modifier = { type = resource_mod value = money modifier_effect = -0.3000 }
+        modifier = { type = diplomatic_cost_mod value = declare_war modifier_effect = 5.0000 } 
+        modifier = { type = diplomatic_cost_mod value = cancel_peace_treaty modifier_effect = 5.0000 }         
+        modifier = { type = diplomatic_cost_mod value = sue_for_peace modifier_effect = -0.8000 }
+        modifier = { type = diplomatic_cost_mod value = release_puppet modifier_effect = -0.8000 }        
+        modifier = { type = diplomatic_cost_mod value = liberate_nation modifier_effect = -0.8000 }        
+        modifier = { type = diplomatic_action_mod value = sue_for_peace modifier_effect = 0.8000 }                                                 
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.3000 }      
+        } 
+
+# Catholicism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "social_Catholicism"
+        personality_string = "policy_social_Catholicism" 
+        name = "NAME_POLICY_social_Catholicism" 
+        desc = "DESCRIPTION_POLICY_social_Catholicism" 
+        minister_position = socialpolicy
+        modifier = { type = colonial_mp_mod modifier_effect = 0.3000 }         
+        modifier = { type = colonial_ic_mod modifier_effect = 0.3000 }         
+        modifier = { type = stand_ground_dissent_mod modifier_effect = 0.2000 }  
+        modifier = { type = province_project_mod value = coastal_fort modifier_effect = 0.2000 }
+        modifier = { type = province_project_mod value = land_fort modifier_effect = 0.2000 }        
+        modifier = { type = province_project_mod value = flak modifier_effect = 0.2000 }        
+        modifier = { type = military_salaries_mod modifier_effect = 0.3000 }         
+        modifier = { type = intelligence_mod value = send_spy  modifier_effect = 0.1000 }   
+        modifier = { type = intelligence_mod value = found_partisans modifier_effect = 0.1000 }   
+        modifier = { type = intelligence_mod value = massmedia modifier_effect = 0.1000 }                                 
+        modifier = { type = diplomatic_action_mod value =  influence_nation modifier_effect = 0.1000 } 
+        } 
+
+# Puritanism-liberalism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical
+
+        picture = "social_Puritanism-liberalism"
+        personality_string = "policy_social_Puritanism-liberalism" 
+        name = "NAME_POLICY_social_Puritanism-liberalism" 
+        desc = "DESCRIPTION_POLICY_social_Puritanism-liberalism" 
+        minister_position = socialpolicy
+        modifier = { type = org_mod modifier_effect = 0.0200 }  
+        modifier = { type = morale_mod modifier_effect = 0.0300 } 
+        modifier = { type = leader_xp_mod modifier_effect = 0.1000 }      
+        modifier = { type = division_xp_mod modifier_effect = 0.2000 }         
+        modifier = { type = resource_mod value = money modifier_effect = 0.3000 }
+        modifier = { type = military_salaries_mod modifier_effect = 0.3000 }                   
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.0500 } 
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.0500 }         
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.0500 }       
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.0500 }           
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.0500 }                     
+        modifier = { type = intelligence_mod value = send_spy modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = smear_campaign modifier_effect = 0.1000 }         
+        modifier = { type = intelligence_mod value = coup modifier_effect = 0.1000 }         
+        modifier = { type = intelligence_mod value = found_partisans modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = massmedia modifier_effect = 0.1000 }                                      
+        } 
+
+# nazi racial
+    national_idea = { 
+       category = nazi     
+       category = fascist      
+
+        picture = "social_nazi"
+        personality_string = "policy_social_nazi" 
+        name = "NAME_POLICY_social_nazi" 
+        desc = "DESCRIPTION_POLICY_social_nazi" 
+        minister_position = socialpolicy
+        modifier = { type = org_mod modifier_effect = 0.0200 }  
+        modifier = { type = morale_mod modifier_effect = 0.0400 } 
+        modifier = { type = leader_xp_mod modifier_effect = 0.1000 }      
+        modifier = { type = division_xp_mod modifier_effect = 0.1000 }    
+        modifier = { type = foreign_ic_mod modifier_effect = -0.2000 }           
+        modifier = { type = foreign_mp_mod modifier_effect = -0.2000 }
+        modifier = { type = mp_growth_mod modifier_effect = 0.9500 } 
+        modifier = { type = ese_mod  modifier_effect = 0.0500 }         
+        modifier = { type = stand_ground_dissent_mod  modifier_effect = -0.2000 }          
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.0500 }                                                               
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.2000 }                                  
+        } 
+
+# soviet collectivism 
+    national_idea = { 
+	     category = stalinist
+     	 category = leninist     
+
+        picture = "social_collectivism"
+        personality_string = "policy_social_collectivism" 
+        name = "NAME_POLICY_social_collectivism" 
+        desc = "DESCRIPTION_POLICY_social_collectivism" 
+        minister_position = socialpolicy
+        modifier = { type = ese_mod  modifier_effect = 0.0600 }         
+        modifier = { type = stand_ground_dissent_mod  modifier_effect = -0.3000 } 
+        modifier = { type = resource_mod  modifier_effect = 0.0500 }                  
+        modifier = { type = tech_group_mod modifier_effect = -0.0500 }    
+        modifier = { type = accept_alliance_mod value = left_wing_radical modifier_effect = 0.1500 } 
+        modifier = { type = accept_alliance_mod value = stalinist modifier_effect = 0.1500 }         
+        modifier = { type = accept_alliance_mod value = leninist modifier_effect = 0.1500 }                                                                            
+        modifier = { type = intelligence_mod modifier_effect = 0.1000 }    
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.1500 }          
+        modifier = { type = intelligence_mod value = smear_campaign modifier_effect = -0.1000 }          
+        modifier = { type = diplomatic_action_mod  value= influence_nation option1 = 1 modifier_effect = 0.2000 }    
+        modifier = { type = diplomatic_action_mod  value= coup_nation option1 = 1 modifier_effect = 0.2000 }                    
+        modifier = { type = diplomatic_action_mod  value= influence_nation option1 = 0 modifier_effect = 0.1000 }    
+        modifier = { type = diplomatic_action_mod  value= coup_nation option1 = 0 modifier_effect = 0.1000 }                                                
+        } 
+        
+# revolutionary collectivism 
+    national_idea = { 
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical	     
+	     category = stalinist
+     	 category = leninist     
+
+        picture = "social_revolutionary"
+        personality_string = "policy_social_revolutionary" 
+        name = "NAME_POLICY_social_revolutionary" 
+        desc = "DESCRIPTION_POLICY_social_revolutionary" 
+        minister_position = socialpolicy
+        modifier = { type = org_mod modifier_effect = 0.0200 }  
+        modifier = { type = morale_mod modifier_effect = 0.0500 }         
+        modifier = { type = ese_mod  modifier_effect = 0.0600 }         
+        modifier = { type = stand_ground_dissent_mod  modifier_effect = -0.7000 } 
+        modifier = { type = resource_mod  modifier_effect = 0.1000 }                  
+        modifier = { type = tech_group_mod modifier_effect = -0.1000 }                                                                               
+        modifier = { type = intelligence_mod modifier_effect = 0.2000 }            
+        modifier = { type = intelligence_mod value = smear_campaign modifier_effect = -0.2000 }                                                          
+        } 
+        
+# colony self-movement 
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical   
+
+        picture = "social_self-movement"
+        personality_string = "policy_social_self-movement" 
+        name = "NAME_POLICY_social_self-movement" 
+        desc = "DESCRIPTION_POLICY_social_self-movement" 
+        minister_position = socialpolicy     
+        modifier = { type = dissent_mod  modifier_effect = 0.3000 }         
+        modifier = { type = stand_ground_dissent_mod  modifier_effect = 0.5000 } 
+        modifier = { type = resource_mod value = oil modifier_effect = 0.0500 }     
+        modifier = { type = resource_mod value = energy modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = metal modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = rare_materials modifier_effect = 0.0500 }                                      
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.2000 } 
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.2000 }        
+        modifier = { type = province_project_mod value = air_base modifier_effect = 0.2000 }        
+        modifier = { type = province_project_mod value = naval_base modifier_effect = 0.2000 }                                                                                      
+        modifier = { type = military_salaries_mod modifier_effect = 0.5000 }                                                        
+        }                 
+
+# integration 
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical   
+
+        picture = "social_integration"
+        personality_string = "policy_social_integration" 
+        name = "NAME_POLICY_social_integration" 
+        desc = "DESCRIPTION_POLICY_social_integration" 
+        minister_position = socialpolicy     
+        modifier = { type = resource_mod value = oil modifier_effect = 0.0500 }     
+        modifier = { type = resource_mod value = energy modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = metal modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = rare_materials modifier_effect = 0.0500 }                                      
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.3000 } 
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.3000 }        
+        modifier = { type = province_project_mod value = air_base modifier_effect = 0.3000 }        
+        modifier = { type = province_project_mod value = naval_base modifier_effect = 0.3000 }                                                                                      
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = -0.2000 }  
+        modifier = { type = accept_alliance_mod modifier_effect = -0.2000 }                                                                
+        }   
+
+### NATIONAL POLITICAL
+
+# nazi
+    national_idea = { 
+	category = nazi
+	category = fascist
+
+        picture = "political_nazi"
+        personality_string = "policy_political_nazi" 
+        name = "NAME_POLICY_political_nazi" 
+        desc = "DESCRIPTION_POLICY_political_nazi" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }         
+        modifier = { type = do_war_bell_mod modifier_effect = -0.1000 } 
+        modifier = { type = war_bell_rate_mod modifier_effect = 0.3000 }         
+        modifier = { type = diplo_bonus_mod modifier_effect = 0.4000 }
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 }        
+        modifier = { type = attack_land_mod modifier_effect = 0.0600 }    
+        modifier = { type = defend_land_mod modifier_effect = 0.0600 }        
+        modifier = { type = attack_air_mod modifier_effect = 0.0600 }        
+        modifier = { type = defend_air_mod modifier_effect = 0.0600 }          
+        modifier = { type = attack_sea_mod modifier_effect = 0.0600 }          
+        modifier = { type = defend_sea_mod modifier_effect = 0.0600 }         
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }         
+        modifier = { type = production_category_mod value = consumer  modifier_effect = -0.1000 }       
+        modifier = { type = accept_alliance_mod option1 =1 modifier_effect = -0.7000 }                           
+        } 
+
+# fascist
+    national_idea = { 
+	category = nazi
+	category = fascist
+
+        picture = "political_fascist"
+        personality_string = "policy_political_fascist" 
+        name = "NAME_POLICY_political_fascist" 
+        desc = "DESCRIPTION_POLICY_political_fascist" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 0.5000 }         
+        modifier = { type = do_war_bell_mod modifier_effect = -0.2000 } 
+        modifier = { type = war_bell_rate_mod modifier_effect = 0.3000 }         
+        modifier = { type = diplo_bonus_mod modifier_effect = 0.3000 }        
+        modifier = { type = mp_growth_mod modifier_effect = 1.0500 }   
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 }             
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 }                 
+        modifier = { type = defend_sea_mod modifier_effect = 0.0500 }          
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0600 }         
+        modifier = { type = production_category_mod value = consumer  modifier_effect = -0.1000 }            
+        modifier = { type = accept_alliance_mod option1 = 1 modifier_effect = -0.5000 }          
+        modifier = { type = stand_ground_dissent_mod modifier_effect = 0.1500 }                      
+        } 
+
+# militarism
+    national_idea = { 
+	     category = nazi
+	     category = fascist
+       category = paternal_autocrat
+       category = social_conservative
+       
+        picture = "political_militarism"
+        personality_string = "policy_political_militarism" 
+        name = "NAME_POLICY_political_militarism" 
+        desc = "DESCRIPTION_POLICY_political_militarism" 
+        minister_position = nationalculture
+        modifier = { type = do_war_bell_mod modifier_effect = -0.2000 } 
+        modifier = { type = war_bell_rate_mod modifier_effect = 0.3000 } 
+        modifier = { type = diplo_bonus_mod modifier_effect = 0.4000 }
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 }        
+        modifier = { type = attack_land_mod modifier_effect = 0.0800 }    
+        modifier = { type = defend_land_mod modifier_effect = 0.0800 }        
+        modifier = { type = attack_air_mod modifier_effect = 0.0800 }        
+        modifier = { type = defend_air_mod modifier_effect = 0.0800 }          
+        modifier = { type = attack_sea_mod modifier_effect = 0.0800 }          
+        modifier = { type = defend_sea_mod modifier_effect = 0.0800 }         
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 }         
+        modifier = { type = production_category_mod value = consumer  modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 }               
+        modifier = { type = accept_alliance_mod option1 =1 modifier_effect = -0.2000 }     
+        } 
+
+# dignitary
+    national_idea = { 
+	     category = nazi
+	     category = fascist
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal       
+
+        picture = "political_dignitary"
+        personality_string = "policy_political_dignitary" 
+        name = "NAME_POLICY_political_dignitary" 
+        desc = "DESCRIPTION_POLICY_political_dignitary" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 0.3000 }        
+        modifier = { type = stand_ground_dissent_mod modifier_effect = 0.2000 }
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }
+        modifier = { type = ese_mod modifier_effect = -0.0500 }
+        modifier = { type = supply_consumption_mod modifier_effect = 0.1000 }        
+        modifier = { type = org_mod modifier_effect = -0.0200 }         
+        modifier = { type = morale_mod modifier_effect = -0.0400 }         
+        modifier = { type = production_category_mod value = consumer  modifier_effect = 0.2000 }        
+        modifier = { type = intelligence_mod value = counter_espionage  modifier_effect = -0.4000 }
+        modifier = { type = resource_mod value = money  modifier_effect = -0.3000 }  
+        modifier = { type = resource_mod value = oil  modifier_effect = 0.0600 }        
+        modifier = { type = resource_mod value = energy  modifier_effect = 0.0600 }        
+        modifier = { type = resource_mod value = metal  modifier_effect = 0.0600 }        
+        modifier = { type = resource_mod value = rare_materials  modifier_effect = 0.0600 }        
+        modifier = { type = province_project_mod value = ic  modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.1000 }                              
+        } 
+
+
+# theocracy
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal  
+
+        picture = "political_theocracy"
+        personality_string = "policy_political_theocracy" 
+        name = "NAME_POLICY_political_theocracy" 
+        desc = "DESCRIPTION_POLICY_political_theocracy" 
+        minister_position = nationalculture         
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = supply_consumption_mod modifier_effect = -0.4000 }
+        modifier = { type = mp_growth_mod modifier_effect = 1.4000 }
+        modifier = { type = production_category_mod value = consumer  modifier_effect = -0.6000 }
+        modifier = { type = production_category_mod value = supply  modifier_effect = 0.5000 }        
+        } 
+
+
+# regality
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat 
+
+        picture = "political_regality"
+        personality_string = "policy_political_regality" 
+        name = "NAME_POLICY_political_regality" 
+        desc = "DESCRIPTION_POLICY_political_regality" 
+        minister_position = nationalculture         
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = supply_consumption_mod modifier_effect = -0.2000 }
+        modifier = { type = mp_growth_mod modifier_effect = 1.2000 }
+        modifier = { type = diplo_bonus_mod modifier_effect = -0.5000 }
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = ese_mod modifier_effect = 0.0500 }                
+        } 
+        
+# conservatism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+
+        picture = "political_conservatism"
+        personality_string = "policy_political_conservatism" 
+        name = "NAME_POLICY_political_conservatism" 
+        desc = "DESCRIPTION_POLICY_political_conservatism" 
+	      minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = peace_bell_rate_mod modifier_effect = -0.3000 }
+        modifier = { type = accept_alliance_mod option1 = 1 modifier_effect = 0.2000 }  
+        modifier = { type = resource_mod value = money  modifier_effect = 0.2000 }                    
+        } 
+
+# republicanism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+
+        picture = "political_republicanism"
+        personality_string = "policy_political_republicanism" 
+        name = "NAME_POLICY_political_republicanism" 
+        desc = "DESCRIPTION_POLICY_political_republicanism" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = peace_bell_rate_mod modifier_effect = -0.2000 }
+        modifier = { type = morale_mod modifier_effect = 0.0200 }        
+        modifier = { type = foreign_ic_mod modifier_effect = 0.2000 }        
+        modifier = { type = foreign_mp_mod modifier_effect = 0.1000 }  
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 }        
+        modifier = { type = stand_ground_dissent_mod  modifier_effect = -0.1000 }         
+        modifier = { type = production_category_mod value = supply  modifier_effect = 0.1000 }                               
+        } 
+
+# social democracy
+    national_idea = { 
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+
+        picture = "political_social-democracy"
+        personality_string = "policy_political_social-democracy" 
+        name = "NAME_POLICY_political_social-democracy" 
+        desc = "DESCRIPTION_POLICY_political_social-democracy" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = peace_bell_rate_mod modifier_effect = -0.3000 }
+        modifier = { type = ese_mod modifier_effect = 0.0500 }        
+        modifier = { type = diplo_bonus_mod  modifier_effect = -0.3000 }       
+        modifier = { type = accept_alliance_mod option1 =1 modifier_effect = 0.3000 }        
+        modifier = { type = resource_mod value = money  modifier_effect = 0.2000 }         
+        modifier = { type = production_category_mod value = supply  modifier_effect = 0.1000 }             
+        modifier = { type = intelligence_mod value = smear_campaign modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = coup modifier_effect = 0.1000 }         
+        modifier = { type = intelligence_mod value = found_partisans modifier_effect = 0.1000 }         
+        modifier = { type = intelligence_mod value = massmedia modifier_effect = 0.1000 }                                     
+        } 
+        
+# Three Principles
+    national_idea = { 
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+
+        picture = "political_Three-Principles"
+        personality_string = "policy_political_Three-Principles" 
+        name = "NAME_POLICY_political_Three-Principles" 
+        desc = "DESCRIPTION_POLICY_political_Three-Principles" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = morale_mod modifier_effect = 0.0300 }     
+        modifier = { type = org_mod  modifier_effect = 0.0100 }
+        modifier = { type = defend_land_mod modifier_effect = 0.0600 }             
+        modifier = { type = defend_air_mod modifier_effect = 0.0600 }                 
+        modifier = { type = defend_sea_mod modifier_effect = 0.0600 }                              
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = ic  modifier_effect = 0.0500 }  
+        modifier = { type = production_category_mod value = supply  modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = consumer  modifier_effect = -0.1000 }                             
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.1000 }                
+        modifier = { type = province_project_mod  value = ic modifier_effect = 0.1000 }         
+        modifier = { type = province_project_mod  value = infrastructure modifier_effect = 0.1000 }                                
+        } 
+
+# nationalism
+    national_idea = { 
+       category = paternal_autocrat
+       category = social_conservative
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical 
+
+        picture = "political_nationalism"
+        personality_string = "policy_political_nationalism" 
+        name = "NAME_POLICY_political_nationalism" 
+        desc = "DESCRIPTION_POLICY_political_nationalism" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 1.0000 }  
+        modifier = { type = morale_mod modifier_effect = -0.1000 }     
+        modifier = { type = org_mod  modifier_effect = -0.0500 }                             
+        modifier = { type = stand_ground_dissent_mod modifier_effect = 0.5000 }
+        modifier = { type = military_salaries_mod modifier_effect = 0.7000 }                               
+        } 
+        
+# new-democratic
+    national_idea = { 
+       category = market_liberal
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+	     category = stalinist
+     	 category = leninist           
+
+        picture = "political_new-democratic"
+        personality_string = "policy_political_new-democratic" 
+        name = "NAME_POLICY_political_new-democratic" 
+        desc = "DESCRIPTION_POLICY_political_new-democratic" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.5000 }     
+        modifier = { type = attack_land_mod modifier_effect = 0.0800 }    
+        modifier = { type = defend_land_mod modifier_effect = 0.2000 }        
+        modifier = { type = attack_air_mod modifier_effect = 0.0800 }        
+        modifier = { type = defend_air_mod modifier_effect = 0.0800 }          
+        modifier = { type = attack_sea_mod modifier_effect = 0.0800 }          
+        modifier = { type = defend_sea_mod modifier_effect = 0.0800 }                                 
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.6000 }
+        modifier = { type = mp_growth_mod modifier_effect = 2.0000 }  
+        modifier = { type = retooling_cost_mod modifier_effect = -0.5000 }  
+        modifier = { type = military_salaries_mod modifier_effect = -0.7000 }  
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.8000 }  
+        modifier = { type = province_project_mod value = ic modifier_effect = 0.5000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.5000 }                                                
+        }         
+
+# Democratic Socialism
+    national_idea = { 
+       category = social_liberal
+       category = social_democrat
+       category = left_wing_radical  
+     	 category = leninist           
+
+        picture = "political_Democratic-Socialism"
+        personality_string = "policy_political_Democratic-Socialism" 
+        name = "NAME_POLICY_political_Democratic-Socialism" 
+        desc = "DESCRIPTION_POLICY_political_Democratic-Socialism" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = -0.2000 }  
+        modifier = { type = morale_mod modifier_effect = 0.0500 }     
+        modifier = { type = org_mod  modifier_effect = 0.0200 }              
+        modifier = { type = attack_land_mod modifier_effect = 0.0500 }    
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 }        
+        modifier = { type = attack_air_mod modifier_effect = 0.0500 }        
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 }          
+        modifier = { type = attack_sea_mod modifier_effect = 0.0500 }          
+        modifier = { type = defend_sea_mod modifier_effect = 0.0500 }                                  
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = ic modifier_effect = 0.1000 }         
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.2000 }                                     
+        }    
+
+# stalinist
+    national_idea = {  
+	 category = stalinist
+     	 category = leninist           
+
+        picture = "political_stalinist"
+        personality_string = "policy_political_stalinist" 
+        name = "NAME_POLICY_political_stalinist" 
+        desc = "DESCRIPTION_POLICY_political_stalinist" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 0.3000 }  
+        modifier = { type = leader_xp_mod  modifier_effect = 0.0500 }     
+        modifier = { type = division_xp_mod  modifier_effect = 0.0500 }                 
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 }               
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 }                   
+        modifier = { type = defend_sea_mod modifier_effect = 0.0500 }                                   
+        modifier = { type = production_category_mod value = ic modifier_effect = 0.0500 }         
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.4000 } 
+        modifier = { type = accept_alliance_mod option1 = 1 modifier_effect = -0.5000 }                                             
+        }                                       
+    } 

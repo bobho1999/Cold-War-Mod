@@ -1,0 +1,19 @@
+# chc 1943 AI File by Tianwen
+
+###################################
+# Diplomacy
+###################################
+combat = {
+	JAP = 90
+	u74 = 200
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= Offensive
+	distrib_vs_human 	= Offensive
+	
+} 

@@ -1,0 +1,38 @@
+# German Nafrica Invasion AI File by GulieYang
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+
+target = { 
+	#Nafrica
+	4 = 100 # Lech
+        31 = 80 # 
+        900 = 100 # 
+        909 = 100 # 阿拉曼
+	903 = 100 # Innsbruck
+	906 = 80 # Salzburg
+	939 = 120 # Klagenfurt
+        924 = 120 # 班加西
+        919 = 120 # 托布鲁克
+  }
+
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= Offensive
+	distrib_vs_human 	= Reactive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+
+	enemy_handicap = { } 
+	passivity = { ENG = 100 } 
+	province_priorities = {	}
+
+}

@@ -1,0 +1,1287 @@
+###########################################
+#民众政治倾向
+###########################################
+event = {
+      id = 101
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = F7 local_flag = F8 local_flag = F9 }
+                  not = { and = { local_flag = S10 local_flag = F10 } }
+                  not = { local_flag = FMIN } }
+                 }
+      name = "我们的民众在政治上极端保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们对政治改革不感兴趣 "
+               command = { type = local_setflag which = FMIM }
+               command = { type = local_clrflag which = FREV } 
+               command = { type = local_clrflag which = FMID }
+               command = { type = local_clrflag which = FMAX }
+               }
+               }
+event = {
+      id = 102
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = F5
+                         local_flag = F6 } 
+                  not = { local_flag = FMID }
+                 } }
+      name = "我们的民众目前略微倾向自由 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民向往自由 "
+               command = { type = local_setflag which = FMID }
+               command = { type = local_clrflag which = FREV } 
+               command = { type = local_clrflag which = FMIN }
+               command = { type = local_clrflag which = FMAX }
+               }
+               }
+event = {
+      id = 103
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = F2 local_flag = F3 local_flag = F4 } 
+                  not = { local_flag = FMAX }
+                 } }
+      name = "我们的民众迫切需要政治改革 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民迫切希望政治上的变革 "
+               command = { type = local_setflag which = FMAX } 
+               command = { type = local_clrflag which = FREV }
+               command = { type = local_clrflag which = FMIN }
+               command = { type = local_clrflag which = FMID }
+               }
+               }
+event = {
+      id = 104
+      random = no
+      persistent = yes
+      trigger = { and = { local_flag = F1 
+                  not = { local_flag = FREV }
+                 } }
+      name = "我们的民众目前倾向无政府主义 "
+      desc = "无政府主义者相信政府与自由不相容，他们试图推翻现有政府，他们拒绝任何改革。注意，如果此时政府政策不是绝对的民主主义和开放主义，将发生革命！ "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民受够了你的政府 "
+               command = { type = local_setflag which = FREV }
+               command = { type = local_clrflag which = FMAX } 
+               command = { type = local_clrflag which = FMIN }
+               command = { type = local_clrflag which = FMID }
+               }
+               }
+###############
+#倾向的缓慢变化
+###############
+event = {
+      id = 110
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F9 }
+               command = { type = local_clrflag which = F10 }
+               }
+               }
+event = {
+      id = 111
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F8 }
+               command = { type = local_clrflag which = F9 }
+               }
+               }
+event = {
+      id = 112
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F7 }
+               command = { type = local_clrflag which = F8 }
+               }
+               }
+event = {
+      id = 113
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F6 }
+               command = { type = local_clrflag which = F7 }
+               }
+               }
+event = {
+      id = 114
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F5 }
+               command = { type = local_clrflag which = F6 }
+               }
+               }
+event = {
+      id = 115
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F4 }
+               command = { type = local_clrflag which = F5 }
+               }
+               }
+event = {
+      id = 116
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F3 }
+               command = { type = local_clrflag which = F4 }
+               }
+               }
+event = {
+      id = 117
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F2 }
+               command = { type = local_clrflag which = F3 }
+               }
+               }
+event = {
+      id = 118
+      random = no
+      persistent = yes
+      name = "我们的民众受到自由主义影响 "
+      desc = "自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "德先生 "
+               command = { type = local_setflag which = F1 }
+               command = { type = local_clrflag which = F2 }
+               }
+               }
+               
+event = {
+      id = 200
+      random = no
+      persistent = yes
+      trigger = {  local_flag = S1 
+                   local_flag = F1 
+                   not = { local_flag = FSREA }
+                 }
+      name = "反动主义充斥了我们人民的大脑 "
+      desc = "反动主义者总是企图推翻改革，使政治制度和社会制度都倒退。如果不是极保守极右翼的政府，人民将给予你们这些空想者最后一击。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们不需要只会空想的政府 "
+               command = { type = local_setflag which = FSREA }
+               command = { type = local_clrflag which = SREV }
+               command = { type = local_clrflag which = SMAX } 
+               command = { type = local_clrflag which = SMIN }
+               command = { type = local_clrflag which = SMID }
+               command = { type = local_clrflag which = FREV }
+               command = { type = local_clrflag which = FMAX } 
+               command = { type = local_clrflag which = FMIN }
+               command = { type = local_clrflag which = FMID }
+               }
+               }
+###########################################
+#民众社会倾向
+###########################################
+event = {
+      id = 201
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = S7 local_flag = S8 local_flag = S9 }
+                  not = { and = { local_flag = S10 local_flag = F10 } }
+                  not = { local_flag = SMIN }
+                 } }
+      name = "我们的民众乐于维持现状 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民觉得现在的生活很安逸 "
+               command = { type = local_setflag which = SMIM }
+               command = { type = local_clrflag which = SREV } 
+               command = { type = local_clrflag which = SMID }
+               command = { type = local_clrflag which = SMAX }
+               }
+               }
+event = {
+      id = 202
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = S5 local_flag = S6 } 
+                  not = { local_flag = SMID }
+                 } }
+      name = "我们的民众目前略微倾向社会主义 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民向往更好的生活 "
+               command = { type = local_setflag which = SMID }
+               command = { type = local_clrflag which = SREV } 
+               command = { type = local_clrflag which = SMIN }
+               command = { type = local_clrflag which = SMAX }
+               }
+               }
+event = {
+      id = 203
+      random = no
+      persistent = yes
+      trigger = { and = { or = { local_flag = S2 local_flag = S3 local_flag = S4 } 
+                  not = { local_flag = SMAX }
+                 } }
+      name = "我们的民众迫切需要社会改革 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民迫切希望社会制度上的变革 "
+               command = { type = local_setflag which = SMAX } 
+               command = { type = local_clrflag which = SREV }
+               command = { type = local_clrflag which = SMIN }
+               command = { type = local_clrflag which = SMID }
+               }
+               }
+event = {
+      id = 204
+      random = no
+      persistent = yes
+      trigger = { and = { local_flag = S1 
+                  not = { local_flag = SREV }
+                 } }
+      name = "我们的民众目前倾向共产主义 "
+      desc = "共产主义者总是想要推进社会改革，却从不支持政治改革，甚至还会取消这种改革。注意，如果此时政府政策不是绝对的左翼或是共产主义形式，将发生革命！ "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "人民受够了你的政府 "
+               command = { type = local_setflag which = SREV }
+               command = { type = local_clrflag which = SMAX } 
+               command = { type = local_clrflag which = SMIN }
+               command = { type = local_clrflag which = SMID }
+               }
+               }
+
+
+###############
+#倾向的缓慢变化
+###############
+event = {
+      id = 210
+      random = no
+      persistent = yes
+      trigger = { local_flag = S10
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S9 }
+               command = { type = local_clrflag which = S10 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 211
+      random = no
+      persistent = yes
+      trigger = { local_flag = S9
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S8 }
+               command = { type = local_clrflag which = S9 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 212
+      random = no
+      persistent = yes
+      trigger = { local_flag = S8
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S7 }
+               command = { type = local_clrflag which = S8 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 213
+      random = no
+      persistent = yes
+      trigger = { local_flag = S7
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S6 }
+               command = { type = local_clrflag which = S7 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 214
+      random = no
+      persistent = yes
+      trigger = { local_flag = S6
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S5 }
+               command = { type = local_clrflag which = S6 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 215
+      random = no
+      persistent = yes
+      trigger = { local_flag = S5
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S4 }
+               command = { type = local_clrflag which = S5 }
+               command = { type = dissent value = -15 }
+               }
+               }
+               
+event = {
+      id = 216
+      random = no
+      persistent = yes
+      trigger = { local_flag = S4
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S3 }
+               command = { type = local_clrflag which = S4 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 217
+      random = no
+      persistent = yes
+      trigger = { local_flag = S3
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S2 }
+               command = { type = local_clrflag which = S3 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 218
+      random = no
+      persistent = yes
+      trigger = { local_flag = S2
+                  dissent = 15
+                 }
+      name = "我们的民众受到社会主义影响 "
+      desc = "社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "我们希望生活过得更好 "
+               command = { type = local_setflag which = S1 }
+               command = { type = local_clrflag which = S2 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 1210
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S10 }
+               command = { type = local_clrflag which = S9 }
+               }
+               }
+event = {
+      id = 1211
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S9 }
+               command = { type = local_clrflag which = S8 }
+               }
+               }
+event = {
+      id = 1212
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S8 }
+               command = { type = local_clrflag which = S7 }
+               }
+               }
+event = {
+      id = 1213
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S7 }
+               command = { type = local_clrflag which = S6 }
+               }
+               }
+event = {
+      id = 1214
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S6 }
+               command = { type = local_clrflag which = S5 }
+               }
+               }
+event = {
+      id = 1215
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S5 }
+               command = { type = local_clrflag which = S4 }
+               }
+               }
+               
+event = {
+      id = 1216
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S4 }
+               command = { type = local_clrflag which = S3 }
+               command = { type = dissent value = -15 }
+               }
+               }
+event = {
+      id = 1217
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S3 }
+               command = { type = local_clrflag which = S2 }
+               }
+               }
+event = {
+      id = 1218
+      random = no
+      persistent = yes
+      name = "我们的民众日趋保守 "
+      desc = "保守主义者是热衷于维持现状的，但在斗争激烈时会发生分裂，一部分支持改革，一部分则与反动者合流。 "
+      style = 0
+      action_a = {
+               name = "我们满足于现在的生活 "
+               command = { type = local_setflag which = S2 }
+               command = { type = local_clrflag which = S1 }
+               }
+               }
+
+###########################################
+#负面影响
+###########################################
+event = {
+      id = 300
+      random = no
+      persistent = yes
+      trigger = { not = { local_flag = Fconfusion 
+                        }
+                  or = { or = { local_flag = F2 local_flag = F3 local_flag = F4 
+                              }
+                         not = { and = { domestic = { type = democratic value = 2 
+                                                    } not = { domestic = { type = democratic value = 5 
+                                                                         } 
+                                                             } 
+                                       }
+                               }
+                       }
+                  or = { or = { local_flag = F5 local_flag = F6 
+                              }
+                         not = { and = { domestic = { type = democratic value = 5 
+                                                    } not = { domestic = { type = democratic value = 7 
+                                                                         } 
+                                                            } 
+                                       }
+                               }
+                       }
+                  or = { or = { local_flag = F7 local_flag = F8 local_flag = F9 
+                              }
+                         not = { domestic = { type = field value = 7 
+                                            }  
+                               }
+                       }
+                 }
+      name = "我们处于动乱状态 "
+      desc = "我们政治政策与民众主流思想不符合。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "水能载舟，亦能覆舟 "
+               command = { type = manpowerpool value = -300 which = 1 }
+               command = { type = industrial_modifier which = total value = -30 }  
+               command = { type = local_setflag which = Fconfusion }
+               }
+               }
+event = {
+      id = 301
+      random = no
+      persistent = yes
+      trigger = { local_flag = Fconfusion
+                  or = { or = { local_flag = F2 local_flag = F3 local_flag = F4 
+                              }
+                         and = { domestic = { type = democratic value = 2 
+                                            } not = { domestic = { type = democratic value = 5 
+                                                                 } 
+                                                    }
+                               }
+                        }
+                  or = { or = { local_flag = F5 local_flag = F6
+                              }
+                         and = { domestic = { type = field value = 5 
+                                            } not = { domestic = { type = democratic value = 7 
+                                                                 } 
+                                                    }
+                               }
+                       }
+                  or = { or = { local_flag = F7 local_flag = F8 local_flag = F9 
+                              }
+                         domestic = { type = field value = 7 
+                                    }
+                       }
+                 }
+      name = "动乱状态结束 "
+      desc = "我们调整的政治政策再次符合了人民的意愿。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "水能载舟，亦能覆舟 "
+               command = { type = manpowerpool value = 300 which = 1 }
+               command = { type = industrial_modifier which = total value = 30 }  
+               command = { type = local_clrflag which = Fconfusion }
+               }
+               }
+event = {
+      id = 400
+      random = no
+      persistent = yes
+      trigger = { not = { local_flag = Sconfusion 
+                        }
+                  or = { or = { local_flag = S2 local_flag = S3 local_flag = S4 
+                              }
+                         not = { and = { domestic = { type = political_left value = 2 
+                                                          } not = { domestic = { type = political_left value = 5 
+                                                                               } 
+                                                                  } 
+                                        }
+                               }
+                       }
+                  or = { or = { local_flag = S5 local_flag = S6 
+                              }
+                         not = { and = { domestic = { type = political_left value = 5 
+                                                          } not = { domestic = { type = political_left value = 7
+                                                                               } 
+                                                                  } 
+                                       }
+                                }
+                       }
+                  or = { or = { local_flag = S7 local_flag = S8 local_flag = S9 
+                              }
+                         not = { domestic = { type = political_left value = 7 
+                                                  }  
+                               }
+                       }
+                 }
+      name = "我们处于动乱状态 "
+      desc = "我们社会政策与民众主流思想不符合。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "水能载舟，亦能覆舟 "
+               command = { type = manpowerpool value = -300 which = 1 }
+               command = { type = industrial_modifier which = total value = -30 }  
+               command = { type = local_setflag which = Sconfusion }
+               }
+               }
+event = {
+      id = 401
+      random = no
+      persistent = yes
+      trigger = { local_flag = Sconfusion
+                  or = { or = { local_flag = S2 local_flag = S3 local_flag = S4 
+                              }
+                         and = { domestic = { type = field value = 2 
+                                                  } not = { domestic = { type = political_left value = 5 
+                                                                       } 
+                                                          }
+                               }
+                       }
+                  or = { or = { local_flag = S5 local_flag = S6 
+                              }
+                         and = { domestic = { type = field value = 5 
+                                                  } not = { domestic = { type = political_left value = 7
+                                                                       } 
+                                                          }
+                               }
+                       }
+                  or = { or = { local_flag = S7 local_flag = S8 local_flag = S9 
+                              }
+                         domestic = { type = political_left value = 7 
+                                          }
+                       }
+                 }
+      name = "动乱状态结束 "
+      desc = "我们调整的社会政策再次符合了人民的意愿。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "水能载舟，亦能覆舟 "
+               command = { type = manpowerpool value = 300 which = 1 }
+               command = { type = industrial_modifier which = total value = 30 }  
+               command = { type = local_clrflag which = confusion }
+               }
+               }
+event = {
+      id = 205
+      random = no
+      persistent = yes
+      trigger = { local_flag = SREV 
+                  and = { not = { ideology = leninist }
+                          not = { domestic = { type = political_left value = 1 } }
+                          }
+                 }
+      name = "共产主义革命 "
+      desc = "无产者在这个革命中失去的只是锁链。他们获得的将是整个世界。 "
+      style = 0
+      date = { day = 1 month = january year = 1910 }
+      offset = 1
+      deathdate = { day = 1 month = december year = 1999 }
+      action_a = {
+               name = "全世界无产者，联合起来！ "
+               command = { type = change_partisan_activity which = total value = 100 }
+               command = { type = manpowerpool value = -300 which = 1 }
+               command = { type = industrial_modifier which = total value = -50 }
+               }
+               }
+
+
+#自由主义者想要制订新的政治改革法规，但在斗争激烈的情况下也会选择支持社会改革。
+
+#社会主义者希望看到新的社会改革法规，但在斗争激烈的情况下也会转而支持政治改革。
+
+#反动主义者总是企图推翻改革，使政治制度和社会制度都倒退。
+
+#共产主义者总是想要推进社会改革，却从不支持政治改革，甚至还会取消这种改革。
+
+#法西斯主义者反对一切政治和社会改革，除非他们当政，一旦当政，则会推行社会改革但将政治改革倒退。
+
+#无政府主义者相信政府与自由不相容，他们试图推翻现有政府，他们拒绝任何改革。
+
+
+
+#########################
+#政治協商會議 943005
+#########################
+event = {
+	id = 943005
+	random = no
+	country = CHI
+	trigger = { 
+		flag = Marshell
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+
+	name = "政治協商會議"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+    date = { day = 9 month = january year = 1946 }
+    offset = 1
+    deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "召開" #
+       command = { type = relation which = CHC value = 10 } 
+       command = { type = dissent value = -3 }
+       command = { type = trigger which = 943006 }
+	}
+}
+event = {
+	id = 943006
+	random = no
+	country = CHC
+
+	name = "政治協商會議"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+
+	action_a = {
+		name = "召開" #
+       command = { type = relation which = CHI value = 10 } 
+       command = { type = dissent value = -3 }
+	}
+}
+event = { # 
+	id = 943007
+	country = CHI
+
+	trigger = { 
+		random = 50
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "政府組織決議案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "通過"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = relation which = CHC value = 10 }
+		command = { type = setflag which = Government_passed }
+	}
+	
+	action_b = {
+		name = "反對"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = relation which = USA value = -100 } 		
+		command = { type = dissent value = 25 } #
+		command = { type = setflag which = negotiatio_fail }
+	}
+}
+event = { # 
+	id = 943008
+	country = CHI
+
+	trigger = { 
+		random = 50
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "國民大會決議案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "通過"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = relation which = CHC value = 10 }
+		command = { type = setflag which = National_Assembly_passed }
+	}
+	
+	action_b = {
+		name = "反對"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = relation which = USA value = -100 } 		
+		command = { type = dissent value = 25 } #
+		command = { type = setflag which = negotiatio_fail }
+	}
+}
+event = { # 
+	id = 943009
+	country = CHI
+
+	trigger = { 
+		random = 50
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "施政綱領決議案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "通過"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = relation which = CHC value = 10 }
+		command = { type = setflag which = Policy_passed }
+	}
+	
+	action_b = {
+		name = "反對"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = relation which = USA value = -100 } 		
+		command = { type = dissent value = 25 } #
+		command = { type = setflag which = negotiatio_fail }
+	}
+}
+event = { # 
+	id = 943010
+	country = CHI
+
+	trigger = { 
+		random = 50
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "憲法草案決議案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "通過"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = relation which = CHC value = 10 }
+		command = { type = setflag which = Constitution_passed }
+	}
+	
+	action_b = {
+		name = "反對"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = relation which = USA value = -100 } 		
+		command = { type = dissent value = 25 } #
+		command = { type = setflag which = negotiatio_fail }
+	}
+}
+event = { # 
+	id = 943011
+	country = CHI
+#	random = yes
+	trigger = { 
+		random = 50
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "軍事問題決議案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "通過"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = relation which = CHC value = 10 }
+		command = { type = setflag which = Military_passed }
+	}
+	
+	action_b = {
+		name = "反對"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = relation which = CHC value = -100 }
+		command = { type = relation which = USA value = -100 } 		
+		command = { type = dissent value = 25 } #
+		command = { type = setflag which = negotiatio_fail }
+	}
+}
+
+event = {
+	id = 943012
+	random = no
+	country = CHI
+	trigger = { 
+		flag = Military_passed
+		flag = National_Assembly_passed
+		flag = Government_passed
+		flag = Policy_passed
+		flag = Constitution_passed
+		event = 943005
+		NOT = { war = { country = CHI country = CHC } }
+		}
+
+	name = "政治協商會議閉幕"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+
+    date = { day = 29 month = january year = 1946 }
+    offset = 1
+    deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "國共和平出現曙光" #
+       command = { type = relation which = CHC value = 10 } 
+       command = { type = dissent value = -3 }
+       command = { type = trigger which = 943013 }
+	   command = { type = sleepevent which = 943014 }
+	}
+}
+event = {
+	id = 943013
+	random = no
+	country = CHC
+
+	name = "政治協商會議閉幕"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+
+	action_a = {
+		name = "國共和平出現曙光" #
+       command = { type = relation which = CHI value = 10 } 
+       command = { type = dissent value = -3 }
+	}
+}
+
+event = {
+	id = 943014
+	random = no
+	country = CHI
+	trigger = { 
+#		random = 50
+#		NOT = { 
+#			OR = { 	flag = Military_passed
+#					flag = National_Assembly_passed
+#					flag = Government_passed
+#					flag = Policy_passed
+#					flag = Constitution_passed
+#					}
+#				}
+		flag = negotiatio_fail
+		event = 943005
+		NOT = { war = { country = CHI country = CHC } }
+		}
+
+	name = "政治協商會議破局"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+    date = { day = 1 month = february year = 1946 }
+    offset = 5
+    deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "談判破裂" #
+       command = { type = relation which = CHC value = -20 } 
+       command = { type = dissent value = 10 }
+       command = { type = trigger which = 943015 }
+	   command = { type = sleepevent which = 943012 }
+	}
+}
+event = {
+	id = 943015
+	random = no
+	country = CHC
+
+	name = "政治協商會議破局"
+	desc = "。"
+	style = 0
+#   picture = "China_CW"
+
+	action_a = {
+		name = "談判破裂" #
+       command = { type = relation which = CHI value = -20 } 
+       command = { type = dissent value = 10 }
+	}
+}
+#########################
+#決議執行-政府組織 943007
+#########################
+event = { # 
+	id = 943999
+	country = CHI
+	trigger = { 
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "決議執行-政府組織"
+	desc = EVT_8002942_DESC
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+#	date = { day = 0 month = january year = 1945 }
+#	offset = 15
+#	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "改革"
+		ai_chance = 80
+#		command = { type = local_setflag which = reforming }
+		command = { type = dissent value = 10 } #既得利益者反對
+		command = { type = money value = -1000 }
+		command = { type = industrial_modifier which = total value = 2 }
+		command = { type = setflag which = CHI_adm_reform }
+		command = { type = trigger which = 8002947 value = 120 }
+	}
+	
+	action_b = {
+		name = "維持現有的制度"
+		ai_chance = 20
+		command = { type = money value = 10 }
+	}
+}
+#########################
+#決議執行-施政綱領 943xxx
+#########################
+
+#########################
+#決議執行-軍事問題 943xxx
+#########################
+
+#########################
+#決議執行-國民大會 943xxx
+#########################
+event = { # 
+	id = 943998
+	country = CHI
+	trigger = { 
+		event = 943006
+		flag = China_negotiation
+		event = 941126
+		NOT = { war = { country = CHI country = CHC } }
+		}
+	name = "制憲國民大會"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = may year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "開始討論"
+		ai_chance = 99
+		command = { type = dissent value = -1 } #
+		command = { type = setflag which = National_Assembly_reform }
+	}
+	
+	action_b = {
+		name = "維持現有的制度"
+		ai_chance = 1
+		command = { type = money value = 10 }
+		command = { type = dissent value = 10 } #
+	}
+}
+#########################
+#決議執行-憲法草案- 943xxx
+#########################
+

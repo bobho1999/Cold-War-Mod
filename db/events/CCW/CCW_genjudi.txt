@@ -1,0 +1,232 @@
+#########################################################################
+# 根據地   
+#########################################################################
+event = {
+	id = 60444
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 1377 data = -1 }  
+		NOT = { flag = CHC_won_CW }
+       		day = 29   
+   }
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+#	date = { day = 1 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 1377  } #通化					
+	}
+}
+event = {
+	id = 60454
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2822 data = -1 } 
+		NOT = { flag = CHC_won_CW }
+       		day = 29           
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+#	date = { day = 1 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2822  } #五台山						
+	}
+}
+event = {
+	id = 60464
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 3768 data = -1 }  
+       		day = 29 
+		         
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+	date = { day = 1 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 3768 } #五指山(瓊崖根據地)
+		command = { type = oilpool value = 100 where = 3768 }
+		command = { type = construct which = land_fort where = 3768 value = 10 }
+		command = { type = disorg_division which = 11571 value = 190 where = -1000 }
+		command = { type = damage_division which = 11571 value = 190 where = -100 }						
+	}
+}
+
+event = {
+	id = 60484
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 1397 data = -1 }    
+		NOT = { flag = CHC_won_CW }
+       		day = 29       
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+	date = { day = 1 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 1397 } #承德(冀熱察根據地)	
+		command = { type = oilpool value = 250 where = 1397 } #承德(冀熱察根據地)					
+	}
+}
+event = {
+	id = 60494
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2994 data = -1 }  
+		NOT = { flag = CHC_won_CW }
+       		day = 29          
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+#	date = { day = 1 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2994 } #南宮(冀南根據地)						
+	}
+}
+event = {
+	id = 60495
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2831 data = -1 }   
+		NOT = { flag = CHC_won_CW }
+       		day = 29        
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+#	date = { day = 1 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2831 } #遼縣(太行山根據地)						
+	}
+}
+event = {
+	id = 60496
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2619 data = -1 }     
+		NOT = { flag = CHC_won_CW }
+       		day = 29        
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+	date = { day = 1 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2619 } #淮安(蘇中根據地)						
+	}
+}
+event = {
+	id = 60434
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2926 data = -1 }      
+		NOT = { flag = CHC_won_CW }
+       		day = 29       
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+#	date = { day = 1 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2926 } #北安						
+	}
+}
+
+event = {
+	id = 60435
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2654 data = -1 }   
+		NOT = { flag = CHC_won_CW }
+       		day = 29          
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+	date = { day = 1 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2654 } #黃岡						
+	}
+}
+
+event = {
+	id = 60436
+	random = no
+	country = chc
+	persistent = yes
+    	trigger = {
+       		control = { province = 2648 data = -1 }    
+		NOT = { flag = CHC_won_CW }
+       		day = 29         
+   	}
+	name = "根据地的自力更生 "
+	desc = "抗日战争期间，大量的共产党游击队活跃于敌后，建立了各种各 样的敌后根据地。他们的补给大多来自战利品或是伏击日伪军运 输队，此外根据地群众也提供了大量的补给和帮助。 "
+	picture = "genjudi"
+	style = 0
+	date = { day = 1 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	action_a = {
+		name = "中国共产党万岁！ "
+		command = { type = supplies value = 500 where = 2648 } #大別山	
+		command = { type = oilpool value = 250 where = 2648 }					
+	}
+}

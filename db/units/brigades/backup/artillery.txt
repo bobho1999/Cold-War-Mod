@@ -1,0 +1,180 @@
+land_unit_type = 1
+# 0 - 一战炮兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 1
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 1 - 轻型炮兵营 
+model = {
+	cost 				= 3
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 3
+	hardattack			= 1
+	supplyconsumption 	= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - 早期炮兵营 
+model = {
+	cost 				= 4
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 5
+	hardattack			= 1
+	supplyconsumption 	= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - 基本炮兵营 
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 6
+	hardattack			= 2
+	supplyconsumption 	= 1.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - 改良炮兵营 
+model = {
+	cost 				= 6
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 10
+	supplyconsumption 	= 2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - 先进炮兵营 
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 12
+	supplyconsumption 	= 2.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 6 - 准现代炮兵营 
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 14
+	supplyconsumption 	= 2.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 7 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 8 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 9 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 10 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 11 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 12 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 13 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 14 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 15 - 现代炮兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	softattack			= 16
+	supplyconsumption 	= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

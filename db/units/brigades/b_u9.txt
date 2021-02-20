@@ -1,0 +1,214 @@
+land_unit_type = 1
+# 0 - 进口集团军重炮群 
+model = {
+	cost 				= 9
+	buildtime	 		= 240
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 5
+	toughness 			= 6
+	softness			= -7
+	airdefence				= 2
+	softattack			= 8
+	hardattack			= 4
+	airattack			= 2
+	artillery_bombardment		= 19
+	supplyconsumption 	= 1.75
+	fuelconsumption		= 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 18型集团军重炮群 
+model = {
+	cost 				= 14
+	buildtime	 		= 240
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 4
+	toughness 			= 5
+	softness			= -7
+	airdefence				= 2
+	softattack			= 8
+	hardattack			= 4
+	airattack			= 2
+	artillery_bombardment		= 17
+	supplyconsumption 	= 1.65
+	fuelconsumption		= 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 36型集团军重炮群 
+model = {
+	cost 				= 16
+	buildtime	 		= 240
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 6
+	toughness 			= 7
+	softness			= -9
+	airdefence				= 2.5
+	softattack			= 9
+	hardattack			= 5
+	airattack			= 2.5
+	artillery_bombardment		= 19
+	supplyconsumption 	= 1.85
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 40型集团军重炮群 
+model = {
+	cost 				= 16
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 9
+	toughness 			= 10
+	softness			= -11
+	airdefence				= 3
+	softattack			= 10
+	hardattack			= 6
+	airattack			= 3
+	artillery_bombardment		= 21
+	supplyconsumption 	= 2.06
+	fuelconsumption		= 0.35
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 45型集团军重炮群 
+model = {
+	cost 				= 18
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 12
+	toughness 			= 14
+	softness			= -12
+	airdefence				= 3.5
+	softattack			= 11
+	hardattack			= 7
+	airattack			= 3.5
+	artillery_bombardment		= 22
+	supplyconsumption 	= 2.23
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 50型集团军重炮群 
+model = {
+	cost 				= 18
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 15
+	toughness 			= 18
+	softness			= -13
+	airdefence				= 4
+	softattack			= 12
+	hardattack			= 8
+	airattack			= 4
+	artillery_bombardment		= 24
+	supplyconsumption 	= 2.45
+	fuelconsumption		= 0.45
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 60型集团军重炮群 
+model = {
+	cost 				= 21
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 18
+	toughness 			= 22
+	softness			= -14
+	airdefence				= 4.5
+	softattack			= 13
+	hardattack			= 9
+	airattack			= 4.5
+	artillery_bombardment		= 26
+	supplyconsumption 	= 2.67
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 70型集团军重炮群 
+model = {
+	cost 				= 21
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 21
+	toughness 			= 26
+	softness			= -15
+	airdefence				= 5
+	softattack			= 14
+	hardattack			= 10
+	airattack			= 5
+	artillery_bombardment		= 28
+	supplyconsumption 	= 2.86
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 80型集团军重炮群 
+model = {
+	cost 				= 24
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 24
+	toughness 			= 30
+	softness			= -15
+	airdefence				= 5.5
+	softattack			= 15
+	hardattack			= 11
+	airattack			= 5.5
+	artillery_bombardment		= 30
+	supplyconsumption 	= 3.08
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 - 90型集团军重炮群 
+model = {
+	cost 				= 24
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	defensiveness 		= 27
+	toughness 			= 34
+	softness			= -16
+	airdefence				= 7
+	softattack			= 16
+	hardattack			= 12
+	airattack			= 7
+	artillery_bombardment		= 32
+	supplyconsumption 	= 3.2
+	fuelconsumption		= 0.55
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 10 -  
+model = {
+	cost 				= 30
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	morale					= 8
+	softattack			= 27
+	artillery_bombardment		= 16
+	supplyconsumption 	= 10.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

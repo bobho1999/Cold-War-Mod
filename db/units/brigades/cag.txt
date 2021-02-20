@@ -1,0 +1,232 @@
+naval_unit_type = 1
+# 0 - 18年型舰载机中队 
+model = {
+	cost 				= 7.5
+	buildtime			= 150
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 4
+	subdetectioncapability		= 2
+	airdefence			= 6
+	seaattack			= 6
+	convoyattack			= 4
+	subattack			= 2
+	airattack			= 6
+	shorebombardment		= 0
+	distance			= 1.1
+	supplyconsumption 		= 0.75
+	fuelconsumption			= 1.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - 36年型舰载机中队 
+model = {
+	cost 				= 9
+	buildtime			= 180
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 6
+	subdetectioncapability		= 3
+	airdefence			= 9
+	seaattack			= 8
+	convoyattack			= 6
+	subattack			= 3
+	airattack			= 10
+	shorebombardment		= 0
+	distance			= 1.2
+	supplyconsumption 		= 0.95
+	fuelconsumption			= 1.15
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - 40年型舰载机中队 
+model = {
+	cost 				= 10
+	buildtime			= 190
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 8
+	subdetectioncapability		= 4
+	airdefence			= 12
+	seaattack			= 10
+	convoyattack			= 8
+	subattack			= 4
+	airattack			= 14
+	shorebombardment		= 0
+	distance			= 1.4
+	supplyconsumption 		= 1.15
+	fuelconsumption			= 1.25
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - 44年型舰载机中队 
+model = {
+	cost 				= 11
+	buildtime			= 200
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 10
+	subdetectioncapability		= 5
+	airdefence			= 15
+	seaattack			= 12
+	convoyattack			= 10
+	subattack			= 5
+	airattack			= 18
+	shorebombardment		= 0
+	distance			= 1.6
+	supplyconsumption 		= 1.35
+	fuelconsumption			= 1.4
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - 噴氣式舰载机中队 
+model = {
+	cost 				= 13.5
+	buildtime			= 210
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 12
+	subdetectioncapability		= 6
+	airdefence			= 20
+	seaattack			= 14
+	convoyattack			= 12
+	subattack			= 6
+	airattack			= 22
+	shorebombardment		= 0
+	distance			= 2
+	supplyconsumption 		= 2.5
+	fuelconsumption			= 2
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 5 - 第二代舰载机中队 
+model = {
+	cost 				= 15
+	buildtime			= 220
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 23
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 2.4
+	supplyconsumption 		= 2.8
+	fuelconsumption			= 2.3
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 6 - 第三代舰载机中队 
+model = {
+	cost 				= 17
+	buildtime			= 230
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 26
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 2.8
+	supplyconsumption 		= 3.1
+	fuelconsumption			= 2.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 7 - 改良第三代舰载机中队 
+model = {
+	cost 				= 18.5
+	buildtime			= 230
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 28
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 3
+	supplyconsumption 		= 3.25
+	fuelconsumption			= 2.75
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 8 - 第四代舰载机中队 
+model = {
+	cost 				= 20
+	buildtime			= 240
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 31
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 3.3
+	supplyconsumption 		= 3.4
+	fuelconsumption			= 2.9
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 9 - 改良第四代舰载机中队 
+model = {
+	cost 				= 22
+	buildtime			= 240
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 33
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 3.3
+	supplyconsumption 		= 3.7
+	fuelconsumption			= 3.2
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 10 - 先進第四代舰载机中队 
+model = {
+	cost 				= 25
+	buildtime			= 240
+	defaultorganisation 	= 10
+	manpower 			= 1
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 36
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 3.6
+	supplyconsumption 		= 4.1
+	fuelconsumption			= 3.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}

@@ -1,0 +1,18 @@
+# Soviet Second Year war with Germany AI File by Lothos
+# 不发生冬季反攻下的第二年战线设置(civdemof)
+
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 		= even
+
+	enemy_reinf_days		= 3
+	reserve_prop		= 0.2
+	panic_ratio_vs_ai	= 1.75
+	panic_ratio_vs_human	= 1.1
+	base_attack_odds	= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+}

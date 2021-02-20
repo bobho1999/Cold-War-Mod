@@ -1,0 +1,390 @@
+######################################################
+# 蒋介石复任总统
+######################################################
+event = { 
+   id = 941222
+   country = CHI
+   random = no
+   
+   trigger = {
+       event = 941220  
+   }
+   
+   name = "蒋介石复任总统 "
+   desc = "在败退台湾之后，国民党上下一片混乱，从未设想过的情况竟然成 真，台湾岛内士气极度低落，因而蒋介石的复出收拾局面成了众望 所归。 "
+   style = 0
+   
+   date = { day = 1 month = january year = 1938 }
+   offset = 10
+   deathdate = { day = 10 month = october year = 1955 }
+   #	picture = "furenzongtong"
+
+   	action_a = { 
+       		name = "这次复出意义重大 "
+       		command = { type = domestic which = defense_lobby  value = 1 }
+       		command = { type = domestic which = freedom value = -1 }
+       		command = { type = set_domestic which = democratic value = 3 }
+       		command = { type = headofstate which = 52022 }
+#		command = { type = trigger which = 941223 value = 30 }
+#		command = { type = money value = 4500 }
+		command = { type = dissent value = -10 }
+   }        
+ 
+}
+#############################################
+###### 国民党的土地改革 # 
+#############################################
+event = {
+	id = 941223
+        random = no
+        country = CHI
+
+	name = "国民党的土地改革 "
+	desc = "
+1951年1月31日，蒋介石手令陈诚，从速办理土地改革。 陈诚根据蒋 介石的手令，开始了大规模的公地放领，即把“国有”及“省有”耕 地的所有权转移为农民所有，使他们成为在自己土地上耕作的自 耕农。这实际上是“政府”先给地主作个表率，以求在一定范围内 实现“耕者有其田”。该法案的主旨，是在于承认地主土地私有权的 前提下，利用政权强行分离土地的所有权和使用权，以保障佃农利 益。 这一措施，大大激发了农村生产力发展。佃农们不再过度使用 耕地，而是热心于加强田间管理和短期水利建设，收入随之有了 较大的改善。。 "
+	style = 0
+	#	picture = "cancuncaifu"
+
+
+    action_a = {
+    name = "这是三民主义的重要一步 "
+		command = { type = dissent value = -25 }
+		command = { type = industrial_modifier which = total value = 70 }
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -1000 }
+
+  }
+}
+######################################################
+##台湾戒严	
+######################################################
+event = { 
+   id = 941293
+   country = CHI
+   random = no
+   
+   trigger = {
+       event = 941220
+   }
+
+   	name = " 台湾戒严令 "
+   	desc = "中华民国政府在中国大陆的统治情势持续恶化，1949年7月7日 
+		代理总统李宗仁发布第二次全国戒严令。国民政府于1949年 
+		，（民国38年）12月迁抵台北市，而中国大陆大部分领土则 
+		被中国共产党控制，两岸开始进入长期对峙状态，此戒严令 
+		开始成为中华民国政府在台湾稳固统治的重要法律，并等同 
+		宣布台湾处于如战争般的紧急状态。"
+   style = 0
+   date = { day = 1 month = march year = 1945 }
+   offset = 30
+   deathdate = { day = 30 month = december year = 1955 }
+
+   action_a = { 
+       name = "戒严"
+       		command = { type = surprise which = land value = 10 }		
+		command = { type = intelligence which = us value = 30 }
+		command = { type = dissent value = 5 }
+		command = { type = change_partisan_activity which = 1323 value = -50 }
+		command = { type = change_partisan_activity which = 1322 value = -50 }
+		command = { type = change_partisan_activity which = 1324 value = -50 }
+		command = { type = change_partisan_activity which = 2990 value = -50 }
+		command = { type = change_partisan_activity which = 2991 value = -50 }
+		command = { type = change_partisan_activity which = 2995 value = -50 }
+		command = { type = change_partisan_activity which = 2605 value = -50 }
+   }
+   
+}
+#############################################
+###### 蔡孝乾被捕 # 
+#############################################
+event = {
+	id = 63004
+        random = no
+        country = CHI
+
+	trigger = { event = 63002 }
+
+	name = "蔡孝乾被捕 "
+	desc = "蔡孝乾是中共台湾省工作委员会书记，1950年1月29日他在台湾被 捕，旋即背叛中共，向我们透露了潜藏在台湾内部的中共特务名单 ，令人震惊的是国防部参谋次长吴石中将竟然名列第一位!。 "
+	style = 0
+#	picture = "caixiaoqian"
+
+  	date = { day = 1 month = january year = 1950 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1990 }
+
+  	action_a = {
+    		name = "清剿这群共产党特务！ "
+                command = { type = change_policy which = freedom value = -1 }
+  	}
+}
+
+#############################################
+###### 国民党的清共行动 # 
+#############################################
+event = {
+	id = 63005
+        random = no
+        country = CHI
+
+	trigger = { event = 63004 }
+
+	name = "国民党的清共行动 "
+	desc = "在得到蔡孝乾的重要情报之后，我们的情报部门根据名单逮捕了 几乎全部共匪潜藏分子，并予以严肃处理，大约有400多名潜藏分 子被捕兵在马场町枪决。 "
+	style = 0
+#	picture = "qinggongxingdong"
+
+  	date = { day = 1 month = february year = 1950 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1990 }
+
+  	action_a = {
+    		name = "很好！就这么干 "
+                command = { type = change_policy which = political_left value = -1 }
+
+  	}
+}
+
+#############################################
+###### 处决吴石 朱谌之 # 
+#############################################
+event = {
+	id = 63006
+        random = no
+        country = CHI
+
+	trigger = { event = 63005 }
+
+	name = "处决吴石 朱谌之 "
+	desc = "1950年3月1日，政府下令以“为中共从事间谍活动”罪名逮捕吴石 将军，并在其寓所搜出他亲笔签发给朱谌之前往舟山的特别通行 证的有关书面材料。这样，不但摸清了失踪多日的朱谌之去向，也 为吴石的“叛逆”最后定了罪。不久，朱谌之便被国民党军警从舟山 抓回台湾。并于1950年4月8日执行了死刑。 "
+	style = 0
+#	picture = "wushizhisi"
+
+  	date = { day = 1 month = march year = 1950 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1990 }
+
+  	action_a = {
+    		name = "这是情报系统的巨大胜利！ "
+                command = { type = intelligence which = us value = 5 }
+
+  	}
+}
+event = {
+	id = 69107002
+	country = chi
+	random = no
+
+ 	trigger = {  
+ 		OR = {
+			headofstate = 52141
+			headofstate = 52022
+		}
+# 		NOT = { dissent = 10 }
+ 		event = 941220
+#		event = 29107011
+	} 
+
+  
+	name = "蒋介石的反思 "
+	desc = "69107002desc"
+	style = 0
+#	picture = "chiang_crying"
+
+   
+  	date = { day = 15 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "全面的检讨 "
+		ai_chance = 95 		
+#		command = {  type = dissent value = 15 }
+		command = { type = setflag which = quanmian }
+           	}  
+   	 action_b = {
+		name = "部分的检讨 "
+		ai_chance = 5
+#		command = {  type = dissent value = 5 }
+		command = { type = setflag which = bufeng }
+           	}        	       	
+}
+event = {
+	id = 69107006
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		NOT = { dissent = 5 } 
+  		random = 40  
+	} 
+  
+	name = "政权不稳 "
+	desc = "在迁台之后我们还未建立起稳固的政权 "
+	style = 2
+#	picture = "chiang_address"
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "可恶 "
+		command = { type = dissent value = 3 }
+	}         	
+}
+
+event = {
+	id = 69107012
+	country = chi
+	random = no
+
+ 	trigger = { 
+ 		or = { 	flag = quanmian 
+        		flag = bufeng 
+        	} 
+		NOT = { dissent = 3 }     
+	} 
+
+  
+	name = "恢复军政工作 "
+	desc = "鉴于在中国大陆戡乱失败、将领倒戈、国军遭中共间谍渗透，认为原因 之一是废除政工造成军队失去中心思想；蒋中正遂将政工 组织交由蒋经国重新规划，以建立监军系统。"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "确定 "
+		command = { type = dissent value = 5 }
+		command = { type = max_organization which = land value = 5 } 
+    		command = { type = max_organization which = air value = 5 }
+    		command = { type = max_organization which = naval value = 5 } 
+    		command = { type = morale which = land value = 10 } 
+    		command = { type = morale which = naval value = 10 }
+    		command = { type = morale which = air value = 10 }
+	}         	
+}
+event = {
+	id = 69107008
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		flag = quanmian  
+  		NOT = { dissent = 3 }     
+	} 
+
+  
+	name = "三民主义改革 "
+	desc = "在总统对我们存在的问题作出反思后，我们认为需要进一步落实三民主义"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "研究具体方案 "
+		command = { type = money value = -5 }
+		command = { type = setflag which = fa }
+	}         	
+}
+event = {
+	id = 69107009
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		flag = fa 
+  		random = 20     
+	} 
+  
+	name = "民族主义改革方案起草完毕 "
+	desc = "我们要实现民族的独立于解放，需要加强我们的军事建设"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "很好 "
+		command = { type = dissent value = -1 }
+ 	}         	
+}
+event = {
+	id = 69107010
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		flag = fa 
+  		random = 20     
+	} 
+  
+	name = "民权主义改革方案起草完毕 "
+	desc = "孙文采取三权，确认为不好，自己再加上考试、监察两权，成五 权，更重要的是，孙文不采取西方“性恶论”的思想，却采取“性善 论”，让五权分工合作，造就一个万能政府 "
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "很好 "
+		command = { type = dissent value = -1 }
+	}         	
+}
+event = {
+	id = 69107011
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		flag = fa 
+  		random = 20     
+	} 
+  
+	name = "民生主义改革方案起草完毕 "
+	desc = "孙中山的民生主义思想，本具有浓烈的社会主义色彩，例如他在 民生主义第二讲便提到“...民生主义究竟是什么东西呢？民生 主义就是共产主义，就是社会主义。"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "很好 "
+		command = { type = dissent value = -1 }
+   	}         	
+}
+event = {
+	id = 69107013
+	country = chi
+	random = no
+
+ 	trigger = { 
+  		flag = quanmian  
+  		NOT = { dissent = 3 }     
+	} 
+
+  
+	name = "军事改革 "
+	desc = "军队内部派系林立，我们必须加以整合"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "整军 "
+		command = { type = max_organization which = land value = 10 } 
+    		command = { type = max_organization which = air value = 10 }
+    		command = { type = max_organization which = naval value = 10 } 
+#    		command = { type = sleepleader which = -1 }
+
+           	}         	
+}

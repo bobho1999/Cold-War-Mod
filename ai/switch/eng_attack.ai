@@ -1,0 +1,292 @@
+# England goes on the attack 1936 AI File by Lothos
+
+neutrality = 80.000 
+war = 0
+strat_redeploy_threshold = 30
+exp_force_ratio = 0.0
+exp_force_ratios = { } 
+no_exp_forces_to = { }
+
+###################################
+# Diplomacy
+###################################
+combat = { 
+    ita = 120
+    ger = 80
+     }
+     
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 100
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 0	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 30	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		BEL = -1
+		HOL = -1
+		LUX = -1
+		GER = 100
+		SPA = -1
+		SPR = -1
+		ITA = 50
+		ETH = -1
+		SCH = -1
+		FRA = -1
+		CAN = -1
+		AST = -1
+		NZL = -1
+		POR = -1
+		CYN = -1
+		TUR = -1
+		SIK = -1
+		TIB = -1
+		AFG = -1
+		PER = -1
+		SAU = -1
+	}
+	ignore = {
+		#Actual Beaches to Ignore
+		1801 # Sharm el-Sheikh
+		406  # Eilat
+		1799 # Gaza
+		1141 # Tanga
+		1800 # El-Arish
+		1140 # Dar es Salaam
+
+		#Libya
+		918   #Forte Maddalens
+		926   #Al Jaghbun
+		927   #Aujila
+		1017  #Calanslo
+		1018  #Kufra
+		1016  #Murzuk
+		1015  #Ghat
+		931   #Ghadames
+		928   #Sorno
+		
+		#Egypt/East Africa
+		1020  #Siwa
+		1019  #Great Sand Sea
+		907   #Qattara
+		1021  #AinDalla
+		1022  #Western Desert
+		1067  #El Atiun
+		1068  #El Obeid
+		1069  #Waw
+		1065  #Malakal
+		1032  #Omdurman
+		1041  #Gallabal
+		1040  #Kassala
+		1059  #Marsabit
+
+		#Ethiopia
+		1039  #Asmara
+		1048  #Adwa
+		1042  #Gonder
+		1044  #Debre
+		1045  #Gambela
+		1047  #Jima
+		1053  #Moyale
+		1049  #Denakil
+		1043  #Dese
+		1050  #Diredawa
+		1054  #Ogaden
+		1055  #Bardera
+
+		#Belgian Congo
+		1071  #Stanleyville
+		1072  #Buta
+		1073  #Costermanville
+		1074  #Coquihatville
+		1144  #Abertville
+		1143  #Kindu-Port-Empain
+		1142  #Leopoldville
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+ 	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 15	# How far should the staging area be from the target invasion point
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 2.0	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+    naval_base 			= 0.1 
+    air_support 		= 3.0 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= yes	#[yes/no]
+      
+	staging_province = {
+		13 # Sheiffield
+		23 # Plymouth
+		31 # Malta
+		939 # Tunis
+		348 # Gibraltar
+		396 # Crete
+		534 # Sardinia
+	}
+	target = {
+		# Italy
+		526 = 1500 # Catania
+		525 = 1500 # Palermo
+		534 = 1500 # Sardinia
+		523 = 1300 # Taranto
+		521 = 1300 # Naples
+		520 = 1300 # Foggia
+		513 = 1000 # Florence
+		514 = 1000 # Rimini
+
+		# Greece
+		396 = 1400 # Crete
+		394 = 1200 # Patras
+		393 = 1200 # Kefalonia
+		401 = 1200 # Athens
+		400 = 900 # The Cyclades
+		405 = 900 # The Dardanelles
+		411 = 900 # Salonika
+		410 = 900 # Kavala
+
+		# Yugoslavia/Albania
+		390 = 500 # Podgorica
+		388 = 500 # Dubrovnik
+		384 = 400 # Split
+
+		# Turkey
+		298 = 900 # Dodecanese
+		399 = 900 # Rhodes
+		444 = 900 # Cyprus
+		
+
+		#Spain/Portugal
+		331 = 3000 # Bilbao
+		332 = 3000 # Oviedo
+		336 = 3000 # Lissabon
+		345 = 3000 # Faro
+		346 = 3000 # Huelva
+		347 = 3000 # Seville
+		352 = 2750 # Wurcia
+		354 = 2750 # Valencia
+		356 = 2750 # Tarragona
+		357 = 2750 # Barcelona
+
+		# Moroco
+		958 = 3000 # Casablanca
+		954 = 2750 # Welilla
+
+		# Algiers
+		953 = 2750 # Oran
+		949 = 2750 # Algiers
+
+		# Tunisia
+		940 = 2750 # Bizerte
+		939 = 2750 # Tunis
+		938 = 2750 # Sousse
+
+		# Libya
+		933 = 2500 # Zuara
+		932 = 2500 # Tripoli
+		924 = 2500 # Benghazi
+		919 = 2500 # Tobruk
+
+		# Egypt
+		910 = 3000 # Fuka
+		909 = 3000 # El Alamein
+		906 = 3000 # Alexandria
+		901 = 3000 # Port Said
+		900 = 3000 # Suez
+
+		# Middle East touching the Med
+		1800 = 5500 # el Arish
+		1799 = 5500 # Gaza
+		1798 = 5450 # Tel Aviv
+		404 = 5450  # Haifa
+		1794 = 5300 # Beirut
+		1793 = 5300 # Tripoli
+		1862 = 5100 # Aleppo
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		43  = -1 # Dunquerque
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax	
+	}
+}

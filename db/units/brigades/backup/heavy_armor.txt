@@ -1,0 +1,113 @@
+land_unit_type = 1
+# 0 - Import Heavy Tank
+model = {
+	cost 				= 15
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -18
+	hardattack			= 6
+	softattack			= 6
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 1.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.5
+	max_supply_stock = 54
+	max_oil_stock = 54
+}
+# 1 - Basic Heavy Tank
+model = {
+	cost 				= 15
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -18
+	hardattack			= 6
+	softattack			= 6
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 1.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 54
+	max_oil_stock = 54
+}
+# 2 - Improved Heavy Tank
+model = {
+	cost 				= 18
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -22
+	hardattack			= 7
+	softattack			= 7
+	supplyconsumption 	= 2.1
+	fuelconsumption		= 2.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 63
+	max_oil_stock = 66
+}
+# 3 - Advanced Heavy Tank
+model = {
+	cost 				= 21
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -26
+	hardattack			= 8
+	softattack			= 8
+	supplyconsumption 	= 2.4
+	fuelconsumption		= 2.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 72
+	max_oil_stock = 78
+}
+# 4 - Semi-Modern Heavy Tank
+model = {
+	cost 				= 24
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -30
+	hardattack			= 9
+	softattack			= 9
+	supplyconsumption 	= 2.7
+	fuelconsumption		= 3.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 81
+	max_oil_stock = 90
+}
+# 5 - Modern Heavy Tank
+model = {
+	cost 				= 27
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -34
+	hardattack			= 10
+	softattack			= 10
+	supplyconsumption 	= 3.0
+	fuelconsumption		= 3.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 90
+	max_oil_stock = 102
+}
+# 6 - Cold War Heavy Tank
+model = {
+	cost 				= 30
+	buildtime	 		= 240
+	manpower 			= 3
+	maxspeed 			= -2
+        softness            = -38
+	hardattack			= 11
+	softattack			= 11
+	supplyconsumption 	= 3.3
+	fuelconsumption		= 3.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 99
+	max_oil_stock = 114
+}

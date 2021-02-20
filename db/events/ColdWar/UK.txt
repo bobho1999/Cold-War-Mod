@@ -1,0 +1,388 @@
+event = {
+  	id = 5910000
+  	random = no
+	country = ENG
+  
+  	name = "戰後經濟 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+
+ 	}
+
+  
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "滿目瘡痍"
+    		command = { type = dissent value = 10 }
+    		command = { type = industrial_modifier which = supplies value = -25 }  
+    		command = { type = industrial_modifier which = total value = -25 }
+  	}
+}
+
+event = {
+  	id = 5910001
+  	random = no
+	country = ENG
+  
+  	name = "紐芬蘭加入加拿大聯邦 " 
+  	desc = "1948年，紐芬蘭公投，決定加入加拿大聯邦。1949年3月31日子夜，紐芬蘭正式成為加拿大的第十個，亦是最後加入的省份。 "
+    	style = 0
+ 
+	trigger = { 
+		exists = CAN
+		OR = {
+			control = { province = 575 data = ENG } #
+			control = { province = 576 data = ENG } # 
+			control = { province = 3980 data = ENG } # 
+		}
+ 	}
+
+  
+  	date = { day = 30 month = march year = 1949 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "移交主權 "
+    		command = { type = relation which = CAN value = 50 }
+    		command = { type = secedeprovince which = CAN value = 575 } #
+    		command = { type = secedeprovince which = CAN value = 576 } #
+    		command = { type = secedeprovince which = CAN value = 3980 } #
+		command = { type = trigger which 5910002 }
+  	}
+}
+
+event = {
+  	id = 5910002
+  	random = no
+	country = CAN
+  
+  	name = "紐芬蘭加入加拿大聯邦 " 
+  	desc = "1948年，紐芬蘭公投，決定加入加拿大聯邦。1949年3月31日子夜，紐芬蘭正式成為加拿大的第十個，亦是最後加入的省份。 "
+    	style = 0
+  
+  	action_a = {
+    		name = "移交主權 "
+    		command = { type = relation which = CAN value = 50 }
+    		command = { type = secedeprovince which = CAN value = 575 } #
+    		command = { type = secedeprovince which = CAN value = 576 } #
+    		command = { type = secedeprovince which = CAN value = 3980 } #
+		command = { type = trigger which 5910002 }
+  	}
+}
+### King George VI passes away
+
+event = {
+	id = 5910003 #403
+	random = no
+	country = ENG
+	style = 0
+	
+	trigger = {
+		headofstate = 1033
+		#random = 95
+		}
+
+	date = { day = 6 month = february year = 1952 }
+	offset = 1 
+	deathdate = { day = 7 month = february year = 1952 }
+
+	name = "EVT_403_NAME"
+	desc = "EVT_403_DESC"
+	picture = "minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = headofstate which = 1182 } # Queen Elisabeth II
+		command = { type = sleepminister which = 1033 }
+		}
+	}
+
+############################################################################
+### 
+############################################################################
+event = {
+	id = 5910004
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 1 month = february year = 1950 }
+	offset = 2
+	deathdate = { day = 1 month = march year = 1950 }
+
+
+	action_a = {
+		ai_chance = 0
+		name = "ELECT_UK_1A"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1033 }
+		command = { type = headofgovernment which = 1038 }
+		command = { type = foreignminister which = 1003 }
+		command = { type = armamentminister which = 1186 }
+		command = { type = ministerofsecurity which = 1085 }
+		command = { type = ministerofintelligence which = 1105 }
+		}
+	action_b = {
+		ai_chance = 100
+		name = "ELECT_UK_1B"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 1189 }
+		command = { type = headofgovernment which = 1040 }
+		command = { type = foreignminister which = 1048 }
+		command = { type = armamentminister which = 1066 }
+		command = { type = ministerofsecurity which = 1089 }
+		command = { type = ministerofintelligence which = 1105 }
+		}
+#	action_c = {
+#		ai_chance = 10
+#		name = "KEEPCURRENT"
+#		command = { type = dissent value = -1 }
+#		}
+	}
+
+event = {
+	id = 900086
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 1 month = october year = 1951 }
+	offset = 2
+	deathdate = { day = 1 month = november year = 1951 }
+
+
+	action_a = {
+		ai_chance = 100
+		name = "ELECT_UK_1A"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1033 }
+		command = { type = headofgovernment which = 1038 }
+		command = { type = foreignminister which = 1003 }
+		command = { type = armamentminister which = 1186 }
+		command = { type = ministerofsecurity which = 1085 }
+		command = { type = ministerofintelligence which = 1105 }
+		}
+	action_b = {
+		ai_chance = 0
+		name = "ELECT_UK_1B"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 1189 }
+		command = { type = headofgovernment which = 1040 }
+		command = { type = foreignminister which = 1048 }
+		command = { type = armamentminister which = 1066 }
+		command = { type = ministerofsecurity which = 1089 }
+		command = { type = ministerofintelligence which = 1105 }
+		}
+#	action_c = {
+#		ai_chance = 10
+#		name = "KEEPCURRENT"
+#		command = { type = dissent value = -1 }
+#		}
+	}
+
+event = {
+	id = 600010
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 1 month = april year = 1955 }
+	offset = 2
+	deathdate = { day = 2 month = april year = 1955 }
+
+
+	action_a = {
+		ai_chance = 100
+		name = "ELECT_UK_1A"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1182 }
+		command = { type = headofgovernment which = 1191 }
+		command = { type = foreignminister which = 1196 }
+		command = { type = armamentminister which = 1205 }
+		command = { type = ministerofsecurity which = 1212 }
+		command = { type = ministerofintelligence which = 1217 }
+		}
+	action_b = {
+		ai_chance = 0
+		name = "ELECT_UK_1B"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 1190 }
+		command = { type = headofgovernment which = 1040 }
+		command = { type = foreignminister which = 1199 }
+		command = { type = armamentminister which = 1185 }
+		command = { type = ministerofsecurity which = 1162 }
+		command = { type = ministerofintelligence which = 1222 }
+		}
+#	action_c = {
+#		ai_chance = 10
+#		name = "KEEPCURRENT"
+#		command = { type = dissent value = -1 }
+#		}
+	}
+
+
+event = {
+	id = 600011
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		headofgovernment = 1191 # Anthony Eden in office
+		random = 85
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "EVT_600011_NAME" # needs text - Eden resigns from office
+	desc = "EVT_600011_DESC"
+
+	date = { day = 9 month = january year = 1957 }
+	offset = 2
+	deathdate = { day = 10 month = january year = 1957 }
+
+
+	action_a = {
+		ai_chance = 100
+		name = "OK"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1182 }
+		command = { type = headofgovernment which = 1192 }
+		command = { type = foreignminister which = 1046 }
+		command = { type = armamentminister which = 1207 }
+		command = { type = ministerofsecurity which = 1213 }
+		command = { type = ministerofintelligence which = 1218 }
+		}
+	}
+
+
+event = {
+	id = 600012
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 1 month = october year = 1959 }
+	offset = 2
+	deathdate = { day = 2 month = october year = 1959 }
+
+
+	action_a = {
+		ai_chance = 100
+		name = "ELECT_UK_1A"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1182 }
+		command = { type = headofgovernment which = 1192 }
+		command = { type = foreignminister which = 1046 }
+		command = { type = armamentminister which = 1208 }
+		command = { type = ministerofsecurity which = 1213 }
+		command = { type = ministerofintelligence which = 1219 }
+		}
+	action_b = {
+		ai_chance = 0
+		name = "ELECT_UK_1B"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 1190 }
+		command = { type = headofgovernment which = 1194 }
+		command = { type = foreignminister which = 1201 }
+		command = { type = armamentminister which = 1210 }
+		command = { type = ministerofsecurity which = 1215 }
+		command = { type = ministerofintelligence which = 1222 }
+		}
+	action_c = {
+		ai_chance = 10
+		name = "KEEPCURRENT"
+		command = { type = dissent value = -1 }
+		}
+	}
+
+
+event = {
+	id = 600013
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		government = democratic
+		headofgovernment = 1192 # Harold MacMillan in office
+		random = 85
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "EVT_600013_NAME" # needs text - Harold MacMillan resigns
+	desc = "EVT_600013_DESC"
+
+	date = { day = 9 month = october year = 1963 }
+	offset = 2
+	deathdate = { day = 10 month = october year = 1963 }
+
+
+	action_a = {
+		ai_chance = 100
+		name = "OK"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 1182 }
+		command = { type = headofgovernment which = 1193 }
+		command = { type = foreignminister which = 1198 }
+		command = { type = armamentminister which = 1209 }
+		command = { type = ministerofsecurity which = 1214 }
+		command = { type = ministerofintelligence which = 1221 }
+		}
+	}

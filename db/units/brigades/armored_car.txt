@@ -1,0 +1,205 @@
+land_unit_type = 1
+# 0 - 一战裝甲車加強营 
+model = {
+	cost 				= 1.5
+	buildtime	 		= 80
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -2
+	supplyconsumption 	= 0.1
+	fuelconsumption		= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 1 - 27年型裝甲車加強营 
+model = {
+	cost 				= 2
+	buildtime	 		= 90
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -4
+	supplyconsumption 	= 0.27
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 36年型裝甲車加強营 
+model = {
+	cost 				= 2.5
+	buildtime	 		= 95
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -6
+	supplyconsumption 	= 0.35
+	fuelconsumption		= 0.24
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 40年型裝甲車加強营 
+model = {
+	cost 				= 3
+	buildtime	 		= 100
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -8
+	supplyconsumption 	= 0.39
+	fuelconsumption		= 0.26
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 45年型裝甲車加強营 
+model = {
+	cost 				= 3.5
+	buildtime	 		= 100
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -10
+	supplyconsumption 	= 0.42
+	fuelconsumption		= 0.26
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 51年型裝甲車加強营 
+model = {
+	cost 				= 4
+	buildtime	 		= 105
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -12
+	supplyconsumption 	= 0.45
+	fuelconsumption		= 0.28
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 56年型裝甲車加強营 
+model = {
+	cost 				= 4.5
+	buildtime	 		= 105
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -14
+	supplyconsumption 	= 0.48
+	fuelconsumption		= 0.28
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 61年型裝甲車加強营 
+model = {
+	cost 				= 5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.51
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 65年型裝甲車加強营 
+model = {
+	cost 				= 5.5
+	buildtime	 		= 110
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.54
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 - 70年型裝甲車加強营 
+model = {
+	cost 				= 6
+	buildtime	 		= 115
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.57
+	fuelconsumption		= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 10 - 75年型裝甲車加強营 
+model = {
+	cost 				= 7
+	buildtime	 		= 115
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.61
+	fuelconsumption		= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 11 - 80年型裝甲車加強营 
+model = {
+	cost 				= 8
+	buildtime	 		= 115
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.64
+	fuelconsumption		= 0.34
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 12 - 85年型裝甲車加強营 
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.67
+	fuelconsumption		= 0.34
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 13 - 90年型裝甲車加強营 
+model = {
+	cost 				= 10
+	buildtime	 		= 120
+	manpower 			= 2
+	defaultorganisation = 5
+	morale					= 3
+	softness			= -16
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 0.36
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 14 - 华西精锐团 
+model = {
+	cost 				= 999
+	buildtime	 		= 999
+	manpower 			= 50
+	maxspeed 			= 5
+	defaultorganisation = 20
+	morale					= 20
+	defensiveness 		= 20
+	toughness 			= -20
+	softness			= -20
+	suppression			= 5
+	airdefence				= 10
+	softattack			= -10
+	hardattack			= -10
+	airattack			= -10
+	artillery_bombardment		= 10
+	supplyconsumption 	= 10
+	fuelconsumption		= 10
+	upgrade_time_factor = 50
+	upgrade_cost_factor = 50
+}

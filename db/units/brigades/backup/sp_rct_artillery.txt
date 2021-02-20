@@ -1,0 +1,91 @@
+land_unit_type = 1
+# 0 - Import
+model = {
+	cost 				= 18
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -6
+	softattack			= 12
+	artillery_bombardment		= 4
+	supplyconsumption 	= 3.6
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 108
+	max_oil_stock = 18
+}
+# 1 - Basic
+model = {
+	cost 				= 18
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -6
+	softattack			= 12
+	artillery_bombardment		= 4
+	supplyconsumption 	= 3.6
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+	max_supply_stock = 108
+	max_oil_stock = 18
+}
+# 2 - Improved
+model = {
+	cost 				= 21
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -8
+	softattack			= 15
+	artillery_bombardment		= 5
+	supplyconsumption 	= 4.5
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+	max_supply_stock = 135
+	max_oil_stock = 24
+}
+# 3 - Advanced
+model = {
+	cost 				= 24
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -10
+	softattack			= 18
+	artillery_bombardment		= 6
+	supplyconsumption 	= 5.4
+	fuelconsumption		= 1.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+	max_supply_stock = 162
+	max_oil_stock = 30
+}
+# 4 - Modern
+model = {
+	cost 				= 27
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -12
+	softattack			= 21
+	artillery_bombardment		= 7
+	supplyconsumption 	= 6.3
+	fuelconsumption		= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+	max_supply_stock = 189
+	max_oil_stock = 36
+}
+# 5 - Cold-War
+model = {
+	cost 				= 30
+	buildtime	 		= 240
+	manpower 			= 2
+	softness			= -14
+	softattack			= 24
+	artillery_bombardment		= 8
+	supplyconsumption 	= 7.2
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.8
+	max_supply_stock = 216
+	max_oil_stock = 42
+}

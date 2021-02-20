@@ -1,0 +1,135 @@
+land_unit_type = 1
+# 0 - 进口坦克歼击车营 
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 2
+	morale					= 3
+	softness			= -6
+	hardattack			= 8
+	supplyconsumption 	= 0.3
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 40型坦克歼击车营 
+model = {
+	cost 				= 6
+	buildtime	 		= 90
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 1
+	toughness 			= 2
+	softness			= -10
+	hardattack			= 8
+	supplyconsumption 	= 0.3
+	fuelconsumption		= 0.52
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 45型坦克歼击车营 
+model = {
+	cost 				= 7.5
+	buildtime	 		= 90
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 2
+	toughness 			= 3
+	softness			= -11
+	hardattack			= 10
+	supplyconsumption 	= 0.34
+	fuelconsumption		= 0.54
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 50型坦克歼击车营 
+model = {
+	cost 				= 9
+	buildtime	 		= 95
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 3
+	toughness 			= 4
+	softness			= -12
+	hardattack			= 12
+	supplyconsumption 	= 0.38
+	fuelconsumption		= 0.56
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 60型坦克歼击车营 
+model = {
+	cost 				= 10
+	buildtime	 		= 95
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 6
+	toughness 			= 4
+	softness			= -13
+	softattack			= 1
+	hardattack			= 13
+	supplyconsumption 	= 0.42
+	fuelconsumption		= 0.58
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 70型坦克歼击车营 
+model = {
+	cost 				= 11
+	buildtime	 		= 100
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 8
+	toughness 			= 6
+	softness			= -14
+	softattack			= 1
+	hardattack			= 14
+	supplyconsumption 	= 0.46
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 80型坦克歼击车营 
+model = {
+	cost 				= 12
+	buildtime	 		= 105
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 10
+	toughness 			= 8
+	softness			= -15
+	softattack			= 1
+	hardattack			= 15
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.62
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 90型坦克歼击车营 
+model = {
+	cost 				= 13
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 12
+	toughness 			= 10
+	softness			= -16
+	softattack			= 2
+	hardattack			= 16
+	supplyconsumption 	= 0.54
+	fuelconsumption		= 0.64
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 -  
+model = {
+	cost 				= 15
+	buildtime	 		= 150
+	manpower 			= 2
+	morale					= 3
+	softness			= -18
+	hardattack			= 16
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

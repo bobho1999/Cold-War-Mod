@@ -1,0 +1,116 @@
+air_unit_type = 1
+# 0 - Early Anti-Ship Missile
+model = {
+	cost 					= 5
+	buildtime	 			= 10
+	defaultorganisation 		= 0
+	morale					= 0
+	manpower				= 1
+	maxspeed				= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence				= 0
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 10
+	range					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - Basic Anti-Ship Missile
+model = {
+	cost 					= 6
+	buildtime	 			= 10
+	defaultorganisation 		= 0
+	morale					= 0
+	manpower				= 1
+	maxspeed				= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence				= 0
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 18
+	range					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - Improved Anti-Ship Missile
+model = {
+	cost 					= 7
+	buildtime	 			= 10
+	defaultorganisation 		= 0
+	morale					= 0
+	manpower				= 1
+	maxspeed				= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence				= 0
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 23
+	range					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - Advanced Anti-Ship Missile
+model = {
+	cost 					= 8
+	buildtime	 			= 10
+	defaultorganisation 		= 0
+	morale					= 0
+	manpower				= 1
+	maxspeed				= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence				= 0
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 27
+	range					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - Modern Anti-Ship Missile
+model = {
+	cost 					= 9
+	buildtime	 			= 10
+	defaultorganisation 		= 0
+	morale					= 0
+	manpower				= 1
+	maxspeed				= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	surfacedefence				= 0
+	airdefence				= 0
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 0
+	hardattack				= 0
+	navalattack				= 35
+	range					= 0
+	supplyconsumption 			= 0.1
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}

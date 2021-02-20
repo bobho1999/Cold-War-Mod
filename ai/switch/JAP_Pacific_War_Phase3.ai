@@ -1,0 +1,127 @@
+# Japan AI prepares to invade the Dutch East Indies and Malaysia
+# by Radu
+
+construction = { }
+
+invasion = {
+
+	staging_province = {
+		1337 # Saigon
+		1737 # Manila
+		1613 # Truk
+	}
+
+	target = {
+		# Philippines take the back seat
+		1741 = 3 # Aparri
+		1740 = 3 # Lingay
+		1737 = 3 # Manila
+		1742 = 3 # Lamon
+		1743 = 3 # Legaspi
+		1744 = 3 # Samar
+		1745 = 3 # Leyte
+		1749 = 3 # Cagayan
+		1750 = 3 # Davao
+		1748 = 3 # Zamboanga
+		1747 = 3 # Negros
+		1746 = 3 # Panay
+		1736 = 3 # Mindoro
+		1735 = 3 # Palawan
+
+		# Malaysia & Singapore
+		1349 = 100 # Alor Star
+		1350 = 100 # Kota Bahru
+		1352 = 100 # Kuala Lumpur
+		1351 = 100 # Kuantan
+		1353 = 100 # Singapore
+
+		# Dutch East Indies
+		1359 = 100 # Oosthaven
+		1358 = 100 # Palembang
+		1356 = 100 # Dumai
+		1355 = 100 # Medan
+		1357 = 100 # Padang
+
+		1628 = 100 # Batavia
+		1632 = 100 # Sorebaja
+		1630 = 100 # Semarang
+		1629 = 100 # Tijilatjap
+		1631 = 100 # Djokjakarta
+		1633 = 100 # Malang
+		1634 = 100 # Madura
+
+		1653 = 100 # Menado
+		1651 = 100 # Palu
+		1640 = 100 # Makassar
+		1652 = 100 # Kendari
+
+		1644 = 100 # Kuching
+		1642 = 100 # Pontianak
+		1641 = 100 # Bandjermasin
+		1650 = 100 # Balikapan
+		1649 = 100 # Samarinda
+		1648 = 100 # Tarakan
+
+		# Dutch New Guinea
+		1665 = 100 # Hollandia
+	}
+}
+
+admiral = {
+
+	target = {
+		# Philippines
+		2257 = 0 # Lingayen Gulf
+		2256 = 0 # Manila Bay
+		2159 = 0 # Palawan Passage
+		2160 = 0 # West Celebes Sea
+		2251 = 0 # Davao Gulf
+		2255 = 0 # Leyte Gulf
+		2260 = 0 # Oras Gulf
+		2259 = 0 # San Bernadino Strait
+		2258 = 0 # Lamon Bay
+		2261 = 0 # Divilancan Bay
+		2252 = 0 # Panay Gulf
+		2254 = 0 # Sibuyan Sea
+		2253 = 0 # Surigao Strait
+
+		# Malaysia and Indonesia
+		2153 = 100 # Brunei Bay
+		2145 = 100 # Searasan Strait
+		2143 = 100 # Cape Awarawar
+		2141 = 100 # Madura Strait
+		2161 = 100 # Makassar Strait
+		2166 = 100 # East Celebes Sea
+		2162 = 100 # North Molucca Sea
+		2163 = 100 # Central Molucca Sea
+		2139 = 100 # South Molucca Sea
+		2140 = 100 # Sape Strait
+		2142 = 100 # Bali Strait
+		2081 = 100 # East Java Trench
+		2077 = 100 # Sunda Strait
+		2075 = 100 # Mentawi Strait
+		2074 = 100 # Tapanuli Gulf
+		2073 = 100 # North Malacca Strait
+		2147 = 100 # South Malacca Strait
+		2146 = 100 # Bangka Strait
+		2144 = 100 # Gaspar Strait
+		2150 = 100 # West Gulf of Siam
+	}
+
+	core = {
+		2257 # Lingayen Gulf
+		2256 # Manila Bay
+		2159 # Palawan Passage
+		2160 # West Celebes Sea
+		2251 # Davao Gulf
+		2255 # Leyte Gulf
+		2260 # Oras Gulf
+		2259 # San Bernadino Strait
+		2258 # Lamon Bay
+		2261 # Davilancan Bay
+		2252 # Panay Gulf
+		2254 # Sibuyan Sea
+		2253 # Surigao Strait
+	}
+}
+

@@ -1,0 +1,142 @@
+######################################################
+##控制日本
+######################################################
+event = { 
+   id = 941198
+   country = USA
+   random = no
+   trigger = {    
+	NOT = { puppet = { country = JAP country = USA } }
+  	} 
+   persistent = yes
+   date = { day = 1 month = january year = 1945 }
+   offset = 30
+  deathdate = { day = 30 month = december year = 1952 }
+
+   name = "控制日本"
+   desc="日本是反共的桥头堡"
+   style = 0
+   
+   
+   #	picture = "korea_independent"
+
+   action_a = {  
+       name = "ok"
+		command = { type = access which = JAP } 
+		command = { type = make_puppet which = JAP }
+   }
+}
+
+#############################################
+#戰後日本经济
+#############################################
+event = {
+  id = 3917096
+  random = no
+  country = jap
+  
+  name = "戰後的日本經濟 " 
+  desc = "1945年的玉音放送宣告了大东亚圣战的全灭式 结局，随后美国的占领与战争中留下的一片废 墟，绝望与不安笼罩着这个国家。 "
+  style = 2
+#  picture = "jap_ec"
+  
+  trigger = {
+  	OR = {
+    		puppet = { country = JAP country = USA }
+    		event = 7840009
+  	}	 
+  } 
+  date = { day = 1 month = january year = 1945 }
+  offset = 15
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "确定 "
+	command = { type = peacetime_ic_mod value = -10 }
+#	command = { type = repair_mod value = -80 }
+    	command = { type = dissent value = 10 }
+    	command = { type = free_ic value = -40 }
+    	command = { type = free_money value = -40 }
+	command = { type = industrial_modifier which = total value = -40 }
+    	command = { type = trigger which = 3917097 value = 365 }  
+  }
+}
+event = {
+  id = 3917097
+  random = no
+  country = jap
+  
+  name = "战后的日本(I) " 
+  desc = "我国经济在日渐好转。 "
+  style = 2
+#  picture = "jap_ec"
+  
+  action_a = {
+    name = "确定 "
+    	command = { type = dissent value = -1 }
+    	command = { type = free_ic value = 10 } 
+    	command = { type = free_money value = 10 }
+	command = { type = industrial_modifier which = total value = 10 }
+    	command = { type = trigger which = 3917098 value = 365 }
+  }
+}
+event = {
+  id = 3917098
+  random = no
+  country = jap
+  
+  name = "战后的日本(II) " 
+  desc = "我国经济在日渐好转。 "
+  style = 2
+#  picture = "jap_ec"
+  
+  action_a = {
+    name = "确定 "
+    command = { type = dissent value = -1 }
+    command = { type = free_ic value = 10 } 
+    	command = { type = free_money value = 10 }
+	command = { type = industrial_modifier which = total value = 10 }
+    	command = { type = trigger which = 3917099 value = 365 }
+  }
+}
+event = {
+  id = 3917099
+  random = no
+  country = jap
+  
+  name = "战后的日本(III) " 
+  desc = "我国经济在日渐好转。 "
+  style = 2
+#  picture = "jap_ec"
+  
+  action_a = {
+    	name = "确定 "
+    	command = { type = dissent value = -1 }
+    	command = { type = free_ic value = 10 } 
+    	command = { type = free_money value = 10 }
+	command = { type = industrial_modifier which = total value = 10 }
+    	command = { type = trigger which = 3917100 value = 365 }
+  }
+}
+event = {
+  id = 3917100
+  random = no
+  country = jap
+  
+  name = "战后的日本(IV) " 
+  desc = "我国经济在日渐好转。 "
+  style = 2
+#  picture = "jap_ec"
+  
+  action_a = {
+    name = "确定 "
+    command = { type = dissent value = -1 }
+    command = { type = free_ic value = 10 } 
+    	command = { type = free_money value = 10 }
+	command = { type = industrial_modifier which = total value = 10 }
+  }
+}
+
+######################################################
+#日本经济复苏
+######################################################

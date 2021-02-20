@@ -1,0 +1,114 @@
+naval_unit_type = 1
+# 0 - 18年型辅助舰侦察机 
+model = {
+	cost 				= 1
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 2
+	visibility					= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 1
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.25
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - 36年型辅助舰侦察机 
+model = {
+	cost 				= 1.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 2
+	subdetectioncapability		= 4
+	visibility					= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 2
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - 40年型辅助舰侦察机 
+model = {
+	cost 				= 2
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 3
+	subdetectioncapability		= 6
+	visibility					= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 3
+	subattack			= 3
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.45
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - 44年型辅助舰侦察机 
+model = {
+	cost 				= 2.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 4
+	subdetectioncapability		= 8
+	visibility					= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 4
+	subattack			= 4
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.6
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - 48年型辅助舰侦察机 
+model = {
+	cost 				= 3
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 5
+	subdetectioncapability		= 10
+	visibility					= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 5
+	subattack			= 5
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.75
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 5 - 
+model = {
+	cost 				= 0
+}
+# 6 - 
+model = {
+	cost 				= 0
+}

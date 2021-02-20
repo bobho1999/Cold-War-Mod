@@ -1,0 +1,116 @@
+# Hungary 1936 AI File by Lothos
+
+neutrality = 80
+war = 5
+
+###################################
+# Diplomacy
+###################################
+claim_acceptance = -60
+
+combat = { }
+
+demand_claims = {
+	CZE
+	YUG
+	ROM
+	AUS
+}
+
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.050 
+
+	AA_batteries = atwar
+	max_AA_level = 4 
+	AA_provs = {
+		457 # Budapest
+		458 # Györ
+	} 
+	coastal_fort = no
+	max_coastal_level = 2
+	coastal_fort_provs = { } 
+
+	radar_station = no 
+	max_radar = 5 
+	radar_provs = { } 
+
+	air_base = no
+	max_air_base = 2
+	air_base_provs = { } 
+
+	naval_base = no
+	max_naval_base = 3 
+	naval_base_provs = { } 
+
+	land_fort = no
+	max_land_level = 2
+	fort_borders = { } 
+
+	ic_at_war = yes 
+	force_ic_until = 1935
+	ic_end_year = 1940
+	IC_provs = {
+		457 # Budapest
+	} 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier = 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		GER = -1
+		ITA = -1
+		AUS = -1
+		CZE = -1
+		ROM = 20
+		YUG = 50
+		BUL = 10
+		SOV = 10
+		SLO = -1
+		POL = 10
+	}
+	province_priorities = {	}
+	area_multiplier = { }
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+
+   	enemy_handicap = { } 
+   	passivity = { } 
+} 

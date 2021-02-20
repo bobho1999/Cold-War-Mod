@@ -1,0 +1,68 @@
+﻿# GER Reset homeland defense AI File by Civdemof
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+
+	home_multiplier 		= 1.0
+	overseas_multiplier 		= 0.5
+
+	beach			= 30
+	capital			= 20
+	war_zone_odds 		= 2.0
+
+	province_priorities = {
+		56 = 60 # Paris
+		44 = 60 # Lille
+		51 = 60 # Brussels
+		67 = 30 # Prague
+		72 = 30 # Metz
+		38 = 30 # Cherborg
+		37 = 30 # Avranches
+		323 = 30 # La Rochele
+		80 = 30 # Wilhelmshafen
+		87 = 30 # Bremen
+		79 = 30 # Groningen
+		453 = 60 # Belgrade
+		382 = 40
+		386 = 40
+		436 = 60
+		432 = 60
+		401 = 60 # Athens
+
+		#Norway
+		107 = 70 # Oslo
+		108 = 60 # Kristiansan
+		109 = 60 # Stavanger
+		110 = 60 # Bergen
+		125 = 70 # Narvik
+		117 = 60 # Alesund
+		118 = 60 # Trondheim
+		124 = 60 # Mo I Ran
+		
+		# Southern France
+		358 = 30
+		362 = 30
+		364 = 30
+		365 = 30
+		366 = 30
+	}
+	area_multiplier = {
+		#Norway
+		107 = 1.0 # Oslo
+		108 = 1.0 # Kristiansan
+		109 = 1.0 # Stavanger
+		110 = 1.0 # Bergen
+		125 = 1.0 # Narvik
+		117 = 1.0 # Alesund
+		118 = 1.0 # Trondheim
+		124 = 1.0 # Mo I Ran
+	}
+}
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+}

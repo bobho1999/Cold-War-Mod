@@ -1,0 +1,3581 @@
+technology =
+{ id          = 6
+  category    = land_doctrines
+  name        = TECH_LD_NAME # Localized name
+  desc        = TECH_LD_DESC # Localized description
+  # 近代军官团
+  application =
+  { id        = 66500
+    name      = TECH_APP_LD_170_NAME
+    desc      = TECH_APP_LD_170_DESC
+    position  = { x = 20 y = 13 }
+    year      = 1934
+    # 
+    component = { id = 6501 name = TECH_CMP_LD_170_1_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6502 name = TECH_CMP_LD_170_2_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6503 name = TECH_CMP_LD_170_3_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6504 name = TECH_CMP_LD_170_4_NAME type = individual_courage difficulty = 5 }
+    # 
+    component = { id = 6505 name = TECH_CMP_LD_170_5_NAME type = management difficulty = 5 }
+    required  = { 5180 }
+    effects =
+    { command = { type = max_organization which = land value = 3 }
+    }
+  }
+  # 近代训练法
+  application =
+  { id        = 66510
+    name      = TECH_APP_LD_171_NAME
+    desc      = TECH_APP_LD_171_DESC
+    position  = { x = 160 y = 13 }
+    year      = 1934
+    # 
+    component = { id = 6511 name = TECH_CMP_LD_171_1_NAME type = infantry_focus difficulty = 5 }
+    # 
+    component = { id = 6512 name = TECH_CMP_LD_171_2_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6513 name = TECH_CMP_LD_171_3_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6514 name = TECH_CMP_LD_171_4_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6515 name = TECH_CMP_LD_171_5_NAME type = training difficulty = 5 }
+    required  = { 5180 }
+    effects =
+    { command = { type = morale which = land value = 5 }
+    }
+  }
+  # 总参谋部制
+  application =
+  { id        = 66520
+    name      = TECH_APP_LD_172_NAME
+    desc      = TECH_APP_LD_172_DESC
+    position  = { x = 300 y = 13 }
+    year      = 1934
+    # 
+    component = { id = 66521 name = TECH_CMP_LD_172_1_NAME type = management difficulty = 5 }
+    # 
+    component = { id = 66522 name = TECH_CMP_LD_172_2_NAME type = centralized_execution difficulty = 5 }
+    # 
+    component = { id = 66523 name = TECH_CMP_LD_172_3_NAME type = large_unit_tactics difficulty = 5 }
+    # 
+    component = { id = 66524 name = TECH_CMP_LD_172_4_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 66525 name = TECH_CMP_LD_172_5_NAME type = technical_efficiency difficulty = 5 }
+    required  = { 5180 }
+    effects =
+    { command = { type = activate_unit_type which = hq }
+      command = { type = new_model which = hq value = 0 }
+      command = { type = assault value = 1 }
+      command = { type = counterattack value = 1 }
+    }
+  }
+  # 军令体系
+  application =
+  { id        = 66530
+    name      = TECH_APP_LD_173_NAME
+    desc      = TECH_APP_LD_173_DESC
+    position  = { x = 440 y = 13 }
+    year      = 1934
+    # 
+    component = { id = 6531 name = TECH_CMP_LD_173_1_NAME type = large_unit_tactics difficulty = 5 }
+    # 
+    component = { id = 6532 name = TECH_CMP_LD_173_2_NAME type = centralized_execution difficulty = 5 }
+    # 
+    component = { id = 6533 name = TECH_CMP_LD_173_3_NAME type = small_unit_tactics difficulty = 5 }
+    # 
+    component = { id = 6534 name = TECH_CMP_LD_173_4_NAME type = technical_efficiency difficulty = 5 }
+    # 
+    component = { id = 6535 name = TECH_CMP_LD_173_5_NAME type = management difficulty = 5 }
+    required  = { 5180 }
+    effects =
+    { command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 近代军队体系
+  application =
+  { id        = 66540
+    name      = TECH_APP_LD_174_NAME
+    desc      = TECH_APP_LD_174_DESC
+    position  = { x = 226 y = 34 }
+    year      = 1934
+    # 
+    component = { id = 6541 name = TECH_CMP_LD_174_1_NAME type = large_unit_tactics difficulty = 5 }
+    # 
+    component = { id = 6542 name = TECH_CMP_LD_174_2_NAME type = centralized_execution difficulty = 5 }
+    # 
+    component = { id = 6543 name = TECH_CMP_LD_174_3_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6544 name = TECH_CMP_LD_174_4_NAME type = training difficulty = 5 }
+    # 
+    component = { id = 6545 name = TECH_CMP_LD_174_5_NAME type = management difficulty = 5 double_time = yes }
+    required  = { 66500 66510 66520 66530 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = allow_dig_in }
+      command = { type = enable_task which = support_attack }
+      command = { type = enable_task which = support_defense }
+      command = { type = task_efficiency which = support_attack value = 0.2 }
+      command = { type = task_efficiency which = support_defense value = 0.2 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_ARMOR
+    position = { x = 240 y = 400 }
+  }
+  # 裝甲集群
+  application =
+  { id        = 6900
+    name      = TECH_APP_LD_90_NAME
+    position  = { x = 240 y = 415 }
+    year      = 1934
+    # 
+    component = { id = 6901 name = TECH_CMP_ARMOR_90_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 
+    component = { id = 6902 name = TECH_CMP_ARMOR_90_2_NAME type = maneuver_tactics difficulty = 5 }
+    # 
+    component = { id = 6903 name = TECH_CMP_ARMOR_90_3_NAME type = blitzkrieg_tactics difficulty = 5 }
+    # 
+    component = { id = 6904 name = TECH_CMP_ARMOR_90_4_NAME type = combined_arms_focus difficulty = 6 }
+    # 
+    component = { id = 6905 name = TECH_CMP_ARMOR_90_5_NAME type = combined_arms_focus difficulty = 6 }
+    required  = { 2010 }
+    or_required = { 6070 6130 6220 6310 6430 14170 }
+    effects =
+    { command = { type = activate_unit_type which = armor }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_MOBILITY
+    position = { x = 240 y = 55 }
+  }
+  # 重視機動性
+  application =
+  { id        = 6210
+    name      = TECH_APP_LD_21_NAME
+    position  = { x = 240 y = 70 }
+    year      = 1930
+    # 先进火力支援 
+    component = { id = 6211 name = TECH_CMP_LD_21_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 火力强攻 
+    component = { id = 6212 name = TECH_CMP_LD_21_2_NAME type = maneuver_tactics difficulty = 5 }
+    # 总参谋部计划 
+    component = { id = 6213 name = TECH_CMP_LD_21_3_NAME type = blitzkrieg_tactics difficulty = 5 }
+    # 进攻学说 
+    component = { id = 6214 name = TECH_CMP_LD_21_4_NAME type = training difficulty = 5 }
+    # 军官训练-桑德赫斯特军校模式 
+    component = { id = 6215 name = TECH_CMP_LD_21_5_NAME type = training difficulty = 5 }
+    required  = { 66540 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 10 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = deactivate which = 6390 }
+      command = { type = deactivate which = 6560 }
+      command = { type = deactivate which = 6570 }
+      command = { type = deactivate which = 6010 }
+    }
+  }
+  # 集团冲击理论 
+  application =
+  { id        = 6220
+    name      = TECH_APP_LD_22_NAME
+    position  = { x = 240 y = 85 }
+    year      = 1937
+    # 预定目标诸元 
+    component = { id = 6221 name = TECH_CMP_LD_22_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 集中进攻 
+    component = { id = 6222 name = TECH_CMP_LD_22_2_NAME type = small_unit_tactics difficulty = 5 }
+    # 战争计划表 
+    component = { id = 6223 name = TECH_CMP_LD_22_3_NAME type = decentralized_execution difficulty = 5 }
+    # 超前思想 
+    component = { id = 6224 name = TECH_CMP_LD_22_4_NAME type = blitzkrieg_tactics difficulty = 5 }
+    # 限制军士主动性 
+    component = { id = 6225 name = TECH_CMP_LD_22_5_NAME type = training difficulty = 6 }
+    required  = { 6210 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 4 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 1 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # 重點突破戰術
+  application =
+  { id        = 6250
+    name      = TECH_APP_LD_25_NAME
+    position  = { x = 240 y = 100 }
+    year      = 1937
+    # 多梯次火力支援 
+    component = { id = 6251 name = TECH_CMP_LD_25_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 先进火力覆盖 
+    component = { id = 6252 name = TECH_CMP_LD_25_2_NAME type = small_unit_tactics difficulty = 5 }
+    # 总参谋部计划 
+    component = { id = 6253 name = TECH_CMP_LD_25_3_NAME type = decentralized_execution difficulty = 5 }
+    # 特遣部队调度 
+    component = { id = 6254 name = TECH_CMP_LD_25_4_NAME type = blitzkrieg_tactics difficulty = 5 }
+    # 军官训练-伏龙芝军事学院模式 
+    component = { id = 6255 name = TECH_CMP_LD_25_5_NAME type = training difficulty = 6 }
+    required  = { 6220 }
+    effects =
+    { command = { type = muddy_attack which = light_armor value = 4 }
+      command = { type = desert_attack which = light_armor value = 1.25 }
+      command = { type = mountain_attack which = light_armor value = 3 }
+      command = { type = hill_attack which = light_armor value = 1 }
+      command = { type = forest_attack which = light_armor value = 4 }
+      command = { type = jungle_attack which = light_armor value = 1.25 }
+      command = { type = swamp_attack which = light_armor value = 2 }
+      command = { type = urban_attack which = light_armor value = 3.5 }
+      command = { type = fort_attack which = light_armor value = 6 }
+      command = { type = muddy_attack which = armor value = 4 }
+      command = { type = desert_attack which = armor value = 1.25 }
+      command = { type = mountain_attack which = armor value = 3 }
+      command = { type = hill_attack which = armor value = 1 }
+      command = { type = forest_attack which = armor value = 4 }
+      command = { type = jungle_attack which = armor value = 1.25 }
+      command = { type = swamp_attack which = armor value = 2 }
+      command = { type = urban_attack which = armor value = 3.5 }
+      command = { type = fort_attack which = armor value = 2 }
+      command = { type = supply_consumption which = light_armor value = 0.5 }
+      command = { type = build_cost which = light_armor when = on_upgrade where = relative value = 5 }
+      command = { type = build_cost which = armor when = on_upgrade where = relative value = 5 }
+      command = { type = supply_consumption which = armor value = 0.5 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 閃電戰
+  application =
+  { id        = 6260
+    name      = TECH_APP_LD_26_NAME
+    position  = { x = 240 y = 115 }
+    year      = 1938
+    # 集中纵深侦查 
+    component = { id = 6261 name = TECH_CMP_LD_26_1_NAME type = combined_arms_focus difficulty = 6 }
+    # 先进子单位标准操作 
+    component = { id = 6262 name = TECH_CMP_LD_26_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 地域侦查 
+    component = { id = 6263 name = TECH_CMP_LD_26_3_NAME type = decentralized_execution difficulty = 6 }
+    # 敌军集中瓦解 
+    component = { id = 6264 name = TECH_CMP_LD_26_4_NAME type = blitzkrieg_tactics difficulty = 6 }
+    # 独立单位 
+    component = { id = 6265 name = TECH_CMP_LD_26_5_NAME type = training difficulty = 7 }
+    required  = { 6250 }
+    effects =
+    { command = { type = morale which = land value = 3 }
+      command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 3 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 4 }
+      command = { type = jungle_attack which = mechanized value = 1.25 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 2 }
+      command = { type = supply_consumption which = mechanized value = 0.2 }
+      command = { type = build_cost which = mechanized when = on_upgrade where = relative value = 5 }
+      command = { type = soft_attack which = multi_role value = 1 }
+      command = { type = hard_attack which = multi_role value = 1 }
+      command = { type = soft_attack which = cas value = 1 }
+      command = { type = hard_attack which = cas value = 1 }
+      command = { type = supply_consumption which = multi_role value = 0.2 }
+      command = { type = build_cost which = multi_role when = on_upgrade where = relative value = 5 }
+      command = { type = supply_consumption which = cas value = 0.2 }
+      command = { type = build_cost which = cas when = on_upgrade where = relative value = 5 }
+      command = { type = breakthrough value = 4 }
+      command = { type = encirclement value = 4 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = task_efficiency which = airborne_assault value = 0.2 }
+    }
+  }
+  # 主動拖延
+  application =
+  { id        = 6230
+    name      = TECH_APP_LD_23_NAME
+    position  = { x = 240 y = 130 }
+    year      = 1939
+    # 炮兵划分 
+    component = { id = 6231 name = TECH_CMP_LD_23_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 多向炮击 
+    component = { id = 6232 name = TECH_CMP_LD_23_2_NAME type = small_unit_tactics difficulty = 5 }
+    # 先进参谋计划 
+    component = { id = 6233 name = TECH_CMP_LD_23_3_NAME type = decentralized_execution difficulty = 5 }
+    # 先进炮兵控制 
+    component = { id = 6234 name = TECH_CMP_LD_23_4_NAME type = maneuver_tactics difficulty = 5 }
+    # 战术单位-连 
+    component = { id = 6235 name = TECH_CMP_LD_23_5_NAME type = training difficulty = 5 }
+    required  = { 6220 }
+    effects =
+    { command = { type = max_organization which = land value = 7 }
+      command = { type = delay value = 4 }
+      command = { type = ambush value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = muddy_defense which = land value = 5 }
+      command = { type = desert_defense which = land value = 1.5 }
+      command = { type = mountain_defense which = land value = 4 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = forest_defense which = land value = 4.5 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = swamp_defense which = land value = 2.5 }
+      command = { type = urban_defense which = land value = 5 }
+    }
+  }
+  # 彈性防禦
+  application =
+  { id        = 6240
+    name      = TECH_APP_LD_24_NAME
+    position  = { x = 240 y = 145 }
+    year      = 1940
+    # 自推进支援原理 
+    component = { id = 6241 name = TECH_CMP_LD_24_1_NAME type = combined_arms_focus difficulty = 6 }
+    # 操作侦查战术 
+    component = { id = 6242 name = TECH_CMP_LD_24_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 下级配属 
+    component = { id = 6243 name = TECH_CMP_LD_24_3_NAME type = decentralized_execution difficulty = 6 }
+    # 自给自足战斗原理 
+    component = { id = 6244 name = TECH_CMP_LD_24_4_NAME type = maneuver_tactics difficulty = 6 }
+    # 步兵马上战斗战术 
+    component = { id = 6245 name = TECH_CMP_LD_24_5_NAME type = training difficulty = 6 }
+    required  = { 6230 }
+    effects =
+    { command = { type = muddy_defense which = land value = 5 }
+      command = { type = desert_defense which = land value = 1.5 }
+      command = { type = mountain_defense which = land value = 4 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = forest_defense which = land value = 4.5 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = swamp_defense which = land value = 2.5 }
+      command = { type = urban_defense which = land value = 5 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 戰鬥群
+  application =
+  { id        = 6270
+    name      = TECH_APP_LD_27_NAME
+    position  = { x = 240 y = 160 }
+    year      = 1941
+    # 渗透-突破-包围战术 
+    component = { id = 6271 name = TECH_CMP_LD_27_1_NAME type = combined_arms_focus difficulty = 6 }
+    # 先进空地火力支援 
+    component = { id = 6272 name = TECH_CMP_LD_27_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 战术单位-班 
+    component = { id = 6273 name = TECH_CMP_LD_27_3_NAME type = decentralized_execution difficulty = 6 }
+    # 伪装欺骗操作 
+    component = { id = 6274 name = TECH_CMP_LD_27_4_NAME type = blitzkrieg_tactics difficulty = 6 }
+    # 特种部队训练 
+    component = { id = 6275 name = TECH_CMP_LD_27_5_NAME type = maneuver_tactics difficulty = 7 }
+    required  = { 6260 6240 }
+    effects =
+    { command = { type = ambush value = 5 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.4 }
+    }
+  }
+  # 先鋒指揮部
+  application =
+  { id        = 6290
+    name      = TECH_APP_LD_29_NAME
+    position  = { x = 240 y = 175 }
+    year      = 1943
+    # 欺骗操作 
+    component = { id = 6291 name = TECH_CMP_LD_29_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 基洛夫理论 
+    component = { id = 6292 name = TECH_CMP_LD_29_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 机动指挥部布置 
+    component = { id = 6293 name = TECH_CMP_LD_29_3_NAME type = decentralized_execution difficulty = 7 }
+    # 反侦查 
+    component = { id = 6294 name = TECH_CMP_LD_29_4_NAME type = blitzkrieg_tactics difficulty = 7 }
+    # 坦克营编组 
+    component = { id = 6295 name = TECH_CMP_LD_29_5_NAME type = maneuver_tactics difficulty = 8 }
+    required  = { 6270 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = breakthrough value = 4 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 火力旅
+  application =
+  { id        = 6280
+    name      = TECH_APP_LD_28_NAME
+    position  = { x = 240 y = 190 }
+    year      = 1943
+    # 炮兵师 
+    component = { id = 6281 name = TECH_CMP_LD_28_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 宽正面进攻 
+    component = { id = 6282 name = TECH_CMP_LD_28_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 战术单位-营 
+    component = { id = 6283 name = TECH_CMP_LD_28_3_NAME type = decentralized_execution difficulty = 7 }
+    # 多样化特遣队调度 
+    component = { id = 6284 name = TECH_CMP_LD_28_4_NAME type = blitzkrieg_tactics difficulty = 7 }
+    # 阻止军士主动性 
+    component = { id = 6285 name = TECH_CMP_LD_28_5_NAME type = maneuver_tactics difficulty = 7 }
+    required  = { 6270 }
+    effects =
+    { command = { type = morale which = land value = 5 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = counterattack value = 4 }
+      command = { type = delay value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_MOBILITY_CW
+    position = { x = 240 y = 215 }
+  }
+  # 現代閃擊戰
+  application =
+  { id        = 14100
+    name      = TECH_APP_LD_110_NAME
+    position  = { x = 240 y = 231 }
+    year      = 1947
+    # 交叉火力 
+    component = { id = 14101 name = TECH_CMP_LD_10_3_NAME type = combined_arms_focus difficulty = 8 }
+    # 大单位反击 
+    component = { id = 14102 name = TECH_CMP_LD_37_3_NAME type = small_unit_tactics difficulty = 8 }
+    # 纵深侦查 
+    component = { id = 14103 name = TECH_CMP_LD_105_2_NAME type = decentralized_execution difficulty = 8 }
+    # 分散通讯 
+    component = { id = 14104 name = TECH_CMP_LD_105_3_NAME type = blitzkrieg_tactics difficulty = 8 }
+    # 基层党代表制度 
+    component = { id = 14105 name = TECH_CMP_LD_9_4_NAME type = maneuver_tactics difficulty = 9 }
+    required  = { 6290 }
+    effects =
+    { command = { type = max_organization which = land value = 3 }
+      command = { type = morale which = land value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = new_model which = hq value = 5 }
+      command = { type = scrap_model which = hq value = 4 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+    }
+  }
+  # 獵殺集團
+  application =
+  { id        = 6720
+    name      = TECH_APP_LD_142_NAME
+    position  = { x = 240 y = 246 }
+    year      = 1948
+    # 
+    component = { id = 6721 name = TECH_CMP_LD_142_1_NAME type = small_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 6722 name = TECH_CMP_LD_142_2_NAME type = small_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 6723 name = TECH_CMP_LD_142_3_NAME type = blitzkrieg_tactics difficulty = 15 double_time = yes }
+    # 
+    component = { id = 6724 name = TECH_CMP_LD_142_4_NAME type = vehicle_engineering difficulty = 15 }
+    # 
+    component = { id = 6725 name = TECH_CMP_LD_142_5_NAME type = training difficulty = 15 }
+    required  = { 14100 }
+    effects =
+    { command = { type = morale which = land value = 5 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = urban_attack which = land value = 4 }
+    }
+  }
+  # 現代先鋒軍
+  application =
+  { id        = 6740
+    name      = TECH_APP_LD_144_NAME
+    position  = { x = 240 y = 261 }
+    year      = 1953
+    # 
+    component = { id = 6741 name = TECH_CMP_LD_144_1_NAME type = combined_arms_focus difficulty = 15 }
+    # 
+    component = { id = 6742 name = TECH_CMP_LD_144_2_NAME type = industrial_engineering difficulty = 15 }
+    # 
+    component = { id = 6743 name = TECH_CMP_LD_144_3_NAME type = vehicle_engineering difficulty = 15 }
+    # 
+    component = { id = 6744 name = TECH_CMP_LD_144_4_NAME type = small_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 6745 name = TECH_CMP_LD_144_5_NAME type = training difficulty = 15 }
+    required  = { 6720 6730 }
+    effects =
+    { command = { type = night_move which = light_armor value = 10 }
+      command = { type = night_move which = armor value = 10 }
+      command = { type = night_move which = mechanized value = 10 }
+      command = { type = night_move which = motorized value = 10 }
+      command = { type = night_move which = cavalry value = 10 }
+      command = { type = night_move which = hq value = 10 }
+      command = { type = night_attack which = light_armor value = 10 }
+      command = { type = night_attack which = armor value = 10 }
+      command = { type = night_attack which = mechanized value = 10 }
+      command = { type = night_attack which = motorized value = 10 }
+      command = { type = night_attack which = cavalry value = 10 }
+      command = { type = night_defense which = light_armor value = 10 }
+      command = { type = night_defense which = armor value = 10 }
+      command = { type = night_defense which = mechanized value = 10 }
+      command = { type = night_defense which = motorized value = 10 }
+      command = { type = night_defense which = cavalry value = 10 }
+      command = { type = morale which = land value = 3 }
+      command = { type = max_organization which = land value = 3 }
+      command = { type = morale which = light_armor value = 2 }
+      command = { type = morale which = armor value = 2 }
+      command = { type = max_organization which = light_armor value = 2 }
+      command = { type = max_organization which = armor value = 2 }
+      command = { type = morale which = mechanized value = 2 }
+      command = { type = max_organization which = mechanized value = 2 }
+      command = { type = breakthrough value = 3 }
+      command = { type = encirclement value = 3 }
+      command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 3 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 4 }
+      command = { type = jungle_attack which = mechanized value = 1.25 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 2 }
+    }
+  }
+  # 現代夜襲戰
+  application =
+  { id        = 6730
+    name      = TECH_APP_LD_143_NAME
+    position  = { x = 15 y = 316 }
+    year      = 1950
+    # 
+    component = { id = 6731 name = TECH_CMP_LD_143_1_NAME type = infantry_focus difficulty = 8 }
+    # 
+    component = { id = 6732 name = TECH_CMP_LD_143_2_NAME type = electronics difficulty = 8 }
+    # 
+    component = { id = 6733 name = TECH_CMP_LD_143_3_NAME type = training difficulty = 8 }
+    # 
+    component = { id = 6734 name = TECH_CMP_LD_143_4_NAME type = small_unit_tactics difficulty = 8 }
+    # 
+    component = { id = 6735 name = TECH_CMP_LD_143_5_NAME type = industrial_engineering difficulty = 8 double_time = yes }
+    required  = { }
+    or_required = { 6790 6720 6490 6770 }
+    effects =
+    { command = { type = night_move which = land value = 25 }
+      command = { type = night_attack which = land value = 25 }
+      command = { type = night_defense which = land value = 25 }
+      command = { type = night_move which = air value = 15 }
+      command = { type = night_attack which = air value = 15 }
+      command = { type = night_defense which = air value = 15 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = ambush value = 2 }
+    }
+  }
+  # 雷神之錘
+  application =
+  { id        = 6810
+    name      = TECH_APP_LD_151_NAME
+    position  = { x = 240 y = 276 }
+    year      = 1955
+    # 
+    component = { id = 6811 name = TECH_CMP_LD_151_1_NAME type = maneuver_tactics difficulty = 16 }
+    # 
+    component = { id = 6812 name = TECH_CMP_LD_151_2_NAME type = piloting difficulty = 16 }
+    # 
+    component = { id = 6813 name = TECH_CMP_LD_151_3_NAME type = nuclear_engineering difficulty = 16 }
+    # 
+    component = { id = 6814 name = TECH_CMP_LD_151_4_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6815 name = TECH_CMP_LD_151_5_NAME type = blitzkrieg_tactics difficulty = 16 double_time = yes }
+    required  = { 6750 6740 }
+    effects =
+    { command = { type = nuke_damage value = 10 }
+      command = { type = max_organization which = land value = 2 }
+      command = { type = morale which = land value = 1 }
+      command = { type = breakthrough value = 15 }
+      command = { type = assault value = 15 }
+      command = { type = new_model which = hq value = 6 }
+      command = { type = scrap_model which = hq value = 5 }
+    }
+  }
+  # 空中騎兵師學說
+  application =
+  { id        = 6750
+    name      = TECH_APP_LD_145_NAME
+    position  = { x = 125 y = 316 }
+    year      = 1955
+    # 
+    component = { id = 6751 name = TECH_CMP_LD_145_1_NAME type = infantry_focus difficulty = 9 }
+    # 
+    component = { id = 6752 name = TECH_CMP_LD_145_2_NAME type = small_unit_tactics difficulty = 9 }
+    # 
+    component = { id = 6753 name = TECH_CMP_LD_145_3_NAME type = avionics difficulty = 9 }
+    # 
+    component = { id = 6754 name = TECH_CMP_LD_145_4_NAME type = airborne_training difficulty = 9 }
+    # 
+    component = { id = 6755 name = TECH_CMP_LD_145_5_NAME type = airborne_training difficulty = 9 double_time = yes }
+    required  = { }
+    or_required = { 6790 6720 6490 6770 }
+    effects =
+    { command = { type = jungle_attack which = land value = 5 }
+      command = { type = morale which = paratrooper value = 5 }
+      command = { type = max_organization which = paratrooper value = 5 }
+      command = { type = morale which = cavalry value = 5 }
+      command = { type = max_organization which = cavalry value = 5 }
+      command = { type = assault value = 2 }
+    }
+  }
+  # 重視特種部隊
+  application =
+  { id        = 6760
+    name      = TECH_APP_LD_146_NAME
+    position  = { x = 235 y = 316 }
+    year      = 1960
+    # 
+    component = { id = 6761 name = TECH_CMP_LD_146_1_NAME type = infantry_focus difficulty = 9 }
+    # 
+    component = { id = 6762 name = TECH_CMP_LD_146_2_NAME type = training difficulty = 9 double_time = yes }
+    # 
+    component = { id = 6763 name = TECH_CMP_LD_146_3_NAME type = marine_training difficulty = 9 }
+    # 
+    component = { id = 6764 name = TECH_CMP_LD_146_4_NAME type = mountain_training difficulty = 9 }
+    # 
+    component = { id = 6765 name = TECH_CMP_LD_146_5_NAME type = airborne_training difficulty = 9 }
+    required  = { }
+    or_required = { 6790 6720 6490 6770 }
+    effects =
+    { command = { type = intelligence which = us value = 15 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = ambush value = 5 }
+      command = { type = urban_attack which = land value = 10 }
+    }
+  }
+  # 快速反應
+  application =
+  { id        = 6820
+    name      = TECH_APP_LD_152_NAME
+    position  = { x = 240 y = 291 }
+    year      = 1963
+    # 
+    component = { id = 6821 name = TECH_CMP_LD_152_1_NAME type = small_unit_tactics difficulty = 16 }
+    # 
+    component = { id = 6822 name = TECH_CMP_LD_152_2_NAME type = decentralized_execution difficulty = 16 }
+    # 
+    component = { id = 6823 name = TECH_CMP_LD_152_3_NAME type = training difficulty = 16 double_time = yes }
+    # 
+    component = { id = 6824 name = TECH_CMP_LD_152_4_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6825 name = TECH_CMP_LD_152_5_NAME type = airborne_training difficulty = 16 }
+    required  = { 6810 6760 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = morale which = land value = 9 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = encirclement value = 10 }
+      command = { type = assault value = 5 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+    }
+  }
+  # Unified Axis Doctrine
+  application =
+  { id        = 6830
+    name      = TECH_APP_LD_153_NAME
+    position  = { x = 240 y = 340 }
+    year      = 1970
+    # 
+    component = { id = 6831 name = TECH_CMP_LD_153_1_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6832 name = TECH_CMP_LD_153_2_NAME type = maneuver_tactics difficulty = 16 double_time = yes }
+    # 
+    component = { id = 6833 name = TECH_CMP_LD_153_3_NAME type = management difficulty = 16 }
+    # 
+    component = { id = 6834 name = TECH_CMP_LD_153_4_NAME type = mathematics difficulty = 16 }
+    # 
+    component = { id = 6835 name = TECH_CMP_LD_153_5_NAME type = training difficulty = 16 }
+    required  = { 6820 }
+    effects =
+    { command = { type = max_organization which = land value = -2 }
+      command = { type = morale which = land value = 2.7 }
+      command = { type = tactical_withdrawal value = 1 }
+      command = { type = breakthrough value = 5 }
+      command = { type = encirclement value = 3 }
+      command = { type = assault value = 5 }
+      command = { type = new_model which = hq value = 8 }
+      command = { type = scrap_model which = hq value = 7 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_MANPOWER
+    position = { x = 125 y = 55 }
+  }
+  # 重視人力
+  application =
+  { id        = 6570
+    name      = TECH_APP_LD_127_NAME
+    position  = { x = 125 y = 70 }
+    year      = 1930
+    # 
+    component = { id = 6571 name = TECH_CMP_LD_127_1_NAME type = infantry_focus difficulty = 8 }
+    # 
+    component = { id = 6572 name = TECH_CMP_LD_127_2_NAME type = large_unit_tactics difficulty = 8 }
+    # 
+    component = { id = 6573 name = TECH_CMP_LD_127_3_NAME type = maneuver_tactics difficulty = 8 }
+    # 
+    component = { id = 6574 name = TECH_CMP_LD_127_4_NAME type = large_unit_tactics difficulty = 8 }
+    # 
+    component = { id = 6575 name = TECH_CMP_LD_127_5_NAME type = training difficulty = 8 }
+    required  = { 66540 }
+    effects =
+    { command = { type = deactivate which = 6210 }
+      command = { type = deactivate which = 6390 }
+      command = { type = deactivate which = 6560 }
+      command = { type = deactivate which = 6010 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = max_organization which = land value = 30 }
+      command = { type = morale which = land value = -10 }
+    }
+  }
+  # 人海戰術理论 
+  application =
+  { id        = 6300
+    name      = TECH_APP_LD_30_NAME
+    position  = { x = 125 y = 85 }
+    year      = 1936
+    # 机械化推进原理 
+    component = { id = 6301 name = TECH_CMP_LD_30_1_NAME type = infantry_focus difficulty = 5 }
+    # 独立指挥 
+    component = { id = 6302 name = TECH_CMP_LD_30_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 前进指挥部布置 
+    component = { id = 6303 name = TECH_CMP_LD_30_3_NAME type = centralized_execution difficulty = 5 }
+    # 远程侦查 
+    component = { id = 6304 name = TECH_CMP_LD_30_4_NAME type = individual_courage difficulty = 5 }
+    # 战术单位-连 
+    component = { id = 6305 name = TECH_CMP_LD_30_5_NAME type = training difficulty = 5 }
+    required  = { 6570 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = militia value = 5 }
+    }
+  }
+  # 寬大戰線
+  application =
+  { id        = 6310
+    name      = TECH_APP_LD_31_NAME
+    position  = { x = 125 y = 100 }
+    year      = 1937
+    # 营级主动权 
+    component = { id = 6311 name = TECH_CMP_LD_31_1_NAME type = infantry_focus difficulty = 6 }
+    # 装甲锲入 
+    component = { id = 6312 name = TECH_CMP_LD_31_2_NAME type = large_unit_tactics difficulty = 6 }
+    # 完整机械化供应链 
+    component = { id = 6313 name = TECH_CMP_LD_31_3_NAME type = centralized_execution difficulty = 6 }
+    # 集中通讯 
+    component = { id = 6314 name = TECH_CMP_LD_31_4_NAME type = individual_courage difficulty = 6 }
+    # 合成作战训练 
+    component = { id = 6315 name = TECH_CMP_LD_31_5_NAME type = training difficulty = 6 }
+    required  = { 6300 }
+    effects =
+    { command = { type = morale which = land value = 5.8 }
+      command = { type = max_organization which = land value = 3 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = soft_attack which = multi_role value = -1 }
+      command = { type = hard_attack which = multi_role value = -1 }
+      command = { type = soft_attack which = cas value = -1 }
+      command = { type = hard_attack which = cas value = -1 }
+      command = { type = mountain_defense which = land value = -4 }
+      command = { type = forest_defense which = land value = -4 }
+      command = { type = jungle_defense which = land value = -4 }
+      command = { type = deactivate which = 14140 }
+    }
+  }
+  # 口袋防禦
+  application =
+  { id        = 6320
+    name      = TECH_APP_LD_32_NAME
+    position  = { x = 125 y = 130 }
+    year      = 1940
+    # 炮兵分工组织 
+    component = { id = 6321 name = TECH_CMP_LD_32_1_NAME type = infantry_focus difficulty = 4 }
+    # 快速战壕挖掘 
+    component = { id = 6322 name = TECH_CMP_LD_32_2_NAME type = large_unit_tactics difficulty = 4 }
+    # 严格等级制度 
+    component = { id = 6323 name = TECH_CMP_LD_32_3_NAME type = centralized_execution difficulty = 4 }
+    # 焦土防御论 
+    component = { id = 6324 name = TECH_CMP_LD_32_4_NAME type = individual_courage difficulty = 4 }
+    # 使用静止机枪 
+    component = { id = 6325 name = TECH_CMP_LD_32_5_NAME type = training difficulty = 3 }
+    required  = { 6310 }
+    effects =
+    { command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = morale which = land value = 8.4 }
+      command = { type = build_time which = land when = on_upgrade where = relative value = -5 }
+    }
+  }
+  # 縱深作戰
+  application =
+  { id        = 6330
+    name      = TECH_APP_LD_33_NAME
+    position  = { x = 125 y = 115 }
+    year      = 1940
+    # 机动运作部署 
+    component = { id = 6331 name = TECH_CMP_LD_33_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 本地预备队 
+    component = { id = 6332 name = TECH_CMP_LD_33_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 强调反坡防御 
+    component = { id = 6333 name = TECH_CMP_LD_33_3_NAME type = centralized_execution difficulty = 5 }
+    # 多重炮火准备 
+    component = { id = 6334 name = TECH_CMP_LD_33_4_NAME type = individual_courage difficulty = 5 }
+    # 强调军士主动性 
+    component = { id = 6335 name = TECH_CMP_LD_33_5_NAME type = training difficulty = 5 }
+    required  = { 6310 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 1.8 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+      command = { type = task_efficiency which = airborne_assault value = 0.2 }
+      command = { type = build_time which = land when = on_upgrade where = relative value = -10 }
+      command = { type = muddy_defense which = land value = 5 }
+      command = { type = desert_defense which = land value = 1.5 }
+      command = { type = mountain_defense which = land value = 8 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = forest_defense which = land value = 8.5 }
+      command = { type = jungle_defense which = land value = 6 }
+      command = { type = swamp_defense which = land value = 2.5 }
+      command = { type = urban_defense which = land value = 5 }
+    }
+  }
+  # 縱深防禦
+  application =
+  { id        = 6340
+    name      = TECH_APP_LD_34_NAME
+    position  = { x = 125 y = 145 }
+    year      = 1941
+    # 机动预备队 
+    component = { id = 6341 name = TECH_CMP_LD_34_1_NAME type = combined_arms_focus difficulty = 5 }
+    # 就地反击 
+    component = { id = 6342 name = TECH_CMP_LD_34_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 临场指挥 
+    component = { id = 6343 name = TECH_CMP_LD_34_3_NAME type = centralized_execution difficulty = 5 }
+    # 雷区 
+    component = { id = 6344 name = TECH_CMP_LD_34_4_NAME type = individual_courage difficulty = 5 }
+    # 步兵反坦克战术 
+    component = { id = 6345 name = TECH_CMP_LD_34_5_NAME type = training difficulty = 6 }
+    required  = { 6320 }
+    effects =
+    { command = { type = morale which = land value = 4.81 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 3 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+      command = { type = muddy_defense which = land value = 5 }
+      command = { type = desert_defense which = land value = 1.5 }
+      command = { type = mountain_defense which = land value = 4 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = forest_defense which = land value = 4.5 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = swamp_defense which = land value = 2.5 }
+      command = { type = urban_defense which = land value = 5 }
+    }
+  }
+  # 大兵團操作
+  application =
+  { id        = 6350
+    name      = TECH_APP_LD_35_NAME
+    position  = { x = 125 y = 160 }
+    year      = 1941
+    # 炮兵集团 
+    component = { id = 6351 name = TECH_CMP_LD_35_1_NAME type = combined_arms_focus difficulty = 6 }
+    # 综合防御 
+    component = { id = 6352 name = TECH_CMP_LD_35_2_NAME type = large_unit_tactics difficulty = 6 }
+    # 详细部队指挥计划 
+    component = { id = 6353 name = TECH_CMP_LD_35_3_NAME type = centralized_execution difficulty = 6 }
+    # 集体责任思想 
+    component = { id = 6354 name = TECH_CMP_LD_35_4_NAME type = individual_courage difficulty = 6 }
+    # 固定机枪 
+    component = { id = 6355 name = TECH_CMP_LD_35_5_NAME type = training difficulty = 6 }
+    required  = { 6330 6340 }
+    effects =
+    { command = { type = morale which = land value = 1.54 }
+      command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
+      command = { type = hard_attack which = infantry value = -2 }
+      command = { type = soft_attack which = infantry value = -1 }
+    }
+  }
+  # 快速運動攻勢
+  application =
+  { id        = 6370
+    name      = TECH_APP_LD_37_NAME
+    position  = { x = 125 y = 175 }
+    year      = 1942
+    # 重点地区防卫加强 
+    component = { id = 6371 name = TECH_CMP_LD_37_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 战役储备 
+    component = { id = 6372 name = TECH_CMP_LD_37_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 大单位反击 
+    component = { id = 6373 name = TECH_CMP_LD_37_3_NAME type = centralized_execution difficulty = 7 }
+    # 静止机枪配置 
+    component = { id = 6374 name = TECH_CMP_LD_37_4_NAME type = individual_courage difficulty = 7 }
+    # 战术单位-连 
+    component = { id = 6375 name = TECH_CMP_LD_37_5_NAME type = training difficulty = 7 }
+    required  = { 6320 6350 }
+    effects =
+    { command = { type = morale which = land value = 6.63 }
+      command = { type = max_organization which = land value = -7 }
+      command = { type = encirclement value = 2 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.25 }
+      command = { type = hard_attack which = infantry value = 2 }
+      command = { type = build_time which = infantry when = on_upgrade where = relative value = -5 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+    }
+  }
+  # 優先突破
+  application =
+  { id        = 6360
+    name      = TECH_APP_LD_36_NAME
+    position  = { x = 125 y = 190 }
+    year      = 1943
+    # 反预备炮火压制 
+    component = { id = 6361 name = TECH_CMP_LD_36_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 反坦克炮阵地 
+    component = { id = 6362 name = TECH_CMP_LD_36_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 军级预备队 
+    component = { id = 6363 name = TECH_CMP_LD_36_3_NAME type = centralized_execution difficulty = 7 }
+    # 分区布雷 
+    component = { id = 6364 name = TECH_CMP_LD_36_4_NAME type = individual_courage difficulty = 7 }
+    # 大编队伪装 
+    component = { id = 6365 name = TECH_CMP_LD_36_5_NAME type = training difficulty = 7 }
+    required  = { 6320 6350 }
+    effects =
+    { command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = breakthrough value = 4 }
+      command = { type = assault value = 2 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.25 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_MANPOWER_CW
+    position = { x = 125 y = 215 }
+  }
+  # 机械化波动战理论 
+  application =
+  { id        = 14060
+    name      = TECH_APP_LD_106_NAME
+    position  = { x = 125 y = 231 }
+    year      = 1946
+    # 营级主动权 
+    component = { id = 14061 name = TECH_CMP_LD_106_1_NAME type = individual_courage difficulty = 8 }
+    # 装甲锲入 
+    component = { id = 14062 name = TECH_CMP_LD_106_2_NAME type = large_unit_tactics difficulty = 8 }
+    # 完整机械化补给链 
+    component = { id = 14063 name = TECH_CMP_LD_106_3_NAME type = training difficulty = 8 }
+    # 集中通信 
+    component = { id = 14064 name = TECH_CMP_LD_106_4_NAME type = individual_courage difficulty = 8 }
+    # 机械化合成作战训练 
+    component = { id = 14065 name = TECH_CMP_LD_106_5_NAME type = training difficulty = 8 }
+    required  = { 6360 6370 }
+    effects =
+    { command = { type = morale which = armor value = 5 }
+      command = { type = morale which = light_armor value = 5 }
+      command = { type = morale which = mechanized value = 5 }
+      command = { type = morale which = land value = 1.12 }
+      command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 3 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 4 }
+      command = { type = jungle_attack which = mechanized value = 1.25 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 2 }
+      command = { type = new_model which = hq value = 5 }
+      command = { type = scrap_model which = hq value = 4 }
+    }
+  }
+  # 壓倒性進攻
+  application =
+  { id        = 6770
+    name      = TECH_APP_LD_147_NAME
+    position  = { x = 125 y = 246 }
+    year      = 1948
+    # 
+    component = { id = 6771 name = TECH_CMP_LD_147_1_NAME type = large_unit_focus difficulty = 15 }
+    # 
+    component = { id = 6772 name = TECH_CMP_LD_147_2_NAME type = maneuver_tactics difficulty = 15 }
+    # 
+    component = { id = 6773 name = TECH_CMP_LD_147_3_NAME type = large_unit_tactics difficulty = 15 double_time = yes }
+    # 
+    component = { id = 6774 name = TECH_CMP_LD_147_4_NAME type = combined_arms_focus difficulty = 15 }
+    # 
+    component = { id = 6775 name = TECH_CMP_LD_147_5_NAME type = large_unit_focus difficulty = 15 }
+    required  = { 14060 }
+    effects =
+    { command = { type = morale which = land value = 8.1 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = encirclement value = 5 }
+      command = { type = assault value = 5 }
+    }
+  }
+  # 靈活反應
+  application =
+  { id        = 6780
+    name      = TECH_APP_LD_148_NAME
+    position  = { x = 125 y = 261 }
+    year      = 1952
+    # 
+    component = { id = 6781 name = TECH_CMP_LD_148_1_NAME type = infantry_focus difficulty = 15 }
+    # 
+    component = { id = 6782 name = TECH_CMP_LD_148_2_NAME type = large_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 6783 name = TECH_CMP_LD_148_3_NAME type = combined_arms_focus difficulty = 15 double_time = yes }
+    # 
+    component = { id = 6784 name = TECH_CMP_LD_148_4_NAME type = small_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 6785 name = TECH_CMP_LD_148_5_NAME type = piloting difficulty = 15 }
+    required  = { 6770 6730 }
+    effects =
+    { command = { type = morale which = land value = 5.04 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = delay value = 4 }
+      command = { type = encirclement value = 2 }
+    }
+  }
+  # 大規模報復
+  application =
+  { id        = 6860
+    name      = TECH_APP_LD_156_NAME
+    position  = { x = 125 y = 276 }
+    year      = 1957
+    # 
+    component = { id = 6861 name = TECH_CMP_LD_156_1_NAME type = decentralized_execution difficulty = 16 }
+    # 
+    component = { id = 6862 name = TECH_CMP_LD_156_2_NAME type = nuclear_engineering difficulty = 16 }
+    # 
+    component = { id = 6863 name = TECH_CMP_LD_156_3_NAME type = nuclear_engineering difficulty = 16 }
+    # 
+    component = { id = 6864 name = TECH_CMP_LD_156_4_NAME type = submarine_design difficulty = 16 }
+    # 
+    component = { id = 6865 name = TECH_CMP_LD_156_5_NAME type = rocketry difficulty = 16 double_time = yes }
+    required  = { 6750 6780 }
+    effects =
+    { command = { type = nuke_damage value = 20 }
+      command = { type = max_organization which = land value = 1 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 7 }
+      command = { type = assault value = 3 }
+      command = { type = ambush value = 5 }
+      command = { type = new_model which = hq value = 6 }
+      command = { type = scrap_model which = hq value = 5 }
+    }
+  }
+  # 遏制威脅
+  application =
+  { id        = 6870
+    name      = TECH_APP_LD_157_NAME
+    position  = { x = 125 y = 291 }
+    year      = 1963
+    # 
+    component = { id = 6871 name = TECH_CMP_LD_157_1_NAME type = infantry_focus difficulty = 16 }
+    # 
+    component = { id = 6872 name = TECH_CMP_LD_157_2_NAME type = management difficulty = 16 }
+    # 
+    component = { id = 6873 name = TECH_CMP_LD_157_3_NAME type = small_unit_tactics difficulty = 16 }
+    # 
+    component = { id = 6874 name = TECH_CMP_LD_157_4_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6875 name = TECH_CMP_LD_157_5_NAME type = training difficulty = 16 double_time = yes }
+    required  = { 6860 6760 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = morale which = land value = 2.64 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+    }
+  }
+  # 華約軍事學說
+  application =
+  { id        = 6840
+    name      = TECH_APP_LD_154_NAME
+    position  = { x = 125 y = 340 }
+    year      = 1970
+    # 
+    component = { id = 6841 name = TECH_CMP_LD_154_1_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6842 name = TECH_CMP_LD_154_2_NAME type = maneuver_tactics difficulty = 16 double_time = yes }
+    # 
+    component = { id = 6843 name = TECH_CMP_LD_154_3_NAME type = management difficulty = 16 }
+    # 
+    component = { id = 6844 name = TECH_CMP_LD_154_4_NAME type = mathematics difficulty = 16 }
+    # 
+    component = { id = 6845 name = TECH_CMP_LD_154_5_NAME type = training difficulty = 16 }
+    required  = { 6870 }
+    effects =
+    { command = { type = max_organization which = land value = -4 }
+      command = { type = morale which = land value = 5.4 }
+      command = { type = tactical_withdrawal value = 1 }
+      command = { type = delay value = 1 }
+      command = { type = breakthrough value = 1 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 3 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 8 }
+      command = { type = scrap_model which = hq value = 7 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_SUPFIREPOWER
+    position = { x = 10 y = 55 }
+  }
+  # 集中火力学说 
+  application =
+  { id        = 6010
+    name      = TECH_APP_LD_1_NAME
+    position  = { x = 10 y = 70 }
+    year      = 1930
+    # 高等文化教育 
+    component = { id = 6011 name = TECH_CMP_LD_1_1_NAME type = infantry_focus difficulty = 5 }
+    # 基础军事理论教育 
+    component = { id = 6012 name = TECH_CMP_LD_1_2_NAME type = training difficulty = 5 }
+    # 士官培养计划 
+    component = { id = 6013 name = TECH_CMP_LD_1_3_NAME type = training difficulty = 5 }
+    # 军士荣誉感培养 
+    component = { id = 6014 name = TECH_CMP_LD_1_4_NAME type = training difficulty = 5 }
+    # 先进军校管理模式 
+    component = { id = 6015 name = TECH_CMP_LD_1_5_NAME type = training difficulty = 5 }
+    required  = { 66540 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = -0.74 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = deactivate which = 6210 }
+      command = { type = deactivate which = 6390 }
+      command = { type = deactivate which = 6560 }
+      command = { type = deactivate which = 6570 }
+    }
+  }
+  # 优势火力学说 
+  application =
+  { id        = 6020
+    name      = TECH_APP_LD_2_NAME
+    position  = { x = 10 y = 85 }
+    year      = 1936
+    # 步兵操典 
+    component = { id = 6021 name = TECH_CMP_LD_2_1_NAME type = infantry_focus difficulty = 5 }
+    # 队列操练 
+    component = { id = 6022 name = TECH_CMP_LD_2_2_NAME type = small_unit_tactics difficulty = 5 }
+    # 射击训练 
+    component = { id = 6023 name = TECH_CMP_LD_2_3_NAME type = centralized_execution difficulty = 5 }
+    # 刺杀训练 
+    component = { id = 6024 name = TECH_CMP_LD_2_4_NAME type = technical_efficiency difficulty = 5 }
+    # 散兵线冲击战术 
+    component = { id = 6025 name = TECH_CMP_LD_2_5_NAME type = training difficulty = 5 }
+    required  = { 6010 }
+    effects =
+    { command = { type = soft_attack which = artillery value = 1 }
+      command = { type = soft_attack which = sp_artillery value = 1 }
+      command = { type = morale which = land value = 1.54 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = assault value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = deactivate which = 6030 }
+    }
+  }
+  # 阻击迟滞学说 
+  application =
+  { id        = 6040
+    name      = TECH_APP_LD_4_NAME
+    position  = { x = 10 y = 100 }
+    year      = 1937
+    # 司令部计划 
+    component = { id = 6041 name = TECH_CMP_LD_4_1_NAME type = infantry_focus difficulty = 5 }
+    # 战斗指挥系统 
+    component = { id = 6042 name = TECH_CMP_LD_4_2_NAME type = small_unit_tactics difficulty = 5 }
+    # 前沿指挥所 
+    component = { id = 6043 name = TECH_CMP_LD_4_3_NAME type = centralized_execution difficulty = 5 }
+    # 指挥通讯工具 
+    component = { id = 6044 name = TECH_CMP_LD_4_4_NAME type = technical_efficiency difficulty = 5 }
+    # 战场纪律 
+    component = { id = 6045 name = TECH_CMP_LD_4_5_NAME type = training difficulty = 5 }
+    required  = { 6020 }
+    effects =
+    { command = { type = max_organization which = land value = 7 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = delay value = 2 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 机动防御学说 
+  application =
+  { id        = 6050
+    name      = TECH_APP_LD_5_NAME
+    position  = { x = 10 y = 115 }
+    year      = 1938
+    # 参谋部制度 
+    component = { id = 6051 name = TECH_CMP_LD_5_1_NAME type = combined_arms_focus difficulty = 6 }
+    # 近代指挥系统 
+    component = { id = 6052 name = TECH_CMP_LD_5_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 近代军士培养 
+    component = { id = 6053 name = TECH_CMP_LD_5_3_NAME type = decentralized_execution difficulty = 6 }
+    # 近代士兵训练 
+    component = { id = 6054 name = TECH_CMP_LD_5_4_NAME type = technical_efficiency difficulty = 6 }
+    # 近代后勤保障 
+    component = { id = 6055 name = TECH_CMP_LD_5_5_NAME type = training difficulty = 6 }
+    required  = { 6040 }
+    effects =
+    { command = { type = max_organization which = land value = 3 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # 消耗戰術
+  application =
+  { id        = 6060
+    name      = TECH_APP_LD_6_NAME
+    position  = { x = 10 y = 130 }
+    year      = 1939
+    # 国家凝聚力强化 
+    component = { id = 6061 name = TECH_CMP_LD_6_1_NAME type = infantry_focus difficulty = 6 }
+    # 主权至上原则 
+    component = { id = 6062 name = TECH_CMP_LD_6_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 国民自豪感培养 
+    component = { id = 6063 name = TECH_CMP_LD_6_3_NAME type = centralized_execution difficulty = 6 }
+    # 国民英雄塑造 
+    component = { id = 6064 name = TECH_CMP_LD_6_4_NAME type = technical_efficiency difficulty = 6 }
+    # 爱国主义教育模式 
+    component = { id = 6065 name = TECH_CMP_LD_6_5_NAME type = training difficulty = 6 }
+    required  = { 6020 }
+    effects =
+    { command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = max_organization which = land value = 3 }
+      command = { type = soft_attack which = tactical_bomber value = 2 }
+      command = { type = hard_attack which = tactical_bomber value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 全能支撐點
+  application =
+  { id        = 6070
+    name      = TECH_APP_LD_7_NAME
+    position  = { x = 10 y = 145 }
+    year      = 1940
+    # 阶级观念强化 
+    component = { id = 6071 name = TECH_CMP_LD_7_1_NAME type = infantry_focus difficulty = 6 }
+    # 党组织至上原则 
+    component = { id = 6072 name = TECH_CMP_LD_7_2_NAME type = small_unit_tactics difficulty = 6 }
+    # 革命先锋观念培养 
+    component = { id = 6073 name = TECH_CMP_LD_7_3_NAME type = decentralized_execution difficulty = 6 }
+    # 优秀党员塑造 
+    component = { id = 6074 name = TECH_CMP_LD_7_4_NAME type = technical_efficiency difficulty = 6 }
+    # 英雄主义教育模式 
+    component = { id = 6075 name = TECH_CMP_LD_7_5_NAME type = training difficulty = 6 }
+    required  = { 6060 }
+    effects =
+    { command = { type = muddy_attack which = infantry value = 4 }
+      command = { type = desert_attack which = infantry value = 1.25 }
+      command = { type = mountain_attack which = infantry value = 3 }
+      command = { type = hill_attack which = infantry value = 1 }
+      command = { type = forest_attack which = infantry value = 4 }
+      command = { type = jungle_attack which = infantry value = 1.25 }
+      command = { type = swamp_attack which = infantry value = 2 }
+      command = { type = urban_attack which = infantry value = 3.5 }
+      command = { type = fort_attack which = infantry value = 6 }
+      command = { type = muddy_attack which = motorized value = 4 }
+      command = { type = desert_attack which = motorized value = 1.25 }
+      command = { type = mountain_attack which = motorized value = 3 }
+      command = { type = hill_attack which = motorized value = 1 }
+      command = { type = forest_attack which = motorized value = 4 }
+      command = { type = jungle_attack which = motorized value = 1.25 }
+      command = { type = swamp_attack which = motorized value = 2 }
+      command = { type = urban_attack which = motorized value = 3.5 }
+      command = { type = fort_attack which = motorized value = 6 }
+      command = { type = counterattack value = 4 }
+      command = { type = breakthrough value = 1 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # 團級戰鬥隊
+  application =
+  { id        = 6080
+    name      = TECH_APP_LD_8_NAME
+    position  = { x = 10 y = 160 }
+    year      = 1942
+    # 战斗动员工作 
+    component = { id = 6081 name = TECH_CMP_LD_8_1_NAME type = infantry_focus difficulty = 7 }
+    # 战地宣传工作 
+    component = { id = 6082 name = TECH_CMP_LD_8_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 战场纪律维护 
+    component = { id = 6083 name = TECH_CMP_LD_8_3_NAME type = decentralized_execution difficulty = 7 }
+    # 后勤政治工作 
+    component = { id = 6084 name = TECH_CMP_LD_8_4_NAME type = technical_efficiency difficulty = 7 }
+    # 英雄模范宣传 
+    component = { id = 6085 name = TECH_CMP_LD_8_5_NAME type = training difficulty = 8 }
+    required  = { 6070 6050 }
+    effects =
+    { command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = delay value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 機械化攻勢
+  application =
+  { id        = 6100
+    name      = TECH_APP_LD_10_NAME
+    position  = { x = 10 y = 175 }
+    year      = 1943
+    # 战术单位-军营 
+    component = { id = 6101 name = TECH_CMP_LD_10_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 射击训练 
+    component = { id = 6102 name = TECH_CMP_LD_10_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 交叉火力 
+    component = { id = 6103 name = TECH_CMP_LD_10_3_NAME type = decentralized_execution difficulty = 7 }
+    # 操演思想 
+    component = { id = 6104 name = TECH_CMP_LD_10_4_NAME type = technical_efficiency difficulty = 7 }
+    # 团级火力支援 
+    component = { id = 6105 name = TECH_CMP_LD_10_5_NAME type = training difficulty = 8 }
+    required  = { 6080 }
+    effects =
+    { command = { type = deactivate which = 6090 }
+      command = { type = morale which = land value = 9.2 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 3 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 4 }
+      command = { type = jungle_attack which = mechanized value = 1.25 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 6 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 多兵種聯合防禦
+  application =
+  { id        = 6090
+    name      = TECH_APP_LD_9_NAME
+    position  = { x = 10 y = 190 }
+    year      = 1943
+    # 政治建军原则 
+    component = { id = 6091 name = TECH_CMP_LD_9_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 政治委员制度 
+    component = { id = 6092 name = TECH_CMP_LD_9_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 连级党委支部 
+    component = { id = 6093 name = TECH_CMP_LD_9_3_NAME type = decentralized_execution difficulty = 7 }
+    # 基层党代表制度 
+    component = { id = 6094 name = TECH_CMP_LD_9_4_NAME type = technical_efficiency difficulty = 7 }
+    # 军政工作结合 
+    component = { id = 6095 name = TECH_CMP_LD_9_5_NAME type = training difficulty = 7 }
+    required  = { 6080 }
+    effects =
+    { command = { type = deactivate which = 6100 }
+      command = { type = morale which = land value = 9.2 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_NATODOC
+    position = { x = 10 y = 215 }
+  }
+  # 空地一體化作戰理论 
+  application =
+  { id        = 14050
+    name      = TECH_APP_LD_105_NAME
+    position  = { x = 10 y = 231 }
+    year      = 1946
+    # 直升机 
+    component = { id = 14051 name = TECH_CMP_LD_105_1_NAME type = aeronautics difficulty = 8 }
+    # 纵深侦查 
+    component = { id = 14052 name = TECH_CMP_LD_105_2_NAME type = training difficulty = 8 }
+    # 分散通讯 
+    component = { id = 14053 name = TECH_CMP_LD_105_3_NAME type = electronics difficulty = 8 }
+    # 低级军官主动权 
+    component = { id = 14054 name = TECH_CMP_LD_105_4_NAME type = individual_courage difficulty = 8 }
+    # 排级炮兵观测 
+    component = { id = 14055 name = TECH_CMP_LD_105_5_NAME type = training difficulty = 8 }
+    required  = { }
+    or_required = { 6090 6100 }
+    effects =
+    { command = { type = soft_attack which = multi_role value = 1 }
+      command = { type = hard_attack which = multi_role value = 1 }
+      command = { type = soft_attack which = cas value = 1 }
+      command = { type = hard_attack which = cas value = 1 }
+      command = { type = supply_consumption which = multi_role value = 0.2 }
+      command = { type = build_cost which = multi_role when = on_upgrade where = relative value = 5 }
+      command = { type = supply_consumption which = cas value = 0.2 }
+      command = { type = build_cost which = cas when = on_upgrade where = relative value = 5 }
+      command = { type = new_model which = hq value = 5 }
+      command = { type = scrap_model which = hq value = 4 }
+    }
+  }
+  # 現代聯合兵種
+  application =
+  { id        = 6790
+    name      = TECH_APP_LD_149_NAME
+    position  = { x = 10 y = 246 }
+    year      = 1949
+    # 
+    component = { id = 6791 name = TECH_CMP_LD_149_1_NAME type = combined_arms_focus difficulty = 15 }
+    # 
+    component = { id = 6792 name = TECH_CMP_LD_149_2_NAME type = combined_arms_focus difficulty = 15 double_time = yes }
+    # 
+    component = { id = 6793 name = TECH_CMP_LD_149_3_NAME type = small_taskforce_tactics difficulty = 15 }
+    # 
+    component = { id = 6794 name = TECH_CMP_LD_149_4_NAME type = piloting difficulty = 15 }
+    # 
+    component = { id = 6795 name = TECH_CMP_LD_149_5_NAME type = management difficulty = 15 }
+    required  = { }
+    or_required = { 14050 14070 }
+    effects =
+    { command = { type = tactical_withdrawal value = 3 }
+      command = { type = delay value = 3 }
+      command = { type = breakthrough value = 1 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 1 }
+    }
+  }
+  # 軍事計畫
+  application =
+  { id        = 6800
+    name      = TECH_APP_LD_150_NAME
+    position  = { x = 10 y = 261 }
+    year      = 1951
+    # 
+    component = { id = 6801 name = TECH_CMP_LD_150_1_NAME type = marine_training difficulty = 15 }
+    # 
+    component = { id = 6802 name = TECH_CMP_LD_150_2_NAME type = airborne_training difficulty = 15 }
+    # 
+    component = { id = 6803 name = TECH_CMP_LD_150_3_NAME type = small_taskforce_tactics difficulty = 15 }
+    # 
+    component = { id = 6804 name = TECH_CMP_LD_150_4_NAME type = carrier_tactics difficulty = 15 double_time = yes }
+    # 
+    component = { id = 6805 name = TECH_CMP_LD_150_5_NAME type = maneuver_tactics difficulty = 15 }
+    required  = { 6730 }
+    or_required = { 6790 6490 }
+    effects =
+    { command = { type = max_organization which = land value = 3 }
+      command = { type = max_organization which = paratrooper value = 5 }
+      command = { type = morale which = paratrooper value = 5 }
+      command = { type = max_organization which = marine value = 5 }
+      command = { type = morale which = marine value = 5 }
+    }
+  }
+  # 阻斷突擊
+  application =
+  { id        = 6880
+    name      = TECH_APP_LD_158_NAME
+    position  = { x = 10 y = 276 }
+    year      = 1958
+    # 
+    component = { id = 6881 name = TECH_CMP_LD_158_1_NAME type = infantry_focus difficulty = 16 }
+    # 
+    component = { id = 6882 name = TECH_CMP_LD_158_2_NAME type = small_unit_tactics difficulty = 16 }
+    # 
+    component = { id = 6883 name = TECH_CMP_LD_158_3_NAME type = training difficulty = 16 }
+    # 
+    component = { id = 6884 name = TECH_CMP_LD_158_4_NAME type = static_defense_tactics difficulty = 16 }
+    # 
+    component = { id = 6885 name = TECH_CMP_LD_158_5_NAME type = individual_courage difficulty = 16 double_time = yes }
+    required  = { 6800 6750 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = morale which = land value = 2 }
+      command = { type = muddy_defense which = land value = 3.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 4 }
+      command = { type = hill_defense which = land value = 5.5 }
+      command = { type = forest_defense which = land value = 3.25 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 5.5 }
+      command = { type = new_model which = hq value = 6 }
+      command = { type = scrap_model which = hq value = 5 }
+      command = { type = delay value = 10 }
+      command = { type = ambush value = 5 }
+    }
+  }
+  # 重視核武
+  application =
+  { id        = 6890
+    name      = TECH_APP_LD_159_NAME
+    position  = { x = 10 y = 291 }
+    year      = 1966
+    # 
+    component = { id = 6891 name = TECH_CMP_LD_159_1_NAME type = decentralized_execution difficulty = 16 }
+    # 
+    component = { id = 6892 name = TECH_CMP_LD_159_2_NAME type = nuclear_engineering difficulty = 16 double_time = yes }
+    # 
+    component = { id = 6893 name = TECH_CMP_LD_159_3_NAME type = submarine_tactics difficulty = 16 }
+    # 
+    component = { id = 6894 name = TECH_CMP_LD_159_4_NAME type = rocketry difficulty = 16 }
+    # 
+    component = { id = 6895 name = TECH_CMP_LD_159_5_NAME type = bomber_tactics difficulty = 16 }
+    required  = { 6880 6760 }
+    effects =
+    { command = { type = max_organization which = land value = 2 }
+      command = { type = morale which = land value = 1.8 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+    }
+  }
+  # 北約軍事學說
+  application =
+  { id        = 6850
+    name      = TECH_APP_LD_155_NAME
+    position  = { x = 10 y = 340 }
+    year      = 1970
+    # 
+    component = { id = 6851 name = TECH_CMP_LD_155_1_NAME type = combined_arms_focus difficulty = 16 }
+    # 
+    component = { id = 6852 name = TECH_CMP_LD_155_2_NAME type = maneuver_tactics difficulty = 16 double_time = yes }
+    # 
+    component = { id = 6853 name = TECH_CMP_LD_155_3_NAME type = management difficulty = 16 }
+    # 
+    component = { id = 6854 name = TECH_CMP_LD_155_4_NAME type = mathematics difficulty = 16 }
+    # 
+    component = { id = 6855 name = TECH_CMP_LD_155_5_NAME type = training difficulty = 16 }
+    required  = { 6890 }
+    effects =
+    { command = { type = max_organization which = land value = -5 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 1 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 8 }
+      command = { type = scrap_model which = hq value = 7 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_GRANDBATTLE
+    position = { x = 360 y = 55 }
+  }
+  # 重視防禦
+  application =
+  { id        = 6560
+    name      = TECH_APP_LD_126_NAME
+    position  = { x = 360 y = 70 }
+    year      = 1930
+    # 
+    component = { id = 6561 name = TECH_CMP_LD_126_1_NAME type = infantry_focus difficulty = 8 }
+    # 
+    component = { id = 6562 name = TECH_CMP_LD_126_2_NAME type = artillery difficulty = 8 }
+    # 
+    component = { id = 6563 name = TECH_CMP_LD_126_3_NAME type = static_defense_tactics difficulty = 8 }
+    # 
+    component = { id = 6564 name = TECH_CMP_LD_126_4_NAME type = management difficulty = 8 }
+    # 
+    component = { id = 6565 name = TECH_CMP_LD_126_5_NAME type = static_defense_tactics difficulty = 8 }
+    required  = { 66540 }
+    effects =
+    { command = { type = deactivate which = 6210 }
+      command = { type = deactivate which = 6390 }
+      command = { type = deactivate which = 6570 }
+      command = { type = deactivate which = 6010 }
+      command = { type = max_organization which = land value = 25 }
+      command = { type = morale which = land value = 0.53 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = new_model which = hq value = 2 }
+    }
+  }
+  # 总参谋部制
+  application =
+  { id        = 6030
+    name      = TECH_APP_LD_3_NAME
+    position  = { x = 360 y = 85 }
+    year      = 1936
+    # 总参谋部计划 
+    component = { id = 6031 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
+    # 战区统一部署 
+    component = { id = 6032 name = TECH_CMP_LD_3_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 多兵种协同 
+    component = { id = 6033 name = TECH_CMP_LD_3_3_NAME type = centralized_execution difficulty = 5 }
+    # 陆军编制标准化 
+    component = { id = 6034 name = TECH_CMP_LD_3_4_NAME type = individual_courage difficulty = 5 }
+    # 总参谋部作业 
+    component = { id = 6035 name = TECH_CMP_LD_3_5_NAME type = training difficulty = 5 }
+    required  = { 6560 }
+    effects =
+    { command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = muddy_attack which = land value = -4 }
+      command = { type = desert_attack which = land value = -1.25 }
+      command = { type = mountain_attack which = land value = -3 }
+      command = { type = hill_attack which = land value = -1 }
+      command = { type = forest_attack which = land value = -4 }
+      command = { type = jungle_attack which = land value = -1.25 }
+      command = { type = swamp_attack which = land value = -2 }
+      command = { type = urban_attack which = land value = -3.5 }
+      command = { type = fort_attack which = land value = -2 }
+      command = { type = delay value = 2 }
+      command = { type = assault value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+      command = { type = soft_attack which = tactical_bomber value = 1 }
+      command = { type = hard_attack which = tactical_bomber value = 1 }
+      command = { type = supply_consumption which = tactical_bomber value = 0.2 }
+      command = { type = build_cost which = tactical_bomber when = on_upgrade where = relative value = 5 }
+    }
+  }
+  # 塹壕戰
+  application =
+  { id        = 6120
+    name      = TECH_APP_LD_12_NAME
+    position  = { x = 360 y = 100 }
+    year      = 1936
+    # 炮兵观测 
+    component = { id = 6121 name = TECH_CMP_LD_12_1_NAME type = infantry_focus difficulty = 5 }
+    # 炮兵射击校正 
+    component = { id = 6122 name = TECH_CMP_LD_12_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 战术单位-连 
+    component = { id = 6123 name = TECH_CMP_LD_12_3_NAME type = centralized_execution difficulty = 5 }
+    # 间接火力支援 
+    component = { id = 6124 name = TECH_CMP_LD_12_4_NAME type = individual_courage difficulty = 5 }
+    # 步兵弹幕训练 
+    component = { id = 6125 name = TECH_CMP_LD_12_5_NAME type = training difficulty = 5 }
+    required  = { 6030 }
+    effects =
+    { command = { type = morale which = land value = -2.15 }
+      command = { type = delay value = 4 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # 大規模突擊
+  application =
+  { id        = 6110
+    name      = TECH_APP_LD_11_NAME
+    position  = { x = 360 y = 115 }
+    year      = 1938
+    # 集团炮兵 
+    component = { id = 6111 name = TECH_CMP_LD_11_1_NAME type = infantry_focus difficulty = 5 }
+    # 空中支援轰炸 
+    component = { id = 6112 name = TECH_CMP_LD_11_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 先进火力支援 
+    component = { id = 6113 name = TECH_CMP_LD_11_3_NAME type = centralized_execution difficulty = 5 }
+    # 先进火力覆盖 
+    component = { id = 6114 name = TECH_CMP_LD_11_4_NAME type = individual_courage difficulty = 5 }
+    # 军官训练-西点军校模式 
+    component = { id = 6115 name = TECH_CMP_LD_11_5_NAME type = training difficulty = 5 }
+    required  = { 6030 }
+    effects =
+    { command = { type = morale which = land value = -1.72 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = counterattack value = 4 }
+      command = { type = breakthrough value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # 纵深防御学说 
+  application =
+  { id        = 6130
+    name      = TECH_APP_LD_13_NAME
+    position  = { x = 360 y = 130 }
+    year      = 1940
+    # 战术单位-排 
+    component = { id = 6131 name = TECH_CMP_LD_13_1_NAME type = infantry_focus difficulty = 6 }
+    # 团级火力支援 
+    component = { id = 6132 name = TECH_CMP_LD_13_2_NAME type = large_unit_tactics difficulty = 6 }
+    # 加强军士主动性 
+    component = { id = 6133 name = TECH_CMP_LD_13_3_NAME type = centralized_execution difficulty = 6 }
+    # 先进火力控制中心 
+    component = { id = 6134 name = TECH_CMP_LD_13_4_NAME type = individual_courage difficulty = 6 }
+    # 机动排和火力协调 
+    component = { id = 6135 name = TECH_CMP_LD_13_5_NAME type = training difficulty = 6 }
+    required  = { 6120 }
+    effects =
+    { command = { type = max_organization which = land value = 6 }
+      command = { type = morale which = land value = 2.15 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 2.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 1.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = delay value = 4 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 集中攻擊
+  application =
+  { id        = 6140
+    name      = TECH_APP_LD_14_NAME
+    position  = { x = 360 y = 145 }
+    year      = 1942
+    # 直属炮兵 
+    component = { id = 6141 name = TECH_CMP_LD_14_1_NAME type = infantry_focus difficulty = 7 }
+    # 直属空中支援 
+    component = { id = 6142 name = TECH_CMP_LD_14_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 目标获得原则 
+    component = { id = 6143 name = TECH_CMP_LD_14_3_NAME type = centralized_execution difficulty = 7 }
+    # 军队标准化 
+    component = { id = 6144 name = TECH_CMP_LD_14_4_NAME type = individual_courage difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6145 name = TECH_CMP_LD_14_5_NAME type = training difficulty = 7 }
+    required  = { 6130 }
+    effects =
+    { command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = max_organization which = land value = 4 }
+      command = { type = counterattack value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 拉鋸戰
+  application =
+  { id        = 6150
+    name      = TECH_APP_LD_15_NAME
+    position  = { x = 360 y = 160 }
+    year      = 1942
+    # 空地联合机动理论 
+    component = { id = 6151 name = TECH_CMP_LD_15_1_NAME type = infantry_focus difficulty = 7 }
+    # TOT同时弹着战术 
+    component = { id = 6152 name = TECH_CMP_LD_15_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6153 name = TECH_CMP_LD_15_3_NAME type = centralized_execution difficulty = 7 }
+    # 先进空地协调 
+    component = { id = 6154 name = TECH_CMP_LD_15_4_NAME type = individual_courage difficulty = 7 }
+    # 班级先进战术 
+    component = { id = 6155 name = TECH_CMP_LD_15_5_NAME type = training difficulty = 7 }
+    required  = { 6140 }
+    effects =
+    { command = { type = deactivate which = 6170 }
+      command = { type = morale which = land value = 3.44 }
+      command = { type = ambush value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 戰役階段論
+  application =
+  { id        = 6170
+    name      = TECH_APP_LD_17_NAME
+    position  = { x = 360 y = 175 }
+    year      = 1943
+    # 先进低空支援 
+    component = { id = 6171 name = TECH_CMP_LD_17_1_NAME type = infantry_focus difficulty = 7 }
+    # 纵深侦察 
+    component = { id = 6172 name = TECH_CMP_LD_17_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 分散通讯 
+    component = { id = 6173 name = TECH_CMP_LD_17_3_NAME type = centralized_execution difficulty = 7 }
+    # 低级军官主动权 
+    component = { id = 6174 name = TECH_CMP_LD_17_4_NAME type = technical_efficiency difficulty = 7 }
+    # 排级炮兵观测 
+    component = { id = 6175 name = TECH_CMP_LD_17_5_NAME type = training difficulty = 7 }
+    required  = { 6140 }
+    effects =
+    { command = { type = deactivate which = 6150 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 貫穿突擊
+  application =
+  { id        = 6180
+    name      = TECH_APP_LD_18_NAME
+    position  = { x = 360 y = 190 }
+    year      = 1944
+    # 多兵种联合作战 
+    component = { id = 6181 name = TECH_CMP_LD_18_1_NAME type = infantry_focus difficulty = 8 }
+    # 三军远程侦察 
+    component = { id = 6182 name = TECH_CMP_LD_18_2_NAME type = large_unit_tactics difficulty = 8 }
+    # 多步骤指挥布置 
+    component = { id = 6183 name = TECH_CMP_LD_18_3_NAME type = centralized_execution difficulty = 8 }
+    # 多诸元射击指挥中心 
+    component = { id = 6184 name = TECH_CMP_LD_18_4_NAME type = individual_courage difficulty = 8 }
+    # 战术单位-班 
+    component = { id = 6185 name = TECH_CMP_LD_18_5_NAME type = training difficulty = 8 }
+    required  = { 6140 6150 }
+    effects =
+    { command = { type = morale which = land value = 3.75 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = assault value = 6 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 兵種協同
+  application =
+  { id        = 6200
+    name      = TECH_APP_LD_20_NAME
+    position  = { x = 360 y = 205 }
+    year      = 1944
+    # 机动侦察 
+    component = { id = 6201 name = TECH_CMP_LD_20_1_NAME type = combined_arms_focus difficulty = 8 }
+    # 基本渗透战术 
+    component = { id = 6202 name = TECH_CMP_LD_20_2_NAME type = small_unit_tactics difficulty = 8 }
+    # 突然袭击战术 
+    component = { id = 6203 name = TECH_CMP_LD_20_3_NAME type = centralized_execution difficulty = 8 }
+    # 军士责任 
+    component = { id = 6204 name = TECH_CMP_LD_20_4_NAME type = technical_efficiency difficulty = 8 }
+    # 机动训练 
+    component = { id = 6205 name = TECH_CMP_LD_20_5_NAME type = training difficulty = 8 }
+    required  = { 6140 6170 }
+    effects =
+    { command = { type = morale which = land value = 7.14 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 4 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = ground_def_eff value = 0.75 }
+    }
+  }
+  # 集中突擊
+  application =
+  { id        = 14070
+    name      = TECH_APP_LD_107_NAME
+    position  = { x = 360 y = 220 }
+    year      = 1946
+    # 侧翼同步防御 
+    component = { id = 14071 name = TECH_CMP_LD_107_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 密集编队阵型 
+    component = { id = 14072 name = TECH_CMP_LD_107_2_NAME type = infantry_focus difficulty = 7 }
+    # 中央指挥 
+    component = { id = 14073 name = TECH_CMP_LD_107_3_NAME type = centralized_execution difficulty = 7 }
+    # 集中炮兵弹幕射击 
+    component = { id = 14074 name = TECH_CMP_LD_107_4_NAME type = artillery difficulty = 7 }
+    # 集中突袭训练 
+    component = { id = 14075 name = TECH_CMP_LD_107_5_NAME type = training difficulty = 7 }
+    required  = { 6140 }
+    effects =
+    { command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = new_model which = hq value = 5 }
+      command = { type = scrap_model which = hq value = 4 }
+      command = { type = ground_def_eff value = 0.75 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_LIGHTINF
+    position = { x = 360 y = 245 }
+  }
+  # 重視輕步兵
+  application =
+  { id        = 6390
+    name      = TECH_APP_LD_39_NAME
+    position  = { x = 360 y = 260 }
+    year      = 1936
+    # 先进火力支援 
+    component = { id = 6391 name = TECH_CMP_LD_21_1_NAME type = infantry_focus difficulty = 5 }
+    # 火力强攻 
+    component = { id = 6392 name = TECH_CMP_LD_21_2_NAME type = centralized_execution difficulty = 5 }
+    # 总参谋部计划 
+    component = { id = 6393 name = TECH_CMP_LD_21_3_NAME type = small_unit_tactics difficulty = 5 }
+    # 进攻学说 
+    component = { id = 6394 name = TECH_CMP_LD_21_4_NAME type = training difficulty = 5 }
+    # 军官训练-桑德赫斯特军校模式 
+    component = { id = 6395 name = TECH_CMP_LD_21_5_NAME type = training difficulty = 5 }
+    required  = { 66540 }
+    effects =
+    { command = { type = max_organization which = land value = 25 }
+      command = { type = morale which = land value = 12.6 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = deactivate which = 6210 }
+      command = { type = deactivate which = 6560 }
+      command = { type = deactivate which = 6570 }
+      command = { type = deactivate which = 6010 }
+      command = { type = muddy_move which = land value = 15 }
+      command = { type = mountain_move which = land value = 10 }
+      command = { type = forest_move which = land value = 30 }
+      command = { type = jungle_move which = land value = 15 }
+      command = { type = swamp_move which = land value = 20 }
+      command = { type = urban_move which = land value = 15 }
+    }
+  }
+  # 总参谋部制
+  application =
+  { id        = 6400
+    name      = TECH_APP_LD_3_NAME
+    position  = { x = 360 y = 275 }
+    year      = 1936
+    # 总参谋部计划 
+    component = { id = 6401 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 5 }
+    # 战区统一部署 
+    component = { id = 6402 name = TECH_CMP_LD_3_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 多兵种协同 
+    component = { id = 6403 name = TECH_CMP_LD_3_3_NAME type = centralized_execution difficulty = 5 }
+    # 陆军编制标准化 
+    component = { id = 6404 name = TECH_CMP_LD_3_4_NAME type = individual_courage difficulty = 5 }
+    # 总参谋部作业 
+    component = { id = 6405 name = TECH_CMP_LD_3_5_NAME type = training difficulty = 5 }
+    required  = { 6390 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = muddy_defense which = land value = 3.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 4.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 4.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = muddy_attack which = land value = 1 }
+      command = { type = desert_attack which = land value = -1.25 }
+      command = { type = mountain_attack which = land value = -3 }
+      command = { type = hill_attack which = land value = -1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = -2 }
+      command = { type = delay value = 2 }
+      command = { type = assault value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # 塹壕戰
+  application =
+  { id        = 6420
+    name      = TECH_APP_LD_12_NAME
+    position  = { x = 360 y = 290 }
+    year      = 1936
+    # 炮兵观测 
+    component = { id = 6421 name = TECH_CMP_LD_12_1_NAME type = infantry_focus difficulty = 5 }
+    # 炮兵射击校正 
+    component = { id = 6422 name = TECH_CMP_LD_12_2_NAME type = large_unit_tactics difficulty = 5 }
+    # 战术单位-连 
+    component = { id = 6423 name = TECH_CMP_LD_12_3_NAME type = centralized_execution difficulty = 5 }
+    # 间接火力支援 
+    component = { id = 6424 name = TECH_CMP_LD_12_4_NAME type = individual_courage difficulty = 5 }
+    # 步兵弹幕训练 
+    component = { id = 6425 name = TECH_CMP_LD_12_5_NAME type = training difficulty = 5 }
+    required  = { 6400 }
+    effects =
+    { command = { type = morale which = land value = -2.4 }
+      command = { type = muddy_defense which = land value = 2.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 4.25 }
+      command = { type = jungle_defense which = land value = 1 }
+      command = { type = swamp_defense which = land value = 3.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = frozen_defense which = land value = 4.25 }
+      command = { type = delay value = 4 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # 大規模突擊
+  application =
+  { id        = 6410
+    name      = TECH_APP_LD_11_NAME
+    position  = { x = 360 y = 305 }
+    year      = 1938
+    # 集团炮兵 
+    component = { id = 6411 name = TECH_CMP_LD_11_1_NAME type = infantry_focus difficulty = 6 }
+    # 空中支援轰炸 
+    component = { id = 6412 name = TECH_CMP_LD_11_2_NAME type = large_unit_tactics difficulty = 6 }
+    # 先进火力支援 
+    component = { id = 6413 name = TECH_CMP_LD_11_3_NAME type = centralized_execution difficulty = 6 }
+    # 先进火力覆盖 
+    component = { id = 6414 name = TECH_CMP_LD_11_4_NAME type = individual_courage difficulty = 6 }
+    # 军官训练-西点军校模式 
+    component = { id = 6415 name = TECH_CMP_LD_11_5_NAME type = training difficulty = 6 }
+    required  = { 6400 }
+    effects =
+    { command = { type = morale which = land value = -1.8 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 5 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 4.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = frozen_defense which = land value = 4.25 }
+      command = { type = counterattack value = 4 }
+      command = { type = breakthrough value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # 纵深防御学说 
+  application =
+  { id        = 6430
+    name      = TECH_APP_LD_13_NAME
+    position  = { x = 360 y = 320 }
+    year      = 1940
+    # 战术单位-排 
+    component = { id = 6431 name = TECH_CMP_LD_13_1_NAME type = infantry_focus difficulty = 6 }
+    # 团级火力支援 
+    component = { id = 6432 name = TECH_CMP_LD_13_2_NAME type = large_unit_tactics difficulty = 6 }
+    # 加强军士主动性 
+    component = { id = 6433 name = TECH_CMP_LD_13_3_NAME type = centralized_execution difficulty = 6 }
+    # 先进火力控制中心 
+    component = { id = 6434 name = TECH_CMP_LD_13_4_NAME type = individual_courage difficulty = 6 }
+    # 机动排和火力协调 
+    component = { id = 6435 name = TECH_CMP_LD_13_5_NAME type = training difficulty = 6 }
+    required  = { 6420 }
+    effects =
+    { command = { type = max_organization which = land value = 6 }
+      command = { type = morale which = land value = 3 }
+      command = { type = muddy_defense which = land value = 4.5 }
+      command = { type = desert_defense which = land value = 0.75 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_defense which = land value = 2.5 }
+      command = { type = forest_defense which = land value = 4.25 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = swamp_defense which = land value = 4.25 }
+      command = { type = urban_defense which = land value = 2.5 }
+      command = { type = frozen_defense which = land value = 4.25 }
+      command = { type = delay value = 4 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 輕裝機動
+  application =
+  { id        = 6450
+    name      = TECH_APP_LD_45_NAME
+    position  = { x = 360 y = 350 }
+    year      = 1941
+    # 战地宣传工作 
+    component = { id = 6451 name = TECH_CMP_LD_8_2_NAME type = combined_arms_focus difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6452 name = TECH_CMP_LD_19_3_NAME type = maneuver_tactics difficulty = 7 }
+    # 前进指挥部布置 
+    component = { id = 6453 name = TECH_CMP_LD_30_3_NAME type = centralized_execution difficulty = 7 }
+    # 远程侦查 
+    component = { id = 6454 name = TECH_CMP_LD_30_4_NAME type = maneuver_tactics difficulty = 7 }
+    # 限制军士主动性 
+    component = { id = 6455 name = TECH_CMP_LD_22_5_NAME type = training difficulty = 8 }
+    required  = { 6410 6430 }
+    effects =
+    { command = { type = deactivate which = 6160 }
+      command = { type = max_organization which = land value = -19 }
+      command = { type = morale which = land value = -11.6 }
+      command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 5 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 6 }
+      command = { type = jungle_attack which = mechanized value = 2.5 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 2 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = encirclement value = 3 }
+      command = { type = counterattack value = 2 }
+      command = { type = night_attack which = motorized value = 10 }
+      command = { type = night_defense which = motorized value = 10 }
+    }
+  }
+  # 集中攻擊
+  application =
+  { id        = 6440
+    name      = TECH_APP_LD_14_NAME
+    position  = { x = 360 y = 335 }
+    year      = 1942
+    # 直属炮兵 
+    component = { id = 6441 name = TECH_CMP_LD_14_1_NAME type = infantry_focus difficulty = 7 }
+    # 直属空中支援 
+    component = { id = 6442 name = TECH_CMP_LD_14_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 目标获得原则 
+    component = { id = 6443 name = TECH_CMP_LD_14_3_NAME type = centralized_execution difficulty = 7 }
+    # 军队标准化 
+    component = { id = 6444 name = TECH_CMP_LD_14_4_NAME type = individual_courage difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6445 name = TECH_CMP_LD_14_5_NAME type = training difficulty = 8 }
+    required  = { 6430 }
+    effects =
+    { command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 3 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 4 }
+      command = { type = jungle_attack which = land value = 1.25 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = max_organization which = land value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # 滲透突擊
+  application =
+  { id        = 6160
+    name      = TECH_APP_LD_16_NAME
+    position  = { x = 360 y = 365 }
+    year      = 1942
+    # 部队联合作战 
+    component = { id = 6161 name = TECH_CMP_LD_16_1_NAME type = infantry_focus difficulty = 7 }
+    # 远程侦察 
+    component = { id = 6162 name = TECH_CMP_LD_16_2_NAME type = large_unit_tactics difficulty = 7 }
+    # 前进指挥布置 
+    component = { id = 6163 name = TECH_CMP_LD_16_3_NAME type = centralized_execution difficulty = 7 }
+    # 射击指挥中心 
+    component = { id = 6164 name = TECH_CMP_LD_16_4_NAME type = individual_courage difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6165 name = TECH_CMP_LD_16_5_NAME type = training difficulty = 7 }
+    required  = { 6440 }
+    effects =
+    { command = { type = deactivate which = 6450 }
+      command = { type = max_organization which = land value = -19 }
+      command = { type = morale which = land value = -11.6 }
+      command = { type = muddy_attack which = land value = 4 }
+      command = { type = desert_attack which = land value = 1.25 }
+      command = { type = mountain_attack which = land value = 5 }
+      command = { type = hill_attack which = land value = 1 }
+      command = { type = forest_attack which = land value = 6 }
+      command = { type = jungle_attack which = land value = 2.5 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 3.5 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 5 }
+      command = { type = night_move which = infantry value = 10 }
+      command = { type = night_move which = paratrooper value = 10 }
+      command = { type = night_move which = marine value = 10 }
+      command = { type = night_move which = bergsjaeger value = 10 }
+      command = { type = night_move which = cavalry value = 10 }
+      command = { type = night_move which = militia value = 10 }
+      command = { type = night_move which = hq value = 10 }
+      command = { type = night_attack which = infantry value = 10 }
+      command = { type = night_attack which = paratrooper value = 10 }
+      command = { type = night_attack which = marine value = 10 }
+      command = { type = night_attack which = bergsjaeger value = 10 }
+      command = { type = night_attack which = cavalry value = 10 }
+      command = { type = night_attack which = militia value = 10 }
+      command = { type = night_defense which = infantry value = 10 }
+      command = { type = night_defense which = paratrooper value = 10 }
+      command = { type = night_defense which = marine value = 10 }
+      command = { type = night_defense which = bergsjaeger value = 10 }
+      command = { type = night_defense which = cavalry value = 10 }
+      command = { type = night_defense which = militia value = 10 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 各兵種聯合 
+  application =
+  { id        = 6460
+    name      = TECH_APP_LD_46_NAME
+    position  = { x = 360 y = 380 }
+    year      = 1943
+    # 独立单位 
+    component = { id = 6461 name = TECH_CMP_LD_26_5_NAME type = combined_arms_focus difficulty = 7 }
+    # 固定机枪 
+    component = { id = 6462 name = TECH_CMP_LD_35_5_NAME type = blitzkrieg_tactics difficulty = 7 }
+    # 渗透-突破-包围战术 
+    component = { id = 6463 name = TECH_CMP_LD_27_1_NAME type = combined_arms_focus difficulty = 7 }
+    # 特种部队训练 
+    component = { id = 6464 name = TECH_CMP_LD_27_5_NAME type = maneuver_tactics difficulty = 7 }
+    # 军政工作结合 
+    component = { id = 6465 name = TECH_CMP_LD_9_5_NAME type = training difficulty = 8 }
+    required  = { 6450 }
+    effects =
+    { command = { type = muddy_attack which = mechanized value = 4 }
+      command = { type = desert_attack which = mechanized value = 1.25 }
+      command = { type = mountain_attack which = mechanized value = 5 }
+      command = { type = hill_attack which = mechanized value = 1 }
+      command = { type = forest_attack which = mechanized value = 6 }
+      command = { type = jungle_attack which = mechanized value = 2.5 }
+      command = { type = swamp_attack which = mechanized value = 2 }
+      command = { type = urban_attack which = mechanized value = 3.5 }
+      command = { type = fort_attack which = mechanized value = 2 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = encirclement value = 3 }
+      command = { type = delay value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = night_attack which = motorized value = 10 }
+      command = { type = night_defense which = motorized value = 10 }
+    }
+  }
+  # 縱深滲透
+  application =
+  { id        = 6190
+    name      = TECH_APP_LD_19_NAME
+    position  = { x = 360 y = 395 }
+    year      = 1943
+    # 三军一体化理论 
+    component = { id = 6191 name = TECH_CMP_LD_19_1_NAME type = infantry_focus difficulty = 7 }
+    # 信号索引小组 
+    component = { id = 6192 name = TECH_CMP_LD_19_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 战术单位-班 
+    component = { id = 6193 name = TECH_CMP_LD_19_3_NAME type = decentralized_execution difficulty = 7 }
+    # 先进三军协调 
+    component = { id = 6194 name = TECH_CMP_LD_19_4_NAME type = individual_courage difficulty = 7 }
+    # 战术单位训练 
+    component = { id = 6195 name = TECH_CMP_LD_19_5_NAME type = training difficulty = 7 }
+    required  = { 6160 }
+    effects =
+    { command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 6 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = night_move which = infantry value = 20 }
+      command = { type = night_move which = paratrooper value = 20 }
+      command = { type = night_move which = marine value = 20 }
+      command = { type = night_move which = bergsjaeger value = 20 }
+      command = { type = night_move which = cavalry value = 20 }
+      command = { type = night_move which = militia value = 20 }
+      command = { type = night_attack which = infantry value = 20 }
+      command = { type = night_attack which = paratrooper value = 20 }
+      command = { type = night_attack which = marine value = 20 }
+      command = { type = night_attack which = bergsjaeger value = 20 }
+      command = { type = night_attack which = cavalry value = 20 }
+      command = { type = night_attack which = militia value = 20 }
+      command = { type = night_defense which = infantry value = 20 }
+      command = { type = night_defense which = paratrooper value = 20 }
+      command = { type = night_defense which = marine value = 20 }
+      command = { type = night_defense which = bergsjaeger value = 20 }
+      command = { type = night_defense which = cavalry value = 20 }
+      command = { type = night_defense which = militia value = 20 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # 進階輕步兵
+  application =
+  { id        = 6490
+    name      = TECH_APP_LD_49_NAME
+    position  = { x = 360 y = 410 }
+    year      = 1946
+    # 重点地区防卫加强 
+    component = { id = 6491 name = TECH_CMP_LD_37_1_NAME type = combined_arms_focus difficulty = 8 }
+    # 战役储备 
+    component = { id = 6492 name = TECH_CMP_LD_37_2_NAME type = large_unit_tactics difficulty = 8 }
+    # 大单位反击 
+    component = { id = 6493 name = TECH_CMP_LD_37_3_NAME type = centralized_execution difficulty = 8 }
+    # 静止机枪配置 
+    component = { id = 6494 name = TECH_CMP_LD_37_4_NAME type = small_unit_tactics difficulty = 8 }
+    # 战术单位-连 
+    component = { id = 6495 name = TECH_CMP_LD_37_5_NAME type = training difficulty = 9 }
+    required  = { }
+    or_required = { 6190 6450 }
+    effects =
+    { command = { type = morale which = land value = 5 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = task_efficiency which = amphibious_assault value = 0.25 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_PPLWAR
+    position = { x = 480 y = 175 }
+  }
+  # 人民戰爭學說
+  application =
+  { id        = 14140
+    name      = TECH_APP_LD_114_NAME
+    position  = { x = 480 y = 190 }
+    year      = 1937
+    # 
+    component = { id = 14141 name = TECH_CMP_LD_114_1_NAME type = management difficulty = 7 }
+    # 
+    component = { id = 14142 name = TECH_CMP_LD_114_2_NAME type = small_unit_tactics difficulty = 7 }
+    # 
+    component = { id = 14143 name = TECH_CMP_LD_114_3_NAME type = training difficulty = 7 }
+    # 
+    component = { id = 14144 name = TECH_CMP_LD_114_4_NAME type = management difficulty = 7 }
+    # 
+    component = { id = 14145 name = TECH_CMP_LD_114_5_NAME type = decentralized_execution difficulty = 7 }
+    required  = { 6300 }
+    effects =
+    { command = { type = building_prod_mod which = land_fort value = 10 }
+      command = { type = deactivate which = 6310 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = morale which = infantry value = 5 }
+      command = { type = morale which = bergsjaeger value = 5 }
+      command = { type = morale which = militia value = 5 }
+      command = { type = max_organization which = militia value = 5 }
+      command = { type = max_organization which = infantry value = 5 }
+      command = { type = max_organization which = bergsjaeger value = 5 }
+    }
+  }
+  # 鄉間游擊戰戰術
+  application =
+  { id        = 14150
+    name      = TECH_APP_LD_115_NAME
+    position  = { x = 480 y = 205 }
+    year      = 1938
+    # 
+    component = { id = 14151 name = TECH_CMP_LD_115_1_NAME type = maneuver_tactics difficulty = 7 }
+    # 
+    component = { id = 14152 name = TECH_CMP_LD_115_2_NAME type = individual_courage difficulty = 7 }
+    # 
+    component = { id = 14153 name = TECH_CMP_LD_115_3_NAME type = individual_courage difficulty = 7 }
+    # 
+    component = { id = 14154 name = TECH_CMP_LD_115_4_NAME type = decentralized_execution difficulty = 7 }
+    # 
+    component = { id = 14155 name = TECH_CMP_LD_115_5_NAME type = training difficulty = 7 }
+    required  = { 14140 }
+    effects =
+    { command = { type = surprise which = land value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = night_move which = hq value = 25 }
+      command = { type = night_move which = infantry value = 25 }
+      command = { type = night_attack which = infantry value = 5 }
+      command = { type = night_defense which = infantry value = 15 }
+      command = { type = night_move which = militia value = 25 }
+      command = { type = night_attack which = militia value = 5 }
+      command = { type = night_defense which = militia value = 15 }
+      command = { type = night_move which = bergsjaeger value = 25 }
+      command = { type = night_attack which = bergsjaeger value = 5 }
+      command = { type = night_defense which = bergsjaeger value = 15 }
+      command = { type = tactical_withdrawal value = 10 }
+      command = { type = counterattack value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = encirclement value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = morale which = infantry value = 5 }
+      command = { type = morale which = bergsjaeger value = 5 }
+      command = { type = morale which = militia value = 5 }
+    }
+  }
+  # 革命根據地
+  application =
+  { id        = 14160
+    name      = TECH_APP_LD_116_NAME
+    position  = { x = 480 y = 220 }
+    year      = 1939
+    # 
+    component = { id = 14161 name = TECH_CMP_LD_116_1_NAME type = management difficulty = 8 }
+    # 
+    component = { id = 14162 name = TECH_CMP_LD_116_2_NAME type = training difficulty = 8 }
+    # 
+    component = { id = 14163 name = TECH_CMP_LD_116_3_NAME type = infantry_focus difficulty = 7 }
+    # 
+    component = { id = 14164 name = TECH_CMP_LD_116_4_NAME type = decentralized_execution difficulty = 7 }
+    # 
+    component = { id = 14165 name = TECH_CMP_LD_116_5_NAME type = management difficulty = 7 }
+    required  = { 14140 }
+    effects =
+    { command = { type = building_prod_mod which = land_fort value = 20 }
+      command = { type = building_prod_mod which = infrastructure value = 20 }
+      command = { type = trickleback_mod value = 1 }
+      command = { type = attrition_mod value = 1 }
+      command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = relative_manpower value = 5 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = build_time which = militia when = on_upgrade where = relative value = -5 }
+      command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = hq when = on_upgrade where = relative value = -10 }
+      command = { type = max_organization which = militia value = 5 }
+      command = { type = max_organization which = infantry value = 5 }
+      command = { type = max_organization which = bergsjaeger value = 5 }
+      command = { type = industrial_modifier which = supplies value = 2 }
+      command = { type = desert_defense which = militia value = 2.5 }
+      command = { type = mountain_defense which = militia value = 2.5 }
+      command = { type = hill_defense which = militia value = 2.5 }
+      command = { type = forest_defense which = militia value = 2.5 }
+      command = { type = jungle_defense which = militia value = 2.5 }
+      command = { type = swamp_defense which = militia value = 2.5 }
+      command = { type = mountain_defense which = bergsjaeger value = 5 }
+      command = { type = hill_defense which = bergsjaeger value = 5 }
+      command = { type = desert_defense which = infantry value = 2.5 }
+      command = { type = mountain_defense which = infantry value = 2.5 }
+      command = { type = hill_defense which = infantry value = 2.5 }
+      command = { type = forest_defense which = infantry value = 2.5 }
+      command = { type = jungle_defense which = infantry value = 2.5 }
+      command = { type = swamp_defense which = infantry value = 2.5 }
+    }
+  }
+  # 運動游擊戰理念
+  application =
+  { id        = 14170
+    name      = TECH_APP_LD_117_NAME
+    position  = { x = 480 y = 235 }
+    year      = 1941
+    # 
+    component = { id = 14171 name = TECH_CMP_LD_117_1_NAME type = maneuver_tactics difficulty = 8 }
+    # 
+    component = { id = 14172 name = TECH_CMP_LD_117_2_NAME type = maneuver_tactics difficulty = 8 }
+    # 
+    component = { id = 14173 name = TECH_CMP_LD_117_3_NAME type = small_unit_tactics difficulty = 8 }
+    # 
+    component = { id = 14174 name = TECH_CMP_LD_117_4_NAME type = small_unit_tactics difficulty = 8 }
+    # 
+    component = { id = 14175 name = TECH_CMP_LD_117_5_NAME type = training difficulty = 8 }
+    required  = { 14150 }
+    effects =
+    { command = { type = surprise which = land value = 5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = night_move which = hq value = 25 }
+      command = { type = night_move which = infantry value = 25 }
+      command = { type = night_attack which = infantry value = 5 }
+      command = { type = night_defense which = infantry value = 15 }
+      command = { type = night_move which = militia value = 25 }
+      command = { type = night_attack which = militia value = 5 }
+      command = { type = night_defense which = militia value = 15 }
+      command = { type = night_move which = bergsjaeger value = 25 }
+      command = { type = night_attack which = bergsjaeger value = 5 }
+      command = { type = night_defense which = bergsjaeger value = 15 }
+      command = { type = tactical_withdrawal value = 10 }
+      command = { type = counterattack value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = encirclement value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = morale which = infantry value = 5 }
+      command = { type = morale which = bergsjaeger value = 5 }
+      command = { type = morale which = militia value = 5 }
+    }
+  }
+  # 擴大革命根據地
+  application =
+  { id        = 14180
+    name      = TECH_APP_LD_118_NAME
+    position  = { x = 480 y = 250 }
+    year      = 1942
+    # 
+    component = { id = 14181 name = TECH_CMP_LD_118_1_NAME type = management difficulty = 8 }
+    # 
+    component = { id = 14182 name = TECH_CMP_LD_118_2_NAME type = management difficulty = 8 }
+    # 
+    component = { id = 14183 name = TECH_CMP_LD_118_3_NAME type = individual_courage difficulty = 8 }
+    # 
+    component = { id = 14184 name = TECH_CMP_LD_118_4_NAME type = decentralized_execution difficulty = 8 }
+    # 
+    component = { id = 14185 name = TECH_CMP_LD_118_5_NAME type = individual_courage difficulty = 8 }
+    required  = { 14160 }
+    effects =
+    { command = { type = building_prod_mod which = land_fort value = 10 }
+      command = { type = building_prod_mod which = infrastructure value = 20 }
+      command = { type = trickleback_mod value = 1 }
+      command = { type = attrition_mod value = 1 }
+      command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = relative_manpower value = 5 }
+      command = { type = new_model which = hq value = 4 }
+      command = { type = scrap_model which = hq value = 3 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = build_time which = militia when = on_upgrade where = relative value = -5 }
+      command = { type = build_time which = bergsjaeger when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = infantry when = on_upgrade where = relative value = -10 }
+      command = { type = build_time which = hq when = on_upgrade where = relative value = -10 }
+      command = { type = max_organization which = militia value = 5 }
+      command = { type = max_organization which = infantry value = 5 }
+      command = { type = max_organization which = bergsjaeger value = 5 }
+      command = { type = industrial_modifier which = supplies value = 2 }
+      command = { type = desert_defense which = militia value = 2.5 }
+      command = { type = mountain_defense which = militia value = 2.5 }
+      command = { type = hill_defense which = militia value = 2.5 }
+      command = { type = forest_defense which = militia value = 2.5 }
+      command = { type = jungle_defense which = militia value = 2.5 }
+      command = { type = swamp_defense which = militia value = 2.5 }
+      command = { type = mountain_defense which = bergsjaeger value = 5 }
+      command = { type = hill_defense which = bergsjaeger value = 5 }
+      command = { type = desert_defense which = infantry value = 2.5 }
+      command = { type = mountain_defense which = infantry value = 2.5 }
+      command = { type = hill_defense which = infantry value = 2.5 }
+      command = { type = forest_defense which = infantry value = 2.5 }
+      command = { type = jungle_defense which = infantry value = 2.5 }
+      command = { type = swamp_defense which = infantry value = 2.5 }
+    }
+  }
+  # 不對稱戰爭
+  application =
+  { id        = 14190
+    name      = TECH_APP_LD_119_NAME
+    position  = { x = 480 y = 265 }
+    year      = 1945
+    # 
+    component = { id = 14191 name = TECH_CMP_LD_119_1_NAME type = management difficulty = 10 }
+    # 
+    component = { id = 14192 name = TECH_CMP_LD_119_2_NAME type = small_unit_tactics difficulty = 10 }
+    # 
+    component = { id = 14193 name = TECH_CMP_LD_119_3_NAME type = training difficulty = 10 }
+    # 
+    component = { id = 14194 name = TECH_CMP_LD_119_4_NAME type = individual_courage difficulty = 10 }
+    # 
+    component = { id = 14195 name = TECH_CMP_LD_119_5_NAME type = training difficulty = 10 }
+    required  = { 14170 }
+    effects =
+    { command = { type = intelligence which = us value = 5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = tactical_withdrawal value = 10 }
+      command = { type = delay value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = encirclement value = 5 }
+      command = { type = counterattack value = 15 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 5 }
+    }
+  }
+  # 陣地戰
+  application =
+  { id        = 14200
+    name      = TECH_APP_LD_161_NAME
+    position  = { x = 480 y = 280 }
+    year      = 1948
+    # 
+    component = { id = 14201 name = TECH_CMP_LD_161_1_NAME type = training difficulty = 10 }
+    # 
+    component = { id = 14202 name = TECH_CMP_LD_161_2_NAME type = maneuver_tactics difficulty = 10 }
+    # 
+    component = { id = 14203 name = TECH_CMP_LD_161_3_NAME type = maneuver_tactics difficulty = 10 }
+    # 
+    component = { id = 14204 name = TECH_CMP_LD_161_4_NAME type = individual_courage difficulty = 10 }
+    # 
+    component = { id = 14205 name = TECH_CMP_LD_161_5_NAME type = large_unit_tactics difficulty = 10 }
+    required  = { 14190 14180 }
+    effects =
+    { command = { type = new_model which = hq value = 5 }
+      command = { type = scrap_model which = hq value = 4 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = ambush value = 5 }
+      command = { type = breakthrough value = 15 }
+      command = { type = assault value = 15 }
+      command = { type = counterattack value = 15 }
+      command = { type = encirclement value = 15 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 15 }
+      command = { type = muddy_attack which = land value = 2 }
+      command = { type = desert_attack which = land value = 2 }
+      command = { type = mountain_attack which = land value = 2 }
+      command = { type = hill_attack which = land value = 5 }
+      command = { type = forest_attack which = land value = 5 }
+      command = { type = jungle_attack which = land value = 2 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = urban_attack which = land value = 10 }
+      command = { type = fort_attack which = land value = 10 }
+    }
+  }
+  # 持久人民戰學說
+  application =
+  { id        = 14220
+    name      = TECH_APP_LD_163_NAME
+    position  = { x = 480 y = 295 }
+    year      = 1960
+    # 
+    component = { id = 14221 name = TECH_CMP_LD_163_1_NAME type = management difficulty = 10 }
+    # 
+    component = { id = 14222 name = TECH_CMP_LD_163_2_NAME type = individual_courage difficulty = 10 }
+    # 
+    component = { id = 14223 name = TECH_CMP_LD_163_3_NAME type = management difficulty = 10 }
+    # 
+    component = { id = 14224 name = TECH_CMP_LD_163_4_NAME type = decentralized_execution difficulty = 10 }
+    # 
+    component = { id = 14225 name = TECH_CMP_LD_163_5_NAME type = centralized_execution difficulty = 10 }
+    required  = { 14200 }
+    effects =
+    { command = { type = building_prod_mod which = land_fort value = 10 }
+      command = { type = building_prod_mod which = infrastructure value = 15 }
+      command = { type = intelligence which = us value = 25 }
+      command = { type = surprise which = land value = 15 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = army_detection which = them value = -10 }
+      command = { type = relative_manpower value = 5 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = breakthrough value = 15 }
+      command = { type = assault value = 15 }
+      command = { type = encirclement value = 5 }
+      command = { type = counterattack value = 5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 15 }
+      command = { type = new_model which = hq value = 6 }
+      command = { type = scrap_model which = hq value = 5 }
+      command = { type = night_move which = land value = 15 }
+    }
+  }
+  # 煽動群眾(錨定效應)
+  application =
+  { id        = 14230
+    name      = TECH_APP_LD_164_NAME
+    position  = { x = 480 y = 310 }
+    year      = 1960
+    # 
+    component = { id = 14231 name = TECH_CMP_LD_164_1_NAME type = infantry_focus difficulty = 5 }
+    # 
+    component = { id = 14232 name = TECH_CMP_LD_164_2_NAME type = small_unit_tactics difficulty = 15 }
+    # 
+    component = { id = 14233 name = TECH_CMP_LD_164_3_NAME type = centralized_execution difficulty = 30 }
+    # 
+    component = { id = 14234 name = TECH_CMP_LD_164_4_NAME type = individual_courage difficulty = 20 }
+    # 
+    component = { id = 14235 name = TECH_CMP_LD_164_5_NAME type = centralized_execution difficulty = 20 }
+    required  = { 14220 }
+    effects =
+    { command = { type = trickleback_mod value = 1 }
+      command = { type = attrition_mod value = 1 }
+      command = { type = deactivate which = 14240 }
+      command = { type = deactivate which = 14250 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = intelligence which = them value = -25 }
+      command = { type = army_detection which = them value = -15 }
+      command = { type = hq_supply_eff value = 5 }
+      command = { type = sce_frequency value = 0.5 }
+      command = { type = max_organization which = land value = 15 }
+      command = { type = morale which = land value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = breakthrough value = 15 }
+      command = { type = assault value = 5 }
+      command = { type = counterattack value = 5 }
+      command = { type = encirclement value = 15 }
+      command = { type = ambush value = 15 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = hill_attack which = land value = 5 }
+      command = { type = jungle_attack which = land value = 5 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = jungle_defense which = land value = 5 }
+    }
+  }
+  # 重視都市暴動
+  application =
+  { id        = 14240
+    name      = TECH_APP_LD_165_NAME
+    position  = { x = 480 y = 340 }
+    year      = 1960
+    # 
+    component = { id = 14241 name = TECH_CMP_LD_165_1_NAME type = management difficulty = 20 }
+    # 
+    component = { id = 14242 name = TECH_CMP_LD_165_2_NAME type = small_unit_tactics difficulty = 20 }
+    # 
+    component = { id = 14243 name = TECH_CMP_LD_165_3_NAME type = training difficulty = 20 }
+    # 
+    component = { id = 14244 name = TECH_CMP_LD_165_4_NAME type = decentralized_execution difficulty = 20 }
+    # 
+    component = { id = 14245 name = TECH_CMP_LD_165_5_NAME type = individual_courage difficulty = 20 }
+    required  = { 14220 }
+    effects =
+    { command = { type = trickleback_mod value = 1 }
+      command = { type = attrition_mod value = 1 }
+      command = { type = deactivate which = 14230 }
+      command = { type = deactivate which = 14250 }
+      command = { type = intelligence which = us value = 15 }
+      command = { type = surprise which = land value = 15 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = intelligence which = them value = -5 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = urban_attack which = infantry value = 15 }
+      command = { type = urban_defense which = infantry value = 25 }
+      command = { type = urban_defense which = militia value = 25 }
+      command = { type = urban_attack which = militia value = 15 }
+      command = { type = urban_defense which = land value = 15 }
+      command = { type = urban_attack which = land value = 15 }
+      command = { type = hard_attack which = infantry value = 5 }
+      command = { type = soft_attack which = infantry value = 5 }
+      command = { type = hard_attack which = militia value = 2 }
+      command = { type = soft_attack which = militia value = 2 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = ambush value = 25 }
+      command = { type = tactical_withdrawal value = 15 }
+    }
+  }
+  # 重視民俗與信仰
+  application =
+  { id        = 14250
+    name      = TECH_APP_LD_166_NAME
+    position  = { x = 480 y = 325 }
+    year      = 1960
+    # 
+    component = { id = 14251 name = TECH_CMP_LD_166_1_NAME type = management difficulty = 10 }
+    # 
+    component = { id = 14252 name = TECH_CMP_LD_166_2_NAME type = infantry_focus difficulty = 20 }
+    # 
+    component = { id = 14253 name = TECH_CMP_LD_166_3_NAME type = training difficulty = 10 }
+    # 
+    component = { id = 14254 name = TECH_CMP_LD_166_4_NAME type = individual_courage difficulty = 30 }
+    # 
+    component = { id = 14255 name = TECH_CMP_LD_166_5_NAME type = decentralized_execution difficulty = 20 }
+    required  = { 14220 }
+    effects =
+    { command = { type = trickleback_mod value = 10 }
+      command = { type = attrition_mod value = 5 }
+      command = { type = deactivate which = 14230 }
+      command = { type = deactivate which = 14240 }
+      command = { type = new_model which = hq value = 7 }
+      command = { type = scrap_model which = hq value = 6 }
+      command = { type = surprise which = land value = 15 }
+      command = { type = army_detection which = us value = 25 }
+      command = { type = intelligence which = them value = -20 }
+      command = { type = army_detection which = them value = -10 }
+      command = { type = relative_manpower value = 15 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = hard_attack which = militia value = 1 }
+      command = { type = soft_attack which = militia value = 1 }
+      command = { type = hard_attack which = infantry value = 2 }
+      command = { type = soft_attack which = infantry value = 2 }
+      command = { type = delay value = 5 }
+      command = { type = assault value = 5 }
+      command = { type = counterattack value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = tactical_withdrawal value = 5 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 25 }
+    }
+  }
+  # 現代人民戰爭
+  application =
+  { id        = 14260
+    name      = TECH_APP_LD_167_NAME
+    position  = { x = 480 y = 355 }
+    year      = 1970
+    # 
+    component = { id = 14261 name = TECH_CMP_LD_167_1_NAME type = mathematics difficulty = 10 }
+    # 
+    component = { id = 14262 name = TECH_CMP_LD_167_2_NAME type = technical_efficiency difficulty = 30 }
+    # 
+    component = { id = 14263 name = TECH_CMP_LD_167_3_NAME type = management difficulty = 10 }
+    # 
+    component = { id = 14264 name = TECH_CMP_LD_167_4_NAME type = centralized_execution difficulty = 30 }
+    # 
+    component = { id = 14265 name = TECH_CMP_LD_167_5_NAME type = industrial_engineering difficulty = 30 }
+    required  = { }
+    or_required = { 14250 14240 14230 }
+    effects =
+    { command = { type = new_model which = hq value = 8 }
+      command = { type = scrap_model which = hq value = 7 }
+      command = { type = trickleback_mod value = 1 }
+      command = { type = attrition_mod value = 1 }
+      command = { type = intelligence which = us value = 15 }
+      command = { type = intelligence which = them value = -5 }
+      command = { type = surprise which = land value = 5 }
+      command = { type = army_detection which = us value = 10 }
+      command = { type = army_detection which = them value = -5 }
+      command = { type = hq_supply_eff value = 3 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = muddy_defense which = land value = 5 }
+      command = { type = desert_defense which = land value = 5 }
+      command = { type = mountain_defense which = land value = 5 }
+      command = { type = hill_defense which = land value = 5 }
+      command = { type = forest_defense which = land value = 5 }
+      command = { type = jungle_defense which = land value = 5 }
+      command = { type = swamp_defense which = land value = 5 }
+      command = { type = urban_defense which = land value = 5 }
+      command = { type = max_organization which = land value = 20 }
+      command = { type = morale which = land value = 5 }
+      command = { type = muddy_attack which = armor value = 5 }
+      command = { type = desert_attack which = armor value = 5 }
+      command = { type = hill_attack which = armor value = 5 }
+      command = { type = forest_attack which = armor value = 5 }
+      command = { type = urban_attack which = armor value = 5 }
+      command = { type = fort_attack which = armor value = 5 }
+      command = { type = muddy_attack which = mechanized value = 5 }
+      command = { type = desert_attack which = mechanized value = 5 }
+      command = { type = hill_attack which = mechanized value = 5 }
+      command = { type = forest_attack which = mechanized value = 5 }
+      command = { type = urban_attack which = mechanized value = 5 }
+      command = { type = fort_attack which = mechanized value = 5 }
+    }
+  }
+  label =
+  { tag      = TECH_CAT_LD_1
+    position = { x = 5 y = 415 }
+  }
+  # 前沿防御学说 
+  application =
+  { id        = 14280
+    name      = TECH_APP_LD_38_NAME
+    desc      = TECH_APP_LD_38_DESC
+    position  = { x = 88 y = 414 }
+    year      = 1973
+    # 堡垒防御 
+    component = { id = 14281 name = TECH_CMP_LD_38_1_NAME type = combined_arms_focus difficulty = 16 }
+    # 分片布雷区 
+    component = { id = 14282 name = TECH_CMP_LD_38_2_NAME type = individual_courage difficulty = 16 double_time = yes }
+    # 复杂坑道 
+    component = { id = 14283 name = TECH_CMP_LD_38_4_NAME type = airborne_training difficulty = 16 }
+    # 局部储备 
+    component = { id = 14284 name = TECH_CMP_LD_38_5_NAME type = mountain_training difficulty = 16 }
+    required  = { }
+    or_required = { 14260 6840 6830 6850 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 10 }
+      command = { type = tactical_withdrawal which = land value = 2 }
+      command = { type = breakthrough which = land value = 2 }
+      command = { type = encirclement which = land value = 2 }
+      command = { type = assault which = land value = 2 }
+      command = { type = night_move which = land value = 4 }
+      command = { type = night_attack which = land value = 2 }
+      command = { type = night_defense which = land value = 2 }
+      command = { type = desert_attack which = land value = 2 }
+      command = { type = desert_defense which = land value = 2 }
+      command = { type = mountain_attack which = land value = 2 }
+      command = { type = mountain_defense which = land value = 2 }
+      command = { type = hill_attack which = land value = 2 }
+      command = { type = hill_defense which = land value = 2 }
+      command = { type = forest_attack which = land value = 2 }
+      command = { type = forest_defense which = land value = 2 }
+      command = { type = swamp_attack which = land value = 2 }
+      command = { type = swamp_defense which = land value = 2 }
+      command = { type = urban_attack which = land value = 2 }
+      command = { type = urban_defense which = land value = 2 }
+      command = { type = paradrop_attack which = land value = 2 }
+      command = { type = desert_move which = land value = 2 }
+      command = { type = mountain_move which = land value = 2 }
+      command = { type = hill_move which = land value = 2 }
+      command = { type = forest_move which = land value = 2 }
+      command = { type = swamp_move which = land value = 2 }
+      command = { type = urban_move which = land value = 2 }
+      command = { type = frozen_attack which = land value = 2 }
+      command = { type = frozen_defense which = land value = 2 }
+      command = { type = snow_attack which = land value = 2 }
+      command = { type = snow_defense which = land value = 2 }
+      command = { type = blizzard_attack which = land value = 2 }
+      command = { type = blizzard_defense which = land value = 2 }
+      command = { type = rain_attack which = land value = 2 }
+      command = { type = rain_defense which = land value = 2 }
+      command = { type = muddy_move which = land value = 2 }
+      command = { type = surprise which = land value = 2 }
+      command = { type = jungle_attack which = land value = 2 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = jungle_move which = land value = 2 }
+      command = { type = fort_attack which = land value = 2 }
+      command = { type = trickleback_mod which = land value = 5 }
+      command = { type = hq_supply_eff value = 25 }
+      command = { type = sce_frequency value = 0.5 }
+      command = { type = counterattack which = land value = 2.5 }
+      command = { type = assault which = land value = 2.5 }
+      command = { type = encirclement which = land value = 2.5 }
+      command = { type = ambush which = land value = 2.5 }
+      command = { type = delay which = land value = 2.5 }
+      command = { type = tactical_withdrawal which = land value = 2.5 }
+      command = { type = breakthrough which = land value = 2.5 }
+      command = { type = hard_attack which = land value = 4 }
+      command = { type = soft_attack which = land value = 4 }
+      command = { type = night_move which = land value = 5 }
+      command = { type = night_attack which = land value = 5 }
+      command = { type = night_defense which = land value = 5 }
+      command = { type = fort_attack which = land value = 5 }
+      command = { type = defensiveness which = land value = -5 }
+    }
+  }
+  # 聖戰
+  application =
+  { id        = 14300
+    name      = TECH_APP_LD_53_NAME
+    desc      = TECH_APP_LD_53_DESC
+    position  = { x = 5 y = 430 }
+    year      = 1975
+    # 前进坑道作业 
+    component = { id = 14301 name = TECH_CMP_LD_53_1_NAME type = rt_user_2 difficulty = 15 }
+    # 区域排雷 
+    component = { id = 14302 name = TECH_CMP_LD_53_2_NAME type = small_unit_tactics difficulty = 10 }
+    # 机动障碍排除 
+    component = { id = 14303 name = TECH_CMP_LD_53_3_NAME type = training difficulty = 20 }
+    # 攻击方向伪装 
+    component = { id = 14304 name = TECH_CMP_LD_53_4_NAME type = rt_user_2 difficulty = 15 }
+    # 攻坚爆破作业 
+    component = { id = 14305 name = TECH_CMP_LD_53_5_NAME type = individual_courage difficulty = 15 }
+    required  = { }
+    or_required = { 6830 6850 6840 }
+    effects =
+    { command = { type = max_organization which = land value = -10 }
+      command = { type = morale which = land value = 35 }
+      command = { type = soft_attack which = land value = -2 }
+      command = { type = build_cost which = infantry when = on_upgrade where = relative value = -20 }
+      command = { type = build_cost which = garrison when = on_upgrade where = relative value = -20 }
+      command = { type = build_cost which = hq when = on_upgrade where = relative value = -20 }
+      command = { type = build_cost which = militia when = on_upgrade where = relative value = -20 }
+      command = { type = build_cost which = paratrooper when = on_upgrade where = relative value = 20 }
+      command = { type = build_cost which = armor when = on_upgrade where = relative value = 20 }
+      command = { type = build_cost which = motorized when = on_upgrade where = relative value = 20 }
+      command = { type = sce_frequency value = 0.25 }
+      command = { type = free_money value = 0.1 }
+      command = { type = urban_defense which = land value = 25 }
+      command = { type = urban_attack which = land value = 25 }
+      command = { type = hard_attack which = land value = -2 }
+      command = { type = fort_attack which = land value = -3 }
+      command = { type = intelligence which = us value = 3 }
+      command = { type = surprise which = land value = 3 }
+      command = { type = desert_attack which = land value = -2 }
+      command = { type = desert_defense which = land value = 8 }
+      command = { type = mountain_attack which = land value = -5 }
+      command = { type = mountain_defense which = land value = 15 }
+      command = { type = jungle_attack which = land value = 7 }
+      command = { type = jungle_defense which = land value = 7 }
+      command = { type = defensiveness which = land value = 3 }
+      command = { type = relative_manpower value = 20 }
+      command = { type = attrition_mod value = -4 }
+      command = { type = trickleback_mod value = -4 }
+    }
+  }
+  # Democratic Ideals
+  application =
+  { id        = 14310
+    name      = TECH_APP_LD_54_NAME
+    desc      = TECH_APP_LD_54_DESC
+    position  = { x = 5 y = 446 }
+    year      = 1975
+    # 野战工事构筑 
+    component = { id = 14311 name = TECH_CMP_LD_54_1_NAME type = training difficulty = 10 }
+    # 雷区设置 
+    component = { id = 14312 name = TECH_CMP_LD_54_2_NAME type = rt_user_2 difficulty = 20 }
+    # 机动障碍设置 
+    component = { id = 14313 name = TECH_CMP_LD_54_3_NAME type = centralized_execution difficulty = 15 }
+    # 固定目标伪装 
+    component = { id = 14314 name = TECH_CMP_LD_54_4_NAME type = rt_user_2 difficulty = 15 }
+    # 工事损害抢修 
+    component = { id = 14315 name = TECH_CMP_LD_54_5_NAME type = rt_user_2 difficulty = 20 }
+    required  = { }
+    or_required = { 6830 6840 6850 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 10 }
+      command = { type = jungle_move which = land value = -5 }
+      command = { type = jungle_defense which = land value = 2 }
+      command = { type = jungle_attack which = land value = 5 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = muddy_move which = land value = 5 }
+      command = { type = storm_move which = land value = 5 }
+      command = { type = rain_move which = land value = 5 }
+      command = { type = blizzard_move which = land value = 5 }
+      command = { type = snow_move which = land value = 5 }
+      command = { type = frozen_move which = land value = 5 }
+      command = { type = muddy_defense which = land value = -2.5 }
+      command = { type = muddy_attack which = land value = -2.5 }
+      command = { type = storm_defense which = land value = -2.5 }
+      command = { type = storm_attack which = land value = -2.5 }
+      command = { type = rain_defense which = land value = -2.5 }
+      command = { type = rain_attack which = land value = -2.5 }
+      command = { type = blizzard_defense which = land value = -2.5 }
+      command = { type = blizzard_attack which = land value = -2.5 }
+      command = { type = snow_defense which = land value = -2.5 }
+      command = { type = snow_attack which = land value = -2.5 }
+      command = { type = frozen_defense which = land value = -2.5 }
+      command = { type = frozen_attack which = land value = -2.5 }
+      command = { type = urban_move which = land value = 5 }
+      command = { type = forest_move which = land value = 5 }
+      command = { type = hill_move which = land value = 5 }
+      command = { type = mountain_move which = land value = 5 }
+      command = { type = desert_move which = land value = 5 }
+      command = { type = paradrop_attack which = land value = 5 }
+      command = { type = urban_defense which = land value = 5 }
+      command = { type = urban_attack which = land value = -5 }
+      command = { type = swamp_defense which = land value = -5 }
+      command = { type = swamp_attack which = land value = -5 }
+      command = { type = forest_defense which = land value = -5 }
+      command = { type = forest_attack which = land value = -5 }
+      command = { type = hill_defense which = land value = -5 }
+      command = { type = hill_attack which = land value = -5 }
+      command = { type = mountain_defense which = land value = -5 }
+      command = { type = mountain_attack which = land value = -5 }
+      command = { type = desert_defense which = land value = -5 }
+      command = { type = desert_attack which = land value = -5 }
+      command = { type = night_defense which = land value = 10 }
+      command = { type = night_attack which = land value = 5 }
+      command = { type = night_move which = land value = 5 }
+      command = { type = defensiveness which = land value = -5 }
+      command = { type = hard_attack which = land value = 2 }
+      command = { type = hard_attack which = land value = 1 }
+      command = { type = breakthrough value = 4 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = delay value = 3 }
+      command = { type = counterattack which = land value = 3 }
+      command = { type = sce_frequency value = 0.1 }
+      command = { type = songs which = BornInTheUSA }
+    }
+  }
+  # 全球共產主義運動議程
+  application =
+  { id        = 14320
+    name      = TECH_APP_LD_55_NAME
+    desc      = TECH_APP_LD_55_DESC
+    position  = { x = 5 y = 462 }
+    year      = 1975
+    # 无后援前线渗透 
+    component = { id = 14321 name = TECH_CMP_LD_55_1_NAME type = rt_user_2 difficulty = 15 }
+    # 小部队集结 
+    component = { id = 14322 name = TECH_CMP_LD_55_2_NAME type = rt_user_2 difficulty = 20 }
+    # 狙击 
+    component = { id = 14323 name = TECH_CMP_LD_55_3_NAME type = decentralized_execution difficulty = 20 }
+    # 新补给方法设计 
+    component = { id = 14324 name = TECH_CMP_LD_55_4_NAME type = rt_user_2 difficulty = 15 }
+    # 野外生存训练 
+    component = { id = 14325 name = TECH_CMP_LD_55_5_NAME type = individual_courage difficulty = 20 }
+    required  = { }
+    or_required = { 6830 6840 6850 }
+    effects =
+    { command = { type = max_organization which = land value = 15 }
+      command = { type = morale which = land value = 5 }
+      command = { type = defensiveness which = land value = -10 }
+      command = { type = jungle_move which = land value = 2 }
+      command = { type = jungle_defense which = land value = 10 }
+      command = { type = jungle_attack which = land value = -3 }
+      command = { type = army_detection which = us value = 6 }
+      command = { type = intelligence which = us value = 6 }
+      command = { type = surprise which = land value = 3 }
+      command = { type = muddy_move which = land value = 2 }
+      command = { type = storm_move which = land value = 2 }
+      command = { type = rain_move which = land value = 2 }
+      command = { type = blizzard_move which = land value = 20 }
+      command = { type = snow_move which = land value = 20 }
+      command = { type = frozen_move which = land value = 20 }
+      command = { type = muddy_defense which = land value = 10 }
+      command = { type = muddy_attack which = land value = -5 }
+      command = { type = storm_defense which = land value = 10 }
+      command = { type = storm_attack which = land value = -5 }
+      command = { type = rain_defense which = land value = 10 }
+      command = { type = rain_attack which = land value = -5 }
+      command = { type = blizzard_defense which = land value = 20 }
+      command = { type = blizzard_attack which = land value = 10 }
+      command = { type = snow_defense which = land value = 20 }
+      command = { type = snow_attack which = land value = 5 }
+      command = { type = frozen_defense which = land value = 20 }
+      command = { type = frozen_attack which = land value = 20 }
+      command = { type = urban_move which = land value = 2 }
+      command = { type = desert_move which = land value = 2 }
+      command = { type = mountain_move which = land value = 2 }
+      command = { type = hill_move which = land value = 2 }
+      command = { type = forest_move which = land value = 2 }
+      command = { type = swamp_move which = land value = 2 }
+      command = { type = urban_defense which = land value = 25 }
+      command = { type = urban_attack which = land value = 5 }
+      command = { type = swamp_defense which = land value = 10 }
+      command = { type = swamp_attack which = land value = -5 }
+      command = { type = forest_defense which = land value = 10 }
+      command = { type = forest_attack which = land value = -5 }
+      command = { type = hill_defense which = land value = 10 }
+      command = { type = hill_attack which = land value = -5 }
+      command = { type = mountain_defense which = land value = -5 }
+      command = { type = mountain_attack which = land value = -5 }
+      command = { type = desert_defense which = land value = 5 }
+      command = { type = night_defense which = land value = 25 }
+      command = { type = night_attack which = land value = 5 }
+      command = { type = night_move which = land value = 10 }
+      command = { type = delay value = 10 }
+      command = { type = counterattack value = 15 }
+      command = { type = sce_frequency value = 0.2 }
+      command = { type = ground_def_eff value = 1.3 }
+    }
+  }
+  # 泛民族主義
+  application =
+  { id        = 14330
+    name      = TECH_APP_LD_56_NAME
+    desc      = TECH_APP_LD_56_DESC
+    position  = { x = 5 y = 478 }
+    year      = 1975
+    # 夜间攻击 
+    component = { id = 14331 name = TECH_CMP_LD_56_1_NAME type = training difficulty = 10 }
+    # 单位分散战斗 
+    component = { id = 14332 name = TECH_CMP_LD_56_2_NAME type = rt_user_2 difficulty = 15 }
+    # 参谋：地形评估 
+    component = { id = 14333 name = TECH_CMP_LD_56_3_NAME type = combined_arms_focus difficulty = 20 }
+    # 集中肉搏战 
+    component = { id = 14334 name = TECH_CMP_LD_56_4_NAME type = rt_user_2 difficulty = 15 }
+    # 排级夜战训练 
+    component = { id = 14335 name = TECH_CMP_LD_56_5_NAME type = combined_arms_focus difficulty = 20 }
+    required  = { }
+    or_required = { 6830 6840 6850 }
+    effects =
+    { command = { type = morale which = land value = 15 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = sce_frequency value = 0.25 }
+      command = { type = counterattack value = 5 }
+      command = { type = delay value = -5 }
+      command = { type = night_move which = land value = 5 }
+      command = { type = night_attack which = land value = 20 }
+      command = { type = night_defense which = land value = 5 }
+      command = { type = desert_attack which = land value = 7 }
+      command = { type = desert_defense which = land value = -5 }
+      command = { type = mountain_attack which = land value = 4 }
+      command = { type = mountain_defense which = land value = -2 }
+      command = { type = hill_attack which = land value = 2 }
+      command = { type = hill_defense which = land value = -4 }
+      command = { type = forest_attack which = land value = 5 }
+      command = { type = forest_defense which = land value = -4 }
+      command = { type = swamp_attack which = land value = 3 }
+      command = { type = swamp_defense which = land value = -5 }
+      command = { type = urban_attack which = land value = 15 }
+      command = { type = urban_defense which = land value = 8 }
+      command = { type = task_efficiency which = airborne_assault value = 2 }
+      command = { type = desert_move which = land value = 2 }
+      command = { type = mountain_move which = land value = 2 }
+      command = { type = hill_move which = land value = 2 }
+      command = { type = forest_move which = land value = 2 }
+      command = { type = swamp_move which = land value = 2 }
+      command = { type = urban_move which = land value = 5 }
+      command = { type = frozen_attack which = land value = 10 }
+      command = { type = frozen_defense which = land value = -5 }
+      command = { type = snow_attack which = land value = 10 }
+      command = { type = snow_defense which = land value = -5 }
+      command = { type = blizzard_attack which = land value = 7 }
+      command = { type = blizzard_defense which = land value = -5 }
+      command = { type = rain_attack which = land value = 10 }
+      command = { type = rain_defense which = land value = -5 }
+      command = { type = storm_attack which = land value = 10 }
+      command = { type = storm_defense which = land value = -5 }
+      command = { type = muddy_attack which = land value = 10 }
+      command = { type = muddy_defense which = land value = -5 }
+      command = { type = frozen_move which = land value = 4 }
+      command = { type = snow_move which = land value = 4 }
+      command = { type = blizzard_move which = land value = 4 }
+      command = { type = rain_move which = land value = 4 }
+      command = { type = storm_move which = land value = 4 }
+      command = { type = muddy_move which = land value = 4 }
+      command = { type = surprise value = 6 }
+      command = { type = intelligence which = us value = 6 }
+      command = { type = army_detection which = us value = 5 }
+      command = { type = jungle_attack which = land value = 10 }
+      command = { type = jungle_defense which = land value = -5 }
+      command = { type = jungle_move which = land value = 4 }
+      command = { type = fort_attack which = land value = 4 }
+      command = { type = defensiveness which = land value = 5 }
+      command = { type = songs which = Tomorrow_belongs_to_me }
+    }
+  }
+  # Gun Mounted Utes
+  application =
+  { id        = 14340
+    name      = TECH_APP_LD_57_NAME
+    desc      = TECH_APP_LD_57_DESC
+    position  = { x = 115 y = 430 }
+    year      = 1978
+    # 步兵攻击战术 
+    component = { id = 14341 name = TECH_CMP_LD_57_5_NAME type = small_unit_tactics difficulty = 15 }
+    # 单位自给自足 
+    component = { id = 14342 name = TECH_CMP_LD_57_1_NAME type = small_unit_tactics difficulty = 10 }
+    # 孤立作战单位 
+    component = { id = 14343 name = TECH_CMP_LD_57_2_NAME type = artillery difficulty = 10 }
+    # 机动指挥所 
+    component = { id = 14344 name = TECH_CMP_LD_57_3_NAME type = vehicle_engineering difficulty = 10 }
+    # 决一死战思想 
+    component = { id = 14345 name = TECH_CMP_LD_57_4_NAME type = maneuver_tactics difficulty = 10 }
+    required  = { 14300 }
+    effects =
+    { command = { type = build_cost which = motorized when = on_upgrade where = relative value = -50 }
+      command = { type = build_time which = motorized when = on_upgrade where = relative value = -15 }
+      command = { type = build_cost which = militia when = on_upgrade where = relative value = -5 }
+      command = { type = build_time which = militia when = on_upgrade where = relative value = -10 }
+      command = { type = build_cost which = armor when = on_upgrade where = relative value = 25 }
+      command = { type = build_cost which = paratrooper when = on_upgrade where = relative value = 25 }
+      command = { type = build_cost which = marine when = on_upgrade where = relative value = 25 }
+      command = { type = build_cost which = bergsjaeger when = on_upgrade where = relative value = 25 }
+      command = { type = hard_attack which = motorized value = -3 }
+      command = { type = speed which = motorized value = 5 }
+      command = { type = soft_attack which = motorized value = -2 }
+      command = { type = defensiveness which = motorized value = 6 }
+    }
+  }
+  # Liberation Mentality
+  application =
+  { id        = 14350
+    name      = TECH_APP_LD_58_NAME
+    desc      = TECH_APP_LD_58_DESC
+    position  = { x = 115 y = 446 }
+    year      = 1978
+    # 排级战术单位 
+    component = { id = 14351 name = TECH_CMP_LD_58_1_NAME type = training difficulty = 10 }
+    # 麻雀战术 
+    component = { id = 14352 name = TECH_CMP_LD_58_2_NAME type = electronics difficulty = 10 }
+    # 游击战斗行动 
+    component = { id = 14353 name = TECH_CMP_LD_58_3_NAME type = centralized_execution difficulty = 15 }
+    # 敌后情报及通讯 
+    component = { id = 14354 name = TECH_CMP_LD_58_4_NAME type = individual_courage difficulty = 10 }
+    # 心理战 
+    component = { id = 14355 name = TECH_CMP_LD_58_5_NAME type = decentralized_execution difficulty = 20 }
+    required  = { 14310 }
+    effects =
+    { command = { type = max_organization which = land value = 6 }
+      command = { type = morale which = land value = 8 }
+      command = { type = tc_mod value = 200 }
+      command = { type = range which = transport value = 1500 }
+      command = { type = range which = transport_plane value = 350 }
+      command = { type = speed which = transport value = 4 }
+      command = { type = sce_frequency value = 0.15 }
+      command = { type = counterattack value = 10 }
+      command = { type = delay value = 10 }
+      command = { type = tactical_withdrawal value = 10 }
+      command = { type = intelligence which = us value = 10 }
+      command = { type = belligerence value = -10 }
+      command = { type = army_detection which = us value = 10 }
+    }
+  }
+  # Socialist Spread
+  application =
+  { id        = 14360
+    name      = TECH_APP_LD_59_NAME
+    desc      = TECH_APP_LD_59_DESC
+    position  = { x = 115 y = 462 }
+    year      = 1978
+    # 敌后设施破坏计划 
+    component = { id = 14361 name = TECH_CMP_LD_59_1_NAME type = training difficulty = 20 }
+    # 夜间袭击战术 
+    component = { id = 14362 name = TECH_CMP_LD_59_2_NAME type = decentralized_execution difficulty = 15 }
+    # 多点快速作业 
+    component = { id = 14363 name = TECH_CMP_LD_59_3_NAME type = centralized_execution difficulty = 10 }
+    # 侦察警戒敌情 
+    component = { id = 14364 name = TECH_CMP_LD_59_4_NAME type = maneuver_tactics difficulty = 10 }
+    # 敌后武工队 
+    component = { id = 14365 name = TECH_CMP_LD_59_5_NAME type = combined_arms_focus difficulty = 10 }
+    required  = { 14320 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 3 }
+      command = { type = attrition_mod value = 3 }
+      command = { type = sce_frequency value = 0.25 }
+      command = { type = assault value = 5 }
+      command = { type = encirclement value = 10 }
+      command = { type = intelligence which = us value = 5 }
+      command = { type = land_fort_eff value = 20 }
+    }
+  }
+  # 現代總體戰
+  application =
+  { id        = 14370
+    name      = TECH_APP_LD_60_NAME
+    desc      = TECH_APP_LD_60_DESC
+    position  = { x = 115 y = 478 }
+    year      = 1978
+    # 运动战理论 
+    component = { id = 14371 name = TECH_CMP_LD_60_1_NAME type = centralized_execution difficulty = 20 }
+    # 围点打援 
+    component = { id = 14372 name = TECH_CMP_LD_60_2_NAME type = mathematics difficulty = 15 }
+    # 大范围转移 
+    component = { id = 14373 name = TECH_CMP_LD_60_3_NAME type = management difficulty = 10 }
+    # 政委体系 
+    component = { id = 14374 name = TECH_CMP_LD_60_4_NAME type = training difficulty = 10 }
+    # 民兵训练 
+    component = { id = 14375 name = TECH_CMP_LD_60_5_NAME type = training difficulty = 10 }
+    required  = { 14330 }
+    effects =
+    { command = { type = max_organization which = land value = 12 }
+      command = { type = belligerence value = 15 }
+      command = { type = industrial_modifier which = total value = -5 }
+      command = { type = industrial_modifier which = supplies value = 10 }
+      command = { type = supply_dist_mod value = 10 }
+      command = { type = repair_mod value = 15 }
+      command = { type = radar_eff value = 15 }
+      command = { type = relative_manpower value = 5 }
+      command = { type = hq_supply_eff value = 5 }
+      command = { type = assault value = 5 }
+      command = { type = encirclement value = 5 }
+      command = { type = ambush value = 5 }
+      command = { type = delay value = -10 }
+      command = { type = tactical_withdrawal value = -2 }
+      command = { type = breakthrough value = 5 }
+      command = { type = build_cost which = land when = on_upgrade where = relative value = 5 }
+      command = { type = build_time which = land when = on_upgrade where = relative value = -5 }
+      command = { type = build_time which = naval when = on_upgrade where = relative value = -10 }
+      command = { type = build_cost which = naval when = on_upgrade where = relative value = 5 }
+      command = { type = build_cost which = air when = on_upgrade where = relative value = 5 }
+      command = { type = build_time which = air when = on_upgrade where = relative value = -10 }
+    }
+  }
+  # 空地一體化作戰 85
+  application =
+  { id        = 14290
+    name      = TECH_APP_LD_44_NAME
+    desc      = TECH_APP_LD_44_DESC
+    position  = { x = 225 y = 455 }
+    year      = 1985
+    # 步进弹幕射击 
+    component = { id = 14291 name = TECH_CMP_LD_44_1_NAME type = combined_arms_focus difficulty = 16 }
+    # 分队火力支援 
+    component = { id = 14292 name = TECH_CMP_LD_44_2_NAME type = individual_courage difficulty = 16 double_time = yes }
+    # 炮兵行动计划 
+    component = { id = 14293 name = TECH_CMP_LD_44_3_NAME type = marine_training difficulty = 16 }
+    # 炮兵群编组 
+    component = { id = 14294 name = TECH_CMP_LD_44_4_NAME type = airborne_training difficulty = 16 }
+    # 急袭射击 
+    component = { id = 14295 name = TECH_CMP_LD_44_5_NAME type = mountain_training difficulty = 16 }
+    required  = { }
+    or_required = { 14300 14310 14320 14330 }
+    effects =
+    { command = { type = max_organization which = land value = 24 }
+      command = { type = morale which = land value = 45 }
+      command = { type = tactical_withdrawal which = land value = 25 }
+      command = { type = breakthrough which = land value = 25 }
+      command = { type = encirclement which = land value = 25 }
+      command = { type = assault which = land value = 25 }
+      command = { type = night_move which = land value = 45 }
+      command = { type = night_attack which = land value = 25 }
+      command = { type = night_defense which = land value = 25 }
+      command = { type = desert_attack which = land value = 25 }
+      command = { type = desert_defense which = land value = 25 }
+      command = { type = mountain_attack which = land value = 25 }
+      command = { type = mountain_defense which = land value = 25 }
+      command = { type = hill_attack which = land value = 25 }
+      command = { type = hill_defense which = land value = 25 }
+      command = { type = forest_attack which = land value = 25 }
+      command = { type = forest_defense which = land value = 25 }
+      command = { type = swamp_attack which = land value = 25 }
+      command = { type = swamp_defense which = land value = 25 }
+      command = { type = urban_attack which = land value = 25 }
+      command = { type = urban_defense which = land value = 25 }
+      command = { type = paradrop_attack which = land value = 25 }
+      command = { type = desert_move which = land value = 25 }
+      command = { type = mountain_move which = land value = 25 }
+      command = { type = hill_move which = land value = 25 }
+      command = { type = forest_move which = land value = 25 }
+      command = { type = swamp_move which = land value = 25 }
+      command = { type = urban_move which = land value = 25 }
+      command = { type = frozen_attack which = land value = 25 }
+      command = { type = frozen_defense which = land value = 25 }
+      command = { type = snow_attack which = land value = 25 }
+      command = { type = snow_defense which = land value = 25 }
+      command = { type = blizzard_attack which = land value = 25 }
+      command = { type = blizzard_defense which = land value = 25 }
+      command = { type = rain_attack which = land value = 25 }
+      command = { type = rain_defense which = land value = 25 }
+      command = { type = muddy_move which = land value = 25 }
+      command = { type = surprise which = land value = 25 }
+      command = { type = max_amphib_mod which = land value = 25 }
+      command = { type = jungle_attack which = land value = 25 }
+      command = { type = jungle_defense which = land value = 25 }
+      command = { type = jungle_move which = land value = 25 }
+      command = { type = fort_attack which = land value = 25 }
+      command = { type = trickleback_mod which = land value = 10 }
+      command = { type = hq_supply_eff value = 25 }
+      command = { type = sce_frequency value = 0.5 }
+      command = { type = counterattack which = land value = 25 }
+      command = { type = assault which = land value = 25 }
+      command = { type = encirclement which = land value = 25 }
+      command = { type = ambush which = land value = 25 }
+      command = { type = delay which = land value = 25 }
+      command = { type = tactical_withdrawal which = land value = 25 }
+      command = { type = breakthrough which = land value = 25 }
+      command = { type = hard_attack which = land value = 4 }
+      command = { type = soft_attack which = land value = 4 }
+      command = { type = night_move which = land value = 10 }
+      command = { type = night_attack which = land value = 10 }
+      command = { type = night_defense which = land value = 25 }
+      command = { type = night_defense which = land value = 25 }
+      command = { type = fort_attack which = land value = 25 }
+    }
+  }
+}

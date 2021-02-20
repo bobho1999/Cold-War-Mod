@@ -1,0 +1,66 @@
+air_unit_type = 1
+#Model 0
+model = {
+	cost 			= 3
+	buildtime	 	= 100
+	manpower 		= 0.1
+	defaultorganisation = 1
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 8
+	range					= 1000
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#Model 1
+model = {
+	cost 			= 3.2
+	buildtime	 	= 105
+	manpower 		= 0.1
+	defaultorganisation = 1
+	surfacedetectioncapability	= 7
+	airdetectioncapability		= 10
+	range					= 1500
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#Model 2
+model = {
+	cost 			= 3.4
+	buildtime	 	= 110
+	manpower 		= 0.1
+	defaultorganisation = 1
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 12
+	range					= 2000
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#Model 3
+model = {
+	cost 			= 3.6
+	buildtime	 	= 120
+	manpower 		= 0.1
+	defaultorganisation = 1
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 14
+	range					= 2500
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#Model 4
+model = {
+	cost 			= 3.8
+	buildtime	 	= 130
+	manpower 		= 0.1
+	defaultorganisation = 1
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 16
+	range					= 3000
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

@@ -1,0 +1,891 @@
+######################################################################
+####  中苏蜜月期&一五计划（工业化）&公私合营事件组 by Fall_Weiss  ####
+######################################################################
+#事件目录-
+#70001- 苏联同志的无私援助（U01）
+#70003- 一五计划-开端
+#70004- 一五计划-鞍钢
+#70005- 一五计划-长春一汽
+#70006- 一五计划-沈阳机床厂
+#70007- 一五计划-沈飞
+#70008- 一五计划-武汉长江桥
+#70009- 一五计划-其他交通线（南）
+#70010- 一五计划-其他交通线（北）
+#70011- 一五计划-其他交通线（藏）
+#70012- 工商业公私合营-开端
+#70013- 工商业公私合营-进行
+#70014- 农业合作社运动-开端
+#70015- 农业合作社运动-进行
+#70016- 一五计划-胜利完成
+#70017- 全国土改-开始
+#70018- 全国土改-完成
+
+
+
+#############################################
+######  # 来自苏联同志的无私援助
+#############################################
+event = {
+        id = 70001
+        random = no
+        country = U01
+ 
+        name = "来自苏联同志的无私援助"
+        desc = "苏联同志们本着大公无私的国际主义 精神送来了援助，这对于经济上仍有 不小困难的我们真是雪中送炭！"
+        style = 0
+ #       picture = "zhongsumiyue_1"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 3
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+        action_a = {
+                name = "太好了！"
+                command = { type = building_prod_mod which = ic value = 20 }
+                command = { type = building_prod_mod which = infrastructure value = 20 }
+                command = { type = building_prod_mod which = air_base value = 20 }
+                command = { type = industrial_modifier which = total value = 3 }
+                command = { type = industrial_modifier which = supplies value = 3 }
+                command = { type = supplies value = 5000 }
+        }
+
+}
+
+#############################################
+###### 土地改革运动推广到全国 # 
+#############################################
+event = {
+        id = 70017 #941235
+        random = no
+        country = U01
+        trigger = {
+       		event = 941217     #中共定都
+		event = 941220 
+                event = 19540
+                NOT = { 
+                        dissent = 1
+                        domestic = { type = free_market value = 3 }
+                   	OR = { 
+                        	lost_VP = { country = CHI value = 1 }
+                        	lost_VP = { country = USA value = 1 }
+                        }
+ 		}
+               	manpower = 1000
+		money = 200
+                supplies = 10000
+
+        }
+ 
+        name = "土地改革运动推广到全国"
+        desc = "历史上1950年中央人民政府颁布了《 中华人民共和国土地改革法》 ，废除 封建土地所有制，将农民阶级的土地 所有制从已经完成土改的老解放区推 广到包括少数民族地区的全国各地。 我们是否要将土改进行到底？"
+        style = 0
+        picture = "chc_nongye"
+ 
+        date = { day = 1 month = september year = 1949 }
+        offset = 3
+        deathdate = { day = 1 month = august year = 1959 }
+ 
+        action_a = {
+                name = "耕者有其田是人民的愿望"
+                ai_chance = 95
+                command = { type = industrial_modifier which = supplies value = 5 }
+                command = { type = manpowerpool value = -50 }
+                command = { type = relative_manpower value = 3 }
+                command = { type = supplies value = -5000 }
+                command = { type = money value = -100 }
+                command = { type = dissent value = -5 }
+        }
+        action_b = {
+                name = "多余的措施就不要采取了"
+                ai_chance = 5
+                command = { type = dissent value = 10 }
+                command = { type = relative_manpower value = -5 }
+                command = { type = sleepevent which = 70018 }
+#               command = { type = trigger which = 70003 }
+        }
+}
+
+
+#############################################
+######  # 全国土改-完成
+#############################################
+event = {
+        id = 70018
+        random = no
+        country = U01
+        trigger = {
+                random = 10
+                event = 70017
+                NOT = { 
+                        domestic = { type = free_market value = 4 }
+                }
+        }
+ 
+        name = "全国土改的完成"
+        desc = "1952年底，全国土改基本完成，3亿 多无地或少地的农民分到了土地，彻 底废除了封建剥削的土地制度，广大 农民成了土地的主人，农村生产力得 到解放，为农业生产的发展和国家工 业化开辟了道路。"
+        style = 0
+        picture = "chc_nongye"
+ 
+        date = { day = 15 month = december year = 1952 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "为人民服务！"
+                command = { type = industrial_modifier which = supplies value = 5 }
+                command = { type = supplies value = 2000 }
+                command = { type = dissent value = -10 }
+                command = { type = relative_manpower value = 3 }
+        }
+}
+#############################################
+######  # 一五计划
+#############################################
+event = {
+        id = 70003
+        random = no
+        country = U01
+        trigger = {
+                event = 70001
+                event = 70018 #全国土改完成
+                supplies = 20000
+                NOT = { 
+                   OR = { 
+                        lost_VP = { country = CHI value = 1 }
+                        lost_VP = { country = USA value = 1 }
+                        }
+                }
+
+        }
+ 
+        name = "一五计划-开始"
+        desc = "建国以后，为了有计划地进行社会主 义建设，我国政府编制了一五计划。 它的基本任务是：优先发展重工业， 建立国家工业化和国防现代化的初步 基础；有步骤地促进农业、手工业的 合作化；继续进行对资本主义工商业 的改造。一五计划从1953年开始执行 ，成为我国工业化的起点。 "
+        style = 0
+        picture = "chc_angang"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 7
+        deathdate = { day = 1 month = december year = 1999 }
+ 
+        action_a = {
+                name = "为社会主义而奋斗！"
+                ai_chance = 99
+                command = { type = building_prod_mod which = ic value = 15 }
+                command = { type = building_prod_mod which = infrastructure value = 15 }
+                command = { type = industrial_modifier which = total value = 5 }
+                command = { type = supplies value = -10000 }
+                command = { type = research_mod value = 5 }
+                command = { type = money value = -1000 }
+                command = { type = free_ic value = -15 } #一五计划完成后归还
+                command = { type = free_money value = -20 } #一五计划完成后归还
+        }
+        action_b = {
+                name = "不必了吧？"
+                ai_chance = 1
+                  command = { type = dissent value = 15 }
+        }
+
+}
+
+#############################################
+###### 一五计划-鞍钢投产 # 
+#############################################
+event = {
+        id = 70004
+        random = no
+        country = U01
+        trigger = {
+                event = 70003
+                supplies = 7500
+                random = 25
+                control = { province = 3423 data = U01 }
+
+        }
+ 
+        name = "一五计划-鞍钢投产"
+        desc = "鞍钢集团，前身为日伪控制下的昭和 制钢所，在1948年被接管后就开始了 清理改造。现在有了苏联同志的援助 ，我们可以将其产量再提高。"
+        style = 0
+        picture = "chc_angang"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 1 month = december year = 1999 }
+ 
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = ic where = 3423 value = 2 }
+                command = { type = construct which = infrastructure where = 3423 value = 10 } #模拟配套设施的逐步完备
+                command = { type = add_prov_resource which = 3423 value = 5 where = metal }
+                command = { type = supplies value = -2000 }
+                command = { type = waketeam which = 1708 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = ic where = 3423 value = 4 }
+                command = { type = construct which = infrastructure where = 3423 value = 20 }
+                command = { type = add_prov_resource which = 3423 value = 10 where = metal }
+                command = { type = industrial_modifier which = total value = 3 }
+                command = { type = waketeam which = 1708 }
+                command = { type = add_team_skill which = 1708 value = 1 }
+                command = { type = supplies value = -4000 }
+                command = { type = money value = -850 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 3 }
+        }
+
+}
+
+#############################################
+###### 一五计划-长春一汽投产 # 
+#############################################
+event = {
+        id = 70005
+        random = no
+        country = U01
+        trigger = {
+                event = 70003
+                supplies = 7500
+                random = 25
+                control = { province = 1390 data = U01 }
+
+        }
+ 
+        name = "一五计划-长春一汽投产"
+        desc = "长春第一汽车制造厂，是我国在社会 主义建设时期投产的最大汽车制造企 业。在它的建设中，苏联同志提供了 大量无价的技术援助。"
+        style = 0
+        picture = "chc_angang"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 1 month = december year = 1999 }
+ 
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = ic where = 1390 value = 3 }
+                command = { type = construct which = infrastructure where = 1390 value = 10 }
+                command = { type = waketeam which = 1705 }
+                command = { type = supplies value = -2000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = ic where = 1390 value = 5 }
+                command = { type = construct which = infrastructure where = 1390 value = 20 }
+                command = { type = tc_mod value = 5 }
+                command = { type = waketeam which = 1705 }
+                command = { type = add_team_skill which = 1705 value = 1 }
+                command = { type = supplies value = -3200 }
+                command = { type = money value = -400 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 3 }
+        }
+
+}
+
+#############################################
+######  # 一五计划-沈阳机床厂
+#############################################
+event = {
+        id = 70006
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 7500
+                control = { province = 1389 data = U01 }
+
+        }
+ 
+        name = "一五计划-沈阳机床厂投产"
+        desc = "始建于1935年的沈阳机床厂在一五计 划中得到了苏联同志的无私帮助，大 大提高了产量，后来还成为中国最大 的机床企业。"
+        style = 0
+        picture = "chc_syjc"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = ic where = 1389 value = 3 }
+                command = { type = construct which = infrastructure where = 1389 value = 10 }
+                command = { type = industrial_modifier which = total value = 3 }
+                command = { type = supplies value = -1200 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = ic where = 1389 value = 5 }
+                command = { type = construct which = infrastructure where = 1389 value = 20 }
+                command = { type = industrial_modifier which = total value = 5 }
+                command = { type = supplies value = -3000 }
+                command = { type = money value = -200 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 3 }
+        }
+}
+
+#############################################
+######  # 一五计划-沈飞
+#############################################
+event = {
+        id = 70007
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 7500
+                control = { province = 1389 data = U01 }
+
+        }
+ 
+        name = "一五计划-国营112厂投产"
+        desc = "沈阳飞机制造公司正式创建于1951年 6月29日，当时公司被命名为国营 112厂。从那里诞生出了20多种共计 3000余架飞机，为我国的国防、航空 事业作出了巨大的贡献。"
+        style = 0
+        picture = "chc_factory112"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = ic where = 1389 value = 2 }
+                command = { type = supplies value = -2000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = ic where = 1389 value = 4 }
+                command = { type = morale which = air value = 3 }
+                command = { type = supplies value = -3500 }
+                command = { type = money value = -200 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 1 }
+        }
+}
+
+#############################################
+######  # 一五计划-武汉大桥
+#############################################
+event = {
+        id = 70008
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 7500
+                control = { province = 1232 data = U01 }
+                control = { province = 1253 data = U01 }
+
+        }
+ 
+        name = "一五计划-武汉长江大桥建成通车"
+        desc = "武汉长江大桥，是我国在长江上修建 的第一座铁路、公路两用桥梁，被称 为“万里长江第一桥”。于1955年9 月1日开工建设，1957年10月15日 建成通车，并得到了苏联同志的帮助。"
+        style = 0
+        picture = "chc_wuhanbridge"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = infrastructure where = 1232 value = 10 }
+                command = { type = construct which = infrastructure where = 1253 value = 10 }
+                command = { type = supplies value = -1000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = infrastructure where = 1232 value = 20 }
+                command = { type = construct which = infrastructure where = 1253 value = 20 }
+                command = { type = extra_tc value = 2 }
+                command = { type = supplies value = -2000 }
+                command = { type = money value = -300 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 3 }
+        }
+}
+
+
+#############################################
+######  # 一五计划-其他交通线（南方）
+#############################################
+event = {
+        id = 70009
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 17000
+                control = { province = 1247 data = U01 }
+                control = { province = 3287 data = U01 }
+
+        }
+ 
+        name = "一五计划-其他交通线（南方）的完成"
+        desc = "一五计划在南方建立起了新的交通运 输系统，其中著名的运输线有鹰厦铁 路等。"
+        style = 0
+        picture = "chc_wuhanbridge"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = infrastructure where = 1247 value = 10 } #鹰厦铁路
+                command = { type = construct which = infrastructure where = 1246 value = 10 }
+                command = { type = construct which = infrastructure where = 1243 value = 10 }
+                command = { type = construct which = infrastructure where = 1258 value = 10 }
+                command = { type = construct which = infrastructure where = 1310 value = 10 }
+                command = { type = construct which = infrastructure where = 1318 value = 10 }
+                command = { type = construct which = infrastructure where = 1319 value = 10 }
+                command = { type = construct which = infrastructure where = 1320 value = 10 }
+                command = { type = construct which = infrastructure where = 3287 value = 10 }
+                command = { type = supplies value = -4000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = infrastructure where = 1247 value = 20 }
+                command = { type = construct which = infrastructure where = 1246 value = 20 }
+                command = { type = construct which = infrastructure where = 1243 value = 20 }
+                command = { type = construct which = infrastructure where = 1258 value = 20 }
+                command = { type = construct which = infrastructure where = 1310 value = 20 }
+                command = { type = construct which = infrastructure where = 1318 value = 20 }
+                command = { type = construct which = infrastructure where = 1319 value = 20 }
+                command = { type = construct which = infrastructure where = 1320 value = 20 }
+                command = { type = construct which = infrastructure where = 3287 value = 20 }
+                command = { type = extra_tc value = 4 }
+                command = { type = supplies value = -9000 }
+                command = { type = money value = -1000 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 3 }
+        }
+}
+
+
+#############################################
+######  # 一五计划-其他交通线（北方）
+#############################################
+event = {
+        id = 70010
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 20000
+                control = { province = 1398 data = U01 }
+                control = { province = 3403 data = U01 }
+                control = { province = 1278 data = U01 }
+                control = { province = 1360 data = U01 }
+
+        }
+ 
+        name = "一五计划-其他交通线（北方）的完成"
+        desc = "一五计划在北方建立起了新的交通运 输系统，其中著名的运输线有宝成铁 路等。"
+        style = 0
+        picture = "chc_wuhanbridge"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = infrastructure where = 1398 value = 10 }
+                command = { type = construct which = infrastructure where = 1386 value = 10 }
+                command = { type = construct which = infrastructure where = 1276 value = 10 }
+                command = { type = construct which = infrastructure where = 3402 value = 10 }
+                command = { type = construct which = infrastructure where = 3400 value = 10 }
+                command = { type = construct which = infrastructure where = 3401 value = 10 }
+                command = { type = construct which = infrastructure where = 3403 value = 10 }
+                command = { type = construct which = infrastructure where = 1278 value = 10 } #宝成铁路
+                command = { type = construct which = infrastructure where = 3344 value = 10 }
+                command = { type = construct which = infrastructure where = 3345 value = 10 }
+                command = { type = construct which = infrastructure where = 3346 value = 10 }
+                command = { type = construct which = infrastructure where = 1360 value = 10 }
+                command = { type = supplies value = -4000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = infrastructure where = 1398 value = 20 }
+                command = { type = construct which = infrastructure where = 1386 value = 20 }
+                command = { type = construct which = infrastructure where = 1276 value = 20 }
+                command = { type = construct which = infrastructure where = 3402 value = 20 }
+                command = { type = construct which = infrastructure where = 3400 value = 20 }
+                command = { type = construct which = infrastructure where = 3401 value = 20 }
+                command = { type = construct which = infrastructure where = 3403 value = 20 }
+                command = { type = construct which = infrastructure where = 1278 value = 20 } #宝成铁路
+                command = { type = construct which = infrastructure where = 3344 value = 20 }
+                command = { type = construct which = infrastructure where = 3345 value = 20 }
+                command = { type = construct which = infrastructure where = 3346 value = 20 }
+                command = { type = construct which = infrastructure where = 1360 value = 20 }
+                command = { type = extra_tc value = 6 }
+                command = { type = supplies value = -8000 }
+                command = { type = money value = -1000 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 2 }
+        }
+}
+
+#############################################
+######  # 一五计划-其他交通线（西藏）
+#############################################
+event = {
+        id = 70011
+        random = no
+        country = U01
+        trigger = {
+                random = 25
+                event = 70003
+                supplies = 20000
+                control = { province = 1453 data = U01 }
+
+        }
+ 
+        name = "一五计划-其他交通线（西藏）的完成"
+        desc = "一五计划在西藏地区建立起了新的交通运输系统，其中著名的运输线有新藏公路、川藏公路等。"
+        style = 0
+        picture = "chc_wuhanbridge"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "社会主义万岁！"
+                ai_chance = 90
+                command = { type = construct which = infrastructure where = 1430 value = 10 } #新藏公路
+                command = { type = construct which = infrastructure where = 1447 value = 10 }
+                command = { type = construct which = infrastructure where = 1448 value = 10 }
+                command = { type = construct which = infrastructure where = 1443 value = 10 } #青藏公路
+                command = { type = construct which = infrastructure where = 3455 value = 10 }
+                command = { type = construct which = infrastructure where = 1442 value = 10 }
+                command = { type = construct which = infrastructure where = 1450 value = 10 }
+                command = { type = construct which = infrastructure where = 1453 value = 10 }
+                command = { type = construct which = infrastructure where = 1281 value = 10 } #川藏公路
+                command = { type = construct which = infrastructure where = 1283 value = 10 }
+                command = { type = construct which = infrastructure where = 3348 value = 10 }
+                command = { type = supplies value = -4000 }
+        }
+        action_b = {
+                name = "进一步投入！"
+                ai_chance = 9
+                command = { type = construct which = infrastructure where = 1247 value = 20 }
+                command = { type = construct which = infrastructure where = 1246 value = 20 }
+                command = { type = construct which = infrastructure where = 1243 value = 20 }
+                command = { type = construct which = infrastructure where = 1258 value = 20 }
+                command = { type = construct which = infrastructure where = 1310 value = 20 }
+                command = { type = construct which = infrastructure where = 1318 value = 20 }
+                command = { type = construct which = infrastructure where = 1319 value = 20 }
+                command = { type = construct which = infrastructure where = 1320 value = 20 }
+                command = { type = construct which = infrastructure where = 3287 value = 20 }
+                command = { type = extra_tc value = 3 }
+                command = { type = supplies value = -8000 }
+                command = { type = money value = -1000 }
+        }
+        action_c = {
+                name = "不需要浪费资源"
+                ai_chance = 1
+                command = { type = dissent value = 2 }
+        }
+}
+
+
+#############################################
+######  # 工商业公私合营-开端
+#############################################
+event = {
+        id = 70012
+        random = no
+        country = U01
+        trigger = {
+                random = 5
+                event = 70001
+                supplies = 5000
+                NOT = { 
+                        domestic = { type = free_market value = 5 }
+                }
+
+
+
+        }
+ 
+        name = "工商业社会主义改造-开端"
+        desc = "建国后，我国正式开始了对手工业和民族资本主义工商业的大规模社会主义化改造。我们应该采取哪条途径？"
+        style = 0
+        picture = "chc_yongan"
+ 
+        date = { day = 3 month = june year = 1953 }
+        offset = 15
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "公私合营，逐步转变（历史选项）"
+                ai_chance = 90
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = money value = -100 }
+                command = { type = dissent value = 2 }
+        }
+        action_b = {
+                name = "直接收归公有"
+                ai_chance = 9
+                command = { type = domestic which = free_market value = -3 }
+                command = { type = industrial_modifier which = total value = 5 }
+                command = { type = money value = -500 }
+                command = { type = resource which = supplies value = 80 }
+                command = { type = dissent value = 10 }
+                command = { type = sleepevent which = 70013 }
+        }
+        action_c = {
+                name = "不需要做什么改变"
+                ai_chance = 1
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = domestic which = free_market value = 2 }
+                command = { type = research_mod value = 3 }
+                command = { type = money value = 50 }
+                command = { type = dissent value = 5 }
+                command = { type = sleepevent which = 70013 }
+        }
+}
+
+
+#############################################
+######  # 工商业公私合营-完成
+#############################################
+event = {
+        id = 70013
+        random = no
+        country = U01
+        trigger = {
+                random = 3
+                event = 70012
+                NOT = { 
+                        domestic = { type = free_market value = 4 }
+                }
+
+
+
+        }
+ 
+        name = "工商业社会主义改造-完毕"
+        desc = "事实证明，工商业公私合营是行之有 效的政策。在实行过程中人民和民族 资本家都有获利，所以推行的非常快 ，历史上到1956年时已经基本完成了 工商业的社会主义改造。"
+        style = 0
+        picture = "chc_yongan"
+ 
+        date = { day = 25 month = december year = 1956 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "为了社会主义的明天！"
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = industrial_modifier which = total value = 3 }
+                command = { type = industrial_modifier which = supplies value = 5 }
+                command = { type = supplies value = 2000 }
+                command = { type = money value = 80 }
+                command = { type = dissent value = -5 }
+        }
+}
+
+#############################################
+###### 农业合作化运动-开始 # 
+#############################################
+event = {
+        id = 70014
+        random = no
+        country = U01
+        trigger = {
+
+                random = 25
+                event = 70001
+                supplies = 5000
+                NOT = { 
+                NOT = { 
+                   OR = { 
+                        lost_VP = { country = CHI value = 1 }
+                        lost_VP = { country = USA value = 1 }
+                        }
+                        domestic = { type = free_market value = 5 }
+                }
+                manpower = 1000
+
+        }
+        }
+ 
+        name = "农业合作化运动-开始 "
+        desc = "农业合作化是在中国共产党领导下， 通过各种互助合作的形式，把以生产 资料私有制为基础的个体农业经济， 改造为以生产资料公有制为基础的农 业合作经济的过程。 "
+        style = 0
+        picture = "chc_nongye"
+ 
+        date = { day = 5 month = september year = 1951 }
+        offset = 7
+        deathdate = { day = 1 month = december year = 1999 }
+ 
+        action_a = {
+                name = "“三步走”（历史选项）"
+                ai_chance = 90
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = industrial_modifier which = supplies value = 3 }
+                command = { type = money value = -500 }
+                command = { type = supplies value = -3000 }
+                command = { type = manpowerpool value = -50 }
+                command = { type = relative_manpower value = -3 }
+        }
+        action_b = {
+                name = "快速、利落的解决"
+                ai_chance = 9
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = industrial_modifier which = supplies value = 6 }
+                command = { type = money value = -750 }
+                command = { type = supplies value = -5000 }
+                command = { type = manpowerpool value = -80 }
+                command = { type = relative_manpower value = -5 }
+                command = { type = dissent value = 10 }
+                command = { type = sleepevent which = 70015 }
+        }
+        action_c = {
+                name = "我们不必多做什么"
+                ai_chance = 1
+                command = { type = domestic which = free_market value = 1 }
+                command = { type = dissent value = 5 }
+                command = { type = industrial_modifier which = supplies value = -5 }
+                command = { type = sleepevent which = 70015 }
+        }
+
+}
+
+
+#############################################
+######  # 农业合作化运动-完成
+#############################################
+event = {
+        id = 70015
+        random = no
+        country = U01
+        trigger = {
+                random = 3
+                event = 70014
+                NOT = { 
+                        domestic = { type = free_market value = 4 }
+                }
+
+
+
+        }
+ 
+        name = "农业合作化运动-完毕"
+        desc = "历史上到１９５６年底，参加合作社 的农户占全国农户的百分之九十六点 三，其中参加高级社的农户占全国农 户的百分之八十七点八。在所有制方 面，基本上完成了对农业的社会主义 改造，大大发展了农业生产力。"
+        style = 0
+        picture = "chc_nongye"
+ 
+        date = { day = 20 month = december year = 1956 }
+        offset = 30
+        deathdate = { day = 30 month = december year = 1999 }
+ 
+
+        action_a = {
+                name = "为了社会主义的明天！"
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = industrial_modifier which = supplies value = 5 }
+                command = { type = supplies value = 5000 }
+                command = { type = dissent value = -5 }
+                command = { type = manpowerpool value = 30 }
+                command = { type = relative_manpower value = 8 }
+        }
+}
+
+#############################################
+######  # 一五计划-胜利完成
+#############################################
+event = {
+        id = 70016
+        random = no
+        country = U01
+        trigger = {
+                event = 70003
+                event = 70004
+                event = 70005
+                event = 70006
+                event = 70007
+                event = 70008
+                event = 70009
+                event = 70010
+                event = 70011
+                random = 50
+
+        }
+ 
+        name = "一五计划-胜利完成"
+        desc = "第一个五年计划完成后，中国的工业 化进程和社会主义改造进度大大推进 。历史上1957年底第一个五年计划完 成，人民生活得到较大改善，人均消 费水平不断提高，文教、卫生、科学 、艺术事业也有很大发展。一五计划 的完成奠定了我国社会主义工业化的 基础，显示了社会主义制度的优越性 ，并初步积累了社会主义建设的经验"
+        style = 0
+        picture = "chc_angang"
+ 
+        date = { day = 1 month = january year = 1947 }
+        offset = 3
+        deathdate = { day = 1 month = december year = 1999 }
+ 
+        action_a = {
+                name = "社会主义的曙光照耀中华大地！"
+                command = { type = free_ic value = 15 } #填event70003的坑
+                command = { type = free_money value = 20 } 
+                command = { type = research_mod value = 5 } 
+                command = { type = dissent value = -5 }
+                command = { type = building_prod_mod which = ic value = -10 } #直到二五开始前无大工业项目投产
+                command = { type = building_prod_mod which = infrastructure value = -10 } #交通线亦同上
+                command = { type = supplies value = 2000 }
+                command = { type = province_keypoints which = 3423 value = 1 } #工业城市的崛起
+                command = { type = province_keypoints which = 1390 value = 1 }
+                command = { type = province_keypoints which = 1389 value = 1 }
+        }
+
+}
+

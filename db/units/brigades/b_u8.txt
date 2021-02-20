@@ -1,0 +1,173 @@
+land_unit_type = 1
+# 0 - 进口师属重炮营 
+model = {
+	cost 				= 4
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 2
+	toughness 			= 3
+	softattack			= 6
+	hardattack			= 1
+	artillery_bombardment		= 5
+	supplyconsumption 	= 0.57
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 18型师属重炮营 
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 1
+	toughness 			= 2
+	softattack			= 6
+	hardattack			= 1
+	artillery_bombardment		= 4
+	supplyconsumption 	= 0.52
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 36型师属重炮营 
+model = {
+	cost 				= 8
+	buildtime	 		= 150
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 2
+	toughness 			= 3
+	softattack			= 8
+	hardattack			= 1
+	artillery_bombardment		= 5
+	supplyconsumption 	= 0.65
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 40型师属重炮营 
+model = {
+	cost 				= 9
+	buildtime	 		= 160
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 3
+	toughness 			= 4
+	softattack			= 10
+	hardattack			= 1.5
+	artillery_bombardment		= 6
+	supplyconsumption 	= 0.72
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 45型师属重炮营 
+model = {
+	cost 				= 10
+	buildtime	 		= 160
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 4
+	toughness 			= 5
+	softattack			= 12
+	hardattack			= 2
+	artillery_bombardment		= 7
+	supplyconsumption 	= 0.78
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 50型师属重炮营 
+model = {
+	cost 				= 11
+	buildtime	 		= 165
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 5
+	toughness 			= 6
+	softattack			= 14
+	hardattack			= 2.5
+	artillery_bombardment		= 8
+	supplyconsumption 	= 0.93
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 60型师属重炮营 
+model = {
+	cost 				= 12
+	buildtime	 		= 170
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 6
+	toughness 			= 7
+	softattack			= 16
+	hardattack			= 3
+	artillery_bombardment		= 9
+	supplyconsumption 	= 1.08
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 70型师属重炮营 
+model = {
+	cost 				= 13
+	buildtime	 		= 175
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 7
+	toughness 			= 8
+	softattack			= 18
+	hardattack			= 3.5
+	artillery_bombardment		= 10
+	supplyconsumption 	= 1.23
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 80型师属重炮营 
+model = {
+	cost 				= 14
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 8
+	toughness 			= 9
+	softattack			= 18
+	hardattack			= 4
+	artillery_bombardment		= 11
+	supplyconsumption 	= 1.38
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 - 90型师属重炮营 
+model = {
+	cost 				= 15
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= -2
+	morale					= 5
+	defensiveness 		= 8
+	toughness 			= 10
+	softattack			= 20
+	hardattack			= 5
+	artillery_bombardment		= 12
+	supplyconsumption 	= 1.55
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 10 -  
+model = {
+	cost 				= 15
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= -2
+	softattack			= 18
+	artillery_bombardment		= 8
+	supplyconsumption 	= 6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

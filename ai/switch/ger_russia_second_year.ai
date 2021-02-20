@@ -1,0 +1,25 @@
+# German operation Barbarosa Invasion AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= Offensive
+	distrib_vs_human 	= Reactive
+
+	enemy_reinf_days	= 3
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+
+	enemy_handicap = { } 
+	passivity = { } 
+	province_priorities = {	}
+
+}

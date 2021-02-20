@@ -1,0 +1,127 @@
+land_unit_type = 1
+locked = yes
+# 0 - 36 Rail Artillery
+model = {
+	cost 				= 20
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 			= -10
+	hardattack			= 12
+	artillery_bombardment	        = 12
+	supplyconsumption 	= 4.8
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 1 - 39 Rail Artillery
+model = {
+	cost 				= 24
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 			= -10
+	hardattack			= 16
+	artillery_bombardment	= 16
+	supplyconsumption 	= 6.4
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 2 - 42 Rail Artillery
+model = {
+	cost 				= 28
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 			= -10
+	hardattack			= 20
+	artillery_bombardment	= 20
+	supplyconsumption 	= 8
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 3 - 45 Rail Artillery
+model = {
+	cost 				= 32
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 	 		= -10
+	hardattack			= 24
+	artillery_bombardment	= 24
+	supplyconsumption 	= 9.6
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 4 - 48 Rail Artillery
+model = {
+	cost 				= 40
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 	 		= -10
+	hardattack			= 28
+	artillery_bombardment	= 28
+	supplyconsumption 	= 11.2
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 5 - 52 Rail Artillery
+model = {
+	cost 				= 50
+	buildtime	 		= 540
+	manpower 		= 5
+	maxspeed 	 		= -10
+	hardattack			= 28
+	artillery_bombardment	= 28
+	supplyconsumption 	= 12.8
+	transportweight		= 100
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 2.0
+}
+# 6 - ËÕÁª¾ÞÐÍÁñµ¯ÅÚ
+model = {
+	cost 				= 30
+	buildtime	 		= 400
+	manpower 		= 5
+	defensiveness 		= 20
+        toughness               = 5
+	maxspeed 	 		= -6
+	softness			= -30
+	softattack			= 20
+	hardattack			= 10
+	artillery_bombardment	= 20
+	supplyconsumption 	= 5.3
+	fuelconsumption		= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - Í»»÷»¢
+model = {
+	cost 				= 40
+	buildtime	 		= 400
+	manpower 		= 5
+	defensiveness 		= 30
+        toughness               = 30
+	maxspeed 	 		= -5
+	softness			= -20
+	softattack			= 25
+	hardattack			= 15
+	artillery_bombardment	= 25
+	supplyconsumption 	= 4.9
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 8 - ÖØÐÍÒªÈûÅÚ
+model = {
+	cost 				= 15
+	buildtime	 		= 720
+	manpower 		= 5
+	defensiveness 		= 20
+	maxspeed 	 		= -10
+	softness			= 0
+	softattack			= 30
+	hardattack			= 15
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

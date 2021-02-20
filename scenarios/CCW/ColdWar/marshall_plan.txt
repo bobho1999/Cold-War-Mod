@@ -1,0 +1,1914 @@
+####################################
+###马歇尔计划事件组 by Fall_weiss###
+####################################
+#70200- 马歇尔计划-构想（USA）
+#70201- 马歇尔计划-早期方案（USA）
+#70202- 马歇尔计划-历史方案(USA)
+#70203~50- 马歇尔计划-各国受援
+#70298- 马歇尔计划-非历史方案（摩根索-莫内方案）
+#70299- 摩根索计划-强制执行（占领威斯特法伦地区）
+#70251~70297- 马歇尔计划-结束
+#如果小概率被选了摩根索计划，DFR又不老实还钱结果被法国佬抢了威斯特法伦就认栽吧，没有事件会帮你整回来的（作者YD的笑了）
+#老实拉关系去要或者抢回来吧！老丞相的在天之灵可望着你呢。
+
+#############################################
+###### 马歇尔计划-构想 # 
+#############################################
+event = {
+        id = 70200
+        random = no
+        country = USA
+        trigger = {
+                government = democratic
+
+        }
+ 
+        name = "马歇尔计划-构想"
+        desc = "在战争结束六年后，大半个欧洲依然难以从数百万人的死伤中平 复。为帮助欧洲盟国恢复因世界大战而濒临崩溃的经济体系，并 同时抗衡苏联和共产主义势力在欧洲的进一步渗透和扩张，我们 需要采取一些措施。"
+        style = 0
+        picture = "Postwar_economy1"
+ 
+        date = { day = 1 month = april year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = may year = 1949 }
+ 
+        action_a = {
+                name = "欧洲重建问题的确让人头疼..."
+                command = { type = domestic which = free_market value = 1 }
+                command = { type = money value = -5 }
+        }
+
+}
+
+#############################################
+######  # 马歇尔计划-早期方案
+#############################################
+event = {
+        id = 70201
+        random = no
+        country = USA
+        trigger = {
+                event = 70200
+                government = democratic
+ #               exists = DFR
+
+        }
+ 
+        name = "马歇尔计划-早期方案"
+        desc = "早在马歇尔发布其著名演讲之前，就已经有不少的呼声认为有必 要对欧洲开展援助重建计划。1946年9月6日时 任美国国务卿拜恩 斯的一次演讲中最早提出了援助的设想。当时认为替代美国大量 援助的另一途径是从战败的德国获取重建所必须的物资和资金。在 1944年，就已有人将这种设想付诸计划，这就是由时任美国财政 部长摩根索提出的“摩根索计划”。他建议通过让德国在战后支付巨额赔款，来帮助其他在战争中受到轴心国进攻的欧洲国家进行重建，同时这种近乎榨取式的巨额索赔也可以遏止德国的再次崛起。与之相近的是由法国官员让·莫内提出的“莫内计划”。"
+        style = 0
+        picture = "Postwar_economy1"
+ 
+        date = { day = 1 month = june year = 1947 }
+        offset = 3
+        deathdate = { day = 1 month = august year = 1949 }
+ 
+        action_a = {
+                name = "克莱顿-凯南方案"
+		ai_chance = 90
+                command = { type = relation which = ENG value = 10 }
+                command = { type = relation which = FRA value = 20 }
+                command = { type = relation which = DFR value = 10 }
+                command = { type = setflag which = marshall_plan }
+        }
+#        action_b = {
+#                name = "摩根索-莫内方案"
+#		ai_chance = 10
+#                command = { type = relation which = FRA value = 40 }
+#                command = { type = relation which = ENG value = 30 }
+#                command = { type = relation which = DFR value = -30 }
+#                command = { type = setflag which = morgenthau_plan }
+#        }
+
+}
+
+#############################################
+###### 马歇尔计划-历史方案 # 
+#############################################
+event = {
+        id = 70202
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+                government = democratic
+
+        }
+ 
+        name = "马歇尔计划-历史方案"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy1"
+ 
+        date = { day = 1 month = july year = 1947 }
+        offset = 7
+        deathdate = { day = 1 month = october year = 1949 }
+ 
+        action_a = {
+                name = "开始吧."
+#             	command = { type = free_money value = -54 }
+#              	command = { type = free_supplies value = -108 }
+#               command = { type = money value = -1080 }
+#      		command = { type = supplies value = -10800 }
+#             	command = { type = trigger which = 70203 } #AUS,2$
+#            	command = { type = trigger which = 70204 } #BEL,3$
+#          	command = { type = trigger which = 70205 } #DEN,2$
+#             	command = { type = trigger which = 70206 } #GRE,2$
+#            	command = { type = trigger which = 70207 } #IRE,1$
+#           	command = { type = trigger which = 70208 } #ITA,5$
+#             	command = { type = trigger which = 70209 } #HOL,1$
+#             	command = { type = trigger which = 70210 } #NOR,1$
+#            	command = { type = trigger which = 70211 } #POR,1$
+#           	command = { type = trigger which = 70212 } #SWE,1$
+#           	command = { type = trigger which = 70213 } #SCH,1$
+#              	command = { type = trigger which = 70214 } #TUR,1$
+#              	command = { type = trigger which = 70215 } #ENG,15$
+#            	command = { type = trigger which = 70216 } #FRA,11$
+#           	command = { type = trigger which = 70217 } #DFR,7$
+                command = { type = dissent value = -1 }
+        }
+
+}
+
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70203
+        random = no
+        country = AUS
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = AUS country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+                command = { type = money value = 40 }
+                command = { type = supplies value = 400 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70204 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70204
+        random = no
+        country = USA
+ 
+        name = "奧地利加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = money value = -40 }
+                command = { type = supplies value = -400 }
+        }
+}
+
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70205
+        random = no
+        country = BEL
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = BEL country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 3 }
+                command = { type = free_supplies value = 6 }
+                command = { type = money value = 60 }
+                command = { type = supplies value = 600 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70206 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70206
+        random = no
+        country = USA
+ 
+        name = "比利時加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -3 }
+                command = { type = free_supplies value = -6 }
+                command = { type = money value = -60 }
+                command = { type = supplies value = -600 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70207
+        random = no
+        country = DEN
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = DEN country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 }  
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+                command = { type = money value = 40 }
+                command = { type = supplies value = 400 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70208 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70208
+        random = no
+        country = USA
+ 
+        name = "丹麥加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = money value = -40 }
+                command = { type = supplies value = -400 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70209
+        random = no
+        country = GRE
+        trigger = {
+                event = 70202
+		NOT = { government = communist }
+		NOT = { alliance = { country = GRE country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 }  
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+                command = { type = money value = 40 }
+                command = { type = supplies value = 400 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70210 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70210
+        random = no
+        country = USA
+ 
+        name = "希臘加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = money value = -40 }
+                command = { type = supplies value = -400 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70211
+        random = no
+        country = IRE
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = IRE country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70212 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70212
+        random = no
+        country = USA
+ 
+        name = "愛爾蘭加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70213
+        random = no
+        country = ITA
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = ITA country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 5 }
+                command = { type = free_supplies value = 10 }
+                command = { type = money value = 100 }
+                command = { type = supplies value = 1000 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70214 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70214
+        random = no
+        country = USA
+ 
+        name = "義大利加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = 5 }
+                command = { type = free_supplies value = 10 }
+                command = { type = money value = 100 }
+                command = { type = supplies value = 1000 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70215
+        random = no
+        country = HOL
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = HOL country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70216 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70216
+        random = no
+        country = USA
+ 
+        name = "荷蘭加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70217
+        random = no
+        country = NOR
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = NOR country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70218 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70218
+        random = no
+        country = USA
+ 
+        name = "挪威加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70219
+        random = no
+        country = POR
+        trigger = {
+                event = 70202
+		NOT = { government = communist }
+		NOT = { alliance = { country = POR country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70220 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70220
+        random = no
+        country = USA
+ 
+        name = "葡萄牙加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70221
+        random = no
+        country = SWE
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = SWE country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70222 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70222
+        random = no
+        country = USA
+ 
+        name = "瑞典加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70223
+        random = no
+        country = SCH
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = SCH country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70224 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70224
+        random = no
+        country = USA
+ 
+        name = "瑞士加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70225
+        random = no
+        country = TUR
+        trigger = {
+                event = 70202
+		NOT = { government = communist }
+		NOT = { alliance = { country = TUR country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+                command = { type = money value = 20 }
+                command = { type = supplies value = 200 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70226 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70226
+        random = no
+        country = USA
+ 
+        name = "土耳其加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = money value = -20 }
+                command = { type = supplies value = -200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70227
+        random = no
+        country = ENG
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = ENG country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 15 }
+                command = { type = free_supplies value = 30 }
+                command = { type = money value = 300 }
+                command = { type = supplies value = 3000 }
+                command = { type = relation which = USA value = 20 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70228 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70228
+        random = no
+        country = USA
+ 
+        name = "英國加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -15 }
+                command = { type = free_supplies value = -30 }
+                command = { type = money value = -300 }
+                command = { type = supplies value = -3000 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70229
+        random = no
+        country = FRA
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = FRA country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 11 }
+                command = { type = free_supplies value = 22 }
+                command = { type = money value = 220 }
+                command = { type = supplies value = 2200 }
+                command = { type = relation which = USA value = 20 }
+                command = { type = repair_mod value = 10 }
+            	command = { type = trigger which = 70230 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+event = {
+        id = 70230
+        random = no
+        country = USA
+ 
+        name = "法國加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -11 }
+                command = { type = free_supplies value = -22 }
+                command = { type = money value = -220 }
+                command = { type = supplies value = -2200 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70231
+        random = no
+        country = DFR
+        trigger = {
+                event = 70202
+		government = democratic
+		NOT = { alliance = { country = DFR country = SOV } }
+        }
+ 
+        name = "马歇尔计划-得到援助"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+  
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 1 month = october year = 1949 } 
+ 
+        action_a = {
+                name = "OK"
+		ai_chance = 100
+                command = { type = free_money value = 7 }
+                command = { type = free_supplies value = 14 }
+                command = { type = money value = 140 }
+                command = { type = supplies value = 1400 }
+                command = { type = relation which = USA value = 20 }
+                command = { type = repair_mod value = 20 }
+            	command = { type = trigger which = 70232 }
+        }
+        action_b = {
+                name = "拒絕"
+		ai_chance = 0
+                command = { type = relation which = USA value = -10 }
+        }
+}
+
+event = {
+        id = 70232
+        random = no
+        country = USA
+ 
+        name = "西德加入马歇尔计划"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy" 
+ 
+        action_a = {
+                name = "OK"
+                command = { type = free_money value = -7 }
+                command = { type = free_supplies value = -14 }
+                command = { type = money value = -140 }
+                command = { type = supplies value = -1400 }
+        }
+}
+
+#############################################
+###### 马歇尔计划-结束 # 
+#############################################
+event = {
+        id = 70251
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		event = 70202
+		OR = {
+			AND = { 
+				month = 7
+				year = 1952
+			}
+			war = { country = USA country = SOV }
+			war = { country = USA country = CHC }
+		}
+        }
+ 
+        name = "马歇尔计划-结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+        date = { day = 1 month = july year = 1947 }
+        offset = 1
+        deathdate = { day = 29 month = december year = 1955 } 
+ 
+        action_a = {
+                name = "好的"
+#               command = { type = free_money value = 54 }
+#                command = { type = free_supplies value = 108 }
+#               command = { type = relation which = AUS value = 10 }
+#                command = { type = relation which = BEL value = 10 }
+#                command = { type = relation which = DEN value = 10 }
+#                command = { type = relation which = GRE value = 10 }
+#                command = { type = relation which = IRE value = 10 }
+#                command = { type = relation which = ITA value = 10 }
+#                command = { type = relation which = HOL value = 10 }
+#                command = { type = relation which = NOR value = 10 }
+#                command = { type = relation which = POR value = 10 }
+#                command = { type = relation which = SWE value = 10 }
+#                command = { type = relation which = SCH value = 10 }
+#                command = { type = relation which = TUR value = 10 }
+#                command = { type = relation which = ENG value = 20 }
+#                command = { type = relation which = FRA value = 20 }
+#                command = { type = relation which = DFR value = 20 }
+                command = { type = dissent value = -1 }
+        }
+
+}
+
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70252
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = AUS }
+		}
+		event = 70204
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70253 }
+        }
+}
+
+event = {
+        id = 70253
+        random = no
+        country = AUS
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70254
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = BEL }
+		}
+		event = 70206
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 3 }
+                command = { type = free_supplies value = 6 }
+            	command = { type = trigger which = 70255 }
+        }
+
+}
+event = {
+        id = 70255
+        random = no
+        country = BEL
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -3 }
+                command = { type = free_supplies value = -6 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70256
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = DEN }
+		}
+		event = 70208
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc =  "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70257 }
+        }
+
+}
+event = {
+        id = 70257
+        random = no
+        country = DEN
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc =  "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70258
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = GRE }
+		}
+		event = 70210
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70259 }
+        }
+
+}
+event = {
+        id = 70259
+        random = no
+        country = GRE
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70260
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = IRE }
+		}
+		event = 70212
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+            	command = { type = trigger which = 70261 }
+        }
+
+}
+event = {
+        id = 70261
+        random = no
+        country = IRE
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70262
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = ITA }
+		}
+		event = 70214
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 5 }
+                command = { type = free_supplies value = 10 }
+            	command = { type = trigger which = 70263 }
+        }
+
+}
+event = {
+        id = 70263
+        random = no
+        country = ITA
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -5 }
+                command = { type = free_supplies value = -10 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70264
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = HOL }
+		}
+		event = 70216
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+            	command = { type = trigger which = 70265 }
+        }
+
+}
+event = {
+        id = 70265
+        random = no
+        country = HOL
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70266
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = NOR }
+		}
+		event = 70218
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+            	command = { type = trigger which = 70267 }
+        }
+
+}
+event = {
+        id = 70267
+        random = no
+        country = NOR
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70268
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = POR }
+		}
+		event = 70220
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 1 }
+                command = { type = free_supplies value = 2 }
+            	command = { type = trigger which = 70269 }
+        }
+
+}
+event = {
+        id = 70269
+        random = no
+        country = POR
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -1 }
+                command = { type = free_supplies value = -2 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70270
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = SWE }
+		}
+		event = 70222
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70271 }
+        }
+
+}
+event = {
+        id = 70271
+        random = no
+        country = SWE
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70272
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = SCH }
+		}
+		event = 70224
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70273 }
+        }
+
+}
+event = {
+        id = 70273
+        random = no
+        country = SCH
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70274
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = TUR }
+		}
+		event = 70226
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 2 }
+                command = { type = free_supplies value = 4 }
+            	command = { type = trigger which = 70275 }
+        }
+
+}
+event = {
+        id = 70275
+        random = no
+        country = TUR
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -2 }
+                command = { type = free_supplies value = -4 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70276
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = ENG }
+		}
+		event = 70228
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 15 }
+                command = { type = free_supplies value = 30 }
+            	command = { type = trigger which = 70277 }
+        }
+
+}
+event = {
+        id = 70277
+        random = no
+        country = ENG
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -15 }
+                command = { type = free_supplies value = -30 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70278
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+		OR = {
+			event = 70251
+			NOT = { exists = FRA }
+		}
+		event = 70230
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 11 }
+                command = { type = free_supplies value = 22 }
+            	command = { type = trigger which = 70279 }
+        }
+
+}
+event = {
+        id = 70279
+        random = no
+        country = FRA
+
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -11 }
+                command = { type = free_supplies value = -22 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+        }
+}
+#############################################
+###### 马歇尔计划-得到援助 # 
+#############################################
+event = {
+        id = 70280
+        random = no
+        country = USA
+        trigger = {
+                flag = marshall_plan
+                NOT = { 
+                        flag = morgenthau_plan
+                }
+		OR = {
+			event = 70251
+			NOT = { exists = DFR }
+		}
+		event = 70232
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = 7 }
+                command = { type = free_supplies value = 14 }
+            	command = { type = trigger which = 70281 }
+        }
+
+}
+
+event = {
+        id = 70281
+        random = no
+        country = DFR
+        trigger = {
+                flag = marshall_plan
+                NOT = { 
+                        flag = morgenthau_plan
+                }
+		OR = {
+			event = 70251
+			NOT = { exists = DFR }
+		}
+		event = 70232
+        }
+ 
+        name = "马歇尔计划-援助结束"
+        desc = "该计划于1947年7月正式启动，并整整持续了4个财政年度之久。在 这段时期内，西欧各国通过参加经济合作发展组织总共接受了美国 包括金融、技术、设备等各种形式的援助合计130亿美元（相当于20 06年的1300亿美元），当该计划临近结束时，西欧绝大多数参与国 的国民经济都已经恢复到了战前水平。在接下来的20余年时间里， 整个西欧经历了前所未有的高速发展时期，社会经济呈现出一派 繁荣景象，可以说这与马歇尔计划有部分的关系。"
+        style = 0
+        picture = "Postwar_economy"
+ 
+ 
+        action_a = {
+                name = "好吧"
+                command = { type = free_money value = -7 }
+                command = { type = free_supplies value = -14 }
+                command = { type = repair_mod value = -10 }
+                command = { type = relation which = USA value = 10 }
+            	command = { type = trigger which = 70232 }
+        }
+
+}
+#############################################
+###### 摩根索计划-赔款 # 
+#############################################
+event = {
+        id = 70298
+        random = no
+        country = DFR
+        trigger = {
+                flag = morgenthau_plan
+
+        }
+ 
+        name = "摩根索计划-赔款"
+        desc = "按照美国人和法国佬的计划，我们得向那些遭受过我们侵略的国 家支付一大笔赔款。没办法，谁叫我们输了那仗呢？"
+        style = 0
+        picture = "Germany_in_ruins"
+ 
+        date = { day = 1 month = april year = 1950 }
+        offset = 7
+        deathdate = { day = 1 month = june year = 1950 }
+ 
+        action_a = {
+                name = "我们只好老实付钱"
+                command = { type = free_money value = -20 }
+                command = { type = free_supplies value = -80 }
+                command = { type = money value = -1000 }
+                command = { type = supplies value = -16000 }
+                command = { type = dissent value = 1 }
+                command = { type = trigger which = 70203 }
+                command = { type = trigger which = 70204 }
+                command = { type = trigger which = 70205 }
+                command = { type = trigger which = 70206 }
+                command = { type = trigger which = 70207 }
+                command = { type = trigger which = 70209 }
+                command = { type = trigger which = 70210 }
+                command = { type = trigger which = 70211 }
+                command = { type = trigger which = 70212 }
+                command = { type = trigger which = 70213 }
+                command = { type = trigger which = 70214 }
+                command = { type = trigger which = 70215 }
+                command = { type = trigger which = 70216 }
+        }
+        action_b = {
+                name = "这账谁还得起啊？"
+                command = { type = trigger which = 70219 }
+                command = { type = relation which = FRA value = -20 }
+                command = { type = relation which = USA value = -10 }
+                command = { type = relation which = ENG value = -10 }
+                command = { type = dissent value = -5 }
+                command = { type = clrflag which = morgenthau_plan }
+
+        }
+
+}
+#############################################
+######  # 摩根索计划-结束支付
+#############################################
+event = {
+        id = 70299
+        random = no
+        country = DFR
+        trigger = {
+                flag = morgenthau_plan
+                NOT = { 
+                        event = 70219
+                }
+
+        }
+ 
+        name = "摩根索计划-结束支付"
+        desc = "终于，我们把该付的债都给完了，鲁尔区也解除了危险。天佑德意 志！"
+        style = 0
+        picture = "Germany_in_ruins"
+ 
+        date = { day = 1 month = march year = 1952 }
+        offset = 3
+        deathdate = { day = 1 month = april year = 1952 }
+ 
+        action_a = {
+                name = "终于..."
+                command = { type = free_money value = 20 }
+                command = { type = free_supplies value = 80 }
+                command = { type = dissent value = -1 }
+        }
+
+}

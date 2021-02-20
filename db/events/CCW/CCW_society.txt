@@ -1,0 +1,1780 @@
+###############################
+# 
+###############################
+event = { # 
+	id = 944000
+	country = CHC
+	trigger = { 
+		
+		}
+	name = "黑茶山空難"
+	desc = "又稱四八空難，1946年4月8日在中國山西省興縣黑茶山，一架由重慶飛往延安的編號為43-16360的C-47因天氣原因迷失航向，導致撞毀在延安東北方向的山西省興縣黑茶山。機上乘客14人、機組成員4人全部罹難，罹難者包括中共中央委員王若飛、秦邦憲，新四軍軍長葉挺，中共中央職工運動委員會書記鄧發。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 7 month = april year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "傷心地一天"
+		command = { type = sleepminister which = 51022 }
+		command = { type = sleepminister which = 51036 }
+		command = { type = sleepminister which = 51029 }
+		command = { type = sleepminister which = 51051 }
+		command = { type = sleepleader which = 76351 }
+	}
+	
+}
+
+event = { # 
+	id = 944001
+	country = CHI
+	trigger = { 
+		NOT = { domestic = { type = democratic value = 5 } }
+		NOT = { flag = CHC_won_CW }
+		}
+	name = "較場口事件"
+	desc = "1946年2月10日上午，重慶各界在較場口慶祝政協
+		會議圓滿成功。開會前，原籌備委員會推李德全為
+		大會總主席。開會時，部分人員不遵開會程序，逕
+		擁李公樸登台任大會主席，群情大嘩，時醫師公會
+		全國聯合會秘書長覃勤在台下高呼：「請按集會程
+		序進行」，約集各團體代表數十名，推舉重慶市農
+		會代表劉野樵為大會主席。劉氏上台報告，籌委會
+		成員李公朴不滿，上前推搡，奪去擴音器。隨後台
+		上發生鬥毆，台下大亂，籌委會之李公朴、郭沫若
+		、施復亮等人被群眾毆傷。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 9 month = february year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "遺憾的意外"
+		command = { type = dissent value = 3 }
+       		command = { type = relation which = CHC value = -10 } 
+		command = { type = trigger which = 944002 }
+	}	
+}
+
+event = { # 
+	id = 944002
+	country = CHC
+
+	name = "較場口事件"
+	desc = "1946年2月10日上午，中國國民黨另外組織了一個
+		所謂的「主席團」，其成員有吳人初、譚澤森、劉
+		野樵、周德侯、龐儀山等，早早搶占了主席台，會
+		場兩側布滿了特務打手，並有僱傭而來冒充各會會
+		員的「八百壯漢」提前入場。周德侯叫嚷：「我們
+		選占中國人口百分之八十的農會代表劉野樵擔任總
+		主席！」並悍然宣布開會。李公朴、施復亮上前阻
+		攔遭到毆打。郭沫若、陶行知、章乃器和新聞記者及
+		勞協會員等六十餘人也被打傷。當中國共產黨代表
+		周恩來、王若飛等和馮玉祥趕到會場時，特務們才
+		四散離去。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "遺憾的意外"
+		command = { type = dissent value = -1 }
+       		command = { type = relation which = CHI value = -10 } 
+	}	
+}
+
+#########################################################################
+# 反蘇運動
+#########################################################################
+event = { # 
+	id = 944003
+	country = CHI
+	trigger = { 
+		OR = { 
+			control = { province = 2892 data = SOV  }
+			control = { province = 2892 data = CHC  }
+		}
+	}
+	name = "張莘夫事件"
+	desc = "1945年日本投降後，張莘夫被國民政府任命為經濟
+		部東北行營工礦處副處長，負責東北工礦接收事宜。
+		1946年1月16日晚，蘇軍方面人員會同當地警察赴撫
+		順煤礦事務所，向張莘夫表示撫順煤礦不能由其接收
+		，並勸其儘快返回瀋陽。當晚，張莘夫等8人被迫搭
+		乘原專列自撫順回瀋陽，當專車行駛至撫順以西25公
+		里的李石寨站時，一股「不明身份的武裝分子」登上
+		列車，將張莘夫等人拖下專列殺害。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 15 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "遺憾的意外"
+		command = { type = dissent value = 3 }
+       		command = { type = relation which = SOV value = -10 } 
+#		command = { type = trigger which = 944004 } #onhold
+	}	
+}
+
+event = {
+	id = 944005
+	random = no
+	country = CHI
+	trigger = { 
+		event = 944003
+		event = 941129
+		}
+	name = "反蘇運動"
+	desc = "苏联违反了中苏友好条约，并没有将东北还给中国, 
+                并且还策动新疆独立，这给中国人民造成了极大的 
+                反感，似乎苏联恢复了沙皇时期在中国的全部特权"
+	style = 0
+        date = { day = 20 month = february year = 1946 }
+        offset = 5
+        deathdate = { day = 30 month = december year = 1947 }
+ #       picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "支持游行"
+            	ai_chance = 90
+            	command = { type = dissent value = -5 }
+            	command = { type = domestic which = defense_lobby  value = 1 }
+		command = { type = relation which = SOV value = -50 }  
+		command = { type = relation which = CHC value = -20 }
+		command = { type = trigger which = 944006 }   
+		command = { type = trigger which = 944007 }       
+   }
+         action_b = {
+            	name = "要求美国干预"
+            	ai_chance = 10
+            	command = { type = relation which = USA value = 20 }
+            	command = { type = domestic which = defense_lobby  value = -1 }
+		command = { type = relation which = SOV value = -100 } 
+		command = { type = relation which = CHC value = -50 }
+		command = { type = trigger which = 944006 }
+		command = { type = trigger which = 944007 }
+    }
+}
+
+event = {
+	id = 944006
+	random = no
+	country = SOV
+
+	name = "反蘇運動"
+	desc = "苏联违反了中苏友好条约，并没有将东北还给中国, 
+                并且还策动新疆独立，这给中国人民造成了极大的 
+                反感，似乎苏联恢复了沙皇时期在中国的全部特权"
+	style = 0
+   #     picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "可惡"
+            	ai_chance = 90
+            	command = { type = dissent value = 1 }
+		command = { type = relation which = CHI value = -50 }         
+   	}
+}
+
+event = {
+	id = 944007
+	random = no
+	country = CHC
+
+	name = "反蘇運動"
+	desc = "苏联违反了中苏友好条约，并没有将东北还给中国, 
+                并且还策动新疆独立，这给中国人民造成了极大的 
+                反感，似乎苏联恢复了沙皇时期在中国的全部特权"
+	style = 0
+#        picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "這是國民黨的陰謀"
+            	command = { type = dissent value = 5 }
+            	command = { type = domestic which = defense_lobby  value = 1 }
+		command = { type = relation which = CHI value = -20 }       
+   }
+}
+
+# 
+event = {
+	id = 944008
+	random = no
+	country = CHI
+	trigger = { 
+
+		}
+	name = "刺殺李兆麟"
+	desc = "抗日戰爭勝利後，李兆麟和妻子金伯文從蘇聯回國，隨
+		蘇聯軍隊搶占東北戰略要地哈爾濱。任濱江省副省長、
+		哈爾濱市中蘇友好協會會長等職。1945年12月下旬，國
+		民政府接收哈爾濱市和濱江省政府（後改松江省政府）
+		後，李兆麟即辭去濱江省副主席職務，以公開的中國共
+		產黨員身份出任哈爾濱中蘇友好協會會長。1946年3月9日
+		，與軍統特務孫格玲會面時，被殺害，終年36歲。"
+	style = 0
+        date = { day = 8 month = march year = 1946 }
+        offset = 1
+        deathdate = { day = 30 month = december year = 1947 }
+   #     picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "動手"
+            	ai_chance = 99
+            	command = { type = dissent value = 1 }
+		command = { type = relation which = CHC value = -5 }
+		command = { type = trigger which = 944009 }          
+   }
+         action_b = {
+            	name = "放棄行動"
+            	ai_chance = 1
+		command = { type = relation which = CHC value = 5 }
+    }
+}
+
+event = {
+	id = 944009
+	random = no
+	country = CHC
+
+	name = "李兆麟遇刺"
+	desc = "抗日戰爭勝利後，李兆麟和妻子金伯文從蘇聯回國，隨
+		蘇聯軍隊搶占東北戰略要地哈爾濱。任濱江省副省長、
+		哈爾濱市中蘇友好協會會長等職。1945年12月下旬，國
+		民政府接收哈爾濱市和濱江省政府（後改松江省政府）
+		後，李兆麟即辭去濱江省副主席職務，以公開的中國共
+		產黨員身份出任哈爾濱中蘇友好協會會長。1946年3月9日
+		，與軍統特務孫格玲會面時，被殺害，終年36歲。"
+	style = 0
+      #  picture = "kangsu"
+
+	 action_a = { 
+            	name = "可惡"
+		command = { type = sleepleader which = 76059 }
+		command = { type = relation which = CHI value = -5 }         
+   	}
+}
+
+# 
+event = {
+	id = 944010
+	random = no
+	country = CHC
+	trigger = { 
+
+		}
+	name = "五四指示"
+	desc = "全稱＜關於土地問題的指示或關於清算減租及土地問題的
+		指示＞，中共中央於1946年5月4日發布的關於改變中共土
+		地政策的指示。該指示的基本內容是，改變抗日戰爭期間
+		中共採取的減租減息策略，實行「耕者有其田」，沒收地
+		主土地分配給農民；用一切方法吸收中農參加運動，決不
+		可侵犯中農土地；一般不變動富農土地，對富農和地主要
+		有所區別；不可將農村中反對地主階級的辦法應用於城市
+		中反對工商業資產階級的鬥爭。"
+	style = 0
+        date = { day = 3 month = may year = 1946 }
+        offset = 1
+        deathdate = { day = 30 month = december year = 1949 }
+#        picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "發布"
+            	ai_chance = 100
+            	command = { type = dissent value = -1 }          
+   }
+         action_b = {
+            	name = "沒必要"
+            	ai_chance = 0
+		command = {  }
+    }
+}
+
+event = {
+	id = 944011
+	random = no
+	country = CHC
+	trigger = { 
+
+		}
+	name = "人團聯成立"
+	desc = "1946年5月5日，上海52個人民團體在中共上海地
+		下黨領導下，成立上海人民團體聯合會（簡稱「
+		人團聯」），為更大規模地開展反對蔣介石的鬥
+		爭創造了條件。各人民團體一致推舉中國民主促
+		進會牽頭負責該聯合機構的籌建工作。上海人民
+		團體聯合會由中國民主促進會發起，中國民主促
+		進會、中國民主同盟、民主建國會、各產業工會
+		、學生團體、教育團體、文化藝術團體、工商團
+		體參加。"
+	style = 0
+        date = { day = 4 month = may year = 1946 }
+        offset = 1
+        deathdate = { day = 30 month = december year = 1949 }
+#        picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "成立"
+            	ai_chance = 100
+            	command = { type = dissent value = -1 } 
+		command = { type = intelligence which = us value = 5 }
+		command = { type = trigger which = 944012 value = 40 }         
+   }
+         action_b = {
+            	name = "沒必要"
+            	ai_chance = 0
+		command = {  }
+    }
+}
+
+event = {
+	id = 944012
+	random = no
+	country = CHI
+	trigger = { 
+
+		}
+	name = "社會各界呼籲停止內戰"
+	desc = "1946年5月5日，上海52個人民團體在中共上海地
+		下黨領導下，成立上海人民團體聯合會（簡稱「
+		人團聯」），為更大規模地開展反對蔣介石的鬥
+		爭創造了條件。各人民團體一致推舉中國民主促
+		進會牽頭負責該聯合機構的籌建工作。上海人民
+		團體聯合會由中國民主促進會發起，中國民主促
+		進會、中國民主同盟、民主建國會、各產業工會
+		、學生團體、教育團體、文化藝術團體、工商團
+		體參加。"
+	style = 0
+#        picture = "kangsu"
+
+
+	 action_a = { 
+            	name = "成立"
+            	ai_chance = 100
+            	command = { type = dissent value = 5 } 
+		command = { type = intelligence which = us value = -5 }
+#		command = { type = trigger which = 944012 value = 40 }         
+   }
+}
+
+event = { # 
+	id = 944013
+	country = CHI
+	trigger = { 
+		event = 944012 
+		NOT = { 
+			OR = {
+				domestic = { type = democratic value = 5 }
+#				domestic = { type = freedom value = 4 } doesn't work
+			}
+		}
+	}
+	name = "下關慘案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 22 month = june year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "娘西匹!!"
+		command = { type = dissent value = 5 }
+       		command = { type = relation which = CHC value = -10 } 
+		command = { type = domestic which = freedom value = -1 } 
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = trigger which = 944014 }
+	}	
+}
+
+event = { # 
+	id = 944014
+	country = CHC
+
+	name = "下關慘案"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "發動與論"
+		command = { type = dissent value = -5 }
+       		command = { type = relation which = CHI value = -10 } 
+	}	
+}
+
+event = { # 
+	id = 944015
+	country = CHI
+	trigger = { 
+		NOT = { 
+			OR = {
+				domestic = { type = democratic value = 5 }
+#				domestic = { type = freedom value = 4 } doesn't work
+			}
+		}
+	}
+	name = "李聞慘案"
+	desc = "1946年7月11日，著名民主活動家李公樸在昆明遭
+		國民黨特務暗殺。 15日，西南聯合大學教授聞一多
+		也在同一城市遭特務多人狙擊身亡；同行的其子聞
+		立鶴亦身中數槍，生命垂危。此事震驚全國。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 14 month = july year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "娘西匹!!"
+		command = { type = dissent value = 5 }
+       		command = { type = relation which = CHC value = -10 } 
+		command = { type = relation which = USA value = -10 } 
+		command = { type = domestic which = freedom value = -1 } 
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = trigger which = 944016 }
+	}	
+}
+
+event = { # 
+	id = 944016
+	country = CHC
+
+	name = "李聞慘案"
+	desc = "1946年7月11日，著名民主活動家李公樸在昆明遭
+		國民黨特務暗殺。 15日，西南聯合大學教授聞一多
+		也在同一城市遭特務多人狙擊身亡；同行的其子聞
+		立鶴亦身中數槍，生命垂危。此事震驚全國。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "發動與論"
+		command = { type = dissent value = -5 }
+       		command = { type = relation which = CHI value = -10 } 
+	}	
+}
+
+event = { # 
+	id = 944017
+	country = CHI
+	trigger = { 
+		NOT = { 
+			war = { country = CHI country = USA }
+		}
+	}
+	name = "中美友好通商航海條約"
+	desc = "。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 3 month = november year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "簽訂"
+		ai_chance = 100
+		command = { type = dissent value = 2 } 
+		command = { type = relation which = USA value = 30 } 
+		command = { type = domestic which = free_market value = 2 }
+		command = { type = trigger which = 944018 }
+		command = { type = money value = 2000 }
+		command = { type = supplies value = 5000 }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = dissent value = -2 } 
+		command = { type = relation which = USA value = -30 } 
+		command = { type = domestic which = free_market value = -2 }
+	}	
+}
+
+event = { # 
+	id = 944018
+	country = USA
+
+	name = "中美友好通商航海條約"
+	desc = "。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "簽訂"
+		ai_chance = 100
+		command = { type = dissent value = -3 } 
+		command = { type = relation which = CHI value = 30 } 
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = trigger which = 944019 }
+		command = { type = money value = 500 }
+		command = { type = supplies value = 1000 }
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = industrial_modifier which = supplies value = 1 }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = dissent value = 3 } 
+		command = { type = relation which = CHI value = -30 } 
+		command = { type = domestic which = free_market value = -1 }
+	}	
+}
+
+event = { # 
+	id = 944019
+	country = CHC
+
+	name = "中美友好通商航海條約"
+	desc = "。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "此乃最可恥的賣國條約！！"
+		command = { type = dissent value = -1 }
+       		command = { type = relation which = USA value = -30 } 
+		command = { type = relation which = CHI value = -10 }
+	}	
+}
+
+event = { # 
+	id = 944020
+	country = CHI
+	trigger = { 
+
+	}
+	name = "上海攤販事件"
+	desc = "1946年7月上海市政府以設攤有礙市容，妨礙交通
+		為由，命令只准在指定地點設攤。11月27日，第一
+		區（1956年更名黃浦區）警察出動，抓捕攤販。30
+		日，3千多名攤販和被押攤販家屬聚集在第一區警察
+		分局要求放人，發生肢體衝突。12月1日全市戒嚴。
+		5千多名攤販再度集合包圍第一區分局，並與軍警發
+		生激烈衝突。同日輿論對事件做了廣泛報導，各界
+		紛紛支持攤販維護權利，譴責當局的暴行。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 29 month = november year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "收回成命，公開道歉"
+		command = { type = dissent value = 1 }
+	}	
+} #944021 reserved
+
+
+event = { # 
+	id = 944022
+	country = CHI
+	trigger = { 
+		NOT = { 
+			domestic = { type = democratic value = 5 }
+		}
+	}
+	name = "取締民盟"
+	desc = "1947年10月，國民黨執政的中華民國政府更宣布民
+		盟為「非法團體」並展開制裁。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = october year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "展開制裁"
+		ai_chance = 100
+		command = { type = dissent value = 2 }  
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = morale which = land value = 3 }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = dissent value = -2 } 
+		command = { type = domestic which = freedom value = 1 }
+	}	
+}
+
+event = { # 
+	id = 944023
+	country = CHI
+	trigger = { 
+		NOT = { 
+			domestic = { type = democratic value = 5 }
+		}
+		control = { province = 1271 data = -1  }
+	}
+	name = "逮捕杜斌丞"
+	desc = "1947年3月19日，胡宗南部占領了陝甘寧邊區首府
+		延安。1947年3月20日，胡宗南下令逮捕杜斌丞、
+		王菊人等人。1947年10月7日，杜斌丞在西安玉祥
+		門外被處決，終年60歲。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 15 month = march year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "處決"
+		ai_chance = 100
+		command = { type = dissent value = 1 }  
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = morale which = land value = 2 }
+		command = { type = trigger which = 944024 }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = dissent value = -1 } 
+		command = { type = domestic which = freedom value = 1 }
+	}	
+}
+
+event = { # 
+	id = 944024
+	country = CHC
+
+	name = "杜斌丞遇害"
+	desc = "1947年3月19日，胡宗南部占領了陝甘寧邊區首府
+		延安。1947年3月20日，胡宗南下令逮捕杜斌丞、
+		王菊人等人。1947年10月7日，杜斌丞在西安玉祥
+		門外被處決，終年60歲。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "強烈抗議！！"
+		command = { type = dissent value = -1 } 
+		command = { type = relation which = CHI value = -10 }
+	}	
+}
+
+event = { # 
+	id = 944025
+	country = CHC
+	trigger = { 
+
+	}
+	name = "中共中央統一戰線工作部"
+	desc = "1946年12月16日，中共中央決定重新恢復城市工
+		作部，周恩來兼任部長，李維漢為副部長。1948
+		年9月26日，中共中央決定將中央城市工作部改名
+		為中央統一戰線工作部，負責管理「當時國統區
+		工作、國內少數民族工作、政權統戰工作、華僑
+		工作及東方兄弟黨的聯絡工作」，並具體負責籌
+		備召開新政協的工作。 "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 15 month = december year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "成立"
+		ai_chance = 100
+		command = { type = money value = -100 }  
+		command = { type = intelligence which = us value = 5 }
+		command = { type = morale which = land value = 1 }
+		command = { type = setflag which = chcProtest }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = money value = 10 }
+	}	
+}
+
+event = { # 
+	id = 944026
+	country = CHC
+	trigger = { 
+		control = { province = 1214 data = -1 }  
+	}
+	name = "楊祿奎事件"
+	desc = "1947年5月23日，聯合國善後救濟總署駐煙辦事處
+		美籍職員阿力克·史魯域琪縱車壓死中國人力車工
+		人楊祿奎後企圖逃逸，被匡亞明勤務員李萬槐遇
+		到，他迫使史魯域琪停車，並強使他送楊祿奎到
+		法國醫院搶救。當日夜11時3分楊祿奎死亡。史魯
+		域琪被煙臺市公安局扣押。中共煙臺市委請示上
+		級後向「聯總」交涉。6月16日，煙臺地方法院臨
+		時法庭判處史魯域琪有期徒刑兩年，賠償255萬北
+		海幣（折合3400美元）。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 22 month = may year = 1947 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "中國外交史上的勝利"
+		ai_chance = 100
+		command = { type = dissent value = -1  }
+	}
+}
+
+event = { # 
+	id = 944027
+	country = CHI
+	trigger = {
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "五二〇運動"
+	desc = "1946年，第二次國共內戰全面展開，隨著內戰的升級
+		和加劇，在中共地下黨領導下，爆發了「反飢餓，反
+		內戰」的學生運動。1947年5月20日，京滬蘇杭學生
+		6000餘人在南京高舉「京滬蘇杭十六所專科以上學校
+		學生挽救教育危機聯合大遊行」的旗幟，舉行聯合示
+		威遊行，向南京國民政府行政院提出增加伙食費及全
+		國教育經費等五項要求，遭到軍警鎮壓，重傷31人，
+		輕傷90餘人，被捕20餘人，是為五二〇運動。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 13 month = may year = 1947 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 15  }
+		command = { type = domestic which = freedom value = -1 } 
+	}
+} #944028 reserved
+
+event = { # 
+	id = 944029
+	country = CHI
+	trigger = {
+		event = 944027 
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "六一慘案"
+	desc = "1947年5月22日，由國立武漢大學發起，武昌大中
+		學校學生聯合舉行了「反飢餓、反內戰、反迫害」
+		示威遊行，聲援南京學生，抗議南京國民政府維持
+		治安過當。因中共地下黨煽動學潮，武漢警備司令
+		部於5月28日審定了逮捕中共地下黨師生的黑名單，
+		企圖將中共師生頭目一網打盡。6月1日凌晨3時，武
+		漢當局派遣軍、警、憲、特兩千人分乘8輛汽車，全
+		副武裝包圍了武大。在衝突中，軍警槍殺了學生黃
+		鳴崗、王志德、陳如豐3人，重傷3人，輕傷16人，
+		逮捕師生員工24人。製造了震驚全國的「六一慘案」。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 24 month = may year = 1947 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 3  }
+		command = { type = domestic which = freedom value = -1 } 
+	}
+} #944030 reserved
+
+event = { # 
+	id = 944031
+	country = CHI
+	trigger = {
+		control = { province = 1237 data = -1  }
+	}
+	name = "上海警憲衝突"
+	desc = "1947年7月27日晚，在上海市的金都大戲院，
+		因購票問題，正在巡夜的駐滬憲兵23團8連中尉
+		排長李豫泰與市警察局新成分局執勤警員盧運亨
+		發生糾葛，很快，新成分局20多個年輕警員首先
+		前來增援，隨後更多的警察從黃浦、老閘奔赴金
+		都。同時，兩卡車全副武裝的憲兵，在憲兵23團
+		8連上尉連長王廷鋆和9連上尉連長任亞夫的帶領
+		下，包圍了金都戲院。雙方長期以來的對立情緒
+		和彼此仇恨在此刻爆發。憲兵朝天開槍，以示警
+		示。警察誤認為憲兵開始殺人，紛紛予以反擊。
+		槍戰持續幾十分鐘，金都門前，屍體橫陳。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 26 month = july year = 1947 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "從嚴查辦"
+		ai_chance = 100
+		command = { type = dissent value = 1  }
+	}
+}
+
+event = { # 
+	id = 944032
+	country = CHI
+	trigger = {
+		control = { province = 1237 data = -1  }
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "申九慘案"
+	desc = "1948年1月30日，該廠7500多名工人對廠方發
+		放大米、煤等配給品和年終獎金感到不滿，
+		發動罷工，占據該廠。鑑於在1月29日已經發
+		生同濟大學血案，31日又發生5000多名舞女
+		搗毀社會局事件，上海當局決定採取鎮壓行
+		動。2月2日，淞滬警備司令宣鐵吾、市警察
+		局長俞叔平出動1000多名軍警，使用裝甲車
+		、催淚彈，沖入廠內，強迫工人離廠。工人
+		用磚頭、鐵棍、鐵塊和桌凳進行抵抗。搏鬥
+		中，朱雲仙、王慕媚和蔣貞新3名女工被打死
+		，百餘人受傷，重傷40多人，200多人被逮捕
+		，隨後有365名工人被開除，26名罷工工人被
+		判處徒刑。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = february year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "鎮壓工人"
+		ai_chance = 100
+		command = { type = dissent value = 2  }
+	}
+
+	action_b = {
+		name = "談判解決"
+		ai_chance = 0
+		command = { type = dissent value = -1  }
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -3000 }
+	}
+}
+
+event = { # 
+	id = 944033
+	country = CHI
+	trigger = {
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "於子三慘案"
+	desc = "1947年10月25日，于子三進杭州市區參加校友的
+		婚禮後，夜宿大同旅館。10月26日凌晨2時，國
+		民黨中統浙江室派出了多位特工，將他和其他三
+		位同學一起秘密抓捕到浙江省保安司令部監獄。
+		中統人員試圖從他口中獲取中共地下黨線索，目
+		的在於從浙大的地下黨開始順藤摸瓜摧毀滬寧杭
+		地區乃至國民黨當局控制區的學生運動，嚴刑逼
+		供，但未果。同月29日下午6時許，于子三在獄
+		中死亡。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 18 month = october year = 1947 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 3  }
+		command = { type = domestic which = freedom value = -1 } 
+		command = { type = trigger which = 944034 }
+	}
+}
+
+event = { # 
+	id = 944034
+	country = CHC
+
+	name = "於子三慘案"
+	desc = "1947年10月25日，于子三進杭州市區參加校友的
+		婚禮後，夜宿大同旅館。10月26日凌晨2時，國
+		民黨中統浙江室派出了多位特工，將他和其他三
+		位同學一起秘密抓捕到浙江省保安司令部監獄。
+		中統人員試圖從他口中獲取中共地下黨線索，目
+		的在於從浙大的地下黨開始順藤摸瓜摧毀滬寧杭
+		地區乃至國民黨當局控制區的學生運動，嚴刑逼
+		供，但未果。同月29日下午6時許，于子三在獄
+		中死亡。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "發動學潮"
+		ai_chance = 100
+		command = { type = dissent value = -1  }
+		command = { type = trigger which = 944035 value = 10 }
+	}
+}
+
+event = { # 
+	id = 944035
+	country = CHI
+
+	name = "學潮"
+	desc = "11月3日開始，錢瑛領導的中共上海局青年組召開會議，
+		決定乘機擴大鬥爭規模，發動所有國統區的學生、群眾
+		開展學生運動，以期聲援；同月4日起，清華大學、北
+		京大學、南開大學、廈門大學等校陸續罷課聲援於子三。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 5  }
+	}
+}
+
+event = { # 
+	id = 944036
+	country = CHC
+	trigger = {
+
+	}
+	name = "新式整軍運動"
+	desc = "1947年9月28日，毛澤東批轉東北民主聯軍（即東
+		北野戰軍）第3縱隊報告訴苦運動的經驗。1947年
+		冬至1948年夏，中國共產黨領導的中國人民解放
+		軍利用作戰間隙普遍開展以訴苦運動和三查三整
+		為主要內容的大規模整軍運動。新式整軍運動是
+		中國共產黨執行以「自我教育」「批評和自我批
+		評」為主要方式展開的整訓軍隊的運動。在訴苦
+		和三查三整的基礎上，結合部隊練兵，解放軍的
+		戰鬥意志和紀律都較大增強了。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 28 month = september year = 1947 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "整訓軍隊"
+		ai_chance = 100
+		command = { type = dissent value = -1  }
+		command = { type = domestic which = professional_army value = 1 } 
+		command = { type = morale which = land value = 5 }
+		command = { type = max_organization which = land value = 1 }
+	}
+}
+
+event = {
+	id = 944037
+	random = no
+	country = CHI
+	trigger = {
+
+	}
+	name = "上海舞潮案"
+	desc = "1947年南京國民政府頒布的《厲行節約消費辦法綱
+		要》，其中要求全國各地限期關閉所有舞廳。 1948
+		年1月31日上午，上海市社會局決定採用抽籤的方式
+		決定首批關閉的舞廳。同一時間，舞業各方在新仙
+		林召開第三次臨時大會。抽籤結果傳到大會後，與會
+		各方大為不滿。於是舞廳舞女、職工等共2000餘人紛
+		紛前往社會局請願。此後矛盾逐漸激化，人群衝過現
+		場維持秩序的警察進入社會局大樓，在辦公室中大肆
+		破壞，辦公大樓頓成一片狼籍。之後警察局派軍警進
+		行前來「彈壓」，共400餘人被捕。"
+	style = 0
+        date = { day = 30 month = january year = 1948 }
+        offset = 1
+        deathdate = { day = 30 month = december year = 1949 }
+##        picture = "dahui"
+	action_a = {
+	       name = "三民主义治国" 
+	       command = { type = dissent value = 1 }
+              }
+   
+     }
+
+event = { # 
+	id = 944038
+	country = CHI
+	trigger = {
+		NOT = { war = { country = CHI country = USA } } 
+	}
+	name = "沈崇案"
+	desc = "1946年12月24日晚，駐華美國海軍陸戰隊下士威
+		廉士·皮爾遜（Corporal William G. Pierson）
+		和二兵普利查德（Private Warren Pritchard）
+		，在東長安街北側平安戲院西邊（即現今之東方
+		廣場）遇到沈崇，兩人至東單廣場強迫其發生性
+		關係。新聞傳開後，成為當時中共領導反美運動
+		的導火線，並造成中國國民政府與美國關係緊張。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 23 month = october year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "向美方交涉"
+		ai_chance = 100
+		command = { type = dissent value = 5  }
+       		command = { type = relation which = USA value = -30 }  
+		command = { type = trigger which = 944041 }
+		command = { type = trigger which = 944039 }
+	}
+	action_b = {
+		name = "掩埋事情"
+		ai_chance = 0
+		command = { type = dissent value = 10  }
+       		command = { type = relation which = USA value = 30 }  
+		command = { type = trigger which = 944039 }
+	}
+}
+
+event = { # 
+	id = 944039
+	country = CHC
+
+	name = "沈崇案"
+	desc = "1946年12月24日晚，駐華美國海軍陸戰隊下士威
+		廉士·皮爾遜（Corporal William G. Pierson）
+		和二兵普利查德（Private Warren Pritchard）
+		，在東長安街北側平安戲院西邊（即現今之東方
+		廣場）遇到沈崇，兩人至東單廣場強迫其發生性
+		關係。新聞傳開後，成為當時中共領導反美運動
+		的導火線，並造成中國國民政府與美國關係緊張。"
+
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "發動學潮"
+		ai_chance = 100
+		command = { type = dissent value = -1  }
+		command = { type = trigger which = 944040 value = 5 }
+	}
+}
+
+event = { # 
+	id = 944040
+	country = CHI
+
+	name = "反美學潮"
+	desc = "沈崇案發生後，北平各高校學生即組織遊行示威，隨後天
+		津、上海、南京、武漢、重慶等全國數十個大中城市學生
+		均舉行了示威遊行，抗議美軍暴行，要求美軍撤出中國。
+		進而掀起「反政府」，「反饑餓」，「反內戰」的示威運
+		動。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 5  }
+	}
+}
+
+event = { # 
+	id = 944041
+	country = USA
+
+	name = "沈崇案"
+	desc = "1946年12月24日晚，駐華美國海軍陸戰隊下士威
+		廉士·皮爾遜（Corporal William G. Pierson）
+		和二兵普利查德（Private Warren Pritchard）
+		，在東長安街北側平安戲院西邊（即現今之東方
+		廣場）遇到沈崇，兩人至東單廣場強迫其發生性
+		關係。新聞傳開後，成為當時中共領導反美運動
+		的導火線，並造成中國國民政府與美國關係緊張。"
+
+#	picture = nwo\new_chinese_dollar
+	style = 0
+	
+	action_a = {
+		name = "無罪釋放犯人"
+		ai_chance = 100
+		command = { type = dissent value = -1  }
+       		command = { type = relation which = CHI value = -30 }  
+	}
+	action_b = {
+		name = "判處有期徒刑"
+		ai_chance = 0
+		command = { type = dissent value = 1  }
+       		command = { type = relation which = CHI value = 30 }  
+	}
+}
+
+event = { # 
+	id = 944042
+	country = CHI
+	trigger = { 
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "同濟大學血案"
+	desc = "1948年1月29日，上海同濟大學為抗議當局開除進
+		步學生而罷課，擬上南京請願時遭軍警鎮壓，至
+		數百人受重傷，數十人失蹤。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 22 month = january year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 3  }
+		command = { type = domestic which = freedom value = -1 } 
+	}
+} #944043 reserved
+
+event = { # 
+	id = 944044
+	country = CHI
+	trigger = { 
+		war = { country = CHI country = CHC }
+	}
+	name = "孔憲榮尸諫"
+	desc = "1948年5月15日，孔憲榮作為松江省安圖縣代表到
+		南京參加第一屆國民大會，其間向國民黨當局進言
+		，希望檢討軍事以挽救中國東北的危局，但遭到國
+		民黨當局百般冷落。1948年5月23日，孔憲榮留下
+		了「為東北人受氣而尸諫」的遺書，在所住的南京
+		夫子廟自縊身亡。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 22 month = may year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "一路好走"
+		ai_chance = 100
+		command = { type = dissent value = 1  } 
+	}
+} 
+
+event = { # 
+	id = 944045
+	country = CHC
+	trigger = { 
+		war = { country = CHI country = CHC }
+		lost_national = { country = CHI value = 25 }
+	}
+	name = "五一口號"
+	desc = "五一口號是中共中央於中華民國37年（1948年）
+		5月1日國際勞動節發布的一組政治口號，共23項
+		，得到中國各民主黨派響應，為中國人民政治協
+		商會議和中華人民共和國及其中國共產黨領導的
+		多黨合作和政治協商制度的建立奠定了基礎。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = may year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "提出"
+		ai_chance = 100
+		command = { type = dissent value = -1  } 
+		command = { type = setflag which = Wuyikouhaoo  } 
+	}
+	action_b = {
+		name = "沒必要"
+		ai_chance = 0
+		command = {   } 
+	}
+} 
+
+event = { # 
+	id = 944046
+	country = CHI
+	
+	name = "五一口號"
+	desc = "五一口號是中共中央於中華民國37年（1948年）
+		5月1日國際勞動節發布的一組政治口號，共23項
+		，得到中國各民主黨派響應，為中國人民政治協
+		商會議和中華人民共和國及其中國共產黨領導的
+		多黨合作和政治協商制度的建立奠定了基礎。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	action_a = {
+		name = "民主黨派響應"
+		command = { type = dissent value = 1  } 
+	}
+} 
+
+event = { # 
+	id = 944047
+	country = CHI
+	trigger = { 
+		control = { province = 1205 data = -1 }
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+			OR = {
+				flag = chcProtest 
+				dissent = 5
+			}
+		}
+	}
+	name = "北平七五事件"
+	desc = " "
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 4 month = july year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = 5  }
+		command = { type = domestic which = freedom value = -1 } 
+	}
+} #944049/48 reserved
+
+event = { # 
+	id = 944050
+	country = CHI
+	trigger = {
+		control = { province = 1232 data = -1 } 
+	}
+	name = "景明大樓事件"
+	desc = "1948年8月7日晚，住在景明大樓5樓的美孚公司漢
+		口分公司副經理利富即將調離漢口，在住處舉辦
+		送別舞會。參加舞會的20多名男賓大部分是美孚
+		公司職員和美國空軍；10多名女賓均系中國婦女
+		，其中有不少是豪門權貴的妻妾（名媛），也有
+		少數是職業舞女。舞會不久就演變成集體輪姦事
+		件。事發後，國民政府爲避免影響中美關係，一
+		直封鎖消息，未對肇事者實施追捕。直到8月26日
+		，漢口市政府才收到國民黨漢口參議會的一份公
+		函，要求查辦此事。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 6 month = august year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "封鎖消息"
+		ai_chance = 100
+		command = { type = dissent value = 1  } 
+	}
+	action_b = {
+		name = "逮捕所有涉案者"
+		ai_chance = 0
+		command = { type = dissent value = -3  } 
+       		command = { type = relation which = USA value = -20 }
+	}
+} 
+
+event = { # 
+	id = 944051
+	country = CHC
+	trigger = {
+
+	}
+	name = "恢復中華全國總工會"
+	desc = "1922年5月1日，中國勞動組合書記部在廣州召開了第一次全國勞動大會，鄧中夏被選為書記。1925年5月1日，中國勞動組合書記部在廣州召開了第二次全國勞動大會，決定成立中華全國總工會，取代中國勞動組合書記部。北伐軍占領武漢之後，總部遷至武漢。1927年6月總部被中國國民黨查封。中國抗日戰爭時期成立陝甘寧邊區總工會和各抗日根據地總工會。第二次國共內戰時期，邊區總工會和各根據地總工會聯合為解放區總工會。1948年8月1日，解放區總工會和國民黨統治區工會在哈爾濱聯合召開了第六次全國勞動大會，決定恢復中華全國總工會。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 0 month = august year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "恢復"
+		ai_chance = 100
+		command = { type = dissent value = -1  } 
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = industrial_modifier which = supplies value = 1 }
+	}
+} 
+
+event = { # 
+	id = 944052
+	country = CHI
+	trigger = { 
+		event = 944047
+		OR = { 
+			NOT = { domestic = { type = democratic value = 5 } } 
+			war = { country = CHI country = CHC }
+		}
+	}
+	name = "「八·一九」大逮捕"
+	desc = "北平七五事件後不久，中國國民黨開始追查操縱7月9日
+		北平「七九」遊行的「學匪」，嚴厲鎮壓學生運動。中
+		國國民黨青年部部長陳雪屏奉密令成立了「清匪除奸委
+		員會」，隨即發生「八·一九」事件（又稱「八·一九」
+		大迫害、「八·一九」大逮捕），傳訊、拘捕250多名學
+		生，送往特別刑事法庭「法辦」。中國共產黨也開始逐
+		步轉移學生，將國統區的學生運動目標轉變為配合中國
+		人民解放軍進軍，協助中國人民解放軍接管城市，學生
+		運動由此開始進入低潮。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 18 month = august year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "無知的學生"
+		ai_chance = 100
+		command = { type = dissent value = -5  }
+		command = { type = domestic which = freedom value = -1 } 
+		command = { type = domestic which = democratic value = -1 }
+	}
+} #944053 reserved
+#####################################
+# 華南水災
+#####################################
+event = { # 
+	id = 944054
+	country = CHI
+	trigger = { 
+		control = { province = 1235 data = -1 }
+		random = 50
+	}
+	name = "華南大水災（一）"
+	desc = "民國３５年，岷、沱、涪、嘉陵江大水，四川３０餘縣市
+		受災。福建沿海１９個縣市嚴重水災，淹死三千餘人。浙
+		江曹娥江等中小河流大水，３０多縣市受災。鄂、皖、豫
+		、魯、遼、粵、甘、寧等省均有部分地區水災。全國共１
+		６０縣受災。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = june year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "政府無力救助"
+		ai_chance = 100
+		command = { type = dissent value = 5  }
+	}
+	action_b = {
+		name = "全力救助災民"
+		ai_chance = 0
+		command = { type = dissent value = 3  }
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -3000 }
+	}
+}
+
+event = { # 
+	id = 944055
+	country = CHI
+	trigger = { 
+		control = { province = 1235 data = -1 }
+		random = 50
+	}
+	name = "華南大水災（二）"
+	desc = "民國３６年，珠江大水，粵、桂兩省１２０餘縣市水災，
+		１０７萬畝農田受災，死亡兩萬餘人。四川盆地大水，
+		８０餘縣市受災，死亡千餘人。京津地區、海南島、山東
+		沂沭泗水系、遼河流域及浙、閩、贛等省部分地區水災。
+		全國共三百餘縣受災。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = june year = 1947 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "政府無力救助"
+		ai_chance = 100
+		command = { type = dissent value = 10  }
+	}
+	action_b = {
+		name = "全力救助災民"
+		ai_chance = 0
+		command = { type = dissent value = 5  }
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -5000 }
+	}
+}
+
+event = { # 
+	id = 944056
+	country = CHI
+	trigger = { 
+		control = { province = 1235 data = -1 }
+		random = 50
+	}
+	name = "華南大水災（三）"
+	desc = "民國３７年，長江中上游大水，川、黔、湘、鄂四省兩百
+		多縣市水災，洞庭湖區堤垸大多潰決，江西省３／４以上
+		的圩堤潰決，湖南省死亡八千餘人。閩江大水，福建省
+		５２個縣市受災，死傷兩千人，農田受災６６萬公頃。海
+		南島各河大多發生大洪水，島內各縣市普遍受災。西、北
+		江中下游、嫩江以及西遼河水災也較重。京津地區、青海
+		東部及山東、遼寧局部地區水災。全國共三百餘縣受災。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = june year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "政府無力救助"
+		ai_chance = 100
+		command = { type = dissent value = 10  }
+	}
+	action_b = {
+		name = "全力救助災民"
+		ai_chance = 0
+		command = { type = dissent value = 5  }
+		command = { type = money value = -2000 }
+		command = { type = supplies value = -5000 }
+	}
+}
+
+event = { # 
+	id = 944057
+	country = CHI
+	trigger = { 
+		control = { province = 1235 data = -1 }
+		random = 50
+	}
+	name = "華南大水災（四）"
+	desc = ""
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = june year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "政府無力救助"
+		ai_chance = 100
+		command = { type = dissent value = 20  }
+	}
+	action_b = {
+		name = "全力救助災民"
+		ai_chance = 0
+		command = { type = dissent value = 6  }
+		command = { type = money value = -5000 }
+		command = { type = supplies value = -10000 }
+	}
+}
+
+######################################################
+##紫石英号事件
+######################################################
+event = {
+  id = 944058
+  random = no
+  country = CHC
+  
+  name = "紫石英号事件 " 
+  desc = "紫石英号事件是发生在解放战争的渡江战役期间，英国皇 家海军远东舰队紫石英号军舰无视警告擅自闯入长江下游水域前 线地区，从而引发与中国人民解放军炮击英国军舰的军事冲突。 "
+#  picture = "zi"
+  style = 0
+  
+  trigger = {    
+    event = 942539
+  } 
+  date = { day = 1 month = january year = 1946 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "让英国尝尝新中国的厉害 "
+    command = { type = dissent value = -3 }
+    command = { type = relation which = ENG value = -20 }
+    command = { type = domestic which = defense_lobby  value = 2 }
+    command = { type = trigger which = 944059 }
+  }
+  action_b = {
+    name = "对英方交涉 "
+    command = { type = relation which = ENG value = 20 }
+    command = { type = trigger which = 944059 }
+  }
+}
+
+event = { 
+   id = 944059
+   country = ENG
+   random = no
+   
+   name = "紫石英号事件 " 
+   desc = "紫石英号事件是发生在解放战争的渡江战役期间，英国皇 家海军远东舰队紫石英号军舰无视警告擅自闯入长江下游水域前 线地区，从而引发与中国人民解放军炮击英国军舰的军事冲突。 "
+   style = 0
+   
+#   picture = "zi"
+
+   action_a = {
+    name = "对中方让步 "
+    command = { type = dissent value = 5 }
+    command = { type = relation which = CHC value = 20 }
+    command = { type = domestic which = defense_lobby  value = -1 }
+  }  
+}
+
+#
+event = { # 
+	id = 944060
+	country = CHI
+	trigger = { 
+		control = { province = 1237 data = -1 }
+		NOT = { 
+			domestic = { type = democratic value = 5 }
+		}
+	}
+	name = "《觀察》事件"
+	desc = "《觀察》是一份曾在中國影響巨大的周刊，主編是儲安
+		平，1946年9月1日創刊於上海，該刊物在1940年代成為
+		中國自由主義知識分子的最重要論壇，曾被譽為「高級
+		言論刊物」。1948年12月24日被中華民國政府查封，共
+		出5卷18期。《觀察》是宣傳「第三條道路」的代表性刊
+		物，是當時中國進步民主運動的一面重要旗幟。《觀察》
+		的被查封，標誌著近代中國自由主義悲歌啼鳴至此，標
+		誌著近代中國一些民主人士希望在中國實行西方資產階
+		級民主共和國制度（被稱為第三條道路）的徹底破滅。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 23 month = december year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "查封"
+		ai_chance = 100
+		command = { type = dissent value = 3 }  
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = freedom value = -1 }
+	}
+	action_b = {
+		name = "不需要"
+		command = { type = dissent value = -1 } 
+		command = { type = domestic which = freedom value = 1 }
+	}	
+}
+
+event = { # 
+	id = 944061
+	country = CHI
+	trigger = { 
+
+	}
+	name = "江亞輪沉沒"
+	desc = "。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 2 month = december year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "悲劇"
+		ai_chance = 100
+		command = { type = dissent value = 1 }  
+		command = { type = money value = -50 }
+	}	
+}
+
+event = { # 
+	id = 944062
+	country = CHI
+	trigger = { 
+
+	}
+	name = "太平輪沉沒"
+	desc = "1949年（民國38年）1月27日，中華民國中聯企
+		業公司向太平洋船務公司租用的客輪「太平輪」
+		因超載（2,093噸）和於夜間航行時沒有開啟航
+		行燈，在上海開往基隆的途中於在舟山群島海域
+		的白節山附近與一艘載有2,700噸煤礦及木材的
+		貨輪「建元輪」相撞，兩船相繼沉沒。太平輪上
+		共證實932人喪生，而建元輪則有72人罹難。澳
+		洲軍艦HMAS Warramunga救起34人，加上由舟山
+		群島漁民所救的未記名人員，共只有50多人生還。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 26 month = january year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "悲劇"
+		ai_chance = 100
+		command = { type = dissent value = 1 }  
+		command = { type = money value = -50 }
+	}	
+}
+
+event = { # 
+	id = 944063
+	country = CHI
+	trigger = { 
+		dissent = 10
+	}
+	name = "民革成立"
+	desc = "1947年11月，國民黨「左派」的第一次聯合代表會議在香港
+		舉行；1948年1月1日，會議宣布「中國國民黨革命委員會」
+		正式成立，並推舉中國國民黨創建人孫中山先生的遺孀宋慶
+		齡女士為該黨的名譽主席（但宋慶齡女士從未正式加入民革）
+		，李濟深為主席，何香凝、馮玉祥等入選該組織的中央領導
+		機構。"
+#	picture = nwo\new_chinese_dollar
+	style = 0
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "國民黨的分裂"
+		ai_chance = 100
+		command = { type = dissent value = 1 }  
+		command = { type = money value = -10 }
+	}	
+}
+
+event = {
+	id = 944064
+	random = no
+	country = CHI
+	persistent = yes
+	trigger = { 
+#		flag = CCW
+		NOT = { dissent = 10 }
+		war = { country = CHI country = CHC }
+		}
+	name = "社會各界呼籲停止內戰"
+	desc = "1946年5月5日，上海52個人民團體在中共上海地
+		下黨領導下，成立上海人民團體聯合會（簡稱「
+		人團聯」），為更大規模地開展反對蔣介石的鬥
+		爭創造了條件。各人民團體一致推舉中國民主促
+		進會牽頭負責該聯合機構的籌建工作。上海人民
+		團體聯合會由中國民主促進會發起，中國民主促
+		進會、中國民主同盟、民主建國會、各產業工會
+		、學生團體、教育團體、文化藝術團體、工商團
+		體參加。"
+	style = 0
+#       picture = "kangsu"
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	 action_a = { 
+            	name = "成立"
+            	ai_chance = 100
+            	command = { type = dissent value = 5 }         
+   }
+}
+event = {	
+        id = 901003
+	random = no
+	country = CHI
+   	persistent = yes
+	trigger = { 
+		ai = yes 
+#              	war = { country = CHC country = CHI }
+		OR = { 
+			AND = { 
+				dissent = 35
+				NOT = { year = 1947 } 
+			}
+			AND = { 
+				dissent = 45
+				year = 1947
+				NOT = { year = 1948 }
+				
+			}
+			AND = { 		
+				year = 1948 
+				NOT = { year = 1949 } 
+				dissent = 50 
+			}
+			AND = { 		
+				year = 1949 
+				dissent = 55
+			}
+		}
+	}
+
+	name = "ai_event"
+	style = 0
+
+	date = { day = 1 month = January year = 1945 }
+	offset = 1
+	deathdate = { day = 1 month = january year = 1950 }
+
+	action_a = {
+		name = "ok"
+		command = { type = dissent value = -3 }
+	}
+}

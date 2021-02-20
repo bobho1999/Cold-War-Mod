@@ -1,0 +1,22 @@
+land_unit_type = 1
+# 0 - 54ÄêĞÍ½üĞlÜŠ
+model = {
+	cost 				= 9
+	buildtime	 		= 165
+	manpower 			= 5
+	maxspeed 			= 2
+	defaultorganisation = 10
+	morale					= 30
+	defensiveness 		= 2
+	toughness 			= 2
+	softness			= -15
+	airdefence				= 4
+	softattack			= 24
+	hardattack			= 8
+	airattack			= 3
+	artillery_bombardment		= 12
+	supplyconsumption 	= 1.1
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}

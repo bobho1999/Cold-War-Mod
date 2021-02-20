@@ -1,0 +1,59 @@
+# NOTE: Obviously, the order of these variables cannot be changed.
+
+diplomacy = {
+# Declare War
+	0
+# Offer Alliance
+	-200
+# Bring to Alliance
+	-200
+# Join Alliance
+	-120
+# Leave Alliance
+	-250
+# Ban from Alliance
+	-250
+# Influence Nation
+	-200
+# Coup Nation
+	-1500
+# Ask for Military Access
+	-150
+# Cancel Military Access
+	-50
+# Revoke Military Access
+	-50
+# Assume Military Control
+	-800
+# Cancel Military Control
+	0
+# Send Expeditionary Force
+	-200
+# Guarantee Independence
+	-500
+# Annex Nation
+	0
+# Puppet Regime
+	0
+# Demand Territory
+	-300
+# Open Negotiations
+	-30
+# Offer Non-Aggression Pact
+	-200
+# Cancel Non-Aggression Pact
+	-200
+# Offer Trade Agreement
+	0
+# Cancel Trade Agreement
+	-10
+# Cancel Peace Treaty
+	-300
+# Sue for Peace
+	-100
+# Release Puppet
+	-100
+# Liberate Nation
+	0
+
+}

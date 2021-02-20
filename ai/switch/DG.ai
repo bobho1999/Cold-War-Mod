@@ -1,0 +1,37 @@
+# CHI AND GER AI File by Lothos
+
+war = 30
+neutrality = 50.000
+exp_force_ratio = 0.05
+exp_force_ratios = { GER = 0.1 } 
+
+####################################################################
+# Diplomacy
+####################################################################
+combat = { 
+	CHC = 35 
+	TIB = 30
+	ENG = 20
+	FAR = 10
+}
+protect = { GER = 350 }
+befriend = { GER = 300 }
+
+trade = {
+	favored = {
+		GER = 999
+	}
+	embargo = {
+		 JAP ENG SOV
+	}
+}
+tech_sharing = {
+	favored = {
+		GER = 999
+	}
+	embargo = {
+		ENG USA JAP SOV FAR
+	}
+}
+
+

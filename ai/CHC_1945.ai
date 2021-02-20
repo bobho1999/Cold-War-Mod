@@ -1,0 +1,615 @@
+##CHC 1945 Default AI inherited from previous campaigns
+
+garrison = { 
+	defend_overseas_beaches = yes 
+	key_point_prio_mult	 = 0
+	revolt_risk_mult	 = 1
+	beach				 = 10 
+	reserves			 = 20 
+	capital				 = 30 
+	human_border		 = 0 
+	war_target			 = 50 
+	opposing_alliance	 = 50 
+	claim_threat		 = 50 
+	unstable_border		 = 0 
+	war_zone_odds		 = 2
+	home_multiplier		 = 1
+	overseas_multiplier	 = 0.5
+	home_peace_cap		 = 20 
+	country_priorities	 = { 
+		SOV = -1 
+		MON = -1 
+		TIB = -1 
+		NEP = -1 
+		AFG = -1 
+		FRA = -1 
+		ENG = -1 
+		POR = -1 
+		CHI = 50 
+		CSX = 10 
+		SIK = -1 
+		CXB = 10 
+		CYN = 10 
+		CGX = 10 
+	}
+	province_priorities = { 
+		1270 = 30 
+		1403 = 100 
+		1378 = 80
+            	1379 = 90
+            	1390 = 80
+		1212 = 30  
+	} 
+	area_multiplier = { 2856 = 1.5 1403 = 1.5 1379 = 1.5  2819 = 1.2 } 
+	ignore = { } 
+}
+ 
+military = { 
+	relative_build_scheme = yes 
+	max_batch_peace		 = 360 
+	max_batch_war		 = 180 
+	max_batch_home_front = 180
+        extra_convoys_war = 0.0500 
+        extra_convoys_peace = 0.0500 
+ 
+	
+	infantry			 = 50
+	cavalry				 = 0
+	motorized			 = 0
+	mechanized			 = 0
+	light_armor			 = 0
+	armor				 = 0
+	paratrooper			 = 0
+	marine				 = 0
+	bergsjaeger			 = 0
+	garrison			 = 0
+	hq			= 0
+	militia				 = 50
+#
+	multi_role			 = 0
+	interceptor			 = 0
+	strategic_bomber	 = 0
+	tactical_bomber		 = 0
+	naval_bomber		 = 0
+	cas					 = 0
+	transport_plane		 = 0
+	flying_bomb			 = 0
+	flying_rocket		 = 0
+#
+	battleship			 = 0
+	light_cruiser		 = 0
+	heavy_cruiser		 = 0
+	battlecruiser		 = 0
+	destroyer			 = 0
+	carrier				 = 0
+	escort_carrier		 = 0
+	submarine			 = 0
+	#nuclear_submarine	 = 5
+	transport			 = 0
+#
+	artillery			 = 20
+	sp_artillery		 = 0
+	rocket_artillery	 = 0
+	sp_rct_artillery	 = 0
+	anti_tank			 = 18
+	tank_destroyer		 = 0
+	light_armor_brigade	 = 0
+	heavy_armor			 = 0
+	super_heavy_armor	 = 0
+	armored_car			 = 0
+	anti_air			 = 0
+	police				 = 0
+	engineer			 = 0
+	cag					 = 100
+	escort				 = 0
+            naval_asw = 20.0000 
+            naval_anti_air_s = 20.0000 
+            naval_radar_s = 20.0000 
+            naval_fire_controll_s = 20.0000 
+            naval_improved_hull_s = 10.0000 
+            naval_torpedoes_s = 10.0000 
+            naval_anti_air_l = 0.0000 
+            naval_radar_l = 0.0000 
+            naval_fire_controll_l = 0.0000 
+            naval_improved_hull_l = 0.0000 
+            naval_torpedoes_l = 0.0000     
+} 
+
+technology = { 
+	preference = { 
+		#Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Agriculture
+		5020 5030 5040
+
+		# Inf support
+		1310 1320 1330 1340 1350 1360
+
+		# Production
+		5050 5060 5070 5080 5090 5100 5110 5120 5130 5150 5180
+
+		# Mountain Unit techs
+		1110 1120 1130 1140
+	} 
+	ignore = { 
+		# Vehicle Assembly & Rocket Assembly
+		5160 5170
+
+		# Airborne
+		1070 1080 1090 1100
+
+		# Naval Bomber
+		4190 4200 4210
+
+		# Marines
+		1150 1160 1170 1180
+
+		# Motorized
+		1230 1240 1250
+
+		# Air Transports
+		4250 4260 4270
+
+		# Atomic Research
+		5470 5480 5490 5500 5510 5520 5530 5540
+
+		# Test and Research
+		5550 5560 5570 5580 5590
+
+		# Bas Decimetric
+		5410 5420 5430 5440 5450 5460
+
+		# CAS
+		4170 4280 4180
+
+		# Strategic bombers
+		4220 4230 4240
+
+		# Escort/Multirole Fighters
+		4040 4050 4070 4080 4100 4110
+
+		# Heavy Tanks and Semi-Modern Tank
+		2100 2110 2120 2140
+
+		# SP guns
+		2220 2230 2240 2250
+
+		# SP Rocket Artillery
+		2260 2270 2280 
+
+		# Heavy Cruiser
+		3130 3140 3150 3160 3170 3180 3190
+
+		# Battle Cruiser
+		3190 3200 3210 3220 3230 3240
+
+		# Battleship
+		3250 3260 3270 3280 3290 3300 3310
+
+		# Carrier
+		3320 3330 3340 3350 3360 3370 3380 3390
+
+		# Mechanized
+		1260 1270 1280 1290
+
+		#Guerilla Warfare
+		14080
+	} 
+	armor			 = 1
+	infantry		 = 6
+	industry		 = 3
+	aircraft		 = 0
+	naval			 = 0
+	land_doctrines	 = 8
+	secret_weapons	 = 0
+	air_doctrines	 = 0
+	naval_doctrines	 = 0
+}
+
+##################################################################
+# Common Kommintern AI file
+# garrison, admiral, tech, military are defined for each member
+################################################################## 
+
+max_front_ratio = 6
+#Crush the Balkans and middle East first
+max_front_ratios = { 
+	TUR = 8
+	GRE = 8
+	NOR = 8
+	PER = 8
+}
+max_garrison_prop = 0.15 
+min_garrison_prop = 0.10 
+evac_islands = yes 
+use_offensive_supply = yes 
+neutrality = 120
+
+ferocity = no 
+reinforcement = 0.7
+upgrading = 0.7
+desperation = 0.6
+strat_redeploy_threshold = 40 #25  
+max_redeploying = 0.5
+exp_force_ratio = 0.2
+exp_force_ratios = { 
+	SOV = 0.5
+}
+
+###################################
+# Diplomacy
+################################### 
+war = 0 
+
+resistance = { 
+	GER = 1 
+	ENG = 2 
+	FRA = 2 
+	USA = 2 
+	JAP = 2 
+	ITA = 2
+        SOV = 5 
+	} 
+befriend = { 
+	IRQ = 10
+	PER = 10
+	DEN = 10
+	NOR = 10
+	GRE = 10
+	TUR = 10
+	SWE = 10
+	FIN = 10
+
+	ALB = 10
+	BUL = 10
+	CHC = 10 
+	CZE = 10
+	DDR = 10
+	HUN = 10
+	MON = 10  
+	PRK = 10
+	POL = 10
+	ROM = 10
+	SIK = 10
+	YUG = 10
+
+	SOV = 10
+}
+ 
+protect = { 
+	ALB = 50
+	BUL = 50
+	CHC = 50 
+	CZE = 50
+	DDR = 50
+	HUN = 50
+	MON = 50  
+	PRK = 50
+	POL = 50
+	ROM = 50
+	SIK = 50
+	YUG = 50
+
+	SOV = 100
+
+	PER = 50 
+	TUR = 50 
+	FIN = 50 
+	SWE = 50
+	AFG = 50 
+	IRQ = 50
+	PER = 50
+	DEN = 50
+	NOR = 50
+	GRE = 50
+	TUR = 50
+}
+ 
+demand_claims = { } 
+claim_acceptance = -49 
+target = {  1389 = 50 
+            1390 = 75 
+            1396 = 100
+            1403 = 100
+            1379 = 100
+            1378 = 75
+            1395 = 10 
+            1394 = 10
+            1377 = 50
+            1378 = 10
+            1205 = 50
+            1204 = 50
+            1206 = 50
+            1210 = 10 
+            1211 = 10
+            1203 = 10
+            1397 = 10 
+            1226 = 50
+            1224 = 50
+            1212 = 50
+            1227 = 50
+            1215 = 50
+            1228 = 50
+            1223 = 50
+            1222 = 100
+            1218 = 100
+            1229 = 50
+            1230 = 50
+            1232 = 100
+            1217 = 50
+            1233 = 50
+            1221 = 50
+            1220 = 50
+            1219 = 50            
+            
+	} 
+trade = { 
+	favored = { 
+		ALB = 50
+		BUL = 50
+		CHC = 50 
+		CZE = 50
+		DDR = 50
+		HUN = 50
+		MON = 50  
+		PRK = 50
+		POL = 50
+		ROM = 50
+		SIK = 50
+		YUG = 50
+
+		SOV = 100
+
+		PER = 50 
+		TUR = 50 
+		IRQ = 50
+		DEN = 50
+
+		FIN = 50 
+		SWE = 50
+		AFG = 50 
+		NOR = 50
+		GRE = 50
+		TUR = 50
+		} 
+		cancel_deal_threshold = 2
+	}
+tech_sharing = { 
+	favored = { 
+		ALB = 30
+		BUL = 50
+		CHC = 80 
+		CZE = 80
+		DDR = 80
+		HUN = 50
+		MON = 30
+		PRK = 30
+		POL = 80
+		ROM = 80
+		SIK = 30
+		YUG = 80
+
+		SOV = 100
+
+		PER = 25 
+		TUR = 25 
+		IRQ = 25
+		DEN = 25
+
+		FIN = 10 
+		SWE = 10
+		AFG = 10 
+		NOR = 10
+		GRE = 10
+		TUR = 10
+	} 
+	embargo = {
+		CHI
+	}
+	prioritized = { 
+		# Agriculture
+		5020 = 100
+		5030 = 100
+		5040 = 100
+		13000 = 100
+	
+		# Inf support
+		1310 = 100
+		1320 = 100
+		1330 = 100
+		1340 = 100
+		1350 = 100
+		1360 = 100
+
+		# Production
+		5050 = 100
+		5060 = 100
+		5070 = 100
+		5080 = 100
+		5090 = 100
+		5100 = 100
+		5110 = 100
+		5120 = 100
+		5130 = 100
+		5150 = 100
+		5180 = 100
+
+		# Motorized
+		1230 = 100
+		1240 = 100
+		1250 = 100
+
+		# CAS
+		4170 = 100
+		4280 = 100
+		4180 = 100
+
+		# Medium tanks
+		2070 = 100
+		2080 = 100
+		2090 = 100
+
+		# Light tanks
+		2020 = 100
+		2030 = 100
+		2040 = 100
+		2050 = 100
+		2060 = 100
+
+		#Heavy and modern tanks
+		2100 = 100
+		2110 = 100
+		2120 = 100
+		2130 = 100
+		2140 = 100
+		11100 = 100
+			
+		# Mechanized
+		1260 = 100
+		1270 = 100
+		1280 = 100
+		1290 = 100
+
+		#Electronics
+		5320 = 100 
+		5330 = 100
+		5340 = 100
+		5350 = 100
+		5360 = 100
+		5370 = 100 
+		5380 = 100 
+		5390 = 100 
+		5400 = 100 
+		13060 = 100
+
+		#Radars
+		5420 = 100
+		5430 = 100 
+		5440 = 100
+		5450 = 100
+		5460 = 100
+
+		#Submarines
+		3440 = 100
+		3450 = 100
+
+		#Advanced aircrafts
+		4090 = 100
+		4100 = 100 
+		4110 = 100 
+		4160 = 100 
+		4180 = 100 
+		4210 = 100 
+		4240 = 100 
+		4270 = 100 
+
+		#Land Doctrine
+		6350 = 100 
+		6360 = 100 
+		6370 = 100 
+		14030 = 100 
+		14060 = 100
+
+		#Supply doctrines
+		10120 = 100
+	}
+	not = {
+		14080  #Guerilla warfare
+	}
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+
+front = { 
+	recklessness			= 1 
+	enemy_reinf_days 		= 6 
+	reserve_prop 			= 0.1 
+	panic_ratio_vs_ai 		= 1.5 
+	panic_ratio_vs_human 	= 1.5 
+	base_attack_odds 		= 1.3 
+	min_attack_odds 		= 1.1 
+	max_attack_odds 		= 3.0 
+	reinforce_odds 			= 1.2 
+	withdraw_odds 			= 0.6 
+	distrib_vs_ai 			= even
+	distrib_vs_human 		= even
+} 
+construction = { 
+	max_factor = 0 
+} 
+
+###################################
+# Air bombardment and defense /Lothos
+###################################
+# Air AI File For Ground Bombings as priority
+# bomber is now obsolete and NOT USED AT ALL replace and use Air Marshal instead
+
+
+
+air_marshal = {
+	icxdayscostfactor 				= 10.0	# How to value true industrial cost when calculating expect causalties
+	manpowercostfactor				= 100.0	# How to value manpower cost when calculating expect causalties
+	destructionriskthreashold 		= 0.2	# when to fear a divisiopn might be destroyed
+
+	# desirability is a multiplier used when calcualting the mission desirability
+	airsuperioritydesirability 		= 10.0
+	groundattackdesirability 		= 40.0
+	inderdictiondesirability 		= 50.0
+	logisticalstrikedesirability	= 30.0
+	runwaycrateringdesirability 	= 20.0
+	strategicstrikedesirability 	= 2.0
+	installationstrikedesirability 	= 2.0
+	navalstrikedesirability 		= 2.0
+	portstrikedesirability 			= 9.0
+
+	# tolerance is the required kill:loss ration expected to do 
+	#	mission, 2.0 accept twice the losses of your enemy, 0.5 accept half
+	airsuperioritylosstolerance 	= 1.0
+	groundattacklosstolerance 		= 1.0
+	interdictionlosstolerance 		= 2.0
+	logisticalstrikelosstolerance 	= 4.5
+	runwaycrateringlosstolerance 	= 1.5
+	strategicstriketolerance 		= 4.5
+	installationstriketolerance 	= 1.5
+	navalstriketolerance 			= 1.0
+	portstriketolerance 			= 1.0
+
+	# efficency is a tweakable param to adjust according to how 
+	#	much actual damage comes from doing this mission (not to be confused with desirability)
+	logisticalstrikeefficency 		= 0.01
+	runwaycrateringefficency 		= 0.01
+	strategicstrikeefficency 		= 0.01
+	installationstrikeefficency 	= 0.01
+
+	taskforcetype = { name = "Air Superiority" desiredratio = 0.4 rangeweight = 10 airkillpowerweight = 2000 hardkillpowerweight = 0 softkillpowerweight = 0 navalkillpowerweight = 0 strategickillpowerweight = 0 transportcapacityweight = -1000000 airvulnurabilityweight = -1 surfacevulnurabilityweight = 0 idle = yes reorganize = yes air_superiority = yes } 
+	taskforcetype = { name = "Soft Bombing" desiredratio = 0.25 rangeweight = 10 airkillpowerweight = 0 hardkillpowerweight = 0 softkillpowerweight = 2000 navalkillpowerweight = 0 strategickillpowerweight = 0 transportcapacityweight = -1000000 airvulnurabilityweight = 0 surfacevulnurabilityweight = -1 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.1 rangeweight = 10 airkillpowerweight = 0 hardkillpowerweight = 2000 softkillpowerweight = 0 navalkillpowerweight = 0 strategickillpowerweight = 0 transportcapacityweight = -1000000 airvulnurabilityweight = 0 surfacevulnurabilityweight = -1 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.1 rangeweight = 10 airkillpowerweight = 0 hardkillpowerweight = 0 softkillpowerweight = 0 navalkillpowerweight = 0 strategickillpowerweight = 2000 transportcapacityweight = -1000000 airvulnurabilityweight = -0.5 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.05 rangeweight = 10 airkillpowerweight = 0 hardkillpowerweight = 0 softkillpowerweight = 0 navalkillpowerweight = 2000 strategickillpowerweight = 0 transportcapacityweight = -1000000 airvulnurabilityweight = 0 surfacevulnurabilityweight = -1 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.1 rangeweight = 10 airkillpowerweight = 0 hardkillpowerweight = -2000 softkillpowerweight = -2000 navalkillpowerweight = 0 strategickillpowerweight = -2000 transportcapacityweight = 1000000 airvulnurabilityweight = -1 surfacevulnurabilityweight = 0 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+}
+
+###################################
+# Invasions and Naval /Lothos
+###################################
+invasion = { 
+	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.1	#increase to avoid coastal forts more.
+	beach			= 0.1	#higher, avoid worst beaches.
+	distance		= 20.0	#higher = avoid long distance.
+	pocket			= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.1	#prioritise taking pure islands.
+	enemy			= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base		= 1.5 
+	naval_base 		= 0.1 
+	air_support 	= 3.0 
+	redirect 		= nearest
+	ignore			= no
+	
+	target = { } 
+}

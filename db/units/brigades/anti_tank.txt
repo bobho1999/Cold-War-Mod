@@ -1,0 +1,191 @@
+land_unit_type = 1
+# 0 - 36型反坦克加強营 
+model = {
+	cost 				= 2.3
+	buildtime	 		= 85
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 2
+	softness			= -3
+	softattack			= 1
+	hardattack			= 2
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 1 - 40型反坦克加強营 
+model = {
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 3
+	softness			= -3
+	softattack			= 1
+	hardattack			= 4
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - 45型反坦克加強营 
+model = {
+	cost 				= 3.5
+	buildtime	 		= 90
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 4
+	softness			= -3
+	softattack			= 2
+	hardattack			= 4
+	supplyconsumption 	= 0.22
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - 50型反坦克加強营 
+model = {
+	cost 				= 4
+	buildtime	 		= 95
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 5
+	softness			= -3
+	softattack			= 2
+	hardattack			= 6
+	supplyconsumption 	= 0.24
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - 55型反坦克加強营 
+model = {
+	cost 				= 5
+	buildtime	 		= 95
+	manpower 			= 2
+	maxspeed 			= -1
+	defensiveness 		= 5
+	softness			= -3
+	softattack			= 3
+	hardattack			= 6
+	supplyconsumption 	= 0.26
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - 60型反坦克加強营 
+model = {
+	cost 				= 6
+	buildtime	 		= 100
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 6
+	softness			= -3
+	softattack			= 3
+	hardattack			= 8
+	supplyconsumption 	= 0.28
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 6 - 65型反坦克加強营 
+model = {
+	cost 				= 6
+	buildtime	 		= 100
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 6
+	softness			= -3
+	softattack			= 4
+	hardattack			= 8
+	supplyconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 7 - 70型反坦克加強营 
+model = {
+	cost 				= 7
+	buildtime	 		= 105
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 7
+	softness			= -3
+	softattack			= 4
+	hardattack			= 10
+	supplyconsumption 	= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 8 - 75型反坦克加強营 
+model = {
+	cost 				= 7
+	buildtime	 		= 105
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 7
+	softness			= -3
+	softattack			= 5
+	hardattack			= 10
+	supplyconsumption 	= 0.34
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 9 - 80型反坦克加強营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 8
+	softness			= -3
+	softattack			= 5
+	hardattack			= 12
+	supplyconsumption 	= 0.36
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 10 - 85型反坦克加強营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 8
+	softness			= -3
+	softattack			= 6
+	hardattack			= 12
+	supplyconsumption 	= 0.38
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 11 - 90型反坦克加強营 
+model = {
+	cost 				= 9
+	buildtime	 		= 110
+	manpower 			= 2
+	maxspeed 			= -1
+	morale					= 3
+	defensiveness 		= 9
+	softness			= -3
+	softattack			= 7
+	hardattack			= 14
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 12 -  
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 14
+	supplyconsumption 	= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

@@ -1,0 +1,594 @@
+#########################################################################
+# 新疆問題
+#########################################################################
+event = {
+	id = 941392
+	random = no
+	country = CHC
+        name = "改編三區民族軍"
+	trigger = {
+               	control = { province = 1433 data = -1 }
+		NOT = { flag = SIK_refused } 
+		NOT = { war = { country = CHC country = SIK } }    
+		random = 40      
+		event = 20413 
+		event = 19540
+              }
+
+	desc = "1949年9月，新疆和平解放，隨後，中國人民解放軍進軍新疆。
+		12月20日，民族軍被中國人民解放軍收編，轉變為中國人民解
+		放軍第五軍。"
+	style = 0
+
+        date = { day = 0 month = january year = 1948 }
+        offset = 10
+        deathdate = { day = 30 month = december year = 1955 }
+        
+	action_a = {
+	       	name = "改編 " 
+	      	command = { type = trigger which = 941393 }
+        }
+}
+
+event = {
+	id = 941393
+	random = no
+	country = SIK
+        name = "加入新中國? "
+
+
+	desc = "1949年9月，新疆和平解放，隨後，中國人民解放軍進軍新疆。
+		12月20日，民族軍被中國人民解放軍收編，轉變為中國人民解
+		放軍第五軍。"
+	style = 0
+        
+	action_a = {
+	       	name = "中华人民共和国万岁！" 
+		ai_chance = 100
+	      	command = { type = trigger which = 941394 }
+        }
+	action_b = {
+	       	name = "拒絕！" 
+		ai_chance = 0
+	      	command = { type = setflag which = SIK_refused }
+        }
+}
+
+event = {
+	id = 941394
+	random = no
+	country = CHC
+
+        name = "三區併入新中國 "
+	desc = "1949年9月，新疆和平解放，隨後，中國人民解放軍進軍新疆。
+		12月20日，民族軍被中國人民解放軍收編，轉變為中國人民解
+		放軍第五軍。"
+	style = 0
+        
+	action_a = {
+	       	name = "中华人民共和国万岁！" 
+		command = { type = inherit which = SIK }
+	      	command = { type = add_corps which = "中国人民解放军第5军" value = land where = 1432 }
+		command = { type = add_division which = "中国人民解放军第13师" value = infantry when = 4 }
+		command = { type = add_division which = "中国人民解放军第14师" value = infantry when = 4 }
+		command = { type = add_division which = "中国人民解放军第15师" value = infantry when = 4 }
+		command = { type = belligerence value = -5 }
+        }
+}
+
+event = {
+	id = 941395
+	random = no
+	country = CHC
+
+	trigger = {
+               	control = { province = 1433 data = -1 }
+		flag = SIK_refused 
+		NOT = { war = { country = CHC country = SIK } }    
+		random = 50      
+		event = 20413 
+              }
+
+        name = "新疆三區政府問題 "
+	desc = "前些時候，三區政府拒絕出席人民政治协商会议第一届全体会议，
+		暴露了其決意維持獨立的野望。是時候解決他們了。"
+	style = 0
+
+        date = { day = 0 month = january year = 1948 }
+        offset = 5
+        deathdate = { day = 30 month = december year = 1955 }
+        
+	action_a = {
+	       	name = "武力解決 "
+       		command = { type = dissent value = -1 } 
+	      	command = { type = war which = SIK }
+		command = { type = sleepevent which = 941392 }
+        }
+}
+
+event = {
+	id = 941396
+	random = no
+	country = CHI
+
+	trigger = {
+               	control = { province = 1433 data = -1 }
+		NOT = { war = { country = CHI country = SIK } }    
+		random = 40      
+		flag = CHI_won_CW 
+              }
+
+        name = "新疆三區政府問題 "
+	desc = " "
+	style = 0
+
+        date = { day = 0 month = january year = 1948 }
+        offset = 10
+        deathdate = { day = 30 month = december year = 1955 }
+        
+	action_a = {
+	       	name = "武力解決 "
+       		command = { type = dissent value = -1 } 
+	      	command = { type = war which = SIK }
+        }
+	action_b = {
+	       	name = "和平談判 " 
+		command = { type = trigger which = 941397 value = 1 }
+	      	command = { type = belligerence value = -5 }
+        }
+}
+
+event = {
+	id = 941397
+	random = no
+	country = SIK
+
+        name = "回歸中國? "
+	desc = "。"
+	style = 0
+        
+	action_a = {
+	       	name = "放棄抗爭、回歸中央" 
+		ai_chance = 40
+	      	command = { type = trigger which = 941398 value = 1 }
+        }
+	action_b = {
+	       	name = "要求自治" 
+		ai_chance = 55
+	      	command = { type = trigger which = 941399 value = 1 }
+        }
+	action_c = {
+	       	name = "拒絕！" 
+		ai_chance = 5
+	      	command = { type = setflag which = SIK_CHI_negotiate_break }
+        }
+}
+
+event = {
+	id = 941398
+	random = no
+	country = CHI
+
+        name = "和平统一新疆 "
+	desc = "。"
+	style = 0
+        
+	action_a = {
+	       	name = "開萬世太平" 
+		command = { type = dissent value = -5 }
+	      	command = { type = belligerence value = -5 }
+		command = { type = inherit which = SIK }
+        }
+}
+
+event = {
+	id = 941399
+	random = no
+	country = CHI
+
+        name = "給予新疆自治權? "
+	desc = "。"
+	style = 0
+        
+	action_a = {
+	       	name = "拒絕！" 
+		ai_chance = 99
+		command = { type = dissent value = 3 }
+	      	command = { type = setflag which = SIK_CHI_negotiate_break }
+        }
+	action_b = {
+	       	name = "開萬世太平" 
+		ai_chance = 1
+		command = { type = dissent value = 3 }
+	      	command = { type = belligerence value = -5 }
+		command = { type = removecore which = 1432 }
+		command = { type = removecore which = 3464 }
+		command = { type = removecore which = 2984 }
+		command = { type = removecore which = 3480 }
+		command = { type = removecore which = 3478 }
+		command = { type = removecore which = 2983 }
+		command = { type = removecore which = 1421 }
+		command = { type = make_puppet which = SIK }
+        }
+}
+
+event = {
+	id = 941400
+	random = no
+	country = CHI
+
+	trigger = {
+               	control = { province = 1433 data = -1 }
+		flag = SIK_CHI_negotiate_break 
+		NOT = { war = { country = CHI country = SIK } }    
+		random = 50      
+              }
+
+        name = "與新疆談判破裂 "
+	desc = " "
+	style = 0
+
+        date = { day = 0 month = january year = 1948 }
+        offset = 5
+        deathdate = { day = 30 month = december year = 1955 }
+        
+	action_a = {
+	       	name = "武力解決 "
+       		command = { type = dissent value = -2 } 
+	      	command = { type = war which = SIK }
+        }
+}
+
+# 941401~10 中蘇對抗
+
+event = {
+	id = 6950
+	random = no
+	country = CHI
+	
+	trigger = { 
+		exists = SIK
+		OR = {
+			event = 6925
+			alliance = { country = SIK country = SOV }
+			puppet = { country = SIK country = SOV }
+			guarantee = { country = SOV country = SIK }
+		}
+		flag = CHI_won_CW
+		control = { province = 1433 data = CHI } #Urumqi
+		owned = { province = 1390 data = CHI } #Xinjing
+		owned = { province = 1225 data = CHI } #Tainyian
+		owned = { province = 1235 data = CHI } #Nanjing
+		owned = { province = 1258 data = CHI } #Guilin
+		owned = { province = 1307 data = CHI } #Kunming
+		owned = { province = 1442 data = CHI } #Golmud
+		owned = { province = 1205 data = CHI } #Beiping
+		NOT = {
+			event = 6934
+			exists = CSX
+			exists = CGX
+			exists = CYN
+			exists = MAN
+			exists = MEN
+			exists = CXB
+			exists = CHC
+#			exists = SIK
+			ispuppet = CHI
+			war = { country = CHI country = TIB }
+			war = { country = CHI country = SOV }
+			war = { country = CHI country = JAP }
+			war = { country = CHI country = USA }
+		}
+	}
+
+	date = { day = 1 month = july year = 1944 }
+	offset = 2
+	deathdate = { day = 28 month = december year = 1964 }
+
+	name = "新疆三區政府問題"
+	desc = "With the victory of the Nationalists in the Chinese Civil War, tense negotiations begin between China and the Soviet Union."
+	action_a = {
+		name = "Negotiate with the Soviets"
+		command = { type = trigger which = 6951 value = 1 }
+	}
+	action_b = {
+	       	name = "武力解決(30天解決叛軍) "
+       		command = { type = dissent value = -5 } 
+	      	command = { type = war which = SIK }
+        }
+}
+event = {
+	id = 6951
+	random = no
+	country =SOV
+	
+	# triggered by 6950
+
+	name = "烏魯木齊會議"
+	desc = "With the victory of the Nationalists in the Chinese Civil War, the sole remaining Soviet asset in China was the East Turkestan independence movement The Soviet Union was anxious to regain rights or compensation for the China East Railway and a naval base at Dalian. However, Chiang Kai-Shek, as a UN Security Council member, has indicated he will not accept all of the Soviet demands but might consider one of them."
+	action_a = {
+		name = "瓜分東突厥斯坦"
+		command = { type = trigger which = 6952 }
+	}
+	action_b = {
+		name = "Naval Base for Technology"
+		command = { type = trigger which = 6955 }
+	}
+	action_c = {
+		name = "組織東突厥斯坦聯合政府"
+		command = { type = trigger which = 6956 }
+	}
+}
+event = {
+	id = 6952
+	random = no
+	country =CHI
+	
+	# triggered by 6951
+
+	name = "蘇聯要求瓜分東突厥斯坦"
+	desc = "The Soviet Union is demanding the border regions, inhabited mostly by Kazakhs, and the province of Kashgar, which was hotbed to the original East Turkestan rebellion of 1933, which was finally suppressed in 1937."
+	action_a = {
+		name = "交由聯合國仲裁"
+		ai_chance = 95
+		command = { type = trigger which = 6960 }
+	}
+	action_b = {
+		name = "接受蘇聯要求"
+		ai_chance = 5
+		command = { type = dissent = 20 } # student protests
+		command = { type = removecore which = 1421 }#Recognize rebellion area
+		command = { type = removecore which = 1430 }
+		command = { type = removecore which = 1431 }
+		command = { type = removecore which = 1432 }
+		command = { type = secedeprovince which = SOV value = 1421 }
+		command = { type = secedeprovince which = SOV value = 1430 }
+		command = { type = secedeprovince which = SOV value = 1431 }
+		command = { type = secedeprovince which = SOV value = 1432 }
+		command = { type = trigger which = 6953 }
+	}
+}
+event = {
+	id = 6953
+	random = no
+	country = SIK
+	
+	# triggered by 6952
+
+	name = "東突厥斯坦併入蘇聯"
+	desc = "The East Turkestan Republic faded into memory."
+	action_a = {
+		name = "Accept the inevitable"
+		command = { type = secedeprovince which = CHI value = 1433 }
+		command = { type = secedeprovince which = CHI value = 1435 }
+		command = { type = secedeprovince which = CHI value = 1445 }
+		command = { type = secedeprovince which = CHI value = 1446 }
+		command = { type = secedeprovince which = CHI value = 1447 }
+		command = { type = trigger which = 6954 }
+	}
+}
+event = {
+	id = 6954
+	random = no
+	country = SOV
+	
+	# triggered by 6953
+
+	name = "領土擴張"
+	desc = "By absorbing the border provinces in East Turkestan, the Soviet Union tightened its grip on Central Asia."
+	action_a = {
+		name = "Partition East Turkestan"
+		command = { type = inherit which = U65 }
+		command = { type = addcore which = 1421 }
+		command = { type = addcore which = 1430 }
+		command = { type = addcore which = 1431 }
+		command = { type = addcore which = 1432 }
+	}
+}
+event = {
+	id = 6955
+	random = no
+	country = CHI
+	
+	# triggered by 6951
+
+	name = "出租大連海軍基地"
+	desc = "蘇聯要求並獲得一定的諒解，以彌補其自1895年以來在滿洲地區的資產損失，並在日俄戰爭期間將其損失給日本。 蘇聯從滿洲國獲得了鐵路資產的賠償，因此中國人拒絕了這一要求。 他們現在想在大連建立海軍基地，並提供軍事同盟。"
+	action_a = {
+		name = "交由聯合國仲裁"
+		ai_chance = 85
+		command = { type = trigger which = 6960 }
+	}	
+	action_b = {
+		name = "同意"
+		ai_chance = 15
+		command = { type = removecore which = 1202 }#Dalian
+		command = { type = secedeprovince which = SOV value = 1202 }
+		command = { type = inherit which = SIK }
+		command = { type = steal_tech which = SOV } # represents SOV
+		command = { type = steal_tech which = SOV } # tech assistance
+		command = { type = steal_tech which = SOV } # granted as
+		command = { type = steal_tech which = SOV } # part of
+		command = { type = steal_tech which = SOV } # the deal
+		command = { type = dissent = 10 } # student protests
+	}
+	
+}
+event = {
+	id = 6956
+	random = no
+	country =CHI
+	
+	#
+
+	name = "承認東突厥斯坦"
+	desc = "China has accepted Soviet demands regarding spheres of influence in Mongolia and East Turkestan. China was able to win the concession of free elections."
+	action_a = {
+		name = "交由聯合國仲裁"
+		ai_chance = 99
+		command = { type = trigger which = 6960 }
+	}
+	action_b = {
+		name = "隨他去吧"
+		ai_chance = 1
+		command = { type = secedeprovince which = SIK value = 1433 }
+		command = { type = secedeprovince which = SIK value = 1421 }
+		command = { type = secedeprovince which = SIK value = 1431 }
+		command = { type = secedeprovince which = SIK value = 1432 }
+		command = { type = secedeprovince which = SIK value = 1435 }
+		command = { type = secedeprovince which = SIK value = 1445 }
+		command = { type = secedeprovince which = SIK value = 1430 }
+		command = { type = secedeprovince which = SIK value = 1446 }
+		command = { type = secedeprovince which = SIK value = 1447 }
+		command = { type = removecore which = 1433 }
+		command = { type = removecore which = 1421 }
+		command = { type = removecore which = 1431 }
+		command = { type = removecore which = 1432 }
+		command = { type = removecore which = 1435 }
+		command = { type = removecore which = 1445 }
+		command = { type = removecore which = 1430 }
+		command = { type = removecore which = 1446 }
+		command = { type = removecore which = 1447 }
+		command = { type = trigger which = 6958 }
+		command = { type = dissent = 15 } # student protests
+	}
+}
+
+event = {
+	id = 6958
+	random = no
+	country = SIK
+	
+	# triggered by 6950
+
+	name = "East Turkestan Elections"
+	desc = "After nearly 100 years of civil warfare, the citizens of East Turkestan voted in their first free elections."
+	action_a = {
+		name = "Social Conservative"
+		ai_chance = 40
+		command = { type = end_puppet } 
+		command = { type = leave_alliance } 
+		command = { type = set_domestic which = democratic value = 7 } 
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofstate which = 865011 }
+		command = { type = headofgovernment which = 865022 }
+		command = { type = foreignminister which = 865013 }
+		command = { type = armamentminister which = 865014 }
+		command = { type = ministerofsecurity which = 865016 }
+		command = { type = ministerofintelligence which = 865017 }
+		command = { type = chiefofstaff which = 865019 }
+		command = { type = chiefofarmy which = 865020 }
+	}
+	action_b = {
+		name = "Social Democrat"
+		ai_chance = 40
+		command = { type = end_puppet } 
+		command = { type = leave_alliance } 
+		command = { type = set_domestic which = democratic value = 7 } 
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 865001 }
+		command = { type = headofgovernment which = 865023 }
+		command = { type = foreignminister which = 865024 }
+		command = { type = armamentminister which = 865025 }
+		command = { type = ministerofsecurity which = 865029 }
+		command = { type = ministerofintelligence which = 865030 }
+		command = { type = chiefofstaff which = 865033 }
+		command = { type = chiefofarmy which = 865034 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 20
+		command = { type = end_puppet } 
+		command = { type = leave_alliance } 
+	}
+
+}
+event = {
+	id = 6960
+	random = no
+	country = CHI
+	
+	# triggered by 6950
+
+	name = "聯合國協商"
+	desc = "Saudi Arabia introduced a motion for world recognition of East Turkestan's independence. China insisted East Turkestan was an integral part of China. The Soviet Union and China each exercised their vetoes, but the UN accepted a motion to refer the matter to the World Court."
+	action_a = {
+		name = "OK"
+		command = { type = relation which = SIK value = 1 }
+	}
+}
+event = {
+	id = 6961
+	random = no
+	country = U99
+	
+	trigger = { 
+		event = 6960
+		random = 4
+	}
+
+
+	date = { day = 1 month = july year = 1944 }
+	offset = 8
+	deathdate = { day = 28 month =december year = 1964 }
+
+	name = "國際法院的判決"
+	desc = "The World Court has finally come to a decision. Both sides made impressive arguments."
+	action_a = {
+		name = "新疆是中國的一部分"
+		ai_chance = 90
+		command = { type = trigger which = 6964 }
+	}
+	action_b = {
+		name = "東突厥斯坦獨立"
+		ai_chance = 10
+		command = { type = trigger which = 6963 }
+	}
+}
+event = {
+	id = 6963
+	random = no
+	country =CHI
+	
+	#
+
+	name = "承認東突厥斯坦"
+	desc = "The world court was impressed by arguments made be witnesses from the Islamic world. Especially damaging to the Chinese cause was an impassioned speech by former Ma warlord Ma Bufang, who had fled to Saudi Arabia after having his kingdom usurped by Nationalist China. The court also ruled that elections must be held."
+	action_a = {
+		name = "So be it."
+		command = { type = secedeprovince which = SIK value = 1433 }
+		command = { type = secedeprovince which = SIK value = 1421 }
+		command = { type = secedeprovince which = SIK value = 1431 }
+		command = { type = secedeprovince which = SIK value = 1432 }
+		command = { type = secedeprovince which = SIK value = 1435 }
+		command = { type = secedeprovince which = SIK value = 1445 }
+		command = { type = secedeprovince which = SIK value = 1430 }
+		command = { type = secedeprovince which = SIK value = 1446 }
+		command = { type = secedeprovince which = SIK value = 1447 }
+		command = { type = removecore which = 1433 }
+		command = { type = removecore which = 1421 }
+		command = { type = removecore which = 1431 }
+		command = { type = removecore which = 1432 }
+		command = { type = removecore which = 1435 }
+		command = { type = removecore which = 1445 }
+		command = { type = removecore which = 1430 }
+		command = { type = removecore which = 1446 }
+		command = { type = removecore which = 1447 }
+		command = { type = trigger which = 6958 }
+	}
+}
+event = {
+	id = 6964
+	random = no
+	country =CHI
+	
+	#
+
+	name = "新疆是中國的！"
+	desc = "Soon Qingling was very influential behind the scenes, and Pu Yi appeared as a surprise witness for the Chinese. The court ruled in favor of Nationalist China. Although the Soviet Union ended its support for the insurgents, scattered partisan attacks occured."
+	action_a = {
+		name = "Hurrah!"
+		command = { type = inherit which = U65 }
+#		command = { type = revolt which = -1 }
+	}
+}

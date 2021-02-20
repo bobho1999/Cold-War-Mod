@@ -1,0 +1,1578 @@
+minister_modifiers = {
+
+    # Minister modifiers can be calculated in 4 ways:
+
+    # additive - modifiers are added together, e.g. 0.1 + -0.1 = 0
+    #     0 = no modifier, <0 = negative modifier, >0 = positive modifier
+    # multiplicative - modifiers are multiplied together, e.g. 1.1 * 0.9 = 0.99
+    #     1 = no modifier, <1 = negative modifier, >1 = positive modifier
+    # minimum - the smallest modifier is chosen, e.g. 0.1 and -0.1 = -0.1
+    #     0 = no modifier, <0 = negative modifier, >0 = positive modifier
+    # maximum - the largest modifier is chosen, e.g. 0.1 and -0.1 = 0.1
+    #     0 = no modifier, <0 = negative modifier, >0 = positive modifier
+
+    # modifies dissent 不满
+    dissent_mod = additive
+
+    # modifies transport capacity 运输能力
+    tc_mod = additive 
+
+    # modifies unit organization 组织度
+    org_mod = additive 
+
+    # modifies unit organization recovery 士气
+    morale_mod = additive 
+
+    # modifies do war belligerence 宣战好战度
+    do_war_bell_mod = additive
+
+    # modifies peace belligerence rate 和平好战度
+    peace_bell_rate_mod = additive 
+
+    # modifies war belligerence rate 战争好战度
+    war_bell_rate_mod = additive 
+
+    # ??
+    diplo_bonus_mod = additive 
+    
+    # modifies foreign IC
+    foreign_ic_mod = additive  外国IC
+
+    # modifies foreign manpower 外国人力
+    foreign_mp_mod = additive 
+
+    # modifies manpower growth rate 人力
+    mp_growth_mod = multiplicative 
+
+    # modifies land unit speed 陆军速度
+    unit_speed_mod = additive 
+
+    # modifies land attack  陆军攻击
+    attack_land_mod = additive 
+
+    # modifies land defence 陆军防御
+    defend_land_mod = additive 
+
+    # modifies air attack  空军攻击
+    attack_air_mod = additive 
+
+    # modifies air defence 空军防御
+    defend_air_mod = additive 
+
+    # modifies sea attack 海军攻击
+    attack_sea_mod = additive 
+
+    # modifies sea defence 海军防御
+    defend_sea_mod = additive 
+
+    # modifies fleet detection  海军情报
+    detect_fleet_mod = additive
+
+    # modifies convoy detection 海军运输船情报
+    detect_convoy_mod = additive
+
+    # modifies unit intel 陆军情报优势
+    unit_intel_mod = additive
+
+    # modifies intel difference, used in events  情报优势
+    intel_diff_mod = additive 
+
+    # modifies supply consumption  补给产量
+    supply_consumption_mod = additive
+
+    # Extra ESE  有效补给率
+    ese_mod = additive
+
+    # Leader XP gain 将领经验
+    leader_xp_mod = additive
+
+    # Division XP gain 部队经验
+    division_xp_mod = additive
+
+    # modifies colonial mp gain  殖民地人力
+    colonial_mp_mod = additive
+
+    # modifies colonial province efficiency 殖民地IC
+    colonial_ic_mod = additive
+
+    # modifies stand ground dissent gain  死战不满
+    stand_ground_dissent_mod = additive
+
+    # modifies retooling time  重组时间
+    retooling_time_mod = additive
+
+    # modifies retooling_cost 重组花费
+    retooling_cost_mod = additive
+
+    # modifies gearing speed increase 流水线速度
+    gearing_speed_mod = additive
+
+    # modifies gearing maximum limit 流水线上限
+    gearing_max_mod = additive
+
+    # modifies military salaries 军费
+    military_salaries_mod = additive
+
+    # modifies min IC for remote placement 海外部署
+    remote_placement_min_ic_mod = additive
+
+
+
+
+
+
+    # modifies production types
+    #     value = production/consumer/supply/upgrade/reinforcement/infrastructure
+    #     <no value> = all production types
+    #     production = IC
+    #     consumer = consumer goods need (negative is better)
+    #     upgrade = upgrade cost
+    #     reinforcement = reinforcement cost
+    #     infrastructure = infra rebuild cost
+    production_category_mod = additive 
+
+    # modifies research categories
+    #     value = infantry/armor/naval/aircraft/industry/land_doctrines/air_doctrines/naval_doctrines
+    #     <no value> = all research categories
+    tech_group_mod = additive
+
+    # modifies division production cost
+    #     value = infantry/cavalry/motorized/mechanized/light_armor/armor/garrison/hq/paratrooper/marine/bergsjaeger/cas/multi_role/
+    #             interceptor/strategic_bomber/tactical_bomber/naval_bomber/transport_plane/battleship/light_cruiser/heavy_cruiser/
+    #             battlecruiser/destroyer/carrier/submarine/transport/flying_bomb/flying_rocket/militia/escort_carrier/nuclear_submarine
+    #     <no value> = all division types
+    division_type_mod = additive 
+
+    # modifies brigade production cost
+    #     value = artillery/anti_tank/anti_air/rocket_artillery/sp_artillery/sp_rct_artillery/tank_destroyer/light_armor_brigade/
+    #             heavy_armor/super_heavy_armor/armored_car/engineer/police/cag/escort
+    #     <no value> = all brigade types
+    division_extra_mod = additive 
+
+    # modifies resource production
+    #     value = oil/energy/metal/rare_materials/money/supplies
+    #     <no value> = all resource types
+    resource_mod = additive 
+
+    # modifies province developments
+    #     value = ic/coastal_fort/land_fort/flak/infrastructure/air_base/naval_base/radar_station/nuclear_reactor/rocket_test
+    #     <no value> = all province developments
+    province_project_mod = additive 
+
+    # modifies espionage action chances
+    #     value = steal_blueprint/minister_assassination/send_spy/smear_campaign/coup/sabotage_industry/nuclear_sabotage/found_partisans/
+    #             massmedia/disrupt_techteam/counter_espionage
+    #     <no value> = all espionage actions
+    intelligence_mod = additive 
+
+    # modifies alliance acceptance chances
+    #     value = Difference in government types.
+    #     <no value> = difference not accounted for
+    #     option1 = 0/1 (false/true) true if applicable for democratic
+    #     <no option1> = don't care if democratic or not 
+    accept_alliance_mod = additive 
+
+    # modifies diplomatic action chances
+    #     value = declare_war/offer_alliance/bring_to_alliance/join_alliance/leave_alliance/ban_from_alliance/influence_nation/coup_nation/
+    #             ask_for_military_access/cancel_military_access/revoke_military_access/assume_military_control/cancel_military_control/
+    #             send_expeditionary_force/guarantee_independence/annex_nation/puppet_regime/demand_territory/trade/offer_non_aggression/
+    #             cancel_non_aggression/offer_trade_agreement/cancel_trade_agreement/cancel_peace_treaty/sue_for_peace/release_puppet/
+    #             liberate_nation/dont_send_forces
+    #     <no value> = all diplomatic actions
+    #     option1 = 0/1 (false/true) true if same government type, false if not same government type
+    #     <no option1> = don't care about government type
+    diplomatic_action_mod = additive 
+
+    # modifies diplomatic action chances
+    #     value = declare_war/offer_alliance/bring_to_alliance/join_alliance/leave_alliance/ban_from_alliance/influence_nation/coup_nation/
+    #             ask_for_military_access/cancel_military_access/revoke_military_access/assume_military_control/cancel_military_control/
+    #             send_expeditionary_force/guarantee_independence/annex_nation/puppet_regime/demand_territory/trade/offer_non_aggression/
+    #             cancel_non_aggression/offer_trade_agreement/cancel_trade_agreement/cancel_peace_treaty/sue_for_peace/release_puppet/
+    #             liberate_nation/dont_send_forces
+    #     <no value> = all diplomatic actions
+    #     option1 = 0/1 (false/true) true if same government type, false if not same government type
+    #     <no option1> = don't care about government type
+    #     option2 = 0/1 (false/true) true if weaker nation, false if not weaker
+    #     <no option2> = don't care about relative weakness
+    diplomatic_cost_mod = additive 
+
+    # modifies division / brigade combat values
+    #     div = infantry/cavalry/motorized/mechanized/light_armor/armor/garrison/hq/paratrooper/marine/bergsjaeger/cas/multi_role/
+    #           interceptor/strategic_bomber/tactical_bomber/naval_bomber/transport_plane/battleship/light_cruiser/heavy_cruiser/
+    #           battlecruiser/destroyer/carrier/submarine/transport/flying_bomb/flying_rocket/militia/escort_carrier/nuclear_submarine
+    #     extra = artillery/anti_tank/anti_air/rocket_artillery/sp_artillery/sp_rct_artillery/tank_destroyer/light_armor_brigade/
+    #             heavy_armor/super_heavy_armor/armored_car/engineer/police/cag/escort
+    #
+    #     if div exists, bonus is applied for division, otherwise for brigade
+    #
+    #     option1 = 0/1 (false/true) true if offensive bonus, false if defensive bonus
+    combat_mod = additive 
+    } 
+
+minister_personalities = { 
+
+    # personality fields:
+    #
+    # personality_string= the string that is placed int the minister csv files
+    # name 		= the localized string for the personality name
+    # desc 		= the localized string for the personality description
+    # minister_position	= HeadOfState/HeadOfGovernment/ForeignMinister/ArmamentMinister/MinisterOfSecurity/MinisterOfIntelligence/
+    #                     ChiefOfStaff/ChiefOfArmy/ChiefOfNavy/ChiefOfAir/all
+    #                     NOTE! if 'all' is used, no modifiers can be used
+
+    personality = { 
+        personality_string = "biased intellectual"  # 偏执知识份子
+        name = "NPERSONALITY_BIASED_INTELLECTUAL" 
+        desc = "DPERSONALITY_BIASED_INTELLECTUAL" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = influence_nation modifier_effect = -0.5000 }             #影响关系
+        modifier = { type = diplomatic_cost_mod value = sue_for_peace modifier_effect = -0.5000 }                #请求和平
+        modifier = { type = diplomatic_cost_mod value = cancel_peace_treaty modifier_effect = -0.5000 }          #取消和平 
+        } 
+    personality = { 
+        personality_string = "ideological crusader"  # 思想改革家
+        name = "NPERSONALITY_IDEOLOGICAL_CRUSADER" 
+        desc = "DPERSONALITY_IDEOLOGICAL_CRUSADER" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = release_puppet modifier_effect = -0.5000 }               #释放傀儡
+        modifier = { type = diplomatic_cost_mod value = liberate_nation modifier_effect = -0.5000 }              #释放国家 
+        modifier = { type = diplomatic_cost_mod value = Guarantee_Independence modifier_effect = -0.5000 }       #保障独立
+        modifier = { type = diplomatic_cost_mod value = offer_non_aggression modifier_effect = -0.5000 }         #互不侵犯
+        modifier = { type = diplomatic_cost_mod value = cancel_non_aggression modifier_effect = -0.5000 }        #取消侵犯
+        } 
+    personality = { 
+        personality_string = "apologetic clerk"  # 谨慎的职员
+        name = "NPERSONALITY_APOLOGETIC_CLERK" 
+        desc = "DPERSONALITY_APOLOGETIC_CLERK" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = offer_trade_agreement modifier_effect = -0.5000 }        #提出贸易
+        modifier = { type = diplomatic_cost_mod value = cancel_trade_agreement modifier_effect = -0.5000 }       #取消贸易
+        modifier = { type = diplomatic_cost_mod value = trade modifier_effect = -0.5000 }                        #贸易谈判
+        } 
+    personality = { 
+        personality_string = "iron fisted brute" # 铁腕专制
+        name = "NPERSONALITY_IRON_FISTED_BRUTE" 
+        desc = "DPERSONALITY_IRON_FISTED_BRUTE" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = assume_military_control modifier_effect = -0.5000 }      #军事控制
+        modifier = { type = diplomatic_cost_mod value = cancel_military_control modifier_effect = -0.5000 }      #取消控制
+        modifier = { type = diplomatic_cost_mod value = send_expeditionary_force modifier_effect = -0.5000 }     #给予远征
+        }
+    personality = { 
+        personality_string = "great compromiser"  # 伟大的妥协者
+        name = "NPERSONALITY_GREAT_COMPROMISER" 
+        desc = "DPERSONALITY_GREAT_COMPROMISER" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = Offer_Alliance modifier_effect = -0.5000 }               #提出联盟
+        modifier = { type = diplomatic_cost_mod value = Bring_to_Alliance modifier_effect = -0.5000 }            #邀请联盟
+        modifier = { type = diplomatic_cost_mod value = join_alliance modifier_effect = -0.5000 }                #加入联盟
+        modifier = { type = diplomatic_cost_mod value = leave_alliance modifier_effect = -0.5000 }               #离开联盟
+        modifier = { type = diplomatic_cost_mod value = ban_from_alliance modifier_effect = -0.5000 }            #逐出联盟
+        } 
+    personality = { 
+        personality_string = "general staffer" # 前军方人员或是战争学院的老师
+        name = "NPERSONALITY_GENERAL_STAFFER" 
+        desc = "DPERSONALITY_GENERAL_STAFFER" 
+        minister_position = ForeignMinister 
+
+        modifier = { type = diplomatic_cost_mod value = declare_war modifier_effect = -0.5000 }                  #宣战
+        modifier = { type = diplomatic_cost_mod value = ask_for_military_access modifier_effect = -0.5000 }      #要求通行
+        modifier = { type = diplomatic_cost_mod value = cancel_military_access modifier_effect = -0.5000 }       #结束通行
+        modifier = { type = diplomatic_cost_mod value = revoke_military_access modifier_effect = -0.5000 }       #取消通行
+        } 
+    personality = { 
+        personality_string = "the cloak n dagger schemer"  # 阴谋家是个极端秘密的人
+        name = "NPERSONALITY_THE_CLOAK_N_DAGGER_SCHEMER" 
+        desc = "DPERSONALITY_THE_CLOAK_N_DAGGER_SCHEMER" 
+        minister_position = ForeignMinister 
+
+
+        modifier = { type = diplomatic_cost_mod value = puppet_regime modifier_effect = -0.5000 }                #建立傀儡
+        modifier = { type = diplomatic_cost_mod value = annex_nation modifier_effect = -0.5000 }                 #吞并国家
+        modifier = { type = diplomatic_cost_mod value = demand_territory modifier_effect = -0.5000 }             #索要领土
+        } 
+
+    personality = { 
+        personality_string = "administrative genius" 
+        name = "NPERSONALITY_ADMINISTRATIVE_GENIUS" 
+        desc = "DPERSONALITY_ADMINISTRATIVE_GENIUS" 
+        minister_position = ArmamentMinister 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = mp_growth_mod modifier_effect = 1.0500 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.1000 }
+        } 
+    personality = { 
+        personality_string = "resource industrialist" 
+        name = "NPERSONALITY_RESOURCE_INDUSTRIALIST" 
+        desc = "DPERSONALITY_RESOURCE_INDUSTRIALIST" 
+        minister_position = ArmamentMinister 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.2000 } 
+        modifier = { type = resource_mod value = supplies modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "laissez faires capitalist" 
+        name = "NPERSONALITY_LAISSEZ_FAIRES_CAPITALIST" 
+        desc = "DPERSONALITY_LAISSEZ_FAIRES_CAPITALIST" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tc_mod modifier_effect = 0.1000 }
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.2000 }  
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 }  
+        } 
+    personality = { 
+        personality_string = "theoretical scientist" 
+        name = "NPERSONALITY_THEORETICAL_SCIENTIST" 
+        desc = "DPERSONALITY_THEORETICAL_SCIENTIST" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = secret_weapons modifier_effect = -0.2000 }
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.1000 }
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.1000 }
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.1000 }
+        } 
+    personality = { 
+        personality_string = "military entrepreneur" 
+        name = "NPERSONALITY_MILITARY_ENTREPRENEUR" 
+        desc = "DPERSONALITY_MILITARY_ENTREPRENEUR" 
+        minister_position = ArmamentMinister 
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.2000 } 
+        modifier = { type = retooling_time_mod modifier_effect = -0.2500 }
+        modifier = { type = retooling_cost_mod modifier_effect = -0.2500 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }  
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 }                          
+        } 
+    personality = { 
+        personality_string = "battle fleet proponent" 
+        name = "NPERSONALITY_BATTLE_FLEET_PROPONENT" 
+        desc = "DPERSONALITY_BATTLE_FLEET_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = battleship modifier_effect = -0.1000 }         
+        modifier = { type = division_type_mod value = carrier modifier_effect = -0.1000 }        
+
+        } 
+    personality = { 
+        personality_string = "submarine proponent" 
+        name = "NPERSONALITY_SUBMARINE_PROPONENT" 
+        desc = "DPERSONALITY_SUBMARINE_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = submarine modifier_effect = -0.1000 } 
+        modifier = { type = division_type_mod value = nuclear_submarine modifier_effect = -0.1000 }             
+        } 
+    personality = { 
+        personality_string = "tank proponent" 
+        name = "NPERSONALITY_TANK_PROPONENT" 
+        desc = "DPERSONALITY_TANK_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.2000 }
+        modifier = { type = division_type_mod value = armor modifier_effect = -0.1000 }   
+        modifier = { type = division_type_mod value = light_armor modifier_effect = -0.1000 }                               
+        } 
+    personality = { 
+        personality_string = "infantry proponent" 
+        name = "NPERSONALITY_INFANTRY_PROPONENT" 
+        desc = "DPERSONALITY_INFANTRY_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = motorized modifier_effect = -0.1000 }
+        modifier = { type = division_type_mod value = mechanized modifier_effect = -0.1000 }                         
+        } 
+    personality = { 
+        personality_string = "air to ground proponent" 
+        name = "NPERSONALITY_AIR_TO_GROUND_PROPONENT" 
+        desc = "DPERSONALITY_AIR_TO_GROUND_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = cas modifier_effect = -0.1000 } 
+        modifier = { type = division_type_mod value = tactical_bomber modifier_effect = -0.1000 }     
+        } 
+    personality = { 
+        personality_string = "air to sea proponent" 
+        name = "NPERSONALITY_AIR_TO_SEA_PROPONENT" 
+        desc = "DPERSONALITY_AIR_TO_SEA_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = naval_bomber modifier_effect = -0.2000 }       
+        } 
+    personality = { 
+        personality_string = "strategic air proponent" 
+        name = "NPERSONALITY_STRATEGIC_AIR_PROPONENT" 
+        desc = "DPERSONALITY_STRATEGIC_AIR_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = strategic_bomber modifier_effect = -0.1000 }
+        modifier = { type = division_type_mod value = flying_rocket modifier_effect = -0.1000 }
+        modifier = { type = division_type_mod value = flying_bomb modifier_effect = -0.1000 }                 
+        } 
+    personality = { 
+        personality_string = "special force proponent" 
+        name = "NPERSONALITY_SPECIAL_FORCE_PROPONENT" 
+        desc = "DPERSONALITY_SPECIAL_FORCE_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.2000 } 
+        modifier = { type = division_type_mod value = bergsjaeger modifier_effect = -0.1000 }
+        modifier = { type = division_type_mod value = marine modifier_effect = -0.1000 }
+        modifier = { type = division_type_mod value = paratrooper modifier_effect = -0.1000 }                 
+        }    
+    personality = { 
+        personality_string = "air superiority proponent" 
+        name = "NPERSONALITY_AIR_SUPERIORITY_PROPONENT" 
+        desc = "DPERSONALITY_AIR_SUPERIORITY_PROPONENT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.2000 }
+        modifier = { type = attack_air_mod modifier_effect = 0.0500 } 
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 }        
+        } 
+    personality = { 
+        personality_string = "corrupt kleptocrat" 
+        name = "NPERSONALITY_CORRUPT_KLEPTOCRAT" 
+        desc = "DPERSONALITY_CORRUPT_KLEPTOCRAT" 
+        minister_position = ArmamentMinister 
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = dissent_mod modifier_effect = 0.5000 }               
+        modifier = { type = resource_mod value = money modifier_effect = -0.2000 }         
+        }      
+    personality = { 
+        personality_string = "silent lawyer" 
+        name = "NPERSONALITY_SILENT_LAWYER" 
+        desc = "DPERSONALITY_SILENT_LAWYER" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 }   
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "compassionate gentleman" 
+        name = "NPERSONALITY_COMPASSIONATE_GENTLEMAN" 
+        desc = "DPERSONALITY_COMPASSIONATE_GENTLEMAN" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 }   
+        modifier = { type = foreign_ic_mod modifier_effect = -0.2500 } 
+        modifier = { type = foreign_mp_mod modifier_effect = -0.2500 } 
+        } 
+    personality = { 
+        personality_string = "crime fighter" 
+        name = "NPERSONALITY_CRIME_FIGHTER" 
+        desc = "DPERSONALITY_CRIME_FIGHTER" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 }
+        modifier = { type = mp_growth_mod modifier_effect = 1.0500 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.2500 }                 
+        } 
+    personality = { 
+        personality_string = "prince of terror" 
+        name = "NPERSONALITY_PRINCE_OF_TERROR" 
+        desc = "DPERSONALITY_PRINCE_OF_TERROR" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = 0.2500 } 
+        modifier = { type = foreign_ic_mod modifier_effect = 0.5000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.2000 }              
+        } 
+    personality = { 
+        personality_string = "back stabber" 
+        name = "NPERSONALITY_BACK_STABBER" 
+        desc = "DPERSONALITY_BACK_STABBER" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = -0.0500 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 }
+        modifier = { type = foreign_ic_mod modifier_effect = -0.5000 } 
+        modifier = { type = foreign_mp_mod modifier_effect = -0.5000 }          
+        } 
+    personality = { 
+        personality_string = "man of the people" 
+        name = "NPERSONALITY_MAN_OF_THE_PEOPLE" 
+        desc = "DPERSONALITY_MAN_OF_THE_PEOPLE" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }
+        modifier = { type = military_salaries_mod modifier_effect = 0.1000 }
+        modifier = { type = foreign_mp_mod modifier_effect = 0.5000 } 
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 } 
+        } 
+    personality = { 
+        personality_string = "efficient sociopath" 
+        name = "NPERSONALITY_EFFICIENT_SOCIOPATH" 
+        desc = "DPERSONALITY_EFFICIENT_SOCIOPATH" 
+        minister_position = MinisterOfSecurity 
+
+        modifier = { type = dissent_mod modifier_effect = 0.5000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.3500 }
+        modifier = { type = foreign_ic_mod modifier_effect = 1.0000 } 
+        modifier = { type = mp_growth_mod modifier_effect = 0.9000 }          
+        } 
+    personality = { 
+        personality_string = "crooked kleptocrat" 
+        name = "NPERSONALITY_CROOKED_KLEPTOCRAT" 
+        desc = "DPERSONALITY_CROOKED_KLEPTOCRAT" 
+        minister_position = MinisterOfSecurity 
+        modifier = { type = production_category_mod value = production modifier_effect = -0.0500 } 
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = -0.5000 }         
+        } 
+    personality = { 
+        personality_string = "technical specialist" 
+        name = "NPERSONALITY_TECHNICAL_SPECIALIST" 
+        desc = "DPERSONALITY_TECHNICAL_SPECIALIST" 
+        minister_position = MinisterOfIntelligence 
+
+        modifier = { type = tech_group_mod value = armor modifier_effect = -0.1000 }
+        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.1000 }
+        modifier = { type = tech_group_mod value = naval modifier_effect = -0.1000 }
+        modifier = { type = tech_group_mod value = industry modifier_effect = 0.1000 }
+        modifier = { type = intelligence_mod value = steal_blueprint modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = disrupt_techteam modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "logistics specialist" 
+        name = "NPERSONALITY_LOGISTICS_SPECIALIST" 
+        desc = "DPERSONALITY_LOGISTICS_SPECIALIST" 
+        minister_position = MinisterOfIntelligence 
+
+        modifier = { type = tc_mod modifier_effect = 0.0500 }         
+        modifier = { type = ese_mod modifier_effect = 0.0500 }       
+        modifier = { type = production_category_mod value = upgrade modifier_effect = 0.1000 }
+        } 
+    personality = { 
+        personality_string = "political specialist" 
+        name = "NPERSONALITY_POLITICAL_SPECIALIST" 
+        desc = "DPERSONALITY_POLITICAL_SPECIALIST" 
+        minister_position = MinisterOfIntelligence 
+
+        modifier = { type = intelligence_mod value = minister_assassination modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = found_partisans modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = steal_blueprint modifier_effect = 0.0500 } 
+        modifier = { type = intelligence_mod value = massmedia modifier_effect = 0.0500 } 
+        } 
+    personality = { 
+        personality_string = "dismal enigma" 
+        name = "NPERSONALITY_DISMAL_ENIGMA" 
+        desc = "DPERSONALITY_DISMAL_ENIGMA" 
+        minister_position = MinisterOfIntelligence 
+
+        modifier = { type = intel_diff_mod modifier_effect = 0.5000 }         
+        modifier = { type = intelligence_mod value = send_spy modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.2500 } 
+        } 
+    personality = { 
+        personality_string = "industrial specialist" 
+        name = "NPERSONALITY_INDUSTRIAL_SPECIALIST" 
+        desc = "DPERSONALITY_INDUSTRIAL_SPECIALIST" 
+        minister_position = MinisterOfIntelligence 
+
+        modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 }
+        modifier = { type = intelligence_mod value = steal_blueprint modifier_effect = 0.2000 } 
+        modifier = { type = intelligence_mod value = sabotage_industry modifier_effect = 0.2000 } 
+        } 
+    personality = { 
+        personality_string = "naval intelligence specialist" 
+        name = "NPERSONALITY_NAVAL_INTELLIGENCE_SPECIALIST" 
+        desc = "DPERSONALITY_NAVAL_INTELLIGENCE_SPECIALIST" 
+        minister_position = MinisterOfIntelligence 
+        modifier = { type = detect_fleet_mod modifier_effect = 0.5000 } 
+        modifier = { type = detect_convoy_mod modifier_effect = 2.0000 } 
+        modifier = { type = intelligence_mod value = steal_blueprint modifier_effect = 0.1000 } 
+        modifier = { type = intelligence_mod value = disrupt_techteam modifier_effect = 0.1000 } 
+        } 
+
+    personality = { 
+        personality_string = "school of manoeuvre" 
+        name = "NPERSONALITY_SCHOOL_OF_MANOEUVRE" 
+        desc = "DPERSONALITY_SCHOOL_OF_MANOEUVRE" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = unit_speed_mod modifier_effect = 0.0500 } 
+        modifier = { type = attack_land_mod  modifier_effect = 0.0500 } 
+        modifier = { type = division_type_mod value = armor modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = light_armor modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = cavalry modifier_effect = -0.0500 }  
+   
+        } 
+    personality = { 
+        personality_string = "school of fire support" 
+        name = "NPERSONALITY_SCHOOL_OF_FIRE_SUPPORT" 
+        desc = "DPERSONALITY_SCHOOL_OF_FIRE_SUPPORT" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = attack_land_mod  modifier_effect = 0.0500 } 
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 } 
+        modifier = { type = division_type_mod value = mechanized modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = motorized modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = infantry modifier_effect = -0.0500 }                                
+        } 
+    personality = { 
+        personality_string = "school of mass combat" 
+        name = "NPERSONALITY_SCHOOL_OF_MASS_COMBAT" 
+        desc = "DPERSONALITY_SCHOOL_OF_MASS_COMBAT" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = mp_growth_mod modifier_effect = 1.1000 } 
+        modifier = { type = retooling_time_mod modifier_effect = -0.2500 }
+        modifier = { type = retooling_cost_mod modifier_effect = -0.2500 }
+        modifier = { type = division_type_mod value = infantry modifier_effect = -0.2500 } 
+        modifier = { type = division_type_mod value = militia modifier_effect = -0.2500 }    
+        } 
+    personality = { 
+        personality_string = "school of psychology" 
+        name = "NPERSONALITY_SCHOOL_OF_PSYCHOLOGY" 
+        desc = "DPERSONALITY_SCHOOL_OF_PSYCHOLOGY" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = morale_mod modifier_effect = 0.0500 } 
+        modifier = { type = org_mod modifier_effect = 0.0500 }
+        modifier = { type = leader_xp_mod modifier_effect = 0.2500 }         
+        modifier = { type = division_xp_mod modifier_effect = 0.2500 }         
+        } 
+    personality = { 
+        personality_string = "school of defence" 
+        name = "NPERSONALITY_SCHOOL_OF_DEFENCE" 
+        desc = "DPERSONALITY_SCHOOL_OF_DEFENCE" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = defend_land_mod modifier_effect = 0.1000 } 
+        modifier = { type = division_type_mod value = militia modifier_effect = -0.1000 } 
+        modifier = { type = division_type_mod value = infantry modifier_effect = -0.1000 }       
+        } 
+    personality = { 
+        personality_string = "man of genius" 
+        name = "NPERSONALITY_MAN_OF_GENIUS" 
+        desc = "DPERSONALITY_MAN_OF_GENIUS" 
+        minister_position = ChiefOfStaff 
+        modifier = { type = tech_group_mod modifier_effect = -0.1000 }  
+        modifier = { type = unit_speed_mod modifier_effect = 0.1000 }     
+        modifier = { type = morale_mod modifier_effect = 0.1000 } 
+        modifier = { type = supply_consumption_mod modifier_effect = -0.1000 } 
+        modifier = { type = leader_xp_mod modifier_effect = 0.5000 }   
+        modifier = { type = military_salaries_mod modifier_effect = 0.1000 }            
+        } 
+    personality = { 
+        personality_string = "elastic defence doctrine" 
+        name = "NPERSONALITY_ELASTIC_DEFENCE_DOCTRINE" 
+        desc = "DPERSONALITY_ELASTIC_DEFENCE_DOCTRINE" 
+        minister_position = ChiefOfArmy 
+
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = light_armor
+            modifier_effect = 0.2000 
+            }   
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = armor
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = cavalry 
+            modifier_effect = 0.1000 
+            }           
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = hq
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "static defence doctrine" 
+        name = "NPERSONALITY_STATIC_DEFENCE_DOCTRINE" 
+        desc = "DPERSONALITY_STATIC_DEFENCE_DOCTRINE" 
+        minister_position = ChiefOfArmy   
+
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = mechanized
+            modifier_effect = 0.2000 
+            }     
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = infantry 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = motorized
+            modifier_effect = 0.1000 
+            }             
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = militia
+            modifier_effect = 0.1000 
+            }                                      
+        } 
+    personality = { 
+        personality_string = "decisive battle doctrine" 
+        name = "NPERSONALITY_DECISIVE_BATTLE_DOCTRINE" 
+        desc = "DPERSONALITY_DECISIVE_BATTLE_DOCTRINE" 
+        minister_position = ChiefOfArmy 
+
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = mechanized
+            modifier_effect = 0.2000 
+            }   
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = infantry 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = motorized 
+            modifier_effect = 0.1000 
+            }                       
+         modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = militia
+            modifier_effect = 0.1000 
+            }                        
+        } 
+    personality = { 
+        personality_string = "armoured spearhead doctrine" 
+        name = "NPERSONALITY_ARMOURED_SPEARHEAD_DOCTRINE" 
+        desc = "DPERSONALITY_ARMOURED_SPEARHEAD_DOCTRINE" 
+        minister_position = ChiefOfArmy 
+
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = light_armor
+            modifier_effect = 0.2000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = armor
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = cavalry 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = hq
+            modifier_effect = 0.1000 
+            }                                                           
+        } 
+    personality = { 
+        personality_string = "guns and butter doctrine" 
+        name = "NPERSONALITY_GUNS_AND_BUTTER_DOCTRINE" 
+        desc = "DPERSONALITY_GUNS_AND_BUTTER_DOCTRINE" 
+        minister_position = ChiefOfArmy 
+        modifier = { type = supply_consumption_mod modifier_effect = -0.1500 } 
+        modifier = { type = ese_mod modifier_effect = 0.0500 }    
+        modifier = { type = tc_mod modifier_effect = 0.0500 }                                 
+        } 
+    personality = { 
+        personality_string = "special force doctrine" 
+        name = "NPERSONALITY_SPECIAL_FORCE_DOCTRINE" 
+        desc = "DPERSONALITY_SPECIAL_FORCE_DOCTRINE" 
+        minister_position = ChiefOfArmy                  
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            extra = marine
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            extra = marine
+            modifier_effect = 0.1000 
+            }       
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            extra = paratrooper
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            extra = paratrooper
+            modifier_effect = 0.1000 
+            }     
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            extra = bergsjaeger
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            extra = bergsjaeger
+            modifier_effect = 0.1000 
+            }                                 
+        } 
+
+    personality = { 
+        personality_string = "king of war" 
+        name = "NPERSONALITY_KING_OF_WAR" 
+        desc = "DPERSONALITY_KING_OF_WAR" 
+        minister_position = ChiefOfArmy 
+
+        modifier = { type = unit_speed_mod modifier_effect = 0.1000 }         
+        modifier = { type = attack_land_mod  modifier_effect = 0.0500 } 
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 }                    
+        }               
+         
+    personality = { 
+        personality_string = "open seas doctrine" 
+        name = "NPERSONALITY_OPEN_SEAS_DOCTRINE" 
+        desc = "DPERSONALITY_OPEN_SEAS_DOCTRINE" 
+        minister_position = ChiefOfNavy 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = destroyer
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = light_cruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = carrier 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = escort_carrier 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = heavy_cruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = battlecruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = battleship 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "decisive naval battle doctrine" 
+        name = "NPERSONALITY_DECISIVE_BATTLE_DOCTRINE2" 
+        desc = "DPERSONALITY_DECISIVE_BATTLE_DOCTRINE2" 
+        minister_position = ChiefOfNavy 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = destroyer
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = light_cruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = carrier 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = escort_carrier 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = heavy_cruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = battlecruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = battleship 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "power projection doctrine" 
+        name = "NPERSONALITY_POWER_PROJECTION_DOCTRINE" 
+        desc = "DPERSONALITY_POWER_PROJECTION_DOCTRINE" 
+        minister_position = ChiefOfNavy                 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = naval_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = carrier 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = heavy_cruiser 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = battleship 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = submarine 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = nuclear_submarine
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "indirect approach doctrine" 
+        name = "NPERSONALITY_INDIRECT_APPROACH_DOCTRINE" 
+        desc = "DPERSONALITY_INDIRECT_APPROACH_DOCTRINE" 
+        minister_position = ChiefOfNavy 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = submarine 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = nuclear_submarine 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = destroyer 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = submarine 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = nuclear_submarine 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = destroyer 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "base control doctrine" 
+        name = "NPERSONALITY_BASE_CONTROL_DOCTRINE" 
+        desc = "DPERSONALITY_BASE_CONTROL_DOCTRINE" 
+        minister_position = ChiefOfNavy 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = destroyer
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = transport 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = marine
+            modifier_effect = 0.1000 
+            }             
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = destroyer
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = transport 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = marine
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "air superiority doctrine" 
+        name = "NPERSONALITY_AIR_SUPERIORITY_DOCTRINE" 
+        desc = "DPERSONALITY_AIR_SUPERIORITY_DOCTRINE" 
+        minister_position = ChiefOfAir 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = multi_role 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = multi_role 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = interceptor 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = interceptor 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "naval aviation doctrine" 
+        name = "NPERSONALITY_NAVAL_AVIATION_DOCTRINE" 
+        desc = "DPERSONALITY_NAVAL_AVIATION_DOCTRINE" 
+        minister_position = ChiefOfAir 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = naval_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = naval_bomber 
+            modifier_effect = 0.1000 
+            }          
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            }     
+        } 
+    personality = { 
+        personality_string = "army aviation doctrine" 
+        name = "NPERSONALITY_ARMY_AVIATION_DOCTRINE" 
+        desc = "DPERSONALITY_ARMY_AVIATION_DOCTRINE" 
+        minister_position = ChiefOfAir 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = cas 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = cas 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "carpet bombing doctrine" 
+        name = "NPERSONALITY_CARPET_BOMBING_DOCTRINE" 
+        desc = "DPERSONALITY_CARPET_BOMBING_DOCTRINE" 
+        minister_position = ChiefOfAir 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = strategic_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = strategic_bomber 
+            modifier_effect = 0.1000 
+            }   
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = tactical_bomber 
+            modifier_effect = 0.1000 
+            }             
+        } 
+    personality = { 
+        personality_string = "vertical envelopment doctrine" 
+        name = "NPERSONALITY_VERTICAL_ENVELOPMENT_DOCTRINE" 
+        desc = "DPERSONALITY_VERTICAL_ENVELOPMENT_DOCTRINE" 
+        minister_position = ChiefOfAir 
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = transport_plane
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = transport_plane
+            modifier_effect = 0.1000 
+            }        
+        modifier = { 
+            type = combat_mod 
+            option1 = 0 
+            division = paratrooper 
+            modifier_effect = 0.1000 
+            } 
+        modifier = { 
+            type = combat_mod 
+            option1 = 1 
+            division = paratrooper 
+            modifier_effect = 0.1000 
+            } 
+        } 
+    personality = { 
+        personality_string = "undistinguished suit" 
+        name = "NPERSONALITY_UNDISTINGUISHED_SUIT" 
+        desc = "DPERSONALITY_UNDISTINGUISHED_SUIT" 
+        minister_position = all 
+        } 
+
+    personality = { 
+        personality_string = "powerhungry demagogue" 
+        name = "NPERSONALITY_POWER_HUNGRY_DEMAGOGUE" 
+        desc = "DPERSONALITY_POWER_HUNGRY_DEMAGOGUE" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 }  
+        modifier = { type = mp_growth_mod modifier_effect = 1.0500 }
+        modifier = { type = foreign_mp_mod modifier_effect = -0.5000 } 
+        modifier = { type = morale_mod modifier_effect = 0.1000 }  
+        modifier = { type = division_type_mod modifier_effect = -0.0500 }
+        modifier = { type = production_category_mod value = production modifier_effect = 0.10 }                       
+        } 
+    personality = { 
+        personality_string = "barking buffoon" 
+        name = "NPERSONALITY_BARKING_BUFFOON" 
+        desc = "DPERSONALITY_BARKING_BUFFOON" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.2000 } 
+        modifier = { type = production_category_mod value = production modifier_effect = -0.05 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }
+        } 
+    personality = { 
+        personality_string = "stern imperialist" 
+        name = "NPERSONALITY_STERN_IMPERIALIST" 
+        desc = "DPERSONALITY_STERN_IMPERIALIST" 
+        minister_position = HeadOfState
+ 
+        modifier = { type = dissent_mod modifier_effect = 0.2000 }                
+        modifier = { type = resource_mod value = money modifier_effect = 0.2000 }
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.2000 }   
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.2000 }    
+        } 
+    personality = { 
+        personality_string = "ruthless powermonger" 
+        name = "NPERSONALITY_RUTHLESS_POWERMONGER" 
+        desc = "DPERSONALITY_RUTHLESS_POWERMONGER" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = 0.2000 } 
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.1000 }
+
+        } 
+    personality = { 
+        personality_string = "autocratic charmer" 
+        name = "NPERSONALITY_AUTOCRATIC_CHARMER" 
+        desc = "DPERSONALITY_AUTOCRATIC_CHARMER" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.2000 } 
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.2000 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.2000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 }           
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }                    
+        } 
+    personality = { 
+        personality_string = "resigned generalissimo" 
+        name = "NPERSONALITY_RESIGNED_GENERALISSIMO" 
+        desc = "DPERSONALITY_RESIGNED_GENERALISSIMO" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 } 
+        modifier = { type = org_mod modifier_effect = 0.1000 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.2000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = 0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = 0.1000 }
+        } 
+    personality = { 
+        personality_string = "benevolent gentleman" 
+        name = "NPERSONALITY_BENEVOLENT_GENTLEMAN" 
+        desc = "DPERSONALITY_BENEVOLENT_GENTLEMAN" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.2500 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        modifier = { type = stand_ground_dissent_mod modifier_effect = 0.2500 }
+        } 
+    personality = { 
+        personality_string = "weary stiffneck" 
+        name = "NPERSONALITY_WEARY_STIFF_NECK" 
+        desc = "DPERSONALITY_WEARY_STIFF_NECK" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }
+        modifier = { type = military_salaries_mod modifier_effect = 0.1000 }  
+        modifier = { type = supply_consumption_mod modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "insignificant layman" 
+        name = "NPERSONALITY_INSIGNIFICANT_LAYMAN" 
+        desc = "DPERSONALITY_INSIGNIFICANT_LAYMAN" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = 0.1000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "die-hard reformer" 
+        name = "NPERSONALITY_DIE_HARD_REFORMER" 
+        desc = "DPERSONALITY_DIE_HARD_REFORMER" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 } 
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 } 
+        modifier = { type = org_mod modifier_effect = 0.0500 }  
+        modifier = { type = supply_consumption_mod modifier_effect = -0.1000 }       
+        } 
+    personality = { 
+        personality_string = "pig-headed isolationist" 
+        name = "NPERSONALITY_PIG_HEADED_ISOLATIONIST" 
+        desc = "DPERSONALITY_PIG_HEADED_ISOLATIONIST" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = 0.2000 } 
+        modifier = { type = do_war_bell_mod modifier_effect = 0.5000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 } 
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }
+        } 
+    personality = { 
+        personality_string = "popular figurehead" 
+        name = "NPERSONALITY_POPULAR_FIGUREHEAD" 
+        desc = "DPERSONALITY_POPULAR_FIGUREHEAD" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.2000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 }   
+        modifier = { type = stand_ground_dissent_mod modifier_effect = -0.2500 }      
+        } 
+    personality = { 
+        personality_string = "Great Statesman" 
+        name = "NPERSONALITY_GREAT_STATESMAN" 
+        desc = "DPERSONALITY_GREAT_STATESMAN" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.2000 } 
+        modifier = { type = tc_mod modifier_effect = 0.1000 }
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        modifier = { type = military_salaries_mod modifier_effect = 0.1000 }
+        modifier = { type = division_type_mod modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }
+                  
+        }   
+    personality = { 
+        personality_string = "Legendary Revolutionist" 
+        name = "NPERSONALITY_LEGENDARY_REVOLUTIONIST" 
+        desc = "DPERSONALITY_LEGENDARY_REVOLUTIONIST" 
+        minister_position = HeadOfState  
+
+        modifier = { type = dissent_mod modifier_effect = -0.2000 } 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 }   
+        modifier = { type = supply_consumption_mod modifier_effect = -0.2000 } 
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }                        
+        }  
+    personality = { 
+        personality_string = "Order Reformer" 
+        name = "NPERSONALITY_ORDER_REFORMER" 
+        desc = "DPERSONALITY_ORDER_REFORMER" 
+        minister_position = HeadOfState 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 }        
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 }   
+        modifier = { type = supply_consumption_mod modifier_effect = 0.1000 }                                            
+        }     
+    personality = { 
+        personality_string = "Great Statesman1" 
+        name = "NPERSONALITY_GREAT_STATESMAN" 
+        desc = "DPERSONALITY_GREAT_STATESMAN" 
+        minister_position = HeadOfGovernment
+
+        modifier = { type = tc_mod modifier_effect = 0.1000 }
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        modifier = { type = military_salaries_mod modifier_effect = 0.1000 }
+        modifier = { type = division_type_mod modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }
+                  
+        }   
+    personality = { 
+        personality_string = "Legendary Revolutionist1" 
+        name = "NPERSONALITY_LEGENDARY_REVOLUTIONIST" 
+        desc = "DPERSONALITY_LEGENDARY_REVOLUTIONIST" 
+        minister_position = HeadOfGovernment
+
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 }   
+        modifier = { type = division_type_mod modifier_effect = -0.1000 }
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.1000 }                     
+        } 
+
+    personality = { 
+        personality_string = "Order Reformer1" 
+        name = "NPERSONALITY_ORDER_REFORMER" 
+        desc = "DPERSONALITY_ORDER_REFORMER" 
+        minister_position = HeadOfGovernment
+
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.1000 }   
+        modifier = { type = supply_consumption_mod modifier_effect = 0.1000 }                                             
+        }                          
+    personality = { 
+        personality_string = "silent workhorse" 
+        name = "NPERSONALITY_SILENT_WORKHORSE" 
+        desc = "DPERSONALITY_SILENT_WORKHORSE" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = production_category_mod value = production modifier_effect = 0.0500 } 
+        modifier = { type = province_project_mod value = IC modifier_effect = -0.0500 }  
+        modifier = { type = province_project_mod value = infrastructure modifier_effect = -0.0500 }  
+        modifier = { type = diplomatic_cost_mod modifier_effect = 0.2000 } 
+        } 
+    personality = { 
+        personality_string = "naive optimist" 
+        name = "NPERSONALITY_NAIVE_OPTIMIST" 
+        desc = "DPERSONALITY_NAIVE_OPTIMIST" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }       
+        modifier = { type = gearing_max_mod modifier_effect = 0.1000 }  
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "flamboyant tough guy" 
+        name = "NPERSONALITY_FLAMBOYANT_TOUGH_GUY" 
+        desc = "DPERSONALITY_FLAMBOYANT_TOUGH_GUY" 
+        minister_position = HeadOfGovernment 
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 }   
+        modifier = { type = division_type_mod modifier_effect = -0.1000 }     
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 }                  
+        } 
+    personality = { 
+        personality_string = "happy amateur" 
+        name = "NPERSONALITY_HAPPY_AMATEUR" 
+        desc = "DPERSONALITY_HAPPY_AMATEUR" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = dissent_mod modifier_effect = -0.1000 } 
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 } 
+        modifier = { type = production_category_mod value = supply modifier_effect = -0.1000 }  
+        } 
+    personality = { 
+        personality_string = "backroom backstabber" 
+        name = "NPERSONALITY_BACKROOM_BACKSTABBER" 
+        desc = "DPERSONALITY_BACKROOM_BACKSTABBER" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = production_category_mod value = production modifier_effect = -0.0500 } 
+        modifier = { type = intelligence_mod value = minister_assassination modifier_effect = 0.2000 }        
+        modifier = { type = retooling_time_mod modifier_effect = -0.2500 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.1000 }
+        } 
+    personality = { 
+        personality_string = "smiling oilman" 
+        name = "NPERSONALITY_SMILING_OILMAN" 
+        desc = "DPERSONALITY_SMILING_OILMAN" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = dissent_mod modifier_effect = 0.1000 } 
+        modifier = { type = supply_consumption_mod modifier_effect = 0.2000 }
+        modifier = { type = resource_mod value = oil modifier_effect = 0.2000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.2000 }          
+        } 
+    personality = { 
+        personality_string = "old general" 
+        name = "NPERSONALITY_OLD_GENERAL" 
+        desc = "DPERSONALITY_OLD_GENERAL" 
+        minister_position = HeadOfGovernment 
+       
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 } 
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }
+        modifier = { type = division_type_mod value = infantry modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = motorized modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = militia modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = cavalry modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = hq modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = armor modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = light_armor modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = mechanized modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = bergsjaeger modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = paratrooper modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = marine modifier_effect = -0.0500 }       
+        } 
+    personality = { 
+        personality_string = "old admiral" 
+        name = "NPERSONALITY_OLD_ADMIRAL" 
+        desc = "DPERSONALITY_OLD_ADMIRAL" 
+        minister_position = HeadOfGovernment 
+         
+        modifier = { type = defend_sea_mod modifier_effect = 0.0500 }  
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }
+        modifier = { type = division_type_mod value = carrier modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = escort_carrier modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = battleship modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = heavy_cruiser modifier_effect = -0.0500 }  
+        modifier = { type = division_type_mod value = light_cruiser modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = destroyer modifier_effect = -0.0500 }   
+        modifier = { type = division_type_mod value = submarine modifier_effect = -0.0500 } 
+        modifier = { type = division_type_mod value = nuclear_submarine modifier_effect = -0.0500 }           
+        } 
+    personality = { 
+        personality_string = "old air marshal" 
+        name = "NPERSONALITY_OLD_AIR_MARSHAL" 
+        desc = "DPERSONALITY_OLD_AIR_MARSHAL" 
+        minister_position = HeadOfGovernment 
+       
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 } 
+        modifier = { type = military_salaries_mod modifier_effect = 0.2000 }
+        modifier = { type = division_type_mod value = multi_role modifier_effect = 0.0500 } 
+        modifier = { type = division_type_mod value = interceptor modifier_effect = 0.0500 } 
+        modifier = { type = division_type_mod value = tactical_bomber modifier_effect = -0.0500 }  
+        modifier = { type = division_type_mod value = cas modifier_effect = -0.0500 }  
+        modifier = { type = division_type_mod value = strategic_bomber modifier_effect = -0.0500 }  
+        modifier = { type = division_type_mod value = naval_bomber modifier_effect = -0.0500 }             
+        } 
+    personality = { 
+        personality_string = "political protege" 
+        name = "NPERSONALITY_POLITICAL_PROTEGE" 
+        desc = "DPERSONALITY_POLITICAL_PROTEGE" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = military_salaries_mod modifier_effect = -0.1000 }
+        modifier = { type = production_category_mod value = consumer modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "ambitious union boss" 
+        name = "NPERSONALITY_AMBITIOUS_UNION_BOSS" 
+        desc = "DPERSONALITY_AMBITIOUS_UNION_BOSS" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = dissent_mod modifier_effect = 0.1000 } 
+        modifier = { type = diplomatic_cost_mod value = influence_nation modifier_effect = -0.5000 } 
+        modifier = { type = production_category_mod value = consumer modifier_effect = -0.2000 } 
+        modifier = { type = resource_mod value = money modifier_effect = -0.1000 } 
+        modifier = { type = production_category_mod value = supply modifier_effect = 0.1000 } 
+        } 
+    personality = { 
+        personality_string = "corporate suit" 
+        name = "NPERSONALITY_CORPORATE_SUIT" 
+        desc = "DPERSONALITY_CORPORATE_SUIT" 
+        minister_position = HeadOfGovernment 
+
+        modifier = { type = dissent_mod modifier_effect = 0.2000 } 
+        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 } 
+        modifier = { type = resource_mod value = money modifier_effect = 0.2000 }
+        modifier = { type = retooling_time_mod modifier_effect = 0.5000 }
+        modifier = { type = retooling_cost_mod modifier_effect = 0.5000 }
+        } 
+
+    } 
+

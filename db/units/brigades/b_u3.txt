@@ -1,0 +1,15 @@
+naval_unit_type = 1
+locked = 1
+# Combine Propulsion
+
+model = {
+	cost 			= 10
+	buildtime	 	= 300
+	manpower 		= 0
+	maxspeed		= 5
+	range			= 1000
+	supplyconsumption 	= 0.5
+	fuelconsumption		= 0.5
+	upgrade_time_factor 	= 1.0
+	upgrade_cost_factor 	= 1.5
+}

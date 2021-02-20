@@ -1,0 +1,218 @@
+land_unit_type = 1
+# 0 - 进口自行火炮营 
+model = {
+	cost 				= 2.5
+	buildtime	 		= 90
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 1
+	toughness 			= 1
+	softness			= -5
+	softattack			= 6
+	hardattack			= 2
+	supplyconsumption 	= 0.58
+	fuelconsumption		= 0.42
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 1 - 40型自行火炮营 
+model = {
+	cost 				= 7
+	buildtime	 		= 100
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -5
+	softattack			= 9
+	hardattack			= 3
+	artillery_bombardment		= 3
+	supplyconsumption 	= 0.58
+	fuelconsumption		= 0.42
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 2 - 45型自行火炮营 
+model = {
+	cost 				= 7.5
+	buildtime	 		= 100
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 5
+	toughness 			= 5
+	softness			= -6
+	softattack			= 10
+	hardattack			= 3
+	artillery_bombardment		= 3
+	supplyconsumption 	= 0.62
+	fuelconsumption		= 0.44
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 3 - 50型自行火炮营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 6
+	toughness 			= 6
+	softness			= -6
+	softattack			= 11
+	hardattack			= 3
+	artillery_bombardment		= 4
+	supplyconsumption 	= 0.66
+	fuelconsumption		= 0.46
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 4 - 55型自行火炮营 
+model = {
+	cost 				= 8
+	buildtime	 		= 110
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 6
+	toughness 			= 6
+	softness			= -7
+	softattack			= 12
+	hardattack			= 3
+	artillery_bombardment		= 5
+	supplyconsumption 	= 0.7
+	fuelconsumption		= 0.48
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 5 - 60型自行火炮营 
+model = {
+	cost 				= 8.5
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 7
+	toughness 			= 7
+	softness			= -7
+	softattack			= 12
+	hardattack			= 4
+	artillery_bombardment		= 6
+	supplyconsumption 	= 0.74
+	fuelconsumption		= 0.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 6 - 65型自行火炮营 
+model = {
+	cost 				= 8.5
+	buildtime	 		= 120
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 7
+	toughness 			= 7
+	softness			= -8
+	softattack			= 13
+	hardattack			= 4
+	artillery_bombardment		= 7
+	supplyconsumption 	= 0.78
+	fuelconsumption		= 0.52
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 7 - 70型自行火炮营 
+model = {
+	cost 				= 9
+	buildtime	 		= 130
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 8
+	toughness 			= 8
+	softness			= -8
+	softattack			= 14
+	hardattack			= 4
+	artillery_bombardment		= 8
+	supplyconsumption 	= 0.82
+	fuelconsumption		= 0.54
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 8 - 75型自行火炮营 
+model = {
+	cost 				= 9
+	buildtime	 		= 130
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 8
+	toughness 			= 8
+	softness			= -9
+	softattack			= 15
+	hardattack			= 4
+	artillery_bombardment		= 9
+	supplyconsumption 	= 0.86
+	fuelconsumption		= 0.56
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 9 - 80型自行火炮营 
+model = {
+	cost 				= 9.5
+	buildtime	 		= 140
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 9
+	toughness 			= 9
+	softness			= -9
+	softattack			= 15
+	hardattack			= 5
+	artillery_bombardment		= 10
+	supplyconsumption 	= 0.9
+	fuelconsumption		= 0.58
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 10 - 85型自行火炮营 
+model = {
+	cost 				= 9.5
+	buildtime	 		= 140
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 10
+	toughness 			= 10
+	softness			= -10
+	softattack			= 16
+	hardattack			= 5
+	artillery_bombardment		= 11
+	supplyconsumption 	= 0.94
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 11 - 90型自行火炮营 
+model = {
+	cost 				= 10
+	buildtime	 		= 150
+	manpower 			= 2
+	morale					= 3
+	defensiveness 		= 10
+	toughness 			= 11
+	softness			= -10
+	softattack			= 17
+	hardattack			= 5
+	artillery_bombardment		= 12
+	supplyconsumption 	= 0.98
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1
+}
+# 12 -  
+model = {
+	cost 				= 16.5
+	buildtime	 		= 180
+	manpower 			= 2
+	morale					= 3
+	toughness 			= 11
+	softness			= -24
+	softattack			= 21
+	supplyconsumption 	= 4.2
+	fuelconsumption		= 2.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

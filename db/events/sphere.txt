@@ -1,0 +1,86 @@
+######################################################
+# 
+######################################################
+
+event = {
+	id = 1111111
+	random = no
+	persistent = yes
+	trigger = { 
+		not = { 
+			ic = 3
+			local_flag = help
+#			ispuppet = -1
+		 }
+		ai = yes 
+	}
+	name = "AI_EVENT "
+	style = 0
+#	date = { day = 1 month = january year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		nam e = "OK"
+		command = { type = free_ic value = 3 }
+#		command = { type = free_money value = 1 }
+		command = { type = free_supplies value = 2 }
+		command = { type = free_energy value = 5 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_oil value = 0.5 }
+		command = { type = free_rare_materials value = 2 }
+  		command = { type = local_setflag which = help }
+		}
+}	
+event = {
+	id = 1111112
+	random = no
+	persistent = yes
+        trigger = { 
+		OR = { 	
+			ic = 6
+#			ispuppet = -1
+			 }
+        ai = yes
+		local_flag = help }
+	name = "AI_EVENT "
+	style = 0
+#	date = { day = 1 month = january year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "OK"
+			command = { type = free_ic value = -1 }
+#			command = { type = free_money value = -1 }
+			command = { type = free_supplies value = -2 }
+			command = { type = free_energy value = -5 }
+			command = { type = free_metal value = -5 }
+			command = { type = free_oil value = -0.5 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = local_clrflag which = help }
+		}
+}
+event = {
+	id = 1111113
+	random = no
+	country = chc
+
+	trigger = { 
+		not = { ic = 3
+			local_flag = help
+#			ispuppet = -1
+		 	}
+#		ai = yes 
+	}
+	name = "AI_EVENT "
+	style = 0
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "OK"
+#			command = { type = free_money value = 3 }
+			command = { type = free_supplies value = 5 }
+			command = { type = free_oil value = 4 }
+  		command = { type = local_setflag which = help }
+		}
+}	

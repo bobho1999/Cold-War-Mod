@@ -1,0 +1,559 @@
+################
+#提高社会保障
+#############################################
+event = {
+  id = 135000
+  random = no
+  country = USA
+  
+  name = "提高社会保障 " 
+  desc = "杜鲁门在“公平施政”的第二阶段，在战后工人运动的推动之下， 杜鲁门多次要求扩大社会保障范围。1950年通过对社会保障法的 几条修正案，1952年又增加了一条修正案。1950年1月，杜鲁门还 获得了公平劳动标准法的一条修正案。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 6034
+    government = democratic
+  } 
+  date = { day = 5 month = february year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "提高社会保障有利于我们的政权 "
+    command = { type = dissent value = -2 }
+  }
+}
+################
+#武装西德——美国
+#############################################
+event = {
+  id = 135001
+  random = no
+  country = USA
+  
+  name = "武装西德 " 
+  desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 6034
+    government = democratic
+  } 
+  date = { day = 11 month = september year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "必须把西德武装起来！ "
+    command = { type = relation which = DFR value = 10 }
+    command = { type = belligerence value = 5 }
+    command = { type = trigger which = 135002 }
+  }
+}
+################
+#武装西德——西德
+#############################################
+event = {
+  id = 135002
+  random = no
+  country = DFR
+  
+  name = "武装西德 " 
+  desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "好极了！ "
+    command = { type = relation which = DFR value = 10 }
+    command = { type = belligerence value = 5 }
+    command = { type = build_time which = land value = -10 }
+  }
+}
+################
+#美菲共同防御协定——美国
+#############################################
+event = {
+  id = 135003
+  random = no
+  country = USA
+  
+  name = "美菲共同防御协定 " 
+  desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 6034
+    exists = PHI
+  } 
+  date = { day = 29 month = august year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "这是个好协定 "
+    command = { type = guarantee which = USA where = PHI }
+    command = { type = relation which = PHI value = 10 }
+    command = { type = trigger which = 135004 }
+  }
+}
+################
+#美菲共同防御协定——菲律宾
+#############################################
+event = {
+  id = 135004
+  random = no
+  country = PHI
+  
+  name = "美菲共同防御协定 " 
+  desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "好极了！ "
+    command = { type = access which = USA }
+    command = { type = relation which = USA value = 10 }
+  }
+}
+################
+#旧金山和约——美国
+#############################################
+event = {
+  id = 135005
+  random = no
+  country = USA
+  
+  name = "旧金山和约 " 
+  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 6034
+    exists = JAP
+    atwar = no
+  } 
+  date = { day = 7 month = september year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "要把日本牢牢的握在手中 "
+    command = { type = guarantee which = USA where = JAP }
+    command = { type = relation which = JAP value = 10 }
+    command = { type = trigger which = 135006 }
+  }
+}
+################
+#旧金山和约——日本
+#############################################
+event = {
+  id = 135006
+  random = no
+  country = JAP
+  
+  name = "旧金山和约 " 
+  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "我们获得了独立主权！ "
+    command = { type = dissent value = -1 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = trigger which = 135007 }
+  }
+}
+################
+#旧金山和约——苏联
+#############################################
+event = {
+  id = 135007
+  random = no
+  country = SOV
+  
+  name = "旧金山和约 " 
+  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。由于在北方四岛主权上的争 议，苏联方面没有在该条约上签字。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "北方四岛不能给日本 "
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = JAP value = -10 }
+    command = { type = trigger which = 135008 }
+  }
+}
+################
+#旧金山和约——中国
+#############################################
+event = {
+  id = 135008
+  random = no
+  country = U01
+  
+  name = "旧金山和约 " 
+  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。中国对此表示强烈反对，作 为日本侵略战争的最大受害者，没有中国代表参与的和约应当是 无效的和非法的。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "这个条约是无效条约！ "
+    command = { type = relation which = USA value = -20 }
+    command = { type = relation which = JAP value = -20 }
+  }
+}
+################
+#美韩共同防御协定——美国
+#############################################
+event = {
+  id = 135009
+  random = no
+  country = USA
+  
+  name = "美韩共同防御协定 " 
+  desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
+  style = 0
+  
+  trigger = {
+    flag = "korean war end"
+    not = { war = { country = PRK country = KOR } }
+    exists = KOR
+    government = democratic
+  } 
+  date = { day = 30 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "控制南朝鲜！ "
+    command = { type = guarantee which = USA where = KOR }
+    command = { type = relation which = KOR value = 10 }
+    command = { type = relation which = PRK value = -10 }
+    command = { type = relation which = U01 value = -10 }
+    command = { type = trigger which = 135010 }
+  }
+}
+################
+#美韩共同防御协定——韩国
+#############################################
+event = {
+  id = 135010
+  random = no
+  country = KOR
+  
+  name = "美韩共同防御协定 " 
+  desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "好极了！ "
+    command = { type = access which = USA }
+    command = { type = relation which = USA value = 10 }
+  }
+}
+################
+#冻结中国在美资产
+#############################################
+event = {
+  id = 135011
+  random = no
+  country = USA
+  
+  name = "冻结中国在美资产 " 
+  desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
+  style = 0
+  
+  trigger = {
+    government = democratic
+  } 
+  date = { day = 15 month = december year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "封锁共产党中国 "
+    ai_chance = 95
+    command = { type = relation which = U01 value = -20 }
+    command = { type = trigger which = 135012 }
+  }
+  action_b = {
+    name = "不需要把事情做绝 "
+    ai_chance = 5
+    command = { type = domestic	which = interventionism value = -1 }
+  }
+}
+################
+#冻结中国在美资产
+#############################################
+event = {
+  id = 135012
+  random = no
+  country = U01
+  
+  name = "冻结中国在美资产 " 
+  desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
+  style = 0
+  
+  action_a = {
+    name = "万恶的美帝 "
+    command = { type = relation which = USA value = -20 }
+  }
+}
+################
+#麦卡锡主义
+#############################################
+event = {
+  	id = 135013
+  	random = no
+  	country = USA
+  
+  	name = "麦卡锡主义 " 
+  	desc = "1950年2月9日，麦卡锡在西弗吉尼亚州发表演说，宣称他已掌握 了205名渗入国务院的共产党人名单。此后，他利用其参议院议员 等职权，开始对美国一切民主进步人士展开迫害，扣以共产党的 帽子，以莫须有罪名对其进行逮捕。1950年-1952年，麦卡锡在各 州发表煽动性反共演说，称罗斯福政府和杜鲁门政府是“叛卖的 二十年”，指责他们为共产主义势力发展提供了舞台，以此为共 和党选举鼓吹。 "
+  	style = 0
+  
+  	trigger = {
+    		government = democratic
+		exists = SOV
+  	} 
+  	date = { day = 8 month = february year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "每个议员的座位下都藏着个共产党！ "
+    		command = { type = dissent value = 8 }
+    		command = { type = domestic	which = freedom value = -2 }
+    		command = { type = domestic	which = political_left value = -2 }
+		command = { type = local_setflag which = maikaxi }
+  	}
+#    	action_b = {
+#		name = "那个疯子应该适可而止 "
+#		ai_chance = 2
+#		command = { type = dissent value = 1 }
+#		command = { type = domestic which = political_left value = 1  }
+#		command = { type = domestic which = freedom value = 1  }
+#          	}
+}
+
+event = {
+	id = 135018
+	country = usa
+	random = no
+
+ 	trigger = { 
+  		flag = maikaxi    
+	} 
+
+	name = "卓别林离开美国 "
+	desc = " 1952年卓别林离开美国，他本来打算短暂访问英国家乡。胡 佛听到这个消息后与美国移民归化局商议取消卓别林的再入境允 许。卓别林得知后声明: “自从上次大战以来我就成了强势的 反动团体制造的谎言和宣传的目标，他们有影响力，有美国黄色 媒体的帮助，创造了一种氛围绕让有自由意识的人都被找出来受迫 害。因此我决定我已无法进行我的电影工作，我将放弃在美国的居 留权。” 他决定留在欧洲，他定居瑞士沃韦。"
+	style = 2
+#	picture = "maikaxi"
+   
+  	date = { day = 9 month = September year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "确定 "
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = political_left value = -1  }
+		command = { type = domestic which = freedom value = -1  }
+           	}      	       	         	
+}
+event = {
+	id = 135019
+	country = usa
+	random = no
+
+ 	trigger = { 
+  		flag = maikaxi    
+	} 
+
+	name = "爱因斯坦号召反法西斯 "
+	desc = "5月16日给受迫害的教师弗劳恩格拉斯写回信，号 召美国知识分子起来坚决抵抗法西斯迫害，引起巨大反 响。 "
+	style = 2
+#	picture = "einstein_oppenheimer"
+   
+  	date = { day = 9 month = September year = 1954 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "确定 "
+		command = { type = dissent value = 5 }
+		command = { type = research_mod value = -2 }
+           	}      	       	         	
+}
+event = {
+	id = 135020
+	country = usa
+	random = no
+
+ 	trigger = { 
+  		flag = maikaxi    
+	} 
+
+	name = "罗森堡夫妇遇害 "
+	desc = "1953年6月19日罗森堡夫妇二人被处死。朱利 叶斯在第一次通电后死亡，而艾瑟尔并没有立刻死 亡，又通了两次电才正式宣布死刑结束。 "
+	style = 2
+#	picture = "rosenbergs。"
+   
+  	date = { day = 19 month = June year = 1953 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "罪有应得 "
+		ai_chance = 95
+		command = { type = dissent value = 5 }
+		command = { type = research_mod value = -2 }
+		command = { type = domestic which = political_left value = -2  }
+		command = { type = domestic which = freedom value = -2  }
+		command = { type = domestic which = democratic value = -2  }
+		command = { type = intelligence which = us value = 5 }
+		command = { type = belligerence value = 10 }
+		command = { type = relation which = U56 value = -50 }	
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = fra value = -10 }
+		command = { type = relation which = eng value = -10 }
+           	}   
+    	action_b = {
+		name = "罪不至死 "
+		ai_chance = 5
+		command = { type = dissent value = -1 }
+		command = { type = research_mod value = -2 }
+		command = { type = domestic which = political_left value = 1  }
+		command = { type = domestic which = freedom value = 1  }
+		command = { type = intelligence which = us value = -5 }
+		command = { type = relation which = U56 value = 50 }	
+		command = { type = relation which = SOV value = 50 }
+		command = { type = relation which = fra value = 10 }
+		command = { type = relation which = eng value = 10 }
+           	}       	   	       	         	
+}
+################
+#国内安全法
+#############################################
+event = {
+  	id = 135014
+  	random = no
+  	country = USA
+  
+  	name = "国内安全法 " 
+  	desc = "美国国会于1950年9月23日通过了国内安全法，由于其发起人为内华达州民主 党国会参议院麦卡伦，故又称麦卡伦法。它规定一切“共产主义 组织”必须进行司法登记，并提供成员名单和财务报告。禁止共 产党员在政府、国防机关工作，拒绝给共产党员提供出国护照。 禁止共产党人和一切“极权主义组织”成员移居美国。虽然遭到 杜鲁门反对，但在国会普遍的反共气氛下，该法通过。 "
+  	style = 0
+  
+  	trigger = {
+    		government = democratic
+  	} 
+  	date = { day = 22 month = september year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    	name = "必须把赤色分子统统扼杀 "
+    	command = { type = dissent value = 5 }
+    	command = { type = domestic	which = freedom value = -1 }
+    	command = { type = domestic	which = political_left value = -1 }
+  	}
+}
+################
+#68号文件
+#############################################
+event = {
+  	id = 135016
+  	random = no
+  	country = USA
+  
+  	name = "68号文件 " 
+  	desc = "1950年，经杜鲁门总统指示，保罗尼采为主席的特别委员会完成了 68号文件的起草。文件对苏联的根本意图、目的和能力进行了重点 分析，强调“苏联图谋统治世界”。文件强调苏联会把自己的强权政 治强加于其他国家，并强调苏联对美国的重大威胁。第68号文件首 次全面阐述了战后美国国家战略，并成为了贯穿冷战的美国对苏 政策指导思想。 "
+  	style = 0
+#  	picture = "杜勒斯"
+  
+  	trigger = {  
+    		atwar = no
+    		government = democratic
+  	} 
+  	date = { day = 8 month = august year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "这是我们的总纲领 "
+    	command = { type = change_policy which = political_left value = -1 }
+    		command = { type = change_policy which = defense_lobby value = 1 }
+    		command = { type = change_policy which = interventionism value = 1 }
+    		command = { type = relation which = SOV value = -20 }
+  	}
+}
+
+################
+#大规模报复战略
+#############################################
+event = {
+  	id = 135017
+  	random = no
+  	country = USA
+  
+  	name = "大规模报复战略 " 
+  	desc = "1954年1月，国务卿杜勒斯发表演说，提出在外交上提出要执行比 杜鲁门的遏制政策更有利、更主动的“解放”政策，即把社会主义国 家从共产党的领导下“解放”出来。该战略建立在美国具有核垄断 和核优势基础之上。 "
+  	style = 0
+#  	picture = "杜勒斯"
+  
+  	trigger = {  
+    		atwar = no
+    		government = democratic
+  	} 
+  	date = { day = 12 month = january year = 1954 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "这是有积极意义的 "
+    		command = { type = max_reactor_size value = 10 }
+    		command = { type = change_policy which = defense_lobby value = 2 }
+    		command = { type = relation which = SOV value = -10 }
+  	}
+}
+
+event = {
+	id = 135021
+	random = no
+	country = usa
+  	trigger = {  
+    		atwar = no
+  	} 		  
+  	name = "戰後軍隊復員 "
+  	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的 时代到了 "
+  	style = 0
+
+  	date = { day = 0 month = january year = 1946 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1960 }
+	
+	action_a = {
+		name = "和平万岁！"
+		command = { type = dissent value = -10 }
+		command = { type = delete_unit which = -1 when = 100  }
+		command = { type = manpowerpool value = 500 }
+		command = { type = add_corps which = "美國第8軍團 " value = land where = 1184 } #東京
+		command = { type = add_division which = "第7'刺刀'师 " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "第24'胜利'师 " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "第25'热带闪电'师 " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "第1'一線隊'騎兵师 " value = motorized when = 6 where = artillery }
+		command = { type = add_corps which = "美國歐洲指揮部 " value = land where = 606 } #暫定
+		command = { type = add_division which = "第1'大红一'师  " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "美軍警察部隊 " value = infantry when = 6 where = artillery }
+		command = { type = add_corps which = "美國預備軍團 " value = land where = 606 } #暫定
+		command = { type = add_division which = "第82'全美'空降师 " value = paratrooper when = 15 where = artillery }
+		command = { type = add_division which = "第101'尖叫的雄鹰'空降师  " value = paratrooper when = 15 where = artillery }
+		command = { type = add_division which = "第2'印第安人头'师 " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "第3'马恩磐石'师 " value = motorized when = 6 where = artillery }
+		command = { type = add_division which = "第2'车轮上的地狱'装甲师 " value = armor when = 6 where = sp_artillery } #暫定
+		command = { type = add_corps which = "美國兩棲第1軍團 " value = land where = 765 } #暫定
+		command = { type = add_division which = "第1'老种类'海军陆战师 " value = marine when = 19 where = engineer }
+		command = { type = add_division which = "第2'跟我来'海军陆战师 " value = marine when = 19 where = engineer }
+  }
+}
