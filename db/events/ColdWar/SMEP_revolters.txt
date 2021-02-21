@@ -26,6 +26,7 @@ event = {
 		# command = { type = free_oil value = 8 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 7 } #  independence in 1962
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -52,6 +53,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  independence in 1975
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -81,6 +83,7 @@ event = {
 		#command = { type = free_oil value = 18 }
 		command = { type = free_rare_materials value = 6 }
 		#command = { type = dissent value = 10 } #"Hypothetical" nation
+		command = { type = local_setflag which = setup }
 	}
 }
 
@@ -107,6 +110,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  independence in 1991
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -133,6 +137,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  independence in 1991
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -158,6 +163,7 @@ event = {
 		command = { type = free_metal value = 6 }
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -184,6 +190,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 4 } #  independence in 1948
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -211,7 +218,7 @@ event = {
 		#command = { type = free_oil value = 18 }
 		command = { type = free_rare_materials value = 6 }
 		#command = { type = dissent value = 8 } #independence in 1990
-		
+		command = { type = local_setflag which = setup }		
 		}
 	}
 
@@ -238,6 +245,7 @@ event = {
 		# command = { type = free_oil value = 3 }
 		command = { type = free_rare_materials value = 2 }
 		command = { type = dissent value = 8 } #  independence in 1991 & Civil War
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -265,6 +273,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -293,6 +302,7 @@ event = {
 		command = { type = dissent value = 5 } #  independence in 1953
 		command = { type = province_keypoints which = 1339 value = 1 } # Battambang
 		command = { type = province_keypoints which = 1341 value = 1 } # Ubon Ratchthani
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -319,6 +329,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -346,6 +357,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -372,7 +384,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  Kenya independence in 1963
-
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -402,8 +414,9 @@ event = {
 		#command = { type = free_oil value = 4 }
 		command = { type = free_rare_materials value = 3 }
 		#command = { type = dissent value = 2 } #Egypt was actually a puppet of the UK in the HOI2 era
+		command = { type = local_setflag which = setup }
 	}
-	}
+}
 
 event = {
 	id = 15018
@@ -428,7 +441,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  The federation ended in 1959 after the territories had chosen ?in 1958 ?to become self-governing republics of the French Community.
-
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -457,6 +470,7 @@ event = {
 		command = { type = free_rare_materials value = 2 }
 		#command = { type = dissent value = 4 } #State of Israel was declared in 1948
 		command = { type = dissent value = 8 } #  Not independent as of 2005
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -483,6 +497,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -509,6 +524,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  independence in 1991
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -535,6 +551,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #  independence in 1956
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -561,6 +578,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 7 } #  independence in 1968
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -587,6 +605,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 7 } #  independence in 1966
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -613,6 +632,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 4 } #  independence in 1944
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -639,6 +659,7 @@ event = {
 		# command = { type = free_oil value = 9 }
 		command = { type = free_rare_materials value = 5 }
 		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -669,6 +690,7 @@ event = {
 		command = { type = free_manpower value = 0.02 }
 		command = { type = dissent value = 10 } #  independence in 1949 following 5 years of war
 		command = { type = transport_pool which = INO value = 60 }#dissent inc to pay for transports
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -696,6 +718,7 @@ event = {
 		#command = { type = free_oil value = 5 }
 		command = { type = free_rare_materials value = 2 }
 		#command = { type = dissent value = 4 } #State of Israel was declared in 1948
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -722,6 +745,7 @@ event = {
 		#command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 2 }
 		#command = { type = dissent value = 4 } #Independence 1946 (from League of Nations mandate)
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -756,6 +780,7 @@ event = {
 		command = { type = manpowerpool value = 20 }
 		command = { type = money value = 100 }
 		command = { type = supplies value = 1000 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -783,6 +808,7 @@ event = {
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 6 } #  independence in 1948 + transports
 		command = { type = transport_pool which = KOR value = 20 }#for Jeju
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -809,6 +835,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  Not independent as of 2005
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -843,13 +870,15 @@ event = {
 		command = { type = manpowerpool value = 20 }
 		command = { type = money value = 100 }
 		command = { type = supplies value = 1000 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
 event = {
 	id = 15035
-	trigger = { }
+	trigger = { not = { local_flag = setup } }
 	random = no
+	persistent = yes
 
 	country = LAO
 
@@ -864,14 +893,14 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = free_ic value = 3 } # was 6
+		command = { type = free_supplies value = 1 }
 		command = { type = free_manpower value = 0.03 }
 		command = { type = free_energy value = 8 } # was 12
 		command = { type = free_metal value = 4 } # was 6
 		# command = { type = free_oil value = 6 }
+		command = { type = local_setflag which = setup }
 		command = { type = free_rare_materials value = 2 } # was 3
 		command = { type = dissent value = 8 }  # On July 19, 1949, France formally grants Laos independence. Three factions struggle for power
-		command = { type = province_keypoints which = 1306 value = 1 } # Luang Prabang
-		command = { type = province_keypoints which = 1329 value = 1 } # Vientiane
 		}
 	}
 
@@ -898,6 +927,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 }  # Independence 1951 (from Italy)  
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -925,6 +955,7 @@ event = {
 		#command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 2 }# was 3
 		# command = { type = dissent value = 5 }  # Independence 1943 (from League of Nations mandate )  
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -951,6 +982,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 }  # Independence 1960 
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -977,6 +1009,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 }  # Independence 1960 
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1004,6 +1037,7 @@ event = {
 		command = { type = free_rare_materials value = 3 } # was 4
 		command = { type = dissent value = 10 }  # Independence 1956 + transport pay
 		command = { type = transport_pool which = MLY value = 40 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1030,6 +1064,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 }  # Independence 1956
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1056,6 +1091,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } #  independence in 1975
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1082,6 +1118,7 @@ event = {
 		# command = { type = free_oil value = 3 }
 		command = { type = free_rare_materials value = 2 }
 		command = { type = dissent value = 8 } #  Independent in 2006
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1108,6 +1145,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 8 } # Independence 1990 (from South African mandate) 
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1134,6 +1172,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  Independence 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1162,6 +1201,7 @@ event = {
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 6 } #  Independence 1947 + transport pay
 		command = { type = transport_pool which = PAK value = 50 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1188,6 +1228,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 4 } #  Hypothetical alternative to Israel 
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1229,6 +1270,7 @@ event = {
 		command = { type = supplies value = 1000 }
 		command = { type = dissent value = 12 } #  Hypothetical + transports
 		command = { type = transport_pool which = PRI value = 40 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1255,6 +1297,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 5 }
 		command = { type = dissent value = 10 } #  Founding of the Democratic People's Republic of Korea 1948 
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1281,6 +1324,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 5 } #  "Hypothetical" nation
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1307,6 +1351,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1965
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1334,6 +1379,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 6 } #  independence in 1965 later joined Malaysia
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1391,6 +1437,7 @@ event = {
 		#command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		#command = { type = dissent value = 10 } #"Hypothetical" nation
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1416,6 +1463,7 @@ event = {
 		command = { type = free_metal value = 6 }
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1441,6 +1489,7 @@ event = {
 		command = { type = free_metal value = 6 }
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1467,6 +1516,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #  independence in 1960
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1493,6 +1543,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 4 } #  independence in 1956
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1522,6 +1573,7 @@ event = {
 		#command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 2 } # was 4
 		#command = { type = dissent value = 3 } #independence in 1946
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1556,6 +1608,7 @@ event = {
 		command = { type = manpowerpool value = 20 }
 		command = { type = money value = 100 }
 		command = { type = supplies value = 1000 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1583,6 +1636,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1617,6 +1671,7 @@ event = {
 		command = { type = manpowerpool value = 20 }
 		command = { type = money value = 100 }
 		command = { type = supplies value = 1000 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1643,6 +1698,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 5 } #  independence in 1956
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1669,6 +1725,7 @@ event = {
 		# command = { type = free_oil value = 15 }
 		command = { type = free_rare_materials value = 8 }
 		command = { type = dissent value = 8 } #  independence in 1991
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1703,6 +1760,7 @@ event = {
 		command = { type = manpowerpool value = 20 }
 		command = { type = money value = 100 }
 		command = { type = supplies value = 1000 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1730,8 +1788,7 @@ event = {
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = dissent value = 5 } #  Independence was declared after World War II, but the French continued to rule until 1954
-		command = { type = province_keypoints which = 1333 value = 1 } # Danang
-		command = { type = province_keypoints which = 1337 value = -5 } # Saigon
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1757,6 +1814,7 @@ event = {
 		command = { type = free_metal value = 6 }
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1787,6 +1845,7 @@ event = {
 		command = { type = free_metal value = 10 }
 		# command = { type = free_oil value = 10 }
 		command = { type = free_rare_materials value = 5 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1811,7 +1870,7 @@ event = {
 		command = { type = sleepteam which = 112 } # USA's Norfolk Naval Yard
 		command = { type = sleepteam which = 109 } # USA's Newport News Shipbuilding
 		command = { type = waketeam which = 129 }  # USA's Philadelphia Naval Shipyard
-
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1836,7 +1895,7 @@ event = {
 		command = { type = sleepteam which = 103 } # USA's Douglas Aircraft Company
 		command = { type = sleepteam which = 117 } # USA's Standard Oil of California
 		command = { type = waketeam which = 133 }  # USA's Standard Oil of Indiana
-
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1859,7 +1918,7 @@ event = {
 		name = "OK"
 		command = { type = dissent value = 10 } #  "Hypothetical" nation
 		command = { type = sleepteam which = 118 } # USA's Texas Oil Company
-
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1884,6 +1943,7 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = dissent value = 10 } #  The resistance & 'The Right to Bear Arms'
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1908,6 +1968,7 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = dissent value = 4 } #  The resistance
+		command = { type = local_setflag which = setup }
 		}
 	}
 
@@ -1935,6 +1996,7 @@ event = {
 		command = { type = sleepteam which = 6904 } #Douglas MacArthur
 		command = { type = sleepleader which = 430043 } # MacArthur
 		command = { type = sleepleader which = 430044 } # Wainwright
+		command = { type = local_setflag which = setup }
 
 		}
 	}
@@ -4267,6 +4329,7 @@ event = {
 		command = { type = set_leader_skill which = -1 value = 2 }
 		command = { type = set_leader_skill which = -1 value = 2 }
 		command = { type = set_leader_skill which = 1050001 value = 2 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4293,6 +4356,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.03 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4344,6 +4408,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.03 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4370,6 +4435,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.03 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4423,6 +4489,7 @@ event = {
 		#command = { type = free_oil value = 6 } # was 2
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4500,6 +4567,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.03 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4579,6 +4647,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.02 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {
@@ -4605,6 +4674,7 @@ event = {
 		command = { type = free_rare_materials value = 3 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.02 }
+		command = { type = local_setflag which = setup }
 		}
 	}
 event = {

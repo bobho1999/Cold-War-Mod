@@ -1,29 +1,56 @@
 ########################
-#提高社会保障
+#二戰後的美國
 ########################
 event = {
   	id = 135000
   	random = no
   	country = USA
   
-  	name = "戰後的美國 " 
+  	name = "二戰後的美國 " 
   	desc = " "
   	style = 0
   
   	trigger = {
-    		government = democratic
+    		
   	} 
   	date = { day = 1 month = january year = 1945 }
   	offset = 1
   	deathdate = { day = 30 month = december year = 1970 }
   
   	action_a = {
-    		name = "提高社会保障有利于我们的政权 "
-    		
+    		name = "OK "
+    		command = { type = dissent value = -1 }
   	}
 }
 
+######################################################
+## 杜鲁门主义
+######################################################
+event = {
+    	id = 135001
+    	random = no
+    	country = USA
+	trigger = {
+		headofstate = 6034 # Truman
+	}
+    	name = "杜鲁门主义"
+    	desc = " "
+    #	picture = "coldwar"
+    	style = 0
+ 
+    	date = { day = 11 month = march year = 1947 }
 
+    	action_a = {
+        	name = "圍堵共產主義 "
+		command = { type = relation which = SOV value = -20 }
+            	command = { type = domestic which = interventionism value = 2 }
+		command = { type = setflag which = Truman_Doctrine }
+#		command = { type = supplies value = -10000 }
+#		command = { type = oilpool value = -10000 }
+#		command = { type = money value = -2000 }
+    	}
+    
+}
 ########################
 #提高社会保障
 ########################

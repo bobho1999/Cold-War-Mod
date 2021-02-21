@@ -906,35 +906,7 @@ event = {
        		command = { type = sce_frequency value = 5 }         #每秒频率
     }
 }
-######################################################
-## 杜鲁门主义
-######################################################
-event = {
-    	id = 941153
-    	random = no
-    	country = USA
 
-    	name = "杜鲁门主义"
-    	desc = "美国需要在亚洲建立一个强大的，亲美的政府来抵抗苏联， 
-		这个政府最好的选择就是国民政府，之后美国把在东南亚地区总共 
-		价值9亿美元的战略物资以不到2亿美元卖给了国民政府，并援助了 
-		7亿美元战后重建资金，和40个师的美式装备以尽快确定国军在内 
-		战中的优势地位。"
-    #	picture = "coldwar"
-    	style = 0
- 
-    	date = { day = 11 month = march year = 1947 }
-
-    	action_a = {
-        	name = "中国是美国在远东的重要盟友 "
-		command = { type = oilpool value = -10000 }
-		command = { type = relation which = CHI value = 10 } 
-            	command = { type = domestic which = interventionism value = 2 }
-		command = { type = supplies value = -10000 }
-		command = { type = money value = -2000 }
-    	}
-    
-}
 
 ######################################################
 ## 共产党大量渗透国军
@@ -6334,9 +6306,9 @@ event = {
 	}
 	name = "AI_EVENT "
 	style = 0
-	date = { day = 1 month = january year = 1945 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 1999 }
+#	date = { day = 1 month = january year = 1945 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 1999 }
 	action_a = {
 		name = "OK"
 #			command = { type = free_money value = 3 }

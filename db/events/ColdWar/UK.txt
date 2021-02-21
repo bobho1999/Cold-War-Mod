@@ -159,7 +159,7 @@ event = {
 	}
 
 event = {
-	id = 900086
+	id = 5910005
 	random = no
 	country = ENG
 	style = 0
@@ -211,7 +211,7 @@ event = {
 	}
 
 event = {
-	id = 600010
+	id = 5910006
 	random = no
 	country = ENG
 	style = 0
@@ -264,7 +264,7 @@ event = {
 
 
 event = {
-	id = 600011
+	id = 5910007
 	random = no
 	country = ENG
 	style = 0
@@ -300,7 +300,7 @@ event = {
 
 
 event = {
-	id = 600012
+	id = 5910008
 	random = no
 	country = ENG
 	style = 0
@@ -353,7 +353,7 @@ event = {
 
 
 event = {
-	id = 600013
+	id = 5910009
 	random = no
 	country = ENG
 	style = 0
@@ -363,7 +363,7 @@ event = {
 		headofgovernment = 1192 # Harold MacMillan in office
 		random = 85
 		NOT = { ispuppet = ENG }
-		}
+	}
 
 	name = "EVT_600013_NAME" # needs text - Harold MacMillan resigns
 	desc = "EVT_600013_DESC"
@@ -386,3 +386,42 @@ event = {
 		command = { type = ministerofintelligence which = 1221 }
 		}
 	}
+
+event = {
+	id = 5910010
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		exists = ALB
+	}
+
+	name = "科孚海峽事件" # 
+	desc = " "
+
+	date = { day = 15 month = may year = 1946 }
+
+	action_a = {
+		ai_chance = 100
+		name = "OK"
+		command = { type = relation which = ALB value = -20 }
+		command = { type = trigger which = 5910011 }
+	}
+}
+
+event = {
+	id = 5910011
+	random = no
+	country = ALB
+	style = 0
+
+	name = "科孚海峽事件" # 
+	desc = " "
+
+	action_a = {
+		ai_chance = 100
+		name = "OK"
+		command = { type = relation which = ENG value = -20 }
+	}
+}

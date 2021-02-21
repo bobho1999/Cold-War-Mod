@@ -123,11 +123,15 @@ province = {
   id = 1200 # 元山
 }
 province = {
+  id = 1201 # 平壤
+  infra = { size = 1 current_size = 0.8 }
+}
+province = {
   id = 1202 # 大連
   anti_air = 4
 }
 province = {
-  id = 1368 # 瓦?（共青城）
+  id = 1368 # 瓦倫（共青城）
 }
 province = {
   id = 1371 # 奥莉加
@@ -212,7 +216,7 @@ province = {
   landfort = 5
 }
 province = {
-  id = 2930 # 旅?港
+  id = 2930 # 旅順港
   coastalfort = 5
   supplypool = 1000
   oilpool = 500
@@ -223,10 +227,7 @@ province = {
 province = {
   id = 3530 # 谢苗诺夫
 }
-province = {
-  id = 1201 # 平壤
-  infra = { size = 1 current_size = 0.8 }
-}
+
 #####################
 # Country main data #
 #####################
@@ -289,11 +290,11 @@ country = {
     defense_lobby     = 10
     interventionism   = 10
   }
-  headofstate            = { type = 9 id = 4001 } # 米哈伊 加里宁 
+  headofstate            = { type = 9 id = 4074 } # 约瑟夫 斯大林 
   headofgovernment       = { type = 9 id = 4002 } # 约瑟夫 斯大林 
   foreignminister        = { type = 9 id = 4034 } # 维亚切斯拉夫 莫洛托夫 
   armamentminister       = { type = 9 id = 4038 } # 鲍里斯 L 瓦尼科夫 
-  ministerofsecurity     = { type = 9 id = 4041 } # 拉弗伦季 贝利亚 
+  ministerofsecurity     = { type = 9 id = 4041 } # 拉夫连季 贝利亚 
   ministerofintelligence = { type = 9 id = 4049 } # 伊格尔 I 伊利契夫 
   chiefofstaff           = { type = 9 id = 4056 } # 阿列克谢 I 安东诺夫 
   chiefofarmy            = { type = 9 id = 4059 } # 约瑟夫 斯大林 
