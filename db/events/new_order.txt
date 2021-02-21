@@ -6159,8 +6159,8 @@ event = {
 #		command = { type = local_setflag which = inflation when = 0 value = 7 }
 #		command = { type = morale which = land value = -10 }
 #		command = { type = max_organization which = land value = -5 } 
-#		command = { type = free_oil when = -20  }
-		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = free_oil value = 15  }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
     	}
 }
 

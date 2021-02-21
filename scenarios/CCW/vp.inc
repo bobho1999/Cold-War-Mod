@@ -343,7 +343,7 @@ province = { id = 1355 points = 2 } # 棉兰
 province = { id = 1358 points = 2 } # 巨港（巴邻旁）
 province = { id = 1359 points = 2 } # 明古鲁
 province = { id = 1360 points = 1 } # 成都市
-province = { id = 1363 points = 1 } # 赤水
+#province = { id = 1363 points = 1 } # 赤水
 province = { id = 1364 points = 1 } # 貴陽
 province = { id = 1371 points = 3 } # 奥莉加
 province = { id = 1372 points = 10 } # 海參崴（符拉迪沃斯托克）

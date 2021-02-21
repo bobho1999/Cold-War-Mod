@@ -1900,7 +1900,7 @@ event = {
 	country = CHI
 	trigger = {
 		ai = no
-            war = { country = CHI country = CHC } 
+            	war = { country = CHI country = CHC } 
 		OR = { control = { province = 2875 data = CHC }	
 			control = { province = 1396 data = CHC }		
 		}
@@ -2051,7 +2051,7 @@ event = {
 	country = CHI
 	trigger = {
 		ai = yes
-            war = { country = CHI country = CHC } 
+            	war = { country = CHI country = CHC } 
 		OR = { control = { province = 2875 data = CHC }	
 			control = { province = 1396 data = CHC }		
 		}

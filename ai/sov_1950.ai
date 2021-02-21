@@ -28,6 +28,7 @@ demand_claims = {
 	FIN
 	NOR
 	ENG
+	FRA
 	IRE
 	ITA
 	AUS
@@ -489,7 +490,7 @@ evac_islands = yes
 war = 0
 
 # The tendency of a nation to create and accept alliances, and accept military access. The higher the value, the more "neutral" the nation. NOTE: this does not affect the tendency of a nation to start wars.
-neutrality = 20
+neutrality = 100
 
 max_front_ratio			= 6.0		# The max wanted friendly-to-enemy division ratio along the front. Default is 4.0.
 max_front_ratios = { 			# Override the default against specific countries. Ignored against humans.

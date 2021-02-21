@@ -1,73 +1,3 @@
-
-
-event = {
-	id = 400722
-	random = no
-	country = CHI
-	trigger = { 
-		ai = yes
-		war = { country = chi country = CHC }
-			}
-
-	name = "AI_EVENT" #1945
-	style = 0
-
-	date = { day = 0 month = october year = 1945 }
-	offset = 1
-	deathdate = { day = 30 month = january year = 1955 }
-	
-	action_a = {
-		name = "OK"
-		command = { type = ai which ="CHI_1945.ai" }
-			}
-} 
-
-event = {
-	id = 400723
-	random = no
-	country = CHC
-	trigger = { 
-		ai = yes
-		war = { country = chi country = CHC }
-			}
-
-	name = "AI_EVENT" #1945
-	style = 0
-
-	date = { day = 0 month = october year = 1945 }
-	offset = 1
-	deathdate = { day = 30 month = january year = 1955 }
-	
-	action_a = {
-	name = "OK"
-		command = { type = ai which ="CHC_1945.ai" }
-			}
-} 
-
-event = {
-id = 400725
-random = no
-country = CHI
-
-	trigger = { 
-		ai = yes
-		war = { country = chi country = CHC }
-		event = 941298 #june ceasefire
-			}
-
-	name = "AI_EVENT" #1946
-	style = 0
-
-	date = { day = 0 month = october year = 1945 }
-	offset = 1
-	deathdate = { day = 30 month = january year = 1955 }
-	
-	action_a = {
-	name = "OK"
-	command = { type = ai which ="chi_1946.ai" }
-		}
-} 
-
 event = {
 	id = 400726
 	random = no
@@ -109,7 +39,7 @@ country = CHI
 	
 	action_a = {
 	name = "OK"
-	command = { type = ai which ="chi_1947.ai" }
+	command = { type = ai which ="CHI_focus_attack.ai" }
 		}
 } 
 
@@ -121,19 +51,22 @@ country = CHI
 	trigger = { 
 		ai = yes
 		war = { country = chi country = CHC }
-		event = 941148 #
-			}
+		OR = {
+			event = 942132
+			event = 942126 #
+		}
+	}
 
 	name = "AI_EVENT" #northeast
 	style = 0
 
-#	date = { day = 1 month = january year = 1946 }
-#	offset = 1
-#	deathdate = { day = 30 month = january year = 1955 }
+	date = { day = 1 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1955 }
 	
 	action_a = {
 	name = "OK"
-	command = { type = ai which ="switch\chi_northeast.ai" }
+	command = { type = ai which ="switch\CHI_Northeast.ai" }
 		}
 } 
 event = {
@@ -147,103 +80,15 @@ event = {
 
 	name = "AI_EVENT" #1946
 
-	date = { day = 0 month = january year = 1946 }
-	offset = 1
-	deathdate = { day = 30 month = january year = 1955 }
+#	date = { day = 0 month = january year = 1946 }
+#	offset = 1
+#	deathdate = { day = 30 month = january year = 1955 }
 	
 	action_a = {
 	name = "OK"
-		command = { type = ai which ="chc_1946.ai" }
+		command = { type = ai which ="CHC_CCW_phase1.ai" }
 			}
 } 
-
-event = {
-id = 400729
-random = no
-country = ENG
-
-trigger = { 	ai = yes
-		war = { country = -1 country = CHI }	}
-
-name = "AI_EVENT"
-style = 0
-
-
-date = { day = 1 month = january year = 1925 }
-
-offset = 1
-	
-deathdate = { day = 30 month = january year = 1935 }
-
-action_a = {
-name = "OK"
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
- }
-} 
-event = {
-id = 400730
-random = no
-country = FRA
-
-trigger = { 	ai = yes
-		war = { country = -1 country = CHI }	}
-
-name = "AI_EVENT"
-style = 0
-
-
-date = { day = 1 month = january year = 1925 }
-
-offset = 1
-	
-deathdate = { day = 30 month = january year = 1935 }
-
-action_a = {
-name = "OK"
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
-	command = { type = add_division value = infantry when = 8 where = artillery }
- }
-} 
-
 
 event = {
 	id = 400733
@@ -257,9 +102,9 @@ event = {
 	name = "AI_EVENT"
 	style = 0
 
-	date = { day = 0 month = october year = 1945 }
-	offset = 1
-	deathdate = { day = 30 month = january year = 1955 }
+#	date = { day = 0 month = october year = 1945 }
+#	offset = 1
+#	deathdate = { day = 30 month = january year = 1955 }
 	
 	action_a = {
 		name = "OK"

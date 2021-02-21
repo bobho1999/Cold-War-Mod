@@ -69,9 +69,9 @@ country = {
     relation = { tag = BUL value = 25 }
     relation = { tag = FRA value = 50 }
     relation = { tag = GRE value = 100 }
-    relation = { tag = HUN value = -80 }
+    relation = { tag = HUN value = 100 }
     relation = { tag = ROM value = 100 }
-    relation = { tag = ALB value = 0 access = yes }
+    relation = { tag = ALB value = 1000 access = yes }
   }
 
   nationalprovinces      = { 3211 3212 3213 3214 3215 3216 3217 3218 3219 3220 3221 3222 3223 380 381 382 383 384 385 386 387 388 389 413 414 415 418 451 452 453 454 455 459 493 494 3210 3202 4081 4082 3201 3200 }

@@ -173,6 +173,8 @@ event = {
 	action_a = {
 		name = "測試西方反應"
 		ai_chance = 90
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = ENG value = -10 }
 		command = { type = belligerence value = 2 } 
 		command = { type = trigger which = 850905 }
 	}
@@ -197,11 +199,11 @@ event = {
 
 	#triggered by 850901
 	
-	name = "伊朗危機"
+	name = "伊朗危機 "
 	desc = "The Soviet Union is not out of Northern Iran, and is violating its agreement to pull out. What shall we do?"
 	
 	action_a = {
-		name = "Demand withdrawal or war!"
+		name = "撤軍或戰爭! "
 		ai_chance = 90
 		command = { type = trigger which = 850906 }
 	}
@@ -209,6 +211,9 @@ event = {
 		name = "Do not anger our WW2 allies!"
 		ai_chance = 10
 		command = { type = trigger which = 850907 }
+		command = { type = relation which = SOV value = 10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = PER value = -50 }
 	}
 }
 event = {
@@ -218,11 +223,11 @@ event = {
 
 	#triggered by 615400
 	
-	name = "伊朗危機"
+	name = "伊朗危機 "
 	desc = "The USA has let us know that it is serious about spheres of influence. They have made it clear that what we do in our own sphere of influence is OK but we must respect theirs. The only alternative is war."
 	
 	action_a = {
-		name = "Withdraw!"
+		name = "撤軍!"
 		ai_chance = 95
 		command = { type = secedeprovince which = PER value = 3882 } # 
 		command = { type = secedeprovince which = PER value = 1503 } # 
@@ -257,7 +262,7 @@ event = {
 
 	#triggered by 850905
 	
-	name = "The USA Gives In"
+	name = "伊朗危機——美國屈服 "
 	desc = "The USA has shown its weakness! The northern Persian provinces are ours!"
 	
 	action_a = {
@@ -269,7 +274,8 @@ event = {
 		command = { type = addcore which = 1787 } #  
 		command = { type = trigger which = 850908 }
 		command = { type = trigger which = 850910 }
-		command = { type = trigger which = 850911 }
+		command = { type = trigger which = 850911 value = 1 }
+		command = { type = trigger which = 850914 value = 1 }
 	}
 }
 event = {
@@ -343,6 +349,7 @@ event = {
 		name = "可惡的西方盟國"
 		command = { type = end_puppet }
 		command = { type = leave_alliance }
+		command = { type = relation which = USA value = -50 }
 	}
 	
 }
@@ -404,6 +411,31 @@ event = {
 	}
 }
 
+event = {
+	id = 850914
+	country = SOV
+
+	name = "亞塞拜然的未來?"
+	desc = EVT_8500910_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 1
+
+	action_a = {
+		name = "併入聯盟！"
+		ai_chance = 95
+		command = { type = inherit which = AZB }
+		command = { type = addcore which = 1859 } # 
+		command = { type = addcore which = 3885 } # 
+		command = { type = addcore which = 3884 } #
+		command = { type = make_puppet which = KUR }
+	}
+	action_b = {
+		name = "扶植傀儡！"
+		ai_chance = 5
+		command = { type = make_puppet which = AZB }
+	}
+	
+}
 ### Iran ceases to be a puppet
 
 event = {
@@ -420,9 +452,9 @@ event = {
 		ispuppet = yes
 	}
 
-	date = { day = 0 month = january year = 1946 }
-	offset = 360
-	deathdate = { day = 29 month = december year = 1999 }
+#	date = { day = 0 month = january year = 1946 }
+#	offset = 360
+#	deathdate = { day = 29 month = december year = 1999 }
 
 	action_a = {
 		name = EVT_8500922_A
