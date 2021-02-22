@@ -1,7 +1,10 @@
 ##############################
 # Country definition for CXB #
 ##############################
-
+province = {
+  id = 2810 # 
+  infra = { size = 0.1 current_size = 0.1 }
+}
 country = {
   tag                = CXB
   regular_id         = CHI

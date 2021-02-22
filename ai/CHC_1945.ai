@@ -67,15 +67,11 @@ demand_claims = {
 	CAM
 	VIE
 	U66
+	CHC
 	PRK
 	KOR
 	JAP
 	CHI
-	CGX
-	CSX
-	SIK
-	TIB
-	CXB
 	#Oceania
 	INO
 	MLY
@@ -216,32 +212,13 @@ resistance = {
 }
 # Country tags listed with a value specifying how much we want to destroy them.
 combat = {
-	#Europe
-	ENG = 85
-	FRA = 85
-	BEL = 70
-	LUX = 50
-	HOL = 70
-	DFR = 75
-	SPA = 80
-	POR = 60
-	ITA = 60
-	NOR = 60
-	DEN = 60
-	GRE = 60
-	#North America
-	USA = 100
-	CAN = 90
-	#Middle East
-	ISR = 90
-	AFG = 80
 	#Asia 
 	JAP = 80
 	KOR = 80
-	CHI = 95
-	#Oceania
-	AST = 70
-	NZL = 70
+	CHI = 100
+	CSX = 100
+	CGX = 100
+	CXB = 100
 }
 # Countries listed here are considered withing our 'sphere of influence'. We will strive to guarantee their independence.
 protect = {
@@ -252,12 +229,13 @@ protect = {
 # Countries listed here are considered our natural allies. We will try to influence them and ally with them.
 befriend = {
 	#CHC Sphere of influence - Europe & Asia
-	#SOV = 100
+	SOV = 100
 	PRK = 90
 	U72 = 90
 }
 # Provinces with an assigned priority. These are strategic goals for the AI (it will try to take them in wars and demand them in peace treaties.)
 target = {
+
 	#ASIA
 	#Northeast China
 	1380 = 100
@@ -283,15 +261,8 @@ target = {
 	1207 = 80
 	1208 = 100
 	#Northwest China
-	1269 = 100
 	1271 = 100
 	1272 = 100
-	1273 = 100
-	1276 = 100
-	1443 = 100
-	1442 = 100
-	1433 = 100
-	1430 = 100
 	#Eastern China
 	1235 = 100
 	1237 = 100
@@ -305,6 +276,7 @@ target = {
 	1250 = 80
 	1244 = 100
 	1247 = 100
+	1219 = 100
 	#Central China
 	1227 = 80
 	1228 = 90
@@ -313,28 +285,6 @@ target = {
 	1253 = 100
 	1255 = 100
 	1257 = 100
-	#Southern China
-	1313 = 100
-	1315 = 100
-	1316 = 100
-	1248 = 100
-	1321 = 100
-	1325 = 100
-	1258 = 100
-	1310 = 100
-	#Southwest China	
-	1280 = 100
-	1360 = 100
-	1364 = 100
-	1307 = 100
-	1281 = 100
-	1293 = 100
-	1283 = 100
-	1453 = 100
-	#Korea
-	1201 = 90
- 	1199 = 90
-	1196 = 80
 }
 upgrading = 0.4		#max % of ic used on this slider.
 reinforcement = 0.3	#max % of ic used on this slider.
@@ -364,15 +314,6 @@ neutrality = 200
 
 max_front_ratio			= 6.0		# The max wanted friendly-to-enemy division ratio along the front. Default is 4.0.
 max_front_ratios = { 			# Override the default against specific countries. Ignored against humans.
-	#Europe
-	FRA = 5.0
-	ENG = 5.0
-	POR = 4.0
-	SOV = 5.0
-	#America
-	USA = 5.0
-	#OCeania
-
 	#Asia
 	CHI = 5.0
 	CSX = 5.0
@@ -444,7 +385,7 @@ min_garrison_prop		= 0.2 	# The war-time minimum proportion of troops allocated 
 construction = {
 	max_factor			= 0.8		# Proportion of Production IC that should be used for province buildings.
 
-	AA_batteries	 	= yes	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	AA_batteries	 	= not_atwar	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
 	max_AA_level		= 10			# Don't improve beyond this level.
 	AA_provs			= { }		# List of prioritized provinces
 
@@ -462,15 +403,15 @@ construction = {
 							2718		
 				}		# List of prioritized provinces
 
-	radar_station 		= yes
+	radar_station 		= not_atwar
 	max_radar			= 10			# Don't improve beyond this level.
 	radar_provs			= { }		# List of prioritized provinces
 
-	air_base 			= yes
+	air_base 			= not_atwar
 	max_air_base		= 10			# Don't improve beyond this level.
 	air_base_provs		= { }		# List of prioritized provinces
 
-	naval_base 			= yes
+	naval_base 			= not_atwar
 	max_naval_base		= 10			# Don't improve beyond this level.
 	naval_base_provs		= { 
 							2930
@@ -487,19 +428,20 @@ construction = {
 	land_fort			= yes
 	max_land_level		= 10				# Don't improve land forts beyond this level.
 	fort_borders = {					# Build land forts along these borders
-		SOV
-		PRK
-		KOR
-		IND
-		CHI
+			SOV
+			PRK
+			KOR
+			IND
+			CHI
 	}
 	fort_provs		= { }	# List of prioritized provinces
 
 	ic_at_war			= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
 	force_ic_until		= 1995				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
 	ic_end_year			= 1995				# Stop building IC at the end of year X.
-	IC_provs			= {  
-							   }		# List of prioritized provinces
+	IC_provs			= { 
+					 		
+					}		# List of prioritized provinces
 
 	nuclear_reactor = yes
 	nuclear_reactor_prov = 2999				#新疆羅布泊
@@ -520,34 +462,7 @@ garrison = {
 	war_zone_odds = 2.0  # Default: 2.0 (strive to transport in 2x enemy nr of divisions)
 	area_multiplier = { 
 		#Chinese,Afghan & Iranian Border
-		1491 = 1.25
-		1487 = 1.25
-		1485 = 1.25
-		1428 = 1.25
-		1429 = 1.25
-		1490 = 1.25
-		1907 = 1.25
-		1858 = 1.25
-		1856 = 2.0
-		1422 = 1.25
-		1423 = 1.25
-		1557 = 1.25
-		1420 = 1.25
-		1434 = 1.25
-		1436 = 1.25
-		1438 = 1.25
-		1399 = 1.25
-		1385 = 1.25
-		1383 = 1.25
-		1522 = 1.25
-		1523 = 1.5
-		1528 = 1.25
-		1529 = 1.25
-		1368 = 1.25
-		1367 = 1.25
-		1370 = 1.25
-		1373 = 1.25
-		1372 = 2.0
+		
 		}
 
 	# PRIORITIES:
@@ -565,44 +480,18 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = {
-		TUR = -1
-		PER = -1
-		AFG = -1
+		IND = -1
+		ENG = -1
+		PRK = -1
+		MON = -1
+		SOV = -1
 		CHI = 100
 		JAP = -1
 	}
 
 	# Specific provinces
 	province_priorities = {
-		#Chinese,Afghan & Iranian Border
-		1491 = 50
-		1487 = 50
-		1485 = 50
-		1428 = 50
-		1429 = 50
-		1490 = 50
-		1907 = 50
-		1858 = 50
-		1856 = 80
-		1422 = 50
-		1423 = 50
-		1557 = 50
-		1420 = 50
-		1434 = 50
-		1436 = 50
-		1438 = 50
-		1399 = 50
-		1385 = 50
-		1383 = 50
-		1522 = 50
-		1523 = 70
-		1528 = 50
-		1529 = 50
-		1368 = 50
-		1367 = 50
-		1370 = 50
-		1373 = 50
-		1372 = 80
+
 	}
 	
 	ignore = { }
@@ -620,19 +509,19 @@ front = {
 
 	#Odds modifiying variables
 	# the following is to reduce odds-strength for attacker.
-	frozen_attack 	= 0.50
-	snow_attack 	= 0.50
-	blizzard_attack = 0.25
-	storm_attack 	= 0.60
-	muddy_attack 	= 0.75
+	frozen_attack 	= 1.0 #0.50
+	snow_attack 	= 1.0 #0.50
+	blizzard_attack = 1.0 #0.25
+	storm_attack 	= 1.0 #0.60
+	muddy_attack 	= 1.0 #0.75
 
 	#reduces the size of odds in total.. (1.0 = no difference, 0.5 = halved.)
-	jungle_attack 	= 0.85
-	mountain_attack	= 0.60
-	swamp_attack 	= 0.60
-	forest_attack 	= 0.85
-	hill_attack 	= 0.75
-	urban_attack 	= 0.40
+	jungle_attack 	= 1.0 #0.85
+	mountain_attack	= 1.0 #0.60
+	swamp_attack 	= 1.0 #0.60
+	forest_attack 	= 1.0 #0.85
+	hill_attack 	= 1.0 #0.75
+	urban_attack 	= 1.0 #0.40
 	
 	# Proportion of divisions in a front province that may be used to support the defense of neighboring provinces. Default 0.33
 	support_defense_prop = 0.33
@@ -644,14 +533,14 @@ front = {
 	# Offensive - Concentrate more troops where the enemy us weak
 	# Operational Defensive - The fewer avenues of escape, the less troops (to avoid encirclement.)
 	distrib_vs_ai 		= 	offensive
-	distrib_vs_human 	= 	defensive
+	distrib_vs_human 	= 	Defensive 
 
 	# Countries we do not counter-attack for a certain number of days
 	enemy_handicap = {
 		# NOTE: These values are ignored for human-controlled enemies.
 		# CAUTION: Values apply for _every_new_ war with a set nation.
-		NOR = 20
 		DEN = 20
+		NOR = 20
 		FIN = 20
 		DFR = 20
 		FRA = 20
@@ -702,11 +591,11 @@ front = {
 
 	enemy_reinf_days 		= 	1.5	# Count enemy units less than X days from a target province in odds calculations
 
-	base_attack_odds		=	1.5	# Will attack at X odds or better
-	min_attack_odds			=	1.5	# If stalemated for a long period, may go as low as these attack odds
+	base_attack_odds		=	1.2	# Will attack at X odds or better
+	min_attack_odds			=	1.0	# If stalemated for a long period, may go as low as these attack odds
 	max_attack_odds			=	2.0	# Don't use more force than necessary to reach these odds
-	reinforce_odds			=	2.0	# Send in more troops if the attacking force is at these odds
-	withdraw_odds			= 	1.5	# Break off attacks and withdraw at these odds
+	reinforce_odds			=	1.0	# Send in more troops if the attacking force is at these odds
+	withdraw_odds			= 	0.8	# Break off attacks and withdraw at these odds
 	# NOTE: the calculations for retreating from _defensive_ positions are too complex to condense to a few variables
 	# NOTE: will _also_ retreat if the average organization is too low
 }

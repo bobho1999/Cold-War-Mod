@@ -14,7 +14,7 @@
         war = 0 
         ferocity = no 
         reinforcement = 0.1000 
-no_exp_forces_to = { CHI CHC }
+	no_exp_forces_to = { CHC }
         upgrading = 0.1000 
         desperation = 0.3000 
         strat_redeploy_threshold = 25 
@@ -39,15 +39,16 @@ no_exp_forces_to = { CHI CHC }
         claim_acceptance = -300 
         target = { 
             1270 = 20 
-            1271 = 20 
+            1271 = 100 
+	    1272 = 90
             1224 = 20 
             1212 = 20 
             1214 = 20 
             1216 = 20
-            1389 = 100 
-            1390 = 100 
-            1396 = 100 
-            1225 = 20 
+            1389 = 90 
+            1390 = 90 
+            1396 = 90
+            1225 = 100 
             1403 = 100
             1377 = 20 
             1378 = 20
@@ -78,9 +79,9 @@ no_exp_forces_to = { CHI CHC }
             1307 = 10 
             1293 = 10 
             1294 = 10 
-            1206 = 10 
-            1205 = 20 
-            1204 = 20 
+            1206 = 100
+            1205 = 90 
+            1204 = 90 
             1203 = 10 
             1210 = 10 
             1211 = 10   
@@ -114,18 +115,44 @@ no_exp_forces_to = { CHI CHC }
             1218 = 20
             1219 = 20
             1220 = 20
+	    1207 = 90
+	    1209 = 90
             } 
-        exp_force_ratio = 0.7500 
-        exp_force_ratios = { } 
-        admiral = { 
+        exp_force_ratio = 0.500 
+        exp_force_ratios = { CHI = 0.3 } 
+
+admiral = { 
             target = { 2185 = 200 2262 = 200 } 
             core = { 2158 2163 2186 2188 2189 2190 } 
             base = { } 
-            ignore = { "Northern Baltic" "Southern Baltic" "Bothnian Bay" "Barents Sea" "Arctic Ocean" "Norwegian Sea" "East North Sea" "Kattegat" "Central Northsea" "West Northsea" "Southeast Northsea" "English Channel" "Bay of Biscay" "Cape Finisterre" "Portugese Coast" "Cap St Vincent" "Faroes Gap" "Denmark Strait" "Irish Sea" "The Hebreides" "Irish West Coast" "Greenland Coast" "Northern Sea of Labrador" "Southern Sea of Labrador" "Hudson Bay" "Grand Banks" "Canadian Maritimes" "Costa del Sol" "Gulf of Lyon" "Algerian Coast" "Tyrrhenian Sea" "Adriatic Sea" "Black Sea" "Aegean Sea" "Egyptian Coast" "North Atlantic" "Western Approaches" "The Seamounts" "Azores" "Central Atlantic" "Central Mid-Atlantic Ridge" "Bermuda Triangle" "Guiana Basin" "South-Central Mid-Atlantic Ridge" "Cap Verde" "Pernambuco Plain" "Ascension Fracture Zone" "Argentine Plain" "Angola Plain" "West Gulf of Mexico" "East Gulf of Mexico" "Florida Strait" "Yucatan Strait" "Windward Islands" "Central Carribean" "Coast of Guyana" "Coast of Recife" "Coast of Uruguay" "Coast of Brazil" "Coast of Argentina" "Coast of Africa" "Coast of Bissao" "Gulf of Guinea" "Coast of Angola-Namibia" "Coast of South Africa" "Atlantic-Indian Ridge" "Red Sea" "Horn of Africa" "South Mozambique Channel" "North Mozambique Channel" "Northeast Coast of Madagascar" "Southeast Coast of Madagascar" "Persian Gulf" "North Arabian Sea" "South Arabian Sea" "Coast of Ceylon" "Mascarene Plateau" "Mid-Indian Ridge" "Ninetyeast Ridge" "Southeast Indian Ocean" "Southwest Indian Ocean" "East Bay of Bengal" "West Bay of Bengal" "Malacca Strait" "Java Ridge" "Java Trench" "Gulf of Siam" "Spratly Sea" "Coast of Brunei" "Flores Sea" "Sulu Sea" "Celebes Sea" "Luzon Strait" "Sea of Japan" "Ryukyus" "Coast of Japan" "South Sea of Okhotsk" "West Sea of Okhotsk" "East Sea of Okhotsk" "Philipine Trench" "Central Philippine Sea" "Mariana Trench" "East Mariana Basin" "Mid-Pacific Mountains" "North Bismarck Sea" "Coast of New Guinea" "Molucca Sea" "Banda Sea" "Arafura Sea" "South Bismarck Sea" "Solomon Sea" "West Coral Sea" "East Coral Sea" "North Tasman Sea" "South Tasman Sea" "East Cost of New Zealand" "Timor Sea" "West Coast of Australia" "East Great Australian Bight" "West Great Australian Bight" "Coast of Kamchatka" "East Bering Sea" "West Bering Sea" "Aleutians" "Northwest Pacific Basin" "North Northeast Pacific Basin" "Hawaiian Rise" "North East Pacific Ocean" "Marshalls Sea" "South East Pacific Ocean" "Marianas" "Western Solomons" "Eastern Solomons" "US Maritimes" "Carolines" "Gilberts" "Line Islands" "Fiji Basin" "Southwest Pacific Basin" "Southeast Pacific Basin" "West Coast of Chile" "West Coast of Peru" "South Southeast Pacific Ocean" "North Southeast Pacific Ocean" "Gulf of Alaska" "West Coast of the United States" "West Coast of Mexico" "West Coast of Central America" } 
+            ignore = { 	"Northern Baltic" 
+			"Southern Baltic" 
+			"Bothnian Bay" 
+			"Barents Sea" 
+			"Arctic Ocean" 
+			"Norwegian Sea" 
+			"East North Sea" 
+			"Kattegat" "Central Northsea" "West Northsea" "Southeast Northsea" "English Channel" "Bay of Biscay" "Cape Finisterre" "Portugese Coast" "Cap St Vincent" "Faroes Gap" "Denmark Strait" "Irish Sea" "The Hebreides" "Irish West Coast" "Greenland Coast" "Northern Sea of Labrador" "Southern Sea of Labrador" "Hudson Bay" "Grand Banks" "Canadian Maritimes" "Costa del Sol" "Gulf of Lyon" "Algerian Coast" "Tyrrhenian Sea" "Adriatic Sea" "Black Sea" "Aegean Sea" "Egyptian Coast" "North Atlantic" "Western Approaches" "The Seamounts" "Azores" "Central Atlantic" "Central Mid-Atlantic Ridge" "Bermuda Triangle" "Guiana Basin" "South-Central Mid-Atlantic Ridge" "Cap Verde" "Pernambuco Plain" "Ascension Fracture Zone" "Argentine Plain" "Angola Plain" "West Gulf of Mexico" "East Gulf of Mexico" "Florida Strait" "Yucatan Strait" "Windward Islands" "Central Carribean" "Coast of Guyana" "Coast of Recife" "Coast of Uruguay" "Coast of Brazil" "Coast of Argentina" "Coast of Africa" "Coast of Bissao" "Gulf of Guinea" "Coast of Angola-Namibia" "Coast of South Africa" "Atlantic-Indian Ridge" "Red Sea" "Horn of Africa" "South Mozambique Channel" "North Mozambique Channel" "Northeast Coast of Madagascar" "Southeast Coast of Madagascar" "Persian Gulf" "North Arabian Sea" "South Arabian Sea" "Coast of Ceylon" "Mascarene Plateau" "Mid-Indian Ridge" "Ninetyeast Ridge" "Southeast Indian Ocean" "Southwest Indian Ocean" "East Bay of Bengal" "West Bay of Bengal" "Malacca Strait" "Java Ridge" "Java Trench" "Gulf of Siam" "Spratly Sea" "Coast of Brunei" "Flores Sea" "Sulu Sea" "Celebes Sea" "Luzon Strait" "Sea of Japan" "Ryukyus" "Coast of Japan" "South Sea of Okhotsk" "West Sea of Okhotsk" "East Sea of Okhotsk" "Philipine Trench" "Central Philippine Sea" "Mariana Trench" "East Mariana Basin" "Mid-Pacific Mountains" "North Bismarck Sea" "Coast of New Guinea" "Molucca Sea" "Banda Sea" "Arafura Sea" "South Bismarck Sea" "Solomon Sea" "West Coral Sea" "East Coral Sea" "North Tasman Sea" "South Tasman Sea" "East Cost of New Zealand" "Timor Sea" "West Coast of Australia" "East Great Australian Bight" "West Great Australian Bight" "Coast of Kamchatka" "East Bering Sea" "West Bering Sea" "Aleutians" "Northwest Pacific Basin" "North Northeast Pacific Basin" "Hawaiian Rise" "North East Pacific Ocean" "Marshalls Sea" "South East Pacific Ocean" "Marianas" "Western Solomons" "Eastern Solomons" "US Maritimes" "Carolines" "Gilberts" "Line Islands" "Fiji Basin" "Southwest Pacific Basin" "Southeast Pacific Basin" "West Coast of Chile" "West Coast of Peru" "South Southeast Pacific Ocean" "North Southeast Pacific Ocean" "Gulf of Alaska" "West Coast of the United States" "West Coast of Mexico" "West Coast of Central America" } 
             } 
-        trade = { embargo = { JAP } favored = { ENG = 70 FRA = 50 USA = 100 AST = 90 NZL = 90 SIA = 40 } cancel_deal_threshold = 2.0000 } 
-        tech_sharing = { embargo = { JAP } favored = { GER = 100 ENG = 70 FRA = 50 USA = 100 } prioritized = { 5020 = 100 5030 = 100 5040 = 100 1310 = 100 1320 = 100 1330 = 100 1340 = 100 1350 = 100 1360 = 100 5050 = 100 5060 = 100 5070 = 100 5080 = 100 5090 = 100 5100 = 100 5110 = 100 5120 = 100 5130 = 100 5150 = 100 5180 = 100 1110 = 100 1120 = 100 1130 = 100 1140 = 100 1310 = 100 } } 
-        invasion = { 
+        trade = { 
+		embargo = { 
+			JAP
+			CHC
+	} 
+
+	favored = { 
+		ENG = 70 
+		FRA = 50 
+		USA = 100 
+		AST = 90 
+		NZL = 90 
+		SIA = 40 
+	} 
+	cancel_deal_threshold = 2.0000 }
+ 
+tech_sharing = { embargo = { JAP } favored = { GER = 100 ENG = 70 FRA = 50 USA = 100 } prioritized = { 5020 = 100 5030 = 100 5040 = 100 1310 = 100 1320 = 100 1330 = 100 1340 = 100 1350 = 100 1360 = 100 5050 = 100 5060 = 100 5070 = 100 5080 = 100 5090 = 100 5100 = 100 5110 = 100 5120 = 100 5130 = 100 5150 = 100 5180 = 100 1110 = 100 1120 = 100 1130 = 100 1140 = 100 1310 = 100 } } 
+        
+invasion = { 
             base = 0.1000 
             random = 8.0000 
             coastal = 0.1000 
@@ -144,6 +171,7 @@ no_exp_forces_to = { CHI CHC }
             help_allies = yes 
             redirect = priority 
             } 
+
         air_marshal = { 
             icxdayscostfactor = 10.0000 
             manpowercostfactor = 100.0000 
@@ -196,21 +224,73 @@ no_exp_forces_to = { CHI CHC }
             home_multiplier = 1.0000 
             overseas_multiplier = 1.0000 
             home_peace_cap = 10 
-            country_priorities = { SOV = -1 MON = -1 TIB = -1 NEP = -1 AFG = -1 FRA = 40 SIA = 40 ENG = -1 POR = -1 JAP = 80 CHC = -1 MAN = 70 CSX = -1 SIK = -1 CXB = -1 CYN = -1 CGX = -1 } 
-            province_priorities = { 1403 = 70 1887 = 70 1203 = 70 1205 = 100 1204 = 100 1210 = 70 1211 = 50 1397 = 70 1278 = 70 1269 = 100 1227 = 70 1226 = 100 1228 = 100 1223 = 70 1218 = 100 1215 = 70 1396 = 70 1389 = 100 1390 = 100 1273 = 30 1274 = 30 1275 = 30 1277 = 50 1216 = 100 1221 = 100 1235 = 80 1236 = 100 1237 = 100 1389 = 100 1390 = 100 1208 = 70 2813 = 70 1209 = 70 } 
-            area_multiplier = { } 
+            country_priorities = { 
+			SOV = -1 
+			MON = -1 
+			TIB = -1 
+			NEP = -1 
+			AFG = -1 
+			FRA = 40 
+			SIA = 40 
+			ENG = -1 
+			POR = -1 
+			JAP = 80 
+			CHC = 100 
+			MAN = 70 
+			CSX = -1 
+			SIK = -1 
+			CXB = -1 
+			CYN = -1 
+			CGX = -1 
+		} 
+            province_priorities = { 
+			1403 = 70 
+			1887 = 70 
+			1203 = 70 
+			1205 = 100 
+			1204 = 100 
+			1210 = 70 
+			1211 = 50 
+			1397 = 70 
+			1278 = 70 
+			1269 = 100 
+			1227 = 70 
+			1226 = 100 
+			1228 = 100 
+			1223 = 70 
+			1218 = 100 
+			1215 = 70 
+			1396 = 70 
+			1389 = 100 
+			1390 = 100 
+	1273 = 30 
+	1274 = 30 
+	1275 = 30 
+	1277 = 50 
+	1216 = 100 
+	1221 = 100 
+	1235 = 80 
+	1236 = 100 
+	1237 = 100 
+	1389 = 100 
+	1390 = 100 
+	1208 = 70 
+	2813 = 70 
+	1209 = 70 
+	} 
+        area_multiplier = { } 
             ignore = { } 
             } 
         military = { 
-            relative_build_scheme = yes 
-            max_batch_peace = 360 
-            max_batch_war = 180 
-	max_batch_home_front = 180
-        extra_convoys_war = 0.0500 
-        extra_convoys_peace = 0.0500 
+            	relative_build_scheme = no 
+            	max_batch_peace = 360 
+            	max_batch_war = 180 
+		max_batch_home_front = 180
+        	extra_convoys_war = 0.0500 
+        	extra_convoys_peace = 0.0500 
  
-            infantry = 42.0000 
-            cavalry = 28.0000 
+            infantry = 45.0000 
+            cavalry = 25.0000 
             motorized = 0.0000 
             mechanized = 0.0000 
             light_armor = 0.0000 
@@ -221,15 +301,17 @@ no_exp_forces_to = { CHI CHC }
             garrison = 0.0000 
             hq = 5.0000 
             militia = 0.0000 
+
             multi_role = 0.0000 
-            interceptor = 5.0000 
+            interceptor = 0.0000 
             strategic_bomber = 0.0000 
-            tactical_bomber = 5.0000 
+            tactical_bomber = 0.0000 
             naval_bomber = 0.0000 
             cas = 0.0000 
             transport_plane = 0.0000 
             flying_bomb = 0.0000 
             flying_rocket = 0.0000 
+
             battleship = 0.0000 
             light_cruiser = 0.0000 
             heavy_cruiser = 0.0000 
@@ -238,8 +320,10 @@ no_exp_forces_to = { CHI CHC }
             carrier = 0.0000 
             escort_carrier = 0.0000 
             submarine = 0.0000 
-            #nuclear_submarine = 5.0000 
+            #nuclear_submarine = 0.0000 
             transport = 0.0000 
+
+
             artillery = 30.0000 
             sp_artillery = 0.0000 
             rocket_artillery = 0.0000 
@@ -253,8 +337,10 @@ no_exp_forces_to = { CHI CHC }
             anti_air = 8.0000 
             police = 0.0000 
             engineer = 5.0000 
+
             cag = 100.0000 
             escort = 0.0000
+
             naval_asw = 20.0000 
             naval_anti_air_s = 20.0000 
             naval_radar_s = 20.0000 
@@ -266,8 +352,9 @@ no_exp_forces_to = { CHI CHC }
             naval_fire_controll_l = 0.0000 
             naval_improved_hull_l = 0.0000 
             naval_torpedoes_l = 0.0000 
-            } 
-        front = { 
+       } 
+
+front = { 
             strength = 1.0000 
             organisation = 1.0000 
             dig_in = 1.0000 
@@ -301,14 +388,15 @@ no_exp_forces_to = { CHI CHC }
             max_attack_odds = 3.0000 
             reinforce_odds = 1.2000 
             withdraw_odds = 0.6000 
-            distrib_vs_ai = even 
+            distrib_vs_ai = defensive
             distrib_vs_human = even 
             enemy_handicap = { JAP = 300 } 
             passivity = { JAP = 90 } 
-            province_priorities = { 1403 = 0.8 1887 = 0.5 1203 = 0.5 1205 = 0.8 1204 = 0.8 1210 = 0.5 1211 = 0.3 1397 = 0.5 1278 = 0.5 1269 = 0.8 1227 = 0.5 1226 = 0.8 1228 = 0.8 1223 = 0.5 1218 =0.8 1215 = 0.5 1396 = 0.8 1389 = 0.9 1390 = 0.9 1273 = 0.2 1274 = 0.2 1275 = 0.2 1277 = 0.3 1222 = 0.8 1221 = 0.8 1235 = 0.8 1236 = 0.8 1237 = 0.8} 
+            province_priorities = { 1403 = 0.8 1887 = 0.5 1203 = 0.5 1205 = 0.8 1204 = 0.8 1210 = 0.5 1211 = 0.3 1397 = 0.5 1278 = 0.5 1269 = 0.8 1227 = 0.5 1226 = 0.8 1228 = 0.8 1223 = 0.5 1218 =0.8 1215 = 0.5 1396 = 0.8 1389 = 0.9 1390 = 0.9 1273 = 0.2 1274 = 0.2 1275 = 0.2 1277 = 0.3 1222 = 0.8 1221 = 0.8 1235 = 0.8 1236 = 0.8 1237 = 0.8 1271 = 0.8 1209 = 0.8 } 
             } 
+
         construction = { 
-            max_factor = 0.0500 
+            max_factor = 0.300 
             transports = -1 
             escorts = -1 
             AA_batteries = no 
@@ -335,8 +423,8 @@ no_exp_forces_to = { CHI CHC }
             rocket_test = no 
             max_rocket = 10 
             ic_at_war = yes 
-            force_ic_until = 1935 
-            ic_end_year = 1940 
+            force_ic_until = 1995 
+            ic_end_year = 1995 
             IC_provs = { } 
             } 
         technology = { 

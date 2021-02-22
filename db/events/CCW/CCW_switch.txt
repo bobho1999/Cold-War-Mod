@@ -75,18 +75,19 @@ event = {
 	country = CHC
 	trigger = { 
 		ai = yes
-		war = { country = chi country = CHC }
+		war = { country = CHI country = CHC }
+		event = 943021
 			}
 
 	name = "AI_EVENT" #1946
 
-#	date = { day = 0 month = january year = 1946 }
-#	offset = 1
-#	deathdate = { day = 30 month = january year = 1955 }
+	date = { day = 0 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 30 month = january year = 1999 }
 	
 	action_a = {
 	name = "OK"
-		command = { type = ai which ="CHC_CCW_phase1.ai" }
+		command = { type = ai which ="CHC_CCW_full_attack.ai" }
 			}
 } 
 

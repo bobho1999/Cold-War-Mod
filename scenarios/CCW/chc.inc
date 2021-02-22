@@ -10,12 +10,12 @@ province = {
 province = {
   id = 1271 # 延安
   landfort = 5
-  supplypool = 500
+  infra = { size = 1 current_size = 1 }
 }
 province = {
   id = 2619 # 淮安
   ic = { size = 1 current_size = 1 }
-  infra = { size = 0.7 current_size = 0.7 }
+  infra = { size = 0.8 current_size = 0.8 }
   landfort = 3
   supplypool = 1000
 }
@@ -23,22 +23,26 @@ province = { id = 2654 landfort = 8 supplypool = 750 } # 黃岡
 province = {
   id = 2822 # 五台山
   ic = { size = 1 current_size = 1 }
-  infra = { size = 0.7 current_size = 0.7 }
+  infra = { size = 0.8 current_size = 0.8 }
   landfort = 7
   supplypool = 1000
+  oilpool = 500
 }
 province = {
   id = 2831 # 遼縣
   ic = { size = 1 current_size = 1 }
-  infra = { size = 0.7 current_size = 0.7 }
+  infra = { size = 0.8 current_size = 0.8 }
   landfort = 7
   supplypool = 1000
+  oilpool = 500
 }
 province = {
   id = 2856 # 蒙陰
   ic = { size = 1 current_size = 1 }
+  infra = { size = 0.8 current_size = 0.8 }
   landfort = 7
   supplypool = 1000
+  oilpool = 500
 }
 province = {
   id = 2861 # 威海衛
@@ -48,7 +52,8 @@ province = {
   id = 2947 # 蔚縣
   ic = { size = 1 current_size = 1 }
   landfort = 7
-  supplypool = 500
+  supplypool = 1000
+  oilpool = 500
 }
 province = {
   id = 2992 # 武強
@@ -56,12 +61,15 @@ province = {
   infra = { size = 0.7 current_size = 0.7 }
   landfort = 3
   supplypool = 1000
+  oilpool = 500
 }
 province = {
   id = 3768 # 五指山
   ic = { size = 1 current_size = 1 }
+  infra = { size = 0.8 current_size = 0.8 }
   landfort = 7
-  supplypool = 500
+  supplypool = 1000
+  oilpool = 500
 }
 
 #####################

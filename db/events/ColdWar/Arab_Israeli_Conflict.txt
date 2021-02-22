@@ -727,7 +727,7 @@ event = {
 		command = { type = peace which = IRQ }
 		command = { type = peace which = EGY }
  		command = { type = peace which = JOR }
-		command = { type = secedeprovince which = JOR value = 1797 } #East Jerusalem / West Bank
+#		command = { type = secedeprovince which = JOR value = 1797 } #East Jerusalem / West Bank
 		command = { type = peace which = LEB }
 		command = { type = peace which = SYR }
 		command = { type = clrflag which = Arab_Israeli_War }

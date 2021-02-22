@@ -419,19 +419,19 @@ front = {
 
 	#Odds modifiying variables
 	# the following is to reduce odds-strength for attacker.
-	frozen_attack 	= 0.50
-	snow_attack 	= 0.50
-	blizzard_attack = 0.25
-	storm_attack 	= 0.60
-	muddy_attack 	= 0.75
+	frozen_attack 	= 1.0 #0.50
+	snow_attack 	= 1.0 #0.50
+	blizzard_attack = 1.0 #0.25
+	storm_attack 	= 1.0 #0.60
+	muddy_attack 	= 1.0 #0.75
 
 	#reduces the size of odds in total.. (1.0 = no difference, 0.5 = halved.)
 	jungle_attack 	= 0.85
-	mountain_attack	= 0.60
-	swamp_attack 	= 0.60
-	forest_attack 	= 0.85
-	hill_attack 	= 0.75
-	urban_attack 	= 0.40
+	mountain_attack	= 1.0 #0.60
+	swamp_attack 	= 1.0 #0.60
+	forest_attack 	= 1.0 #0.85
+	hill_attack 	= 1.0 #0.75
+	urban_attack 	= 1.0 #0.40
 	
 	# Proportion of divisions in a front province that may be used to support the defense of neighboring provinces. Default 0.33
 	support_defense_prop = 0.33

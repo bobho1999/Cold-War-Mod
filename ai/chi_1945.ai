@@ -410,7 +410,7 @@ construction = {
 		IND
 		CHC
 	}
-	fort_provs		= { }	# List of prioritized provinces
+	fort_provs		= { 1887 }	# List of prioritized provinces
 
 	ic_at_war			= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
 	force_ic_until		= 1995				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
@@ -439,7 +439,10 @@ garrison = {
 	war_zone_odds = 2.0  # Default: 2.0 (strive to transport in 2x enemy nr of divisions)
 	area_multiplier = { 
 		#Chinese,Afghan & Iranian Border
-		
+		1205 = 1.0
+		1389 = 1.2
+		1269 = 1.5
+		1276 = 1.2
 		}
 
 	# PRIORITIES:
@@ -457,12 +460,11 @@ garrison = {
 
 	# Borders with specific countries
 	country_priorities = {
-		FIN = -1
-		TUR = -1
-		PER = -1
-		AFG = -1
+		SOV = -1
+		ENG = -1
+		PRK = -1
+		MON = -1
 		CHC = 100
-		CHI = -1
 		JAP = -1
 	}
 
@@ -480,7 +482,7 @@ garrison = {
 		1216 = 90
 	}
 	
-	ignore = { }
+	ignore = { 3471 }
 
 	key_point_prio_mult		= 0.300	# Value * key point value in a province = prio for that province
 }
@@ -495,19 +497,19 @@ front = {
 
 	#Odds modifiying variables
 	# the following is to reduce odds-strength for attacker.
-	frozen_attack 	= 0.50
-	snow_attack 	= 0.50
-	blizzard_attack = 0.25
-	storm_attack 	= 0.60
-	muddy_attack 	= 0.75
+	frozen_attack 	= 1.0 #0.50
+	snow_attack 	= 1.0 #0.50
+	blizzard_attack = 1.0 #0.25
+	storm_attack 	= 1.0 #0.60
+	muddy_attack 	= 1.0 #0.75
 
 	#reduces the size of odds in total.. (1.0 = no difference, 0.5 = halved.)
-	jungle_attack 	= 0.85
-	mountain_attack	= 0.60
-	swamp_attack 	= 0.60
-	forest_attack 	= 0.85
-	hill_attack 	= 0.75
-	urban_attack 	= 0.40
+	jungle_attack 	= 1.0 #0.85
+	mountain_attack	= 1.0 #0.60
+	swamp_attack 	= 1.0 #0.60
+	forest_attack 	= 1.0 #0.85
+	hill_attack 	= 1.0 #0.75
+	urban_attack 	= 1.0 #0.40
 	
 	# Proportion of divisions in a front province that may be used to support the defense of neighboring provinces. Default 0.33
 	support_defense_prop = 0.33
@@ -518,7 +520,7 @@ front = {
 	# Defensive - More troops in strategically important provinces (IC, Victory Points, Oil, etc)
 	# Offensive - Concentrate more troops where the enemy us weak
 	# Operational Defensive - The fewer avenues of escape, the less troops (to avoid encirclement.)
-	distrib_vs_ai 		= 	offensive
+	distrib_vs_ai 		= 	Reactive 
 	distrib_vs_human 	= 	defensive
 
 	# Countries we do not counter-attack for a certain number of days
@@ -577,11 +579,11 @@ front = {
 
 	enemy_reinf_days 		= 	1.5	# Count enemy units less than X days from a target province in odds calculations
 
-	base_attack_odds		=	1.5	# Will attack at X odds or better
-	min_attack_odds			=	1.5	# If stalemated for a long period, may go as low as these attack odds
+	base_attack_odds		=	1.0	# Will attack at X odds or better
+	min_attack_odds			=	0.8	# If stalemated for a long period, may go as low as these attack odds
 	max_attack_odds			=	2.0	# Don't use more force than necessary to reach these odds
-	reinforce_odds			=	2.0	# Send in more troops if the attacking force is at these odds
-	withdraw_odds			= 	1.5	# Break off attacks and withdraw at these odds
+	reinforce_odds			=	1.2	# Send in more troops if the attacking force is at these odds
+	withdraw_odds			= 	0.7	# Break off attacks and withdraw at these odds
 	# NOTE: the calculations for retreating from _defensive_ positions are too complex to condense to a few variables
 	# NOTE: will _also_ retreat if the average organization is too low
 }
@@ -594,42 +596,42 @@ military = {
 	# NOTE: AI production run size is also limited by other factors, such as Total IC capacity, days until end of scenario, and desperation.
 
 # Example Build scheme:
-	infantry = 		15
+	infantry = 		20
 	cavalry = 		5
-	motorized = 	0
+	motorized = 	10
 	mechanized = 	0
 	light_armor = 	0
 	armor = 		0
 	paratrooper = 	0
 	marine = 		0
-	bergsjaeger = 	15
+	bergsjaeger = 	5
 	garrison = 		0
 	hq = 			5
 	militia = 		10
-					# 50 %
+					# 55 %
 
 	multi_role = 	3
 	interceptor = 	3
 	strategic_bomber = 3
-	tactical_bomber = 3
+	tactical_bomber = 0
 	naval_bomber = 	3
 	cas = 			3
 	transport_plane = 3
 	flying_bomb = 	3
 	flying_rocket = 1
-					# 25 %
+					# 22 %
 
 	battleship = 	0
 	light_cruiser = 3
 	heavy_cruiser = 3
-	battlecruiser = 2
+	battlecruiser = 0
 	destroyer = 	3
 	carrier = 		3
 	escort_carrier = 3
 	submarine = 	3
 	nuclear_submarine = 3
 	transport = 	2
-					# 25 %
+					# 23 %
 					# 100%
 # NOTE: The sum _must_ be exactly 100%!
 
