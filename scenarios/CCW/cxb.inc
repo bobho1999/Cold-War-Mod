@@ -2,16 +2,21 @@
 # Country definition for CXB #
 ##############################
 province = {
-  id = 2810 # 
+  id = 2810 # 磴口
   infra = { size = 0.1 current_size = 0.1 }
 }
+
+#####################
+# Country main data #
+#####################
+
 country = {
   tag                = CXB
   regular_id         = CHI
   puppet             = CHI
   control            = CHI
   intrinsic_gov_type = paternal_autocrat
-  capital            = 1443 # 西?
+  capital            = 1443 # 西寧
   dissent            = 25
   extra_tc           = 2
   manpower           = 15
@@ -28,7 +33,7 @@ country = {
   ownedprovinces         = { 1273 2810 2802 2804 2808 2809 2803 2801 2806 2805 2807 1440 1441 1443 1442 2955 2956 2958 2961 1444 2963 2960 2959 }
   controlledprovinces    = { 1273 2810 2802 2804 2808 2809 2803 2801 2806 2805 2807 1440 1441 1443 1442 2955 2956 2958 2961 1444 2963 2960 2959 }
 
-  techapps               = { 1010 5180 5310 1020 1170 1180 6560 6030 6120 74900 1030 1190 1890 66540 66510 66520 66530 66500 2720 1040 }
+  techapps               = { 1010 5180 5310 1020 1170 1180 6560 6030 6120 74900 1030 1190 1890 66540 66510 66520 66530 66500 2720 1040 1900 2800 6110 6130 6140 }
 
   policy = {
     date              = { year = 0 month = january day = 0 }
@@ -40,8 +45,8 @@ country = {
     defense_lobby     = 10
     interventionism   = 3
   }
-  chiefofnavy            = { type = 9 id = 16119 } # 奥格 H 费德尔 
-  chiefofair             = { type = 9 id = 16078 } # 哈拉尔德 彼得森 
+  #chiefofnavy            = { type = 9 id = 16119 } # 
+  #chiefofair             = { type = 9 id = 16078 } # 
   nationalidentity       = "policy_economy_natural"
   socialpolicy           = "policy_social_Islam"
   nationalculture        = "policy_political_conservatism"
@@ -56,25 +61,25 @@ country = {
       type           = cavalry
       model          = 2
       extra          = artillery
-      brigade_model  = 5
+      brigade_model  = 2
       experience     = 35
     }
     division = {
       id             = { type = 22003 id = 3 }
-      name           = "暫?騎兵第1师（西北三马）"
+      name           = "陆军暫編騎兵第1师（西北三马）"
       type           = cavalry
       model          = 2
       extra          = artillery
-      brigade_model  = 5
+      brigade_model  = 2
       experience     = 35
     }
     division = {
       id             = { type = 22003 id = 4 }
-      name           = "暫?騎兵第2师（西北三马） "
+      name           = "陆军暫編騎兵第2师（西北三马） "
       type           = cavalry
       model          = 2
       extra          = artillery
-      brigade_model  = 5
+      brigade_model  = 2
       experience     = 35
     }
   }
@@ -86,14 +91,14 @@ country = {
       id             = { type = 22003 id = 6 }
       name           = "陆军第168师（西北三马） "
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
     division = {
       id             = { type = 22003 id = 7 }
       name           = "陆军第7师（西北三马）"
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
   }
@@ -105,14 +110,14 @@ country = {
       id             = { type = 22003 id = 9 }
       name           = "陆军第35师（西北三马） "
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
     division = {
       id             = { type = 22003 id = 15 }
-      name           = "暫?第60师（西北三马） "
+      name           = "陆军暫編第60师（西北三马） "
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
   }
@@ -124,19 +129,19 @@ country = {
       id             = { type = 22003 id = 11 }
       name           = "陆军第100师（西北三马） "
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
     division = {
       id             = { type = 22003 id = 16 }
-      name           = "暫?第61师（西北三马） "
+      name           = "陆军暫編第61师（西北三马） "
       type           = militia
-      model          = 13
+      model          = 3
       experience     = 15
     }
     division = {
       id             = { type = 22003 id = 17 }
-      name           = "新?騎兵第8师（西北三马） "
+      name           = "陆军新編騎兵第8师（西北三马） "
       type           = cavalry
       model          = 2
       experience     = 15
@@ -160,24 +165,24 @@ country = {
     }
     division = {
       id             = { type = 22003 id = 14 }
-      name           = "青海骑兵?"
+      name           = "青海骑兵师"
       type           = cavalry
       model          = 2
     }
   }
   landunit = {
     id       = { type = 22003 id = 18 }
-    name     = "?夏省保安司令部"
+    name     = "宁夏省保安司令部"
     location = 1273
     division = {
       id             = { type = 22003 id = 19 }
-      name           = "?夏省保安團"
+      name           = "宁夏省保安團"
       type           = militia
       model          = 3
     }
     division = {
       id             = { type = 22003 id = 33 }
-      name           = "?夏省民防團"
+      name           = "宁夏省民防團"
       type           = militia
       model          = 3
     }

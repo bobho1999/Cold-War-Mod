@@ -72,7 +72,7 @@ country = {
     }
     division = {
       id             = { type = 22001 id = 3 }
-      name           = "暫?第21师（滇军） "
+      name           = "陆军暫編第21师（滇军） "
       type           = motorized
       model          = 3
       experience     = 35
@@ -92,14 +92,14 @@ country = {
     }
     division = {
       id             = { type = 22001 id = 15 }
-      name           = "新?第10师（滇军） "
+      name           = "陆军新編第10师（滇军） "
       type           = infantry
       model          = 3
       experience     = 15
     }
     division = {
       id             = { type = 22001 id = 16 }
-      name           = "新?第11师（滇军） "
+      name           = "陆军新編第11师（滇军） "
       type           = infantry
       model          = 3
       experience     = 15
@@ -136,17 +136,17 @@ country = {
   }
   landunit = {
     id       = { type = 22001 id = 5 }
-    name     = "?南省保安司令部"
+    name     = "云南省保安司令部"
     location = 1307
     division = {
       id             = { type = 22001 id = 6 }
-      name           = "?南省保安團"
+      name           = "云南省保安團"
       type           = militia
       model          = 4
     }
     division = {
       id             = { type = 22001 id = 8 }
-      name           = "?南省民防團"
+      name           = "云南省民防團"
       type           = militia
       model          = 4
     }

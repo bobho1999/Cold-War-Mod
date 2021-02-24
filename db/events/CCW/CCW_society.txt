@@ -1749,7 +1749,7 @@ event = {
 				NOT = { year = 1947 } 
 			}
 			AND = { 
-				dissent = 45
+				dissent = 40
 				year = 1947
 				NOT = { year = 1948 }
 				
@@ -1757,11 +1757,11 @@ event = {
 			AND = { 		
 				year = 1948 
 				NOT = { year = 1949 } 
-				dissent = 50 
+				dissent = 45 
 			}
 			AND = { 		
 				year = 1949 
-				dissent = 55
+				dissent = 50
 			}
 		}
 	}

@@ -2258,25 +2258,29 @@ event = {
 	desc = " "
 	style = 0
 	
-    date = { day = 14 month = january year = 1946 }
-    offset = 1
-	deathdate = { day = 30 month = december year = 1947 }	
+    	date = { day = 14 month = january year = 1946 }
+    	offset = 1
+	deathdate = { day = 30 month = december year = 1947 }
+	
 	action_a = {
-	    name = "暫緩撤出瀋陽" 	
-	ai_chance = 99
-	command = { type = relation which = CHI value = -10 }
-	command = { type = secedeprovince which = CHI value = 2914 }
-	command = { type = secedeprovince which = CHI value = 2887 }	
-              }
+	    	name = "暫緩撤出瀋陽 " 	
+		ai_chance = 99
+		command = { type = relation which = CHI value = -10 }
+		command = { type = secedeprovince which = CHI value = 2914 }
+		command = { type = secedeprovince which = CHI value = 2887 }	
+        }
+
 	action_b = {
-	    name = "撤出瀋陽" 	 
-	command = { type = relation which = CHI value = 10 }
-	command = { type = secedeprovince which = CHI value = 2914 }
-	command = { type = secedeprovince which = CHI value = 2887 }
-	command = { type = secedeprovince which = CHI value = 1389 }
-	command = { type = secedeprovince which = CHI value = 2933 }	
-              }
-     }
+	    	name = "撤出瀋陽 " 	 
+		command = { type = relation which = CHI value = 10 }
+		command = { type = secedeprovince which = CHI value = 2914 }
+		command = { type = secedeprovince which = CHI value = 2887 }
+		command = { type = secedeprovince which = CHI value = 1389 }
+		command = { type = secedeprovince which = CHI value = 2933 }	
+              
+	}
+}
+
 event = {
 	id = 942140
 	random = no
@@ -2349,10 +2353,10 @@ event = {
 	country = SOV
 
 	name = "撤出中国东北"
-	desc = "由于美国等国家向苏联施压，苏联不得不在1945年4月初撤出中国东北"
+	desc = "由于美国等国家向苏联施压，苏联不得不在1946年4月初撤出中国东北"
 	style = 0
         picture = "China_CW"
-        date = { day = 20 month = march year = 1946 }
+        date = { day = 1 month = april year = 1946 }
         offset = 5
         deathdate = { day = 30 month = december year = 1947 }
 
@@ -2550,7 +2554,7 @@ event = {
    id = 941148
    country = CHI
    random = no
-   #Trigger by CHI 941133
+
    name = "东北战略方案 "
    desc = "东北的战略价值体现在其强大的军工生产能力，东北的重
            工业占全中国的二分之一，为此我们要调集五大主力的新
@@ -2559,8 +2563,8 @@ event = {
    style = 0
         action_a = { 
         name = "南攻北守！收復東北鐵路沿線城市！"
-	command = { type = construct which = land_fort where = 1389 value = 3 }
-	command = { type = construct which = land_fort where = 1396 value = 3 }
+	command = { type = construct which = land_fort where = 1389 value = 5 }
+	command = { type = construct which = land_fort where = 1396 value = 5 }
    }
 }
 
@@ -3423,8 +3427,8 @@ event = {
 	action_a = {
 	    	name = "打通錦瀋線，固守東北" 
 		ai_chance = 95 
-		command = { type = construct which = land_fort where = 1396 value = 5 }
-		command = { type = construct which = land_fort where = 1389 value = 5 }
+		command = { type = construct which = land_fort where = 1396 value = 3 }
+		command = { type = construct which = land_fort where = 1389 value = 3 }
 		command = { type = construct which = land_fort where = 1390 value = 5 }
 		command = { type = supplies value = 500 where = 1389 }
 		command = { type = supplies value = 500 where = 1396 }
@@ -4469,13 +4473,7 @@ event = {
 	land_combat = 2654 
 		}
 	name = "中原突圍 "
-	desc = "1946年12月，山東野戰軍和華中野戰軍在江蘇省
-	宿遷縣以北地區圍殲較弱的國民革命軍整編第69
-	師。此次戰役歷時4晝夜，全殲國民黨整編第69師
-	3個半旅及工兵第5團等部共2．1萬餘人，繳獲火
-	炮119門及大批槍枝彈藥。第69師師長戴之奇自殺，
-	副師長饒少偉被俘。整編第11師前來增援被擊退，
-	殲其一部。 "
+	desc = " "
 
 	style = 0
 	
@@ -4483,20 +4481,41 @@ event = {
     	offset = 2
 	deathdate = { day = 30 month = december year = 1950 }	
 	action_a = {
-	    name = "率軍突圍" 	 
-	command = { type = dissent value = -1 }
-	command = { type = morale which = land value = 1 }	
-	command = { type = setflag which = Tuwei }
+	    	name = "率軍突圍" 	
+		ai_chance = 100 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }	
+		command = { type = setflag which = Tuwei }
 		command = { type = construct which = land_fort where = 2654 value = -8 }
-              }
+		command = { type = remove_division which = 11571 value = 62 }
+		command = { type = remove_division which = 11571 value = 63 }
+		command = { type = remove_division which = 11571 value = 64 }
+		command = { type = remove_division which = 11571 value = 66 }
+		command = { type = remove_division which = 11571 value = 67 }
+		command = { type = remove_division which = 11571 value = 68 }
+		command = { type = add_corps value = land where = 1271 }
+		command = { type = add_division which = "第1旅 " value = infantry when = 4 where = b_u4 }
+		command = { type = add_division which = "第2旅 " value = infantry when = 4 where = b_u4 }
+		command = { type = add_division which = "第3旅 " value = infantry when = 4 where = b_u4 }
+		command = { type = add_division which = "第13旅 " value = infantry when = 4 where = b_u4 }
+		command = { type = add_division which = "第14旅 " value = infantry when = 4 where = b_u4 }
+		command = { type = add_division which = "第15旅 " value = infantry when = 4 where = b_u4 }
+	}
 	action_b = {
 	    name = "率軍堅守" 	 
-	command = { type = dissent value = -1 }
-	command = { type = morale which = land value = 1 }
-	command = { type = local_setflag which = Defense }	
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = local_setflag which = Defense }	
 		command = { type = construct which = land_fort where = 2654 value = -6 }
-              }
-     }
+		command = { type = unlock_division which = 11571 value = 62 }
+		command = { type = unlock_division which = 11571 value = 63 }
+		command = { type = unlock_division which = 11571 value = 64 }
+		command = { type = unlock_division which = 11571 value = 66 }
+		command = { type = unlock_division which = 11571 value = 67 }
+		command = { type = unlock_division which = 11571 value = 68 }
+	}
+}
+
 event = {
 	id = 942401
 	random = no
@@ -4517,12 +4536,12 @@ event = {
 
 	action_a = {
 	    	name = "國軍無能 " 	
-	command = { type = dissent value = 1 }
-	command = { type = supplies value = -1000 }
-	command = { type = construct which = land_fort where = 2654 value = -10 }
-	command = { type = trigger which = 942402 }
-              }
-     }
+		command = { type = dissent value = 1 }
+		command = { type = supplies value = -1000 }
+		command = { type = construct which = land_fort where = 2654 value = -10 }
+		command = { type = trigger which = 942402 }
+	}
+}
 #########################
 # 大别山根据地
 #########################

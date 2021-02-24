@@ -2642,6 +2642,10 @@ event = {
 
 		command = { type = non_aggression which = IND where = ENG }  # new for DD1.3
 		command = { type = set_relation which = PAK value = -100 }  # new for DD1.3
+
+		command = { type = change_idea which = policy_economy_natural-Capitalism value = IND }
+		command = { type = change_idea which = policy_social_Buddhism value = IND }
+		command = { type = change_idea which = policy_political_nationalism value = IND }
 		}
 	}
 
@@ -2758,6 +2762,10 @@ event = {
 		command = { type = transport_pool which = PAK value = 25 }
 		command = { type = escort_pool which = PAK value = 10 }
 		command = { type = non_aggression which = PAK where = ENG }  # new for DD1.3
+
+		command = { type = change_idea which = policy_economy_natural-Capitalism value = IND }
+		command = { type = change_idea which = policy_social_Islam value = IND }
+		command = { type = change_idea which = policy_political_nationalism value = IND }
 	}
 }
 

@@ -4,7 +4,7 @@ switch = no			# Default is "yes". If turned off, the AI will not automatically t
 # Inter-Agent distribution variables
 
 # Modifier to chance that country will accept a demand for territory.
-claim_acceptance = 10 
+claim_acceptance = -49 
 
 # The countries we will demand territory from if we have claims on them.
 demand_claims = { 
@@ -253,8 +253,8 @@ target = {
  	1199 = 90
 	1196 = 80
 }
-upgrading = 0.4		#max % of ic used on this slider.
-reinforcement = 0.3	#max % of ic used on this slider.
+upgrading = 0.3		#max % of ic used on this slider.
+reinforcement = 0.4	#max % of ic used on this slider.
 
 desperation = 0.3	#If more than this % of ic is occupied by enemy, panic and build militia hordes.
 
@@ -359,73 +359,74 @@ max_garrison_prop		= 0.4 	# The war-time desired proportion of troops allocated 
 min_garrison_prop		= 0.2 	# The war-time minimum proportion of troops allocated to garrison duty
 # NOTE: In areas without fronts, _all_ land units are controlled by the Garrison AI (except forces preparing for an invasion.)
 construction = {
-	max_factor			= 0.8		# Proportion of Production IC that should be used for province buildings.
+	max_factor		= 0.8		# Proportion of Production IC that should be used for province buildings.
 
-	AA_batteries	 	= yes	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
-	max_AA_level		= 10			# Don't improve beyond this level.
-	AA_provs			= { }		# List of prioritized provinces
+	AA_batteries	 	= yes		# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	max_AA_level		= 10		# Don't improve beyond this level.
+	AA_provs		= { }		# List of prioritized provinces
 
 	coastal_fort 		= not_atwar
-	max_coastal_level	= 10				# Don't improve beyond this level.
+	max_coastal_level	= 10		# Don't improve beyond this level.
 	coastal_fort_provs	= { 
-							2930
-							1202
-							1204
-							2861
-							1215
-							1237
-							1239
-							1313
-							2718		
+					2930
+					1202
+					1204
+					2861
+					1215
+					1237
+					1239
+					1313
+					2718		
 				}		# List of prioritized provinces
 
 	radar_station 		= yes
-	max_radar			= 10			# Don't improve beyond this level.
-	radar_provs			= { }		# List of prioritized provinces
+	max_radar		= 10		# Don't improve beyond this level.
+	radar_provs		= { }		# List of prioritized provinces
 
-	air_base 			= yes
-	max_air_base		= 10			# Don't improve beyond this level.
+	air_base 		= yes
+	max_air_base		= 10		# Don't improve beyond this level.
 	air_base_provs		= { }		# List of prioritized provinces
 
-	naval_base 			= yes
-	max_naval_base		= 10			# Don't improve beyond this level.
-	naval_base_provs		= { 
-							2930
-							1202
-							1204
-							2861
-							1215
-							1237
-							1239
-							1313
-							2718
-							}	# List of prioritized provinces
+	naval_base 		= yes
+	max_naval_base		= 10		# Don't improve beyond this level.
+	naval_base_provs	= { 
+					2930
+					1202
+					1204
+					2861
+					1215
+					1237
+					1239
+					1313
+					2718
+				}	# List of prioritized provinces
 
-	land_fort			= yes
-	max_land_level		= 10				# Don't improve land forts beyond this level.
-	fort_borders = {					# Build land forts along these borders
+	land_fort		= yes
+	max_land_level		= 10		# Don't improve land forts beyond this level.
+	fort_borders 		= {		# Build land forts along these borders
 		SOV
 		PRK
 		KOR
 		IND
 		CHC
-	}
+				}
 	fort_provs		= { 1887 }	# List of prioritized provinces
 
-	ic_at_war			= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
-	force_ic_until		= 1995				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
-	ic_end_year			= 1995				# Stop building IC at the end of year X.
-	IC_provs			= { 	1205 1210 1211 1204 1235 1237 1313 1238 1232 1253 1255 1269 1280 1360 1257
-						1251 1228 1225 1389 1390 1379 1403 1378 1216 
+	ic_at_war		= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	force_ic_until		= 1995		# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	ic_end_year		= 1995		# Stop building IC at the end of year X.
 
-					}		# List of prioritized provinces
+	IC_provs		= { 	1205 1210 1211 1204 1235 1237 1313 1238 1232 1253 1255 1269 1280 1360 1257
+					1251 1228 1225 1389 1390 1379 1403 1378 1216 
 
-	nuclear_reactor = yes
-	nuclear_reactor_prov = 2999				#新疆羅布泊
-	max_nuclear = 10					#max nuclear reactor size ai will try to get
-	rocket_test = yes
-	rocket_test_prov = 1440				#province to build rocket test site in
-	max_rocket = 10 					#max rocket test site size
+				}		# List of prioritized provinces
+
+	nuclear_reactor 	= yes
+	nuclear_reactor_prov 	= 2999		#新疆羅布泊
+	max_nuclear 		= 10		#max nuclear reactor size ai will try to get
+	rocket_test 		= yes
+	rocket_test_prov 	= 1440		#province to build rocket test site in
+	max_rocket 		= 10 		#max rocket test site size
 }
 garrison = {
 
@@ -520,7 +521,7 @@ front = {
 	# Defensive - More troops in strategically important provinces (IC, Victory Points, Oil, etc)
 	# Offensive - Concentrate more troops where the enemy us weak
 	# Operational Defensive - The fewer avenues of escape, the less troops (to avoid encirclement.)
-	distrib_vs_ai 		= 	Reactive 
+	distrib_vs_ai 		= 	Defensive 
 	distrib_vs_human 	= 	defensive
 
 	# Countries we do not counter-attack for a certain number of days

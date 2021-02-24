@@ -382,73 +382,74 @@ no_exp_forces_to = {
 max_garrison_prop		= 0.4 	# The war-time desired proportion of troops allocated to garrison duty
 min_garrison_prop		= 0.2 	# The war-time minimum proportion of troops allocated to garrison duty
 # NOTE: In areas without fronts, _all_ land units are controlled by the Garrison AI (except forces preparing for an invasion.)
+
 construction = {
-	max_factor			= 0.8		# Proportion of Production IC that should be used for province buildings.
+	max_factor		= 0.8		# Proportion of Production IC that should be used for province buildings.
 
 	AA_batteries	 	= not_atwar	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
-	max_AA_level		= 10			# Don't improve beyond this level.
-	AA_provs			= { }		# List of prioritized provinces
+	max_AA_level		= 10		# Don't improve beyond this level.
+	AA_provs		= { }		# List of prioritized provinces
 
 	coastal_fort 		= not_atwar
-	max_coastal_level	= 10				# Don't improve beyond this level.
+	max_coastal_level	= 10		# Don't improve beyond this level.
 	coastal_fort_provs	= { 
-							2930
-							1202
-							1204
-							2861
-							1215
-							1237
-							1239
-							1313
-							2718		
+					2930
+					1202
+					1204
+					2861
+					1215
+					1237
+					1239
+					1313
+					2718		
 				}		# List of prioritized provinces
 
 	radar_station 		= not_atwar
-	max_radar			= 10			# Don't improve beyond this level.
-	radar_provs			= { }		# List of prioritized provinces
+	max_radar		= 10		# Don't improve beyond this level.
+	radar_provs		= { }		# List of prioritized provinces
 
-	air_base 			= not_atwar
-	max_air_base		= 10			# Don't improve beyond this level.
+	air_base 		= not_atwar
+	max_air_base		= 10		# Don't improve beyond this level.
 	air_base_provs		= { }		# List of prioritized provinces
 
-	naval_base 			= not_atwar
-	max_naval_base		= 10			# Don't improve beyond this level.
-	naval_base_provs		= { 
-							2930
-							1202
-							1204
-							2861
-							1215
-							1237
-							1239
-							1313
-							2718
-							}	# List of prioritized provinces
+	naval_base 		= not_atwar
+	max_naval_base		= 10		# Don't improve beyond this level.
+	naval_base_provs	= { 
+					2930
+					1202
+					1204
+					2861
+					1215
+					1237
+					1239
+					1313
+					2718
+				}		# List of prioritized provinces
 
-	land_fort			= yes
-	max_land_level		= 10				# Don't improve land forts beyond this level.
-	fort_borders = {					# Build land forts along these borders
-			SOV
-			PRK
-			KOR
-			IND
-			CHI
-	}
-	fort_provs		= { }	# List of prioritized provinces
+	land_fort		= yes
+	max_land_level		= 10		# Don't improve land forts beyond this level.
+	fort_borders 		= {		# Build land forts along these borders
+					SOV
+					PRK
+					KOR
+					IND
+					CHI
+				}
+	fort_provs		= { }		# List of prioritized provinces
 
-	ic_at_war			= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
-	force_ic_until		= 1995				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
-	ic_end_year			= 1995				# Stop building IC at the end of year X.
-	IC_provs			= { 
+	ic_at_war		= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	force_ic_until		= 1995		# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	ic_end_year		= 1995		# Stop building IC at the end of year X.
+	IC_provs		= { 
 					 		
-					}		# List of prioritized provinces
+				}		# List of prioritized provinces
 
-	nuclear_reactor = yes
-	nuclear_reactor_prov = 2999				#新疆羅布泊
-	max_nuclear = 10					#max nuclear reactor size ai will try to get
-	rocket_test = yes
-	rocket_test_prov = 1440				#province to build rocket test site in
-	max_rocket = 10 					#max rocket test site size
+	nuclear_reactor 	= yes
+	nuclear_reactor_prov 	= 2999		#新疆羅布泊
+	max_nuclear 		= 10		#max nuclear reactor size ai will try to get
+	rocket_test 		= yes
+	rocket_test_prov	= 1440		#province to build rocket test site in
+	max_rocket 		= 10 		#max rocket test site size
 }
 garrison = {
 

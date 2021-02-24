@@ -159,6 +159,10 @@ province = {
   anti_air = 3
 }
 province = {
+  id = 1377 # 通化
+  infra = { size = 0.8 current_size = 0.8 }
+}
+province = {
   id = 1393 # 新義州
 }
 province = {

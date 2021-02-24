@@ -3,10 +3,10 @@ garrison = {
 	defend_overseas_beaches = no 
 	key_point_prio_mult	 = 0
 	revolt_risk_mult	 = 1
-	beach				 = 100 
+	beach				 = 50
 	reserves			 = 20 
 	capital				 = 50 
-	human_border		 = 0 
+	human_border		 = 20 
 	war_target			 = 50 
 	opposing_alliance	 = 0 
 	claim_threat		 = 0 
@@ -19,51 +19,54 @@ garrison = {
 	country_priorities = { } 
 	province_priorities = { } 
 	area_multiplier = { } 
-	ignore = { 303 } 
+	ignore = {  } 
 }
 military = { 
-	relative_build_scheme = yes 
-	max_batch_peace		 = 360 
-	max_batch_war		 = 180 
+	relative_build_scheme 	= no 
+	max_batch_peace		= 360 
+	max_batch_war		= 180 
 	max_batch_home_front = 180
 	extra_convoys_war = 0.0500 
 	extra_convoys_peace = 0.0500 
 
 #
-	infantry			 = 61
-	cavalry				 = 0
-	motorized			 = 5
-	mechanized			 = 0
-	light_armor			 = 9
-	armor				 = 0
-	paratrooper			 = 0
-	marine				 = 0
-	bergsjaeger			 = 0
-	garrison			 = 0
-	hq					 = 5
-	militia				 = 0
-#
-	multi_role			 = 0
-	interceptor			 = 10
-	strategic_bomber	 = 0
-	tactical_bomber		 = 5
-	naval_bomber		 = 0
-	cas					 = 5
-	transport_plane		 = 0
-	flying_bomb			 = 0
-	flying_rocket		 = 0
-#
-	battleship			 = 0
-	light_cruiser		 = 0
-	heavy_cruiser		 = 0
-	battlecruiser		 = 0
-	destroyer			 = 0
-	carrier				 = 0
-	escort_carrier		 = 0
-	submarine			 = 0
-	#nuclear_submarine	 = 5
-	transport			 = 0
-#
+	infantry		= 25
+	cavalry			= 0
+	motorized		= 15
+	mechanized		= 10
+	light_armor		= 10
+	armor			= 0
+	paratrooper		= 0
+	marine			= 0
+	bergsjaeger		= 0
+	garrison		= 0
+	hq			= 5
+	militia			= 0
+				# 65%
+
+	multi_role		= 7
+	interceptor		= 5
+	strategic_bomber	= 0
+	tactical_bomber		= 5
+	naval_bomber		= 0
+	cas			= 5
+	transport_plane		= 0
+	flying_bomb		= 0
+	flying_rocket		= 0
+				#20
+
+	battleship		= 0
+	light_cruiser		= 5
+	heavy_cruiser		= 0
+	battlecruiser		= 0
+	destroyer		= 5
+	carrier			= 0
+	escort_carrier		= 0
+	submarine		= 0
+	#nuclear_submarine	= 5
+	transport		= 3
+				# 13%
+
 	artillery			 = 25
 	sp_artillery		 = 0
 	rocket_artillery	 = 0
@@ -453,7 +456,7 @@ front = {
 	enemy_reinf_days 		= 6 
 	reserve_prop 			= 0.1 
 	panic_ratio_vs_ai 		= 1.5 
-	panic_ratio_vs_human 	= 1.5 
+	panic_ratio_vs_human 		= 1.5 
 	base_attack_odds 		= 1.3 
 	min_attack_odds 		= 1.1 
 	max_attack_odds 		= 3.0 
@@ -466,10 +469,62 @@ front = {
 		294 = 100 #Copenhague
 	}
 } 
-construction = { 
-	max_factor = 0 
-} 
+construction = {
+	max_factor		= 0.8		# Proportion of Production IC that should be used for province buildings.
 
+	AA_batteries	 	= yes		# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	max_AA_level		= 10		# Don't improve beyond this level.
+	AA_provs		= { }		# List of prioritized provinces
+
+	coastal_fort 		= yes		
+	max_coastal_level	= 10		# Don't improve beyond this level.
+	coastal_fort_provs	= { 
+		
+				}		# List of prioritized provinces
+
+	radar_station 		= yes
+	max_radar		= 10		# Don't improve beyond this level.
+	radar_provs		= { }		# List of prioritized provinces
+
+	air_base 		= yes
+	max_air_base		= 10		# Don't improve beyond this level.
+	air_base_provs		= { }		# List of prioritized provinces
+
+	naval_base 		= yes
+	max_naval_base		= 10		# Don't improve beyond this level.
+	naval_base_provs	= { 
+					2930
+					1202
+					1204
+					2861
+					1215
+					1237
+					1239
+					1313
+					2718
+				}	# List of prioritized provinces
+
+	land_fort		= no
+	max_land_level		= 8				# Don't improve land forts beyond this level.
+	fort_borders = {					# Build land forts along these borders
+
+	}
+	fort_provs		= { }	# List of prioritized provinces
+
+	ic_at_war		= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	force_ic_until		= 1995		# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	ic_end_year		= 1995		# Stop building IC at the end of year X.
+	IC_provs		= { 
+					 		
+				}		# List of prioritized provinces
+
+	nuclear_reactor 	= no
+#	nuclear_reactor_prov 	= 2999				#
+	max_nuclear 		= 10				#max nuclear reactor size ai will try to get
+	rocket_test 		= no
+#	rocket_test_prov 	= 1440				#province to build rocket test site in
+	max_rocket		 = 10 				#max rocket test site size
+}
 ###################################
 # Air bombardment and defense /Lothos
 ###################################

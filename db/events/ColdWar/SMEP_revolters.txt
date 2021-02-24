@@ -2177,9 +2177,10 @@ event = {
 			event = 8228043
 			event = 1975430
 		}
+		NOT = { local_flag = setup }
 	}
 	random = no
-
+	persistent = yes
 	country = U72
 
 	name = "國家建立"
@@ -2196,6 +2197,7 @@ event = {
 		command = { type = free_ic value = 6 }
 		command = { type = free_energy value = 12 }
 		command = { type = free_metal value = 6 }
+		command = { type = local_setflag which = setup }
 		# command = { type = free_oil value = 6 }
 		command = { type = free_rare_materials value = 4 }
 		command = { type = province_keypoints which = 1333 value = -1 } # 峴港

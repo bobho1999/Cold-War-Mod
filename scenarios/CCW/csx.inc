@@ -33,7 +33,7 @@ country = {
   ownedprovinces         = { 1209 1225 2820 2823 2824 2825 2832 2834 2835 2836 1208 2814 1439 2813 2812 2811 2830 2833 }
   controlledprovinces    = { 1209 1225 2820 2823 2824 2825 2832 2834 2835 2836 1208 2814 1439 2813 2812 2811 2830 2833 }
 
-  techapps               = { 1010 1020 8000 4400 5050 5180 5310 5010 2280 1170 1180 1030 6500 6510 6530 6590 6560 6030 6120 6110 6130 74900 66540 66510 66500 66520 66530 2290 1190 1040 1890 2720 }
+  techapps               = { 1010 1020 8000 4400 5050 5180 5310 5010 2280 1170 1180 1030 6500 6510 6530 6590 6560 6030 6120 6110 6130 74900 66540 66510 66500 66520 66530 2290 1190 1040 1890 2720 1900 2800 1910 2810 2300 6140 }
 
   policy = {
     date              = { year = 0 month = january day = 0 }
@@ -66,14 +66,14 @@ country = {
     }
     division = {
       id             = { type = 22002 id = 13 }
-      name           = "暫?第37师（晋军）"
+      name           = "陆军暫編第37师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 20 }
-      name           = "暫?第42师（晋军）"
+      name           = "陆军暫編第42师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -85,21 +85,21 @@ country = {
     location = 2834
     division = {
       id             = { type = 22002 id = 22 }
-      name           = "暫?第40师（晋军） "
+      name           = "陆军暫編第40师（晋军） "
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 23 }
-      name           = "暫?第46师（晋军）"
+      name           = "陆军暫編第46师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 24 }
-      name           = "暫?第47师（晋军）"
+      name           = "陆军暫編第47师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -118,14 +118,14 @@ country = {
     }
     division = {
       id             = { type = 22002 id = 16 }
-      name           = "暫?第38师（晋军）"
+      name           = "陆军暫編第38师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 25 }
-      name           = "暫?第46师（晋军）"
+      name           = "陆军暫編第46师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -144,14 +144,14 @@ country = {
     }
     division = {
       id             = { type = 22002 id = 7 }
-      name           = "暫?第44师（晋军）"
+      name           = "陆军暫編第44师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 26 }
-      name           = "暫?第45师（晋军）"
+      name           = "陆军暫編第45师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -189,14 +189,14 @@ country = {
     }
     division = {
       id             = { type = 22002 id = 30 }
-      name           = "暫?第49师（晋军） "
+      name           = "陆军暫編第49师（晋军） "
       type           = militia
       model          = 4
       experience     = 15
     }
     division = {
       id             = { type = 22002 id = 31 }
-      name           = "暫?第50师（晋军）"
+      name           = "陆军暫編第50师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -241,7 +241,7 @@ country = {
     }
     division = {
       id             = { type = 22002 id = 46 }
-      name           = "暫?第39师（晋军）"
+      name           = "陆军暫編第39师（晋军）"
       type           = militia
       model          = 4
       experience     = 15
@@ -277,11 +277,11 @@ country = {
   }
   landunit = {
     id       = { type = 22002 id = 508 }
-    name     = "歸?城防 "
+    name     = "歸綏城防 "
     location = 1208
     division = {
       id             = { type = 22002 id = 608 }
-      name           = "歸?城防"
+      name           = "歸綏城防" #歸綏
       type           = garrison
       model          = 0
       extra          = engineer
@@ -308,17 +308,17 @@ country = {
   }
   landunit = {
     id       = { type = 22002 id = 39 }
-    name     = "?遠省保安司令部"
+    name     = "綏遠省保安司令部"  #綏遠
     location = 1208
     division = {
       id             = { type = 22002 id = 47 }
-      name           = "?遠省保安團"
+      name           = "綏遠省保安團"
       type           = militia
       model          = 3
     }
     division = {
       id             = { type = 22002 id = 49 }
-      name           = "?遠省民防團"
+      name           = "綏遠省民防團"
       type           = militia
       model          = 3
     }

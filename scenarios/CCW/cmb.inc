@@ -6,7 +6,7 @@ country = {
   tag                = CMB
   puppet             = FRA
   intrinsic_gov_type = paternal_autocrat
-  capital            = 1340 # ½π?
+  capital            = 1340 # ½πί…
   manpower           = 50
   research_mod           = 1
   # Resource Reserves
@@ -21,7 +21,7 @@ country = {
   ownedprovinces         = { 1339 1340 3717 3718 3719 3720 3721 }
   controlledprovinces    = { 1339 1340 3717 3718 3719 3720 3721 }
 
-  techapps               = { 7810 5310 78100 1010 1020 1030 1040 }
+  techapps               = { 7810 5310 78100 1010 1020 1030 1040 1890 2720 }
 
   policy = {
     date              = { year = 0 month = january day = 0 }

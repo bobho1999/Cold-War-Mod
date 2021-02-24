@@ -27,7 +27,7 @@ event = {
 }
 
 ######################################################
-## 杜鲁门主义
+## 杜魯門主義
 ######################################################
 event = {
     	id = 135001
@@ -36,7 +36,7 @@ event = {
 	trigger = {
 		headofstate = 6034 # Truman
 	}
-    	name = " 杜鲁门主义 "
+    	name = " 杜魯門主義 "
     	desc = "1947年3月12日，時任美國總統杜魯門在
 		致國會的關於援助希臘和土耳其的咨文
 		中，提出以“遏制共產主義”作為國家
@@ -56,7 +56,6 @@ event = {
 #		command = { type = oilpool value = -10000 }
 #		command = { type = money value = -2000 }
     	}
-    
 }
 
 event = {
@@ -66,6 +65,7 @@ event = {
 	trigger = {
 		headofstate = 6034 # Truman
     		government = democratic
+		NOT = { flag = Ongoing_vote }
 	}
     	name = "1947年國家安全法案 "
     	desc = "1947年7月26日，國家安全法案在國會表決
@@ -87,9 +87,6 @@ event = {
     	action_a = {
         	name = "簽署 "
 		ai_chance = 100
-		command = { type = trigger which = 135002 value = }
-		command = { type = trigger which = 135003 }
-
 		command = { type = max_organization which = land value = 3 }
 		command = { type = max_organization which = naval value = 3 }
 		command = { type = max_organization which = air value = 5 }
@@ -117,6 +114,8 @@ event = {
 	trigger = {
 		headofstate = 6034 # Truman
     		government = democratic
+		NOT = { flag = Ongoing_vote }
+		event = 135010 # Strike
 	}
     	name = "塔夫特-哈特萊法案 "
     	desc = " "
@@ -133,7 +132,6 @@ event = {
 		ai_chance = 100
 		command = { type = dissent value = -2 }
     		command = { type = domestic which = political_left value = 1 }
-		command = { type = setflag which = US_Presidential_Veto }
 		command = { type = trigger which = 1350001 }
     	}
     	action_b = {
@@ -175,11 +173,240 @@ event = {
 		command = { type = clrflag which = Override_Veto }
     	}
 }
+
+event = {
+    	id = 135005
+    	random = no
+    	country = USA
+	trigger = {
+    		headofstate = 6034
+    		government = democratic
+#		dissent = 3
+	}
+    	name = "1946年期中選舉 "
+    	desc = " "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 4 month = november year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "共和黨多數 "
+		ai_chance = 0
+		command = { type = money value = -10 }
+		command = { type = dissent value = -1 }
+    		command = { type = domestic which = political_left value = -1 }
+		command = { type = setflag which = GOP_USCongress }
+		command = { type = clrflag which = Dem_USCongress }
+    	}
+}
+
+event = {
+    	id = 135006
+    	random = no
+    	country = USA
+	trigger = {
+    		headofstate = 6034
+    		government = democratic
+		NOT = { dissent = 3 }
+	}
+    	name = "1946年期中選舉 "
+    	desc = " "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+#  	date = { day = 4 month = november year = 1946 }
+#  	offset = 1
+# 	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "民主黨多數 "
+		ai_chance = 0
+		command = { type = money value = -10 }
+		command = { type = dissent value = -1 }
+    		command = { type = domestic which = political_left value = 1 }
+		command = { type = setflag which = Dem_USCongress }
+		command = { type = clrflag which = GOP_USCongress }
+    	}
+}
+
+event = {
+    	id = 135007
+    	random = no
+    	country = USA
+	trigger = {
+    		
+	}
+    	name = "罷工潮(I) "
+    	desc = "United Auto Workers (UAW) strike of 1945–1946 225,000 United Auto Workers "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 20 month = november year = 1945 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "答應訴求 "
+		ai_chance = 100
+		command = { type = money value = -250 }
+		command = { type = supplies value = -2500 }
+		command = { type = dissent value = 5 }
+    	}
+    	action_b = {
+        	name = "隨他去 "
+		ai_chance = 0
+		command = { type = money value = -100 }
+		command = { type = supplies value = -1000 }
+		command = { type = dissent value = 10 }
+    	}
+}
+
+event = {
+    	id = 135008
+    	random = no
+    	country = USA
+	trigger = {
+    		
+	}
+    	name = "罷工潮(II) "
+    	desc = "174,000 electric workers
+		93,000 meatpackers
+		750,000 steel workers "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 10
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "答應訴求 "
+		ai_chance = 100
+		command = { type = money value = -1000 }
+		command = { type = supplies value = -10000 }
+		command = { type = dissent value = 15 }
+    	}
+    	action_b = {
+        	name = "隨他去 "
+		ai_chance = 0
+		command = { type = money value = -200 }
+		command = { type = supplies value = -2000 }
+		command = { type = dissent value = 25 }
+    	}
+}
+
+event = {
+    	id = 135009
+    	random = no
+    	country = USA
+	trigger = {
+    		
+	}
+    	name = "罷工潮(III) "
+    	desc = "340,000 coal miners "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 1 month = april year = 1946 }
+  	offset = 10
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "答應訴求 "
+		ai_chance = 100
+		command = { type = money value = -250 }
+		command = { type = supplies value = -2500 }
+		command = { type = dissent value = 6 }
+    	}
+    	action_b = {
+        	name = "隨他去 "
+		ai_chance = 0
+		command = { type = money value = -100 }
+		command = { type = supplies value = -1000 }
+		command = { type = dissent value = 12 }
+    	}
+}
+
+event = {
+    	id = 135010
+    	random = no
+    	country = USA
+	trigger = {
+    		
+	}
+    	name = "罷工潮(IV) "
+    	desc = "250,000 railroad engineers and trainmen nationwide "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 1 month = may year = 1946 }
+  	offset = 10
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "答應訴求 "
+		ai_chance = 100
+		command = { type = money value = -250 }
+		command = { type = supplies value = -2500 }
+		command = { type = dissent value = 5 }
+    	}
+    	action_b = {
+        	name = "隨他去 "
+		ai_chance = 0
+		command = { type = money value = -100 }
+		command = { type = supplies value = -1000 }
+		command = { type = dissent value = 10 }
+    	}
+}
+
+event = {
+    	id = 135013
+    	random = no
+    	country = USA
+	trigger = {
+    		
+	}
+    	name = "罷工潮(VII) "
+    	desc = "120,000 miners, rail and steel workers in the Pittsburgh region "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 1 month = december year = 1946 }
+  	offset = 10
+  	deathdate = { day = 30 month = december year = 1947 }
+
+    	action_a = {
+        	name = "答應訴求 "
+		ai_chance = 100
+		command = { type = money value = -500 }
+		command = { type = supplies value = -5000 }
+		command = { type = dissent value = 5 }
+    	}
+    	action_b = {
+        	name = "隨他去 "
+		ai_chance = 0
+		command = { type = money value = -100 }
+		command = { type = supplies value = -1000 }
+		command = { type = dissent value = 10 }
+    	}
+}
+
+
 ########################
 #提高社会保障
 ########################
 event = {
-  id = 1350005
+  id = 1350009
   random = no
   country = USA
   
@@ -761,7 +988,7 @@ event = {
 	date = { day = 2 month = november year = 1948 }
 
 	action_a = {
-		name = "Harry S. Truman (Dem.)"
+		name = "哈瑞·S·杜魯門 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -776,7 +1003,7 @@ event = {
 		command = { type = sleepevent which = 900145 }
 	}
 	action_b = {
-		name = "Thomas E. Dewey (Rep.)"
+		name = "湯瑪斯·E·杜威 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -814,7 +1041,7 @@ event = {
 	date = { day = 2 month = november year = 1948 }
 
 	action_a = {
-		name = "Thomas E. Dewey (Rep.)"
+		name = "湯瑪斯·E·杜威 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -829,7 +1056,7 @@ event = {
 		command = { type = sleepevent which = 900080 }
 	}
 	action_b = {
-		name = "Harry S. Truman (Dem.)"
+		name = "哈瑞·S·杜魯門 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -869,7 +1096,7 @@ event = {
 	date = { day = 4 month = november year = 1952 }
 
 	action_a = {
-		name = "Dwight D. Eisenhower (Rep.)"
+		name = "德懷特·D·艾森豪 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -881,7 +1108,7 @@ event = {
 		command = { type = ministerofintelligence which = 6228 }
 	}
 	action_b = {
-		name = "Adlai Stevenson (Dem.)"
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -916,7 +1143,7 @@ event = {
 	date = { day = 4 month = november year = 1952 }
 
 	action_a = {
-		name = "Adlai Stevenson (Dem.)"
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -928,7 +1155,7 @@ event = {
 		command = { type = ministerofintelligence which = 6229 }
 	}
 	action_b = {
-		name = "Dwight D. Eisenhower (Rep.)"
+		name = "德懷特·D·艾森豪 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -965,7 +1192,7 @@ event = {
 	date = { day = 4 month = november year = 1952 }
 
 	action_a = {
-		name = "Thomas E. Dewey (Rep.)"
+		name = "湯瑪斯·E·杜威 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -977,7 +1204,7 @@ event = {
 		command = { type = ministerofintelligence which = 6128 }
 	}
 	action_b = {
-		name = "Adlai Stevenson (Dem.)"
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -1012,7 +1239,7 @@ event = {
 	date = { day = 4 month = november year = 1952 }
 
 	action_a = {
-		name = "Adlai Stevenson (Dem.)"
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -1024,7 +1251,7 @@ event = {
 		command = { type = ministerofintelligence which = 6229 }
 	}
 	action_b = {
-		name = "Douglas MacArthur (Rep.)"
+		name = "道格拉斯·麥克阿瑟 (共和黨)"
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -1057,7 +1284,7 @@ event = {
 
 	action_a = {
 		ai_chance = 85
-		name = "Dwight D. Eisenhower (Rep.)"
+		name = "德懷特·D·艾森豪 (共和黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofstate which = 6208 }
@@ -1069,7 +1296,7 @@ event = {
 		}	
 	action_b = {
 		ai_chance = 15
-		name = "Adlai Stevenson (Dem.)"
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
 		command = { type = headofstate which = 6209 }
@@ -1102,7 +1329,7 @@ event = {
 
 	action_a = {
 		ai_chance = 70
-		name = "John F. Kennedy (Dem.)"
+		name = "約翰·F·甘迺迪 (民主黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
 		command = { type = headofstate which = 6242 }
@@ -1114,7 +1341,7 @@ event = {
 		}	
 	action_b = {
 		ai_chance = 30
-		name = "Richard M. Nixon (Rep.)"
+		name = "理察·M·尼克森 (共和黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofstate which = 6241 }
@@ -1143,16 +1370,17 @@ event = {
 				flag = DEM_USCongress
 			}
 		}
+	}
 
-	name = "朝小野大"
-	desc = ""
+	name = "分裂政府 "
+	desc = " "
 
 	date = { day = 1 month = january year = 1945 }
 	offset = 1
 	deathdate = { day = 5 month = november year = 1960 }
 
 	action_a = {
-		name = "OK"
+		name = "朝小野大 "
 		command = { type = setflag which = US_Divided_Gov }	
 	}	
 }
@@ -1164,11 +1392,12 @@ event = {
 	style = 0
 
 	name = "法案遭否決"
-	desc = ""
+	desc = " "
 
 	action_a = {
 		name = "覆議法案"
-#		command = { type = setflag which = US_Presidential_Veto }	
+		command = { type = setflag which = US_Presidential_Veto }
+		command = { type = setflag which = Ongoing_vote }	
 		command = { type = dissent value = 10 }
 	}	
 }
@@ -1177,7 +1406,7 @@ event = {
 event = {
 	id = 1350002
 	random = no
-	country = USA
+	country = USA #暫定
 	style = 0
 
 	trigger = {
@@ -1187,7 +1416,9 @@ event = {
 	}
 
 	name = "覆議法案"
-	desc = ""
+	desc = "分裂政府&不滿>=5:
+		推翻:80%
+		撤回:20%"
 
   	date = { day = 1 month = january year = 1945 }
   	offset = 1
@@ -1197,6 +1428,7 @@ event = {
 		name = "推翻否決"
 		ai_chance = 80
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = setflag which = Override_Veto }
 		command = { type = dissent value = -5 }	
 	}
@@ -1204,6 +1436,7 @@ event = {
 		name = "撤回法案"
 		ai_chance = 20
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = dissent value = -5 }		
 	}	
 }
@@ -1212,7 +1445,7 @@ event = {
 event = {
 	id = 1350003
 	random = no
-	country = USA
+	country = USA #暫定
 	style = 0
 
 	trigger = {
@@ -1222,7 +1455,9 @@ event = {
 	}
 
 	name = "覆議法案"
-	desc = ""
+	desc = "分裂政府&不滿<5:
+		推翻:20%
+		撤回:80%"
 
   	date = { day = 1 month = january year = 1945 }
   	offset = 1
@@ -1232,12 +1467,14 @@ event = {
 		name = "撤回法案"
 		ai_chance = 80
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = dissent value = -5 }		
 	}
 	action_b = {
 		name = "推翻否決"
 		ai_chance = 20
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = setflag which = Override_Veto }	
 		command = { type = dissent value = -5 }	
 	}		
@@ -1247,7 +1484,7 @@ event = {
 event = {
 	id = 1350004
 	random = no
-	country = USA
+	country = USA #暫定
 	style = 0
 
 	trigger = {
@@ -1257,7 +1494,9 @@ event = {
 	}
 
 	name = "覆議法案"
-	desc = ""
+	desc = "完全執政&不滿>=10:
+		推翻:70%
+		撤回:30%"
 
   	date = { day = 1 month = january year = 1945 }
   	offset = 1
@@ -1267,6 +1506,7 @@ event = {
 		name = "推翻否決"
 		ai_chance = 70
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = setflag which = Override_Veto }	
 		command = { type = dissent value = -5 }	
 	}
@@ -1274,6 +1514,7 @@ event = {
 		name = "撤回法案"
 		ai_chance = 30
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = dissent value = -5 }		
 	}	
 }
@@ -1282,7 +1523,7 @@ event = {
 event = {
 	id = 1350005
 	random = no
-	country = USA
+	country = USA #暫定
 	style = 0
 
 	trigger = {
@@ -1292,7 +1533,9 @@ event = {
 	}
 
 	name = "覆議法案"
-	desc = ""
+	desc = "完全執政&不滿<10:
+		推翻:10%
+		撤回:90% "
 
   	date = { day = 1 month = january year = 1945 }
   	offset = 1
@@ -1302,12 +1545,14 @@ event = {
 		name = "撤回法案"
 		ai_chance = 80
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = dissent value = -5 }		
 	}
 	action_b = {
 		name = "推翻否決"
 		ai_chance = 20
 		command = { type = clrflag which = US_Presidential_Veto }
+		command = { type = clrflag which = Ongoing_vote }
 		command = { type = setflag which = Override_Veto }
 		command = { type = dissent value = -5 }		
 	}		
@@ -1331,9 +1576,10 @@ event = {
 				flag = GOP_USCongress
 			}
 		}
+	}
 
 	name = "完全執政 "
-	desc = ""
+	desc = " "
 
 	date = { day = 1 month = january year = 1945 }
 	offset = 1

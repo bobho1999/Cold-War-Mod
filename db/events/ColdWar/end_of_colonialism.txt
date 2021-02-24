@@ -4525,8 +4525,8 @@ event = {
 	country = ENG
 	persistent = yes
 
-	name = "¾’µéµÄªšÁ¢"
-	desc = EVT_8020212_DESC
+	name = "EVT_127_NAME"
+	desc = "EVT_127_DESC"
 #	picture = "nwo\independence_of_burma"
 	style = 1
 
@@ -4540,25 +4540,27 @@ event = {
 	deathdate = { day = 29 month = december year = 1999 }
 
 	action_a = {
-		name = EVT_8020212_A
+		name = EVT_127_ACT
 		ai_chance = 100
 		command = { type = end_mastery which = BUR }
+		command = { type = setflag which = event_8214004 }
 	}
 	
 	action_b = {
-		name = EVT_8020212_B
+		name = "EVT_127_ACTB" 
 		ai_chance = 0
 		command = { type = dissent value = 5 }
 		command = { type = belligerence value = 7 }
+		command = { type = setflag which = event_8214004 }
 	}
 
-	action_c = {
-		name = EVT_8020212_C
-		ai_chance = 0
-		command = { type = setflag which = event_8214004 }
-		command = { type = dissent value = 10 }
-		command = { type = belligerence value = 15 }
-	}
+#	action_c = {
+#		name = EVT_8020212_C
+#		ai_chance = 0
+#		command = { type = setflag which = event_8214004 }
+#		command = { type = dissent value = 10 }
+#		command = { type = belligerence value = 15 }
+#	}
 }
 
 event = {
@@ -4591,7 +4593,6 @@ event = {
 		atwar = no
 		NOT = {
 			exists = BUR
-			exists = GER
 		}
 	}
 

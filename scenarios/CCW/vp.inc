@@ -312,7 +312,7 @@ province = { id = 1269 points = 2 } # 西安
 province = { id = 1271 points = 1 } # 延安
 province = { id = 1272 points = 1 } # 榆林
 province = { id = 1273 points = 1 } # 銀川
-province = { id = 1277 points = 1 } # 天水
+#province = { id = 1277 points = 1 } # 天水
 province = { id = 1280 points = 3 } # 重慶市
 province = { id = 1281 points = 1 } # 雅安
 province = { id = 1282 points = 1 } # 康定
@@ -460,7 +460,7 @@ province = { id = 1567 points = 1 } #
 province = { id = 1572 points = 1 } #
 province = { id = 1574 points = 1 } #
 
-
+################紐西蘭新增################
 province = { id = 1871 points = 1 } #
 province = { id = 1872 points = 1 } #
 

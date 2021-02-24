@@ -156,7 +156,7 @@ country = {
   ownedprovinces         = { 2973 2972 1282 2977 2975 1281 1220 1235 1236 1237 2608 2622 2623 2625 2626 2627 2628 2629 2630 2795 1218 2607 2617 1217 2610 1222 2652 2614 2650 1875 1221 1884 1885 2649 2648 1233 2647 2646 2616 1234 2645 2633 2634 2644 1238 2631 2632 2635 2642 2643 2636 2637 2639 2638 1241 1240 2640 2641 2996 1251 2693 2694 2695 1242 2696 2691 2697 2692 2698 2699 1252 2688 2690 2689 1254 2686 2687 1250 2700 1255 1256 2685 2683 2684 2682 2680 2681 1260 2670 2671 1261 1257 2679 2678 2676 1259 2672 2677 2674 1253 1232 2660 2659 2661 1886 1266 1231 2667 2666 2668 2669 1264 2665 2664 2663 2662 2656 2657 2653 2658 2655 2872 1203 2673 1205 1204 2873 2871 1810 2866 1210 2870 2793 2869 1211 2868 1280 2766 1265 2767 2773 1263 1889 2768 2769 2770 2771 2772 1360 1279 2780 1888 2651 1361 2775 2774 2776 2777 2778 1890 2779 2976 3000 1364 1262 1363 2744 2745 1365 2737 2738 2740 2743 2741 2742 1244 2704 2703 2701 1243 2702 1246 1245 2705 1247 2706 2606 3590 3592 3594 1313 2714 1249 1248 2708 1312 2711 2707 1325 2716 2739 1318 2715 2713 2712 1321 2717 2718 1223 1228 2846 2849 1876 2845 2847 1230 2848 1227 2840 2843 2844 1229 2839 1224 2838 1269 1887 2786 2784 1268 2783 1267 2782 2781 1278 2788 2787 1270 1275 1215 1216 2855 2853 2854 1430 1431 1433 1435 1445 1446 1447 2957 2965 2978 2979 2980 2981 2985 2986 2987 2997 2998 2999 3470 3471 3472 1322 1323 1324 2605 2990 2991 2995 2797 2800 1276 2798 2799 1277 1274 3591 3593 1320 3481 2962 }
   controlledprovinces    = { 2973 2972 1282 2977 2975 1281 1220 1235 1236 1237 2608 2622 2623 2625 2626 2627 2628 2629 2630 2795 1218 2607 2617 1217 2610 1222 2652 2614 2650 1875 1221 1884 1885 2649 2648 1233 2647 2646 2616 1234 2645 2633 2634 2644 1238 2631 2632 2635 2642 2643 2636 2637 2639 2638 1241 1240 2640 2641 2996 1251 2693 2694 2695 1242 2696 2691 2697 2692 2698 2699 1252 2688 2690 2689 1254 2686 2687 1250 2700 1255 1256 2685 2683 2684 2682 2680 2681 1260 2670 2671 1261 1257 2679 2678 2676 1259 2672 2677 2674 1253 1232 2660 2659 2661 1886 1266 1231 2667 2666 2668 2669 1264 2665 2664 2663 2662 2656 2657 2653 2658 2655 2872 1203 2673 1205 1204 2873 2871 1810 2866 1210 2870 2793 2869 1211 2868 1280 2766 1265 2767 2773 1263 1889 2768 2769 2770 2771 2772 1360 1279 2780 1888 2651 1361 2775 2774 2776 2777 2778 1890 2779 2976 3000 1364 1262 1363 2744 2745 1365 2737 2738 2740 2743 2741 2742 1244 2704 2703 2701 1243 2702 1246 1245 2705 1247 2706 2606 3590 3592 3594 1313 2714 1249 1248 2708 1312 2711 2707 1325 2716 2739 1318 2715 2713 2712 1321 2717 2718 1223 1228 2846 2849 1876 2845 2847 1230 2848 1227 2840 2843 2844 1229 2839 1224 2838 1269 1887 2786 2784 1268 2783 1267 2782 2781 1278 2788 2787 1270 1275 1215 1216 2855 2853 2854 1430 1431 1433 1435 1445 1446 1447 2957 2965 2978 2979 2980 2981 2985 2986 2987 2997 2998 2999 3470 3471 3472 1322 1323 1324 2605 2990 2991 2995 2797 2800 1276 2798 2799 1277 1274 3591 3593 1320 3481 2962 }
 
-  techapps               = { 1010 8000 1020 1030 1040 5050 5080 2280 2290 2300 5310 5010 5180 5660 5680 5670 9700 9710 9010 9020 9030 4120 4130 4010 4020 1050 1170 1180 1190 1890 8010 6560 6030 6120 6110 6130 6140 6150 74900 66540 66520 66530 66510 66500 2720 1900 2800 }
+  techapps               = { 1010 8000 1020 1030 1040 5050 5080 2280 2290 2300 5310 5010 5180 5660 5680 5670 9700 9710 9010 9020 9030 4120 4130 4010 4020 1050 1170 1180 1190 1890 8010 6560 6030 6120 6110 6130 6140 6150 74900 66540 66520 66530 66510 66500 2720 1900 2800 6170 1910 2810 }
 
   policy = {
     date              = { year = 0 month = january day = 0 }
@@ -3196,7 +3196,27 @@ country = {
       locked         = yes
     }
   }
-
+  landunit = {
+    id       = { type = 11616 id = 434 }
+    name     = "潼關警備司令部"
+    location = 1887
+    division = {
+      id             = { type = 11616 id = 435 }
+      name           = "潼關保安大队"
+      type           = militia
+      model          = 4
+      extra          = none
+      brigade_model  = 0
+      locked         = yes
+    }
+    division = {
+      id             = { type = 11616 id = 436 }
+      name           = "潼關員警大队"
+      type           = militia
+      model          = 4
+      locked         = yes
+    }
+  }
   navalunit = {
     id       = { type = 22000 id = 413 }
     name     = "中华民國第1舰队 "
@@ -3343,44 +3363,44 @@ country = {
     }
   }
 
-  landdivision = { dormant = yes id = { type = 11616 id = 610 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 611 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 612 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 613 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 614 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 615 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 616 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 617 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 618 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 619 } name = "大西南防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 620 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 621 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 622 } name = "江陰要塞"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 623 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 624 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 625 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 626 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 627 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 628 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 629 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 630 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 631 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 632 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 633 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 634 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 635 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 636 } name = "長江防線"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 637 } name = "長江防線"  type = garrison model = 1 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 610 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 611 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 612 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 613 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 614 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 615 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 616 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 617 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 618 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 619 } name = "大西南防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 620 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 621 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 622 } name = "江陰要塞"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 623 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 624 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 625 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 626 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 627 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 628 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 629 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 630 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 631 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 632 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 633 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 634 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 635 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 636 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 637 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 638 } name = "金門防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 639 } name = "瓊北要塞"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 640 } name = "舟山群島防衛司令部"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 641 } name = "澎湖防衛司令部"  type = garrison model = 1 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 640 } name = "舟山群島防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 641 } name = "澎湖防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 642 } name = "吳淞要塞"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 643 } name = "台北守備队"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 644 } name = "高雄守備队"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 645 } name = "台南守備队"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 646 } name = "台中守備队"  type = garrison model = 1 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 647 } name = "花蓮守備队"  type = garrison model = 1 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 643 } name = "台北守備队"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 644 } name = "高雄守備队"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 645 } name = "台南守備队"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 646 } name = "台中守備队"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 647 } name = "花蓮守備队"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 404 } name = "錦州保安大队"  type = militia model = 4 extra = none brigade_model = 0 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 405 } name = "錦州員警大队"  type = militia model = 4 extra = none brigade_model = 0 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 412 } name = "瀋陽保安大队"  type = militia model = 4 extra = none brigade_model = 0 locked = yes } 
