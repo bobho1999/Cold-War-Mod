@@ -31,7 +31,7 @@ event = {
        		name = "ӡˢ"
        		command = { type = dissent value = 1 }
 		command = { type = resource which = money value = 500 }
-		command = { type = resource which = supplies value = 800 }
+		command = { type = resource which = supplies value = 600 }
        		command = { type = industrial_modifier which = total value = -0.5 } #-1
     	}
     	action_b = {
@@ -70,7 +70,7 @@ event = {
        		name = "ӡˢ"
        		command = { type = dissent value = 1 }
 		command = { type = resource which = money value = 500 }
-		command = { type = resource which = supplies value = 800 }
+		command = { type = resource which = supplies value = 600 }
        		command = { type = industrial_modifier which = total value = -0.5 } 
     	}
     	action_b = {

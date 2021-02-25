@@ -23,7 +23,7 @@ country = {
   money          = 0
 
   diplomacy = {
-    relation = { tag = CHC value = 0 access = yes }
+
   }
 
   nationalprovinces      = { 4135 4136 6595 6596 6597 6598 6599 6600 6601 6602 6603 6604 6605 }

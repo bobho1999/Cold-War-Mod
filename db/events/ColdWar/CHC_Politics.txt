@@ -153,7 +153,7 @@ event = {
     		control = { province = 1235 data = CHC }
     		owned = { province = 1205 data = CHC }
     		event = 20413
-   		not = { exists = CXB }
+#  		not = { exists = CXB }
   	} 
 
   	date = { day = 0 month = january year = 1947 }

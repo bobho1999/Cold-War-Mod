@@ -6,7 +6,8 @@ event = {
 	random = no
 	country = CHC
 	trigger = {
-		event = 942581
+		event = 19540
+		atwar = no
 		not = { exists = CXB }
 		}
 
@@ -19,271 +20,12 @@ event = {
 	offset = 10
 	deathdate = { day = 30 month = december year = 1976 }
 
-  action_a = {
-    name = "这是大有好处的 "
+  	action_a = {
+    		name = "这是大有好处的 "
 		command = { type = delete_unit which = -1 when = 100  }
-    command = { type = morale which = land value = 3 }
-    command = { type = morale which = naval value = 3 }
-    command = { type = morale which = air value = 3 }
-                command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-		command = { type = delete_unit which = -1 }
-
+    		command = { type = morale which = land value = 3 }
+    		command = { type = morale which = naval value = 3 }
+    		command = { type = morale which = air value = 3 }
   }
 }
 
@@ -369,9 +111,9 @@ event = {
   action_a = {
     name = "中国人民解放军第38集团军 "
     command = { type = add_corps which = "中国人民解放军第38集团军 " value = land where = 1210 }
-    command = { type = add_division which = "“万岁王牌”中国人民解放军第112师 " value = bergsjaeger  when = 0 where = artillery  }
-    command = { type = add_division which = "中国人民解放军第113师 " value = bergsjaeger  when = 0 where = artillery }
-    command = { type = add_division which = "中国人民解放军第114师 " value = bergsjaeger  when = 0 where = artillery }
+    command = { type = add_division which = "“万岁王牌”中国人民解放军第112师 " value = bergsjaeger  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第113师 " value = bergsjaeger  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第114师 " value = bergsjaeger  when = 6 where = artillery }
   }
 }
 

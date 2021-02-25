@@ -689,6 +689,12 @@ garrison = {
 		300 = 1.5
 		301 = 1.5
 		470 = 1.5
+		#Soviet Homeland
+		212 = 1.5
+		238 = 1.5
+		197 = 1.5
+		219 = 1.5
+		233 = 1.5
 		#Finnish & Norway border
 		145 = 1.75
 		146 = 1.75
@@ -753,6 +759,7 @@ garrison = {
 		CHC = -1
 		CHI = -1
 		JAP = -1
+		DFR = 
 	}
 
 	# Specific provinces
@@ -815,7 +822,10 @@ garrison = {
 		1372 = 80
 	}
 	
-	ignore = { }
+	ignore = {
+		3639
+		3638		
+	}
 
 	key_point_prio_mult		= 0.300	# Value * key point value in a province = prio for that province
 }

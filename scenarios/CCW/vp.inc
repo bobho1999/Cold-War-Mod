@@ -144,8 +144,8 @@ province = { id = 588 points = 1 } # 渥太华
 province = { id = 589 points = 1 } # 多伦多
 province = { id = 595 points = 1 } # 康科德（新罕布什尔）
 province = { id = 600 points = 1 } # 波士顿
-province = { id = 602 points = 1 } # 纽约
-province = { id = 606 points = 1 } # 华盛顿·哥伦比亚特区
+province = { id = 602 points = 15 } # 纽约
+province = { id = 606 points = 50 } # 华盛顿·哥伦比亚特区
 province = { id = 608 points = 1 } # 费城
 province = { id = 613 points = 1 } # 布法罗
 province = { id = 614 points = 1 } # 匹兹堡

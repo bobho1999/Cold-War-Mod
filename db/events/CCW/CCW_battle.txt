@@ -293,11 +293,11 @@ event = {
 		  }
 	name = "打通津浦線 "
 	desc = "抗戰勝利後，國共兩黨為了爭奪淪陷區的接收
-權，分別派部隊搶占重要城市據點以及交通線。
-津浦線是國軍北上重點路線，兵力雄厚。中共
-中央為控制華東津浦、隴海、膠濟三條鐵路路
-段及沿線重要城市命令華東部隊截斷津浦路，
-阻止國軍北上，並力求消滅一部或大部。"
+		權，分別派部隊搶占重要城市據點以及交通線。
+		津浦線是國軍北上重點路線，兵力雄厚。中共
+		中央為控制華東津浦、隴海、膠濟三條鐵路路
+		段及沿線重要城市命令華東部隊截斷津浦路，
+		阻止國軍北上，並力求消滅一部或大部。"
 
 	style = 0
 	
@@ -307,7 +307,7 @@ event = {
     picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "派兵北上，恢復津浦線交通" 
+	    name = "派兵北上，恢復津浦線交通 " 
 	ai_chance = 99
 	command = { type = construct which = land_fort where = 1216 value = 5 }
 	command = { type = construct which = land_fort where = 1218 value = 5 }
@@ -6120,7 +6120,7 @@ event = {
 	desc = "。"
 	style = 0
 	
-    	date = { day = 1 month = october year = 1948 } #1949/10/8
+    	date = { day = 1 month = january year = 1948 } #1949/10/8
     	offset = 7
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -6170,7 +6170,7 @@ event = {
 		宋希濂部撤至湘、鄂西山區，四野停止追擊。"
 	style = 0
 	
-    	date = { day = 5 month = january year = 1948 } #1949/12/11~12/27
+    	date = { day = 1 month = january year = 1948 } #1949/12/11~12/27
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -6227,7 +6227,7 @@ event = {
 		力攻取此地。"
 	style = 0
 	
-    	date = { day = 5 month = august year = 1949 }
+    	date = { day = 1 month = january year = 1948 } # 1949/8/10-17
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -6269,16 +6269,13 @@ event = {
 		war = { country = CHI country = CHC } 
 		control = { province = 1312 data = -1 }	
 		control = { province = 1313 data = -1 }	
-		control = { province = 2716 data = -1 }		
+		control = { province = 2715 data = -1 }		
 	}
 	name = "廣東戰役 "
-	desc = "1949年8月10日，解放軍向福建省省會福州市發起
-		攻勢。駐守福州的國軍有五個軍計十三個師，約
-		為六萬人。歷時一星期，解放軍於17日以優勢兵
-		力攻取此地。"
+	desc = " "
 	style = 0
 	
-    	date = { day = 5 month = august year = 1949 } #1949/10/2~10/29
+    	date = { day = 1 month = january year = 1948 } #1949/10/2~10/29
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -6294,10 +6291,7 @@ event = {
 	country = CHI
 
 	name = "廣東戰役 "
-	desc = "1949年8月10日，解放軍向福建省省會福州市發起
-		攻勢。駐守福州的國軍有五個軍計十三個師，約
-		為六萬人。歷時一星期，解放軍於17日以優勢兵
-		力攻取此地。"
+	desc = " "
 
 	style = 0
 
@@ -6513,7 +6507,7 @@ event = {
 	desc = "。"
 	style = 0
 	
-    	date = { day = 5 month = january year = 1948 } #1949/9/16~10/17
+    	date = { day = 1 month = january year = 1948 } #1949/9/16~10/17
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -6779,7 +6773,7 @@ event = {
 
 	style = 0
 	
-    	date = { day = 1 month = june year = 1948 } #1948/9/16~24
+    	date = { day = 1 month = january year = 1948 } #1948/9/16~24
     	offset = 10
 	deathdate = { day = 30 month = december year = 1999 }
     	picture = "WuhanDefense"
@@ -6887,7 +6881,7 @@ event = {
 
 	style = 0
     	picture = "WuhanDefense"
-	date = { day = 14 month = september year = 1948 }
+	date = { day = 1 month = january year = 1948 }
     	offset = 1
 	deathdate = { day = 30 month = december year = 1950 }	
 	action_a = {
@@ -7000,7 +6994,7 @@ event = {
 		中心城市地位，影響深遠。"
 	style = 0
 	
-    	date = { day = 5 month = june year = 1948 } #1949/11/1~11/29
+    	date = { day = 1 month = january year = 1948 } #1949/11/1~11/29
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7068,7 +7062,7 @@ event = {
 		一支主力戰略集團宣告覆滅。"
 	style = 0
 	
-    	date = { day = 5 month = june year = 1948 } #1949/12/11~12/27
+    	date = { day = 1 month = january year = 1948 } #1949/12/11~12/27
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7134,7 +7128,7 @@ event = {
 		誠。而彭縣起義使解放軍迅速完成對成都市的合圍。"
 
 	style = 0
-    	date = { day = 5 month = june year = 1948 } #1949/12/11
+    	date = { day = 1 month = january year = 1948 } #1949/12/11
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7202,7 +7196,7 @@ event = {
 		進軍雲南，最終「解放」雲南省全境。"
 
 	style = 0
-    	date = { day = 5 month = june year = 1948 } #1949/12/9
+    	date = { day = 1 month = january year = 1948 } #1949/12/9
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7269,7 +7263,7 @@ event = {
 		立“反共基地”的企图。"
 	style = 0
 	
-    	date = { day = 5 month = june year = 1948 } #1949/12/27~1950/2/19
+    	date = { day = 1 month = january year = 1948 } #1949/12/27~1950/2/19
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7337,7 +7331,7 @@ event = {
 		一支主力戰略集團宣告覆滅。"
 	style = 0
 	
-    	date = { day = 5 month = june year = 1948 } #1949/12/11~12/27
+    	date = { day = 1 month = january year = 1948 } #1949/12/11~12/27
     	offset = 5
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
@@ -7394,7 +7388,7 @@ event = {
 	style = 0
 	
     	date = { day = 5 month = january year = 1947 } #1949/9/16~10/17
-    	offset = 3
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1951 }	
 	action_a = {
 	    	name = " " 	 
@@ -7465,8 +7459,13 @@ event = {
  	trigger = { 
 		event = 942569
   		exists = chc
-		control = { province = 2996 data = -1 }	# 
-		event = 942582 # 海南島淪陷
+		OR = {
+			AND = {
+				control = { province = 2996 data = -1 }	# 
+				event = 942582 # 海南島淪陷
+			}
+			control = { province = 2996 data = -2 }
+		}
 	} 
 
 	name = "舟山撤退 "
@@ -7477,7 +7476,7 @@ event = {
 		2萬多百姓。 "
 	style = 0
    
-  	date = { day = 10 month = may year = 1949 } #1949/5/11
+  	date = { day = 10 month = january year = 1949 } #1949/5/11
 	offset = 1
 	deathdate = { day = 29 month = december year = 1999 }
 
@@ -7506,6 +7505,8 @@ event = {
     	action_a = {
 		name = "总结教训 "
 		command = {  type = dissent value = -1 }
+		command = { type = construct which = land_fort where = 2996 value = -10 }
+		command = { type = construct which = air_base where = 2996 value = -10 }
 	}      	       	         	
 }
 

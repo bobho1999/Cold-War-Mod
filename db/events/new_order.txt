@@ -375,7 +375,7 @@ event = {
    
 }
 ######################################################
-# 人民战争
+# 人民戰爭
 ######################################################
 event = {
     	id = 941123
@@ -388,12 +388,12 @@ event = {
 #			event = 942336 
 		}
 		NOT = { flag = CHC_won_CW }
-	     	NOT = { militia = { country = CHC value = 100 } }
+	     	NOT = { militia = { country = CHC value = 75 } }
    }
     #	picture = "tugai"
     	name = "人民战争 "
     	desc = "共产党经过长期的土改，获得了广大农民的认可，解放区内 
-            参军气氛空前高涨，因为农民认为这是在为自己的利益而战斗 "
+            	参军气氛空前高涨，因为农民认为这是在为自己的利益而战斗 "
     	style = 0
 
     	date = { day = 1 month = november year = 1945 }
@@ -4725,6 +4725,7 @@ event = {
 		control = { province = 1389 data = CHC } #瀋陽
 		control = { province = 1390 data = CHC } #長春
 		control = { province = 1379 data = CHC } #哈爾濱
+		control = { province = 1396 data = CHC } #哈爾濱
        		control = { province = 1397 data = CHC } #承德
        		control = { province = 1205 data = CHC } #北京
        		control = { province = 1204 data = CHC } #天津
@@ -5975,107 +5976,18 @@ event = {
 	name = "ai_event"
 	style = 0
 
-	date = { day = 1 month = november year = 1947 }
-	offset = 2
+	date = { day = 1 month = november year = 1948 }
+	offset = 1
 	deathdate = { day = 29 month = march year = 1949 }
 	
 	action_a = {
 		name = "ok"	 
-		command = { type = remove_division which = 11616 value = 602 }
-#		command = { type = construct which = land_fort where = 1211 value = 10 }
+		command = { type = construct which = land_fort where = 1396 value = -3 }
+		command = { type = construct which = land_fort where = 1389 value = -3 }
+		command = { type = construct which = land_fort where = 1204 value = -3 }
               }
      }
-event = {
-	id = 901010
-	random = no
-	country = CHI
-	trigger = { 
-		ai = CHI
-		ai = CHC 
-		flag = CCW
-		event = 942161
-	}  
-	name = "ai_event"
-	style = 0
 
-	date = { day = 1 month = January year = 1948 }
-	offset = 2
-	deathdate = { day = 29 month = march year = 1949 }
-	
-	action_a = {
-		name = "ok"	 
-		command = { type = remove_division which = 11616 value = 608 }
-		command = { type = remove_division which = 11616 value = 609 }
-    	}
-}
-
-event = {
-	id = 901011
-	random = no
-	country = CHI
-	trigger = { 
-		ai = CHI
-		ai = CHC 
-		flag = CCW
-	}  
-	name = "ai_event"
-	style = 0
-
-	date = { day = 1 month = November year = 1948 }
-	offset = 2
-	deathdate = { day = 29 month = march year = 1949 }
-	
-	action_a = {
-		name = "ok"	 
-		command = { type = remove_division which = 11616 value = 601 }
-    	}
-}
-
-event = {
-	id = 901012
-	random = no
-	country = CHI
-	trigger = { 
-		ai = CHI
-		ai = CHC 
-		flag = CCW
-		event = 942361
-	}  
-	name = "ai_event"
-	style = 0
-
-	date = { day = 1 month = January year = 1947 }
-	offset = 2
-	deathdate = { day = 29 month = march year = 1949 }
-	
-	action_a = {
-		name = "ok"	 
-		command = { type = remove_division which = 11616 value = 603 }
-    	}
-}
-
-event = {
-	id = 901013
-	random = no
-	country = CHI
-	trigger = { 
-		ai = CHI
-		ai = CHC 
-		flag = CCW
-		event = 9425578
-	}  
-	name = "ai_event"
-	style = 0
-
-	date = { day = 1 month = November year = 1948 }
-	offset = 2
-	deathdate = { day = 29 month = march year = 1950 }
-	
-	action_a = {
-		name = "ok"	 
-		command = { type = remove_division which = 11616 value = 642 }
-    	}
-}
 
 event = {
 	id = 901014
@@ -6159,8 +6071,17 @@ event = {
 #		command = { type = local_setflag which = inflation when = 0 value = 7 }
 #		command = { type = morale which = land value = -10 }
 #		command = { type = max_organization which = land value = -5 } 
-		command = { type = free_oil value = 15  }
-#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = free_oil value = 15  }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
+		command = { type = remove_division which = "游擊队 " value = CHC }
     	}
 }
 

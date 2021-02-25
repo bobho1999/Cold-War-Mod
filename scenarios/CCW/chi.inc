@@ -116,7 +116,7 @@ province = {
 }
 province = { id = 1435 ic = { size = 0 current_size = 0 } } # єю√№
 province = { id = 1447 ic = { size = 0 current_size = 0 } } # ЇЌкD
-province = { id = 1887 landfort = 10 } # дькP
+province = { id = 1887 landfort = 8 } # дькP
 province = { id = 2980 ic = { size = 0 current_size = 0 } } # Ќ¬фФЈђ
 
 #####################

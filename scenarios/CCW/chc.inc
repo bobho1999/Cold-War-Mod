@@ -96,7 +96,6 @@ country = {
     relation = { tag = SOV value = 150 access = yes }
     relation = { tag = JAP value = 0 }
     relation = { tag = CYN value = 0 }
-    relation = { tag = U99 value = 0 access = yes }
   }
   SpyInfo                = { country = "CHC" NumberOfSpies = 10 }
   SpyInfo                = { country = "CHI" NumberOfSpies = 15 }
