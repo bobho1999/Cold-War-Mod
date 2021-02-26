@@ -37,10 +37,9 @@ event = {
 		headofstate = 6034 # Truman
 	}
     	name = " 杜魯門主義 "
-    	desc = "1947年3月12日，時任美國總統杜魯門在
-		致國會的關於援助希臘和土耳其的咨文
-		中，提出以“遏制共產主義”作為國家
-		政治意識形態和對外政策的指導思想。 "
+    	desc = "1947年3月12日，時任美國總統杜魯門在致國會的關於
+		援助希臘和土耳其的咨文中，提出以“遏制共產主義”
+		作為國家政治意識形態和對外政策的指導思想。 "
 
     #	picture = "coldwar"
     	style = 0
@@ -58,6 +57,8 @@ event = {
     	}
 }
 
+##########
+
 event = {
     	id = 135002
     	random = no
@@ -68,9 +69,9 @@ event = {
 		NOT = { flag = Ongoing_vote }
 	}
     	name = "1947年國家安全法案 "
-    	desc = "1947年7月26日，國家安全法案在國會表決
-		通過，當天，時任美國總統杜魯門在空軍一
-		號上簽署了法案。該法案主要內容為:
+    	desc = "1947年7月26日，國家安全法案在國會表決通過，
+		當天，時任美國總統杜魯門在空軍一號上簽署了
+		法案。該法案主要內容為:
 		1.組建了美國空軍
 		2.建立統一的國防部門，設立國防部長
 		3.建立參謀長聯席會議
@@ -103,9 +104,11 @@ event = {
     	action_b = {
         	name = "否決 "
 		ai_chance = 0
-		command = { type = money value = -10 }
+		command = { type = money value = 10 }
     	}
 }
+
+##########
 
 event = {
     	id = 135003
@@ -151,7 +154,7 @@ event = {
 	trigger = {
 		event = 135003
 		NOT = {	flag = Taft_Hartley_Act }
-		flag = Override_Veto
+#		flag = Override_Veto
 	}
     	name = "塔夫特-哈特萊法案:否決推翻 "
     	desc = " "
@@ -174,68 +177,10 @@ event = {
     	}
 }
 
+########## 戰後罷工潮 ##########
+
 event = {
     	id = 135005
-    	random = no
-    	country = USA
-	trigger = {
-    		headofstate = 6034
-    		government = democratic
-#		dissent = 3
-	}
-    	name = "1946年期中選舉 "
-    	desc = " "
-
-    #	picture = "coldwar"
-    	style = 0
- 
-  	date = { day = 4 month = november year = 1946 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1946 }
-
-    	action_a = {
-        	name = "共和黨多數 "
-		ai_chance = 0
-		command = { type = money value = -10 }
-		command = { type = dissent value = -1 }
-    		command = { type = domestic which = political_left value = -1 }
-		command = { type = setflag which = GOP_USCongress }
-		command = { type = clrflag which = Dem_USCongress }
-    	}
-}
-
-event = {
-    	id = 135006
-    	random = no
-    	country = USA
-	trigger = {
-    		headofstate = 6034
-    		government = democratic
-		NOT = { dissent = 3 }
-	}
-    	name = "1946年期中選舉 "
-    	desc = " "
-
-    #	picture = "coldwar"
-    	style = 0
- 
-#  	date = { day = 4 month = november year = 1946 }
-#  	offset = 1
-# 	deathdate = { day = 30 month = december year = 1946 }
-
-    	action_a = {
-        	name = "民主黨多數 "
-		ai_chance = 0
-		command = { type = money value = -10 }
-		command = { type = dissent value = -1 }
-    		command = { type = domestic which = political_left value = 1 }
-		command = { type = setflag which = Dem_USCongress }
-		command = { type = clrflag which = GOP_USCongress }
-    	}
-}
-
-event = {
-    	id = 135007
     	random = no
     	country = USA
 	trigger = {
@@ -268,7 +213,7 @@ event = {
 }
 
 event = {
-    	id = 135008
+    	id = 135006
     	random = no
     	country = USA
 	trigger = {
@@ -303,7 +248,7 @@ event = {
 }
 
 event = {
-    	id = 135009
+    	id = 135007
     	random = no
     	country = USA
 	trigger = {
@@ -336,7 +281,7 @@ event = {
 }
 
 event = {
-    	id = 135010
+    	id = 135008
     	random = no
     	country = USA
 	trigger = {
@@ -369,13 +314,13 @@ event = {
 }
 
 event = {
-    	id = 135013
+    	id = 135009
     	random = no
     	country = USA
 	trigger = {
     		
 	}
-    	name = "罷工潮(VII) "
+    	name = "罷工潮(V) "
     	desc = "120,000 miners, rail and steel workers in the Pittsburgh region "
 
     #	picture = "coldwar"
@@ -401,37 +346,237 @@ event = {
     	}
 }
 
-
 ########################
-#提高社会保障
+# 杜魯門“良政”
 ########################
 event = {
-  id = 1350009
-  random = no
-  country = USA
+  	id = 135020
+  	random = no
+  	country = USA
   
-  name = "提高社会保障 " 
-  desc = "杜鲁门在“公平施政”的第二阶段，在战后工人运动的推动之下， 杜鲁门多次要求扩大社会保障范围。1950年通过对社会保障法的 几条修正案，1952年又增加了一条修正案。1950年1月，杜鲁门还 获得了公平劳动标准法的一条修正案。 "
-  style = 0
+  	trigger = {
+		event = 1350010
+    		headofstate = 6034
+    		government = democratic
+  	}
+
+  	name = "“良政” " 
+  	desc = " "
+  	style = 0
   
-  trigger = {
-    headofstate = 6034
-    government = democratic
-  } 
-  date = { day = 5 month = february year = 1950 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	date = { day = 0 month = january year = 1948 }
+  	offset = 15
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "提高社会保障有利于我们的政权 "
-    command = { type = dissent value = -2 }
-  }
+  	action_a = {
+    		name = "推動計畫 "
+    		command = { type = dissent value = -1 }
+  	}
 }
+
+
+event = {
+  	id = 135021
+  	random = no
+  	country = USA
+  
+  	trigger = {
+		event = 135020
+    		headofstate = 6034
+    		government = democratic
+  	}
+
+  	name = "1949年住宅法 " 
+  	desc = " "
+  	style = 0
+  
+  	date = { day = 0 month = july year = 1949 }
+  	offset = 15
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "提高社会保障有利于我们的政权 "
+		ai_chance = 100
+    		command = { type = dissent value = -2 }
+		command = { type = money value = -100 }
+		command = { type = setflag which = Housing_Act_1949 }
+  	}
+    	action_b = {
+        	name = "否決 "
+		ai_chance = 0
+		command = { type = money value = 10 }
+    	}
+}
+
+event = {
+  	id = 135022
+  	random = no
+  	country = USA
+  
+  	trigger = {
+		event = 135020
+    		headofstate = 6034
+    		government = democratic
+  	}
+
+  	name = "《消除軍隊種族隔離》 " 
+  	desc = "1948年7月26日，杜魯門總統簽署了第9981號行政命令，
+		廢除美國軍隊中的種族隔離。這項言簡意賅的行政令說：
+		“不論人種、膚色、宗教和民族，軍隊中所有人都應該
+		得到平等的對待和機會。”"
+  	style = 0
+  
+  	date = { day = 10 month = july year = 1948 }
+  	offset = 15
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "簽署 "
+		ai_chance = 100
+    		command = { type = dissent value = -2 }
+		command = { type = money value = -100 }
+#		command = { type = setflag which = Housing_Act_1949 }
+  	}
+    	action_b = {
+        	name = "沒必要 "
+		ai_chance = 0
+		command = { type = money value = 1 }
+    	}
+}
+
+########## 提高社会保障 ##########
+
+event = {
+  	id = 135023
+  	random = no
+  	country = USA
+  
+  	trigger = {
+		event = 135020
+    		headofstate = 6034
+    		government = democratic
+  	}
+
+  	name = "提高社會保障 " 
+  	desc = "杜魯門在“良政”的第二階段，在戰後工人運動的推動之下，
+		杜魯門多次要求擴大社會保障範圍。 1950年通過對社會保障法的
+		幾條修正案，1952年又增加了一條修正案。1950年1月，杜魯門還 
+		獲得了公平勞動標準法的一條修正案。 "
+  	style = 0
+  
+  	date = { day = 5 month = february year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "提高社会保障有利于我们的政权 "
+		command = { type = money value = -10 }
+    		command = { type = dissent value = -2 }
+  	}
+}
+
+########## 國內安全法 ##########
+
+event = {
+  	id = 135024
+  	random = no
+  	country = USA
+ 
+  	trigger = {
+    		government = democratic
+  	} 
+ 
+  	name = "國內安全法 " 
+  	desc = "美國國會於1950年9月23日通過了國內安全法，由於其發起人為內
+		華達州民主黨國會參議院麥卡倫，故又稱麥卡倫法。它規定一切
+		“共產主義組織”必須進行司法登記，並提供成員名單和財務報
+		告。禁止共產黨員在政府、國防機關工作，拒絕給共產黨員提供
+		出國護照。禁止共產黨人和一切“極權主義組織”成員移居美國。
+		雖然遭到杜魯門反對，但在國會普遍的反共氣氛下，該法通過。 "
+  	style = 0
+  
+  	date = { day = 22 month = september year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    	name = "必須把赤色分子統統扼殺 "
+    	command = { type = dissent value = 5 }
+    	command = { type = domestic which = freedom value = -1 }
+    	command = { type = domestic which = political_left value = -1 }
+  	}
+}
+
+########## 68号文件 ##########
+
+event = {
+  	id = 135025
+  	random = no
+  	country = USA
+
+   	trigger = {  
+    		atwar = no
+    		government = democratic
+  	} 
+ 
+  	name = "68號文件 " 
+  	desc = "1950年，經杜魯門總統指示，保羅尼采為主席的特別委員會完
+		成了68號文件的起草。文件對蘇聯的根本意圖、目的和能力進
+		行了重點分析，強調“蘇聯圖謀統治世界”。文件強調蘇聯會
+		把自己的強權政治強加於其他國家，並強調蘇聯對美國的重大
+		威脅。第68號文件首次全面闡述了戰後美國國家戰略，並成為
+		了貫穿冷戰的美國對蘇政策指導思想。 "
+  	style = 0
+#  	picture = "杜勒斯"
+
+  	date = { day = 8 month = august year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "这是我们的总纲领 "
+    		command = { type = change_policy which = political_left value = -1 }
+    		command = { type = change_policy which = defense_lobby value = 1 }
+    		command = { type = change_policy which = interventionism value = 1 }
+    		command = { type = relation which = SOV value = -20 }
+  	}
+}
+
+########## Joint Long Range Proving Grounds ##########
+
+event = {
+  	id = 135026
+  	random = no
+  	country = USA
+
+   	trigger = {  
+    		atwar = no
+    		government = democratic
+  	} 
+ 
+  	name = "Joint Long Range Proving Grounds " 
+  	desc = " "
+  	style = 0
+#  	picture = " "
+
+  	date = { day = 0 month = october year = 1949 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = money value = -10 }
+		command = { type = construct which = air_base where = 605 value = 1 }
+		command = { type = construct which = rocket_test where = 605 value = 3 }
+  	}
+}
+
+
 ################
 #武装西德——美国
 #############################################
 event = {
-  id = 1350010
+  id = 1351000
   random = no
   country = USA
   
@@ -498,14 +643,14 @@ event = {
     name = "这是个好协定 "
     command = { type = guarantee which = USA where = PHI }
     command = { type = relation which = PHI value = 10 }
-    command = { type = trigger which = 1350040 }
+    command = { type = trigger which = 1350140 }
   }
 }
 ################
 #美菲共同防御协定——菲律宾
 #############################################
 event = {
-  id = 1350040
+  id = 1350140
   random = no
   country = PHI
   
@@ -837,61 +982,7 @@ event = {
 		command = { type = relation which = eng value = 10 }
            	}       	   	       	         	
 }
-################
-#国内安全法
-#############################################
-event = {
-  	id = 1350140
-  	random = no
-  	country = USA
-  
-  	name = "国内安全法 " 
-  	desc = "美国国会于1950年9月23日通过了国内安全法，由于其发起人为内华达州民主 党国会参议院麦卡伦，故又称麦卡伦法。它规定一切“共产主义 组织”必须进行司法登记，并提供成员名单和财务报告。禁止共 产党员在政府、国防机关工作，拒绝给共产党员提供出国护照。 禁止共产党人和一切“极权主义组织”成员移居美国。虽然遭到 杜鲁门反对，但在国会普遍的反共气氛下，该法通过。 "
-  	style = 0
-  
-  	trigger = {
-    		government = democratic
-  	} 
-  	date = { day = 22 month = september year = 1950 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
-  
-  	action_a = {
-    	name = "必须把赤色分子统统扼杀 "
-    	command = { type = dissent value = 5 }
-    	command = { type = domestic	which = freedom value = -1 }
-    	command = { type = domestic	which = political_left value = -1 }
-  	}
-}
-################
-#68号文件
-#############################################
-event = {
-  	id = 1350160
-  	random = no
-  	country = USA
-  
-  	name = "68号文件 " 
-  	desc = "1950年，经杜鲁门总统指示，保罗尼采为主席的特别委员会完成了 68号文件的起草。文件对苏联的根本意图、目的和能力进行了重点 分析，强调“苏联图谋统治世界”。文件强调苏联会把自己的强权政 治强加于其他国家，并强调苏联对美国的重大威胁。第68号文件首 次全面阐述了战后美国国家战略，并成为了贯穿冷战的美国对苏 政策指导思想。 "
-  	style = 0
-#  	picture = "杜勒斯"
-  
-  	trigger = {  
-    		atwar = no
-    		government = democratic
-  	} 
-  	date = { day = 8 month = august year = 1950 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1960 }
-  
-  	action_a = {
-    		name = "这是我们的总纲领 "
-    	command = { type = change_policy which = political_left value = -1 }
-    		command = { type = change_policy which = defense_lobby value = 1 }
-    		command = { type = change_policy which = interventionism value = 1 }
-    		command = { type = relation which = SOV value = -20 }
-  	}
-}
+
 
 ################
 #大规模报复战略
@@ -965,394 +1056,6 @@ event = {
 
 ##### UNITED STATES ELECTIONS
 
-########## 1948 ELECTIONS (HISTORICAL) - Truman vs. Dewey
-
-event = {
-	id = 900077
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		NOT = {
-			dissent = 10
-			ispuppet = USA
-		}
-	}
-
-	name = "EVT_900077_NAME" ### Needs event description
-	desc = "EVT_900077_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 2 month = november year = 1948 }
-
-	action_a = {
-		name = "哈瑞·S·杜魯門 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6034 }
-		command = { type = headofgovernment which = 6047 }
-		command = { type = foreignminister which = 6064 }
-		command = { type = armamentminister which = 6217 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6127 }
-		
-		command = { type = sleepevent which = 900144 }
-		command = { type = sleepevent which = 900145 }
-	}
-	action_b = {
-		name = "湯瑪斯·E·杜威 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6038 }
-		command = { type = headofgovernment which = 6050 }
-		command = { type = foreignminister which = 6066 }
-		command = { type = armamentminister which = 6088 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6128 }
-
-		command = { type = sleepevent which = 900079 }	
-		command = { type = sleepevent which = 900080 }
-	}
-}
-
-
-########## 1948 ELECTIONS AHISTORICAL - Dewey vs. Truman
-
-event = {
-	id = 900078
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		dissent = 10
-		NOT = { ispuppet = USA }
-	}
-
-	name = "EVT_900078_NAME" ### Needs event description
-	desc = "EVT_900078_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 2 month = november year = 1948 }
-
-	action_a = {
-		name = "湯瑪斯·E·杜威 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6038 }
-		command = { type = headofgovernment which = 6050 }
-		command = { type = foreignminister which = 6066 }
-		command = { type = armamentminister which = 6088 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6128 }
-
-		command = { type = sleepevent which = 900079 }	
-		command = { type = sleepevent which = 900080 }
-	}
-	action_b = {
-		name = "哈瑞·S·杜魯門 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6034 }
-		command = { type = headofgovernment which = 6047 }
-		command = { type = foreignminister which = 6064 }
-		command = { type = armamentminister which = 6217 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6127 }
-
-		command = { type = sleepevent which = 900144 }
-		command = { type = sleepevent which = 900145 }
-	}
-}
-
-
-########## 1952 ELECTIONS HISTORICAL - Eisenhower vs. Stevenson - assumes Truman won in 1948
-
-event = {
-	id = 900079
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		NOT = {
-			dissent = 10
-			ispuppet = USA
-		}
-	}
-
-	name = "EVT_900079_NAME" ### Needs event description
-	desc = "EVT_900079_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 4 month = november year = 1952 }
-
-	action_a = {
-		name = "德懷特·D·艾森豪 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6208 }
-		command = { type = headofgovernment which = 6211 }
-		command = { type = foreignminister which = 6215 }
-		command = { type = armamentminister which = 6219 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }
-	}
-	action_b = {
-		name = "阿德萊·史蒂文森 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6212 }
-		command = { type = foreignminister which = 6216 }
-		command = { type = armamentminister which = 6220 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6229 }
-	}
-}
-
-
-########## 1952 ELECTIONS AHISTORICAL - Stevenson vs. Eisenhower - assumes Truman won in 1948
-
-event = {
-	id = 900080
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		dissent = 10
-		NOT = { ispuppet = USA }
-	}
-
-	name = "EVT_900080_NAME" ### Needs event description
-	desc = "EVT_900080_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 4 month = november year = 1952 }
-
-	action_a = {
-		name = "阿德萊·史蒂文森 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6212 }
-		command = { type = foreignminister which = 6216 }
-		command = { type = armamentminister which = 6220 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6229 }
-	}
-	action_b = {
-		name = "德懷特·D·艾森豪 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6208 }
-		command = { type = headofgovernment which = 6238 }
-		command = { type = foreignminister which = 6215 }
-		command = { type = armamentminister which = 6219 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }
-	}
-}
-
-
-########## 1952 ELECTIONS FICTIONAL - Dewey vs. Stevenson - assumes Dewey won in 1948 and did well
-
-event = {
-	id = 900144
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		NOT = {
-			dissent = 10
-			ispuppet = USA
-		}
-	}
-
-	name = "EVT_900144_NAME" ### Needs event description
-	desc = "EVT_900144_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 4 month = november year = 1952 }
-
-	action_a = {
-		name = "湯瑪斯·E·杜威 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6038 }
-		command = { type = headofgovernment which = 6210 }
-		command = { type = foreignminister which = 6214 }
-		command = { type = armamentminister which = 6219 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6128 }
-	}
-	action_b = {
-		name = "阿德萊·史蒂文森 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6212 }
-		command = { type = foreignminister which = 6216 }
-		command = { type = armamentminister which = 6220 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6229 }
-	}
-}
-
-
-########## 1952 ELECTIONS FICTIONAL - Stevenson vs. MacArthur - assumes Dewey won in 1948 but screwed up
-
-event = {
-	id = 900145
-	random = no
-	country = USA
-
-	trigger = {
-		government = democratic
-		dissent = 10
-		NOT = { ispuppet = USA }
-	}
-
-	name = "EVT_900145_NAME" ### Needs event description
-	desc = "EVT_900145_DESC"
-      picture = "us_election"
-	style = 0
-
-	date = { day = 4 month = november year = 1952 }
-
-	action_a = {
-		name = "阿德萊·史蒂文森 (民主黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6212 }
-		command = { type = foreignminister which = 6216 }
-		command = { type = armamentminister which = 6220 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6229 }
-	}
-	action_b = {
-		name = "道格拉斯·麥克阿瑟 (共和黨)"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6236 }
-		command = { type = headofgovernment which = 6211 }
-		command = { type = foreignminister which = 6215 }
-		command = { type = armamentminister which = 6091 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6237 }
-	}
-}
-
-event = {
-	id = 600000
-	random = no
-	country = USA
-	style = 0
-
-	trigger = {
-		government = democratic
-		NOT = { ispuppet = USA }
-		}
-
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
-
-	date = { day = 4 month = november year = 1956 }
-	offset = 2
-	deathdate = { day = 5 month = november year = 1956 }
-
-	action_a = {
-		ai_chance = 85
-		name = "德懷特·D·艾森豪 (共和黨)"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6208 }
-		command = { type = headofgovernment which = 6211 }
-		command = { type = foreignminister which = 6215 }
-		command = { type = armamentminister which = 6248 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }	
-		}	
-	action_b = {
-		ai_chance = 15
-		name = "阿德萊·史蒂文森 (民主黨)"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6245 }
-		command = { type = foreignminister which = 6213 }
-		command = { type = armamentminister which = 6249 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6252 }	
-		}
-	}	
-
-
-event = {
-	id = 600001
-	random = no
-	country = USA
-	style = 0
-
-	trigger = {
-		government = democratic
-		NOT = { ispuppet = USA }
-		}
-
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
-
-	date = { day = 4 month = november year = 1960 }
-	offset = 2
-	deathdate = { day = 5 month = november year = 1960 }
-
-	action_a = {
-		ai_chance = 70
-		name = "約翰·F·甘迺迪 (民主黨)"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6242 }
-		command = { type = headofgovernment which = 6244 }
-		command = { type = foreignminister which = 6247 }
-		command = { type = armamentminister which = 6250 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6253 }	
-		}	
-	action_b = {
-		ai_chance = 30
-		name = "理察·M·尼克森 (共和黨)"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6241 }
-		command = { type = headofgovernment which = 6243 }
-		command = { type = foreignminister which = 6246 }
-		command = { type = armamentminister which = 6251 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }	
-		}
-	}
-
 event = {
 	id = 1350000
 	random = no
@@ -1420,9 +1123,9 @@ event = {
 		推翻:80%
 		撤回:20%"
 
-  	date = { day = 1 month = january year = 1945 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+#  	date = { day = 1 month = january year = 1945 }
+#  	offset = 1
+#  	deathdate = { day = 30 month = december year = 1970 }
 
 	action_a = {
 		name = "推翻否決"
@@ -1459,9 +1162,9 @@ event = {
 		推翻:20%
 		撤回:80%"
 
-  	date = { day = 1 month = january year = 1945 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+# 	date = { day = 1 month = january year = 1945 }
+#  	offset = 1
+#  	deathdate = { day = 30 month = december year = 1970 }
 
 	action_a = {
 		name = "撤回法案"
@@ -1498,9 +1201,9 @@ event = {
 		推翻:70%
 		撤回:30%"
 
-  	date = { day = 1 month = january year = 1945 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+#  	date = { day = 1 month = january year = 1945 }
+#  	offset = 1
+#  	deathdate = { day = 30 month = december year = 1970 }
 
 	action_a = {
 		name = "推翻否決"
@@ -1537,9 +1240,9 @@ event = {
 		推翻:10%
 		撤回:90% "
 
-  	date = { day = 1 month = january year = 1945 }
-  	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+#  	date = { day = 1 month = january year = 1945 }
+#  	offset = 1
+#  	deathdate = { day = 30 month = december year = 1970 }
 
 	action_a = {
 		name = "撤回法案"
@@ -1589,4 +1292,464 @@ event = {
 		name = "OK"
 		command = { type = clrflag which = US_Divided_Gov }	
 	}	
+}
+########## 1948 ELECTIONS (HISTORICAL) - Truman vs. Dewey
+
+event = {
+	id = 1350010
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		NOT = {
+			dissent = 10
+			ispuppet = USA
+		}
+	}
+
+	name = "EVT_900077_NAME" ### Needs event description
+	desc = "EVT_900077_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 2 month = november year = 1948 }
+
+	action_a = {
+		name = "哈瑞·S·杜魯門 (民主黨)"
+		ai_chance = 100
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6034 }
+		command = { type = headofgovernment which = 6047 }
+		command = { type = foreignminister which = 6064 }
+		command = { type = armamentminister which = 6217 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6127 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
+		command = { type = sleepevent which = 900144 }
+		command = { type = sleepevent which = 900145 }
+	}
+	action_b = {
+		name = "湯瑪斯·E·杜威 (共和黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6038 }
+		command = { type = headofgovernment which = 6050 }
+		command = { type = foreignminister which = 6066 }
+		command = { type = armamentminister which = 6088 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6128 }
+		command = { type = clrflag which = Dem_POTUS }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = sleepevent which = 900079 }	
+		command = { type = sleepevent which = 900080 }
+	}
+}
+
+
+########## 1948 ELECTIONS AHISTORICAL - Dewey vs. Truman
+
+event = {
+	id = 1350011
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		dissent = 10
+		NOT = { ispuppet = USA }
+	}
+
+	name = "EVT_900078_NAME" ### Needs event description
+	desc = "EVT_900078_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 2 month = november year = 1948 }
+
+	action_a = {
+		name = "湯瑪斯·E·杜威 (共和黨)"
+		ai_chance = 100
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6038 }
+		command = { type = headofgovernment which = 6050 }
+		command = { type = foreignminister which = 6066 }
+		command = { type = armamentminister which = 6088 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6128 }
+		command = { type = clrflag which = Dem_POTUS }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = sleepevent which = 900079 }	
+		command = { type = sleepevent which = 900080 }
+	}
+	action_b = {
+		name = "哈瑞·S·杜魯門 (民主黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6034 }
+		command = { type = headofgovernment which = 6047 }
+		command = { type = foreignminister which = 6064 }
+		command = { type = armamentminister which = 6217 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6127 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
+		command = { type = sleepevent which = 900144 }
+		command = { type = sleepevent which = 900145 }
+	}
+}
+
+
+########## 1952 ELECTIONS HISTORICAL - Eisenhower vs. Stevenson - assumes Truman won in 1948
+
+event = {
+	id = 1350012
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		NOT = {
+			dissent = 10
+			ispuppet = USA
+		}
+	}
+
+	name = "EVT_900079_NAME" ### Needs event description
+	desc = "EVT_900079_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 4 month = november year = 1952 }
+
+	action_a = {
+		name = "德懷特·D·艾森豪 (共和黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6208 }
+		command = { type = headofgovernment which = 6211 }
+		command = { type = foreignminister which = 6215 }
+		command = { type = armamentminister which = 6219 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6228 }
+	}
+	action_b = {
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 }
+		command = { type = headofgovernment which = 6212 }
+		command = { type = foreignminister which = 6216 }
+		command = { type = armamentminister which = 6220 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6229 }
+	}
+}
+
+
+########## 1952 ELECTIONS AHISTORICAL - Stevenson vs. Eisenhower - assumes Truman won in 1948
+
+event = {
+	id = 1350013
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		dissent = 10
+		NOT = { ispuppet = USA }
+	}
+
+	name = "EVT_900080_NAME" ### Needs event description
+	desc = "EVT_900080_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 4 month = november year = 1952 }
+
+	action_a = {
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 }
+		command = { type = headofgovernment which = 6212 }
+		command = { type = foreignminister which = 6216 }
+		command = { type = armamentminister which = 6220 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6229 }
+	}
+	action_b = {
+		name = "德懷特·D·艾森豪 (共和黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6208 }
+		command = { type = headofgovernment which = 6238 }
+		command = { type = foreignminister which = 6215 }
+		command = { type = armamentminister which = 6219 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6228 }
+	}
+}
+
+
+########## 1952 ELECTIONS FICTIONAL - Dewey vs. Stevenson - assumes Dewey won in 1948 and did well
+
+event = {
+	id = 1350014
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		NOT = {
+			dissent = 10
+			ispuppet = USA
+		}
+	}
+
+	name = "EVT_900144_NAME" ### Needs event description
+	desc = "EVT_900144_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 4 month = november year = 1952 }
+
+	action_a = {
+		name = "湯瑪斯·E·杜威 (共和黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6038 }
+		command = { type = headofgovernment which = 6210 }
+		command = { type = foreignminister which = 6214 }
+		command = { type = armamentminister which = 6219 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6128 }
+	}
+	action_b = {
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 }
+		command = { type = headofgovernment which = 6212 }
+		command = { type = foreignminister which = 6216 }
+		command = { type = armamentminister which = 6220 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6229 }
+	}
+}
+
+
+########## 1952 ELECTIONS FICTIONAL - Stevenson vs. MacArthur - assumes Dewey won in 1948 but screwed up
+
+event = {
+	id = 1350015
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+		dissent = 10
+		NOT = { ispuppet = USA }
+	}
+
+	name = "EVT_900145_NAME" ### Needs event description
+	desc = "EVT_900145_DESC"
+      picture = "us_election"
+	style = 0
+
+	date = { day = 4 month = november year = 1952 }
+
+	action_a = {
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 }
+		command = { type = headofgovernment which = 6212 }
+		command = { type = foreignminister which = 6216 }
+		command = { type = armamentminister which = 6220 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6229 }
+	}
+	action_b = {
+		name = "道格拉斯·麥克阿瑟 (共和黨)"
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6236 }
+		command = { type = headofgovernment which = 6211 }
+		command = { type = foreignminister which = 6215 }
+		command = { type = armamentminister which = 6091 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6237 }
+	}
+}
+
+########## 1956 ELECTIONS 
+
+event = {
+	id = 1350016
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = USA }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 4 month = november year = 1956 }
+	offset = 2
+	deathdate = { day = 5 month = november year = 1956 }
+
+	action_a = {
+		ai_chance = 85
+		name = "德懷特·D·艾森豪 (共和黨)"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6208 }
+		command = { type = headofgovernment which = 6211 }
+		command = { type = foreignminister which = 6215 }
+		command = { type = armamentminister which = 6248 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6228 }	
+		}	
+	action_b = {
+		ai_chance = 15
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 }
+		command = { type = headofgovernment which = 6245 }
+		command = { type = foreignminister which = 6213 }
+		command = { type = armamentminister which = 6249 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6252 }	
+		}
+	}	
+
+########## 1960 ELECTIONS 
+
+event = {
+	id = 1350017
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		NOT = { ispuppet = USA }
+		}
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	date = { day = 4 month = november year = 1960 }
+	offset = 2
+	deathdate = { day = 5 month = november year = 1960 }
+
+	action_a = {
+		ai_chance = 70
+		name = "約翰·F·甘迺迪 (民主黨)"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6242 }
+		command = { type = headofgovernment which = 6244 }
+		command = { type = foreignminister which = 6247 }
+		command = { type = armamentminister which = 6250 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6253 }	
+	}	
+	action_b = {
+		ai_chance = 30
+		name = "理察·M·尼克森 (共和黨)"
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6241 }
+		command = { type = headofgovernment which = 6243 }
+		command = { type = foreignminister which = 6246 }
+		command = { type = armamentminister which = 6251 }
+		command = { type = ministerofsecurity which = 6005 }
+		command = { type = ministerofintelligence which = 6228 }	
+	}
+}
+
+# 1350018~39 for later elections
+
+########## Midterm ELECTIONS 
+
+event = {
+    	id = 1350040
+    	random = no
+    	country = USA
+	trigger = {
+    		headofstate = 6034
+    		government = democratic
+#		dissent = 3
+	}
+    	name = "1946年期中選舉 "
+    	desc = " "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+  	date = { day = 4 month = november year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "共和黨多數 "
+		ai_chance = 0
+		command = { type = money value = -10 }
+		command = { type = dissent value = -1 }
+    		command = { type = domestic which = political_left value = -1 }
+		command = { type = setflag which = GOP_USCongress }
+		command = { type = clrflag which = Dem_USCongress }
+    	}
+}
+
+event = {
+    	id = 1350041
+    	random = no
+    	country = USA
+	trigger = {
+    		headofstate = 6034
+    		government = democratic
+		NOT = { dissent = 3 }
+	}
+    	name = "1946年期中選舉 "
+    	desc = " "
+
+    #	picture = "coldwar"
+    	style = 0
+ 
+#  	date = { day = 4 month = november year = 1946 }
+#  	offset = 1
+# 	deathdate = { day = 30 month = december year = 1946 }
+
+    	action_a = {
+        	name = "民主黨多數 "
+		ai_chance = 0
+		command = { type = money value = -10 }
+		command = { type = dissent value = -1 }
+    		command = { type = domestic which = political_left value = 1 }
+		command = { type = setflag which = Dem_USCongress }
+		command = { type = clrflag which = GOP_USCongress }
+    	}
 }

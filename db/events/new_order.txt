@@ -6154,6 +6154,7 @@ event = {
        		command = { type = independence which = ARM value = 1 when = 0 }  
        		command = { type = independence which = AZB value = 1 when = 0 }  
        		command = { type = independence which = GEO value = 1 when = 0 }      
+       		command = { type = independence which = U16 value = 1 when = 0 }  
    }  
 }
 

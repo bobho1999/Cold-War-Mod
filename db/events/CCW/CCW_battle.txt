@@ -290,7 +290,7 @@ event = {
 		OR = { 	garrison = { country = CHI province = 1218 type = land size = 7 area = yes } #集結部隊(測試)
 			ai = yes
 		}
-		  }
+	}
 	name = "打通津浦線 "
 	desc = "抗戰勝利後，國共兩黨為了爭奪淪陷區的接收
 		權，分別派部隊搶占重要城市據點以及交通線。
@@ -301,56 +301,57 @@ event = {
 
 	style = 0
 	
-    date = { day = 14 month = october year = 1945 }
-    offset = 1
+    	date = { day = 14 month = october year = 1945 }
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1947 }
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "派兵北上，恢復津浦線交通 " 
-	ai_chance = 99
-	command = { type = construct which = land_fort where = 1216 value = 5 }
-	command = { type = construct which = land_fort where = 1218 value = 5 }
-	command = { type = supplies value = 1000 where = 1216 }
-	command = { type = supplies value = 1000 where = 1217 }
-	command = { type = supplies value = 1000 where = 1218 }	
-	command = { type = oilpool value = 250 where = 1216 }
-	command = { type = oilpool value = 250 where = 1217 }
-	command = { type = oilpool value = 250 where = 1218 }	
-	command = { type = trigger which = 942311 }	
-	command = { type = local_setflag which = jinpuzhani }	
-              }
+	    	name = "派兵北上，恢復津浦線交通 " 
+		ai_chance = 99
+		command = { type = construct which = land_fort where = 1216 value = 5 }
+		command = { type = construct which = land_fort where = 1218 value = 5 }
+		command = { type = supplies value = 1000 where = 1216 }
+		command = { type = supplies value = 1000 where = 1217 }
+		command = { type = supplies value = 1000 where = 1218 }	
+		command = { type = oilpool value = 250 where = 1216 }
+		command = { type = oilpool value = 250 where = 1217 }
+		command = { type = oilpool value = 250 where = 1218 }	
+		command = { type = trigger which = 942311 }	
+		command = { type = local_setflag which = jinpuzhani }	
+	}
 	action_b = {
-	    name = "放棄作戰"  
-	command = { type = dissent value = 5 }
-              }
-     }
+		name = "放棄作戰"  
+		command = { type = dissent value = 5 }
+	}
+}
+
 event = {
 	id = 942311
 	random = no
 	country = CHC
 
 		  
-    name = "津浦戰役 "
+	name = "津浦戰役 "
 	desc = "抗戰勝利後，國共兩黨為了爭奪淪陷區的接收
-權，分別派部隊搶占重要城市據點以及交通線。
-津浦線是國軍北上重點路線，兵力雄厚。中共
-中央為控制華東津浦、隴海、膠濟三條鐵路路
-段及沿線重要城市命令華東部隊截斷津浦路，
-阻止國軍北上，並力求消滅一部或大部。"
+		權，分別派部隊搶占重要城市據點以及交通線。
+		津浦線是國軍北上重點路線，兵力雄厚。中共
+		中央為控制華東津浦、隴海、膠濟三條鐵路路
+		段及沿線重要城市命令華東部隊截斷津浦路，
+		阻止國軍北上，並力求消滅一部或大部。"
 	style = 0
-    picture = "WuhanDefense"
+	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "阻擊國軍2個月，為中央戰略爭取時間" 
-	command = { type = trigger which = 942313 value = 60 }
-	command = { type = encirclement value = 1.5 }          #战术包围
-	command = { type = ambush value = 1.5 }                #战术伏击
-	command = { type = delay value = 1.5 }                 #战术阻击
-	command = { type = tactical_withdrawal value = 1.5 }   #战术撤退
-	command = { type = counterattack value = 1 }       #战术反击		
-              }
- }
+		name = "阻擊國軍2個月，為中央戰略爭取時間" 
+		command = { type = trigger which = 942313 value = 60 }
+		command = { type = encirclement value = 1.5 }          #战术包围
+		command = { type = ambush value = 1.5 }                #战术伏击
+		command = { type = delay value = 1.5 }                 #战术阻击
+		command = { type = tactical_withdrawal value = 1.5 }   #战术撤退
+		command = { type = counterattack value = 1 }       #战术反击		
+	}
+}
 
 event = {
 	id = 942312
@@ -359,7 +360,7 @@ event = {
 
 	name = "津浦戰役——失敗 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
-解放區連成一片。"
+		解放區連成一片。"
 
 	style = 0
     picture = "WuhanDefense"

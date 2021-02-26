@@ -449,10 +449,10 @@ event = {
        		event = 941220
 		random = 50
    	}
-   	name = "残余国军 "
-   	desc = "国民党虽然失去了大陆，但是在中国的西南，西北 ，东南 
-		地区仍有不少的残余军队进入险要地区守卫，这些军队可能 
-		成为蒋介石反攻大陆的希望"
+   	name = "殘餘國軍 "
+   	desc = "國民黨雖然失去了大陸，但是在中國的西南，西北，東南
+		地區仍有不少的殘餘軍隊進入險要地區守衛，這些軍隊可
+		能成為蔣介石反攻大陸的希望。 "
    
    	style = 0
    	date = { day = 0 month = january year = 1950 }
@@ -460,14 +460,14 @@ event = {
    	deathdate = { day = 30 month = december year = 1960 }
 
    	action_a = { 
-      		name = "重新武装他们 "
+      		name = "重新武裝他們 "
        		ai_chance = 100
        		command = { type = money value = -500 }
        		command = { type = dissent value = -1 }
        		command = { type = trigger which = 941390 }
        	}
    	action_b = {
-       		name = "节省开支 "
+       		name = "節省開支 "
        		ai_chance = 0
        		command = { type = dissent value = 1 }
    	}
@@ -478,10 +478,10 @@ event = {
    	country = CHC
    	random = no
    
-   	name = "残余国军 "
-   	desc = "国民党虽然失去了大陆，但是在中国的西南，西北 ，东南 
-		地区仍有不少的残余军队进入险要地区守卫，这些军队可能 
-		成为蒋介石反攻大陆的希望"
+   	name = "殘餘國軍 "
+   	desc = "國民黨雖然失去了大陸，但是在中國的西南，西北，東南
+		地區仍有不少的殘餘軍隊進入險要地區守衛，這些軍隊可
+		能成為蔣介石反攻大陸的希望。 "
    #	picture = "outlaw_communist_party"
    	style = 0
    

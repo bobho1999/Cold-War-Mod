@@ -1052,7 +1052,7 @@ LIT = {
 	date = { day = 1 month = january year = 1934 }
 	expirydate = { day = 30 month = december year = 1990 }
 	minimum = {
-		207 208 511 577 214 1892 2603 3128 3129 
+		207 208 511 577 214 1892 2603 3128 3129
 	}
 	extra = { 209 206 }
 	capital = 208 #Wilna
@@ -2247,7 +2247,15 @@ U10 = {   # European Union
 
 	capital = 51 # Brussels
 }
+U16 = { #奧地利人民共和國
+	date = { day = 1 month = january year = 1934 }
+	expirydate = { day = 30 month = december year = 1990 }
+	minimum = { 463 464 465 3187 3188 3189 4085 3186 4084 373 377 3191 460 461 462 3190 }
 
+	extra = { }
+	capital =  463
+	intrinsic_gov_type = stalinist
+}
 U17 = { # 越南帝国
 	date = { day = 1 month = january year = 1936 }
 	expirydate = { day = 30 month = december year = 1999 }
