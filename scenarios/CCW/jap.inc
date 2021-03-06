@@ -154,21 +154,21 @@ country = {
 
   policy = {
     democratic        = 6
-    political_left    = 5
+    political_left    = 3
     freedom           = 2
-    free_market       = 10
+    free_market       = 4
     professional_army = 1
     defense_lobby     = 1
     interventionism   = 1
   }
-  headofstate            = { type = 9 id = 5001 } # 裕仁 
-  headofgovernment       = { type = 9 id = 6182 } # 道格拉斯 麦克阿瑟 
+  headofstate            = { type = 9 id = 5239 } # 道格拉斯 麦克阿瑟 
+  headofgovernment       = { type = 9 id = 5030 } # 幣原 喜重郎 
   foreignminister        = { type = 9 id = 5052 } # 吉田 茂 
   armamentminister       = { type = 9 id = 5220 } # 池田勇人 
-  ministerofsecurity     = { type = 9 id = 5210 } # 石桥湛山 
+  ministerofsecurity     = { type = 9 id = 5102 } # 堀切 善次郎 
   ministerofintelligence = { type = 9 id = 5129 } # 片山 哲 
   chiefofstaff           = { type = 9 id = 5148 } # 大泽梶原 
-  chiefofarmy            = { type = 9 id = 5161 } # 土桥勇逸 
+  chiefofarmy            = { type = 9 id = 524389 } # 下村 定
   chiefofair             = { type = 9 id = 5180 } # 井上成美 
   nationalidentity       = "policy_economy_military-state"
   socialpolicy           = "policy_social_bushido"

@@ -500,10 +500,10 @@ event = {
   	deathdate = { day = 30 month = december year = 1970 }
   
   	action_a = {
-    	name = "必須把赤色分子統統扼殺 "
-    	command = { type = dissent value = 5 }
-    	command = { type = domestic which = freedom value = -1 }
-    	command = { type = domestic which = political_left value = -1 }
+    		name = "必須把赤色分子統統扼殺 "
+    		command = { type = dissent value = 5 }
+    		command = { type = domestic which = freedom value = -1 }
+    		command = { type = domestic which = political_left value = -1 }
   	}
 }
 
@@ -571,290 +571,362 @@ event = {
   	}
 }
 
+########## 海軍上將叛亂事件 ##########
+
+event = {
+  	id = 135027
+  	random = no
+  	country = USA
+
+   	trigger = {  
+    		atwar = no
+    		government = democratic
+  	} 
+ 
+  	name = "美國號航空母艦(CVA-58) " 
+  	desc = "1948年7月29日，美國國會通過一紙航空母艦建造案，該案
+		預計要建造一艘65,000噸級的航空母艦，編號「CVA-58」。
+		這除了是美國在二戰之後首次規劃新型航空母艦的建造外，
+		也是有史以來第一次嘗試建造超級航空母艦等級的軍艦。
+		該計畫所需的預算在隔年的《1949年海軍撥款法案》中獲得
+		通過，並且於1949年4月18日在維吉尼亞州的紐波特紐斯造
+		船廠的乾塢中，放下龍骨開始建造。 "
+  	style = 0
+#  	picture = " "
+
+  	date = { day = 17 month = april year = 1949 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "中止興建 "
+		ai_chance = 100
+		command = { type = money value = 100 }
+		command = { type = setflag which = CVA58_cancelled }
+  	}
+  	action_b = {
+    		name = "繼續建造 "
+		ai_chance = 0
+		command = { type = money value = -100 }
+		command = { type = build_division which = carrier value = cag }
+  	}
+}
+
+event = {
+  	id = 135028
+  	random = no
+  	country = USA
+
+   	trigger = {  
+    		atwar = no
+    		government = democratic
+		flag = CVA58_cancelled
+  	} 
+ 
+  	name = "海軍上將叛亂事件 " 
+  	desc = " "
+  	style = 0
+#  	picture = " "
+
+  	date = { day = 17 month = april year = 1949 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 3 }
+		command = { type = morale which = naval value = -3 }
+		command = { type = max_organization which = naval value = -3 }
+		command = { type = chiefofnavy which = 6233 }
+		# sleep some admiral maybe
+  	}
+}
 
 ################
 #武装西德——美国
 #############################################
 event = {
-  id = 1351000
-  random = no
-  country = USA
+  	id = 135030
+  	random = no
+  	country = USA
   
-  name = "武装西德 " 
-  desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
-  style = 0
+  	name = "武装西德 " 
+  	desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
+  	style = 0
   
-  trigger = {
-    headofstate = 6034
-    government = democratic
-  } 
-  date = { day = 11 month = september year = 1950 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	trigger = {
+    		headofstate = 6034
+    		government = democratic
+  	} 
+  	date = { day = 11 month = september year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "必须把西德武装起来！ "
-    command = { type = relation which = DFR value = 10 }
-    command = { type = belligerence value = 5 }
-    command = { type = trigger which = 1350020 }
-  }
+  	action_a = {
+    		name = "必须把西德武装起来！ "
+    		command = { type = relation which = DFR value = 10 }
+    		command = { type = belligerence value = 5 }
+    		command = { type = trigger which = 135031 }
+  	}
 }
 ################
 #武装西德——西德
 #############################################
 event = {
-  id = 1350020
-  random = no
-  country = DFR
+  	id = 135031
+  	random = no
+  	country = DFR
   
-  name = "武装西德 " 
-  desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
-  style = 0
+  	name = "武装西德 " 
+  	desc = "1950年9月12日，艾奇逊向英法提出装备十个西德师的建议，法国 反应强烈。但在美国强烈要求和援助法国防务开支的诱惑下，法 国作出让步。12月，布鲁塞尔举行的北约理事会会议决定，建立 一支由美国军官统帅的北约国家联合军队。杜鲁门任命艾森豪威 尔为盟军总司令。 "
+  	style = 0
   
   
-  action_a = {
-    name = "好极了！ "
-    command = { type = relation which = DFR value = 10 }
-    command = { type = belligerence value = 5 }
-    command = { type = build_time which = land value = -10 }
-  }
+  	action_a = {
+    		name = "好极了！ "
+    		command = { type = relation which = USA value = 10 }
+    		command = { type = belligerence value = 5 }
+    		command = { type = build_time which = land value = -10 }
+  	}
 }
 ################
 #美菲共同防御协定——美国
 #############################################
 event = {
-  id = 1350030
-  random = no
-  country = USA
+  	id = 135032
+  	random = no
+  	country = USA
   
-  name = "美菲共同防御协定 " 
-  desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
-  style = 0
+  	name = "美菲共同防御协定 " 
+  	desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
+  	style = 0
   
-  trigger = {
-    headofstate = 6034
-    exists = PHI
-  } 
-  date = { day = 29 month = august year = 1951 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	trigger = {
+    		headofstate = 6034
+    		exists = PHI
+  	}
+ 
+  	date = { day = 29 month = august year = 1951 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "这是个好协定 "
-    command = { type = guarantee which = USA where = PHI }
-    command = { type = relation which = PHI value = 10 }
-    command = { type = trigger which = 1350140 }
-  }
+  	action_a = {
+    		name = "这是个好协定 "
+    		command = { type = guarantee which = USA where = PHI }
+    		command = { type = relation which = PHI value = 10 }
+    		command = { type = trigger which = 135033 }
+  	}
 }
 ################
 #美菲共同防御协定——菲律宾
 #############################################
 event = {
-  id = 1350140
-  random = no
-  country = PHI
+  	id = 135033
+  	random = no
+  	country = PHI
   
-  name = "美菲共同防御协定 " 
-  desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
-  style = 0
+  	name = "美菲共同防御协定 " 
+  	desc = "1951年8月30日，美国与菲律宾签订共同防御条约，美国通过该条 约，在菲律宾建立了约40个军事基地。 "
+  	style = 0
   
   
-  action_a = {
-    name = "好极了！ "
-    command = { type = access which = USA }
-    command = { type = relation which = USA value = 10 }
-  }
+  	action_a = {
+    		name = "好极了！ "
+    		command = { type = access which = USA }
+    		command = { type = relation which = USA value = 10 }
+  	}
 }
+
 ################
 #旧金山和约——美国
 #############################################
 event = {
-  id = 1350050
-  random = no
-  country = USA
+  	id = 135034
+  	random = no
+  	country = USA
   
-  name = "旧金山和约 " 
-  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
-  style = 0
+  	name = "旧金山和约 " 
+  	desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
+  	style = 0
   
-  trigger = {
-    headofstate = 6034
-    exists = JAP
-    atwar = no
-  } 
-  date = { day = 7 month = september year = 1951 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	trigger = {
+   	 	headofstate = 6034
+    		exists = JAP
+    		atwar = no
+  	} 
+  	date = { day = 7 month = september year = 1951 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "要把日本牢牢的握在手中 "
-    command = { type = guarantee which = USA where = JAP }
-    command = { type = relation which = JAP value = 10 }
-    command = { type = trigger which = 1350060 }
-  }
+  	action_a = {
+    		name = "要把日本牢牢的握在手中 "
+    		command = { type = guarantee which = USA where = JAP }
+    		command = { type = relation which = JAP value = 10 }
+    		command = { type = trigger which = 135035 }
+  	}
 }
 ################
 #旧金山和约——日本
 #############################################
 event = {
-  id = 1350060
-  random = no
-  country = JAP
+  	id = 135035
+  	random = no
+  	country = JAP
   
-  name = "旧金山和约 " 
-  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
-  style = 0
+  	name = "旧金山和约 " 
+  	desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。 "
+  	style = 0
   
   
-  action_a = {
-    name = "我们获得了独立主权！ "
-    command = { type = dissent value = -1 }
-    command = { type = relation which = USA value = 10 }
-    command = { type = trigger which = 1350070 }
-  }
+  	action_a = {
+    		name = "我们获得了独立主权！ "
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = USA value = 10 }
+    		command = { type = trigger which = 135036 }
+  	}
 }
 ################
 #旧金山和约——苏联
 #############################################
 event = {
-  id = 1350070
-  random = no
-  country = SOV
+  	id = 135036
+  	random = no
+  	country = SOV
   
-  name = "旧金山和约 " 
-  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。由于在北方四岛主权上的争 议，苏联方面没有在该条约上签字。 "
-  style = 0
+  	name = "旧金山和约 " 
+  	desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。由于在北方四岛主权上的争 议，苏联方面没有在该条约上签字。 "
+  	style = 0
   
   
-  action_a = {
-    name = "北方四岛不能给日本 "
-    command = { type = relation which = USA value = -10 }
-    command = { type = relation which = JAP value = -10 }
-    command = { type = trigger which = 1350080 }
-  }
+  	action_a = {
+    		name = "北方四岛不能给日本 "
+    		command = { type = relation which = USA value = -10 }
+    		command = { type = relation which = JAP value = -10 }
+    		command = { type = trigger which = 135037 }
+  	}
 }
 ################
 #旧金山和约——中国
 #############################################
 event = {
-  id = 1350080
-  random = no
-  country = U01
+  	id = 135037
+  	random = no
+  	country = CHC
   
-  name = "旧金山和约 " 
-  desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。中国对此表示强烈反对，作 为日本侵略战争的最大受害者，没有中国代表参与的和约应当是 无效的和非法的。 "
-  style = 0
+  	name = "旧金山和约 " 
+  	desc = "1951年9月8日，美国为了把控制日本合法化，在没有中国代表参 加的情况下，强制与日本单独签订和约。同日，美日签订了《日 美安保条约》，规定美国拥有在日本国内驻军权。日本被正式视 为一个独立自主的国家加入联合国。中国对此表示强烈反对，作 为日本侵略战争的最大受害者，没有中国代表参与的和约应当是 无效的和非法的。 "
+  	style = 0
   
   
-  action_a = {
-    name = "这个条约是无效条约！ "
-    command = { type = relation which = USA value = -20 }
-    command = { type = relation which = JAP value = -20 }
-  }
+  	action_a = {
+    		name = "这个条约是无效条约！ "
+    		command = { type = relation which = USA value = -20 }
+    		command = { type = relation which = JAP value = -20 }
+  	}
 }
 ################
 #美韩共同防御协定——美国
 #############################################
 event = {
-  id = 1350090
-  random = no
-  country = USA
+  	id = 135038
+  	random = no
+  	country = USA
   
-  name = "美韩共同防御协定 " 
-  desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
-  style = 0
+  	name = "美韩共同防御协定 " 
+  	desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
+  	style = 0
   
-  trigger = {
-    flag = "korean war end"
-    not = { war = { country = PRK country = KOR } }
-    exists = KOR
-    government = democratic
-  } 
-  date = { day = 30 month = september year = 1953 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	trigger = {
+    		flag = "korean war end"
+    		not = { war = { country = PRK country = KOR } }
+    		exists = KOR
+    		government = democratic
+  	} 
+  	date = { day = 30 month = september year = 1953 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "控制南朝鲜！ "
-    command = { type = guarantee which = USA where = KOR }
-    command = { type = relation which = KOR value = 10 }
-    command = { type = relation which = PRK value = -10 }
-    command = { type = relation which = U01 value = -10 }
-    command = { type = trigger which = 1350100 }
-  }
+  	action_a = {
+    		name = "控制南朝鲜！ "
+    		command = { type = guarantee which = USA where = KOR }
+    		command = { type = relation which = KOR value = 10 }
+    		command = { type = relation which = PRK value = -10 }
+    		command = { type = relation which = CHC value = -10 }
+    		command = { type = trigger which = 135039 }
+  	}
 }
 ################
 #美韩共同防御协定——韩国
 #############################################
 event = {
-  id = 1350100
-  random = no
-  country = KOR
+  	id = 135039
+  	random = no
+  	country = KOR
   
-  name = "美韩共同防御协定 " 
-  desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
-  style = 0
+  	name = "美韩共同防御协定 " 
+  	desc = "1953年10月1日，美国与韩国签订共同防御条约，在朝鲜战争停战 后，美国通过该条约，获得了南朝鲜地区的控制权。 "
+  	style = 0
   
   
-  action_a = {
-    name = "好极了！ "
-    command = { type = access which = USA }
-    command = { type = relation which = USA value = 10 }
-  }
+  	action_a = {
+    		name = "好极了！ "
+    		command = { type = access which = USA }
+    		command = { type = relation which = USA value = 10 }
+  	}
 }
 ################
 #冻结中国在美资产
 #############################################
 event = {
-  id = 1350110
-  random = no
-  country = USA
+  	id = 135040
+  	random = no
+  	country = USA
   
-  name = "冻结中国在美资产 " 
-  desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
-  style = 0
+  	name = "冻结中国在美资产 " 
+  	desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
+  	style = 0
   
-  trigger = {
-    government = democratic
-  } 
-  date = { day = 15 month = december year = 1950 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1970 }
+  	trigger = {
+    		government = democratic
+  	} 
+  	date = { day = 15 month = december year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
   
-  action_a = {
-    name = "封锁共产党中国 "
-    ai_chance = 95
-    command = { type = relation which = U01 value = -20 }
-    command = { type = trigger which = 1350120 }
-  }
-  action_b = {
-    name = "不需要把事情做绝 "
-    ai_chance = 5
-    command = { type = domestic	which = interventionism value = -1 }
-  }
+  	action_a = {
+    		name = "封锁共产党中国 "
+    		ai_chance = 95
+    		command = { type = relation which = CHC value = -20 }
+    		command = { type = trigger which = 135041 }
+  	}
+  	action_b = {
+    		name = "不需要把事情做绝 "
+    		ai_chance = 5
+    		command = { type = domestic	which = interventionism value = -1 }
+  	}
 }
 ################
 #冻结中国在美资产
 #############################################
 event = {
-  id = 1350120
-  random = no
-  country = U01
+  	id = 135041
+  	random = no
+  	country = CHC
   
-  name = "冻结中国在美资产 " 
-  desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
-  style = 0
+  	name = "冻结中国在美资产 " 
+  	desc = "1950年12月16日，美国突然宣布冻结中华人民共和国在美国管辖 境内的一切资产，禁止一切在美国注册的船驶往中国港口，断绝 一切同中国的往来。 "
+  	style = 0
   
-  action_a = {
-    name = "万恶的美帝 "
-    command = { type = relation which = USA value = -20 }
-  }
+  	action_a = {
+    		name = "万恶的美帝 "
+    		command = { type = relation which = USA value = -20 }
+  	}
 }
 ################
 #麦卡锡主义
 #############################################
 event = {
-  	id = 1350130
+  	id = 135042
   	random = no
   	country = USA
   
@@ -887,7 +959,7 @@ event = {
 }
 
 event = {
-	id = 1350180
+	id = 135043
 	country = usa
 	random = no
 
@@ -912,7 +984,7 @@ event = {
            	}      	       	         	
 }
 event = {
-	id = 1350190
+	id = 135044
 	country = usa
 	random = no
 
@@ -936,7 +1008,7 @@ event = {
            	}      	       	         	
 }
 event = {
-	id = 1350200
+	id = 135045
 	country = usa
 	random = no
 
@@ -988,7 +1060,7 @@ event = {
 #大规模报复战略
 #############################################
 event = {
-  	id = 1350170
+  	id = 135046
   	random = no
   	country = USA
   
@@ -1050,11 +1122,11 @@ event = {
 		command = { type = add_corps which = "美國兩棲第1軍團 " value = land where = 765 } #暫定
 		command = { type = add_division which = "第1'老种类'海军陆战师 " value = marine when = 19 where = engineer }
 		command = { type = add_division which = "第2'跟我来'海军陆战师 " value = marine when = 19 where = engineer }
-  }
+  	}
 }
 
 
-##### UNITED STATES ELECTIONS
+##### UNITED STATES CONGRESS (testing) #####
 
 event = {
 	id = 1350000

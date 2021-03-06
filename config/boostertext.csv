@@ -143,7 +143,7 @@ EE_BVAS;同%s的附属国关系解除。 ;;;;;;;;;;X
 EE_ROY;与%s建立了皇室联姻。 ;;;;;;;;;;X
 EE_VAS;使%s成为附属国。 ;;;;;;;;;;X
 EE_ALL;与%s联盟。 ;;;;;;;;;;X
-EE_INHERIT;继承了%s的王国。 ;;;;;;;;;;X
+EE_INHERIT;我们併吞了%s。 ;;;;;;;;;;X
 EE_CASH;%s%d$ ;;;;;;;;;;X
 EE_MANPOWER;兵源：%s%d ;;;;;;;;;;X
 EE_RELATIVE_MANPOWER;总人口的%s%d\%%直接转变成兵源。 ;;;;;;;;;;X
@@ -417,6 +417,7 @@ EE_GEARING_LIMIT;流水线加成上限 ;;;;;;;;;;x
 EE_GEARING_EFF;流水线加成效率 ;;;;;;;;;;x
 #;;;;;;;;;;;x
 EE_TORPEDO_ATTACK;鱼雷攻击 ;;;;;;;;;;x
+EE_SETFLAG;空军总长：%s ;;;;;;;;;;X
 #;;;;;;;;;;;x
 TC_AXIS_VP;轴心国控制着至少%d个胜利点 \n;;;;;;;;;;X
 TC_ALLIES_VP;盟国控制着至少%d个胜利点 \n;;;;;;;;;;X

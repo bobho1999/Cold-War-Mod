@@ -326,36 +326,6 @@ national_ideas = {
         modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.0500 }        
         modifier = { type = resource_mod value = money modifier_effect = -0.2000 }                            
         } 
-
-# Stalinism planned economic
-    national_idea = {
-	     category = stalinist
-     	 category = leninist    
-
-        picture = "ECO_Stalinism-planned_economy"
-        personality_string = "policy_economy_Stalinism-planned_wartime" 
-        name = "NAME_POLICY_ECONOMY_Stalinism-planned_wartime" 
-        desc = "DESCRIPTION_POLICY_ECONOMY_Stalinism-planned_wartime" 
-        minister_position = nationalidentity 
-        modifier = { type = dissent_mod modifier_effect = 0.2000 }        
-        modifier = { type = tc_mod modifier_effect = 0.0500 }       
-        modifier = { type = gearing_speed_mod modifier_effect = 0.1000 }        
-        modifier = { type = gearing_max_mod modifier_effect = 0.3000 }          
-        modifier = { type = production_category_mod value = production modifier_effect = 0.1000 }  
-        modifier = { type = production_category_mod value = upgrade modifier_effect = -0.2000 }    
-        modifier = { type = production_category_mod value = reinforcement modifier_effect = -0.2000 }
-        modifier = { type = production_category_mod value = infrastructure modifier_effect = -0.2000 }        
-        modifier = { type = production_category_mod value = supply modifier_effect = -0.2000 }  
-        modifier = { type = production_category_mod value = consumer modifier_effect = 0.3000 }                         
-        modifier = { type = remote_placement_min_ic_mod modifier_effect = -0.2000 }  
-        modifier = { type = tech_group_mod value = industry modifier_effect = 0.1000 }  
-        modifier = { type = tech_group_mod value = infantry modifier_effect = -0.0500 }          
-        modifier = { type = tech_group_mod value = armor modifier_effect = -0.0500 }          
-        modifier = { type = tech_group_mod value = naval modifier_effect = -0.0500 }   
-        modifier = { type = tech_group_mod value = aircraft modifier_effect = -0.0500 }        
-        modifier = { type = resource_mod value = money modifier_effect = -0.2000 } 
-       	modifier = { type = military_salaries_mod modifier_effect = 0.2000 }                           
-        }
         
 ### SOCIAL POLICY
 
