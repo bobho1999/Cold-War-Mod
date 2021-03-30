@@ -1,0 +1,320 @@
+event = {
+	id = 8003401
+	country = COS
+
+	name = "EVT_ELECTIONS_NAME" #1948 election
+	desc = "EVT_ELECTIONS_DESC"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = february year = 1948 }
+	offset = 7
+	deathdate = { day = 30 month = march year = 1948 }
+
+	action_a = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 100
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 47031 } # Otilio Ulate
+		command = { type = headofgovernment which = 310201 } # Alberto Oreamuno Flores
+		command = { type = foreignminister which = 47052 } # Lu?s Fernand?z Rodr?guez
+		command = { type = armamentminister which = 47068 } # Calufa Fallas Sinaja
+		command = { type = ministerofsecurity which = 47080 } # Jose Figueres Ferrer
+		command = { type = ministerofintelligence which = 47095 } # Tobias Z??iaga Mont?far
+		command = { type = chiefofarmy which = 47112 } # Jose Figueres Ferrer
+	}
+	action_b = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 47036 } # Rafael Calderon Guardia
+		command = { type = headofgovernment which = 47045 } # Teodoro Picado Michalski
+		command = { type = foreignminister which = 47052 } # Lu?s Fernand?z Rodr?guez
+		command = { type = armamentminister which = 47072 } # Tobias Z??iaga Mont?far
+		command = { type = ministerofsecurity which = 310063 } # Alejandro de Castro Lopez
+		command = { type = ministerofintelligence which = 47095 } # Tobias Z??iaga Mont?far
+		command = { type = chiefofarmy which = 47114 } # Tobias Z??iaga Mont?far
+	}
+}
+
+event = {
+	id = 8003408
+	country = COS
+
+	name = "政治動盪" 
+	desc = " "
+	style = 1
+
+	trigger = {
+		headofstate = 47031
+	}
+
+	date = { day = 11 month = march year = 1948 }
+	offset = 1
+	deathdate = { day = 30 month = march year = 1948 }
+
+	action_a = {
+		name = "EVT_ELECTIONS_RIGHT"
+		command = { type = dissent value = 25 }
+#		command = { type = headofstate which = 47037 } # Rafael Calderon Guardia
+#		command = { type = headofgovernment which = 47045 } # Teodoro Picado Michalski
+	}
+}
+
+event = {
+	id = 8003402
+	country = COS
+
+	name = "哥斯大黎加內戰"
+	desc = "EVT_8003402_DESC"
+	style = 1
+
+	trigger = {
+		government = democratic
+		event = 8003408
+#		lost_national = { country = -1 value = 50 }
+	}
+
+	date = { day = 12 month = march year = 1948 }
+	offset = 5
+	deathdate = { day = 30 month = june year = 1948 }
+
+	action_a = {
+		name = "EVT_8003402_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 47135 } # Jose Figueres Ferrer
+		command = { type = headofgovernment which = 47041 } # Jose Figueres Ferrer
+		command = { type = foreignminister which = 47052 } # Lu?s Fernand?z Rodr?guez
+		command = { type = armamentminister which = 310049 } # Calufa Fallas Sinaja
+		command = { type = ministerofsecurity which = 310060 } # Jose Figueres Ferrer
+		command = { type = ministerofintelligence which = 310069 } # Jose Figueres Ferrer
+		command = { type = chiefofstaff which = 310080 } # Jose Figueres Ferrer
+		command = { type = chiefofarmy which = 310085 } # Jose Figueres Ferrer
+		command = { type = chiefofnavy which = 310092 } # Felipe Abreu Castro
+		command = { type = chiefofair which = 310095 } # Guillermo Macho Nu?ez
+		command = { type = control which = COS value = 540 } 
+	}
+	
+#	action_b = {
+#		name = "EVT_8003402_B"
+#		ai_chance = 10
+#		command = { type = dissent value = 5 }
+#		command = { type = set_domestic which = democratic value = 5 }
+#		command = { type = set_domestic which = political_left value = 2 }
+#	}
+}
+
+event = {
+	id = 8003403
+	country = COS
+
+	name = "轉移權力"
+	desc = "EVT_8003403_DESC"
+	picture = "nwo\empty"
+	style = 1
+
+	trigger = {
+		OR = {
+			government = democratic
+			government = fascist
+		}
+		headofstate = 47135 
+	}
+
+	date = { day = 7 month = november year = 1949 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action_a = {
+		name = "EVT_8003403_A"
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 47031 } # Otilio Ulate
+		command = { type = headofgovernment which = 47136 } # Otilio Ulate
+	}
+	action_b = {
+		name = "EVT_8003403_B"
+		ai_chance = 0
+		command = { type = dissent value = 20 }
+		command = { type = set_domestic which = democratic value = 4 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofgovernment which = 47041 } # Jose Figueres Ferrer
+	}
+}
+
+event = {
+	id = 8003404
+	country = COS
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1957 }
+
+	action_a = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 47135 } # Jose Figueres Ferrer
+		command = { type = headofgovernment which = 310203 } # Raul Blanco Cervantes
+	}
+	action_b = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 310204 } # Fernando Castro Cervantes
+		command = { type = headofgovernment which = 310202 } # Otilio Ulate
+	}
+#	action = {
+#		name = "EVT_ELECTIONS_NOCHANGE"
+#		ai_chance = 0
+#		command = { type = dissent value = 12 }
+#	}
+}
+
+event = {
+	id = 8003405
+	country = COS
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1958 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1961 }
+
+	action_a = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 310206 } # Mario Echandi Jimenez
+		command = { type = headofgovernment which = 310207 } # Abelardo Bonilla Baldares
+	}
+	action_b = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 310205 } # Francisco Orlich Bolmarcich
+		command = { type = headofgovernment which = 47041 } # Jose Figueres Ferrer
+	}
+#	action = {
+#		name = "EVT_ELECTIONS_NOCHANGE"
+#		ai_chance = 0
+#		command = { type = dissent value = 12 }
+#	}
+}
+
+event = {
+	id = 8003406
+	country = COS
+
+	name = "EVT_ELECTIONS_NAME"
+	desc = "EVT_ELECTIONS_DESC"
+	picture = "nwo\elections"
+	style = 1
+
+	trigger = {
+		government = democratic
+	}
+
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action_a = {
+		name = "EVT_ELECTIONS_LEFT"
+		ai_chance = 85
+		command = { type = dissent value = -12 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 310205 } # Francisco Orlich Bolmarcich
+		command = { type = headofgovernment which = 310203 } # Raul Blanco Cervantes
+	}
+	action_b = {
+		name = "EVT_ELECTIONS_RIGHT"
+		ai_chance = 15
+		command = { type = dissent value = -4 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 310017 } # Rafael Calderon Guardia
+		command = { type = headofgovernment which = 310208 } # Mario Echandi Jimenez
+	}
+#	action = {
+#		name = "EVT_ELECTIONS_NOCHANGE"
+#		ai_chance = 0
+#		command = { type = dissent value = 12 }
+#	}
+}
+
+event = {
+	id = 8003407
+	country = COS
+
+	name = "解散军队"
+	desc = "EVT_8003407_DESC"
+	picture = "nwo\costa_rican_policia"
+	style = 1
+
+	trigger = {
+		headofstate = 47135 # Jose Figueres Ferrer
+	}
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "EVT_8003407_A"
+		ai_chance = 98
+#		command = { type = strength which = all when = 0 where = 0 value = 0 }
+		command = { type = manpowerpool value = -1000 }
+		command = { type = set_domestic which = professional_army value = 1 }
+		command = { type = local_clrflag which = MOB_9 }
+		command = { type = local_clrflag which = MOB_8 }
+		command = { type = local_clrflag which = MOB_7 }
+		command = { type = local_clrflag which = MOB_6 }
+		command = { type = local_clrflag which = MOB_5 }
+		command = { type = local_clrflag which = MOB_4 }
+		command = { type = local_clrflag which = MOB_3 }
+		command = { type = local_clrflag which = MOB_2 }
+		command = { type = local_clrflag which = MOB_1 }
+	}
+
+	action_b = {
+		name = "EVT_8003407_B"
+		ai_chance = 2
+		command = { type = dissent value = 20 }
+	}
+}

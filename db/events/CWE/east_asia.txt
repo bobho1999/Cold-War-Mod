@@ -1,0 +1,1155 @@
+#############################################
+#### events for Japan Korea and Taiwan 612000-612499
+#############################################
+## end of the Korean War SK victory
+event = {
+	id = 612000
+	random = no
+	country = KOR
+	trigger = {
+		event = 3895
+		NOT = { exists = PRK }
+	}
+	
+        	date = { day = 0 month = january year = 1939 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Korean War Victory" 
+	desc = "We have utterly defeated the invaders from the north and have reunified the country!"
+       	picture = "korea_celebrating"
+
+	action_a = {
+		name = "OK" #
+		command = { type = peace which = CHC value = 0 } # in case
+		command = { type = peace which = SOV value = 0 } # in case
+		command = { type = dissent value = -10 }
+	}
+}
+## end of the Korean War NK victory
+event = {
+	id = 612001
+	random = no
+	country = KOR
+	trigger = {
+		event = 3895
+		control = { province = 1195 data = PRK }
+		control = { province = 1196 data = PRK }
+		control = { province = 1197 data = PRK }
+		control = { province = 1198 data = PRK }
+		control = { province = 1199 data = PRK }
+	}
+	
+        	date = { day = 0 month = january year = 1939 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Korean War Defeat" 
+	desc = "We have been defeated by the enemy from the north!"
+       	style = 0
+
+	action_a = {
+		name = "OK" #
+		command = { type = peace which = PRK value = 0 } 
+		command = { type = secedeprovince which = JAP value = 1194 } #Jeju
+		command = { type = trigger which = 612002 }
+	}
+}
+event = {
+	id = 612002
+	random = no
+	country = PRK
+	#
+	
+	name = "Korean War Victory" 
+	desc = "We have utterly defeated the reactionaries from the south and have reunified the country!"
+       	picture = "korea_PRK_celebrating"
+
+	action_a = {
+		name = "OK" #
+		command = { type = inherit which = KOR }
+		command = { type = peace which = USA value = 0 } # in case
+		command = { type = dissent value = -10 }
+	}
+}
+## historic armistice 
+event = {
+	id = 612003
+	random = no
+	country = KOR
+
+	#
+	
+	name = "Korean War Armistice" 
+	desc = "KWARMISTICE_DESC"
+	picture = "korea_dmz"
+
+	action_a = {
+		name = "OK" #
+		command = { type = peace which = PRK value = 0 } 
+	}
+}
+## alliance PRK-SOV after Korean War
+event = {
+	id = 612004
+	random = no
+	country = PRK
+	trigger = {
+		NOT = { alliance = { country = PRK country = SOV } }
+		OR = {
+			event = 61202 # NK victory
+			event = 61203 # KW armistice			
+		}
+	}
+	
+        	date = { day = 15 month = march year = 1953 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Post-Korean War Alliance" 
+	desc = "The Soviet Union and the DPRK have signed a treaty of alliance. Kim Il-Sung now understands that he is to avoid open warfare with South Korea, but continues his program of infiltration and sabotage."
+       	style = 0
+
+	action_a = {
+		name = "OK" #
+		command = { type = alliance which = SOV } 
+	}
+}
+## end Korean puppets if not already done
+event = {
+	id = 612005
+	random = no
+	country = KOR
+	trigger = {
+		OR = {
+			puppet = { country = KOR country = USA }
+			puppet = { country = KOR country = CHI } # from ahistorical CHI vs JAP early victory
+			atwar = no
+		}
+	}
+	
+        	date = { day = 15 month = february year = 1954 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	name = "Economic Independence" 
+	desc = "The Republic of Korea achieves economic independence. Korea remained in a close security relationship with the USA, but eventually emerged as a strong global economic competitor."
+       	style = 0
+
+	action_a = {
+		name = "OK" #
+		command = { type end_puppet } 
+		command = { type = sleepevent which = 3811 }
+	}
+}
+event = {
+	id = 612006
+	random = no
+	country = PRK
+	trigger = {
+		OR = {
+			puppet = { country = PRK country = SOV }
+			puppet = { country = PRK country = CHC } # if done by CCIP
+		}
+		atwar = no
+	}
+	
+        	date = { day = 15 month = february year = 1954 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	name = "Economic Independence" 
+	desc = "The Korean Peoples Republic achieves economic independence. Juche (self-reliance) would become a cornerstone of policy and eventually lead to economic stagnation."
+       	style = 0
+
+	action_a = {
+		name = "OK" #
+		command = { type end_puppet } 
+		command = { type = sleepevent which = 3810 }
+	}
+}
+### Backup event to start Korean War on real date if not started
+event = {
+	id = 612007
+	random = no
+	country = PRK
+
+	name = EVT_49_NAME
+	desc = EVT_49_DESC
+       picture = "korean_war"
+	style = 0
+
+	trigger = {
+		exists = KOR
+		NOT = { exists = GER }
+		# added control checks for CHC-Kim Il Sung was unwilling to
+		# start Korean War without assurance of either CHC or SOV
+		# support and Stalin did not give this.-nomonhan
+		control = { province = 1205 data = CHC } #Beijing
+		control = { province = 1235 data = CHC } #Nanjing
+		control = { province = 1280 data = CHC } #Chongqing
+		control = { province = 1313 data = CHC } #Guangzhou
+		control = { province = 1377 data = CHC } # CHC
+		control = { province = 1378 data = CHC } # PRK
+		control = { province = 1394 data = CHC } # border
+		# CHC must own China--new for Cold War 0.23
+		owned = { province = 1235 data = CHC } #Nanjing
+		owned = { province = 1313 data = CHC } #Guangzhou
+		owned = { province = 1280 data = CHC } #Chongqing
+		NOT = { ispuppet = CHC }
+		NOT = { atwar = CHC } # Communists won Chi civil war
+		# new for Cold War 0.23--Xibei San Ma must not exist
+		NOT = { exists = CXB }
+		# NOT = { alliance = { country = CHC country = SOV } }
+		atwar = no
+		NOT = { event = 49 }
+		OR = {
+			event = 45 # Japan already surrendered
+			event = 6877 # alternate surrender
+			NOT = {
+				exists = JAP
+			}
+		}
+	}
+
+        date = { day = 24 month = june year = 1950 }
+
+
+	action_a = {
+		name = EVT_49_ACTA
+		command = { type = end_puppet }
+		command = { type = leave_alliance } # SOV does not want WW3 - historically disowns PRK war
+		command = { type = sleepevent which = 49 } # other Kor War
+		command = { type = sleepevent which = 3810 } # SOV puppet
+		# command = { type = war which = KOR } war must occur after alliances broken
+		command = { type = set_relation which = SOV value = -50 }
+		command = { type = set_relation which = CHC value = -20 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = domestic which = freedom value = -2 }
+		command = { type = domestic which = democratic value = -2 }
+		command = { type = domestic which = defense_lobby value = 2 }
+		# necessary to make sure PRK doesn't get annexed with fall of Pyongyang
+		command = { type = province_keypoints which = 1200 value = 1 }
+		command = { type = province_keypoints which = 1391 value = 1 }
+		command = { type = province_keypoints which = 1392 value = 1 }
+		command = { type = province_keypoints which = 1393 value = 1 }
+		command = { type = province_keypoints which = 1376 value = 1 }
+		command = { type = trigger which = 3895 } # KOR
+	}
+	action_b = {
+		name = EVT_70_ACTB
+		command = { }
+	}
+}
+event = {
+	id = 612009
+	random = no
+	country = PRK
+
+	#added in CWTTE/AOD 0.16 triggered by 3895
+	
+	name = "The 6-25 War" 
+	desc = "It is now time to destroy the reactionaries from the south!"
+
+	action_a = {
+		name = "Fortune will grant us victory" #
+		command = { type = war which = KOR }
+		command = { type = trigger which = 614000 } #USA
+	}
+}
+event = {
+	id = 612008
+	random = no
+	country = PRK
+
+	name = "Korean War-Soviet Intervention" 
+	desc = "Stalin played a double game during the Korean War. He aided Kim Il-Sung in his arms build up prior to the invasion, providing tanks, air support and fighter planes. He officially shunned the North Koreans in order to not embarrass the USA, but aided North Korea in secret."
+       	picture = "KW_soviet_intervention"
+	style = 0
+
+	action_a = {
+		name = "Good!"
+		command = { type = max_organization which = land value = 90 }
+		command = { type = add_corps which = "Korean Peoples Army #1" value = land where = 1201 }
+		command = { type = add_division which = "Pyongyang HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "KPA #1" value = armor when = 4 where = sp_rct_artillery }
+		command = { type = add_division which = "KPA #2" value = infantry when = 6 where = sp_rct_artillery }
+		command = { type = add_division which = "KPA #3" value = infantry when = 6 where = sp_rct_artillery }
+		command = { type = add_corps which = "Korean Peoples Army #2" value = land where = 1200 }
+		command = { type = add_division which = "KPA East HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "KPA #4" value = armor when = 4 where = sp_rct_artillery }
+		command = { type = add_division which = "KPA #5" value = infantry when = 6 where = sp_rct_artillery }
+		command = { type = add_division which = "KPA #6" value = infantry when = 6 where = sp_rct_artillery }
+		command = { type = max_organization which = land value = -90 }
+		command = { type = add_corps which = "Korean Peoples AF #1" value = air where = 1201 }
+		command = { type = add_division which = "SOV Assistance Attack Unit #1" value = cas when = 3 }
+		command = { type = add_division which = "SOV Assistance Attack Unit #2" value = cas when = 3 }
+		command = { type = add_division which = "SOV Assistance Attack Unit #3" value = cas when = 3 }
+		command = { type = add_corps which = "Korean Peoples AF #2" value = air where = 1201 }
+		command = { type = add_division which = "KPA Air Defense #1" value = multi_role when = 4 }
+		command = { type = add_division which = "KPA Air Defense #2" value = multi_role when = 4 }
+		command = { type = add_division which = "KPA Air Defense #3" value = multi_role when = 4 }
+		command = { type = supplies value = 1000 }
+		command = { type = free_ic value = 10 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		command = { type = free_rare_materials value = 6 }
+		command = { type = free_oil value = 5 }
+		command = { type = free_manpower value = 0.05 }
+	}
+}
+####### Chinese intervention Korean War
+
+event = {
+	id = 612010
+	random = no
+	country = USA
+
+	#
+
+	name = "Korean War-Chinese Intervention" 
+	desc = "Chinese intervention played a critical role in the outcome of the Korean War. Although China warned that it would intervene, General Douglas MacArthur disregarded these warnings and proceeded to approach the Yalu River."
+       	picture = "KW_chinese_intervention"
+	
+	action_a = {
+		name = "Ignore the Chinese Warning"
+		command = { type = trigger which = 612011 }
+	}
+}
+
+event = {
+	id = 612011
+	random = no
+	country = PRK
+	
+	name = "Korean War-Chinese Intervention" 
+	desc = "Initial excitement turned to despair as the Americans landed behind North Korean lines at Incheon and drove up the Korean peninsula to the Chinese border. Mao Zedong's massive intervention staved off defeat for North Korea."
+       	picture = "KW_chinese_intervention"
+	
+	action_a = {
+		name = "Good!"
+		command = { type = supplies value = 1000 }
+		command = { type = max_organization which = land value = 70 }
+		command = { type = add_corps which = "First Chinese Volunteer" value = land where = 1391 }
+		command = { type = add_division which = "PLA Assistance HQ#1" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "PLA Assistance #1" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #2" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #3" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #4" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #5" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #6" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #7" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #8" value = infantry when = 6 }
+		command = { type = add_corps which = "Second Chinese Volunteer" value = land  where = 1393 }
+		command = { type = add_division which = "PLA Assistance HQ#2" value = hq when = 3 where = anti_air }
+		command = { type = add_division which = "PLA Assistance #9" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #10" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #11" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #12" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #13" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #14" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #15" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #16" value = infantry when = 6 }
+		command = { type = add_corps which = "Third Chinese Volunteer" value = land  where = 1376 }
+		command = { type = add_division which = "PLA Assistance HQ#3" value = hq when = 3 where = anti_air }
+		command = { type = add_division which = "PLA Assistance #17" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #18" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #19" value = bergsjaeger when = 4 }
+		command = { type = add_division which = "PLA Assistance #20" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #21" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #22" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #23" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #24" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #25" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #26" value = infantry when = 6 }
+		command = { type = add_division which = "PLA Assistance #27" value = infantry when = 6 }
+		command = { type = max_organization which = land value = -70 }
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 15 }
+		command = { type = free_metal value = 7 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = free_manpower value = 0.4 }
+	}
+}
+
+event = {
+	id = 612012
+	random = no
+	country = PRK
+	trigger = {
+		event = 612011
+		control = { province = 1201 }
+	}
+	
+        	date = { day = 0 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1954 }
+	
+	name = "Capture of Pyongyang" 
+	desc = "Backed by Chinese forces, the People's Army recaptured Pyongyang."
+       	
+	#
+
+	action_a = {
+		name = "Good!"
+		command = { type = construct which = land_fort where = 1201 value = 7 } #Pyongyang
+		command = { type = trigger which = 614004 }
+	}
+}
+event = {
+	id = 612013
+	random = no
+	country = PRK
+	trigger = {
+		OR = {
+			#event = 612009
+			event = 612010
+			event = 612011
+		}
+		control = { province = 1200 }
+	}
+	
+        	date = { day = 0 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1954 }
+	
+	name = "Capture of Wonsan" 
+	desc = "Backed by Chinese forces, the People's Army recaptured Wonsan."
+       	
+	#
+
+	action_a = {
+		name = "Good!"
+		command = { type = construct which = land_fort where = 1200 value = 5 } #Wonsan
+		command = { type = trigger which = 614004 }
+	}
+}
+event = {
+	id = 612014
+	random = no
+	country = PRK
+
+	trigger = {
+		event = 3895
+		event = 614000
+		flag = KW_SOV_intervention
+		NOT = { war = { country = KOR country = PRK } }
+	}
+
+	date = { day = 25 month = july year = 1950 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "The Korean War-Thanking the USSR" 
+	desc = "The DPRK thanks the Soviet Union for its contribution to the Korean War."
+       	picture = "KW_soviet_intervention"
+	style = 0
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -10 }
+		command = { type = free_energy value = -24 }
+		command = { type = free_metal value = -12 }
+		command = { type = free_rare_materials value = -6 }
+		command = { type = free_oil value = -5 }
+		command = { type = free_manpower value = -0.05 }
+		command = { type = alliance which = SOV }
+	}
+}
+event = {
+	id = 612015
+	random = no
+	country = PRK
+
+	trigger = {
+		event = 3896
+		event = 614000
+		flag = KW_CHC_intervention
+		NOT = { war = { country = KOR country = PRK } }
+	}
+
+	date = { day = 25 month = july year = 1950 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "The Korean War-Thanking the Chinese" 
+	desc = "The DPRK thanks the Peoples Republic of China for its contribution to the Korean War."
+       	picture = "KW_chinese_intervention"
+	style = 0
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -15 }
+		command = { type = free_metal value = -7 }
+		command = { type = free_rare_materials value = -4 }
+		command = { type = free_manpower value = -0.4 }
+		command = { type = alliance which = CHC }
+	}
+}
+########################################
+## 612020-612033 Treaty of San Francisco ending 
+## WW2 in Asia--Japan ends puppetry to USA
+## and compensates Asian nations for WW2
+########################################
+event = {
+	id = 612020
+	random = no
+	country = JAP
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	trigger = { 
+		puppet = { country = JAP country = USA }
+		event = 45
+		exists = PHI
+		exists = BUR
+		OR = {
+			exists = INO
+			AND = {
+				NOT = { exists = INO }
+				control = { province = 1628 data = HOL }
+			}
+		}
+	}
+
+	date = { day = 27 month = january year = 1952 }
+
+	action_a = {
+		name = "OK"
+		command = { type = end_puppet }
+		command = { type = free_money value = -5 } # for 1000 or 2000 days
+		command = { type = set_domestic which = democratic value = 10 }#market liberal
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = set_domestic which = free_market value = 9 }
+		command = { type = set_domestic which = freedom value = 9 }
+		command = { type = set_domestic which = professional_army value = 3 }
+		command = { type = set_domestic which = defense_lobby value = 1 }
+		command = { type = set_domestic which = interventionism value = 1 }
+		command = { type = headofstate which = 5208 }#Hirohito
+		command = { type = headofgovernment which = 5031 }#Yoshida Shigeru
+		command = { type = trigger which = 612021 }
+		command = { type = trigger which = 612022 }
+		command = { type = trigger which = 612023 }
+	}
+}
+###################################
+# These 4 countries were compensated -wiki
+###################################
+event = {
+	id = 612021
+	random = no
+	country = PHI
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 2500 } # money and tech assistance
+		command = { type = relation which = USA value = 50 }
+		command = { type = relation which = JAP value = 50 }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = USA }
+	}
+}
+event = {
+	id = 612022
+	random = no
+	country = BUR
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 1000 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+	}
+}
+event = {
+	id = 612023
+	random = no
+	country = INO
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 1000 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = sleepevent which = 612024 }
+	}
+}
+#############################
+# ahistorical case if Netherlands 
+# keeps Indonesia they get the money
+#############################
+event = {
+	id = 612024
+	random = no
+	country = HOL
+
+	trigger = { 
+		event = 612020
+		NOT = { exists = INO }
+		control = { province = 1628 data = HOL }
+		NOT = { event = 612023 }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = february year = 1952 }
+ 
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 1000 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = sleepevent which = 612023 }
+	}
+}
+
+event = {
+	id = 612025
+	random = no
+	country = IDC
+	
+	trigger = { 
+		event = 612020
+		NOT = { exists = U72 }
+		NOT = { exists = VIE }
+		NOT = { exists = CAM }
+		NOT = { exists = LAO }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1955 }
+ 
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 500 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+	}
+}
+event = {
+	id = 612026
+	random = no
+	country = VIE
+	
+	trigger = { 
+		event = 612020
+		NOT = { event = 612025 }
+		NOT = { event = 612027 }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1955 }
+ 
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 250 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+	}
+}
+event = {
+	id = 612027
+	random = no
+	country = U72
+	
+	trigger = { 
+		event = 612020
+		NOT = { event = 612025 }
+		NOT = { event = 612026 }
+		NOT = { exists = VIE }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1955 }
+ 
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 250 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+	}
+}
+event = {
+	id = 612028
+	random = no
+	country = CMB
+	
+	trigger = { 
+		event = 612020
+		NOT = { event = 612025 }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1955 }
+ 
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 150 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+	}
+}
+event = {
+	id = 612029
+	random = no
+	country = LAO
+	
+	trigger = { 
+		event = 612020
+		NOT = { event = 612025 }
+	}
+
+	date = { day = 28 month = january year = 1952 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1955 }
+ 
+
+	name = "Treaty of San Francisco"
+	desc = "The treaty officially ending World War 2 in Asia came into force. Japan agreed to pay compensation to the countries damaged by the war."
+
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 150 } # money and tech assistance
+		command = { type = relation which = USA value = 25 }
+		command = { type = relation which = JAP value = 25 }
+		command = { type = steal_tech which = JAP }
+	}
+}
+
+#################################
+# IRL no compensation was paid to China
+# because of Chinese Civil War
+#################################
+event = {
+	id = 612030
+	random = no
+	country = JAP
+
+	name = "Treaty of Taipei"
+	desc = "Japan signed a separate treaty with China, agreeing to compensation for its wartime acts."
+	
+	trigger = { 
+		event = 612020
+		exists = CHI
+		# China only gets this if united was not paid due to Chinese Civil War
+		NOT = { exists = CHC }
+		NOT = { exists = MAN }
+		NOT = { exists = U13 }
+		NOT = { exists = U74 }
+		NOT = { exists = U87 }
+	}
+
+	date = { day = 27 month = april year = 1952 }
+
+	action_a = {
+		name = "OK"
+		command = { type = trigger which = 612031 }
+	}
+}
+
+event = {
+	id = 612031
+	random = no
+	country = CHI
+
+	name = "Treaty of Taipei"
+	desc = "Japan signed a separate treaty with China, agreeing to compensation for its wartime acts."
+	
+	action_a = {
+		name = "This will help us!"
+		command = { type = money value = 5000 } # money and tech assistance
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = USA }
+		command = { type = set_relation which = JAP value = 100 }
+		command = { type = relation which = USA value = 50 }
+	}
+} 
+event = {
+	id = 612032
+	random = no
+	country = JAP
+
+	trigger = { 
+		event = 612020
+		NOT = { event = 612030 }
+	}
+
+	date = { day = 7 month = october year = 1954 }
+
+	name = "Treaty Obligations Completed"
+	desc = "Japan completed its treaty obligations to compensate East Asian nations."
+
+	action_a = {
+		name = "The burden is over!"
+		command = { type = free_money value = 5 } # reverses free money for compensation
+		command = { type = sleepevent which = 612033 }
+	}
+} 
+
+event = {
+	id = 612033
+	random = no
+	country = JAP
+
+	trigger = { 
+		event = 612020
+		NOT = { event = 612032 }
+	}
+
+	date = { day = 17 month = august year = 1957 }
+
+	name = "Treaty Obligations Completed"
+	desc = "Japan completed its treaty obligations to compensate East Asian nations."
+
+	action_a = {
+		name = "The burden is over!"
+		command = { type = free_money value = 5 } # reverses free money for compensation
+	}
+} 
+###############################
+# NK accepts US proposal for armistice
+# new for 0.26
+###############################
+event = {
+	id = 612034
+	random = no
+	country = PRK
+
+	trigger = { 
+		OR = {
+			event = 614030
+			event = 614031
+			event = 614032
+		}
+	}
+
+	date = { day = 17 month = august year = 1957 }
+
+	name = "North Korean Reaction"
+	desc = "KWARMISTICE_DESC"
+
+	action_a = {
+		name = "Peace and reconstruction"
+		ai_chance = 100
+		command = { type = trigger which = 612003 } 
+	}
+	action_b = {
+		name = "Continue the war"
+		ai_chance = 0
+		command = { type = dissent value = 10 } 
+	}
+}
+event = {
+	id = 612035
+	random = no
+	country = KOR
+	
+	trigger = {
+		event = 612012
+		event = 612013
+		control = { province = 1198 } #Chunchon
+		control = { province = 1199 } #Seoul
+		control = { province = 1195 } #Gwangju
+		control = { province = 1196 } #Busan
+		control = { province = 1197 } #Daegu
+		garrison = { country = KOR province = 1198 type = land size = 10 area = no }
+		garrison = { country = KOR province = 1199 type = land size = 10 area = no }
+	}
+	
+        date = { day = 0 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1954 }
+	
+	name = "Korean War Stalemate" 
+	desc = "With the Chinese intervention, the UN forces were pushed back from North Korea. The UN forces managed to consolidate a defense line which remained intact for the duration of the war."
+	
+	action_a = {
+		name = "OK"
+		command = { type = construct which = land_fort where = 1199 value = 7 } #Seoul
+		command = { type = construct which = land_fort where = 1198 value = 5 } #Chunchon
+	}	
+}
+event = {
+	id = 612036
+	random = no
+	country = KOR
+	persistent = yes
+	
+	trigger = {
+		event = 612035
+		war = { country = KOR country = PRK }
+		NOT = { war = { country = USA country = SOV } }
+		random = 25
+	}
+	
+        date = { day = 0 month = january year = 1945 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "The War Drags On" 
+	desc = "Neither side had a chance for a decisive victory, and negotiations continued for a cease fire. Unfortunately, one of the agreed-upon terms of the cease fire was that it would be based on positions controlled when it took place. This led to many firefights to gain small pieces of territory."
+	
+	action_a = {
+		name = "OK"
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 35 }
+		command = { type = disorg_division which = -1 where = 35 }
+		command = { type = trigger which = 612037 }
+	}	
+}
+event = {
+	id = 612037
+	random = no
+	country = PRK
+	persistent = yes
+	
+	#
+	
+	name = "The War Drags On" 
+	desc = "Neither side had a chance for a decisive victory, and negotiations continued for a cease fire. Unfortunately, one of the agreed-upon terms of the cease fire was that it would be based on positions controlled when it took place. This led to many firefights to gain small pieces of territory."
+	
+	action_a = {
+		name = "OK"
+		command = { type = damage_division which = -1 where = 60 }
+		command = { type = damage_division which = -1 where = 60 }
+		command = { type = disorg_division which = -1 where = 50 }
+		command = { type = disorg_division which = -1 where = 50 }
+	}	
+}
+ 
+################################
+# South Korean industrialization
+################################
+event = {
+	id = 612038
+	random = no
+	country = KOR
+
+	trigger = { 
+		NOT = { ispuppet = KOR }
+		random = 10
+	 }
+
+	date = { day = 1 month = september year = 1960 }
+	offset = 17
+	deathdate = { day = 29 month = september year = 1990 }
+
+	name = "Institution of the Chaebol"
+	desc = "Originally, US planners envisioned Korea as an agricultural nation. Leaders of the country had other ideas, however, and strived to turn Korea into an exporting nation."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = construct which = ic where = 1199 value = 2 } #Seoul
+		command = { type = construct which = ic where = 1198 value = 1 } #Chunchon
+		command = { type = construct which = ic where = 1197 value = 1 } #Daegu
+		command = { type = construct which = ic where = 1195 value = 1 } #Gwangju
+		command = { type = construct which = ic where = 1196 value = 1 } #Busan
+		command = { type = free_money value = 1 }
+	}
+}
+
+event = {
+	id = 612039
+	random = no
+	country = KOR
+
+	trigger = { 
+		NOT = { ispuppet = KOR }
+		random = 10
+	 }
+
+	date = { day = 1 month = september year = 1968 }
+	offset = 17
+	deathdate = { day = 29 month = september year = 1990 }
+
+	name = "Growth of the Chaebol"
+	desc = "The industrialization of Korea continues."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = construct which = ic where = 1199 value = 2 } #Seoul
+		command = { type = construct which = ic where = 1198 value = 1 } #Chunchon
+		command = { type = construct which = ic where = 1197 value = 1 } #Daegu
+		command = { type = construct which = ic where = 1195 value = 1 } #Gwangju
+		command = { type = construct which = ic where = 1196 value = 1 } #Busan
+		command = { type = free_money value = 1 }
+	}
+}
+event = {
+	id = 612040
+	random = no
+	country = KOR
+
+	trigger = { 
+		NOT = { ispuppet = KOR }
+		random = 10
+	 }
+
+	date = { day = 1 month = september year = 1976 }
+	offset = 17
+	deathdate = { day = 29 month = september year = 1990 }
+
+	name = "Growth of the Chaebol"
+	desc = "The industrialization of Korea continues."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = construct which = ic where = 1199 value = 2 } #Seoul
+		command = { type = construct which = ic where = 1198 value = 1 } #Chunchon
+		command = { type = construct which = ic where = 1197 value = 1 } #Daegu
+		command = { type = construct which = ic where = 1195 value = 1 } #Gwangju
+		command = { type = construct which = ic where = 1196 value = 1 } #Busan
+		command = { type = free_money value = 1 }
+	}
+}
+event = {
+	id = 612041
+	random = no
+	country = KOR
+
+	trigger = { 
+		NOT = { ispuppet = KOR }
+		random = 10
+	 }
+
+	date = { day = 1 month = september year = 1984 }
+	offset = 17
+	deathdate = { day = 29 month = september year = 1999 }
+
+	name = "Growth of the Chaebol"
+	desc = "The industrialization of Korea continues."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = construct which = ic where = 1199 value = 2 } #Seoul
+		command = { type = construct which = ic where = 1198 value = 1 } #Chunchon
+		command = { type = construct which = ic where = 1197 value = 1 } #Daegu
+		command = { type = construct which = ic where = 1195 value = 1 } #Gwangju
+		command = { type = construct which = ic where = 1196 value = 1 } #Busan
+		command = { type = free_money value = 1 }
+	}
+}
+event = {
+	id = 612042
+	random = no
+	country = KOR
+
+	trigger = { 
+		NOT = { ispuppet = KOR }
+		random = 10
+	 }
+
+	date = { day = 1 month = september year = 1991 }
+	offset = 17
+	deathdate = { day = 29 month = september year = 1999 }
+
+	name = "Growth of the Chaebol"
+	desc = "The industrialization of Korea continues."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = construct which = ic where = 1199 value = 2 } #Seoul
+		command = { type = construct which = ic where = 1198 value = 1 } #Chunchon
+		command = { type = construct which = ic where = 1197 value = 1 } #Daegu
+		command = { type = construct which = ic where = 1195 value = 1 } #Gwangju
+		command = { type = construct which = ic where = 1196 value = 1 } #Busan
+		command = { type = free_money value = 1 }
+	}
+}
+event = {
+	id = 612499
+	random = no
+	country = JAP
+
+	trigger = { }
+
+	date = { day = 28 month = october year = 1976 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2019 }
+
+	name = "National Defense Program Outline"
+	desc = "The anti-militarist attitude in Japan abated somewhat, and there were calls for improving Japan's defensive capabilities. The emphasis was on upgrades and training."
+	
+	picture = "coldwar"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = set_team_skill which = 1922 value = 7 }
+		command = { type = remove_team_research_type which = 1923 value = bomber_tactics }#bad match
+		command = { type = add_team_research_type which = 1923 value = submarine_tactics }#better match
+		command = { type = set_team_skill which = 1923 value = 7 }
+		command = { type = add_team_research_type which = 1924 value = bomber_tactics }#better match
+		command = { type = set_team_skill which = 1924 value = 7 }
+	}
+}
+			

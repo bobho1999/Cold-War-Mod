@@ -1,0 +1,1522 @@
+########################################
+### #奥地利获得独立
+####################################
+event = {
+	id = 137
+	random = no
+	country = USA
+
+	trigger = {
+#		random = 25
+		event = 941136
+		NOT = {
+#			event = 69 # Cold War gets hot
+			war = { country = CHI country = USA }
+			exists = AUS
+		}
+	}
+
+	name = "奥地利获得独立 "
+	desc = "击败法西斯势力后，同盟国军事占领奥地利，直到奥地利国家条 约签订为止。在宣布成为永久中立国之后，占领军撤军，奥地利 获得独立。 "
+	picture = "eastern_europe"
+	style = 0
+
+	date = { day = 14 month = may year = 1955 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "ok"
+		command = { type = independence which = AUS value = 1 }
+		command = { type = trigger which = 138 }
+	}
+}
+
+# 待进一步修改
+event = {
+	id = 138
+	random = no
+	country = ENG
+
+	name = "奥地利获得独立 "
+	desc = "击败法西斯势力后，同盟国军事占领奥地利，直到奥地利国家条 约签订为止。在宣布成为永久中立国之后，占领军撤军，奥地利 获得独立。 "
+	picture = "eastern_europe"
+	style = 0
+
+	action_a = {
+		name = "ok"
+		command = { type = secedeprovince which = AUS value = 373 }
+		command = { type = secedeprovince which = AUS value = 377 }
+		command = { type = secedeprovince which = AUS value = 460 }
+		command = { type = secedeprovince which = AUS value = 461 }
+		command = { type = secedeprovince which = AUS value = 462 }
+		command = { type = secedeprovince which = AUS value = 463 }
+		command = { type = secedeprovince which = AUS value = 464 }
+		command = { type = secedeprovince which = AUS value = 465 }
+		command = { type = secedeprovince which = AUS value = 3186 }
+		command = { type = secedeprovince which = AUS value = 3187 }
+		command = { type = secedeprovince which = AUS value = 3188 }
+		command = { type = secedeprovince which = AUS value = 3189 }
+		command = { type = secedeprovince which = AUS value = 3190 }
+		command = { type = secedeprovince which = AUS value = 3191 }
+		command = { type = secedeprovince which = AUS value = 4084 }   #新增
+		command = { type = secedeprovince which = AUS value = 4085 }	 #新增		
+		command = { type = trigger which = 139 }
+	}
+}
+
+event = {
+	id = 139
+	random = no
+	country = FRA
+
+	name = "奥地利获得独立 "
+	desc = "击败法西斯势力后，同盟国军事占领奥地利，直到奥地利国家条 约签订为止。在宣布成为永久中立国之后，占领军撤军，奥地利 获得独立。 "
+	picture = "eastern_europe"
+	style = 0
+
+	action_a = {
+		name = "ok"
+		command = { type = secedeprovince which = AUS value = 373 }
+		command = { type = secedeprovince which = AUS value = 377 }
+		command = { type = secedeprovince which = AUS value = 460 }
+		command = { type = secedeprovince which = AUS value = 461 }
+		command = { type = secedeprovince which = AUS value = 462 }
+		command = { type = secedeprovince which = AUS value = 463 }
+		command = { type = secedeprovince which = AUS value = 464 }
+		command = { type = secedeprovince which = AUS value = 465 }
+		command = { type = secedeprovince which = AUS value = 3186 }
+		command = { type = secedeprovince which = AUS value = 3187 }
+		command = { type = secedeprovince which = AUS value = 3188 }
+		command = { type = secedeprovince which = AUS value = 3189 }
+		command = { type = secedeprovince which = AUS value = 3190 }
+		command = { type = secedeprovince which = AUS value = 3191 }
+		command = { type = secedeprovince which = AUS value = 4084 }   #新增
+		command = { type = secedeprovince which = AUS value = 4085 }	 #新增	
+		command = { type = trigger which = 140 }
+	}
+}
+
+event = {
+	id = 140
+	random = no
+	country = SOV
+
+	name = "奥地利获得独立 "
+	desc = "击败法西斯势力后，同盟国军事占领奥地利，直到奥地利国家条 约签订为止。在宣布成为永久中立国之后，占领军撤军，奥地利 获得独立。 "
+	picture = "eastern_europe"
+	style = 0
+
+	action_a = {
+		name = "ok"
+		command = { type = secedeprovince which = AUS value = 373 }
+		command = { type = secedeprovince which = AUS value = 377 }
+		command = { type = secedeprovince which = AUS value = 460 }
+		command = { type = secedeprovince which = AUS value = 461 }
+		command = { type = secedeprovince which = AUS value = 462 }
+		command = { type = secedeprovince which = AUS value = 463 }
+		command = { type = secedeprovince which = AUS value = 464 }
+		command = { type = secedeprovince which = AUS value = 465 }
+		command = { type = secedeprovince which = AUS value = 3186 }
+		command = { type = secedeprovince which = AUS value = 3187 }
+		command = { type = secedeprovince which = AUS value = 3188 }
+		command = { type = secedeprovince which = AUS value = 3189 }
+		command = { type = secedeprovince which = AUS value = 3190 }
+		command = { type = secedeprovince which = AUS value = 3191 }
+		command = { type = secedeprovince which = AUS value = 4084 }   #新增
+		command = { type = secedeprovince which = AUS value = 4085 }	 #新增	
+		command = { type = trigger which = 141 }
+	}
+}
+
+event = {
+	id = 141
+	random = no
+	country = AUS
+
+	name = "奥地利获得独立 "
+	desc = "击败法西斯势力后，同盟国军事占领奥地利，直到奥地利国家条 约签订为止。在宣布成为永久中立国之后，占领军撤军，奥地利 获得独立。 "
+	picture = "eastern_europe"
+	style = 0
+
+	action_a = {
+		name = "ok"
+		command = { type = capital which = 463 }
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which = USA }
+		command = { type = end_access which = ENG }
+		command = { type = end_access which = FRA }
+		command = { type = end_access which = SOV }
+	}
+}
+#############################################
+###### #蘇伊士危機
+#############################################
+event = {
+	id = 8500301
+	country = EGY
+
+	name = "亞斯旺水壩新壩"
+	desc = EVT_8500301_DESC
+	picture = "aswan_dam"
+	style = 1
+
+	date = { day = 1 month = may year = 1956 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "向蘇聯招手"
+		ai_chance = 95
+		command = { type = construct which = ic where = 1026 value = 4 }
+		command = { type = construct which = infrastructure where = 1026 value = 40 }
+		command = { type = add_prov_resource which = 1026 value = 30 where = energy }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = SOV value = 100 }
+		command = { type = addcore which = 900 } # Suez
+						command = { type = leave_alliance }
+	}
+	
+	action_b = {
+		name = "爭取美國有限的援助"
+		ai_chance = 5
+		command = { type = construct which = ic where = 1026 value = 2 }
+		command = { type = construct which = infrastructure where = 1026 value = 20 }
+		command = { type = add_prov_resource which = 1026 value = 15 where = energy }
+		command = { type = relation which = USA value = 100 }
+		command = { type = relation which = ENG value = 100 }
+		command = { type = sleepevent which = 8500302 }
+	}
+
+}
+
+event = {
+	id = 8500302
+	country = ENG
+
+	name = "埃及國有化蘇伊士運河"
+	desc = EVT_8500302_DESC
+	picture = "nasser_speaking"
+	style = 1
+	
+	trigger = {
+		event = 8500301 NOT = { flag = WW3 } 
+	}
+
+	date = { day = 1 month = september year = 1956 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	
+	action_a = {
+		name = "要求以色列執行行動"
+		ai_chance = 80
+#		trigger = { exists = ISR }
+		command = { type = secedeprovince which = EGY value = 900 } # Suez
+		command = { type = money value = -3000 }
+		command = { type = relation which = USA value = -150 }
+		command = { type = relation which = SOV value = -200 }
+		command = { type = relation which = EGY value = -200 }
+		command = { type = belligerence value = 30 }
+				command = { type = leave_alliance }
+		command = { type = trigger which = 8500317 }
+	}
+	
+	action_c = {
+		name = "讓蘇伊士運河回歸埃及"
+		ai_chance = 10
+		command = { type = secedeprovince which = EGY value = 900 } # Suez
+		command = { type = relation which = EGY value = 100 }
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = -20 }
+	}
+
+}
+event = {
+	id = 8500317
+	country = FRA
+
+	name = "參與佔領蘇伊士運河？"
+	desc = EVT_8500317_DESC
+	picture = "operation_kadesh"
+	style = 1
+
+	action_a = {
+		name = "要求以色列執行行動"
+		ai_chance = 98
+				command = { type = leave_alliance }
+command = {  type = alliance which = ENG }	
+		command = { type = belligerence value = 10 }
+		command = { type = dissent value = -5 }
+	}
+	
+	action_b = {
+		name = "讓蘇伊士運河回歸埃及"
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+		command = { type = sleepevent which = 8500303 }
+	}
+
+}
+
+
+
+event = {
+	id = 8500303
+	country = ISR
+		trigger = {
+		event = 8500317
+	}
+
+	date = { day = 1 month = september year = 1956 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+	
+
+	name = "卡德墟行動"
+	desc = EVT_8500303_DESC
+	picture = "operation_kadesh"
+	style = 1
+
+	action_a = {
+		name = "進攻！"
+		ai_chance = 98
+		command = { type = war which = EGY }
+command = {  type = alliance which = ENG }	
+command = {  type = alliance which = FRA }	
+		command = { type = belligerence value = 10 }
+		command = { type = dissent value = -5 }
+	}
+	
+	action_b = {
+		name = "停止戰鬥！"
+		ai_chance = 2
+		command = { type = dissent value = 10 }
+	}
+
+}
+
+
+event = {
+	id = 8500305
+	country = EGY
+
+	name = "蘇伊士戰爭！"
+	desc = EVT_8500305_DESC
+	picture = "nasser_in_crowd"
+	style = 1
+	
+	trigger = {
+		war = { country = EGY country = ISR }
+			OR = {
+				event = 8500303
+				event = 8500304
+			}
+		}
+
+	date = { day = 1 month = november year = 1956 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "驅逐侵略者！"
+						command = { type = leave_alliance }
+		command = { type = add_corps when = 907 } 
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = dissent value = -5 }
+	}
+
+}
+
+event = {
+	id = 8500311
+	country = USA
+
+	name = "蘇伊士戰爭"
+	desc = EVT_8500311_DESC
+	picture = "suez_war_intervention"
+	style = 1
+
+	trigger = {
+		event = 8500305
+		war = { country = ISR country = EGY }
+	}
+
+	date = { day = 16 month = november year = 1956 }
+	offset = 7
+	deathdate = { day = 29 month = november year = 1956 }
+	
+	action_a = {
+		name = "要求全面撤軍"
+		ai_chance = 77
+		command = { type = relation which = ISR value = -50 }
+		command = { type = relation which = EGY value = 50 }
+		command = { type = sleepevent which = 8500312 }
+	}
+	
+	action_b = {
+		name = "支持以色列"
+		ai_chance = 23
+		command = { type = relation which = ISR value = 150 }
+		command = { type = relation which = EGY value = -150 }
+		command = { type = belligerence value = 10 }
+		command = { type = dissent value = 8 }
+		command = { type = trigger which = 8500315 }
+				command = { type = trigger which = 8500326 }
+		command = { type = sleepevent which = 8500320 } # Conclusion of Suez War
+	}
+
+}
+
+event = {
+	id = 8500312
+	country = SOV
+
+	name = "蘇伊士戰爭"
+	desc = EVT_8500312_DESC
+	picture = "suez_war_intervention"
+	style = 1
+	trigger = {
+		event = 8500311
+		war = { country = ISR country = EGY }
+	}
+
+	date = { day = 20 month = november year = 1956 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1956 }
+	
+	action_a = {
+		name = "向英法送出最後通牒，同時向埃及提供援助"
+		ai_chance = 50
+		command = { type = relation which = EGY value = 150 }
+		command = { type = relation which = ISR value = -150 }
+		command = { type = relation which = USA value = -100 }
+		# American reaction to the ultimatum
+		command = { type = trigger which = 8500313 }
+		# Soviet support for Egypt
+		command = { type = trigger which = 8500316 }
+	}
+	
+	action_b = {
+		name = "同時向埃及提供援助"
+		ai_chance = 40
+		command = { type = relation which = EGY value = 100 }
+		command = { type = relation which = ISR value = -100 }
+		command = { type = relation which = USA value = -50 }
+		# Soviet support for Egypt
+		command = { type = trigger which = 8500316 }
+	}
+
+	action_c = {
+		name = "不表態"
+		ai_chance = 10
+		command = { type = relation which = USA value = -10 }
+		command = { type = relation which = EGY value = -100 }
+	}
+
+}
+
+event = {
+	id = 8500313
+	country = USA
+
+	name = "蘇聯對我們的最後通牒"
+	desc = EVT_8500313_DESC
+	picture = "suez_war_intervention"
+	style = 1
+
+	trigger = {
+		war = { country = ISR country = EGY }
+	}
+	
+	action_a = {
+		name = "撤退"
+		ai_chance = 93
+		command = { type = relation which = EGY value = -100 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = dissent value = 7 }
+	}
+	
+	action_b = {
+		name = "直接介入"
+		ai_chance = 7
+		command = { type = relation which = USA value = -50 }
+		command = { type = trigger which = 8500314 }
+		command = { type = alliance which = ISR }
+	}
+
+}
+
+event = {
+	id = 8500314
+	country = SOV
+
+	name = "美國無視我們的最後通牒"
+	desc = EVT_8500314_DESC
+	picture = "suez_war_intervention"
+	style = 1
+
+	trigger = {
+		war = { country = ISR country = EGY }
+	}
+	
+	action_a = {
+		name = "宣戰！"
+		ai_chance = 75
+		command = { type = alliance which = EGY }
+		command = { type = war which = USA }
+		command = { type = war which = ISR }
+		command = { type = dissent value = 3 }
+	}
+	
+	action_b = {
+		name = "算了"
+		ai_chance = 25
+		command = { type = dissent value = 25 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+
+}
+
+event = {
+	id = 8500315
+	country = ISR
+	
+	name = "美國對我們的援助"
+	desc = EVT_8500315_DESC
+	picture = "operation_kadesh"
+	style = 1
+	
+	action_a = {
+		name = "向埃及進攻！"
+		command = { type = add_division value = motorized when = 5 }
+		command = { type = add_division value = motorized when = 5 }
+		command = { type = add_division value = motorized when = 5 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = supplies value = 5000 }
+		command = { type = dissent value = -10 }
+	}
+
+}
+
+event = {
+	id = 8500316
+	country = EGY
+
+	name = "蘇聯對我們的援助"
+	desc = EVT_8500316_DESC
+	picture = "nasser_in_crowd"
+	style = 1
+	
+	action_a = {
+		name = "太好了！"
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = add_division value = infantry when = 14 }
+		command = { type = supplies value = 3000 }
+		command = { type = dissent value = -5 }
+	}
+
+}
+
+
+event = {
+	id = 8500320
+	country = ISR
+
+	name = "蘇伊士運河戰爭的終結"
+	desc = EVT_8500320_DESC
+	picture = "egypt_wins_suez_war"
+	style = 1
+	
+	trigger = {
+		war = { country = EGY country = ISR }
+		event = 8500305
+		control = { province = 903 data = EGY } # Cairo
+		control = { province = 1796 data = ISR } # Tel Aviv
+		}
+
+	date = { day = 1 month = december year = 1956 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "停火"
+		ai_chance = 100
+		command = { type = peace which = EGY value = 0 }
+		command = { type = trigger which = 8500322 }
+	}
+	
+	action_b = {
+		name = "我們不會撤退"
+		ai_chance = 0
+		command = { type = leave_alliance }
+		command = { type = dissent value = 30 }
+		command = { type = belligerence value = 30 }
+		command = { type = trigger which = 8500316 }
+				command = { type = trigger which = 8500324 }
+						command = { type = trigger which = 8500325 }
+
+
+	}
+
+}
+
+event = {
+	id = 8500321
+	country = ISR
+
+	name = "蘇伊士運河戰爭的勝利"
+	desc = EVT_8500321_DESC
+	picture = "egypt_loses_suez_war"
+	style = 1
+	
+	trigger = {
+		war = { country = EGY country = ISR }
+		event = 8500305
+		NOT = { control = { province = 903 data = EGY } } # Cairo
+		}
+
+	date = { day = 1 month = november year = 1956 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "勝利！"
+		ai_chance = 100
+		command = { type = peace which = EGY value = 0 }
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 10 }
+		command = { type = trigger which = 8500323 }
+				command = { type = trigger which = 8500324 }
+		command = { type = trigger which = 8500325 }
+
+	}
+
+}
+
+event = {
+	id = 8500322
+	random = no
+	country = EGY
+
+	name = "蘇伊士運河戰爭的勝利"
+	desc = EVT_8500322_DESC
+	picture = "egypt_wins_suez_war"
+	style = 1
+
+	action_a = {
+		name = "勝利！"
+		command = { type = dissent value = -20 }
+	}
+
+}
+
+event = {
+	id = 8500323
+	random = no
+	country = EGY
+
+	name = "蘇伊士運河戰爭的失敗"
+	desc = EVT_8500323_DESC
+	picture = "egypt_loses_suez_war"
+	style = 1
+	
+	action_a = {
+		name = "恥辱"
+		command = { type = dissent value = 20 }
+		command = { type = headofstate which = 340200 } # Fuad II
+		command = { type = headofgovernment which = 340014 } # Mustafa an-Nahhas Pasha
+		command = { type = foreignminister which = 340032 } # Muhammad Mahmoud Pasha
+		command = { type = armamentminister which = 340052 } # Salib Sami Bey
+		command = { type = ministerofsecurity which = 340067 } # Mohammed Hilmi Issa
+		command = { type = ministerofintelligence which = 340077 } # Wahid Raafat
+		command = { type = chiefofstaff which = 340080 } # Abil Nashran
+		command = { type = chiefofarmy which = 340085 } # Mustafa Kamel
+		command = { type = chiefofnavy which = 340091 } # Wahid Raafat
+		command = { type = chiefofair which = 340093 } # Mohammed Azmy Pasha
+		command = { type = secedeprovince which = ISR value = 1009 when = 1 } # Gaza
+		command = { type = secedeprovince which = ISR value = 1004 when = 1 } # El-Arish
+		command = { type = secedeprovince which = ISR value = 1005 when = 1 } # Sharm El-Sheikh
+		command = { type = secedeprovince which = ISR value = 1006 when = 1 }
+		command = { type = secedeprovince which = ISR value = 1007 when = 1 }
+		command = { type = secedeprovince which = ENG value = 700 when = 1 } # Suez
+		command = { type = set_relation which = ENG value = 100 }
+		command = { type = set_relation which = FRA value = 100 }
+		command = { type = set_relation which = ISR value = 50 }
+		command = { type = set_relation which = SOV value = -150 }
+	}
+}
+
+event = {
+	id = 8500324
+	random = no
+	country = ENG
+
+	name = "運河危機後和美國的關係"
+	desc = EVT_8500324_DESC
+	picture = "egypt_wins_suez_war"
+	style = 1
+
+	action_a = {
+		name = "重新加入北大西洋公約"
+				ai_chance = 98
+				command = { type =	alliance which = USA where = 2 }
+		    command = { type = relation which = USA value = 200 }
+		command = { type = local_setflag which = nato  }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+
+	
+			action_b = {
+		name = "回到光榮孤立"
+				ai_chance = 1
+		    command = { type = relation which = USA value = -100 }
+		command = { type = local_clrflag which = nato  }
+		command = { type = domestic which = interventionism value = -3 }
+	}
+
+}
+
+event = {
+	id = 8500325
+	random = no
+	country = FRA
+
+	name = "運河危機後和美國的關係"
+	desc = EVT_8500325_DESC
+	picture = "egypt_wins_suez_war"
+	style = 1
+
+	action_a = {
+		name = "重新加入北大西洋公約"
+				ai_chance = 70
+				command = { type =	alliance which = USA where = 2 }
+		    command = { type = relation which = USA value = 200 }
+		command = { type = local_setflag which = nato  }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+
+				action_b = {
+		name = "我們將走自己的道路"
+		ai_chance = 20
+		command = { type = dissent value = 3 }
+		command = { type = 	access which = USA }
+		command = { type = 	access which = ENG }
+		command = { type = 	guarantee which = USA where = FRA }
+		command = { type = 	non_aggression which = USA where = FRA } 
+				command = { type = 	guarantee which = FRA where = USA }
+		command = { type = 	non_aggression which = FRA where = USA } 
+		command = { type = setflag which = fra_partial_nato  }
+		    command = { type = relation which = USA value = 150 }
+		     command = { type = relation which = SOV value = -200 }
+		command = { type = local_setflag which = nato  }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+
+}
+
+event = {
+	id = 8500326
+	random = no
+	country = ARA
+
+	name = "支援埃及蘇伊士運河戰爭"
+	desc = EVT_8500326_DESC
+	picture = "suez_war_intervention"
+	style = 1
+
+	action_a = {
+		name = "阿拉伯兄弟，加入戰鬥！"
+		command = { type = dissent value = -20 }
+				command = { type = relation which = USA value = -150 }
+		command = { type = alliance which = EGY }
+	}
+
+}
+
+event = {
+	id = 8500327
+	random = no
+	country = EGY
+
+	name = "重新加入阿拉伯同盟"
+	desc = EVT_8500327_DESC
+	picture = "egypt_wins_suez_war"
+	style = 1
+
+	action_a = {
+		name = "阿拉伯兄弟聯合起來！"
+				command = { type = relation which = ARA value = 200 }
+		command = { type = alliance which = ARA }
+	}
+
+}
+######################################
+### 阿巴丹危機
+######################################
+# Nationalization of AIOC
+event = {
+	id = 8501001
+	country = PER
+
+	name = "國有化英伊石油公司"
+	desc = EVT_8501001_DESC
+	picture = "mohammed_mossadegh"
+	style = 1
+
+	trigger = { NOT = { flag = WW3 } 
+	}
+
+	date = { day = 0 month = march year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1952 }
+
+	action_a = {
+		name = "國有化英伊石油公司"
+		ai_chance = 80
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = add_prov_resource which = 1089 value = 50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = 20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = 5 where = oil }
+		command = { type = relation which = ENG value = -100 }
+	}
+	
+	action_b = {
+		name = "維持和英國的關係"
+		ai_chance = 20
+		command = { type = dissent value = 15 }
+		command = { type = sleepevent which = 8501002 }
+	}
+}
+
+# Abadan Crisis
+event = {
+	id = 8501002
+	country = ENG
+
+	name = "伊朗國有化英伊石油公司"
+	desc = EVT_8501002_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	trigger = {
+		event = 8501001
+	}
+
+	date = { day = 0 month = august year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = january year = 1953 }
+
+	action_a = {
+		name = "經濟制裁"
+		ai_chance = 80
+		command = { type = belligerence value = 10 }
+		command = { type = relation which = PER value = -100 }
+	}
+	
+	action_b = {
+		name = "和伊朗重新訂立合約"
+		ai_chance = 20
+		command = { type = dissent value = 10 }
+		command = { type = relation which = PER value = 100 }
+		command = { type = sleepevent which = 8501003 }
+	}
+}
+
+event = {
+	id = 8501003
+	country = PER
+
+
+	name = "英國對我國的經濟制裁"
+	desc = EVT_8501003_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	trigger = {
+		event = 8501002
+	}
+
+	date = { day = 0 month = november year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = february year = 1953 }
+
+	action_a = {
+		name = "這將挫敗我們的經濟"
+		ai_chance = 80
+		command = { type = industrial_modifier which = total value = -10 }
+		command = { type = dissent value = 15 }
+	}
+	
+	action_b = {
+		name = "我們不會屈服"
+		ai_chance = 20
+		command = { type = dissent value = 10 } # There's some turmoil, anyway
+		command = { type = sleepevent which = 8501004 }
+		command = { type = sleepevent which = 8501020 } # Operation Ajax
+	}
+}
+
+event = {
+	id = 8501004
+	country = PER
+
+	name = "尋求國際社會的援助"
+	desc = EVT_8501004_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	trigger = {
+		event = 8501003
+	}
+
+	date = { day = 0 month = march year = 1952 }
+	offset = 30
+	deathdate = { day = 30 month = march year = 1953 }
+
+	action_a = {
+		name = "只好自力更新"
+		ai_chance = 40
+		command = { type = dissent value = 15 }
+	}
+
+	action_b = {
+		name = "要求蘇聯援助"
+		ai_chance = 30
+		command = { type = trigger which = 8501005 }
+	}
+}
+
+event = {
+	id = 8501005
+	country = SOV
+
+	name = "伊朗要求援助"
+	desc = EVT_8501005_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	action_a = {
+		name = "幫助伊朗"
+		ai_chance = 10
+		command = { type = relation which = PER value = 50 }
+		command = { type = trigger which = 8501006 } # American ultimatum
+	}
+	
+	action_b = {
+		name = "本來，這就不是我們的事務"
+		ai_chance = 90
+		command = { type = relation which = PER value = -50 }
+	}
+}
+
+event = {
+	id = 8501006
+	country = USA
+
+	name = "蘇聯介入阿巴丹油田爭端"
+	desc = EVT_8501006_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	action_a = {
+		name = "最後通牒"
+		ai_chance = 10
+		command = { type = relation which = PER value = -50 }
+		command = { type = trigger which = 8501007 } # Soviet reaction
+	}
+	
+	action_b = {
+		name = "不需要爲此發起戰爭威脅"
+		ai_chance = 90
+		command = { type = trigger which = 8501010 } # Soviets are able to send Iranians help
+		command = { type = relation which = ENG value = -150 }
+	}
+}
+
+event = {
+	id = 8501007
+	country = SOV
+
+	name = "來自美國的最後通牒"
+	desc = EVT_8501007_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	action_a = {
+		name = "撤回我們的援助"
+		ai_chance = 90
+		command = { type = relation which = PER value = -50 }
+	}
+	
+	action_b = {
+		name = "我們不會向帝國主義屈服"
+		ai_chance = 10
+		command = { type = trigger which = 8501010 } # Soviets are able to send Iranians help
+		command = { type = trigger which = 8501008 }
+	}
+}
+
+event = {
+	id = 8501008
+	country = USA
+
+	name = "蘇聯無視我們的最後通牒"
+	desc = EVT_8501008_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	action_a = {
+		name = "他們將付出代價（ww3)"
+		ai_chance = 10
+		command = { type = war which = SOV }
+		command = { type = dissent value = 5 }
+	}
+	
+	action_b = {
+		name = "我們只有讓步"
+		ai_chance = 90
+		command = { type = dissent value = 10 }
+		command = { type = domestic which = interventionism value = -1 }
+	}
+}
+
+event = {
+	id = 8501010
+	country = PER
+
+	name = "來自蘇聯的援助"
+	desc = EVT_8501010_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	action_a = {
+		name = "太好了"
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -20 }
+	}
+}
+
+
+event = {
+	id = 8501020
+	country = PER
+
+	name = "阿賈克斯行動"
+	desc = EVT_8501020_DESC
+	picture = "operation_ajax"
+	style = 1
+
+	trigger = {
+		event = 8501004 # We got hit by sanctions
+		NOT = { event = 8501010 } # Soviets didn't help
+	}
+
+	date = { day = 0 month = june year = 1953 }
+	offset = 90
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action_a = {
+		name = "無奈地，他們的計劃很大可能成功"
+		ai_chance = 95
+		command = { type = dissent value = 10 }
+		command = { type = add_prov_resource which = 1089 value = -50 where = oil }
+		command = { type = add_prov_resource which = 1090 value = -20 where = oil }
+		command = { type = add_prov_resource which = 1091 value = -5 where = oil }
+		### End of blockade
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = sleepevent which = 8501022 }
+		command = { type = trigger which = 8011407 }
+	}
+	
+	action_b = {
+		name = "消滅所有和顛覆計劃有關的人士組織"
+		ai_chance = 5
+		command = { type = dissent value = -10 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = sleepevent which = 8011407 }
+		command = { type = sleepevent which = 8501021 }
+	}
+}
+
+
+event = {
+	id = 8501021
+	country = ENG
+
+	name = "阿賈克斯行動成功：重新掌管英伊石油公司"
+	desc = EVT_8501021_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	trigger = {
+		event = 8501002
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 180
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action_a = {
+		name = "重新掌管伊朗石油"
+		command = { type = dissent value = -3 }
+	}
+}
+
+event = {
+	id = 8501022
+	country = ENG
+
+	name =  "阿賈克斯行動失敗"
+	desc = EVT_8501022_DESC
+	picture = "abadan_crisis"
+	style = 1
+
+	trigger = {
+		event = 8501002
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1954 }
+
+	action_a = {
+		name = "外交上的失敗"
+		command = { type = dissent value = 8 }
+	}
+}
+
+
+#############################################
+#社會主義的國際經濟聯合計畫—經濟互助委員會
+#############################################
+event = {
+  id = 23001
+  random = no
+  country = SOV
+  
+  name = "經濟互助委員會 " 
+  desc = "英明的“莫洛托夫計畫”使我們偉大的聯盟開始與保加利亞、匈牙 利、波蘭、羅馬尼亞、捷克斯洛伐克這些社會主義兄弟的經濟連為 一體。我們與各歐洲社會主義國家在這些商貿條約的幫助下可以 最大限度的擺脫西方經濟的影響從而保證我們和我們的盟友可以 自給自足並杜絕資本主義世界的經濟腐蝕。現在，各社會主義國家 談判代表齊聚莫斯科，商討著我們對付美國所謂“歐洲復興計畫” 的經濟滲透最好的辦法—建立一個真正意義上的公開的、全面的 經濟合作的組織—經濟互助委員會。 "
+  style = 2
+  picture = "jinghu"
+
+  trigger = {
+            event = 8202002
+  } 
+  date = { day = 1 month = june
+ year = 1949 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1949 }
+  
+  action_a = {
+    name = "這將是我們國際共產主義事業的巨大成就 "
+                ai_chance = 85
+                command = { type = setflag which = jinghu1 }
+                command = { type = supplies value = -5000 }
+                command = { type = dissent value = -5 }
+                command = { type = relation which = U29 value = 25 }
+                command = { type = relation which = U31 value = 25 }
+                command = { type = relation which = U32 value = 25 }
+                command = { type = relation which = U13 value = 25 }
+                command = { type = relation which = U30 value = 25 }
+                command = { type = relation which = DDR value = 25 }
+                command = { type = change_policy which = free_market value = 1  }
+                command = { type = change_policy which = freedom value = 1 }
+  }
+  action_b = {
+                name = "我們應該建立更加廣泛的國際社會主義經濟合作組織 "
+		ai_chance = 12
+                command = { type = setflag which = jinghu2 }
+                command = { type = supplies value = -20000 }
+                command = { type = dissent value = -3 }
+                command = { type = relation which = U29 value = 30 }
+                command = { type = relation which = U31 value = 30 }
+                command = { type = relation which = U32 value = 30 }
+                command = { type = relation which = U13 value = 30 }
+                command = { type = relation which = U30 value = 30 }
+                command = { type = relation which = DDR value = 30 }
+                command = { type = change_policy which = free_market value = 2  }
+                command = { type = change_policy which = freedom value = 2 }
+        }
+  action_c = {
+                name = "我們自己都很困難，社會主義兄弟們必須自己想辦法 "
+		ai_chance = 3
+                command = { type = dissent value = 10 }
+                command = { type = relation which = U29 value = -100 }
+                command = { type = relation which = U31 value = -100 }
+                command = { type = relation which = U32 value = -100 }
+                command = { type = relation which = U13 value = -100 }
+                command = { type = relation which = U30 value = -100 }
+                command = { type = relation which = DDR value = -100 }
+        }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23002
+        random = no
+        country = SOV
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我們偉大的聯盟與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克 斯洛伐克同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = U29 value = 25 }
+                command = { type = relation which = U31 value = 25 }
+                command = { type = relation which = U32 value = 25 }
+                command = { type = relation which = U13 value = 25 }
+                command = { type = relation which = U30 value = 25 }
+                command = { type = relation which = DDR value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23003
+        random = no
+        country = U32
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我國與蘇聯、保加利亞、匈牙利、羅馬尼亞、捷克斯洛伐克 同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 5 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = SOV value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23004
+        random = no
+        country = U31
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我國與蘇聯、保加利亞、匈牙利、波蘭、羅馬尼亞 同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 5 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = SOV value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23005
+        random = no
+        country = U13
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我國與蘇聯、保加利亞、捷克斯洛伐克、波蘭、羅馬尼亞 同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 5 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = SOV value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23006
+        random = no
+        country = U30
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我國與蘇聯、保加利亞、匈牙利、波蘭、捷克斯洛伐克 同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 5 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = SOV value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 經濟互助委員會成立 # 
+#############################################
+event = {
+	id = 23007
+        random = no
+        country = U29
+
+	trigger = { flag = jinghu1 }
+
+	name = "經濟互助委員會成立 "
+	desc = "
+今天，我國與蘇聯、捷克斯洛伐克、匈牙利、波蘭、羅馬尼亞 同時發佈《關於成立經濟互助委員會的公報》。這是為 實現中歐各兄弟國家與我們偉大的聯盟更廣泛的經濟合作而成立 的公開的、全面的經濟合作的組織。在這個組織的框架下，祖國與 中歐各兄弟國家將在平等的基礎上，交流經濟經驗，相互給予技術 上的援助，各成員國間在原料、糧食、機器、裝備等方面提供協助。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 5 month = march year = 1950 }
+
+  action_a = {
+    name = "慶祝這個經濟聯盟的誕生吧！ "
+                command = { type = relation which = SOV value = 25 }
+                command = { type = peacetime_ic_mod value = 3 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23009
+        random = no
+        country = SOV
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，我們偉大的聯盟與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克 斯洛伐克同時發佈《關於成立世界共產主義經濟聯盟的公報》。公 報指出了美國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家 主權的，並說明了我們偉大的聯盟與社會主義兄弟國家國民經濟 利益的所指。這是為實現全世界各社會主義兄弟國家與我們偉大 的聯盟全面的經濟合作組織。這個經濟聯盟將保證我們聯盟和各 社會主義兄弟國的經濟徹底的成為一個整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = relation which = U29 value = 50 }
+                command = { type = relation which = U31 value = 50 }
+                command = { type = relation which = U32 value = 50 }
+                command = { type = relation which = U13 value = 50 }
+                command = { type = relation which = U30 value = 50 }
+                command = { type = relation which = DDR value = 50 }
+                command = { type = relation which = USA value = -50 }
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23010
+        random = no
+        country = U32
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23011
+        random = no
+        country = U31
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23012
+        random = no
+        country = U13
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23013
+        random = no
+        country = U30
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23014
+        random = no
+        country = DDR
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}
+
+#############################################
+###### 世界共產主義經濟聯盟成立-美國的反應 # 
+#############################################
+event = {
+	id = 23015
+        random = no
+        country = USA
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立-美國的反應 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。無疑這是蘇聯 謀求全球範圍內統治地位的重要信號，為此我們必須做出一定的 回應，防止共產主義的進一步蔓延。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 10 month = march year = 1950 }
+
+  action_a = {
+    name = "蘇聯必須為此付出代價 "
+                command = { type = relation which = SOV value = -50 }
+                command = { type = end_trades which = USA where = SOV }
+                command = { type = end_trades which = USA where = U32 }
+                command = { type = end_trades which = USA where = U31 }
+                command = { type = end_trades which = USA where = U13 }
+                command = { type = end_trades which = USA where = U30 }
+                command = { type = end_trades which = USA where = U29 }
+                command = { type = end_trades which = USA where = DDR }
+  }
+}
+#############################################
+###### 世界共產主義經濟聯盟成立 # 
+#############################################
+event = {
+	id = 23016
+        random = no
+        country = U29
+
+	trigger = { flag = jinghu2 }
+
+	name = "世界共產主義經濟聯盟成立 "
+	desc = "
+今天，蘇聯與保加利亞、匈牙利、波蘭、羅馬尼亞、捷克斯洛伐克同 時發佈《關於成立世界共產主義經濟聯盟的公報》。公報指出了美 國虛偽的“歐洲復興計畫”是如何破壞各成員國的國家主權的，並 說明了我們偉大的聯盟與社會主義兄弟國家國民經濟利益的所指 。這是為實現全世界各社會主義兄弟國家全面的經濟合作組織。這 個經濟聯盟將保證各社會主義兄弟國的經濟徹底的成為一個 整體。 "
+	style = 2
+	picture = "jinghu2"
+
+	date = { day = 4 month = march year = 1950 }
+
+  action_a = {
+    name = "世界無產階級大團結萬歲！ "
+                command = { type = peacetime_ic_mod value = 5 }
+  }
+}

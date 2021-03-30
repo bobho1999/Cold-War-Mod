@@ -1,0 +1,935 @@
+##########################################
+#### Technology and resource events 619000-619999
+##########################################
+event = {
+	id = 619900
+	random = no
+	country = -1
+
+	trigger = { 
+		ai = no
+		technology = 23310
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	name = "Spy Satellite Technology"
+	desc = "With the successful launch of military reconnaisance satellites, other countries can no longer conceal the movement of their military forces from you. You should press 'F12' and enter 'nofog' in the window. This should not be considered a cheat but rather the result of your technology."
+	style = 0
+	picture = "sputnik"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = setflag which = satellite_vis } 
+	}
+}
+##################################
+## winning the space race--astronaut names
+## are real astronauts unless noted
+##################################
+event = {
+	id = 619901
+	random = no
+	country = USA
+
+	trigger = { 
+		technology = 23360
+		control = { province = 606 } 
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	name = "Winning the Space Race"
+	desc = "On July 20, 1969, astronauts Neil Armstrong and Buzz Aldrin set foot on the moon. Armstrong proclaimed that it was 'one small step for man and one giant leap for mankind'. Scientists from all over the world marvel at the technology of the United States and want to emigrate to the USA."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 606 value = 200 }
+		# command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619902
+	random = no
+	country = SOV
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1548 } # Novosibirsk so posssible even after Bitter Peace
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "The husband and wife team of Andrian Nikolayev and Valentina Tereschkova made history as the first man and woman on the moon. Scientists and progressives from all over the world are flocking to the Soviet Union to build the new world order."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1548 value = 200 }
+		command = { type = trigger which = 619916 }
+		# command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619903
+	random = no
+	country = GER
+
+	trigger = { 
+		technology = 23360
+		control = { province = 300 } 
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Ulf Dietrich Merbold and Sigmund Jähn made history as the first two men to set foot on the surface of the moon. People all over the world marvel at the technology of the Third Reich."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 300 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		# command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619904
+	random = no
+	country = JAP
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1184 } 
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Toyohiro Akiyama made history as the first man to set foot on the surface of the moon. People all over the world marvel at Japanese technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1184 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		# command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619905
+	random = no
+	country = ITA
+
+	trigger = { 
+		technology = 23360
+		control = { province = 515 } 
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "A team of Italian and Hungarian space pioneers made history as the first humans to set foot on the surface of the moon. People all over the world marvel at Italian technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 515 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		# command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619906
+	random = no
+	country = ENG
+
+	trigger = { 
+		technology = 23360
+		control = { province = 19 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	# the first Briton in space was female but too young in 1969.
+	name = "Winning the Space Race"
+	desc = "A British woman made history as the first human to set foot on the surface of the moon. People all over the world marvel at British technology and social progress."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 19 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		# command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619907
+	random = no
+	country = FRA
+
+	trigger = { 
+		technology = 23360
+		control = { province = 56 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Jean-Loup Chrétien made history as the first man to set foot on the surface of the moon. People all over the world marvel at French technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 56 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		# command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619908
+	random = no
+	country = CHI
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1235 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "The Chinese Republic made history, winning the race to be the first country to place a man on the surface of the moon. People all over the world marvel at Chinese technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1235 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		# command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619909
+	random = no
+	country = CHC
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1235 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "The Peoples Republic made history, winning the race to be the first country to place a man on the surface of the moon. People all over the world marvel at Chinese technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1235 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		# command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619910
+	random = no
+	country = IND 
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1469 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Rakesh Sharma made history as the first man to set foot on the surface of the moon. People all over the world marvel at Indian technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1469 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		# command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619911
+	random = no
+	country = RUS
+
+	trigger = { 	
+		technology = 23360
+		NOT = { exists = SOV }
+		control = { province = 187 }
+	 }
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Yuri Gagarin and Valentina Tereshkova made history as the first man and woman to set foot on the surface of the moon. People all over the world marvel at Russian technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 187 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		# command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619912
+	random = no
+	country = POL
+
+	trigger = { 	
+		technology = 23360
+		control = { province = 485 }
+	 }
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Miroslaw Hermaszewski made history as the first man to set foot on the surface of the moon. People all over the world marvel at Polish technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 485 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		# command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619913
+	random = no
+	country = SIB
+
+	trigger = { 	
+		technology = 23360
+		NOT = { exists = SOV }
+		control = { province = 1548 }
+	 }
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "Yuri Gagarin and Valentina Tereshkova made history as the first man and woman to set foot on the surface of the moon. People all over the world marvel at Siberian technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1548 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		# command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+##########################################
+### 619014 - 619015 reserved for hypothetical nations
+##########################################
+event = {
+	id = 619914
+	random = no
+	country = U13 # Chinese Empire
+
+	trigger = { 
+		technology = 23360
+		control = { province = 1235 }
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Winning the Space Race"
+	desc = "The Chinese Empire made history, winning the race to be the first country to place a man on the surface of the moon. People all over the world marvel at Chinese technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 1235 value = 200 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		# command = { type = trigger which = 619929 }
+		command = { type = trigger which = 619930 }
+	}
+}
+event = {
+	id = 619915
+	random = no
+	country = U39 # Austria Hungary
+
+	trigger = { 
+		technology = 23360
+		control = { province = 463 } #Vienna
+		control = { province = 457 } #Budapest
+	}
+
+	date = { day = 1 month = january year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# Harrer was hypothetical but Farkas was real
+	name = "Winning the Space Race"
+	desc = "Heinrich Harrer and Bertalan Farkas made history as the first men to set foot on the surface of the moon. People all over the world marvel at Austro-Hungarian technology."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = province_keypoints which = 463 value = 100 }
+		command = { type = province_keypoints which = 457 value = 100 }
+		command = { type = trigger which = 619916 }
+		command = { type = trigger which = 619917 }
+		command = { type = trigger which = 619918 }
+		command = { type = trigger which = 619919 }
+		command = { type = trigger which = 619920 }
+		command = { type = trigger which = 619921 }
+		command = { type = trigger which = 619922 }
+		command = { type = trigger which = 619923 }
+		command = { type = trigger which = 619924 }
+		command = { type = trigger which = 619925 }
+		command = { type = trigger which = 619926 }
+		command = { type = trigger which = 619927 }
+		command = { type = trigger which = 619928 }
+		command = { type = trigger which = 619929 }
+		# command = { type = trigger which = 619930 }
+	}
+}
+###################################
+### Losing the Space Race 619016-619030
+###################################
+event = {
+	id = 619916
+	random = no
+	country = USA
+
+	# triggered by 619001-619015 series
+
+	name = "Losing the Space Race"
+	desc = "American hopes to place the first man in on the moon suffered a setback when another country beat out the Americans to the prize."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619901 }
+	}
+}
+event = {
+	id = 619917
+	random = no
+	country = SOV
+
+	# triggered by 619001-619015 series
+
+	name = "Losing the Space Race"
+	desc = "Soviet hopes to place the first man in on the moon suffered a setback when another country beat out the Soviets to the prize."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619902 }
+	}
+}
+event = {
+	id = 619918
+	random = no
+	country = GER
+
+	# triggered by 619001-619015 series
+
+	name = "Losing the Space Race"
+	desc = "German hopes to place the first man in on the moon suffered a setback when another country beat out the Germans to the prize."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619903 }
+	}
+}
+event = {
+	id = 619919
+	random = no
+	country = JAP
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Japan extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619904 }
+	}
+}
+event = {
+	id = 619920
+	random = no
+	country = ITA
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Italy extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619905 }
+	}
+}
+event = {
+	id = 619921
+	random = no
+	country = ENG
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Queen Elizabeth extended a message of congratulations when she received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619906 }
+	}
+}
+event = {
+	id = 619922
+	random = no
+	country = FRA
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "France extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619907 }
+	}
+}
+event = {
+	id = 619923
+	random = no
+	country = CHI
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "The Chinese Republic extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619908 }
+	}
+}
+event = {
+	id = 619924
+	random = no
+	country = CHC
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "The Peoples Republic extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619909 }
+	}
+}
+event = {
+	id = 619925
+	random = no
+	country = IND
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "India extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619910 }
+	}
+}
+event = {
+	id = 619926
+	random = no
+	country = RUS
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Russia extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619911 }
+	}
+}
+event = {
+	id = 619927
+	random = no
+	country = POL
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Poland extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619912 }
+	}
+}
+event = {
+	id = 619928
+	random = no
+	country = SIB
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Siberia extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619913 }
+	}
+}
+#########################
+### 619029-619030 reserved
+### for alternate history nations
+#########################
+event = {
+	id = 619929
+	random = no
+	country = U13
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Henry Pu-Yi extended a message of congratulations when he received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619914 }
+	}
+}
+event = {
+	id = 619930
+	random = no
+	country = U39
+
+	# triggered by 619001-619015 series
+
+	name = "Congratulations For the Moon Landing"
+	desc = "Austria-Hungary extended a message of congratulations when it received the news of the successful manned landing on the moon."
+	style = 0
+	picture = "apollo11"
+
+	
+	action_a = {
+		name = "ok" 
+		command = { type = deactivate which = 23360 }
+		command = { type = sleepevent which = 619915 }
+	}
+}

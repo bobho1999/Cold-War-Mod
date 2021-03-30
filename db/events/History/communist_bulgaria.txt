@@ -1,0 +1,212 @@
+# Killing Kiril de Preslav
+
+
+event = {
+	id = 8022901
+	country = BUL #U29
+
+	name = "廢除君主制" #君主制的去留?
+	desc = EVT_8022903_DESC
+	#picture = "nwo\simeon_ii"
+	style = 1
+
+	trigger = {
+		government = communist
+#		puppet = { country = BUL country = SOV }
+		flag = cold_war
+	}
+
+	date = { day = 7 month = september year = 1946 }
+
+
+	action_a = {
+		name = "放逐國王"
+		ai_chance = 100
+		command = { type = headofstate which = 19051 } # Vasil Kolarov
+#		command = { type = sleepminister which = 960100 } # Simeon II
+		command = { type = trigger which = 8022902 } #
+	}
+}
+
+event = {
+	id = 8022902
+	country = BUL
+
+	name = "保加利亞人民共和國的成立"
+	desc = EVT_GOVTCHANGE_DESC
+	style = 0
+
+	trigger = {
+		government = communist
+		
+	}
+
+#	date = { day = 0 month = january year = 1946 }
+#	offset = 360
+#	deathdate = { day = 30 month = december year = 1949 }
+
+	action_a = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofgovernment which = 19060 } # Georgi Dimitrov
+		command = { type = foreignminister which = 19076 } # Kimon Georgiev
+		command = { type = armamentminister which = 19090 } # Petko Kounin
+		command = { type = ministerofsecurity which = 19104 } # Anton Yugov
+		command = { type = ministerofintelligence which = 19114 } # Mincho Neychev
+		command = { type = chiefofstaff which = 19124 } # Assen Grekov
+		command = { type = chiefofarmy which = 19136 } # Ivan Kinov
+		command = { type = chiefofnavy which = 19143 } # Stefan Tzanev
+		command = { type = chiefofair which = 19150 } # Zakhari Zakhariev
+	}
+}
+
+event = {
+	id = 8022903
+	country = BUL 
+
+	name = "EVT_120_NAME"	
+	desc = "EVT_120_DESC"	
+	style = 0
+
+	trigger = {
+		government = communist
+#		puppet = { country = BUL country = SOV }
+		flag = cold_war
+	}
+
+	date = { day = 8 month = december year = 1947 }
+
+	action_a = {
+		name = "OK"
+		command = { type = headofstate which = 19174 } # Mincho Neychev
+	}
+}
+
+event = {
+	id = 8022904
+	country = BUL 
+
+	name = "處決尼古拉·佩特科夫 "	
+	desc = "EVT_120_DESC"	
+	style = 0
+
+	trigger = {
+		government = communist
+#		puppet = { country = BUL country = SOV }
+		flag = cold_war
+	}
+
+	date = { day = 4 month = june year = 1947 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 19058 } #
+		command = { type = sleepminister which = 19071 } #
+		command = { type = sleepminister which = 19047 } #
+	}
+}
+
+event = {
+	id = 8022905
+	country = BUL 
+
+	name = "EVT_102_NAME"	
+	desc = "EVT_102_DESC"	
+	picture = "minister_died"
+	style = 0
+
+	trigger = {
+#		government = communist
+#		puppet = { country = BUL country = SOV }
+#		flag = cold_war
+	}
+
+	date = { day = 1 month = july year = 1949 }
+
+	action_a = {
+		name = "OK"
+		command = { type = headofgovernment which = 19158 } # 瓦西里·科拉羅夫
+		command = { type = sleepminister which = 19060 } # 格奥尔基·迪米特罗夫
+		command = { type = sleepminister which = 19050 } # 格奥尔基·迪米特罗夫
+		command = { type = sleepminister which = 19088 } # 格奥尔基·迪米特罗夫
+	}
+}
+
+event = {
+	id = 8022906
+	country = BUL 
+
+	name = "EVT_102_NAME"	
+	desc = "EVT_102_DESC"	
+	picture = "minister_died"
+	style = 0
+
+	trigger = {
+#		government = communist
+#		puppet = { country = BUL country = SOV }
+#		flag = cold_war
+	}
+
+	date = { day = 22 month = january year = 1950 }
+
+	action_a = {
+		name = "OK"
+		command = { type = headofgovernment which = 19166 } # 武尔科·切尔文科夫 
+		command = { type = sleepminister which = 19033 } # 瓦西里·科拉羅夫
+		command = { type = sleepminister which = 19051 } # 瓦西里·科拉羅夫
+		command = { type = sleepminister which = 19074 } # 瓦西里·科拉羅夫
+		command = { type = sleepminister which = 19158 } # 瓦西里·科拉羅夫
+	}
+}
+
+event = {
+	id = 8022907
+	country = BUL
+
+	name = "EVT_120_NAME"	
+	desc = "EVT_120_DESC"	
+	style = 0
+
+	trigger = {
+		government = communist
+	}
+
+	date = { day = 26 month = may year = 1950 }
+
+	action_a = {
+		name = OK
+		ai_chance = 100
+		command = { type = headofstate which = 960101 } # Georgi Damyanov
+	}
+}
+
+event = {
+	id = 8022908
+	country = BUL
+
+	name = "EVT_120_NAME"	
+	desc = "EVT_120_DESC"	
+	style = 0
+
+	trigger = {
+		government = communist
+	}
+
+	date = { day = 17 month = april year = 1956 } #1956與赫魯雪夫連動 批鬥下台
+	#offset = 360
+	#deathdate = { day = 30 month = december year = 1999 }
+
+	action_a = {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 7 }
+#		command = { type = headofstate which = 960102 } # Todor Zhivkov
+		command = { type = headofgovernment which = 960103 } # Anton Yugov
+	}
+}
+

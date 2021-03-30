@@ -1,0 +1,136 @@
+event = {
+	id = 8022801
+	country = U28
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	#picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1944 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action_a= {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 955001 } # Omer Nishani
+		command = { type = headofgovernment which = 955006 } # Enver Hoxha
+		command = { type = foreignminister which = 955009 } # Essad Pacha
+		command = { type = armamentminister which = 955013 } # Sejfulla Mal?shova
+		command = { type = ministerofsecurity which = 955019 } # Hajr? Fetahu
+		command = { type = ministerofintelligence which = 955023 } # Nano Xhana
+		command = { type = chiefofstaff which = 955026 } # Prenk Pervizi
+		command = { type = chiefofarmy which = 955030 } # Aziz Sulejmani
+		command = { type = chiefofnavy which = 955033 } # Halil Nergutti
+		command = { type = chiefofair which = 955038 } # Zuhdi Shabani
+	}
+}
+
+event = {
+	id = 8022802
+	country = U28
+
+	name = EVT_GOVTCHANGE_NAME
+	desc = EVT_GOVTCHANGE_DESC
+	#picture = "nwo\govt_change"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+	}
+
+	date = { day = 0 month = january year = 1954 }
+	offset = 360
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action_a= {
+		name = OK
+		ai_chance = 100
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 955003 } # Enver Hoxha
+		command = { type = headofgovernment which = 955100 } # Mehmet Shehu
+	}
+}
+
+event = {
+	id = 8022803
+	country = U28
+
+	name = EVT_8022803_NAME #"Claims over Kosovo"
+	desc = EVT_8022803_DESC
+	#picture = nwo\albanian_kosovo
+	style = 1
+
+	trigger = {
+		exists = U27
+		flag = cold_war
+	}
+	
+	date = { day = 1 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a= {
+		name = EVT_8022803_A #"We no longer claim it as ours"
+		ai_chance = 95
+		command = { type = removecore which = 329 }
+		command = { type = removecore which = 334 }
+		command = { type = relation which = U27 value = 100 }
+	}	
+	
+	action_b= {
+		name = EVT_8022803_B #"We'd better keep our options"
+		ai_chance = 5
+		command = { type = relation which = U27 value = -100 }
+		# Sleep unification with Yugoslavia
+		command = { type = sleepevent which = 8216010 }
+	}
+}
+
+# Sino-Albanian alliance
+event = {
+	id = 8022804
+	country = U28
+
+	name = EVT_8022804_NAME #"Sino-Albanian alliance"
+	desc = EVT_8022804_DESC #"Having turned back on Yugoslavia Albania became economically isolated and USSR did little to support it. Hoxha was further dissillusioned by the policy of destalinization in the USSR. Assistance came from unexpected source. Economic and political alliance with Maoist China was an option of leveraging status of this small and impoverished republic."
+	#picture = nwo\hoxha_tito
+	style = 1
+
+	trigger = {
+		event = 8014217 # Khrushchev's Thaw
+		exists = CHC
+		flag = cold_war
+	}
+
+	date = { day = 1 month = july year = 1958 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a= {
+		name = EVT_8022804_NAME #"We admire Mao"
+		ai_chance = 95
+		command = { type = leave_alliance } # Leaving the Warsaw Pact
+		command = { type = end_puppet }
+		command = { type = relation which = SOV value = -200 }
+		command = { type = relation which = CHC value = 200 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = dissent value = -2 }
+	}	
+	
+	action_b= {
+		name = EVT_8022804_DESC #"We are isolated"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+		# Isolation
+		command = { type = industrial_modifier which = total value = -10 }
+	}
+}

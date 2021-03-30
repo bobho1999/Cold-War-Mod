@@ -1,0 +1,3636 @@
+# VPÇ™ÇªÇÃílà»è„Ç»ÇÁÇŒï‚ê≥Çí«â¡ÅB
+# 16039001 - 15 ÅF íÜóß(à»â∫ÇÃêwâcÇ…ëÆÇµÇƒÇ¢Ç»Ç¢)
+# 16039101 - 15 ÅF êïé≤çë
+# 16039201 - 15 ÅF òAçáçë
+# 16039301 - 15 ÅF ã§éYåó
+# VPÇ™ÇªÇÃílñ¢ñûÅAÇ‹ÇΩÇÕêwâcÇ©ÇÁäOÇÍÇΩÇÁï‚ê≥ÇçÌèúÅB
+# 16039401 - 15 ÅF íÜóß(à»â∫ÇÃêwâcÇ…ëÆÇµÇƒÇ¢Ç»Ç¢)
+# 16039501 - 15 ÅF êïé≤çë
+# 16039601 - 15 ÅF òAçáçë
+# 16039701 - 15 ÅF ã§éYåó
+
+##############################################################################################
+##############################################################################################
+
+event = {
+	id = 16039001
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 100
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0100 }
+	}
+}
+event = {
+	id = 16039002
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 200
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0200 }
+	}
+}
+event = {
+	id = 16039003
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 300
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0300 }
+	}
+}
+event = {
+	id = 16039004
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 400
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0400 }
+	}
+}
+event = {
+	id = 16039005
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 500
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0500 }
+	}
+}
+event = {
+	id = 16039006
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 600
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0600 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0600 }
+	}
+}
+event = {
+	id = 16039007
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 700
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0700 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0700 }
+	}
+}
+event = {
+	id = 16039008
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 800
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0800 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0800 }
+	}
+}
+event = {
+	id = 16039009
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 900
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_0900 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_0900 }
+	}
+}
+event = {
+	id = 16039010
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1000
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1000 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1000 }
+	}
+}
+event = {
+	id = 16039011
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1100
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1100 }
+	}
+}
+event = {
+	id = 16039012
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1200
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1200 }
+	}
+}
+event = {
+	id = 16039013
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1300
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1300 }
+	}
+}
+event = {
+	id = 16039014
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1400
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1400 }
+	}
+}
+event = {
+	id = 16039015
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		vp = 1500
+		big_alliance = { country = -1 alliance = no }
+		NOT = { local_flag = IK_VP_Neutral_1500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Neutral_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039101
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 100
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0100 }
+	}
+}
+event = {
+	id = 16039102
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 200
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0200 }
+	}
+}
+event = {
+	id = 16039103
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 300
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0300 }
+	}
+}
+event = {
+	id = 16039104
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 400
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0400 }
+	}
+}
+event = {
+	id = 16039105
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 500
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0500 }
+	}
+}
+event = {
+	id = 16039106
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 600
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0600 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0600 }
+	}
+}
+event = {
+	id = 16039107
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 700
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0700 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0700 }
+	}
+}
+event = {
+	id = 16039108
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 800
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0800 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0800 }
+	}
+}
+event = {
+	id = 16039109
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 900
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_0900 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_0900 }
+	}
+}
+event = {
+	id = 16039110
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1000
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1000 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1000 }
+	}
+}
+event = {
+	id = 16039111
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1100
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1100 }
+	}
+}
+event = {
+	id = 16039112
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1200
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1200 }
+	}
+}
+event = {
+	id = 16039113
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1300
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1300 }
+	}
+}
+event = {
+	id = 16039114
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1400
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1400 }
+	}
+}
+event = {
+	id = 16039115
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		axis = 1500
+		big_alliance = { country = -1 alliance = axis }
+		NOT = { local_flag = IK_VP_Axis_1500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+		command = { type = research_mod value = 2.5 }
+		command = { type = local_setflag which = IK_VP_Axis_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039201
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 100
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0100 }
+	}
+}
+event = {
+	id = 16039202
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 200
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0200 }
+	}
+}
+event = {
+	id = 16039203
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 300
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0300 }
+	}
+}
+event = {
+	id = 16039204
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 400
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0400 }
+	}
+}
+event = {
+	id = 16039205
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 500
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0500 }
+	}
+}
+event = {
+	id = 16039206
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 600
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0600 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0600 }
+	}
+}
+event = {
+	id = 16039207
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 700
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0700 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0700 }
+	}
+}
+event = {
+	id = 16039208
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 800
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0800 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0800 }
+	}
+}
+event = {
+	id = 16039209
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 900
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_0900 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_0900 }
+	}
+}
+event = {
+	id = 16039210
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1000
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1000 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1000 }
+	}
+}
+event = {
+	id = 16039211
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1100
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1100 }
+	}
+}
+event = {
+	id = 16039212
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1200
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1200 }
+	}
+}
+event = {
+	id = 16039213
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1300
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1300 }
+	}
+}
+event = {
+	id = 16039214
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1400
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1400 }
+	}
+}
+event = {
+	id = 16039215
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		allies = 1500
+		big_alliance = { country = -1 alliance = allies }
+		NOT = { local_flag = IK_VP_Allies_1500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = money value = 10 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Allies_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039301
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 100
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0100 }
+	}
+}
+event = {
+	id = 16039302
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 200
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0200 }
+	}
+}
+event = {
+	id = 16039303
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 300
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0300 }
+	}
+}
+event = {
+	id = 16039304
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 400
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0400 }
+	}
+}
+event = {
+	id = 16039305
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 500
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0500 }
+	}
+}
+event = {
+	id = 16039306
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 600
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0600 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0600 }
+	}
+}
+event = {
+	id = 16039307
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 700
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0700 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0700 }
+	}
+}
+event = {
+	id = 16039308
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 800
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0800 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0800 }
+	}
+}
+event = {
+	id = 16039309
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 900
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_0900 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_0900 }
+	}
+}
+event = {
+	id = 16039310
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1000
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1000 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1000 }
+	}
+}
+event = {
+	id = 16039311
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1100
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1100 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1100 }
+	}
+}
+event = {
+	id = 16039312
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1200
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1200 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1200 }
+	}
+}
+event = {
+	id = 16039313
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1300
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1300 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1300 }
+	}
+}
+event = {
+	id = 16039314
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1400
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1400 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1400 }
+	}
+}
+event = {
+	id = 16039315
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		comintern = 1500
+		big_alliance = { country = -1 alliance = comintern }
+		NOT = { local_flag = IK_VP_Comintern_1500 }
+	}
+
+	name = "EVT_16039001_NAME"
+	desc = "EVT_16039001_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = 10 }
+		command = { type = relative_manpower value = 10 }
+		command = { type = industrial_modifier which = supplies value = 20 }
+		command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = IK_VP_Comintern_1500 }
+	}
+}
+
+##############################################################################################
+##############################################################################################
+
+event = {
+	id = 16039401
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 100 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0100 }
+	}
+}
+event = {
+	id = 16039402
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 200 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0200 }
+	}
+}
+event = {
+	id = 16039403
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 300 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0300 }
+	}
+}
+event = {
+	id = 16039404
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 400 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0400 }
+	}
+}
+event = {
+	id = 16039405
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 500 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0500 }
+	}
+}
+event = {
+	id = 16039406
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 600 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0600
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0600 }
+	}
+}
+event = {
+	id = 16039407
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 700 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0700
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0700 }
+	}
+}
+event = {
+	id = 16039408
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 800 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0800
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0800 }
+	}
+}
+event = {
+	id = 16039409
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 900 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_0900
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_0900 }
+	}
+}
+event = {
+	id = 16039410
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1000 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1000
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1000 }
+	}
+}
+event = {
+	id = 16039411
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1100 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1100 }
+	}
+}
+event = {
+	id = 16039412
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1200 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1200 }
+	}
+}
+event = {
+	id = 16039413
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1300 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1300 }
+	}
+}
+event = {
+	id = 16039414
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1400 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1400 }
+	}
+}
+event = {
+	id = 16039415
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { vp = 1500 }
+			NOT = { big_alliance = { country = -1 alliance = no } }
+		}
+		local_flag = IK_VP_Neutral_1500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Neutral_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039501
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 100 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0100 }
+	}
+}
+event = {
+	id = 16039502
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 200 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0200 }
+	}
+}
+event = {
+	id = 16039503
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 300 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0300 }
+	}
+}
+event = {
+	id = 16039504
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 400 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0400 }
+	}
+}
+event = {
+	id = 16039505
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 500 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0500 }
+	}
+}
+event = {
+	id = 16039506
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 600 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0600
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0600 }
+	}
+}
+event = {
+	id = 16039507
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 700 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0700
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0700 }
+	}
+}
+event = {
+	id = 16039508
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 800 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0800
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0800 }
+	}
+}
+event = {
+	id = 16039509
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 900 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_0900
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_0900 }
+	}
+}
+event = {
+	id = 16039510
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1000 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1000
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1000 }
+	}
+}
+event = {
+	id = 16039511
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1100 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1100 }
+	}
+}
+event = {
+	id = 16039512
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1200 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1200 }
+	}
+}
+event = {
+	id = 16039513
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1300 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1300 }
+	}
+}
+event = {
+	id = 16039514
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1400 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1400 }
+	}
+}
+event = {
+	id = 16039515
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { axis = 1500 }
+			NOT = { big_alliance = { country = -1 alliance = axis } }
+		}
+		local_flag = IK_VP_Axis_1500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = research_mod value = -2.5 }
+		command = { type = local_clrflag which = IK_VP_Axis_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039601
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 100 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0100 }
+	}
+}
+event = {
+	id = 16039602
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 200 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0200 }
+	}
+}
+event = {
+	id = 16039603
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 300 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0300 }
+	}
+}
+event = {
+	id = 16039604
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 400 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0400 }
+	}
+}
+event = {
+	id = 16039605
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 500 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0500 }
+	}
+}
+event = {
+	id = 16039606
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 600 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0600
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0600 }
+	}
+}
+event = {
+	id = 16039607
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 700 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0700
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0700 }
+	}
+}
+event = {
+	id = 16039608
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 800 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0800
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0800 }
+	}
+}
+event = {
+	id = 16039609
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 900 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_0900
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_0900 }
+	}
+}
+event = {
+	id = 16039610
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1000 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1000
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1000 }
+	}
+}
+event = {
+	id = 16039611
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1100 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1100 }
+	}
+}
+event = {
+	id = 16039612
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1200 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1200 }
+	}
+}
+event = {
+	id = 16039613
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1300 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1300 }
+	}
+}
+event = {
+	id = 16039614
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1400 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1400 }
+	}
+}
+event = {
+	id = 16039615
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { allies = 1500 }
+			NOT = { big_alliance = { country = -1 alliance = allies } }
+		}
+		local_flag = IK_VP_Allies_1500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = money value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Allies_1500 }
+	}
+}
+
+##############################################################################################
+
+event = {
+	id = 16039701
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 100 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0100 }
+	}
+}
+event = {
+	id = 16039702
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 200 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0200 }
+	}
+}
+event = {
+	id = 16039703
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 300 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0300 }
+	}
+}
+event = {
+	id = 16039704
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 400 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0400 }
+	}
+}
+event = {
+	id = 16039705
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 500 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0500 }
+	}
+}
+event = {
+	id = 16039706
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 600 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0600
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0600 }
+	}
+}
+event = {
+	id = 16039707
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 700 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0700
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0700 }
+	}
+}
+event = {
+	id = 16039708
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 800 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0800
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0800 }
+	}
+}
+event = {
+	id = 16039709
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 900 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_0900
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_0900 }
+	}
+}
+event = {
+	id = 16039710
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1000 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1000
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1000 }
+	}
+}
+event = {
+	id = 16039711
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1100 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1100
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1100 }
+	}
+}
+event = {
+	id = 16039712
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1200 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1200
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1200 }
+	}
+}
+event = {
+	id = 16039713
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1300 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1300
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1300 }
+	}
+}
+event = {
+	id = 16039714
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1400 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1400
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1400 }
+	}
+}
+event = {
+	id = 16039715
+	random = no
+	persistent = yes
+
+	trigger = {
+		#local_flag = IK_setup
+		OR = {
+			NOT = { comintern = 1500 }
+			NOT = { big_alliance = { country = -1 alliance = comintern } }
+		}
+		local_flag = IK_VP_Comintern_1500
+	}
+
+	name = "EVT_16039401_NAME"
+	desc = "EVT_16039401_DESC"
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = morale which = land value = -10 }
+		command = { type = relative_manpower value = -10 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_clrflag which = IK_VP_Comintern_1500 }
+	}
+}

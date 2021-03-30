@@ -1,0 +1,6214 @@
+#
+# HoI - Siam Events
+#
+#		written by Henrik Fåhraeus
+#
+
+
+#########################################################################
+# Japan puts Pressure on Siam (Axis Japan)
+#########################################################################
+event = { 
+	id = 4500
+	random = no
+	country = SIA
+	
+	# Triggered by JAP 3806
+	
+	name = "EVT_4500_NAME"
+	desc = "EVT_4500_DESC"
+        picture = "siam"
+	style = 0
+	
+	action_a = {
+		name = "ACTIONNAME4500A" # Accept
+		ai_chance = 97
+		command = { type = trigger which = 3808 } # Japan
+		command = { type = alliance which = GER }
+		command = { type = addcore which = 1304 }
+		command = { type = addcore which = 1349 }
+		command = { type = addcore which = 1350 }
+                #command = { type = secedeprovince which = JAP value = 1344 }
+                #command = { type = secedeprovince which = JAP value = 1345 }
+                #command = { type = secedeprovince which = JAP value = 1347 }
+                #command = { type = secedeprovince which = JAP value = 1348 }
+            	#command = { type = secedeprovince which = JAP value = 1303 }
+                #command = { type = secedeprovince which = JAP value = 1330 }
+		command = { type = relation which = JAP value = 20 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = ENG value = -25 }
+		command = { type = relation which = FRA value = -20 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 62001 }
+		command = { type = headofgovernment which = 62035 }
+		command = { type = foreignminister which = 62043 }
+		command = { type = armamentminister which = 62059 }
+		command = { type = ministerofsecurity which = 62073 }
+		command = { type = ministerofintelligence which = 62085 }
+		command = { type = chiefofstaff which = 62091 }
+		command = { type = chiefofarmy which = 62097 }
+		command = { type = chiefofnavy which = 62102 }
+		command = { type = chiefofair which = 62107 }
+	}
+	action_b = {
+		name = "ACTIONNAME4500B" # Decline
+		ai_chance = 3
+		command = { type = relation which = JAP value = -15 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = FRA value = 15 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = trigger which = 3809 } # Japan
+	}
+}
+
+#########################################################################
+# Japan puts Pressure on Siam ("Neutral" Japan)
+#########################################################################
+event = { 
+	id = 4501
+	random = no
+	country = SIA
+	
+	# Triggered by JAP 3807
+	
+	name = "EVT_4501_NAME"
+	desc = "EVT_4501_DESC"
+       picture = "siam"
+	style = 0
+	
+	action_a = {
+		name = "ACTIONNAME4501A" # Accept
+		ai_chance = 98
+		command = { type = trigger which = 3808 } # Japan
+		command = { type = alliance which = JAP }
+		command = { type = war which = ENG }
+		command = { type = addcore which = 1304 }
+		command = { type = addcore which = 1349 }
+		command = { type = addcore which = 1350 }
+                #command = { type = secedeprovince which = JAP value = 1303 }
+                #command = { type = secedeprovince which = JAP value = 1330 }
+                #command = { type = secedeprovince which = JAP value = 1344 }
+                #command = { type = secedeprovince which = JAP value = 1345 }
+                #command = { type = secedeprovince which = JAP value = 1347 }
+                #command = { type = secedeprovince which = JAP value = 1348 }
+		command = { type = relation which = JAP value = 20 }
+		command = { type = relation which = GER value = 10 }
+		command = { type = relation which = ENG value = -25 }
+		command = { type = relation which = FRA value = -20 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 62001 }
+		command = { type = headofgovernment which = 62035 }
+		command = { type = foreignminister which = 62043 }
+		command = { type = armamentminister which = 62059 }
+		command = { type = ministerofsecurity which = 62073 }
+		command = { type = ministerofintelligence which = 62085 }
+		command = { type = chiefofstaff which = 62091 }
+		command = { type = chiefofarmy which = 62097 }
+		command = { type = chiefofnavy which = 62102 }
+		command = { type = chiefofair which = 62107 }
+	}
+	action_b = {
+		name = "ACTIONNAME4501B" # Decline
+		ai_chance = 2
+		command = { type = relation which = JAP value = -15 }
+		command = { type = relation which = GER value = -10 }
+		command = { type = relation which = ENG value = 15 }
+		command = { type = relation which = FRA value = 15 }
+		command = { type = relation which = USA value = 10 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = trigger which = 3809 } # Japan
+	}
+}
+#########################################################################
+# Siam Gives Up
+#########################################################################
+event = {
+	id = 3813
+	random = no
+	country = SIA
+
+	trigger = {
+		war = { country = SIA country = ENG }
+		OR = {
+			event = 43 # Japan already surrendered
+			NOT = { exists = JAP }
+			AND = {
+				OR = {
+					control = { province = 1343 data = ENG }
+					control = { province = 1343 data = FRA }
+					control = { province = 1343 data = AST }
+					control = { province = 1343 data = NZL }
+					control = { province = 1343 data = USA }
+					}
+				OR = {
+					control = { province = 1345 data = ENG }
+					control = { province = 1345 data = FRA }
+					control = { province = 1345 data = AST }
+					control = { province = 1345 data = NZL }
+					control = { province = 1345 data = USA }
+					}
+				}
+			}
+		}
+
+	name = "EVT_3813_NAME"
+	desc = "EVT_3813_DESC"
+	style = 0
+        picture = "JAP_surrender"
+
+        date = { day = 0 month = january year = 1939 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_3813_ACTA" #
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = peace which = USA value = 1 }
+		command = { type = peace which = SAF value = 1 }
+		command = { type = peace which = CAN value = 1 }
+		command = { type = peace which = AST value = 1 }
+		command = { type = peace which = FRA value = 1 }
+		command = { type = peace which = NZL value = 1 }
+		command = { type = peace which = ENG value = 1 }
+		command = { type = peace which = SOV value = 1 }
+		command = { type = peace which = CHI value = 1 }
+		command = { type = peace which = CHC value = 1 }
+		command = { type = peace which = SIK value = 1 }
+		command = { type = peace which = PHI value = 1 }
+		command = { type = peace which = LIB value = 1 }
+		command = { type = peace which = PAN value = 1 }
+		command = { type = access which = USA }
+		command = { type = access which = ENG }
+		command = { type = access which = FRA }
+		command = { type = access which = CAN }
+		command = { type = access which = AST }
+		command = { type = access which = NZL }
+		command = { type = access which = SAF }
+		command = { type = access which = PAN } #was ITA
+		command = { type = access which = SOV }
+		command = { type = secedeprovince which = FRA value = 1339 } #Indochina
+		command = { type = secedeprovince which = FRA value = 1340 } #Indochina
+		command = { type = secedeprovince which = FRA value = 1341 } #Indochina
+	}
+}
+
+
+##################################
+# begin Indochina series by nomonhan
+# 4504 - 09 Chinese and Japanese puppets
+##################################
+event = { 
+	id = 4504
+	random = no
+	country = IDC
+	
+	date = { day = 5 month = april year = 1951 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Cuong De Dies"
+	desc = "Prince Cuong De, a long-time Vietnam nationalist and claimant to the Nguyen dynasty throne, dies in Japan after a long illness."
+	style = 0
+	picture = "cuong_de"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepleader which = 543012 }
+	}
+}
+event = { 
+	id = 4505
+	random = no
+	country = VIE
+	
+	date = { day = 5 month = april year = 1951 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Cuong De Dies"
+	desc = "Prince Cuong De, a long-time Vietnam nationalist and claimant to the Nguyen dynasty throne, dies in Japan after a long illness."
+	style = 0
+	picture = "cuong_de"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepleader which = 543012 }
+	}
+}
+event = { 
+	id = 4506
+	random = no
+	country = IDC
+	
+	trigger = {
+		ispuppet = IDC
+		government = fascist
+		exists = VIC
+		NOT = { puppet = { country = IDC country = FRA } }
+	}
+
+	# Cuong De long time Viet nationalist sought Japanese and Chinese support against French rule-IDC version	
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = march year = 1951 } #Cuong De died apr 6
+	
+	name = "Puppet Government"
+	desc = "Cuong De and Ngo Ding Diem were offered places in the puppet administration. Meanwhile, Tran Trong Kim, a noted scholar, was waiting in the wings."
+	style = 0
+	
+	action_a = {
+		name = "Cuong De and Diem"
+		ai_chance = 50
+		command = { type = headofstate which = 543012 }
+		command = { type = headofgovernment which = 543018 }
+	}
+	action_b = {
+		name = "Cuong De and Kim"
+		ai_chance = 50
+		command = { type = headofstate which = 543012 }
+		command = { type = headofgovernment which = 543019 }
+	}
+}
+event = { 
+	id = 4507
+	random = no
+	country = VIE
+	
+	trigger = {
+		ispuppet = VIE
+		government = fascist
+		exists = VIC
+		NOT = { puppet = { country = VIE country = FRA } }
+	}
+
+	# Cuong De long time Viet nationalist sought Japanese and Chinese support against French rule	
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = march year = 1951 } #Cuong De died apr 6
+	
+	name = "Puppet Government"
+	desc = "Cuong De and Ngo Ding Diem were offered places in the puppet administration. Meanwhile, Tran Trong Kim, a noted scholar, was waiting in the wings."
+	style = 0
+	
+	action_a = {
+		name = "Cuong De and Diem"
+		ai_chance = 50
+		command = { type = headofstate which = 542012 }
+		command = { type = headofgovernment which = 542018 }
+	}
+	action_b = {
+		name = "Cuong De and Kim"
+		ai_chance = 50
+		command = { type = headofstate which = 542012 }
+		command = { type = headofgovernment which = 542019 }
+	}
+}
+
+event = { 
+	id = 4508
+	random = no
+	country = IDC
+	
+	trigger = {
+		ispuppet = IDC
+		government = fascist
+		NOT = { exists = VIC }
+		NOT = { puppet = { country = IDC country = FRA } }
+	}
+
+	# historic government installed by Japan in wake of Vichy collapse--IDC version
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+
+	name = "Puppet Government"
+	desc = "H.M. Bao Dai and scholar-historian Tran Trong Kim were appointed leaders of the puppet government."
+
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = headofstate which = 543011 }
+		command = { type = headofgovernment which = 543019 }
+	}
+}
+event = { 
+	id = 4509
+	random = no
+	country = VIE
+	
+	trigger = {
+		ispuppet = VIE
+		government = fascist
+		NOT = { exists = VIC }
+		NOT = { puppet = { country = VIE country = FRA } }
+	}
+
+	# historic government installed by Japan in wake of Vichy collapse
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Puppet Government"
+	desc = "H.M. Bao Dai and scholar-historian Tran Trong Kim were appointed leaders of the puppet government."
+	style = 0
+	
+	action_a = {
+		name = "OK" # historic
+		command = { type = headofstate which = 542011 }
+		command = { type = headofgovernment which = 542019 }
+	}
+}
+###############################
+# Ho Chi Minh is in IDC files but not VIE
+# slept in IDC unless IDC communist
+###############################
+event = { 
+	id = 4510
+	random = no
+	country = IDC
+	
+	trigger = {
+		OR = {
+			government = fascist
+			government = democratic
+		}
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Manhunt"
+	desc = "Ho Chi Minh, who has ties to French and Chinese Communists, as well as American intelligence, has disappeared."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Rats!"
+		# sleep pro-communist military
+		command = { type = sleepleader which = 543009 } # Ho Chi Minh
+		command = { type = sleepleader which = 543013 } # Le Duan
+		command = { type = sleepleader which = 543041 } # Vo Nguyen Giap
+		command = { type = sleepleader which = 543054 } # Nguyen Huu Tho
+		
+	}
+}
+############################################
+# Historic event following WW2 but little known in West
+# Ho Chi Minh declared independence upon Japanese
+# surrender but was rejected by West in accordance
+# with Poitsdam agreements involving USA ENG CHI
+############################################
+event = { 
+	id = 4511
+	random = no
+	country = FRA
+
+	# Historic event--in reality area was surrendered to ENG-CHI first before
+	# France even touched the area but since Japan surrender event cedes
+	# Indochina to France this event happens
+	
+	trigger = {
+		exists = CHC
+		exists = CHI
+		exists = ENG
+		alliance = { country = ENG country = FRA }
+		NOT = {
+			OR = {
+				exists = GER
+				war = { country = FRA country = SIA }
+				war = { country = FRA country = CHI }
+				war = { country = FRA country = ENG }
+				war = { country = FRA country = USA }
+				atwar = JAP
+				government = communist
+				alliance = { country = FRA country = SOV }
+				alliance = { country = FRA country = CHC }
+				exists = U13 # Jap puppets
+				exists = U87
+				exists = U74
+				exists = U73 # Eng puppet
+				exists = U72
+				exists = IDC
+				exists = VIE
+				exists = VIC # Vichy exists
+				ispuppet = CHI # China is puppet
+				control = { province = 1199 data = JAP } # Seoul
+				control = { province = 1201 data = JAP } # Pyongyang
+			}
+		}
+		control = { province = 1323 data = CHI } # Taipei
+		control = { province = 1235 data = CHI } # Nanjing
+		# prior Japanese occupation a must--created conditions for Ho Chi Minh
+		OR = {
+			event = 3804 # Vichy accepts Jap demands
+			event = 3894 # or alternate event occured
+		}
+		control = { province = 56 data = FRA } # Paris
+		control = { province = 1328 data = FRA } # Hanoi
+		control = { province = 1337 data = FRA } # Saigon aka HoChiMinh City
+		control = { province = 1329 data = FRA } # Vientiane
+		control = { province = 1340 data = FRA } # Phnom Penh
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "August Revolution"
+	desc = "In the closing days of Japanese occupation, Japan installed a puppet government. Ho Chi Minh won widespread support, and declared Vietnam's independence upon Japan's surrender. Instead, Laos and Vietnam were temporarily divided between Nationalist China and Britain, and Ho Chi Minh demanded the return of the French."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Accept Ho Chi Minh"
+		ai_chance = 5
+		command = { type = independence which = LAO } 
+		command = { type = independence which = CMB }
+		command = { type = independence which = IDC }
+		command = { type = dissent value = 15 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = CHI value = -20 }
+		command = { type = relation which = SOV value = 20 }
+		command = { type = relation which = CHC value = 20 }
+		command = { type = sleepevent which = 4522 } #ENG
+		command = { type = sleepevent which = 4523 } #NatChi
+		command = { type = alliance which = CMB } 
+		command = { type = trigger which = 4586 } #IDC->VN
+	}
+	action_b = {
+		name = "Implement Potsdam Agreement"
+		ai_chance = 95
+		# maintain French control Cambodia
+		command = { type = secedeprovince which = CHI value = 1326 }
+		command = { type = secedeprovince which = CHI value = 1328 }
+		command = { type = secedeprovince which = CHI value = 1333 }
+		command = { type = secedeprovince which = CHI value = 1306 }
+		command = { type = secedeprovince which = CHI value = 1329 }
+		command = { type = secedeprovince which = CHI value = 1332 }
+		command = { type = secedeprovince which = ENG value = 1334 }
+		command = { type = secedeprovince which = ENG value = 1335 }
+		command = { type = secedeprovince which = ENG value = 1336 }
+		command = { type = secedeprovince which = ENG value = 1337 }
+		command = { type = secedeprovince which = ENG value = 1338 }
+		command = { type = secedeprovince which = ENG value = 1899 }
+	}
+}
+############################################
+# Event 4512 ensures proper political system since 
+# independence might be granted by non-communist state
+############################################
+event = { 
+	id = 4512
+	random = no
+	country = U72
+	
+	# event ensures U72 is politically correct and triggers other events
+	
+	name = "Vietnamese Revolution"
+	desc = "Ho Chi Minh installed a communist government, suppressing political opposition."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = free_market value = 1 }
+		command = { type = domestic which = interventionism value = 1 }
+	}
+}
+##################################
+# 4513-4514 Ho Chi Minh Trail simulation
+# must be defacto alliance to work properly
+##################################
+event = { 
+	id = 4513
+	random = no
+	country = LAO
+
+	trigger = { 
+		event = 4512
+		NOT = { war = { country = LAO country = U72 } }
+		war = { country = VIE country = U72 } 
+		NOT = { alliance = { country = LAO country = U72 } }
+		NOT = { alliance = { country = LAO country = VIE } }
+		NOT = { alliance = { country = LAO country = USA } }
+		NOT = { alliance = { country = LAO country = FRA } }
+	 }
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1964 }
+		
+	name = "Ho Chi Minh Trail"
+	desc = "The weak Laotian coalition government gave in to demands from Communist Vietnam for military access. The trail was a critical factor in Ho Chi Minh's eventual triumph, and the Vietnamese presence helped the Pathet Lao eliminate internal opposition."
+	style = 0
+	picture = "hochiminh_trail"
+
+	action_a = {
+		name = "OK"
+		command = { type = leave_alliance }
+		command = { type = alliance which = U72 } # defacto alliance
+		command = { type = domestic which = political_left value = 3 }
+		command = { type = domestic which = democratic value = -3 }
+		command = { type = construct which = infrastructure where = 1329 value = 30 }
+		command = { type = construct which = infrastructure where = 1332 value = 30 }
+		command = { type = construct which = infrastructure where = 1336 value = 30 }
+		command = { type = free_supplies value = 1 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = industrial_modifier which = supplies value = 400 }
+		
+	}
+}
+event = { 
+	id = 4514
+	random = no
+	country = LAO
+	
+	trigger = { 
+		event = 4513
+		NOT = { atwar = LAO }
+		NOT = { atwar = U72 }
+		NOT = { atwar = IDC }
+		NOT = { atwar = VIE }
+		NOT = { atwar = CMB }
+	 }
+	
+	date = { day = 0 month = january year = 1955 }
+	offset = 70
+	deathdate = { day = 29 month = december year = 1964 }
+		
+	name = "Ho Chi Minh Trail Closed"
+	desc = "The Vietnamese-built infrastructure which constituted the Ho Chi Minh Trail was withdrawn. The trails quickly became overgron by vegetation and Vietnam concentrated on its own rebuilding after the war."
+	style = 0
+	picture = "laos"
+
+	action_a = {
+		name = "OK"
+		command = { type = construct which = infrastructure where = 1329 value = -30 }
+		command = { type = construct which = infrastructure where = 1332 value = -30 }
+		command = { type = construct which = infrastructure where = 1336 value = -30 }
+		command = { type = free_supplies value = -1 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = industrial_modifier which = supplies value = -400 }
+		
+	}
+}
+##################################################
+# 4515 alternate to event 4511 in case of abnormal end of WW2
+# or France hostile to US--etc
+##################################################
+event = { 
+	id = 4515
+	random = no
+	country = FRA
+	
+	trigger = {
+		OR = {
+			exists = GER
+			NOT = { exists = CHI }
+			NOT = { exists = ENG }
+			NOT = { control = { province = 1235 data = CHI } } # Nanjing
+			war = { country = FRA country = USA }
+			war = { country = FRA country = ENG }
+			war = { country = FRA country = CHI }
+			NOT = { alliance = { country = ENG country = FRA } }
+			NOT = { control = { province = 56 data = FRA } }# Paris
+			exists = U73 # Eng puppet
+			exists = VIC # Vichy exists
+			exists = U87
+			exists = U74
+			exists = U13
+			ispuppet = CHI
+			atwar = CHI
+		}
+		NOT = { atwar = JAP }
+		NOT = { war = { country = FRA country = SIA } }
+		NOT = { exists = U72 }
+		NOT = { exists = IDC }
+		NOT = { exists = VIE }
+		NOT = { control = { province = 1199 data = JAP } } # Seoul
+		NOT = { control = { province = 1201 data = JAP } } # Pyongyang
+		NOT = { control = { province = 1323 data = JAP } } # Taipei
+		OR = {
+			event = 3804 # Vichy accepts Jap demands
+			event = 3894 # or alternate event occured
+		}
+		control = { province = 1328 data = FRA } # Hanoi
+		control = { province = 1337 data = FRA } # Saigon aka HoChiMinh City
+		control = { province = 1329 data = FRA } # Vientiane
+		control = { province = 1340 data = FRA } # Phnom Penh
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "USA Decides French Indochina"
+	desc = "Because the war ended in a fashion not anticipated by the allies, the fate of Indochina was decided by the USA."
+	style = 0
+	picture = "JAP_surrender"
+
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = USA value = 1326 }
+		command = { type = secedeprovince which = USA value = 1328 }
+		command = { type = secedeprovince which = USA value = 1333 }
+		command = { type = secedeprovince which = USA value = 1306 }
+		command = { type = secedeprovince which = USA value = 1329 }
+		command = { type = secedeprovince which = USA value = 1332 }
+		command = { type = secedeprovince which = USA value = 1334 }
+		command = { type = secedeprovince which = USA value = 1335 }
+		command = { type = secedeprovince which = USA value = 1336 }
+		command = { type = secedeprovince which = USA value = 1337 }
+		command = { type = secedeprovince which = USA value = 1338 }
+		command = { type = secedeprovince which = USA value = 1339 }
+		command = { type = secedeprovince which = USA value = 1340 }
+		command = { type = secedeprovince which = USA value = 1341 }
+		command = { type = secedeprovince which = USA value = 1899 }#new
+	}
+}
+#################################
+# 4516 alternate to event 4511
+# if France communist but friendly to USA
+#################################
+event = { 
+	id = 4516
+	random = no
+	country = FRA
+	
+	trigger = {
+		exists = CHC
+		exists = CHI
+		exists = ENG
+		alliance = { country = ENG country = FRA }
+		NOT = {
+			OR = {
+				exists = GER
+				war = { country = FRA country = SIA }
+				war = { country = FRA country = CHI }
+				war = { country = FRA country = ENG }
+				war = { country = FRA country = USA }
+				atwar = JAP
+				exists = U13 # Jap puppets
+				exists = U87
+				exists = U74
+				exists = U73 # Eng puppet
+				exists = U72
+				exists = IDC
+				exists = VIE
+				exists = VIC # Vichy exists
+				ispuppet = CHI # China is puppet
+				control = { province = 1199 data = JAP } # Seoul
+				control = { province = 1201 data = JAP } # Pyongyang
+			}
+		}
+		control = { province = 1323 data = CHI } # Taipei
+		control = { province = 1235 data = CHI } # Nanjing
+		OR = {
+			event = 3804 # Vichy accepts Jap demands
+			event = 3894 # or alternate event occured
+		}
+		OR = {
+			government = communist
+			alliance = { country = FRA country = SOV }
+			alliance = { country = FRA country = CHC }
+		}
+		control = { province = 56 data = FRA } # Paris
+		control = { province = 1328 data = FRA } # Hanoi
+		control = { province = 1337 data = FRA } # Saigon aka HoChiMinh City
+		control = { province = 1329 data = FRA } # Vientiane
+		control = { province = 1340 data = FRA } # Phnom Penh
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "August Revolution"
+	desc = "In the closing days of Japanese occupation, Japan installed a puppet government in Vietnam. It proved unpopular, and Ho Chi Minh won widespread support, and declared Vietnam's independence upon Japan's surrender. France decided to accept Ho Chi Minh as an ally."
+	style = 0
+	picture = "hochiminh2"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = LAO } 
+		command = { type = independence which = CMB }
+		command = { type = independence which = IDC }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = CHI value = -20 }
+		command = { type = relation which = SOV value = 20 }
+		command = { type = relation which = CHC value = 20 }
+		command = { type = trigger which = 4586 } #IDC->U72
+	}
+}
+################################################
+# 4517 - 4519 ahistorical alliance of Communists in Indochina
+################################################
+event = { 
+	id = 4517
+	random = no
+	country = FRA
+	
+	trigger = {
+		event = 4512
+		event = 4516
+		NOT = { alliance = { country = FRA country = SOV } }
+		NOT = { alliance = { country = FRA country = CHC } }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Indochina Communist Alliance"
+	desc = "The communist leaders of Indochina joined the alliance with Communist France."
+	style = 0
+	picture = "hochiminh2"
+
+	action_a = {
+		name = "OK"
+		command = { type = alliance which = U72 }
+		command = { type = alliance which = CMB }
+		command = { type = alliance which = LAO }
+	}
+}
+event = { 
+	id = 4518
+	random = no
+	country = CHC
+	
+	trigger = {
+		event = 4512
+		event = 4516
+		NOT = { alliance = { country = FRA country = SOV } }
+		alliance = { country = FRA country = CHC }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Indochina Communist Alliance"
+	desc = "The communist leaders of Indochina joined the alliance with Communist France and China."
+	style = 0
+	picture = "hochiminh2"
+
+	action_a = {
+		name = "OK"
+		command = { type = alliance which = U72 }
+		command = { type = alliance which = CMB }
+		command = { type = alliance which = LAO }
+	}
+}
+event = { 
+	id = 4519
+	random = no
+	country = SOV
+	
+	trigger = {
+		event = 4512
+		event = 4516
+		alliance = { country = FRA country = SOV }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	picture = "hochiminh2"
+
+	name = "Indochina Communist Alliance"
+	desc = "The communist leaders of Indochina joined the alliance with Communist France and the Soviet Union."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = alliance which = U72 }
+		command = { type = alliance which = CMB }
+		command = { type = alliance which = LAO }
+	}
+}
+########################################
+# 4520 anti-explot event needed to
+# stop Nat Chi from giving independence
+# to Comm Vietnam because it lacks provinces
+######################################## 
+event = { 
+	id = 4520
+	random = no
+	country = CHI
+	persistent = yes
+
+	# anti-exploit event
+	
+	trigger = {
+		puppet = { country = U72 country = CHI }
+		NOT = { government = communist }
+	}
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Reabsorption of Communist Vietnam"
+	desc = "Giving independence to Communist Vietnam because you lack the provinces to give it to Nationalist Vietnam is considered a game exploit."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = U72 }
+		command = { type = dissent value = 25 }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = relation which = GER value = -100 }
+	}
+}
+#########################################
+# 4521 Little known historic event important to China
+#########################################
+event = {
+	id = 4521
+	random = no
+	country = CHI
+	
+	trigger = { 
+		exists = CYN
+		event = 4511
+		control = { province = 1326 data = CHI }
+		control = { province = 1328 data = CHI }
+		control = { province = 1333 data = CHI }
+		control = { province = 1306 data = CHI }
+		control = { province = 1329 data = CHI }
+		control = { province = 1332 data = CHI }
+	 }
+
+	date = { day = 14 month = october year = 1945 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+
+	name = "Removal of Long Yun"
+	desc = "On October 15, 1945 while Long was ostensibly on a mission to pacify northern Indochina, Chiang Kai Shek removed Long Yun as governor of Yunnan province, replacing him with Du Yuming, effectively ending the existence of Yunnan as a quasi-state. Long Yun, remembering this, eventually defected to the Communists."
+	style = 0
+	picture = "chiang_churchill"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = CYN }		
+	}
+}
+####################################################
+# 4522-4523  the return to France of Indochina formally takes place
+####################################################
+event = {
+	id = 4522
+	random = no
+	country = ENG
+
+	name = "Restoration of French Indochina"
+	desc = "As per agreement between the British and French governments, French colonial rule is (for now) reinstated."
+	style = 0
+	picture = "chiang_churchill"
+
+	trigger = { 
+		event = 4511
+		NOT = { exists = CYN }
+	 }
+	
+	date = { day = 11 month = march year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = FRA value = 1334 }
+		command = { type = secedeprovince which = FRA value = 1335 }
+		command = { type = secedeprovince which = FRA value = 1336 }
+		command = { type = secedeprovince which = FRA value = 1337 }
+		command = { type = secedeprovince which = FRA value = 1338 }
+	}
+}
+event = {
+	id = 4523
+	random = no
+	country = CHI
+
+	trigger = { 
+		event = 4511
+		NOT = { exists = CYN }
+	 }
+	
+	date = { day = 11 month = march year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Restoration of French Indochina"
+	desc = "China agreed to return its portion of Indochina to France in return for France surrendering control of the French concessions in China."
+	style = 0
+	picture = "chiang_churchill"
+
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = FRA value = 1326 }
+		command = { type = secedeprovince which = FRA value = 1328 }
+		command = { type = secedeprovince which = FRA value = 1333 }
+		command = { type = secedeprovince which = FRA value = 1306 }
+		command = { type = secedeprovince which = FRA value = 1329 }
+		command = { type = secedeprovince which = FRA value = 1332 }
+	}
+}
+#################################################
+# 4524 Indochina was a quite real French neocolonial invention
+#################################################
+event = {
+	id = 4524
+	random = no
+	country = FRA
+
+	trigger = { 
+		event = 4522
+		event = 4523
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Creation of Indochina Union"
+	desc = "In order to fend off the demands of Ho Chi Minh and others for independence, France tried to create an Indochina Union, which was in reality a French puppet state."
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "Create Indochina Union"
+		ai_chance = 99
+		command = { type = sleepevent which = 15120 } # dissent for FRA IDC puppet because historic
+		command = { type = independence which = IDC }
+		command = { type = trigger which = 4528 }
+	}
+	action_b = {
+		name = "Direct occupation is better"
+		ai_chance = 1
+		command = { type = sleepevent which = 4528 } 
+		command = { type = dissent value = 20 }
+	}
+	action_c = {
+		name = "Accept Ho Chi Minh"
+#player choice but france already rejected this in 4511 choice included for 45GC compatibility
+		ai_chance = 0
+		command = { type = independence which = LAO } 
+		command = { type = independence which = CMB }
+		command = { type = independence which = IDC }
+		command = { type = dissent value = 15 }
+		command = { type = relation which = ENG value = -20 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = CHI value = -20 }
+		command = { type = relation which = SOV value = 20 }
+		command = { type = relation which = CHC value = 20 }
+		command = { type = alliance which = CMB } 
+		command = { type = trigger which = 4586 } #IDC->VN
+	}
+	
+}
+###########################################
+# 4525-4527 alt Indochina -- USA gives independence
+# or ahistorically recognizes Ho Chi Minh
+###########################################
+event = {
+	id = 4525
+	random = no
+	country = USA
+
+	trigger = { 
+		event = 4515
+		ideology = social_liberal
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Creation of Indochina Union"
+	desc = "In order to fend off the demands of Ho Chi Minh and others for independence, The USA created a unified Indochina state, which became a French puppet state."
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "Indochina Union"
+		ai_chance = 90
+		command = { type = sleepevent which = 15120 } # dissent for FRA IDC puppet because historic
+		command = { type = independence which = IDC }
+		command = { type = trigger which = 4528 }
+		command = { type = trigger which = 4529 }
+	}
+	action_b = {
+		name = "Recognize Ho Chi Minh"
+		ai_chance = 10
+		command = { type = independence which = IDC }
+		command = { type = dissent = 10 } #anticommunist dissent
+		command = { type = trigger which = 4586 } # IDC-> U72
+	}
+}
+event = {
+	id = 4526
+	random = no
+	country = USA
+
+	trigger = { 
+		event = 4515
+		OR = {
+			ideology = social_conservative
+			ideology = market_liberal
+			government = fascist
+		}
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	picture = "indochina_union"
+
+	name = "Creation of Indochina Union"
+	desc = "In order to fend off the demands of Ho Chi Minh and others for independence, The USA created a unified Indochina state, which became a French puppet state."
+	style = 0
+	
+	action_a = {
+		name = "Indochina Union"
+		ai_chance = 100
+		command = { type = sleepevent which = 15120 } # dissent for FRA IDC puppet because historic
+		command = { type = independence which = IDC }
+		command = { type = trigger which = 4528 }
+		command = { type = trigger which = 4529 }
+	}
+	action_b = {
+		name = "Recognize Ho Chi Minh"
+		ai_chance = 0
+		command = { type = independence which = IDC }
+		command = { type = dissent = 15 }
+		command = { type = trigger which = 4586 } # IDC-> U72
+	}
+}
+event = {
+	id = 4527
+	random = no
+	country = USA
+
+	trigger = { 
+		event = 4515
+		OR = {
+			ideology = social_democrat
+			government = communist
+		}
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Creation of Indochina Union"
+	desc = "Amidst numerous media denunciations of French colonialism, the USA decided to recognize Ho Chi Min's government, ignoring warnings that it was dominated by communists."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Indochina Union"
+		ai_chance = 0
+		command = { type = sleepevent which = 15120 } # dissent for FRA IDC puppet because historic
+		command = { type = independence which = IDC }
+		command = { type = dissent = 5 } # leftist dissent
+		command = { type = trigger which = 4528 }
+		command = { type = trigger which = 4529 }
+	}
+	action_b = {
+		name = "Recognize Ho Chi Minh"
+		ai_chance = 100
+		command = { type = independence which = IDC }
+		command = { type = trigger which = 4586 } # IDC-> U72
+	}
+}
+
+
+
+
+###########################################
+# 4528 IDC Historically France tried a 'French Union'
+# scheme which in HOI2 translates as a puppet state
+###########################################
+event = {
+	id = 4528
+	random = no
+	country = FRA
+
+	trigger = { 
+		OR = {
+			event = 4524
+			event = 4525
+		}
+		alliance = { country = FRA country = USA }
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	picture = "indochina_union"
+
+	name = "Creation of Indochina Union"
+	desc = "Negotiations with Ho Chi Minh broke down, and Emperor Bao Dai of the former Nguyen Dynasty agreed to be a French puppet for now."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepevent which = 15120 } #vanilla event colonial policy
+		command = { type = make_puppet which = IDC }
+	}
+}
+#####################################
+# alternate USA alliance if France ahistoric
+#####################################
+event = {
+	id = 4529
+	random = no
+	country = USA
+
+	trigger = { 
+		event = 4525
+		OR = {
+			NOT = { exists = FRA }
+			NOT = { alliance = { country = FRA country = USA } } 
+		}
+	 }
+	
+	date = { day = 13 month = september year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Creation of Indochina Union"
+	desc = "Negotiations with Ho Chi Minh broke down, and Indochina agreed to an alliance with the USA"
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "Indochina Union"
+		command = { type = alliance which = IDC }
+	}
+}
+##############################################
+# 4530 -4531 France gives VIE independence if they
+# ahistorically did not try Indochina French Union
+##############################################
+event = {
+	id = 4530
+	random = no
+	country = FRA
+
+	trigger = { 
+		control = { province = 1328 data = FRA } # Hanoi
+		control = { province = 1337 data = FRA } # Saigon aka HoChiMinh City
+		NOT = { exists = IDC }
+		NOT = { exists = VIE }
+		NOT = { exists = U72 }
+		NOT = { government = communist }
+	 }
+	
+	date = { day = 7 month = march year = 1949 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Independence for Vietnam"
+	desc = "France agreed to independence for Vietnam"
+	style = 0
+	picture = "south_viet"
+
+	action_a = {
+		name = "Vietnam independent"
+		ai_chance = 100
+		command = { type = independence which = VIE value = 1 }
+	}
+	action_b = {
+		name = "Vietnam must stay French!"
+		ai_chance = 0
+		command = { type = dissent value = 25 }
+	}
+}
+event = {
+	id = 4531
+	random = no
+	country = FRA
+
+	trigger = { 
+		control = { province = 1328 data = FRA } # Hanoi
+		control = { province = 1337 data = FRA } # Saigon aka HoChiMinh City
+		NOT = { exists = IDC }
+		NOT = { exists = VIE }
+		NOT = { exists = U72 }
+		government = communist
+	 }
+	
+	date = { day = 7 month = march year = 1949 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Independence for Vietnam"
+	desc = "France agreed to independence for Vietnam"
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Vietnam independent"
+		ai_chance = 100
+		command = { type = independence which = IDC value = 1 }
+		command = { type = trigger which = 4586 }
+	}
+	action_b = {
+		name = "Vietnam must stay French!"
+		ai_chance = 0
+		command = { type = dissent value = 25 }
+	}
+}
+#########################
+# 4532 independence for Laos
+#########################
+event = {
+	id = 4532
+	random = no
+	country = FRA
+	
+
+	trigger = { 
+		NOT = { exists = LAO }
+		control = { province = 1329 data = FRA } # Vientiane
+	 }
+	
+	date = { day = 17 month = july year = 1949 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Independence for Laos"
+	desc = "Both French and Laotian leaders agreed on full independence."
+	style = 0
+	picture = "laos"
+
+	action_a = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = independence which = LAO value = 1 }
+	}
+	action_b = {
+		name = "Laos must stay French!"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}
+}
+#############################
+# 4533 independence for Cambodia
+#############################
+event = {
+	id = 4533
+	random = no
+	country = FRA
+	
+
+	trigger = { 
+		NOT = { exists = CMB }
+		control = { province = 1340 data = FRA } # Phnom Penh
+	 }
+	
+	date = { day = 7 month = november year = 1949 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+	picture = "cambodia"
+
+	name = "Independence for Cambodia"
+	desc = "Both French and Khmer leaders agreed on full independence."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = independence which = CMB value = 1 }
+	}
+	action_b = {
+		name = "Cambodia must stay French!"
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}
+}
+############################
+# termination of French puppetry
+############################
+event = {
+	id = 4534
+	random = no
+	country = FRA
+	persistent = yes
+
+	trigger = { 
+		OR = {
+			puppet = { country = IDC country = FRA }
+			puppet = { country = VIE country = FRA }
+			puppet = { country = CMB country = FRA }
+			puppet = { country = LAO country = FRA }
+			puppet = { country = U72 country = FRA }
+		}
+		OR = {
+			random = 3
+			year = 1954
+		}
+	 }
+	
+	date = { day = 7 month = march year = 1949 }
+	offset = 12
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Full Sovereignty for Indochina"
+	desc = "Both French and Indochinese leaders agreed on full independence."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = end_mastery which = IDC }
+		command = { type = end_mastery which = VIE }
+		command = { type = end_mastery which = U72 }
+		command = { type = end_mastery which = LAO }
+		command = { type = end_mastery which = CMB }
+	}
+}
+##################################
+# 4535 IDC is normal holder of Laos
+# and gives Independence
+##################################
+event = {
+	id = 4535
+	random = no
+	country = IDC
+	
+
+	trigger = { 
+		NOT = { exists = LAO }
+		control = { province = 1329 data = IDC } # Vientiane
+		OR = {
+			NOT = { exists = GER }
+			random = 1
+		}
+	 }
+	
+	date = { day = 17 month = july year = 1949 }
+	offset = 35
+	deathdate = { day = 29 month = october year = 1955 }
+	
+	name = "Independence for Laos"
+	desc = "Indochinese leaders agreed on full independence for Laos."
+	style = 0
+	picture = "laos"
+	
+	action_a = {
+		name = "OK"
+		command = { type = removecore which = 1306 }
+		command = { type = removecore which = 1329 }
+		command = { type = removecore which = 1332 }
+		command = { type = independence which = LAO value = 0 }
+		command = { type = alliance which = LAO }
+	}
+}
+##################################
+# 4536 IDC is normal holder of Cambodia
+# and gives Independence
+##################################
+event = {
+	id = 4536
+	random = no
+	country = IDC
+	
+
+	trigger = { 
+		NOT = { exists = CMB }
+		control = { province = 1340 data = IDC } # Phnom Penh
+		OR = {
+			NOT = { exists = GER }
+			random = 1
+		}
+	 }
+	
+	date = { day = 7 month = november year = 1949 }
+	offset = 33
+	deathdate = { day = 29 month = october year = 1955 }
+	
+	name = "Independence for Cambodia"
+	desc = "Indochinese leaders agreed on full independence for Cambodia."
+	style = 0
+	picture = "cambodia"
+
+	action_a = {
+		name = "OK"
+		command = { type = removecore which = 1336 }
+		command = { type = removecore which = 1339 }
+		command = { type = removecore which = 1340 }
+		command = { type = removecore which = 1341 }
+		command = { type = removecore which = 1899 }
+		command = { type = independence which = CMB value = 0 }
+		command = { type = alliance which = CMB }
+	}
+}
+################################
+# 4537 - 4539 Dienbienphu historic event
+# all variants require CHC control of 
+# Viet border or Communist France
+################################
+event = {
+	id = 4537
+	random = no
+	country = FRA
+	
+	# ahistoric France Communist and backs Ho Chi Minh
+	# might occur if France votes communist party into power
+
+	trigger = { 
+		NOT = { exists = U72 }
+		exists = SOV
+		government = communist
+		OR = { 
+			control = { province = 1328 data = IDC }
+			control = { province = 1328 data = VIE } 
+			control = { province = 1328 data = FRA }
+		}
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Dienbienphu"
+	desc = "Ho Chi Minh carried out a low-level insurgency against the Indochina government. France maintained public neutrality but covertly backed the Viet Minh. The Viet Minh overran the northern half of the country and France welcomed their victory. Other countries supported a non-communist South Vietnam."
+	style = 0
+	picture = "dienbienphu"
+
+	action_a = {
+		name = "Welcome Ho!"
+		command = { type = setflag which = vietminh_victory }
+		command = { type = trigger which = 4502 } # Geneva
+		command = { type = trigger which = 4541 }
+		command = { type = trigger which = 4542 }
+	}
+}
+event = {
+	id = 4538
+	random = no
+	country = FRA
+	
+	# historic event with appropriate conditions
+
+	trigger = { 
+		NOT = { exists = U72 }
+		exists = SOV
+		OR = { 
+			control = { province = 1328 data = IDC }
+			control = { province = 1328 data = VIE }
+			control = { province = 1328 data = FRA }
+		}
+		NOT = { government = communist }
+		# Viet Minh resupply by CHC was decisive
+		control = { province = 1305 data = CHC } # Border area
+		control = { province = 1327 data = CHC }
+		control = { province = 1309 data = CHC }
+		control = { province = 1325 data = CHC }
+		control = { province = 1235 data = CHC } # Nanjing
+	 }
+	
+	date = { day = 6 month = may year = 1954 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Dienbienphu"
+	desc = "Ho Chi Minh carried out a low-level insurgency against the French neo-colonial presence in Indochina for many years, fighting the French to a stalemate. But with the steady stream of heavy weapons across the Chinese border, Vo Nguyen Giap destroyed the French positions. The option of using tactical nuclear weapons on the Viet Minh was studied. The French garrison at Dienbienphu surrendered on May 7, 1954."
+	style = 0
+	picture = "dienbienphu"
+
+	action_a = {
+		name = "Negotiate Geneva Accords"
+		ai_chance = 90
+		command = { type = setflag which = vietminh_victory }
+		command = { type = sleepevent which = 4544 } # ahistorical hot war slept
+		command = { type = trigger which = 4502 }
+		command = { type = trigger which = 4541 }
+		command = { type = trigger which = 4542 }
+	}
+	action_b = {
+		name = "Long Live the French Empire!"
+		ai_chance = 9
+		command = { type = dissent value = 20 }
+		command = { type = belligerence which = FRA value = 5 }
+		command = { type = manpowerpool value = -10 } # represents French troops lost at dienbienphu
+		command = { type = setflag which = vietminh_victory }
+		command = { type = sleepevent which = 4549 } #elections
+		command = { type = sleepevent which = 4550 }
+		command = { type = sleepevent which = 4551 }
+		command = { type = trigger which = 4502 }
+		command = { type = trigger which = 4541 }
+		command = { type = trigger which = 4542 }
+	}
+	action_c = {
+		name = "Authorize USA Nukes on Viet Minh." # option was studied and rejected
+		# Churchill was opposed sources conflict as to France or USA were opposed
+		ai_chance = 1
+		command = { type = dissent value = 20 }
+		# request alone damages relations even if USA refuses
+		command = { type = belligerence which = FRA value = 10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = SOV value = -10 }
+		command = { type = relation which = CHC value = -10 }
+		command = { type = trigger which = 4540 } # USA
+		command = { type = sleepevent which = 4502 }
+		command = { type = sleepevent which = 4503 }
+		command = { type = sleepevent which = 4541 }
+		command = { type = sleepevent which = 4542 }
+	}
+}
+event = {
+	id = 4539
+	random = no
+	country = CHC
+	
+	# alternate Dienbienphu France does not exist or Hanoi in Vichy hands
+
+	trigger = { 
+		NOT = { exists = U72 }
+		exists = SOV
+		OR = {
+			NOT = { exists = FRA }
+			control = { province = 1328 data = VIC }
+		}
+		OR = { 
+			control = { province = 1328 data = IDC }
+			control = { province = 1328 data = VIE }
+			control = { province = 1328 data = VIC }
+		}
+		control = { province = 1305 data = CHC } # Border area
+		control = { province = 1327 data = CHC }
+		control = { province = 1309 data = CHC }
+		control = { province = 1325 data = CHC }
+		control = { province = 1235 data = CHC } # Nanjing
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Dienbienphu"
+	desc = "Ho Chi Minh carried out a low-level insurgency against the weak Indochina government. With assistance from the Chinese Communists, Vo Nguyen Giap destroyed the Indochinese positions. There was no option but surrender."
+	style = 0
+	picture = "dienbienphu"
+
+	action_a = {
+		name = "Victory!"
+		command = { type = setflag which = vietminh_victory }
+		command = { type = trigger which = 4503 } #Geneva
+		command = { type = trigger which = 4541 }
+		command = { type = trigger which = 4542 }
+	}
+}
+###############################
+# 4540 ahistoric nuclear attack
+###############################
+event = {
+	id = 4540
+	random = no
+	country = USA
+	
+	# triggered by 4538 option C
+	# difficult to simulate a tactical nuclear attack this has to do
+	
+	name = "Vietnam Nuclear Attack"
+	desc = "The tactical nuclear strike was decisive in eliminating the VietMinh. But the worldwide public was aghast and condemned the action."
+	style = 0
+	picture = "hiroshima"
+
+	action_a = {
+		name = "An atrocity!"
+		ai_chance = 50
+		command = { type = dissent value = 20 }
+		command = { type = construct which = infrastructure where = 1328 value = -100 }
+		command = { type = construct which = infrastructure where = 1326 value = -100 }
+		command = { type = belligerence which = USA value = 20 }
+		command = { type = relation which = ENG value = -20 } # Churchill was opposed
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = CHC value = -50 }
+		command = { type = relation which = JAP value = -10 } # bitter memories
+		command = { type = trigger which = 4543 }
+	}
+	action_b = {
+		name = "Refuse to carry out attack"
+		ai_chance = 50
+		command = { type = dissent value = -5 }
+		command = { type = belligerence which = USA value = -5 }
+		command = { type = relation which = ENG value = 20 } 
+		command = { type = relation which = SOV value = 20 }
+		command = { type = relation which = CHC value = 20 }
+		command = { type = relation which = JAP value = 20 } 
+		command = { type = relation which = FRA value = -50 } 
+		command = { type = sleepevent which = 4544 } # ahistorical hot war slept
+		command = { type = setflag which = vietminh_victory }
+		command = { type = sleepevent which = 4543 }
+		command = { type = trigger which = 4502 }
+		command = { type = trigger which = 4541 }
+		command = { type = trigger which = 4542 }
+		command = { type = sleepevent which = 4503 }
+	}
+}
+event = {
+	id = 4543
+	random = no
+	country = FRA
+	
+	# triggered by 4540
+	# difficult to simulate a tactical nuclear attack this has to do
+	
+	name = "Destruction of Hanoi and Haiphong"
+	desc = "The tactical nuclear strike was decisive in eliminating the VietMinh. But the worldwide public was aghast and condemned the action."
+	style = 0
+	picture = "hiroshima"
+
+	action_a = {
+		name = "An atrocity!"
+		command = { type = dissent value = 20 } #added to the 20 for making the request
+		command = { type = manpowerpool value = -50 } # also destroys French troops in area
+		command = { type = sleepevent which = 4549 } # elections in VN
+		command = { type = sleepevent which = 4550 } # elections in VN
+		command = { type = sleepevent which = 4551 } # anti-communist protest from holding elections
+		command = { type = sleepevent which = 4503 } # Geneva options
+		command = { type = sleepevent which = 4502 } # separately
+		command = { type = sleepevent which = 4541 } # coded for 
+		command = { type = sleepevent which = 4542 } # controller of Hanoi
+		command = { type = belligerence which = FRA value = 10 }
+		command = { type = relation which = ENG value = -10 }
+		command = { type = relation which = SOV value = -40 }
+		command = { type = relation which = CHC value = -40 }
+		command = { type = relation which = JAP value = -10 } # bitter memories
+	}
+}
+
+##################################
+# 4541-4542 Historic Geneva Accords 1954
+# 4502 French version
+# 4503 ahistoric Vichy France version
+##################################
+event = {
+	id = 4502
+	random = no
+	country = FRA
+	
+
+	trigger = { 
+		control = { province = 1328 data = FRA }
+		flag = vietminh_victory
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Division of Indochina"
+	desc = "The Geneva Accords divided Vietnam into a communist north and a non-communist south. The arrangement ended the French presence in Indochina and specified elections were to be held in 1956 to reunify the country."
+	style = 0
+	picture = "vietnam_partition"
+
+	action_a = {
+		name = "We surrender!"
+		# secedeprovince command puts area in last country listed which exists--verified by testing
+		# temporary secession needed to have independent U72 with proper doctrine tree
+		command = { type = secedeprovince which = SOV value = 1326 }# if CHC does not exists goes to SOV
+		command = { type = secedeprovince which = SOV value = 1328 }
+		command = { type = secedeprovince which = CHC value = 1326 }# goes to CHC otherwise
+		command = { type = secedeprovince which = CHC value = 1328 }
+		command = { type = independence which = VIE }
+		command = { type = independence which = LAO }
+		command = { type = independence which = CMB }
+	}
+}
+event = {
+	id = 4503
+	random = no
+	country = VIC
+	
+
+	trigger = { 
+		control = { province = 1328 data = VIC }
+		flag = vietminh_victory
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Division of Indochina"
+	desc = "The Geneva Accords divided Vietnam into a communist north and a non-communist south. The arrangement ended the French presence in Indochina and specified elections were to be held in 1956 to reunify the country."
+	style = 0
+	picture = "vietnam_partition"
+
+	action_a = {
+		name = "We surrender!"
+		command = { type = secedeprovince which = SOV value = 1326 }#goes to SOV if CHC does not exist
+		command = { type = secedeprovince which = SOV value = 1328 }
+		command = { type = secedeprovince which = CHC value = 1326 }#goes to CHC otherwise
+		command = { type = secedeprovince which = CHC value = 1328 }
+		command = { type = independence which = VIE }
+		command = { type = independence which = LAO }
+		command = { type = independence which = CMB }
+	}
+}
+event = {
+	id = 4541
+	random = no
+	country = VIE
+	
+	trigger = { 
+		control = { province = 1328 data = VIE }
+		flag = vietminh_victory
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 1
+	deathdate = { day = 6 month = october year = 1955 }
+	
+	name = "Division of Indochina"
+	desc = "The Geneva Accords divided Vietnam into a communist north and a non-communist south. The arrangement ended the French presence in Indochina and specified elections were to be held in 1956 to reunify the country."
+	style = 0
+	picture = "vietnam_partition"
+
+	action_a = {
+		name = "We surrender!"
+		command = { type = secedeprovince which = SOV value = 1326 }#goes to SOV if CHC does not exist
+		command = { type = secedeprovince which = SOV value = 1328 }
+		command = { type = secedeprovince which = CHC value = 1326 }#goes to CHC otherwise
+		command = { type = secedeprovince which = CHC value = 1328 }
+		
+		
+	}
+}
+event = {
+	id = 4542
+	random = no
+	country = IDC
+	
+	trigger = { 
+		control = { province = 1328 data = IDC }
+		flag = vietminh_victory
+	 }
+
+	# event also occurs if France chooses to fight
+	# reflecting battlefield reality
+	
+	name = "Division of Indochina"
+	desc = "The Geneva Accords divided Vietnam into a communist north and a non-communist south. The arrangement ended the French presence in Indochina and specified elections were to be held in 1956 to reunify the country."
+	style = 0
+	picture = "vietnam_partition"
+
+	action_a = {
+		name = "We surrender!"
+		command = { type = independence which = VIE } # non communist South
+		command = { type = trigger which = 4586 } # IDC - > U72
+	}
+}
+###################################
+# 4544-4548 reaction to ahistorical
+# French rejection of Geneva accords
+###################################
+
+event = {
+	id = 4544
+	random = no
+	country = LAO
+	
+	trigger = { 
+		event = 4512
+		event = 4538
+		exists = U72
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 3
+	deathdate = { day = 16 month = october year = 1955 }
+	
+	name = "Seizure of Luang Prabang"
+	desc = "After the Viet Minh victory at Dienbienphu, Vo Nguyen Giap seized the vital province of Luang Prabang, and is threatening Vientiane. Laos quickly gave military access."
+	style = 0
+	picture = "dienbienphu"
+
+	action_a = {
+		name = "Ouch!"
+		command = { type = access which = U72 }
+		command = { type = trigger which = 4545 }
+	}
+}
+event = {
+	id = 4545
+	random = no
+	country = FRA
+	
+	trigger = { 
+		event = 4512
+		event = 4538
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 3
+	deathdate = { day = 16 month = october year = 1955 }
+	
+	name = "Seizure of Luang Prabang"
+	desc = "After the Viet Minh victory at Dienbienphu, Vo Nguyen Giap seized the vital Laotian province of Luang Prabang, which Dienbienphu was designed to block. France, anxious to reassert influence, declared war."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Ouch!"
+		command = { type = leave_alliance } # France stands alone
+		command = { type = alliance which = VIE }
+	}
+}
+event = {
+	id = 4546
+	random = no
+	country = U72
+	
+	trigger = { 
+		event = 4512
+		OR = {
+			event = 4545
+			event = 4576
+		} 
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1960 }
+	
+	name = "War for Independence"
+	desc = "We face a hostile puppet government in the south. We must fight them!"
+	style = 0
+	picture = "dienbienphu"
+
+	action_a = {
+		name = "WAR!"
+		command = { type = war which = VIE }
+		command = { type = add_division which = "Seventh Infantry" value = infantry when = 5 where = anti_air }
+		command = { type = add_division which = "Eighth Infantry" value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "Ninth Infantry" value = infantry when = 5 }
+		command = { type = add_division which = "Tenth Infantry" value = infantry when = 5 }
+		command = { type = add_corps which = "Viet Minh Army" value = land when = 1072002 where = 1328 }
+		command = { type = add_division which = "Hanoi HQ" value = hq when = 2 where = anti_air }
+		command = { type = add_division which = "First Infantry" value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "Second Infantry" value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "Third Infantry" value = infantry when = 5 where = artillery }
+		command = { type = add_corps which = "Peoples Army #1" value = land where = 1326 }
+		command = { type = add_division which = "Fourth Infantry" value = infantry when = 5 where = anti_air }
+		command = { type = add_division which = "Fifth Infantry" value = infantry when = 5 where =  artillery }
+		command = { type = add_division which = "Sixth Infantry" value = infantry when = 5 where = artillery }
+	}
+}
+
+event = {
+	id = 4547
+	random = no
+	country = CHC
+	
+	trigger = { 
+		event = 4546
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1960 }
+	
+	
+	name = "Chinese volunteers"
+	desc = "The intransigence of the French in Indochina has triggered a request from Comrade Ho Chi Minh for volunteers."
+	style = 0
+	picture = "KW_chinese_intervention"
+
+	action_a = {
+		name = "We must stand with Comrade Ho"
+		ai_chance = 10
+		command = { type = domestic which = interventionism value = 2 }
+		command = { type = alliance which = U72 }
+		command = { type = belligerence which = CHC value = 5 }
+	}
+	action_b = {
+		name = "Send material and volunteers"
+		ai_chance = 80
+		command = { type = resource which = supplies value = -3000 } # % of max daily income
+		command = { type = money value = -1000 }
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = belligerence which = CHC value = 1 }
+		command = { type = setflag which = geneva_rejected }
+	}
+	action_c = {
+		name = "Ho Chi Minh must stand alone"
+		ai_chance = 10
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = belligerence which = CHC value = -1 }
+	}	
+}
+event = {
+	id = 4548
+	random = no
+	country = U72
+	
+	trigger = { 
+		event = 4547
+		flag which = geneva_rejected
+	 }
+	
+	date = { day = 6 month = may year = 1951 }
+	offset = 5
+	deathdate = { day = 6 month = october year = 1960 }
+	
+	name = "Chinese volunteers"
+	desc = "Comrade Mao Zedong has replied with volunteers."
+	style = 0
+	picture = "KW_chinese_intervention"
+
+	action_a = {
+		name = "Great!"
+		command = { type = add_corps which = "First Chinese Volunteer" value = land when = 1072000 where = 1326 }
+		command = { type = add_division which = "Haiphong HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "PLA #1" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #2" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #3" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #4" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #5" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #6" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #7" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #8" value = infantry when = 4 }
+		command = { type = add_corps which = "Second Chinese Volunteer" value = land when = 1072001 where = 1306 }
+		command = { type = add_division which = "Highlands HQ" value = hq when = 3 where = anti_air }
+		command = { type = add_division which = "PLA #9" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #10" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #11" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #12" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #13" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #14" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #15" value = infantry when = 4 }
+		command = { type = add_division which = "PLA #16" value = infantry when = 4 }
+	}
+}
+######################################
+# 4549 - 4553 Reunification Elections
+# Ordered by Geneva accords but not carried out
+######################################
+event = {
+	id = 4549
+	random = no
+	country = USA
+
+	trigger = { 
+		ai = yes
+		event = 4512
+		event = 4538
+		exists = VIE
+		exists = U72
+		NOT = { exists = GER }
+		OR = {
+			government = fascist
+			ideology = social_conservative
+			AND = {
+				ideology = market_liberal
+				random = 95
+			}
+			AND = {
+				ideology = social_liberal
+				random = 40
+			}
+			AND = {
+				ideology = social_democrat
+				random = 10
+			}
+		}
+	 }
+
+	date = { day = 24 month = october year = 1955 }
+	
+	
+	name = "Vietnam Elections Cancelled"
+	desc = "According to the Geneva agreement, elections were supposed to be held in Vietnam to reunify the country. The CIA estimated that Ho Chi Minh would win and advised cancellation of the elections."
+	style = 0
+	picture = "dominos"
+
+	action_a = {
+		name = "We must stop communism!"
+		command = { type = sleepevent which = 4552 }
+		command = { type = sleepevent which = 4553 }
+		command = { type = sleepevent which = 4550 }
+		command = { type = sleepevent which = 4551 }
+		command = { type = trigger which = 4561 }
+	}
+}
+event = {
+	id = 4550
+	random = no
+	country = USA
+
+	trigger = { 
+		ai = no
+		event = 4512
+		event = 4538
+		exists = VIE
+		exists = U72
+		NOT = { exists = GER }
+	 }
+
+	date = { day = 24 month = october year = 1955 }
+	
+	
+	name = "Elections in Vietnam"
+	desc = "According to the Geneva agreement, elections were supposed to be held in Vietnam to reunify the country. The politicians were appalled by allegations of corruption in Vietnam and ignored CIA advice to cancel the elections."
+	style = 0
+	picture = "dominos"
+
+	action_a = {
+		name = "We must stop communism!"
+		command = { type = sleepevent which = 4552 }
+		command = { type = sleepevent which = 4553 }
+		command = { type = sleepevent which = 4549 }
+		command = { type = sleepevent which = 4551 }
+		command = { type = trigger which = 4561 }
+	}
+	action_b = {
+		name = "Democracy must prevail!"
+		command = { }
+	}
+}
+event = {
+	id = 4551
+	random = no
+	country = USA
+
+	trigger = { 
+		event = 4512
+		event = 4538
+		exists = U72
+		NOT = { event = 4561 }
+		NOT = { exists = GER }
+	 }
+
+	date = { day = 28 month = october year = 1955 }
+	
+	
+	name = "Anti-Communist Protest"
+	desc = "A disgruntled employee of the CIA leaked the report on Communist influence in Vietnam to Senator Joseph McCarthy and the John Birch Society. Other publications printed the report and there were scattered demonstrations nationwide."
+	style = 0
+	picture = "cia2"
+
+	action_a = {
+		name = "Reds!"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 4552
+	random = no
+	country = U72
+
+	trigger = { 
+		event = 4542
+		exists = VIE
+		exists = U72
+		random = 90
+	 }
+
+	date = { day = 20 month = july year = 1956 }
+	
+	
+	name = "Reunification Election"
+	desc = "As expected, Ho Chi Minh won the election and reunified Vietnam."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Victory!"
+		command = { type = inherit which = VIE }
+		command = { type = sleepevent which = 4553 }
+	}	
+}
+event = {
+	id = 4553
+	random = no
+	country = VIE
+
+	trigger = { 
+		event = 4542
+		exists = VIE
+		exists = U72
+	 }
+
+	date = { day = 22 month = july year = 1956 }
+	
+	
+	name = "Reunification Election"
+	desc = "Unexpectedly, Ho Chi Minh lost the election and was forced to adhere to his agreement and step down."
+	style = 0
+	picture = "south_viet"
+
+	action_a = {
+		name = "Victory!"
+		command = { type = inherit which = U72 }
+	}	
+}
+##################################
+# Sleep duplicated (etc) leaders 4554-4559
+##################################
+event = {
+	id = 4554
+	random = no
+	country = IDC
+	
+	trigger = { 
+		exists = LAO
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Laotian Leaders Defect"
+	desc = "Leaders loyal to the Laos government defect."
+	style = 0
+	picture = "laos"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepleader which = 543001 } # Aphay
+		command = { type = sleepleader which = 543044 } # Aphay
+		command = { type = sleepleader which = 543007 } # Hmong
+		command = { type = sleepleader which = 543010 } # Khong
+		command = { type = sleepleader which = 543021 } # Pao
+		command = { type = sleepleader which = 543022 } # Phanmong
+		command = { type = sleepleader which = 543023 } # Phetsarat
+		command = { type = sleepleader which = 543024 } # Phichith
+		command = { type = sleepleader which = 543025 } # Phomvihanh
+		command = { type = sleepleader which = 543026 } # Phousannani
+		command = { type = sleepleader which = 543027 } # Sahiaphan
+		command = { type = sleepleader which = 543029 } # Sasiavong
+		command = { type = sleepleader which = 543030 } # Sasorith
+		command = { type = sleepleader which = 543056 } # Sasorith
+		command = { type = sleepleader which = 543031 } # Savang  Va.
+		command = { type = sleepleader which = 543032 } # Savang  Vo.
+		command = { type = sleepleader which = 543050 } # Souphanou
+		command = { type = sleepleader which = 543038 } # Souvanna
+		command = { type = sleepleader which = 543051 } # Souvanna
+		command = { type = sleepteam which = 14408 }
+		command = { type = removecore which = 1306 } #Laos cores
+		command = { type = removecore which = 1329 }
+		command = { type = removecore which = 1332 }
+		
+	}
+}
+event = {
+	id = 4555
+	random = no
+	country = IDC
+	
+	trigger = { 
+		exists = CMB
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Khmer Leaders Defect"
+	desc = "Leaders loyal to the Cambodia government defect."
+	style = 0
+	picture = "cambodia"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepleader which = 543000 } # An San Kham
+		command = { type = sleepleader which = 543004 } # Chhun Lim
+		command = { type = sleepleader which = 543046 } # Hy Weng
+		command = { type = sleepleader which = 543011 } # Kieng Vang
+		command = { type = sleepleader which = 543012 } # Krisan Cheda
+		command = { type = sleepleader which = 543015 } # Lon Nol
+		command = { type = sleepleader which = 543049 } # Norodom Sihanouk
+		command = { type = sleepleader which = 543055 } # Norodom Sihanouk
+		command = { type = sleepleader which = 543028 } # Sakiwat Phirun
+		command = { type = sleepleader which = 543033 } # Sihanouk Norodom
+		command = { type = sleepleader which = 543034 } # Sisowath Monireth
+		command = { type = sleepleader which = 543035 } # Sisowath Monivong
+		command = { type = sleepleader which = 543036 } # Sisowath Watchayavong
+		command = { type = sleepleader which = 543037 } # Son Sen
+		command = { type = sleepteam which = 14405 }
+		command = { type = sleepteam which = 14406 }
+		command = { type = sleepteam which = 14407 }
+		command = { type = removecore which = 1339 } # Cambodia cores
+		command = { type = removecore which = 1340 } 
+		command = { type = removecore which = 1341 }
+		command = { type = removecore which = 1336 }
+		command = { type = removecore which = 1899 }
+	}
+}
+
+event = {
+	id = 4556
+	random = no
+	country = VIE
+	
+	trigger = { 
+		exists = VIC
+		NOT = { alliance = { country = VIE country = VIC } }
+		NOT = { puppet = { country = VIE country = VIC } }
+		NOT = { alliance = { country = VIE country = GER } }
+		NOT = { puppet = { country = VIE country = GER } }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "French Ministers Defect"
+	desc = "Leaders loyal to the French State defect. Free French leaders also defect, in order to support the Resistance."
+	picture = "decoux"
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 542006 } # Decoux
+		command = { type = sleepminister which = 542015 } # Decoux
+		command = { type = sleepminister which = 542045 } # Decoux
+		command = { type = sleepminister which = 542021 } # Jore
+		command = { type = sleepminister which = 542041 } # Jore
+		command = { type = sleepminister which = 542053 } # Boudier
+		command = { type = sleepminister which = 542037 } # Iehlé
+		command = { type = sleepminister which = 542049 } # Iehlé
+		command = { type = sleepminister which = 542054 } # Le Langé
+	}
+}
+event = {
+	id = 4557
+	random = no
+	country = IDC
+	
+	trigger = { 
+		exists = VIC
+		NOT = { alliance = { country = IDC country = VIC } }
+		NOT = { puppet = { country = IDC country = VIC } }
+		NOT = { alliance = { country = IDC country = GER } }
+		NOT = { puppet = { country = IDC country = GER } }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "French Ministers Defect"
+	desc = "Leaders loyal to the French State defect. Free French leaders also defect, in order to support the Resistance."
+	picture = "decoux"
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 543006 } # Decoux
+		command = { type = sleepminister which = 543015 } # Decoux
+		command = { type = sleepminister which = 543045 } # Decoux
+		command = { type = sleepminister which = 543021 } # Jore
+		command = { type = sleepminister which = 543041 } # Jore
+		command = { type = sleepminister which = 543053 } # Boudier
+		command = { type = sleepminister which = 543037 } # Iehlé
+		command = { type = sleepminister which = 543049 } # Iehlé
+		command = { type = sleepminister which = 543054 } # Le Langé
+	}
+}
+event = {
+	id = 4558
+	random = no
+	country = LAO
+	
+	trigger = { 
+		exists = VIC
+		NOT = { alliance = { country = LAO country = VIC } }
+		NOT = { puppet = { country = LAO country = VIC } }
+		NOT = { alliance = { country = LAO country = GER } }
+		NOT = { puppet = { country = LAO country = GER } }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "French Ministers Defect"
+	desc = "Leaders loyal to the French State defect. Free French leaders also defect, in order to support the Resistance."
+	picture = "decoux"
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 540007 } # Roques
+		command = { type = sleepminister which = 540013 } # Roques
+		command = { type = sleepminister which = 540023 } # Brossolette
+		command = { type = sleepminister which = 540026 } # Muracciole
+		command = { type = sleepminister which = 540030 } # Mairet
+		command = { type = sleepminister which = 540036 } # Adeline
+		command = { type = sleepminister which = 540039 } # Bayrou
+		command = { type = sleepminister which = 540042 } # de Maismont
+	}
+}
+event = {
+	id = 4559
+	random = no
+	country = CMB
+	
+	trigger = { 
+		exists = VIC
+		NOT = { alliance = { country = CMB country = VIC } }
+		NOT = { puppet = { country = CMB country = VIC } }
+		NOT = { alliance = { country = CMB country = GER } }
+		NOT = { puppet = { country = CMB country = GER } }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "French Ministers Defect"
+	desc = "Leaders loyal to the French State defect. Free French leaders also defect, in order to support the Resistance."
+	picture = "decoux"
+	
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 541007 } # Gauthier
+		command = { type = sleepminister which = 541015 } # Gauthier
+		command = { type = sleepminister which = 541010 } # Gauthier
+		command = { type = sleepminister which = 541048 } # Laffon
+		command = { type = sleepminister which = 541052 } # de Prevaux
+		command = { type = sleepminister which = 541053 } # Patou
+		command = { type = sleepminister which = 541056 } # Trigaud
+		command = { type = sleepminister which = 541057 } # Soufflet
+	}
+}
+######################################
+# Diem coup unless slept by elections 4560-4561
+###################################### 
+event = {
+	id = 4560
+	random = no
+	country = IDC
+	
+	trigger = { 
+		NOT = { exists = VIE }
+		NOT = { government = communist }
+		control = { province = 1337 data = IDC } # Saigon aka HoChiMinh City
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 7
+	deathdate = { day = 20 month = december year = 1959 }
+	
+	name = "Ngo Dinh Diem Coup"
+	desc = "Ngo Dinh Diem became increasingly dissatisfied with the rule of Bao Dai. His brother, Ngo Dinh Nhu, was an open admirer of Adolf Hitler."
+	style = 0
+	picture = "ngo_diem"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = VIE value = 0 }
+		command = { type = trigger which = 4561 }
+	}
+}
+event = {
+	id = 4561
+	random = no
+	country = VIE
+	
+	#
+	
+	name = "Ngo Dinh Diem Coup"
+	desc = "Ngo Dingh Diem wins a rigged election, getting 98 % of the vote. Emperor Bao Dai abdicates. Ngo Dinh Diem's brother, Ngo Dinh Nhu, was an open admirer of Adolf Hitler."
+	style = 0
+	picture = "ngo_diem"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepleader which = 542001 }#Bao Dai
+		command = { type = sleepleader which = 542011 }#Bao Dai
+		command = { type = sleepleader which = 542012 }#Cuong De
+		command = { type = sleepleader which = 542058 }#Hinh
+		command = { type = sleepleader which = 542059 }#Hinh
+		command = { type = sleepleader which = 542073 }#Hinh
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = set_domestic which = free_market value = 3 }
+		command = { type = set_domestic which = freedom value = 2 }
+		command = { type = set_domestic which = professional_army value = 2 }
+		command = { type = set_domestic which = defense_lobby value = 5 }
+		command = { type = set_domestic which = interventionism value = 5 }
+		# family dynasty
+		command = { type = headofstate which = 542060 }#Diem
+		command = { type = headofgovernment which = 542061 }#Nhu
+		command = { type = foreignminister which = 542062 }#Luyen
+		command = { type = armamentminister which = 542063 }#Can
+		command = { type = ministerofsecurity which = 542064 }#LeXuan aka Mme Nhu
+		command = { type = ministerofintelligence which = 542065 }#Tung
+		command = { type = trigger which = 4562 } #USA if no Germany
+		command = { type = trigger which = 4565 } #Germany if they exist
+		
+	}
+}
+############################################
+# US aids fledgling Diem regime 1955 events 4562-4564
+# normal timeline events ( GER & JAP lose WW2 )
+# won't fire if Japan wins China War (Japanese sphere)
+############################################
+event = {
+	id = 4562
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4561
+		NOT = { exists = GER }
+		NOT = { ispuppet  = USA } #USA didn't lose
+		NOT = { exists = U87 } #Japan puppet China
+		NOT = { puppet = { country = CHI country = JAP } }
+		NOT = { control = { province = 1313 data = JAP } }#Japan did
+		NOT = { control = { province = 1321 data = JAP } }#not win
+		NOT = { control = { province = 1325 data = JAP } }#China War
+		NOT = { government = communist }
+		NOT = { ideology = social_democrat }
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Diem Aid Request"
+	desc = "Anti-communist advocates argue the Domino Theory, predicting that the fall of Vietnam to Communism will set off a chain reaction in Asia of other states becoming Communist."
+	style = 0
+	picture = "ngo_diem"
+
+	action_a = {
+		name = "Send advisers and elite troops"
+		ai_chance = 9
+		command = { type = resource which = supplies value = -800 } # % of max daily income
+		command = { type = money value = -350 }
+		command = { type = manpowerpool value = -45 }
+		command = { type = relation which = VIE value = 30 }
+		command = { type = relation which = U72 value = -20 }
+		command = { type = dissent value = 5 } # left wing dissent
+	}
+	action_b = {
+		name = "Send advisers only"
+		ai_chance = 90
+		command = { type = resource which = supplies value = -100 }
+		command = { type = money value = -50 }
+		command = { type = manpowerpool value = -2 }
+		command = { type = relation which = VIE value = 10 }
+		command = { type = relation which = U72 value = -5 }
+		command = { type = sleepevent which = 4563 }
+	}
+	action_c = {
+		name = "Better Red Than Dead"
+		ai_chance = 1
+		command = { type = dissent value = 5 } # right wing dissent
+		command = { type = relation which = VIE value = -20 }
+		command = { type = relation which = U72 value = 10 }
+		command = { type = sleepevent which = 4563 }
+		command = { type = sleepevent which = 4564 }
+	}
+}
+event = {
+	id = 4563
+	random = no
+	country = VIE
+	
+	trigger = { 
+		event = 4562
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "American Assistance"
+	desc = "The USA pledges the assistance of Ranger battalions."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = add_corps which = "Green Berets" value = land where = 1335 }
+		command = { type = add_division which = "Army Rangers #1" value = bergsjaeger when = 5 }
+		command = { type = add_division which = "Army Rangers #2" value = bergsjaeger when = 5 }
+		command = { type = add_division which = "Army Rangers #3" value = bergsjaeger when = 5 }
+	}
+}
+event = {
+	id = 4564
+	random = no
+	country = VIE
+	
+	trigger = { 
+		event = 4562
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "American Advisors"
+	desc = "The USA pledges advisers. Liberals in the USA seek to couple this assistance to a promise of land reform."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Better than nothing"
+		command = { type = waketeam which =  14306 } # MAAC requires mod
+	}
+}
+######################################
+# Germany offers initial aid to Diem (GER exists)
+# won't fire if Japan wins WW2
+######################################
+event = {
+	id = 4565
+	random = no
+	country = GER
+	
+	trigger = { 
+		event = 4561
+		NOT = { alliance = { country = GER country = JAP } }
+		NOT = { exists = U87 } #Japan puppet China
+		NOT = { puppet = { country = CHI country = JAP } }
+		NOT = { control = { province = 1313 data = JAP } }#Japan did
+		NOT = { control = { province = 1321 data = JAP } }#not win
+		NOT = { control = { province = 1325 data = JAP } }#China War
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Diem Aid Request"
+	desc = "Diem's seizure of power gave the German Navy the chance for its long-sought port facilities in the Eastern Indian Ocean. Diem, a Catholic, faced heavy opposition to his rule and sought German assistance."
+	picture = "ngo_diem"
+
+	action_a = {
+		name = "Send air and security forces"
+		ai_chance = 95
+		command = { type = resource which = supplies value = -600 } # % of max daily income
+		command = { type = money value = -300 }
+		command = { type = manpowerpool value = -30 }
+		command = { type = setflag which = GER_aid_diem }
+	}
+	action_b = {
+		name = "We don't need Diem"
+		ai_chance = 5
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 4566
+	random = no
+	country = VIE
+	
+	trigger = { 
+		event = 4565
+		flag which = GER_aid_diem
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "German Assistance"
+	desc = "Germany has responded to our request for assistance."
+	picture = "ngo_diem"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = add_corps which = "Polizei Korps" value = land where = 1337 }
+		command = { type = add_division which = "Viet Gestapo #1" value = garrison when = 3 where = police }
+		command = { type = add_division which = "Viet Gestapo #2" value = garrison when = 3 where = police }
+		command = { type = add_corps which = "Grauert Korps" value = air where = 1337 }
+		command = { type = add_division which = "Viet LW #1" value = multi_role when = 5 }
+		command = { type = add_division which = "Viet LW #2" value = multi_role when = 5 }
+		command = { type = waketeam which =  14306 } # MAAC requires mod
+		command = { type = access which = GER } # naval facilities offered
+		command = { type = clrflag which = US_aid_ho }
+		command = { type = clrflag which = US_aid_BD }
+	}
+}
+##################################
+# USA perceives German threat and reacts
+# makes policy decision whom to support
+# against pro-German Diem 4567-4574
+##################################
+event = {
+	id = 4567
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		OR = {
+			exists = U72
+			AND = {
+					control = { province = 1305 data = CHC } # Border area
+					control = { province = 1327 data = CHC }
+					control = { province = 1309 data = CHC }
+					control = { province = 1325 data = CHC }
+					control = { province = 1235 data = CHC } # Nanjing
+			}
+		}
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Ho Chi Minh Recommendation"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. Ho Chi Minh has offered assistance in return for recognition, and a CIA analyst recommends accepting the offer."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "OK"
+		command = { type = setflag which = US_aid_ho }
+	}
+}
+event = {
+	id = 4568
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		OR = {
+			AND = {
+				control = { province = 1305 data = U13 } # Border area
+				control = { province = 1327 data = U13 }
+				control = { province = 1309 data = U13 }
+				control = { province = 1325 data = U13 }
+				control = { province = 1235 data = U13 } # Nanjing
+				NOT = { exists = CHC }
+				NOT = { exists = CHI }
+			}
+			AND = {
+				control = { province = 1305 data = CHI } # Border area
+				control = { province = 1327 data = CHI }
+				control = { province = 1309 data = CHI }
+				control = { province = 1325 data = CHI }
+				control = { province = 1235 data = CHI } # Nanjing
+				NOT = { exists = CHC }
+				NOT = { exists = U13 }	
+			}
+		}
+		NOT = { exists = U72 }
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Bao Dai Recommendation"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. Although Ho Chi Minh has offered assistance, Far East specialists recommend support of exiled emperor Bao Dai instead."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "OK"
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+event = {
+	id = 4569
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		NOT = { flag = US_aid_BD }
+		NOT = { flag = US_aid_ho }
+		government = communist
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Unclear Consensus"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. Public opinion is heavily in favor of arming Ho Chi Minh."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 100
+		command = { type = setflag which = US_aid_ho }
+	}
+	action_b = {
+		name = "Bao Dai"
+		ai_chance = 0
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+event = {
+	id = 4570
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		NOT = { flag = US_aid_BD }
+		NOT = { flag = US_aid_ho }
+		ideology = social_democrat
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Unclear Consensus"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. There are conflicting recommendations as to whether to support Ho Chi Minh's battle for independence or the return of Bao Dai."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 90
+		command = { type = setflag which = US_aid_ho }
+	}
+	action_b = {
+		name = "Bao Dai"
+		ai_chance = 10
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+event = {
+	id = 4571
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		NOT = { flag = US_aid_BD }
+		NOT = { flag = US_aid_ho }
+		ideology = social_liberal
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Unclear Consensus"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. There are conflicting recommendations as to whether to support Ho Chi Minh's battle for independence or the return of Bao Dai."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 70
+		command = { type = setflag which = US_aid_ho }
+	}
+	action_b = {
+		name = "Bao Dai"
+		ai_chance = 30
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+event = {
+	id = 4572
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		NOT = { flag = US_aid_BD }
+		NOT = { flag = US_aid_ho }
+		ideology = market_liberal
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Unclear Consensus"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. There are conflicting recommendations as to whether to support Ho Chi Minh's battle for independence or the return of Bao Dai."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 40
+		command = { type = setflag which = US_aid_ho }
+	}
+	action_b = {
+		name = "Bao Dai"
+		ai_chance = 60
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+
+event = {
+	id = 4573
+	random = no
+	country = USA
+	
+	trigger = { 
+		event = 4566
+		NOT = { flag = US_aid_BD }
+		NOT = { flag = US_aid_ho }
+		OR = {
+			ideology = social_conservative
+			government = fascist
+		}
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Unclear Consensus"
+	desc = "Defense analysts are alarmed at the prospect of the projection of German naval power into the East Indian Ocean. There are conflicting recommendations as to whether to support Ho Chi Minh's battle for independence or the return of Bao Dai."
+	style = 0
+	picture = "cia"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 0
+		command = { type = setflag which = US_aid_ho }
+	}
+	action_b = {
+		name = "Bao Dai"
+		ai_chance = 100
+		command = { type = setflag which = US_aid_BD }
+	}
+}
+event = {
+	id = 4574
+	random = no
+	country = IDC
+	
+	trigger = { 
+		flag = US_aid_ho
+		NOT = { exists = U72 }
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Ho Chi Minh Recommendation"
+	desc = "To implement the recommendation of supporting Ho Chi Minh, the US CIA quietly supported Ho Chi Minh's palace coup in Hanoi."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "Ho Chi Minh"
+		ai_chance = 0
+		command = { type = trigger which = 4586 } # IDC->U72
+	}
+}
+#############################################
+# 4575-4576 The US-German war over Vietnam begins
+#############################################
+event = {
+	id = 4575
+	random = no
+	country = IDC
+	
+	trigger = { 
+		flag = US_aid_BD
+		NOT = { war = { country = IDC country = VIE } } 
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "USA Backing for Bao Dai"
+	desc = "The USA has backed the restoration of Bao Dai."
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "WAR!"
+		command = { type = province_keypoints which = 1328 value = -1 } # Hanoi
+		command = { type = province_keypoints which = 1326 value = 1 } # Haiphong
+		command = { type = war which = VIE } 
+	}
+}
+event = {
+	id = 4576
+	random = no
+	country = U72
+	
+	trigger = { 
+		flag = US_aid_ho
+		event = 4512
+		NOT = { war = { country = U72 country = VIE } } 
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "USA Backing for Ho Chi Minh"
+	desc = "Now that the USA needs our help against Germany, our independence is guaranteed, as long as we can defeat the German intervention."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "WAR!"
+		command = { type = trigger which = 4546 } 
+	}
+}
+########################
+# 4577 Laos switches sides
+########################
+event = {
+	id = 4577
+	random = no
+	country = LAO
+	
+	trigger = { 
+		control = { province = 1329 data = VIE } 
+		control = { province = 1332 data = VIE } 
+		control = { province = 1336 data = VIE } 
+		alliance = { country = LAO country = U72 }
+		war = { country = VIE country = U72 }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	
+	name = "Switching Sides"
+	desc = "Due to the teritorial losses to the invaders, Laos has no choice but to switch sides"
+	style = 0
+	picture = "laos"
+
+	action_a = {
+		name = "OK"
+		command = { type = peace which = VIE value = 1 } 
+		command = { type = leave_alliance }
+		command = { type = domestic which = political_left value = -6 }
+		command = { type = alliance which = VIE }
+	}
+}
+########################################
+# infrastructure events CMB IDC, VIE, U72 to
+# support massive foreign intervention
+########################################
+event = {
+	id = 4578
+	random = no
+	country = CMB
+	
+	trigger = { 
+		atwar = CMB
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	picture = "cambodia"
+
+	name = "War Economy"
+	desc = "Due to the demands posed by the war and foreign intervention, our economy has received a boost."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = 1 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = industrial_modifier which = supplies value = 400 }
+		
+	}
+}
+event = {
+	id = 4579
+	random = no
+	country = CMB
+	
+	trigger = { 
+		NOT = { atwar = CMB }
+		event = 4578 
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	picture = "cambodia"
+
+	name = "Peace Economy"
+	desc = "Our economy returns to peacetime to rebuild."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = -1 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = industrial_modifier which = supplies value = -400 }
+		
+	}
+}
+event = {
+	id = 4580
+	random = no
+	country = IDC
+	
+	trigger = { 
+		atwar = IDC
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	
+	name = "War Economy"
+	desc = "Due to the demands posed by the war and foreign intervention, our economy has received a boost."
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = 4 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = industrial_modifier which = supplies value = 400 }
+		
+	}
+}
+event = {
+	id = 4581
+	random = no
+	country = IDC
+	
+	trigger = { 
+		NOT = { atwar = IDC }
+		event = 4580
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	
+	name = "Peace Economy"
+	desc = "Our economy returns to peacetime to rebuild."
+	style = 0
+	picture = "indochina_union"
+
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = -4 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = industrial_modifier which = supplies value = -400 }
+	}
+}
+event = {
+	id = 4582
+	random = no
+	country = VIE
+	
+	trigger = { 
+		atwar = VIE
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	
+	name = "War Economy"
+	desc = "Due to the demands posed by the war and foreign intervention, our economy has received a boost."
+	style = 0
+	picture = "south_viet"
+
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = 4 }
+		command = { type = industrial_modifier which = total value = 25 }
+		command = { type = industrial_modifier which = supplies value = 400 }
+		
+	}
+}
+event = {
+	id = 4583
+	random = no
+	country = VIE
+	
+	trigger = { 
+		NOT = { atwar = VIE }
+		event = 4582
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	
+	name = "Peace Economy"
+	desc = "Our economy returns to peacetime to rebuild."
+	style = 0
+	picture = "south_viet"
+
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = -4 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = industrial_modifier which = supplies value = -400 }
+	
+	}
+}
+event = {
+	id = 4584
+	random = no
+	country = U72
+	
+	trigger = { 
+		atwar = U72
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	picture = "hochiminh_trail"
+
+	name = "War Economy"
+	desc = "Due to the demands posed by the war and foreign intervention, our economy has received a boost."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = 4 }
+		command = { type = industrial_modifier which = total value = 25 }
+		command = { type = industrial_modifier which = supplies value = 400 }
+		
+	}
+}
+event = {
+	id = 4585
+	random = no
+	country = U72
+	
+	trigger = { 
+		NOT = { atwar = U72 }
+		event = 4584
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+	picture = "hochiminh"
+
+	name = "War Economy"
+	desc = "Due to the demands posed by the war and foreign intervention, our economy has received a boost."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = free_supplies value = -4 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = industrial_modifier which = supplies value = -400 }
+		 
+	}
+}
+
+####################################
+# North Vietnam technology events needed
+# to give correct technology tree and HW techs
+# steal techs if no HW country 4586-99
+####################################
+event = {
+	id = 4586
+	random = no
+	country = IDC
+	
+	#
+	
+	name = "End of Indochina"
+	desc = "Indochina accepted the inevitable."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		# in case not independent give independence
+		command = { type = independence which = LAO value = 1 }
+		command = { type = secedeprovince which = LAO value = 1306 }
+		command = { type = secedeprovince which = LAO value = 1329 }
+		command = { type = secedeprovince which = LAO value = 1332 }
+		command = { type = independence which = CMB value = 1 }
+		command = { type = secedeprovince which = CMB value = 1339 }
+		command = { type = secedeprovince which = CMB value = 1340 }
+		command = { type = secedeprovince which = CMB value = 1341 }
+		command = { type = secedeprovince which = CMB value = 1336 }
+		command = { type = secedeprovince which = CMB value = 1899 }
+		command = { type = trigger which = 4587 }
+		command = { type = trigger which = 4589 }
+	}
+}
+event = {
+	id = 4587
+	random = no
+	country = IDC
+	
+	trigger = { 
+		event = 4586
+		NOT = { exists = SOV }
+		NOT = { exists = CHC }
+		NOT = { exists = PRK }
+		NOT = { exists = CHI }
+		NOT = { exists = MON }
+		
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Japanese Technology"
+	desc = "The Vietnamese leadership had a special admiration for Japanese technology."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+	}
+}
+event = {
+	id = 4588
+	random = no
+	country = U72
+	
+	trigger = { 
+		event = 4587
+		
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Japanese Technology"
+	desc = "The Vietnamese leadership had a special admiration for Japanese technology."
+	style = 0
+	
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = JAP }
+		command = { type = steal_tech which = KOR }
+		command = { type = steal_tech which = FRA }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = -1 }
+		command = { type = steal_tech which = -1 }
+		command = { type = sleepevent which = 4589 }
+		command = { type = trigger which = 4512 }
+	}
+}
+event = {
+	id = 4589
+	random = no
+	country = IDC
+	
+	trigger = { 
+		event = 4586
+		OR = {
+			exists = SOV
+			exists = CHC
+			exists = PRK
+			exists = MON
+			exists = CHI
+		}
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Human Wave Doctrine Research"
+	desc = "Ho Chi Minh studied for many years under various masters, and was anxious to get his hands on the latest technology."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = trigger which = 4590 } # SOV
+		command = { type = trigger which = 4592 } # CHC
+		command = { type = trigger which = 4594 } # MON
+		command = { type = trigger which = 4596 } # PRK
+		command = { type = trigger which = 4598 } # CHI
+	}
+}
+event = {
+	id = 4590
+	random = no
+	country = SOV
+	
+	trigger = { 
+		event = 4589
+		OR = {
+			NOT = { exists = CHC }
+			NOT = { event = 2478 }
+		}
+	 }
+	
+	name = "Ho Chi Minh Training"
+	desc = "Ho Chi Minh obtained the military doctrines of the Soviet Union. In order to accomplish this for HOI2, Vietnam is temporarily part of the Soviet Union."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+	}
+}
+event = {
+	id = 4591
+	random = no
+	country = SOV
+	
+	trigger = { 
+		control = { province = 1328 data = SOV }
+		OR = {
+			event = 4590
+			event = 4503
+			event = 4502
+			event = 4541
+		}
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Released"
+	desc = "Ho Chi Minh is now returned to power with the appropriate governmental system and technologies."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+		command = { type = sleepevent which = 4592 }
+		command = { type = sleepevent which = 4594 }
+		command = { type = sleepevent which = 4596 }
+		command = { type = sleepevent which = 4598 }
+		command = { type = trigger which = 4512 }
+	}
+}
+event = {
+	id = 4592
+	random = no
+	country = CHC
+	
+	trigger = { 
+		event = 4589
+		OR = {
+			NOT = { exists = SOV }
+			event = 2478
+		}
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Training"
+	desc = "Ho Chi Minh obtained the military doctrines of Mao Zedong. In order to accomplish this for HOI2, Vietnam is temporarily part of the China."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+	}
+}
+event = {
+	id = 4593
+	random = no
+	country = CHC
+
+	trigger = { 
+		control = { province = 1328 data = CHC }
+		OR = {
+			event = 4592
+			event = 4503
+			event = 4502
+			event = 4541
+		}
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Released"
+	desc = "Ho Chi Minh is now returned to power with the appropriate governmental system and technologies."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+		command = { type = sleepevent which = 4590 }
+		command = { type = sleepevent which = 4594 }
+		command = { type = sleepevent which = 4596 }
+		command = { type = sleepevent which = 4598 }
+		command = { type = trigger which = 4512 }
+	}
+}
+event = {
+	id = 4594
+	random = no
+	country = MON
+	
+	trigger = { 
+		event = 4589
+		NOT = { exists = SOV }
+		NOT = { exists = CHC }
+		NOT = { exists = PRK }
+		NOT = { exists = CHI }
+	 }
+	
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Training"
+	desc = "Ho Chi Minh obtained the military doctrines of Mao Zedong. In order to accomplish this for HOI2, Vietnam is temporarily part of the China."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+	}
+}
+event = {
+	id = 4595
+	random = no
+	country = MON
+	
+	trigger = { 	event = 4594 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Released"
+	desc = "Ho Chi Minh is now returned to power with the appropriate governmental system and technologies."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+		command = { type = sleepevent which = 4590 }
+		command = { type = sleepevent which = 4592 }
+		command = { type = sleepevent which = 4596 }
+		command = { type = sleepevent which = 4598 }
+		command = { type = trigger which = 4512 }
+	}
+}
+event = {
+	id = 4596
+	random = no
+	country = PRK
+	
+	trigger = { 
+		event = 4589
+		NOT = { exists = SOV }
+		NOT = { exists = CHC }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Training"
+	desc = "Ho Chi Minh obtained the military doctrines of Kim Il Sung. In order to accomplish this for HOI2, Vietnam is temporarily part of the the DPRK."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+	}
+}
+event = {
+	id = 4597
+	random = no
+	country = PRK
+	
+	trigger = { 	event = 4596  }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Released"
+	desc = "Ho Chi Minh is now returned to power with the appropriate governmental system and technologies."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+		command = { type = sleepevent which = 4590 }
+		command = { type = sleepevent which = 4592 }
+		command = { type = sleepevent which = 4594 }
+		command = { type = sleepevent which = 4598 }
+		command = { type = trigger which = 4512 }
+	}
+}
+event = {
+	id = 4598
+	random = no
+	country = CHI
+	
+	trigger = { 
+		event = 4589
+		NOT = { exists = SOV }
+		NOT = { exists = CHC }
+		NOT = { exists = PRK }
+	 }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Training"
+	desc = "Ho Chi Minh obtained the Human Wave doctrines from secret contacts within the Nationalist China military. To accomplish this for HOI2, Vietnam is temporarily part of China."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = inherit which = IDC }
+	}
+}
+event = {
+	id = 4599
+	random = no
+	country = CHI
+	
+	trigger = { 	event = 4598  }
+	
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1964 }
+	
+	name = "Ho Chi Minh Released"
+	desc = "Ho Chi Minh is now returned to power with the appropriate technology tree."
+	style = 0
+	picture = "hochiminh"
+
+	action_a = {
+		name = "OK"
+		command = { type = independence which = U72 }
+		command = { type = sleepevent which = 4590 }
+		command = { type = sleepevent which = 4592 }
+		command = { type = sleepevent which = 4594 }
+		command = { type = sleepevent which = 4596 }
+		command = { type = trigger which = 4512 }
+	}
+}
+################################
+# events 4600 - 4640 Vietnam Civil War
+# ( USA vs German proxies) Hypothetical
+# war in event of German victory in WW2
+################################
+# 4600-4609 reserved for Axis interventions
+################################
+event = {
+	id = 4600
+	random = no
+	country = GER
+	
+	trigger = { 
+		OR = {
+			war = { country = VIE country = IDC }
+			war = { country = VIE country = U72 }
+		}
+		OR = { 
+			flag = US_aid_BD
+			AND = {
+				flag = US_aid_ho
+				exists = U72
+			}
+		}
+	 }
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-German Intervention"
+	desc = "Although a few voices caution that such an adventure may drain German manpower, the majority consensus is to aid the Diem regime in its civil war."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -50 }
+		command = { type = supplies value = -1000 }
+		command = { type = money value = -500 }
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag which = viet_german_intervention } 
+		#command = { type = trigger which = 4610 } # USA
+	}
+}
+
+event = { 
+	id = 4601
+	random = no
+	country = ITA
+	
+	trigger = {
+		government = fascist
+		event = 4600
+		NOT = { war = { country = ITA country = GER } }
+	}
+	
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-Italian Intervention"
+	desc = "Although a few voices caution that such an adventure may drain Italian manpower, the majority rally behind Il Duce's call to aid the Diem regime in its civil war."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -40 }
+		command = { type = resource which = supplies value = -800 } 
+		command = { type = money value = -400 }
+		command = { type = free_ic value = -5 }
+		command = { type = free_energy value = -10 }
+		command = { type = free_metal value = -5 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_italian_intervention }
+	}
+}
+event = { 
+	id = 4602
+	random = no
+	country = VIC
+	
+	trigger = {
+		government = fascist
+		event = 4600
+		NOT = { war = { country = VIC country = GER } }
+	}
+	
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-Vichy Foreign Legion"
+	desc = "The call goes out for foreign volunteers for the French Foreign Legion, and thousands of the destitute with a thirst for adventure respond from all over the world."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -25 }
+		command = { type = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_vichy_intervention }
+	}
+}
+
+event = {
+	id = 4603
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4600
+		flag = viet_german_intervention
+	}
+		
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "German Assistance"
+	desc = "German aid arrives in Vietnam."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 200 }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_corps which = "Viet Nam Freikorps" value = land where = 1335 }
+		command = { type = add_division which = "Waffen SS Vietnam" value infantry when = 7 where = artillery } # these are volunteers
+		command = { type = add_corps which = "Viet Nam Bergsjaeger Korps" value = land where = 1335 }
+		command = { type = add_division which = "Gebirgs-Div Asien #1" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Gebirgs-Div Asien #2" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_corps which = "Osten Luftwaffe" value = air where = 1337 }
+		command = { type = add_division which = "Viet LW #3" value = tactical_bomber when = 5 where = escort }
+		command = { type = add_division which = "Viet LW #4" value = tactical_bomber when = 5 where = escort }
+		command = { type = add_corps which = "Udet Korps" value = air where = 1337 }
+		command = { type = add_division which = "Viet LW #5" value = cas when = 4 }
+		command = { type = add_division which = "Viet LW #6" value = cas when = 4 }
+		command = { type = construct which = flak where = 1337 value = 4 }
+		command = { type = construct which = radar_station where = 1337 value = 4 }
+		command = { type = steal_tech which = GER }
+		command = { type = steal_tech which = GER }
+		command = { type = steal_tech which = GER }
+	}
+}
+event = {
+	id = 4604
+	random = no
+	country = VIE
+	
+	trigger = {
+		event = 4601
+		flag = viet_italian_intervention
+	}
+		
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Italian Assistance"
+	desc = "Italian aid arrives in Vietnam."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_division which = "Corpo Truppo #1" value = marine when = 4 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #2" value = marine when = 4 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #3" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #4" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Aviación Legionaria 1" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "Aviación Legionaria 2" value = interceptor when = 7 }
+		command = { type = steal_tech which = ITA }
+		command = { type = steal_tech which = ITA }
+	}
+}
+event = {
+	id = 4605
+	random = no
+	country = VIE
+	
+	trigger = {
+		event = 4602
+		flag = viet_vichy_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vichy French Assistance"
+	desc = "Vichy France assists our struggle."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_division  which = "Charlemagne Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division  which = "Legion etat francais" value = infantry when = 7 where = artillery }
+		command = { type = steal_tech which = VIC }
+	}
+}
+event = { 
+	id = 4606
+	random = no
+	country = SPA
+	
+	trigger = {
+		alliance = { country = SPA country = GER }
+		event = 4603
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Vietnam Civil War-Spanish Intervention"
+	desc = "Franco, recalling German and Italian support in his own ascent to power, lends aid to Diem."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_spanish_intervention }
+	}
+}
+event = {
+	id = 4607
+	random = no
+	country = VIE
+	
+	trigger = {
+		event = 4606
+		flag = viet_spanish_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Spanish Assistance"
+	desc = "Spanish assistance arrives."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = steal_tech which = SPA }
+	}
+}
+event = { 
+	id = 4608
+	random = no
+	country = U60
+	
+	trigger = {
+		alliance = { country = U60 country = GER }
+		event = 4603
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Vietnam Civil War-Dietsland Intervention"
+	desc = "Mussert lends aid to Diem."
+	picture = "vietnam_war"
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_dietsland_intervention }
+	}
+}
+event = {
+	id = 4609
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4608
+		flag = viet_dietsland_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	
+	name = "Dietsland Assistance"
+	desc = "Dietsland assistance arrives."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = steal_tech which = U60 }
+	}
+}
+###########################################
+# 4610-4630 (and 4699) reserved for Allied Intervention
+###########################################
+event = {
+	id = 4610
+	random = no
+	country = USA
+
+	trigger = {
+		event = 4600
+	}
+		
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	
+	name = "Vietnam Civil War-American Intervention"
+	desc = "Amid fears that the Indochinese states would fall like a row of dominoes to the Nazis, the USA decided to intervene in the Vietnam Civil War."
+	style = 0
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -30 }
+		command = { type = supplies value = -1200 }
+		command = { type = money value = -600 }
+		command = { type = free_ic value = -8 }
+		command = { type = free_energy value = -16 }
+		command = { type = free_metal value = -8 }
+		command = { type = free_rare_materials value = -4 }
+		command = { type = free_oil value = -4 }
+		command = { type = free_supplies value = -30 }
+		command = { type = free_manpower value = -0.04 }
+		command = { type = setflag which = viet_american_intervention } 
+	}
+}
+event = {
+	id = 4611
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4610
+		flag = viet_american_intervention
+		flag = US_aid_ho
+	}
+		
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-American Intervention"
+	desc = "Amid fears that the Indochinese states would fall like a row of dominoes to the Nazis, the USA decided to intervene in the Vietnam Civil War."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 300 }
+		command = { type = add_corps which = "US Marine Corps" value = land where = 1328 }
+		command = { type = add_division which = "US Marines #1" value = marine when = 5 where = artillery }
+		command = { type = add_division which = "US Marines #2" value = marine when = 5 where = artillery }
+		command = { type = add_corps which = "US Air Force 1" value = air where = 1328 }
+		command = { type = add_division which = "VNAF #1" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "VNAF #2" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_corps which = "US Air Force 2" value = air where = 1328 }
+		command = { type = add_division which = "VNAF #3" value = cas when = 4 }
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 30 }
+		command = { type = free_manpower value = 0.04 }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = USA }
+	}
+}
+event = {
+	id = 4612
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4610
+		flag = viet_american_intervention
+		flag = US_aid_BD
+	}
+		
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-American Intervention"
+	desc = "Amid fears that the Indochinese states would fall like a row of dominoes to the Nazis, the USA decided to intervene in the Vietnam Civil War."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 300 }
+		command = { type = add_corps which = "US Marine Corps" value = land where = 1328 }
+		command = { type = add_division which = "US Marines #1" value = marine when = 5 where = artillery }
+		command = { type = add_division which = "US Marines #2" value = marine when = 5 where = artillery }
+		command = { type = add_corps which = "US Air Force 1" value = air where = 1328 }
+		command = { type = add_division which = "VNAF #1" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "VNAF #2" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_corps which = "US Air Force 2" value = air where = 1328 }
+		command = { type = add_division which = "VNAF #3" value = multi_role when = 5 }
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 30 }
+		command = { type = free_manpower value = 0.04 }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = USA }
+		command = { type = steal_tech which = USA }
+	}
+}
+event = { 
+	id = 4613
+	random = no
+	country = CAN
+	
+	trigger = {
+		OR = { 
+			event = 4611
+			event = 4612
+		} 
+		alliance = { country = CAN country = USA } 
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-Canadian Intervention"
+	desc = "Canada Intervenes in the Vietnam Civil War"
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -25 }
+		command = { type = resource which = supplies value = -800 } 
+		command = { type = money value = -400 }
+		command = { type = free_ic value = -5 }
+		command = { type = free_energy value = -10 }
+		command = { type = free_metal value = -5 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }
+		command = { type = setflag = viet_canadian_intervention }
+		
+	}
+}
+event = {
+	id = 4614
+	random = no
+	country = U72
+	
+	trigger = {
+		event = 4613
+		flag = viet_canadian_intervention
+		flag = US_aid_ho
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Canadian Assistance"
+	desc = "Canadian aid arrives in Vietnam."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 80 }
+		command = { type = add_corps which = "Canadian Expeditionary Force" value = land where = 1328 }
+		command = { type = add_division which = "First Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Second Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_corps which = "Royal Canadian Air Force" value = air where = 1328 }
+		command = { type = add_division which = "Air Corps #1" value = multi_role when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+		command = { type = steal_tech which = CAN }
+		command = { type = steal_tech which = CAN }
+	}
+}
+event = {
+	id = 4615
+	random = no
+	country = IDC
+	
+	trigger = {
+		event = 4613
+		flag = viet_canadian_intervention
+		flag = US_aid_BD
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Canadian Assistance"
+	desc = "Canadian aid arrives in Indochina."
+	style = 0
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 80 }
+		command = { type = add_corps which = "Canadian Expeditionary Force" value = land where = 1328 }
+		command = { type = add_division which = "First Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Second Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_corps which = "Royal Canadian Air Force" value = air where = 1328 }
+		command = { type = add_division which = "Air Corps #1" value = multi_role when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+		command = { type = steal_tech which = CAN }
+		command = { type = steal_tech which = CAN }
+	}
+}
+event = { 
+	id = 4616
+	random = no
+	country = AST
+	
+	trigger = {
+		event = 4610
+		alliance = { country = AST country = USA }
+	}
+	
+	name = "Vietnam Civil War-Australian Intervention"
+	desc = "Australia Intervenes in the Vietnam Civil War"
+	picture = "vietnam_war"
+
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -25 }
+		command = { type = resource which = supplies value = -800 } 
+		command = { type = money value = -400 }
+		command = { type = free_ic value = -5 }
+		command = { type = free_energy value = -10 }
+		command = { type = free_metal value = -5 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }
+		command = { type = setflag = viet_australian_intervention }
+	}
+}
+event = {
+	id = 4617
+	random = no
+	country = U72
+	
+	trigger = {
+		event = 4616
+		flag = viet_australian_intervention
+		flag = US_aid_ho
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Australian Assistance"
+	desc = "Australian aid arrives in Vietnam."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 40 }
+		command = { type = add_corps which = "Australian Expeditionary Force" value = land where = 1326 }
+		command = { type = add_division which = "First Australian" value = infantry when = 7 where = anti_air }
+		command = { type = add_division which = "Second Australian" value = infantry when = 7 where = anti_air }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+		command = { type = steal_tech which = AST }
+		command = { type = steal_tech which = AST }
+	}
+}
+event = {
+	id = 4618
+	random = no
+	country = IDC
+	
+	trigger = {
+		event = 4616
+		flag = viet_australian_intervention
+		flag = US_aid_BD
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Australian Assistance"
+	desc = "Australian aid arrives in Indochina."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 40 }
+		command = { type = add_corps which = "Australian Expeditionary Force" value = land where = 1326 }
+		command = { type = add_division which = "First Australian" value = infantry when = 6 where = anti_air }
+		command = { type = add_division which = "Second Australian" value = infantry when = 6 where = anti_air }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+		command = { type = steal_tech which = AST }
+		command = { type = steal_tech which = AST }
+	}
+}
+event = { 
+	id = 4619
+	random = no
+	country = FRA
+	
+	trigger = {
+		event = 4612
+		alliance = { country = FRA country = USA }
+		supplies = 350
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-Free French Intervention"
+	desc = "Free France Intervenes in the Vietnam Civil War"
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		# no manpower drain they are foreign volunteers
+		command = { type = resource which = supplies value = -300 } # % of max daily income
+	}
+}
+event = {
+	id = 4620
+	random = no
+	country = IDC
+	
+	trigger = {
+		event = 4619
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Free French Assistance"
+	desc = "Free French aid arrives in Indochina."
+	picture = "vietnam_war"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 30 }
+		command = { type = add_corps which = "Free French Foreign Legion" value = land where = 1326 }
+		command = { type = add_division which = "Free French Volunteers" value = infantry when = 6 where = anti_air }
+	}
+}
+event = { 
+	id = 4621
+	random = no
+	country = CHI
+	
+	trigger = {
+		event = 4612
+		NOT = { war = { country = CHI country = USA } }
+		exists = IDC
+		NOT = { exists = U13 }
+		NOT = { exists = CHC }
+	}
+	
+	date = { day = 20 month = july year = 1936 }
+	offset = 5
+	deathdate = { day = 30 month = december year = 1963 }
+
+	name = "Vietnam Civil War-Chinese Intervention"
+	desc = "The Republic of China Intervenes in the Vietnam Civil War"
+	picture = "chinese_intervention"
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -40 }
+		command = { type = resource which = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.03 }
+		command = { type = setflag = viet_ROC_intervention }
+	}
+}
+event = { 
+	id = 4622
+	random = no
+	country = U13
+	
+	trigger = {
+		event = 4610
+		NOT = { war = { country = U13 country = USA } }
+		exists = IDC
+		control = { province = 1305 data = U13 } # Border area
+		control = { province = 1327 data = U13 }
+		control = { province = 1309 data = U13 }
+		control = { province = 1325 data = U13 }
+		control = { province = 1235 data = U13 } # Nanjing
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Vietnam Civil War-Chinese Intervention"
+	desc = "The Empire of China Intervenes in the Vietnam Civil War"
+	picture = "chinese_intervention"
+
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -40 }
+		command = { type = resource which = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.03 }
+		command = { type = setflag = viet_EOC_intervention }
+		
+	}
+}
+event = { 
+	id = 4699
+	random = no
+	country = CHC
+	
+	trigger = {
+		event = 4610
+		NOT = { war = { country = CHC country = USA } }
+		exists = U72
+		control = { province = 1305 data = CHC } # Border area
+		control = { province = 1327 data = CHC }
+		control = { province = 1309 data = CHC }
+		control = { province = 1325 data = CHC }
+		control = { province = 1235 data = CHC } # Nanjing
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Vietnam Civil War-Chinese Intervention"
+	desc = "The Empire of China Intervenes in the Vietnam Civil War"
+	picture = "chinese_intervention"
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -40 }
+		command = { type = resource which = supplies value = -600 } 
+		command = { type = money value = -300 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.03 }
+		command = { type = setflag = viet_comchi_intervention }
+		command = { type = trigger which = 4624 } # U72
+		
+	}
+}
+event = {
+	id = 4623
+	random = no
+	country = IDC
+
+	trigger = {
+		OR = { 
+			event = 4621
+			event = 4622
+		}
+		OR = { 
+			flag = viet_ROC_intervention
+			flag = viet_EOC_intervention
+		}
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Chinese Assistance"
+	desc = "Chinese aid arrives in Indochina."
+	picture = "chinese_intervention"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 120 }
+		command = { type = add_corps which = "First Chinese Volunteer" value = land where = 1326 }
+		command = { type = add_division which = "Chinese Exp HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Chinese Division #1" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #2" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #3" value = infantry when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.03 }
+		
+	}
+}
+event = {
+	id = 4624
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4699
+		flag = viet_comchi_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Chinese Assistance"
+	desc = "Chinese aid arrives in Indochina."
+	picture = "chinese_intervention"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 120 }
+		command = { type = add_corps which = "First Chinese Volunteer" value = land where = 1326 }
+		command = { type = add_division which = "Chinese Exp HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Chinese Division #1" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #2" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #3" value = infantry when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.03 }
+		
+	}
+}
+
+
+event = { 
+	id = 4625
+	random = no
+	country = SOV
+	
+	trigger = {
+		event = 4611
+		NOT = { war = { country = SOV country = USA } }
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Vietnam Civil War-Soviet Intervention"
+	desc = "The Soviet Union Intervenes in the Vietnam Civil War"
+	picture = "assistance"
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 100
+		command = { type = manpowerpool value = -10 }
+		command = { type = supplies value = -1000 } 
+		command = { type = setflag = viet_soviet_intervention }
+		
+	}
+}
+event = {
+	id = 4626
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4625
+		flag = viet_soviet_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+
+	name = EVT_83_NAME
+	desc = EVT_83_DESC
+	picture = "assistance"
+	
+	action_a = {
+		name = EVT_83_ACTA
+		command = { type = supplies value = 50 }
+		command = { type = construct which = air_base where = 1328 value = 2 }
+		command = { type = add_corps which = "Red Air Force" value = air where = 1328 }
+		command = { type = add_division which = "MIG Fighter # 1" value = interceptor when = 7 }
+		command = { type = add_division which = "MIG Fighter # 2" value = interceptor when = 7 }
+		command = { type = construct which = radar_station where = 1328 value = 3 }
+		command = { type = construct which = radar_station where = 1326 value = 3 }
+		command = { type = construct which = flak where = 1326 value = 3 }
+		command = { type = construct which = flak where = 1306 value = 2 }
+		command = { type = construct which = flak where = 1329 value = 2 }
+		command = { type = steal_tech which = SOV } # technical aid
+		command = { type = steal_tech which = SOV }
+		command = { type = steal_tech which = SOV }
+	}
+}
+event = { 
+	id = 4627
+	random = no
+	country = IND
+	
+	trigger = {
+		NOT = { war = { country = IND country = USA } }
+		OR = {
+			AND = {
+				event = 4611
+				OR = {
+					government = fascist
+					ideology = social_conservative
+					ideology = market_liberal
+				}
+			}
+			AND = {
+				event = 4612
+				OR = {
+					government = communist
+					ideology = social_democrat
+				}
+			}
+		}
+	}
+	
+	name = "Vietnam Civil War-Indian Intervention"
+	desc = "India does not like the ideology of the combatants and stays out of the war."
+	picture = "assistance"
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 2
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -500 } 
+		command = { type = sleepevent which = 4628 }
+		command = { type = sleepevent which = 4629 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_indian_intervention }
+	}
+	action_b = {
+		name = "Stay out of that war!"
+		ai_chance = 98
+		command = { type = sleepevent which = 4628 }
+		command = { type = sleepevent which = 4629 }
+	}
+}
+event = { 
+	id = 4628
+	random = no
+	country = IND
+	
+	trigger = {
+		event = 4611
+		NOT = { war = { country = IND country = USA } }
+		OR = {
+			ideology = social_democrat
+			ideology = social_liberal
+			government = communist
+		}
+	}
+	
+	name = "Vietnam Civil War-Indian Intervention"
+	desc = "India Intervenes in the Vietnam Civil War"
+	picture = "assistance"
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 98
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -500 } 
+		command = { type = sleepevent which = 4627 }
+		command = { type = sleepevent which = 4629 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_indian_intervention }
+	}
+	action_b = {
+		name = "Stay out of that war!"
+		ai_chance = 2
+		command = { type = sleepevent which = 4627 }
+		command = { type = sleepevent which = 4629 }
+		
+	}
+}
+event = { 
+	id = 4629
+	random = no
+	country = IND
+	
+	trigger = {
+		event = 4612
+		NOT = { war = { country = IND country = USA } }
+		OR = {
+			ideology = social_conservative
+			ideology = market_liberal
+			ideology = social_liberal
+			government = fascist
+		}
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+
+	name = "Vietnam Civil War-Indian Intervention"
+	desc = "India Intervenes in the Vietnam Civil War"
+	picture = "assistance"
+	
+	action_a = {
+		name = "Send material and volunteers"
+		ai_chance = 98
+		command = { type = manpowerpool value = -15 }
+		command = { type = supplies value = -500 }
+		command = { type = sleepevent which = 4627 }
+		command = { type = sleepevent which = 4628 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = setflag = viet_indian_intervention }
+	}
+	action_b = {
+		name = "Stay out of that war!"
+		ai_chance = 2
+		command = { type = sleepevent which = 4627 }
+		command = { type = sleepevent which = 4628 }
+	}
+}
+event = {
+	id = 4630
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4612
+		flag = viet_indian_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Indian Assistance"
+	desc = "Indian aid arrives in Indochina."
+	picture = "assistance"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 80 }
+		command = { type = add_corps which = "Indian Legion" value = land where = 1326 }
+		command = { type = add_division which = "Bose HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Division 1" value = infantry when = 6 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+		
+	}
+}
+event = {
+	id = 4631
+	random = no
+	country = U72
+	
+	trigger = {
+		event = 4611
+		flag = viet_indian_intervention
+	}
+	
+	date = { day = 26 month = october year = 1955 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1959 }
+	
+	name = "Indian Assistance"
+	desc = "Indian aid arrives in Vietnam."
+	picture = "assistance"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = supplies value = 80 }
+		command = { type = add_corps which = "Indian Legion" value = land where = 1326 }
+		command = { type = add_division which = "SC Bose HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "SCB Division 1" value = infantry when = 6 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+#################################
+# 4632- 4640 US-German Indochina War
+# Proposed Ceasefire
+#################################
+event = {
+	id = 4632
+	random = no
+	country = VIE
+	
+	trigger = {
+		exists = GER
+		exists = USA
+		OR = { 
+			war = { country = VIE country = IDC }
+			war = { country = VIE country = U72 }
+		}
+		OR = {
+			exists = IDC
+			exists = U72
+		}
+		random = 5
+	}
+
+	date = { day = 1 month = july year = 1958 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1964 }
+	
+
+	name = "Vietnam Peace Talks"
+	desc = "Secret negotiations between the warring parties have led us to propose a peace deal to the major powers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Negotiate Cease Fire"
+		ai_chance = 95
+		command = { type = relation which = IDC value = 1 }
+		command = { type = relation which = U72 value = 1 }
+	}
+	action_b = {
+		name = "Fight Until Victory!"
+		ai_chance = 5
+		command = { type = sleepevent which = 4633 }
+		command = { type = sleepevent which = 4634 }		
+	}	
+}
+event = {
+	id = 4633
+	random = no
+	country = IDC
+	
+	trigger = {
+		event = 4632
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+
+	name = "Cease Fire"
+	desc = "Secret negotiations between the warring parties have led us to propose a peace deal to the major powers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Send the deal to the major powers"
+		ai_chance = 95
+		command = { type = trigger which = 4635 }
+	}
+	action_b = {
+		name = "No deals with the Axis!"
+		ai_chance = 5
+		command = { type = trigger which = 4637 }
+	}
+}
+event = {
+	id = 4634
+	random = no
+	country = U72
+	
+	trigger = {
+		event = 4632
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+
+	name = "Cease Fire"
+	desc = "Secret negotiations between the warring parties have led us to propose a peace deal to the major powers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Send the deal to the major powers"
+		ai_chance = 85
+		command = { type = trigger which = 4635 }
+	}
+	action_b = {
+		name = "No deals with the Axis!"
+		ai_chance = 15
+		command = { type = trigger which = 4637 }
+	}
+}
+event = {
+	id = 4635
+	random = no
+	country = GER
+	
+	#
+	
+	name = "Vietnam Peace Talks"
+	desc = "The war in Vietnam was consuming more resources than Germany would have liked, so she grabbed at the opportunity for a peace deal with secure naval access."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Seek Peace Conference"
+		ai_chance = 95
+		command = { type = trigger which = 4636 }
+	}
+	action_b = {
+		name = "Back Our Allies until Victory!"
+		ai_chance = 5
+		command = { type = trigger which = 4637 }
+	}	
+}
+event = {
+	id = 4636
+	random = no
+	country = USA
+	
+	#
+	
+	name = "Vietnam Peace Talks"
+	desc = "The war in Vietnam was straining America's oil supplies, so she grabbed at the opportunity for a peace deal with Germany."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Start Four Power Talks"
+		ai_chance = 95
+		command = { type = trigger which = 4642 }
+	}
+	action_b = {
+		name = "Back Our Allies until Victory!"
+		ai_chance = 5
+		command = { type = trigger which = 4637 }
+	}	
+}
+event = {
+	id = 4637
+	random = no
+	country = GER
+	
+	#
+	
+	name = "Vietnam Peace Talks Failed"
+	desc = "The peace talks have failed. Rumors are the other side will send more troops. Shall we send more troops, Mein Fuhrer?"
+	picture = "vaterland"
+
+	action_a = {
+		name = "Send More Troops!"
+		ai_chance = 99
+		command = { type = manpowerpool value = -40 }
+		command = { type = supplies value = -1000 }
+		command = { type = money value = -500 }
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+	}
+	action_b = {
+		name = "Vietnam is a quagmire."
+		ai_chance = 1
+		command = { type = sleepevent which = 4638 }
+	}	
+}
+event = {
+	id = 4638
+	random = no
+	country = VIE
+	
+	trigger = {
+		event = 4637
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+	name = "German Assistance"
+	desc = "German aid arrives in Vietnam."
+	picture = "vaterland"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+event = {
+	id = 4639
+	random = no
+	country = USA
+	
+	trigger = {
+		event = 4637
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+	name = "Vietnam Peace Talks Failed"
+	desc = "The peace talks have failed. Rumors are the other side will send more troops. Shall we send more troops, Mr. President?"
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Send More Troops!"
+		ai_chance = 99
+		command = { type = manpowerpool value = -40 }
+		command = { type = supplies value = -1000 } 
+		command = { type = money value = -500 }
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+		
+	}
+	action_b = {
+		name = "Vietnam is a quagmire."
+		ai_chance = 1
+		command = { sleepevent which = 4640 }
+		command = { sleepevent which = 4641 }
+	}	
+}
+event = {
+	id = 4640
+	random = no
+	country = IDC
+	
+	trigger = {
+		event = 4639
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+	name = "American Assistance"
+	desc = "American aid arrives in Indochina."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+event = {
+	id = 4641
+	random = no
+	country = U72
+	
+	trigger = {
+		event = 4639
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1965 }
+	
+	name = "American Assistance"
+	desc = "American aid arrives in Vietnam."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = sp_artillery }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = add_division value infantry when = 7 where = anti_air }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+############################################
+# 4642 Peace settlement like real Korean War
+############################################
+event = {
+	id = 4642
+	random = no
+	country = VIE
+	
+	name = "Vietnam Peace agreement"
+	desc = "The warring parties agreed upon a peace plan."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = peace which = IDC value = 0 }
+		command = { type = peace which = U72 value = 0 }
+		command = { type = peace which = LAO value = 0 }
+		command = { type = peace which = CMB value = 0 }
+		command = { type = trigger which = 4643 }
+		command = { type = trigger which = 4644 }
+	}
+}
+event = {
+	id = 4643
+	random = no
+	country = IDC
+	
+	name = "Vietnam Peace agreement"
+	desc = "The warring parties agreed upon a peace plan."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = peace which = VIE value = 0 }
+		command = { type = peace which = LAO value = 0 }
+		command = { type = peace which = CMB value = 0 }
+	}
+}
+event = {
+	id = 4644
+	random = no
+	country = U72
+	
+	name = "Vietnam Peace agreement"
+	desc = "The warring parties agreed upon a peace plan."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Excellent"
+		command = { type = peace which = VIE value = 0 }
+		command = { type = peace which = LAO value = 0 }
+		command = { type = peace which = CMB value = 0 }
+	}
+}
+
+#####################
+# Axis soldiers return home
+#####################
+event = {
+	id = 4645
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4603
+		NOT = { war = { country = VIE country = U72 } }
+		NOT = { war = { country = VIE country = IDC } }
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to German Soldiers"
+	desc = "Vietnam says goodbye to the German soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -5 }
+		command = { type = free_energy value = -10 }
+		command = { type = free_metal value = -5 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = remove_division which = "Waffen SS Vietnam" value = VIE } 
+		command = { type = remove_division which = "Gebirgs-Div Asien #1" value = VIE }
+		command = { type = remove_division which = "Gebirgs-Div Asien #2" value = VIE }
+		command = { type = remove_division which = "Viet LW #3" value = VIE }
+		command = { type = remove_division which = "Viet LW #4" value = VIE}
+		command = { type = remove_division which = "Viet LW #5" value = VIE }
+		command = { type = remove_division which = "Viet LW #6" value = VIE }
+	}
+}
+event = {
+	id = 4646
+	random = no
+	country = GER
+
+	trigger = {
+		event = 4603
+		OR = {
+			event 4645
+			NOT = { exists = VIE }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "German Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the German soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_division which = "Waffen SS Vietnam" value infantry when = 7 where = artillery } # these are volunteers
+		command = { type = add_division which = "Gebirgs-Div Asien #1" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Gebirgs-Div Asien #2" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Viet LW #3" value = tactical_bomber when = 5 where = escort }
+		command = { type = add_division which = "Viet LW #4" value = tactical_bomber when = 5 where = escort }
+		command = { type = add_division which = "Viet LW #5" value = cas when = 4 }
+		command = { type = add_division which = "Viet LW #6" value = cas when = 4 }
+	}
+}
+event = {
+	id = 4647
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4604
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Italian Soldiers"
+	desc = "Vietnam says goodbye to the Italian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = remove_division which = "Corpo Truppo #1" value = VIE }
+		command = { type = remove_division which = "Corpo Truppo #2" value = VIE }
+		command = { type = remove_division which = "Corpo Truppo #3" value = VIE }
+		command = { type = remove_division which = "Corpo Truppo #4" value = VIE }
+		command = { type = remove_division which = "Aviación Legionaria 1" value = VIE }
+		command = { type = remove_division which = "Aviación Legionaria 2" value = VIE }
+	}
+}
+event = {
+	id = 4648
+	random = no
+	country = ITA
+
+	trigger = {
+		event = 4604
+		event = 4646
+		OR = {
+			event = 4647
+			NOT = { exists = VIE }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Italian Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Italian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_division which = "Corpo Truppo #1" value = marine when = 4 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #2" value = marine when = 4 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #3" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Corpo Truppo #4" value = infantry when = 7 where = artillery }
+		command = { type = add_division which = "Aviación Legionaria 1" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "Aviación Legionaria 2" value = interceptor when = 7 }
+	}
+}
+event = {
+	id = 4649
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4605
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to French Soldiers"
+	desc = "Vietnam says goodbye to the French soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -3 }
+		command = { type = free_energy value = -6 }
+		command = { type = free_metal value = -3 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+		command = { type = remove_division  which = "Charlemagne Division" value = VIE }
+		command = { type = remove_division  which = "Legion etat francais" value = VIE }
+	}
+}
+event = {
+	id = 4650
+	random = no
+	country = VIC
+
+	trigger = {
+		event = 4605
+		event = 4646
+		OR = {
+			event = 4649
+			NOT = { exists = VIE }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "French Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the French soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = add_division  which = "Charlemagne Division" value = infantry when = 7 where = artillery }
+		command = { type = add_division  which = "Legion etat francais" value = infantry when = 7 where = artillery }
+	}
+}
+event = {
+	id = 4651
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4607
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Spanish Soldiers"
+	desc = "Vietnam says goodbye to the Spanish soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -3 }
+		command = { type = free_energy value = -6 }
+		command = { type = free_metal value = -3 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+	}
+}
+event = {
+	id = 4652
+	random = no
+	country = SPA
+
+	trigger = {
+		event = 4607
+		event = 4646
+		OR = {
+			event 4651
+			NOT = { exists = VIE }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Spanish Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Spanish soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+event = {
+	id = 4653
+	random = no
+	country = VIE
+
+	trigger = {
+		event = 4609
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Dietsland Soldiers"
+	desc = "Vietnam says goodbye to the Dietsland soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = free_ic value = -3 }
+		command = { type = free_energy value = -6 }
+		command = { type = free_metal value = -3 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+	}
+}
+event = {
+	id = 4654
+	random = no
+	country = U60
+
+	trigger = {
+		event = 4609
+		event = 4646
+		OR = {
+			event 4653
+			NOT = { exists = VIE }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Dietsland Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Dietsland soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }
+	}
+}
+######################
+# Allied soldiers return home
+######################
+event = {
+	id = 4655
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4611
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to American Soldiers"
+	desc = "Vietnam says goodbye to the American soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "US Marines #1" value = U72 }
+		command = { type = remove_division which = "US Marines #2" value = U72 }
+		command = { type = remove_division which = "VNAF #1" value = U72 }
+		command = { type = remove_division which = "VNAF #2" value = U72 }
+		command = { type = remove_division which = "VNAF #3" value = U72 }
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -30 }
+		command = { type = free_manpower value = -0.04 }
+	}
+}
+event = {
+	id = 4656
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4612
+		event = 4646
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to American Soldiers"
+	desc = "Vietnam says goodbye to the American soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "US Marines #1" value = IDC }
+		command = { type = remove_division which = "US Marines #2" value = IDC }
+		command = { type = remove_division which = "VNAF #1" value = IDC }
+		command = { type = remove_division which = "VNAF #2" value = IDC }
+		command = { type = remove_division which = "VNAF #3" value = IDC }
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		command = { type = free_oil value = -3 }
+		command = { type = free_supplies value = -30 }
+		command = { type = free_manpower value = -0.04 }
+	}
+}
+event = {
+	id = 4657
+	random = no
+	country = USA
+
+	trigger = {
+		OR = {
+			event = 4611
+			event = 4612
+		}
+		event = 4646
+		OR = {
+			event = 4655
+			event = 4656
+			AND = {
+				NOT = { exists = IDC }
+				NOT = { exists = U72 }
+			}
+		}
+		
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "American Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the American soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = add_division which = "US Marines #1" value = marine when = 5 where = artillery }
+		command = { type = add_division which = "US Marines #2" value = marine when = 5 where = artillery }
+		command = { type = add_division which = "VNAF #1" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "VNAF #2" value = tactical_bomber when = 7 where = escort }
+		command = { type = add_division which = "VNAF #3" value = multi_role when = 5 }
+		command = { type = free_ic value = 8 }
+		command = { type = free_energy value = 16 }
+		command = { type = free_metal value = 8 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = free_oil value = 4 }
+		command = { type = free_supplies value = 30 }
+		command = { type = free_manpower value = 0.04 }
+	}
+}
+event = {
+	id = 4658
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4614
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Canadian Soldiers"
+	desc = "Vietnam says goodbye to the Canadian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "First Canadian" value = U72 }
+		command = { type = remove_division which = "Second Canadian" value = U72 }
+		command = { type = remove_division which = "Air Corps #1" value = U72 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }
+	}
+}
+event = {
+	id = 4659
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4615
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Canadian Soldiers"
+	desc = "Vietnam says goodbye to the Canadian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "First Canadian" value = IDC }
+		command = { type = remove_division which = "Second Canadian" value = IDC }
+		command = { type = remove_division which = "Air Corps #1" value = IDC }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }		
+	}
+}
+event = {
+	id = 4660
+	random = no
+	country = CAN
+
+	trigger = {
+		OR = {
+			event = 4614
+			event = 4615
+		}
+		event = 4657
+		OR = {
+			event = 4658
+			event = 4659
+			AND = {
+				NOT = { exists = IDC }
+				NOT = { exists = U72 }
+			}
+		}
+		
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Canadian Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Canadian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = add_division which = "First Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Second Canadian" value = bergsjaeger when = 5 where = artillery }
+		command = { type = add_division which = "Air Corps #1" value = multi_role when = 5 }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+	}
+}
+event = {
+	id = 4661
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4617
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Australian Soldiers"
+	desc = "Vietnam says goodbye to the Australian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "First Australian" value = U72 }
+		command = { type = remove_division which = "Second Australian" value = U72 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }
+	}
+}
+event = {
+	id = 4662
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4618
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Australian Soldiers"
+	desc = "Vietnam says goodbye to the Australian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "First Australian" value = IDC }
+		command = { type = remove_division which = "Second Australian" value = IDC }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -20 }
+		command = { type = free_manpower value = -0.01 }		
+	}
+}
+event = {
+	id = 4663
+	random = no
+	country = AST
+
+	trigger = {
+		OR = {
+			event = 4617
+			event = 4618
+		}
+		event = 4657
+		OR = {
+			event = 4661
+			event = 4662
+			AND = {
+				NOT = { exists = IDC }
+				NOT = { exists = U72 }
+			}
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Australian Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Australian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Welcome back"
+		command = { type = add_division which = "First Australian" value = infantry when = 6 where = anti_air }
+		command = { type = add_division which = "Second Australian" value = infantry when = 6 where = anti_air }
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = free_oil value = 3 }
+		command = { type = free_supplies value = 20 }
+		command = { type = free_manpower value = 0.01 }
+	}
+}
+event = {
+	id = 4664
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4623
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Chinese Soldiers"
+	desc = "Vietnam says goodbye to the Chinese soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "Chinese Exp HQ" value = IDC  }
+		command = { type = remove_division which = "Chinese Division #1" value = IDC }
+		command = { type = remove_division which = "Chinese Division #2" value = IDC }
+		command = { type = remove_division which = "Chinese Division #3" value = IDC }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.03 }	
+	}
+}
+event = {
+	id = 4665
+	random = no
+	country = CHI
+
+	trigger = {
+		event = 4623
+		event = 4657
+		OR = {
+			event = 4664
+			NOT = { exists = IDC }
+		}
+		flag = viet_ROC_intervention
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Chinese Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Chinese soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = add_division which = "Chinese Exp HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Chinese Division #1" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #2" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #3" value = infantry when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.03 }	
+	}
+}
+event = {
+	id = 4666
+	random = no
+	country = U13
+
+	trigger = {
+		event = 4623
+		event = 4657
+		OR = {
+			event = 4664
+			NOT = { exists = IDC }
+		}
+		flag = viet_EOC_intervention
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Chinese Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Chinese soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = add_division which = "Chinese Exp HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Chinese Division #1" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #2" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #3" value = infantry when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.03 }	
+	}
+}
+event = {
+	id = 4667
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4624
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Chinese Soldiers"
+	desc = "Vietnam says goodbye to the Chinese soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "Chinese Exp HQ" value = IDC  }
+		command = { type = remove_division which = "Chinese Division #1" value = IDC }
+		command = { type = remove_division which = "Chinese Division #2" value = IDC }
+		command = { type = remove_division which = "Chinese Division #3" value = IDC }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.03 }	
+	}
+}
+event = {
+	id = 4668
+	random = no
+	country = CHC
+
+	trigger = {
+		event = 4624
+		event = 4657
+		OR = {
+			event = 4667
+			NOT = { exists = U72 }
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Chinese Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Chinese soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = add_division which = "Chinese Exp HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Chinese Division #1" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #2" value = infantry when = 5 }
+		command = { type = add_division which = "Chinese Division #3" value = infantry when = 5 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.03 }	
+	}
+}
+event = {
+	id = 4669
+	random = no
+	country = IDC
+
+	trigger = {
+		event = 4630
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Indian Soldiers"
+	desc = "Vietnam says goodbye to the Indian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "Bose HQ" value = IDC  }
+		command = { type = remove_division which = "Division 1" value = IDC }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+	}
+}
+event = {
+	id = 4670
+	random = no
+	country = U72
+
+	trigger = {
+		event = 4631
+		event = 4657
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Farewell to Indian Soldiers"
+	desc = "Vietnam says goodbye to the Indian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = remove_division which = "Bose HQ" value = U72  }
+		command = { type = remove_division which = "Division 1" value = U72 }
+		command = { type = free_ic value = -4 }
+		command = { type = free_energy value = -8 }
+		command = { type = free_metal value = -4 }
+		command = { type = free_rare_materials value = -2 }
+		command = { type = free_oil value = -2 }
+		command = { type = free_supplies value = -15 }
+		command = { type = free_manpower value = -0.02 }
+	}
+}
+event = {
+	id = 4671
+	random = no
+	country = IND
+
+	trigger = {
+		OR = { 
+			event = 4630
+			event = 4631
+		}
+		event = 4657
+		OR = {
+			event = 4669
+			event = 4670
+			AND = {
+				NOT = { exists = U72 }
+				NOT = { exists = IDC }
+			}
+		}
+	}
+
+	date = { day = 1 month = july year = 1957 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1969 }
+	
+	name = "Indian Soldiers Return Home!"
+	desc = "Vietnam says goodbye to the Indian soldiers."
+	picture = "coldwar2"
+
+	action_a = {
+		name = "Thank you!"
+		command = { type = add_division which = "Bose HQ" value = hq when = 3 where = anti_air  }
+		command = { type = add_division which = "Division 1" value = infantry when = 6 }
+		command = { type = free_ic value = 4 }
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_supplies value = 15 }
+		command = { type = free_manpower value = 0.02 }	
+	}
+}
+event = {
+	id = 4700
+	random = no
+	country = SIA
+
+	trigger = { random = 95 }
+
+	date = { day = 8 month = june year = 1946 }
+	
+	name = "The Assassination of Rama VIII"
+	desc = "Prince Ananda Mahidol (Rama VIII) became king in 1935 when Rama VII abdicated, due to his distrust in the military officers who were in fact running the country since 1932. He was shot dead on June 9, 1946. At first his death was labelled a suicide, but later inquiries found this unlikely. The identity of the killers remains debated to the present day."
+	
+	action_a = {
+		name = "Thank you!"
+		command = { type = sleepminister which = 62001 }
+		command = { type = headofstate which = 62033 }
+	}
+}

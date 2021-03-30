@@ -1,0 +1,2399 @@
+
+
+
+
+event = {
+	id = 7710001
+	random = no
+	country = USA
+
+	name = "usasov__01_tex"
+	desc = "usasov__02_tex"
+	style = 0
+
+	trigger = {
+	OR = {
+	war = { country = USA country = U02 } 
+	war = { country = USA country = SOV } 
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__03_tex"
+		ai_chance = 100
+		command = { type = inherit which = U02 }
+	}
+
+}
+
+
+event = {
+	id = 7710002
+	random = no
+	country = SOV
+
+	name = "usasov__01_tex"
+	desc = "usasov__02_tex"
+	style = 0
+
+	trigger = {
+	OR = {
+	war = { country = SOV country = U03 } 
+	war = { country = USA country = SOV } 
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__03_tex"
+		ai_chance = 100
+		command = { type = inherit which = U03 }
+	}
+
+}
+
+
+
+
+
+
+event = {
+	id = 7710110
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4070 }
+	not = { technology = { country = USA value = 4100 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 1 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710111
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4100 }
+	not = { technology = { country = USA value = 15030 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 2 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710112
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 15030 }
+	not = { technology = { country = USA value = 15040 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 3 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710113
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 15040 }
+	not = { technology = { country = USA value = 15050 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 4 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710114
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 15050 }
+	not = { technology = { country = USA value = 4310 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 5 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710115
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4310 }
+	not = { technology = { country = USA value = 35210 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 6 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710116
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 35210 }
+	not = { technology = { country = USA value = 35220 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 7 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710117
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 35220 }
+	not = { technology = { country = USA value = 35230 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 8 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710118
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 35230 }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = USA value = -70 }
+                command = { type = add_division which = air value = multi_role when = 9 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710140
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4190 }
+	not = { technology = { country = USA value = 4200 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 0 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710141
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4200 }
+	not = { technology = { country = USA value = 4210 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 1 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710142
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 4210 }
+	not = { technology = { country = USA value = 15140 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 2 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710143
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 15140 }
+	not = { technology = { country = USA value = 15150 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 3 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710144
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 15150 }
+	not = { technology = { country = USA value = 35000 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 4 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710145
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	and = {
+	technology = { country = USA value = 35000 }
+	not = { technology = { country = USA value = 35010 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 5 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710146
+	random = no
+	persistent = yes
+	name = "usasov__05_tex"
+	desc = "usasov__06_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = USA }
+	NOT = { army = 50 }
+	money = 1500
+	relation = { which = USA value = 170 }
+	technology = { country = USA value = 35010 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1500 }
+		command = { type = relation which = USA value = -80 }
+                command = { type = add_division which = air value = naval_bomber when = 6 }
+		command = { type = trigger which = 7710200 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7710200
+	random = no
+	country = USA
+	persistent = yes
+	name = "usasov__10_tex"
+	desc = "usasov__11_tex"
+	style = 0
+
+	action_a = {
+		name = "usasov__12_tex"
+		command = { type = money value = 500 }
+		command = { type = industrial_modifier which = total value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710300
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2020 }
+	not = { technology = { country = SOV value = 2030 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 1 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710301
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2030 }
+	not = { technology = { country = SOV value = 2040 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 2 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710302
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2040 }
+	not = { technology = { country = SOV value = 2050 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 3 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710303
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2050 }
+	not = { technology = { country = SOV value = 2060 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 4 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710304
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2060 }
+	not = { technology = { country = SOV value = 2070 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 5 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710305
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2070 }
+	not = { technology = { country = SOV value = 2080 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 6 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710306
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2080 }
+	not = { technology = { country = SOV value = 2090 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 7 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710307
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2090 }
+	not = { technology = { country = SOV value = 2100 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 8 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710308
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 2100 }
+	not = { technology = { country = SOV value = 20000 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 9 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710309
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 20000 }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -1000 }
+		command = { type = relation which = SOV value = -60 }
+                command = { type = add_division which = tank value = armor when = 10 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+event = {
+	id = 7710310
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 4020 }
+	not = { technology = { country = SOV value = 4030 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 1 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710311
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 4030 }
+	not = { technology = { country = SOV value = 4060 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 2 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710312
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 4060 }
+	not = { technology = { country = SOV value = 4090 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 3 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710313
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 4090 }
+	not = { technology = { country = SOV value = 15000 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 4 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710314
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 15000 }
+	not = { technology = { country = SOV value = 15010 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 5 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710315
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 15010 }
+	not = { technology = { country = SOV value = 15020 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 6 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710316
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 15020 }
+	not = { technology = { country = SOV value = 4290 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 7 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710317
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 4290 }
+	not = { technology = { country = SOV value = 35020 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 8 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710318
+	random = no
+	persistent = yes
+	name = "usasov__14_tex"
+	desc = "usasov__15_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = SOV }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = SOV value = 150 }
+	and = {
+	technology = { country = SOV value = 35020 }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = SOV value = -50 }
+                command = { type = add_division which = air value = interceptor when = 9 }
+		command = { type = trigger which = 7710400 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710400
+	random = no
+	country = SOV
+	persistent = yes
+	name = "usasov__10_tex"
+	desc = "usasov__11_tex"
+	style = 0
+
+	action_a = {
+		name = "usasov__12_tex"
+		command = { type = money value = 500 }
+		command = { type = industrial_modifier which = total value = 2 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7710500
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 7170 }
+	technology = { country = FRA value = 7170 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = building_prod_mod which = nuclear_reactor value = 10 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710501
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5500 }
+	technology = { country = FRA value = 7170 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5500 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710502
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5620 }
+	technology = { country = FRA value = 5620 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5620 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710503
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5630 }
+	technology = { country = FRA value = 5630 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5630 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710504
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5640 }
+	technology = { country = FRA value = 5640 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5640 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710505
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5650 }
+	technology = { country = FRA value = 5650 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5650 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710506
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 23330 }
+	technology = { country = FRA value = 23330 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 23330 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710507
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 23340 }
+	technology = { country = FRA value = 23340 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 23340 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710508
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5510 }
+	technology = { country = FRA value = 5510 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5510 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710509
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5520 }
+	technology = { country = FRA value = 5520 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5520 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710510
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5530 }
+	technology = { country = FRA value = 5530 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5530 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710511
+	random = no
+	persistent = yes
+	name = "usasov__16_tex"
+	desc = "usasov__17_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = FRA }
+	money = 1000
+	relation = { which = FRA value = 150 }
+	NOT = { technology = 5540 }
+	technology = { country = FRA value = 5540 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -500 }
+		command = { type = relation which = FRA value = -60 }
+                command = { type = gain_tech which = 5540 }
+		command = { type = trigger which = 7710600 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710600
+	random = no
+	country = FRA
+	persistent = yes
+	name = "usasov__10_tex"
+	desc = "usasov__11_tex"
+	style = 0
+
+	action_a = {
+		name = "usasov__12_tex"
+		command = { type = money value = 500 }
+		command = { type = industrial_modifier which = total value = 1 }
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7710700
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 4130 }
+	not = { technology = { country = ENG value = 4140 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 1 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710701
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 4140 }
+	not = { technology = { country = ENG value = 4150 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 2 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 7710702
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 4150 }
+	not = { technology = { country = ENG value = 4160 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 3 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 7710703
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 4160 }
+	not = { technology = { country = ENG value = 15100 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 4 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710704
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 15100 }
+	not = { technology = { country = ENG value = 15110 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 5 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710705
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 15110 }
+	not = { technology = { country = ENG value = 35080 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 6 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710706
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 35080 }
+	not = { technology = { country = ENG value = 35090 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 7 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+
+event = {
+	id = 7710707
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 35090 }
+	not = { technology = { country = ENG value = 35100 } }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 8 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}
+
+
+event = {
+	id = 7710708
+	random = no
+	persistent = yes
+	name = "usasov__18_tex"
+	desc = "usasov__19_tex"
+	style = 0
+
+	trigger = {
+	NOT = { atwar = ENG }
+	NOT = { army = 50 }
+	money = 1000
+	relation = { which = ENG value = 150 }
+	and = {
+	technology = { country = ENG value = 35100 }
+			}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "usasov__07_tex"
+		ai_chance = 30
+		command = { type = money value = -800 }
+		command = { type = relation which = ENG value = -50 }
+                command = { type = add_division which = air value = tactical_bomber when = 9 }
+		command = { type = trigger which = 7710800 }
+	}
+
+	action_b = {
+		name = "usasov__09_tex"
+		ai_chance = 70
+		command = { type = money value = 1 }
+	}
+}                                                                                                                                                                                            
+	
+                                                                                                                              	
+
+event = {
+	id = 7710800
+	random = no
+	country = ENG
+	persistent = yes
+	name = "usasov__10_tex"
+	desc = "usasov__11_tex"
+	style = 0
+
+	action_a = {
+		name = "usasov__12_tex"
+		command = { type = money value = 500 }
+		command = { type = industrial_modifier which = total value = 1 }
+	}
+}

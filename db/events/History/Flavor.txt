@@ -1,0 +1,113 @@
+event = {
+  	id = 100000
+  	random = no
+  	country = USA
+  
+  	name = "黛安娜專案 " 
+  	desc = "1946年1月10日，美軍黛安娜專案，向月球
+		發射雷達電磁波，收到彈回地球的電磁波訊
+		號。使其能測量地球與月球的距離及地球能
+		跟外層空間的通訊，開啟了太空時代。 "
+  	style = 0
+  
+  	trigger = {
+
+  	} 
+  	date = { day = 9 month = january year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = research_mod value = 1 }
+  	}
+}
+
+event = {
+  	id = 100001
+  	random = no
+  	country = USA
+  
+  	name = "NBA成立 " 
+  	desc = "1946年6月6日，NBA於紐約成立。 "
+  	style = 0
+  
+  	trigger = {
+
+  	} 
+  	date = { day = 9 month = january year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = -1 }
+  	}
+}
+
+event = {
+  	id = 100002
+  	random = no
+  	country = USA
+  
+  	name = "十字路口行動 " 
+  	desc = "1946年、為調查核武對水面軍艦的打擊威力，美國在比基尼環礁進行一次核試行動。此次行動一共進行兩次核試，包括代號Able的空中核試及代號Baker的水下核試。 "
+  	style = 0
+  
+  	trigger = {
+
+  	} 
+  	date = { day = 0 month = july year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = research_mod value = 1 }
+  	}
+}
+
+event = {
+  	id = 100003
+  	random = no
+  	country = FRA
+  
+  	name = "「比基尼」泳裝的問世 " 
+  	desc = "1946年7月5日，法國機械工程師路易斯·雷德在法國巴黎推出了一種被他命名為「比基尼」的泳裝。"
+  	style = 0
+  
+  	trigger = {
+
+  	} 
+  	date = { day = 4 month = july year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = -1 }
+  	}
+}
+
+event = {
+  	id = 100004
+  	random = no
+  	country = FRA
+  
+  	name = "首屆坎城電影節 " 
+  	desc = "9月20日，法國舉行首屆坎城電影節。"
+  	style = 0
+  
+  	trigger = {
+
+  	} 
+  	date = { day = 4 month = july year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = -1 }
+  	}
+}
+

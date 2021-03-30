@@ -1,0 +1,176 @@
+#################################################
+#### events for Mex, Cent America, S America and Caribbean
+#### 614500-614999
+#################################################
+#### BRAZIL POLITICAL
+### Vargas out Dutra in Oct 29 1945
+event = {
+	id = 614500
+	random = no
+	country = BRA
+
+	name = "Armed Forces Movement"
+	desc = "Getúlio Vargas had a long period of rule over Brazil, lasting from 1930 to 1945. He was finally removed by a coup on October 29, 1945. Elections were held on December 2, 1945, with Gaspar Duttra defeating Eduardo Gomes."
+
+	trigger = {
+		OR = {
+			NOT = { exists = GER }
+			alliance = { country = BRA country = USA }
+		}
+		OR = {
+			ideology = paternal_autocrat
+			ideology = left_wing_radical			
+			government = democratic
+		}
+	 }
+
+	# in case WW2 lasts longer set to be recurrent
+	date = { day = 25 month = october year = 1945 }
+	offset = 7
+	deathdate = { day = 29 month = august year = 1950 }
+
+	action_a = { 
+		name = "Elect Right"#Gaspar Duttra-conservative
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofstate which = 34067 }
+		command = { type = headofgovernment which = 34069 }
+		command = { type = foreignminister which = 34089 }
+		command = { type = armamentminister which = 34109 }
+		command = { type = ministerofsecurity which = 34128 }
+		command = { type = ministerofintelligence which = 34144 }
+		command = { type = chiefofstaff which = 34158 }
+		command = { type = chiefofarmy which = 34173 }
+		command = { type = chiefofnavy which = 34182 }
+		command = { type = chiefofair which = 34192 }
+	}
+	action_b = { 
+		name = "Elect Left"#Eduardo Gomes-market liberal
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 34065 }
+		command = { type = headofgovernment which = 34071 }
+		command = { type = foreignminister which = 34081 }
+		command = { type = armamentminister which = 34106 }
+		command = { type = ministerofsecurity which = 34126 }
+		command = { type = ministerofintelligence which = 34143 }
+	}
+} 
+event = {
+	id = 614501
+	random = no
+	country = BRA
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	trigger = {
+		OR = {
+			ideology = left_wing_radical			
+			government = democratic
+		}
+	 }
+
+	date = { day = 2 month = october year = 1950 }
+	
+	action_a = { 
+		name = "Elect Left"#Vargas-social democratic
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 34195 }
+		command = { type = headofgovernment which = 34197 }
+		command = { type = foreignminister which = 34089 }
+		command = { type = armamentminister which = 34225 }
+		command = { type = ministerofsecurity which = 34228 }
+		command = { type = ministerofintelligence which = 34144 }
+		command = { type = chiefofstaff which = 34231 }
+	}
+	action_b = { 
+		name = "Elect Right"#Eduardo Gomes-market liberal
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 34065 }
+		command = { type = headofgovernment which = 34071 }
+		command = { type = foreignminister which = 34081 }
+		command = { type = armamentminister which = 34106 }
+		command = { type = ministerofsecurity which = 34126 }
+		command = { type = ministerofintelligence which = 34143 }
+	}
+} 
+event = {
+	id = 614502
+	random = no
+	country = BRA
+
+	name = "Vargas Suicide"
+	desc = "In 1953, one of Vargas' security guards allegedly tried to assassinate Carlos Lacerda. This led to growing pressure upon Vargas to step down. He committed suicide on August 24, 1954."
+
+	trigger = {
+		OR = {
+			headofstate = 34001
+			headofgovernment = 34002		
+			headofstate = 34195
+			headofgovernment = 34196		
+		}
+	 }
+
+	date = { day = 23 month = august year = 1954 }
+	
+	action_a = { 
+		name = "OK"
+		command = { type = sleepleader which = 34001 }
+		command = { type = sleepleader which = 34002 }
+		command = { type = sleepleader which = 34195 }
+		command = { type = sleepleader which = 34196 }
+		command = { type = headofstate which = 34236 }
+	}
+} 
+event = {
+	id = 614503
+	random = no
+	country = BRA
+
+	name = "ELECTION_TITLE"
+	desc = "ELECTION_DESC"
+
+	trigger = {
+		OR = {
+			ideology = left_wing_radical			
+			government = democratic
+		}
+	}
+
+	date = { day = 2 month = october year = 1955 }
+	
+	action_a = { 
+		name = "Elect Left"#social democratic
+		ai_chance = 85
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 34209 }
+		command = { type = headofgovernment which = 34211 }
+		command = { type = foreignminister which = 34237 }
+		command = { type = armamentminister which = 34238 }
+	}
+	action_b = { 
+		name = "Elect Right"#social conservative
+		ai_chance = 15
+		command = { type = dissent value = -3 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 34239 }
+		command = { type = headofgovernment which = 34240 }
+		command = { type = foreignminister which = 34003 }
+		command = { type = armamentminister which = 34238 }
+	}
+
+} 

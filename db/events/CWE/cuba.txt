@@ -1,0 +1,684 @@
+### Cuba and caribbean nations
+### 641000-641999
+### 641000-641299 Cuba
+### 641300-641999 other nations
+#####################################
+## Attack on the Moncada barracks
+####################################
+event = {
+	id = 641000
+	random = no
+	country = CUB
+	
+	trigger = {
+		OR = { 
+			government = fascist
+			headofstate = 33034
+			headofgovernment = 33041
+			headofgovernment = 33043
+		}
+		exists = SOV
+	}
+
+	date = { day = 25 month = july year = 1953 }
+
+	name = "Attack on the Moncada Barracks"
+	desc = "EVT_641000_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Que pasa?"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 641001
+	random = no
+	country = CUB
+	
+	trigger = { event = 641000 }
+
+	date = { day = 15 month = may year = 1955 }
+
+	name = "General Amnesty"
+	desc = "EVT_641001_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Que pasa?"
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 641002
+	random = no
+	country = CUB
+	
+	trigger = { 
+		event = 641001
+		exists = SOV 
+	}
+
+	date = { day = 1 month = december year = 1956 }
+
+	name = "Playa Las Coloradas Landing"
+	desc = "EVT_641002_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Que pasa?"
+		#temporarily constructed to enable technology transfer to rebels
+		command = { type = construct which = air_base where = 657 value = 2 } 
+		command = { type = construct which = naval_base where = 657 value = 2 } 
+		command = { type = secedeprovince which = SOV value = 657 }
+		command = { type = dissent value = 5 }
+		command = { type = max_organization which = land value = -25 }
+		command = { type = morale which = land value = -25 }
+		command = { type = trigger which = 641003 }
+	}
+}
+event = {
+	id = 641003
+	random = no
+	country = SOV
+	
+	#
+
+	name = "Training Fidel Castro's Army"
+	desc = "EVT_641002_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Onward!"
+		command = { type = independence which = UA4 }
+		command = { type = trigger which = 641004 }
+	}
+}
+event = {
+	id = 641004
+	random = no
+	country = UA4
+	
+	#
+
+	name = "Sierra Maestra Encampment"
+	desc = "EVT_641002_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Bravo!"
+		#bases destroyed, the rebels have no airfields or ports, just technology for future seizure of power
+		command = { type = construct which = air_base where = 657 value = -2 } 
+		command = { type = construct which = naval_base where = 657 value = -2 } 
+		command = { type = construct which = land_fort where = 657 value = 5 } 
+		command = { type = add_corps which = "M-26-7 #1" value = land where = 657 when = 1104000 }
+		command = { type = add_division which = "Fidel Columna" value = militia when = 2 where = artillery  }
+		command = { type = add_corps which = "M-26-7 #2" value = land where = 657 when = 1104002 }
+		command = { type = add_division which = "Guevara Columna" value = militia when = 2 where = artillery  }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = waketeam which = 80400 }
+		command = { type = waketeam which = 80401 }
+		command = { type = waketeam which = 80402 }
+		command = { type = waketeam which = 80405 }
+		command = { type = waketeam which = 80406 }
+	}
+}
+event = {
+	id = 641005
+	random = no
+	country = CUB
+	persistent = yes
+	
+	trigger = { 
+		exists = UA4
+		event = 641004
+		random = 10
+		atwar = no
+	}
+
+	date = { day = 25 month = july year = 1930 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1964 }
+
+
+	name = "Rebel Engagement"
+	desc = "EVT_641005_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = disorg_division which = -1 where = 30 }
+		command = { type = supplies value = -1000 }
+		command = { type = trigger which = 641006 }		
+	}
+}
+event = {
+	id = 641006
+	random = no
+	country = UA4
+	persistent = yes
+	
+	#
+
+
+	name = "Rebel Engagement"
+	desc = "EVT_641005_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Great!"
+		command = { type = supplies value = 300 }	
+	}
+}
+event = {
+	id = 641007
+	random = no
+	country = CUB
+	
+	trigger = { 
+		exists = UA4
+		event = 641004
+	}
+
+	date = { day = 23 month = february year = 1958 }
+
+
+	name = "Radio Rebelde"
+	desc = "EVT_641007_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = dissent value = 5 }		
+	}
+}
+event = {
+	id = 641008
+	random = no
+	country = USA
+	
+	trigger = { 
+		exists = UA4
+		event = 641007
+		exists = CUB
+	}
+
+	date = { day = 12 month = march year = 1958 }
+
+
+	name = "The Arms Embargo"
+	desc = "EVT_641008_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Down with Batista!"
+		ai_chance = 99
+		command = { type = end_trades which = USA where = CUB }
+		command = { type = set_relation which = CUB value = -150 }
+ 		command = { type = ai which = "switch/usa_embargo_cub.ai" }
+		command = { type = trigger which = 641009 }
+					
+	}
+	action_b = {
+		name = "We need Batista!"
+		ai_chance = 1
+		command = { type = relation which = CUB value = 30 }
+		command = { type = dissent value = 8 }# anti-Batista feeling in USA
+	}
+	
+}
+event = {
+	id = 641009
+	random = no
+	country = CUB
+	
+	#
+
+	name = "The Arms Embargo"
+	desc = "EVT_641008_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = leave_alliance }
+		command = { type = dissent value = 10 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = industrial_modifier which = supplies value = -30 }
+		command = { type = supplies value = -10000 } 							
+	}
+}
+event = {
+	id = 641010
+	random = no
+	country = CUB
+	
+	trigger = { 
+		exists = UA4
+		event = 641007
+		exists = CUB
+	}
+
+	date = { day = 10 month = july year = 1958 }
+
+	name = "Operation Verano"
+	desc = "EVT_641010_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = damage_division which = -1 where = 30 }
+		command = { type = disorg_division which = -1 where = 30 } 							
+	}
+}
+
+event = {
+	id = 641011
+	random = no
+	country = CUB
+	
+	trigger = { 
+		exists = UA4
+		event = 641010
+	}
+
+	date = { day = 28 month = july year = 1958 }
+
+	name = "Battle of Las Mercedes"
+	desc = "EVT_641011_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Let's end this senseless war"
+		ai_chance = 99
+		command = { type = disorg_division which = -1 where = 30 }
+		command = { type = max_organization which = land value = -20 }
+		command = { type = morale which = land value = -20 }
+				
+	}
+	action_b = {
+		name = "Are you kidding? Destroy them!"
+		ai_chance = 1
+		command = { type = industrial_modifier which = total value = 30 } 
+		command = { type = industrial_modifier which = supplies value = 30 } 
+		command = { type = max_organization which = land value = 25 }
+		command = { type = morale which = land value = 25 }
+		command = { type = leave_alliance }
+		command = { type = trigger which = 641012 }		
+	}
+}
+event = {
+	id = 641012
+	random = no
+	country = UA4
+	
+	#
+
+	name = "Battle of Las Mercedes"
+	desc = "EVT_641012_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = remove_division which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = leave_alliance }
+		command = { type = war which = CUB }
+		command = { type = sleepevent which = 641013 }
+				
+	}
+}
+event = {
+	id = 641013
+	random = no
+	country = UA4
+	
+	trigger = { 
+		exists = CUB
+		event = 641011
+	}
+
+	date = { day = 20 month = august year = 1958 }
+
+	name = "The Oriente Offensive"
+	desc = "EVT_641013_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = leave_alliance }
+		command = { type = trigger which = 641014 }		
+	}
+}
+event = {
+	id = 641014
+	random = no
+	country = CUB
+	
+	#
+
+	name = "Crumbling Morale"
+	desc = "EVT_641014_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = leave_alliance }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = delete_Unit which = -1 }
+		command = { type = add_corps which = "Ejército de Cuba" value = land where = 656 }
+		command = { type = add_division which = "Primera Columna" value = infantry when = 5 }
+		command = { type = add_division which = "Segunda Columna" value = infantry when = 5 }
+		command = { type = add_division which = "Tercera Columna" value = infantry when = 5 }
+		command = { type = war which = UA4 }
+				
+	}
+}
+event = {
+	id = 641015
+	random = no
+	country = CUB
+	
+	trigger = { 
+		control = { province = 656 data = UA4 }
+		war = { country = CUB country = UA4 }
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1964 }
+
+
+	name = "Consolidation"
+	desc = "EVT_641015_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Damn!"
+		command = { type = secedeprovince which = UA4 value = 656 }
+		command = { type = peace which = UA4 value = 1 }
+		command = { type = belligerence value = -15 }
+		command = { type = dissent value = 5 }
+		command = { type = trigger which = 641016 }
+	}
+}
+event = {
+	id = 641016
+	random = no
+	country = UA4
+	
+	#
+
+	name = "Consolidation"
+	desc = "EVT_641015_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = supplies value = 500 }
+		command = { type = belligerence value = -15 }
+		command = { type = remove_division which = -1 }
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = add_corps which = "Ejército de la Revolución" value = land where = 656 }
+		command = { type = add_division which = "Primero Infantería" value = infantry when = 6 where = armored_car }
+	}
+}
+event = {
+	id = 641017
+	random = no
+	country = UA4
+	
+	trigger = { 
+		control = { province = 656 data = UA4 }
+		control = { province = 655 data = CUB }
+		NOT = { war = { country = UA4 country = CUB } }
+	}
+
+	date = { day = 16 month = december year = 1958 }
+
+
+	name = "The Battle of Yaguajay"
+	desc = "EVT_641017_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = leave_alliance }
+		command = { type = trigger which = 641018 }
+	}
+}
+event = {
+	id = 641018
+	random = no
+	country = CUB
+	
+	#
+
+
+	name = "The Battle of Yaguajay"
+	desc = "EVT_641017_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = war which = UA4 }
+	}
+}
+event = {
+	id = 641019
+	random = no
+	country = CUB
+	
+	trigger = { 
+		control = { province = 655 data = UA4 }
+	}
+
+	date = { day = 16 month = december year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1962 }
+
+
+	name = "Batista Flees Cuba"
+	desc = "EVT_641019_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Time to run!"
+		ai_chance = 100
+		command = { type = trigger which = 641020 }
+		command = { type = trigger which = 641021 }
+	}
+	action_b = {
+		name = "Never surrender"
+		ai_chance = 0
+		command = { type = dissent which = 25 }
+	}
+	
+}
+event = {
+	id = 641020
+	random = no
+	country = UA4
+	
+	trigger = { 
+		event = 641019
+		ai = CUB
+	}
+
+	date = { day = 16 month = december year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1962 }
+
+	name = "Triumph of the Revolution"
+	desc = "EVT_641019_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = sleepevent which = 641021 }
+		command = { type = inherit which = CUB }
+	}
+}
+event = {
+	id = 641021
+	random = no
+	country = CUB
+	
+	trigger = { 
+		event = 641019
+		ai = no
+	}
+
+	date = { day = 16 month = december year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1962 }
+
+
+	name = "Save and Reload"
+	desc = "You need to save the game and reload as someone else. If you want to see how Cuba fares under communism, load as the July 26th Movement."
+	
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 1 }
+	}
+}
+event = {
+	id = 641022
+	random = no
+	country = UA4
+	
+	trigger = { 
+		NOT = { exists = CUB }
+	}
+
+	date = { day = 16 month = december year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Victory!"
+	desc = "Victory!"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		#reverses free values from 15344
+		command = { type = free_ic value = -2 }
+		command = { type = free_energy value = -4 }
+		command = { type = free_metal value = -2 }
+		command = { type = free_money value = -2 }
+		command = { type = free_supplies value = -2 }
+		command = { type = free_rare_materials value = -1 }
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = capital which = 654 }
+		command = { type = country which = CUB }
+	}
+}
+##### Modified Cuba files required--Fidel Castro is not in vanilla!!
+event = {
+	id = 641023
+	random = no
+	country = CUB
+	
+	trigger = { 
+		government = communist
+	}
+
+	date = { day = 16 month = december year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Fidel Takes Over"
+	desc = "EVT_641023_DESC"
+	picture = "Fidel"
+
+	action_a = {
+		name = "The revolution is just beginning."
+		command = { type = headofstate which = 33215 }
+		command = { type = headofgovernment which = 33222 }
+		command = { type = foreignminister which = 33215 }
+		command = { type = armamentminister which = 33226 }
+		command = { type = ministerofsecurity which = 33237 }
+		command = { type = ministerofintelligence which = 33245 }
+		command = { type = chiefofstaff which = 33257 }
+		command = { type = chiefofarmy which = 33262 }
+		command = { type = chiefofnavy which = 33271 }
+		command = { type = chiefofair which = 33360 }
+		command = { type = dissent value = 10 }
+		command = { type = trigger which = 15470 }
+	}
+}
+### reserve event in case of successful Bay of Pigs
+event = {
+	id = 641024
+	random = no
+	country = UA4
+	
+	trigger = { 
+		NOT = { exists = CUB }
+		event = 641023
+		government = democratic
+	}
+
+	date = { day = 16 month = december year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Victory!"
+	desc = "Victory!"
+	picture = "Fidel"
+
+	action_a = {
+		name = "Venceneremos!"
+		command = { type = capital which = 654 }
+		command = { type = country which = CUB }
+	}
+}
+#####################
+## Batista coup 1952 
+#####################	
+event = {
+	id = 641025
+	random = no
+	country = CUB
+	
+	trigger = { 
+		NOT = { government = communist }
+	}
+
+	date = { day = 9 month = march year = 1952 }
+
+	name = "Batista Coup"
+	desc = "In 1952, Fulgencio Batista ran again for President of Cuba. Realizing he could not win, he seized power in a military coup. The Batista regime aroused opposition from both democrats and leftists."
+	picture = "Batista"
+
+	action_a = {
+		name = "A fateful day in history"
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 33034 }
+		command = { type = headofgovernment which = 33043 }
+	}
+}

@@ -1,0 +1,579 @@
+################
+#埃及事件1949-1953
+################
+################
+#瓜分巴勒斯坦——巴勒斯坦
+################
+event = {
+  	id = 23328
+  	random = no
+  	country = PAL
+  
+  	name = "瓜分巴勒斯坦 " 
+  	desc = "1950年，巴勒斯坦被埃及、约旦、以色列瓜分，埃及占领了加沙 地带，约旦占领了耶路撒冷东城，以色列占领了耶路撒冷西城。 "
+#  	picture = "瓜分巴勒斯坦"
+  	style = 0
+   	date = { day = 23 month = march year = 1950 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+ 	trigger = {
+       		owned = { province = 1799  data = PAL }
+       		owned = { province = 1797  data = PAL }
+	}  
+  	action_a = {
+    		name = "接受瓜分吧 "
+    		command = { type = trigger which = 23329 }
+    		command = { type = secedeprovince which = EGY value = 1799 }
+		command = { type = secedeprovince which = ISR  value = 3927 }
+  	}
+}
+################
+#瓜分巴勒斯坦——约旦
+################
+event = {
+  id = 23329
+  random = no
+  country = JOR
+ 	trigger = {
+       		owned = { province = 1799  data = PAL }
+       		owned = { province = 1797  data = PAL }
+		NOT = { exists = PAL }
+	}   
+  	name = "瓜分巴勒斯坦—约旦 " 
+  	desc = "1950年，巴勒斯坦被埃及、约旦、以色列瓜分，埃及占领了加沙 地带，约旦占领了耶路撒冷东城，以色列占领了耶路撒冷西城。 "
+#  	picture = "瓜分巴勒斯坦"
+  	style = 0
+  	action_a = {
+    		name = "好极了 "
+    		command = { type = trigger which = 23330 }
+		command = { type = sleepevent which = 23328 }
+    		command = { type = dissent value = -1 }
+    		command = { type = secedeprovince which = EGY value = 1799 }
+		command = { type = secedeprovince which = ISR  value = 3927 }
+    		command = { type = addcore which = 1797 }
+  	}
+}
+################
+#瓜分巴勒斯坦——埃及
+################
+event = {
+  	id = 23330
+  	random = no
+  	country = EGY
+ 
+  	name = "瓜分巴勒斯坦—埃及 " 
+  	desc = "1950年，巴勒斯坦被埃及、约旦、以色列瓜分，埃及占领了加沙 地带，约旦占领了耶路撒冷东城，以色列占领了耶路撒冷西城。 "
+#  	picture = "瓜分巴勒斯坦"
+
+     	date = { day = 23 month = march year = 1950 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+
+  	style = 0
+  	action_a = {
+    		name = "好极了 "
+    		command = { type = trigger which = 23331 }
+    		command = { type = secedeprovince which = JOR value = 1797 }
+		command = { type = secedeprovince which = ISR  value = 3927 }
+    		command = { type = addcore which = 1799 }
+    		command = { type = dissent value = -1 }
+  	}
+}
+################
+#瓜分巴勒斯坦——以色列
+################
+event = {
+  id = 23331
+  random = no
+  country = ISR
+  
+  name = "瓜分巴勒斯坦—以色列 " 
+  desc = "1950年，巴勒斯坦被埃及、约旦、以色列瓜分，埃及占领了加沙 地带，约旦占领了耶路撒冷东城，以色列占领了耶路撒冷西城。 "
+#  picture = "瓜分巴勒斯坦"
+  style = 0
+  action_a = {
+    name = "好极了 "
+    command = { type = dissent value = -1 }
+  }
+}
+################
+#埃及议会选举
+################
+event = {
+  id = 23332
+  random = no
+  country = EGY
+  
+  name = "埃及议会选举 " 
+  desc = "1950年1月，埃及政府为了摆脱政治危机和寻求出路，于1950年1 月举行议会选举，将华夫脱党捧上台。华夫脱党政府释放了一些 政治犯，给工人增加一项为数极微的生活津贴。 "
+#  picture = "埃及议会选举"
+  style = 0
+   date = { day = 11 month = january year = 1950 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    headofgovernment = 512019
+  } 
+  action_a = {
+    name = "华夫脱党上台 "
+    command = { type = headofgovernment which = 512024 }
+    command = { type = dissent value = -1 }
+  }
+}
+################
+#各大工业中心罢工
+################
+event = {
+  id = 23333
+  random = no
+  country = EGY
+  
+  name = "各大工业中心罢工 " 
+  desc = "1950年，由于生活必需品不断涨价，以及政府压制工人的民主自由， 埃及再次爆发罢工风潮。各大工业中心举行罢工和示威游行，一 直到1951年还没有停止。工人群众要求把英国企业收归国有，并 废除英埃条约。 "
+#  picture = "各大工业中心罢工"
+  style = 0
+   date = { day = 1 month = february year = 1950 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+  } 
+  action_a = {
+    name = "罢工对我们的秩序造成了极大的破坏 "
+    command = { type = dissent value = 10 }
+    command = { type = relation which = ENG value = -10 }
+  }
+}
+################
+#中东司令部——英国
+################
+event = {
+  id = 23334
+  random = no
+  country = ENG
+  
+  name = "中东司令部 " 
+  desc = "1951年10月14日，美、英、法、土四国向埃及政府提出设立中东 司令部的建议。以后还将该建议送交叙利亚、黎巴嫩、伊拉克、 沙特阿拉伯、约旦、也门和以色列等国政府。建议的主要内容是 要求中东各国将其军队统一隶属于一个所谓“联合司令部”，同 时将其军事基地、交通工具、港口及其他及军事设施提供给“联 合司令部”自由支配。 "
+#  picture = "中东司令部"
+  style = 0
+   date = { day = 13 month = october year = 1951 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+  } 
+  action_a = {
+    ai_chance = 90
+    name = "这是一个很不错的想法 "
+    command = { type = relation which = FRA value = 10 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = TUR value = 10 }
+    command = { type = trigger which = 23335 }
+    command = { type = trigger which = 98510 }
+    command = { type = trigger which = 130002 }
+  }
+  action_b = {
+    ai_chance = 10
+    name = "不提出这个主张 "
+    command = { type = relation which = EGY value = 5 }
+    command = { type = relation which = SYR value = 5 }
+  }
+}
+################
+#中东司令部——埃及
+################
+event = {
+  id = 23335
+  random = no
+  country = EGY
+  
+  name = "中东司令部 " 
+  desc = "由于国内要求实现真正的民族独立这一斗争日益扩大，埃及于 1951年10月15日通知议会，决定拒绝接受加入中东司令部。同时 宣布废除1936年英埃条约和1899年关于苏丹的协定。 "
+ # picture = "中东司令部"
+  style = 0
+
+  action_a = {
+    name = "我们不接受这样的奴役 "
+    ai_chance = 90
+    command = { type = relation which = FRA value = -10 }
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = TUR value = -10 }
+    command = { type = relation which = ENG value = -10 }
+    command = { type = dissent value = -5 }
+    command = { type = domestic which = interventionism value = -1 }
+    command = { type = trigger which = 23336 }
+  }
+  action_b = {
+    name = "接受这个建议 "
+    ai_chance = 10
+    command = { type = relation which = FRA value = 5 }
+    command = { type = relation which = USA value = 5 }
+    command = { type = relation which = TUR value = 5 }
+    command = { type = relation which = ENG value = 10 }
+    command = { type = dissent value = 20 }
+  }
+}
+################
+#中东司令部——英国的报复
+################
+event = {
+  id = 23336
+  random = no
+  country = ENG
+  
+  name = "英国的报复 " 
+  desc = "由于国内要求实现真正的民族独立这一斗争日益扩大，埃及于 1951年10月15日通知议会，决定拒绝接受加入中东司令部。同时 宣布废除1936年英埃条约和1899年关于苏丹的协定。我们必须让 埃及人长长记性。 "
+#  picture = "英国的报复"
+  style = 0
+
+  action_a = {
+    name = "报复一下埃及人！ "
+    command = { type = relation which = EGY value = -10 }
+    command = { type = trigger which = 23337 }
+  }
+}
+################
+#中东司令部——英国的报复
+################
+event = {
+  id = 23337
+  random = no
+  country = EGY
+  
+  name = "英国的报复 " 
+  desc = "由于我们不加入中东司令部，英军报复了我们，他们在二十天中 打死打伤五百余人。包围了苏伊士。我们应当如何应对？ "
+#  picture = "英国的报复"
+  style = 0
+
+  action_a = {
+    ai_chance = 85
+    name = "一面声明废除条约，一面镇压群众的反抗 "
+    command = { type = relation which = ENG value = -5 }
+    command = { type = dissent value = 5 }
+  }
+  action_b = {
+    ai_chance = 5
+    name = "强硬地应对英国人 "
+    command = { type = relation which = ENG value = -20 }
+    command = { type = dissent value = -5 }
+  }
+  action_c = {
+    ai_chance = 10
+    name = "向英国妥协 "
+    command = { type = relation which = ENG value = 5 }
+    command = { type = dissent value = 10 }
+  }
+}
+################
+#开罗大游行
+################
+event = {
+  id = 23338
+  random = no
+  country = EGY
+  
+  name = "开罗大游行 " 
+  desc = "1952年1月26日，开罗举行示威游行，抗议英军在前一天屠杀伊斯 梅里亚的和平居民。外国机关被纵火焚毁，开罗陷入一片混乱。 法鲁克国王宣布解散华夫脱党内阁，任命阿里·马希尔为首相兼 任埃军司令。马希尔政府对游行进行了镇压。 "
+#  picture = "开罗大游行"
+  style = 0
+   date = { day = 25 month = february year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    headofgovernment = 512024
+    atwar = no
+  } 
+  action_a = {
+    name = "更换内阁，镇压游行 "
+    command = { type = dissent value = 10 }
+    command = { type = headofgovernment which = 512025 }
+    command = { type = chiefofstaff which = 512162 }
+    command = { type = domestic which = democratic value = -2 }
+  }
+}
+################
+#七月革命
+################
+event = {
+  id = 23339
+  random = no
+  country = EGY
+  
+  name = "七月革命 " 
+  desc = "1952年7月23日，“自由军官组织”在全国军队的支持下发动政变， 迫使法鲁克国王于7月26日退位，形式上成立了以阿里·马希尔为 首的政府，但实际上“自由军官组织”接管了全国一切权力。 "
+ # picture = "七月革命"
+  style = 0
+   date = { day = 22 month = july year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    headofgovernment = 512161
+    headofstate = 512011
+  } 
+  action_a = {
+    name = "革命万岁！ "
+    command = { type = dissent value = -10 }
+    command = { type = headofgovernment which = 512025 }
+    command = { type = headofstate which = 512159 }
+    command = { type = domestic which = democratic value = 2 }
+  }
+}
+################
+#阿里·马希尔辞职
+################
+event = {
+  id = 23340
+  random = no
+  country = EGY
+  
+  name = "阿里·马希尔辞职 " 
+  desc = "1952年9月7日，由于公开反对土地改革，阿里·马希尔被解除职 务。同一天，穆罕穆德·纳吉布将军为首的新政府成立。然而， 革命指导委员会掌握了实权。 "
+#  picture = "阿里·马希尔辞职"
+  style = 0
+   date = { day = 6 month = september year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    headofgovernment = 512025
+  } 
+  action_a = {
+    name = "成立新政府 "
+    command = { type = dissent value = -1 }
+    command = { type = headofgovernment which = 512113 }
+    command = { type = chiefofstaff which = 512116 }
+    command = { type = domestic which = democratic value = 1 }
+  }
+}
+################
+#土地改革
+################
+event = {
+  id = 23341
+  random = no
+  country = EGY
+  
+  name = "土地改革 " 
+  desc = "1952年9月9日，新政府根据革命指导委员会的决定，公布了土地 改革法。法令规定：限制土地所有权，调整地主和佃户之间的关 系，没收王室土地以及征用大地主所有超过限额的土地。土地改 革法还要求为分得土地的农民组织合作社。 "
+#  picture = "埃及土地改革"
+  style = 0
+   date = { day = 8 month = september year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    event = 30019
+  } 
+  action_a = {
+    name = "进行土地改革！ "
+    ai_chance = 95
+    command = { type = dissent value = -1 }
+  }
+  action_b = {
+    name = "保护地主的利益 "
+    ai_chance = 5
+    command = { type = dissent value = 5 }
+  }
+}
+################
+#新宪法颁布
+################
+event = {
+  id = 23342
+  random = no
+  country = EGY
+  
+  name = "埃及新宪法颁布 " 
+  desc = "1952年9月，政府要求各政党清洗自己的队伍，华夫脱党等政党却 拒绝与革命指导委员会合作。于是1952年12月10日。埃及废除旧 宪法，颁布新宪法。在1953年1月，这些政党均被解散。 "
+ # picture = "埃及新宪法颁布"
+  style = 0
+   date = { day = 9 month = december year = 1952 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+  } 
+  action_a = {
+    name = "颁布新宪法！ "
+    command = { type = dissent value = -1 }
+  }
+}
+################
+#埃及共和国成立
+################
+event = {
+  id = 23343
+  random = no
+  country = EGY
+  
+  name = "埃及共和国成立 " 
+  desc = "1953年6月18日，埃及成立共和国，穆罕穆德·纳吉布将军成为埃 及第一任总统。埃及迎来了新生！ "
+#  picture = "埃及共和国成立"
+  style = 0
+   date = { day = 17 month = june year = 1953 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+    headofgovernment = 512113
+  } 
+  action_a = {
+    name = "共和国成立！ "
+    command = { type = dissent value = -5 }
+    command = { type = set_domestic which = political_left value = 6 }
+    command = { type = set_domestic which = democratic value = 6 }
+    command = { type = headofstate which = 512111 }
+  }
+}
+################
+#阿拉伯人之声
+################
+event = {
+  id = 23344
+  random = no
+  country = EGY
+  
+  name = "阿拉伯人之声 " 
+  desc = "1953年，随着纳赛尔声望的提高和埃及社会秩序的恢复，我们的宣 传部门负责人建议建立一个阿拉伯人的广播电台来宣传纳赛尔思 想，抵制西方舆论优势。 "
+#  picture = "阿拉伯人之声"
+  style = 0
+   date = { day = 9 month = december year = 1953 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+    headofstate = 512136
+    supplies = 3000
+    event = 23343
+  } 
+  action_a = {
+    name = "这将是阿拉伯世界的明灯 "
+    ai_chance = 50
+    command = { type = dissent value = -10 }
+    command = { type = money value = -500 }
+    command = { type = supplies value = -2500 }
+    command = { type = change_policy which = interventionism value = 1 }
+    command = { type = intelligence which = us value = 15 }
+    command = { type = setflag which = voiceofarab }
+  } 
+  action_b = {
+    name = "这有助于国内安定 "
+    ai_chance = 30
+    command = { type = dissent value = -5 }
+    command = { type = money value = -200 }
+    command = { type = supplies value = -500 }
+    command = { type = intelligence which = us value = 3 }
+  } 
+  action_c = {
+    name = "这是一种浪费 "
+    ai_chance = 20
+    command = { type = change_policy which = interventionism value = -1 }
+  }
+}
+
+################
+#阿拉伯人之声-影响
+################
+event = {
+  id = 23345
+  random = no
+  country = EGY
+  
+  name = "阿拉伯人之声的影响 " 
+  desc = "阿拉伯人之声播出以来反响强烈，无数阿拉伯兄弟每天守候在收 音机旁聆听纳赛尔将军的演讲，被纳赛尔将军感染。 "
+ # picture = "阿拉伯人之声"
+  style = 0
+   date = { day = 9 month = april year = 1954 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1991 }
+  
+  trigger = {
+    atwar = no
+    headofstate = 512136
+    supplies = 5000
+    event = 30050
+    flag = voiceofarab
+  } 
+  action_a = {
+    name = "这是埃及的胜利 "
+    command = { type = dissent value = -5 }
+    command = { type = relation which = SYR value = 20 }
+    command = { type = relation which = JOR value = -20 }
+    command = { type = relation which = IRQ value = -20 }
+    command = { type = relation which = SAU value = -20 }
+    command = { type = relation which = YEM value = 20 }
+    command = { type = trigger which = 23346 } #30025 
+  } 
+}
+
+################
+#阿拉伯人之声-沙特
+################
+event = {
+  id = 23346
+  random = no
+  country = SAU
+  
+  name = "阿拉伯人之声的影响 " 
+  desc = "阿拉伯人之声播出以来反响强烈，国内对国王反对的声音越发刺 耳了，埃及人的行为值得警惕。 "
+#  picture = "阿拉伯人之声"
+  style = 0
+  
+  action_a = {
+    name = "必须警惕纳赛尔分子 "
+    command = { type = dissent value = 5 }
+    command = { type = intelligence which = us value = 3 }
+    command = { type = trigger which = 23347 } #30026 
+  } 
+}
+
+
+################
+#阿拉伯人之声-伊拉克
+################
+event = {
+  id = 23347
+  random = no
+  country = IRQ
+  
+  name = "阿拉伯人之声的影响 " 
+  desc = "阿拉伯人之声播出以来反响强烈，国内对国王反对的声音越发刺 耳了，埃及人的行为值得警惕。 "
+ # picture = "阿拉伯人之声"
+  style = 0
+  
+  action_a = {
+    name = "必须警惕纳赛尔分子 "
+    command = { type = dissent value = 5 }
+    command = { type = intelligence which = us value = 3 }
+    command = { type = trigger which = 23348 } #30027 
+  } 
+}
+
+################
+#阿拉伯人之声-约旦
+################
+event = {
+  id = 23348
+  random = no
+  country = JOR
+  
+  name = "阿拉伯人之声的影响 " 
+  desc = "阿拉伯人之声播出以来反响强烈，国内对国王反对的声音越发刺 耳了，埃及人的行为值得警惕。 "
+ # picture = "阿拉伯人之声"
+  style = 0
+ 
+  action_a = {
+    name = "必须警惕纳赛尔分子 "
+    command = { type = dissent value = 5 }
+    command = { type = intelligence which = us value = 3 }
+  } 
+}

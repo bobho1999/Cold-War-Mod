@@ -1,0 +1,5890 @@
+
+##############################
+### 未開発による不満
+#############################
+
+event = {
+	id = 7730001
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23350 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730002
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23350 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730003
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23350 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730004
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23350 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730005
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23350 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730011
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23900 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730012
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23900 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730013
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23900 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730014
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23900 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730015
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23900 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+event = {
+	id = 7730021
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23360 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730022
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23360 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730023
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23360 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730024
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23360 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730025
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23360 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730031
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23910 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730032
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23910 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730033
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23910 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730034
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23910 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730035
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23910 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730041
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23370 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730042
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23370 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730043
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23370 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730044
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23370 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730045
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23370 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+event = {
+	id = 7730051
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23920 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730052
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23920 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730053
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23920 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730054
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23920 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730055
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23920 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730061
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23380 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730062
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23380 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730063
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23380 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730064
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23380 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730065
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23380 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730071
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23930 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730072
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23930 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730073
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23930 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730074
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23930 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730075
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23930 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730081
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23390 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730082
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23390 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730083
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23390 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730084
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23390 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730085
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23390 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730091
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_10
+	not = { technology = { country = -1 value = 23940 } }
+	random = 10
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730092
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 } 
+	local_flag = DIES_slider_FS_09
+	not = { technology = { country = -1 value = 23940 } }
+	random = 9
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730093
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_08
+	not = { technology = { country = -1 value = 23940 } }
+	random = 7
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730094
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_07
+	not = { technology = { country = -1 value = 23940 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730095
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_06
+	not = { technology = { country = -1 value = 23940 } }
+	random = 6
+	}
+
+	name = culture_01_tex
+	desc = culture_02_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = culture_03_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################
+## 開発したことによる不満
+#####################################
+
+
+
+event = {
+	id = 7730101
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23350 } 
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730102
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23350 } 
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730103
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23350 } 
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730104
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23350 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730105
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23900 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730106
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23900 } 
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730107
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23900 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730108
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23900 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730109
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23900 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730110
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23360 } 
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730111
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23360 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730112
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23360 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730113
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23360 } 
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730114
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23360 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730115
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23910 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730116
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23910 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730117
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23910 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730118
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23910 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730119
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23910 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730120
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23370 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730121
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23370 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730122
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23370 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730123
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23370 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730124
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23370 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+event = {
+	id = 7730125
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23920 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730126
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23920 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730127
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23920 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730128
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23920 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730129
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23920 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7730130
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23380 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730131
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23380 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730132
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23380 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730133
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23380 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730134
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23380 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730135
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23930 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730136
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23930 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730137
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23930 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730138
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23930 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730139
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23930 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7730140
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23390 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730141
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23390 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730142
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23390 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730143
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23390 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730144
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23390 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7730145
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23940 }
+	random = 5
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730146
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23940 }
+	random = 4
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730147
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23940 }
+	random = 3
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730148
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23940 }
+	random = 2
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+event = {
+	id = 7730149
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23940 }
+	random = 1
+	}
+
+	name = culture_04_tex
+	desc = culture_05_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_06_tex
+		command = { type = dissent value = 5 }
+
+	}
+}
+
+
+
+
+
+##############################
+## 開発したことによる恩恵　ＩＣ
+##############################
+
+
+event = {
+	id = 7730151
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23350 } 
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730152
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23350 } 
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730153
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23350 } 
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730154
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23350 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730155
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23900 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730156
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23900 } 
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730157
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23900 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730158
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23900 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730159
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23900 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730160
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23360 } 
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730161
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23360 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730162
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23360 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730163
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23360 } 
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730164
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23360 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730165
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23910 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730166
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23910 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730167
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23910 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730168
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23910 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730169
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23910 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730170
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23370 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730171
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23370 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730172
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23370 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730173
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23370 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730174
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23370 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+event = {
+	id = 7730175
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23920 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730176
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23920 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730177
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23920 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730178
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23920 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730179
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23920 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+
+
+
+event = {
+	id = 7730180
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23380 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730181
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23380 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730182
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23380 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730183
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23380 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730184
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23380 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730185
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23930 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730186
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23930 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730187
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23930 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730188
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23930 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730189
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23930 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+
+
+event = {
+	id = 7730190
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23390 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730191
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23390 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730192
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23390 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730193
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23390 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730194
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23390 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 7730195
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_10
+	technology = { country = -1 value = 23940 }
+	random = 5
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730196
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 } 
+	local_flag = DIES_slider_FS_09
+	technology = { country = -1 value = 23940 }
+	random = 4
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730197
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_08
+	technology = { country = -1 value = 23940 }
+	random = 3
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730198
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_07
+	technology = { country = -1 value = 23940 }
+	random = 2
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+event = {
+	id = 7730199
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	local_flag = DIES_slider_FS_06
+	technology = { country = -1 value = 23940 }
+	random = 1
+	}
+
+	name = culture_07_tex
+	desc = culture_08_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_09_tex
+		command = { type = money value = 50 }
+		command = { type = industrial_modifier which = total value = 1 }
+
+	}
+}
+
+
+
+
+#####################################
+## 開発したことによる恩恵　好戦性
+#####################################
+
+
+
+
+
+event = {
+	id = 7730200
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23350 } 
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730201
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5050 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23350 } 
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730202
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23900 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730203
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5060 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23900 } 
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+event = {
+	id = 7730204
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23360 } 
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730205
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 5070 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23360 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+event = {
+	id = 7730206
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23910 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730207
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23040 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23910 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730208
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23370 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730209
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23050 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23370 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730210
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23920 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730211
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23060 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23920 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730212
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23380 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730213
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23070 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23380 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730214
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23930 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730215
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23080 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23930 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+event = {
+	id = 7730216
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23390 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730217
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23090 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23390 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730218
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 }
+	OR = {
+	local_flag = DIES_slider_FS_01
+	local_flag = DIES_slider_FS_02
+		}
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23940 }
+	random = 5
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730219
+	random = no
+	persistent = yes
+
+	trigger = {
+	NOT = { atwar = -1 }
+	technology = { country = -1 value = 23100 } 
+	local_flag = DIES_slider_FS_03
+	belligerence = { value = 2 }
+	technology = { country = -1 value = 23940 }
+	random = 4
+	}
+
+	name = culture_10_tex
+	desc = culture_11_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_12_tex
+		command = { type = belligerence value = -1 }
+
+	}
+}
+
+#####################################
+## 開発したことによる不満　好戦性
+#####################################
+
+
+
+event = {
+	id = 7730220
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5050 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+	technology = { country = -1 value = 23350 } 
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730221
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5050 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+	technology = { country = -1 value = 23350 } 
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730222
+	random = no
+	persistent = yes
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5060 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23900 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730223
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5060 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23900 } 
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+event = {
+	id = 7730224
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5070 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23360 } 
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730225
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 5070 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23360 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1960 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+event = {
+	id = 7730226
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23040 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23910 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730227
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23040 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23910 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1965 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730228
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23050 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23370 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730229
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23050 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23370 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1970 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730230
+	random = no
+	persistent = yes
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23060 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23920 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730231
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23060 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23920 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1975 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730232
+	random = no
+	persistent = yes
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23070 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23380 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730233
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23070 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23380 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1980 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 7730234
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23080 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23930 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730235
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23080 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23930 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1985 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+event = {
+	id = 7730236
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23090 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23390 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730237
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23090 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23390 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+
+event = {
+	id = 7730238
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23100 }
+	OR = {
+	local_flag = DIES_slider_FS_10
+	local_flag = DIES_slider_FS_09
+	local_flag = DIES_slider_FS_08
+		}
+		
+
+	technology = { country = -1 value = 23940 }
+	random = 5
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
+
+
+
+event = {
+	id = 7730239
+	random = no
+	persistent = yes
+
+	trigger = {
+	atwar = yes
+	technology = { country = -1 value = 23100 } 
+	OR = {
+	local_flag = DIES_slider_FS_08
+	local_flag = DIES_slider_FS_07
+		}
+
+	technology = { country = -1 value = 23940 }
+	random = 4
+	}
+
+	name = culture_13_tex
+	desc = culture_14_tex
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 40
+	deathdate = { day = 29 month = december year = 1995 }
+
+	action_a = {
+		name = culture_15_tex
+		command = { type = belligerence value = 1 }
+
+	}
+}
