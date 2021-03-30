@@ -1,0 +1,140 @@
+name       = "testing "
+panel      = "scenarios/data/nwo_scenario_1945.bmp"
+header = {
+  name       = "Chinese Civil War"
+  startdate  = { year = 1945 }
+  selectable = { AFG ALB ARG AST BEL BHU BOL BRA BUL BUR CAN CHI CHC CGX CHL CMB COL COS CUB CYN CSX CXB CZE DEN DOM ECU EGY ETH FIN GRE GUA HAI HOL HON HUN ICL INO IRE IRQ ITA LEB LIB LUX MEX NEP NIC NOR NZL OMN PAN PAR PER POL POR PRU SAF SAL SCH SIA SPA SWE SYR TIB MON SIK JAP TUR URU USA SOV FRA ENG VEN YEM YUG U33 U72 LAO U03 }
+  CHI        = { }
+  U03        = { }
+  USA        = { }
+  SOV        = { }
+  FRA        = { }
+  ENG        = { }
+  JAP        = { }
+  HOL        = { }
+  INO        = { }
+  U72        = { }
+}
+globaldata = {
+  startdate = { year = 1945 month = october day = 0 }
+  axis = {
+    id          = { type = 15000 id = 2 }
+    participant = { }
+  }
+  allies = {
+    id          = { type = 15000 id = 1 }
+    participant = { USA ENG }
+  }
+  comintern = {
+    id          = { type = 15000 id = 3 }
+    participant = { SOV }
+  }
+  alliance = {
+    id          = { type = 15000 id = 10 }
+    participant = { CHI CGX CSX CYN CXB }
+  }
+  war = {
+    id          = { type = 9430 id = 4 }
+    date        = { year = 1936 month = january day = 0 }
+    enddate     = { year = 1936 month = january day = 0 }
+    attackers   = {
+      id          = { type = 9430 id = 5 }
+      participant = { CHC }
+    }
+    defenders   = {
+      id          = { type = 9430 id = 6 }
+      participant = { CHI CXB CGX CSX CYN }
+    }
+  }
+  enddate   = { year = 1964 month = january day = 0 }
+}
+
+include = "db\events2.txt"
+include = "scenarios\CCW2\bases.inc"
+include = "scenarios\CCW2\vp.inc"
+include = "scenarios\CCW2\arg.inc"
+include = "scenarios\CCW2\ast.inc"
+include = "scenarios\CCW2\can.inc"
+include = "scenarios\CCW2\cgx.inc"
+include = "scenarios\CCW2\chc.inc"
+include = "scenarios\CCW2\chi.inc"
+include = "scenarios\CCW2\csx.inc"
+include = "scenarios\CCW2\cxb.inc"
+include = "scenarios\CCW2\cyn.inc"
+include = "scenarios\CCW2\eng.inc"
+include = "scenarios\CCW2\france_without_idc.inc"
+include = "scenarios\CCW2\jap.inc"
+include = "scenarios\CCW2\mon.inc"
+include = "scenarios\CCW2\por.inc"
+include = "scenarios\CCW2\siam.inc"
+include = "scenarios\CCW2\sik.inc"
+include = "scenarios\CCW2\sov.inc"
+include = "scenarios\CCW2\tib.inc"
+include = "scenarios\CCW2\UN.inc"
+include = "scenarios\CCW2\usa.inc"
+include = "scenarios\CCW2\U72.inc"
+include = "scenarios\CCW2\cmb.inc"
+include = "scenarios\CCW2\bur.inc"
+include = "scenarios\CCW2\lao.inc"
+include = "scenarios\CCW2\ino.inc"
+include = "scenarios\CCW2\hol.inc"
+include = "scenarios\CCW2\afg.inc"
+include = "scenarios\CCW2\bel.inc"
+include = "scenarios\CCW2\bhu.inc"
+include = "scenarios\CCW2\bol.inc"
+include = "scenarios\CCW2\bra.inc"
+include = "scenarios\CCW2\chl.inc"
+include = "scenarios\CCW2\col.inc"
+include = "scenarios\CCW2\cos.inc"
+include = "scenarios\CCW2\cub.inc"
+include = "scenarios\CCW2\den.inc"
+include = "scenarios\CCW2\dom.inc"
+include = "scenarios\CCW2\ecu.inc"
+include = "scenarios\CCW2\eth.inc"
+include = "scenarios\CCW2\fin.inc"
+include = "scenarios\CCW2\gre.inc"
+include = "scenarios\CCW2\gua.inc"
+include = "scenarios\CCW2\hai.inc"
+include = "scenarios\CCW2\hon.inc"
+include = "scenarios\CCW2\icl.inc"
+include = "scenarios\CCW2\ire.inc"
+include = "scenarios\CCW2\irq.inc"
+include = "scenarios\CCW2\ita.inc"
+include = "scenarios\CCW2\leb.inc"
+include = "scenarios\CCW2\lib.inc"
+include = "scenarios\CCW2\lux.inc"
+include = "scenarios\CCW2\mex.inc"
+include = "scenarios\CCW2\nep.inc"
+include = "scenarios\CCW2\nic.inc"
+include = "scenarios\CCW2\nor.inc"
+include = "scenarios\CCW2\nzl.inc"
+include = "scenarios\CCW2\omn.inc"
+include = "scenarios\CCW2\pan.inc"
+include = "scenarios\CCW2\par.inc"
+include = "scenarios\CCW2\per.inc"
+include = "scenarios\CCW2\pru.inc"
+include = "scenarios\CCW2\saf.inc"
+include = "scenarios\CCW2\sal.inc"
+include = "scenarios\CCW2\sau.inc"
+include = "scenarios\CCW2\sch.inc"
+include = "scenarios\CCW2\spa.inc"
+include = "scenarios\CCW2\swe.inc"
+include = "scenarios\CCW2\syr.inc"
+include = "scenarios\CCW2\tur.inc"
+include = "scenarios\CCW2\uru.inc"
+include = "scenarios\CCW2\ven.inc"
+include = "scenarios\CCW2\yem.inc"
+include = "scenarios\CCW2\egy.inc"
+include = "scenarios\CCW2\alb.inc"
+include = "scenarios\CCW2\hun.inc"
+include = "scenarios\CCW2\bul.inc"
+include = "scenarios\CCW2\pol.inc"
+include = "scenarios\CCW2\rom.inc"
+include = "scenarios\CCW2\yug.inc"
+include = "scenarios\CCW2\cze.inc"
+include = "scenarios\CCW2\u01.inc"
+include = "scenarios\CCW2\u03.inc"
+include = "scenarios\CCW2\u08.inc"
+include = "scenarios\CCW2\u18.inc"
+include = "scenarios\CCW2\u19.inc"
+include = "scenarios\CCW2\u33.inc"
