@@ -18,7 +18,7 @@ country = {
   puppet             = FRA
   control            = FRA
   capital            = 1337 # 
-  dissent            = 10
+  dissent            = 5
   manpower           = 100
   peacetime_ic_mod       = 0.8
   # Resource Reserves

@@ -2,13 +2,6 @@
 # Country definition for U72 #
 ##############################
 province = {
-  id = 1326 # 海防
-}
-province = {
-  id = 1328 # 河內
-  infra = { size = 0.9 current_size = 0.8 }
-}
-province = {
   id = 1333 # 岘港
 }
 
@@ -20,7 +13,7 @@ country = {
   tag                = U72
   ai                 = "u72_1950.ai"
   intrinsic_gov_type = paternal_autocrat
-  capital            = 1328 # 河內
+  capital            = 3704 # 老街
   manpower           = 50
   research_mod           = 1
   # Resource Reserves
@@ -32,8 +25,8 @@ country = {
   money          = 50
 
   nationalprovinces      = { 1326 1328 3702 3703 3704 3705 3706 3707 3708 3709 3710 1333 1334 3711 1335 3712 1337 1338 }
-  ownedprovinces         = { 1326 1328 3702 3703 3704 3705 3706 3707 3708 3709 1333 3710 1334 3711 1335 3712 1338 }
-  controlledprovinces    = { 1326 1328 3702 3703 3704 3705 3706 3707 3708 1338 3712 3711 1335 1334 3710 1333 3709 }
+  ownedprovinces         = { 3703 3704 3705 3706 3709 1333 3710 1334 3711 1335 3712 1338 }
+  controlledprovinces    = { 3703 3704 3705 3706 1338 3712 3711 1335 1334 3710 1333 3709 }
 
   techapps               = { 7800 5310 5010 6570 6300 14140 14150 14160 1010 1270 14170 78100 1020 1030 1280 66500 66510 66520 66530 66540 }
 

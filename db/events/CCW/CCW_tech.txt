@@ -67,7 +67,7 @@ event = {
 
 	action_a = {
 		name = "开始升级我们的部队 "
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7  value = 3 }
 		command = { type = scrap_model which = b_u7  value = 0	} # 通用
@@ -97,7 +97,7 @@ event = {
 
 	action_a = {
 		name = "新的陆军单位 "
-		command = { type = activate_unit_type which = b_u14 }
+		command = { type = activate_unit_type which = super_heavy_armor }
 	}
 }
 
@@ -160,7 +160,7 @@ event = {
 
 	action_a = {
 		name = "开始升级我们的部队 "
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7 value = 1 }
 		command = { type = scrap_model which = b_u7 value = 0	} # 通用
@@ -194,7 +194,7 @@ event = {
 
 	action_a = {
 		name = "新的陆军单位 "
-		command = { type = activate_unit_type which = b_u14 }
+		command = { type = activate_unit_type which = super_heavy_armor }
 		command = { type = local_setflag which = usaarmor }
 	}
 }
@@ -369,7 +369,7 @@ event = {
 
 	action_a = {
 		name = "开始升级我们的部队 "
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7 value = 4 }
 		command = { type = scrap_model which = b_u7 value = 0	} # 通用
@@ -443,7 +443,7 @@ event = {
 
 	action_a = {
 		name = "开始升级我们的部队 "
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 	}
 }
 
@@ -572,7 +572,7 @@ event = {
 
 	action_a = {
 		name = "民国第一军！"
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7 value = 5 }
 		command = { type = scrap_model which = b_u7 value = 0	} # 通用
@@ -605,7 +605,7 @@ event = {
 
 	action_a = {
 		name = "虎贲！"
-		command = { type = activate_unit_type which = b_u14 }
+		command = { type = activate_unit_type which = super_heavy_armor }
 	}
 }
 
@@ -725,7 +725,7 @@ event = {
 
 	action_a = {
 		name = "祖国第一军！"
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7 value = 6 }
 		command = { type = scrap_model which = b_u7 value = 0	} # 通用
@@ -758,7 +758,7 @@ event = {
 
 	action_a = {
 		name = "铁甲雄风振国威！"
-		command = { type = activate_unit_type which = b_u14 }
+		command = { type = activate_unit_type which = super_heavy_armor }
 	}
 }
 
@@ -846,7 +846,7 @@ event = {
 
 	action_a = {
 		name = "祖国第一军！"
-		command = { type = activate_unit_type which = mechanized }
+#		command = { type = activate_unit_type which = mechanized }
 		command = { type = activate_unit_type which = b_u7 }
 		command = { type = new_model which = b_u7 value = 0	} # 通用
 		command = { type = scrap_model which = b_u7 value = 1	} # 盟軍
@@ -858,825 +858,10 @@ event = {
 
 	}
 }
-##########################################################################
-# 48200-48299  装备交易事件组
-##########################################################################
-event = {
-	id = 48200
-	random = no
 
-	trigger = {
-	            or = {
-	                   country = u18
-	                   country = u19
-	            }
-	            technology = { country = ger value = 2620 }
-	            technology = { country = eng value = 2620 }
-	            technology = { country = fra value = 2620 }
-	            technology = { country = jap value = 2620 }
-	            technology = { country = ita value = 2620 }
-	            technology = { country = sov value = 2620 }
-	            technology = { country = usa value = 2620 }
-	}
-
-	name = "军火交易-重炮"
-	desc = "世界主要国家都具备了生产重炮的能力，重炮开始成为军火市 场的新宠。"
-	style = 0
-#	picture = "resource"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购重炮装备"
-		command = { type = setflag which = HA }
-	}
-}
-
-event = {
-	id = 48202
-	random = no
-
-	trigger = {
-	            or = {
-	                   country = u18
-	                   country = u19
-	            }
-	            technology = { country = ger value = 2730 }
-	            technology = { country = eng value = 2730 }
-	            technology = { country = fra value = 2730 }
-	            technology = { country = jap value = 2730 }
-	            technology = { country = ita value = 2730 }
-	            technology = { country = sov value = 2730 }
-	            technology = { country = usa value = 2730 }
-	}
-
-	name = "军火交易-自行火箭炮"
-	desc = "世界主要国家都具备了生产自行火箭炮的能力，自行火箭炮开 始成为军火市场的新宠。"
-	style = 0
-#	picture = "resource"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购自行火箭炮装备"
-		command = { type = setflag which = SRA }
-	}
-}
-
-event = {
-	id = 48203
-	random = no
-
-	trigger = {
-	            or = {
-	                   country = u18
-	                   country = u19
-	            }
-	            technology = { country = ger value = 2220 }
-	            technology = { country = eng value = 2220 }
-	            technology = { country = fra value = 2220 }
-	            technology = { country = jap value = 2220 }
-	            technology = { country = ita value = 2220 }
-	            technology = { country = sov value = 2220 }
-	            technology = { country = usa value = 2220 }
-	}
-
-	name = "军火交易-自行火炮"
-	desc = "世界主要国家都具备了生产自行火炮的能力，自行火炮开始成 为军火市场的新宠。"
-	style = 0
-#	picture = "resource"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购自行火炮装备"
-		command = { type = setflag which = SPA }
-	}
-}
-
-event = {
-	id = 48204
-	random = no
-
-	trigger = {
-	            or = {
-	                   country = u18
-	                   country = u19
-	            }
-	            technology = { country = ger value = 2160 }
-	            technology = { country = eng value = 2160 }
-	            technology = { country = fra value = 2160 }
-	            technology = { country = jap value = 2160 }
-	            technology = { country = ita value = 2160 }
-	            technology = { country = sov value = 2160 }
-	            technology = { country = usa value = 2160 }
-	}
-
-	name = "军火交易-歼击坦克"
-	desc = "世界主要国家都具备了生产歼击坦克的能力，歼击坦克开始成 为军火市场的新宠。"
-	style = 0
-#	picture = "resource"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购歼击坦克装备"
-		command = { type = setflag which = DT }
-	}
-}
-
-event = {
-	id = 48205
-	random = no
-
-	trigger = {
-	            or = {
-	                   country = u18
-	                   country = u19
-	            }
-	            technology = { country = ger value = 2090 }
-	            technology = { country = eng value = 2090 }
-	            technology = { country = fra value = 2090 }
-	            technology = { country = jap value = 2090 }
-	            technology = { country = ita value = 2090 }
-	            technology = { country = sov value = 2090 }
-	            technology = { country = usa value = 2090 }
-	}
-
-	name = "军火交易-重型坦克"
-	desc = "世界主要国家都具备了生产重型坦克的能力，重型坦克开始成 为军火市场的新宠。"
-	style = 0
-#	picture = "resource"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购重型坦克装备"
-		command = { type = setflag which = HT }
-	}
-}
-
-event = {
-	id = 48218
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    or = {
-                           ai = yes
-                           and = {
-                                   ai = no
-                                   money = 3000
-                           }
-                    }
-		    not = { technology = 2610 }
-                    not = { local_flag = HABUY }
-                    not = { local_flag = noHABUY }
-                    or = {
-                          local_flag = BUYGER
-                          local_flag = BUYSOV
-                          local_flag = BUYUSA
-                    }
-                    flag = HA
-	}
-
-	name = "军火交易-采购重炮"
-	desc = "一个神秘的军火商找到我们的陆军部，告诉我们可以向我们提 供最先进的重炮生产线。"
-	style = 0
-#	picture = "liechepao"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购师属105MM重炮装备"
-		ai_chance = 0
-		command = { type = local_setflag which = HABUY }
-		command = { type = money value = -1000 }		
-		command = { type = activate_unit_type which = b_u8 }
-		command = { type = new_model which = b_u8 value = 0 }
-		command = { type = local_clrflag which = Pay }
-	}
-	action_b = {
-		name = "采购军属150MM重炮装备"
-		ai_chance = 0
-		command = { type = local_setflag which = HABUY }
-		command = { type = money value = -2000 }
-		command = { type = activate_unit_type which = b_u9 }
-		command = { type = new_model which = b_u9 value = 0 }
-		command = { type = local_clrflag which = Pay }
-	}	
-	action_c = {
-		name = "同时采购师属和军属重炮"
-		ai_chance = 100
-		command = { type = local_setflag which = HABUY }
-		command = { type = money value = -3000 }		
-		command = { type = activate_unit_type which = b_u8 }
-		command = { type = new_model which = b_u8 value = 0 }    		
-		command = { type = activate_unit_type which = b_u9 }
-		command = { type = new_model which = b_u9 value = 0 }
-		command = { type = local_clrflag which = Pay }
-	}	
-	action_d = {
-		name = "没有必要（不再发生）"
-		ai_chance = 0
-		command = { type = local_setflag which = noHABUY }
-	}		
-}
-
-event = {
-	id = 48220
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    or = {
-                           ai = yes
-                           and = {
-                                   ai = no
-                                   money = 2000
-                           }
-                    }
-		    not = { technology = 2730 }
-                    not = { local_flag = SRABUY }
-                    not = { local_flag = noSRABUY }
-                    or = {
-                           local_flag = BUYGER
-                           local_flag = BUYSOV
-                           local_flag = BUYUSA
-                    }
-                    flag = SRA
-	}
-
-	name = "军火交易-采购自行火箭炮"
-	desc = "一个神秘的军火商找到我们的陆军部，告诉我们可以向我们提 供最先进的自行火箭炮生产线。"
-	style = 0
-#	picture = "liechepao"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购自行火箭炮装备"
-		ai_chance = 100
-		command = { type = local_setflag which = SRABUY }
-		command = { type = money value = -2000 }
-		command = { type = activate_unit_type which = sp_rct_artillery }
-		command = { type = new_model which = sp_rct_artillery value = 0 }  	
-		command = { type = local_clrflag which = Pay }       			
-	}
-	action_b = {
-		name = "没有必要（不再发生）"
-		ai_chance = 0
-		command = { type = local_setflag which = noSRABUY }
-	}	
-}
-
-event = {
-	id = 48221
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    or = {
-                          ai = yes
-                          and = {
-                                  ai = no
-                                  money = 3000
-                          }
-                    }
-                    not = { technology = 2220 }
-                    not = { local_flag = SPABUY }
-                    not = { local_flag = noSPABUY }
-                    or = {
-                           local_flag = BUYGER
-                           local_flag = BUYSOV
-                           local_flag = BUYUSA
-                    }
-                    flag = SPA
-	}
-
-	name = "军火交易-采购自行火炮"
-	desc = "一个神秘的军火商找到我们的陆军部，告诉我们可以向我们提 供最先进的自行火炮生产线。"
-	style = 0
-#	picture = "liechepao"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购自行火炮装备"
-		ai_chance = 0
-		command = { type = local_setflag which = SPABUY }
-		command = { type = money value = -1500 }
-		command = { type = activate_unit_type which = sp_artillery }
-		command = { type = new_model which = sp_artillery value = 0 }  	
-		command = { type = local_clrflag which = Pay }       			
-	}
-	action_b = {
-		name = "采购突击炮装备"
-		ai_chance = 0
-		command = { type = local_setflag which = SPABUY }
-		command = { type = money value = -1500 }
-		command = { type = activate_unit_type which = b_u5 }
-		command = { type = new_model which = b_u5 value = 0 }  		
-		command = { type = local_clrflag which = Pay }       		
-	}	
-	action_b = {
-		name = "同时采购自行火炮和突击炮装备"
-		ai_chance = 100
-		command = { type = local_setflag which = SPABUY }
-		command = { type = money value = -3000 }
-		command = { type = activate_unit_type which = sp_artillery }
-		command = { type = new_model which = sp_artillery value = 0 }  		
-		command = { type = activate_unit_type which = b_u5 }
-		command = { type = new_model which = b_u5 value = 0 }  		
-		command = { type = local_clrflag which = Pay }       		
-	}		
-	action_d = {
-		name = "没有必要（不再发生）"
-		ai_chance = 0
-		command = { type = local_setflag which = noSPABUY }
-	}	
-}
-
-event = {
-	id = 48222
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    or = {
-                          ai = yes
-                          and = {
-                                 ai = no
-                                 money = 1500
-                          }
-                    }
-		    not = { technology = 2160 }
-		    not = { local_flag = DTBUY }
-		    not = { local_flag = noDTBUY }
-		    or = {
-		           local_flag = BUYGER
-		           local_flag = BUYSOV
-		           local_flag = BUYUSA
-                    }
-                    flag = DT
-	}
-
-	name = "军火交易-采购坦克歼击车"
-	desc = "一个神秘的军火商找到我们的陆军部，告诉我们可以向我们提 供最先进的坦克歼击车生产线。"
-	style = 0
-#	picture = "liechepao"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购坦克歼击车装备"
-		ai_chance = 99
-		command = { type = local_setflag which = DTBUY }
-		command = { type = money value = -1500 }
-		command = { type = activate_unit_type which = tank_destroyer }
-		command = { type = new_model which = tank_destroyer value = 0 }  		
-		command = { type = local_clrflag which = Pay }       		
-	}
-	action_b = {
-		name = "没有必要（不再发生）"
-		ai_chance = 1
-		command = { type = local_setflag which = noDTBUY }
-	}	
-}
-
-event = {
-	id = 48223
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    or = {
-                           ai = yes
-                           and = {
-                                  ai = no
-                                  money = 2000
-                           }
-                    }
-		    not = { technology = 2090 }
-		    not = { local_flag = HTBUY }
-		    not = { local_flag = noHTBUY }
-		    or = {
-                          local_flag = BUYGER
-                          local_flag = BUYSOV
-                          local_flag = BUYUSA
-                    }
-                    flag = HT
-	}
-
-	name = "军火交易-采购重型坦克"
-	desc = "一个神秘的军火商找到我们的陆军部，告诉我们可以向我们提 供最先进的重型坦克生产线。"
-	style = 0
-#	picture = "liechepao"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "采购重型坦克装备"
-		ai_chance = 99
-		command = { type = local_setflag which = HTBUY }
-		command = { type = money value = -2000 }
-		command = { type = activate_unit_type which = heavy_armor }
-		command = { type = new_model which = heavy_armor value = 0 }  		
-		command = { type = local_clrflag which = Pay }    		
-	}
-	action_b = {
-		name = "没有必要（不再发生）"
-		ai_chance = 1
-		command = { type = local_setflag which = noHTBUY }
-	}	
-}
-
-event = {
-	id = 48206
-	random = no
-
-	trigger = { ai = no
-	            major = no random = 40
-                    relation = { which = ger value = 150 }
-                    not = { local_flag = BUYGER }
-                    not = { local_flag = BUYUSA }
-                    not = { local_flag = BUYSOV }
-	}
-
-	name = "德国的军事合作"
-	desc = "随着我们和德国间的关系加深，我们开始逐步和德国展开深度 的军事合作，也许我们可以尝试采购一些装备或是编练德式军 队。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 20 month = january year = 1936 }
-	offset = 15
-	deathdate = { day = 29 month = december year = 1939 }
-
-	action_a = {
-		name = "让总参谋部开始军事合作"
-		command = { type = local_setflag which = BUYGER }
-	}
-}
-
-event = {
-	id = 48207
-	random = no
-
-	trigger = { ai = no
-                    not = { relation = { which = ger value = 120 }   }
-                    local_flag = BUYGER
-	}
-
-	name = "德国的军事合作终止"
-	desc = "随着我们和德国间的关系恶化，德军顾问开始逐步撤出我军， 军事合作终止了。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "军事合作终止"
-		command = { type = local_clrflag which = BUYGER }
-		command = { type = sleepevent which = 48236 }
-	}
-}
-
-event = {
-	id = 48214
-	random = no
-
-	trigger = { ai = no
-	            major = no random = 30
-                    relation = { which = sov value = 150 }
-                    not = { local_flag = BUYGER }
-                    not = { local_flag = BUYUSA }
-                    not = { local_flag = BUYSOV }
-	}
-
-	name = "苏联的军事合作"
-	desc = "随着我们和苏联间的关系加深，我们开始逐步和苏联展开深度 的军事合作，也许我们可以尝试采购一些装备或是编练苏式军 队。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 10 month = january year = 1936 }
-	offset = 15
-	deathdate = { day = 29 month = december year = 1939 }
-
-	action_a = {
-		name = "让总参谋部开始军事合作"
-		command = { type = local_setflag which = BUYSOV }
-	}
-}
-
-event = {
-	id = 48215
-	random = no
-
-	trigger = { ai = no
-                    not = { relation = { which = sov value = 120 } }
-                    local_flag = BUYSOV
-	}
-
-	name = "苏联的军事合作终止"
-	desc = "随着我们和苏联间的关系恶化，苏军顾问开始逐步撤出我军 ，军事合作终止了。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "军事合作终止"
-		command = { type = local_clrflag which = BUYSOV }
-		command = { type = sleepevent which = 48239 }
-	}
-}
-
-event = {
-	id = 48216
-	random = no
-
-	trigger = { ai = no
-                    major = no	 random = 35
-                    relation = { which = usa value = 150 }
-                    not = { local_flag = BUYGER }
-                    not = { local_flag = BUYUSA }
-                    not = { local_flag = BUYSOV }
-	}
-
-	name = "美国的军事合作"
-	desc = "随着我们和美国间的关系加深，我们开始逐步和美国展开深度 的军事合作，也许我们可以尝试采购一些装备或是编练美式军 队。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 15
-	deathdate = { day = 29 month = december year = 1939 }
-
-	action_a = {
-		name = "让总参谋部开始军事合作"
-		command = { type = local_setflag which = BUYUSA }
-	}
-}
-
-event = {
-	id = 48217
-	random = no
-
-	trigger = { ai = no
-                    not = { relation = { which = usa value = 120 }   }
-                    local_flag = BUYUSA
-	}
-
-	name = "美国的军事合作终止"
-	desc = "随着我们和美国间的关系恶化，美军顾问开始逐步撤出我军 ，军事合作终止了。"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "军事合作终止"
-		command = { type = local_clrflag which = BUYUSA }
-		command = { type = sleepevent which = 48240 }
-	}
-}
-
-event = {
-	id = 48236
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    local_flag = BUYGER
-                    not = { local_flag = train }
-                    relation = { which = ger value = 160 }
-                    or = {
-                           ai = yes
-                           and = {
-                                   ai = no
-                                   money = 5000
-                           }
-	            }
-        }
-
-	name = "与德国的军事合作-编练德式新军"
-	desc = "和德国的军事合作已经进入了新的阶段，我们将获得一个每年 编练德式新军的机会！"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "编练德式山地师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }           	
-		command = { type = trigger which = 48237 value = 300 }
-		command = { type = money value = -5850 }	
-		command = { type = add_division value = bergsjaeger when = 8 where = engineer }
-		command = { type = manpowerpool value = -15 }	
-	}
-	action_b = {
-		name = "编练德式标准师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }
-		command = { type = trigger which = 48237 value = 220 }
-		command = { type = money value = -4400 }	       	
-		command = { type = add_division value = infantry when = 10 where = artillery }
-		command = { type = add_division value = infantry when = 10 where = artillery }
-		command = { type = manpowerpool value = -24 }
-	}	
-	action_c = {
-		name = "编练德式装甲师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }	
-		command = { type = trigger which = 48237 value = 300 }
-		command = { type = money value = -6750 }	      	
-		command = { type = add_division value = armor when = 9 where = light_armor_brigade }
-		command = { type = manpowerpool value = -15 }	
-	}	
-	action_d = {
-		name = "我们不需要德式军队"
-		ai_chance = 100
-		command = { type = local_setflag which = train }
-	}		
-}
-
-event = {
-	id = 48237
-	random = no
-	persistent = yes
-
-	name = "新军编成"
-	desc = "我们的新军编练完成，祖国又有了新的钢铁长城！"
-	style = 0
-#	picture = "15th_army"
-
-	action_a = {
-		name = "祖国万岁！"
-		command = { type = local_clrflag which = train }
-	}		
-}
-
-event = {
-	id = 48239
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    local_flag = BUYSOV
-                    not = { local_flag = train }
-                    relation = { which = sov value = 160 }
-                    or = {
-                          ai = yes
-                          and = {
-                                 ai = no
-                                 money = 5000
-                          }
-	            }
-        }
-
-	name = "与苏联的军事合作-编练苏式新军"
-	desc = "和苏联的军事合作已经进入了新的阶段，我们将获得一个每年 编练苏式新军的机会！"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "编练苏式标准师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }
-		command = { type = trigger which = 48237 value = 220 }
-		command = { type = money value = -3080 }	       	
-		command = { type = add_division value = infantry when = 19 where = artillery }
-		command = { type = add_division value = infantry when = 19 where = artillery }
-		command = { type = manpowerpool value = -20 }
-	}	
-	action_b = {
-		name = "编练苏式骑兵师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }	
-		command = { type = trigger which = 48237 value = 280 }
-		command = { type = money value = -3220 }	      	
-		command = { type = add_division value = cavalry when = 25 where = armored_car }
-		command = { type = manpowerpool value = -10 }
-	}	
-	action_c = {
-		name = "编练苏式坦克师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }	
-		command = { type = trigger which = 48237 value = 300 }
-		command = { type = money value = -4500 }	      	
-		command = { type = add_division value = armor when = 18 where = light_armor_brigade }
-		command = { type = manpowerpool value = -12 }
-	}
-	action_d = {
-		name = "我们不需要苏式军队"
-		ai_chance = 100
-		command = { type = local_setflag which = train }
-	}		
-}
-
-event = {
-	id = 48240
-	random = no
-	persistent = yes
-
-	trigger = {
-                    major = no
-                    local_flag = BUYUSA
-                    not = { local_flag = train }
-                    relation = { which = usa value = 160 }
-                    or = {
-                          ai = yes
-                          and = {
-                                 ai = no
-                                 money = 5000
-                          }
-	            }
-        }
-
-	name = "与美国的军事合作-编练美式新军"
-	desc = "和美国的军事合作已经进入了新的阶段，我们将获得一个每年 编练美式新军的机会！"
-	style = 0
-#	picture = "15th_army"
-
-	date = { day = 1 month = january year = 1936 }
-	offset = 60
-	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = "编练美式陆战师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }         	    	
-		command = { type = trigger which = 48237 value = 320 }
-		command = { type = money value = -3600 }	
-		command = { type = add_division value = marine when = 9 where = anti_tank }
-		command = { type = manpowerpool value = -15 }
-	}
-	action_b = {
-		name = "编练美式标准师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }	
-		command = { type = trigger which = 48237 value = 220 }
-		command = { type = money value = -3080 }	       	
-		command = { type = add_division value = infantry when = 27 where = artillery }
-		command = { type = add_division value = infantry when = 27 where = artillery }
-		command = { type = manpowerpool value = -12 }
-	}	
-	action_c = {
-		name = "编练美式装甲师"
-		ai_chance = 0
-		command = { type = local_setflag which = train }	
-		command = { type = trigger which = 48237 value = 300 }
-		command = { type = money value = -4500 }	      	
-		command = { type = add_division value = armor when = 27 where = light_armor_brigade }
-		command = { type = manpowerpool value = -15 }
-	}	
-	action_d = {
-		name = "我们不需要美式军队"
-		ai_chance = 100
-		command = { type = local_setflag which = train }
-	}		
-}
-
+##################################################
+# 
+##################################################
 event = {
 	id = 1730
 	random = no
@@ -2147,7 +1332,8 @@ event = {
 
 	action_a = {
 		name = "利在当代，功在千秋 "
-		command = { type = vp value = 2 }
+		command = { type = vp value = 1 }
+		command = { type = free_money value = -1 }
 		command = { type = local_setflag which = EducationdevelopB1 }
 	}
 }
@@ -2203,6 +1389,7 @@ event = {
 	action_a = {
 		name = " 璀璨的教育之果 "
 		command = { type = vp value = 2 }
+		command = { type = free_money value = -2 }
 		command = { type = local_setflag which = EducationdevelopB2 }
 	}
 }
@@ -2258,6 +1445,7 @@ event = {
 	action_a = {
 		name = "利在当代，功在千秋 "
 		command = { type = vp value = 3 }
+		command = { type = free_money value = -3 }
 		command = { type = local_setflag which = EducationdevelopB3 }
 	}
 }
@@ -2313,6 +1501,7 @@ event = {
 	action_a = {
 		name = "完善的科研系统 "
 		command = { type = vp value = 3 }
+		command = { type = free_money value = -3 }
 		command = { type = local_setflag which = EducationdevelopB4 }
 	}
 }
@@ -3635,7 +2824,7 @@ event = {
 #		ai = yes
 		}
 
-	name = "AI_EVENT"
+	name = "解放區"
 #	desc = "地太爛了"
 	style = 0
 

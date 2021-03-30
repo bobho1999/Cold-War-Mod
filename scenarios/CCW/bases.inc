@@ -18,6 +18,7 @@ province = {
   supplypool = 5000
   oilpool    = 100
 }#釜山
+
 province = { 
   id =	1627	
   air_base   = { size = 2       current_size =  2       }
@@ -25,67 +26,80 @@ province = {
   supplypool = 500
   oilpool    = 100
 }#塞班
+
 province = { 
   id =	3666
-  air_base   = { size = 6       current_size =  6     }	
-  naval_base = { size =	10	current_size = 	10	}
+  air_base   = { size = 6       current_size =  1     }	
+  naval_base = { size =	10	current_size = 	2	}
  }#长崎-佐世保
+
 province = { 
   id =	1188
-  air_base   = { size = 10      current_size =  10      }	
-  naval_base = { size =	10	current_size = 	10	} 
+  air_base   = { size = 10      current_size =  1      }	
+  naval_base = { size =	10	current_size = 	2	} 
 }#广岛
+
 province = { 
   id =	1189	
-  air_base   = { size = 4       current_size =  4     }
-  naval_base = { size =	10	current_size = 	10     } 
+  air_base   = { size = 4       current_size =  1     }
+  naval_base = { size =	10	current_size = 	1     } 
 }#高知
+
 province = { 
   id =	1180	
-  air_base   = { size = 4       current_size =  4     }
+  air_base   = { size = 4       current_size =  1     }
 }#仙台
+
 province = { 
   id =	1187
-  air_base   = { size = 10       current_size =  10     }	
-  naval_base = { size =	10	current_size = 	10     } 
+  air_base   = { size = 10       current_size =  1     }	
+  naval_base = { size =	10	current_size = 	1     } 
 }#大阪
+
 province = { 
   id =	1191
-  air_base   = { size = 10       current_size =  10     }	
-  naval_base = { size =	10	current_size = 	10     } 
+  air_base   = { size = 10       current_size =  1     }	
+  naval_base = { size =	10	current_size = 	1     } 
 }#鹿儿岛
+
 province = { 
   id =	1186
-  air_base   = { size = 10      current_size =  10      }	
-  naval_base = { size =	10	current_size = 	10	}
+  air_base   = { size = 10      current_size =  1      }	
+  naval_base = { size =	10	current_size = 	1	}
  }#舞鹤
+
 province = {
  id =	1185	
-  air_base   = { size = 6       current_size = 6      }
-  naval_base = { size =	6	current_size = 6      }
+  air_base   = { size = 6       current_size = 1      }
+  naval_base = { size =	6	current_size = 1      }
  }#名古屋
+
 province = { 
   id =	1184
-  air_base   = { size = 10      current_size =  10      }	
-  naval_base = { size =	10	current_size = 	10	}
+  air_base   = { size = 10      current_size =  2      }	
+  naval_base = { size =	10	current_size = 	4	}
 }#东京
+
 province = { 
   id =	3656
   anti_air   = 5	
-  naval_base = { size =	10	current_size = 	10	}
+  naval_base = { size =	10	current_size = 	4	}
  }#横须贺
+
 province =
 { id         = 1183
-  air_base   = { size = 4      current_size = 4      }
-  naval_base = { size = 8      current_size = 8      }
+  air_base   = { size = 4      current_size = 1      }
+  naval_base = { size = 8      current_size = 2      }
 } #新泻
+
 province = { 
   id =	1193	
-  air_base   = { size = 4       current_size = 4        }    
-  naval_base = { size = 6       current_size = 6        }
+  air_base   = { size = 4       current_size = 2        }    
+  naval_base = { size = 6       current_size = 3        }
   supplypool = 1000
   oilpool = 100
 }#冲绳
+
 province = {
   id =	1608	
   naval_base = { size = 2       current_size = 2        }
@@ -104,16 +118,18 @@ id =	1613
  }#特鲁克群岛
 province =
 { id         = 1322
-  air_base   = { size = 10      current_size =  10       }
-  naval_base = { size = 10      current_size =  10       }
+  air_base   = { size = 10      current_size =  5       }
+  naval_base = { size = 10      current_size =  5       }
   supplypool = 1000
   oilpool    = 100
 }  #高雄
+
 province =
 { id         = 1323
-  air_base   = { size = 8      current_size =  8       }
-  naval_base = { size = 8      current_size =  8       }
+  air_base   = { size = 8      current_size =  3       }
+  naval_base = { size = 8      current_size =  5       }
 }  #台北
+
 province =
 { id       = 1199
   air_base = { size = 4 current_size = 4 }

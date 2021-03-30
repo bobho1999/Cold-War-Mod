@@ -183,6 +183,11 @@ province = {
   supplypool = 5000
   oilpool = 100
 }
+province = {
+  id = 1199 # 漢城
+  ic = { size = 3 current_size = 0 }
+  infra = { size = 1 current_size = 0.7 }
+}
 province = { id = 1408 supplypool = 500 } # 阿图岛（尼尔群岛）
 province = {
   id = 1599 # 硫磺島
@@ -232,7 +237,7 @@ province = { id = 1756 supplypool = 100 } # 美属萨摩亚
 province = { id = 1765 supplypool = 100 } # 巴尔米拉环礁
 province = { id = 1766 supplypool = 100 } # 约翰斯顿岛
 province = { id = 1784 supplypool = 500 } # 小笠原諸島
-province = { id = 1785 supplypool = 500 } # 南鳥島（馬?庫斯島）
+province = { id = 1785 supplypool = 500 } # 南鳥島（馬爾庫斯島）
 province = {
   id = 1786 # 威克岛
   supplypool = 500
@@ -240,14 +245,10 @@ province = {
 province = {
   id = 3656 # 横滨◆横须贺港
   ic = { size = 7 current_size = 0 }
-  infra = { size = 0.1 current_size = 0.1 }
+  infra = { size = 1 current_size = 0.1 }
   anti_air = 5
 }
-province = {
-  id = 1199 # 漢城
-  ic = { size = 3 current_size = 0 }
-  infra = { size = 1 current_size = 0.7 }
-}
+
 #####################
 # Country main data #
 #####################
@@ -268,182 +269,177 @@ country = {
   transports     = 2000
   escorts        = 800
 
-	diplomacy = {
-		relation = {
-			tag = ARG
-			value = 75
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = AST
-			value = 150
-			access = yes
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = BEL
-			value = 75
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = BOL
-			value = 85
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = BRA
-			value = 120
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = CAN
-			value = 150
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = CHL
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = COL
-			value = 75
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = COS
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = CUB
-			value = 200
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = DEN value = 75 }
-		relation = {
-			tag = DOM
-			value = 125
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = ECU
-			value = 75
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = ENG value = 150 access = yes }
-		relation = { tag = FRA value = 50 access = yes }
-		relation = {
-			tag = GUA
-			value = 125
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = HAI
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = HOL
-			value = 70
-			access = yes
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = HON
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = IRE value = 75 }
-		relation = { tag = IRQ value = 120 }
-		relation = {
-			tag = ITA
-			value = 125
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = JAP
-			value = 150
-			access = yes
-			guaranteed = { day = 1 month = september year = 1945 }
-		}
-		relation = { tag = LIB value = 200 access = yes }
-		relation = {
-			tag = LUX
-			value = 125
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = MEX
-			value = 125
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = NEP value = 100 }
-		relation = {
-			tag = NIC
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = NOR
-			value = 75
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = {
-			tag = NZL
-			value = 125
-			guaranteed = { day = 8 month = may year = 1945 }
-		}
-		relation = { tag = OMN value = 100 }
-		relation = {
-			tag = PAN
-			value = 175
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = PAR
-			value = 75
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = PHI value = 200 access = yes }
-		relation = { tag = POR value = 100 }
-		relation = {
-			tag = PRU
-			value = 75
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = SAF value = 125 }
-		relation = {
-			tag = SCH
-			guaranteed = { day = 16 month = may year = 1935 }
-		}
-		relation = {
-			tag = SAL
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = SWE value = 75 }
-		relation = {
-			tag = URU
-			value = 100
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = {
-			tag = VEN
-			value = 125
-			guaranteed = { day = 29 month = december year = 1935 }
-		}
-		relation = { tag = YEM value = 100 }
-		relation = { tag = ICL value = 200 access = yes }
-		relation = { tag = TUR value = 20 access = yes }
-		relation = {
-			tag = CHI
-			value = 100
-		}
-	}
-	
-	nukedate = { year = 1945 month = june day = 1 hour = 0 }
-
+  diplomacy = {
+    relation = {
+      tag        = ARG
+      value      = 75
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = AST
+      value      = 150
+      access     = yes
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = BEL
+      value      = 75
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = BOL
+      value      = 85
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = BRA
+      value      = 120
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = CAN
+      value      = 150
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = CHL
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = COL
+      value      = 75
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = COS
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = CUB
+      value      = 200
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = DEN value = 75 }
+    relation = {
+      tag        = DOM
+      value      = 125
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = ECU
+      value      = 75
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = ENG value = 150 access = yes }
+    relation = { tag = FRA value = 50 access = yes }
+    relation = {
+      tag        = GUA
+      value      = 125
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = HAI
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = HOL
+      value      = 70
+      access     = yes
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = HON
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = IRE value = 75 }
+    relation = { tag = IRQ value = 120 }
+    relation = {
+      tag        = ITA
+      value      = 125
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = JAP
+      value      = 150
+      access     = yes
+      guaranteed = { year = 1945 month = september day = 1 }
+    }
+    relation = { tag = LIB value = 200 access = yes }
+    relation = {
+      tag        = LUX
+      value      = 125
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = MEX
+      value      = 125
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = NEP value = 100 }
+    relation = {
+      tag        = NIC
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = NOR
+      value      = 75
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = {
+      tag        = NZL
+      value      = 125
+      guaranteed = { year = 1945 month = may day = 8 }
+    }
+    relation = { tag = OMN value = 100 }
+    relation = {
+      tag        = PAN
+      value      = 175
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = PAR
+      value      = 75
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = PHI value = 200 access = yes }
+    relation = { tag = POR value = 100 }
+    relation = {
+      tag        = PRU
+      value      = 75
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = SAF value = 125 }
+    relation = {
+      tag        = SCH
+      value      = 0
+      guaranteed = { year = 1935 month = may day = 16 }
+    }
+    relation = {
+      tag        = SAL
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = SWE value = 75 }
+    relation = {
+      tag        = URU
+      value      = 100
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = {
+      tag        = VEN
+      value      = 125
+      guaranteed = { year = 1935 month = december day = 29 }
+    }
+    relation = { tag = YEM value = 100 }
+    relation = { tag = ICL value = 200 access = yes }
+    relation = { tag = TUR value = 20 access = yes }
+    relation = { tag = CHI value = 100 }
+  }
   SpyInfo                = { country = "POR" NumberOfSpies = 3 }
   SpyInfo                = { country = "SOV" NumberOfSpies = 5 }
   SpyInfo                = { country = "SPA" NumberOfSpies = 5 }

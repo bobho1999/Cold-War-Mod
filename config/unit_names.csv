@@ -5,7 +5,7 @@
 ;;;;;;;;;;;X
 NAME_INFANTRY;标准步兵师 ;;;;;;;;;;X
 NAME_CAVALRY;骑兵师 ;;;;;;;;;;X
-NAME_MOTORIZED;常备步兵师 ;;;;;;;;;;X
+NAME_MOTORIZED;摩托化步兵師;;;;;;;;;;X
 NAME_MECHANIZED;機械化步兵师 ;;;;;;;;;;X
 NAME_LIGHT_ARMOR; ;;;;;;;;;;X
 NAME_ARMOR;装甲师 ;;;;;;;;;;X
@@ -110,8 +110,8 @@ SNAME_CAS;俯冲 ;;;;;;;;;;X
 SNAME_CAG;舰载 ;;;;;;;;;;X
 SNAME_INFANTRY;标准师 ;;;;;;;;;;X
 SNAME_CAVALRY;骑兵师 ;;;;;;;;;;X
-SNAME_MOTORIZED;常备师 ;;;;;;;;;;X
-SNAME_MECHANIZED;機械化步兵师 ;;;;;;;;;;X
+SNAME_MOTORIZED;摩步师 ;;;;;;;;;;X
+SNAME_MECHANIZED;機步师 ;;;;;;;;;;X
 SNAME_LIGHT_ARMOR;轻坦克 ;;;;;;;;;;X
 SNAME_ARMOR;装甲师 ;;;;;;;;;;X
 SNAME_PARATROOPER;空降师 ;;;;;;;;;;X
@@ -159,8 +159,8 @@ SNAME_NAVAL_SPOTTER_S;海侦_S ;;;;;;;;;;X
 ;;;;;;;;;;;X
 SDESC_INFANTRY;标准步兵师 ;;;;;;;;;;X
 SDESC_CAVALRY;机械化骑兵师 ;;;;;;;;;;X
-SDESC_MOTORIZED;常备步兵师 ;;;;;;;;;;X
-SDESC_MECHANIZED;王牌步兵师 ;;;;;;;;;;X
+SDESC_MOTORIZED;摩托步兵师 ;;;;;;;;;;X
+SDESC_MECHANIZED;機械步兵师 ;;;;;;;;;;X
 SDESC_LIGHT_ARMOR;(L Arm) 轻装甲师 ;;;;;;;;;;X
 SDESC_ARMOR;装甲师 ;;;;;;;;;;X
 SDESC_PARATROOPER;空降师 ;;;;;;;;;;X
@@ -436,19 +436,19 @@ MODEL_jap_1_89;日?51型機械化騎兵旅団 ;;;;;;;;;;X
 MODEL_jap_1_90;日?55型機械化騎兵旅団 ;;;;;;;;;;X
 MODEL_2_0;一戰常備步兵師;;;;;;;;;;X
 MODEL_2_1;27型常備步兵師;;;;;;;;;;X
-MODEL_2_2;35型摩托化常備步兵師;;;;;;;;;;X
-MODEL_2_3;39型摩托化常備步兵師;;;;;;;;;;X
-MODEL_2_4;42型摩托化常備步兵師;;;;;;;;;;X
-MODEL_2_5;45型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_6;48型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_7;52型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_8;56型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_9;60型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_10;68型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_11;74型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_12;81型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_13;84型機械化常備步兵師;;;;;;;;;;X
-MODEL_2_14;88型機械化常備步兵師;;;;;;;;;;X
+MODEL_2_2;35型摩托化步兵師;;;;;;;;;;X
+MODEL_2_3;39型摩托化步兵師;;;;;;;;;;X
+MODEL_2_4;42型摩托化步兵師;;;;;;;;;;X
+MODEL_2_5;45型摩托化步兵師;;;;;;;;;;X
+MODEL_2_6;48型摩托化步兵師;;;;;;;;;;X
+MODEL_2_7;52型摩托化步兵師;;;;;;;;;;X
+MODEL_2_8;56型摩托化步兵師;;;;;;;;;;X
+MODEL_2_9;60型摩托化步兵師;;;;;;;;;;X
+MODEL_2_10;68型摩托化步兵師;;;;;;;;;;X
+MODEL_2_11;74型摩托化步兵師;;;;;;;;;;X
+MODEL_2_12;81型摩托化步兵師;;;;;;;;;;X
+MODEL_2_13;84型摩托化步兵師;;;;;;;;;;X
+MODEL_2_14;88型摩托化步兵師;;;;;;;;;;X
 MODEL_2_15;;;;;;;;;;;X
 MODEL_2_16;一戰常備步兵?;;;;;;;;;;X
 MODEL_2_17;@GER國防?55型常備步兵?;;;;;;;;;;X
@@ -1496,6 +1496,7 @@ BRIG_MODEL_15_9;超音速护航机中队 ;;;;;;;;;;X
 BRIG_MODEL_15_10;超音速护航机中队 ;;;;;;;;;;X
 BRIG_MODEL_15_11;超音速护航机中队 ;;;;;;;;;;X
 BRIG_MODEL_15_12;改良超音速护航战斗机 ;;;;;;;;;;X
+;;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X

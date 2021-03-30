@@ -4,7 +4,6 @@
 
 country = {
   tag                = SYR
-  control            = FRA
   capital            = 1792 # 大马士革
   manpower           = 110
   # Resource Reserves

@@ -1,22 +1,3 @@
-
-################
-#解放海南
-#####################################
-event = {
-  id = 20270
-  random = no
-  country = U01
-  
-  name = "解放海南 " 
-  desc = "随着解放战争的进行，中共开始了对海南的进攻，在1950年4月 占领了海口，成功解放了海南。"
-  picture = "解放海南"
-  style = 0
-  
-  action_a = {
-    name = "解放海南岛！ "
-    command = { type = dissent value = -2 }
-  }
-}
 ################
 #进军西藏
 #####################################
@@ -53,46 +34,7 @@ event = {
     command = { type = sleepevent which = 19910 }
     }
 }
-################
-#解放中国大陆
-#####################################
-event = {
-  id = 19630
-  random = no
-  country = U01
-  
-  name = "解放中国大陆 " 
-  desc = "随着解放战争的进行，中共开始了对民国政府的总攻， 在渡江战役占领南京，而后迅速解放了中国大陆。"
-  picture = "events_empty"
-  style = 0
-  
-  trigger = {
-    war = { country = U01  country = CHI }  
-    exists = CHI
-    event = 20270
-    event = 20280
-    event = 20240
-    not = { 
-       exists = CGX 
-       exists = CYN 
-    }
-  } 
-  date = { day = 1 month = january year = 1949 }
-  offset = 1
-  deathdate = { day = 30 month = december year = 1960 }
-  
-  action_a = {
-    name = "继续追击国民党！ "
-    ai_chance = 5
-    command = { type = dissent value = -1 }
-  }
-  action_b = {
-    name = "我们还没有能力进攻台湾 "
-    ai_chance = 95
-    command = { type = dissent value = -5 }
-    command = { type = peace which = CHI value = 1 }
-    }
-}
+
 ################
 #TUN BING TIB
 #############################################

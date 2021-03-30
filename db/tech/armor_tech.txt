@@ -833,7 +833,7 @@ technology =
     component = { id = 2204 name = TECH_CMP_ARMOR_20_4_NAME type = industrial_engineering difficulty = 9 }
     # 准现代坦克歼击车原型测试 
     component = { id = 2205 name = TECH_CMP_ARMOR_20_5_NAME type = technical_efficiency difficulty = 9 }
-    required  = { 2130 2400 2190 }
+    required  = { 2150 2410 2190 }
     effects =
     { command = { type = info_may_cause which = 1310 }
       command = { type = new_model which = tank_destroyer value = 5 }
@@ -859,7 +859,7 @@ technology =
     component = { id = 2214 name = TECH_CMP_ARMOR_21_4_NAME type = industrial_engineering difficulty = 10 }
     # 现代坦克歼击车原型测试 
     component = { id = 2215 name = TECH_CMP_ARMOR_21_5_NAME type = technical_efficiency difficulty = 10 }
-    required  = { 2140 2410 2200 }
+    required  = { 2130 2410 2200 }
     effects =
     { command = { type = info_may_cause which = 1320 }
       command = { type = new_model which = tank_destroyer value = 6 }
@@ -996,7 +996,7 @@ technology =
     component = { id = 2254 name = TECH_CMP_ARMOR_25_4_NAME type = industrial_engineering difficulty = 10 }
     # 先进突击炮原型测试 
     component = { id = 2255 name = TECH_CMP_ARMOR_25_5_NAME type = technical_efficiency difficulty = 10 }
-    required  = { 2240 }
+    required  = { 2240 2340 }
     effects =
     { command = { type = info_may_cause which = 1220 }
       command = { type = info_may_cause which = 1300 }
@@ -1023,7 +1023,7 @@ technology =
     component = { id = 2264 name = TECH_CMP_ARMOR_26_4_NAME type = industrial_engineering difficulty = 11 }
     # 准现代突击炮原型测试 
     component = { id = 2265 name = TECH_CMP_ARMOR_26_5_NAME type = technical_efficiency difficulty = 11 }
-    required  = { 2340 2250 }
+    required  = { 2350 2250 }
     effects =
     { command = { type = info_may_cause which = 1230 }
       command = { type = info_may_cause which = 1310 }
@@ -1050,7 +1050,7 @@ technology =
     component = { id = 2274 name = TECH_CMP_ARMOR_27_4_NAME type = industrial_engineering difficulty = 12 }
     # 现代突击炮原型测试 
     component = { id = 2275 name = TECH_CMP_ARMOR_27_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23500 2260 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -1077,7 +1077,7 @@ technology =
     component = { id = 2974 name = TECH_CMP_ARMOR_93_4_NAME type = industrial_engineering difficulty = 12 }
     # 
     component = { id = 2975 name = TECH_CMP_ARMOR_93_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23510 2270 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -1104,7 +1104,7 @@ technology =
     component = { id = 2984 name = TECH_CMP_ARMOR_94_4_NAME type = industrial_engineering difficulty = 12 }
     # 
     component = { id = 2985 name = TECH_CMP_ARMOR_94_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23520 22700 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -1131,7 +1131,7 @@ technology =
     component = { id = 2994 name = TECH_CMP_ARMOR_95_4_NAME type = industrial_engineering difficulty = 12 }
     # 
     component = { id = 2995 name = TECH_CMP_ARMOR_95_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23530 22710 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -1158,7 +1158,7 @@ technology =
     component = { id = 3004 name = TECH_CMP_ARMOR_96_4_NAME type = industrial_engineering difficulty = 12 }
     # 
     component = { id = 3005 name = TECH_CMP_ARMOR_96_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23540 22720 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -1185,7 +1185,7 @@ technology =
     component = { id = 22744 name = TECH_CMP_ARMOR_138_4_NAME type = industrial_engineering difficulty = 12 }
     # TECH_CMP_ARMOR_96_5_NAME
     component = { id = 22745 name = TECH_CMP_ARMOR_138_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2350 2260 }
+    required  = { 23550 22730 }
     effects =
     { command = { type = info_may_cause which = 1240 }
       command = { type = info_may_cause which = 1320 }
@@ -2198,7 +2198,7 @@ technology =
     component = { id = 2924 name = TECH_CMP_ARMOR_98_4_NAME type = electronics difficulty = 9 }
     # 
     component = { id = 2925 name = TECH_CMP_ARMOR_98_5_NAME type = training difficulty = 9 }
-    required  = { 23510 2470 }
+    required  = { 23510 2910 }
     effects =
     { command = { type = aa_batteries value = 40 }
       command = { type = building_prod_mod which = flak value = 5 }
@@ -2227,7 +2227,7 @@ technology =
     component = { id = 2934 name = TECH_CMP_ARMOR_99_4_NAME type = electronics difficulty = 9 }
     # 
     component = { id = 2935 name = TECH_CMP_ARMOR_99_5_NAME type = training difficulty = 9 }
-    required  = { 23520 2470 }
+    required  = { 23520 2920 }
     effects =
     { command = { type = aa_batteries value = 40 }
       command = { type = building_prod_mod which = flak value = 5 }
@@ -2256,7 +2256,7 @@ technology =
     component = { id = 2944 name = TECH_CMP_ARMOR_100_4_NAME type = electronics difficulty = 9 }
     # 
     component = { id = 2945 name = TECH_CMP_ARMOR_100_5_NAME type = training difficulty = 9 }
-    required  = { 23530 2470 }
+    required  = { 2930 23530 }
     effects =
     { command = { type = aa_batteries value = 40 }
       command = { type = building_prod_mod which = flak value = 5 }
@@ -2285,7 +2285,7 @@ technology =
     component = { id = 2954 name = TECH_CMP_ARMOR_101_4_NAME type = electronics difficulty = 9 }
     # 
     component = { id = 2955 name = TECH_CMP_ARMOR_101_5_NAME type = training difficulty = 9 }
-    required  = { 23540 2470 }
+    required  = { 23540 2940 }
     effects =
     { command = { type = aa_batteries value = 40 }
       command = { type = building_prod_mod which = flak value = 5 }
@@ -2989,7 +2989,7 @@ technology =
     component = { id = 2744 name = TECH_CMP_ARMOR_74_4_NAME type = artillery difficulty = 8 }
     # 改良自行火箭炮原型测试 
     component = { id = 2745 name = TECH_CMP_ARMOR_74_5_NAME type = technical_efficiency difficulty = 8 }
-    required  = { 2730 2230 2570 }
+    required  = { 2730 2230 2580 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 2 }
       command = { type = scrap_model which = sp_rct_artillery value = 1 }
@@ -3014,7 +3014,7 @@ technology =
     component = { id = 2754 name = TECH_CMP_ARMOR_75_4_NAME type = artillery difficulty = 9 }
     # 先进自行火箭炮原型测试 
     component = { id = 2755 name = TECH_CMP_ARMOR_75_5_NAME type = technical_efficiency difficulty = 9 }
-    required  = { 2740 2240 2580 }
+    required  = { 2740 2240 2590 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 3 }
       command = { type = scrap_model which = sp_rct_artillery value = 2 }
@@ -3039,7 +3039,7 @@ technology =
     component = { id = 2764 name = TECH_CMP_ARMOR_76_4_NAME type = artillery difficulty = 10 }
     # 准现代自行火箭炮原型测试 
     component = { id = 2765 name = TECH_CMP_ARMOR_76_5_NAME type = technical_efficiency difficulty = 10 }
-    required  = { 2750 2250 2590 }
+    required  = { 2750 2260 2870 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 4 }
       command = { type = scrap_model which = sp_rct_artillery value = 3 }
@@ -3064,7 +3064,7 @@ technology =
     component = { id = 2774 name = TECH_CMP_ARMOR_77_4_NAME type = artillery difficulty = 12 }
     # 现代自行火箭炮原型测试 
     component = { id = 2775 name = TECH_CMP_ARMOR_77_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2760 2260 2600 }
+    required  = { 2760 22700 2890 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 5 }
       command = { type = scrap_model which = sp_rct_artillery value = 4 }
@@ -3089,7 +3089,7 @@ technology =
     component = { id = 2784 name = TECH_CMP_ARMOR_124_4_NAME type = artillery difficulty = 12 }
     # 
     component = { id = 2785 name = TECH_CMP_ARMOR_124_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2760 2260 2600 }
+    required  = { 2770 22720 2980 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 6 }
       command = { type = scrap_model which = sp_rct_artillery value = 5 }
@@ -3102,7 +3102,7 @@ technology =
   { id        = 2790
     name      = TECH_APP_ARMOR_125_NAME
     desc      = TECH_APP_ARMOR_125_DESC
-    position  = { x = 353 y = 355 }
+    position  = { x = 353 y = 357 }
     year      = 1993
     # 
     component = { id = 2791 name = TECH_CMP_ARMOR_125_1_NAME type = rocketry difficulty = 12 }
@@ -3114,7 +3114,7 @@ technology =
     component = { id = 2794 name = TECH_CMP_ARMOR_125_4_NAME type = artillery difficulty = 12 }
     # 
     component = { id = 2795 name = TECH_CMP_ARMOR_125_5_NAME type = technical_efficiency difficulty = 12 }
-    required  = { 2760 2260 2600 }
+    required  = { 2780 22740 3000 }
     effects =
     { command = { type = new_model which = sp_rct_artillery value = 7 }
       command = { type = scrap_model which = sp_rct_artillery value = 6 }

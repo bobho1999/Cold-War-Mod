@@ -5,7 +5,7 @@
 country = {
   tag                = MON
   puppet             = SOV
-  capital            = 1404 # ì?£¨õÌm°ÍÍĞ£©
+  capital            = 1404 # ì‚£¨õÌm°ÍÍĞ£©
   manpower           = 7
   # Resource Reserves
   energy         = 200

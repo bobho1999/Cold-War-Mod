@@ -265,18 +265,19 @@ event = {
 #########################################################################
 event = { 
 	id = 811719 
-  persistent = yes
-	trigger = { government = democratic
-	            atwar = yes
-	            random = 5
-	 }
+  	persistent = yes
+	trigger = { 
+		government = democratic
+		atwar = yes
+		random = 5
+	}
 
 	name = "反战游行 "
 	desc = "两场世界大战深深地刺痛了人类的内心，和平的力 量在不断崛起 "
 	style = 0
 	picture = "SOV026"
 
-	date = { day = 1 month = may year = 1949 }
+	date = { day = 1 month = may year = 1945 }
 	offset = 10
 
 	action_a = {
@@ -989,16 +990,16 @@ event = {
 		command = { type = free_money value = 10 }
 		command = { type = peacetime_ic_mod value = 50 }
 		command = { type = local_clrflag which = time_of_peace }
-  		command = { type = deactivate_unit_type which = hq }
-  		command = { type = deactivate_unit_type which = armor }
-  		command = { type = deactivate_unit_type which = cavalry }
-  		command = { type = deactivate_unit_type which = infantry }
-  		command = { type = deactivate_unit_type which = militia }
-  		command = { type = deactivate_unit_type which = motorized }
-  		command = { type = deactivate_unit_type which = mechanized }
-  		command = { type = deactivate_unit_type which = marine }
-  		command = { type = deactivate_unit_type which = paratrooper }
-  		command = { type = deactivate_unit_type which = bergsjaeger }
+  		command = { type = activate_unit_type which = hq }
+  		command = { type = activate_unit_type which = armor }
+  		command = { type = activate_unit_type which = cavalry }
+  		command = { type = activate_unit_type which = infantry }
+  		command = { type = activate_unit_type which = militia }
+  		command = { type = activate_unit_type which = motorized }
+  		command = { type = activate_unit_type which = mechanized }
+  		command = { type = activate_unit_type which = marine }
+  		command = { type = activate_unit_type which = paratrooper }
+  		command = { type = activate_unit_type which = bergsjaeger }
 	}	
 }
 

@@ -1321,16 +1321,6 @@ country = {
   landdivision = { dormant = yes id = { type = 11571 id = 230 } name = "四平城防"  type = garrison model = 0 locked = yes } 
   landdivision = { dormant = yes id = { type = 11571 id = 231 } name = "哈爾濱衛戍司令部"  type = garrison model = 1 locked = yes } 
   landdivision = { dormant = yes id = { type = 11571 id = 232 } name = "大別山根據地"  type = garrison model = 1 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 233 } name = "塔山阻擊部队"  type = garrison model = 0 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 234 } name = "塔山阻擊部队"  type = garrison model = 0 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 235 } name = "黑山阻擊部队"  type = garrison model = 0 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 236 } name = "黑山阻擊部队"  type = garrison model = 0 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 237 } name = "黑山阻擊部队"  type = garrison model = 0 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 238 } name = "塔山阻擊部队"  type = infantry model = 5 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 239 } name = "塔山阻擊部队"  type = infantry model = 5 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 240 } name = "黑山阻擊部队"  type = infantry model = 5 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 241 } name = "黑山阻擊部队"  type = infantry model = 5 locked = yes } 
-#  landdivision = { dormant = yes id = { type = 11571 id = 242 } name = "黑山阻擊部队"  type = infantry model = 5 locked = yes } 
   landdivision = { dormant = yes id = { type = 24000 id = 127 } name = "人民解放军第112'平江'师 "  type = motorized model = 5 strength = 100 max_strength = 100 experience = 50 extra = b_u8 brigade_model = 4 } 
   landdivision = { dormant = yes id = { type = 24000 id = 128 } name = "人民解放军第113'平型关'师 "  type = motorized model = 5 strength = 100 max_strength = 100 experience = 60 extra = artillery brigade_model = 5 } 
   landdivision = { dormant = yes id = { type = 24000 id = 129 } name = "人民解放军第114‘天津’师 "  type = cavalry model = 5 strength = 100 max_strength = 100 experience = 50 extra = light_armor_brigade brigade_model = 8 } 
@@ -1351,7 +1341,7 @@ country = {
   landdivision = { dormant = yes id = { type = 24000 id = 141 } name = "人民解放军第2师 "  type = motorized model = 5 strength = 100 max_strength = 100 experience = 30 extra = police brigade_model = 5 } 
   landdivision = { dormant = yes id = { type = 24000 id = 142 } name = "人民解放军第3师 "  type = motorized model = 5 strength = 100 max_strength = 100 experience = 30 extra = engineer brigade_model = 4 } 
   landdivision = { dormant = yes id = { type = 24000 id = 143 } name = "人民解放军第34师 "  type = motorized model = 5 strength = 75 max_strength = 100 experience = 30 extra = artillery brigade_model = 5 } 
-  landdivision = { dormant = yes id = { type = 24000 id = 144 } name = "人民解放军第35'大别山'师 "  type = mechanized model = 1 strength = 75 max_strength = 100 experience = 30 extra = engineer brigade_model = 5  } 
+  landdivision = { dormant = yes id = { type = 24000 id = 144 } name = "人民解放军第35'大别山'师 "  type = mechanized model = 1 strength = 75 max_strength = 100 experience = 30 extra = engineer brigade_model = 5 } 
   landdivision = { dormant = yes id = { type = 24000 id = 145 } name = "人民解放军第36师 "  type = motorized model = 5 strength = 75 max_strength = 100 experience = 30 extra = artillery brigade_model = 5 } 
   landdivision = { dormant = yes id = { type = 24000 id = 146 } name = "人民解放军第32'淮海先锋'师 "  type = bergsjaeger model = 5 strength = 75 max_strength = 100 experience = 50 extra = engineer brigade_model = 5 } 
   landdivision = { dormant = yes id = { type = 24000 id = 147 } name = "人民解放军第40'抗日决死'师 "  type = bergsjaeger model = 5 strength = 75 max_strength = 100 experience = 50 extra = engineer brigade_model = 5 } 

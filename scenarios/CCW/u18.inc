@@ -1,29 +1,29 @@
 ##############################
-# Country definition for u18 #
+# Country definition for U18 #
 ##############################
 
-#####################
-# Country main data #
-#####################
-
-country =
-{ tag                    = u18
-  intrinsic_gov_type     = paternal_autocrat
+country = {
+  tag                = U18
+  intrinsic_gov_type = paternal_autocrat
+  capital            = 4135 # ÁôÄáÍôµºÓ°×Ó
+  manpower           = 0
+  research_mod           = 1
   # Resource Reserves
-  energy                 = 200
-  metal                  = 200
-  rare_materials         = 100
-  oil                    = 100
-  supplies               = 100
-  money                  = 50
-  capital                = 4135 # ºÚ°µ
+  energy         = 200
+  metal          = 200
+  rare_materials = 100
+  oil            = 100
+  supplies       = 100
+  money          = 50
 
-	research_mod = 1.00
+  nationalprovinces      = { 4135 }
+  ownedprovinces         = { 4135 }
+  controlledprovinces    = { 4135 }
 
-  manpower               = 0
-  dissent                = 0
-  policy =
-  { date              = { year = 0 month = january day = 0 }
+  techapps               = { 1010 1020 1030 1040 1050 1890 2720 1900 2800 1910 2810 5310 66500 66510 78100 1060 }
+
+  policy = {
+    date              = { year = 0 month = january day = 0 }
     democratic        = 4
     political_left    = 5
     freedom           = 3
@@ -32,23 +32,4 @@ country =
     defense_lobby     = 5
     interventionism   = 1
   }
-
-  # ºÚ°µ
-  nationalprovinces      = { 4135 }
-  ownedprovinces         = { 4135 }
-  #
-  controlledprovinces    = { 4135 }
-  # u18
-  # ROTW Minor Tech '36
-  # Group E 1936 techs
-  # ######################
-  # GW fighter
-  techapps               = {  }
-  diplomacy =
-  {
-  }
-  # ######
-  # u18
-  # ######
-
 }

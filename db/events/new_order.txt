@@ -759,6 +759,7 @@ event = {
 		name = "冷战的前奏" #
 		command = { type = relation which = SOV value = -20 }
 		command = { type = setflag which = cold_war }
+		command = { type = setflag which = coldwar }
 		command = { type = trigger which = 941137 }
 		command = { type = trigger which = 941138 }
 		command = { type = trigger which = 941139 }
@@ -6116,6 +6117,109 @@ event = {
 		name = "ok"	 
 		command = { type = peace which = CHI value = 1 }
     	}
+}
+
+event = {
+        id = 699000
+        random = no
+        country = U18
+
+        name = "ai_event"
+        style = 0
+
+        date = { day = 10 month = january year = 1936 }
+        offset = 30
+        deathdate = { day = 29 month = december year = 1999 }
+
+        action_a = {
+                 name = "OK"
+                 command = { type = inherit which = u19 }
+                 command = { type = trigger which = 699010 value = 90 }
+        }
+}
+
+event = {
+        id = 699010
+        random = no
+        country = U18
+        persistent = yes
+
+        name = "ai_event"
+        style = 0
+
+        action_a = {
+                 name = "OK"
+                 command = { type = independence which = u19 }
+                 command = { type = trigger which = 699020 value = 90 }
+        }
+}
+
+event = {
+        id = 699020
+        random = no
+        country = U18
+        persistent = yes
+
+        name = "ai_event"
+        style = 0
+
+        action_a = {
+                 name = "OK"
+                 command = { type = inherit which = u19 }
+                 command = { type = trigger which = 699010 value = 90 }
+        }
+}
+
+event = {
+        id = 699021
+        random = no
+        persistent = yes
+
+        name = "testing ic modifier"
+        style = 0
+
+        action_a = {
+                name = "-5% peacetime ic"
+		command = { type = peacetime_ic_mod value = -5 }
+        }
+        action_b = {
+                name = "+5% peacetime ic"
+		command = { type = peacetime_ic_mod value = 5 }
+        }
+        action_c = {
+                name = "-5% total ic"
+    		command = { type = industrial_modifier which = total value = -5 }
+        }
+        action_d = {
+                name = "+5% total ic"
+    		command = { type = industrial_modifier which = total value = 5 }
+        }
+}
+
+event = {
+        id = 699022
+        random = no
+        persistent = yes
+
+        name = "testing free_money/supplies"
+        style = 0
+
+        action_a = {
+                name = "-5 money"
+		command = { type = free_money value = -5 }
+        }
+        action_b = {
+                name = "+5 money"
+		command = { type = free_money value = 5 }
+        }
+        action_c = {
+                name = "-5 supplies"
+		command = { type = free_supplies value = -5 }
+        }
+        action_d = {
+                name = "+5 supplies"
+		command = { type = free_supplies value = 5 }
+        }
 }
 ######################################################
 ##蘇聯解體

@@ -1,8 +1,8 @@
 #UK AI
 
 switch = no
-claim_acceptance = 10
-neutrality = 30
+claim_acceptance = -49
+neutrality = 50
 # The countries we will set free if we control their territory.
 liberate = {
 	LIT
@@ -11,7 +11,6 @@ liberate = {
 	RUS
 	BLR
 	GEO
-	U33
 	U34
 	U82
 	UKR
@@ -52,9 +51,9 @@ combat = {
 	POL = 70
 	CZE = 70
 	DDR = 70
-	U65 = 70
+	U13 = 70
 	#ASIA
-	U66 = 80
+	U72 = 80
 	CHC = 85
 	PRK = 75
 }
@@ -86,7 +85,7 @@ protect = {
 	NZL = 200 # New Zealand
 	
 	#OFF-MAP
-	U69 = 300 # United Nations
+	U99 = 300 # United Nations
 }
 # Countries listed here are considered our natural allies. We will try to influence them and ally with them.
 befriend = {

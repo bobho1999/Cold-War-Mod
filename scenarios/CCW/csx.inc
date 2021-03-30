@@ -281,7 +281,7 @@ country = {
     location = 1208
     division = {
       id             = { type = 22002 id = 608 }
-      name           = "歸綏城防" #歸綏
+      name           = "歸綏城防"
       type           = garrison
       model          = 0
       extra          = engineer
@@ -308,7 +308,7 @@ country = {
   }
   landunit = {
     id       = { type = 22002 id = 39 }
-    name     = "綏遠省保安司令部"  #綏遠
+    name     = "綏遠省保安司令部"
     location = 1208
     division = {
       id             = { type = 22002 id = 47 }

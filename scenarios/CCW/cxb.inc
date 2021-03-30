@@ -45,8 +45,6 @@ country = {
     defense_lobby     = 10
     interventionism   = 3
   }
-  #chiefofnavy            = { type = 9 id = 16119 } # 
-  #chiefofair             = { type = 9 id = 16078 } # 
   nationalidentity       = "policy_economy_natural"
   socialpolicy           = "policy_social_Islam"
   nationalculture        = "policy_political_conservatism"

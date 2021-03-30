@@ -265,7 +265,7 @@ technology =
       command = { type = morale which = naval_bomber value = 3 }
     }
   }
-  #  战场拦截学说 
+  # 战场拦截学说 
   application =
   { id        = 9100
     name      = TECH_APP_AD_10_NAME
@@ -291,7 +291,7 @@ technology =
       command = { type = task_efficiency which = airborne_assault value = 0.3 }
     }
   }
-  # Strafing学说 
+  # 猛烈轰炸学说 
   application =
   { id        = 9110
     name      = TECH_APP_AD_11_NAME
@@ -1084,7 +1084,7 @@ technology =
     { command = { type = max_organization which = strategic_bomber value = 6 }
     }
   }
-  # Carpet Bombing Doctrine
+  # 地毯式轰炸学说 
   application =
   { id        = 9450
     name      = TECH_APP_AD_45_NAME
@@ -1107,7 +1107,7 @@ technology =
       command = { type = task_efficiency which = strategic_bombardment value = 0.1 }
     }
   }
-  # Flying Armada Doctrine
+  # 飞行机群学说 
   application =
   { id        = 9460
     name      = TECH_APP_AD_46_NAME
@@ -1128,7 +1128,7 @@ technology =
     { command = { type = max_organization which = strategic_bomber value = 6 }
     }
   }
-  # 空降理论学说 
+  # 冷戰空戰理論
   application =
   { id        = 97000
     name      = TECH_APP_AD_50_NAME
@@ -1150,7 +1150,7 @@ technology =
     { command = { }
     }
   }
-  # 空降計畫學說
+  # 空中优势防御 
   application =
   { id        = 97010
     name      = TECH_APP_AD_51_NAME
@@ -1174,7 +1174,7 @@ technology =
       command = { type = aa_batteries value = 5 }
     }
   }
-  # 混合编组学说 
+  # 重视截击机 
   application =
   { id        = 97020
     name      = TECH_APP_AD_52_NAME
@@ -1196,7 +1196,7 @@ technology =
       command = { type = morale which = interceptor value = 5 }
     }
   }
-  # Anti Air Gun Support
+  # 防空炮支持 
   application =
   { id        = 97030
     name      = TECH_APP_AD_53_NAME
@@ -1219,7 +1219,7 @@ technology =
       command = { type = building_prod_mod which = flak value = 50 }
     }
   }
-  # Const Readiness学说 
+  # 随时待命学说 
   application =
   { id        = 97040
     name      = TECH_APP_AD_54_NAME
@@ -1242,7 +1242,7 @@ technology =
       command = { type = aa_batteries value = 5 }
     }
   }
-  # Intensive Airspace Surveillance
+  # 强化空域监视 
   application =
   { id        = 97050
     name      = TECH_APP_AD_55_NAME
@@ -1274,7 +1274,7 @@ technology =
       command = { type = morale which = interceptor value = 5 }
     }
   }
-  # Enemy Air Force Attrition
+  # 敌空军力量消耗 
   application =
   { id        = 97060
     name      = TECH_APP_AD_56_NAME
@@ -1296,7 +1296,7 @@ technology =
       command = { type = max_organization which = air value = 5 }
     }
   }
-  # 全天候空降学说 
+  # 空中优势进攻 
   application =
   { id        = 97070
     name      = TECH_APP_AD_57_NAME
@@ -1320,7 +1320,7 @@ technology =
       command = { type = task_efficiency which = air_superiority value = 0.25 }
     }
   }
-  # 空降运输学说 
+  # 重视通用战斗机 
   application =
   { id        = 97080
     name      = TECH_APP_AD_58_NAME
@@ -1344,7 +1344,7 @@ technology =
       command = { type = morale which = multi_role value = 2 }
     }
   }
-  # 航位推测学说 
+  # 预先计划作战 
   application =
   { id        = 97090
     name      = TECH_APP_AD_59_NAME
@@ -1366,7 +1366,7 @@ technology =
       command = { type = morale which = multi_role value = 5 }
     }
   }
-  # 夜间空降飞行学说 
+  # 快速空中优势 
   application =
   { id        = 97100
     name      = TECH_APP_AD_60_NAME
@@ -1387,7 +1387,7 @@ technology =
     { command = { type = max_organization which = multi_role value = 10 }
     }
   }
-  # Bad Weather Combat学说 
+  # 恶劣天气下空战技术 
   application =
   { id        = 97110
     name      = TECH_APP_AD_61_NAME
@@ -1419,7 +1419,7 @@ technology =
       command = { type = max_organization which = multi_role value = 5 }
     }
   }
-  # Preemptive Strike学说 
+  # 先发制人学说 
   application =
   { id        = 97120
     name      = TECH_APP_AD_62_NAME
@@ -1447,7 +1447,7 @@ technology =
       command = { type = task_efficiency which = runway_cratering value = 0.3 }
     }
   }
-  # 舰载机滞空护航学说 
+  # 灵活反应学说 
   application =
   { id        = 97130
     name      = TECH_APP_AD_63_NAME
@@ -1475,7 +1475,7 @@ technology =
       command = { type = task_efficiency which = runway_cratering value = 0.1 }
     }
   }
-  # 舰载机快速起降学说 
+  # 重型目标优先破坏 
   application =
   { id        = 97140
     name      = TECH_APP_AD_64_NAME
@@ -1499,7 +1499,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 3 }
     }
   }
-  # 舰载机空中拦截学说 
+  # 重视战术轰炸机 
   application =
   { id        = 97150
     name      = TECH_APP_AD_65_NAME
@@ -1521,7 +1521,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 3 }
     }
   }
-  # 舰载机自由攻击学说 
+  # 装甲破坏学说 
   application =
   { id        = 97160
     name      = TECH_APP_AD_66_NAME
@@ -1543,7 +1543,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 3 }
     }
   }
-  # 舰载机港口打击学说 
+  # 破坏基础设施学说 
   application =
   { id        = 97170
     name      = TECH_APP_AD_67_NAME
@@ -1565,7 +1565,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 3 }
     }
   }
-  # 舰载机夜间攻击学说 
+  # 重视空地导弹 
   application =
   { id        = 97180
     name      = TECH_APP_AD_68_NAME
@@ -1588,7 +1588,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 3 }
     }
   }
-  # 舰载机毁灭舰队学说 
+  # 重视精确制导武器 
   application =
   { id        = 97190
     name      = TECH_APP_AD_69_NAME
@@ -1612,7 +1612,7 @@ technology =
       command = { type = morale which = tactical_bomber value = 5 }
     }
   }
-  # Modern Desert Operations
+  # 现代沙漠作战 
   application =
   { id        = 97200
     name      = TECH_APP_AD_70_NAME
@@ -1637,7 +1637,7 @@ technology =
       command = { type = mountain_attack which = tactical_bomber value = 10 }
     }
   }
-  # Infantry Destruction Focus
+  # 重视步兵摧毁 
   application =
   { id        = 97210
     name      = TECH_APP_AD_71_NAME
@@ -1661,7 +1661,7 @@ technology =
       command = { type = morale which = cas value = 3 }
     }
   }
-  # 
+  # 重视空中支持 
   application =
   { id        = 97220
     name      = TECH_APP_AD_72_NAME
@@ -1683,7 +1683,7 @@ technology =
       command = { type = morale which = cas value = 3 }
     }
   }
-  # 
+  # 固定翼武装学说 
   application =
   { id        = 97230
     name      = TECH_APP_AD_73_NAME
@@ -1706,7 +1706,7 @@ technology =
       command = { type = morale which = cas value = 3 }
     }
   }
-  # 
+  # 枯叶剂战场应用 
   application =
   { id        = 97240
     name      = TECH_APP_AD_74_NAME
@@ -1755,7 +1755,7 @@ technology =
       command = { type = swamp_move which = bergsjaeger value = 5 }
     }
   }
-  # 
+  # 集束炸弹使用 
   application =
   { id        = 97250
     name      = TECH_APP_AD_75_NAME
@@ -1779,7 +1779,7 @@ technology =
       command = { type = task_efficiency which = interdiction value = 0.1 }
     }
   }
-  # 
+  # 武装直升机学说 
   application =
   { id        = 97260
     name      = TECH_APP_AD_76_NAME
@@ -1810,7 +1810,7 @@ technology =
       command = { type = hill_defense which = land value = 5 }
     }
   }
-  # 
+  # 现代丛林作战 
   application =
   { id        = 97270
     name      = TECH_APP_AD_77_NAME
@@ -1840,7 +1840,7 @@ technology =
       command = { type = max_organization which = strategic_bomber value = 5 }
     }
   }
-  # 
+  # 直升机空降突击 
   application =
   { id        = 97280
     name      = TECH_APP_AD_78_NAME
@@ -1864,7 +1864,7 @@ technology =
       command = { type = task_efficiency which = airborne_assault value = 0.1 }
     }
   }
-  # 
+  # 全地形空降突击 
   application =
   { id        = 97290
     name      = TECH_APP_AD_79_NAME
@@ -1891,7 +1891,7 @@ technology =
       command = { type = task_efficiency which = airborne_assault value = 0.05 }
     }
   }
-  # 
+  # 隐形空降突击
   application =
   { id        = 97300
     name      = TECH_APP_AD_80_NAME
@@ -1913,7 +1913,7 @@ technology =
       command = { type = task_efficiency which = airborne_assault value = 0.1 }
     }
   }
-  # 
+  # 重视战略轰炸机 
   application =
   { id        = 97310
     name      = TECH_APP_AD_81_NAME
@@ -1936,7 +1936,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 15 }
     }
   }
-  # 
+  # 重视战略导弹 
   application =
   { id        = 97320
     name      = TECH_APP_AD_82_NAME
@@ -1959,7 +1959,7 @@ technology =
       command = { type = morale which = flying_rocket value = 30 }
     }
   }
-  # 
+  # 主动性市民防御 
   application =
   { id        = 97330
     name      = TECH_APP_AD_83_NAME
@@ -1981,7 +1981,7 @@ technology =
     { command = { type = building_prod_mod which = radar_station value = 25 }
     }
   }
-  # 
+  # 战略航空指挥部 
   application =
   { id        = 97340
     name      = TECH_APP_AD_84_NAME
@@ -2004,7 +2004,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 10 }
     }
   }
-  # 
+  # 战略导弹指挥部 
   application =
   { id        = 97350
     name      = TECH_APP_AD_85_NAME
@@ -2029,7 +2029,7 @@ technology =
       command = { type = building_prod_mod which = flak value = 50 }
     }
   }
-  # 
+  # 核扩散 
   application =
   { id        = 97360
     name      = TECH_APP_AD_86_NAME
@@ -2050,7 +2050,7 @@ technology =
     { command = { type = nuke_damage value = 40 }
     }
   }
-  # 
+  # 空中防御系统 
   application =
   { id        = 97370
     name      = TECH_APP_AD_87_NAME
@@ -2078,7 +2078,7 @@ technology =
       command = { type = morale which = multi_role value = 10 }
     }
   }
-  # 
+  # 战略轰炸机核威慑
   application =
   { id        = 97380
     name      = TECH_APP_AD_88_NAME
@@ -2103,7 +2103,7 @@ technology =
       command = { type = morale which = strategic_bomber value = 10 }
     }
   }
-  # 
+  # 陆基洲际弹道导弹核威慑 
   application =
   { id        = 97390
     name      = TECH_APP_AD_89_NAME
@@ -2129,7 +2129,7 @@ technology =
       command = { type = building_prod_mod which = flak value = 50 }
     }
   }
-  # 
+  # 潜射导弹核威慑 
   application =
   { id        = 97400
     name      = TECH_APP_AD_90_NAME
@@ -2155,7 +2155,7 @@ technology =
       command = { type = morale which = nuclear_submarine value = 15 }
     }
   }
-  # 
+  # 海军轰炸机反舰任务 
   application =
   { id        = 97410
     name      = TECH_APP_AD_91_NAME
@@ -2177,7 +2177,7 @@ technology =
       command = { type = morale which = naval_bomber value = 3 }
     }
   }
-  # 
+  # 海军轰炸机反潜任务 
   application =
   { id        = 97420
     name      = TECH_APP_AD_92_NAME
@@ -2198,7 +2198,7 @@ technology =
     { command = { type = max_organization which = naval_bomber value = 6 }
     }
   }
-  # 
+  # 海军轰炸机反航母任务 
   application =
   { id        = 97430
     name      = TECH_APP_AD_93_NAME
@@ -2219,7 +2219,7 @@ technology =
     { command = { type = max_organization which = naval_bomber value = 6 }
     }
   }
-  # 
+  # 海军轰炸机港口轰炸任务 
   application =
   { id        = 97440
     name      = TECH_APP_AD_94_NAME
@@ -2240,7 +2240,7 @@ technology =
     { command = { type = task_efficiency which = port_strike value = 0.15 }
     }
   }
-  # 
+  # 海军轰炸机全天候任务 
   application =
   { id        = 97450
     name      = TECH_APP_AD_95_NAME
@@ -2645,7 +2645,7 @@ technology =
       command = { type = enable_task which = convoy_air_raiding }
     }
   }
-  # Mid-Cold War Era Air Combat
+  # 冷戰中期空戰理論
   application =
   { id        = 2830
     name      = TECH_APP_AD_47_NAME
@@ -2667,7 +2667,7 @@ technology =
     { command = { }
     }
   }
-  # Mid-Cold War Era Offensive Air Superiority
+  # 改進空中优势进攻 
   application =
   { id        = 2840
     name      = TECH_APP_AD_48_NAME
@@ -2693,7 +2693,7 @@ technology =
       command = { type = task_efficiency which = air_superiority value = 0.25 }
     }
   }
-  # Mid-Cold War Era Defensive Air Superiority
+  # 改進空中优势防御 
   application =
   { id        = 5000
     name      = TECH_APP_AD_49_NAME
@@ -2718,7 +2718,7 @@ technology =
       command = { type = aa_batteries value = 5 }
     }
   }
-  # 
+  # 重视噴射战斗机 
   application =
   { id        = 95250
     name      = TECH_APP_AD_96_NAME
@@ -2743,7 +2743,7 @@ technology =
       command = { type = max_organization which = multi_role value = 4 }
     }
   }
-  # 
+  # 重视噴射截击机 
   application =
   { id        = 95260
     name      = TECH_APP_AD_97_NAME
@@ -2766,7 +2766,7 @@ technology =
       command = { type = morale which = interceptor value = 5 }
     }
   }
-  # 
+  # 改進预先计划作战 
   application =
   { id        = 95270
     name      = TECH_APP_AD_98_NAME
@@ -2789,7 +2789,7 @@ technology =
       command = { type = morale which = multi_role value = 10 }
     }
   }
-  # 
+  # 改進防空炮支持 
   application =
   { id        = 95280
     name      = TECH_APP_AD_99_NAME
@@ -2813,7 +2813,7 @@ technology =
       command = { type = building_prod_mod which = flak value = 50 }
     }
   }
-  # 
+  # 改進快速空中优势 
   application =
   { id        = 95290
     name      = TECH_APP_AD_117_NAME
@@ -2835,7 +2835,7 @@ technology =
     { command = { type = max_organization which = multi_role value = 5 }
     }
   }
-  # 
+  # 改進随时待命学说 
   application =
   { id        = 95300
     name      = TECH_APP_AD_118_NAME
@@ -2859,7 +2859,7 @@ technology =
       command = { type = aa_batteries value = 10 }
     }
   }
-  # 
+  # 改進恶劣天气下空战技术 
   application =
   { id        = 95550
     name      = TECH_APP_AD_119_NAME
@@ -2895,7 +2895,7 @@ technology =
       command = { type = urban_defense which = multi_role value = 25 }
     }
   }
-  # 
+  # 改進空域监视 
   application =
   { id        = 95570
     name      = TECH_APP_AD_120_NAME
@@ -2933,7 +2933,7 @@ technology =
       command = { type = morale which = interceptor value = 10 }
     }
   }
-  # 
+  # 先发制人学说 
   application =
   { id        = 95580
     name      = TECH_APP_AD_121_NAME
@@ -2962,7 +2962,7 @@ technology =
       command = { type = task_efficiency which = runway_cratering value = 0.6 }
     }
   }
-  # 
+  # 改進敌空军力量消耗 
   application =
   { id        = 95590
     name      = TECH_APP_AD_122_NAME
@@ -2985,7 +2985,7 @@ technology =
       command = { type = morale which = air value = 20 }
     }
   }
-  # Cold War Flexible Response Air Doctrine
+  # 改進灵活反应学说 
   application =
   { id        = 95680
     name      = TECH_APP_AD_123_NAME
@@ -3157,7 +3157,7 @@ technology =
       command = { type = army_detection which = us value = 10 }
     }
   }
-  # 
+  # 冷戰早期海軍轟炸機任務
   application =
   { id        = 6520
     name      = TECH_APP_AD_129_NAME
@@ -3182,7 +3182,7 @@ technology =
       command = { type = task_efficiency which = convoy_air_raiding value = 0.25 }
     }
   }
-  # 
+  # 冷戰中期海軍轟炸機任務
   application =
   { id        = 6920
     name      = TECH_APP_AD_130_NAME
@@ -3209,7 +3209,7 @@ technology =
       command = { type = task_efficiency which = asw value = 0.25 }
     }
   }
-  # 
+  # 冷戰晚期海軍轟炸機任務
   application =
   { id        = 6930
     name      = TECH_APP_AD_131_NAME
@@ -3234,7 +3234,7 @@ technology =
       command = { type = convoy_def_eff value = 0.2 }
     }
   }
-  # 
+  # 現代海軍轟炸機任務
   application =
   { id        = 6940
     name      = TECH_APP_AD_132_NAME
@@ -3287,7 +3287,7 @@ technology =
       command = { type = assault which = paratrooper value = 5 }
     }
   }
-  # 
+  # 中子彈核擴散 
   application =
   { id        = 6960
     name      = TECH_APP_AD_134_NAME
@@ -3553,7 +3553,7 @@ technology =
   { id        = 7080
     name      = TECH_APP_AD_143_NAME
     desc      = TECH_APP_AD_143_DESC
-    position  = { x = 481 y = 384 }
+    position  = { x = 412 y = 405 }
     year      = 1980
     # 
     component = { id = 7081 name = TECH_CMP_AD_143_1_NAME type = general_equipment difficulty = 15 }
@@ -3573,7 +3573,7 @@ technology =
       command = { type = max_organization which = interceptor value = 5 }
     }
   }
-  # 
+  # 氫彈核擴散 
   application =
   { id        = 7090
     name      = TECH_APP_AD_144_NAME
@@ -3602,7 +3602,7 @@ technology =
   { id        = 96300
     name      = TECH_APP_AD_145_NAME
     desc      = TECH_APP_AD_145_DESC
-    position  = { x = 428 y = 399 }
+    position  = { x = 374 y = 420 }
     year      = 1981
     # 
     component = { id = 96301 name = TECH_CMP_AD_145_1_NAME type = piloting difficulty = 10 }
@@ -3625,7 +3625,7 @@ technology =
   { id        = 96310
     name      = TECH_APP_AD_146_NAME
     desc      = TECH_APP_AD_146_DESC
-    position  = { x = 537 y = 399 }
+    position  = { x = 483 y = 420 }
     year      = 1982
     # 
     component = { id = 96311 name = TECH_CMP_AD_146_1_NAME type = piloting difficulty = 8 }
@@ -3651,7 +3651,7 @@ technology =
   { id        = 96320
     name      = TECH_APP_AD_147_NAME
     desc      = TECH_APP_AD_147_DESC
-    position  = { x = 428 y = 414 }
+    position  = { x = 374 y = 435 }
     year      = 1984
     # 
     component = { id = 96321 name = TECH_CMP_AD_147_1_NAME type = fighter_tactics difficulty = 15 }
@@ -3685,7 +3685,7 @@ technology =
   { id        = 96330
     name      = TECH_APP_AD_148_NAME
     desc      = TECH_APP_AD_148_DESC
-    position  = { x = 537 y = 414 }
+    position  = { x = 483 y = 435 }
     year      = 1986
     # 
     component = { id = 96331 name = TECH_CMP_AD_148_1_NAME type = fighter_tactics difficulty = 10 }
@@ -3711,7 +3711,7 @@ technology =
   { id        = 96340
     name      = TECH_APP_AD_149_NAME
     desc      = TECH_APP_AD_149_DESC
-    position  = { x = 428 y = 429 }
+    position  = { x = 374 y = 450 }
     year      = 1988
     # 
     component = { id = 96341 name = TECH_CMP_AD_149_1_NAME type = decentralized_execution difficulty = 12 }
@@ -3742,7 +3742,7 @@ technology =
   { id        = 96350
     name      = TECH_APP_AD_150_NAME
     desc      = TECH_APP_AD_150_DESC
-    position  = { x = 537 y = 429 }
+    position  = { x = 483 y = 450 }
     year      = 1990
     # 
     component = { id = 96351 name = TECH_CMP_AD_150_1_NAME type = electronics difficulty = 15 }
@@ -3766,7 +3766,7 @@ technology =
   { id        = 96360
     name      = TECH_APP_AD_151_NAME
     desc      = TECH_APP_AD_151_DESC
-    position  = { x = 428 y = 444 }
+    position  = { x = 374 y = 465 }
     year      = 1992
     # 
     component = { id = 96361 name = TECH_CMP_AD_151_1_NAME type = piloting difficulty = 20 }
@@ -3790,7 +3790,7 @@ technology =
   { id        = 96370
     name      = TECH_APP_AD_152_NAME
     desc      = TECH_APP_AD_152_DESC
-    position  = { x = 537 y = 444 }
+    position  = { x = 483 y = 465 }
     year      = 1994
     # 
     component = { id = 96371 name = TECH_CMP_AD_152_1_NAME type = piloting difficulty = 15 }
@@ -3819,7 +3819,7 @@ technology =
   { id        = 96380
     name      = TECH_APP_AD_153_NAME
     desc      = TECH_APP_AD_153_DESC
-    position  = { x = 484 y = 459 }
+    position  = { x = 412 y = 480 }
     year      = 1996
     # 
     component = { id = 96381 name = TECH_CMP_AD_153_1_NAME type = fighter_tactics difficulty = 13 }
@@ -3851,7 +3851,7 @@ technology =
   { id        = 74500
     name      = TECH_APP_AD_450_NAME
     desc      = TECH_APP_SW_450_DESC
-    position  = { x = 65 y = 480 }
+    position  = { x = 5 y = 480 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 74501 name = TECH_CMP_SW_44_1_NAME type = artillery difficulty = 20 }
@@ -3947,7 +3947,7 @@ technology =
   { id        = 74600
     name      = TECH_APP_AD_460_NAME
     desc      = TECH_APP_SW_460_DESC
-    position  = { x = 245 y = 460 }
+    position  = { x = 227 y = 460 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 74601 name = TECH_CMP_SW_44_1_NAME type = artillery difficulty = 20 }
@@ -4023,7 +4023,7 @@ technology =
   { id        = 74700
     name      = TECH_APP_AD_470_NAME
     desc      = TECH_APP_SW_470_DESC
-    position  = { x = 125 y = 460 }
+    position  = { x = 116 y = 460 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 74701 name = TECH_CMP_SW_44_1_NAME type = artillery difficulty = 20 }
@@ -4129,7 +4129,7 @@ technology =
   { id        = 74800
     name      = TECH_APP_AD_480_NAME
     desc      = TECH_APP_SW_480_DESC
-    position  = { x = 305 y = 480 }
+    position  = { x = 227 y = 480 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 74801 name = TECH_CMP_SW_44_1_NAME type = artillery difficulty = 20 }
@@ -4236,7 +4236,7 @@ technology =
   { id        = 74900
     name      = TECH_APP_AD_490_NAME
     desc      = TECH_APP_SW_490_DESC
-    position  = { x = 185 y = 480 }
+    position  = { x = 116 y = 480 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 74901 name = TECH_CMP_SW_44_1_NAME type = artillery difficulty = 10 }
@@ -4333,7 +4333,7 @@ technology =
   { id        = 78000
     name      = TECH_APP_SW_990_NAME
     desc      = TECH_APP_SW_990_DESC
-    position  = { x = 425 y = 480 }
+    position  = { x = 227 y = 440 }
     year      = 1936
     # 超音速发动机模型 
     component = { id = 78001 name = TECH_CMP_SW_44_1_NAME type = general_equipment difficulty = 20 }

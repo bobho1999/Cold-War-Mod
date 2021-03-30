@@ -20,7 +20,7 @@ BRU;Red;ENG;MIN;X
 BUL;LightBrown;BUL;ROM;X
 BUR;DarkGreen;ENG;MIN;X
 CAL;Green;USA;USA;X
-CAM;Brown;FRA;ENG;X
+CAM;Blue;FRA;ENG;X
 CAN;Red;ENG;MIN;X
 CGX;LightBrown;CHI;CHI;X
 CHC;LightYellow;CHI;CHC;X
@@ -109,7 +109,7 @@ PAK;DarkBrown;ENG;MIN;X
 PAL;LightOrange;ENG;MIN;X
 PAN;LightGray;SPA;MIN;X
 PAR;LightYellow;SPA;MIN;X
-PER;DarkGray;ENG;MIN;X
+PER;DarkGray;PER;MIN;X
 PHI;DarkBrown;SPA;MIN;X
 POL;DarkGray;POL;MIN;X
 POR;DarkGreen;POR;MIN;X
@@ -161,18 +161,18 @@ VIE;LightBlue;CHI;MIN;X
 WLL;LightBrown;FRA;MIN;X
 YEM;LightGray;TUR;MIN;X
 YUG;LightYellow;YUG;MIN;X
-ALS;DarkGreen;ENG;MIN;X
+ALS;LightBlue;MIN;MIN;X
 AXI;Gray;GER;MIN;X
 ALI;White;ALI;MIN;X
 U00;DarkGray;ENG;MIN;X
-U01;LightBlue;MIN;MIN;X
+U01;Blue;FRA;FRA;X
 U02;DarkBlue;SOV;MIN;X
 U03;Blue;FRA;FRA;X
 U04;Brown;CHI;CHI;X
 U05;White;CHI;CHI;X
 U06;Gray;CHI;CHI;X
 U07;DarkBlue;CHI;CHI;X
-U08;LightBrown;CHI;CHI;X
+U08;LightRed;ENG;ENG;X
 U09;LightGray;CHI;CHI;X
 U10;LightGreen;CHI;CHI;X
 U11;LightBlue;CHI;CHI;X
@@ -197,7 +197,7 @@ U29;LightGray;ENG;MIN;X
 U30;LightGreen;ENG;MIN;X
 U31;LightBlue;ENG;MIN;X
 U32;Blue;ENG;MIN;X
-U33;DarkBlue;ENG;MIN;X
+U33;DarkBlue;SOV;MIN;X
 U34;DarkRed;ENG;MIN;X
 U35;Gray;ENG;MIN;X
 U36;Green;ENG;MIN;X
@@ -252,7 +252,7 @@ U84;Brown;FRA;MIN;X
 U85;LightYellow;FRA;MIN;X
 U86;LightBlue;ENG;MIN;X
 U87;brown;CHI;MIN;X
-U88;LightOrange;FRA;MIN;X
+U88;Yellow;FRA;MIN;X
 U89;Green ;ENG;MIN;X
 U90;LightBrown;ENG;MIN;X
 U91;DarkGreen;TUR;MIN;X
@@ -263,7 +263,7 @@ U95;Gray;FRA;MIN;X
 U96;LightYellow;ENG;MIN;X
 U97;DarkGreen;ENG;MIN;X
 U98;DarkRed;ENG;MIN;X
-U99;LightBlue;ENG;MIN;X
+U99;LightGreen;ENG;MIN;X
 USN;DarkBlue;USA;MIN;X
 UAU;LightGray;AST;MIN;X
 UCH;DarkBrown;CHI;MIN;X

@@ -4,7 +4,7 @@
 
 country = {
   tag                = SIK
-  capital            = 1432 # “¡¿Á£®“¡?£©
+  capital            = 1432 # “¡¿Á£®“¡åé£©
   dissent            = 20
   manpower           = 50
   # Resource Reserves

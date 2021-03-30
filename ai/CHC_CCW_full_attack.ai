@@ -4,7 +4,7 @@ switch = no			# Default is "yes". If turned off, the AI will not automatically t
 # Inter-Agent distribution variables
 
 # Modifier to chance that country will accept a demand for territory.
-claim_acceptance = 10 
+claim_acceptance = -49
 
 # The countries we will demand territory from if we have claims on them.
 demand_claims = { 
