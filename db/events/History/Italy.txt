@@ -73,7 +73,7 @@ event = {
 	random = no
 	country = YUG
 	trigger = {
-           owned = { province = 2713 data = ENG }
+           owned = { province = 3200 data = ALS }
            atwar = no 
 		}
 
@@ -195,7 +195,7 @@ event = {
 event = {
 	id = 21207
         random = no
-        country = ENG
+        country = ALS
 	trigger = {
              event = 21201
          atwar = no
@@ -217,7 +217,7 @@ event = {
     command = { type = relation which = ITA value = 10 }
     command = { type = relation which = YUG value = -10 }
     command = { type = sleepevent which = 21208 }
-    command = { type = secedeprovince which = ITA value = 2713 }
+    command = { type = secedeprovince which = ITA value = 3200 }
     command = { type = trigger which = 21211 }
     command = { type = sleepevent which = 21209 }
   }
@@ -227,7 +227,7 @@ event = {
     command = { type = relation which = ITA value = -50 }
     command = { type = relation which = YUG value = 10 }
     command = { type = dissent value = 2 }
-    command = { type = secedeprovince which = YUG value = 2713 }
+    command = { type = secedeprovince which = YUG value = 3200 }
     command = { type = trigger which = 21208 }
     command = { type = trigger which = 21209 }
   }

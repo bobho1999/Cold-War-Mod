@@ -14,15 +14,15 @@
 #	Remember to put the summary effect of the slider there:
 #	Free Market	|   Effect (IC time)	|   Effect (IC eff)	|	local_flag = 
 #	+10		|	-500		|	-45	45	|	free_market_10
-#	+9		|	-300		|	-34	36	|	free_market_9
-#	+8		|	-150		|	-24	27	|	free_market_8
-#	+7		|	-50		|	-15	18	|	free_market_7
-#	+6		|	-10		|	-7	9	|	free_market_6
-#	+5		|	none		|	none		|	free_market_5
-#	+4		|	+10		|	none		|	free_market_4
-#	+3		|	+20		|	none		|	free_market_3
-#	+2		|	+30		|	none		|	free_market_2
-#	+1		|	+50		|	none		|	free_market_1
+#	+9		|	-300		|	-34	35	|	free_market_9
+#	+8		|	-150		|	-24	25	|	free_market_8
+#	+7		|	-50		|	-15	15	|	free_market_7
+#	+6		|	-10		|	-7	5	|	free_market_6
+#	+5		|	none		|	none	-5	|	free_market_5
+#	+4		|	+10		|	none	-15	|	free_market_4
+#	+3		|	+20		|	none	-25	|	free_market_3
+#	+2		|	+30		|	none	-35	|	free_market_2
+#	+1		|	+50		|	none	-45	|	free_market_1
 #	Planned Economy	|			|			|	local_flag = 
 
 event = {
@@ -198,7 +198,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -235,7 +235,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -10 }
 	}
 }
 event = {
@@ -271,7 +271,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -10 }
 	}
 }
 event = {
@@ -307,7 +307,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -10 }
 	}
 }
 event = {
@@ -343,7 +343,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -10 }
 	}
 }
 event = {
@@ -378,7 +378,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 10 }
 	}
 }
 event = {
@@ -414,7 +414,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 10 }
 	}
 }
 event = {
@@ -450,7 +450,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 10 }
 	}
 }
 event = {
@@ -486,7 +486,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 10 }
 	}
 }
 event = {
@@ -522,7 +522,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -810,7 +810,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -847,7 +847,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -884,7 +884,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -921,7 +921,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -958,7 +958,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = total value = -45 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1070,7 +1070,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1108,7 +1108,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1146,7 +1146,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1184,7 +1184,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1221,7 +1221,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = total value = -45 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1295,7 +1295,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1333,7 +1333,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1370,7 +1370,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1407,7 +1407,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1444,7 +1444,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = total value = -45 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1481,7 +1481,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 9 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1518,7 +1518,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1555,7 +1555,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1592,7 +1592,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1629,7 +1629,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = total value = -45 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1666,7 +1666,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1703,7 +1703,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1740,7 +1740,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1777,7 +1777,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 45 }
+		command = { type = industrial_modifier which = total value = -45 }
 		command = { type = ai which = planned_eco_ai.ai }
 	}
 }
@@ -1814,7 +1814,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -20 }
 	}
 }
 event = {
@@ -1850,7 +1850,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -30 }
 	}
 }
 event = {
@@ -1886,7 +1886,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 36 }
+		command = { type = industrial_modifier which = total value = -40 }
 	}
 }
 event = {
@@ -1922,7 +1922,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -20 }
 	}
 }
 event = {
@@ -1958,7 +1958,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 27 }
+		command = { type = industrial_modifier which = total value = -30 }
 	}
 }
 event = {
@@ -1994,7 +1994,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = 18 }
+		command = { type = industrial_modifier which = total value = -20 }
 	}
 }
 
@@ -2033,7 +2033,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 20 }
 	}
 }
 
@@ -2070,7 +2070,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 30 }
 	}
 }
 
@@ -2107,7 +2107,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 40 }
 	}
 }
 
@@ -2144,7 +2144,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = industrial_modifier which = total value = 45 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2181,7 +2181,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = industrial_modifier which = total value = 45 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2218,7 +2218,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = industrial_modifier which = total value = 45 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2255,7 +2255,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = industrial_modifier which = total value = 45 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2292,7 +2292,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_setflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = industrial_modifier which = total value = 45 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2329,7 +2329,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 20 }
 	}
 }
 event = {
@@ -2365,7 +2365,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 30 }
 	}
 }
 event = {
@@ -2401,7 +2401,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2438,7 +2438,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2475,7 +2475,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2512,7 +2512,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2549,7 +2549,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_setflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -36 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2586,7 +2586,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 20 }
 	}
 }
 event = {
@@ -2622,7 +2622,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2659,7 +2659,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2696,7 +2696,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2733,7 +2733,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2770,7 +2770,7 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -27 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2807,7 +2807,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2844,7 +2844,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2881,7 +2881,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2918,7 +2918,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2955,7 +2955,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -18 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -2992,7 +2992,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -3029,7 +3029,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -3066,7 +3066,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -3103,7 +3103,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = ai which = free_marked_ai.ai }
 	}
 }
@@ -3140,7 +3140,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-#		command = { type = industrial_modifier which = total value = -9 }
+#		command = { type = industrial_modifier which = total value = 5 }
 	}
 }
 event = {
@@ -3176,7 +3176,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-#		command = { type = industrial_modifier which = total value = -9 }
+#		command = { type = industrial_modifier which = total value = 5 }
 	}
 }
 event = {
@@ -3212,7 +3212,7 @@ event = {
 		command = { type = local_clrflag which = free_market_8 }
 		command = { type = local_clrflag which = free_market_9 }
 		command = { type = local_clrflag which = free_market_10 }
-#		command = { type = industrial_modifier which = total value = -9 }
+#		command = { type = industrial_modifier which = total value = 5 }
 	}
 }
 event = {
