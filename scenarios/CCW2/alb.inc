@@ -55,6 +55,9 @@ country = {
   chiefofarmy            = { type = 9 id = 32172 } # °¢Æë×È ËÕÀ³ÂüÄá 
   chiefofnavy            = { type = 9 id = 32185 } # ¹şÀûÀÕ ÄÚ¹ÅµÙ 
   chiefofair             = { type = 9 id = 32201 } # ×æºÕµÏ É³°ÍÄá 
+  nationalidentity       = "policy_economy_natural-Capitalism"
+  socialpolicy           = "policy_social_collectivism"
+  nationalculture        = "policy_political_stalinist"
 
   landunit = {
     id       = { type = 30658 id = 1 }

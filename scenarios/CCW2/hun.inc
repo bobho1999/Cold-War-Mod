@@ -79,6 +79,9 @@ country = {
   chiefofnavy            = { type = 9 id = 21191 } # ¹þ¿¨¶ûÂü
   chiefofair             = { type = 9 id = 21009 } # ¹þÀû À­Ë¹Âå
   dormant_ministers      = { 21002 21140 21022 21051 21023 21101 21024 21077 21102 21025 21103 21026 21078 21105 21129 21155 21159 21141 21083 21121 21160 21142 21010 21001 21058 21179 21070 21052 21027 21207 21156 21124 21205 21081 21175 21094 21173 21206 21030 21005 21074 21200 21082 21174 21143 21080 21091 21144 21127 21050 21092 21009 21120 21093 21202 21090 21171 21104 21208 21072 21157 21028 21145 21122 21176 21201 21204 }
+  nationalidentity       = "policy_economy_Stalinism-planned"
+  socialpolicy           = "policy_social_collectivism"
+  nationalculture        = "policy_political_stalinist"
 
   landunit = {
     id       = { type = 20500 id = 5 }

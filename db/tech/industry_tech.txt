@@ -1074,14 +1074,12 @@ technology =
   }
   label =
   { tag      = TECH_CAT_system
-    position = { x = 99 y = 203 }
   }
   # 自由经济体系 
   application =
   { id        = 5710
     name      = TECH_APP_INDUSTRY_71_NAME
     desc      = TECH_APP_INDUSTRY_71_DESC
-    position  = { x = 125 y = 220 }
     year      = 1936
     # 现代化税制 
     component = { id = 5711 name = TECH_CMP_INDUSTRY_71_1_NAME type = management difficulty = 20 }
@@ -1105,7 +1103,6 @@ technology =
   { id        = 5720
     name      = TECH_APP_INDUSTRY_72_NAME
     desc      = TECH_APP_INDUSTRY_72_DESC
-    position  = { x = 10 y = 220 }
     year      = 1936
     # 中央银行 
     component = { id = 5721 name = TECH_CMP_INDUSTRY_72_1_NAME type = mathematics difficulty = 20 }

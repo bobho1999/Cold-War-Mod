@@ -13,7 +13,7 @@ country = {
   tag                = BRU
   puppet             = ENG
   control            = ENG
-  capital            = 1646 # Ê«Î×£¨ãôÎñ£©
+  capital            = 3741 # 
   manpower           = 2
   # Resource Reserves
   energy         = 5000

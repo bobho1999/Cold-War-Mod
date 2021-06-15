@@ -18,7 +18,7 @@ national_ideas = {
 
 # Natural Economy
     national_idea = { 
-    	category = paternal_autocrat
+ #   	category = paternal_autocrat
         picture = "ECO_Natural_Economy"
         personality_string = "policy_economy_natural" 
         name = "NAME_POLICY_NATURAL_ECONOMY" 
@@ -257,9 +257,9 @@ national_ideas = {
 
 # economic in the revolutionary base
     national_idea = {
-       category = left_wing_radical
-	     category = stalinist
-	     category = leninist       
+       	category = left_wing_radical
+	category = stalinist
+	category = leninist       
 
         picture = "ECO_revolutionary_economy"
         personality_string = "policy_economy_revolutionary" 
@@ -274,12 +274,12 @@ national_ideas = {
         modifier = { type = ese_mod value = supply modifier_effect = 0.2000 }          
         } 
 
-# Leninism market economic
+# Market socialism / Leninism market economic
     national_idea = {
-       category = social_liberal
-       category = social_democrat       
-       category = left_wing_radical
-	     category = leninist       
+       	category = social_liberal
+       	category = social_democrat       
+       	category = left_wing_radical
+	category = leninist       
 
         picture = "ECO_Leninism-market_economy"
         personality_string = "policy_economy_Leninism-market" 
@@ -298,10 +298,10 @@ national_ideas = {
         modifier = { type = tech_group_mod value = industry modifier_effect = -0.1000 }          
         } 
 
-# Stalinism planned economic
+# State socialism / Stalinism planned economic
     national_idea = {
-	     category = stalinist
-     	 category = leninist    
+	category = stalinist
+	category = leninist    
 
         picture = "ECO_Stalinism-planned_economy"
         personality_string = "policy_economy_Stalinism-planned" 
@@ -549,11 +549,11 @@ national_ideas = {
         
 # revolutionary collectivism 
     national_idea = { 
-       category = social_liberal
-       category = social_democrat
-       category = left_wing_radical	     
-	     category = stalinist
-     	 category = leninist     
+       	category = social_liberal
+       	category = social_democrat
+       	category = left_wing_radical	     
+	category = stalinist
+	category = leninist     
 
         picture = "social_revolutionary"
         personality_string = "policy_social_revolutionary" 
@@ -894,12 +894,12 @@ national_ideas = {
         
 # new-democratic
     national_idea = { 
-       category = market_liberal
-       category = social_liberal
-       category = social_democrat
-       category = left_wing_radical  
-	     category = stalinist
-     	 category = leninist           
+       	category = market_liberal
+       	category = social_liberal
+       	category = social_democrat
+       	category = left_wing_radical  
+	category = stalinist
+	category = leninist           
 
         picture = "political_new-democratic"
         personality_string = "policy_political_new-democratic" 
@@ -967,5 +967,27 @@ national_ideas = {
         modifier = { type = production_category_mod value = ic modifier_effect = 0.0500 }         
         modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.4000 } 
         modifier = { type = accept_alliance_mod option1 = 1 modifier_effect = -0.5000 }                                             
-        }                                       
+        }   
+
+
+# Maoist
+    national_idea = {  
+	category = stalinist
+	category = leninist           
+
+        picture = "political_maoist"
+        personality_string = "policy_political_maoist" 
+        name = "NAME_POLICY_political_maoist" 
+        desc = "DESCRIPTION_POLICY_political_maoist" 
+        minister_position = nationalculture
+        modifier = { type = dissent_mod modifier_effect = 0.3000 }  
+        modifier = { type = leader_xp_mod  modifier_effect = 0.0500 }     
+        modifier = { type = division_xp_mod  modifier_effect = 0.0500 }                 
+        modifier = { type = defend_land_mod modifier_effect = 0.0500 }               
+        modifier = { type = defend_air_mod modifier_effect = 0.0500 }                   
+        modifier = { type = defend_sea_mod modifier_effect = 0.0500 }                                   
+        modifier = { type = production_category_mod value = ic modifier_effect = 0.0500 }         
+        modifier = { type = intelligence_mod value = counter_espionage modifier_effect = 0.4000 } 
+        modifier = { type = accept_alliance_mod option1 = 1 modifier_effect = -0.5000 }                                             
+        }                                      
     } 

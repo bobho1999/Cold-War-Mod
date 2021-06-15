@@ -104,6 +104,9 @@ country = {
   chiefofnavy            = { type = 9 id = 24139 } # 克莱门特 哥特瓦尔德 
   chiefofair             = { type = 9 id = 24145 } # 扬 普罗科普 
   dormant_ministers      = { 24036 24037 24038 24039 24040 24048 24049 24050 24060 24061 24062 24075 24076 24077 24078 24092 24093 24094 24107 24108 24119 24120 24131 24132 24133 24138 24144 24146 24150 }
+  nationalidentity       = "policy_economy_Stalinism-planned"
+  socialpolicy           = "policy_social_collectivism"
+  nationalculture        = "policy_political_stalinist"
 
   landunit = {
     id       = { type = 26000 id = 12 }
