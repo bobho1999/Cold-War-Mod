@@ -40,20 +40,14 @@ country = {
 
   diplomacy = {
     relation = { tag = BUL value = -75 }
-    relation = { tag = ENG value = 50 }
+    relation = { tag = ENG value = 100 }
     relation = { tag = FIN value = 40 }
     relation = { tag = FRA value = 20 }
-    relation = { tag = GER value = 15 }
     relation = { tag = GRE value = 75 }
     relation = { tag = ITA value = -35 }
     relation = { tag = POL value = 35 }
     relation = { tag = SOV value = 15 }
     relation = { tag = TUR value = 100 }
-    relation = {
-      tag        = YUG
-      value      = 100
-      guaranteed = { year = 1934 month = december day = 30 }
-    }
   }
 
   nationalprovinces      = { 3225 3227 3229 3231 3232 3233 3234 393 394 3948 395 396 400 401 402 403 405 410 411 399 398 392 412 }
@@ -67,7 +61,7 @@ country = {
     democratic        = 6
     political_left    = 3
     freedom           = 4
-    free_market       = 5
+    free_market       = 7
     professional_army = 5
     defense_lobby     = 5
     interventionism   = 4

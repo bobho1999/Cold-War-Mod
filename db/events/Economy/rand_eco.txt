@@ -4,7 +4,911 @@
 #               Texts by Killerrabbit 
 #
 #######################################################
+#### Create Public Works
+event = {
+	id = 9000021
+	random = no
+	persistent = yes
 
+	trigger = { 
+		technology = 5800	#Early Construction Engineering - enables IC construction
+		atwar = no
+		IC = 80
+		money = 6000
+		OR = { 
+			NOT = { domestic = { type = free_market value = 8 } }
+			headofstate = 240001 # FDR
+		}
+	}
+   
+	name = "9000021name"
+	desc = "9000021desc" 
+	style = 2
+	picture = "public_jobs"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "9000021text"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -6000 }
+		command = { type = trigger which = 9000040 value = 60 }
+	}
+	action_b = {
+		name = "No"
+		command = {  }
+	}
+}
+event = {
+	id = 9000024
+	random = no
+	persistent = yes
+
+	trigger = { 
+		technology = 5800	#Early Construction Engineering - enables IC construction
+		atwar = no
+		IC = 50
+		NOT = { IC = 80 }
+		money = 4000
+		OR = { 
+			NOT = { domestic = { type = free_market value = 8 } }
+			headofstate = 240001 # FDR
+		}
+	}
+   
+	name = "9000021name"
+	desc = "9000021desc" 
+	style = 2
+	picture = "public_jobs"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "9000021text"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -4000 }
+		command = { type = trigger which = 9000040 value = 60 }
+	}
+	action_b = {
+		name = "No"
+		command = {  }
+	}
+}
+event = {
+	id = 9000025
+	random = no
+	persistent = yes
+
+	trigger = { 
+		technology = 5800	#Early Construction Engineering - enables IC construction
+		atwar = no
+		NOT = { IC = 50 }
+		IC = 15
+		money = 3000
+		OR = { 
+			NOT = { domestic = { type = free_market value = 8 } }
+			headofstate = 240001 # FDR
+		}
+	}
+   
+	name = "9000021name"
+	desc = "9000021desc" 
+	style = 2
+	picture = "public_jobs"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "9000021text"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -3000 }
+		command = { type = trigger which = 9000040 value = 60 }
+	}
+	action_b = {
+		name = "No"
+		command = {  }
+	}
+}
+event = {
+	id = 9000026
+	random = no
+	persistent = yes
+
+	trigger = { 
+		technology = 5800	#Early Construction Engineering - enables IC construction
+		atwar = no
+		NOT = { IC = 15 }
+		money = 1000
+		OR = { 
+			NOT = { domestic = { type = free_market value = 8 } }
+			headofstate = 240001 # FDR
+		}
+	}
+   
+	name = "9000021name"
+	desc = "9000021desc" 
+	style = 2
+	picture = "public_jobs"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "9000021text"
+		command = { type = dissent value = -2 }
+		command = { type = money value = -1000 }
+		command = { type = trigger which = 9000040 value = 60 }
+	}
+	action_b = {
+		name = "No"
+		command = {  }
+	}
+}
+event = {
+	id = 9000027
+	random = no
+	persistent = yes
+
+	trigger = {
+		domestic = { type = free_market value = 5 }
+	}
+   
+	name = "9000021name"
+	desc = "9000021desc" 
+	style = 2
+	picture = "public_jobs"
+
+#	date = { day = 0 month = january year = 1914 }
+#	offset = 120
+#	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "9000021text"
+		command = { type = domestic which = free_market value = -1 }
+	}
+}
+event = {
+	id = 9000040
+	random = no
+	persistent = yes
+
+	name = "9000040name"
+	desc = "9000040desc" 
+	style = 2
+	picture = "public_jobs"
+	
+	action_a = {
+		name = "ACTION_NAME_GREAT"
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { }
+	}
+}
+
+#### Issue Currency
+#event = {
+#	id = 9000022
+#
+#	random = no
+#	persistent = yes
+#
+#	trigger = { 
+#		NOT = { money = 150 }
+#		atwar = no
+#	}
+#
+#  
+#	name = "9000022name"
+#	desc = "9000022desc" 
+#	style = 2
+#	picture = "issue_currency"
+#
+#	date = { day = 0 month = january year = 1914 }
+#	offset = 180
+#	deathdate = { day = 29 month = december year = 1945 }
+#
+#	action_a = {
+#		name = "9000022text"
+#		command = { type = dissent value = -1 }
+#		command = { trigger = { IC = 80 } type = money value = 1000 }
+#		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = 800 }
+#		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = 400 }
+#		command = { trigger = { NOT = { IC = 15 } } type = money value = 200 }
+#		command = { type = industrial_modifier which = total value = -1 }
+#	}
+#}
+#
+#### Money Devaluation
+#event = {
+#	id = 9000023
+#	random = no
+#	persistent = yes
+#
+#	trigger = {
+#		NOT = { dissent = 5 }
+#		atwar = no
+#		OR = {
+#			money = 3000
+#			AND = {
+#				NOT = { IC = 80 }
+#				money = 2000
+#			}
+#			AND = {
+#				NOT = { IC = 50 }
+#				money = 1500
+#			}
+#			AND = {
+#				NOT = { IC = 15 }
+#				money = 500
+#			}	
+#		}
+#	}
+#
+#   
+#	name = "9000023name"
+#	desc = "9000023desc"
+#	style = 2
+#	picture = "economy"
+#
+#	date = { day = 0 month = january year = 1914 }
+#	offset = 180
+#	deathdate = { day = 29 month = december year = 1945 }
+#
+#	action_a = {
+#		name = "9000023text"
+#		command = { type = dissent value = 3 }
+##		command = { trigger = { IC = 80 } type = money value = -3000 }
+#		command = { trigger = { IC = 50 NOT = { IC = 80 } } type = money value = -2000 }
+#		command = { trigger = { IC = 15 NOT = { IC = 50 } } type = money value = -1500 }
+#		command = { trigger = { NOT = { IC = 15 } } type = money value = -500 }
+#		command = { type = industrial_modifier which = total value = 0.5 }
+#	}
+#}
+
+#### Invest in National Infrastructures
+event = {
+	id = 9000030
+	random = no
+	persistent = yes
+
+
+	trigger = { 
+#		random = 20
+		technology = 5800	#Early Construction Engineering - enables infrastructure construction
+		money = 4000
+		IC = 80
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = infra_investment_1 }
+		NOT = { local_flag = infra_investment_2 }
+		NOT = { local_flag = infra_investment_3 }
+	}
+   
+	name = "9000030name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 25
+		name = "9000030a"
+		command = { type = dissent value = -0.5 }
+		command = { type = tc_mod value = 0.5 }		
+		command = { type = money value = -1000 }
+		command = { type = trigger which = 9000053 value = 30 }
+		command = { type = local_setflag which = infra_investment_1 }
+	}
+	action_b = {
+		ai_chance = 25
+		name = "9000030b"
+		command = { type = dissent value = -1 }
+		command = { type = tc_mod value = 1 }		
+		command = { type = money value = -2000 }
+		command = { type = trigger which = 9000054 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 30
+		name = "9000030c"
+		command = { type = dissent value = -2 }
+		command = { type = tc_mod value = 2.5 }		
+		command = { type = money value = -4000 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000055 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000031
+	random = no
+	persistent = yes
+
+	trigger = { 
+#		random = 20
+		technology = 5800	#Early Construction Engineering - enables infrastructure construction
+		NOT = { IC = 15 }
+		money = 1200
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = infra_investment_1 }
+		NOT = { local_flag = infra_investment_2 }
+		NOT = { local_flag = infra_investment_3 }
+	}
+   
+	name = "9000030name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 30
+		name = "9000030a"
+		command = { type = dissent value = -0.5 }
+		command = { type = tc_mod value = 0.5 }		
+		command = { type = money value = -300 }
+		command = { type = trigger which = 9000053 value = 30 }
+		command = { type = local_setflag which = infra_investment_1 }
+	}
+	action_b = {
+		ai_chance = 30
+		name = "9000030b"
+		command = { type = dissent value = -1 }
+		command = { type = tc_mod value = 1 }		
+		command = { type = money value = -600 }
+		command = { type = trigger which = 9000054 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 40
+		name = "9000030c"
+		command = { type = dissent value = -2 }
+		command = { type = tc_mod value = 2.5 }		
+		command = { type = money value = -1200 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000055 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000032
+	random = no
+	persistent = yes
+
+	trigger = { 
+#		random = 20
+		technology = 5800	#Early Construction Engineering - enables infrastructure construction
+		NOT = { IC = 50 }
+		IC = 15
+		money = 2400	
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = infra_investment_1 }
+		NOT = { local_flag = infra_investment_2 }
+		NOT = { local_flag = infra_investment_3 }
+	}
+   
+	name = "9000030name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		
+		ai_chance = 30
+		name = "9000030a"
+		command = { type = dissent value = -0.5 }
+		command = { type = tc_mod value = 0.5 }		
+		command = { type = money value = -600 }
+		command = { type = trigger which = 9000053 value = 30 }
+		command = { type = local_setflag which = infra_investment_1 }
+	}
+	action_b = {
+		
+		ai_chance = 30
+		name = "9000030b"
+		command = { type = dissent value = -1 }
+		command = { type = tc_mod value = 1 }		
+		command = { type = money value = -1200 }
+		command = { type = trigger which = 9000054 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		
+		ai_chance = 40
+		name = "9000030c"
+		command = { type = dissent value = -2 }
+		command = { type = tc_mod value = 2.5 }		
+		command = { type = money value = -2400 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000055 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000033
+	random = no
+	persistent = yes
+
+
+	trigger = { 
+#		random = 20
+		technology = 5800	#Early Construction Engineering - enables infrastructure construction
+		NOT = { IC = 80 }
+		IC = 50
+		money = 3200
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = infra_investment_1 }
+		NOT = { local_flag = infra_investment_2 }
+		NOT = { local_flag = infra_investment_3 }
+	}
+   
+	name = "9000030name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 30
+		name = "9000030a"
+		command = { type = dissent value = -0.5 }
+		command = { type = tc_mod value = 0.5 }		
+		command = { type = money value = -800 }
+		command = { type = trigger which = 9000053 value = 30 }
+		command = { type = local_setflag which = infra_investment_1 }
+	}
+	action_b = {
+		ai_chance = 30
+		name = "9000030b"
+		command = { type = dissent value = -1 }
+		command = { type = tc_mod value = 1 }		
+		command = { type = money value = -1600 }
+		command = { type = trigger which = 9000054 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 40
+		name = "9000030c"
+		command = { type = dissent value = -2 }
+		command = { type = tc_mod value = 2.5 }		
+		command = { type = money value = -3200 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000055 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000053
+	random = no
+	persistent = yes
+
+	name = "9000053name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = local_clrflag which = infra_investment_1 }
+	}
+}
+
+event = {
+	id = 9000054
+	random = no
+	persistent = yes
+
+	name = "9000053name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = local_clrflag which = infra_investment_2 }
+	}
+}
+
+event = {
+	id = 9000055
+	random = no
+	persistent = yes
+
+	name = "9000053name"
+	desc = "9000030desc" 
+	style = 2
+	picture = "invest_infrastructures"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = construct which = infrastructure where = -1 value = 10 }
+		command = { type = local_clrflag which = infra_investment_3 }
+	}
+}
+
+#### Invest in National Research
+event = {
+	id = 9000035
+	random = no
+	persistent = yes
+
+
+	trigger = { 
+#		random = 60
+		money = 4000
+		IC = 80
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = research_investment_1 }
+		NOT = { local_flag = research_investment_2 }
+		NOT = { local_flag = research_investment_3 }
+	}
+   
+	name = "9000031name"
+	desc = "9000031desc" 
+	style = 0
+	picture = "invest_research"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 25
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }	
+		command = { type = money value = -1000 }
+#		command = { trigger = { research_mod = 120 } type = research_mod value = 0.1 }		
+#		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.3 }
+#		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 0.5 }
+		command = { type = trigger which = 9000056 value = 30 }
+		command = { type = local_setflag which = research_investment_1 }
+	}
+	action_b = {
+		ai_chance = 25
+		name = "9000031b"
+		command = { type = dissent value = -1 }	
+		command = { type = money value = -2000 }
+#		command = { trigger = { research_mod = 120 } type = research_mod value = 0.2 }		
+#		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 0.6 }
+#		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 1 }
+		command = { type = trigger which = 9000057 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 30
+		name = "9000031c"
+		command = { type = dissent value = -2 }	
+		command = { type = money value = -4000 }
+#		command = { trigger = { research_mod = 120 } type = research_mod value = 0.8 }		
+#		command = { trigger = { research_mod = 100 NOT = { research_mod = 120 } } type = research_mod value = 1.6 }
+#		command = { trigger = { NOT = { research_mod = 100 } } type = research_mod value = 2.5 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000058 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000036
+	random = no
+	persistent = yes
+
+	trigger = { 
+#		random = 60
+		NOT = { IC = 15 }
+		money = 1200
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = research_investment_1 }
+		NOT = { local_flag = research_investment_2 }
+		NOT = { local_flag = research_investment_3 }
+	}
+   
+	name = "9000031name"
+	desc = "9000031desc" 
+	style = 0
+	picture = "invest_research"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 30
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }	
+		command = { type = money value = -300 }
+		command = { type = trigger which = 9000056 value = 30 }
+		command = { type = local_setflag which = research_investment_1 }
+	}
+	action_b = {
+		ai_chance = 30
+		name = "9000031b"
+		command = { type = dissent value = -1 }	
+		command = { type = money value = -600 }
+		command = { type = trigger which = 9000057 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 40
+		name = "9000031c"
+		command = { type = dissent value = -2 }	
+		command = { type = money value = -1200 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000058 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000037
+	random = no
+	persistent = yes
+
+	trigger = { 
+#		random = 60
+		NOT = { IC = 50 }
+		IC = 15
+		money = 2400	
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = research_investment_1 }
+		NOT = { local_flag = research_investment_2 }
+		NOT = { local_flag = research_investment_3 }
+	}
+   
+	name = "9000031name"
+	desc = "9000031desc" 
+	style = 0
+	picture = "invest_research"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		
+		ai_chance = 30
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }	
+		command = { type = money value = -600 }
+		command = { type = trigger which = 9000056 value = 30 }
+		command = { type = local_setflag which = research_investment_1 }
+	}
+	action_b = {
+		
+		ai_chance = 30
+		name = "9000031b"
+		command = { type = dissent value = -1 }	
+		command = { type = money value = -1200 }
+		command = { type = trigger which = 9000057 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		
+		ai_chance = 40
+		name = "9000031c"
+		command = { type = dissent value = -2 }	
+		command = { type = money value = -2400 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000058 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000038
+	random = no
+	persistent = yes
+
+
+	trigger = { 
+#		random = 60
+		NOT = { IC = 80 }
+		IC = 50
+		money = 3200
+		NOT = { domestic = { type = free_market value = 8 } }
+		NOT = { local_flag = research_investment_1 }
+		NOT = { local_flag = research_investment_2 }
+		NOT = { local_flag = research_investment_3 }
+	}
+   
+	name = "9000031name"
+	desc = "9000031desc" 
+	style = 0
+	picture = "invest_research"
+
+	date = { day = 0 month = january year = 1914 }
+	offset = 120
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		ai_chance = 30
+		name = "9000031a"
+		command = { type = dissent value = -0.5 }	
+		command = { type = money value = -800 }
+		command = { type = trigger which = 9000056 value = 30 }
+		command = { type = local_setflag which = research_investment_1 }
+	}
+	action_b = {
+		ai_chance = 30
+		name = "9000031b"
+		command = { type = dissent value = -1 }		
+		command = { type = money value = -1600 }
+		command = { type = trigger which = 9000057 value = 30 }
+		command = { type = local_setflag which = infra_investment_2 }
+	}
+	action_c = { 
+		ai_chance = 40
+		name = "9000031c"
+		command = { type = dissent value = -2 }	
+		command = { type = money value = -3200 }
+#		command = { trigger = { NOT = { domestic = { type = free_market value = 5 } } } type = domestic which = free_market value = -1 }
+		command = { type = trigger which = 9000058 value = 30 }
+		command = { type = local_setflag which = infra_investment_3 }
+	}
+	action_d = { 
+		ai_chance = 20
+		name = "No"
+		command = { }
+	}
+}
+event = {
+	id = 9000056
+	random = no
+	persistent = yes
+
+	name = "9000054name"
+	desc = "9000031desc" 
+	style = 2
+	picture = "invest_research"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = gain_tech which = -1 }		
+		command = { type = local_clrflag which = research_investment_1 }
+	}
+}
+
+event = {
+	id = 9000057
+	random = no
+	persistent = yes
+
+	name = "9000054name"
+	desc = "9000031desc" 
+	style = 2
+	picture = "invest_research"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = gain_tech which = -2 }
+		command = { type = local_clrflag which = research_investment_2 }
+	}
+}
+
+event = {
+	id = 9000058
+	random = no
+	persistent = yes
+
+	name = "9000054name"
+	desc = "9000031desc" 
+	style = 2
+	picture = "invest_research"
+
+	action_a = {
+		name = ACTION_NAME_EXCELLENT
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -2 }
+		command = { type = local_clrflag which = research_investment_3 }
+	}
+}
+
+#### Free Market Stimulates Research
+event = {
+	id = 9000046
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		domestic = { type = free_market value = 6 } 
+		NOT = { local_flag = unconventional_monetary_policy } 
+	}
+
+	name = "9000046name"
+	desc = "9000046desc"
+	style = 2
+	picture = "Private_initiative2"
+	
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = research_mod value = 1 }
+		command = { type = gain_tech which = -1 }
+		command = { type = gain_tech which = -2 }
+		command = { type = dissent value = -1 }
+	}
+}
+#### Free Market Stimulates Military Investment
+event = {
+	id = 9000047
+
+	random = yes
+	persistent = yes
+
+	trigger = { 
+		domestic = { type = free_market value = 6 } 
+		atwar = yes 
+		NOT = { local_flag = unconventional_monetary_policy } 
+	}
+
+	name = "9000047name"
+	desc = "9000047desc"
+	style = 2
+	picture = "Private_sector"
+	
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = construct which = ic where = -4 value = 1 }
+		command = { type = dissent value = -1 }
+	}
+}
 
 
 #######################################

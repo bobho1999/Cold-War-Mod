@@ -1093,55 +1093,16 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -54 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 20 } #-54
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1164,7 +1125,7 @@ event = {
 		command = { type = local_setflag which = free_market_6 }
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = industrial_modifier which = total value = -5 } #-44
 		command = { type = local_setflag which = corruption_2 }
 		command = { type = industrial_modifier which = supplies value = -25 }
 		command = { type = supply_dist_mod value = -25 }
@@ -1173,45 +1134,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1231,10 +1153,10 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = large_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 10 } #-39 
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
 		command = { type = supply_dist_mod value = -15 }
@@ -1242,45 +1164,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_6 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1315,7 +1198,7 @@ event = {
 	random = no
 	country = EQA
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233040_DESC"
@@ -1335,45 +1218,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1383,7 +1227,7 @@ event = {
 	random = no
 	country = EST
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233041_DESC"
@@ -1403,45 +1247,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1461,10 +1266,10 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = large_country }
 		command = { type = local_setflag which = gdp500 }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -34 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 10 } # -34
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
 		command = { type = supply_dist_mod value = -15 }
@@ -1472,45 +1277,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1520,7 +1286,7 @@ event = {
 	random = no
 	country = EUS
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233043_DESC"
@@ -1539,45 +1305,6 @@ event = {
 		command = { type = supply_dist_mod value = -25 }
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = hawk_lobby_4 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1600,48 +1327,9 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = building_prod_mod which = ic value = -150 }
 		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = industrial_modifier which = total value = 25 } #-67 
 		command = { type = local_setflag which = corruption_10 }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1651,7 +1339,7 @@ event = {
 	random = no
 	country = FLA #Pacific Federation
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233045_DESC"
@@ -1670,45 +1358,6 @@ event = {
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
 		command = { type = industrial_modifier which = total value = -49 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -1746,7 +1395,7 @@ event = {
 	random = no
 	country = GAB #Gabon
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233047_DESC"
@@ -1773,11 +1422,11 @@ event = {
 	random = no
 	country = GEO
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233048_DESC"
-##	picture = "no"
+#	picture = "no"
 	style = 0
 	action_a = {
 		name = "OK"
@@ -1803,11 +1452,11 @@ event = {
 	random = no
 	country = GER
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233049_DESC"
-##	picture = "ger"
+#	picture = "ger"
 	style = 0
 	action_a = {
 		name = "OK"
@@ -1830,11 +1479,11 @@ event = {
 	random = no
 	country = GLD #Ghana
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233050_DESC"
-##	picture = "no"
+#	picture = "no"
 	style = 0
 	action_a = {
 		name = "OK"
@@ -1863,7 +1512,7 @@ event = {
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233051_DESC"
-##	picture = "gre"
+#	picture = "gre"
 	style = 0
 	action_a = {
 		name = "OK"
@@ -1872,7 +1521,7 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -43 }
+		command = { type = industrial_modifier which = total value = 12 } #-43 
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
 		command = { type = supply_dist_mod value = -10 }
@@ -1900,7 +1549,7 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = industrial_modifier which = total value = 5 } #-58 
 		command = { type = local_setflag which = corruption_2 }
 		command = { type = industrial_modifier which = supplies value = -25 }
 		command = { type = supply_dist_mod value = -25 }
@@ -1916,7 +1565,7 @@ event = {
 	random = no
 	country = GUI #Guinea
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233053_DESC"
@@ -1944,7 +1593,7 @@ event = {
 	random = no
 	country = GUY #Guyana
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233054_DESC"
@@ -1989,10 +1638,10 @@ event = {
 		command = { type = supply_dist_mod value = -25 }
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = hawk_lobby_3 }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -25 } #-53 
 	}
 }
 
@@ -2015,7 +1664,7 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = industrial_modifier which = total value = 15 } #-53 
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = hawk_lobby_3 }
 		command = { type = free_ic value = -1 }
@@ -2041,7 +1690,7 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = industrial_modifier which = total value = 5 } #-58 
 		command = { type = local_setflag which = corruption_2 }
 		command = { type = industrial_modifier which = supplies value = -25 }
 		command = { type = supply_dist_mod value = -25 }
@@ -2067,10 +1716,10 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp15k }
-		command = { type = local_setflag which = free_market_8 }
-		command = { type = building_prod_mod which = ic value = -150 }
-		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -62 }
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -36 } #-62 
 		command = { type = local_setflag which = corruption_5 }
 		command = { type = industrial_modifier which = supplies value = -10 }
 		command = { type = supply_dist_mod value = -5 }
@@ -2096,51 +1745,12 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp30p }
-		command = { type = local_setflag which = free_market_8 }
-		command = { type = building_prod_mod which = ic value = -150 }
-		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -72 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 } #-72
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2150,7 +1760,7 @@ event = {
 	random = no
 	country = IND
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233060_DESC"
@@ -2171,45 +1781,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_4 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2229,56 +1800,14 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = large_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -49 }
-		command = { type = local_setflag which = corruption_2 }
-		command = { type = industrial_modifier which = supplies value = -25 }
-		command = { type = supply_dist_mod value = -25 }
-		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -6 } #-49 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2298,54 +1827,14 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp30k }
-		command = { type = local_setflag which = free_market_8 }
-		command = { type = building_prod_mod which = ic value = -150 }
-		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -72 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 } #-72 }
 		command = { type = local_setflag which = corruption_8 }
 		command = { type = industrial_modifier which = supplies value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2365,53 +1854,14 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_4 }
-		command = { type = building_prod_mod which = ic value = 10 }
-		command = { type = building_prod_mod which = infrastructure value = 10 }
-		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = hawk_lobby_10 }
-		command = { type = local_setflag which = free_market_3 }
-		command = { type = building_prod_mod which = ic value = 20 }
-		command = { type = building_prod_mod which = infrastructure value = 20 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2421,7 +1871,7 @@ event = {
 	random = no
 	country = ISR
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233064_DESC"
@@ -2441,46 +1891,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_8 }
 		command = { type = free_supplies value = 50 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2503,52 +1913,13 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = industrial_modifier which = total value = 14 } #-53 }
 		command = { type = local_setflag which = corruption_5 }
 		command = { type = industrial_modifier which = supplies value = -10 }
 		command = { type = supply_dist_mod value = -5 }
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = hawk_lobby_3 }
 		command = { type = free_ic value = -2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2567,54 +1938,16 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = local_setflag which = large_country }
-		command = { type = local_setflag which = gdp30k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+#		command = { type = industrial_modifier which = total value = -58 }
 		command = { type = local_setflag which = corruption_7 }
 		command = { type = industrial_modifier which = supplies value = -3 }
 		command = { type = supply_dist_mod value = -1 }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2624,7 +1957,7 @@ event = {
 	random = no
 	country = JOR
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233067_DESC"
@@ -2644,46 +1977,6 @@ event = {
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_8 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2693,7 +1986,7 @@ event = {
 	random = no
 	country = KAZ
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233068_DESC"
@@ -2713,46 +2006,6 @@ event = {
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2762,7 +2015,7 @@ event = {
 	random = no
 	country = KOR
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233069_DESC"
@@ -2782,46 +2035,6 @@ event = {
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_4 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -2831,7 +2044,7 @@ event = {
 	random = no
 	country = KYG
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233070_DESC"
@@ -2852,45 +2065,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_4 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -2912,52 +2086,17 @@ event = {
 		command = { type = local_setflag which = gdp2k }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
-		command = { type = local_setflag which = corruption_2 }
-		command = { type = industrial_modifier which = supplies value = -25 }
-		command = { type = supply_dist_mod value = -25 }
-		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = hawk_lobby_3 }
-		command = { type = local_setflag which = free_market_5 }
-		command = { type = industrial_modifier which = total value = -35 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+#		command = { type = industrial_modifier which = total value = -35 }
 	}
 }
 
@@ -2967,7 +2106,7 @@ event = {
 	random = no
 	country = LAT
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233072_DESC"
@@ -2988,45 +2127,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3036,7 +2136,7 @@ event = {
 	random = no
 	country = LBY
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233073_DESC"
@@ -3058,46 +2158,6 @@ event = {
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = oil }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3117,56 +2177,18 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -43 }
-		command = { type = local_setflag which = corruption_3 }
-		command = { type = industrial_modifier which = supplies value = -20 }
-		command = { type = supply_dist_mod value = -15 }
-		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+#		command = { type = industrial_modifier which = total value = -43 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3196,45 +2218,6 @@ event = {
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
 		command = { type = industrial_modifier which = total value = -53 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3254,56 +2237,21 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp10k }
-		command = { type = local_setflag which = free_market_8 }
-		command = { type = building_prod_mod which = ic value = -150 }
-		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -62 }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+#		command = { type = industrial_modifier which = total value = -62 }
+
 		command = { type = local_setflag which = corruption_5 }
 		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
 		command = { type = supply_dist_mod value = -5 }
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3326,50 +2274,11 @@ event = {
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = building_prod_mod which = ic value = -150 }
 		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = industrial_modifier which = total value = 25 }
+#		command = { type = industrial_modifier which = total value = -67 }
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3379,7 +2288,7 @@ event = {
 	random = no
 	country = MAD
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233078_DESC"
@@ -3400,45 +2309,6 @@ event = {
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
 		command = { type = industrial_modifier which = total value = -44 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3448,7 +2318,7 @@ event = {
 	random = no
 	country = MAL #Mali
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233079_DESC"
@@ -3468,46 +2338,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3517,7 +2347,7 @@ event = {
 	random = no
 	country = MAN #Malta
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233080_DESC"
@@ -3536,45 +2366,6 @@ event = {
 		command = { type = supply_dist_mod value = -5 }
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3584,7 +2375,7 @@ event = {
 	random = no
 	country = MEN #Mauritania
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233081_DESC"
@@ -3604,46 +2395,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3663,54 +2414,17 @@ event = {
 		name = "mex"
 		command = { type = local_setflag which = large_country }
 		command = { type = local_setflag which = gdp10k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -63 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+#		command = { type = industrial_modifier which = total value = -63 }
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3720,7 +2434,7 @@ event = {
 	random = no
 	country = MLY
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233083_DESC"
@@ -3740,46 +2454,6 @@ event = {
 		command = { type = building_prod_mod which = infrastructure value = -50 }
 		command = { type = industrial_modifier which = total value = -43 }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3799,56 +2473,22 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -44 }
+
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+#		command = { type = industrial_modifier which = total value = -44 }
+
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
+
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3858,7 +2498,7 @@ event = {
 	random = no
 	country = MOR
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233085_DESC"
@@ -3878,46 +2518,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -3927,7 +2527,7 @@ event = {
 	random = no
 	country = MOZ
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233086_DESC"
@@ -3948,45 +2548,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -3996,7 +2557,7 @@ event = {
 	random = no
 	country = NAM
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233087_DESC"
@@ -4016,46 +2577,6 @@ event = {
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_4 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4076,53 +2597,14 @@ event = {
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp2k }
 		command = { type = local_setflag which = free_market_5 }
-		command = { type = industrial_modifier which = total value = -35 }
-		command = { type = local_setflag which = corruption_1 }
-		command = { type = industrial_modifier which = supplies value = -33 }
-		command = { type = supply_dist_mod value = -50 }
-		command = { type = research_mod value = -33 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4142,56 +2624,18 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4201,7 +2645,7 @@ event = {
 	random = no
 	country = NIG
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233090_DESC"
@@ -4223,45 +2667,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -4284,51 +2689,11 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = oil }
 	        command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4348,51 +2713,12 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp20k }
-		command = { type = local_setflag which = free_market_9 }
-		command = { type = building_prod_mod which = ic value = -300 }
-		command = { type = building_prod_mod which = infrastructure value = -300 }
-		command = { type = industrial_modifier which = total value = -76 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -4412,56 +2738,14 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp15k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -23 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = local_setflag which = corruption_6 }
 		command = { type = industrial_modifier which = supplies value = -5 }
 		command = { type = supply_dist_mod value = -3 }
 		command = { type = local_setflag which = oil }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_9 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4471,7 +2755,7 @@ event = {
 	random = no
 	country = OTT #Chad
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233094_DESC"
@@ -4482,51 +2766,12 @@ event = {
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp500 }
 		command = { type = local_setflag which = free_market_5 }
-		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = local_setflag which = corruption_2 }
 		command = { type = industrial_modifier which = supplies value = -25 }
 		command = { type = supply_dist_mod value = -25 }
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -4536,7 +2781,7 @@ event = {
 	random = no
 	country = PAK
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233095_DESC"
@@ -4556,46 +2801,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4615,52 +2820,18 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -4683,53 +2854,14 @@ event = {
 		command = { type = local_setflag which = free_market_6 }
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = local_setflag which = corruption_2 }
 		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = industrial_modifier which = total value = -10 }
 		command = { type = supply_dist_mod value = -25 }
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4752,54 +2884,16 @@ event = {
 		command = { type = local_setflag which = free_market_6 }
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -34 }
+		command = { type = industrial_modifier which = total value = 5 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = oil }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_5 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -4809,7 +2903,7 @@ event = {
 	random = no
 	country = PHI
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233099_DESC"
@@ -4829,46 +2923,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -4888,56 +2942,17 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp10k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5013,7 +3028,7 @@ event = {
 	random = no
 	country = PRK #Papua New-Guinea
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233102_DESC"
@@ -5033,46 +3048,6 @@ event = {
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5095,53 +3070,15 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -5151,7 +3088,7 @@ event = {
 	random = no
 	country = QUE #Qatar
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233104_DESC"
@@ -5171,45 +3108,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_9 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -5219,7 +3117,7 @@ event = {
 	random = no
 	country = RHO #Togo
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233105_DESC"
@@ -5237,46 +3135,6 @@ event = {
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5286,7 +3144,7 @@ event = {
 	random = no
 	country = ROM
 
-	date = { day = 1 month = october year = 1945 }
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233106_DESC"
@@ -5296,56 +3154,18 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -35 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -5355,7 +3175,7 @@ event = {
 	random = no
 	country = RSI #Rwanda
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233107_DESC"
@@ -5374,46 +3194,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_5 }
 		command = { type = free_supplies value = 7 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5436,9 +3216,10 @@ event = {
 		command = { type = local_setflag which = free_market_1 }
 		command = { type = building_prod_mod which = ic value = 50 }
 		command = { type = building_prod_mod which = infrastructure value = 50 }
-		command = { type = industrial_modifier which = total value = -5 } # -34
+		command = { type = industrial_modifier which = total value = -45 } # -34
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = oil }
@@ -5464,56 +3245,17 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp10k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5536,53 +3278,15 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -63 }
+		command = { type = industrial_modifier which = total value = 15 }
+
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_1 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5592,7 +3296,7 @@ event = {
 	random = no
 	country = SAR #Sri Lanka
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233111_DESC"
@@ -5613,46 +3317,6 @@ event = {
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_4 }
 		command = { type = free_supplies value = 20 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5672,57 +3336,16 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp10k }
-		command = { type = local_setflag which = free_market_6 }
-		command = { type = building_prod_mod which = ic value = -10 }
-		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -19 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = local_setflag which = corruption_5 }
 		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
 		command = { type = supply_dist_mod value = -5 }
 		command = { type = research_mod value = -1 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = oil }
 		command = { type = local_setflag which = hawk_lobby_8 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5732,7 +3355,7 @@ event = {
 	random = no
 	country = SCA #Macedonia/FYROM
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233113_DESC"
@@ -5752,46 +3375,6 @@ event = {
 		command = { type = research_mod value = -20 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_3 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -5811,51 +3394,12 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp30p }
-		command = { type = local_setflag which = free_market_8 }
-		command = { type = building_prod_mod which = ic value = -150 }
-		command = { type = building_prod_mod which = infrastructure value = -150 }
-		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
 	}
 }
 
@@ -5865,7 +3409,7 @@ event = {
 	random = no
 	country = SCO #Carribean
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233115_DESC"
@@ -5893,7 +3437,7 @@ event = {
 	random = no
 	country = SER
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233116_DESC"
@@ -5923,7 +3467,7 @@ event = {
 	random = no
 	country = SIA #Thailand
 
-	date = { day = 1 month = october year = 1945 }
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233117_DESC"
@@ -5933,12 +3477,13 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = large_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
@@ -5952,7 +3497,7 @@ event = {
 	random = no
 	country = SIB #Senegal
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233118_DESC"
@@ -5981,7 +3526,7 @@ event = {
 	random = no
 	country = SIE #Sierra Leone
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233119_DESC"
@@ -6006,7 +3551,7 @@ event = {
 	id = 233120
 	persistent = no
 	random = no
-	country = SIK #Singapore
+	country = SIK # East Turkestan
 
 	date = { day = 1 month = october year = 1945 }
 
@@ -6017,12 +3562,16 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
-		command = { type = local_setflag which = gdp20k }
-		command = { type = local_setflag which = free_market_9 }
-		command = { type = building_prod_mod which = ic value = -300 }
-		command = { type = building_prod_mod which = infrastructure value = -300 }
-		command = { type = industrial_modifier which = total value = -56 }
-		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_6 }
 	}
@@ -6034,7 +3583,7 @@ event = {
 	random = no
 	country = SLO #Slovakia
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233121_DESC"
@@ -6064,7 +3613,7 @@ event = {
 	random = no
 	country = SLV #Slovenia
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233122_DESC"
@@ -6092,7 +3641,7 @@ event = {
 	random = no
 	country = SOM
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233123_DESC"
@@ -6118,7 +3667,7 @@ event = {
 	random = no
 	country = SPA
 
-	date = { day = 1 month = october year = 1945 }
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233124_DESC"
@@ -6128,13 +3677,15 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp20k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
-		command = { type = local_setflag which = corruption_7 }
-		command = { type = industrial_modifier which = supplies value = -3 }
-		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = hawk_lobby_2 }
 	}
 }
@@ -6145,7 +3696,7 @@ event = {
 	random = no
 	country = SPR #Suriname
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233125_DESC"
@@ -6172,7 +3723,7 @@ event = {
 	random = no
 	country = SUD
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233126_DESC"
@@ -6214,7 +3765,7 @@ event = {
 		command = { type = local_setflag which = free_market_7 }
 		command = { type = building_prod_mod which = ic value = -50 }
 		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = industrial_modifier which = total value = 15 }
 		command = { type = local_setflag which = corruption_9 }
 		command = { type = local_setflag which = hawk_lobby_3 }
 	}
@@ -6226,7 +3777,7 @@ event = {
 	random = no
 	country = SYR
 
-	date = { day = 1 month = october year = 1945 }
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME"
 	desc = "EVT_233128_DESC"
@@ -6236,10 +3787,13 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp2k }
-		command = { type = local_setflag which = free_market_5 }
-		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
@@ -6254,7 +3808,7 @@ event = {
 	random = no
 	country = TAJ
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233129_DESC"
@@ -6283,7 +3837,7 @@ event = {
 	random = no
 	country = TAN
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233130_DESC"
@@ -6313,7 +3867,7 @@ event = {
 	random = no
 	country = TEX #East Timor
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233131_DESC"
@@ -6341,7 +3895,7 @@ event = {
 	random = no
 	country = TRA #Taiwan
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233132_DESC"
@@ -6368,7 +3922,7 @@ event = {
 	random = no
 	country = TRK #Turkmenistan
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233133_DESC"
@@ -6397,7 +3951,7 @@ event = {
 	random = no
 	country = TUN
 
-	date = { day = 1 month = october year = 1945 }
+#	date = { day = 1 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233134_DESC"
@@ -6439,11 +3993,14 @@ event = {
 		command = { type = local_setflag which = free_market_6 }
 		command = { type = building_prod_mod which = ic value = -10 }
 		command = { type = building_prod_mod which = infrastructure value = -10 }
-		command = { type = industrial_modifier which = total value = -34 }
+		command = { type = industrial_modifier which = total value = 5 }
+
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
+
 		command = { type = local_setflag which = corruption_4 }
 		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
 		command = { type = supply_dist_mod value = -10 }
 		command = { type = research_mod value = -5 }
 		command = { type = local_setflag which = hawk_lobby_5 }
@@ -6455,7 +4012,7 @@ event = {
 	random = no
 	country = U01 #Zambia
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233136_DESC"
@@ -6485,7 +4042,7 @@ event = {
 	random = no
 	country = U02 #Mauritius
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233137_DESC"
@@ -6514,7 +4071,7 @@ event = {
 	random = no
 	country = U05 #Malawi
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233138_DESC"
@@ -6543,7 +4100,7 @@ event = {
 	random = no
 	country = U06 #EU
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233139_DESC"
@@ -6572,7 +4129,7 @@ event = {
 	random = no
 	country = U07 #Botswana
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233140_DESC"
@@ -6600,7 +4157,7 @@ event = {
 	random = no
 	country = U08 #Burkina Faso
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233141_DESC"
@@ -6627,7 +4184,7 @@ event = {
 	random = no
 	country = U09 #DPRK
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233142_DESC"
@@ -6656,7 +4213,7 @@ event = {
 	random = no
 	country = U10 #Central African Rep
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233143_DESC"
@@ -6683,7 +4240,7 @@ event = {
 	random = no
 	country = U11 #DR Congo
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233144_DESC"
@@ -6712,7 +4269,7 @@ event = {
 	random = no
 	country = U12 #Cote d'Ivoire
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233145_DESC"
@@ -6740,7 +4297,7 @@ event = {
 	random = no
 	country = U13 #Eritrea
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233146_DESC"
@@ -6770,7 +4327,7 @@ event = {
 	random = no
 	country = U14 #UAE
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233147_DESC"
@@ -6801,7 +4358,7 @@ event = {
 	random = no
 	country = U15 #Kenya
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233148_DESC"
@@ -6830,7 +4387,7 @@ event = {
 	random = no
 	country = U16 #Kuwait
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233159_DESC"
@@ -6861,7 +4418,7 @@ event = {
 	random = no
 	country = U17 #Moldova
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233149_DESC"
@@ -6891,7 +4448,7 @@ event = {
 	random = no
 	country = U18 # Uganda
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233150_DESC"
@@ -6921,7 +4478,7 @@ event = {
 	random = no
 	country = UKR
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233151_DESC"
@@ -6959,10 +4516,9 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = small_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_7 }
-		command = { type = building_prod_mod which = ic value = -50 }
-		command = { type = building_prod_mod which = infrastructure value = -50 }
-		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
 		command = { type = local_setflag which = corruption_6 }
 		command = { type = industrial_modifier which = supplies value = -5 }
 		command = { type = supply_dist_mod value = -3 }
@@ -6989,7 +4545,7 @@ event = {
 		command = { type = setflag which = oil_20 } #Really 40 USD
 		command = { type = setflag which = economy_rise } #Global command
 		command = { type = local_setflag which = large_country }
-		command = { type = local_setflag which = gdp30k }
+		command = { type = local_setflag which = gdp30p }
 		command = { type = local_setflag which = free_market_8 }
 		command = { type = building_prod_mod which = ic value = -150 }
 		command = { type = building_prod_mod which = infrastructure value = -150 }
@@ -7010,7 +4566,7 @@ event = {
 	random = no
 	country = UZB
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233154_DESC"
@@ -7050,14 +4606,17 @@ event = {
 		name = "OK"
 		command = { type = local_setflag which = medium_country }
 		command = { type = local_setflag which = gdp5k }
-		command = { type = local_setflag which = free_market_4 }
-		command = { type = building_prod_mod which = ic value = 10 }
-		command = { type = building_prod_mod which = infrastructure value = 10 }
-		command = { type = industrial_modifier which = total value = -35 }
-		command = { type = local_setflag which = corruption_2 }
-		command = { type = industrial_modifier which = supplies value = -25 }
-		command = { type = supply_dist_mod value = -25 }
-		command = { type = research_mod value = -20 }
+
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = oil }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = tiger }
@@ -7071,7 +4630,7 @@ event = {
 	random = no
 	country = VIC #Niger
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233156_DESC"
@@ -7098,7 +4657,7 @@ event = {
 	random = no
 	country = WLL
 
-	date = { day = 2 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233157_DESC"
@@ -7144,6 +4703,7 @@ event = {
 		command = { type = industrial_modifier which = total value = -15 }
 		command = { type = local_setflag which = corruption_3 }
 		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
@@ -7176,6 +4736,134 @@ event = {
 		command = { type = industrial_modifier which = supplies value = -20 }
 		command = { type = supply_dist_mod value = -15 }
 		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233161
+	persistent = no
+	random = no
+	country = YUG
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233162
+	persistent = no
+	random = no
+	country = U33
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233163
+	persistent = no
+	random = no
+	country = U50
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233164
+	persistent = no
+	random = no
+	country = U72
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_8 }
 	}

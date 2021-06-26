@@ -77,7 +77,53 @@ Corruption
 
 
 
+		command = { type = local_setflag which = free_market_10 }
+		command = { type = building_prod_mod which = ic value = -500 }
+		command = { type = building_prod_mod which = infrastructure value = -500 }
+		command = { type = industrial_modifier which = total value = 45 }
 
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 }
+
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -35 }
+
+		command = { type = local_setflag which = free_market_1 }
+		command = { type = building_prod_mod which = ic value = 50 }
+		command = { type = building_prod_mod which = infrastructure value = 50 }
+		command = { type = industrial_modifier which = total value = -45 }
 
 
 

@@ -70,67 +70,22 @@ country = {
   transports     = 500
   escorts        = 300
 
-  diplomacy = {
-    relation = { tag = AFG value = 50 }
-    relation = {
-      tag        = ALB
-      value      = 10
-      guaranteed = { year = 1934 month = march day = 17 }
-    }
-    relation = { tag = ARG value = 30 }
-    relation = { tag = AST value = 1 }
-    relation = {
-      tag        = AUS
-      value      = 125
-      guaranteed = { year = 1934 month = march day = 17 }
-    }
-    relation = { tag = BEL value = -5 }
-    relation = { tag = BHU value = 1 }
-    relation = { tag = BUL value = 150 }
-    relation = { tag = CAN value = 1 }
-    relation = { tag = CHL value = 30 }
-    relation = { tag = CZE value = 15 }
-    relation = { tag = ENG value = -50 }
-    relation = { tag = FIN value = 50 }
-    relation = { tag = FRA value = 50 }
-    relation = { tag = GER value = 50 }
-    relation = {
-      tag        = GRE
-      value      = -35
-      guaranteed = { year = 1934 month = march day = 17 }
-    }
-    relation = { tag = HOL value = -20 }
-    relation = {
-      tag        = HUN
-      value      = 125
-      guaranteed = { year = 1934 month = march day = 17 }
-    }
-    relation = { tag = IRE value = 20 }
+  diplomacy =
+  { relation = { tag = ENG value = 100 access = yes }
+    relation = { tag = FRA value = 100 }
+    relation = { tag = GRE value = 100 }
+    relation = { tag = HUN value = 125 }
     relation = { tag = IRQ value = 25 }
-    relation = { tag = NEP value = 1 }
-    relation = { tag = NZL value = 1 }
-    relation = { tag = OMN value = 50 }
-    relation = { tag = POR value = 65 }
-    relation = {
-      tag        = ROM
-      value      = 50
-      guaranteed = { year = 1934 month = march day = 17 }
+    relation =
+    { tag        = SCH
+      guaranteed = { day = 16 month = may year = 1935 }
     }
-    relation = { tag = SAF value = 1 }
-    relation = { tag = SAU value = -25 }
-    relation = {
-      tag        = SCH
-      value      = 1
-      guaranteed = { year = 1935 month = may day = 16 }
+    relation =
+    { tag        = SPA
+      guaranteed = { day = 18 month = november year = 1936 }
     }
-    relation = { tag = SPR value = -50 }
-    relation = {
-      tag        = TUR
-      value      = 1
-      guaranteed = { year = 1934 month = march day = 17 }
-    }
-    relation = { tag = YEM value = 50 }
-    relation = { tag = YUG value = 75 }
+    relation = { tag = USA access = yes }
+    relation = { tag = YUG value = -50 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 4 }

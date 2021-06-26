@@ -5,7 +5,7 @@
 country = {
   tag                = MON
   puppet             = SOV
-  capital            = 1404 # ì‚£¨õÌm°ÍÍĞ£©
+  capital            = 1404 # ì?£¨õÌm°ÍÍĞ£©
   manpower           = 7
   # Resource Reserves
   energy         = 200
@@ -29,7 +29,7 @@ country = {
   policy = {
     date              = { year = 0 month = january day = 0 }
     democratic        = 1
-    political_left    = 7
+    political_left    = 8
     freedom           = 5
     free_market       = 3
     professional_army = 2
