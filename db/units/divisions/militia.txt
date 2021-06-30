@@ -12,8 +12,8 @@ model = {
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 4
-	defaultorganisation 	= 20
-	morale					= 25
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 0
 	toughness				= 0
 	softness				= 100
@@ -37,8 +37,8 @@ model = {
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 4
-	defaultorganisation 	= 20
-	morale					= 25
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 0
 	toughness				= 0
 	softness				= 100
@@ -62,8 +62,8 @@ model = {
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 4.5
-	defaultorganisation 	= 23
-	morale					= 28
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 1
 	toughness				= 0
 	softness				= 100
@@ -87,8 +87,8 @@ model = {
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 26
-	morale					= 31
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 2
 	toughness				= 1
 	softness				= 100
@@ -112,8 +112,8 @@ model = {
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 29
-	morale					= 34
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 3
 	toughness				= 2
 	softness				= 96
@@ -137,8 +137,8 @@ model = {
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 32
-	morale					= 37
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 4
 	toughness				= 2
 	softness				= 95
@@ -162,8 +162,8 @@ model = {
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 35
-	morale					= 40
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 5
 	toughness				= 3
 	softness				= 94
@@ -187,8 +187,8 @@ model = {
 	buildtime	 			= 170
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 38
-	morale					= 43
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 6
 	toughness				= 3
 	softness				= 93
@@ -212,8 +212,8 @@ model = {
 	buildtime	 			= 170
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 41
-	morale					= 46
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 7
 	toughness				= 4
 	softness				= 92
@@ -237,8 +237,8 @@ model = {
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 8
 	toughness				= 4
 	softness				= 90
@@ -262,8 +262,8 @@ model = {
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 8
 	toughness				= 4
 	softness				= 90
@@ -287,8 +287,8 @@ model = {
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 10
 	defensiveness 			= 8
 	toughness				= 4
 	softness				= 90
@@ -337,8 +337,8 @@ model = {
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 4.5
-	defaultorganisation 	= 16
-	morale					= 23
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 1
 	toughness				= 0
 	softness				= 100
@@ -356,14 +356,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 14 - 民28年型武警機動? 
+# 14 - 民28年型武警機動队 
 model = {
 	cost 					= 3.5
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 22
-	morale					= 28
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 2
 	toughness				= 1
 	softness				= 100
@@ -381,14 +381,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 15 - 民30年型特務別動? 
+# 15 - 民30年型特務別動队 
 model = {
 	cost 					= 4.5
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 28
-	morale					= 34
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 3
 	toughness				= 2
 	softness				= 99
@@ -406,14 +406,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 16 - 民32年型忠義救國? 
+# 16 - 民32年型忠義救國団 
 model = {
 	cost 					= 5.5
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 32
-	morale					= 37
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 4
 	toughness				= 3
 	softness				= 98
@@ -437,8 +437,8 @@ model = {
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 35
-	morale					= 40
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 5
 	toughness				= 3
 	softness				= 96
@@ -462,8 +462,8 @@ model = {
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 38
-	morale					= 43
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 6
 	toughness				= 4
 	softness				= 94
@@ -481,14 +481,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 19 - 民40年型國民警備隊
+# 19 - 民40年型國民警備队 
 model = {
 	cost 					= 7
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 41
-	morale					= 46
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 6
 	toughness				= 5
 	softness				= 92
@@ -506,14 +506,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 20 - 民44年型國民警備? 
+# 20 - 民44年型國民警備队 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 7
 	toughness				= 5
 	softness				= 90
@@ -531,14 +531,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 21 - 民44年型國民警備? 
+# 21 - 民44年型國民警備队 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 7
 	toughness				= 5
 	softness				= 90
@@ -556,14 +556,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 22 - 民44年型國民警備? 
+# 22 - 民44年型國民警備队 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 7
 	toughness				= 5
 	softness				= 90
@@ -581,14 +581,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 23 - 民44年型國民警備? 
+# 23 - 民44年型國民警備队 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 44
-	morale					= 49
+	defaultorganisation 	= 10
+	morale					= 15
 	defensiveness 			= 7
 	toughness				= 5
 	softness				= 90
@@ -612,8 +612,8 @@ model = {
 	buildtime	 			= 130
 	manpower 				= 10
 	maxspeed 				= 4
-	defaultorganisation 	= 25
-	morale					= 35
+	defaultorganisation 	= 15
+	morale					= 25
 	defensiveness 			= 1
 	toughness				= 0
 	softness				= 100
@@ -631,14 +631,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 25 - 八路?36型遊擊縱? 
+# 25 - 八路军36型遊擊縱队 
 model = {
 	cost 					= 2.5
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 4.5
-	defaultorganisation 	= 28
-	morale					= 38
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 2
 	toughness				= 1
 	softness				= 100
@@ -656,14 +656,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 26 - 八路?39型遊擊縱? 
+# 26 - 八路军39型遊擊縱队 
 model = {
 	cost 					= 3
 	buildtime	 			= 140
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 31
-	morale					= 41
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 3
 	toughness				= 2
 	softness				= 100
@@ -681,14 +681,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 27 - 八路?41型遊擊縱? 
+# 27 - 八路军41型遊擊縱队 
 model = {
 	cost 					= 3.5
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 34
-	morale					= 44
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 4
 	toughness				= 2
 	softness				= 100
@@ -706,14 +706,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 28 - 八路?43型遊擊縱? 
+# 28 - 八路军43型遊擊縱队 
 model = {
 	cost 					= 4.5
 	buildtime	 			= 150
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 33
-	morale					= 47
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 5
 	toughness				= 3
 	softness				= 100
@@ -731,14 +731,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 29 - 解放?45型?立縱? 
+# 29 - 解放军45型?立縱队 
 model = {
 	cost 					= 5.5
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 40
-	morale					= 50
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 6
 	toughness				= 3
 	softness				= 99
@@ -756,14 +756,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 30 - 解放?48型公安縱? 
+# 30 - 解放军48型公安縱队 
 model = {
 	cost 					= 6.5
 	buildtime	 			= 160
 	manpower 				= 10
 	maxspeed 				= 5.5
-	defaultorganisation 	= 43
-	morale					= 53
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 7
 	toughness				= 4
 	softness				= 97
@@ -781,14 +781,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 31 - 解放?51型公安? 
+# 31 - 解放军51型公安师 
 model = {
 	cost 					= 7
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 46
-	morale					= 56
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 7
 	toughness				= 5
 	softness				= 95
@@ -806,14 +806,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 32 - 解放?55型公安?
+# 32 - 解放军55型公安师 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 49
-	morale					= 59
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 8
 	toughness				= 5
 	softness				= 92
@@ -831,14 +831,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 33 - 解放?55型公安?
+# 33 - 解放军55型公安师 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 49
-	morale					= 59
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 8
 	toughness				= 5
 	softness				= 92
@@ -856,14 +856,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 34 - 解放?55型公安?
+# 34 - 解放军55型公安师 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 49
-	morale					= 59
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 8
 	toughness				= 5
 	softness				= 92
@@ -881,14 +881,14 @@ model = {
 	upgrade_time_factor = 1
 	upgrade_cost_factor = 1
 }
-# 35 - 解放?55型公安?
+# 35 - 解放军55型公安师 
 model = {
 	cost 					= 8
 	buildtime	 			= 180
 	manpower 				= 10
 	maxspeed 				= 6
-	defaultorganisation 	= 49
-	morale					= 59
+	defaultorganisation 	= 20
+	morale					= 25
 	defensiveness 			= 8
 	toughness				= 5
 	softness				= 92

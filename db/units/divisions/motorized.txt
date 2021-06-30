@@ -25,8 +25,8 @@ model = {
 	buildtime	 			= 240
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 2
 	toughness				= 2
 	softness				= 99
@@ -50,8 +50,8 @@ model = {
 	buildtime	 			= 240
 	manpower 				= 10
 	maxspeed 				= 5
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 3
 	toughness				= 3
 	softness				= 95
@@ -69,14 +69,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 2 - 35型摩托化常備步兵師
+# 2 - 35型摩托化步兵師
 model = {
 	cost 					= 11
 	buildtime	 			= 250
 	manpower 				= 10
 	maxspeed 				= 7
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 4
 	toughness				= 4
 	softness				= 88
@@ -94,14 +94,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 3 - 39型摩托化常備步兵師
+# 3 - 39型摩托化步兵師
 model = {
 	cost 					= 11
 	buildtime	 			= 250
 	manpower 				= 10
 	maxspeed 				= 7.5
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 5
 	toughness				= 4
 	softness				= 80
@@ -119,14 +119,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 4 - 42型摩托化常備步兵師
+# 4 - 42型摩托化步兵師
 model = {
 	cost 					= 13
 	buildtime	 			= 260
 	manpower 				= 10
 	maxspeed 				= 8
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 6
 	toughness				= 5
 	softness				= 77
@@ -144,14 +144,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 5 - 45型機械化常備步兵師
+# 5 - 45型摩托化步兵師
 model = {
 	cost 					= 13
 	buildtime	 			= 260
 	manpower 				= 10
 	maxspeed 				= 9
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 6
 	toughness				= 6
 	softness				= 70
@@ -169,14 +169,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 6 - 48型機械化常備步兵師
+# 6 - 48型摩托化步兵師
 model = {
 	cost 					= 13
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 9.5
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 7
 	toughness				= 7
 	softness				= 66
@@ -194,14 +194,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 7 - 52型機械化常備步兵師
+# 7 - 52型摩托化步兵師
 model = {
 	cost 					= 15
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 10
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 7
 	softness				= 63
@@ -219,14 +219,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 8 - 56型機械化常備步兵師
+# 8 - 56型摩托化步兵師
 model = {
 	cost 					= 15
 	buildtime	 			= 270
 	manpower 				= 10
-	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 60
@@ -244,14 +244,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 9 - 60型機械化常備步兵師
+# 9 - 60型摩托化步兵師
 model = {
 	cost 					= 17
 	buildtime	 			= 270
 	manpower 				= 10
-	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 57
@@ -269,14 +269,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 10 - 68型機械化常備步兵師
+# 10 - 68型摩托化步兵師
 model = {
 	cost 					= 17
 	buildtime	 			= 270
 	manpower 				= 10
-	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 54
@@ -294,14 +294,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 11 - 74型機械化常備步兵師
+# 11 - 74型摩托化步兵師
 model = {
 	cost 					= 19
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 51
@@ -319,14 +319,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 12 - 81型機械化常備步兵師
+# 12 - 81型摩托化步兵師
 model = {
 	cost 					= 21
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 48
@@ -344,14 +344,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 13 - 84型機械化常備步兵師
+# 13 - 84型摩托化步兵師
 model = {
 	cost 					= 21
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 45
@@ -369,14 +369,14 @@ model = {
 	upgrade_time_factor = 0.5
 	upgrade_cost_factor = 1.2
 }
-# 14 - 88型機械化常備步兵師
+# 14 - 88型摩托化步兵師
 model = {
 	cost 					= 24
 	buildtime	 			= 270
 	manpower 				= 10
 	maxspeed 				= 11
-	defaultorganisation 	= 40
-	morale					= 40
+	defaultorganisation 	= 30
+	morale					= 30
 	defensiveness 			= 8
 	toughness				= 8
 	softness				= 42
