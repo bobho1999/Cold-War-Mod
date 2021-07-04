@@ -100,117 +100,117 @@ event = {
 	country = CHC
 	trigger = {
 		event = 942300
-            war = { country = CHI country = CHC }          
+            	war = { country = CHI country = CHC }          
               }
 		  
-    name = "策反高樹勛 "
+    	name = "策反高樹勛 "
 	desc = "1945年10月28日派遣李達赴國軍新8軍軍部，敦促
-第11戰區副司令長官兼新8軍軍長高樹勛率部起義。"
+		第11戰區副司令長官兼新8軍軍長高樹勛率部起義。"
 	style = 0
 	
-    date = { day = 27 month = october year = 1945 }
-    offset = 1
+    	date = { day = 27 month = october year = 1945 }
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1947 }
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "積極爭取" 	 
-	command = { type = trigger which = 942303 value = 1 }	
-              }
+	    	name = "積極爭取" 	 
+		command = { type = trigger which = 942303 value = 1 }	
+	}
 	action_b = {
-	    name = "沒必要" 	 
-	command = {  }	
-              }
+	    	name = "沒必要" 	 
+		command = {  }	
+	}
      }
 event = {
 	id = 942303
 	random = no
 	country = CHI
 		  
-    name = "高樹勛投共"
+    	name = "高樹勛投共"
 	desc = "1945年10月30日，新編第八軍和河北民軍大約1萬餘
-人在磁縣馬頭鎮宣布起義。"
+		人在磁縣馬頭鎮宣布起義。"
 	style = 0
 
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "娘西匹!!" 	 
-	command = { type = trigger which = 942304 }
-	command = { type = dissent value = 1 }
-	command = { type = morale which = land value = -1 }
-	command = { type = remove_division which = 11616 value = 247 }
-	command = { type = remove_division which = 11616 value = 248 }
-              }
+	    	name = "娘西匹!!" 	 
+		command = { type = trigger which = 942304 }
+		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
+		command = { type = remove_division which = 11616 value = 247 }
+		command = { type = remove_division which = 11616 value = 248 }
+	}
      }
 event = {
 	id = 942304
 	random = no
 	country = CHC
 		  
-    name = "高樹勛起義"
+    	name = "高樹勛起義"
 	desc = "1945年10月30日，新編第八軍和河北民軍大約1萬餘
-人在磁縣馬頭鎮宣布起義。"
+		人在磁縣馬頭鎮宣布起義。"
 	style = 0
 
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "歡迎" 	 
-	command = { type = dissent value = -1 }
-	    command = { type = add_corps which = "民主建國軍" value = land where = 1212 }
-        command = { type = add_division which = "民主建國第一軍" value = infantry when = 48  }
-	command = { type = add_division which = "民主建國第二軍" value = infantry when = 48  }
-              }
+	    	name = "歡迎" 	 
+		command = { type = dissent value = -1 }
+	    	command = { type = add_corps which = "民主建國軍" value = land where = 1212 }
+        	command = { type = add_division which = "民主建國第一軍" value = infantry when = 48  }
+		command = { type = add_division which = "民主建國第二軍" value = infantry when = 48  }
+	}
      }
 event = {
 	id = 942305
 	random = no
 	country = CHI
 
-	name = "平漢戰役——失敗 "
+	name = "平漢戰役—失敗 "
 	desc = "1945年10月30日，國軍第40軍第106師大部被殲滅，而第
-30軍也遭到重大打擊。10月31日，國軍主力全力突圍，
-南撤。晉冀魯豫軍區部隊全力追擊，於當日下午再次將
-國軍合圍在旗杆樟、辛莊、馬營一帶。11月1日夜，共軍
-突入第11戰區司令長官部，俘虜了第11戰區副司令長官兼
-第40軍軍長馬法五。11月2日，除少數國軍突圍以外，其
-餘全數被殲。"
+		30軍也遭到重大打擊。10月31日，國軍主力全力突圍，
+		南撤。晉冀魯豫軍區部隊全力追擊，於當日下午再次將
+		國軍合圍在旗杆樟、辛莊、馬營一帶。11月1日夜，共軍
+		突入第11戰區司令長官部，俘虜了第11戰區副司令長官兼
+		第40軍軍長馬法五。11月2日，除少數國軍突圍以外，其
+		餘全數被殲。"
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "國軍無能" 	 
-	command = { type = dissent value = 3 }
-	command = { type = trigger which = 942306 }
-	command = { type = sleepevent which = 942307 }
-	command = { type = sleepevent which = 942308 }	
-	command = { type = morale which = land value = -1 }
-	command = { type = damage_division which = 11616 value = 300 where = 30 }
-	command = { type = damage_division which = 11616 value = 15 where = 30 }
-	command = { type = damage_division which = 11616 value = 16 where = 30 }
-	command = { type = damage_division which = 11616 value = 18 where = 10 }
-	command = { type = damage_division which = 11616 value = 302 where = 60 }
-	command = { type = local_clrflag which = pinghanzhani }
-              }
-     }
+	    	name = "國軍無能" 	 
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 942306 }
+		command = { type = sleepevent which = 942307 }
+		command = { type = sleepevent which = 942308 }	
+		command = { type = morale which = land value = -1 }
+		command = { type = damage_division which = 11616 value = 300 where = 30 }
+		command = { type = damage_division which = 11616 value = 15 where = 30 }
+		command = { type = damage_division which = 11616 value = 16 where = 30 }
+		command = { type = damage_division which = 11616 value = 18 where = 10 }
+		command = { type = damage_division which = 11616 value = 302 where = 60 }
+		command = { type = local_clrflag which = pinghanzhani }
+	}
+}
 event = {
 	id = 942306
 	random = no
 	country = CHC
 
-	name = "平漢戰役——勝利 "
+	name = "平漢戰役—勝利 "
 	desc = "1945年10月30日，國軍第40軍第106師大部被殲滅，而第
-30軍也遭到重大打擊。10月31日，國軍主力全力突圍，
-南撤。晉冀魯豫軍區部隊全力追擊，於當日下午再次將
-國軍合圍在旗杆樟、辛莊、馬營一帶。11月1日夜，共軍
-突入第11戰區司令長官部，俘虜了第11戰區副司令長官兼
-第40軍軍長馬法五。11月2日，除少數國軍突圍以外，其
-餘全數被殲。"
+		30軍也遭到重大打擊。10月31日，國軍主力全力突圍，
+		南撤。晉冀魯豫軍區部隊全力追擊，於當日下午再次將
+		國軍合圍在旗杆樟、辛莊、馬營一帶。11月1日夜，共軍
+		突入第11戰區司令長官部，俘虜了第11戰區副司令長官兼
+		第40軍軍長馬法五。11月2日，除少數國軍突圍以外，其
+		餘全數被殲。"
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
 	    name = "共軍威武" 	
@@ -223,47 +223,48 @@ event = {
 	id = 942307
 	random = no
 	country = CHI
-    trigger = {
-        event = 942300
-        control = { province = 1205 data = CHI }  
-        control = { province = 1810 data = CHI } 
-	control = { province = 2870 data = CHI }
-	control = { province = 1210 data = CHI }
-	control = { province = 1211 data = CHI }
-	control = { province = 1212 data = CHI }
-	control = { province = 1224 data = CHI }
-	control = { province = 2838 data = CHI }        
-   }
-	name = "平漢戰役——勝利 "
+    	trigger = {
+        	event = 942300
+        	control = { province = 1205 data = CHI }  
+        	control = { province = 1810 data = CHI } 
+		control = { province = 2870 data = CHI }
+		control = { province = 1210 data = CHI }
+		control = { province = 1211 data = CHI }
+		control = { province = 1212 data = CHI }
+		control = { province = 1224 data = CHI }
+		control = { province = 2838 data = CHI }        
+   	}
+
+	name = "平漢戰役—勝利 "
 	desc = "國軍為期一個月的作戰，成功掃蕩了平漢線上的敵軍，
-恢復平漢線的交通並加強其在華北的統治。"
-    date = { day = 14 month = october year = 1945 }
-    offset = 5
-	deathdate = { day = 30 month = december year = 1947 }
+		恢復平漢線的交通並加強其在華北的統治。"
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
+
+    	date = { day = 14 month = october year = 1945 }
+    	offset = 5
+	deathdate = { day = 30 month = december year = 1947 }
 	
 	action_a = {
-	    name = "國軍威武" 	 
-	command = { type = dissent value = -3 }
-	command = { type = trigger which = 942308 }	
-	command = { type = sleepevent which = 942305 }
-	command = { type = sleepevent which = 942306 }
-	command = { type = morale which = land value = 1 }
-	command = { type = local_clrflag which = pinghanzhani }
-              }
-     }
+		name = "國軍威武" 	 
+		command = { type = dissent value = -3 }
+		command = { type = trigger which = 942308 }	
+		command = { type = sleepevent which = 942305 }
+		command = { type = sleepevent which = 942306 }
+		command = { type = morale which = land value = 1 }
+		command = { type = local_clrflag which = pinghanzhani }
+	}
+}
 event = {
 	id = 942308
 	random = no
 	country = CHC
 
-	name = "平漢戰役——失敗 "
+	name = "平漢戰役—失敗 "
 	desc = "國軍為期一個月的作戰，成功掃蕩了平漢線上的敵軍，
-恢復平漢線的交通並加強其在華北的統治。"
-
+		恢復平漢線的交通並加強其在華北的統治。"
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
 	    name = "共軍無能" 	
@@ -358,7 +359,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "津浦戰役——失敗 "
+	name = "津浦戰役—失敗 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 		解放區連成一片。"
 
@@ -381,7 +382,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "津浦戰役——勝利 "
+	name = "津浦戰役—勝利 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 解放區連成一片。"
 
@@ -417,7 +418,7 @@ event = {
 	control = { province = 1204 data = CHI }
 	control = { province = 2866 data = CHI }        
    }
-	name = "津浦戰役——勝利 "
+	name = "津浦戰役—勝利 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 恢復津浦線的交通並加強其在華北的統治。"
 
@@ -441,7 +442,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "津浦戰役——失敗 "
+	name = "津浦戰役—失敗 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 恢復津浦線的交通並加強其在華北的統治。"
 
@@ -530,7 +531,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "平綏戰役——失敗 "
+	name = "平綏戰役—失敗 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 解放區連成一片。"
 
@@ -549,7 +550,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "平綏戰役——勝利 "
+	name = "平綏戰役—勝利 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 解放區連成一片。"
 
@@ -582,7 +583,7 @@ event = {
 	control = { province = 1208 data = -1 }
 	control = { province = 2813 data = -1 }        
    }
-	name = "平綏戰役——勝利 "
+	name = "平綏戰役—勝利 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 恢復津浦線的交通並加強其在華北的統治。"
 
@@ -608,7 +609,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "平綏戰役——失敗 "
+	name = "平綏戰役—失敗 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 恢復津浦線的交通並加強其在華北的統治。"
 
@@ -698,7 +699,7 @@ event = {
     	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "發起戰役——1個月內占領大同、集寧"
+	    name = "發起戰役—1個月內占領大同、集寧"
 	ai_chance = 100	
 	command = { type = trigger which = 942373 }
 	command = { type = trigger which = 942374 value = 45 }	
@@ -738,7 +739,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "大同集寧戰役——失敗 "
+	name = "大同集寧戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -757,7 +758,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "大同集寧戰役——勝利 "
+	name = "大同集寧戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -785,7 +786,7 @@ event = {
 	control = { province = 1209 data = -1 }		
 	control = { province = 1207 data = -1 }   
    	}
-	name = "大同集寧戰役——勝利 "
+	name = "大同集寧戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -818,7 +819,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "大同集寧戰役——失敗 "
+	name = "大同集寧戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -915,7 +916,7 @@ event = {
     	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "發起戰役——1星期內占領濟南"
+	    name = "發起戰役—1星期內占領濟南"
 	ai_chance = 99	
 	command = { type = trigger which = 942361 }
 	command = { type = trigger which = 942362 value = 10 }	
@@ -954,7 +955,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "濟南戰役——失敗 "
+	name = "濟南戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -973,24 +974,24 @@ event = {
 	random = no
 	country = CHI
 
-	name = "濟南戰役——勝利 "
+	name = "濟南戰役—勝利 "
 	desc = " "
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "國軍威武" 	
-	command = { type = dissent value = -3 }
-	command = { type = sleepevent which = 942364 }
-	command = { type = sleepevent which = 942365 }
-	command = { type = add_leader_trait which = 50326 value = urban_fighter } #王耀武
-	command = { type = change_leader_xp which = 50326 value = 50 }	
-	command = { type = morale which = land value = 1 }
-	command = { type = delay value = -1 }                 #战术阻击
-	command = { type = counterattack value = -0.5 }       #战术反击
-              }
-     }
+	    	name = "國軍威武" 	
+		command = { type = dissent value = -3 }
+		command = { type = sleepevent which = 942364 }
+		command = { type = sleepevent which = 942365 }
+		command = { type = add_leader_trait which = 50326 value = urban_fighter } #王耀武
+		command = { type = change_leader_xp which = 50326 value = 50 }	
+		command = { type = morale which = land value = 1 }
+		command = { type = delay value = -1 }                 #战术阻击
+		command = { type = counterattack value = -0.5 }       #战术反击
+	}
+}
 event = {
 	id = 942364
 	random = no
@@ -999,57 +1000,64 @@ event = {
 #        	flag = jinanzhani
         	control = { province = 1216 data = -1 }         
    	}
-	name = "濟南戰役——勝利 "
-	desc = " "
+	name = "濟南戰役—勝利 "
+	desc = "1948年9月16日至24日，华东人民解放军执行1948年
+		7月16日确定的“攻克济南”的指示。他们统一指挥
+		14万兵力的攻城集团，经8昼夜的激烈攻坚作战，在
+		徐州、青岛之敌尚未来得及集结完毕以北援的情况
+		下，全歼守敌10.4万余人，山东境内最大的内陆城
+		市，也是南京与天津间最大城市的山东省省会济南
+		宣告解放。 "
 
 	style = 0
     	picture = "WuhanDefense"
 	date = { day = 14 month = september year = 1948 }
     	offset = 1
-	deathdate = { day = 30 month = december year = 1950 }	
+	deathdate = { day = 30 month = december year = 1950 }
+	
 	action_a = {
-	    name = "共軍威武" 	 
-	command = { type = dissent value = -3 }
-	command = { type = secedeprovince which = CHC value = 1216 }
-	command = { type = trigger which = 942365 }	
-	command = { type = sleepevent which = 942362 }
-	command = { type = sleepevent which = 942363 }
-	command = { type = morale which = land value = 1 }
-	command = { type = clrflag which = jinanzhani }
-	command = { type = add_leader_trait which = 76337 value = urban_fighter }
-	command = { type = add_leader_trait which = 76115 value = urban_fighter }
-	command = { type = add_leader_trait which = 76160 value = urban_fighter }
-	command = { type = add_leader_trait which = 76127 value = urban_fighter }
-	command = { type = add_leader_trait which = 76337 value = fortress_buster }
-	command = { type = add_leader_trait which = 76115 value = fortress_buster }
-	command = { type = add_leader_trait which = 76160 value = fortress_buster }
-	command = { type = add_leader_trait which = 76127 value = fortress_buster }
-	command = { type = breakthrough value = 0.5 } 
-	command = { type = assault value = 0.5 } 
-              }
-     }
+	    	name = "共軍威武" 	 
+		command = { type = dissent value = -3 }
+		command = { type = secedeprovince which = CHC value = 1216 }
+		command = { type = trigger which = 942365 }	
+		command = { type = sleepevent which = 942362 }
+		command = { type = sleepevent which = 942363 }
+		command = { type = morale which = land value = 1 }
+		command = { type = clrflag which = jinanzhani }
+		command = { type = add_leader_trait which = 76337 value = urban_fighter }
+		command = { type = add_leader_trait which = 76115 value = urban_fighter }
+		command = { type = add_leader_trait which = 76160 value = urban_fighter }
+		command = { type = add_leader_trait which = 76127 value = urban_fighter }
+		command = { type = add_leader_trait which = 76337 value = fortress_buster }
+		command = { type = add_leader_trait which = 76115 value = fortress_buster }
+		command = { type = add_leader_trait which = 76160 value = fortress_buster }
+		command = { type = add_leader_trait which = 76127 value = fortress_buster }
+		command = { type = breakthrough value = 0.5 } 
+		command = { type = assault value = 0.5 } 
+	}
+}
 event = {
 	id = 942365
 	random = no
 	country = CHI
 
-	name = "濟南戰役——失敗 "
+	name = "濟南戰役—失敗 "
 	desc = " "
 
 	style = 0
     picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "國軍無能" 	
-	command = { type = dissent value = 3 }
-	command = { type = secedeprovince which = CHC value = 1216 }
-	command = { type = sleepleader which = 50326 }
-	command = { type = sleepleader which = 50243 }
-	command = { type = morale which = land value = -1 }
-	command = { type = delay value = -1.5 }                 #战术阻击
-	command = { type = counterattack value = -1 } 		#战术反击
-              }
-     }
+	    	name = "國軍無能" 	
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = CHC value = 1216 }
+		command = { type = sleepleader which = 50326 }
+		command = { type = sleepleader which = 50243 }
+		command = { type = morale which = land value = -1 }
+		command = { type = delay value = -1.5 }                 #战术阻击
+		command = { type = counterattack value = -1 } 		#战术反击
+	}
+}
 
 event = {
 	id = 942366
@@ -1057,7 +1065,13 @@ event = {
 	country = CHI
     	trigger = {
         	flag = jinanzhani
-        	control = { province = 1216 data = -1 }         
+        	control = { province = 1216 data = -1 } 
+		control = { province = 1170 data = -2 }	
+		control = { province = 1213 data = -2 }	
+		control = { province = 2863 data = -2 }
+		control = { province = 2864 data = -2 }
+		control = { province = 2855 data = -2 }
+		control = { province = 1894 data = -2 }	        
    	}
 	name = "吳化文叛變 "
 	desc = " "
@@ -1094,8 +1108,7 @@ event = {
         	command = { type = add_division which = "中国人民解放军第104师" value = infantry when = 49 }
         	command = { type = add_division which = "中国人民解放军第105师" value = infantry when = 49 }
         }
-     }
-
+}
 #########################
 # 陝北戰役
 #########################	 
@@ -1178,7 +1191,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "陝北戰役——失敗 "
+	name = "陝北戰役—失敗 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 		解放區連成一片。"
 
@@ -1198,7 +1211,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "陝北戰役——勝利 "
+	name = "陝北戰役—勝利 "
 	desc = "1945年10月至12月，中共軍隊攻占山東大片地區，山東華中兩
 		解放區連成一片。"
 
@@ -1224,7 +1237,7 @@ event = {
         	control = { province = 1271 data = CHI }  
         	control = { province = 1269 data = CHI }         
    	}
-	name = "陝北戰役——勝利 "
+	name = "陝北戰役—勝利 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 		恢復津浦線的交通並加強其在華北的統治。"
 
@@ -1250,7 +1263,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "陝北戰役——失敗 "
+	name = "陝北戰役—失敗 "
 	desc = "國軍在不斷的作戰之後，成功掃蕩了津浦線上的敵軍，
 		恢復津浦線的交通並加強其在華北的統治。"
 
@@ -1671,7 +1684,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "平津戰役——沒有達到戰略目標 "
+	name = "平津戰役—沒有達到戰略目標 "
 	desc = " "
 
 	style = 0
@@ -1680,6 +1693,7 @@ event = {
 	action_a = {
 	    	name = "共軍無能" 	 
 		command = { type = dissent value = 5 }	
+		command = { type = trigger which = 63902 }
 		command = { type = morale which = land value = -5 }
        		command = { type = encirclement value = -2 }          #战术包围
        		command = { type = ambush value = -2 }                #战术伏击
@@ -1697,7 +1711,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "平津會戰——勝利 "
+	name = "平津會戰—勝利 "
 	desc = " "
 
 	style = 0
@@ -1706,6 +1720,7 @@ event = {
 	action_a = {
 	    	name = "國軍威武!!" 	
 		command = { type = dissent value = -5 }
+		command = { type = trigger which = 63900 }
 		command = { type = sleepevent which = 942384 }
 #		command = { type = sleepevent which = 9423840 }
 		command = { type = sleepevent which = 942385 }
@@ -1737,7 +1752,7 @@ event = {
 		control = { province = 1203 data = -1 } #唐山 
 #		NOT = { event = 942166 }
    	}
-	name = "平津戰役——全面勝利 "
+	name = "平津戰役—全面勝利 "
     	desc = "共产党在华北的作战中连续取得了一系列胜利，先后
 	攻占了北平，天津，石家庄等大中城市，解放了全华北 "
 
@@ -1749,7 +1764,8 @@ event = {
 	action_a = {
 	    name = "共軍威武" 	 
 		command = { type = dissent value = -5 }
-		command = { type = trigger which = 942385 }	
+		command = { type = trigger which = 942385 }
+		command = { type = trigger which = 63900 }	
 		command = { type = sleepevent which = 942382 }
 		command = { type = sleepevent which = 942383 }
 #		command = { type = sleepevent which = 942386 }
@@ -1774,7 +1790,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "平津會戰——失敗 "
+	name = "平津會戰—失敗 "
     	desc = "共产党在华北的作战中连续取得了一系列胜利，先后
 	攻占了北平，天津，石家庄等大中城市，解放了全华北 "
 
@@ -1784,6 +1800,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 5 }
+		command = { type = trigger which = 63902 }
 		command = { type = sleepleader which = 50273 }
 		command = { type = morale which = land value = -5 }
 		command = { type = delay value = -1.5 }                 #战术阻击
@@ -1871,28 +1888,27 @@ event = {
 		  }
 	name = "撤出葫蘆島、營口 "
 	desc = "面對國軍即將進入東北接收之攻勢，蘇軍代表於10月28日
-告知中共東北局，莫斯科指示：蘇軍不能與美軍發生直接
-衝突，一旦美軍與國軍聯合登陸，蘇軍奉命採取退讓方針；
-但對中共之抵抗則不加干涉，惟中共應在無蘇軍之處進行
-抵抗。蘇軍指揮部除迅速指示營口、葫蘆島兩地蘇軍撤出，
-交中共設防外，並明確同意中共可在此兩處襲擊國軍。 "
+		告知中共東北局，莫斯科指示：蘇軍不能與美軍發生直接
+		衝突，一旦美軍與國軍聯合登陸，蘇軍奉命採取退讓方針；
+		但對中共之抵抗則不加干涉，惟中共應在無蘇軍之處進行
+		抵抗。蘇軍指揮部除迅速指示營口、葫蘆島兩地蘇軍撤出，
+		交中共設防外，並明確同意中共可在此兩處襲擊國軍。 "
 	style = 0
 	
-    date = { day = 27 month = october year = 1945 }
-    offset = 1
+    	date = { day = 27 month = october year = 1945 }
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1949 }	
 	action_a = {
 	    name = "交給中共" 	 
-	command = { type = relation which = CHC value = 10 }
-	command = { type = relation which = CHI value = -10 }
-	command = { type = relation which = USA value = -10 }
-	command = { type = secedeprovince which = CHC value = 1395 }
-	command = { type = secedeprovince which = CHC value = 2888 }
-	command = { type = secedeprovince which = CHC value = 1396 }
-	command = { type = secedeprovince which = CHC value = 2877 }	
-              }
-     }
-	 
+		command = { type = relation which = CHC value = 10 }
+		command = { type = relation which = CHI value = -10 }
+		command = { type = relation which = USA value = -10 }
+		command = { type = secedeprovince which = CHC value = 1395 }
+		command = { type = secedeprovince which = CHC value = 2888 }
+		command = { type = secedeprovince which = CHC value = 1396 }
+		command = { type = secedeprovince which = CHC value = 2877 }	
+	}
+}	 
 ######################### 
 # 山海關戰鬥
 ######################### 	 
@@ -1903,55 +1919,56 @@ event = {
 	trigger = {
 		ai = no
             	war = { country = CHI country = CHC } 
-		OR = { control = { province = 2875 data = CHC }	
+		OR = { 
+			control = { province = 2875 data = CHC }	
 			control = { province = 1396 data = CHC }		
 		}
-		  }
+	}
 	name = "山海關戰鬥 "
 	desc = " "
 
 	style = 0
 	
-    date = { day = 14 month = november year = 1945 }
-    offset = 1
-	deathdate = { day = 30 month = december year = 1947 }
-    picture = "WuhanDefense"
+#    	date = { day = 14 month = november year = 1945 }
+#   	offset = 1
+#	deathdate = { day = 30 month = december year = 1947 }
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "打出關外，收復東北 " 
-	ai_chance = 99
-	command = { type = supplies value = 1000 where = 1203 }
-	command = { type = oilpool value = 250 where = 1203 }
-	command = { type = unlock_division which = 11616 value = 182 } #13C
-	command = { type = unlock_division which = 11616 value = 183 }
-	command = { type = unlock_division which = 11616 value = 184 }
-	command = { type = unlock_division which = 11616 value = 22 } #52C
-	command = { type = unlock_division which = 11616 value = 23 }
-	command = { type = unlock_division which = 11616 value = 237 }	
-	command = { type = trigger which = 942127 }	
-	command = { type = local_setflag which = Shanhaiguan_zhandou }	
-              }
+	    	name = "打出關外，收復東北 " 
+		ai_chance = 99
+		command = { type = supplies value = 1000 where = 1203 }
+		command = { type = oilpool value = 250 where = 1203 }
+		command = { type = unlock_division which = 11616 value = 182 } #13C
+		command = { type = unlock_division which = 11616 value = 183 }
+		command = { type = unlock_division which = 11616 value = 184 }
+		command = { type = unlock_division which = 11616 value = 22 } #52C
+		command = { type = unlock_division which = 11616 value = 23 }
+		command = { type = unlock_division which = 11616 value = 237 }	
+		command = { type = trigger which = 942127 }	
+		command = { type = local_setflag which = Shanhaiguan_zhandou }	
+	}
 	action_b = {
-	    name = "放棄作戰"  
-	command = { type = dissent value = 5 }
-              }
-     }
+	    	name = "放棄作戰"  
+		command = { type = dissent value = 5 }
+	}
+}
 event = {
 	id = 942127
 	random = no
 	country = CHC
 
 		  
-    name = "山海關戰鬥 "
+    	name = "山海關戰鬥 "
 	desc = " "
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "阻擊國軍1個月，為中央部署東北爭取時間" 
-	command = { type = trigger which = 942129 value = 30 }
-	command = { type = delay value = 1.5 }                 #战术阻击		
-              }
+	    	name = "阻擊國軍1個月，為中央部署東北爭取時間" 
+		command = { type = trigger which = 942129 value = 30 }
+		command = { type = delay value = 1.5 }                 #战术阻击		
+	}
  }
 
 event = {
@@ -1959,56 +1976,56 @@ event = {
 	random = no
 	country = CHI
 
-	name = "山海關戰鬥——失敗 "
+	name = "山海關戰鬥—失敗 "
 	desc = " "
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "國軍無能" 	 
-	command = { type = dissent value = 1 }	
-	command = { type = morale which = land value = -1 }
-	command = { type = local_clrflag which = Shanhaiguan_zhandou }
-              }
+	    	name = "國軍無能" 	 
+		command = { type = dissent value = 1 }	
+		command = { type = morale which = land value = -1 }
+		command = { type = local_clrflag which = Shanhaiguan_zhandou }
+	}
      }
 event = {
 	id = 942129
 	random = no
 	country = CHC
 
-	name = "山海關戰鬥——勝利 "
+	name = "山海關戰鬥—勝利 "
 	desc = " "
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "共軍威武" 	
-	command = { type = dissent value = -1 }
-	command = { type = trigger which = 942128 }
-	command = { type = sleepevent which = 942130 }
-	command = { type = sleepevent which = 942131 }	
-	command = { type = delay value = -1 }                 #战术阻击
-              }
+	    	name = "共軍威武" 	
+		command = { type = dissent value = -1 }
+		command = { type = trigger which = 942128 }
+		command = { type = sleepevent which = 942130 }
+		command = { type = sleepevent which = 942131 }	
+		command = { type = delay value = -1 }                 #战术阻击
+	}
      }
 event = {
 	id = 942130
 	random = no
 	country = CHI
-    trigger = {
-        local_flag = Shanhaiguan_zhandou
-        control = { province = 2875 data = CHI }  
-#        control = { province = 1396 data = CHI } 
-#	control = { province = 2877 data = CHI }        
-   }
-	name = "山海關戰鬥——勝利 "
+    	trigger = {
+        	local_flag = Shanhaiguan_zhandou
+       		control = { province = 2875 data = CHI }  
+#        	control = { province = 1396 data = CHI } 
+#		control = { province = 2877 data = CHI }        
+   	}
+	name = "山海關戰鬥—勝利 "
 	desc = " "
 
 	style = 0
-    picture = "WuhanDefense"
-	date = { day = 14 month = october year = 1945 }
-    offset = 3
+#    	picture = "WuhanDefense"
+#	date = { day = 14 month = october year = 1945 }
+#    	offset = 3
 	deathdate = { day = 30 month = december year = 1947 }	
 	action_a = {
 	    name = "國軍威武" 	 
@@ -2029,7 +2046,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "山海關戰鬥——失敗 "
+	name = "山海關戰鬥—失敗 "
 	desc = " "
 
 	style = 0
@@ -2052,40 +2069,41 @@ event = {
 	random = no
 	country = CHI
 	trigger = {
-		ai = yes
+#		ai = yes
             	war = { country = CHI country = CHC } 
-		OR = { control = { province = 2875 data = CHC }	
+		OR = { 
+			control = { province = 2875 data = CHC }	
 			control = { province = 1396 data = CHC }		
 		}
-		  }
+	}
 	name = "山海關戰鬥 "
 	desc = " "
 	style = 0
 	
-    date = { day = 14 month = november year = 1945 }
-    offset = 1
+    	date = { day = 14 month = november year = 1945 }
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1947 }	
 	action_a = {
-	    name = "國軍威武" 	 
-	command = { type = dissent value = -3 }
-	command = { type = trigger which = 942133 }
-	command = { type = unlock_division which = 11616 value = 182 } #13C
-	command = { type = unlock_division which = 11616 value = 183 }
-	command = { type = unlock_division which = 11616 value = 184 }
-	command = { type = unlock_division which = 11616 value = 22 } #52C
-	command = { type = unlock_division which = 11616 value = 23 }
-	command = { type = unlock_division which = 11616 value = 237 }	
-	command = { type = secedeprovince which = CHI value = 2875 }
-	command = { type = secedeprovince which = CHI value = 1396 }
-	command = { type = secedeprovince which = CHI value = 2877 }
-	command = { type = secedeprovince which = CHI value = 2876 }	
-	command = { type = sleepevent which = 942129 }
-	command = { type = sleepevent which = 942128 }
-	command = { type = sleepevent which = 942126 }
-	command = { type = morale which = land value = 1 }
-	command = { type = local_clrflag which = Shanhaiguan_zhandou }
-              }
-     }
+	    	name = "打出關外，收復東北" 	 
+		command = { type = dissent value = -3 }
+		command = { type = trigger which = 942133 }
+		command = { type = unlock_division which = 11616 value = 182 } #13C
+		command = { type = unlock_division which = 11616 value = 183 }
+		command = { type = unlock_division which = 11616 value = 184 }
+		command = { type = unlock_division which = 11616 value = 22 } #52C
+		command = { type = unlock_division which = 11616 value = 23 }
+		command = { type = unlock_division which = 11616 value = 237 }	
+		command = { type = secedeprovince which = CHI value = 2875 }
+		command = { type = secedeprovince which = CHI value = 1396 }
+		command = { type = secedeprovince which = CHI value = 2877 }
+		command = { type = secedeprovince which = CHI value = 2876 }	
+		command = { type = sleepevent which = 942129 }
+		command = { type = sleepevent which = 942128 }
+		command = { type = sleepevent which = 942126 }
+		command = { type = morale which = land value = 1 }
+		command = { type = local_clrflag which = Shanhaiguan_zhandou }
+	}
+}
 event = {
 	id = 942133
 	random = no
@@ -2095,18 +2113,18 @@ event = {
 	desc = " "
 
 	style = 0
-    picture = "WuhanDefense"
+    	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "共軍無能" 	
-	command = { type = dissent value = 3 }
-	command = { type = secedeprovince which = CHI value = 2875 }
-	command = { type = secedeprovince which = CHI value = 1396 }
-	command = { type = secedeprovince which = CHI value = 2877 }
-	command = { type = secedeprovince which = CHI value = 2876 }
-	command = { type = morale which = land value = -1 }
-              }
-     }
+	    	name = "共軍無能" 	
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = CHI value = 2875 }
+		command = { type = secedeprovince which = CHI value = 1396 }
+		command = { type = secedeprovince which = CHI value = 2877 }
+		command = { type = secedeprovince which = CHI value = 2876 }
+		command = { type = morale which = land value = -1 }
+	}
+}
 ######################### 
 # 熱東战役
 ######################### 	 
@@ -2184,22 +2202,22 @@ event = {
 	country = CHI
 	trigger = {
 		OR = { 
-		AND = { 
-			control = { province = 2875 data = CHI }
-			not = { event = 941125 } #一月停戰令
-			war = { country = CHI country = CHC } 
-			control = { province = 1395 data = -1 }	
-			control = { province = 2888 data = -1 }
+			AND = { 
+				control = { province = 2875 data = CHI }
+				not = { event = 941125 } #一月停戰令
+				war = { country = CHI country = CHC } 
+				control = { province = 1395 data = -1 }	
+				control = { province = 2888 data = -1 }
 			}
-		AND = { 
-			control = { province = 2875 data = CHI }
-			ai = yes
-			year = 1946
-			#month = 1
-			day = 4
+			AND = { 
+				control = { province = 2875 data = CHI }
+				ai = yes
+				year = 1946
+				#month = 1
+				day = 4
 			}
 		}		
-		  }
+	}
 	name = "國軍佔領營口 "
 	desc = "1946年1月6日，在國軍掃蕩熱河的同時，杜聿明下令52軍
 25師向營口進擊。25師孤軍深入，在營盤道上邊打邊走，
@@ -2224,17 +2242,17 @@ event = {
 
 	name = "國軍佔領營口 "
 	desc = "1946年1月6日，在國軍掃蕩熱河的同時，杜聿明下令52軍
-25師向營口進擊。25師孤軍深入，在營盤道上邊打邊走，
-於10日上午佔領了營口。 "
+		25師向營口進擊。25師孤軍深入，在營盤道上邊打邊走，
+		於10日上午佔領了營口。 "
 
 	style = 0
 
 	action_a = {
-	    name = "退出營口" 
-	command = { type = secedeprovince which = CHI value = 1395 }
-	command = { type = secedeprovince which = CHI value = 2888 }	
-	command = { type = dissent value = 2 }
-              }
+	    	name = "退出營口" 
+		command = { type = secedeprovince which = CHI value = 1395 }
+		command = { type = secedeprovince which = CHI value = 2888 }	
+		command = { type = dissent value = 2 }
+	}
      }
 ######################### 
 # 國軍進駐瀋陽
@@ -2292,11 +2310,11 @@ event = {
 	style = 0
 
 	action_a = {
-	    name = "行使主權" 	
-	command = { type = dissent value = -2 }
-	command = { type = add_corps which = "瀋陽城防 " value = land where = 1389 }
-        command = { type = activate_division which = 11616 value = 608 where = 1389 when = 1 }
-	command = { type = disorg_division which = 11616 value = 608 when = 1 where = -1000 }
+	    	name = "行使主權" 	
+		command = { type = dissent value = -2 }
+		command = { type = add_corps which = "瀋陽城防 " value = land where = 1389 }
+        	command = { type = activate_division which = 11616 value = 608 where = 1389 when = 1 }
+		command = { type = disorg_division which = 11616 value = 608 when = 1 where = -1000 }
 		command = { type = add_corps which = "瀋陽警備司令部 " value = land where = 1389 }
         	command = { type = activate_division which = 11616 value = 412 where = 1389 when = 1 }
         	command = { type = activate_division which = 11616 value = 414 where = 1389 when = 1 }
@@ -2310,7 +2328,7 @@ event = {
         	command = { type = activate_division which = 11616 value = 405 where = 1396 when = 1 }
 		command = { type = disorg_division which = 11616 value = 404 when = 1 where = -1000 }
 		command = { type = disorg_division which = 11616 value = 405 when = 1 where = -1000 }
-              }
+	}
      }
 event = {
 	id = 942141
@@ -2334,17 +2352,18 @@ event = {
 	desc = " "
 	style = 0
 	
-    date = { day = 12 month = march year = 1946 }
-    offset = 1
+    	date = { day = 12 month = march year = 1946 }
+    	offset = 1
 	deathdate = { day = 30 month = december year = 1947 }	
+	
 	action_a = {
-	    name = "撤出瀋陽" 	
-	ai_chance = 99
-	command = { type = secedeprovince which = CHI value = 1389 }
-	command = { type = secedeprovince which = CHI value = 2933 }
-	command = { type = trigger which = 942140 }	
-              }	
-     }
+	    	name = "撤出瀋陽" 	
+		ai_chance = 99
+		command = { type = secedeprovince which = CHI value = 1389 }
+		command = { type = secedeprovince which = CHI value = 2933 }
+		command = { type = trigger which = 942140 }	
+	}	
+}
 ######################### 
 # 爭奪東北
 ######################### 
@@ -2418,17 +2437,17 @@ event = {
 }
 
 event = { 
-   id = 941146
-   country = CHC
-   random = no
+   	id = 941146
+   	country = CHC
+   	random = no
    
-   name = "增兵东北 "
-   desc = "1946年4月15日，中共在苏军撤走长春一个小时内突袭长春 
-机场并占领长春，随后其紧随撤退的苏军占领哈尔滨， 
-齐齐哈尔。随后，国共两军在四平街，长春等地激战， 
-东北局势急剧恶化。 "
-   picture = "China_CW"
-   style = 0
+   	name = "增兵东北 "
+   	desc = "1946年4月15日，中共在苏军撤走长春一个小时内突袭长春 
+		机场并占领长春，随后其紧随撤退的苏军占领哈尔滨， 
+		齐齐哈尔。随后，国共两军在四平街，长春等地激战， 
+		东北局势急剧恶化。 "
+   	picture = "China_CW"
+   	style = 0
         action_a = { 
         name = "感谢苏联老大哥的援助"
         command = { type = construct which = land_fort where = 1379 value = 3 }
@@ -2501,10 +2520,10 @@ event = {
        event = 941146               
    }
 
-   name = " 武力收復東北 " # 内战全面爆发
-   desc=" 由于苏军迅速撤离南满，国军还没有准备好进入东北 
-中共就开始在东北抢夺地盘，我们只能依靠美军的帮 
-助将国军将大批精锐部队调入关外 "
+   	name = " 武力收復東北 " # 内战全面爆发
+   	desc =" 由于苏军迅速撤离南满，国军还没有准备好进入东北 
+		中共就开始在东北抢夺地盘，我们只能依靠美军的帮 
+		助将国军将大批精锐部队调入关外 "
    style = 0
    
    date = { day = 1 month = march year = 1945 }
@@ -2544,7 +2563,6 @@ event = {
         command = { type = alliance which = CXB }
         command = { type = alliance which = CGX }
         command = { type = alliance which = CYN }
-	command = { type = alliance which = U01 }
         command = { type = supplies value = 5000 where = 1203 }
         command = { type = trigger which = 941148 }
    }
@@ -2635,7 +2653,7 @@ event = {
     offset = 1
 	deathdate = { day = 30 month = december year = 1947 }	
 	action_a = {
-	    name = "發起戰役——60天內占領四平，長春，吉林"
+	    name = "發起戰役—60天內占領四平，長春，吉林"
 	ai_chance = 99	
 #	command = { type = trigger which = 942145 }	
 	command = { type = local_setflag which = Sipingzhangjihuizhan }	
@@ -2667,7 +2685,7 @@ event = {
 	deathdate = { day = 30 month = december year = 1947 }	
 	
 	action_a = {
-	    name = "發起戰役——1個月內占領四平"
+	    name = "發起戰役—1個月內占領四平"
 	ai_chance = 99	
 	command = { type = trigger which = 942145 }	
 	command = { type = local_setflag which = sipingizhani }	
@@ -2704,7 +2722,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "第二次四平戰役——失敗 "
+	name = "第二次四平戰役—失敗 "
 	desc = "。"
 
 	style = 0
@@ -2726,7 +2744,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "第二次四平戰役——勝利 "
+	name = "第二次四平戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -2760,7 +2778,7 @@ event = {
 			}
 		}
    }
-	name = "第二次四平戰役——勝利 "
+	name = "第二次四平戰役—勝利 "
 	desc = "EVT_942148_DESC"
     date = { day = 14 month = october year = 1945 }
     offset = 1
@@ -2787,7 +2805,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "第二次四平戰役——失敗 "
+	name = "第二次四平戰役—失敗 "
 	desc = "EVT_942148_DESC"
 
 	style = 0
@@ -3162,7 +3180,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "長春圍困戰——失敗 "
+	name = "長春圍困戰—失敗 "
 	desc = " "
 
 	style = 0
@@ -3197,7 +3215,7 @@ event = {
 			control = { province = 1378 data = -1 }	
 		}
 	}
-	name = "長春圍困戰——勝利 "
+	name = "長春圍困戰—勝利 "
 	desc = " "
 
     	date = { day = 1 month = january year = 1947 } #1948/5/23~10/19
@@ -3227,7 +3245,7 @@ event = {
         	flag = chanchunzhani 
         	control = { province = 1390 data = -1 }         
    	}
-	name = "長春圍困戰——勝利 "
+	name = "長春圍困戰—勝利 "
 	desc = " "
 
 	style = 0
@@ -3259,7 +3277,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "長春圍困戰——失敗 "
+	name = "長春圍困戰—失敗 "
 	desc = " "
 
 	style = 0
@@ -3442,7 +3460,7 @@ event = {
 		ai_chance = 5
 		command = { type = dissent value = 5 }
 		command = { type = morale which = land value = -3 }
-		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = land value = -3 }
        		command = { type = tactical_withdrawal value = 1.5 }   #战术撤退
        		command = { type = counterattack value = 1 }       #战术反击
        		command = { type = assault value = 1.5 }             #战术强攻
@@ -3456,7 +3474,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "遼瀋戰役——沒有達到戰略目標 "
+	name = "遼瀋戰役—沒有達到戰略目標 "
 	desc = " "
 
 	style = 0
@@ -3465,6 +3483,7 @@ event = {
 	action_a = {
 	    	name = "共軍無能" 	 
 		command = { type = dissent value = 5 }	
+		command = { type = trigger which = 63902 }
 		command = { type = morale which = land value = -5 }
        		command = { type = encirclement value = -2 }          #战术包围
        		command = { type = ambush value = -2 }                #战术伏击
@@ -3482,7 +3501,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "遼西會戰——勝利 "
+	name = "遼西會戰—勝利 "
 	desc = " "
 
 	style = 0
@@ -3491,6 +3510,7 @@ event = {
 	action_a = {
 	    	name = "國軍威武!!" 	
 		command = { type = dissent value = -5 }
+		command = { type = trigger which = 63900 }
 		command = { type = sleepevent which = 942164 }
 		command = { type = sleepevent which = 9421640 }
 		command = { type = sleepevent which = 942165 }
@@ -3516,7 +3536,7 @@ event = {
 		control = { province = 1389 data = -1 } #瀋陽   
 		NOT = { event = 942166 }
    	}
-	name = "遼瀋戰役——全面勝利 "
+	name = "遼瀋戰役—全面勝利 "
     	desc = "共产党在东北的作战中连续取得了一系列胜利，先后
 		攻占了哈尔滨，长春，沈阳等大中城市，解放了全东北 "
 
@@ -3529,6 +3549,7 @@ event = {
 	    name = "共軍威武" 	 
 		command = { type = dissent value = -5 }
 		command = { type = trigger which = 942165 }
+		command = { type = trigger which = 63900 }
 #		command = { type = trigger which = 941200 }	
 		command = { type = sleepevent which = 942162 }
 		command = { type = sleepevent which = 942163 }
@@ -3556,7 +3577,7 @@ event = {
 		control = { province = 1389 data = -1 } #瀋陽
 		event = 942166
    	}
-	name = "遼瀋戰役——部分勝利 "
+	name = "遼瀋戰役—部分勝利 "
     	desc = "共产党在东北的作战中连续取得了一系列胜利，先后
 		攻占了哈尔滨，长春，沈阳等大中城市，解放了全东北 "
 
@@ -3594,7 +3615,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "遼西會戰——失敗 "
+	name = "遼西會戰—失敗 "
     	desc = "共产党在东北的作战中连续取得了一系列胜利，先后
 		攻占了哈尔滨，长春，沈阳等大中城市，解放了全东北 "
 
@@ -3604,6 +3625,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 5 }
+		command = { type = trigger which = 63902 }
 		command = { type = sleepleader which = 50273 }
 		command = { type = morale which = land value = -5 }
 		command = { type = delay value = -1.5 }                 #战术阻击
@@ -3625,7 +3647,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "遼西會戰——撤出東北 "
+	name = "遼西會戰—撤出東北 "
 	desc = "。"
 
 	style = 0
@@ -3637,7 +3659,7 @@ event = {
 		command = { type = sleepevent which = 942165 }
 		command = { type = sleepevent which = 942163 }
 		command = { type = sleepevent which = 942162 }
-		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = land value = 3 }
        		command = { type = tactical_withdrawal value = -1.5 }   #战术撤退
        		command = { type = counterattack value = -1 }       #战术反击
        		command = { type = assault value = -1.5 }             #战术强攻
@@ -4284,7 +4306,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "淮海戰役——沒有達到戰略目標 "
+	name = "淮海戰役—沒有達到戰略目標 "
 	desc = " "
 
 	style = 0
@@ -4293,6 +4315,7 @@ event = {
 	action_a = {
 	    	name = "共軍無能" 	 
 		command = { type = dissent value = 5 }	
+		command = { type = trigger which = 63902 }
 		command = { type = morale which = land value = -5 }
        		command = { type = encirclement value = -2 }          #战术包围
        		command = { type = ambush value = -2 }                #战术伏击
@@ -4310,7 +4333,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "徐蚌會戰——勝利 "
+	name = "徐蚌會戰—勝利 "
 	desc = " "
 
 	style = 0
@@ -4319,6 +4342,7 @@ event = {
 	action_a = {
 	    	name = "國軍威武!!" 	
 		command = { type = dissent value = -5 }
+		command = { type = trigger which = 63900 }
 		command = { type = sleepevent which = 942210 }
 #		command = { type = sleepevent which = 9422100 }
 		command = { type = sleepevent which = 942211 }
@@ -4365,7 +4389,7 @@ event = {
        		control = { province = 1884 data = -1 } #蚌阜   
 #		NOT = { event = 942166 }
    	}
-	name = "淮海戰役——全面勝利 "
+	name = "淮海戰役—全面勝利 "
     	desc = "共产党在东北的作战中连续取得了一系列胜利，先后
 		攻占了哈尔滨，长春，沈阳等大中城市，解放了全东北 "
 
@@ -4378,6 +4402,7 @@ event = {
 	    name = "共軍威武" 	 
 		command = { type = dissent value = -5 }
 		command = { type = trigger which = 942211 }
+		command = { type = trigger which = 63900 }
         	command = { type = sleepevent which = 942206 }	
 		command = { type = sleepevent which = 942208 }
 		command = { type = sleepevent which = 942209 }
@@ -4418,7 +4443,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "徐蚌會戰——失敗 "
+	name = "徐蚌會戰—失敗 "
     	desc = "共产党在东北的作战中连续取得了一系列胜利，先后
 		攻占了哈尔滨，长春，沈阳等大中城市，解放了全东北 "
 
@@ -4428,10 +4453,12 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 5 }
+		command = { type = trigger which = 63902 }
 		command = { type = sleepleader which = 50273 }
 		command = { type = morale which = land value = -5 }
 		command = { type = delay value = -1.5 }                 #战术阻击
 		command = { type = counterattack value = -1 } 		#战术反击
+		command = { type = trigger which = 63902 }
 
 		command = { type = construct which = land_fort where = 2618 value = -10 } #淮河防線
 		command = { type = construct which = land_fort where = 2619 value = -10 }
@@ -4735,7 +4762,7 @@ event = {
 	country = chc
   persistent = yes
 
-	name = "根据地的自力更生 "
+	name = "大别山根据地的自力更生 "
 	desc = "解放战争期间，大量的共产党游击队活跃于农村，建立 了各种各样的敌后根据地。他们的补给大多来自战利品 或是伏击政府军运输队，此外根据地群众也提供了大量的补给和帮助。"
   picture = "genjudi"
 	style = 0
@@ -4948,6 +4975,7 @@ event = {
 	action_a = {
 	    	name = "攻佔洛陽" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942407 }		
         }
 
@@ -4965,6 +4993,7 @@ event = {
 	action_a = {
 	    	name = "洛陽失守" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value = 1227 }
               }
      }
@@ -4990,6 +5019,7 @@ event = {
 	action_a = {
 	    	name = "攻佔鄭州" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942409 }		
         }
 
@@ -5007,6 +5037,7 @@ event = {
 	action_a = {
 	    	name = "鄭州失守" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value = 1228 }
               }
      }
@@ -5086,6 +5117,9 @@ event = {
 		command = { type = add_corps which = "吳淞要塞 " value = land where = 1237 }
         	command = { type = activate_division which = 11616 value = 642 where = 1237 when = 1 }
 		command = { type = disorg_division which = 11616 value = 642 when = 1 where = -1000 }
+
+		command = { type = remove_division which = 11616 value = 426 }
+		command = { type = remove_division which = 11616 value = 427 }
 		}
 	}
 
@@ -5266,7 +5300,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "渡江戰役——失敗 "
+	name = "渡江戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -5285,7 +5319,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "渡江戰役——勝利 "
+	name = "渡江戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -5317,7 +5351,7 @@ event = {
 		event = 9425578 
 		event = 942553    
    	}
-	name = "渡江戰役——全面勝利 "
+	name = "渡江戰役—全面勝利 "
 	desc = "。"
 
 	style = 0
@@ -5328,7 +5362,8 @@ event = {
 	action_a = {
 	    name = "共軍威武" 	 
 		command = { type = dissent value = -3 }
-		command = { type = trigger which = 942543 }	
+		command = { type = trigger which = 942543 }
+		command = { type = trigger which = 63900 }	
 		command = { type = sleepevent which = 942540 }
 		command = { type = sleepevent which = 942541 }
 		command = { type = sleepevent which = 9425420 }
@@ -5360,7 +5395,7 @@ event = {
 		event = 9425578 
 		event = 942551 
    	}
-	name = "渡江戰役——部分勝利 "
+	name = "渡江戰役—部分勝利 "
 	desc = "。"
 
 	style = 0
@@ -5395,7 +5430,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "渡江戰役——失敗 "
+	name = "渡江戰役—失敗 "
 	desc = "。"
 
 	style = 0
@@ -5404,6 +5439,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 3 }
+		command = { type = trigger which = 63902 }
 		command = { type = sleepleader which = 50273 }
 		command = { type = morale which = land value = -3 }
 		command = { type = delay value = -1.5 }                 #战术阻击
@@ -5681,7 +5717,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "上海戰役——失敗 "
+	name = "上海戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -5701,7 +5737,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "上海戰役——勝利 "
+	name = "上海戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -5744,10 +5780,10 @@ event = {
 		command = { type = clrflag which = shanghaizhani }
 		command = { type = breakthrough value = 0.5 } 
 		command = { type = assault value = 0.5 }
-		command = { type = construct which = land_fort where = 2622 value = -3 }
-		command = { type = construct which = land_fort where = 2795 value = -3 }
-		command = { type = construct which = land_fort where = 2623 value = -3 }
-		command = { type = construct which = land_fort where = 1237 value = -3 }
+		command = { type = construct which = land_fort where = 2622 value = -10 }
+		command = { type = construct which = land_fort where = 2795 value = -10 }
+		command = { type = construct which = land_fort where = 2623 value = -10 }
+		command = { type = construct which = land_fort where = 1237 value = -10 }
               }
      }
 event = {
@@ -5872,7 +5908,8 @@ event = {
         	command = { type = alliance which = CGX }
        	 	command = { type = alliance which = CYN }
        		command = { type = headofgovernment which = 52114 } 
-       		command = { type = dissent value = 1 }
+       		command = { type = dissent value = 5 }
+		command = { type = morale which = land value = -3 }
    	}
 } #942558 reserved
 
@@ -5904,6 +5941,7 @@ event = {
 	action_a = {
 	    	name = "攻佔寧夏省" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942505 }		
         }
 
@@ -5924,6 +5962,7 @@ event = {
 	action_a = {
 	    	name = "寧夏失守" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value = 1273 }
 		command = { type = secedeprovince which = CHC value = 2802 }
 		command = { type = secedeprovince which = CHC value = 2803 }
@@ -5956,6 +5995,7 @@ event = {
 	action_a = {
 	    	name = "解放軍威武" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942507 }	
 		command = { type = trigger which = 942508 }	
         }
@@ -5974,6 +6014,8 @@ event = {
 	action_a = {
 	    	name = "主力盡失" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -3 }
+		command = { type = max_organization which = land value = -3 }
 		command = { type = secedeprovince which = CHI value = 1440 }
 		command = { type = secedeprovince which = CHI value = 1441 }
               }
@@ -5992,7 +6034,8 @@ event = {
 	action_a = {
 	    	name = "退入河西走廊" 	
 		command = { type = dissent value = 1 }
-              }
+		command = { type = morale which = land value = -1 }
+	}
      }
 ######################### 
 # 新疆和平解放
@@ -6127,6 +6170,7 @@ event = {
 	action_a = {
 	    	name = "共軍威武" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942512 }		
         }
 
@@ -6144,6 +6188,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value = 1264 }
 
               }
@@ -6234,6 +6279,7 @@ event = {
 	action_a = {
 	    	name = "共軍威武" 	 
 		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942514 }		
         }
 
@@ -6254,6 +6300,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 1 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value = 1244 }
 
               }
@@ -6282,6 +6329,7 @@ event = {
 	action_a = {
 	    	name = "共軍威武" 	 
 		command = { type = dissent value = -2 }
+		command = { type = morale which = land value = 1 }
 		command = { type = trigger which = 942516 }		
         }
 
@@ -6299,6 +6347,7 @@ event = {
 	action_a = {
 	    	name = "國軍無能" 	
 		command = { type = dissent value = 2 }
+		command = { type = morale which = land value = -1 }
 		command = { type = secedeprovince which = CHC value =	1248	}
         	command = { type = secedeprovince which = CHC value =	1249	}
         	command = { type = secedeprovince which = CHC value =	1312	}
@@ -6780,7 +6829,7 @@ event = {
     	picture = "WuhanDefense"
 	
 	action_a = {
-	    name = "發起戰役——6周內解放西南"
+	    name = "發起戰役—6周內解放西南"
 	ai_chance = 99	
 	command = { type = trigger which = 942522 }	
 	command = { type = setflag which = xinanzhani }	
@@ -6821,7 +6870,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "西南戰役——失敗 "
+	name = "西南戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -6840,7 +6889,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "西南戰役——勝利 "
+	name = "西南戰役—勝利 "
 	desc = " "
 
 	style = 0
@@ -6873,7 +6922,7 @@ event = {
 		control = { province = 1364 data = -1 }	
 		control = { province = 1307 data = -1 }       
    	}
-	name = "西南戰役——勝利 "
+	name = "西南戰役—勝利 "
 	desc = "西南戰役共經歷了57天，人民解放軍解放了川、康、滇、
 		黔全部或大部，以及湘、鄂、陝、甘等省最後的50餘座城
 		市，殲滅了國軍10個兵團部、 49個軍部、133個師共計93
@@ -6918,7 +6967,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "西南戰役——失敗 "
+	name = "西南戰役—失敗 "
 	desc = "西南戰役共經歷了57天，人民解放軍解放了川、康、滇、
 		黔全部或大部，以及湘、鄂、陝、甘等省最後的50餘座城
 		市，殲滅了國軍10個兵團部、 49個軍部、133個師共計93
@@ -7693,7 +7742,7 @@ event = {
 	random = no
 	country = CHC
 
-	name = "海南島戰役——失敗 "
+	name = "海南島戰役—失敗 "
 	desc = " "
 
 	style = 0
@@ -7716,7 +7765,7 @@ event = {
 	random = no
 	country = CHI
 
-	name = "海南島戰役——勝利 "
+	name = "海南島戰役—勝利 "
 	desc = " "
 
 	style = 0
