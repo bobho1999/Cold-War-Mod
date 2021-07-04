@@ -6064,17 +6064,23 @@ event = {
 #		command = { type = local_setflag which = inflation when = 0 value = 7 }
 #		command = { type = morale which = land value = -10 }
 #		command = { type = max_organization which = land value = -5 } 
-#		command = { type = free_oil value = 15  }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
-		command = { type = remove_division which = "游擊队 " value = CHC }
+
+		command = { type = fuel_consumption which = militia value = -0.1 }
+		command = { type = supply_consumption which = militia value = -0.1 }
+		command = { type = fuel_consumption which = infantry value = -0.1 }
+		command = { type = fuel_consumption which = bergsjaeger value = -0.1 }
+
+		command = { type = free_oil value = 20  }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
+#		command = { type = remove_division which = "游擊队 " value = CHC }
     	}
 }
 
@@ -6082,11 +6088,19 @@ event = {
 event = {
 	id = 901018
 	random = no
-	country = CHC
 	persistent = yes
 	trigger = {
-		alliance = { country = -1  country = SOV }
-		not = { flag = CHC_won_CW }
+		OR = {
+			AND = {
+				country = CHC
+				alliance = { country = -1  country = SOV }
+				not = { flag = CHC_won_CW }
+			}
+			AND = {
+				country = U01
+				alliance = { country = U01  country = -1 }
+			}
+		}
 	}
 
 	name = "ai_event"
@@ -6099,7 +6113,7 @@ event = {
 	action_a = {
 		name = "ok"	 
 		command = { type = leave_alliance }
-		command = { type = trigger which = 901019 }
+#		command = { type = trigger which = 901019 }
     	}
 }
 

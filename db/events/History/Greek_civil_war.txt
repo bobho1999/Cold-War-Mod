@@ -196,7 +196,7 @@ event = {
             	command = { type = supplies value = 1000 }
             	command = { type = money value = 200 }
 		command = { type = add_division value = infantry when = 6 where = artillery }
-		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = infantry when = 6 }
   	}
 }
 
@@ -378,7 +378,7 @@ event = {
 	}
 
 	date = { day = 0 month = january year = 1945 }
-	offset = 120
+	offset = 60
 	deathdate = { day = 29 month = december year = 1949 }
 
 	action_a = {

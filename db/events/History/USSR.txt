@@ -45,10 +45,10 @@ event = {
 		ai_chance = 100
 		command = { type = ministerofintelligence which = 4078 } # Viktor S. Abakumov
 		
-		command = { type = chiefofstaff which = 30041 } # Aleksandr M. Vasilevsky
-		command = { type = chiefofarmy which = 30320 }  # Nikolay A. Bulganin
-		command = { type = chiefofnavy which = 30214 }  # Ivan Yumashev
-		command = { type = chiefofair which = 30056 }   # Konstantin Vershinin
+		command = { type = chiefofstaff which = 4054 } # Aleksandr M. Vasilevsky
+		command = { type = chiefofarmy which = 4140 }  # Nikolay A. Bulganin
+#		command = { type = chiefofnavy which = 30214 }  # Ivan Yumashev
+#		command = { type = chiefofair which = 30056 }   # Konstantin Vershinin
 	}
 }
 
@@ -932,7 +932,7 @@ event = {
 		command = { type = foreignminister which = 4087 } # Dmitriy T. Shepilov
 		command = { type = ministerofsecurity which = 4091 } # Nikolay Dudorov
 		
-		command = { type = chiefofnavy which = 30215 }  # Sergey Gorshkov
+#		command = { type = chiefofnavy which = 30215 }  # Sergey Gorshkov
 	}
 }
 
@@ -957,8 +957,8 @@ event = {
 		ai_chance = 100
 		command = { type = foreignminister which = 4088 } # Andrey A. Gromyko
 		
-		command = { type = chiefofarmy which = 30047 }  # Rodion Y. Malinovsky
-		command = { type = chiefofair which = 30143 }  # Pavel F. Zhigarev
+		command = { type = chiefofarmy which = 4060 }  # Rodion Y. Malinovsky
+#		command = { type = chiefofair which = 30143 }  # Pavel F. Zhigarev
 	}
 }
 
@@ -1009,7 +1009,7 @@ event = {
 		ai_chance = 100
 		command = { type = armamentminister which = 4090 } # Rodion Y. Malinovsky
 		
-		command = { type = chiefofstaff which = 30212 } # Matvei Zakharov
+#		command = { type = chiefofstaff which = 30212 } # Matvei Zakharov
 	}
 }
 
@@ -1032,7 +1032,7 @@ event = {
 	action_a = {
 		name = OK
 		ai_chance = 100
-		command = { type = ministerofintelligence which = 30093 } # Vladimir Y. Semichastny
+		command = { type = ministerofintelligence which = 4093 } # Vladimir Y. Semichastny
 	}
 }
 #########################################################################

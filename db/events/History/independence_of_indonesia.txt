@@ -8,150 +8,6 @@
 
 # October: An all-out conflict starts
 
-event = {
-	id = 8206003
-	country = INO
-
-	name = EVT_8206003_NAME
-	desc = EVT_8206003_DESC
-#	picture = "nwo\indonesian_national_revolution"
-	style = 1
-
-	trigger = {
-		NOT = { war = { country = INO country = HOL } }
-		event = 8206002
-	}
-
-#	date = { day = 0 month = october year = 1945 }
-#	offset = 30
-#	deathdate = { day = 29 month = december year = 1999 }
-
-	action_a = {
-		name = EVT_8206003_A
-		ai_chance = 99
-		command = { type = dissent value = 10 }
-		command = { type = war which = HOL }
-		command = { type = supplies value = 1000 }	
-		# Specific garrison corps
-		command = { type = add_corps where = 1653 }
-		command = { type = add_division value = garrison when = 5 }
-		command = { type = add_division value = garrison when = 5 }
-		command = { type = add_corps where = 1654 }
-		command = { type = add_division value = garrison when = 5 }
-		command = { type = add_division value = garrison when = 5 }
-	}
-	
-	action_b = {
-		name = EVT_8206003_B
-		ai_chance = 1
-		command = { type = trigger which = 8206004 }
-	}
-}
-
-# Republicans lay their weapons
-event = {
-	id = 8206004
-	country = U05
-
-	name = EVT_8206004_NAME
-	desc = EVT_8206004_DESC
-#	picture = "nwo\dutch_east_india"
-	style = 1
-
-	action_a = {
-		name = EVT_8206004_A
-		command = { type = inherit which = INO value = 0 }
-		command = { type = province_revoltrisk which = 1648 value = 30 }
-		command = { type = province_revoltrisk which = 1650 value = 30 }
-		command = { type = province_revoltrisk which = 1652 value = 30 }
-		command = { type = province_revoltrisk which = 1653 value = 30 }
-		command = { type = province_revoltrisk which = 1654 value = 30 }
-		command = { type = province_revoltrisk which = 1655 value = 30 }
-		command = { type = province_revoltrisk which = 1656 value = 30 }
-	}
-}
-
-### 30 October: first ceasefire possibility
-
-event = {
-	id = 8206005
-	country = HOL
-
-	name = EVT_8206005_NAME
-	desc = EVT_8206005_DESC
-#	picture = "nwo\indonesian_national_revolution"
-	style = 1
-	
-	trigger = {
-		war = { country = INO country = HOL }
-	}
-
-#	date = { day = 25 month = october year = 1945 }
-#	offset = 10
-#	deathdate = { day = 29 month = november year = 1945 }
-	
-	# Propose ceasefire
-	action_a = {
-		name = EVT_8206005_A
-		ai_chance = 90
-		command = { type = belligerence value = -5 }
-		command = { type = relation which = INO value = 20 }
-		command = { type = peace which = INO value = 0 }
-	}
-	
-	# Fight on
-	action_b = {
-		name = EVT_8206005_B
-		ai_chance = 10
-		command = { type = dissent value = -3 }
-		command = { type = sleepevent which = 8206007 }
-		command = { type = sleepevent which = 8206008 }
-		command = { type = sleepevent which = 8206009 }
-	}
-}
-
-# Dutch East India feels the result of the ceasefire
-event = {
-	id = 8206006
-	country = U05
-
-
-	name = EVT_8206006_NAME
-	desc = EVT_8206006_DESC
-#	picture = "nwo\indonesian_national_revolution"
-	style = 1
-	
-	trigger = {
-		event = 8206005
-		war = { country = INO country = HOL }
-	}
-
-#	date = { day = 25 month = october year = 1945 }
-#	offset = 10
-#	deathdate = { day = 29 month = november year = 1945 }
-	
-	# Ceasefire fails
-	action_a = {
-		name = EVT_8206006_A
-		ai_chance = 95
-		command = { type = dissent value = -3 }
-		command = { type = sleepevent which = 8206007 }
-		command = { type = sleepevent which = 8206008 }
-		command = { type = sleepevent which = 8206009 }
-	}
-	
-	# Ceasefire succeeds
-	action_b = {
-		name = EVT_8206006_B
-		ai_chance = 5
-		command = { type = dissent value = -10 }
-		command = { type = peace which = INO value = 0 }
-#		command = { type = secedearea which = -1 value = "Sumatra" when = 2 }
-#		command = { type = secedearea which = -1 value = "West Java" when = 2 }
-#		command = { type = secedearea which = -1 value = "East Java" when = 2 }
-	}
-}
-
 
 # Insurgencies in Sumatra
 event = {
@@ -417,6 +273,7 @@ event = {
 		command = { type = dissent value = -3 }
 	}
 }
+
 #  Linggajati Agreement: the Dutch agree on Indonesian independence
 event = {
 	id = 8206014
@@ -432,7 +289,7 @@ event = {
 		括加里曼丹南部和由蘇拉威西島，馬魯古島，小蘇打群島和新
 		西部地區組成的“大東方” 幾內亞。"
 #	picture = "nwo\linggajati_agreement"
-	style = 1
+	style = 0
 	
 	trigger = {
 		NOT = {	war = { country = INO country = HOL } }
@@ -443,7 +300,6 @@ event = {
 	offset = 30
 	deathdate = { day = 29 month = december year = 1947 }
 	
-	# Agree
 	action_a = {
 		name = "提出 "
 		ai_chance = 99
@@ -478,14 +334,14 @@ event = {
 	# Disagree
 	action_a = {
 		name = "拒絕 "
-		ai_chance = 99
+		ai_chance = 95
 		command = { type = dissent value = -3 }
 	}
 
 	# Agree
 	action_b = {
 		name = "同意 "
-		ai_chance = 1
+		ai_chance = 5
 		command = { type = dissent value = 3 }
 		command = { type = trigger which = 8206030 } # End of war
 		command = { type = sleepevent which = 611512 }
@@ -520,8 +376,6 @@ event = {
 		command = { type = belligerence which = 5 }
 		command = { type = sleepevent which = 611513 }
 		command = { type = sleepevent which = 611514 }
-#		command = { type = remove_division which = "第5印度师 " value = HOL }
-#		command = { type = remove_division which = "第49印度师 " value = HOL }
 		command = { type = add_corps where = 1628 }
 		command = { type = add_division which = "海軍陸戰旅 " value = marine when = 4 }
 		command = { type = add_division which = "第1'十二月七日'步兵师 " value = motorized when = 3 where = artillery }
@@ -538,6 +392,9 @@ event = {
 		command = { type = add_division which = "第7步兵旅 " value = infantry when = 5 where = b_u4 }
 		command = { type = add_corps where = 1355 }
 		command = { type = add_division which = "第8步兵旅 " value = infantry when = 5 where = b_u4 }
+
+#		command = { type = remove_division which = "第5印度师 " value = HOL }
+#		command = { type = remove_division which = "第49印度师 " value = HOL }
 	}
 	action_b = {
 		name = "Respect Indonesian sovereignty"
@@ -741,7 +598,7 @@ event = {
 	
 	date = { day = 17 month = december year = 1948 }
 	
-	name = "Operatie Kraai"
+	name = "烏鴉行動" 	# Operatie Kraai
 	desc = "EVT_611522_DESC"
 
 	action_a = {
@@ -753,7 +610,7 @@ event = {
 		command = { type = relation which = USA value = -50 }
 		command = { type = relation which = ENG value = -50 }
 		command = { type = belligerence which = 5 }
-		command = { type = trigger which = 611523 }
+#		command = { type = trigger which = 611523 }
 	}
 	action_b = {
 		name = "Let them be"
@@ -789,6 +646,7 @@ event = {
 	
 	trigger = {
 		event = 611522
+		control = { province = 1631 data = HOL }
 		war = { country = HOL country = INO }	
 	}
 	
@@ -839,7 +697,7 @@ event = {
 #		alliance = { country = USA country = ENG }	
 	}
 	
-	date = { day = 26 month = december year = 1949 }
+#	date = { day = 26 month = december year = 1949 }
 	
 	name = "印尼獨立"
 	desc = "EVT_611525_DESC"
@@ -1058,6 +916,7 @@ event = {
 	trigger = {
 		OR = {
 			war = { country = INO country = HOL }
+			war = { country = INO country = U05 }
 			flag = indonesian_revolution
 		}
 	}
@@ -1106,7 +965,6 @@ event = {
 		ai_chance = 50
 		command = { type = dissent value = 5 }
 		command = { type = belligerence value = 3 }
-#		command = { trigger = { country = HOL OR = { event = 8510607 event = 8510606 } } type = belligerence value = 8 }
 	}
 	# End the War
 	action_b = {
@@ -1118,85 +976,25 @@ event = {
 }
 
 ### Decision to end the war
-# 1949+ (UN does not condemn Netherlands)
+# 1949+ (UN does not condemn Netherlands) 8206027 removed
 
-event = {
-	id = 8206027
-#	country = HOL
-	persistent = yes
-
-	name = EVT_8206067_NAME
-	desc = EVT_8206067_DESC
-#	picture = "nwo\end_of_indonesian_national_revolution"
-	 
-	style = 1
-	
-	
-	trigger = {
-		war = { country = INO country = U05 }
-		OR = {
-			ai = no
-			AND = {
-				ai = HOL
-				ai = U05
-				country = HOL
-			}
-		}
-		NOT = { event = 8510607 } # UN condemnation 
-		NOT = { event = 8510606 } # UN condemnation and military action
-	}
-	
-#	date = { day = 0 month = january year = 1949 }
-#	offset = 90
-#	deathdate = { day = 29 month = december year = 1999 }
-	
-	# End the War
-	action_a = {
-		name = EVT_8206067_A
-		ai_chance = 10
-		command = { type = trigger which = 8206030 }
-		command = { type = dissent value = -5 }
-	}
-}
 
 # 1949+ (UN condemns Netherlands)
 
 event = {
 	id = 8206028
-#	country = HOL
-	persistent = yes
+	country = HOL
+#	persistent = yes
 
 	name = EVT_8206068_NAME
 	desc = EVT_8206068_DESC
 #	picture = "nwo\end_of_indonesian_national_revolution"
-	
-	style = 1
-	
-	
-	trigger = {
-		war = { country = INO country = U05 }
-		OR = {
-			ai = no
-			AND = {
-				ai = HOL
-				ai = U05
-				country = HOL
-			}
-		}
-		OR = { 
-			event = 8510607 # UN condemnation 
-			event = 8510606 # UN condemnation and military action
-		} 
-	}
-	
-#	date = { day = 0 month = january year = 1949 }
-#	offset = 90
-#	deathdate = { day = 29 month = december year = 1999 }
-	
+	style = 0
+
+
 	# End the War
 	action_a = {
 		name = EVT_8206068_A
-		ai_chance = 30
 		command = { type = trigger which = 8206030 }
 		command = { type = dissent value = -5 }
 	}
@@ -1207,15 +1005,16 @@ event = {
 event = {
 	id = 8206029
 	country = HOL
-	persistent = yes
 
 	name = EVT_8206069_NAME
 	desc = EVT_8206069_DESC
-	style = 1
-	
+	style = 0
 	
 	trigger = {
-		war = { country = INO country = HOL }
+		OR = {
+			war = { country = INO country = HOL }
+			flag = indonesian_revolution 
+		}
 		dissent = 20
 	}
 	
@@ -1228,7 +1027,7 @@ event = {
 		name = EVT_8206069_A
 		ai_chance = 100
 		command = { type = trigger which = 8206030 }
-		command = { type = dissent value = -5 }
+		command = { type = belligerence value = -5 }
 	}
 }
 
@@ -1391,7 +1190,6 @@ event = {
 		name = EVT_8206071_A
 		command = { type = dissent value = -5 }
     		command = { type = capital which = 1628 }
-		
 	}
 }
 
@@ -1409,6 +1207,10 @@ event = {
 		event = 8206031
 		flag = federated_indonesia
 	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1955 }
 	
 	action_a = {
 		name = EVT_8206072_A

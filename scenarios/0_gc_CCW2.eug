@@ -4,10 +4,11 @@ header = {
   name       = "Chinese Civil War"
   startdate  = { year = 1945 }
   selectable = { AFG ALB ARG AST BEL BHU BOL BRA BUL BUR CAN CHI CHC CGX CHL CMB COL COS CUB CYN CSX CXB CZE DEN DOM ECU EGY ETH FIN GRE GUA HAI HOL HON HUN ICL INO IRE IRQ ITA LEB LIB LUX MEX NEP NIC NOR NZL OMN PAN PAR PER POL POR PRU SAF SAL SCH SIA SPA SWE SYR TIB MON SIK JAP TUR URU USA SOV FRA ENG VEN YEM YUG U33 U72 LAO U03 }
-  CHI        = { }
-  U03        = { }
+  AFG        = { }
   USA        = { }
   SOV        = { }
+  CHI        = { }
+  CHC        = { }
   FRA        = { }
   ENG        = { }
   JAP        = { }

@@ -2613,6 +2613,13 @@ event = {
 		command = { type = night_attack which = militia value = 20 }
 		command = { type = night_attack which = bergsjaeger value = 10 }
 		command = { type = night_attack which = infantry value = 10 }
+
+#		command = { type = fuel_consumption which = militia value = -0.1 }
+#		command = { type = supply_consumption which = militia value = -0.1 }
+#		command = { type = fuel_consumption which = infantry value = -0.1 }
+#		command = { type = fuel_consumption which = bergsjaeger value = -0.1 }
+
+		command = { type = free_oil value = 5  }
 	}
 }
 #########################################################################################

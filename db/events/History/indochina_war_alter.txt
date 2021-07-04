@@ -1305,8 +1305,7 @@ event = {
 	trigger = {
      		atwar = yes
      		or = {
-      			event = 942412 
-       			event = 942413 
+      			event = 1945073
        		}
      		not = { 
          		control = { province = 3712 data = -1 }          
@@ -1791,68 +1790,16 @@ event = {
 		name = "重新控制了寮國 " 
 		command = { type = dissent value = -5 }
     		command = { type = inherit which = LAO }
-		command = { type = add_corps which = "法國駐寮部隊 " value = land where = 1329 }
-		command = { type = activate_division which = 13500 value = 40 where = 1329 }
-		command = { type = disorg_division which = 13500 value = 40 where = -1000 }
-	}
-}
-
-event = {
-	id = 1945034
-	random = no
-	country = U03
-
-	trigger = {
- 		NOT = {	exists = LAO }
-		control = { province = 1329 data = -1 }
-
-	}
-
-	name = "寮國自治 "
-	desc = "1946年8月27日，法國與寮國簽訂臨時協定，寮國獲得了在
-		印度支那聯邦內的統一與內政自治。法國殖民官吏以顧問
-		名義參與行政，軍事外交警察權力仍掌握在法國手中。"
-	style = 0
-
-	date = { day = 7 month = august year = 1946 }
-	offset = 20
-	deathdate = { day = 29 month = december year = 1949 }
-
-	action_a = {
-		ai_chance = 95
-		name = "給予有限自治權 " 
-		command = { type = dissent value = -2 }
-		command = { type = removecore which = 1336 }
-		command = { type = removecore which = 1332 }
-		command = { type = removecore which = 3716 }
-		command = { type = removecore which = 3715 }
-		command = { type = removecore which = 1329 }
-		command = { type = removecore which = 1306 }
-		command = { type = removecore which = 3713 }
-		command = { type = removecore which = 3714 }
-	}
-	action_b = {
-		ai_chance = 5
-		name = "維持殖民統治 " 
-		command = { type = dissent value = 5 }
-		command = { type = province_revoltrisk which = 1336 value = 40 }
-		command = { type = province_revoltrisk which = 1332 value = 40 }
-		command = { type = province_revoltrisk which = 3716 value = 40 }
-		command = { type = province_revoltrisk which = 3715 value = 40 }
-		command = { type = province_revoltrisk which = 3714 value = 40 }
-		command = { type = province_revoltrisk which = 3713 value = 40 }
-		command = { type = province_revoltrisk which = 1306 value = 40 }
-		command = { type = province_revoltrisk which = 1329 value = 40 }
 	}
 }
 
 event = {
 	id = 1945060
 	random = no
-	country = U03
+	country = LAO
 
 	trigger = {
- 		NOT = {	exists = LAO }
+ 		ispuppet = -1
 		control = { province = 3714 data = -1 }
 
 	}
@@ -2200,37 +2147,37 @@ event = {
 ### #寮國
 #######################################
 event = {
-	id = 8212171
+	id = 1945034
+	random = no
 	country = U03
 	persistent = yes
 
-	name = "《法國寮國協定》"
-	desc = EVT_SELFRULE_DESC
-#	picture = "nwo\colonialism"
-	style = 1
-
 	trigger = {
-		government = democratic
+#		government = democratic
 		OR = { 
-			war = { country = FRA country = U72 }
+			war = { country = U03 country = U72 }
 			atwar = no 
 		}
-		control = { province = 1329 data = FRA } #
+		control = { province = 1329 data = -1 } #
 		NOT = {
 			exists = LAO
 		}
 	}
 
-	date = { day = 4 month = july year = 1949 } #1949/7/19
-	offset = 15
-	deathdate = { day = 29 month = december year = 1954 }
+	name = "EVT_133_NAME"
+	desc = "EVT_133_DESC"
+	style = 0
+
+	date = { day = 1 month = may year = 1947 } #1947/5/11 
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
 
 	action_a = {
-		name = "給予自治 "
 		ai_chance = 95
+		name = "給予自治 " 
 		command = { type = independence which = LAO value = 1 }
 		command = { type = make_puppet which = LAO }
-		command = { type = trigger which = 8212172 }
+#		command = { type = trigger which = 8212172 }
 		command = { type = trigger which = 2002024 }
 		command = { type = removecore which = 3714 }
 		command = { type = removecore which = 1306 }
@@ -2240,20 +2187,22 @@ event = {
 		command = { type = removecore which = 1332 }
 		command = { type = removecore which = 3716 }
 		command = { type = removecore which = 1336 }
-		command = { type = secedeprovince which = LAO value = 3714 when = 2 }
-		command = { type = secedeprovince which = LAO value = 1306 when = 2 }
-		command = { type = secedeprovince which = LAO value = 3713 when = 2 }
-		command = { type = secedeprovince which = LAO value = 3715 when = 2 }
-		command = { type = secedeprovince which = LAO value = 3716 when = 2 }
-		command = { type = secedeprovince which = LAO value = 1329 when = 2 }
-		command = { type = secedeprovince which = LAO value = 1306 when = 2 }
-		command = { type = secedeprovince which = LAO value = 1336 when = 2 }
+		command = { type = add_corps which = "法國駐寮部隊 " value = land where = 1329 }
+		command = { type = activate_division which = 13500 value = 40 where = 1329 }
+		command = { type = disorg_division which = 13500 value = 40 where = -1000 }
 	}
-
 	action_b = {
-		name = EVT_DONTLIBERATE
 		ai_chance = 5
-		command = { type = dissent value = 2 }
+		name = "維持殖民統治 " 
+		command = { type = dissent value = 5 }
+		command = { type = province_revoltrisk which = 1336 value = 40 }
+		command = { type = province_revoltrisk which = 1332 value = 40 }
+		command = { type = province_revoltrisk which = 3716 value = 40 }
+		command = { type = province_revoltrisk which = 3715 value = 40 }
+		command = { type = province_revoltrisk which = 3714 value = 40 }
+		command = { type = province_revoltrisk which = 3713 value = 40 }
+		command = { type = province_revoltrisk which = 1306 value = 40 }
+		command = { type = province_revoltrisk which = 1329 value = 40 }
 	}
 }
 
@@ -2262,14 +2211,14 @@ event = {
 	country = LAO
 
 	name = "寮國的自治 "
-	desc = EVT_MILACCESS_DESC
+	desc = "EVT_133_DESC"
 #	picture = "nwo\colonialism"
 	style = 1
 
 	action_a = {
 		name = EVT_MILACCESS_A
-#		command = { type = leave_alliance }
 		command = { type = access which = U03 }
+		command = { type = access which = FRA }
 		command = { type = access which = VIE }
 		command = { type = set_domestic which = democratic value = 7 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -2326,6 +2275,7 @@ event = {
 	action_a = {
 		name = ACTION_NAME_OK
 		command = { type = make_puppet which = LAO }
+		command = { type = trigger which = 8212172 }
 	}
 } 
 
@@ -2382,6 +2332,9 @@ event = {
 		command = { type = removecore which =	3706	}
 		command = { type = removecore which =	3707	}
 		command = { type = removecore which =	3708	}
+		command = { type = remove_division which = 13500 value = 31 }
+		command = { type = remove_division which = 13500 value = 32 }
+
 	}
 	action_b = {
 		name = EVT_DONTLIBERATE
@@ -2401,7 +2354,7 @@ event = {
 
 	action_a = {
 		name = EVT_MILACCESS_A
-		command = { type = inherit which = U03 }
+		command = { type = alliance which = U03 }
 		command = { type = capital which = 1337 }
 		command = { type = dissent value = -10 }
 		command = { type = war which = U72 }

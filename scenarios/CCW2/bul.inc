@@ -78,10 +78,10 @@ country = {
   chiefofarmy            = { type = 9 id = 19136 } # 伊万 基诺夫 
   chiefofnavy            = { type = 9 id = 19143 } # 斯特凡 查涅夫 
   chiefofair             = { type = 9 id = 19150 } # 扎哈里 扎哈里耶夫 
-  dormant_ministers      = { 19004 19005 19006 19007 19009 19001 19043 19045 19055 19066 19067 19081 19096 19097 19108 19109 19119 19130 19131 19139 19146 }
   nationalidentity       = "policy_economy_Stalinism-planned"
   socialpolicy           = "policy_social_collectivism"
   nationalculture        = "policy_political_stalinist"
+  dormant_ministers      = { 19004 19005 19006 19007 19009 19001 19043 19045 19055 19066 19067 19081 19096 19097 19108 19109 19119 19130 19131 19139 19146 }
 
   landunit = {
     id       = { type = 19000 id = 1 }

@@ -91,7 +91,7 @@ model = {
 	airattack				= 1.5
 	transportweight			= 10
 	supplyconsumption 		= 0.88
-	fuelconsumption			= 0.05
+	fuelconsumption			= 0
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -113,7 +113,7 @@ model = {
 	airattack				= 2
 	transportweight			= 10
 	supplyconsumption 		= 1.07
-	fuelconsumption			= 0.1
+	fuelconsumption			= 0
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -135,7 +135,7 @@ model = {
 	airattack				= 3
 	transportweight			= 15
 	supplyconsumption 		= 1.21
-	fuelconsumption			= 0.1
+	fuelconsumption			= 0
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -157,7 +157,7 @@ model = {
 	airattack				= 4
 	transportweight			= 15
 	supplyconsumption 		= 1.37
-	fuelconsumption			= 0.1
+	fuelconsumption			= 0
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -179,7 +179,7 @@ model = {
 	airattack				= 5
 	transportweight			= 15
 	supplyconsumption 		= 1.57
-	fuelconsumption			= 0.15
+	fuelconsumption			= 0.1
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -201,7 +201,7 @@ model = {
 	airattack				= 6
 	transportweight			= 15
 	supplyconsumption 		= 1.77
-	fuelconsumption			= 0.15
+	fuelconsumption			= 0.1
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -223,7 +223,7 @@ model = {
 	airattack				= 7
 	transportweight			= 15
 	supplyconsumption 		= 1.77
-	fuelconsumption			= 0.15
+	fuelconsumption			= 0.1
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -245,7 +245,7 @@ model = {
 	airattack				= 7
 	transportweight			= 15
 	supplyconsumption 		= 1.87
-	fuelconsumption			= 0.2
+	fuelconsumption			= 0.1
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -267,7 +267,7 @@ model = {
 	airattack				= 7
 	transportweight			= 15
 	supplyconsumption 		= 1.87
-	fuelconsumption			= 0.2
+	fuelconsumption			= 0.15
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -289,7 +289,7 @@ model = {
 	airattack				= 7
 	transportweight			= 15
 	supplyconsumption 		= 1.97
-	fuelconsumption			= 0.2
+	fuelconsumption			= 0.15
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }
@@ -311,7 +311,7 @@ model = {
 	airattack				= 7
 	transportweight			= 15
 	supplyconsumption 		= 1.97
-	fuelconsumption			= 0.2
+	fuelconsumption			= 0.15
 	upgrade_time_factor = 0.6
 	upgrade_cost_factor = 1.2
 }

@@ -36,6 +36,7 @@ country = {
   regular_id         = FRA
   puppet             = FRA
   control            = FRA
+  ai                 = "minor_default.ai"
   capital            = 367 # ¿ÆÎ÷¼Îµº
   dissent            = 5
   manpower           = 100

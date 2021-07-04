@@ -3401,7 +3401,7 @@ country = {
   landdivision = { dormant = yes id = { type = 11616 id = 636 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 637 } name = "長江防線"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 638 } name = "金門防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
-  landdivision = { dormant = yes id = { type = 11616 id = 639 } name = "瓊北要塞"  type = garrison model = 1 locked = yes } 
+  landdivision = { dormant = yes id = { type = 11616 id = 639 } name = "瓊北要塞"  type = garrison model = 0 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 640 } name = "舟山群島防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 641 } name = "澎湖防衛司令部"  type = garrison model = 1 extra = engineer brigade_model = 4 locked = yes } 
   landdivision = { dormant = yes id = { type = 11616 id = 642 } name = "吳淞要塞"  type = garrison model = 1 locked = yes } 

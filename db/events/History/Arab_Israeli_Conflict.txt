@@ -20,7 +20,7 @@ event = {
 		}
 	}
 
-	date = { day = 28 month =november year = 1947 }
+	date = { day = 28 month = november year = 1947 }
 
 	name = "結束在巴勒斯坦的委任統治"
 	desc = "In February, 1947, the United Kingdom found itself unable to resolve the future of the Palestine mandate and referred the matter to the United Nations."
@@ -155,6 +155,7 @@ event = {
 	action_a = {
 		ai_chance = 100
 		name = "EVT_900127_ACTA"
+		command = { type = money value = 500 }
 		command = { type = dissent value = -10 }
 		command = { type = set_domestic which = democratic value = 8 }
 		command = { type = set_domestic which = political_left value = 6 }

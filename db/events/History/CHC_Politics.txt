@@ -169,6 +169,7 @@ event = {
   		command = { type = province_manpower which = 1205 value = 5 }
   		command = { type = capital which = 1205 }
   		command = { type = domestic which = interventionism value = 2 }
+		command = { type = free_oil value = -5  }
 #  		command = { type = research_mod value = 20 }
 #  		command = { type = trigger which = 941218 }
   		command = { type = sleepevent which = 941123 } 

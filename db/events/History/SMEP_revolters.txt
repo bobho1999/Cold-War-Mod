@@ -2957,9 +2957,9 @@ event = {
 	desc = "The nation achieved its independence."
 	style = 0
 
-	date = { day = 0 month = january year = 1930 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 9999 }
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
 
 	action_a = {
 		name = "OK"
@@ -2983,9 +2983,9 @@ event = {
 	desc = "The nation achieved its independence."
 	style = 0
 
-	date = { day = 0 month = january year = 1930 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 9999 }
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
 
 	action_a = {
 		name = "OK"
@@ -3009,9 +3009,9 @@ event = {
 	desc = "The nation achieved its independence."
 	style = 0
 
-	date = { day = 0 month = january year = 1930 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 9999 }
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
 
 	action_a = {
 		name = "OK"
@@ -3141,9 +3141,9 @@ event = {
 	desc = "The nation achieved its independence."
 	style = 0
 
-	date = { day = 0 month = january year = 1930 }
-	offset = 1
-	deathdate = { day = 29 month = december year = 9999 }
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
 
 	action_a = {
 		name = "OK"
@@ -3828,7 +3828,7 @@ event = {
 
 	country = U33
 
-	name = "AI_EVENT" #國家建立
+	name = "AI_EVENT" # 共產希臘
 	desc = "The nation achieved its independence."
 	style = 0
 
@@ -3838,14 +3838,14 @@ event = {
 
 	action_a = {
 		name = "OK"
-		command = { type = free_ic value = 6 }
-		command = { type = free_energy value = 12 }
-		command = { type = free_metal value = 6 }
-		# command = { type = free_oil value = 6 }
-		command = { type = free_rare_materials value = 3 }
-		command = { type = dissent value = 15 } #pay for transports
+		command = { type = free_ic value = 3 } #6
+		command = { type = free_energy value = 6 } #12
+		command = { type = free_metal value = 3 } #6
+		# command = { type = free_oil value = 3 } #6
+		command = { type = free_rare_materials value = 1.5 } #3
+		command = { type = dissent value = 6 } #pay for transports 15
 		command = { type = free_manpower value = 0.03 }
-		command = { type = transport_pool which = U33 value = 160 }
+		command = { type = transport_pool which = U33 value = 100 } # 160
 		}
 	}
 event = {

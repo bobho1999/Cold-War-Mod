@@ -4,6 +4,31 @@
 #The modifiers are simulating the level of corruption in the country + Defence budget and Free Marked - Planned Economy settings.
 #
 #
+event = {
+	id = 23300
+	persistent = no
+	random = no
+	
+	trigger = {
+		ai = no
+		not = { flag = economy_on }
+	}
+
+	date = { day = 1 month = october year = 1945 }
+
+	name = "Economy On" 
+	desc = "EVT_233000_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "On"
+		command = { type = setflag which = economy_on }
+	}
+	action_b = {
+		name = "Off"
+		command = { type = clrflag which = economy_on }
+	}
+}
 
 event = {
 	id = 233000
@@ -11,7 +36,11 @@ event = {
 	random = no
 	country = ALB
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233000_DESC"
@@ -31,46 +60,6 @@ event = {
 		command = { type = research_mod value = -10 }
 		command = { type = local_setflag which = invest }
 		command = { type = local_setflag which = hawk_lobby_2 }
-      command = { type = activate which = 7010 }
-      command = { type = activate which = 7020 }
-      command = { type = activate which = 7030 }
-      command = { type = activate which = 7040 }
-      command = { type = activate which = 7050 }
-      command = { type = activate which = 7060 }
-      command = { type = activate which = 7070 }
-      command = { type = activate which = 7080 }
-      command = { type = activate which = 7090 }
-      command = { type = activate which = 7100 }
-      command = { type = activate which = 7110 }
-      command = { type = activate which = 7120 }
-      command = { type = activate which = 7130 }
-      command = { type = activate which = 7140 }
-      command = { type = activate which = 7150 }
-      command = { type = activate which = 7160 }
-      command = { type = activate which = 7170 }
-      command = { type = activate which = 7180 }
-      command = { type = activate which = 7190 }
-      command = { type = activate which = 7200 }
-      command = { type = activate which = 7210 }
-      command = { type = activate which = 7220 }
-      command = { type = activate which = 7230 }
-      command = { type = activate which = 7240 }
-      command = { type = activate which = 7250 }
-      command = { type = activate which = 7260 }
-      command = { type = activate which = 7270 }
-      command = { type = activate which = 7280 }
-      command = { type = activate which = 7290 }
-      command = { type = activate which = 7300 }
-      command = { type = activate which = 7310 }
-      command = { type = activate which = 7320 }
-      command = { type = activate which = 7330 }
-      command = { type = activate which = 7340 }
-      command = { type = activate which = 7350 }
-      command = { type = activate which = 7360 }
-      command = { type = activate which = 7370 }
-      command = { type = activate which = 7380 }
-      command = { type = activate which = 7390 }
-
 	}
 }
 
@@ -80,7 +69,11 @@ event = {
 	random = no
 	country = ALG
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233001_DESC"
@@ -108,7 +101,11 @@ event = {
 	random = no
 	country = ANG
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233002_DESC"
@@ -139,7 +136,11 @@ event = {
 	random = no
 	country = ARG
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233003_DESC"
@@ -169,7 +170,7 @@ event = {
 	random = no
 	country = ARM
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233004_DESC"
@@ -199,7 +200,11 @@ event = {
 	random = no
 	country = AST
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233005_DESC"
@@ -224,7 +229,11 @@ event = {
 	random = no
 	country = AUS
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233006_DESC"
@@ -250,7 +259,11 @@ event = {
 	random = no
 	country = AXI  #Cape Verde
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233007_DESC"
@@ -278,7 +291,7 @@ event = {
 	random = no
 	country = AZB
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233008_DESC"
@@ -309,7 +322,11 @@ event = {
 	random = no
 	country = BEL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233009_DESC"
@@ -336,7 +353,7 @@ event = {
 	random = no
 	country = BEN
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233010_DESC"
@@ -365,7 +382,7 @@ event = {
 	random = no
 	country = BLR
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233011_DESC"
@@ -395,7 +412,11 @@ event = {
 	random = no
 	country = BOL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233012_DESC"
@@ -424,7 +445,7 @@ event = {
 	random = no
 	country = BOS
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233013_DESC"
@@ -453,7 +474,11 @@ event = {
 	random = no
 	country = BRA
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233014_DESC"
@@ -482,7 +507,11 @@ event = {
 	random = no
 	country = BRU #
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233015_DESC"
@@ -510,7 +539,11 @@ event = {
 	random = no
 	country = BUL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233016_DESC"
@@ -539,7 +572,11 @@ event = {
 	random = no
 	country = BUR # Myanmar/Burma
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233017_DESC"
@@ -568,7 +605,7 @@ event = {
 	random = no
 	country = CAL #Bangladesh
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233018_DESC"
@@ -598,7 +635,7 @@ event = {
 	random = no
 	country = CAM #Cameroon
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233019_DESC"
@@ -629,7 +666,11 @@ event = {
 	random = no
 	country = CAN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233020_DESC"
@@ -654,7 +695,11 @@ event = {
 	random = no
 	country = CHC
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233021_DESC"
@@ -682,7 +727,11 @@ event = {
 	random = no
 	country = CHL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233022_DESC"
@@ -710,7 +759,11 @@ event = {
 	random = no
 	country = CMB #Cambodia
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233023_DESC"
@@ -740,7 +793,11 @@ event = {
 	random = no
 	country = COL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233024_DESC"
@@ -769,7 +826,11 @@ event = {
 	random = no
 	country = CON #Rep Congo
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233025_DESC"
@@ -798,7 +859,11 @@ event = {
 	random = no
 	country = COS
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233026_DESC"
@@ -827,7 +892,11 @@ event = {
 	random = no
 	country = CRO
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233027_DESC"
@@ -856,7 +925,11 @@ event = {
 	random = no
 	country = CSA #Belize
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233028_DESC"
@@ -884,7 +957,11 @@ event = {
 	random = no
 	country = CSX # need fix
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233029_DESC"
@@ -912,7 +989,11 @@ event = {
 	random = no
 	country = CUB
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233030_DESC"
@@ -943,7 +1024,7 @@ event = {
 	random = no
 	country = CXB # need fix
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233031_DESC"
@@ -974,7 +1055,7 @@ event = {
 	random = no
 	country = CYP
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233032_DESC"
@@ -1001,7 +1082,11 @@ event = {
 	random = no
 	country = CZE
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233033_DESC"
@@ -1030,7 +1115,7 @@ event = {
 	random = no
 	country = DDR #Djibouti
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233034_DESC"
@@ -1058,7 +1143,11 @@ event = {
 	random = no
 	country = DEN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233035_DESC"
@@ -1083,7 +1172,11 @@ event = {
 	random = no
 	country = DOM
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233036_DESC"
@@ -1112,7 +1205,11 @@ event = {
 	random = no
 	country = ECU
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233037_DESC"
@@ -1143,7 +1240,11 @@ event = {
 	random = no
 	country = EGY
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233038_DESC"
@@ -1173,7 +1274,11 @@ event = {
 	random = no
 	country = ENG
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233039_DESC"
@@ -1198,7 +1303,7 @@ event = {
 	random = no
 	country = EQA
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233040_DESC"
@@ -1227,7 +1332,7 @@ event = {
 	random = no
 	country = EST
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233041_DESC"
@@ -1256,7 +1361,11 @@ event = {
 	random = no
 	country = ETH
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233042_DESC"
@@ -1286,7 +1395,7 @@ event = {
 	random = no
 	country = EUS
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233043_DESC"
@@ -1314,7 +1423,11 @@ event = {
 	random = no
 	country = FIN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233044_DESC"
@@ -1339,7 +1452,7 @@ event = {
 	random = no
 	country = FLA #Pacific Federation
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233045_DESC"
@@ -1367,7 +1480,11 @@ event = {
 	random = no
 	country = FRA
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233046_DESC"
@@ -1395,7 +1512,7 @@ event = {
 	random = no
 	country = GAB #Gabon
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233047_DESC"
@@ -1422,7 +1539,7 @@ event = {
 	random = no
 	country = GEO
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233048_DESC"
@@ -1452,7 +1569,7 @@ event = {
 	random = no
 	country = GER
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233049_DESC"
@@ -1479,7 +1596,7 @@ event = {
 	random = no
 	country = GLD #Ghana
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233050_DESC"
@@ -1508,7 +1625,11 @@ event = {
 	random = no
 	country = GRE
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233051_DESC"
@@ -1536,7 +1657,11 @@ event = {
 	random = no
 	country = GUA #Guatemala
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233052_DESC"
@@ -1565,7 +1690,7 @@ event = {
 	random = no
 	country = GUI #Guinea
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233053_DESC"
@@ -1593,7 +1718,7 @@ event = {
 	random = no
 	country = GUY #Guyana
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233054_DESC"
@@ -1623,7 +1748,11 @@ event = {
 	random = no
 	country = HAI #Haiti
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233055_DESC"
@@ -1651,7 +1780,11 @@ event = {
 	random = no
 	country = HOL #Netherlands
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233056_DESC"
@@ -1677,7 +1810,11 @@ event = {
 	random = no
 	country = HON #Honduras
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233057_DESC"
@@ -1706,7 +1843,11 @@ event = {
 	random = no
 	country = HUN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233058_DESC"
@@ -1735,7 +1876,11 @@ event = {
 	random = no
 	country = ICL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233059_DESC"
@@ -1760,7 +1905,7 @@ event = {
 	random = no
 	country = IND
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233060_DESC"
@@ -1790,7 +1935,11 @@ event = {
 	random = no
 	country = INO
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233061_DESC"
@@ -1817,7 +1966,11 @@ event = {
 	random = no
 	country = IRE
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233062_DESC"
@@ -1844,7 +1997,11 @@ event = {
 	random = no
 	country = IRQ
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233063_DESC"
@@ -1871,7 +2028,7 @@ event = {
 	random = no
 	country = ISR
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233064_DESC"
@@ -1900,7 +2057,11 @@ event = {
 	random = no
 	country = ITA
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233065_DESC"
@@ -1929,7 +2090,11 @@ event = {
 	random = no
 	country = JAP
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233066_DESC"
@@ -1957,7 +2122,7 @@ event = {
 	random = no
 	country = JOR
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233067_DESC"
@@ -1986,7 +2151,7 @@ event = {
 	random = no
 	country = KAZ
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233068_DESC"
@@ -2015,7 +2180,7 @@ event = {
 	random = no
 	country = KOR
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233069_DESC"
@@ -2044,7 +2209,7 @@ event = {
 	random = no
 	country = KYG
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233070_DESC"
@@ -2074,7 +2239,11 @@ event = {
 	random = no
 	country = LAO
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233071_DESC"
@@ -2106,7 +2275,7 @@ event = {
 	random = no
 	country = LAT
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233072_DESC"
@@ -2136,7 +2305,7 @@ event = {
 	random = no
 	country = LBY
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233073_DESC"
@@ -2167,7 +2336,11 @@ event = {
 	random = no
 	country = LEB
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233074_DESC"
@@ -2198,7 +2371,11 @@ event = {
 	random = no
 	country = LIB
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233075_DESC"
@@ -2227,7 +2404,11 @@ event = {
 	random = no
 	country = LIT
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233076_DESC"
@@ -2261,7 +2442,11 @@ event = {
 	random = no
 	country = LUX
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233077_DESC"
@@ -2288,7 +2473,7 @@ event = {
 	random = no
 	country = MAD
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233078_DESC"
@@ -2318,7 +2503,7 @@ event = {
 	random = no
 	country = MAL #Mali
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233079_DESC"
@@ -2347,7 +2532,7 @@ event = {
 	random = no
 	country = MAN #Malta
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233080_DESC"
@@ -2375,7 +2560,7 @@ event = {
 	random = no
 	country = MEN #Mauritania
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233081_DESC"
@@ -2404,7 +2589,11 @@ event = {
 	random = no
 	country = MEX
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233082_DESC"
@@ -2434,7 +2623,7 @@ event = {
 	random = no
 	country = MLY
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233083_DESC"
@@ -2463,7 +2652,11 @@ event = {
 	random = no
 	country = MON
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233084_DESC"
@@ -2498,7 +2691,7 @@ event = {
 	random = no
 	country = MOR
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233085_DESC"
@@ -2527,7 +2720,7 @@ event = {
 	random = no
 	country = MOZ
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233086_DESC"
@@ -2557,7 +2750,7 @@ event = {
 	random = no
 	country = NAM
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233087_DESC"
@@ -2586,7 +2779,11 @@ event = {
 	random = no
 	country = NEP
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233088_DESC"
@@ -2614,7 +2811,11 @@ event = {
 	random = no
 	country = NIC
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233089_DESC"
@@ -2645,7 +2846,7 @@ event = {
 	random = no
 	country = NIG
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233090_DESC"
@@ -2676,7 +2877,11 @@ event = {
 	random = no
 	country = NOR
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233091_DESC"
@@ -2703,7 +2908,11 @@ event = {
 	random = no
 	country = NZL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233092_DESC"
@@ -2728,7 +2937,11 @@ event = {
 	random = no
 	country = OMN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233093_DESC"
@@ -2755,7 +2968,7 @@ event = {
 	random = no
 	country = OTT #Chad
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233094_DESC"
@@ -2781,7 +2994,7 @@ event = {
 	random = no
 	country = PAK
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233095_DESC"
@@ -2810,7 +3023,11 @@ event = {
 	random = no
 	country = PAN
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233096_DESC"
@@ -2841,7 +3058,11 @@ event = {
 	random = no
 	country = PAR
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233097_DESC"
@@ -2871,7 +3092,11 @@ event = {
 	random = no
 	country = PER
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233098_DESC"
@@ -2903,7 +3128,7 @@ event = {
 	random = no
 	country = PHI
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233099_DESC"
@@ -2932,7 +3157,11 @@ event = {
 	random = no
 	country = POL
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233100_DESC"
@@ -2962,7 +3191,11 @@ event = {
 	random = no
 	country = POR
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233101_DESC"
@@ -3028,7 +3261,7 @@ event = {
 	random = no
 	country = PRK #Papua New-Guinea
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233102_DESC"
@@ -3057,7 +3290,11 @@ event = {
 	random = no
 	country = PRU #Peru
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233103_DESC"
@@ -3088,7 +3325,7 @@ event = {
 	random = no
 	country = QUE #Qatar
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233104_DESC"
@@ -3117,7 +3354,7 @@ event = {
 	random = no
 	country = RHO #Togo
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233105_DESC"
@@ -3143,6 +3380,10 @@ event = {
 	persistent = no
 	random = no
 	country = ROM
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -3175,7 +3416,7 @@ event = {
 	random = no
 	country = RSI #Rwanda
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233107_DESC"
@@ -3203,7 +3444,11 @@ event = {
 	random = no
 	country = SOV
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233108_DESC"
@@ -3235,7 +3480,11 @@ event = {
 	random = no
 	country = SAF #South Africa
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233109_DESC"
@@ -3265,7 +3514,11 @@ event = {
 	random = no
 	country = SAL #El Salvador
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233110_DESC"
@@ -3296,7 +3549,11 @@ event = {
 	random = no
 	country = SAR #Sri Lanka
 
-#	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233111_DESC"
@@ -3326,7 +3583,11 @@ event = {
 	random = no
 	country = SAU
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233112_DESC"
@@ -3355,7 +3616,7 @@ event = {
 	random = no
 	country = SCA #Macedonia/FYROM
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233113_DESC"
@@ -3384,7 +3645,11 @@ event = {
 	random = no
 	country = SCH #Switzerland
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233114_DESC"
@@ -3409,7 +3674,7 @@ event = {
 	random = no
 	country = SCO #Carribean
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233115_DESC"
@@ -3437,7 +3702,7 @@ event = {
 	random = no
 	country = SER
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233116_DESC"
@@ -3466,6 +3731,10 @@ event = {
 	persistent = no
 	random = no
 	country = SIA #Thailand
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -3497,7 +3766,7 @@ event = {
 	random = no
 	country = SIB #Senegal
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233118_DESC"
@@ -3526,7 +3795,7 @@ event = {
 	random = no
 	country = SIE #Sierra Leone
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233119_DESC"
@@ -3553,7 +3822,11 @@ event = {
 	random = no
 	country = SIK # East Turkestan
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233120_DESC"
@@ -3583,7 +3856,7 @@ event = {
 	random = no
 	country = SLO #Slovakia
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233121_DESC"
@@ -3613,7 +3886,7 @@ event = {
 	random = no
 	country = SLV #Slovenia
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233122_DESC"
@@ -3641,7 +3914,7 @@ event = {
 	random = no
 	country = SOM
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233123_DESC"
@@ -3666,6 +3939,10 @@ event = {
 	persistent = no
 	random = no
 	country = SPA
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -3696,7 +3973,7 @@ event = {
 	random = no
 	country = SPR #Suriname
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233125_DESC"
@@ -3723,7 +4000,7 @@ event = {
 	random = no
 	country = SUD
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233126_DESC"
@@ -3752,7 +4029,11 @@ event = {
 	random = no
 	country = SWE
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233127_DESC"
@@ -3776,6 +4057,10 @@ event = {
 	persistent = no
 	random = no
 	country = SYR
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -3808,7 +4093,7 @@ event = {
 	random = no
 	country = TAJ
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233129_DESC"
@@ -3837,7 +4122,7 @@ event = {
 	random = no
 	country = TAN
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233130_DESC"
@@ -3867,7 +4152,7 @@ event = {
 	random = no
 	country = TEX #East Timor
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233131_DESC"
@@ -3895,7 +4180,7 @@ event = {
 	random = no
 	country = TRA #Taiwan
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233132_DESC"
@@ -3922,7 +4207,7 @@ event = {
 	random = no
 	country = TRK #Turkmenistan
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233133_DESC"
@@ -3951,7 +4236,7 @@ event = {
 	random = no
 	country = TUN
 
-#	date = { day = 1 month = october year = 1945 }
+#	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233134_DESC"
@@ -3980,7 +4265,11 @@ event = {
 	random = no
 	country = TUR
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233135_DESC"
@@ -4506,6 +4795,10 @@ event = {
 	random = no
 	country = URU
 
+	trigger = {
+		flag = economy_on
+	}
+
 	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
@@ -4533,6 +4826,10 @@ event = {
 	persistent = no
 	random = no
 	country = USA
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -4595,6 +4892,10 @@ event = {
 	persistent = no
 	random = no
 	country = VEN
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -4687,6 +4988,10 @@ event = {
 	random = no
 	country = YEM
 
+	trigger = {
+		flag = economy_on
+	}
+
 	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
@@ -4718,7 +5023,11 @@ event = {
 	random = no
 	country = CHI
 
-	date = { day = 1 month = october year = 1945 }
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
 	desc = "EVT_233160_DESC"
@@ -4746,6 +5055,10 @@ event = {
 	persistent = no
 	random = no
 	country = YUG
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -4778,6 +5091,10 @@ event = {
 	random = no
 	country = U33
 
+	trigger = {
+		flag = economy_on
+	}
+
 	date = { day = 2 month = october year = 1945 }
 
 	name = "EVT_233001_NAME" 
@@ -4808,6 +5125,10 @@ event = {
 	persistent = no
 	random = no
 	country = U50
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 
@@ -4841,6 +5162,10 @@ event = {
 	persistent = no
 	random = no
 	country = U72
+
+	trigger = {
+		flag = economy_on
+	}
 
 	date = { day = 2 month = october year = 1945 }
 

@@ -6,7 +6,6 @@ event = {
 	random = no
   	country = ALS 
   	trigger = {
-#		ai = no
 		atwar = no
 		not = { war = { country = chi country = jap } }
 		not = { war = { country = chi country = SOV } }
@@ -51,8 +50,7 @@ event = {
 		command = { type = trigger which = 2000955 } 	
 		command = { type = trigger which = 2000956 } 
 		command = { type = trigger which = 2000957 } 
-		command = { type = belligerence value = -50 }
-#		command = { type = peacetime_ic_mod value = -30 } 		
+		command = { type = belligerence value = -50 }		
 		}
 }
 event = {
@@ -60,7 +58,7 @@ event = {
 	random = no
 	country = SOV
 		  
-  	name = "聯合國安理會常任理事國 "
+  	name = "聯合國安理會常任理事國—蘇聯 "
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的时代到了 "
   	style = 0
 	
@@ -68,14 +66,6 @@ event = {
 		name = "和平万岁！"
 		command = { type = local_setflag which = UNSC_p5 }
 		command = { type = belligerence value = -50 }
-#		command = { type = peacetime_ic_mod value = -30 } 
-#		command = { type = build_cost which = land value = 1000 }
-#		command = { type = build_cost which = air value = 1000 }
-#		command = { type = build_cost which = naval value = 1000 }
-#		command = { type = build_time which = land value = 9999 }
-#		command = { type = build_time which = air value = 9999 }
-#		command = { type = build_time which = naval value = 9999 }
-		command = { type = delete_unit which = -1 when = 40  }
   }
 }
 
@@ -84,7 +74,7 @@ event = {
 	random = no
 	country = usa
 		  
-  	name = "聯合國安理會常任理事國 "
+  	name = "聯合國安理會常任理事國—美國 "
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的时代到了 "
   	style = 0
 	
@@ -92,14 +82,6 @@ event = {
 		name = "和平万岁！"
 		command = { type = local_setflag which = UNSC_p5 }
 		command = { type = belligerence value = -50 }
-#		command = { type = peacetime_ic_mod value = -30 } 
-#		command = { type = build_cost which = land value = 1000 }
-#		command = { type = build_cost which = air value = 1000 }
-#		command = { type = build_cost which = naval value = 1000 }
-#		command = { type = build_time which = land value = 9999 }
-#		command = { type = build_time which = air value = 9999 }
-#		command = { type = build_time which = naval value = 9999 }
-		command = { type = delete_unit which = -1 when = 40  }
   }
 }
 
@@ -108,7 +90,7 @@ event = {
 	random = no
 	country = eng
 		  
-  	name = "聯合國安理會常任理事國 "
+  	name = "聯合國安理會常任理事國—英國"
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的时代到了 "
   	style = 0
 	
@@ -116,12 +98,6 @@ event = {
 		name = "和平万岁！"
 		command = { type = local_setflag which = UNSC_p5 }
 		command = { type = belligerence value = -50 }
-#		command = { type = build_cost which = land value = 1000 }
-#		command = { type = build_cost which = air value = 1000 }
-#		command = { type = build_cost which = naval value = 1000 }
-#		command = { type = build_time which = land value = 9999 }
-#		command = { type = build_time which = air value = 9999 }
-#		command = { type = build_time which = naval value = 9999 }
   }
 }
 
@@ -130,7 +106,7 @@ event = {
 	random = no
 	country = FRA
 		  
-  	name = "聯合國安理會常任理事國 "
+  	name = "聯合國安理會常任理事國—法國"
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的时代到了 "
   	style = 0
 	
@@ -138,12 +114,6 @@ event = {
 		name = "和平万岁！"
 		command = { type = local_setflag which = UNSC_p5 }
 		command = { type = belligerence value = -50 }
-#		command = { type = build_cost which = land value = 1000 }
-#		command = { type = build_cost which = air value = 1000 }
-#		command = { type = build_cost which = naval value = 1000 }
-#		command = { type = build_time which = land value = 9999 }
-#		command = { type = build_time which = air value = 9999 }
-#		command = { type = build_time which = naval value = 9999 }
   	}
 }
 
@@ -152,7 +122,7 @@ event = {
 	random = no
 	country = CHI
 		  
-  	name = "聯合國安理會常任理事國 "
+  	name = "聯合國安理會常任理事國—中國 "
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的时代到了 "
   	style = 0
 	
@@ -163,28 +133,25 @@ event = {
   	}
 }
 
-################
-#朝鲜战争——联合国
+#############################################
+#朝鲜战争—联合国
 #############################################
 event = {
   	id = 100500
   	random = no
   	country = ALS
 
- 
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = "1950年6月25日，朝鲜战争爆发。朝鲜民主主义人民共和国声称， 李承晚在美国操纵下突然向三八线以北地区进行了全面的武装侵 犯。而事实上，在得到斯大林的同意之后，朝鲜民主主义人民共 和国国家主席兼朝鲜人民军司令官金日成下令军队越过三八线， 发动了对大韩民国的突然进攻。  "
   	style = 0
   
   	action_a = {
     		name = "尽快讨论这个问题 "
-		command = { type = setflag which = UNSC_resolution }
+		command = { type = setflag which = UNSC_resolution84 }
   	}
 }
 
-################
-#联合国讨论——美国
-#############################################
+#联合国讨论—美国
 event = {
   	id = 100501
   	random = no
@@ -192,21 +159,21 @@ event = {
 
   	trigger = {
     		flag = korean_war 
-    		flag = UNSC_resolution
+    		flag = UNSC_resolution84
 		local_flag = UNSC_p5
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}    
 
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = "朝鲜战争爆发了，北朝鲜的部队将要拿下汉城，一个共产党国家 即将统一朝鲜半岛，我们必须对这种事情进行干涉，否则我们在 远东的利益将会受到破坏。 "
   	style = 0
 
   	date = { day = 25 month = june year = 1950 }
   	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+  	deathdate = { day = 30 month = december year = 1955 }
  
   	action_a = {
     		name = "贊成 "
@@ -220,7 +187,7 @@ event = {
     		ai_chance = 1
     		command = { type = relation which = PRK value = 10 }
     		command = { type = relation which = KOR value = -10 }
-		command = { type = setflag which = resolution_vetoed }
+		command = { type = setflag which = resolution84_vetoed }
   	}
   	action_c = {
     		name = "棄權 "
@@ -228,74 +195,72 @@ event = {
     		command = { }
   	}
 }
-################
-#联合国讨论——苏联
-#############################################
+
+#联合国讨论—苏联
 event = {
   	id = 100502
   	random = no
   	country = SOV
   	trigger = {
     		flag = korean_war 
-    		flag = UNSC_resolution
+    		flag = UNSC_resolution84
 		local_flag = UNSC_p5
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
+			flag = un_soviet_boycott
     		}
     		war = { country = PRK  country = KOR }
   	}    
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = "朝鲜战争爆发了，但我们为了共产党中国在联合国的合法席位， 可能还需要继续不出席联合国安理会。 "
   	style = 0
 
   	date = { day = 25 month = june year = 1950 }
   	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+  	deathdate = { day = 30 month = december year = 1955 }
    
   	action_a = {
-    		name = "缺席 "
-    		ai_chance = 95
-    		command = { type = relation which = CHC value = 10 }
+    		name = "贊成 "
+    		ai_chance = 5
+    		command = { type = dissent value = -1 }
     		command = { type = relation which = PRK value = -10 }
+    		command = { type = relation which = KOR value = 10 }
   	}
-#  	action_b = {
-#    		name = "否決 "
-#    		ai_chance = 3
-#    		command = { type = relation which = CHC value = -10 }
-#    		command = { type = relation which = PRK value = 10 }#
-#		command = { type = setflag which = resolution_vetoed }
-#  	}
-#  	action_c = {
-#    		name = "贊成 "
-#    		ai_chance = 2
-#    		command = { type = relation which = CHC value = -10 }
-#    		command = { type = relation which = PRK value = -10 }
-#  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 50
+    		command = { type = relation which = PRK value = 10 }
+    		command = { type = relation which = KOR value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 45
+    		command = { }
+  	}
 }
 
-################
-#联合国讨论——英國
-#############################################
+#联合国讨论—英國
 event = {
   	id = 100503
   	random = no
   	country = ENG
   	trigger = {
     		flag = korean_war 
-    		flag = UNSC_resolution
+    		flag = UNSC_resolution84
 		local_flag = UNSC_p5
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}    
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = " "
   	style = 0
  
   	date = { day = 25 month = june year = 1950 }
   	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+  	deathdate = { day = 30 month = december year = 1955 }
   
   	action_a = {
     		name = "贊成 "
@@ -308,7 +273,7 @@ event = {
     		ai_chance = 1
     		command = { type = relation which = PRK value = 10 }
     		command = { type = relation which = KOR value = -10 }
-		command = { type = setflag which = resolution_vetoed }
+		command = { type = setflag which = resolution84_vetoed }
   	}
   	action_c = {
     		name = "棄權 "
@@ -317,29 +282,27 @@ event = {
   	}
 }
 
-################
-#联合国讨论——法國
-#############################################
+#联合国讨论—法國
 event = {
   	id = 100504
   	random = no
   	country = FRA
   	trigger = {
     		flag = korean_war 
-    		flag = UNSC_resolution
+    		flag = UNSC_resolution84
 		local_flag = UNSC_p5
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}    
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = " "
   	style = 0
 
   	date = { day = 25 month = june year = 1950 }
   	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+  	deathdate = { day = 30 month = december year = 1955 }
    
   	action_a = {
     		name = "贊成 "
@@ -352,7 +315,7 @@ event = {
     		ai_chance = 1
     		command = { type = relation which = PRK value = 10 }
     		command = { type = relation which = KOR value = -10 }
-		command = { type = setflag which = resolution_vetoed }
+		command = { type = setflag which = resolution84_vetoed }
   	}
   	action_c = {
     		name = "棄權 "
@@ -361,29 +324,27 @@ event = {
   	}
 }
 
-################
-#联合国讨论——中國
-#############################################
+#联合国讨论—中國
 event = {
   	id = 100505
   	random = no
   	country = CHI
   	trigger = {
     		flag = korean_war 
-    		flag = UNSC_resolution
+    		flag = UNSC_resolution84
 		local_flag = UNSC_p5
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}    
-  	name = "聯合國安理會第82號決議 " 
+  	name = "聯合國安理會第84號決議 " 
   	desc = " "
   	style = 0
  
   	date = { day = 25 month = june year = 1950 }
   	offset = 1
-  	deathdate = { day = 30 month = december year = 1970 }
+  	deathdate = { day = 30 month = december year = 1955 }
  
   	action_a = {
     		name = "贊成 "
@@ -396,11 +357,376 @@ event = {
     		ai_chance = 1
     		command = { type = relation which = PRK value = 10 }
     		command = { type = relation which = KOR value = -10 }
-		command = { type = setflag which = resolution_vetoed }
+		command = { type = setflag which = resolution84_vetoed }
   	}
   	action_c = {
     		name = "棄權 "
     		ai_chance = 2
     		command = { }
   	}
+}
+
+event = {
+  	id = 100506
+  	random = no
+  	country = CHC
+  	trigger = {
+    		flag = korean_war 
+    		flag = UNSC_resolution84
+		local_flag = UNSC_p5
+    		not = {
+      			flag = korean_war_end
+    		}
+    		war = { country = PRK  country = KOR }
+  	}    
+  	name = "聯合國安理會第84號決議 " 
+  	desc = " "
+  	style = 0
+ 
+  	date = { day = 25 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 1
+    		command = { type = relation which = PRK value = -10 }
+    		command = { type = relation which = KOR value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 97
+    		command = { type = relation which = PRK value = 10 }
+    		command = { type = relation which = KOR value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 2
+    		command = { }
+  	}
+}
+
+#############################################
+# 印尼獨立戰爭—联合国
+#############################################
+event = {
+  	id = 100507
+  	random = no
+  	country = ALS
+
+  	trigger = {
+    		flag = indonesian_revolution
+  	}    
+ 
+  	name = "聯合國安理會第67號決議 " 
+  	desc = "  "
+  	style = 0
+
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }  
+
+  	action_a = {
+    		name = "尽快讨论这个问题 "
+		command = { type = setflag which = UNSC_resolution67 }
+  	}
+}
+
+
+#联合国讨论—美国
+event = {
+  	id = 100508
+  	random = no
+  	country = USA
+
+  	trigger = {
+    		flag = indonesian_revolution
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+  	}    
+
+  	name = "聯合國安理會第67號決議 " 
+  	desc = " "
+  	style = 0
+
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+#联合国讨论—苏联
+event = {
+  	id = 100509
+  	random = no
+  	country = SOV
+  	trigger = {
+    		flag = indonesian_revolution 
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+		NOT = {
+			flag = un_soviet_boycott
+		}
+  	}    
+  	name = "聯合國安理會第67號決議 " 
+  	desc = "朝鲜战争爆发了，但我们为了共产党中国在联合国的合法席位， 可能还需要继续不出席联合国安理会。 "
+  	style = 0
+
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+#联合国讨论—英國
+event = {
+  	id = 100510
+  	random = no
+  	country = ENG
+  	trigger = {
+    		flag = indonesian_revolution 
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+  	}    
+  	name = "聯合國安理會第67號決議 " 
+  	desc = " "
+  	style = 0
+ 
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+#联合国讨论—法國
+event = {
+  	id = 100511
+  	random = no
+  	country = FRA
+  	trigger = {
+    		flag = indonesian_revolution 
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+  	}    
+  	name = "聯合國安理會第67號決議 " 
+  	desc = " "
+  	style = 0
+
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+#联合国讨论—中國
+event = {
+  	id = 100512
+  	random = no
+  	country = CHI
+  	trigger = {
+    		flag = indonesian_revolution 
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+  	}    
+  	name = "聯合國安理會第67號決議 " 
+  	desc = " "
+  	style = 0
+ 
+  	date = { day = 25 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+event = {
+  	id = 100513
+  	random = no
+  	country = CHC
+  	trigger = {
+    		flag = indonesian_revolution
+    		flag = UNSC_resolution67
+		local_flag = UNSC_p5
+  	}    
+  	name = "聯合國安理會第67號決議 " 
+  	desc = " "
+  	style = 0
+ 
+  	date = { day = 25 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	date = { day = 21 month = january year = 1949 }
+  	offset = 7
+  	deathdate = { day = 30 month = december year = 1955 }
+ 
+  	action_a = {
+    		name = "贊成 "
+    		ai_chance = 95
+    		command = { type = dissent value = -1 }
+    		command = { type = relation which = HOL value = -10 }
+    		command = { type = relation which = INO value = 10 }
+  	}
+  	action_b = {
+    		name = "否決 "
+    		ai_chance = 1
+    		command = { type = relation which = HOL value = 10 }
+    		command = { type = relation which = INO value = -10 }
+		command = { type = setflag which = resolution84_vetoed }
+  	}
+  	action_c = {
+    		name = "棄權 "
+    		ai_chance = 4
+    		command = { }
+  	}
+}
+
+event = {
+	id = 100514
+	country = INO
+	
+	name = EVT_8510607_NAME
+	desc = EVT_8510607_DESC
+#	picture = "nwo\united_nations"
+	style = 0
+
+	trigger = {
+    		flag = UNSC_resolution67
+		OR = {
+			NOT = { exists = USA }
+			event = 100508
+		}
+		OR = {
+			NOT = { exists = ENG }
+			event = 100510
+		}
+		OR = {
+			NOT = { exists = FRA }
+			event = 100511
+		}
+		OR = {
+			AND = {
+				NOT = { exists = CHI }
+				NOT = { exists = CHC }
+			}
+			event = 100512
+			event = 100513
+		}
+		OR = {
+			NOT = { exists = SOV }
+			event = 100509
+			flag = un_soviet_boycott
+		}
+		NOT = { flag = resolution67_vetoed }
+#		flag = un_indonesia_interventionveto
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+
+	action_a = {
+		name = EVT_8510607_A
+		command = { type = dissent value = -10 }
+		command = { type = trigger which = 8206028 } # in independence_of_indonesia.txt
+	}	
 }

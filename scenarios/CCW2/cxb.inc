@@ -186,10 +186,10 @@ country = {
     }
   }
 
-  landdivision = { dormant = yes id = { type = 22003 id = 20 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 22003 id = 21 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 22003 id = 22 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 22003 id = 23 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 22003 id = 24 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 22003 id = 25 } name = "西北防?"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 20 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 21 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 22 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 23 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 24 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 22003 id = 25 } name = "西北防綫"  type = garrison model = 1 extra = engineer brigade_model = 3 locked = yes } 
 }

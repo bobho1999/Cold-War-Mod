@@ -1365,6 +1365,7 @@ event = {
 		OR = {
 			event = 70251
 			NOT = { exists = HOL }
+			flag = US_sanctioned_HOL
 		}
 		event = 70216
         }

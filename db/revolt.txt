@@ -2768,3 +2768,12 @@ UIR = {
 						 }
 	capital =  1285
 }
+
+UA2 = {
+	date = { day = 1 month = january year = 1934 }
+	expirydate = { day = 30 month = december year = 1990 }
+	minimum = { 1100 1101 }
+
+	extra = { 1094 1096 1097 3379 1103 3380 3381 1102 }
+	capital = 1100
+}

@@ -86,11 +86,11 @@ country = {
 
   landunit = {
     id       = { type = 40100 id = 1 }
-    name     = "雅加達防衛?"
+    name     = "雅加達守備队"
     location = 1628
     division = {
       id             = { type = 40100 id = 2 }
-      name           = "雅加達守備?"
+      name           = "雅加達守備队"
       type           = infantry
       model          = 5
       extra          = engineer
@@ -100,11 +100,11 @@ country = {
   }
   landunit = {
     id       = { type = 40100 id = 5 }
-    name     = "巨港防衛?"
+    name     = "巨港守備队"
     location = 1358
     division = {
       id             = { type = 40100 id = 6 }
-      name           = "巨港守備?"
+      name           = "巨港守備队"
       type           = infantry
       model          = 5
       extra          = engineer
@@ -114,11 +114,11 @@ country = {
   }
   landunit = {
     id       = { type = 40100 id = 7 }
-    name     = "棉蘭防衛?"
+    name     = "棉蘭守備队"
     location = 1355
     division = {
       id             = { type = 40100 id = 8 }
-      name           = "棉蘭守備?"
+      name           = "棉蘭守備队"
       type           = infantry
       model          = 5
       extra          = engineer
@@ -127,5 +127,5 @@ country = {
     }
   }
 
-  landdivision = { dormant = yes id = { type = 40100 id = 9 } name = "泗水守備?"  type = infantry model = 5 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { dormant = yes id = { type = 40100 id = 9 } name = "泗水守備队"  type = infantry model = 5 extra = engineer brigade_model = 3 locked = yes } 
 }

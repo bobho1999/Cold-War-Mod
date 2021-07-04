@@ -15,7 +15,7 @@ event = {
     exists = KOR
     atwar = no
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
   } 
   date = { day = 24 month = june year = 1950 }
@@ -73,7 +73,7 @@ event = {
   trigger = {
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -106,7 +106,7 @@ event = {
   trigger = {
     	flag = korean_war 
     	not = {
-      		flag = "korean war end"
+      		flag = korean_war_end
     	}
     	war = { country = PRK  country = KOR }
   } 
@@ -130,7 +130,7 @@ event = {
   	trigger = {
     		flag = korean_war 
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	} 
@@ -199,7 +199,7 @@ event = {
     flag = KW_USA_intervention 
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
   } 
   date = { day = 20 month = june year = 1950 }
@@ -235,10 +235,35 @@ event = {
   
   	trigger = {
     		flag = korean_war 
-		flag = UNSC_resolution
+		flag = UNSC_resolution84
+		OR = {
+			NOT = { exists = USA }
+			event = 100501
+		}
+		OR = {
+			NOT = { exists = ENG }
+			event = 100503
+		}
+		OR = {
+			NOT = { exists = FRA }
+			event = 100504
+		}
+		OR = {
+			AND = {
+				NOT = { exists = CHI }
+				NOT = { exists = CHC }
+			}
+			event = 100505
+			event = 100506
+		}
+		OR = {
+			NOT = { exists = SOV }
+			event = 100502
+			flag = un_soviet_boycott
+		}
     		not = {
-      			flag = "korean war end"
-      			flag = resolution_vetoed
+      			flag = korean_war_end
+      			flag = resolution84_vetoed
     		}
 		war = { country = PRK  country = KOR }
   	} 
@@ -250,8 +275,8 @@ event = {
     		name = "开始组建这支部队 "
     		command = { type = alliance which = KOR }
     		command = { type = setflag which = KW_UN_intervention }
-    		command = { type = clrflag which = UNSC_resolution }
-    		command = { type = clrflag which = resolution_vetoed }
+    		command = { type = clrflag which = UNSC_resolution84 }
+    		command = { type = clrflag which = resolution84_vetoed }
     		command = { type = trigger which = 19807 value = 1 }
     		command = { type = trigger which = 19808 }
 		command = { type = supplies value = 1000 }
@@ -279,24 +304,24 @@ event = {
   action_a = {
     name = "派出空军 "
     		command = { type = capital which = 1194 }
-    command = { type = add_corps which = "联合国空军第一师 " value = air where = 1196 } 
-    command = { type = add_division which = "第一队 " value = strategic_bomber when = 3 }
-    command = { type = add_division which = "第二队 " value = strategic_bomber when = 3 }
-    command = { type = add_corps which = "联合国空军第二师 " value = air where = 1196 } 
-    command = { type = add_division which = "第3队 " value = strategic_bomber when = 3 }
-    command = { type = add_division which = "第4队 " value = strategic_bomber when = 3 }
-    command = { type = add_corps which = "联合国空军第3师 " value = air where = 1196 } 
-    command = { type = add_division which = "第5队 " value = tactical_bomber when = 3 }
-    command = { type = add_division which = "第6队 " value = tactical_bomber when = 3 }
-    command = { type = add_corps which = "联合国空军第4师 " value = air where = 1196 } 
-    command = { type = add_division which = "第7队 " value = tactical_bomber when = 3 }
-    command = { type = add_division which = "第8队 " value = tactical_bomber when = 3 }
-    command = { type = add_corps which = "联合国空军第5师 " value = air where = 1196 } 
-    command = { type = add_division which = "第9队 " value = interceptor when = 5 }
-    command = { type = add_division which = "第10队 " value = interceptor when = 5 }
-    command = { type = add_corps which = "联合国空军第6师 " value = air where = 1196 } 
-    command = { type = add_division which = "第11队 " value = interceptor when = 5 }
-    command = { type = add_division which = "第12队 " value = interceptor when = 5 }
+    		command = { type = add_corps which = "联合国空军第一师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第一队 " value = strategic_bomber when = 3 }
+    		command = { type = add_division which = "第二队 " value = strategic_bomber when = 3 }
+    		command = { type = add_corps which = "联合国空军第二师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第3队 " value = strategic_bomber when = 3 }
+    		command = { type = add_division which = "第4队 " value = strategic_bomber when = 3 }
+    		command = { type = add_corps which = "联合国空军第3师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第5队 " value = tactical_bomber when = 3 }
+    		command = { type = add_division which = "第6队 " value = tactical_bomber when = 3 }
+    		command = { type = add_corps which = "联合国空军第4师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第7队 " value = tactical_bomber when = 3 }
+    		command = { type = add_division which = "第8队 " value = tactical_bomber when = 3 }
+    		command = { type = add_corps which = "联合国空军第5师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第9队 " value = interceptor when = 5 }
+    		command = { type = add_division which = "第10队 " value = interceptor when = 5 }
+    		command = { type = add_corps which = "联合国空军第6师 " value = air where = 1196 } 
+    		command = { type = add_division which = "第11队 " value = interceptor when = 5 }
+    		command = { type = add_division which = "第12队 " value = interceptor when = 5 }
   }
 }
 ################
@@ -330,10 +355,10 @@ event = {
   
   	trigger = {
     		flag = korean_war 
-		flag = UNSC_resolution
-      		flag = resolution_vetoed
+		flag = UNSC_resolution84
+      		flag = resolution84_vetoed
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
 		war = { country = PRK  country = KOR }
   	} 
@@ -349,8 +374,8 @@ event = {
 		command = { type = free_rare_materials value = 15 }
 		command = { type = free_oil value = 10 }
 		command = { type = free_manpower value = 0.4 }#
-    		command = { type = clrflag which = UNSC_resolution }
-    		command = { type = clrflag which = resolution_vetoed }
+    		command = { type = clrflag which = UNSC_resolution84 }
+    		command = { type = clrflag which = resolution84_vetoed }
   	}
 }
 ################
@@ -369,7 +394,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -399,7 +424,7 @@ event = {
   	trigger = {
     		flag = korean_war 
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
 		war = { country = PRK  country = KOR }
     		control = { province = 1199 data = PRK }
@@ -433,7 +458,7 @@ event = {
   trigger = {
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
     control = { province = 3681 data = PRK }
@@ -504,7 +529,7 @@ event = {
 		ai = no
     		flag = korean_war 
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
     		control = { province = 1199 data = PRK }
@@ -536,7 +561,7 @@ event = {
 		ai = yes
     		flag = korean_war 
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
     		control = { province = 1199 data = PRK }
@@ -550,7 +575,7 @@ event = {
   	action_a = {
     		name = "緊急構築 "
     		command = { type = construct which = land_fort value = 8 where = 1196 }
-    		command = { type = add_corps which = "釜山要塞 " value = land where = 1196 } 
+    		command = { type = add_corps which = "釜山防禦圈 " value = land where = 1196 } 
     		command = { type = activate_division which = 56000 value = 1 where = 1196 when = 1 }
   	}
 }
@@ -569,7 +594,7 @@ event = {
   	trigger = {
     		flag = korean_war 
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
     		control = { province = 1199 data = PRK }
@@ -606,7 +631,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -637,7 +662,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -668,7 +693,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -699,7 +724,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -730,7 +755,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -761,7 +786,7 @@ event = {
     		flag = korean_war 
 		flag = KW_UN_intervention
     		not = {
-      			flag = "korean war end"
+      			flag = korean_war_end
     		}
     		war = { country = PRK  country = KOR }
   	}
@@ -792,7 +817,7 @@ event = {
     flag = KW_UN_intervention
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -826,7 +851,7 @@ event = {
     atwar = KOR
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
    }
@@ -862,7 +887,7 @@ event = {
     flag = KW_UN_intervention
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
   } 
   date = { day = 14 month = september year = 1950 }
@@ -946,7 +971,7 @@ event = {
   trigger = {
     	flag = korean_war 
     	not = {
-      		flag = "korean war end"
+      		flag = korean_war_end
     	}
     	war = { country = PRK  country = KOR }
     	event = 19900
@@ -990,7 +1015,7 @@ event = {
     war = { country = CHC  country = KOR }
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1048,7 +1073,7 @@ event = {
          }
     	flag = korean_war 
     	not = {
-      		flag = "korean war end"
+      		flag = korean_war_end
     	}
   } 
   date = { day = 1 month = january year = 1949 }
@@ -1133,7 +1158,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1169,7 +1194,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1206,7 +1231,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1242,7 +1267,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1276,7 +1301,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1312,7 +1337,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
   } 
@@ -1374,7 +1399,7 @@ event = {
     war = { country = CHC  country = KOR }
      flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
     war = { country = PRK  country = KOR }
    }
@@ -1408,7 +1433,7 @@ event = {
     war = { country = PRK  country = KOR }
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
   } 
   date = { day = 10 month = july year = 1951 }
@@ -1515,7 +1540,7 @@ event = {
     war = { country = PRK  country = KOR }
     flag = korean_war 
     not = {
-      flag = "korean war end"
+      flag = korean_war_end
     }
   } 
   date = { day = 27 month = july year = 1953 }
@@ -1525,7 +1550,7 @@ event = {
   action_a = {
     name = "签署 "
     command = { type = peace which = KOR value = 0 }
-    command = { type = setflag which = "korean war end" }
+    command = { type = setflag which = korean_war_end }
   }
   action_b = {
     name = "不签署 "

@@ -59,7 +59,7 @@ country = {
     interventionism   = 2
   }
   chiefofnavy            = { type = 9 id = 16119 } # 奥格 H 费德尔 
-  chiefofair             = { type = 9 id = 16028 } # 國民黨 
+  chiefofair             = { type = 9 id = 16028 }
   nationalidentity       = "policy_economy_natural-Capitalism"
   socialpolicy           = "policy_social_confucianism"
   nationalculture        = "policy_political_dignitary"

@@ -20,6 +20,8 @@ country = {
   ownedprovinces         = { 4136 }
   controlledprovinces    = { 4136 }
 
+  techapps               = { 66500 66510 66520 66530 66540 }
+
   policy = {
     date              = { year = 0 month = january day = 0 }
     democratic        = 4

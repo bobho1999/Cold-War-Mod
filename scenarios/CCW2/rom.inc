@@ -90,10 +90,11 @@ country = {
   chiefofarmy            = { type = 9 id = 22144 } # 达米安 拉什库 
   chiefofnavy            = { type = 9 id = 22153 } # 格奥尔基 伊利埃斯卡 
   chiefofair             = { type = 9 id = 22161 } # 埃马诺伊尔 约内斯库 
-  dormant_ministers      = { 22053 22001 22031 22032 22039 22048 22049 22053 22054 22075 22076 22077 22082 22085 22093 22094 22097 22105 22106 22111 22118 22119 22120 22127 22129 22132 22133 22134 22139 22142 22145 22158 }
   nationalidentity       = "policy_economy_Stalinism-planned"
   socialpolicy           = "policy_social_collectivism"
   nationalculture        = "policy_political_stalinist"
+  dormant_ministers      = { 22053 22001 22031 22032 22039 22048 22049 22053 22054 22075 22076 22077 22082 22085 22093 22094 22097 22105 22106 22111 22118 22119 22120 22127 22129 22132 22133 22134 22139 22142 22145 22158 }
+
   landunit = {
     id       = { type = 20600 id = 1 }
     name     = "罗马尼亚第1军 "

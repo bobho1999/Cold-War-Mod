@@ -70,21 +70,23 @@ country = {
   transports     = 500
   escorts        = 300
 
-  diplomacy =
-  { relation = { tag = ENG value = 100 access = yes }
+  diplomacy = {
+    relation = { tag = ENG value = 100 access = yes }
     relation = { tag = FRA value = 100 }
     relation = { tag = GRE value = 100 }
     relation = { tag = HUN value = 125 }
     relation = { tag = IRQ value = 25 }
-    relation =
-    { tag        = SCH
-      guaranteed = { day = 16 month = may year = 1935 }
+    relation = {
+      tag        = SCH
+      value      = 0
+      guaranteed = { year = 1935 month = may day = 16 }
     }
-    relation =
-    { tag        = SPA
-      guaranteed = { day = 18 month = november year = 1936 }
+    relation = {
+      tag        = SPA
+      value      = 0
+      guaranteed = { year = 1936 month = november day = 18 }
     }
-    relation = { tag = USA access = yes }
+    relation = { tag = USA value = 0 access = yes }
     relation = { tag = YUG value = -50 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }

@@ -100,10 +100,11 @@ country = {
   chiefofarmy            = { type = 9 id = 20101 } # 约瑟普·布罗兹·铁托 
   chiefofnavy            = { type = 9 id = 20102 } # 约瑟普·布罗兹·铁托 
   chiefofair             = { type = 9 id = 20093 } # 伊万 罗拉 里巴尔 
-  dormant_ministers      = { 20002 20003 20004 20005 20006 20034 20035 20041 20042 20043 20048 20051 20052 20058 20059 20060 20065 20066 20067 20072 20073 20079 20080 20085 20086 20090 20091 20097 }
   nationalidentity       = "policy_economy_Leninism-market"
   socialpolicy           = "policy_social_revolutionary"
   nationalculture        = "policy_political_new-democratic"
+  dormant_ministers      = { 20002 20003 20004 20005 20006 20034 20035 20041 20042 20043 20048 20051 20052 20058 20059 20060 20065 20066 20067 20072 20073 20079 20080 20085 20086 20090 20091 20097 }
+
   landunit = {
     id       = { type = 30201 id = 1 }
     name     = "南斯拉夫第1集团军 "

@@ -81,7 +81,7 @@ country = {
   intrinsic_gov_type = leninist
   capital            = 1271 # 延安
   extra_tc           = 7
-  manpower           = 100
+  manpower           = 200
   # Resource Reserves
   energy         = 200
   metal          = 200
@@ -122,8 +122,7 @@ country = {
     defense_lobby     = 10
     interventionism   = 5
   }
-  chiefofnavy            = { type = 9 id = 16119 } # 奥格 H 费德尔 
-  chiefofair             = { type = 9 id = 16038 } # 共產黨 
+
   socialpolicy           = "policy_social_revolutionary"
   nationalculture        = "policy_political_new-democratic"
 
