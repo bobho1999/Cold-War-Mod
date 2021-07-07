@@ -682,6 +682,7 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = free_ic value = 6 }
+		command = { type = free_supplies value = 20 }
 		command = { type = free_energy value = 18 }
 		command = { type = free_metal value = 9 }
 		# command = { type = free_oil value = 9 }
@@ -1223,6 +1224,7 @@ event = {
 	action_a = {
 		name = "OK"
 		command = { type = free_ic value = 6 }
+		command = { type = free_supplies value = 20 }
 		command = { type = free_energy value = 12 }
 		command = { type = free_metal value = 6 }
 		# command = { type = free_oil value = 6 }
@@ -3000,7 +3002,7 @@ event = {
 	}
 event = {
 	id = 15283
-	trigger = { }
+	trigger = { event = 8212361 }
 	random = no
 
 	country = U03 #not assigned
@@ -3009,17 +3011,17 @@ event = {
 	desc = "The nation achieved its independence."
 	style = 0
 
-#	date = { day = 0 month = january year = 1930 }
-#	offset = 1
-#	deathdate = { day = 29 month = december year = 9999 }
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
 
 	action_a = {
 		name = "OK"
-		command = { type = free_ic value = 6 }
-		command = { type = free_energy value = 12 }
-		command = { type = free_metal value = 6 }
-		# command = { type = free_oil value = 6 }
-		command = { type = free_rare_materials value = 3 }
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 3 }
+		command = { type = free_rare_materials value = 1.5 }
 		command = { type = dissent value = 5 } #
 		command = { type = free_manpower value = 0.03 }
 		}

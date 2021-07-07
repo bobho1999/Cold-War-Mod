@@ -732,6 +732,7 @@ event = {
 		command = { type = peace which = LEB }
 		command = { type = peace which = SYR }
 		command = { type = clrflag which = Arab_Israeli_War }
+		command = { type = trigger which = 615035 }
 		}
 	}
 #######################
@@ -1108,7 +1109,10 @@ event = {
 		war = { country = PAL country = ISR }
 		exists = ISR
 		exists = JOR
-		control = { province = 1797 }
+		OR = {
+			control = { province = 1799 }
+			control = { province = 1797 }
+		}
 		event = 615004 #EGY creating PAL historically
 	}
 	date = { day = 6 month = january year = 1949 }
@@ -1129,10 +1133,6 @@ event = {
 		command = { type = trigger which = 615035 }
 		command = { type = clrflag which = Arab_Israeli_War }
 	}
-#	action_b = {
-#		name = "Continue the war" 
-#		command = { type = dissent value = 3 }
-#	}
 }
 event = {
 	id = 615035

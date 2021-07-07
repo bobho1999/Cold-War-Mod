@@ -7,7 +7,7 @@ event = {
    random = no
    
    trigger = {
-       event = 941220  
+       event = 941220
    }
    
    name = "蒋介石复任总统 "
@@ -167,7 +167,7 @@ event = {
   	action_a = {
     		name = "这是情报系统的巨大胜利！ "
                 command = { type = intelligence which = us value = 5 }
-
+                command = { type = intelligence which = them value = -5 }
   	}
 }
 event = {
@@ -366,7 +366,9 @@ event = {
 	random = no
 
  	trigger = { 
-  		flag = quanmian  
+ 		or = { 	flag = quanmian 
+        		flag = bufeng 
+        	}  
   		NOT = { dissent = 3 }     
 	} 
 
@@ -384,6 +386,7 @@ event = {
 		command = { type = max_organization which = land value = 10 } 
     		command = { type = max_organization which = air value = 10 }
     		command = { type = max_organization which = naval value = 10 } 
+        	command = { type = free_supplies value = 20 } #吃空餉
 #    		command = { type = sleepleader which = -1 }
 
            	}         	

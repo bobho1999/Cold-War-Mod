@@ -7540,6 +7540,7 @@ event = {
 		command = { type = morale which = land value = 5 }
 		command = { type = construct which = land_fort where = 2996 value = -10 }
 		command = { type = construct which = air_base where = 2996 value = -10 }
+       		command = { type = secedeprovince which = CHC value = 2996 }
 		command = { type = remove_division which = 11616 value = 640 }
 	}      	       	         	
 }

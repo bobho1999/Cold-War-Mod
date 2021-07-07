@@ -5592,6 +5592,7 @@ event = {
 	trigger = { 
 		dissent = 10 
 		event = 330004 
+		NOT = { event = 941220 }
 	}
   
 	name = "EVT_120_NAME"	

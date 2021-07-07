@@ -17,7 +17,7 @@
         strat_redeploy_threshold = 25 
         max_redeploying = 0.2500 
         exp_force_ratio = 0.7500 
-        exp_force_ratios = { } 
+        exp_force_ratios = { U03 = 0.900 FRA = 0.900 } 
         admiral = { 
             target = { } 
             core = { } 

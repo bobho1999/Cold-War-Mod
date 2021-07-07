@@ -784,8 +784,8 @@ event = {
 
   	action_a = {
     		name = "我们必须珍视这笔财富！ "
-                command = { type = money value = 3000 }
-                command = { type = supplies value = 15000 }
+                command = { type = money value = 5000 }
+                command = { type = supplies value = 10000 }
                 command = { type = research_mod value = 2 }
   	}
 }
