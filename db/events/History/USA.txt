@@ -629,7 +629,7 @@ event = {
 #  	picture = " "
 
   	date = { day = 17 month = april year = 1949 }
-  	offset = 1
+  	offset = 5
   	deathdate = { day = 30 month = december year = 1960 }
   
   	action_a = {
@@ -837,7 +837,7 @@ event = {
   	style = 0
   
   	trigger = {
-    		flag = "korean war end"
+    		flag = korean_war_end
     		not = { war = { country = PRK country = KOR } }
     		exists = KOR
     		government = democratic
@@ -888,6 +888,7 @@ event = {
   
   	trigger = {
     		government = democratic
+		flag = CHC_won_CW
   	} 
   	date = { day = 15 month = december year = 1950 }
   	offset = 1
@@ -902,7 +903,7 @@ event = {
   	action_b = {
     		name = "不需要把事情做绝 "
     		ai_chance = 5
-    		command = { type = domestic	which = interventionism value = -1 }
+    		command = { type = domestic which = interventionism value = -1 }
   	}
 }
 ################
@@ -1085,6 +1086,190 @@ event = {
   	}
 }
 
+################################
+# McCarthy hearings
+####################
+event = {
+	id = 614033
+	random = no
+	country = USA
+
+	name = "McCarthy Hearings"
+	desc = "Sen. Joseph MCarthy opened hearings into alleged communist influence in the State Department and the entertainment industry. The hearings were televised and embarrassed Sen. McCarthy, resulting in his censure. VENONA decrypts later confirmed his charges to be largely true."
+
+	
+	trigger = {
+		NOT = { ideology = stalinist }
+		NOT = { ideology = leninist }
+		NOT = { ideology = nazi }
+		NOT = { ideology = fascist }
+		NOT = { ispuppet = USA }
+	}
+
+	date = { day = 21 month = april year = 1954 }
+
+	action_a = {
+		name = "Laugh at him!"
+		ai_chance = 97
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = dissent value = -2 }
+	}
+	action_b = {
+		name = "Outlaw the Communist Party"
+		ai_chance = 1
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = dissent value = 1 }
+	}
+	action_c = {
+		name = "Purge the State Department!"
+		ai_chance = 1
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = dissent value = 5 }
+	}
+	action_d = {
+		name = "The Communists are our Friends!"
+		ai_chance = 1
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = dissent value = 5 }
+	}
+} 
+
+################################
+# Hawaii statehood thanks danielshannon
+################################
+event = {
+	id = 614027
+	random = no
+	country = USA
+
+	trigger = {
+                random = 90 # 90% chance every 30 days
+		control = { province = 661 }
+		control = { province = 660 }
+		control = { province = 663 }
+		control = { province = 659 }
+		control = { province = 658 }
+		NOT = {
+			exists = U34
+		}
+	}
+
+	name = "The Hawaii Admission Act"
+	desc = "The Admission Act, formally An Act to Provide for the Admission of the State of Hawaii into the Union  is a statute enacted by the United States Congress and signed into law by President Dwight D. Eisenhower which dissolved the Territory of Hawaii and established the State of Hawaii as the 50th state to be admitted into the Union. "
+
+
+	date = { day = 17 month = september year = 1959 }
+	offset = 30 # Check for trigger conditions every 30 days
+	deathdate = { day = 29 month = december year = 1969 }
+
+	action_a = {
+		name = "Welcome to the union!" 
+		command = { type = addcore which = 661 } 
+		command = { type = addcore which = 660 } 
+		command = { type = addcore which = 663 } 
+		command = { type = addcore which = 659 } 
+		command = { type = addcore which = 658 } 
+		command = { type = dissent value = -5 }
+	}	
+}
+
+####################################
+# Puerto Rico independence/statehood
+####################################
+event = {
+	id = 614024
+	random = no
+	country = USA
+	
+	trigger = {
+		control = { province = 895 }
+	}
+
+	name = "Puerto Rico Separatists Attack"
+	desc = "On March 1, 1954, Lolita Lebron and three companions entered the U. S. House of Representatives and began shooting. Noone was killed in the attack but 5 representatives were injured. The attackers received prison terms but were freed in 1979 in a deal to return CIA agents captured by Fidel Castro."
+
+	date = { day = 0 month = march year = 1954 }
+	
+	action_a = {
+		name = "No Deals with Terrorists"
+		ai_chance = 99
+		command = { type = dissent value = -2 }	
+	}
+	action_b = {
+		name = "Give Puerto Rico independence"
+		ai_chance = 1
+		command = { type = dissent value = 3 }
+		command = { type = independence which = U31 value = 1 }
+		
+	}	
+}
+event = {
+	id = 614025
+	random = no
+	country = USA
+	persistent = yes
+	
+	trigger = {
+		control = { province = 895 }
+		random = 1
+		NOT = { event = 614026 }
+	}
+
+	name = "The Status of Puerto Rico"
+	desc = "The status of Puerto Rico repeatedly came up for debate. Historically, only a small but active minirity favored complete independence. The rest were about evenly divided between those favoring making Puerto Rico the 51st state, and those favoring continued commonwealth status which meant no income taxes but also no voting representation for Puerto Ricans in Congress. Statehood bills never succeeded."
+
+	date = { day = 5 month = march year = 1961 }
+	offset = 90
+	deathdate = { day = 25 month = december year = 2019 }
+	
+	action_a = {
+		name = "Make Puerto Rico the 51st state"
+		ai_chance = 1
+		command = { type = dissent value = 2 }
+		command = { type = addcore which = 895 }
+		command = { type = setflag which = USA_PR_statehood }
+		command = { type = sleepevent which = 614025 }
+		command = { type = trigger which = 614026 }
+	}	
+	action_b = {
+		name = "Continue Commonwealth Status"
+		ai_chance = 99
+		command = { type = dissent value = -1 }	
+	}	
+	action_c = {
+		name = "Give Puerto Rico independence"
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+		command = { type = independence which = U31 value = 1 }
+		
+	}	
+}
+event = {
+	id = 614026
+	random = no
+	country = -1
+	
+	trigger = {
+		ai = no
+		event = 614025
+		flag = USA_PR_statehood
+	}
+
+	name = "The New US Flag"
+	desc = "It is suggested to use the flag-changing routine so that the USA can now proudly display its 51-star flag."
+
+	date = { day = 5 month = march year = 1961 }
+	offset = 1
+	deathdate = { day = 25 month = december year = 2019 }
+	
+	action_a = {
+		name = "OK"
+		command = { type = money value = 1 }
+	}	
+	
+}
 ##########  Women's Armed Services Integration Act ########## 
 
 
@@ -1410,15 +1595,17 @@ event = {
 	}
 	action_b = {
 		name = "湯瑪斯·E·杜威 (共和黨)"
-		command = { type = dissent value = -3 }
+		command = { type = dissent value = 3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofstate which = 6038 }
-		command = { type = headofgovernment which = 6050 }
+		command = { type = headofgovernment which = 6210 }
 		command = { type = foreignminister which = 6066 }
 		command = { type = armamentminister which = 6088 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6128 }
+		command = { type = sleepminister which = 6034 } #Truman retires, not to run again.
+		command = { type = local_setflag which = dewey48 }
 		command = { type = clrflag which = Dem_POTUS }
 		command = { type = setflag which = GOP_POTUS }
 		command = { type = sleepevent which = 900079 }	
@@ -1454,11 +1641,13 @@ event = {
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofstate which = 6038 }
-		command = { type = headofgovernment which = 6050 }
+		command = { type = headofgovernment which = 6210 }
 		command = { type = foreignminister which = 6066 }
 		command = { type = armamentminister which = 6088 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6128 }
+		command = { type = sleepminister which = 6034 } #Truman retires, not to run again.
+		command = { type = local_setflag which = dewey48 }
 		command = { type = clrflag which = Dem_POTUS }
 		command = { type = setflag which = GOP_POTUS }
 		command = { type = sleepevent which = 900079 }	
@@ -1466,7 +1655,7 @@ event = {
 	}
 	action_b = {
 		name = "哈瑞·S·杜魯門 (民主黨)"
-		command = { type = dissent value = -3 }
+		command = { type = dissent value = 3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
 		command = { type = headofstate which = 6034 }
@@ -1482,7 +1671,9 @@ event = {
 	}
 }
 
-
+# 1952 sees any of the following:
+# Truman retires, and Stevenson and Eisenhower contest the election.
+# However, if Dewey won in 1948 for the first time, he fights Stevenson. Eisenhower will have to wait.
 ########## 1952 ELECTIONS HISTORICAL - Eisenhower vs. Stevenson - assumes Truman won in 1948
 
 event = {
@@ -1491,6 +1682,7 @@ event = {
 	country = USA
 
 	trigger = {
+		headofstate = 6034
 		government = democratic
 		NOT = {
 			dissent = 10
@@ -1507,15 +1699,23 @@ event = {
 
 	action_a = {
 		name = "德懷特·D·艾森豪 (共和黨)"
+		ai_chance = 100
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = free_market value = 1 } #Move to Free Market
 		command = { type = headofstate which = 6208 }
 		command = { type = headofgovernment which = 6211 }
 		command = { type = foreignminister which = 6215 }
 		command = { type = armamentminister which = 6219 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6228 }
+		command = { type = sleepminister which = 6137 } #Eisenhower can't be CoS
+		command = { type = sleepminister which = 6147 } #Nor Head of the Army
+		command = { type = sleepminister which = 6046 } #Truman retires
+		command = { type = sleepminister which = 6034 } #Truman retires
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = clrflag which = Dem_POTUS }
 	}
 	action_b = {
 		name = "阿德萊·史蒂文森 (民主黨)"
@@ -1528,6 +1728,11 @@ event = {
 		command = { type = armamentminister which = 6220 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6229 }
+		command = { type = sleepminister which = 6046 } #Truman retires
+		command = { type = sleepminister which = 6034 } #Truman retires
+		command = { type = local_setflag which = stevenson52 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
 	}
 }
 
@@ -1540,6 +1745,7 @@ event = {
 	country = USA
 
 	trigger = {
+		headofstate = 6034
 		government = democratic
 		dissent = 10
 		NOT = { ispuppet = USA }
@@ -1554,6 +1760,7 @@ event = {
 
 	action_a = {
 		name = "阿德萊·史蒂文森 (民主黨)"
+		ai_chance = 100
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -1563,9 +1770,15 @@ event = {
 		command = { type = armamentminister which = 6220 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6229 }
+		command = { type = sleepminister which = 6046 } #Truman retires
+		command = { type = sleepminister which = 6034 } #Truman retires
+		command = { type = local_setflag which = stevenson52 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
 	}
 	action_b = {
 		name = "德懷特·D·艾森豪 (共和黨)"
+		ai_chance = 0
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -1575,6 +1788,8 @@ event = {
 		command = { type = armamentminister which = 6219 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6228 }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = clrflag which = Dem_POTUS }
 	}
 }
 
@@ -1587,6 +1802,7 @@ event = {
 	country = USA
 
 	trigger = {
+		headofstate = 6038 
 		government = democratic
 		NOT = {
 			dissent = 10
@@ -1603,6 +1819,7 @@ event = {
 
 	action_a = {
 		name = "湯瑪斯·E·杜威 (共和黨)"
+		ai_chance = 100
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -1612,9 +1829,12 @@ event = {
 		command = { type = armamentminister which = 6219 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6128 }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = clrflag which = Dem_POTUS }
 	}
 	action_b = {
 		name = "阿德萊·史蒂文森 (民主黨)"
+		ai_chance = 0
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -1624,6 +1844,11 @@ event = {
 		command = { type = armamentminister which = 6220 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6229 }
+		command = { type = sleepminister which = 6046 } #Truman retires
+		command = { type = sleepminister which = 6034 } #Truman retires
+		command = { type = local_setflag which = stevenson52 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
 	}
 }
 
@@ -1636,6 +1861,7 @@ event = {
 	country = USA
 
 	trigger = {
+		headofstate = 6038 
 		government = democratic
 		dissent = 10
 		NOT = { ispuppet = USA }
@@ -1650,6 +1876,7 @@ event = {
 
 	action_a = {
 		name = "阿德萊·史蒂文森 (民主黨)"
+		ai_chance = 100
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
@@ -1659,9 +1886,15 @@ event = {
 		command = { type = armamentminister which = 6220 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6229 }
+		command = { type = sleepminister which = 6046 } #Truman retires
+		command = { type = sleepminister which = 6034 } #Truman retires
+		command = { type = local_setflag which = stevenson52 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }
 	}
 	action_b = {
 		name = "道格拉斯·麥克阿瑟 (共和黨)"
+		ai_chance = 0
 		command = { type = dissent value = -3 }
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
@@ -1671,10 +1904,18 @@ event = {
 		command = { type = armamentminister which = 6091 }
 		command = { type = ministerofsecurity which = 6005 }
 		command = { type = ministerofintelligence which = 6237 }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = clrflag which = Dem_POTUS }
 	}
 }
 
-########## 1956 ELECTIONS 
+# 1956 sees the historic rematch between Stevenson and Eisenhower.
+# Alternatively, if Stevenson won in 1952, he faces Earl Warren. Eisenhower doesn't want to run again.
+# Lastly, if Dewey or Barkley won in 1952, they both stand down and Stevenson vs Warren happens. No Eisenhower. I
+# think he will be looking to retire.
+##################################################
+### 1350016 US Presidential Election 1956 Historical - Eisenhower v Stevenson
+##################################################
 
 event = {
 	id = 1350016
@@ -1683,44 +1924,54 @@ event = {
 	style = 0
 
 	trigger = {
+		headofstate = 6208 #Eisenhower
 		government = democratic
 		NOT = { ispuppet = USA }
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "１９５６年大選 - Eisenhower vs Stevenson"
+	desc = "The 1956 Election was a rerun of the 1952 Election. And just like in 1952, Dwight Eisenhower won convincingly over his Democratic rival, Adlai Stevenson. - I LIKE IKE - was his slogan and Americans did, with 57.4% of the popular vote."
 
 	date = { day = 4 month = november year = 1956 }
 	offset = 2
 	deathdate = { day = 5 month = november year = 1956 }
 
 	action_a = {
-		ai_chance = 85
+		ai_chance = 90
 		name = "德懷特·D·艾森豪 (共和黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = free_market value = 1 } #Move to Free Market
 		command = { type = headofstate which = 6208 }
 		command = { type = headofgovernment which = 6211 }
 		command = { type = foreignminister which = 6215 }
 		command = { type = armamentminister which = 6248 }
 		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }	
+		command = { type = ministerofintelligence which = 6228 }
+		command = { type = setflag which = GOP_POTUS }
+		command = { type = clrflag which = Dem_POTUS }	
 		}	
 	action_b = {
-		ai_chance = 15
+		ai_chance = 10
 		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = set_domestic which = democratic value = 10 }
 		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6209 }
-		command = { type = headofgovernment which = 6245 }
-		command = { type = foreignminister which = 6213 }
-		command = { type = armamentminister which = 6249 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6252 }	
+		command = { type = headofstate which = 6209 } #Stevenson
+		command = { type = headofgovernment which = 6212 } #Still Sparkman here, original 6245
+		command = { type = foreignminister which = 6213 } #Acheson (back in action)
+		command = { type = armamentminister which = 6249 } 
+		command = { type = ministerofsecurity which = 6005 } #Still Hoover!
+		command = { type = ministerofintelligence which = 6252 }
+		command = { type = sleepminister which = 6208 } #Eisenhower retires
+		command = { type = local_setflag which = stevenson56 }
+		command = { type = setflag which = Dem_POTUS }
+		command = { type = clrflag which = GOP_POTUS }	
 		}
 	}	
 
-########## 1960 ELECTIONS 
+##################################################
+### 9993751 US Presidential Election 1956 - Stevenson v Warren
+##################################################
 
 event = {
 	id = 1350017
@@ -1730,43 +1981,372 @@ event = {
 
 	trigger = {
 		government = democratic
+		headofstate = 6209 #Stevenson
+		local_flag = stevenson52 #Stevenson won in 1952!
 		NOT = { ispuppet = USA }
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "１９５６年大選 - Stevenson vs Warren"
+	desc = "The 1956 Election saw Adlai E. Stevenson try to convince the voters that he was the man to lead the country onwards. With the economy motoring along nicely, and the ever present threat of the Soviet Union still looming, voters agreed with him and he was re-elected with 52.4% of the popular vote."
 
-	date = { day = 4 month = november year = 1960 }
-	offset = 2
-	deathdate = { day = 5 month = november year = 1960 }
+	date = { day = 4 month = november year = 1956 }
 
 	action_a = {
-		ai_chance = 70
-		name = "約翰·F·甘迺迪 (民主黨)"
-		command = { type = set_domestic which = democratic value = 10 }
+		ai_chance = 80
+		name = "阿德萊·史蒂文森 (民主黨)"
 		command = { type = set_domestic which = political_left value = 6 }
-		command = { type = headofstate which = 6242 }
-		command = { type = headofgovernment which = 6244 }
-		command = { type = foreignminister which = 6247 }
-		command = { type = armamentminister which = 6250 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6253 }	
-	}	
+		command = { type = headofstate which = 6209 } #Stevenson
+		command = { type = headofgovernment which = 6245 } #Kefauver
+		command = { type = foreignminister which = 6216 } #Olson
+		command = { type = armamentminister which = 6249 } #Anderson
+		command = { type = ministerofsecurity which = 6005 } #Still Hoover!
+		command = { type = dissent value = -13 }	
+		command = { type = sleepminister which = 6208 } #Eisenhower retires
+		}
 	action_b = {
-		ai_chance = 30
-		name = "理察·M·尼克森 (共和黨)"
-		command = { type = set_domestic which = democratic value = 10 }
+		ai_chance = 20
+		name = "厄爾·華倫 (共和黨)"
 		command = { type = set_domestic which = political_left value = 2 }
-		command = { type = headofstate which = 6241 }
-		command = { type = headofgovernment which = 6243 }
-		command = { type = foreignminister which = 6246 }
-		command = { type = armamentminister which = 6251 }
-		command = { type = ministerofsecurity which = 6005 }
-		command = { type = ministerofintelligence which = 6228 }	
+		command = { type = domestic which = free_market value = 1 } #Move to Free Market
+		command = { type = headofstate which = 6288 } #Warren
+		command = { type = headofgovernment which = 6243 } #Lodge - Thanks to Nathan Madien
+		command = { type = foreignminister which = 6215 } #Dulles
+		command = { type = armamentminister which = 6248 } #Anderson
+		command = { type = ministerofsecurity which = 6238 } #McCarthy!
+		command = { type = dissent value = -11 }
+		command = { type = local_clrflag which = stevenson52 } #He lost!
+		}
 	}
-}
 
-# 1350018~39 for later elections
+##################################################
+### 9993753 US Presidential Election 1956 - Stevenson v Warren (New for both)
+##################################################
+
+event = {
+	id = 1350018
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		OR = {
+			headofstate = 6038 #Dewey
+			headofstate = 6284 #Barkley
+		}
+		NOT = { ispuppet = USA }
+		}
+
+	name = "１９５６年大選 - Stevenson vs Warren"
+	desc = "The 1956 Election saw two new candidates after the President stood down. Adlai E. Stevenson tried to convince the voters that he was the man to lead the country onwards and to improve the economy. Earl Warren stated you couldn't trust the Democrats and they would cosy up to the Soviet Union. Who would win?"
+
+	date = { day = 4 month = november year = 1956 }
+
+	action_a = {
+		ai_chance = 50
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 } #Stevenson
+		command = { type = headofgovernment which = 6245 } #Kefauver
+		command = { type = foreignminister which = 6216 } #Olson
+		command = { type = armamentminister which = 6249 } #Anderson
+		command = { type = ministerofsecurity which = 6005 } #Still Hoover!
+		command = { type = dissent value = -12 }	
+		command = { type = sleepminister which = 6208 } #Eisenhower retires
+		command = { type = sleepminister which = 6038 } #Dewey retires
+		command = { type = sleepminister which = 6284 } #Barkley retires
+		command = { type = local_setflag which = stevenson56 }
+		}
+	action_b = {
+		ai_chance = 50
+		name = "厄爾·華倫 (共和黨)"
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = free_market value = 1 } #Move to Free Market
+		command = { type = headofstate which = 6288 } #Warren
+		command = { type = headofgovernment which = 6243 } #Lodge - Thanks to Nathan Madien
+		command = { type = foreignminister which = 6215 } #Dulles
+		command = { type = armamentminister which = 6248 } #Anderson
+		command = { type = ministerofsecurity which = 6238 } #McCarthy!
+		command = { type = dissent value = -12 }
+		command = { type = sleepminister which = 6208 } #Eisenhower retires
+		command = { type = sleepminister which = 6038 } #Dewey retires
+		command = { type = sleepminister which = 6284 } #Barkley retires
+		}
+	}
+
+
+# 1960 sees either the classic Kenendy vs Nixon or
+# If Stevenson won in 1952, he stands aside for Kennedy and he engages Nixon as well.
+# If Stevenson won in 1956, he stands again, but selects a new VP (mainly done for fun - as you will see!), facing Nixon.
+# If Warren won in 1956, it is him who contests against Kennedy instead.
+##################################################
+### 9993754 US Presidential Election 1960 - Kennedy v Nixon (New for both)
+##################################################
+
+event = {
+	id = 1350019
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		OR = {
+			headofstate = 6208 #Eisenhower
+			headofstate = 6209 #Stevenson
+			}
+		local_flag = stevenson52 #Stevenson won in 1952!
+		NOT = { ispuppet = USA }
+		}
+
+	name = "１９６０年大選 - Kennedy vs Nixon"
+	desc = "In one of the most closely fought elections in the 20th Century, John F. Kennedy and the Democrats regained the White House after beating Vice President Richard Nixon in the 1960 US Presidential Election. Nixon came across badly in the first ever televised debates."
+
+	date = { day = 4 month = november year = 1960 }
+
+	action_a = {
+		ai_chance = 75
+		name = "約翰·F·甘迺迪 (民主黨)"
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6242 } #Kennedy
+		command = { type = headofgovernment which = 6244 } #Johnson
+		command = { type = foreignminister which = 6247 } #Rusk
+		command = { type = armamentminister which = 6250 } #Dillon
+		command = { type = ministerofsecurity which = 6005 } #Hoover - STILL!
+		command = { type = ministerofintelligence which = 6253 } #I like McCone - Let's stick him in too!
+		command = { type = dissent value = -13 }		
+		}	
+	action_b = {
+		ai_chance = 25
+		name = "理察·M·尼克森 (共和黨)"
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6241 } #Tricky Dicky
+		command = { type = headofgovernment which = 6243 } #Lodge
+		command = { type = foreignminister which = 6246 } #Thurmond
+		command = { type = armamentminister which = 6251 } #Rockerfeller
+		command = { type = ministerofsecurity which = 6005 } #You know who
+		command = { type = ministerofintelligence which = 6228 }
+		command = { type = dissent value = -11 }	
+		}
+	}
+
+##################################################
+### 9993755 US Presidential Election 1960 - Stevenson v Nixon (Stevenson won in '56)
+##################################################
+
+event = {
+	id = 1350020
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		headofstate = 6209 #Stevenson
+		local_flag = stevenson56 #Stevenson won in 1956!
+		NOT = { ispuppet = USA }
+		}
+
+	name = "１９６０年大選 - Stevenson vs Nixon"
+	desc = "After Stevenson's shock victory in 1956, he came up against California senator, Richard M. Nixon. Stevenson's Vice President, Estes Kefauver stood down, hoping to retire and was replaced by newcomer, John F. Kennedy. Nixon warned that only he could defeat the Soviet Union, increasingly becoming a worry for many Americans. However Nixon came across badly in the first ever televised debates and with the economy motoring along nicely, it was Adlai Stevenson who once again carried the day. "
+
+	date = { day = 4 month = november year = 1960 }
+
+	action_a = {
+		ai_chance = 75
+		name = "阿德萊·史蒂文森 (民主黨)"
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6209 } #Stevenson
+		command = { type = headofgovernment which = 6289 } #Kennedy!
+		command = { type = foreignminister which = 6247 } #Rusk
+		command = { type = armamentminister which = 6250 } #Dillon
+		command = { type = ministerofsecurity which = 6005 } #Hoover - STILL!
+		command = { type = dissent value = -13 }		
+		}	
+	action_b = {
+		ai_chance = 25
+		name = "理察·M·尼克森 (共和黨)"
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofstate which = 6241 } #Tricky Dicky
+		command = { type = headofgovernment which = 6243 } #Lodge
+		command = { type = foreignminister which = 6246 } #Thurmond
+		command = { type = armamentminister which = 6251 } #Rockerfeller
+		command = { type = ministerofsecurity which = 6005 } #You know who
+		command = { type = dissent value = -11 }	
+		}
+	}
+
+##################################################
+### 9993756 US Presidential Election 1960 - Warren v Kennedy (Warren won in '56)
+##################################################
+
+event = {
+	id = 1350021
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		government = democratic
+		headofstate = 6288 #Warren
+		NOT = { ispuppet = USA }
+		}
+
+	name = "１９６０年大選 - Warren vs Kennedy"
+	desc = "In one of the most closely fought elections in the 20th Century, John F. Kennedy and the Democrats faced off against President Earl Warren in the 1960 US Presidential Election. Poor showing by Warren against the Soviet Union and the thought of losing the Space Race lead to race being the tightest in electoral history."
+
+	date = { day = 4 month = november year = 1960 }
+
+	action_a = {
+		ai_chance = 51
+		name = "約翰·F·甘迺迪 (民主黨)"
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 6242 } #Kennedy
+		command = { type = headofgovernment which = 6244 } #Johnson
+		command = { type = foreignminister which = 6247 } #Rusk
+		command = { type = armamentminister which = 6250 } #Dillon
+		command = { type = ministerofsecurity which = 6005 } #Hoover - STILL!
+		command = { type = dissent value = -13 }		
+		}	
+	action_b = {
+		ai_chance = 49
+		name = "厄爾·華倫 (共和黨)"
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = domestic which = free_market value = 1 } #Move to Free Market
+		command = { type = headofstate which = 6288 } #Warren
+		command = { type = headofgovernment which = 6243 } #Lodge - Thanks to Nathan Madien
+		command = { type = foreignminister which = 6246 } #Thurmond
+		command = { type = armamentminister which = 6251 } #Rockerfeller
+		command = { type = ministerofsecurity which = 6290 } #Frost
+		command = { type = dissent value = -11 }	
+		}
+	}
+
+#####################################################
+### 9993757 USA - The Assassination of John F. Kennedy 
+#####################################################
+
+event = {
+	id = 9993757
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		random = 80
+		headofstate = 6242
+		}
+
+	date = { day = 22 month = november year = 1963 }
+	offset = 1
+	deathdate = { day = 23 month = november year = 1963 }
+
+	name = "約翰·F·甘迺迪遇刺" # needs text
+	desc = "On the 22nd November 1963, the assassin Lee Harvey Oswald, has shot and killed our President, John F. Kennedy. The nation mourns, whilst Vice President Lyndon B. Johnson is sworn in as President to replace him."
+	picture = "minister_died"
+
+	action_a = {
+		name = "The death of the President"
+		command = { type = headofstate which = 6254 } # Lyndon B. Johnson
+		command = { type = sleepminister which = 6242 }
+		command = { type = dissent value = -5 }
+		}
+	}
+
+#####################################################
+### 9993758 USA - The Assassination of Richard M. Nixon 
+#####################################################
+
+event = {
+	id = 9993758
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		random = 50 #Tricky Dicky harder to kill
+		headofstate = 6241
+		}
+
+	date = { day = 22 month = november year = 1963 }
+	offset = 1
+	deathdate = { day = 23 month = november year = 1963 }
+
+	name = "理察·M·尼克森遇刺" # needs text
+	desc = "On the 22nd November 1963, the assassin Lee Harvey Oswald, has shot and killed our President, Richard M. Nixon. The nation mourns, whilst Vice President Henry Cabot Lodge Jr is sworn in as President to replace him."
+	picture = "minister_died"
+
+	action_a = {
+		name = "The death of the President"
+		command = { type = headofstate which = 6291 } # HCL Jr
+		command = { type = sleepminister which = 6241 }
+		command = { type = dissent value = -5 }
+		}
+	}
+
+#####################################################
+### 9993759 USA - The Assassination of Adlai E. Stevenson 
+#####################################################
+
+event = {
+	id = 9993759
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		random = 50 #Stevenson harder to kill
+		headofstate = 6209
+		}
+
+	date = { day = 22 month = november year = 1963 }
+	offset = 1
+	deathdate = { day = 23 month = november year = 1963 }
+
+	name = "阿德萊·史蒂文森遇刺" # needs text
+	desc = "On the 22nd November 1963, the assassin Lee Harvey Oswald, has shot and killed our President, Adlai E. Stevenson. The nation mourns, whilst Vice President John F. Kennedy is sworn in as President to replace him."
+	picture = "minister_died"
+
+	action_a = {
+		name = "The death of the President"
+		command = { type = headofstate which = 6242 } # JFK!
+		command = { type = sleepminister which = 6209 }
+		command = { type = dissent value = -5 }
+		}
+	}
+
+#####################################################
+### 9993760 USA - The Assassination of Earl Warren 
+#####################################################
+
+event = {
+	id = 9993760
+	random = no
+	country = USA
+	style = 0
+
+	trigger = {
+		random = 50 #Warren harder to kill
+		headofstate = 6288
+		}
+
+	date = { day = 22 month = november year = 1963 }
+	offset = 1
+	deathdate = { day = 23 month = november year = 1963 }
+
+	name = "厄爾·華倫遇刺" # needs text
+	desc = "On the 22nd November 1963, the assassin Lee Harvey Oswald, has shot and killed our President, Earl Warren. The nation mourns, whilst Vice President Henry Cabot Lodge Jr is sworn in as President to replace him."
+	picture = "minister_died"
+
+	action_a = {
+		name = "The death of the President"
+		command = { type = headofstate which = 6291 } # Lodge
+		command = { type = sleepminister which = 6288 }
+		command = { type = dissent value = -5 }
+		}
+	}
+
+# 1350022~39 for later elections
 
 ########## Midterm ELECTIONS 
 
