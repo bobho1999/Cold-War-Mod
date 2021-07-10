@@ -84,9 +84,12 @@ event = {
 	style = 0
 	
 	trigger = {
+		OR = {
 		headofstate = 1033
-		#random = 95
-		}
+		headofstate = 1245
+		} 	# Either of the George VI
+#		random = 95
+	}
 
 	date = { day = 6 month = february year = 1952 }
 	offset = 1 
@@ -98,79 +101,82 @@ event = {
 
 	action_a = {
 		name = "OK"
-		command = { type = headofstate which = 1182 } # Queen Elisabeth II
+		command = { type = headofstate which = 1182 } # Queen Elizabeth II - The ML version
 		command = { type = sleepminister which = 1033 }
+		command = { type = sleepminister which = 1245 } #The SD version won't be coming back either!
 		}
 	}
 
-############################################################################
-### 
-############################################################################
+######################### 
+# The historical 1950 election
+########################
+
 event = {
-	id = 5910004
+	id = 9990007
 	random = no
 	country = ENG
-	style = 0
+
 
 	trigger = {
+#		local_flag = uk1945election #The historic election
 		government = democratic
-		NOT = { ispuppet = ENG }
+		NOT = { ispuppet = ENG } #I like this - Just in case
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "The UK Election of 1950"
+	desc = "After the Labour Party victory in 1945, Attlee left it until 1950 to call another election. He won, but with a majority of only five. He would be forced to call another one in 1951 to try to increase his majority. Should Churchill win, his majority is also weak, and he would be forced to go back to the polls in 1952."
 
-	date = { day = 1 month = february year = 1950 }
-	offset = 2
-	deathdate = { day = 1 month = march year = 1950 }
+	date = { day = 22 month = february year = 1950 }
+	offset = 1
+	deathdate = { day = 24 month = july year = 1950 }
 
 
 	action_a = {
-		ai_chance = 0
-		name = "ELECT_UK_1A"
+		ai_chance = 70
+		name = "Elect Labour Party - Attlee"
 		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1033 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 1040 } #Attlee
+		command = { type = foreignminister which = 1047 } #Bevin
+		command = { type = armamentminister which = 1189 } #Gaitskell
+		command = { type = ministerofsecurity which = 1089 } #Ede
+		command = { type = ministerofintelligence which = 1106 } 
+		command = { type = local_setflag which = uk1945election }
+		command = { type = local_clrflag which = uk1944election }
+		}
+	action_b = {
+		ai_chance = 30
+		name = "Elect Conservative Party - Churchill"
+		command = { type = dissent value = -3 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofgovernment which = 1038 }
 		command = { type = foreignminister which = 1003 }
 		command = { type = armamentminister which = 1186 }
 		command = { type = ministerofsecurity which = 1085 }
 		command = { type = ministerofintelligence which = 1105 }
+		command = { type = local_setflag which = uk1944election } #Going again in 1952
+		command = { type = local_clrflag which = uk1945election }
 		}
-	action_b = {
-		ai_chance = 100
-		name = "ELECT_UK_1B"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = headofstate which = 1189 }
-		command = { type = headofgovernment which = 1040 }
-		command = { type = foreignminister which = 1048 }
-		command = { type = armamentminister which = 1066 }
-		command = { type = ministerofsecurity which = 1089 }
-		command = { type = ministerofintelligence which = 1105 }
-		}
-#	action_c = {
-#		ai_chance = 10
-#		name = "KEEPCURRENT"
-#		command = { type = dissent value = -1 }
-#		}
 	}
 
+##### The 1951 Election
+
 event = {
-	id = 5910005
+	id = 9990008
 	random = no
 	country = ENG
-	style = 0
+
 
 	trigger = {
+		local_flag = uk1945election #The historic election
 		government = democratic
-		NOT = { ispuppet = ENG }
+		NOT = { ispuppet = ENG } #I like this - Just in case
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "The UK Election of 1951"
+	desc = "After the Labour Party victory in 1945, Attlee left it until 1950 to call another election. He won, but with a majority of only five. He would be forced to call another one in 1951 to try to increase his majority, but he lost to Churchill and the Conservative Party"
 
 	date = { day = 1 month = october year = 1951 }
 	offset = 2
@@ -178,12 +184,11 @@ event = {
 
 
 	action_a = {
-		ai_chance = 100
-		name = "ELECT_UK_1A"
+		ai_chance = 85
+		name = "Elect Conservative Party - Churchill"
 		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1033 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 2 }
 		command = { type = headofgovernment which = 1038 }
 		command = { type = foreignminister which = 1003 }
 		command = { type = armamentminister which = 1186 }
@@ -191,80 +196,173 @@ event = {
 		command = { type = ministerofintelligence which = 1105 }
 		}
 	action_b = {
-		ai_chance = 0
-		name = "ELECT_UK_1B"
+		ai_chance = 15
+		name = "Elect Labour Party - Attlee"
 		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = headofstate which = 1189 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 7 }
 		command = { type = headofgovernment which = 1040 }
 		command = { type = foreignminister which = 1048 }
-		command = { type = armamentminister which = 1066 }
+		command = { type = armamentminister which = 1189 }
 		command = { type = ministerofsecurity which = 1089 }
 		command = { type = ministerofintelligence which = 1105 }
 		}
-#	action_c = {
-#		ai_chance = 10
-#		name = "KEEPCURRENT"
-#		command = { type = dissent value = -1 }
-#		}
 	}
 
+##### The 1952 Election - if Conservative won 1950
+
 event = {
-	id = 5910006
+	id = 9990009
+	random = no
+	country = ENG
+
+
+	trigger = {
+		local_flag = uk1944election #An election in 1944 or a Con win in 1950
+		government = democratic
+		NOT = { ispuppet = ENG } #I like this - Just in case
+		}
+
+	name = "The UK Election of 1952"
+	desc = "An election has been called by the current government, hoping to take advantage of popular support at home. Herbert Morrison now leads for the Labour Party, whilst Eden is in charge for the Conservatives. Who will win the election?"
+
+	date = { day = 1 month = may year = 1952 }
+	offset = 2
+	deathdate = { day = 20 month = may year = 1952 }
+
+
+	action_a = {
+		ai_chance = 50
+		name = "Elect Conservative Party - Eden"
+		command = { type = dissent value = -3 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 2 }
+		command = { type = headofgovernment which = 1191 } # Eden
+		command = { type = foreignminister which = 1046 }
+		command = { type = armamentminister which = 1187 }
+		command = { type = ministerofsecurity which = 1086 }
+		command = { type = ministerofintelligence which = 1105 }
+		}
+	action_b = {
+		ai_chance = 50
+		name = "Elect Labour Party - Morrison"
+		command = { type = dissent value = -3 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 1253 } # Morrison
+		command = { type = foreignminister which = 1047 } #Bevin
+		command = { type = armamentminister which = 1254 } #Gaitskell
+		command = { type = ministerofsecurity which = 1089 }
+		command = { type = ministerofintelligence which = 1106 }
+		}
+	}
+
+############################################################################
+### The historic 1955 election
+############################################################################
+
+event = {
+	id = 9990011
 	random = no
 	country = ENG
 	style = 0
 
 	trigger = {
+		local_flag = uk1945election #The historic election
 		government = democratic
 		NOT = { ispuppet = ENG }
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "The UK Election of 1955"
+	desc = "On the 26th May, 1955, Anthony Eden headed to the polls. Churchill had finalled retired one month earlier and Eden called an election on the back of this. He secured an new mandate, with an increased majority. Clement Attlee, for the Labour Party, is his main opponent."
 
-	date = { day = 1 month = april year = 1955 }
+	date = { day = 25 month = may year = 1955 }
 	offset = 2
-	deathdate = { day = 2 month = april year = 1955 }
+	deathdate = { day = 29 month = may year = 1955 }
 
 
 	action_a = {
-		ai_chance = 100
-		name = "ELECT_UK_1A"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1182 }
-		command = { type = headofgovernment which = 1191 }
-		command = { type = foreignminister which = 1196 }
-		command = { type = armamentminister which = 1205 }
-		command = { type = ministerofsecurity which = 1212 }
+		ai_chance = 90
+		name = "Elect Conservative Party - Eden"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 1191 } #Eden
+		command = { type = foreignminister which = 1196 } #MacMillan
+		command = { type = armamentminister which = 1064 } #Rab Butler (not Monckton!)
+		command = { type = ministerofsecurity which = 1212 } #Home Secretary
 		command = { type = ministerofintelligence which = 1217 }
+		command = { type = sleepminister which = 1038 } #Churchill retires as PM (only)
 		}
 	action_b = {
-		ai_chance = 0
-		name = "ELECT_UK_1B"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
+		ai_chance = 10
+		name = "Elect Labour Party - Attlee"
+		command = { type = dissent value = -12 }
+		command = { type = domestic which = democratic value = 1 }
 		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = headofstate which = 1190 }
-		command = { type = headofgovernment which = 1040 }
+		command = { type = headofgovernment which = 1040 } #Attlee
 		command = { type = foreignminister which = 1199 }
 		command = { type = armamentminister which = 1185 }
 		command = { type = ministerofsecurity which = 1162 }
-		command = { type = ministerofintelligence which = 1222 }
+		command = { type = ministerofintelligence which = 1222 } #Big Jim!
+		command = { type = sleepminister which = 1038 } #Churchill retires as PM (only)
 		}
-#	action_c = {
-#		ai_chance = 10
-#		name = "KEEPCURRENT"
-#		command = { type = dissent value = -1 }
-#		}
 	}
 
+############################################################################
+### The ahistoric 1956 election
+############################################################################
 
 event = {
-	id = 5910007
+	id = 9990012
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		local_flag = uk1944election #The ahistoric election
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "The UK Election of 1956"
+	desc = "The incumbant government has called an election, hoping to secure another term in office. For the Conservatives, Anthony Eden leads his party, hoping to capitalise on a growing sense of market liberalism in the population. However, Herbert Morrison leads the Labour Party hoping to secure social democracy for Britain."
+
+	date = { day = 1 month = may year = 1956 }
+	offset = 2
+	deathdate = { day = 29 month = may year = 1956 }
+
+
+	action_a = {
+		ai_chance = 50
+		name = "Elect Conservative Party - Eden"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 1191 } #Eden
+		command = { type = foreignminister which = 1196 } #MacMillan
+		command = { type = armamentminister which = 1064 } #Rab Butler (not Monckton!)
+		command = { type = ministerofsecurity which = 1212 } #Home Secretary
+		command = { type = ministerofintelligence which = 1217 }
+		command = { type = sleepminister which = 1038 } #Churchill retires as PM (only)
+		}
+	action_b = {
+		ai_chance = 50
+		name = "Elect Labour Party - Morrison"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofgovernment which = 1253 } # Morrison
+		command = { type = foreignminister which = 1200 } #Bevan
+		command = { type = armamentminister which = 1254 } #Gaitskell
+		command = { type = ministerofsecurity which = 1089 }
+		command = { type = ministerofintelligence which = 1106 }
+		command = { type = sleepminister which = 1038 } #Churchill retires as PM (only)
+		}
+	}
+
+event = {
+	id = 9990013
 	random = no
 	country = ENG
 	style = 0
@@ -272,7 +370,7 @@ event = {
 	trigger = {
 		government = democratic
 		headofgovernment = 1191 # Anthony Eden in office
-		random = 85
+#		random = 85
 		NOT = { ispuppet = ENG }
 		}
 
@@ -285,33 +383,38 @@ event = {
 
 
 	action_a = {
-		ai_chance = 100
-		name = "OK"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1182 }
-		command = { type = headofgovernment which = 1192 }
-		command = { type = foreignminister which = 1046 }
-		command = { type = armamentminister which = 1207 }
-		command = { type = ministerofsecurity which = 1213 }
-		command = { type = ministerofintelligence which = 1218 }
+		ai_chance = 95
+		name = "Eden resigns"
+		command = { type = headofgovernment which = 1192 } #MacMillian
+		command = { type = foreignminister which = 1046 } #Lloyd
+		command = { type = armamentminister which = 1207 } #Thorneycroft
+		command = { type = ministerofsecurity which = 1213 } #Rab
+		command = { type = ministerofintelligence which = 1218 } 
+		}
+	action_b = {
+		ai_chance = 5
+		name = "Eden stays on"
+		command = { type = dissent value = 5 }
 		}
 	}
 
 
+##### The 1959 Election
+
 event = {
-	id = 5910008
+	id = 9990014
 	random = no
 	country = ENG
 	style = 0
 
 	trigger = {
+		local_flag = uk1945election #The historic election
 		government = democratic
 		NOT = { ispuppet = ENG }
 		}
 
-	name = "ELECTION_TITLE"
-	desc = "ELECTION_DESC"
+	name = "The UK Election of 1959"
+	desc = "You've never had it so good! MacMillan went to the polls in October 1959. Like Eden before him, he managed to increase his majority over new Labour leader, Hugh Gaitskell. Labour committed not to increase taxes, but with increased spending in their manifesto, the numbers just didn't add up."
 
 	date = { day = 1 month = october year = 1959 }
 	offset = 2
@@ -319,41 +422,82 @@ event = {
 
 
 	action_a = {
-		ai_chance = 100
-		name = "ELECT_UK_1A"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1182 }
-		command = { type = headofgovernment which = 1192 }
+		ai_chance = 90
+		name = "Elect Conservative Party - MacMillan"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 1192 } #MacMillan
 		command = { type = foreignminister which = 1046 }
-		command = { type = armamentminister which = 1208 }
-		command = { type = ministerofsecurity which = 1213 }
-		command = { type = ministerofintelligence which = 1219 }
+		command = { type = armamentminister which = 1254 } #Amory
+		command = { type = ministerofsecurity which = 1213 } #Butler
+		command = { type = ministerofintelligence which = 1254 } #Amory
 		}
 	action_b = {
-		ai_chance = 0
-		name = "ELECT_UK_1B"
-		command = { type = dissent value = -3 }
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 8 }
-		command = { type = headofstate which = 1190 }
-		command = { type = headofgovernment which = 1194 }
-		command = { type = foreignminister which = 1201 }
-		command = { type = armamentminister which = 1210 }
-		command = { type = ministerofsecurity which = 1215 }
-		command = { type = ministerofintelligence which = 1222 }
-		}
-	action_c = {
 		ai_chance = 10
-		name = "KEEPCURRENT"
-		command = { type = dissent value = -1 }
+		name = "Elect Labour Party - Gaitskell"
+		command = { type = dissent value = -12 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofgovernment which = 1194 } #Gaitskell
+		command = { type = foreignminister which = 1201 } #Eyebrows
+		command = { type = armamentminister which = 1210 } #Wilson
+		command = { type = ministerofsecurity which = 1215 } #Walker
+		command = { type = ministerofintelligence which = 1222 } #Still Big Jim
+		}
+	}
+
+
+##### The 1961 Election
+
+event = {
+	id = 9990015
+	random = no
+	country = ENG
+	style = 0
+
+	trigger = {
+		local_flag = uk1944election #The ahistoric election
+		government = democratic
+		NOT = { ispuppet = ENG }
+		}
+
+	name = "The UK Election of 1961"
+	desc = "After five long years, the incumbant government has been forced to the polls. The Conservative Party under Harold MacMillan argued that only the Conservative Party could lead the UK forward via increased free market economics. For the Labour Party, newcomer and former left radical, Harold Wilson argued his party would be best for Britain."
+
+	date = { day = 1 month = may year = 1961 }
+	offset = 2
+	deathdate = { day = 29 month = may year = 1961 }
+
+
+	action_a = {
+		ai_chance = 50
+		name = "Elect Conservative Party - MacMillan"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = headofgovernment which = 1192 } #MacMillan
+		command = { type = foreignminister which = 1197 } #Home
+		command = { type = armamentminister which = 1257 } #Lloyd
+		command = { type = ministerofsecurity which = 1213 } #Butler
+		command = { type = ministerofintelligence which = 1254 } #Amory
+		}
+	action_b = {
+		ai_chance = 50
+		name = "Elect Labour Party - Wilson"
+		command = { type = dissent value = -13 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofgovernment which = 1195 } #Wilson
+		command = { type = foreignminister which = 1201 } #Eyebrows
+		command = { type = armamentminister which = 1248 } #Big Jim!
+		command = { type = ministerofsecurity which = 1247 } #Castle
 		}
 	}
 
 
 event = {
-	id = 5910009
+	id = 9990016
 	random = no
 	country = ENG
 	style = 0
@@ -361,7 +505,7 @@ event = {
 	trigger = {
 		government = democratic
 		headofgovernment = 1192 # Harold MacMillan in office
-		random = 85
+#		random = 85
 		NOT = { ispuppet = ENG }
 	}
 
@@ -374,16 +518,22 @@ event = {
 
 
 	action_a = {
-		ai_chance = 100
-		name = "OK"
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = set_domestic which = political_left value = 1 }
-		command = { type = headofstate which = 1182 }
-		command = { type = headofgovernment which = 1193 }
-		command = { type = foreignminister which = 1198 }
-		command = { type = armamentminister which = 1209 }
-		command = { type = ministerofsecurity which = 1214 }
-		command = { type = ministerofintelligence which = 1221 }
+		ai_chance = 90
+		name = "Lord Home replaces MacMillan"
+		command = { type = headofgovernment which = 1193 } #Home
+		command = { type = foreignminister which = 1198 } #Butler
+		command = { type = armamentminister which = 1255 } #Maudling
+		command = { type = ministerofsecurity which = 1214 } #Brooke
+		command = { type = ministerofintelligence which = 1221 } 
+		}
+	action_a = {
+		ai_chance = 10
+		name = "Butler replaces MacMillan"
+		command = { type = headofgovernment which = 1256 } #Butler
+		command = { type = foreignminister which = 1197 } #Home
+		command = { type = armamentminister which = 1255 } #Maudling
+		command = { type = ministerofsecurity which = 1214 } #Brooke
+		command = { type = ministerofintelligence which = 1221 } 
 		}
 	}
 
