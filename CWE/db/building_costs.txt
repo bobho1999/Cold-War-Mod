@@ -1,0 +1,87 @@
+ic = {
+	only_buildable_in_provinces = yes
+	cost		= 5
+	buildtime 	= 480
+	manpower	= 10.0
+	size		= 1
+}
+coastalfort = {
+	buildable_in_allied_provinces = yes
+	cost		= 4
+	buildtime 	= 1000
+	manpower	= 1
+	size		= 1
+}
+landfort = {
+	buildable_in_allied_provinces = yes
+	cost		= 5
+	buildtime 	= 1200
+	manpower	= 1
+	size		= 1
+}
+anti_air = {
+	buildable_in_allied_provinces = yes
+	cost		= 3
+	buildtime 	= 60
+	manpower	= 0.5
+	size		= 1
+}
+infra = {
+	buildable_in_allied_provinces = yes
+	only_buildable_in_provinces = yes
+	cost		= 2
+	buildtime 	= 240
+	manpower	= 1
+	size		= 0.1
+}
+air_base = {
+	buildable_in_allied_provinces = yes
+	cost		= 2
+	buildtime 	= 90
+	manpower	= 2
+	size		= 1
+}
+naval_base = {
+	buildable_in_allied_provinces = yes
+	cost		= 5
+	buildtime 	= 180
+	manpower	= 2
+	size		= 1
+}
+radar_station = {
+	buildable_in_allied_provinces = yes
+	cost		= 2
+	buildtime 	= 180
+	manpower	= 0.5
+	size		= 1
+}
+nuclear_reactor = {
+	cost		= 50
+	buildtime 	= 180
+	manpower	= 5
+	size		= 1
+}
+rocket_test = {
+	cost		= 20
+	buildtime 	= 180
+	manpower	= 1
+	size		= 1
+}
+synthetic_oil = {
+	cost		= 3
+	buildtime 	= 180
+	manpower	= 2.0
+	size		= 1
+}
+synthetic_rares = {
+	cost		= 3
+	buildtime 	= 180
+	manpower	= 2.0
+	size		= 1
+}
+nuclear_power = {
+	cost		= 5
+	buildtime 	= 240
+	manpower	= 5.0
+	size		= 1
+}

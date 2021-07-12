@@ -1,0 +1,1588 @@
+#next 19829
+################
+#朝鲜战争——朝鲜
+#############################################
+event = {
+  id = 19800
+  random = no
+  country = PRK
+  
+  name = "朝鲜战争 " 
+  desc = "1950年6月25日，朝鲜战争爆发。朝鲜民主主义人民共和国声称， 李承晚在美国操纵下突然向三八线以北地区进行了全面的武装侵 犯。而事实上，在得到斯大林的同意之后，朝鲜民主主义人民共 和国国家主席兼朝鲜人民军司令官金日成下令军队越过三八线， 发动了对大韩民国的突然进攻。  "
+  style = 0
+  
+  trigger = {
+    exists = KOR
+    atwar = no
+    not = {
+      flag = "korean war end"
+    }
+  } 
+  date = { day = 24 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "统一朝鲜半岛！ "
+    ai_chance = 99
+    command = { type = dissent value = -5 }
+    command = { type = war which = KOR }
+    command = { type = trigger which = 19801 }
+    command = { type = setflag which = korean_war }
+    command = { type = morale which = land value = 3 }
+    command = { type = max_organization which = land value = 2 }
+    command = { type = chiefofarmy which = 579050 }
+  }
+   action_b = {
+    name = "不必着急 "
+    ai_chance = 1
+    command = { type = dissent value = 10 }
+  }
+}
+################
+#朝鲜战争——韩国
+#############################################
+event = {
+  id = 19801
+  random = no
+  country = KOR
+  
+  name = "朝鲜战争 " 
+  desc = "1950年6月25日，朝鲜战争爆发。朝鲜民主主义人民共和国声称， 李承晚在美国操纵下突然向三八线以北地区进行了全面的武装侵 犯。而事实上，在得到斯大林的同意之后，朝鲜民主主义人民共 和国国家主席兼朝鲜人民军司令官金日成下令军队越过三八线， 发动了对大韩民国的突然进攻。  "
+  style = 0
+  
+  
+  action_a = {
+    name = "反抗北朝鲜的侵略 "
+    command = { type = dissent value = -5 }
+    command = { type = morale which = land value = 2 }
+  }
+}
+################
+#朝鲜的坦克攻势
+#############################################
+event = {
+  id = 19802
+  random = no
+  country = PRK
+  
+  name = "朝鲜的坦克攻势 " 
+  desc = "朝鲜战争中，朝鲜军队拥有150辆T-34坦克，而韩国军队没有有 效的措施来抵抗坦克的攻击。因此，朝鲜利用坦克的优势，对韩 国军队造成很大的伤害。  "
+  style = 0
+  
+  trigger = {
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 25 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的T-34坦克所向无敌 "
+    command = { type = soft_attack which = armor value = 3 }
+    command = { type = speed which = armor value = 3 }
+    command = { type = morale which = armor value = 5 }
+    command = { type = max_organization which = armor value = 5 }
+    command = { type = morale which = land value = 5 }
+    command = { type = max_organization which = land value = 5 }
+  }
+}
+################
+#韩军受挫
+#############################################
+event = {
+  id = 19803
+  random = no
+  country = KOR
+  
+  name = "韩军受挫 " 
+  desc = "韩国军队在初期作战时被朝鲜军队打败，韩国方面不得不采取措 施。政府转移到偏南的大田，并且炸毁了汉江上的大桥，这对韩 军的士气造成了巨大的打击。  "
+  style = 0
+  
+  trigger = {
+    	flag = korean_war 
+    	not = {
+      		flag = "korean war end"
+    	}
+    	war = { country = PRK  country = KOR }
+  } 
+  date = { day = 25 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    	name = "立刻采取措施 "
+    	command = { type = morale which = land value = -25 }
+    	command = { type = max_organization which = land value = -10 }
+    	command = { type = construct which = infrastructure where = 1199 value = -10 }
+     	command = { type = ground_def_eff value = -0.1 }
+  }
+}
+
+event = {
+	id = 19804
+	random = no
+	country = USA
+  	trigger = {
+    		flag = korean_war 
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	} 
+
+	name = EVT_49_NAME
+	desc = EVT_49_DESC
+       	picture = "korean_war"
+	style = 0
+
+  	date = { day = 25 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+
+	action_a = {
+		name = "This means WAR!!" #
+		ai_chance = 1
+		command = { type = alliance which = KOR }
+		command = { type = trigger which = 610018 } #SOV
+		command = { type = setflag which = KW_USA_intervention }
+	}
+	action_b = {
+		name = "United Nations Police Action" #historic
+		ai_chance = 98
+		command = { type = supplies value = -1000 }
+		command = { type = money value = -500 }
+		command = { type = free_ic value = -22 }#they get 20--pays for units
+		command = { type = free_energy value = -45 }
+		command = { type = free_metal value = -25 }
+		command = { type = free_rare_materials value = -15 }
+		command = { type = free_oil value = -10 }
+		command = { type = free_manpower value = -0.4 }#
+		command = { type = trigger which = 100500 } #U99
+	}
+	action_c = {
+		name = "Korea is not important" #
+		ai_chance = 1
+		command = { type = relation which = KOR value = -200 }
+		command = { type = relation which = PRK value =  75 }
+		command = { type = relation which = SOV value =  50 }
+		command = { type = relation which = CHC value =  50 }
+		command = { type = relation which = ENG value = -75 }
+		command = { type = relation which = CAN value = -75 }
+		command = { type = relation which = AST value = -75 }
+		command = { type = relation which = NZL value = -75 }
+		command = { type = relation which = FRA value = -75 }
+		command = { type = relation which = HOL value = -75 }
+		command = { type = relation which = JAP value = -75 }
+		command = { type = relation which = DFR value = -75 }
+	}
+}
+
+################
+#朝鲜战争——苏联
+#############################################
+event = {
+  id = 19805
+  random = no
+  country = SOV
+  
+  name = "朝鲜战争 " 
+  desc = "1950年6月25日，朝鲜战争爆发。 朝鲜民主主义人民共和国声称，李承晚在美国 操纵下突然向三八线以北地区进行了 全面的武装侵犯。 而事实上，在得到斯大林的同意之后， 朝鲜民主主义人民共和国 国家主席兼朝鲜人民军司令官 金日成下令军队越过三八线， 发动了对大韩民国的突然进攻。  "
+  style = 0
+  
+  trigger = {
+    war = { country = PRK  country = KOR }
+    flag = KW_USA_intervention 
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+  } 
+  date = { day = 20 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "支援朝鲜！ "
+    ai_chance = 90
+    command = { type = relation which = PRK value = 50 }
+    command = { type = alliance which = PRK }
+    command = { type = war which = KOR }
+    command = { type = setflag which = "soviet korea" }
+    command = { type = sleepevent which = 20120 }
+  }
+  action_b = {
+    name = "坐观其变 "
+    ai_chance = 10
+    command = { type = relation which = PRK value = -10 }
+  }
+}
+################
+#联合国军——联合国
+#############################################
+event = {
+  id = 19806
+  random = no
+  country = U99
+  
+  	name = "联合国军 " 
+  	desc = "经过安理会表决，联合国决定组建“联合国”军，并将这支部队 交由美国指挥。事实上，这支部队主要由美军组成，其他国家仅 提供了少量的部队和一些物资。  "
+  	style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = UNSC_resolution
+    		not = {
+      			flag = "korean war end"
+      			flag = resolution_vetoed
+    		}
+		war = { country = PRK  country = KOR }
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "开始组建这支部队 "
+    		command = { type = alliance which = KOR }
+    		command = { type = setflag which = KW_UN_intervention }
+    		command = { type = clrflag which = UNSC_resolution }
+    		command = { type = clrflag which = resolution_vetoed }
+    		command = { type = trigger which = 19807 value = 1 }
+    		command = { type = trigger which = 19808 }
+		command = { type = supplies value = 1000 }
+		command = { type = free_ic value = 20 }
+		command = { type = free_energy value = 45 }
+		command = { type = free_metal value = 25 }
+		command = { type = free_rare_materials value = 15 }
+		command = { type = free_oil value = 10 }
+		command = { type = free_manpower value = 0.4 }#
+  }
+}
+################
+#联合国的空军
+#############################################
+event = {
+  id = 19807
+  random = no
+  country = U99
+  
+  name = "联合国空军 " 
+  desc = "朝鲜战争爆发后，联合国派出空军支援，这支空军对朝鲜军队造成了巨大的损失。联合国军利用空军攻击朝鲜的坦克，轰炸道路，破坏防御工事，。 "
+  style = 0
+
+  
+  action_a = {
+    name = "派出空军 "
+    		command = { type = capital which = 1194 }
+    command = { type = add_corps which = "联合国空军第一师 " value = air where = 1196 } 
+    command = { type = add_division which = "第一队 " value = strategic_bomber when = 3 }
+    command = { type = add_division which = "第二队 " value = strategic_bomber when = 3 }
+    command = { type = add_corps which = "联合国空军第二师 " value = air where = 1196 } 
+    command = { type = add_division which = "第3队 " value = strategic_bomber when = 3 }
+    command = { type = add_division which = "第4队 " value = strategic_bomber when = 3 }
+    command = { type = add_corps which = "联合国空军第3师 " value = air where = 1196 } 
+    command = { type = add_division which = "第5队 " value = tactical_bomber when = 3 }
+    command = { type = add_division which = "第6队 " value = tactical_bomber when = 3 }
+    command = { type = add_corps which = "联合国空军第4师 " value = air where = 1196 } 
+    command = { type = add_division which = "第7队 " value = tactical_bomber when = 3 }
+    command = { type = add_division which = "第8队 " value = tactical_bomber when = 3 }
+    command = { type = add_corps which = "联合国空军第5师 " value = air where = 1196 } 
+    command = { type = add_division which = "第9队 " value = interceptor when = 5 }
+    command = { type = add_division which = "第10队 " value = interceptor when = 5 }
+    command = { type = add_corps which = "联合国空军第6师 " value = air where = 1196 } 
+    command = { type = add_division which = "第11队 " value = interceptor when = 5 }
+    command = { type = add_division which = "第12队 " value = interceptor when = 5 }
+  }
+}
+################
+#韩国交出指挥权
+#############################################
+event = {
+  	id = 19808
+  	random = no
+  	country = KOR
+  
+  	name = "韩国交出指挥权 " 
+  	desc = "朝鲜战争爆发后，美国迅速插手了战争，派出了所谓联合国军进 行干涉。南朝鲜方面将其军队指挥权交给了联合国军。 "
+  	style = 0
+
+  
+  	action_a = {
+    		name = "交出指挥权 "
+    		command = { type = grant_military_control which = U99 } 
+		command = { type = secedeprovince which = U99 value = 1194 } #Jeju
+  	}
+}
+
+event = {
+  	id = 19809
+  	random = no
+  	country = USA
+  
+  	name = "聯合國提案遭否決 " 
+  	desc = "经过安理会表决，联合国决定组建“联合国”军，并将这支部队 交由美国指挥。事实上，这支部队主要由美军组成，其他国家仅 提供了少量的部队和一些物资。  "
+  	style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = UNSC_resolution
+      		flag = resolution_vetoed
+    		not = {
+      			flag = "korean war end"
+    		}
+		war = { country = PRK  country = KOR }
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "开始组建这支部队 "
+		command = { type = free_ic value = 22 }#
+		command = { type = free_energy value = 45 }
+		command = { type = free_metal value = 25 }
+		command = { type = free_rare_materials value = 15 }
+		command = { type = free_oil value = 10 }
+		command = { type = free_manpower value = 0.4 }#
+    		command = { type = clrflag which = UNSC_resolution }
+    		command = { type = clrflag which = resolution_vetoed }
+  	}
+}
+################
+#美军第24师参战
+#############################################
+event = {
+  id = 19810
+  random = no
+  country = U99
+  
+  	name = "美军第24师参战 " 
+  	desc = "1950年7月2日，美军第24师登陆朝鲜半岛，参加朝鲜战争。这是 第一支成建制的干涉朝鲜战争的美军部队。  "
+  	style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 1 month = july year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "登陆朝鲜半岛 "
+    		command = { type = add_corps which = "美国第24师 " value = land where = 1196 } 
+    		command = { type = add_division which = "美軍第24师 " value = infantry when = 6 where = artillery }
+  	}
+}
+################
+#汉城沦陷——韩国
+#############################################
+event = {
+  	id = 19811
+  	random = no
+  	country = KOR
+  
+  	name = "汉城沦陷 " 
+  	desc = "1950年6月28日，韩国首都汉城沦陷，这对韩国是个巨大的打击。6月30日，蔡秉德将军被解除了韩国军队参谋长的职务。  "
+  	style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+    		not = {
+      			flag = "korean war end"
+    		}
+		war = { country = PRK  country = KOR }
+    		control = { province = 1199 data = PRK }
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "这对我们来说非常糟糕 "
+    		command = { type = morale which = land value = -3 }
+    		command = { type = max_organization which = land value = -4 }
+    		command = { type = capital which = 3681 }
+    		command = { type = chiefofstaff which = 578070 }
+    		command = { type = sleepminister which = 578007 }
+    		command = { type = sleepleader which = 578000 }
+  	}
+}
+################
+#大田之战——朝鲜
+#############################################
+event = {
+  id = 19812
+  random = no
+  country = PRK
+  
+  name = "大田之战 " 
+  desc = "1950年七月中下旬，朝鲜军队进攻大田，联合国军的美军第24师 在大田组织防御，但被朝鲜军队击破，联合国军伤亡惨重。这对 朝鲜来说是个很大的胜利。  "
+  style = 0
+  
+  trigger = {
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+    control = { province = 3681 data = PRK }
+  } 
+  date = { day = 26 month = june
+ year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的伟大胜利 "
+    command = { type = morale which = land value = 5 }
+    command = { type = max_organization which = land value = 2 }
+    command = { type = trigger which = 19813 }
+  }
+}
+################
+#大田之战——联合国
+#############################################
+event = {
+  id = 19813
+  random = no
+  country = U99
+  
+  name = "大田之战 " 
+  desc = "1950年七月中下旬，朝鲜军队进攻大田，联合国军的美军第24师 在大田组织防御，但被朝鲜军队击破，联合国军伤亡惨重。这对 朝鲜来说是个很大的胜利。  "
+  style = 0
+  
+  action_a = {
+    name = "这对我们来说是个很大的打击 "
+    command = { type = morale which = land value = -5 }
+    command = { type = max_organization which = land value = -3 }
+    command = { type = trigger which = 19814 }
+  }
+}
+################
+#大田之战——韩国
+#############################################
+event = {
+  	id = 19814
+  	random = no
+  	country = KOR
+  
+  	name = "大田之战 " 
+  	desc = "1950年七月中下旬，朝鲜军队进攻大田，联合国军的美军第24师 在大田组织防御，但被朝鲜军队击破，联合国军伤亡惨重。这对 朝鲜来说是个很大的胜利。  "
+  	style = 0
+  
+  	action_a = {
+    		name = "撤到釜山 "
+    		command = { type = morale which = land value = -5 }
+    		command = { type = max_organization which = land value = -3 }
+    		command = { type = capital which = 1196 }
+  	}
+}
+################
+#釜山防禦圈
+#############################################
+event = {
+  	id = 19827
+  	random = no
+  	country = KOR
+  
+  	name = "釜山防禦圈 " 
+  	desc = "。  "
+  	style = 0
+  
+  	trigger = {
+		ai = no
+    		flag = korean_war 
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+    		control = { province = 1199 data = PRK }
+    		OR = {
+			control = { province = 1195 data = PRK }
+    			control = { province = 1197 data = PRK }
+    			control = { province = 3688 data = PRK }
+		}
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "緊急構築 "
+    		command = { type = construct which = land_fort value = 8 where = 1196 }
+  	}
+}
+event = {
+  	id = 19828
+  	random = no
+  	country = KOR
+  
+  	name = "釜山防禦圈 " 
+  	desc = "。  "
+  	style = 0
+  
+  	trigger = {
+		ai = yes
+    		flag = korean_war 
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+    		control = { province = 1199 data = PRK }
+    		control = { province = 3681 data = PRK }
+    		control = { province = 1197 data = PRK }
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "緊急構築 "
+    		command = { type = construct which = land_fort value = 8 where = 1196 }
+    		command = { type = add_corps which = "釜山要塞 " value = land where = 1196 } 
+    		command = { type = activate_division which = 56000 value = 1 where = 1196 when = 1 }
+  	}
+}
+################
+#朝鲜军队的衰落
+#############################################
+event = {
+  	id = 19815
+  	random = no
+  	country = PRK
+  
+  	name = "朝鲜军队衰落 " 
+  	desc = "在进攻韩国东海岸的战斗中，朝鲜军队表现出极大的战斗力，但 由于兵力、装备等多方面问题，朝军付出了巨大的代价，这使朝 鲜军队的素质衰落。  "
+  	style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+    		control = { province = 1199 data = PRK }
+    		control = { province = 3681 data = PRK }
+    		control = { province = 1197 data = PRK }
+  	} 
+  	date = { day = 26 month = june year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "糟糕 "
+    		command = { type = soft_attack which = armor value = -3 }
+    		command = { type = speed which = armor value = -3 }
+    		command = { type = morale which = armor value = -5 }
+    		command = { type = max_organization which = armor value = -5 }
+    		command = { type = morale which = land value = -5 }
+    		command = { type = max_organization which = land value = -5 }
+  	}
+}
+################
+#美军第25师参战
+#############################################
+event = {
+  id = 19816
+  random = no
+  country = U99
+  
+  name = "美军第25师参战 " 
+  desc = "1950年7月18日，美军第25师登陆朝鲜半岛，参加朝鲜战争。这为 在朝鲜战争中严重受损的美军提供了很大帮助。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 17 month = july year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第25师 " value = land where = 1196 } 
+    command = { type = add_division which = "第25师 " value = infantry when = 6 where = artillery }
+  }
+}
+################
+#美军第1骑兵师参战
+#############################################
+event = {
+  id = 19817
+  random = no
+  country = U99
+  
+  name = "美军第1骑兵师参战 " 
+  desc = "1950年7月18日，美军第1骑兵师登陆朝鲜半岛，参加朝鲜战争。 第一骑兵师名为骑兵师，实际上是一支步兵部队，这是美军的一 支王牌部队。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 17 month = july year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第1骑兵师 " value = land where = 1196 } 
+    command = { type = add_division which = "第1骑兵师 " value = infantry when = 6 where = artillery }
+  }
+}
+################
+#美军第7师参战
+#############################################
+event = {
+  id = 19818
+  random = no
+  country = U99
+  
+  name = "美军第7师参战 " 
+  desc = "1950年7月18日，美军第7师登陆朝鲜半岛，参加朝鲜战争。这为 在朝鲜战争中严重受损的美军提供了很大帮助。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 17 month = july year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第7师 " value = land where = 1196 } 
+    command = { type = add_division which = "第7师 " value = infantry when = 6 where = artillery }
+  }
+}
+################
+#美军第5团战斗队参战
+#############################################
+event = {
+  id = 19819
+  random = no
+  country = U99
+  
+  name = "美军第5团战斗队参战 " 
+  desc = "1950年8月2日，美军第5团战斗队登陆朝鲜半岛，参加朝鲜战争。 这为在朝鲜战争中严重受损的美军提供了很大帮助。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 1 month = august year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第5团战斗队 " value = land where = 1196 } 
+    command = { type = add_division which = "第5团战斗队 " value = infantry when = 6 where = artillery }
+  }
+}
+################
+#美军第1临时海军陆战旅参战
+#############################################
+event = {
+  id = 19820
+  random = no
+  country = U99
+  
+  name = "美军第1临时海军陆战旅参战 " 
+  desc = "1950年8月2日，美军第1临时海军陆战旅从本土来到朝鲜半岛，参 加朝鲜战争。这为在朝鲜战争中严重受损的美军提供了很大帮助。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 1 month = august year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第1临时海军陆战旅 " value = land where = 1196 } 
+    command = { type = add_division which = "第1临时海军陆战旅 " value = marine when = 5 where = light_armor_brigade }
+  }
+}
+################
+#美军第2师参战
+#############################################
+event = {
+  id = 19821
+  random = no
+  country = U99
+  
+  name = "美军第2师参战 " 
+  desc = "1950年7月23日，美军第2师登陆朝鲜半岛，参加朝鲜战争。这支 部队拥有很强的机械化力量，虽然名为步兵师，事实上是一支机 械化步兵师。  "
+  style = 0
+  
+  	trigger = {
+    		flag = korean_war 
+		flag = KW_UN_intervention
+    		not = {
+      			flag = "korean war end"
+    		}
+    		war = { country = PRK  country = KOR }
+  	}
+	 
+  	date = { day = 22 month = july year = 1950 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "登陆朝鲜半岛 "
+    command = { type = add_corps which = "美国第2师 " value = land where = 1196 } 
+    command = { type = add_division which = "第2师 " value = mechanized when = 3 where = light_armor_brigade }
+  }
+}
+################
+#美军反攻
+#############################################
+event = {
+  id = 19822
+  random = no
+  country = U99
+  
+  name = "美军反攻 " 
+  desc = "1950年8月7日，拥有了两万多人军事力量的美军开始对朝鲜进行 反攻，但这次反攻被朝鲜挫败。即使如此，美军的士气也得到了 提高。  "
+  style = 0
+  
+  trigger = {
+    flag = KW_UN_intervention
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 6 month = august year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "反攻虽败，我们也得到了鼓舞 "
+    command = { type = morale which = land value = 5 }
+    command = { type = max_organization which = land value = 3 }
+  }
+}
+################
+#补给和石油的补充——韩国
+#############################################
+event = {
+  id = 19823
+  random = no
+  country = KOR
+  persistent = yes
+  
+  name = "补给和石油的补充 " 
+  desc = "朝鲜战争中，由韩国为联合国军提供补给和石油，韩国为此作出 了很大努力。 "
+  style = 0
+  
+  trigger = {
+    or = { not = { supplies = 100 }
+              not = { oil = 100 }
+     }
+    atwar = KOR
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+   }
+   
+  date = { day = 10 month = june year = 1950 }
+  offset = 15
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "补充补给和石油 "
+    command = { type = supplies value = 1500 }
+    command = { type = oilpool value = 1000 }
+  }
+}
+################
+#仁川登陆
+#############################################
+event = {
+  id = 19824
+  random = no
+  country = U99
+  
+  name = "仁川登陆 " 
+  desc = "在麦克阿瑟的长期准备后，美军决定，于9月15日，在仁川进行登 陆。朝鲜方面在仁川的兵力很少，这使美军轻易地占领了仁川。 这之后，朝鲜战争形势发生了惊天逆转。 "
+  style = 0
+  
+  trigger = {
+    war = { country = PRK  country = KOR }  
+    control = { province = 1199 data = PRK }
+    control = { province = 3678 data = PRK }
+    control = { province = 3681 data = PRK }
+    control = { province = 1197 data = PRK }
+    flag = KW_UN_intervention
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+  } 
+  date = { day = 14 month = september year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "这一举足以使我们击败朝鲜 " 
+    command = { type = add_corps which = "美军第1陆战团 " value = land where = 3678 } 
+    command = { type = add_division which = "第1陆战团 " value = marine when = 2 }
+    command = { type = add_corps which = "美军第5陆战团 " value = land where = 3678 } 
+    command = { type = add_division which = "第5陆战团 " value = marine when = 2 }
+    command = { type = add_corps which = "美军第7陆战团 " value = land where = 3678 } 
+    command = { type = add_division which = "第7陆战团 " value = marine when = 2 }
+    command = { type = add_corps which = "美军第2陆战团 " value = land where = 3678 } 
+    command = { type = add_division which = "第2陆战团 " value = marine when = 2 }
+    command = { type = add_corps which = "美军第3陆战团 " value = land where = 3678 } 
+    command = { type = add_division which = "第3陆战团 " value = marine when = 2 }
+    command = { type = add_corps which = "美军第7步兵师 " value = land where = 3678 } 
+    command = { type = add_division which = "第7师 " value = infantry when = 2 where = artillery }
+    command = { type = supplies value = 1000 where = 3678 }
+    command = { type = oilpool value = 700 where = 3678 }
+    command = { type = morale which = land value = 15 }
+    command = { type = max_organization which = land value = 10 }
+    command = { type = trigger which = 19825 }
+    command = { type = ai which = "switch/u27_kw1.ai" }
+  }
+}
+################
+#仁川登陆
+#############################################
+event = {
+  id = 19825
+  random = no
+  country = KOR
+  
+  name = "仁川登陆 " 
+  desc = "在麦克阿瑟的长期准备后，美军决定，于9月15日，在仁川进行登 陆。朝鲜方面在仁川的兵力很少，这使美军轻易地占领了仁川。 这之后，朝鲜战争形势发生了惊天逆转。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "好极了 " 
+    command = { type = add_corps which = "韩国第一军 " value = land where = 3678 } 
+    command = { type = add_division which = "第1师 " value = infantry when = 0 }
+    command = { type = add_division which = "第2师 " value = infantry when = 0 }
+    command = { type = add_division which = "第3师 " value = infantry when = 0 }
+    command = { type = add_corps which = "韩国第二军 " value = land where = 3678 } 
+    command = { type = add_division which = "第4师 " value = infantry when = 0 }
+    command = { type = add_division which = "第5师 " value = infantry when = 0 }
+    command = { type = add_division which = "第6师 " value = infantry when = 0 }
+    command = { type = add_corps which = "韩国第三军 " value = land where = 3678 } 
+    command = { type = add_division which = "第7师 " value = infantry when = 0 }
+    command = { type = add_division which = "第8师 " value = infantry when = 0 }
+    command = { type = add_division which = "第9师 " value = infantry when = 0 }
+    command = { type = add_corps which = "韩国第四军 " value = land where = 1196 } 
+    command = { type = add_division which = "第10师 " value = infantry when = 0 }
+    command = { type = add_division which = "第11师 " value = infantry when = 0 }
+    command = { type = add_division which = "第12师 " value = infantry when = 0 }
+    command = { type = add_corps which = "韩国第五军 " value = land where = 1196 } 
+    command = { type = add_division which = "第13师 " value = infantry when = 0 }
+    command = { type = add_division which = "第14师 " value = infantry when = 0 }
+    command = { type = add_division which = "第15师 " value = infantry when = 0 }
+    command = { type = morale which = land value = 20 }
+    command = { type = max_organization which = land value = 15 }
+    command = { type = ai which = "switch/kor_kw1.ai" }
+  }
+}
+################
+#朝鲜的溃败
+#############################################
+event = {
+  id = 19826
+  random = no
+  country = PRK
+  
+  name = "朝鲜的溃败 " 
+  desc = "仁川登陆后，朝鲜失去了汉城，接着釜山包围圈被突破，朝鲜军 队开始进入溃败的时期。6月以来的优势一时丧尽。  "
+  style = 0
+  
+  trigger = {
+    	flag = korean_war 
+    	not = {
+      		flag = "korean war end"
+    	}
+    	war = { country = PRK  country = KOR }
+    	event = 19900
+    	OR = {
+		control = { province = 3678 data = KOR }
+		control = { province = 3678 data = U99 }
+  	} 
+}
+  date = { day = 22 month = july year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "我们的巨大失败 "
+    command = { type = morale which = land value = -35 }
+    command = { type = max_organization which = land value = -25 }
+    command = { type = ai which = "switch/prk_kw1.ai" }
+  }
+}
+################
+#联合国增兵
+#############################################
+event = {
+  id = 20432
+  random = no
+  country = U99
+  persistent = yes
+  
+  name = "联合国增兵 " 
+  desc = "由于中朝方的部队已经超过了联合国的承受能力，联合国开始增加部队与中朝对垒。 "
+  style = 0
+
+  trigger = {
+    flag = KW_UN_intervention
+    or = { garrison = { country = CHC  province = 1199 type = land size = 20 area = yes } 
+           garrison = { country = CHC  province = 1201 type = land size = 40 area = yes } 
+     }
+    not = { garrison = { country = U99 province = 1201 type = land size = 30 area = yes } }
+    event = 19880
+    event = 20431
+    war = { country = CHC  country = KOR }
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 14 month = october year = 1952 }
+  offset = 10
+  deathdate = { day = 1 month = june year = 1953 }
+  
+  action_a = {
+    name = "增兵！ "
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_corps which = "联合国援军 " value = land where = 1196 } 
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+    command = { type = add_division which = "援军部队 " value = mechanized when = 2 where = artillery }
+  }
+}
+################
+#抗美援朝——朝鲜
+#############################################
+event = {
+  id = 19890
+  random = no
+  country = PRK
+  
+  name = "抗美援朝 " 
+  desc = "朝鲜战争爆发后，美国开始轰炸朝鲜。 仁川登陆后，朝鲜迅速被击败。 所以金日成只得向中国求救。 "
+#  picture = "抗美援朝"
+  style = 0
+  
+  trigger = {
+    	war = { country = PRK  country = KOR }
+    	exists = CHC
+    	or = { 
+		lost_VP = { country = PRK value = 50 }
+           	lost_national = { country = PRK value = 70 }
+         }
+    	flag = korean_war 
+    	not = {
+      		flag = "korean war end"
+    	}
+  } 
+  date = { day = 1 month = january year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "向中国求救 " 
+    command = { type = relation which = CHC value = 10 }
+    command = { type = trigger which = 19880 }
+  }
+}
+################
+#抗美援朝——中国
+#############################################
+event = {
+  id = 19880
+  random = no
+  country = CHC
+  
+  name = "抗美援朝 " 
+  desc = "朝鲜战争爆发后，美国开始轰炸朝鲜。这同时也危及中国的东北。 为了保卫中国的大门，党中央决定抗美援朝。 "
+#  picture = "抗美援朝"
+  style = 0
+  
+  
+  action_a = {
+    name = "打败美帝国主义！ "
+    command = { type = war which = KOR } 
+    command = { type = dissent value = -2 }
+    command = { type = relation which = PRK value = 10 }
+    command = { type = access which = PRK }
+    command = { type = alliance which = PRK }
+    command = { type = trigger which = 20435 }
+    command = { type = add_corps which = "人民志愿军第一军 " value = land where = 1394 }
+    command = { type = add_division which = "第一师 " value = bergsjaeger
+  when = 0 }
+    command = { type = add_division which = "第二师 " value = bergsjaeger
+  when = 0 }
+    command = { type = add_division which = "第三师 " value = bergsjaeger  when = 0 }
+    command = { type = add_corps which = "人民志愿军第二军 " value = land where = 1394 }
+    command = { type = add_division which = "第四师 " value = bergsjaeger
+  when = 0 }
+    command = { type = add_division which = "第五师 " value = bergsjaeger
+  when = 0 }
+    command = { type = add_division which = "第六师 " value = bergsjaeger
+  when = 0 }
+    command = { type = add_corps which = "人民志愿军第三军 " value = land where = 1394 }
+    command = { type = add_division which = "第七师 " value = bergsjaeger  when = 0 }
+    command = { type = add_division which = "第八师 " value = bergsjaeger  when = 0 }
+    command = { type = add_division which = "第九师 " value = bergsjaeger  when = 0 }
+    command = { type = add_corps which = "人民志愿军第四军 " value = land where = 1394 }
+    command = { type = add_division which = "第10师 " value = infantry
+  when = 0 }
+    command = { type = add_division which = "第11师 " value = infantry
+  when = 0 }
+    command = { type = add_division which = "第12师 " value = infantry
+  when = 0 }
+    command = { type = add_corps which = "人民志愿军第五军 " value = land where = 1394 }
+    command = { type = add_division which = "第13师 " value = infantry
+  when = 0 }
+    command = { type = add_division which = "第14师 " value = infantry  when = 0 }
+    command = { type = add_division which = "第15师 " value = infantry  when = 0 }
+  }
+}
+################
+#第一次战役
+#############################################
+event = {
+  id = 20426
+  random = no
+  country = CHC
+  
+  name = "第一次战役 " 
+  desc = "抗美援朝战争第一次战役是中国人民志愿军于1950年10月25日～ 11月5日，在朝中边境及其附近地区，对美国为首的“联合国军” 及其指挥的南朝鲜（韩国）军突然发起的进攻战役。 第一次战役 是敌我双方在运动中的不期遭遇战打响的，彭德怀将其称为“遭 遇与反突击战役”。志愿军以战略上的后发制人和战役的突然性， 将冒进至鸭绿江的敌人以迎头痛击。 "
+  style = 0
+#  picture = "第一次战役"
+
+  trigger = {
+    garrison = { country = CHC province = 1393 type = land size = 20 area = no } 
+    event = 19880
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "继续进军！ "
+    command = { type = breakthrough value = 2 }
+    command = { type = sce_frequency value = 2 }
+    command = { type = soft_attack which = land value = 2 }
+    command = { type = mountain_attack which = infantry value = 5 }
+  }
+}
+################
+#第二次战役
+#############################################
+event = {
+  id = 20427
+  random = no
+  country = CHC
+  
+  name = "第二次战役 " 
+  desc = "抗美援朝战争第二次战役，1950年11月7-12月24日，中国人民志 愿军在朝鲜人民军配合下，将美国为首的“联合国军”及其指挥 的南朝鲜（韩国）军诱至预定战场后，对其突然发起反击的战役， 是扭转朝鲜战局的一次战役。 "
+  style = 0
+#  picture = "第二次战役"
+
+  trigger = {
+    garrison = { country = CHC province = 3252 type = land size = 25 area = no } 
+    event = 19880
+    event = 20426
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "继续进军！ "
+    command = { type = counterattack value = 2 }
+    command = { type = sce_frequency value = 2 }
+    command = { type = mountain_attack which = infantry value = 5 }
+  }
+}
+################
+#第三次战役
+#############################################
+event = {
+  id = 20428
+  random = no
+  country = CHC
+  
+  name = "第三次战役 " 
+  desc = "抗美援朝战争第三次战役，是突破三八线的一次进攻战役。中国 人民志愿军与朝鲜人民军并肩作战，经七昼夜的连续进攻，歼敌 以美军为首的“联合国军”一万九千八百余人，挺进 八十至一百一十公里，前出到三七线附近，解放了汉城，粉碎了 美国及仆从国在联合国玩弄的“停战” 阴谋，及守住三八线，争 取时间，准备再次北犯的企图。进一步扩大了新中国在国际上的 影响，加深了敌人内部的矛盾。 "
+  style = 0
+#  picture = "第三次战役"
+
+  trigger = {
+    garrison = { country = CHC province = 3252 type = land size = 15 area = no } 
+    garrison = { country = CHC province = 3247 type = land size = 15 area = no } 
+    garrison = { country = CHC province = 1199 type = land size = 20 area = no } 
+    event = 19880
+    event = 20427
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "继续进军！ "
+    command = { type = assault value = 2 }
+    command = { type = sce_frequency value = 2 }
+    command = { type = hill_attack which = infantry value = 5 }
+  }
+}
+################
+#第四次战役
+#############################################
+event = {
+  id = 20429
+  random = no
+  country = CHC
+  
+  name = "第四次战役 " 
+  desc = "1951年1月25日～4月21日，中国人民志愿军和朝鲜人民军为制止 美国为首的“联合国军”及其指挥的南朝鲜（韩国）军发动的攻 势，争取时间掩护后续兵团到达，进行反击准备，在“三八线” 南北地区进行的防御战役。 "
+  style = 0
+#  picture = "第四次战役"
+
+  trigger = {
+    garrison = { country = CHC province = 1199 type = land size = 25 area = no } 
+    garrison = { country = CHC province = 3678 type = land size = 20 area = no } 
+    event = 19880
+    event = 20428
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "继续进军！ "
+    command = { type = mountain_defense which = infantry value = 10 }
+  }
+}
+################
+#第五次战役
+#############################################
+event = {
+  id = 20430
+  random = no
+  country = CHC
+  
+  name = "第五次战役 " 
+  desc = "抗美援朝战争第五次战役，是为打破敌“联合国军”从我侧翼登 陆的企图而实施的进攻战役。英勇的中国人民志愿军在极其艰苦 的条件下，经过五十天的战斗，歼敌“联合国军”多国部队八万 二千余人，缴获和消耗了敌人大量物资装备，迫使敌军转入了战 略防御，也使中国军队进一步取得了对美军作战的经验。但由于 种种原因，志愿军损失也很大。 "
+  style = 0
+#  picture = "第五次战役"
+
+  trigger = {
+    garrison = { country = CHC province = 3248 type = land size = 25 area = no } 
+    garrison = { country = CHC province = 1200 type = land size = 25 area = no } 
+    event = 19880
+    event = 20429
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 1 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "继续进军！ "
+    command = { type = mountain_defense which = infantry value = 10 }
+    command = { type = hill_defense which = infantry value = 10 }
+  }
+}
+################
+#上甘岭战役
+#############################################
+event = {
+  id = 20431
+  random = no
+  country = CHC
+  
+  name = "上甘岭战役 " 
+  desc = "上甘岭战役是朝鲜战争后期僵持阶段的一次主要战役。战役由美 国第9军发动，以争夺朝鲜中部金化郡五圣山南麓村庄上甘岭及其 附近地区的控制权为主，属于“联合国军”金化攻势的一部分。 此役前后历时43天，在3.7平方公里的地区，共发射炮弹超过230 万发，双方伤亡约3万人。此战在中美两国都产生了深远的影响。 "
+  style = 0
+#  picture = "上甘岭战役"
+
+  trigger = {
+    garrison = { country = CHC province = 3248 type = land size = 20 area = no } 
+    garrison = { country = CHC province = 1200 type = land size = 20 area = no } 
+    garrison = { country = CHC province = 1200 type = land size = 20 area = no } 
+    event = 19880
+    event = 20430
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+  } 
+  date = { day = 14 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "坚决抵抗！ "
+    command = { type = mountain_defense which = infantry value = 10 }
+    command = { type = hill_defense which = infantry value = 10 }
+  }
+}
+################
+#苏联的空军援助
+#############################################
+event = {
+  id = 20435
+  random = no
+  country = CHC
+
+  name = "苏联的空军援助 " 
+  desc = "在朝鲜战争期间，由于中国缺乏空军，无法夺取制空权，斯大林 决定派遣空军部队来支援中国。 "
+  style = 0
+  
+  
+  action_a = {
+    name = "部署部队 "
+    command = { type = relation which = SOV value = 20 }
+    command = { type = add_division which = "第一队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第二队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第3队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第4队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第5队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第6队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第7队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第8队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第9队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第10队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第11队 " value = multi_role when = 4 }
+    command = { type = add_division which = "第12队 " value = multi_role when = 4 }
+  }
+}
+################
+#抗美援朝生产日
+#############################################
+event = {
+  id = 20446
+  random = no
+  country = CHC
+  persistent = yes
+  
+  name = "抗美援朝生产日 " 
+  desc = "在抗美援朝期间，全国工人为了援助这一活动，展开了生产支援 前线的活动。 "
+  style = 0
+  
+  trigger = {
+    event = 19880
+    war = { country = CHC  country = KOR }
+     flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+    war = { country = PRK  country = KOR }
+   }
+  
+  date = { day = 10 month = june year = 1950 }
+  offset = 15
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "加紧生产 "
+    command = { type = supplies value = 100 }
+    command = { type = metalpool value = 1000 }
+    command = { type = energypool value = 1000 }
+  }
+}
+################
+#开城谈判——朝鲜
+#############################################
+event = {
+  id = 20448
+  random = no
+  country = PRK
+
+  name = "开城谈判 " 
+  desc = "1951年7月10日，朝韩双方对峙在“三八线”附近，战争进展到了 和平谈判阶段，但是停战一直没有实现，其中一开始是因为军事 分界线问题，双方僵持了近半年，终于使双方认可“以三八线为 军事分界线”。其次是关于战俘的处理问题，就这个问题致使战 争延长了1年之久，从而成为停战签字的惟一障碍。 "
+  style = 0
+#  picture = "开城谈判"
+  
+  trigger = {  
+    event = 19880
+    war = { country = PRK  country = KOR }
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+  } 
+  date = { day = 10 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "进行谈判 "
+    ai_chance = 95
+    command = { type = relation which = KOR value = 5 }
+    command = { type = relation which = USA value = 5 }
+    command = { type = relation which = CHC value = 5 }
+    command = { type = trigger which = 20441 }
+  }
+  action_b = {
+    name = "决不谈判 "
+    ai_chance = 5
+    command = { type = relation which = KOR value = -20 }
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = CHC value = -5 }
+  }
+}
+################
+#开城谈判——韩国
+#############################################
+event = {
+  id = 20441
+  random = no
+  country = KOR
+
+  name = "开城谈判 " 
+  desc = "1951年7月10日，朝韩双方对峙在“三八线”附近，战争进展到了 和平谈判阶段，但是停战一直没有实现，其中一开始是因为军事 分界线问题，双方僵持了近半年，终于使双方认可“以三八线为 军事分界线”。其次是关于战俘的处理问题，就这个问题致使战 争延长了1年之久，从而成为停战签字的惟一障碍。 "
+  style = 0
+#  picture = "开城谈判"
+  
+  
+  action_a = {
+    name = "进行谈判 "
+    command = { type = relation which = KOR value = 5 }
+    command = { type = relation which = USA value = 5 }
+    command = { type = relation which = CHC value = 5 }
+    command = { type = trigger which = 20442 }
+  }
+}
+################
+#开城谈判——联合国
+#############################################
+event = {
+  id = 20443
+  random = no
+  country = U99
+
+  name = "开城谈判 " 
+  desc = "1951年7月10日，朝韩双方对峙在“三八线”附近，战争进展到了 和平谈判阶段，但是停战一直没有实现，其中一开始是因为军事 分界线问题，双方僵持了近半年，终于使双方认可“以三八线为 军事分界线”。其次是关于战俘的处理问题，就这个问题致使战 争延长了1年之久，从而成为停战签字的惟一障碍。 "
+  style = 0
+#  picture = "开城谈判"
+  
+  
+  action_a = {
+    name = "进行谈判 "
+    command = { type = relation which = KOR value = 5 }
+    command = { type = relation which = USA value = 5 }
+    command = { type = relation which = CHC value = 5 }
+  }
+}
+
+################
+#开城谈判——中国
+#############################################
+event = {
+  id = 20442
+  random = no
+  country = CHC
+
+  name = "开城谈判 " 
+  desc = "1951年7月10日，朝韩双方对峙在“三八线”附近，战争进展到了 和平谈判阶段，但是停战一直没有实现，其中一开始是因为军事 分界线问题，双方僵持了近半年，终于使双方认可“以三八线为 军事分界线”。其次是关于战俘的处理问题，就这个问题致使战 争延长了1年之久，从而成为停战签字的惟一障碍。 "
+  style = 0
+#  picture = "开城谈判"
+  
+  
+  action_a = {
+    name = "进行谈判 "
+    command = { type = relation which = KOR value = 5 }
+    command = { type = relation which = USA value = 5 }
+    command = { type = relation which = CHC value = 5 }
+    command = { type = trigger which = 20443 }
+  }
+}
+################
+#朝鲜半岛停战协定——朝鲜
+#############################################
+event = {
+  id = 20444
+  random = no
+  country = PRK
+
+  name = "朝鲜半岛停战协定 " 
+  desc = "1953年7月27日上午10时双方签署了《朝鲜停战协定》及《关于停 战协定的临时补充协议》的停火协议。谈判的最终结果是在北纬 38°线附近以1953年7月27日22点整双方实际控制线南北各2公里宽 设立非军事区。 "
+  style = 0
+#  picture = "朝鲜半岛停战"
+  
+  trigger = {  
+    event = 20443
+    war = { country = PRK  country = KOR }
+    flag = korean_war 
+    not = {
+      flag = "korean war end"
+    }
+  } 
+  date = { day = 27 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "签署 "
+    command = { type = peace which = KOR value = 0 }
+    command = { type = setflag which = "korean war end" }
+  }
+  action_b = {
+    name = "不签署 "
+    command = { type = dissent value = 10 }
+  }
+}
+
+event = {
+	id = 19107401
+	country = chc
+	random = no
+
+	trigger = {  
+	random = 10
+   	war = { country = chc   country = u62 }
+	 }   
+  
+	name = "毛岸英牺牲 "
+	desc = "毛岸英（1922年10月24日－1950年11月25日） 本名远仁，字岸英，初名永福，湖南湘潭人，是毛 泽东与其妻子杨开慧的长子，在抗美援朝战争中牺 牲。安葬于朝鲜平安南道桧仓郡的中国人民志愿军 烈士陵园。 "
+	style = 0
+#	picture = "maoanyin"
+
+
+	date = { day = 25 month = june year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "向岸英同志致敬！ "
+    	command = { type = sleepleader which = 767516 }
+    	command = { type = morale which = land value = 1 }
+           	}       	
+}
+event = {
+	id = 19107402
+	country = chc
+	random = no
+
+	trigger = {  
+		random = 10
+   		war = { country = chc   country = u62 }
+	 }   
+  
+	name = "邱少云牺牲 "
+	desc = "邱少云（1926～1952） 革命烈士，中国人民志愿军一级英雄。抗美援朝战 争期间在一次执行潜伏任务时，不幸被敌人燃烧弹 击中，全身被火焰燃烧，但邱少云为了不暴露目标 影响整体战斗部署，始终趴在火中，纹丝不动，直 至光荣牺牲，用自己的生命换取了整场战斗的胜利。 "
+	style = 0
+#	picture = "maoanyin"
+
+
+	date = { day = 25 month = june year = 1933 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1970 }
+
+
+    action_a = {
+		name = "烈火中永生！ "
+    command = { type = morale which = land value = 1 }
+           	}       	
+}

@@ -1,0 +1,3542 @@
+# Israel Palestine and Arab Union events
+# Israel 640000-640299
+# Palestine 640300-640499
+# Arab Union 640500-640999
+###################################
+# Historic Knesset elections
+#############################
+event = {
+	id = 640000
+	random = no
+	country = ISR
+	
+	trigger = { government = democratic }
+
+	date = { day = 24 month = january year = 1949 }
+
+	name = "The First Knesset"
+	desc = "Israel has a unique system of elections. Numerous paries have members in the Knesset. But in the end, generally either a left or a right bloc forms a government with the cooperation of minor parties. Occasionally the major parties reach across party lines to form 'national unity' coalitions in order to exclude minor parties. Moderate left coalitions were dominant in the early years."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 94
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		#HOS not contested in Knesset elections
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = ministerofsecurity which = 559029 }
+		command = { type = ministerofintelligence which = 559098 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Vote Communist"# historically their alliance came in second in the voting
+		ai_chance = 1
+		#game engine chooses
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = democratic value = 1 }
+		#makes Leninist
+		command = { type = domestic which = democratic value = 3 }
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = dissent value = 10 }
+		command = { type = leave_alliance }
+		command = { type = alliance which = SOV }
+	}
+}
+event = {
+	id = 640001
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 29 month = july year = 1951 }
+
+	name = "The Second Knesset"
+	desc = "David Ben Gurion's party strengthened its hold on politics. There were 4 governments under the second Knesset, with several ministerial changes."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640002
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 27 month = july year = 1951 }
+
+	name = "The Second Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640001 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640003
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 23 month = december year = 1952 }
+
+	name = "Government Reshuffle"
+	desc = "There was a minor cabinet reshuffle, affecting the position of minister of security. For HOI2, you can use either the Interior Minister Rokach or the Minister of Police Bechor-Shalkom Sheetrit."
+
+	action_a = {
+		name = "Israel Rokach"
+		ai_chance = 75
+		command = { type = ministerofsecurity which = 559030 }
+	}
+	action_b = {
+		name = "Bechor Shalom Sheetrit"
+		ai_chance = 25
+		command = { type = ministerofsecurity which = 559086 }
+	}
+	action_c = {
+		name = "Keep current minister"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640004
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559002 }
+
+	date = { day = 25 month = january year = 1954 }
+
+	name = "Ben-Gurion Resigns"
+	desc = "David Ben-Gurion resigned as Prime Minister and Moshe Sharret took over. Lavon became Defense Minister."
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = headofgovernment which = 559066 }#Sharett
+		command = { type = armamentminister which = 559078 }#Lavon
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640005
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559066 }
+
+	date = { day = 20 month = february year = 1955 }
+
+	name = "The Lavon Affair"
+	desc = "A failed Mossad operation in Egypt caused considerable embarrassment for Israel. Pinhas Lavon was blamed (some say wrongly) and forced to resign."
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = sleepminister which = 559078 }#Lavon
+		command = { type = armamentminister which = 559077 }#Ben Gurion
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640006
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 25 month = july year = 1955 }
+
+	name = "The Third Knesset"
+	desc = "David Ben Gurion returned to office and his party formed the next government."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = ministerofsecurity which = 559086 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640007
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 23 month = july year = 1955 }
+
+	name = "The Third Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640006 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559003 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = ministerofsecurity which = 559086 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640008
+	random = no
+	country = ISR
+	
+	trigger = { 
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}	
+	}
+
+	date = { day = 17 month = june year = 1956 }
+
+	name = "Golda Meir becomes Foreign Minister"
+	desc = "Golda Meir, the woman whom Ben-Gurion called 'the best man in the cabinet', took over as Foreign Minister."
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type =  foreignminister which = 559071 }
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640009
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 2 month = november year = 1959 }
+
+	name = "The Fourth Knesset"
+	desc = "Israeli voters went to the polls in November 1959. The government collapsed less than 2 years later from a no-confidence vote."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640010
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 0 month = november year = 1959 }
+
+	name = "The Fourth Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640009 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640011
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 14 month = november year = 1961 }
+
+	name = "The Fifth Knesset"
+	desc = "The previous government was brought down in a no-confidence vote."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640012
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 12 month = november year = 1961 }
+
+	name = "The Fifth Knesset"
+	desc = "The previous government was brought down in a no-confidence vote."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640011 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559002 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559077 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640013
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559002 }
+
+	date = { day = 15 month = june year = 1963 }
+
+	name = "Ben-Gurion Resigns Again"
+	desc = "David Ben-Gurion resigned as Prime Minister and Defense Minister and Levi Eshkol took over."
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = headofgovernment which = 559065 }#Eshkol
+		command = { type = armamentminister which = 559004 }#Eshkol
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640014
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 0 month = november year = 1965 }
+
+	name = "The Sixth Knesset"
+	desc = "Voters went to the polls and returned the left coalition to power."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559065 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559004 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640015
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 27 month = october year = 1965 }
+
+	name = "The Sixth Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640014 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559065 }
+		command = { type = foreignminister which = 559071 }
+		command = { type = armamentminister which = 559004 }
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640016
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559065 }
+
+	date = { day = 0 month = june year = 1967 }
+
+	name = "Dayan Becomes Defense Minister"
+	desc = "The popular Moshe Dayan became Defense Minister, and in the subsequent Six-Day War, his image became a familiar face."
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = armamentminister which = 559076 }#Dayan
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+
+event = {
+	id = 640017
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 28 month = october year = 1969 }
+
+	name = "The Seventh Knesset"
+	desc = "Voters went to the polls and returned the left coalition to power."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559139 }#Golda Meir
+		command = { type = foreignminister which = 559070 }#Abba Eban
+		command = { type = armamentminister which = 559076 }#Moshe Dayan
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640018
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 26 month = october year = 1969 }
+
+	name = "The Seventh Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640017 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559139 }#Golda Meir
+		command = { type = foreignminister which = 559070 }#Abba Eban
+		command = { type = armamentminister which = 559140 }#Moshe Dayan
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640019
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559139 }
+
+	date = { day = 15 month = july year = 1970 }
+
+	name = "Haim-Moshe Shapira Dies"
+	desc = "Haim-Moshe Shapira died, and was replaced by Yosef Burg."
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559029 }#H-M-Shapira
+		command = { type = ministerofsecurity which = 559140 }#Yosef Burg
+		command = { type = sleepevent which = 640020 }
+	}
+}
+
+event = {
+	id = 640020
+	random = no
+	country = ISR
+	
+	trigger = { NOT = { headofgovernment = 559139 } }
+
+	date = { day = 15 month = july year = 1970 }
+
+	name = "Haim-Moshe Shapira Dies"
+	desc = "Haim-Moshe Shapira dies in office after a long tenure."
+
+	action_a = {
+		name = "YES"
+		command = { type = sleepminister which = 559029 }#H-M-Shapira
+		command = { type = sleepevent which = 640019 }
+	}
+}
+event = {
+	id = 640021
+	random = no
+	country = ISR
+	
+	trigger = {
+		OR = {
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	 }
+
+	date = { day = 29 month = december year = 1973 }
+
+	name = "The Eighth Knesset"
+	desc = "Voters went to the polls and returned the left coalition to power."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 85
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559139 }#Golda Meir
+		command = { type = foreignminister which = 559070 }#Abba Eban
+		command = { type = armamentminister which = 559076 }#Moshe Dayan
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 5
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 10
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640022
+	random = no
+	country = ISR
+	
+	trigger = { 	ideology = social_conservative }
+
+	date = { day = 27 month = december year = 1973 }
+
+	name = "The Eigthth Knesset"
+	desc = "Israel's right-wing government was unpopular with the labor unions but enjoyed support from business, military, nationalist, and religious groups."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left" #SL
+		ai_chance = 12
+		command = { type = sleepevent which = 640021 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559139 }#Golda Meir
+		command = { type = foreignminister which = 559070 }#Abba Eban
+		command = { type = armamentminister which = 559140 }#Moshe Dayan
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right" #SC so can use PA ministers
+		ai_chance = 88
+		#game engine will choose
+		command = { type = set_domestic which = political_left value = 1 }
+		#ensures rightists are selected
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640023
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559139 }
+
+	date = { day = 2 month = june year = 1974 }
+
+	name = "Resignation of Golda Meir"
+	desc = "Following the Yom Kippur War, there were allegations that the government was not adequately prepared for the surprise attack. This led to the resignation of Golda Meir and her replacement by former Chief of Staff Yitzhak Rabin."
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 99
+		command = { type = headofgovernment which = 559141 }#Rabin
+		command = { type = foreignminister which = 559142 }#Allon
+		command = { type = armamentminister which = 559143 }#Peres
+		command = { type = ministerofsecurity which = 559144 }#Hillel
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 640024
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559141}
+
+	date = { day = 28 month = october year = 1974 }
+
+	name = "Internal Affairs Ministry"
+	desc = "Yosef Burg resumed his post at the Ministry of Interior."
+	picture = "knesset"
+
+	action_a = {
+		name = "Burg"
+		ai_chance = 90
+		command = { type = ministerofsecurity which = 559140 }#Burg
+	}
+	action_b = {
+		name = "Hillel"
+		ai_chance = 10
+		command = { type = ministerofsecurity which = 559144 }#Hillel
+		command = { type = sleepevent which = 640025 }
+	}
+}
+event = {
+	id = 640025
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559141}
+
+	date = { day = 28 month = october year = 1974 }
+
+	name = "Internal Affairs Ministry"
+	desc = "Hillel resumed his post at the Ministry of Interior."
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 90
+		command = { type = ministerofsecurity which = 559144 }#Hillel
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 10
+		command = { type = money value = -1 }#Burg
+	}
+}
+event = {
+	id = 640026
+	random = no
+	country = ISR
+	
+	trigger = { government = democratic }
+
+	date = { day = 16 month = may year = 1977 }
+
+	name = "The Ninth Knesset"
+	desc = "For the first time in the history of modern Israel, a rightist coalition headed by Menachem Begin took power. The dramatic shift in Israeli politics became known as 'the revolution.'"
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559067 }#Begin
+		command = { type = foreignminister which = 559145 }#Dayan
+		command = { type = armamentminister which = 559132 }#Weizman
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Left"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559141 }#Rabin
+		command = { type = foreignminister which = 559142 }#Allon
+		command = { type = armamentminister which = 559143 }#Peres
+		command = { type = ministerofsecurity which = 559144 }#Hillel
+		command = { type = dissent value = 3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = dissent value = 3 }
+	}
+}
+event = {
+	id = 640027
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559067}
+
+	date = { day = 22 month = october year = 1979 }
+
+	name = "Begin takes over Foreign Ministry"
+	desc = "Menachem Begin took over as Foreign Minister."
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 99
+		command = { type = foreignminister which = 559129 }#Begin FM
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 1
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640028
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559067}
+
+	date = { day = 9 month = march year = 1980 }
+
+	name = "Shamir becomes Foreign Minister"
+	desc = "Yitzhak Shamir took over as Foreign Minister."
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 99
+		command = { type = foreignminister which = 559072 }#Shamir FM
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 1
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640029
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559067 }
+
+	date = { day = 27 month = may year = 1980 }
+
+	name = "Begin takes over Defense Ministry"
+	desc = "Menachem Begin took over as Defense Minister."
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 99
+		command = { type = armamentminister which = 559129 }#Begin AM
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 1
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640030
+	random = no
+	country = ISR
+	
+	trigger = { ideology = social_conservative }
+
+	date = { day = 29 month = june year = 1981 }
+
+	name = "The Tenth Knesset"
+	desc = "The right wing continued its hold on power, but by only by a majority of one Knesset member in the governing coalition."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 85
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559067 }#Begin
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559148 }#Sharon
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Left"
+		ai_chance = 15
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559141 }#Peres
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Keep current government"
+		ai_chance = 0
+		command = { type = dissent value = 4 }
+	}
+}
+event = {
+	id = 640031
+	random = no
+	country = ISR
+	
+	trigger = { 
+		OR = {
+			ideology = social_democrat
+			ideology = social_liberal
+			ideology = market_liberal
+		}
+	}
+
+	date = { day = 27 month = june year = 1981 }
+
+	name = "The Tenth Knesset"
+	desc = "The left wing continued to weaken due to internal divisions between civil rights factions and religious oriented Jews. The left was able to hold power only by including prominent rightists in a government of national unity."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 35
+		command = { type = sleepevent which = 640030 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559067 }#Begin
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559148 }#Sharon
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Centrist"
+		ai_chance = 65
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559141 }#Peres
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_c = {
+		name = "Civil Rights"
+		ai_chance = 0
+		command = { type = dissent value = 4 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		#game engine installs ministers--might include communists but government is SD
+	}
+}
+event = {
+	id = 640032
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559067 }
+
+	date = { day = 22 month = february year = 1983 }
+
+	name = "Moshe Arens Becomes Defense Minister"
+	desc = "Moshe Arens Becomes Defense Minister"
+	picture = "knesset"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = armamentminister which = 559079 }#Arens
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640033
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559067 }
+	
+	date = { day = 9 month = october year = 1983 }
+
+	name = "Resignation of Menachem Begin"
+	desc = "Menachem Begin resigned for health reasons, and was replaced by Yitzhak Shamir, who formed a government for the rest of the term of the Tenth Knesset."
+	picture = "knesset"
+
+	action_a = {
+		name = "OK"
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559147 }#Shamir
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559079 }#Arens
+		command = { type = ministerofsecurity which = 559140 }#Burg
+	}
+}
+event = {
+	id = 640034
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 22 month = july year = 1984 }
+
+	name = "The Eleventh Knesset"
+	desc = "Neither the Alignment, the leftist alliance, nor the Likud, the largest conservative party, could form a government with the smaller parties. Therefore they formed a government of national unity."
+	picture = "knesset"
+
+	action_a = {
+		name = "National Unity"
+		ai_chance = 100
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559141 }#Peres
+		command = { type = foreignminister which = 559072 }#Shamir
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559140 }#Burg
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Keep Current"#for player with custom ministers
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+	action_c = {
+		name = "Civil Rights"#Social democratic alternative for player only--not historically likely
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		#game engine installs ministers--might include communists but government is SD
+	}
+}
+event = {
+	id = 640035
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559141 }
+
+	date = { day = 19 month = october year = 1986 }
+
+	name = "National Unity Government"
+	desc = "As per agreement, Yitzhak Shamir and Shimon Peres switched ministries."
+	picture = "knesset"
+
+	action_a = {
+		name = "OK"
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559147 }#Shamir
+		command = { type = foreignminister which = 559152 }#Peres
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559151 }#Peretz
+	}
+}
+event = {
+	id = 640036
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 1 month = november year = 1988 }
+
+	name = "The Twelfth Knesset"
+	desc = "Yitzhak Shamir formed a national unity coalition government with ministers from the two major parties and several minor parties."
+	picture = "knesset"
+
+	action_a = {
+		name = "National Unity"
+		ai_chance = 100
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559147 }#Shamir
+		command = { type = foreignminister which = 559153 }#Arens
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559154 }#Deri
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Keep Current"#for player with custom ministers
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+	action_c = {
+		name = "Civil Rights"#Social democratic alternative for player only--not historically likely
+		ai_chance = 0
+		command = { type = dissent value = 6 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = domestic which = democratic value = -9 }
+		command = { type = domestic which = democratic value = 9 }
+		#game engine installs ministers--might include communists but government is SD
+	}
+}
+event = {
+	id = 640037
+	random = no
+	country = ISR
+	
+	# to be triggered by Israeli non-acceptance of US peace plan on June 11, 1990
+
+	name = "The No Confidence Vote"
+	desc = "Yitzhak Shamir refused to accept a US peace plan, leading the Alignment to introduce a no-confidence vote, which passed. Israeli President Herzog then asked Shimon Peres to form a government, but he proved unable to. So he turned to Yitzhak Shamir, who was able to form a coalition government."
+	picture = "knesset"
+
+	action_a = {
+		name = "Yizhak Shamir"
+		ai_chance = 90
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559147 }#Shamir
+		command = { type = foreignminister which = 559158 }#Levy
+		command = { type = armamentminister which = 559079 }#Arens
+		command = { type = ministerofsecurity which = 559154 }#Deri
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Shimon Peres"#
+		ai_chance = 10
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }#social liberal
+		command = { type = headofgovernment which = 559141 }#Rabin
+		command = { type = foreignminister which = 559152 }#Peres
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559154 }#Deri
+	}
+}
+event = {
+	id = 640038
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 22 month = june year = 1992 }
+
+	name = "The Thirteenth Knesset"
+	desc = "A coalition of leftist parties who also favored peace with the Palestinians took power after the June elections."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left"
+		ai_chance = 94
+		command = { type = set_domestic which = political_left value = 7 }#social liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559141 }#Rabin
+		command = { type = foreignminister which = 559152 }#Peres
+		command = { type = armamentminister which = 559150 }#Rabin
+		command = { type = ministerofsecurity which = 559154 }#Deri
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right"
+		ai_chance = 6
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559147 }#Shamir
+		command = { type = foreignminister which = 559158 }#Levy
+		command = { type = armamentminister which = 559079 }#Arens
+		command = { type = ministerofsecurity which = 559154 }#Deri
+	}
+	action_c = {
+		name = "Keep Current"#for player with custom ministers
+		ai_chance = 0
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640039
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559141
+	}
+
+	date = { day = 3 month = september year = 1993 }
+
+	name = "Yitzhak Rabin Internal Affairs Minister"
+	desc = "Yitzhak rabin became Internal Affairs Minister followintg the departure of a minor party in the coalition."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "OK"
+		command = { type = ministerofsecurity which = 559127 }#Rabin
+	}
+}
+###event moved from death events section and placed here--number retained
+event = {
+	id = 640146
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559103
+		random = 95
+	}
+
+
+	date = { day = 3 month = november year = 1995 }
+
+	name = "Yitzhak Rabin Assassinated!"
+	desc = "Yitzhak rabin was assassinated by Yigal Amir, a right-wing nationalist who was opposed to the peace process with the Palestinians."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559141 }#Rabin
+		command = { type = sleepminister which = 559127 }#Rabin
+		command = { type = sleepminister which = 559103 }#Rabin
+		command = { type = sleepminister which = 559150 }#Rabin
+		command = { type = sleepminister which = 559202 }#Rabin
+		command = { type = headofgovernment which = 559149 }#Peres
+		command = { type = foreignminister which = 559155 }#Barak
+		command = { type = armamentminister which = 559143 }#Peres
+		command = { type = ministerofsecurity which = 559156 }#Shahal
+		command = { type = sleepevent which = 640147 }
+	}
+}
+event = {
+	id = 640040
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 28 month = may year = 1996 }
+
+	name = "The Fourteenth Knesset"
+	desc = "For the first time ever, the prime Minister of Israel became an elected position. Benjamin Netanyahu won the election and the right to form a government, defeating Shimon Peres."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559157 }#Netanyahu
+		command = { type = foreignminister which = 559158 }#Levy
+		command = { type = armamentminister which = 559159 }#Y Mordechai
+		command = { type = ministerofsecurity which = 559160 }#Kahalani
+	}
+	action_b = {
+		name = "Elect Left"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 7 }#social liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559149 }#Peres
+		command = { type = foreignminister which = 559155 }#Barak
+		command = { type = armamentminister which = 559143 }#Peres
+		command = { type = ministerofsecurity which = 559156 }#Shahal
+		command = { type = dissent value = -3 }
+	}
+	# change in political system precludes option c
+}
+event = {
+	id = 640041
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559157
+	}
+
+	date = { day = 12 month = october year = 1998 }
+
+	name = "Sharon becomes Foreigh Minister"
+	desc = "Sharon becomes Foreigh Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		
+		command = { type = foreignminister which = 559131 }#Sharon
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640042
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559157
+	}
+
+	date = { day = 27 month = january year = 1999 }
+
+	name = "Arens becomes Defense Minister"
+	desc = "Arens becomes Defense Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = armamentminister which = 559079 }#Arens
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640043
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 28 month = may year = 1999 }
+
+	name = "The Fifteenth Knesset"
+	desc = "Ehud Barak won the election and the right to form a government, defeating incumbent Benjamin Netanyahu."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 7 }#social liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559161 }#Barak
+		command = { type = foreignminister which = 559158 }#Levy
+		command = { type = armamentminister which = 559163 }#Barak
+		command = { type = ministerofsecurity which = 559164 }#Ben-Ami
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559157 }#Netanyahu
+		command = { type = foreignminister which = 559158 }#Levy
+		command = { type = armamentminister which = 559159 }#Y Mordechai
+		command = { type = ministerofsecurity which = 559160 }#Kahalani
+		command = { type = dissent value = -3 }
+	}
+}
+event = {
+	id = 640044
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559161
+	}
+
+	date = { day = 5 month = february year = 2001 }
+
+	name = "Ehud Barak Resigns"
+	desc = "Ehud Barak resigned as Prime Minister, forcing new elections, which Ariel Sharon won easily. Since no Knesset election was held, this meant that he had to form a government of national unity, including leftists. Elections for Prime Minister were subsequently scrapped in favor of the older system."
+	picture = "knesset"
+
+	action_a = {
+		name = "OK"
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559165 }#Sharon
+		command = { type = foreignminister which = 559152 }#Peres
+		command = { type = armamentminister which = 559166 }#Ben-Elizier
+		command = { type = ministerofsecurity which = 559167 }#Landau
+		command = { type = dissent value = -3 }
+	}
+}
+event = {
+	id = 640045
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559165
+	}
+
+	date = { day = 10 month = february year = 2002 }
+
+	name = "Sharon becomes Foreign Minister"
+	desc = "Sharon becomes Foreign Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = foreignminister which = 559131 }#Sharon
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640046
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559165
+	}
+
+	date = { day = 3 month = november year = 2002 }
+
+	name = "Mofaz becomes Defense Minister"
+	desc = "Mofaz becomes Defense Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = foreignminister which = 559169 }#Mofaz
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640047
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559165
+	}
+
+	date = { day = 5 month = november year = 2002 }
+
+	name = "Netanyahu becomes Foreign Minister"
+	desc = "Netanyahu becomes Foreign Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = foreignminister which = 559168 }#Netanyahu
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640048
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 28 month = january year = 2003 }
+
+	name = "The Sixteenth Knesset"
+	desc = "Ariel Sharon won a convincing electoral victory for the Likud."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559165 }#Sharon
+		command = { type = foreignminister which = 559170 }#LS Shalom
+		command = { type = armamentminister which = 559169 }#Mofaz
+		command = { type = ministerofsecurity which = 559171 }#Hanegbi
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Left"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559161 }#Olmert
+		command = { type = foreignminister which = 559158 }#Livni
+		command = { type = armamentminister which = 559163 }#Peretz
+		command = { type = ministerofsecurity which = 559164 }#Dicter
+		command = { type = dissent value = -3 }
+	}
+}
+event = {
+	id = 640049
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559165
+	}
+
+	date = { day = 5 month = september year = 2004 }
+
+	name = "Minister Forced to Resign"
+	desc = "Tzachi Hanegbi was forced to resign due to a corruption scandal."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = ministerofsecurity which = 559172 }#Ezra
+		command = { type = sleepminister which = 559171 }
+	}
+}
+event = {
+	id = 640050
+	random = no
+	country = ISR
+	
+	trigger = { 
+		NOT = { headofgovernment = 559165 }
+	}
+
+	date = { day = 5 month = september year = 2004 }
+
+	name = "Minister Forced to Resign"
+	desc = "Tzachi Hanegbi was forced to resign due to a corruption scandal."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = sleepminister which = 559171 }
+	}
+}
+
+#Ariel Sharon stroke events
+event = {
+	id = 640162
+	random = no
+	country = ISR
+	
+	trigger = { head of government = 559165 }
+
+	date = { day = 3 month = january year = 2006 }
+
+	name = "Ariel Sharon Goes into a Coma"
+	desc = "Veteran general and Prime Minister Ariel Sharon went into a vegetative state, and has been maintained on life support machines ever since. There is little hope that he will regain consciousness. Deputy Prime Minister Olmert took over and new elections were called."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559087 }#Sharon
+		command = { type = sleepminister which = 559108 }#Sharon
+		command = { type = sleepminister which = 559110 }#Sharon
+		command = { type = sleepminister which = 559117 }#Sharon
+		command = { type = sleepminister which = 559131 }#Sharon
+		command = { type = sleepminister which = 559148 }#Sharon
+		command = { type = sleepminister which = 559165 }#Sharon
+		command = { type = headofgovernment which = 559161 }#Olmert
+	}
+}
+event = {
+	id = 640163
+	random = no
+	country = ISR
+	
+	trigger = { NOT = { head of government = 559165 } }
+
+	date = { day = 1 month = january year = 2006 }
+
+	name = "Ariel Sharon Goes into a Coma"
+	desc = "Veteran general and Prime Minister Ariel Sharon went into a vegetative state, and has been maintained on life support machines ever since. There is little hope that he will regain consciousness."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559087 }#Sharon
+		command = { type = sleepminister which = 559108 }#Sharon
+		command = { type = sleepminister which = 559110 }#Sharon
+		command = { type = sleepminister which = 559117 }#Sharon
+		command = { type = sleepminister which = 559131 }#Sharon
+		command = { type = sleepminister which = 559148 }#Sharon
+		command = { type = sleepminister which = 559165 }#Sharon
+		command = { type = sleepevent which = 640162 }
+	}
+}
+
+event = {
+	id = 640051
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559161
+	}
+
+	date = { day = 17 month = january year = 2006 }
+
+	name = "Livni becomes Foreign Minister"
+	desc = "Livni becomes Foreign Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = foreignminister which = 559158 }#Livni
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+
+event = {
+	id = 640052
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 27 month = march year = 2006 }
+
+	name = "The Seventeenth Knesset"
+	desc = "A centrist coalition headed by Olmert, a relative moderate, took power."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Left"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559161 }#Olmert
+		command = { type = foreignminister which = 559158 }#Livni
+		command = { type = armamentminister which = 559163 }#Peretz
+		command = { type = ministerofsecurity which = 559164 }#Dicter
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Right"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559157 }#Netanyahu
+		command = { type = foreignminister which = 559158 }#Livni
+		command = { type = armamentminister which = 559169 }#Mofaz
+		command = { type = ministerofsecurity which = 559172 }#Ezra
+		command = { type = dissent value = -3 }
+	}
+}
+
+event = {
+	id = 640053
+	random = no
+	country = ISR
+	
+	trigger = { 
+		headofgovernment = 559161
+	}
+
+	date = { day = 17 month = june year = 2007 }
+
+	name = "Barak becomes Foreign Minister"
+	desc = "Ehud Barak becomes Foreign Minister."
+	picture = "Minister_resign"
+
+	action_a = {
+		name = "YES"
+		ai_chance = 95
+		command = { type = foreignminister which = 559155 }#Barak
+	}
+	action_b = {
+		name = "NO"
+		ai_chance = 5
+		command = { type = money value = -1 }
+	}
+}
+event = {
+	id = 640054
+	random = no
+	country = ISR
+	
+	trigger = { 
+		government = democratic
+	}
+
+	date = { day = 27 month = march year = 2009 }
+
+	name = "The Eighteenth Knesset"
+	desc = "Ehud Olmert resigned as leader of the Kadima party and his party lost the subsequent elections. Israeli Politics swung to the right and Benjamin Netanyahu formed a government."
+	picture = "knesset"
+
+	action_a = {
+		name = "Elect Right"
+		ai_chance = 95
+		command = { type = set_domestic which = political_left value = 1 }#conservative
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = headofgovernment which = 559157 }#Netanyahu
+		command = { type = foreignminister which = 559158 }#Liberman
+		command = { type = armamentminister which = 559163 }#Barak
+		command = { type = ministerofsecurity which = 559164 }#Aharonovitch
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Elect Left"
+		ai_chance = 5
+		command = { type = set_domestic which = political_left value = 4 }#market liberal
+		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = headofgovernment which = 559230 }#Livni
+		command = { type = foreignminister which = 559155 }#Barak
+		command = { type = armamentminister which = 559163 }#Peretz
+		command = { type = ministerofsecurity which = 559164 }#Dicter
+		command = { type = dissent value = -3 }
+	}
+}
+
+
+#101-HOS died 102 HOG died 103 minister died 104 minister resigns blunder 105 minister resigns 106 Gen dies accident 108 Gen retires 
+event = {
+	id = 640100
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = july year = 1952 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559024 }#Kaplan
+	}
+}
+event = {
+	id = 640101
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 27 month = january year = 1959 }
+
+	name = "EVT_103_NAME"
+	desc = "Two of our ministers died just days apart."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559023 }#Sprinzak
+		command = { type = sleepminister which = 559050 }#Sprinzak
+		command = { type = sleepminister which = 559098 }#Shiloah-exact date not known
+	}
+}
+event = {
+	id = 640102
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = september year = 1959 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559013 }#Rokach
+	}
+}
+event = {
+	id = 640103
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = february year = 1962 }
+
+	name = "EVT_103_NAME"
+	desc = "Daniel Auster dies and Yehuda Leib Maimon retires from old age. He died a few months later."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559013 }#Auster
+		command = { type = sleepminister which = 559091 }#Maimon
+	}
+}
+# replaces original Chaim Weizman events because better code
+event = {
+	id = 640104
+	random = no
+	country = ISR
+	
+	trigger = { headofstate = 559001 }
+
+	date = { day = 8  month = november year = 1952 }
+
+	name = "EVT_101_NAME"
+	desc = "EVT_101_DESC"
+	picture = "minister_died"
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559001 }#Weizmann
+		command = { type = headofstate which = 559048 }#Ben Zvi
+	}
+}
+# in case of autocratic Israel
+event = {
+	id = 640105
+	random = no
+	country = ISR
+	
+	trigger = { NOT = { headofstate = 559001 } }
+
+	date = { day = 6  month = november year = 1952 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "minister_died"
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559001 }#Weizmann
+		command = { type = sleepevent which = 640104 }
+	}
+}
+event = {
+	id = 640106
+	random = no
+	country = ISR
+	
+	trigger = { headofstate = 559048 }
+
+	date = { day = 22  month = april year = 1963 }
+
+	name = "Yitzhak Ben Zvi Dies"
+	desc = "The second president of Israel, Yitzhak Ben Zvi, passed away. He was replaced by Zalman Shazar."
+	picture = "minister_died"
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559048 }#Ben Zvi
+		command = { type = sleepminister which = 559017 }#Ben Zvi
+		command = { type = headofstate which = 559060 }#Shazar
+	}
+}
+event = {
+	id = 640107
+	random = no
+	country = ISR
+	
+	trigger = { NOT = { headofstate = 559048 } }
+
+	date = { day = 20  month = april year = 1963 }
+
+	name = "Yitzhak Ben Zvi Dies"
+	desc = "Yitzhak Ben Zvi, passed away. He will always be remembered."
+	picture = "minister_died"
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559048 }#Ben Zvi
+		command = { type = sleepminister which = 559017 }#Ben Zvi
+		command = { type = sleepevent which = 640106 }
+	}
+}
+event = {
+	id = 640108
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = january year = 1964 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 55916 }#Zisling
+	}
+}
+event = {
+	id = 640109
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 3 month = may year = 1965 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559032 }#Bar-Yehuda
+		command = { type = sleepminister which = 559085 }#Bar-Yehuda
+	}
+}
+event = {
+	id = 640110
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 6 month = july year = 1965 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559003 }#Sharett
+		command = { type = sleepminister which = 559066 }#Sharett
+	}
+}
+event = {
+	id = 640111
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 27  month = january year = 1967 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559086 }#Bechor-Shalom Sheetrit
+	}
+}
+event = {
+	id = 640112
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 9 month = july year = 1968 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559026 }#Nir-Rafalkes
+	}
+}
+event = {
+	id = 640113
+	random = no
+	country = ISR
+	
+	trigger = { headofgovernment = 559065 }
+
+	date = { day = 25  month = february year = 1969 }
+
+	name = "Levi Eshkol Dies"
+	desc = "Levi Eshkol died in office and was replaced by Golda Meir, one of the world's first female prime ministers in the modern era."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559065 }#Eshkol
+		command = { type = sleepminister which = 559004 }#Eshkol
+		command = { type = headofstate which = 559064 }#Meir
+	}
+}
+event = {
+	id = 640114
+	random = no
+	country = ISR
+	
+	trigger = { NOT = { headofgovernment = 559065 } }
+
+	date = { day = 23  month = february year = 1969 }
+
+	name = "Levi Eshkol Dies"
+	desc = "Levi Eshkol passed away suddenly. He will always be remembered."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559065 }#Eshkol
+		command = { type = sleepminister which = 559004 }#Eshkol
+		command = { type = sleepevent which = 640113 }
+	}
+}
+event = {
+	id = 640115
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = february year = 1970 }
+
+	name = "EVT_103_NAME"
+	desc = "Yitzhak Grünbaum, whose exact date of death is not known, is removed from the game."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559035 }#Grünbaum
+		command = { type = sleepminister which = 559049 }#Grünbaum
+	}
+}
+event = {
+	id = 640116
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 20 month = march year = 1971 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Peretz Bernstein dies. Yitzhak Tabenkin and Yitzhak-Meir Levin died a few months later."
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559080 }#Bernstein
+		command = { type = sleepminister which = 559018 }#Tabenkin
+		command = { type = sleepminister which = 559069 }#Tabenkin
+		command = { type = sleepminister which = 559090 }#Meir-Levin
+	}
+}
+event = {
+	id = 640117
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 29 month = february year = 1972 }#march 1
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559061 }#Sneh
+	}
+}
+event = {
+	id = 640118
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 3 month = december year = 1972 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559022 }#Luz
+	}
+}
+event = {
+	id = 640119
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 22 month = december year = 1972 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559014 }#Herschel
+	}
+}
+event = {
+	id = 640120
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 23 month = may year = 1973 }
+
+	name = "Zalman Shazar dies"
+	desc = "Zalman Shazar, the third President of Israel, passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559060 }#Shazar
+	}
+}
+event = {
+	id = 640121
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 1 month = december year = 1973 }
+
+	name = "David Ben Gurion dies"
+	desc = "David Ben Gurion, the first prime minister of Israel, dies. Simcha Babah died weeks later."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559002 }#Ben Gurion
+		command = { type = sleepminister which = 559051 }#Ben Gurion
+		command = { type = sleepminister which = 559077 }#Ben Gurion
+		command = { type = sleepminister which = 559113 }#Babah
+	}
+}
+event = {
+	id = 640122
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 11 month = august year = 1975 }
+
+	name = "EVT_103_NAME"
+	desc = "Pinhas Sapir died, and Esther Vilenska passed away a few months later."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559034 }#Sapir
+		command = { type = sleepminister which = 559082 }#Vilenska
+	}
+}
+event = {
+	id = 640123
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 23 month = january year = 1976 }
+
+	name = "EVT_103_NAME"
+	desc = "Pinhas Lavon dies."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559016 }#Lavon
+		command = { type = sleepminister which = 559078 }#Lavon
+	}
+}
+event = {
+	id = 640124
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 14 month = april year = 1976 }
+
+	name = "EVT_106_NAME"
+	desc = "David Elazar dies of a heart attack."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559189 }#Elazar
+	}
+}
+event = {
+	id = 640125
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day =12 month = february year = 1978 }
+
+	name = "EVT_103_NAME"
+	desc = "Avraham Berman dies. Mordechai Maklef, whose exact date of death is not known, is also removed from the game."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559094 }#Berman
+		command = { type = sleepminister which = 559187 }#Maklef
+	}
+}
+event = {
+	id = 640126
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 7 month = december year = 1978 }
+
+	name = "Golda Meir dies"
+	desc = "Golda meir, former prime minister of Israel, passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559005 }#Meir
+		command = { type = sleepminister which = 559071 }#Meir
+		command = { type = sleepminister which = 559139 }#Meir
+	}
+}
+event = {
+	id = 640127
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 6 month = january year = 1980 }
+
+	name = "EVT_103_NAME"
+	desc = "Dov Yosef dies. Nathan Yellin-Mor passed away a few weeks later."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559084 }#Yosef
+		command = { type = sleepminister which = 559099 }#Yellin-Mor
+	}
+}
+event = {
+	id = 640128
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 28 month = february year = 1980 }
+
+	name = "EVT_103_NAME"
+	desc = "Yigal Allon, noted independence leader, passes away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559006 }#Allon
+		command = { type = sleepminister which = 559008 }#Allon
+		command = { type = sleepminister which = 559130 }#Allon
+		command = { type = sleepminister which = 559142 }#Allon
+	}
+}
+event = {
+	id = 640129
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = october year = 1981 }
+
+	name = "Moshe Dayan dies"
+	desc = "Moshe Dayan, the well-known one-eyed general and hero of the Six Day War, passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559042 }#Dayan
+		command = { type = sleepminister which = 559076 }#Dayan
+		command = { type = sleepminister which = 559106 }#Dayan
+		command = { type = sleepminister which = 559145 }#Dayan
+	}
+}
+event = {
+	id = 640130
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 20 month = august year = 1982 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559074 }#Altman
+	}
+}
+event = {
+	id = 640131
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 8 month = december year = 1982 }
+
+	name = "EVT_103_NAME"
+	desc = "Haim Laskov, former Chief of Staff and head of the Israeli Air Force, died of cancer on December 9, 1982. Many sources incorrectly report his death as 'sometime in 1983.' (source New York Times obituary)"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559010 }#Laskov
+		command = { type = sleepminister which = 559105 }#Laskov
+		command = { type = sleepminister which = 559200 }#Laskov
+	}
+}
+event = {
+	id = 640132
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 27 month = june year = 1984 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559007 }#Yadin
+	}
+}
+event = {
+	id = 640133
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = january year = 1985 }#exact date not known
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559111 }#Yehuda
+	}
+}
+event = {
+	id = 640134
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 7 month = february year = 1986 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559107 }#Galili
+	}
+}
+event = {
+	id = 640135
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 23 month = april year = 1987 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559083 }#Ya'ari
+	}
+}
+event = {
+	id = 640136
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 7 month = january year = 1989 }#exact date not known
+
+	name = "EVT_103_NAME"
+	desc = "Gershon Zak, first commander of the Israeli Navy, passed away. He dropped from the public limelight after the War for Independence."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559019 }#Zak
+	}
+}
+event = {
+	id = 640137
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 10 month = january year = 1952 }#exact date not known
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559093 }#Tehomi
+	}
+}
+event = {
+	id = 640138
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 19 month = august year = 1991 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559081 }#Kahana
+	}
+}
+event = {
+	id = 640139
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 8 month = march year = 1992 }
+
+	name = "Menachem Begin dies"
+	desc = "Menachem Begin, a controversial figure who ultimately became prime minister, passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559029 }#Begin
+		command = { type = sleepminister which = 559067 }#Begin
+		command = { type = sleepminister which = 559129 }#Begin
+		command = { type = sleepminister which = 559146 }#Begin
+	}
+}
+event = {
+	id = 640140
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = july year = 1992 }
+
+	name = "Yitzhak Shamir dies"
+	desc = "Former Prime Minister Yitzhak Shamir dies. Nine days later, Yaakov Hazan passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559072 }#Shamir
+		command = { type = sleepminister which = 559100 }#Shamir
+		command = { type = sleepminister which = 559119 }#Shamir
+		command = { type = sleepminister which = 559147 }#Shamir
+		command = { type = sleepminister which = 559062 }#Hazan
+		command = { type = sleepminister which = 559101 }#Hazan
+	}
+}
+event = {
+	id = 640141
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 2 month = april year = 1994 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559219 }#Remez
+	}
+}
+event = {
+	id = 640142
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 6 month = may year = 1994 }
+
+	name = "EVT_103_NAME"
+	desc = "Haim Bar-Lev passed away. Naval commander Shaul Ben-Tzvi died nine days later."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559128 }#Bar-Lev
+		command = { type = sleepminister which = 559188 }#Bar-Lev
+		command = { type = sleepminister which = 559044 }#Ben-Tzvi
+	}
+}
+event = {
+	id = 640143
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 5 month = june year = 1994 }
+
+	name = "EVT_103_NAME"
+	desc = "Yohai Ben-Nun, Menachem Schneerson, and Yohanan Bader passed away in a 10-day period."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559126 }#Ben-Nun
+		command = { type = sleepminister which = 559037 }#Schneerson
+		command = { type = sleepminister which = 559089 }#Bader
+	}
+}
+event = {
+	id = 640144
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 29 month = june year = 1995 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559109 }#Meridor
+	}
+}
+event = {
+	id = 640145
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = july year = 1995 }
+
+	name = "EVT_103_NAME"
+	desc = "Mordechai Gur passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559190 }#Gur
+	}
+}
+#event 640146 Rabin assassination moved to politics section after 640039
+event = {
+	id = 640147
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 18 month = june year = 1996 }
+
+	name = "Yitzhak Rabin retires"
+	desc = "Yitzhak Rabin survived an attempt on his life but retires from public life."
+	picture = "Minister_retires"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559141 }#Rabin
+		command = { type = sleepminister which = 559127 }#Rabin
+		command = { type = sleepminister which = 559103 }#Rabin
+		command = { type = sleepminister which = 559150 }#Rabin
+		command = { type = sleepminister which = 559202 }#Rabin
+	}
+}
+event = {
+	id = 640148
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 21 month = january year = 1996 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559073 }#Eldad
+	}
+}
+event = {
+	id = 640149
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 16 month = april year = 1997 }
+
+	name = "Chaim Herzog dies"
+	desc = "Former President Chaim Herzog passed away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559135 }#Herzog
+	}
+}
+event = {
+	id = 640150
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 27 month = may year = 1999 }
+
+	name = "EVT_103_NAME"
+	desc = "2 aging and retired ministers pass away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559088 }#Burg
+		command = { type = sleepminister which = 559210 }#Barkai
+	}
+}
+event = {
+	id = 640151
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 3 month = january year = 2001 }#exact date unknown
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559041 }#Rosengarten
+	}
+}
+event = {
+	id = 640152
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 19 month = august year = 2001 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559092 }#Shostak
+	}
+}
+event = {
+	id = 640153
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = july year = 2002 }
+
+	name = "EVT_103_NAME"
+	desc = "Binyamin Peled and Fayge Ilanit died one day apart."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559075 }#Ilanit
+		command = { type = sleepminister which = 559221 }#Peled
+	}
+}
+event = {
+	id = 640154
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 25 month = september year = 2002 }
+
+	name = "EVT_103_NAME"
+	desc = "Zerach Warhaftig and Yisrael Amir pass away in 5 weeks time."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559015 }#Warhaftig
+		command = { type = sleepminister which = 559218 }#Amir
+	}
+}
+event = {
+	id = 640155
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 16 month = november year = 2002 }
+
+	name = "Abba Eban dies"
+	desc = "Abba Eban passses away"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559070 }#Eban
+	}
+}
+event = {
+	id = 640156
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 17 month = february year = 2003 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559097 }#Harel
+	}
+}
+event = {
+	id = 640157
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 4 month = june year = 2003 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559068}#Villner
+	}
+}
+event = {
+	id = 640158
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 28 month = june year = 2003 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559220 }#Hod
+	}
+}
+event = {
+	id = 640159
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 22 month = november year = 2004 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559191 }#Eitan
+		command = { type = sleepminister which = 559203 }#Eitan
+	}
+}
+event = {
+	id = 640160
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 27 month = december year = 2004 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559104 }#Tzur
+		command = { type = sleepminister which = 559201 }#Tzur
+	}
+}
+event = {
+	id = 640161
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 23 month = april year = 2005 }
+
+	name = "Ezer Weizman Dies"
+	desc = "Former Air Force chief and president Ezer Weizman passes away."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559024 }#Kaplan
+	}
+}
+# Ariel Sharon stroke events 640162 640163 moved to elections area after 640050
+event = {
+	id = 640164
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 7 month = january year = 2008 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559192 }#Levi
+	}
+}
+event = {
+	id = 640165
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 25 month = february year = 2008 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559193 }#Shomron
+		command = { type = sleepminister which = 559204 }#Shomron
+	}
+}
+event = {
+	id = 640166
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = may year = 2008 }
+
+	name = "EVT_103_NAME"
+	desc = "2 retired military chiefs died within 4 days."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559112 }#Ben-Aharon
+		command = { type = sleepminister which = 559120 }#Ben-Aharon
+		command = { type = sleepminister which = 559209 }#Telem
+	}
+}
+event = {
+	id = 640167
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 15 month = may year = 2009 }
+
+	name = "EVT_103_NAME"
+	desc = "2 retired military chiefs died within 4 days."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559124 }#Limon
+		command = { type = sleepminister which = 559121 }#S. Shamir
+		command = { type = sleepminister which = 559125 }#S. Shamir
+	}
+}
+event = {
+	id = 640168
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 29 month = may year = 2009 }
+
+	name = "Efraim Katzir dies."
+	desc = "Former President Efraim Katzir dies."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559133 }#Katzir
+	}
+}
+event = {
+	id = 640169
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 16 month = july year = 2009 }
+
+	name = "EVT_103_NAME"
+	desc = "EVT_103_DESC"
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559096 }#Amit
+	}
+}
+event = {
+	id = 640170
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 7 month = january year = 2012 }
+
+	name = "Future Deaths"
+	desc = "Of course the exact date of death can never be accurately predicted. However, these leaders are quite old and most likely retired from government service."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559009 }
+		command = { type = sleepminister which = 559059 }
+		command = { type = sleepminister which = 559079 }
+		command = { type = sleepminister which = 559114 }
+		command = { type = sleepminister which = 559122 }
+		command = { type = sleepminister which = 559134 }
+		command = { type = sleepminister which = 559144 }
+		command = { type = sleepminister which = 559153 }
+		command = { type = sleepminister which = 559156 }
+		command = { type = sleepminister which = 559179 }
+		command = { type = sleepminister which = 559180 }
+		command = { type = sleepminister which = 559181 }
+		command = { type = sleepminister which = 559182 }
+		command = { type = sleepminister which = 559183 }
+		command = { type = sleepminister which = 559184 }
+		command = { type = sleepminister which = 559207 }
+		command = { type = sleepminister which = 559208 }
+		command = { type = sleepminister which = 559211 }
+		command = { type = sleepminister which = 559222 }
+		command = { type = sleepminister which = 559138 }
+		command = { type = sleepminister which = 559143 }
+		command = { type = sleepminister which = 559149 }
+		command = { type = sleepminister which = 559152 }
+		command = { type = sleepminister which = 559222 }
+	}
+}
+event = {
+	id = 640171
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 17 month = february year = 2015 }
+
+	name = "Future Deaths"
+	desc = "Of course the exact date of death can never be accurately predicted. However, these leaders are quite old and most likely retired from government service."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559115 }
+		command = { type = sleepminister which = 559155 }
+		command = { type = sleepminister which = 559158 }
+		command = { type = sleepminister which = 559159 }
+		command = { type = sleepminister which = 559160 }
+		command = { type = sleepminister which = 559161 }
+		command = { type = sleepminister which = 559162 }
+		command = { type = sleepminister which = 559163 }
+		command = { type = sleepminister which = 559164 }
+		command = { type = sleepminister which = 559166 }
+		command = { type = sleepminister which = 559172 }
+		command = { type = sleepminister which = 559185 }
+		command = { type = sleepminister which = 559194 }
+		command = { type = sleepminister which = 559195 }
+		command = { type = sleepminister which = 559212 }
+		command = { type = sleepminister which = 559213 }
+		command = { type = sleepminister which = 559223 }
+		command = { type = sleepminister which = 559224 }
+		command = { type = sleepminister which = 559225 }
+		command = { type = sleepminister which = 559226 }
+	}
+}
+event = {
+	id = 640172
+	random = no
+	country = ISR
+	
+	trigger = {}
+
+	date = { day = 12 month = november year = 2019 }
+
+	name = "Future Deaths"
+	desc = "Of course the exact date of death can never be accurately predicted. However, these leaders are quite old and most likely retired from government service. The rest of your leaders are immortal, unless they die in battle."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559137 }
+		command = { type = sleepminister which = 559167 }
+		command = { type = sleepminister which = 559174 }
+		command = { type = sleepminister which = 559196 }
+		command = { type = sleepminister which = 559205 }
+		command = { type = sleepminister which = 559214 }
+	}
+}
+event = {
+	id = 640173
+	random = no
+	country = ISR
+	
+	trigger = { }
+
+	date = { day = 16 month = october year = 2001 }
+
+	name = "Assassination of Rehavam Ze'evi"
+	desc = "The israeli secret services became famous for hunting down terrorists and killing them. But the Arab side got its revenge and managed to kill the extremist leader Rehavam Ze'evi."
+	picture = "Minister_died"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 559063 }#Ze'evi
+	}
+}
+
+event = {
+	id = 640289
+	random = no
+	country = ISR
+	
+	trigger = {
+		war = { country = ISR country = PAL }
+		ai = no #human only
+	}
+
+	date = { day = 2 month = january year = 1945 }
+	offset = 3
+	deathdate = { day = 5 month = july year = 1948 }
+
+
+	name = "Eretz Israel movement"
+	desc = "Most Israeli leaders favor a moderate approach, adhering to UN resolutions that limit our territory. However, a minority favor a hard-line approach to attain a Greater Israel based on ancient land claims. In order to do this, we would have to suspend the democratic process and possibly alienate our friends."
+
+	action_a = {
+		name = "That was ancient history"
+		command = { }
+	}
+	action_b = {
+		name = "Reclaim ancient lands!"
+		command = { type = dissent value = 20 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = relation which = FRA value = -50 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = SAU value = -50 }
+	}
+}
+
+
+event = {
+	id = 640290
+	random = no
+	country = ISR
+	
+	trigger = {
+		atwar = no
+		owned = { province = 1793 } 
+		owned = { province = 1794 } 
+		control = { province = 1793 } 
+		control = { province = 1794 } 
+		NOT = { 
+			government = fascist
+			exists = LEB
+		}
+	}
+
+	date = { day = 5 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 4 month = january year = 2018 }
+
+
+	name = "The Fate of Lebanon"
+	desc = "Israel's occupation of Lebanon was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = LEB }
+		command = { type = trigger which = 640291 }
+	}
+}
+event = {
+	id = 640291
+	random = no
+	country = ISR
+	
+	#
+
+
+	name = "Puppet Lebanon"
+	desc = "Israel's occupation of Lebanon was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK" #SL
+		command = { type = make_puppet which = LEB }
+	}
+}
+event = {
+	id = 640292
+	random = no
+	country = ISR
+	
+	trigger = {
+		atwar = no
+		owned = { province = 1796 } 
+		owned = { province = 1802 } 
+		owned = { province = 407 } 
+		owned = { province = 1803 } 
+		control = { province = 1796 } 
+		control = { province = 1802 } 
+		control = { province = 407 } 
+		control = { province = 1803 } 
+		NOT = { 
+			government = fascist
+			exists = JOR
+		}
+	}
+
+	date = { day = 5 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 4 month = january year = 2018 }
+
+
+	name = "The Fate of Jordan"
+	desc = "Israel's occupation of Jordan was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = JOR }
+		command = { type = trigger which = 640293 }
+	}
+}
+event = {
+	id = 640293
+	random = no
+	country = ISR
+	
+	#
+
+
+	name = "Puppet Jordan"
+	desc = "Israel's occupation of Jordan was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK" #SL
+		command = { type = make_puppet which = JOR }
+	}
+}
+event = {
+	id = 640294
+	random = no
+	country = ISR
+	
+	trigger = {
+		atwar = no
+		owned = { province = 1861 } 
+		owned = { province = 1862 } 
+		owned = { province = 1863 } 
+		owned = { province = 1792 } 
+		owned = { province = 1795 } 
+		control = { province = 1861 } 
+		control = { province = 1862 } 
+		control = { province = 1863 } 
+		control = { province = 1792 } 
+		control = { province = 1795 } 
+		NOT = { 
+			government = fascist
+			exists = SYR
+		}
+	}
+
+	date = { day = 5 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 4 month = january year = 2018 }
+
+
+	name = "The Fate of Syria"
+	desc = "Israel's occupation of Syria was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = SYR }
+		command = { type = trigger which = 640295 }
+	}
+}
+event = {
+	id = 640295
+	random = no
+	country = ISR
+	
+	#
+
+
+	name = "Puppet Syria"
+	desc = "Israel's occupation of Syria was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK" #SL
+		command = { type = make_puppet which = SYR }
+	}
+}
+event = {
+	id = 640296
+	random = no
+	country = ISR
+	
+	trigger = {
+		atwar = no
+		owned = { province = 1866 } 
+		control = { province = 1865 } 
+		control = { province = 1866 } 
+		control = { province = 1790 }
+		control = { province = 1791 }
+		control = { province = 1823 }
+		control = { province = 1824 }
+		control = { province = 1806 }   
+		NOT = { 
+			government = fascist
+			exists = IRQ
+		}
+	}
+
+	date = { day = 5 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 4 month = january year = 2018 }
+
+
+	name = "The Fate of Iraq"
+	desc = "Israel's occupation of Iraq was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK"
+		command = { type = independence which = IRQ }
+		command = { type = trigger which = 640297 }
+	}
+}
+event = {
+	id = 640297
+	random = no
+	country = ISR
+	
+	#
+
+
+	name = "Puppet Iraq"
+	desc = "Israel's occupation of Iraq was controversial. Israel released a loyal puppet state that would be friendly towards her."
+	
+	action_a = {
+		name = "OK" #SL
+		command = { type = make_puppet which = IRQ }
+	}
+}

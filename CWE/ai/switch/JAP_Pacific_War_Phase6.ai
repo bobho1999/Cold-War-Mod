@@ -1,0 +1,74 @@
+# Japan AI prepares to invade Australia
+# by Radu
+
+invasion = {
+
+	staging_province = {
+		1679 # Port Moresby
+	}
+
+	target = {
+		# New Zealand
+		1868 = 1 # Auckland
+		1870 = 1 # New Plymouth
+		1871 = 1 # Wellington
+		1872 = 1 # Christchurch
+
+		# Australia
+		1694 = 100 # Weipa
+		1695 = 100 # Normanton
+		1701 = 100 # Boroloola
+		1702 = 100 # Nhulunbuy
+		1703 = 150 # Darwin
+		1704 = 100 # Katherine
+	}
+}
+
+admiral = {
+	target = {
+	2121 = 0 # New Britain Trench
+	2168 = 0 # Humboldt Bay
+	2169 = 0 # Dampier Strait
+	2122 = 0 # Huon Gulf
+	2127 = 0 # Goodenough Bay
+	2126 = 0 # Gulf of Papua
+	2131 = 0 # Torres Strait
+	2118 = 0 # The Slot
+	2115 = 0 # Central South Solomon Trench
+	2120 = 0 # West South Solomon Trench
+	2107 = 0 # New Caledonian Basin
+	1977 = 0 # Kermadec Trench
+	1980 = 0 # West Tonga Trench
+	1981 = 0 # East Tonga Trench
+	1975 = 0 # North Tonga Trench
+	1951 = 0 # Central Gilberts
+	1950 = 0 # South Magellan Rise
+	2180 = 0 # Southeast Marshalls
+
+	2129 = 100 # Gulf of Carpentaria
+	2136 = 100 # Arafura Shelf
+	2137 = 100 # Van Diemen Gulf
+	}
+
+	core = {
+	2121 # New Britain Trench
+	2168 # Humboldt Bay
+	2169 # Dampier Strait
+	2122 # Huon Gulf
+	2127 # Goodenough Bay
+	2126 # Gulf of Papua
+	2131 # Torres Strait
+	2118 # The Slot
+	2115 # Central South Solomon Trench
+	2120 # West South Solomon Trench
+	2107 # New Caledonian Basin
+	1977 # Kermadec Trench
+	1980 # West Tonga Trench
+	1981 # East Tonga Trench
+	1975 # North Tonga Trench
+	1951 # Central Gilberts
+	1950 # South Magellan Rise
+	2180 # Southeast Marshalls
+	}
+
+}

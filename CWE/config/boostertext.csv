@@ -1,0 +1,928 @@
+#  STRING NAME (do not change!);English;French;Italian;Spanish;German;Polish;Portuguese;Russian;;Extra2;x
+BM_AMPH_PENALTY;两栖登陆 ;;;;;;;;;;X
+BM_BASE_PROXIMITY;靠近基地 ;;;;;;;;;;X
+BM_BLIZZARD;暴风雪 ;;;;;;;;;;X
+BM_CARRIER_DOCTRINE;超级航母学说 ;;;;;;;;;;X
+BM_DISSENT;持异议者 ;;;;;;;;;;X
+BM_DIVISION_PENALTY;超过指挥上限 ;;;;;;;;;;X
+BM_DUGIN_MODIFIER;战壕挖掘 ;;;;;;;;;;X
+BM_ENCIRCLEMENT_PENALTY;包围惩罚 ;;;;;;;;;;X
+BM_FOREST;森林 ;;;;;;;;;;X
+BM_FORT_MODIFIER;要塞 ;;;;;;;;;;X
+BM_FROZEN;冻土 ;;;;;;;;;;X
+BM_HQ_NEARBY;靠近指挥部 ;;;;;;;;;;X
+BM_JUNGLE;丛林 ;;;;;;;;;;X
+BM_LEADER_BONUS;领导力 ;;;;;;;;;;X
+BM_MARSH;沼泽 ;;;;;;;;;;X
+BM_MOUNTAIN;山地 ;;;;;;;;;;X
+BM_HILLS;丘陵 ;;;;;;;;;;X
+BM_MUDDY;泥泞 ;;;;;;;;;;X
+BM_NIGHT_MODIFIER;夜晚 ;;;;;;;;;;X
+BM_PARATROOP_PENALTY;伞降 ;;;;;;;;;;X
+BM_RAIN;雨天 ;;;;;;;;;;X
+BM_RIVER_PENALTY;渡河 ;;;;;;;;;;X
+BM_SNOW;雪天 ;;;;;;;;;;X
+BM_STORM_MODIFIER;风暴 ;;;;;;;;;;X
+BM_URBAN;巷战 ;;;;;;;;;;X
+BM_SHORE_BOMBARD;海岸炮击 ;;;;;;;;;;X
+BM_NIGHT_FLYER;夜间飞行 ;;;;;;;;;;X
+BM_OFFENSIVE_DOCTRINE;进攻学说 ;;;;;;;;;;X
+BM_DEFENSIVE_DOCTRINE;防御学说 ;;;;;;;;;;X
+BM_SUPERIOR_TACTITIAN;超级战术家 ;;;;;;;;;;X
+BM_STACKING_PENALTY;战场宽度 ;;;;;;;;;;X
+BM_DIFFICULTY;困难 ;;;;;;;;;;X
+BM_SUPPLY_DISTANCE;远距离后勤补给 ;;;;;;;;;;X
+BM_LACK_OF_SUPPLIES;缺乏补给 ;;;;;;;;;;X
+BM_DESERT;沙漠 ;;;;;;;;;;X
+BM_WEATHER_EQ;恶劣天气装备 ;;;;;;;;;;X
+BM_COS_DEFENCE;防御理论 ;;;;;;;;;;X
+BM_COA_EL_DEF_DOCTRINE;弹性防御理论 ;;;;;;;;;;X
+BM_COA_STAT_DEF_DOCTRINE;静态防御理论 ;;;;;;;;;;X
+BM_COA_DEC_DOCTRINE;决战理论 ;;;;;;;;;;X
+BM_COA_ARMOR_SPEARHEAD;装甲先锋理论 ;;;;;;;;;;X
+BM_PANZER_LEADER;装甲兵指挥 ;;;;;;;;;;X
+BM_COMMANDO;突击队指挥 ;;;;;;;;;;X
+BM_NO_HQ;无HQ ;;;;;;;;;;X
+BM_SEAWOLF;潜艇狼群指挥 ;;;;;;;;;;X
+BM_SURPRISE;奇袭 ;;;;;;;;;;X
+BM_RADAR_STATION;雷达 ;;;;;;;;;;X
+BM_COMBINED_ARMS;合成兵种 ;;;;;;;;;;X
+BM_BETTER_COMBINED_ARMS;高级合成兵种 ;;;;;;;;;;X
+BM_EXPERIENCE;经验 ;;;;;;;;;;X
+BM_INTERCEPT;拦截加权 ;;;;;;;;;;X
+BM_MISSION_EFFICIENCY;任务效率 ;;;;;;;;;;X
+BM_MULTIPLE;侧翼 ;;;;;;;;;;X
+BM_ESE;补给效率 ;;;;;;;;;;X
+BM_AIRCOMBAT;空战 ;;;;;;;;;;X
+BM_ENVELOPMENT_PENALTY;多条前线 ;;;;;;;;;;X
+BM_PLAINS;平原 ;;;;;;;;;;X
+BM_INTEL_ADVANTAGE;密码破译 ;;;;;;;;;;X
+BM_CARPET_BOMBER;地毯式轰炸专家 ;;;;;;;;;;X
+BM_FLEET_DESTROYER;舰队毁灭者 ;;;;;;;;;;X
+BM_TANK_BUSTER;坦克杀手 ;;;;;;;;;;X
+BM_MINISTER_MODS;部长修正因素 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EE_PATTERN_CHANGE;%s的气候改变为%s。 ;;;;;;;;;;X
+EE_MONEY;金钱：%+.1f ;;;;;;;;;;X
+EE_NO_EFFECT;无立刻出现的效果 ;;;;;;;;;;X
+EE_CHANGE_CAMPAIGN;切换到‘%s’战役。 ;;;;;;;;;;X
+EE_ENDGAME;结束当前战役，返回主菜单。 ;;;;;;;;;;X
+EE_PROTECT;%s将参加所有的战争。 ;;;;;;;;;;X
+EE_EXTRA_TC;额外的运输能力：%s%d ;;;;;;;;;;X
+EE_ENABLE_TASK;可完成的任务类型：%s。 ;;;;;;;;;;X
+EE_ACTIVATE_DIVISION;激活部队%s于%s。 ;;;;;;;;;;X
+EE_FREE_TRANSPORT;占领区输送船产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_ESCORT;占领区护航舰产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_SUPPLIES;占领区补给产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_OIL;占领区油料产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_ENERGY;占领区能源产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_MONEY;占领区金钱产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_METAL;占领区金属产量改变了%+.0f。 ;;;;;;;;;;X
+EE_FREE_RAREMAT;占领区稀有原料产量改变了%+.0f。 ;;;;;;;;;;X
+EE_N_CONVOY;建立新的护航船队(%s)从%s到%s。 ;;;;;;;;;;X
+EE_CONVOY_POOL;未部署的输送船改变了%d。 ;;;;;;;;;;X
+EE_BUILD_DIVISION;开始组建%s。 ;;;;;;;;;;X
+EE_BUILD_IMPROVEMENT;%s在%s改变了%s%d。 ;;;;;;;;;;X
+EE_START_RESEARCH;开始研究%s。 ;;;;;;;;;;X
+EE_PRIO_RESEARCH;优先研究%s。 ;;;;;;;;;;X
+EE_END_ACCESS;取消%s的军事通行权。 ;;;;;;;;;;X
+EE_LEAVE_ALLIANCE;退出我们的军事联盟。 ;;;;;;;;;;X
+EE_END_PUPPET;废除我们的‘傀儡’身份。 ;;;;;;;;;;X
+EE_END_MASTERY;结束我们在%s的‘傀儡政府’。 ;;;;;;;;;;X
+EE_GUARANTEE;%s宣布保障%s的独立。 ;;;;;;;;;;X
+EE_END_GUARANTEE;%s取消对%s的独立保障。 ;;;;;;;;;;X
+EE_ALLOW_CONVOY_ESCORTS;我们现在可以组建护航输送船队。 ;;;;;;;;;;X
+EE_TRANSPORT_POOL;%s收到了%d的护航输送船队。 ;;;;;;;;;;X
+EE_ESCORT_POOL;%s收到了%d的护航输送船队。 ;;;;;;;;;;X
+EE_PEACETIME_IC_MOD;和平时期的IC修正改变了%s%.1f\%%。 ;;;;;;;;;;X
+EE_NON_AGGRESSION;%s与%s签订了互不侵犯条约。 ;;;;;;;;;;X
+EE_END_NON_AGGRESSION;%s取消了与%s的互不侵犯条约。 ;;;;;;;;;;X
+EE_END_TRADES;所有%s和%s之间的贸易协定均被取消。 ;;;;;;;;;;X
+EE_TRADE;在%s(A)和%s(B)之间正在进行新的贸易协定： ;;;;;;;;;;X
+EE_TRADE_RESOURCE_POS;A向B提供%.1f %s。 ;;;;;;;;;;X
+EE_TRADE_RESOURCE_NEG;B向A提供%.1f %s。 ;;;;;;;;;;X
+EE_SET_LEADER_LOY;将领：%s的忠诚度改变了%d。 ;;;;;;;;;;X
+EE_SET_MINISTER_LOY;部长：%s的忠诚度改变了%d。 ;;;;;;;;;;X
+EE_DELETE_UNIT;部队：%s已被消灭。 ;;;;;;;;;;X
+EE_MINISTER;%s成为部长候选人。 ;;;;;;;;;;X
+EE_HOS;国家元首：%s ;;;;;;;;;;X
+EE_HOG;政府首脑：%s ;;;;;;;;;;X
+EE_FGNMIN;外交部长：%s ;;;;;;;;;;X
+EE_ARMMIN;军备部长：%s ;;;;;;;;;;X
+EE_SECMIN;安全部长：%s ;;;;;;;;;;X
+EE_INTMIN;情报部长：%s ;;;;;;;;;;X
+EE_STAFF;总参谋长：%s ;;;;;;;;;;X
+EE_CARMY;陆军总长：%s ;;;;;;;;;;X
+EE_CNAVY;海军总长：%s ;;;;;;;;;;X
+EE_CAIR;空军总长：%s ;;;;;;;;;;X
+EE_DESERTIONS;在以下地区损失了%d兵力：%s。 ;;;;;;;;;;X
+EVENT_SELECTION;%s : %s在%s事件被选择，我们将执行这个决定。 ;;;;;;;;;;X
+EVENT_SIMPLE;%s : 我们发生%s事件。 ;;;;;;;;;;X
+EE_P_CUL;%s的文化改变为%s ;;;;;;;;;;X
+EE_P_TAX;%s的基础税率为：%s%d ;;;;;;;;;;X
+EE_P_MAN;%s的兵源为：%s%d ;;;;;;;;;;X
+EE_P_MINE;%s的矿产为：%s%d ;;;;;;;;;;X
+EE_NATIVE;%s的原住民侵略性被设为%d级 ;;;;;;;;;;X
+EE_FORT;%s的要塞等级为：%s%d ;;;;;;;;;;X
+EE_POP;%s的人口为：%s%d ;;;;;;;;;;X
+EE_N_REVOLT;%s叛乱。 ;;;;;;;;;;X
+EE_R_REVOLT;%s叛乱。 ;;;;;;;;;;X
+EE_C_REVOLT;%s叛乱。 ;;;;;;;;;;X
+EE_HERETICS;%s的异教徒 ;;;;;;;;;;X
+EE_CONVERTED;%s成为国教 ;;;;;;;;;;X
+EE_P_RR;%s的叛乱机率为：%s%d ;;;;;;;;;;X
+EE_P_REL;%s转变为%s。 ;;;;;;;;;;X
+EE_P_ADM;君主的统治技能改变%d在接下来的%d个月里。 ;;;;;;;;;;X
+EE_P_DIP;君主的外交技能改变%d在接下来的%d个月里。 ;;;;;;;;;;X
+EE_P_MIL;君主的军事技能改变%d在接下来的%d个月里。 ;;;;;;;;;;X
+EE_S_REL;国教改变为%s。 ;;;;;;;;;;X
+EE_RRISK;叛乱机率改变%s%d在接下来的%d个月里。 ;;;;;;;;;;X
+EE_INFLATION;通货膨胀率：%s%d ;;;;;;;;;;X
+EE_BROY;与%s的皇室联姻破裂。 ;;;;;;;;;;X
+EE_BVAS;同%s的附属国关系解除。 ;;;;;;;;;;X
+EE_ROY;与%s建立了皇室联姻。 ;;;;;;;;;;X
+EE_VAS;使%s成为附属国。 ;;;;;;;;;;X
+EE_ALL;与%s联盟。 ;;;;;;;;;;X
+EE_INHERIT;我们併吞了%s。 ;;;;;;;;;;X
+EE_CASH;%s%d$ ;;;;;;;;;;X
+EE_MANPOWER;兵源：%s%d ;;;;;;;;;;X
+EE_RELATIVE_MANPOWER;总人口的%s%d\%%直接转变成兵源。 ;;;;;;;;;;X
+EE_LANDTECH;陆地投资：%s%d ;;;;;;;;;;X
+EE_NAVALTECH;海洋投资：%s%d ;;;;;;;;;;X
+EE_INFRATECH;基础建设投资：%s%d ;;;;;;;;;;X
+EE_TRADETECH;贸易投资：%s%d ;;;;;;;;;;X
+EE_STABILITY;稳定性：%s%d ;;;;;;;;;;X
+EE_DIPLOMAT;外交：%s%d ;;;;;;;;;;X
+EE_COLONIST;殖民者：%s%d ;;;;;;;;;;X
+EE_MERCHANT;商人：%s%d ;;;;;;;;;;X
+EE_MISSIONARY;传教士：%s%d ;;;;;;;;;;X
+EE_CONQUISTADOR;在%s获得征服者。 ;;;;;;;;;;X
+EE_EXPLORER;在%s获得探险家。 ;;;;;;;;;;X
+EE_LEADER;得到%s的帮助。 ;;;;;;;;;;X
+EE_MONARCH;让%s成为国家的领袖。 ;;;;;;;;;;X
+EE_SLEADER;将领%s不存在了。 ;;;;;;;;;;X
+EE_SMONARCH;让%s成为历史吧！ ;;;;;;;;;;X
+EE_TAG;发现%s的国度 ;;;;;;;;;;X
+EE_RELATION;与%s的关系是：%s%d ;;;;;;;;;;X
+EE_GAIN_MANU;在%s获得工厂 ;;;;;;;;;;X
+EE_LOSE_MANU;失去在%s的工厂 ;;;;;;;;;;X
+EE_INFANTRY;获得%d个步兵部队在%s ;;;;;;;;;;X
+EE_CAVALRY;获得%d个骑兵部队在%s ;;;;;;;;;;X
+EE_ARTILLERY;获得%d个炮兵团在%s ;;;;;;;;;;X
+EE_WARSHIPS;获得%d战舰在%s ;;;;;;;;;;X
+EE_GALLEYS;获得%d大帆船在%s ;;;;;;;;;;X
+EE_TRANSPORTS;获得%d运输舰在%s地区 ;;;;;;;;;;X
+EE_TRIGGER;引发‘%s’事件。 ;;;;;;;;;;X
+EE_SLEEP;‘%s’事件将不再发生。 ;;;;;;;;;;X
+EE_VP;%s%d胜利点。 ;;;;;;;;;;X
+EE_CB;获得对%s开战的理由，在未来%d个月里可随时开战。 ;;;;;;;;;;X
+EE_CAPITAL;迁都到%s。 ;;;;;;;;;;X
+EE_BANK;建立国家银行。 ;;;;;;;;;;X
+EE_STOCK;建立国家证券市场。 ;;;;;;;;;;X
+EE_ADDCORE;%s将被视为你的核心省份。 ;;;;;;;;;;X
+EE_REMCORE;%s将不再是你的核心省份。 ;;;;;;;;;;X
+EE_COT;贸易中心在%s建立。 ;;;;;;;;;;X
+EE_SECEDE;%s脱离原先的国家加入了%s。 ;;;;;;;;;;X
+EE_A_CUL;使%s成为国家文化 \n;;;;;;;;;;X
+EE_R_CUL;%s不再是国家文化 \n;;;;;;;;;;X
+EE_LOAN;债务规模现在是%d$ \n;;;;;;;;;;X
+EE_GAIN_BUILDING;获得%s在%s ;;;;;;;;;;X
+EE_LOSE_BUILDING;失去%s在%s ;;;;;;;;;;X
+EE_WAR;同%s作战。 ;;;;;;;;;;X
+EE_INDY;同意%s独立。 ;;;;;;;;;;X
+EE_TECH;将科技组转到对%s的研究 ;;;;;;;;;;X
+EE_PURGE;最不忠诚的%d个部长和%d个军官将被处死。 ;;;;;;;;;;X
+EE_DISSENT;国民不满度改变了%d。 ;;;;;;;;;;X
+EE_REGIME_FALLS;当前政权垮台！ ;;;;;;;;;;X
+EE_LEADER_SKILL;%s获得%d技能。 ;;;;;;;;;;X
+EE_MINISTER_SKILL;未使用的命令 ;;;;;;;;;;X
+EE_CIVIL_WAR;国家陷入内战！ ;;;;;;;;;;X
+EE_STEAL_TECH;窃取‘%s’的科技蓝图从以下国家：%s。 ;;;;;;;;;;X
+EE_RESEARCH_SABOTAGED;我们的一个科研计划被破坏了！ ;;;;;;;;;;X
+EE_DETECT_UNITS;发现%d支敌军来自%s。 ;;;;;;;;;;X
+EE_LEADER_LOY;%s的忠诚度显现了！ ;;;;;;;;;;X
+EE_MINISTER_LOY;%s的忠诚度显现了！ ;;;;;;;;;;X
+EE_INDUSTRY;%s的IC改变了%d。 ;;;;;;;;;;X
+EE_FLAK;%s的防空设施改变了%d个等级。 ;;;;;;;;;;X
+EE_INFRA;%s的基础设施改变了%d。 ;;;;;;;;;;X
+EE_COASTAL_FORT;%s的海防工事等级改变了%d。 ;;;;;;;;;;X
+EE_LAND_FORT;%s的地面防御工事等级改变了%d。 ;;;;;;;;;;X
+EE_PEACE;与%s议和。 ;;;;;;;;;;X
+EE_SUPPLY_POOL;补给储存量改变了%d。 ;;;;;;;;;;X
+EE_METAL_POOL;金属储存量改变了%d。 ;;;;;;;;;;X
+EE_ENERGY_POOL;能源储存量改变了%d。 ;;;;;;;;;;X
+EE_OIL_POOL;石油储存量改变了%d。 ;;;;;;;;;;X
+EE_RARE_MATERIALS_POOL;稀有原料储存量改变了%d。 ;;;;;;;;;;X
+EE_KEYPOINTS;%s的胜利点改变了%d。 ;;;;;;;;;;X
+EE_WAR_ENTRY;%s的参战倾向改变了%d。 ;;;;;;;;;;X
+EE_WAR_ENTRY_US;参战倾向改变了%d。 ;;;;;;;;;;X
+EE_MAKE_PUPPET;%s建立了一个傀儡国。 ;;;;;;;;;;X
+EE_COUP_NATION;%s发生政变。 ;;;;;;;;;;X
+EE_ACCESS;获得%s的军事通行权。 ;;;;;;;;;;X
+EE_SMINISTER;部长%s不存在了。 ;;;;;;;;;;X
+EE_STEAM;科研小组%s不存在了。 ;;;;;;;;;;X
+EE_WTEAM;科研小组%s现在出现了。 ;;;;;;;;;;X
+EE_GAIN_TECH;获得‘%s’科技的蓝图。 ;;;;;;;;;;X
+EE_SWITCH_ALLEGIANCE;部队%s叛逃到%s方去了。 ;;;;;;;;;;X
+EE_NOW;;;;;;;;;;;X
+EE_ON_UPGRADE;(U) ;;;;;;;;;;X
+EE_US;我方 ;;;;;;;;;;X
+EE_THEM;敌方 ;;;;;;;;;;X
+EE_APPLICATION;应用 ;;;;;;;;;;X
+EE_THEORETICAL;理论 ;;;;;;;;;;X
+EE_TOTAL;合计 ;;;;;;;;;;X
+EE_SUPPLIES;补给 ;;;;;;;;;;X
+EE_ENERGY_TO_OIL;能源转石油 ;;;;;;;;;;X
+EE_OIL_TO_RARE_MATERIALS;石油转稀有原料 ;;;;;;;;;;X
+EE_SOFT_ATTACK;非装甲攻击 ;;;;;;;;;;X
+EE_HARD_ATTACK;装甲攻击 ;;;;;;;;;;X
+EE_AIR_ATTACK;对空攻击 ;;;;;;;;;;X
+EE_NAVAL_ATTACK;对海攻击 ;;;;;;;;;;X
+EE_CONVOY_ATTACK;对输送船队攻击 ;;;;;;;;;;X
+EE_SUB_ATTACK;对潜攻击 ;;;;;;;;;;X
+EE_STRATEGIC_ATTACK;战略轰炸能力 ;;;;;;;;;;X
+EE_GROUND_DEFENSE;地面防御能力 ;;;;;;;;;;X
+EE_AIR_DEFENSE;防空能力 ;;;;;;;;;;X
+EE_NAVAL_DEFENSE;海防能力 ;;;;;;;;;;X
+EE_BUILD_COST;花费 ;;;;;;;;;;X
+EE_BUILD_TIME;时间 ;;;;;;;;;;X
+EE_REQ_MANPOWER;兵源 ;;;;;;;;;;X
+EE_SPEED;速度 ;;;;;;;;;;X
+EE_SPEED_CAP_ART;炮兵团速度上限 ;;;;;;;;;;X
+EE_SPEED_CAP_AT;反坦克团速度上限 ;;;;;;;;;;X
+EE_SPEED_CAP_AA;防空团速度上限 ;;;;;;;;;;X
+EE_SPEED_CAP_ENG;工兵团速度上限 ;;;;;;;;;;X
+EE_MAX_ORG;最大组织度 ;;;;;;;;;;X
+EE_MORALE;士气 ;;;;;;;;;;X
+EE_SUPPLY_CONSUMPTION;补给消耗量 ;;;;;;;;;;X
+EE_FUEL_CONSUMPTION;油料消耗量 ;;;;;;;;;;X
+EE_RANGE;作战半径 ;;;;;;;;;;X
+EE_VISIBILITY;能见度 ;;;;;;;;;;X
+EE_AIR_DETECTION;空中侦察 ;;;;;;;;;;X
+EE_SURFACE_DETECTION;水面侦查 ;;;;;;;;;;X
+EE_SUB_DETECTION;潜艇侦查 ;;;;;;;;;;X
+EE_TRANSPORT_CAPACITY;运输能力 ;;;;;;;;;;X
+EE_AIRCRAFT_CAPACITY;飞机容量 ;;;;;;;;;;X
+EE_NEW_MODEL;新型号 ;;;;;;;;;;X
+EE_ACTIVATE_UNIT_TYPE;激活新兵种 ;;;;;;;;;;X
+EE_NUCLEAR_CARRIER;潜艇现在可以装载核弹 ;;;;;;;;;;X
+EE_ABOMB_ALLOWED;我们现在可以制造原子弹 (如果我们已经对反应堆做了足够的测试) ;;;;;;;;;;X
+EE_MAX_REACTOR_SIZE;反应堆最大规模： ;;;;;;;;;;X
+EE_MISSILE_CARRIER;潜艇可以发射导弹 ;;;;;;;;;;X
+EE_MINISUB_BONUS;袖珍潜艇加成 ;;;;;;;;;;X
+EE_SURPRISE;奇袭概率 ;;;;;;;;;;X
+EE_INTELLIGENCE;获取情报概率 ;;;;;;;;;;X
+EE_ARMY_DETECTION;部队发现的概率 ;;;;;;;;;;X
+EE_AA_BATTERIES;对空火力 ;;;;;;;;;;X
+EE_RESEARCH_COST;研发花费 ;;;;;;;;;;X
+EE_RESEARCH_TIME;研发时间 ;;;;;;;;;;X
+EE_RESEARCH_POS_OFFSET;研发最大时间上限 ;;;;;;;;;;X
+EE_RESEARCH_NEG_OFFSET;研发最大时间下限 ;;;;;;;;;;X
+EE_INDUSTRIAL_MULTIPLIER;工业增效器 ;;;;;;;;;;X
+EE_INDUSTRIAL_MODIFIER;工业效率 ;;;;;;;;;;X
+EE_NUKE_LEVEL;原子弹类型 ;;;;;;;;;;X
+EE_CARRIER_LEVEL;航母学说 ;;;;;;;;;;X
+EE_DEACTIVATE_TECH;失效科技 ;;;;;;;;;;X
+EE_LAND_FORT_EFF;陆上要塞效率 ;;;;;;;;;;X
+EE_COAST_FORT_EFF;海防要塞效率 ;;;;;;;;;;X
+EE_CONVOY_DEF_EFF;运输护航效率 ;;;;;;;;;;X
+EE_GROUND_DEF_EFF;地面防御效率 ;;;;;;;;;;X
+EE_BLIZZARD_ATTACK;暴风雪攻击 ;;;;;;;;;;X
+EE_SNOW_ATTACK;雪天攻击 ;;;;;;;;;;X
+EE_FROZEN_ATTACK;严寒攻击 ;;;;;;;;;;X
+EE_RAIN_ATTACK;雨天攻击 ;;;;;;;;;;X
+EE_STORM_ATTACK;暴风雨攻击 ;;;;;;;;;;X
+EE_MUDDY_ATTACK;泥泞攻击 ;;;;;;;;;;X
+EE_NIGHT_ATTACK;夜间攻击 ;;;;;;;;;;X
+EE_DESERT_ATTACK;沙漠攻击 ;;;;;;;;;;X
+EE_MOUNTAIN_ATTACK;山地攻击 ;;;;;;;;;;X
+EE_HILL_ATTACK;丘陵攻击 ;;;;;;;;;;X
+EE_FOREST_ATTACK;森林攻击 ;;;;;;;;;;X
+EE_JUNGLE_ATTACK;丛林攻击 ;;;;;;;;;;X
+EE_SWAMP_ATTACK;沼泽攻击 ;;;;;;;;;;X
+EE_URBAN_ATTACK;巷战 ;;;;;;;;;;X
+EE_RIVER_ATTACK;渡河攻击 ;;;;;;;;;;X
+EE_SHORE_ATTACK;抢滩攻击 ;;;;;;;;;;X
+EE_PARADROP_ATTACK;伞兵攻击 ;;;;;;;;;;X
+EE_FORT_ATTACK;要塞攻击 ;;;;;;;;;;X
+EE_BLIZZARD_DEFENSE;暴风雪防御 ;;;;;;;;;;X
+EE_SNOW_DEFENSE;雪天防御 ;;;;;;;;;;X
+EE_FROZEN_DEFENSE;严寒防御 ;;;;;;;;;;X
+EE_RAIN_DEFENSE;雨天防御 ;;;;;;;;;;X
+EE_STORM_DEFENSE;暴风雨防御 ;;;;;;;;;;X
+EE_MUDDY_DEFENSE;泥泞防御 ;;;;;;;;;;X
+EE_NIGHT_DEFENSE;夜间防御 ;;;;;;;;;;X
+EE_DESERT_DEFENSE;沙漠防御 ;;;;;;;;;;X
+EE_MOUNTAIN_DEFENSE;山地防御 ;;;;;;;;;;X
+EE_HILL_DEFENSE;丘陵防御 ;;;;;;;;;;X
+EE_FOREST_DEFENSE;森林防御 ;;;;;;;;;;X
+EE_JUNGLE_DEFENSE;丛林防御 ;;;;;;;;;;X
+EE_SWAMP_DEFENSE;沼泽防御 ;;;;;;;;;;X
+EE_URBAN_DEFENSE;城市防御 ;;;;;;;;;;X
+EE_BLIZZARD_MOVE;暴风雪行军 ;;;;;;;;;;X
+EE_SNOW_MOVE;雪天行军 ;;;;;;;;;;X
+EE_FROZEN_MOVE;严寒行军 ;;;;;;;;;;X
+EE_RAIN_MOVE;雨天行军 ;;;;;;;;;;X
+EE_STORM_MOVE;暴风雨行军 ;;;;;;;;;;X
+EE_MUDDY_MOVE;泥泞行军 ;;;;;;;;;;X
+EE_NIGHT_MOVE;夜间行军 ;;;;;;;;;;X
+EE_DESERT_MOVE;沙漠行军 ;;;;;;;;;;X
+EE_MOUNTAIN_MOVE;山地行军 ;;;;;;;;;;X
+EE_HILL_MOVE;丘陵行军 ;;;;;;;;;;X
+EE_FOREST_MOVE;森林行军 ;;;;;;;;;;X
+EE_JUNGLE_MOVE;丛林行军 ;;;;;;;;;;X
+EE_SWAMP_MOVE;沼泽行军 ;;;;;;;;;;X
+EE_URBAN_MOVE;城市行军 ;;;;;;;;;;X
+EE_ALLOW_DIG_IN;我们的部队在不行军时将挖掘工事。 ;;;;;;;;;;X
+EE_HQ_SUPPLY_EFF;HQ补给加成：%s%.1f\%% \n;;;;;;;;;;X
+EE_HQ_COMBAT_EVENT_CHANCE;HQ附近战术触发几率增加: %+.1f\n;;;;;;;;;;X
+EE_DOMESTIC;我们的内政方针转变了%d向%s。 ;;;;;;;;;;X
+EE_SET_DOMESTIC;政策‘%s’被设定为%d。 ;;;;;;;;;;X
+EE_COUNTERATTACK;反攻几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_ASSAULT;突袭几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_ENCIRCLEMENT;包围几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_AMBUSH;伏击几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_DELAY;阻击几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_TACTICAL_WITHDRAWAL;战术撤退几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_BREAKTHROUGH;突破几率：%s%.1f\%% \n;;;;;;;;;;X
+EE_ADD_CORPS;%s已在%s地区集结待命。 ;;;;;;;;;;X
+EE_ADD_DIVISION;新的%s到达。 ;;;;;;;;;;X
+EE_REMOVE_DIVISION;%s部队在这个剧情中消失。 ;;;;;;;;;;X
+EE_ALLOW_GAS_ATTACK;我们现在可以对我们的敌人使用毒气。 ;;;;;;;;;;X
+EE_ALLOW_GAS_PROTECTION;我们发展了相应的防御毒气措施。 ;;;;;;;;;;X
+EE_TC_MOD;TC修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_TC_OCCUPIED_MOD;占领地区TC修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_ATTRITION_MOD;损耗修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_SUPPLY_DIST_MOD;远距离补给修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_REPAIR_MOD;维修修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_RESEARCH_MOD;科研修正：%s%.1f\%% \n;;;;;;;;;;X
+EE_RADAR_EFF;雷达站效率：%+.1f\%% \n;;;;;;;;;;X
+EE_SCRAP_MODEL;%s：旧型号"%s"已经退役。 ;;;;;;;;;;X
+EE_ALLOW_BUILDING;我们现在可以修建新设施：%s ;;;;;;;;;;X
+EE_BUILDING_EFF_MOD;%s有效性加成：%+.1f\%% \n;;;;;;;;;;X
+EE_BUILDING_PROD_MOD;%s修建加成：%+.1f\%% \n;;;;;;;;;;X
+EE_CONVOY_PROD_MOD;%s修建加成：%+.1f\%% \n;;;;;;;;;;X
+EE_INFO_MAY_CAUSE;将引向‘%s’的研究。 ;;;;;;;;;;X
+EE_ACTIVATE_TECH;现在可以研究%s科技了。 ;;;;;;;;;;X
+EE_TASK_EFFICIENCY;%s效率：%+.1f\%% \n;;;;;;;;;;X
+EE_MAX_POSITIONING;%s：最大战场布置能力%+.1f\%% \n;;;;;;;;;;X
+EE_MIN_POSITIONING;%s：最小战场布置能力%+.1f\%% \n;;;;;;;;;;X
+EE_ADD_PROV_RESOURCE;%s的%s产量改变了%+.0f \n;;;;;;;;;;X
+EE_BELLIGERENCE;%s的好战性：%s%.1f\%% \n;;;;;;;;;;X
+EE_LOCK_DIVISION;%s不能移动或被重新配置。 ;;;;;;;;;;X
+EE_UNLOCK_DIVISION;%s现在能移动和重新配置了。 ;;;;;;;;;;X
+EE_DAMAGE_DIVISION;%s的兵力：%s%d\%% ;;;;;;;;;;x
+EE_DISORG_DIVISION;%s的组织度：%s%d\%% ;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_NUKE_PROD;核弹生产速度加倍 ;;;;;;;;;;x
+EE_NUKE_DAMAGE;核弹伤害+ ;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_GLEADER;指挥官 %s 被派给 %s ;;;;;;;;;;x
+EE_LEADER_ADD_SKILL;%s技能增加%d ;;;;;;;;;;X
+EE_LEADER_REMOVE_SKILL;%s技能减少%d ;;;;;;;;;;X
+EE_LEADER_TRAIT;%s获得特性%s ;;;;;;;;;;X
+EE_LEADER_LOST_TRAIT;%s失去特性%s ;;;;;;;;;;X
+EE_TEAM_SKILL;%s技能变为%d ;;;;;;;;;;X
+EE_TEAM_ADD_SKILL;%s技能增加%d ;;;;;;;;;;X
+EE_TEAM_REMOVE_SKILL;%s技能减少%d ;;;;;;;;;;X
+EE_TEAM_RESEARCH_TYPE;%s获得科研专长%s ;;;;;;;;;;x
+EE_TEAM_LOST_RESEARCH_TYPE;%s失去科研专长%s ;;;;;;;;;;x
+EE_GTEAM;科研组 %s 被派给 %s ;;;;;;;;;;x
+EE_WEIGHT;运输能力负载： ;;;;;;;;;;X
+EE_ARTILLERY_BOMBARDMENT;远程炮击 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_TRICKLEBACK_MOD;伤兵复员率修正:%s%.1f\%%\n;;;;;;;;;;x
+EE_MAX_AMPHIB_MOD;两栖作战部队上限:%.0f\n;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_NEW_PATTERN;新的气候：%s已经在 %s出现。 ;;;;;;;;;;X
+EE_END_PATTERN;%s气候已经在 %s消散。 ;;;;;;;;;;X
+EE_NUCLEAR_CARRIER_NEW;%s现在可以携带核武器。 ;;;;;;;;;;X
+EE_DOMESTIC_CURRENT;(当前：%d) ;;;;;;;;;;X
+EE_SET_RELATION;同%s的关系设为%d。 ;;;;;;;;;;X
+EE_RESOURCE;%s的储蓄改变了每天最大收入的%s%.1f\%%。 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_FREE_IC;地图外IC%+.0f. ;;;;;;;;;;X
+EE_FREE_MP;地图外人力%+.0f. ;;;;;;;;;;X
+EE_WAKE_LEADER;%s接受您的领导。 ;;;;;;;;;;X
+EE_DEACTIVATE_UNIT_TYPE;退役 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EE_NAID;经济形态: %s ;;;;;;;;;;X
+EE_SOPO;社会文化: %s ;;;;;;;;;;X
+EE_NACU;政治思想: %s ;;;;;;;;;;X
+HOINI_NATIONAL_IDENTITY;经济形态 ;;;;;;;;;;X
+HOINI_SOCIAL_POLICY;社会文化 ;;;;;;;;;;X
+HOINI_NATIONAL_CULTURE;政治思想 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EE_GEARING_LIMIT;流水线加成上限 ;;;;;;;;;;x
+EE_GEARING_EFF;流水线加成效率 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+EE_TORPEDO_ATTACK;鱼雷攻击 ;;;;;;;;;;x
+EE_SETFLAG;空军总长：%s ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TC_AXIS_VP;轴心国控制着至少%d个胜利点 \n;;;;;;;;;;X
+TC_ALLIES_VP;盟国控制着至少%d个胜利点 \n;;;;;;;;;;X
+TC_COMINTERN_VP;共产国际控制着至少%d个胜利点 \n;;;;;;;;;;X
+TC_IRO_INFO;此舰队目前载有%d个师，最大可以运载%d个。 ;;;;;;;;;;X
+TC_DRO_INFO;每艘运输舰可运载一个陆军师 ;;;;;;;;;;X
+TC_MONTH;月数＞＝%d。 ;;;;;;;;;;X
+TC_ATTACK;%s已对他们宣战。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCNOT_FLAG;世界标记‘%s’尚未设定 \n ;;;;;;;;;;X
+TCNOT_LOCAL_FLAG;本地标记‘%s’尚未设定 \n ;;;;;;;;;;X
+TCNOT_DIVISION;以下%d%s部队 \n ;;;;;;;;;;X
+TCNOT_HEAD_OF_STATE;%s不是国家元首 \n ;;;;;;;;;;X
+TCNOT_HEAD_OF_GOV;%s不是政府首脑 \n ;;;;;;;;;;X
+TCNOT_LEADER_EXISTS;领袖%s未起作用 \n ;;;;;;;;;;X
+TCNOT_MINISTER_EXISTS;部长%s未起作用 \n ;;;;;;;;;;X
+TCNOT_TECH_KNOWN;科技%s尚未掌握 \n ;;;;;;;;;;X
+TCNOT_TECH_ACTIVE;科技%s未起作用 \n ;;;;;;;;;;X
+TCNOT_OIL;以下%d油料在储备中 \n ;;;;;;;;;;X
+TCNOT_ENERGY;以下%d能源在储备中 \n ;;;;;;;;;;X
+TCNOT_METAL;以下%d金属在储备中 \n ;;;;;;;;;;X
+TCNOT_RARE_MATERIALS;以下%d稀有原料在储备中 \n ;;;;;;;;;;X
+TCNOT_SUPPLIES;以下%d补给在储备中 \n ;;;;;;;;;;X
+TCNOT_MANPOWER;以下%d可用兵源 \n ;;;;;;;;;;X
+TCNOT_DIFFICULTY;以下难度%s \n ;;;;;;;;;;X
+TCNOT_CONVOY_POOL;以下%d未部署的护航运输舰 \n ;;;;;;;;;;X
+TCNOT_EVENT_OCCURRED;事件%s应该还未发生 \n ;;;;;;;;;;X
+TCNOT_RANDOM_CHANCE;%d\%%的机率发生 \n ;;;;;;;;;;X
+TCNOT_LOST_VP;敌人占领了不到%d\%%的%s的胜利点 \n ;;;;;;;;;;X
+TCNOT_LOST_NATIONAL;敌人占领了不到%d\%%的%s的固有领土 \n ;;;;;;;;;;X
+TCNOT_LOST_IC;敌人占领了不到%d\%%的%s的IC \n ;;;;;;;;;;X
+TCNOT_INTEL_DIFF;情报领先优势低于%d \n ;;;;;;;;;;X
+TCNOT_DISSENT;不满度低于%d \n ;;;;;;;;;;X
+TCNOT_GOV_TYPE;政体不是%s \n ;;;;;;;;;;X
+TCNOT_IDEOLOGY;政府不是%s \n ;;;;;;;;;;X
+TCNOT_YEAR;早于%d年 \n ;;;;;;;;;;X
+TCNOT_VP;胜利点低于%d \n ;;;;;;;;;;X
+TCNOT_AT_WAR;和平状态 \n ;;;;;;;;;;X
+TCNOT_AT_WAR_WITH;同%s处于和平状态 \n ;;;;;;;;;;X
+TCNOT_ATTACK;%s没有对他们宣战。 ;;;;;;;;;;X
+TCNOT_UNDER_ATTACK;%s未遭到攻击 \n ;;;;;;;;;;X
+TCNOT_IS_PUPPET;%s不是傀儡政府 \n ;;;;;;;;;;X
+TCNOT_PUPPET;%s不是%s的傀儡政府 \n ;;;;;;;;;;X
+TCNOT_OWNED;%s不是%s拥有的 \n ;;;;;;;;;;X
+TCNOT_CONTROLLED;%s未被%s控制 \n ;;;;;;;;;;X
+TCNOT_GARRISON;以下%d个部队位于%s \n ;;;;;;;;;;X
+TCNOT_GARRISON_BY;%s有以下%d部队部属于%s \n ;;;;;;;;;;X
+TCNOT_CONTINENT;首都不在%s \n ;;;;;;;;;;X
+TCNOT_COUNTRY_EXISTS;%s不存在 \n ;;;;;;;;;;X
+TCNOT_ELECTION;不能进行选举 \n ;;;;;;;;;;X
+TCNOT_DOMESTIC;%s低于%d \n ;;;;;;;;;;X
+TCNOT_DIVISION_EXISTS;部队%d%d不存在 \n ;;;;;;;;;;X
+TCNOT_DIVISION_IN_PROV;部队%d%d不在%s \n ;;;;;;;;;;X
+TCNOT_BELLIGERENCE_OF;%s的好战性低于%d \n ;;;;;;;;;;X
+TCNOT_BELLIGERENCE;当前好战性最少为%d \n ;;;;;;;;;;X
+TCNOT_WAR;%s与%s不在战争状态 \n ;;;;;;;;;;X
+TCNOT_ACCESS;%s未同意通过%s \n ;;;;;;;;;;X
+TCNOT_NON_AGGRESSION;%s和%s没有互不侵犯协定 \n ;;;;;;;;;;X
+TCNOT_GUARANTEE;%s没有保障%s的独立 \n ;;;;;;;;;;X
+TCNOT_TRADE;%s和%s没有贸易合约 \n ;;;;;;;;;;X
+TCNOT_ALLIED;%s和%s尚未结盟 \n ;;;;;;;;;;X
+TCNOT_VP_RANGE;超出%d和%d之外的胜利点 ;;;;;;;;;;X
+TCNOT_AXIS_VP;轴心国控制着以下%d胜利点 \n ;;;;;;;;;;X
+TCNOT_ALLIES_VP;盟国控制着以下%d胜利点 \n ;;;;;;;;;;X
+TCNOT_COMINTERN_VP;共产国际控制着以下%d胜利点 \n ;;;;;;;;;;X
+TCNOT_MONTH;在%d月以前 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCS_US;我们 ;;;;;;;;;;x
+TC_FLAG;设置了‘%s’的世界标记 \n;;;;;;;;;;X
+TC_LOCAL_FLAG;设置了‘%s’的本地标记 \n;;;;;;;;;;X
+TC_DIVISION;至少%d%s个师 \n;;;;;;;;;;X
+TC_HEAD_OF_STATE;%s是国家元首 \n;;;;;;;;;;X
+TC_HEAD_OF_GOV;%s是政府首脑 \n;;;;;;;;;;X
+TC_LEADER_EXISTS;指挥官%s现在可用了 \n;;;;;;;;;;X
+TC_MINISTER_EXISTS;部长%s现在可用了 \n;;;;;;;;;;X
+TC_TECH_KNOWN;已掌握%s科技 \n;;;;;;;;;;X
+TC_TECH_ACTIVE;可研究%s科技 \n;;;;;;;;;;X
+TC_OIL;至少有%d油料在储备中 \n;;;;;;;;;;X
+TC_ENERGY;至少有%d能源在储备中 \n;;;;;;;;;;X
+TC_METAL;至少有%d金属在储备中 \n;;;;;;;;;;X
+TC_RARE_MATERIALS;至少有%d稀有原料在储备中 \n;;;;;;;;;;X
+TC_SUPPLIES;至少有%d补给在储备中 \n;;;;;;;;;;X
+TC_MANPOWER;至少有%d可用兵源 \n;;;;;;;;;;X
+TC_DIFFICULTY;%s难度以上或更难 \n;;;;;;;;;;X
+TC_CONVOY_POOL;至少 %d 未分配的商船\n;;;;;;;;;;X
+TC_EVENT_OCCURRED;事件%s已经发生 \n;;;;;;;;;;X
+TC_RANDOM_CHANCE;有%d\%%几率发生 \n;;;;;;;;;;X
+TC_LOST_VP;敌人占领至少%d\%% %s的胜利点 \n;;;;;;;;;;X
+TC_LOST_NATIONAL;敌人占领至少%d\%% %s的固有领土 \n;;;;;;;;;;X
+TC_LOST_IC;敌人占领至少%d\%% %s的IC \n;;;;;;;;;;X
+TC_INTEL_DIFF;情报优势至少为%d \n;;;;;;;;;;X
+TC_DISSENT;不满至少为%d \n;;;;;;;;;;X
+TC_GOV_TYPE;政权支持率为%s \n;;;;;;;;;;X
+TC_IDEOLOGY;政府意识形态为%s \n;;;;;;;;;;X
+TC_YEAR;至少到%d年 \n;;;;;;;;;;X
+TC_VP;至少需要%d胜利点 \n;;;;;;;;;;X
+TC_AT_WAR;战时状态 \n;;;;;;;;;;X
+TC_AT_WAR_WITH;在与%s作战 \n;;;;;;;;;;X
+TC_UNDER_ATTACK;%s正遭受攻击 \n;;;;;;;;;;X
+TC_MAJOR;是一个列强 \n;;;;;;;;;;X
+TC_NOT_MAJOR;不是一个列强 \n;;;;;;;;;;X
+TC_IS_PUPPET;%s是一个傀儡政权 \n;;;;;;;;;;X
+TC_PUPPET;%s是%s的傀儡 \n;;;;;;;;;;X
+TC_OWNED;%s为%s所拥有 \n;;;;;;;;;;X
+TC_CONTROLLED;%s被%s控制 \n;;;;;;;;;;X
+TC_GARRISON;至少有%d个师在%s地区 \n;;;;;;;;;;X
+TC_GARRISON_BY;%s至少有%d个师在%s地区 \n;;;;;;;;;;X
+TC_CONTINENT;首都在%s \n;;;;;;;;;;X
+TC_COUNTRY_EXISTS;%s继续存在 \n;;;;;;;;;;X
+TC_ELECTION;将举行大选 \n;;;;;;;;;;X
+TC_DOMESTIC;%s至少%d \n;;;;;;;;;;X
+TC_DIVISION_EXISTS;部队%d%d存在 \n;;;;;;;;;;X
+TC_DIVISION_IN_PROV;部队%d%d部署于%s \n;;;;;;;;;;X
+TC_BELLIGERENCE_OF;%s的好战性至少是%d \n;;;;;;;;;;X
+TC_BELLIGERENCE;当前的好战性至少是%d \n;;;;;;;;;;X
+TC_WAR;%s正在与%s作战 \n;;;;;;;;;;X
+TC_ACCESS;%s允许%s军事通行 \n;;;;;;;;;;X
+TC_NON_AGGRESSION;%s和%s签署互不侵犯协定 \n;;;;;;;;;;X
+TC_GUARANTEE;%s保障%s的独立 \n;;;;;;;;;;X
+TC_TRADE;%s和%s至少有一项贸易协定 \n;;;;;;;;;;X
+TC_ALLIED;%s同%s是联盟 \n;;;;;;;;;;X
+TC_VP_RANGE;在%d和%d之间的胜利点 ;;;;;;;;;;X
+TC_AND;和 \n;;;;;;;;;;X
+TC_OR;或 \n;;;;;;;;;;X
+TC_NOT;不是 \n;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCNOT_ARMY_SIZE;%s的师不足%d。\n;;;;;;;;;;x
+TC_ARMY_SIZE;%s至少需要%d个师。\n;;;;;;;;;;x
+TCNOT_DAY;不是该月的第%d天。\n;;;;;;;;;;x
+TC_DAY;是该月的第%d天。\n;;;;;;;;;;x
+TCNOT_ARMYPER_BY;低于百分之%.f占%s师总量 ;;;;;;;;;;x
+TC_ARMYPER_BY;至少百分之%.f占%s师总量 ;;;;;;;;;;x
+TCNOT_OTHER_DIVISION;%s低于%d %s \n;;;;;;;;;;x
+TC_OTHER_DIVISION;%s至少需要%d %s \n;;;;;;;;;;x
+TCNOT_OTHER_TECH_KNOWN;%s没有'%s'科技\n;;;;;;;;;;x
+TC_OTHER_TECH_KNOWN;%s拥有'%s'科技\n;;;;;;;;;;x
+TCNOT_IN_CABINET;%s不在该内阁中\n;;;;;;;;;;x
+TC_IN_CABINET;%s在该内阁中\n;;;;;;;;;;x
+TCNOT_IS_COUNTRY;如果国体不是%s ;;;;;;;;;;x
+TC_IS_COUNTRY;如果国体是%s ;;;;;;;;;;x
+TCNOT_CANCHANGEPOLICY;如果不能将%s换成%d ;;;;;;;;;;x
+TC_CANCHANGEPOLICY;如果能将%s换成%d ;;;;;;;;;;x
+TCNOT_AIRPER_BY;低于百分之%.f占%s航空师总量 ;;;;;;;;;;x
+TC_AIRPER_BY;至少百分之%.f占%s航空师总量 ;;;;;;;;;;x
+TCNOT_NAVALPER_BY;低于百分之%.f占%s海军编队总量 ;;;;;;;;;;x
+TC_NAVALPER_BY;至少百分之%.f占%s海军编队总量 ;;;;;;;;;;x
+TCNOT_RELATION;与%s的关系低于%d ;;;;;;;;;;x
+TC_RELATION;与%s的关系至少%d ;;;;;;;;;;x
+TC_REVOLTRISK;%s的叛乱风险至少%f ;;;;;;;;;;x
+TCNOT_REVOLTRISK;%s的叛乱风险低于%f ;;;;;;;;;;x
+TC_TEAM_EXISTS;科研小组%s被激活\n;;;;;;;;;;x
+TC_IC;总IC不少于%d\n;;;;;;;;;;x
+TCNOT_TEAM_EXISTS;科研小组%s未被激活\n;;;;;;;;;;x
+TCNOT_IC;总IC低于%d\n;;;;;;;;;;x
+#;;;;;;;;;;;x
+TC_CAPITALINPROV;首都是%s ;;;;;;;;;;x
+TCNOT_CAPITALINPROV;首都不是%s ;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_COUP_TITLE;政变 ;;;;;;;;;;x
+SPY_COUP_LINE0;让我们用一个更忠诚我们的政府来取代他们的政府 ;;;;;;;;;;x
+SPY_ASSASSIN_MINISTER_TITLE;暗杀内阁成员 ;;;;;;;;;;x
+SPY_ASSASSIN_MINISTER_LINE0;选择想要暗杀的内阁成员 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+BESTLEADER_SPY_INFO;他们最卓越的军事指挥官是 %s%s 位于 %s 。\n\n;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_INF_LVL0;我们猜测他们大约有%d个步兵师， ;;;;;;;;;;X
+SPY_INF_LVL1;我们估计他们大约有%d个步兵师， ;;;;;;;;;;X
+SPY_INF_LVL2;我们几乎确定他们有%d个步兵师， ;;;;;;;;;;X
+SPY_INF_LVL3;我们确定他们有%d个步兵师， ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_ARM_LVL0;我们猜测他们大约有%d个装甲师， ;;;;;;;;;;X
+SPY_ARM_LVL1;我们估计他们大约有%d个装甲师， ;;;;;;;;;;X
+SPY_ARM_LVL2;我们几乎确定他们有%d个装甲师， ;;;;;;;;;;X
+SPY_ARM_LVL3;我们确定他们有%d个装甲师， ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_FIGHTER_LVL0;我们猜测他们大约有%d个战斗机大队， ;;;;;;;;;;X
+SPY_FIGHTER_LVL1;我们估计他们大约有%d个战斗机大队， ;;;;;;;;;;X
+SPY_FIGHTER_LVL2;我们几乎确定他们有%d个战斗机大队， ;;;;;;;;;;X
+SPY_FIGHTER_LVL3;我们确定他们有%d个战斗机大队， ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_BOMBER_LVL0;我们猜测他们大约有%d个轰炸机大队。 ;;;;;;;;;;X
+SPY_BOMBER_LVL1;我们估计他们大约有%d个轰炸机大队。 ;;;;;;;;;;X
+SPY_BOMBER_LVL2;我们几乎确定他们有%d个轰炸机大队。 ;;;;;;;;;;X
+SPY_BOMBER_LVL3;我们确定他们有%d个轰炸机大队。 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_IND_LVL0;他们可能正在建造 %s。 ;;;;;;;;;;X
+SPY_IND_LVL1;他们预计正集中生产 %s。 ;;;;;;;;;;X
+SPY_IND_LVL2;他们相信正集中生产 %s。 ;;;;;;;;;;X
+SPY_IND_LVL3;他们确实正集中生产 %s。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_PRODINF;步兵师 ;;;;;;;;;;X
+SPY_PRODMECH;大量装甲师 ;;;;;;;;;;X
+SPY_PRODBOMBER;空军的轰炸机 ;;;;;;;;;;X
+SPY_PRODFIGHTER;用于夺取制空权的战斗机 ;;;;;;;;;;X
+SPY_PRODNAVY;更强大的海军，以控制大海 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_THEIR_SPY_LVL0;我们向他们渗透了%d个间谍， ;;;;;;;;;;X
+SPY_THEIR_SPY_LVL1;我们向他们渗透了%d个间谍， ;;;;;;;;;;X
+SPY_THEIR_SPY_LVL2;我们向他们渗透了%d个间谍， ;;;;;;;;;;X
+SPY_THEIR_SPY_LVL3;我们向他们渗透了%d个间谍， ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_OWER_SPY_LVL0;并且我们猜测他们向我们渗透了%d个间谍。 ;;;;;;;;;;X
+SPY_OWER_SPY_LVL1;并且我们预计他们向我们渗透了%d个间谍。 ;;;;;;;;;;X
+SPY_OWER_SPY_LVL2;并且我们相信他们向我们渗透了%d个间谍。 ;;;;;;;;;;X
+SPY_OWER_SPY_LVL3;并且我们确定他们向我们渗透了%d个间谍。 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_SHIP_LVL0;我们猜测他们拥有%d条战列舰， %d艘航母和%d条战列巡洋舰， ;;;;;;;;;;X
+SPY_SHIP_LVL1;我们预计他们拥有%d条战列舰， %d艘航母和%d条战列巡洋舰， ;;;;;;;;;;X
+SPY_SHIP_LVL2;我们相信他们拥有%d条战列舰， %d艘航母和%d条战列巡洋舰， ;;;;;;;;;;X
+SPY_SHIP_LVL3;我们确定他们拥有%d条战列舰， %d艘航母和%d条战列巡洋舰， ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_SMALLSHIP_LVL0;并且我们猜测他们拥有%d条小型舰船。 ;;;;;;;;;;X
+SPY_SMALLSHIP_LVL1;并且我们预计他们拥有%d条小型舰船。 ;;;;;;;;;;X
+SPY_SMALLSHIP_LVL2;并且我们相信他们拥有%d条小型舰船。 ;;;;;;;;;;X
+SPY_SMALLSHIP_LVL3;并且我们确定他们拥有%d条小型舰船。 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_NUKES_LVL0;我们确定他们没有核弹。 ;;;;;;;;;;X
+SPY_NUKES_LVL1;我们确定他们没有核弹。 ;;;;;;;;;;X
+SPY_NUKES_LVL2;我们确定他们没有核弹。 ;;;;;;;;;;X
+SPY_NUKES_LVL3;我们确定他们没有核弹。 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+SPY_STEAL_TECH;窃取蓝图 ;;;;;;;;;;X
+SPY_MINISTER_ASSASSINATION;刺杀内阁 ;;;;;;;;;;X
+SPY_LEADER_ASSASSINATION;刺杀将领 ;;;;;;;;;;X
+SPY_INCREASE_INTELLIGENCE_FOUNDING;派遣间谍 ;;;;;;;;;;X
+SPY_SMEAR_CAMPAIGN;造谣活动 ;;;;;;;;;;X
+SPY_COUP;颠覆政府 ;;;;;;;;;;X
+SPY_SABOTAGE_INDUSTRY;破坏工业 ;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE;核工业破坏 ;;;;;;;;;;X
+SPY_FOUND_PARTISANS;资助游击队 ;;;;;;;;;;X
+SPY_TRAIN_PARTISANS;训练游击队 ;;;;;;;;;;X
+SPY_DESTROY_AA;破坏防空设施 ;;;;;;;;;;X
+SPY_DESTROY_FLEET_BASE;摧毁舰队基地 ;;;;;;;;;;X
+SPY_DESTROY_AIR_BASE;摧毁空军基地 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_STEAL_TECH_TITLE;窃取蓝图 ;;;;;;;;;;X
+SPY_STEAL_TECH_LINE0;该行动可使你随机获得敌人已经研发的某个科技 ;;;;;;;;;;X
+SPY_STEAL_TECH_LINE1;这将加速你的科研 ;;;;;;;;;;X
+SPY_MINISTER_ASSASSINATION_TITLE;刺杀内阁 ;;;;;;;;;;X
+SPY_LEADER_ASSASSINATION_TITLE;刺杀将领 ;;;;;;;;;;X
+SPY_INCREASE_INTELLIGENCE_FOUNDING_TITLE;派遣间谍 ;;;;;;;;;;X
+SPY_INCREASE_INTELLIGENCE_FOUNDING_LINE0;这将增加你在该国的间谍数目 ;;;;;;;;;;X
+SPY_SMEAR_CAMPAIGN_TITLE;造谣活动 ;;;;;;;;;;X
+SPY_SMEAR_CAMPAIGN_LINE0;该行动将增加目标国的不满度 ;;;;;;;;;;X
+SPY_SABOTAGE_INDUSTRY_TITLE;破坏生产 ;;;;;;;;;;X
+SPY_SABOTAGE_INDUSTRY_LINE0;通过破坏工厂和制造中心降低目标国的生产能力 ;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE_TITLE;核工业破坏 ;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE_LINE0;该行动将摧毁一颗核弹 ;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE_LINE1;;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE_LINE2;;;;;;;;;;;X
+SPY_FOUND_PARTISANS_LINE0;请选择资助游击队的地区 ;;;;;;;;;;X
+SPY_FOUND_PARTISANS_TITLE;资助游击队 ;;;;;;;;;;X
+SPY_TRAIN_PARTISANS_TITLE;训练游击队 ;;;;;;;;;;X
+SPY_DESTROY_AA_TITLE;破坏防空设施 ;;;;;;;;;;X
+SPY_DESTROY_FLEET_BASE_TITLE;摧毁舰队基地 ;;;;;;;;;;X
+SPY_DESTROY_AIR_BASE_TITLE;摧毁空军基地 ;;;;;;;;;;X
+SPY_FAILUER;失败将导致 ;;;;;;;;;;X
+SPY_FAILUER_LOST_OF_SPIES;损失间谍 ;;;;;;;;;;X
+SPY_FAILUER_DAMAGE_RELATION;与该国关系受损 ;;;;;;;;;;X
+SPY_FAILUER_BELLIGERENCE_INCREASE;你的好战性增加 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_STEAL_TECH_ROLL;尝试窃取科技蓝图 ;;;;;;;;;;X
+SPY_MINISTER_ASSASSINATION_ROLL;尝试刺杀他们的内阁成员 ;;;;;;;;;;X
+SPY_INCREASE_INTELLIGENCE_FOUNDING_ROLL;命令间谍刺探敌情 ;;;;;;;;;;X
+SPY_SMEAR_CAMPAIGN_ROLL;尝试在他们的国家散布谣言 ;;;;;;;;;;X
+SPY_COUP_ROLL;尝试颠覆政府 ;;;;;;;;;;X
+SPY_SABOTAGE_INDUSTRY_ROLL;尝试拖延他们的生产 ;;;;;;;;;;X
+SPY_NUCLEAR_SABOTAGE_ROLL;尝试摧毁核弹 ;;;;;;;;;;X
+SPY_FOUND_PARTISANS_ROLL;尝试支持他们的捣乱者 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_MASSMEDIA_ROLL;尝试影响世界舆论反对他们 ;;;;;;;;;;X
+SPY_DISRUPT_TECHTEAM_ROLL;尝试拖延他们一个科技小组目前的研发进度 ;;;;;;;;;;X
+SPY_CHANGE_MODE_ROLL;这将激活或潜伏我们在他国的间谍 ;;;;;;;;;;X
+SPY_COUNTER_ESPIONAGE_ROLL;我们的反特小组将采取行动清除他国间谍 ;;;;;;;;;;X
+SPY_MASSMEDIA;世界舆论操控 ;;;;;;;;;;X
+SPY_MASSMEDIA_TITLE;世界舆论操控 ;;;;;;;;;;X
+SPY_MASSMEDIA_LINE0;该行动将增加目标国的好战性。 ;;;;;;;;;;X
+SPY_CHANGE_MODE_SLEEP;潜伏间谍 ;;;;;;;;;;X
+SPY_CHANGE_MODE;激活间谍 ;;;;;;;;;;X
+SPY_CHANGE_MODE_TITLE_SLEEP;潜伏间谍 ;;;;;;;;;;X
+SPY_CHANGE_MODE_TITLE;激活间谍 ;;;;;;;;;;X
+SPY_COUNTER_ESPIONAGE;反间谍 ;;;;;;;;;;X
+SPY_COUNTER_ESPIONAGE_TITLE;反间谍 ;;;;;;;;;;X
+SPY_DISRUPT_TECHTEAM;破坏科研进度 ;;;;;;;;;;X
+SPY_DISRUPT_TECHTEAM_TITLE;破坏科研进度 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_FOUND3;%s和%s的关系由此事件受到了严重的 损害。 ;;;;;;;;;;x
+SPY_FOUND;他们发现了我们的企图，两 国的关系将因此受到损害。 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_NOSPIES;我们在这个国家没有间谍，因此我们对他们一无所知。;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_OWNCOUNTRY;我们有%d名间谍正在保护我们免受敌人干扰。 我们猜测%d名敌人间谍正在我国境内活动。 ;;;;;;;;;;X
+SPY_OWNCOUNTRY_1;我们有%d名间谍正在保护我们免受敌人干扰。 我们估计%d名敌人间谍正在我国境内活动。 ;;;;;;;;;;X
+SPY_OWNCOUNTRY_2;我们有%d名间谍正在保护我们免受敌人干扰。 报告显示%d名敌人间谍正在我国境内活动。 ;;;;;;;;;;X
+SPY_OWNCOUNTRY_3;我们有%d名间谍正在保护我们免受敌人干扰。 我们确认%d名敌人间谍正在我国境内活动。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DIPROL_NO_SPY;必须至少一名间谍才能开展行动 ;;;;;;;;;;x
+SPY_NO_INSTANT;下次行动将开始于 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_DEFENSE_INTELLIGENCE_FOUNDING_LINE0;这将增加保护我们免受敌人情报行动影响的间谍 ;;;;;;;;;;x
+SPY_DEFENSE_COUNTER_ESPIONAGE_LINE0;我们的安全部门将采取行动清除他国间谍 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY_FORIGN_CHANCE;国外情报修正 %.1f ;;;;;;;;;;x
+SPY_DEFENCE_CHANCE;反间谍修正 %.1f ;;;;;;;;;;X
+SPY_NAVAL_INTELLIGENCE;海军情报 ;;;;;;;;;;X
+SPY_NAVAL_INTELLIGENCE_ROLL;执行这次任务的间谍将给您带回关于海军舰队的重要信息 ;;;;;;;;;;X
+SPY_NAVAL_INTELLIGENCE_TITLE;海军情报 ;;;;;;;;;;X
+SPY_NAVAL_INTELLIGENCE_LINE;海军情报线  ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY_PRIO_RANKING;报告优先级： %d / %d ;;;;;;;;;;X
+SPY_TOT_BUDGET;谍报总预算： %.1f ;;;;;;;;;;X
+SPY_BUDGET;谍报预算： %.1f / %.1f ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BINFO_AA;对空攻击 ;;;;;;;;;;X
+BINFO_AB;远程炮击 ;;;;;;;;;;X
+BINFO_AD;对空防御 ;;;;;;;;;;X
+BINFO_ADC;对空探测能力 ;;;;;;;;;;X
+BINFO_CONV;对商船攻击 ;;;;;;;;;;X
+BINFO_DD;地面防御 ;;;;;;;;;;X
+BINFO_EXP;经验值 ;;;;;;;;;;X
+BINFO_FU;燃油消耗量 ;;;;;;;;;;X
+BINFO_HA;装甲攻击 ;;;;;;;;;;X
+BINFO_MOR;士气 ;;;;;;;;;;X
+BINFO_MS;最高速度 ;;;;;;;;;;X
+BINFO_NAV;对海攻击 ;;;;;;;;;;X
+BINFO_ORG;组织度 ;;;;;;;;;;X
+BINFO_RANGE;作战航程 ;;;;;;;;;;X
+BINFO_SA;非装甲攻击 ;;;;;;;;;;X
+BINFO_SCA;护航攻击 ;;;;;;;;;;X
+BINFO_SDC;对海探测能力 ;;;;;;;;;;X
+BINFO_SD;对海防御 ;;;;;;;;;;X
+BINFO_SEA;对海攻击 ;;;;;;;;;;X
+BINFO_SHOR;海岸炮击 ;;;;;;;;;;X
+BINFO_SO;非装甲度 ;;;;;;;;;;X
+BINFO_SP;镇压能力 ;;;;;;;;;;X
+BINFO_STRENGTH;兵力 ;;;;;;;;;;X
+BINFO_STR;战略轰炸 ;;;;;;;;;;X
+BINFO_SUA;对潜攻击 ;;;;;;;;;;X
+BINFO_SUC;对潜探测能力 ;;;;;;;;;;X
+BINFO_SUD;对地防御 ;;;;;;;;;;X
+BINFO_SU;补给消耗量 ;;;;;;;;;;X
+BINFO_TD;坚韧度 ;;;;;;;;;;X
+BINFO_VIS;能见度 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DAY_MISSION;日间 ;;;;;;;;;;X
+NIGHT_MISSION;夜间 ;;;;;;;;;;X
+BOTH_MISSION;全天 ;;;;;;;;;;X
+FREQ_MISSION;兵力/组织度 不少于 %d \%%;;;;;;;;;;X
+TITLE_MISSION;%s 在 %s;;;;;;;;;;X
+HAVE_NO_MISSION;待命中 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MISSION_ALL;白天和夜晚\n;;;;;;;;;;x
+MISSION_BADWEATHER;由于坏天气飞机无法起飞 ;;;;;;;;;;x
+MISSION_DAYS;只在白天\n;;;;;;;;;;x
+MISSION_ENDAT;任务会进行到 %s\n;;;;;;;;;;x
+MISSION_MOVE;移动 ;;;;;;;;;;x
+MISSION_NIGHTS;只在夜晚\n;;;;;;;;;;x
+MISSION_NONE;待命 ;;;;;;;;;;x
+MISSION_PERC;继续执行任务直到兵力和组织度降低到百分之 %.1f以下 ;;;;;;;;;;x
+MISSION_RETREAT;撤退 ;;;;;;;;;;x
+MISSION_STARTAT;任务会在 %s开始\n;;;;;;;;;;x
+MISSION_STARTED;现任务已开始\n;;;;;;;;;;x
+MISSION_SUBTASK;(正移动到 %s)\n;;;;;;;;;;x
+MISSION_TARGET;目标: %s\n;;;;;;;;;;x
+MISSION_UNTIL_DEATH;继续执行任务直到被歼灭或被击败\n;;;;;;;;;;x
+#;;;;;;;;;;;x
+MISSION_DESC_AIRBORNE_ASSAULT;空降突袭任务由装载着伞兵部队的运输机部队执行。伞兵部 队将会被空降在目标省份并试图占领。 ;;;;;;;;;;X
+MISSION_DESC_AIR_SUPERIORITY;夺取制空权任务由战斗机部队执行。他们将会在指定空域巡 逻并攻击任何发现的敌机。 ;;;;;;;;;;X
+MISSION_DESC_AIR_SUPPLY;空运补给任务由运输机部队执行。他们将尝试向被包围部队 运送物资，以维持其作战能力直到解围之日。 ;;;;;;;;;;X
+MISSION_DESC_AMPHIBOUS_ASSAULT;两栖突袭任务由海军运输舰部队执行。他们将会卸载海军陆 战队和其他部队来夺取海滩。 ;;;;;;;;;;X
+MISSION_DESC_ANTI_PARTISAN_DUTY;反游击任务意味着执行部队将会镇压所在省份和邻近省份的 游击活动。这些省份的游击活动等级将会随时间而降低。 ;;;;;;;;;;X
+MISSION_DESC_ARTILLERY_BOMBARDMENT;火炮轰炸由带有炮兵加强团的部队执行轰炸敌军部队、防御 工事或基础设施的任务。 ;;;;;;;;;;X
+MISSION_DESC_ASW;反潜巡逻任务的舰船将会搜寻并攻击目标区域内的敌军潜艇 。该任务最好交由巡洋舰、驱逐舰和轻巡洋舰来执行，因为 他们装备了最好的反潜武器。 ;;;;;;;;;;X
+MISSION_DESC_ATTACK;你可以通过执行进攻任务来攻击敌人占领省份。你的部队将 会开始进入目标省份并同驻守在那里的敌军作战。 ;;;;;;;;;;X
+MISSION_DESC_CONVOY_AIR_RAIDING;空中猎杀输送船任务由具有海上轰炸能力的空军部队执行。 执行部队将会空袭制定区域内的敌军输送船队，降低敌军从 海上运输补给和资源的能力。 ;;;;;;;;;;X
+MISSION_DESC_CONVOY_RAIDING;猎杀输送船任务打击敌人的运输航线，减少其海外省份所能 从本土得到的资源和补给。 ;;;;;;;;;;X
+MISSION_DESC_GROUND_ATTACK;对地攻击任务由俯冲轰炸机部队和战术轰炸机部队执行。他 们将会供给指定地区内的地面单位以削弱其兵力。 ;;;;;;;;;;X
+MISSION_DESC_INDUSTRIAL_BOMBARDMENT;轰炸工业任务的目标是敌人的工业。这将削弱他们建造补给 和新部队的能力同时也会削弱他们的运输能力，这个任务只 能由战略轰炸单位执行。 ;;;;;;;;;;X
+MISSION_DESC_INSTALLATION_STRIKE;轰炸设施任务的目标是目标地区内的防御性军事设施，例如 防空火炮、雷达设施、核设施和导弹发射装置。 ;;;;;;;;;;X
+MISSION_DESC_INTERDICTION;空中封锁任务由俯冲轰炸机部队和战术轰炸机部队执行。他 们将会攻击目标区域内的敌军部队并切断他们的联系从而降 低其组织度。 ;;;;;;;;;;X
+MISSION_DESC_LOGISTICAL_STRIKE;攻击补给线任务的目的是破坏目标区域内省份的基础设施， 这将阻击敌军的运动和减少其补给效率。 ;;;;;;;;;;X
+MISSION_DESC_NAVAL_AIRBASE_STRIKE;舰载机攻击机场任务由航母上的舰载空军大队执行。舰载机 将会对敌军空军基地进行破坏，降低其容纳飞机的能力。 ;;;;;;;;;;X
+MISSION_DESC_NAVAL_COMBAT_PATROL;海上战斗巡逻任务的舰队将在目标海域内巡逻并同任何接触 的敌军交战。因为海上战斗巡逻比水域封锁覆盖更大海域， 你发现敌军舰只的机会相对减少。 ;;;;;;;;;;X
+MISSION_DESC_NAVAL_INTERDICTION;海上封锁任务的舰队将会在目标水域巡逻并攻击任何进入该 水域的敌船。 ;;;;;;;;;;X
+MISSION_DESC_NAVAL_PORT_STRIKE;舰载机攻击港口任务由航母上的舰载空军中队执行。舰载机 将会对敌军港口和港内舰只进行破坏。 ;;;;;;;;;;X
+MISSION_DESC_NAVAL_STRIKE;攻击舰船任务的目的是击沉或损伤目标区域内的敌军舰船。 ;;;;;;;;;;X
+MISSION_DESC_NUKE;核打击任务将制造史无前例的巨大爆炸。试验观测报告描述 ：其光胜于千日之和，吾将为死神，毁灭世界之神！ ;;;;;;;;;;X
+MISSION_DESC_PORT_STRIKE;攻击港口任务的目标是目标区域内的港口设施以及任何港口 内的船只。 ;;;;;;;;;;X
+MISSION_DESC_REBASE_NAVAL;你可以通过执行转移基地任务来让你的舰队进驻其他海军基 地，并从新的海军基地获取补给和燃料。普通的进入港口卸 载部队并不改变基地，那和转移基地不同。 ;;;;;;;;;;X
+MISSION_DESC_REBASE;你可以通过执行转场任务来重新部署你的空军部队到别的空 军基地。你的飞机将会驻扎在新机场并从那里执行新任务。 ;;;;;;;;;;X
+MISSION_DESC_RESERVES;编入后备的部队驻扎在后方。他们会自动支援任何被攻击的 邻近省份。 ;;;;;;;;;;X
+MISSION_DESC_RUNWAY_CRATERING;轰炸机场任务的目标是敌军机场，该任务将会降低敌军机场 等级并破坏停靠在其中的飞机。 ;;;;;;;;;;X
+MISSION_DESC_SEA_TRANSPORT;海运任务由装载了陆军部队的运输舰部队执行。他们将会在 卸载所装部队到目标省份后自动返回基地港口。 ;;;;;;;;;;X
+MISSION_DESC_SHORE_BOMBARDMENT;海岸炮击任务只能交由大型军舰执行：如战列舰、战列巡洋 舰和重巡洋舰，这些军舰将会炮击区域内的敌军单位。另外 ，这些军舰将会自动支援临近靠海省份的友军作战。 ;;;;;;;;;;X
+MISSION_DESC_STRATEGIC_BOMBARDMENT;战略轰炸任务的目标是敌人的工厂。这将降低敌人的补给品 、部队生产能力并影响其运输能力，只有战略轰炸机部队能 执行该任务。 ;;;;;;;;;;X
+MISSION_DESC_STRAT_REDEPLOY;战略转移是通过铁路运输转移部队。你的部队在再部署期间 不能作战，另一方面你的运输能力受国力限制。 ;;;;;;;;;;X
+MISSION_DESC_SUPPORT_ATTACK;协同攻击任务的部队将会和目标省份内的敌军接战，但不会 在胜利后进入该省份，所以你最好指定至少一支部队执行进 攻任务来占领目标省份。 ;;;;;;;;;;X
+MISSION_DESC_SUPPORT_DEFENSE;协同防御任务能使你在敌人进攻前在后方保留部队。任何执 行该任务的部队将会在指定省份被攻击后参与防御。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MISSION_AIRBORNE_ASSAULT;空降突击 ;;;;;;;;;;X
+MISSION_AIR_SUPERIORITY;夺取制空权 ;;;;;;;;;;X
+MISSION_AIR_SUPPLY;空运补给 ;;;;;;;;;;X
+MISSION_AMPHIBOUS_ASSAULT;两栖突击 ;;;;;;;;;;X
+MISSION_ANTI_PARTISAN_DUTY;反游击 ;;;;;;;;;;X
+MISSION_ARTILLERY_BOMBARDMENT;远程炮击 ;;;;;;;;;;X
+MISSION_ASW;反潜巡逻 ;;;;;;;;;;X
+MISSION_ATTACK;进攻 ;;;;;;;;;;X
+MISSION_CONVOY_AIR_RAIDING;空中猎杀输送船 ;;;;;;;;;;X
+MISSION_CONVOY_RAIDING;猎杀输送船 ;;;;;;;;;;X
+MISSION_GROUND_ATTACK;对地攻击 ;;;;;;;;;;X
+MISSION_INDUSTRIAL_BOMBARDMENT;工业轰炸 ;;;;;;;;;;X
+MISSION_INSTALLATION_STRIKE;轰炸设施 ;;;;;;;;;;X
+MISSION_INTERDICTION;空中封锁 ;;;;;;;;;;X
+MISSION_LOGISTICAL_STRIKE;攻击补给线 ;;;;;;;;;;X
+MISSION_NAVAL_AIRBASE_STRIKE;舰载机攻击机场 ;;;;;;;;;;X
+MISSION_NAVAL_COMBAT_PATROL;海上战斗巡逻 ;;;;;;;;;;X
+MISSION_NAVAL_INTERDICTION;海上封锁 ;;;;;;;;;;X
+MISSION_NAVAL_PORT_STRIKE;舰载机攻击港口 ;;;;;;;;;;X
+MISSION_NAVAL_STRIKE;攻击舰船 ;;;;;;;;;;X
+MISSION_NUKE;核打击 ;;;;;;;;;;X
+MISSION_PORT_STRIKE;攻击港口 ;;;;;;;;;;X
+MISSION_REBASE;基地转移 ;;;;;;;;;;X
+MISSION_RESERVES;编入后备 ;;;;;;;;;;X
+MISSION_RUNWAY_CRATERING;轰炸机场 ;;;;;;;;;;X
+MISSION_SEA_TRANSPORT;海运 ;;;;;;;;;;X
+MISSION_SHORE_BOMBARDMENT;海岸炮击 ;;;;;;;;;;X
+MISSION_STRATEGIC_BOMBARDMENT;战略轰炸 ;;;;;;;;;;X
+MISSION_STRAT_REDEPLOY;战略转移 ;;;;;;;;;;X
+MISSION_SUPPORT_ATTACK;协同攻击 ;;;;;;;;;;X
+MISSION_SUPPORT_DEFENSE;协同防御 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TRAIT_LOGWIZ;后勤大师 ;;;;;;;;;;X
+TRAIT_DEFDOC;防御学说 ;;;;;;;;;;X
+TRAIT_OFFDOC;进攻学说 ;;;;;;;;;;X
+TRAIT_WINSPE;冬季专家 ;;;;;;;;;;X
+TRAIT_TRICKS;奇袭专家 ;;;;;;;;;;X
+TRAIT_ENGINE;工程师 ;;;;;;;;;;X
+TRAIT_FORBUS;攻坚专家 ;;;;;;;;;;X
+TRAIT_PNZLED;装甲指挥官 ;;;;;;;;;;X
+TRAIT_COMMAN;特种战专家 ;;;;;;;;;;X
+TRAIT_OLDGRD;保守派 ;;;;;;;;;;X
+TRAIT_SEAWOL;海狼战专家 ;;;;;;;;;;X
+TRAIT_BLKRUN;封锁战专家 ;;;;;;;;;;X
+TRAIT_SUPTAC;高级战术专家 ;;;;;;;;;;X
+TRAIT_SPOTTE;侦察专家 ;;;;;;;;;;X
+TRAIT_TNKBUS;坦克猎杀专家 ;;;;;;;;;;X
+TRAIT_CRPBOM;地毯式轰炸专家 ;;;;;;;;;;X
+TRAIT_NGHTFL;夜航专家 ;;;;;;;;;;X
+TRAIT_FLTDES;舰队破坏专家 ;;;;;;;;;;X
+TRAIT_DSRFOX;沙漠之狐 ;;;;;;;;;;X
+TRAIT_JUNGLE;丛林之虎 ;;;;;;;;;;X
+TRAIT_URBAN;巷战专家 ;;;;;;;;;;X
+TRAIT_FOREST;森林战专家 ;;;;;;;;;;X
+TRAIT_MOUNTAIN;山地战专家 ;;;;;;;;;;X
+TRAIT_HILLS;丘陵战专家 ;;;;;;;;;;X
+TRAIT_COUNTER;反击专家 ;;;;;;;;;;X
+TRAIT_ASSAULT;突击专家 ;;;;;;;;;;X
+TRAIT_ENCIRCL;包围专家 ;;;;;;;;;;X
+TRAIT_AMBUSH;伏击专家 ;;;;;;;;;;X
+TRAIT_DELAY;阻击专家 ;;;;;;;;;;X
+TRAIT_TATICAL;弹性防御专家 ;;;;;;;;;;X
+TRAIT_BREAK;闪击专家 ;;;;;;;;;;X
+#########################################;;;;;;;;;;;x
+#  Leader Information                    ;;;;;;;;;;;x
+#########################################;;;;;;;;;;;x
+0TH;;;;;;;;;;;X
+1ST;;;;;;;;;;;X
+2ND;;;;;;;;;;;X
+3TH;;;;;;;;;;;X
+4TH;;;;;;;;;;;X
+5TH;;;;;;;;;;;X
+6TH;;;;;;;;;;;X
+7TH;;;;;;;;;;;X
+8TH;;;;;;;;;;;X
+9TH;;;;;;;;;;;X
+DIVISION;师 ;;;;;;;;;;X
+RANKNAME_1;陆军元帅 ;;;;;;;;;;X
+RANKNAME_2;陆军上将 ;;;;;;;;;;X
+RANKNAME_3;陆军中将 ;;;;;;;;;;X
+RANKNAME_4;陆军少将 ;;;;;;;;;;X
+RANKNAME_A1;空军元帅 ;;;;;;;;;;X
+RANKNAME_A2;空军上将 ;;;;;;;;;;X
+RANKNAME_A3;空军中将 ;;;;;;;;;;X
+RANKNAME_A4;空军少将 ;;;;;;;;;;X
+RANKNAME_N1;海军元帅 ;;;;;;;;;;X
+RANKNAME_N2;海军上将 ;;;;;;;;;;X
+RANKNAME_N3;海军中将 ;;;;;;;;;;X
+RANKNAME_N4;海军少将 ;;;;;;;;;;X
+CANCOMMANDA;可以指挥%d个大队 ;;;;;;;;;;X
+CANCOMMANDN;可以指挥%d个支队 ;;;;;;;;;;X
+CANCOMMAND;可以指挥%d个师 ;;;;;;;;;;X
+LEADER_SR;军衔 ;;;;;;;;;;X
+LEADER_SN;姓名 ;;;;;;;;;;X
+LEADER_SK;技能 ;;;;;;;;;;X
+LEADER_PROMOTE;晋升 ;;;;;;;;;;X
+LEADER_REMOVE;解除 ;;;;;;;;;;X
+LEADER_REMOVE_ALL;全部解除 ;;;;;;;;;;X
+LEADER_SKILL;技能:%d\n;;;;;;;;;;X
+LEADER_EXP;经验:%.0f\n;;;;;;;;;;X
+LEADER_MAXSKILL;最大技能:%d\n;;;;;;;;;;X
+LEADER_IDEAL;最高等级: %s\n;;;;;;;;;;X
+LEADER_PROMOTE_IRO1;(点击晋升这位指挥官) ;;;;;;;;;;X
+LEADER_PROMOTE_IRO2;这位指挥官已晋升到最高军衔。 ;;;;;;;;;;X
+LEADER_PROMOTE_IRO3;这位指挥官晋升所需技能不足。 ;;;;;;;;;;X
+LEADER_PROMOTE_IRO4;这位指挥官不能晋升。 ;;;;;;;;;;X
+LEADER_PROMOTE_DRO;指挥官晋升后能够更成功地指挥数量更多的部队。如果指挥 官指挥的部队超过当前能力的允许，那么其指挥能力将无法 发挥。晋升后的指挥官将失去一个技能等级(这是由于部下 的增多导致效率下降)，晋升后的指挥官也将更加忠诚。 ;;;;;;;;;;X
+LEADER_GIVE_COMMAND;(点击对选中的部队下达命令。) ;;;;;;;;;;X
+#EOF;;;;;;;;;;;x

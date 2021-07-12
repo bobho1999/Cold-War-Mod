@@ -1,0 +1,409 @@
+HimalayasTRIGGERS:
+and
+or
+not
+event = x  #event has happened.
+random = x 			( % )
+intel_diff = x 		( >= x, x = our intel - enemy intel )
+dissent = x ( >= x )
+leader = x #leader exists
+tech team = x #team exists
+government = [communist/fascist/democratic]
+ideology = [nazi/fascist/paternal_autocrat/social_conservative/market_liberal/social_liberal/social_democrat/left_wing_radical/leninist/stalinist]
+atwar = [yes/no/country tag] # Country tag added to see if other countries are at war
+minister = [minister id] # Is minister alive?
+major = [yes/no]	# True if the country is ENG, FRA, GER, JAP, USA, ITA or SOV
+ispuppet = [Country Tag/-1] # True if tag 1 (or country calling event if -1) is a puppet of another nation
+puppet = { country = [tag 1/-1] country = [tag 2/-1] } # True if tag 1 (or country calling event if -1) is puppet of tag 2 (or country calling event if -1)
+headofgovernment = [minister id]
+headofstate = [minister id]
+ai = [yes/no/country tag] # Is the country AI controlled?
+technology = x 			 		# True if a certain tech is known.
+technology = { country = TAG value = x }	# True if a certain tech is known by the given country.
+is_tech_active = [tech id]		# True if the tech is researchable.
+manpower = x (>=x)#true if a nation have at least that amount of manpower.
+flag = [name]  				#true if the global flag exists and is set to true.
+local_flag = [name]			#true if the local flag exists and is set to true.
+owned = { province = a data = tag }	# checks if province is owned by country x (if data == -1 then its for country receievin event -2 is Enemy -3 is allied OR event reciever)
+control = { province = a data = tag }	# checks if province is controlled by country x (if data == -1 then its for country receievin event  -2 is Enemy -3 is allied OR event reciever)
+areaowned = { province = a data = tag }	# checks if entire area is owned by country x (if data == -1 then its for country receievin event -2 is Enemy -3 is allied OR event reciever)
+areacontrol = { province = a data = tag }	# checks if entire area is controlled by country x (if data == -1 then its for country receievin event  -2 is Enemy -3 is allied OR event reciever)
+exists = country #if country exists.
+alliance = { country = a/-1  country = b/-1 }		# checks if a (or country calling event if -1) and b (or country calling event if -1) is in the same military alliance
+access = { country = [tag1/-1] country = [tag2/-1] } 	# checks if tag1 (or country calling event if -1) is granting military access to tag2 (or country calling event if -1)
+non_aggression = { country = [tag1/-1] country = [tag2/-1] } # checks if tag & tag have a non_agg_pact active (-1 can be specified for either tag to reference the country calling the event)
+trade = { country = [tag1/-1] country = [tag2/-1] } 	# checks if tag1 (or country calling event if -1) and tag2 (or country calling event if -1) have an active trade agreement 
+guarantee = { country = [tag1/-1] country = [tag2/-1] } # checks if tag1 (or country calling event if -1) is guaranteeing the independence of tag2 (or country calling event if -1)
+war = { country = a/-1 country = b/-1 }		# checks if a (or country calling event if -1) and b (or country calling event if -1) is at war 
+military_control = { country = [TAG1/-1] country = [TAG2/-1] } # true if TAG2 (or country calling event if -1) has military control over TAG1 (or country calling event if -1)
+losses = { country = [TAG/-1] value = x } # true if country TAG (or country calling event if -1) has suffered at least X times 1000 number of losses in MP (ex. if X is set to 1, this event will fire when the countries total MP losses reach 1000)
+province_building = { province = [ID] building = [building type] size = x } # true if province ID has a building of [building type] that is at least of size X, use following values for building: 1 = IC, 2 = coastal fort, 3 = land fort, 4 = AA, 5 = infra, 6 = air base, 7 = naval base, 8 = radar station, 9 = nuclear reactor, 10 = rocket test, 11 = synthetic oil, 12 = synthetic rares
+year = x (>=x)
+energy = x
+oil = x
+rare_materials = x
+metal = x
+supplies = x
+ic = x
+money = x # true if country has >= x money
+lost_VP = { country = [tag/-1] value = X }		# X% or more of _owned_ VPs in enemy hands (if tag is set to -1, reference the country calling the event)
+lost_national = { country = [tag/-1] value = X }	# X% or more of national provs in enemy hands (if tag is set to -1, reference the country calling the event)
+lost_IC = { country = [tag/-1] value = X }		# X% or more of national IC in enemy hands (if tag is set to -1, reference the country calling the event)
+domestic = { type = field value = x }
+division_exists = { type = [id type] id = [id id] }
+division_in_province = { id = { type = [id type] id = [id id] } province = X }
+axis = X # axis holds at least X vp
+allies = X # allies holds at least X vp
+comintern = X # comintern holds at least X vp
+vp = X											# Currently held Key Points + extra VP >= X
+range = { min = x max = x }	# true if vp is within (>= && <= the range)
+belligerence = { country = [tag] value = X }	# No country field means "this country". True if Belligerence >= X.
+[div type] = X									# X or more of that type of division.
+[div type] = { country = TAG value = X }					# country TAG has X or more of that type of division
+under_attack = [tag]							# Country is under attack
+attack = [tag]							# Country [tag] has attacked this country.
+difficulty = X # Difficulty at level X or harder. [0-4],  0 is Very Easy.
+garrison = { country = [tag] province = [province] type = [air/land/naval] size = [number of divisions] area = [yes/no] } # No type field means "all division types". "area = yes" means "count divisions in all provinces in this controlled Area". Do not use "area = yes" for sea provinces!
+land_percentage = { country = [tag] value = [value] } #true if we have at least value times the land forces of country
+naval_percentage = { country = [tag] value = [value] } #true if we have at least value times the naval forces of country
+air_percentage = { country = [tag] value = [value] } #true if we have at least value times the air forces of country
+country = [tag] #true if this is country
+can_change_policy = { type = [policy] value = [delta] } #true if the policy can be changed by delta
+relation = { which = [tag] value = [value] } #true if relations to country which is at least value
+province_revoltrisk = { province = [id] value = [value] } # true if revolt risk in province is at least value
+incabinet = [id] #true if minister id is in the ruling cabinet
+army = [divisions] #true if we have at least this many land divisions
+day = [number] #true if the day (of the month) is at least this
+nuke = [number] #true if we have at least this many nukes ready
+capital_province = { province = [provinceID] data = [tag/-1] } # true if capital of [tag] nation is in [provinceID], -1 means capital of the firing nation
+big_alliance = { country = [tag/-1] alliance = [yes/no/allies/axis/comintern] } # true if the country [tag] is either part of a big alliance, not part of a 
+big alliance,or part of a specific big alliance, -1 checks for the firing country
+nationa_idea = { country = [tag/-1] personality_string = [string] } # true if country [tag] or firer if -1 has idea specified in personality string
+land_combat = [provID] # checks if land combat takes place in specified province
+
+COMMANDS:
+type = endgame value = [type]   # (0=quit, 1=eliminated, 2=draw, 3=axis victory, 4=axis total vic, 5=allies-victory, 6=alliestotal, 7=commie, 8=commietotal)
+type = 	extra_tc value = X
+type =	alliance which = [tag] (-1 for random)
+type =	inherit which = [tag] (-1 for random)
+type =	country which = [tag] 					# Change the tag of the country.
+type =	trigger which = [event id] value = [days]		# Trigger an event, with delay if number of days specified
+type =	capital which = [prov id]				# Change capital
+type =	addcore   which = [prov id]
+type =	removecore which = [prov id]
+type =	secedeprovince which = [tag]  value = [prov id]
+type =	control which = [tag]  value = [prov id]
+type =	sleepevent which = [event id]
+type = setflag which = [keyname]				# Global flag, visible for all countries
+type = clrflag which = [keyname]				# Global flag, visible for all countries
+type = local_setflag which = [keyname]			# Local flag, visible only for this country
+type = local_clrflag which = [keyname]			# Local flag, visible only for this country
+type = steal_tech which = [country tag/-1 for random non-ally] 											# Steals a random tech. Results in a blueprint.
+type = gain_tech which = [tech id/-1 for random tech/-2 for a random tech currently being researched]	# Results in a blueprint, not a technology.
+type = vp value = X 	# Offmap Victory Points
+type = research_sabotaged
+type = regime_falls
+type = belligerence which = [country] value = X 	# No which field means "this country".
+type = relation which = [country] value = X				# Add X to the relation
+type = set_relation which = [country] value = X		# Set relation to X
+type = civil_war 									# Civil war with any possible revolter that has shared national provinces
+type = civil_war which = [rebel country tag]		# NOTE: This MUST be a tag which has regular_id set to this country, or vice versa.
+type = change_idea which = [idea personality string] value = [tag] # implements the specified idea for specified country
+
+type = sleepleader which = [leader id/-1]
+type = wakeleader which = [leader id/-1]
+type = set_leader_skill which = [leader id/-1] value = [new value]
+type = add_leader_skill which = [leader id] value = [modifier] # negative modifier reduces skill
+type = add_leader_trait which = [leader id] value = [trait]
+type = remove_leader_trait which = [leader id] value = [trait]
+
+# Leader traits:
+# [trait] =	logistics_wizard/defensive_doctrine/offensive_doctrine/winter_specialist/trickster/engineer/fortress_buster/panzer_leader/commando/
+#		old_guard/desert_fox/seawolf/blockade_runner/superior_tactician/spotter/tank_buster/carpet_bomber/night_flyer/fleet_destroyer/
+#		jungle_expert/urban_fighter/forest_fighter/mountain_expert/hills_fighter/counterattack_expert/assault_expert/encirclement_expert/
+#		ambush_expert/delay_expert/tactical_withdrawal_expert/breakthrough_expert
+
+
+type = set_team_skill which = [tech team id/-1/-2/-3] value = [new value] # tech team id: -1 = random ;-2 Active Team (currently researching) / -3 Idle Team
+type = add_team_skill which = [tech team id/-1/-2/-3] value = [modifier] # negative modifier reduces skill
+type = add_team_research_type which = [tech team id/-1/-2/-3] value = [research_type]
+type = remove_team_research_type which = [tech team id/-1/-2/-3] value = [research_type]
+type = sleepteam which = [tech team id]				# Makes this team unavailable (sets "start year" to 2001. Will complete current project though.)
+type = waketeam which = [tech team id]				# Makes this team available (sets "start year" to previous year.)
+type = giveteam which = [tech team id] where = [country tag]	# Gives the tech team to the other country
+
+# Research types:
+# [research_type] = 	artillery/mechanics/chemistry/electronics/training/general_equipment/rocketry/naval_engineering/aeronautics/nuclear_physics/
+#			nuclear_engineering/management/industrial_engineering/mathematics/infantry_focus/small_unit_tactics/centralized_execution/
+#			decentralized_execution/technical_efficiency/large_unit_tactics/large_unit_focus/individual_courage/combined_arms_focus/
+#			naval_artillery/naval_training/aircraft_testing/fighter_tactics/bomber_tactics/large_taskforce_tactics/small_taskforce_tactics/
+#			seamanship/piloting/carrier_tactics/submarine_tactics
+
+type = dissent value = [value to add]
+type = resource which =[resource type] value = X # % of theoretical maximum daily production added to national resource pool.
+type = supplies value = [value to add] where = [prov] # If no "where" field is used, it goes to the national pool.
+type = oilpool value = [value to add] where = [prov] # If no "where" field is used, it goes to the national pool.
+type = metalpool value = [value to add]
+type = energypool value = [value to add]
+type = rarematerialspool value = [value to add]
+type = money value = [value to add]
+type = province_keypoints which = [province id/-1] value = [keypoints to add]
+type = peace which = [country tag] value = [0/1] # 1 means separate peace - i.e. pull out of alliance. 0 is full peace, for the whole alliance.
+type = peace_with_all which = [country tag/-1] # specified country (or country calling event if -1) signs peace a white peace with all countries it is at war with
+type = war which = [country tag]
+type = manpowerpool value = [value to add] <which = 1> # add amount of specified manpower, which = 1 optional and makes value = x be used as x% of daily manpower
+type = relative_manpower value = [%] 	# Add a percentage of [yearly national manpower income * 50] to the pool
+type = allow_dig_in						# Troops may now dig in
+type = make_puppet which = [country tag]
+type = coup_nation which = [country tag]
+type = access which = [country tag] # Grant military access _to_ a country
+type = access_to_alliance which = [axis/allies/comintern] # Grant military access to all members of Axis or Allies or Comintern
+
+type = sleepminister which = [minister id/-1]
+
+type = switch_allegiance which = [unit id type/-1] where = [country tag] when = [percent] # -1 is a random land unit -2 random naval unit -3 random air unit, "when" is optional, value between 0 - 100 will result in that percentage of corps/fleets/wings being transferred to specified country 
+type = delete_unit which = [unit id type/-1/-2/-3] when = [percent] # -1 is a random land unit -2 random naval unit -3 random air unit, "when" clause optional, if given integer value between 0 - 100 it will delete that percent of nation's existing corps/fleets/wings
+type = independence which = [country tag] value = [0/1] when = [0/1] # value 0 - units in the area change allegiance, 1 - they don't.  , when 0=normal, 1= force them to be democratic
+type = ai which = [file name]	# Switches the ai file of a country.
+type = build_division which = [division type] value = [brigade type]
+type = construct which = [building type] where = [prov id/-1/-4] value = [additional size]	# -1 is random valid province. -4 is random national province that already has a building of the same type of at least size 1.
+type = add_corps which = [name] value = [land/air/naval] when = [leader ID] where = [province_ID]
+type = activate_division which = [div id type] value = [div id id]  [where = province] when = [0/1] # Activates a dormant division. If "when = 0" the division will deploy to the force pool if the target province is enemy controlled. If a preceding add_corps command has been used, the division will go to that unit, ignoring the 'when' and 'where' directives.
+type = add_division which = [name] value = [div type] when = model where = [brigade type] # Brigade model is always the latest. If a preceding add_corps command has been used, the division will go to that unit, otherwise to the force pool.
+type = remove_division which = [div id type/-1] value = [div id id]	# Remove a division from the scenario. -1 is a random division (the value field will be ignored).
+type = remove_division which = "Exact Name" value = [country tag]	# Remove a named division from the scenario (for a certain country.)
+type = damage_division which = [div id type/-1] value = [div id id] where = X	# where = Percent of Max Strength. Negative value is strength gain.
+type = disorg_division which = [div id type/-1] value = [div id id] where = X	# where = Percent of Max Strength. Negative value is org gain.
+type = end_access which = [country tag]	# Revoke military access for nation
+type = leave_alliance
+type = end_non_aggression which = [country/-1] where = [country/-1] 	# end a non aggression pact between these countries (-1 can be used for either tag to reference the country calling event)
+type = non_aggression which = [country/-1] where = [country/-1]		# create a non aggression pact between these countries (-1 can be used for either tag to reference the country calling event)
+type = end_trades which = [country/-1] where = [country/-1] 		# end all trade agreements between these countries (-1 can be used for either tag to reference the country calling event)
+type = end_guarantee which = [country/-1] where = [country/-1] 		# country 1 no longer guarantees independence of country 2 (-1 can be used for either tag to reference the country calling event)
+type = guarantee which = [country/-1] where = [country/-1] 		# country 1 now guarantees independence of country 2 (-1 can be used for either tag to reference the country calling event)
+type = grant_military_control which = [TAG]			# grant military control to nation TAG
+type = end_military_control which = [TAG]				# end military control to nation TAG
+type = allow_convoy_escorts
+type = transport_pool which = [country] value = X (adds/removes transports from pool)
+type = escort_pool which = [country] value = X (adds/removes escorts from pool)
+type = peacetime_ic_mod value = X(%) # Additive, and ONLY applied when a country is at peace. Default base value is 100%.
+type = end_puppet	# End puppet status
+type = end_mastery which = [country tag]	# End puppet mastery over another nation
+type = convoy which = [startprov] value = [endprov] when = [resource_bits] 1=oil, 2=metal, 4=energy, 8=rare_materials, 16=supplies
+type = domestic	which = [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism] value = X		# Change a domestic policy by X
+type = set_domestic	which = [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism] value = X	# Set a domestic policy to X
+type = deactivate which = [tech id] 		# Make this technology permanently unavailable for the country.
+type = tc_mod value = X(%)								# Modify National Transport Capacity. Positive value = good.
+type = tc_occupied_mod value = X(%)						# Modify Occupied Province Transport Capacity Drain. Positive value = good.
+type = attrition_mod value = X(%)						# Modify the Attrition Penalty. Positive value = good.
+type = supply_dist_mod value = X(%)						# Modify the Supply Distance Penalty. Positive value = good.
+type = repair_mod value = X(%)							# Modify Reinforcement Efficiency Positive value = good.
+type = research_mod value = X(%)						# Modify research efficiency. Positive value = good.
+type = scrap_model which = [div type] value = [model]	# Make a model obsolete (no longer possible to build).
+type = allow_building which = [building type]			# Allow the construction of a certain building type.
+type = building_prod_mod which = [building type] value = X%		# Bonus to production time. Additive. NOTE: Positive value = reduced time.
+type = convoy_prod_mod which = [escorts/transports] value = X%	# Bonus to production time. Additive. NOTE: Positive value = reduced time.
+type = radar_eff value = X(%)							# Modify the efficiency of radar stations (bonus to friendly aircraft in the province.) Positive value = good.
+type = info_may_cause which = [tech id]					# No effect, but informs player that this tech/event can open up new avenues of research.
+type = gas_attack            							# Enable gas attacks
+type = gas_protection        							# Enable gas protection
+type = activate which = [tech id] 						# Will be used in Random events
+type = task_efficiency which = [task type] value = X 	#Additive: 0.1 - 1.0
+type = add_prov_resource which = [prov id/-1/-4] value = X where = [energy/metal/oil/rare_materials]  # -1 is random province, -4 is province with nuclear reactor.
+type = max_positioning which = [div type] value = X 	#sets the value 0.1-1.0
+type = min_positioning which = [div type] value = X 	#sets the value 0.1-1.0
+type = max_reactor_size value = X			# Set the max size of nuclear reactor buildings.
+type = abomb_production 					# Allow A-Bombs
+type = double_nuke_prod						# Double A-Bomb production rate.
+type = songs
+type = lock_division which = [id type] value = [id id] # Lock this division (it may no longer move.)
+type = unlock_division which = [id type] value = [id id] # Unlock this division (it may now move.)
+type = free_ic/free_oil/free_supplies/free_money/free_metal/free_energy/free_rare_material/free_transport/free_convoy/free_manpower	#change offmap daily prod
+type = change_policy which = [democratic/political_left/free_market/freedom/professional_army/defense_lobby/interventionism] value = X		# Change a domestic policy by X if it could normally be changed and also sets the cooldown period for changing policy
+
+type = change_partisan_activity which = [prov ID] value = X # change the partisan activity in a province by X
+type = set_partisan_activity which = [prov ID] value = X # set the partisan activity in a province to X
+
+type = change_unit_xp which = "Unit Name" value = X # change named unit experience by specified amount
+type = set_unit_xp which = "Unit Name" value = X # set named unit experience to specified amount
+
+type = change_leader_xp which = [leader ID] value = X # change the specified leader xp by specified amount
+type = set_leader_xp which = [leader ID] value = X # set the specified leader xp to specified amount
+
+type = change_retool_time value = X # change the retool time by X days
+type = set_retool_time	value = X # set the retool time to X days
+
+# AI event commands (no effect for human controlled nations)
+
+type = ai_prepare_war	which = [tag]		# Tells the AI to move troops to the border with a country.
+
+# Weather event commands
+type = start_pattern which = [id type] value = [id id] where = [prov id] when = [raining/snowing/storm/blizzard]	# Start a new weather pattern centered on a given province
+type = add_to_pattern which = [id type] value = [id id] where = [prov id] when = [raining/snowing/storm/blizzard]	# Add a province to an existing weather pattern.
+type = end_pattern which = [id type] value = [id id] # This weather pattern will begin to dissipate
+type = set_ground which = [prov id] value = [clear/muddy/winter]
+
+# Commands to affect the chance of "combat events" occurring. Additive (%).
+type = counterattack value = x
+type = assault value = x
+type = encirclement value = x
+type = ambush value = x
+type = delay value = x
+type = tactical_withdrawal value = x
+type = breakthrough value = x
+
+# HQ effects
+type = hq_supply_eff value = X(%)			# Additive
+type = sce_frequency value = X				# Combat event chance multiplier. Default: 1.0
+
+# Enable a certain type of mission
+type = enable_task which = [task type]
+
+# New models updates the current template for a division or brigade type.
+command = { type = [new_model] which = [division or brigade type] value = [The model number] }
+
+# Make a division or brigade type available for construction.
+command = { type = activate_unit_type which = [division or brigade type] }
+
+# Make a division or brigade type unavailable for construction.
+command = { type = deactivate_unit_type which = [division or brigade type] }
+
+# ACTIVATE NUCLEAR CAPABILITY OF MISSILES
+command = { type = nuclear_carrier which = [flying_bomb/flying_rocket] }
+
+# ACTIVATE MISSILE CAPABILITY OF SUBMARINES
+command = { type = missile_carrier which = [submarine] }
+
+# UNIT VALUES
+# [unit value] = soft_attack/hard_attack/ground_defense/air_attack/air_defense/build_cost/build_time/manpower/speed/max_organization/transport_weight/supply_consumption/fuel_consumption/speed_cap_art/speed_cap_eng/speed_cap_at/speed_cap_aa/artillery_bombardment
+#
+
+# Land unit bonuses
+command = { type = [unit value]
+			which = [land/division type/brigade type]
+			value = [additive value modifier]
+}
+# Air unit bonuses
+command = { type = [air_attack/strategic_attack/tactical_attack/naval_attack/air_defense/build_cost/build_time/manpower/speed/surface_detection/air detection/transport_capacity/supply_consumption/fuel_consumption/range]
+			which = [air/division type/brigade type]
+			value = [additive value modifier]
+}
+# Naval unit bonuses
+command = { type = [naval_attack/air_attack/shore_attack/naval_defense/air_defense/build_cost/build_time/manpower/speed/surface_detection/air detection/visibility/transport_capacity/supply_consumption/fuel_consumption/range]
+			which = [naval/division type/brigade type]
+			value = [additive value modifier]
+}
+
+# NOTE: For "build_time" and "build_cost", it is possible to add the field "where = relative".
+# This means that the value is parsed as a relative modifier (%) instead of an absolute addition.
+# When doing this, THE BASE VALUE OF MODEL 0 IS USED FOR _ALL_ MODELS. So "value = -10" means
+# "-10% of the value of model 0".
+
+#
+# UNIT COMBAT MODIFIERS
+#
+# Terrain combat modifiers
+command = { type = [desert_attack/desert_defense/mountain_attack/mountain_defense/hill_attack/hill_defense/forest_attack/forest_defense/swamp_attack/swamp_defense/urban_attack/urban_defense/river_attack/shore_attack/paradrop_attack]
+			which = [division type/brigade type]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Terrain movement modifiers
+command = { type = [desert_move/mountain_move/hill_move/forest_move/swamp_move/urban_move/river_crossing]
+			which = [division type/brigade type]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather land-combat modifiers
+command = { type = [frozen_attack/frozen_defense/snow_attack/snow_defense/blizzard_attack/blizzard_defense/rain_attack/rain_defense/storm_attack/storm_defense/muddy_attack/muddy_defense]
+			which = [division type/brigade type]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather land-movement modifiers
+command = { type = [frozen_move/snow_move/blizzard_move/rain_move/storm_move/muddy_move]
+			which = [division type/brigade type]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather air-combat modifiers
+command = { type = [snow_attack/rain_attack]
+			which = [interceptor/escort/multi_role/strategic_bomber/tactical_bomber/torpedo_plane]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather air-movement modifiers
+command = { type = [snow_move/blizzard_move/rain_move/storm_move]
+			which = [interceptor/escort/multi_role/strategic_bomber/tactical_bomber/torpedo_plane/transport_plane]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather naval-combat modifiers
+command = { type = [snow_attack/rain_attack]
+			which = [battleship/cruiser/destroyer/carrier/submarine/transports]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Weather naval-movement modifiers
+command = { type = [snow_move/blizzard_move/rain_move/storm_move]
+			which = [battleship/cruiser/destroyer/carrier/submarine/transports]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+# Night modifiers
+command = { type = night_move/night_attack/night_defense
+			which = [division type/brigade type]
+			value = [X] # Modifier in percent (+10 = 10%)
+}
+
+#
+# SPECIAL UNIT BONUSES
+#
+# Minisubs (BBs and CVs attack ships in harbors with this bonus added to their sea attack value)
+command = { type = minisub_bonus
+			value = [X] # NOT INCREMENTAL. This is the new value.
+}
+
+#
+# GLOBAL MODIFIERS
+#
+# Surprise modifiers
+command = { type = surprise
+			which = [naval/land/air]
+			value = [X] # Modifier in percents
+}
+# Intelligence Operation modifiers
+command = { type = intelligence
+			which = [us/them]
+			value = [X] # Modifier in percents
+}
+# Army Detection modifiers
+command = { type = army_detection
+			which = [us/them]
+			value = [X] # Modifier in percents
+}
+# Provincial AA batteries
+command = { type = AA_batteries
+			value = [X] # Modifier in percents
+}
+
+#
+# INDUSTRIAL MODIFIERS
+#
+
+# Industrial multipliers
+# E.g. energy_to_oil 4 means four energy are needed to produce one oil. 0.5 means 1 energy produces 2 oil.
+command = { type = industrial_multiplier
+			which = [energy_to_oil/oil_to_rare_materials]
+			value = [X]
+}
+# Industrial modifiers (additive)
+# 'total' is the conversion factor from every built industry point into Industrial Capacity.
+# 'supplies' is a modifier for the amount of supplies produced by every reserved IC unit.
+# 'gearing_efficiency' is the speed at wich gearing occurs
+# 'gearing_limit' affects the limit of the gearing technology
+
+command = { type = industrial_modifer
+			which = [total/supplies/gearing_efficiency/gearing_limit]
+			value = [X] # Percents
+}
+
+Building Types:
+[ic, coastal_fort, land_fort, flak, infrastructure, air_base, naval_base, radar_station, nuclear_reactor, rocket_test]
+
+Task Types:
+[attack, rebase, strat_redeploy, support_attack, support_defense, reserves, anti_partisan_duty, air_superiority, ground_attack, runway_cratering, installation_strike, interdiction, naval_strike, port_strike, logistical_strike, strategic_bombardment, air_supply, airborne_assault, convoy_raiding, asw, naval_interdiction, shore_bombardment, amphibous_assault, sea_transport, naval_combat_patrol]
+Resource Types:
+[oil, metal, energy, rare_materials, supplies, money]

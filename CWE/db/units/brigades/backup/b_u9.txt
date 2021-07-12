@@ -1,0 +1,110 @@
+land_unit_type = 1
+# Army Heavy Field Artillery Group
+# 0 - Import Heavy Army Field Artillery Group 進口重炮群
+model = {
+	cost 				= 15
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	softattack			= 12
+	artillery_bombardment		= 6
+	supplyconsumption 	= 4.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Great War Heavy Army Field Artillery Group  一戰
+model = {
+	cost 				= 6
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	softattack			= 3
+	artillery_bombardment		= 2
+	supplyconsumption 	= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - Early Heavy Army Field Artillery Group 36
+model = {
+	cost 				= 12
+	buildtime	 		= 270
+	manpower 			= 4 
+	maxspeed 			= -4
+	softattack			= 9
+	artillery_bombardment		= 4
+	supplyconsumption 	= 3.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - Basic Heavy Army Field Artillery Group 38
+model = {
+	cost 				= 15
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	softattack			= 12
+	artillery_bombardment		= 6
+	supplyconsumption 	= 4.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - Improved Heavy Army Field Artillery Group 40
+model = {
+	cost 				= 18
+	buildtime	 		= 270
+	manpower 			= 4 
+	maxspeed 			= -4
+	softattack			= 15
+	artillery_bombardment		= 8
+	supplyconsumption 	= 5.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - Advanced Heavy Army Field Artillery Group 43
+model = {
+	cost 				= 21
+	buildtime	 		= 270
+	manpower 			= 4 
+	maxspeed 			= -4
+	softattack			= 18
+	artillery_bombardment		= 10
+	supplyconsumption 	= 6.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 6 - Semi-Modern Heavy Army Field Artillery Group 45
+model = {
+	cost 				= 24
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	softattack			= 21
+	artillery_bombardment		= 12
+	supplyconsumption 	= 7.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 7 - Modern Heavy Army Field Artillery Group 48
+model = {
+	cost 				= 27
+	buildtime	 		= 270
+	manpower 			= 4 
+	maxspeed 			= -4
+	softattack			= 24
+	artillery_bombardment		= 14
+	supplyconsumption 	= 9.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 8 - Cold War Heavy Army Field Artillery Group 51
+model = {
+	cost 				= 30
+	buildtime	 		= 270
+	manpower 			= 4
+	maxspeed 			= -4
+	softattack			= 27
+	artillery_bombardment		= 16
+	supplyconsumption 	= 10.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

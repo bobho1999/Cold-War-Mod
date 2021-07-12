@@ -1,0 +1,91 @@
+# USA is planning D-Day so lets help
+
+exp_force_ratio = 0.20
+exp_force_ratios = {
+	USA = 1.0
+} 
+no_exp_forces_to = { }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.01
+	home_peace_cap 		= 2
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.3
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 20	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	province_priorities = {
+		348 = 30 # Gibraltar
+		31  = 30 # Malta
+		906 = 30 # Alexandria
+	}
+	area_multiplier = {
+		348 = 2.0 # Gibraltar
+		31  = 2.0 # Malta
+		906 = 1.5 # Alexandria
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= yes
+   	redirect 	= priority
+	help_allies = yes
+      
+	staging_province = {
+		23 # Plymouth
+		21 # Portsmouth
+		20 # Dover
+	}
+	target = {
+		#England
+		20 = 9000 # Dover
+		17 = 9000 # Norwich
+		21 = 9000 # Portsmouth
+		23 = 9000 # Plymouth
+		13 = 9000 # Sheiffield
+		28 = 9000 # Belfast
+		22 = 9000 # Bristol
+		14 = 9000 # Liverpool
+		12 = 9000 # Blackpool
+		11 = 9000 # Sunderland
+		10 = 9000 # Edinburgh
+		9  = 9000 # Glasgow
+
+		# Atlantic Wall
+		292 = 8000 # Arburg
+		92  = 8000 # Arhus
+		91  = 8000 # Kolding
+		90  = -1   # Kiel
+		78  = 8000 # Leeweden
+		47  = 8000 # Amsterdam
+		46  = 8000 # Rotterdam
+		45  = 8000 # Ghent
+		18  = 8000 # Calais
+		42  = 8000 # Dieppe
+		41  = 8000 # Le Havre
+		39  = 8000 # Caen
+		33  = 8000 # Rennes
+		32  = 8000 # Brest
+		34  = 8000 # Lorient
+		35  = 8000 # Nantes
+		59  = 8000 # Cholet
+		325 = 8000 # Bordeaux
+		326 = 8000 # Dax
+	}
+} 

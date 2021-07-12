@@ -1,0 +1,4039 @@
+#部长更换事件
+#阿富汗
+#阿尔巴尼亚
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 120000
+  random = no
+  country = ALB
+  
+  name = "哈奇·列希就任阿尔巴尼亚主席 " 
+  desc = "1953年八月一日，哈奇·列希代替奥梅·尼沙尼担任阿尔巴尼亚 主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 32049
+  } 
+  date = { day = 1 month = august year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 32202  }
+  }
+}
+#######################
+#1954 HOG
+#######################
+event = {
+  id = 120001
+  random = no
+  country = ALB
+  
+  name = "穆罕穆德·谢胡就任阿尔巴尼亚部长会议主席 " 
+  desc = "1954年七月二十日，穆罕默德·谢胡代替恩维尔·霍查担任阿尔 巴尼亚部长会议主席。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 32062
+  } 
+  date = { day = 20 month = july year = 1954 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 32205  }
+  }
+}
+#澳大利亚
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 120100
+  random = no
+  country = AST
+  
+  name = "罗伯特·孟席斯就任澳大利亚总理 " 
+  desc = "1949年十二月十九日，罗伯特·孟席斯代替本·奇夫利就任澳大 利亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 56039
+  } 
+  date = { day = 19 month = august year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 56037  }
+  }
+}
+#比利时
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 120200
+  random = no
+  country = BEL
+  
+  name = "鲍德温一世就任比利时国王 " 
+  desc = "1951年七月十七日，鲍德温一世继承利奥波德三世就任比利时国 王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 15118
+  } 
+  date = { day = 17 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 15159  }
+    command = { type = sleepminister which = 15001 }
+    command = { type = sleepminister which = 15030 }
+    command = { type = sleepminister which = 15118 }
+    command = { type = sleepminister which = 15134 }
+    command = { type = sleepminister which = 15135 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 120201
+  random = no
+  country = BEL
+  
+  name = "加斯东·伊斯更斯就任比利时首相 " 
+  desc = "1949年八月十一日，加斯东·伊斯更斯代替保罗·斯帕克就任比 利时首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 15034
+  } 
+  date = { day = 11 month = august year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 15042  }
+  }
+}
+#玻利维亚
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 120300
+  random = no
+  country = BOL
+  
+  name = "马梅尔托·哈里亚格就任玻利维亚总统 " 
+  desc = "1949年十月二十二日，马梅尔托·哈里亚格代替恩里克·加莱萨 维尔就任玻利维亚总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 43222
+  } 
+  date = { day = 22 month = october year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 43223  }
+    command = { type = headofgovernment which = 43228  }
+  }
+}
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 120301
+  random = no
+  country = BOL
+  
+  name = "乌戈·巴利维安·罗哈斯就任玻利维亚总统 " 
+  desc = "1951年五月十六日，乌戈·巴利维安·罗哈斯代替马梅尔托·哈 里亚格就任玻利维亚总统，建立了军政府独裁统治。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 43223
+  } 
+  date = { day = 16 month = may year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 43224  }
+    command = { type = headofgovernment which = 43227  }
+    command = { type = set_domestic which = democratic value = 2  }
+    command = { type = set_domestic which = political_left value = 1  }
+  }
+}
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 120302
+  random = no
+  country = BOL
+  
+  name = "维克托·帕斯·埃斯登索罗就任玻利维亚总统 " 
+  desc = "1952年四月十六日，维克托·帕斯·埃斯登索罗代替埃尔南·西 莱斯·苏亚索就任玻利维亚总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 43229
+  } 
+  date = { day = 16 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 43230  }
+    command = { type = headofgovernment which = 43231  }
+  }
+}
+#巴西
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 120400
+  random = no
+  country = BRA
+  
+  name = "热图利奥·瓦加斯就任巴西总统 " 
+  desc = "1951年一月三十一日，热图利奥·瓦加斯代替尤里科·杜特拉就 任巴西总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 34067
+  } 
+  date = { day = 30 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 34195  }
+    command = { type = headofgovernment which = 34002  }
+  }
+}
+#文莱
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 120500
+  random = no
+  country = BRU
+  
+  name = "奥马尔·哈伊里成为文莱苏丹 " 
+  desc = "1950年，奥马尔·哈伊里成为文莱这个新独立国家的苏丹，即国 家元首。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 567001
+  } 
+  date = { day = 4 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 567030  }
+  }
+}
+#保加利亚
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 120600
+  random = no
+  country = BUL
+  
+  name = "格奥尔基·丹雅诺夫担任保加利亚主席 " 
+  desc = "1950年五月二十七日，格奥尔基·丹雅诺夫代替明乔·内切夫担 任保加利亚主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 19168
+  } 
+  date = { day = 27 month = may year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 19166  }
+    command = { type = foreignminister which = 19160  }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 120601
+  random = no
+  country = BUL
+  
+  name = "季米特罗夫逝世 " 
+  desc = "1949年七月二日，曾任共产国际执委总书记的格奥尔基·季米特 洛夫逝世，瓦西尔·克拉罗夫就任保加利亚部长会议主席。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 19060
+  } 
+  date = { day = 2 month = july year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "哀悼 "
+    command = { type = headofgovernment which = 19158  }
+    command = { type = sleepminister which = 19060 }
+    command = { type = sleepminister which = 19050 }
+    command = { type = sleepminister which = 19088 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 120602
+  random = no
+  country = BUL
+  
+  name = "维尔科·契尔文科夫担任保加利亚部长会议主席 " 
+  desc = "1950年二月三日，维尔科·契尔文科夫代替瓦西尔·克拉罗夫担任 保加利亚部长会议主席。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 19158
+  } 
+  date = { day = 3 month = february year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 19167  }
+  }
+}
+#缅甸
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 120700
+  random = no
+  country = BUR
+  
+  name = "巴宇就任缅甸总统 " 
+  desc = "1952年三月十六日，巴宇代替苏瑞泰担任缅甸总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 563012
+  } 
+  date = { day = 16 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 563053  }
+  }
+}
+#加拿大
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 120800
+  random = no
+  country = CAN
+  
+  name = "文森特·马西就任加拿大总督 " 
+  desc = "1952年二月二十八日，文森特·马西代替突尼斯子爵哈罗德担任 加拿大总督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 45133
+  } 
+  date = { day = 28 month = february year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 45147  }
+  }
+}
+#哥斯达黎加
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 120900
+  random = no
+  country = COS
+  
+  name = "奥蒂略·乌拉特就任哥斯达黎加总统 " 
+  desc = "1949年十一月八日，奥蒂略·乌拉特代替何塞·费雷尔担任哥斯 达黎加总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 47135
+  } 
+  date = { day = 8 month = november year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 47031  }
+    command = { type = headofgovernment which = 47051  }
+  }
+}
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 120901
+  random = no
+  country = COS
+  
+  name = "何塞·费雷尔就任哥斯达黎加总统 " 
+  desc = "1949年十一月八日，何塞·费雷尔代替奥蒂略·乌拉特担任哥斯 达黎加总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 47051
+  } 
+  date = { day = 8 month = november year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 47135  }
+    command = { type = headofgovernment which = 47041  }
+  }
+}
+#古巴
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121001
+  random = no
+  country = CUB
+  
+  name = "费利克斯·桑切斯就任古巴总理 " 
+  desc = "1950年十月六日，费利克斯·桑切斯代替曼努埃尔·洛雷多担任 古巴总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 33122
+  } 
+  date = { day = 6 month = october year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 33123  }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 121002
+  random = no
+  country = CUB
+  
+  name = "奥斯卡·马丁内斯就任古巴总理 " 
+  desc = "1951年十月一日，奥斯卡·马丁内斯代替费利克斯·桑切斯担任 古巴总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 33123
+  } 
+  date = { day = 1 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 33124  }
+  }
+}
+#捷克斯洛伐克
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 121100
+  random = no
+  country = CZE
+  
+  name = "哥特瓦尔德逝世 " 
+  desc = "1953年三月十四日，捷克斯洛伐克总统克莱门特·哥特瓦尔德逝 世。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 24042
+  } 
+  date = { day = 14 month = march year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "为哥特瓦尔德同志默哀 "
+    command = { type = headofstate which = 24151 }
+    command = { type = headofgovernment which = 24172 }
+    command = { type = sleepminister which = 24042 }
+    command = { type = sleepminister which = 24139 }
+    command = { type = sleepminister which = 24147 }
+    command = { type = dissent value = -2 }
+  }
+}
+#丹麦
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121200
+  random = no
+  country = DEN
+  
+  name = "埃里克·埃里克森就任丹麦首相 " 
+  desc = "1950年九月三十日，埃里克·埃里克森代替汉斯·赫托夫担任丹 麦首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 16143
+  } 
+  date = { day = 30 month = september  year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 16147 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 121201
+  random = no
+  country = DEN
+  
+  name = "汉斯·赫托夫就任丹麦首相 " 
+  desc = "1953年九月三十日，汉斯·赫托夫代替埃里克·埃里克森担任丹 麦首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 16147
+  } 
+  date = { day = 30 month = september  year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 16143 }
+  }
+}
+#多米尼加共和国
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 121300
+  random = no
+  country = DOM
+  
+  name = "埃克托尔·特鲁西略就任多米尼加共和国总统 " 
+  desc = "1952年八月十六日，埃克托尔·特鲁西略代替拉菲尔·特鲁西略 担任多米尼加共和国总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 49001
+  } 
+  date = { day = 16 month = august  year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 49098 }
+    command = { type = headofgovernment which = 49099 }
+  }
+}
+#厄瓜多尔
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 121400
+  random = no
+  country = ECU
+  
+  name = "若泽·伊瓦拉就任厄瓜多尔总统 " 
+  desc = "1952年九月一日，若泽·伊瓦拉代替加洛·拉索担任厄瓜多尔总 统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 40176
+  } 
+  date = { day = 1 month = september  year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 40033 }
+    command = { type = headofgovernment which = 40051 }
+  }
+}
+#埃及
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 121500
+  random = no
+  country = EGY
+  
+  name = "福阿德二世国王即位 " 
+  desc = "1952年七月二十六日，法鲁克一世国王由于国内形势宣布退位， 其子福阿德二世即位。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 512011
+  } 
+  date = { day = 26 month = july  year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 512159 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 121501
+  random = no
+  country = EGY
+  
+  name = "哈桑·帕夏就任埃及总理 " 
+  desc = "1949年七月二十六日，哈桑·帕夏代替易卜拉欣·哈迪担任埃及 总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512112
+  } 
+  date = { day = 26 month = july  year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512019 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121502
+  random = no
+  country = EGY
+  
+  name = "穆斯塔法·帕夏就任埃及总理 " 
+  desc = "1950年一月十二日，穆斯塔法·帕夏代替哈桑·帕夏担任埃及总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512019
+  } 
+  date = { day = 12 month = january  year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512024 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121503
+  random = no
+  country = EGY
+  
+  name = "阿里·帕夏就任埃及总理 " 
+  desc = "1952年一月二十七日，阿里·帕夏代替穆斯塔法·帕夏担任埃及 总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512024
+  } 
+  date = { day = 27 month = january  year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512025 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121504
+  random = no
+  country = EGY
+  
+  name = "艾哈迈德·帕夏就任埃及总理 " 
+  desc = "1952年三月二日，艾哈迈德·帕夏代替阿里·帕夏担任埃及总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512025
+  } 
+  date = { day = 2 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512160 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121505
+  random = no
+  country = EGY
+  
+  name = "侯赛因·帕夏就任埃及总理 " 
+  desc = "1952年七月二日，侯赛因·帕夏代替艾哈迈德·帕夏担任埃及总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512160
+  } 
+  date = { day = 2 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512161 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121506
+  random = no
+  country = EGY
+  
+  name = "阿里·帕夏就任埃及总理 " 
+  desc = "1952年七月二十三日，阿里·帕夏代替侯赛因·帕夏担任埃及总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512161
+  } 
+  date = { day = 23 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512025 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121507
+  random = no
+  country = EGY
+  
+  name = "穆罕穆德·纳吉布就任埃及总理 " 
+  desc = "1952年九月七日，穆罕穆德·纳吉布代替阿里·帕夏担任埃及总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 512025
+  } 
+  date = { day = 7 month = september year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 512113 }
+  }
+}
+#英国
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 121600
+  random = no
+  country = ENG
+  
+  name = "乔治六世国王逝世 " 
+  desc = "1952年二月六日，乔治六世国王由于血栓逝世，由伊丽莎白·温 莎继承王位，即伊丽莎白二世。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 1033
+  } 
+  date = { day = 6 month = february year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "伊丽莎白二世即位 "
+    command = { type = headofstate which = 1246 }
+    command = { type = sleepminister which = 1033 }
+    command = { type = sleepminister which = 1245 }
+    command = { type = sleepminister which = 1189 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 121601
+  random = no
+  country = ENG
+  
+  name = "温斯顿·丘吉尔就任英国首相 " 
+  desc = "1951年十月二十六日，温斯顿·丘吉尔代替克莱门特·艾德礼担 任英国首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 1040
+  } 
+  date = { day = 26 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 1038 }
+  }
+}
+#芬兰
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121700
+  random = no
+  country = FIN
+  
+  name = "乌尔霍·吉科宁就任芬兰总理 " 
+  desc = "1950年三月十七日，乌尔霍·吉科宁代替卡尔·法格霍尔姆担任 芬兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 29164
+  } 
+  date = { day = 17 month = march year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 29051 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 121701
+  random = no
+  country = FIN
+  
+  name = "萨卡里·图奥米奥雅就任芬兰总理 " 
+  desc = "1953年十一月十七日，萨卡里·图奥米奥雅代替乌尔霍·吉科宁 担任芬兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 29051
+  } 
+  date = { day = 17 month = november year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 29177 }
+  }
+}
+#法国
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 121800
+  random = no
+  country = FRA
+  
+  name = "乔治·皮杜尔就任法国总理 " 
+  desc = "1949年十月二十八日，乔治·皮杜尔代替安托万·亨利·克耶担 任法国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2043
+  } 
+  date = { day = 28 month = october year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2039 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121801
+  random = no
+  country = FRA
+  
+  name = "亨利·克耶就任法国总理 " 
+  desc = "1950年七月二日，安托万·亨利·克耶代替乔治·皮杜尔担任法 国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2039
+  } 
+  date = { day = 2 month = july year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2043 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121802
+  random = no
+  country = FRA
+  
+  name = "勒内·普利文就任法国总理 " 
+  desc = "1950年七月十二日，勒内·普利文代替安托万·亨利·克耶担任 法国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2043
+  } 
+  date = { day = 12 month = july year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2218 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 121803
+  random = no
+  country = FRA
+  
+  name = "亨利·克耶就任法国总理 " 
+  desc = "1951年三月十日，安托万·亨利·克耶代替勒内·普利文担任法 国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2218
+  } 
+  date = { day = 10 month = march year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2043 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 121804
+  random = no
+  country = FRA
+  
+  name = "勒内·普利文就任法国总理 " 
+  desc = "1951年八月十一日，勒内·普利文代替安托万·亨利·克耶担任 法国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2043
+  } 
+  date = { day = 11 month = august year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2218 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121805
+  random = no
+  country = FRA
+  
+  name = "埃德加·福尔就任法国总理 " 
+  desc = "1952年一月二十日，埃德加·福尔代替勒内·普利文担任法国总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2218
+  } 
+  date = { day = 20 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2219 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121806
+  random = no
+  country = FRA
+  
+  name = "安托万·皮内就任法国总理 " 
+  desc = "1952年三月八日，安托万·皮内代替埃德加·福尔担任法国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2219
+  } 
+  date = { day = 8 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2220 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 121807
+  random = no
+  country = FRA
+  
+  name = "勒内·梅耶就任法国总理 " 
+  desc = "1953年一月八日，勒内·梅耶代替安托万·皮内担任法国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2220
+  } 
+  date = { day = 8 month = january year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2221 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 121808
+  random = no
+  country = FRA
+  
+  name = "约瑟夫·拉尼埃就任法国总理 " 
+  desc = "1953年六月二十八日，约瑟夫·拉尼埃代替勒内·梅耶担任法国 总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 2221
+  } 
+  date = { day = 28 month = june year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 2222 }
+  }
+}
+#希腊
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 121900
+  random = no
+  country = GRE
+  
+  name = "亚历山德罗斯·迪奥米德斯就任希腊总理 " 
+  desc = "1949年六月三十日，亚历山德罗斯·迪奥米德斯代替特米斯托克 里斯·索富里斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18198
+  } 
+  date = { day = 30 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18202 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121901
+  random = no
+  country = GRE
+  
+  name = "鲁安内斯·瑟奥托基斯就任希腊总理 " 
+  desc = "1950年一月六日，鲁安内斯·瑟奥托基斯代替亚历山德罗斯·迪 奥米德斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18202
+  } 
+  date = { day = 6 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18203 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121902
+  random = no
+  country = GRE
+  
+  name = "索法克利斯·维尼泽洛斯就任希腊总理 " 
+  desc = "1950年三月二十三日，索法克利斯·维尼泽洛斯代替鲁安内斯· 瑟奥托基斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18203
+  } 
+  date = { day = 23 month = march year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18052 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121903
+  random = no
+  country = GRE
+  
+  name = "尼古拉斯·普拉斯提拉斯就任希腊总理 " 
+  desc = "1950年四月十五日，尼古拉斯·普拉斯提拉斯代替索法克利斯· 维尼泽洛斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18052
+  } 
+  date = { day = 15 month = april year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18060 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 121904
+  random = no
+  country = GRE
+  
+  name = "索法克利斯·维尼泽洛斯就任希腊总理 " 
+  desc = "1950年八月二十一日，索法克利斯·维尼泽洛斯代替尼古拉斯 ·普拉斯提拉斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18060
+  } 
+  date = { day = 21 month = august year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18052 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 121905
+  random = no
+  country = GRE
+  
+  name = "尼古拉斯·普拉斯提拉斯就任希腊总理 " 
+  desc = "1951年十一月一日，尼古拉斯·普拉斯提拉斯代替索法克利斯· 维尼泽洛斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18052
+  } 
+  date = { day = 1 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18060 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121906
+  random = no
+  country = GRE
+  
+  name = "迪米特里奥斯·基奥索波罗斯就任希腊总理 " 
+  desc = "1952年十月十一日，迪米特里奥斯·基奥索波罗斯代替尼古拉斯 ·普拉斯提拉斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18060
+  } 
+  date = { day = 11 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18204 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 121907
+  random = no
+  country = GRE
+  
+  name = "亚历山德罗斯·帕帕戈斯就任希腊总理 " 
+  desc = "1952年十一月十九日，亚历山德罗斯·帕帕戈斯代替迪米特里奥 斯·基奥索波罗斯担任希腊总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 18204
+  } 
+  date = { day = 19 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 18205 }
+  }
+}
+#危地马拉
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 122000
+  random = no
+  country = GUA
+  
+  name = "哈科沃·古斯曼就任危地马拉总统 " 
+  desc = "1951年三月十五日，哈科沃·古斯曼代替胡安·贝尔梅霍担任危 地马拉总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 46022
+  } 
+  date = { day = 15 month = march year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 46084 }
+    command = { type = headofgovernment which = 46083 }
+  }
+}
+#海地
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 122100
+  random = no
+  country = HAI
+  
+  name = "弗兰克·拉沃就任海地总统 " 
+  desc = "1950年五月十日，弗兰克·拉沃代替迪马瑟·埃斯蒂梅担任海地 总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 78034
+  } 
+  date = { day = 10 month = may year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 78035 }
+    command = { type = headofgovernment which = 78116 }
+  }
+}
+#匈牙利
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 122200
+  random = no
+  country = HUN
+  
+  name = "罗纳伊·山多尔就任匈牙利主席团主席 " 
+  desc = "1950年四月二十六日，罗纳伊·山多尔代替道比·伊斯特万担任 匈牙利主席团主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 21016
+  } 
+  date = { day = 26 month = april year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 21017 }
+  }
+}
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 122201
+  random = no
+  country = HUN
+  
+  name = "道比·伊斯特万就任匈牙利主席团主席 " 
+  desc = "1952年八月十四日，道比·伊斯特万代替罗纳伊·山多尔担任匈 牙利主席团主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 21017
+  } 
+  date = { day = 14 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 21018 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 122202
+  random = no
+  country = HUN
+  
+  name = "拉科西·马加什就任匈牙利部长会议主席 " 
+  desc = "1952年八月十四日，拉科西·马加什代替道比·伊斯特万担任匈 牙利部长会议主席。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 21037
+  } 
+  date = { day = 14 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 21034 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 122203
+  random = no
+  country = HUN
+  
+  name = "纳吉·伊姆雷就任匈牙利部长会议主席 " 
+  desc = "1953年七月四日，纳吉·伊姆雷代替拉科西·马加什担任匈牙利 部长会议主席。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 21034
+  } 
+  date = { day = 4 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 21038 }
+  }
+}
+#冰岛
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 122300
+  random = no
+  country = ICL
+  
+  name = "阿斯格尔·阿斯格尔松就任冰岛总统 " 
+  desc = "1952年八月一日，阿斯格尔·阿斯格尔松代替斯温·比约恩松担 任冰岛总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 581001
+  } 
+  date = { day = 1 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 581019 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 122301
+  random = no
+  country = ICL
+  
+  name = "奥拉维尔·索尔斯就任冰岛总理 " 
+  desc = "1949年十二月六日，奥拉维尔·索尔斯代替斯特凡·斯蒂芬森担 任冰岛总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 581022
+  } 
+  date = { day = 6 month = december year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 581020 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122302
+  random = no
+  country = ICL
+  
+  name = "斯泰因格里米尔·斯坦索尔森就任冰岛总理 " 
+  desc = "1950年三月十四日，斯泰因格里米尔·斯坦索尔森代替奥拉维尔 ·索尔斯担任冰岛总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 581020
+  } 
+  date = { day = 14 month = march year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 581031 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122303
+  random = no
+  country = ICL
+  
+  name = "奥拉维尔·索尔斯就任冰岛总理 " 
+  desc = "1953年九月十一日，奥拉维尔·索尔斯代替斯泰因格里米尔·斯 坦索尔森担任冰岛总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 581031
+  } 
+  date = { day = 11 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 581020 }
+  }
+}
+#南越
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122400
+  random = no
+  country = IDC
+  
+  name = "阮攀龙就任南越首相 " 
+  desc = "1950年一月二十一日，阮攀龙代替保大皇帝阮福晪担任南越首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 543101
+  } 
+  date = { day = 21 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 543103 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122401
+  random = no
+  country = IDC
+  
+  name = "陈文友就任南越首相 " 
+  desc = "1950年四月二十七日，陈文友代替阮攀龙担任南越首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 543103
+  } 
+  date = { day = 27 month = april year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 543104 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122402
+  random = no
+  country = IDC
+  
+  name = "阮文心就任南越首相 " 
+  desc = "1952年六月六日，阮文心代替陈文友担任南越首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 543104
+  } 
+  date = { day = 6 month = june year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 583102 }
+  }
+}
+#印度
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 122500
+  random = no
+  country = IND
+  
+  name = "拉金德拉·普拉萨德就任印度总统 " 
+  desc = "1950年一月二十六日，拉金德拉·普拉萨德代替查克拉瓦蒂·拉 贾戈帕拉查里担任印度总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 59127
+  } 
+  date = { day = 26 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 59031 }
+  }
+}
+#印度尼西亚
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122600
+  random = no
+  country = INO
+  
+  name = "阿卜杜勒·哈利姆就任印度尼西亚总理 " 
+  desc = "1950年一月十六日，阿卜杜勒·哈利姆代替穆罕穆德·哈塔担任 印度尼西亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 577014
+  } 
+  date = { day = 16 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 577056 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122601
+  random = no
+  country = INO
+  
+  name = "穆罕穆德·纳西尔就任印度尼西亚总理 " 
+  desc = "1950年九月五日，穆罕穆德·纳西尔代替阿卜杜勒·哈利姆担任 印度尼西亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 577056
+  } 
+  date = { day = 5 month = september year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 577057 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 122602
+  random = no
+  country = INO
+  
+  name = "苏科曼·维约桑乔约就任印度尼西亚总理 " 
+  desc = "1951年四月二十七日，苏科曼·维约桑乔约代替穆罕穆德·纳西 尔担任印度尼西亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 577057
+  } 
+  date = { day = 27 month = april year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 577058 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 122603
+  random = no
+  country = INO
+  
+  name = "西斯万托·维洛波就任印度尼西亚总理 " 
+  desc = "1952年四月一日，西斯万托·维洛波代替苏科曼·维约桑乔约担 任印度尼西亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 577058
+  } 
+  date = { day = 1 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 577059 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 122604
+  random = no
+  country = INO
+  
+  name = "阿里·萨斯特罗米乔约就任印度尼西亚总理 " 
+  desc = "1953年七月三十日，阿里·萨斯特罗米乔约代替西斯万托·维洛 波担任印度尼西亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 577059
+  } 
+  date = { day = 30 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 577060 }
+  }
+}
+#爱尔兰
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 122700
+  random = no
+  country = IRE
+  
+  name = "埃蒙·瓦勒拉就任爱尔兰总理 " 
+  desc = "1951年六月十三日，埃蒙·瓦勒拉代替约翰·科斯特洛担任爱尔 兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 25048
+  } 
+  date = { day = 13 month = june year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 25002 }
+  }
+}
+#伊拉克
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 122800
+  random = no
+  country = IRQ
+  
+  name = "阿里·乔达特就任伊拉克首相 " 
+  desc = "1949年十二月十日，阿里·乔达特代替努里·赛义德担任伊拉 克首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 91178
+  } 
+  date = { day = 10 month = december year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 91181 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122801
+  random = no
+  country = IRQ
+  
+  name = "陶菲克·苏韦迪就任伊拉克首相 " 
+  desc = "1950年二月五日，陶菲克·苏韦迪代替阿里·乔达特担任伊拉 克首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 91181
+  } 
+  date = { day = 5 month = february year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 91182 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 122802
+  random = no
+  country = IRQ
+  
+  name = "努里·赛义德就任伊拉克首相 " 
+  desc = "1950年九月十五日，努里·赛义德代替陶菲克·苏韦迪担任伊 拉克首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 91182
+  } 
+  date = { day = 15 month = september year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 91178 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 122803
+  random = no
+  country = IRQ
+  
+  name = "穆斯塔法·奥马里就任伊拉克首相 " 
+  desc = "1952年七月十二日，穆斯塔法·奥马里代替努里·赛义德担任 伊拉克首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 91178
+  } 
+  date = { day = 12 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 91184 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 122806
+  random = no
+  country = IRQ
+  
+  name = "穆罕默德·贾迈利就任伊拉克首相 " 
+  desc = "1953年九月十七日，穆罕默德·贾迈利代替贾米勒·米德法伊担 任伊拉克首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 91176
+  } 
+  date = { day = 17 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 91185 }
+  }
+}
+#以色列
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 122900
+  random = no
+  country = ISR
+  
+  name = "伊扎克·本·兹维就任以色列总统 " 
+  desc = "1952年十二月八日，伊扎克·本·兹维代替钱姆·魏茨曼担任以 色列总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 559001
+  } 
+  date = { day = 8 month = december year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 559048 }
+  }
+}
+#意大利
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 123000
+  random = no
+  country = ITA
+  
+  name = "朱塞佩·佩拉就任意大利总理 " 
+  desc = "1953年八月十七日，朱塞佩·佩拉代替阿尔契德·加斯贝利担任 意大利总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 3047
+  } 
+  date = { day = 17 month = august year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 3170 }
+  }
+}
+#约旦
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 123102
+  random = no
+  country = JOR
+  
+  name = "侯赛因一世即位约旦国王 " 
+  desc = "1952年八月十一日，侯赛因一世代替塔利勒一世即位约旦国王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 556011
+  } 
+  date = { day = 11 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 556037 }
+  }
+}
+#不丹
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 123200
+  random = no
+  country = BHU
+  
+  name = "吉格梅·道尔吉·旺楚克即位不丹国王 " 
+  desc = "1952年三月二十四日，吉格梅·旺楚克逝世，吉格梅·道尔吉· 旺楚克即位不丹国王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 74001
+  } 
+  date = { day = 24 month = march year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 74056 }
+    command = { type = sleepminister which = 74024 }
+    command = { type = sleepminister which = 74001 }
+    command = { type = sleepminister which = 74049 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123201
+  random = no
+  country = BHU
+  
+  name = "吉格梅·帕尔登·道尔吉就任不丹首相 " 
+  desc = "1952年一月一日，吉格梅·帕尔登·道尔吉代替索南·托布盖· 道尔吉就任不丹首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 74002
+  } 
+  date = { day = 1 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 74057 }
+  }
+}
+#韩国
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 123300
+  random = no
+  country = KOR
+  
+  name = "申性模就任韩国总理 " 
+  desc = "1950年四月二十一日，申性模代替李范奭就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578024
+  } 
+  date = { day = 21 month = april year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578025 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 123301
+  random = no
+  country = KOR
+  
+  name = "张勉就任韩国总理 " 
+  desc = "1950年十一月二十三日，张勉代替申性模就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578025
+  } 
+  date = { day = 23 month = november year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578026 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 123302
+  random = no
+  country = KOR
+  
+  name = "许政就任韩国总理 " 
+  desc = "1951年十一月六日，许政代替张勉就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578026
+  } 
+  date = { day = 6 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578068 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123303
+  random = no
+  country = KOR
+  
+  name = "李允荣就任韩国总理 " 
+  desc = "1952年四月二十四日，李允荣代替许政就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578068
+  } 
+  date = { day = 24 month = april year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578069 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123304
+  random = no
+  country = KOR
+  
+  name = "张泽相就任韩国总理 " 
+  desc = "1952年五月六日，张泽相代替李允荣就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578069
+  } 
+  date = { day = 6 month = may year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578027 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123305
+  random = no
+  country = KOR
+  
+  name = "白斗镇就任韩国总理 " 
+  desc = "1952年十月九日，白斗镇代替张泽相就任韩国总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 578027
+  } 
+  date = { day = 9 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 578028 }
+  }
+}
+#老挝
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 123400
+  random = no
+  country = LAO
+  
+  name = "培·萨纳尼空就任老挝首相 " 
+  desc = "1950年二月二十四日，培·萨纳尼空代替文翁·纳占巴塞就任老 挝首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 540016
+  } 
+  date = { day = 24 month = february year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 540045 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 123401
+  random = no
+  country = LAO
+  
+  name = "苏万纳拉就任老挝首相 " 
+  desc = "1951年十一月二十一日，苏万纳拉代替培·萨纳尼空就任老挝首 相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 540045
+  } 
+  date = { day = 21 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 540017 }
+  }
+}
+#黎巴嫩
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 123500
+  random = no
+  country = LEB
+  
+  name = "卡米尔·夏蒙就任黎巴嫩总统 " 
+  desc = "1952年九月二十三日，卡米尔·夏蒙代替贝沙拉·库利就任黎巴 嫩总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 529013
+  } 
+  date = { day = 23 month = september year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 529070 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 123501
+  random = no
+  country = LEB
+  
+  name = "哈桑·阿尔·奥韦尼就任黎巴嫩总理 " 
+  desc = "1951年二月十四日，哈桑·阿尔·奥韦尼代替里亚德·索勒赫就 任黎巴嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529027
+  } 
+  date = { day = 24 month = february year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529071 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 123502
+  random = no
+  country = LEB
+  
+  name = "阿布达拉·雅菲就任黎巴嫩总理 " 
+  desc = "1951年六月七日，阿布达拉·雅菲代替哈桑·阿尔·奥韦尼就任 黎巴嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529071
+  } 
+  date = { day = 7 month = june year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529017 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123503
+  random = no
+  country = LEB
+  
+  name = "萨米·苏勒赫就任黎巴嫩总理 " 
+  desc = "1952年二月十一日，萨米·苏勒赫代替阿布达拉·雅菲就任黎巴 嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529017
+  } 
+  date = { day = 11 month = february year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529025 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123504
+  random = no
+  country = LEB
+  
+  name = "纳齐姆·阿卡里就任黎巴嫩总理 " 
+  desc = "1952年九月十日，纳齐姆·阿卡里代替萨米·苏勒赫就任黎巴嫩 总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529025
+  } 
+  date = { day = 10 month = september year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529072 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123505
+  random = no
+  country = LEB
+  
+  name = "赛义卜·萨拉姆就任黎巴嫩总理 " 
+  desc = "1952年九月十四日，赛义卜·萨拉姆代替纳齐姆·阿卡里就任黎 巴嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529072
+  } 
+  date = { day = 14 month = september year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529073 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123506
+  random = no
+  country = LEB
+  
+  name = "阿布达拉·雅菲就任黎巴嫩总理 " 
+  desc = "1952年九月十八日，阿布达拉·雅菲代替赛义卜·萨拉姆就任黎 巴嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529073
+  } 
+  date = { day = 18 month = september year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529017 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123507
+  random = no
+  country = LEB
+  
+  name = "哈立德·谢哈卜就任黎巴嫩总理 " 
+  desc = "1952年十月一日，哈立德·谢哈卜代替阿布达拉·雅菲就任黎巴 嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529017
+  } 
+  date = { day = 1 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529016 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 123508
+  random = no
+  country = LEB
+  
+  name = "赛义卜·萨拉姆就任黎巴嫩总理 " 
+  desc = "1953年五月一日，赛义卜·萨拉姆代替哈立德·谢哈卜就任黎巴 嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529016
+  } 
+  date = { day = 1 month = may year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529073 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 123509
+  random = no
+  country = LEB
+  
+  name = "阿布达拉·雅菲就任黎巴嫩总理 " 
+  desc = "1953年八月十六日，阿布达拉·雅菲代替赛义卜·萨拉姆就任黎 巴嫩总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 529073
+  } 
+  date = { day = 16 month = august year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 529017 }
+  }
+}
+#卢森堡
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 123700
+  random = no
+  country = LUX
+  
+  name = "约瑟夫·贝克就任卢森堡首相 " 
+  desc = "1953年十二月二十九日，约瑟夫·贝克代替皮埃尔·迪蓬就任卢 森堡首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 66038
+  } 
+  date = { day = 29 month = december year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 66002 }
+  }
+}
+#墨西哥
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 123800
+  random = no
+  country = MEX
+  
+  name = "阿道夫·科蒂内斯就任墨西哥总统 " 
+  desc = "1952年十二月一日，阿道夫·科蒂内斯代替米格尔·瓦尔德斯就 任墨西哥总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 36033
+  } 
+  date = { day = 1 month = december year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 36125 }
+    command = { type = headofgovernment which = 36127 }
+  }
+}
+#蒙古
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 123900
+  random = no
+  country = MON
+  
+  name = "苏赫巴托尔·扬吉玛就任大人民呼拉尔主席团主席 " 
+  desc = "1953年九月二十三日，苏赫巴托尔·扬吉玛代替冈其格·布曼曾 德就任大人民呼拉尔主席团主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 94034
+  } 
+  date = { day = 23 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 94105 }
+    command = { type = sleepminister which = 94034 }
+    command = { type = sleepminister which = 94058 }
+    command = { type = sleepminister which = 94095 }
+    command = { type = sleepminister which = 94103 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 123901
+  random = no
+  country = MON
+  
+  name = "尤睦佳·泽登巴尔就任蒙古总理 " 
+  desc = "1952年一月二十六日，尤睦佳·泽登巴尔代替霍尔洛·乔巴山就 任蒙古总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 94040
+  } 
+  date = { day = 26 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 94041 }
+    command = { type = sleepminister which = 94056 }
+    command = { type = sleepminister which = 94040 }
+    command = { type = sleepminister which = 94081 }
+    command = { type = sleepminister which = 94089 }
+    command = { type = sleepminister which = 94049 }
+  }
+}
+#尼泊尔
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 124000
+  random = no
+  country = NEP
+  
+  name = "贾南德拉·德瓦即位尼泊尔国王 " 
+  desc = "1950年十一月七日，贾南德拉·德瓦代替特里布文即位尼泊尔国 王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 75001
+  } 
+  date = { day = 7 month = november year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 75060 }
+  }
+}
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 124001
+  random = no
+  country = NEP
+  
+  name = "特里布文即位尼泊尔国王 " 
+  desc = "1951年一月七日，特里布文代替贾南德拉·德瓦即位尼泊尔国王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 75060
+  } 
+  date = { day = 7 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 75001 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 124002
+  random = no
+  country = NEP
+  
+  name = "梅特里卡·柯依拉腊就任尼泊尔首相 " 
+  desc = "1951年十一月十六日，梅特里卡·柯依拉腊代替莫汉·拉纳就任 尼泊尔首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 75013
+  } 
+  date = { day = 16 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 75058 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 124003
+  random = no
+  country = NEP
+  
+  name = "特里布文直接控制国家政治 " 
+  desc = "1952年八月十三日，特里布文开始直接控制国家政治，担任政府 首脑。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 75058
+  } 
+  date = { day = 13 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 75059 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 124004
+  random = no
+  country = NEP
+  
+  name = "梅特里卡·柯依拉腊就任尼泊尔首相 " 
+  desc = "1953年六月十五日，梅特里卡·柯依拉腊就任尼泊尔首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 75059
+  } 
+  date = { day = 15 month = june year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 75058 }
+  }
+}
+#尼加拉瓜
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 124100
+  random = no
+  country = NIC
+  
+  name = "安纳斯塔西奥·加西亚就任尼加拉瓜总统 " 
+  desc = "1950年五月六日，维克托·雷耶斯逝世，安纳斯塔西奥·加西亚 担任尼加拉瓜总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 48035
+  } 
+  date = { day = 6 month = may year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 48033 }
+    command = { type = headofgovernment which = 48085 }
+    command = { type = sleepminister which = 48035 }
+    command = { type = sleepminister which = 48075 }
+    command = { type = sleepminister which = 48046 }
+    command = { type = sleepminister which = 48086 }
+    command = { type = sleepminister which = 48066 }
+    command = { type = sleepminister which = 48059 }
+  }
+}
+#挪威
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 124200
+  random = no
+  country = NOR
+  
+  name = "奥斯卡·特洛普就任挪威首相 " 
+  desc = "1951年十一月九日，奥斯卡·特洛普代替埃纳尔·基哈德森就任 挪威首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 14037
+  } 
+  date = { day = 9 month = november year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 14096 }
+  }
+}
+#新西兰
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 124300
+  random = no
+  country = NZL
+  
+  name = "汉弗莱·奥利里就任新西兰总督 " 
+  desc = "1952年八月十五日，汉弗莱·奥利里代替弗赖伯格男爵就任新西 兰总督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 55036
+  } 
+  date = { day = 15 month = august year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 55102 }
+  }
+}
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 124301
+  random = no
+  country = NZL
+  
+  name = "诺里勋爵就任新西兰总督 " 
+  desc = "1952年十二月二日，诺里勋爵代替汉弗莱·奥利里就任新西兰总 督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 55102
+  } 
+  date = { day = 2 month = december year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 55095 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 124302
+  random = no
+  country = NZL
+  
+  name = "西德尼·霍兰德就任新西兰总理 " 
+  desc = "1949年十二月十三日，西德尼·霍兰德代替彼得·弗雷泽就任新 西兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 55038
+  } 
+  date = { day = 13 month = december year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 55039 }
+  }
+}
+#巴基斯坦
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 124500
+  random = no
+  country = PAK
+  
+  name = "古拉姆·穆罕默德就任巴基斯坦总督 " 
+  desc = "1951年十月十七日，古拉姆·穆罕默德代替华贾·纳齐穆丁就任 巴基斯坦总督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 564040
+  } 
+  date = { day = 17 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 564041 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 124501
+  random = no
+  country = PAK
+  
+  name = "华贾·纳齐穆丁就任巴基斯坦总理 " 
+  desc = "1951年十月十七日，华贾·纳齐穆丁代替里雅格特·阿里·汗就 任巴基斯坦总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 564042
+  } 
+  date = { day = 17 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 564043 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 124502
+  random = no
+  country = PAK
+  
+  name = "穆罕默德·伯格拉就任巴基斯坦总理 " 
+  desc = "1953年四月十七日，穆罕默德·伯格拉代替华贾·纳齐穆丁就任 巴基斯坦总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 564043
+  } 
+  date = { day = 17 month = april year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 564044 }
+  }
+}
+#巴拿马
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 124600
+  random = no
+  country = PAN
+  
+  name = "丹尼尔·平松就任巴拿马总统 " 
+  desc = "1949年七月二十八日，丹尼尔·平松代替多明戈·阿罗塞梅纳就 任巴拿马总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 95091
+  } 
+  date = { day = 28 month = july year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 95094 }
+    command = { type = headofgovernment which = 95102 }
+    command = { type = sleepminister which = 95091 }
+    command = { type = sleepminister which = 95092 }
+  }
+}
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 124601
+  random = no
+  country = PAN
+  
+  name = "罗伯托·雷蒙就任巴拿马总统 " 
+  desc = "1949年十一月二十日，罗伯托·雷蒙代替丹尼尔·平松就任巴拿 马总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 95094
+  } 
+  date = { day = 20 month = november year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 95103 }
+    command = { type = headofgovernment which = 95104 }
+  }
+}
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 124602
+  random = no
+  country = PAN
+  
+  name = "阿努尔福·德拉马德里就任巴拿马总统 " 
+  desc = "1949年十一月二十四日，阿努尔福·德拉马德里代替罗伯托·雷 蒙就任巴拿马总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 95103
+  } 
+  date = { day = 24 month = november year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 95034 }
+    command = { type = headofgovernment which = 95037 }
+  }
+}
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 124604
+  random = no
+  country = PAN
+  
+  name = "胡安·雷蒙就任巴拿马总统 " 
+  desc = "1952年十月一日，胡安·雷蒙代替阿尔恰比德斯·阿罗塞梅纳就 任巴拿马总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 95096
+  } 
+  date = { day = 1 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 95099 }
+    command = { type = headofgovernment which = 95097 }
+  }
+}
+#巴拉圭
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 124700
+  random = no
+  country = PAR
+  
+  name = "费代里科·查维斯就任巴拉圭总统 " 
+  desc = "1949年九月十一日，费代里科·查维斯代替费利佩·洛佩斯就任 巴拉圭总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 42128
+  } 
+  date = { day = 11 month = september year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 42129 }
+    command = { type = headofgovernment which = 42144 }
+  }
+}
+#伊朗
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 124800
+  random = no
+  country = PER
+  
+  name = "阿里·曼苏尔就任伊朗首相 " 
+  desc = "1950年三月二十三日，阿里·曼苏尔代替穆罕默德·马拉吉就任 伊朗首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53112
+  } 
+  date = { day = 23 month = march year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53113 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 124801
+  random = no
+  country = PER
+  
+  name = "阿里·拉兹马拉就任伊朗首相 " 
+  desc = "1950年六月二十六日，阿里·拉兹马拉代替阿里·曼苏尔就任伊 朗首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53113
+  } 
+  date = { day = 23 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53114 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 124802
+  random = no
+  country = PER
+  
+  name = "侯赛因·阿拉就任伊朗首相 " 
+  desc = "1951年三月十二日，侯赛因·阿拉代替阿里·拉兹马拉就任伊朗 首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53114
+  } 
+  date = { day = 12 month = march year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53115 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 124803
+  random = no
+  country = PER
+  
+  name = "穆罕默德·摩萨台就任伊朗首相 " 
+  desc = "1951年四月三十日，穆罕默德·摩萨台代替侯赛因·阿拉就任伊 朗首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53115
+  } 
+  date = { day = 12 month = april year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53116 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 124804
+  random = no
+  country = PER
+  
+  name = "艾哈迈德·苏丹纳就任伊朗首相 " 
+  desc = "1952年七月十七日，艾哈迈德·苏丹纳代替穆罕默德·摩萨台就 任伊朗首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53116
+  } 
+  date = { day = 17 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53037 }
+  }
+}
+#######################
+#1952 HOG
+#######################
+event = {
+  id = 124805
+  random = no
+  country = PER
+  
+  name = "穆罕默德·摩萨台就任伊朗首相 " 
+  desc = "1952年七月二十二日，穆罕默德·摩萨台代替艾哈迈德·苏丹纳 就任伊朗首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 53037
+  } 
+  date = { day = 22 month = july year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 53116 }
+  }
+}
+#菲律宾
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 124900
+  random = no
+  country = PHI
+  
+  name = "拉蒙·麦格赛赛就任菲律宾总统 " 
+  desc = "1953年十二月三十日，拉蒙·麦格赛赛代替埃尔皮迪奥·奎里诺 就任菲律宾总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 50031
+  } 
+  date = { day = 30 month = december year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 50089 }
+    command = { type = headofgovernment which = 50090 }
+  }
+}
+#波兰
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 125000
+  random = no
+  country = POL
+  
+  name = "亚历山大·扎瓦茨基就任波兰国务委员会主席 " 
+  desc = "1952年十一月二十日，亚历山大·扎瓦茨基代替博列斯拉夫·贝 鲁特就任波兰国务委员会主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 13034
+  } 
+  date = { day = 20 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 13142 }
+    command = { type = headofgovernment which = 13138 }
+  }
+}
+#葡萄牙
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 125100
+  random = no
+  country = POR
+  
+  name = "安东尼奥·萨拉查就任葡萄牙总统 " 
+  desc = "1951年四月十八日，安东尼奥·卡尔莫纳逝世，安东尼奥·萨拉 查就任葡萄牙总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 9001
+  } 
+  date = { day = 18 month = april year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 9082 }
+    command = { type = sleepminister which = 9001 }
+  }
+}
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 125101
+  random = no
+  country = POR
+  
+  name = "弗朗西斯科·洛佩斯就任葡萄牙总统 " 
+  desc = "1951年七月二十一日，弗朗西斯科·洛佩斯代替安东尼奥·萨拉 查就任葡萄牙总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 9082
+  } 
+  date = { day = 21 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 9080 }
+  }
+}
+#秘鲁
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 125300
+  random = no
+  country = PRU
+  
+  name = "阿尔贝托·阿圭罗就任秘鲁总统 " 
+  desc = "1950年六月一日，阿尔贝托·阿圭罗代替曼努埃尔·阿莫雷蒂就 任秘鲁总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 39140
+  } 
+  date = { day = 1 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 39150 }
+  }
+}
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 125301
+  random = no
+  country = PRU
+  
+  name = "曼努埃尔·阿莫雷蒂就任秘鲁总统 " 
+  desc = "1950年七月二十八日，曼努埃尔·阿莫雷蒂代替阿尔贝托·阿圭 罗就任秘鲁总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 39150
+  } 
+  date = { day = 28 month = july year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 39140 }
+    command = { type = headofgovernment which = 39143 }
+  }
+}
+#罗马尼亚
+#######################
+#1952 HOS HOG
+#######################
+event = {
+  id = 125400
+  random = no
+  country = ROM
+  
+  name = "彼得鲁·格罗扎就任罗马尼亚国民议会主席团主席 格奥尔基·乔治乌-德就任部长会议主席 " 
+  desc = "1952年六月二日，彼得鲁·格罗扎代替康斯坦丁·巴洪就任罗马 尼亚国民议会主席团主席。格奥尔基·乔治乌-德就任部长会议 主席。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 22038
+    headofgovernment = 22051
+  } 
+  date = { day = 2 month = june year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 22162 }
+    command = { type = headofgovernment which = 22052 }
+  }
+}
+#南非
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 125500
+  random = no
+  country = SAF
+  
+  name = "E·G·简森就任南非总督 " 
+  desc = "1951年一月一日，E·G·简森代替基甸·左尔就任南非总督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 70027
+  } 
+  date = { day = 1 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 70089 }
+  }
+}
+#锡兰
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 125700
+  random = no
+  country = SAR
+  
+  name = "赫瓦德·拉姆斯博萨姆就任锡兰总督 " 
+  desc = "1949年七月六日，赫瓦德·拉姆斯博萨姆代替亨利·芒克-梅森 ·穆尔就任锡兰总督。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 800300
+  } 
+  date = { day = 6 month = july year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 800312 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 125701
+  random = no
+  country = SAR
+  
+  name = "杜德利·森纳那亚克就任锡兰总理 " 
+  desc = "1953年三月二十六日，唐·森纳那亚克逝世，杜德利·森纳那亚 克就任锡兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 800301
+  } 
+  date = { day = 26 month = march year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 800317 }
+    command = { type = sleepminister which = 800301 }
+    command = { type = sleepminister which = 800302 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 125702
+  random = no
+  country = SAR
+  
+  name = "约翰·克特拉瓦拉就任锡兰总理 " 
+  desc = "1953年十月十二日，约翰·克特拉瓦拉代替杜德利·森纳那亚克 就任锡兰总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 800317
+  } 
+  date = { day = 12 month = october year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 800318 }
+  }
+}
+#沙特阿拉伯
+
+#瑞士
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 115900
+  random = no
+  country = SCH
+  
+  name = "马克斯·珀蒂皮埃尔担任瑞士联邦主席 " 
+  desc = "瑞士联邦以委员会制为政权组织形式，以联邦制为国家结构形成 ，实行多党制。长期实行委员会制和在立法上允许公民享有某些直 接民主权利，是瑞士联邦政治制度的主要特点。1950年由马克斯· 珀蒂皮埃尔出任瑞士联邦主席。 "
+  style = 0
+  
+  trigger = {
+    government = democratic
+  } 
+  date = { day = 1 month = january year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 17112  }
+    command = { type = headofgovernment which = 17118  }
+  }
+}
+
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 115901
+  random = no
+  country = SCH
+  
+  name = "爱德华·凡·斯泰格担任瑞士联邦主席 " 
+  desc = "瑞士联邦以委员会制为政权组织形式，以联邦制为国家结构形成 ，实行多党制。长期实行委员会制和在立法上允许公民享有某些直 接民主权利，是瑞士联邦政治制度的主要特点。1950年由爱德华· 凡·斯泰格
+出任瑞士联邦主席。 "
+  style = 0
+  
+  trigger = {
+    government = democratic
+  } 
+  date = { day = 1 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 17039  }
+    command = { type = headofgovernment which = 17119  }
+  }
+}
+
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 115902
+  random = no
+  country = SCH
+  
+  name = "卡尔·科伯特担任瑞士联邦主席 " 
+  desc = "瑞士联邦以委员会制为政权组织形式，以联邦制为国家结构形成 ，实行多党制。长期实行委员会制和在立法上允许公民享有某些直 接民主权利，是瑞士联邦政治制度的主要特点。1950年由卡尔·科 伯特出任瑞士联邦主席。 "
+  style = 0
+  
+  trigger = {
+    government = democratic
+  } 
+  date = { day = 1 month = january year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 17040  }
+    command = { type = headofgovernment which = 17051  }
+  }
+}
+
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 115903
+  random = no
+  country = SCH
+  
+  name = "菲利普·埃特担任瑞士联邦主席 " 
+  desc = "瑞士联邦以委员会制为政权组织形式，以联邦制为国家结构形成 ，实行多党制。长期实行委员会制和在立法上允许公民享有某些直 接民主权利，是瑞士联邦政治制度的主要特点。1950年由菲利普· 埃特出任瑞士联邦主席。 "
+  style = 0
+  
+  trigger = {
+    government = democratic
+  } 
+  date = { day = 1 month = january year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 17033  }
+    command = { type = headofgovernment which = 17122  }
+  }
+}
+#瑞典
+#######################
+#1950 HOS
+#######################
+event = {
+  id = 126200
+  random = no
+  country = SWE
+  
+  name = "古斯塔夫六世即位 " 
+  desc = "1950年10月29日，92岁高龄的国王古斯塔夫五世去世。古斯塔夫五 世在两次世界大战中以亲德闻名，他也是最后一个兼任瑞典武装 部队总司令的国王。这个权利在他活着的时候就在1939年被剥夺 了。他也是自1210年以来，瑞典第一位没有接受宗教仪式加冕的国 王。 "
+  style = 0
+  
+  trigger = {
+     headofstate = 7031
+  } 
+  date = { day = 29 month = october year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "迎接新国王 "
+    command = { type = headofstate which = 7093  }
+    command = { type = sleepminister which = 7001  }
+    command = { type = sleepminister which = 7031  }
+  }
+}
+#叙利亚
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 126300
+  random = no
+  country = SYR
+  
+  name = "哈森·阿塔西就任叙利亚总统 " 
+  desc = "1949年八月十五日，哈森·阿塔西代替侯赛因·扎伊姆就任叙利 亚总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 528060
+  } 
+  date = { day = 15 month = august year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 528012 }
+  }
+}
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 126301
+  random = no
+  country = SYR
+  
+  name = "法齐·西卢就任叙利亚总统 " 
+  desc = "1951年十二月三日，法齐·西卢代替哈森·阿塔西就任叙利亚总 统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 528012
+  } 
+  date = { day = 3 month = december year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 528061 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 126303
+  random = no
+  country = SYR
+  
+  name = "穆赫辛·巴拉齐就任叙利亚总理 " 
+  desc = "1949年六月二十六日，穆赫辛·巴拉齐代替侯赛因·扎伊姆就任 叙利亚总统。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528064
+  } 
+  date = { day = 26 month = june year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528065 }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 126304
+  random = no
+  country = SYR
+  
+  name = "哈森·阿塔西就任叙利亚总理 " 
+  desc = "1949年八月十四日，哈森·阿塔西代替穆赫辛·巴拉齐就任叙利 亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528065
+  } 
+  date = { day = 14 month = august year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528066 }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 126306
+  random = no
+  country = SYR
+  
+  name = "纳齐姆·库德西就任叙利亚总理 " 
+  desc = "1950年六月四日，纳齐姆·库德西代替哈立德·阿泽姆就任叙利 亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528063
+  } 
+  date = { day = 4 month = june year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528067 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 126307
+  random = no
+  country = SYR
+  
+  name = "哈立德·阿泽姆就任叙利亚总理 " 
+  desc = "1951年三月二十七日，哈立德·阿泽姆代替哈森·阿塔西就任叙 利亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528067
+  } 
+  date = { day = 27 month = march year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528063 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 126308
+  random = no
+  country = SYR
+  
+  name = "哈桑·哈基姆就任叙利亚总理 " 
+  desc = "1951年八月九日，哈桑·哈基姆代替哈立德·阿泽姆就任叙利亚 总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528063
+  } 
+  date = { day = 9 month = august year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528068 }
+  }
+}
+#######################
+#1951 HOG
+#######################
+event = {
+  id = 126309
+  random = no
+  country = SYR
+  
+  name = "法齐·西卢就任叙利亚总理 " 
+  desc = "1951年十二月三日，法齐·西卢代替哈桑·哈基姆就任叙利亚总 理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528068
+  } 
+  date = { day = 9 month = december year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528069 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 126310
+  random = no
+  country = SYR
+  
+  name = "阿迪卜·施舍克里就任叙利亚总理 " 
+  desc = "1953年七月十九日，阿迪卜·施舍克里代替法齐·西卢就任叙利 亚总理。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 528069
+  } 
+  date = { day = 19 month = july year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 528070 }
+  }
+}
+#土耳其
+
+#摩纳哥
+#######################
+#1949 HOS
+#######################
+event = {
+  id = 126900
+  random = no
+  country = U22
+  
+  name = "兰尼埃三世即位摩纳哥国王 " 
+  desc = "1949年五月九日，路易四世逝世，兰尼埃三世国王即位摩纳哥国 王。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 6500
+  } 
+  date = { day = 9 month = may year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 6504  }
+    command = { type = sleepminister which = 6500  }
+  }
+}
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 126901
+  random = no
+  country = U22
+  
+  name = "雅克·吕夫就任摩纳哥首相 " 
+  desc = "1949年七月十二日，雅克·吕夫代替皮埃尔·布朗西就任摩纳哥 首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 6501
+  } 
+  date = { day = 12 month = july year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 6506  }
+  }
+}
+#######################
+#1950 HOG
+#######################
+event = {
+  id = 126902
+  random = no
+  country = U22
+  
+  name = "皮埃尔·瓦扎尔德就任摩纳哥首相 " 
+  desc = "1950年八月一日，皮埃尔·瓦扎尔德代替雅克·吕夫就任摩纳哥 首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 6506
+  } 
+  date = { day = 1 month = august year = 1950 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 6505 }
+  }
+}
+#######################
+#1953 HOG
+#######################
+event = {
+  id = 126903
+  random = no
+  country = U22
+  
+  name = "亨利·苏姆就任摩纳哥首相 " 
+  desc = "1953年九月二日，亨利·苏姆代替皮埃尔·瓦扎尔德就任摩纳哥 首相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 6505
+  } 
+  date = { day = 2 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 6507 }
+  }
+}
+#锡金
+#######################
+#1949 HOG
+#######################
+event = {
+  id = 127000
+  random = no
+  country = U24
+  
+  name = "约翰·劳尔就任锡金首相 " 
+  desc = "1949年八月十一日，约翰·劳尔代替哈瑞士瓦·戴尔就任锡金首 相。 "
+  style = 0
+  
+  trigger = {
+    headofgovernment = 7501
+  } 
+  date = { day = 11 month = august year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofgovernment which = 7502 }
+  }
+}
+#联合国
+#######################
+#1952 HOS
+#######################
+event = {
+  id = 127100
+  random = no
+  country = U27
+  
+  name = "达格·哈马舍尔德就任联合国秘书长 " 
+  desc = "1952年十一月十日，原联合国秘书长特里格夫·赖伊辞职，达格 ·哈马舍尔德就任联合国秘书长。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 1500
+  } 
+  date = { day = 10 month = november year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 1510 }
+    command = { type = foreignminister which = 1511 }
+    command = { type = sleepminister which = 1500 }
+    command = { type = sleepminister which = 1502 }
+  }
+}
+#乌拉圭
+#######################
+#1951 HOS
+#######################
+event = {
+  id = 127200
+  random = no
+  country = URU
+  
+  name = "安德雷斯·马丁内斯·特鲁埃瓦就任乌拉圭总统 " 
+  desc = "1951年3月1日，安德雷斯·马丁内斯·特鲁埃瓦代替路易斯·巴特列 ·贝雷斯担任乌拉圭总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 41036
+  } 
+  date = { day = 1 month = march year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 41099  }
+    command = { type = headofgovernment which = 41100  }
+    command = { type = change_policy which = democratic value = 2 }
+    command = { type = change_policy which = political_left value = 1 }
+  }
+}
+#委内瑞拉
+
+#南斯拉夫
+#######################
+#1953 HOS
+#######################
+event = {
+  id = 127500
+  random = no
+  country = YUG
+  
+  name = "约瑟夫·布罗兹·铁托就任南斯拉夫总统 " 
+  desc = "1953年一月十四日，约瑟夫·布罗兹·铁托代替伊万·里巴尔就 任南斯拉夫总统。 "
+  style = 0
+  
+  trigger = {
+    headofstate = 1561
+  } 
+  date = { day = 14 month = january year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1981 }
+  
+  action_a = {
+    name = "好的 "
+    command = { type = headofstate which = 1570  }
+  }
+}

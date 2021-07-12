@@ -1,0 +1,172 @@
+# USA D-Day AI File by Lothos adapted to MIH by Civdemof
+
+max_garrison_prop = 0.002
+min_garrison_prop = 0.001
+
+exp_force_ratio = 0.00
+exp_force_ratios = { } 
+
+max_front_ratios = {
+	GER = 4.0
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.001
+	overseas_multiplier  = 1.0
+	home_peace_cap 		= 0
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 0.0
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 1 # Beach level 2
+	capital			= 1	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 0		# The next country targeted for attack by this AI
+
+	opposing_alliance	= 0		# For neutrals, all alliances are "opposing"
+	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	unstable_border		= 0		# Bordering countries at war with someone else get this
+	reserves		= 0
+
+}
+front = { 
+	recklessness 		= 3 # 0-3
+	distrib_vs_ai 		= Reactive
+	distrib_vs_human 	= Reactive
+
+	max_attack_odds		= 2.0
+	
+  enemy_handicap = { } 
+  passivity = { } 
+	province_priorities = { }
+} 
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion		= yes
+ 	base			= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random			= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal			= 0.0	#increase to avoid coastal forts more.
+	beach			= 0.0	#higher, avoid worst beaches.
+	distance		= 0.0	#higher = avoid long distance.
+	max_distance  	= 250.0  #About the distance from Washington to Morocco
+	max_staging_distance = 10.0	# How far should the staging area be from the target invasion point
+	pocket			= 0.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island			= 0.0	#prioritise taking pure islands.
+	enemy			= 0.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.4	#higher = much more vary of troops nearby
+	air_base		= 0.0 
+  naval_base 		= 0.0 
+  air_support 	= 0.0 
+  redirect 		= priority
+	ignore			= no
+	help_allies 	= no
+      
+	staging_province = {
+		21  # 朴次茅斯
+	}
+	target = {
+		#England
+		20 = 9000 # Dover
+		17 = 9000 # Norwich
+		21 = 9000 # Portsmouth
+		23 = 9000 # Plymouth
+		13 = 9000 # Sheiffield
+		28 = 9000 # Belfast
+		22 = 9000 # Bristol
+		14 = 9000 # Liverpool
+		12 = 9000 # Blackpool
+		11 = 9000 # Sunderland
+		10 = 9000 # Edinburgh
+		9  = 9000 # Glasgow
+
+		# Atlantic Wall
+		292 = 4500 	# Arburg
+		92  = 4500 	# Arhus
+		91  = -1 	# Kolding
+		90  = -1   	# Kiel
+		78  = -1 	# Leeweden
+		
+		47  = 5000 # Amsterdam
+		46  = 5000 # Rotterdam
+
+		45  = 5500 # Ghent
+		43  = 5500 # Dunkerque
+		18  = 5500 # Calais
+
+		42  = 8000 # Dieppe
+		33  = 8000 # Rennes
+		39  = 8000 # Caen
+		41  = 8000 # Le Havre
+		
+		32  = 7000 # Brest
+	
+		34  = 8000 # Lorient
+		
+		35  = -1 	# Nantes
+		59  = -1 	# Cholet
+		325 = 8000 	# Bordeaux
+		326 = 8000 	# Dax
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Southern France
+		358 = -1
+		362 = -1
+		364 = 7000
+		365 = 7000
+		366 = -1
+		
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		526 = -1 # Catania
+		525 = -1 # Palermo
+		521 = -1 # Naples
+		523 = -1 # Taranto
+		520 = -1 # Foggia
+		519 = -1 # Anzio
+		368 = -1
+		369 = -1
+		513 = -1
+		515 = -1
+		514 = -1
+		31  = -1 # Malta
+		405 = -1
+		399 = -1
+		398 = -1
+
+		# Greece
+		396 = 1000 # Crete
+		394 = -1 # Patras
+		393 = -1 # Kefalonia
+		401 = -1 # Athens
+		400 = -1 # The Cyclades
+		405 = -1 # The Dardanelles
+		411 = -1 # Salonika
+		410 = -1 # Kavala
+
+		# Yugoslavia/Albania
+		390 = -1 # Podgorica
+		388 = -1 # Dubrovnik
+		384 = -1 # Split		
+
+		# 太平洋战场
+		1338 = -1 # 迪石(算法问题)
+
+	}
+}

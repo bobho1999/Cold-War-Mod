@@ -1,0 +1,171 @@
+# USA North Africa1 AI File by Lothos adapted to MIH by Civdemof
+
+max_garrison_prop = 0.20
+min_garrison_prop = 0.10
+
+exp_force_ratio = 0.00
+exp_force_ratios = { } 
+
+max_front_ratios = {
+	GER = 4.0
+	ITA = 4.0
+	VIC = 4.0
+}
+
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 10.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	distance			= 0.1	#higher = avoid long distance.
+	max_distance  		= 250.0  #About the distance from Washington to Morocco
+	max_staging_distance = 25	# How far should the staging area be from the target invasion point
+	pocket				= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.1	#higher = much more vary of troops nearby
+	air_base			= 0.1 
+    naval_base 			= 0.1 
+    air_support 		= 0.1 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= no
+      
+	staging_province = { 
+		23  # Plymouth
+		348	# Gibraltar
+	}
+
+	target = {
+		#England
+		20 = 3000 # Dover
+		17 = 3000 # Norwich
+		21 = 3000 # Portsmouth
+		23 = 3000 # Plymouth
+		13 = 3000 # Sheiffield
+		28 = 3000 # Belfast
+		22 = 3000 # Bristol
+		14 = 3000 # Liverpool
+		12 = 3000 # Blackpool
+		11 = 3000 # Sunderland
+		10 = 3000 # Edinburgh
+		9  = 3000 # Glasgow
+		
+		# North Africa
+		958	= 8200 	# Casalanca
+		953 = 8200	# Oran
+		949 = 8200	# Algiers
+		940 = 8900	# Bizerte
+		939 = 8900	# Tunis
+		938	= 8900	# Sousse
+
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		525 = -1 # Palermo
+		521 = -1 # Naples
+		523 = -1 # Taranto
+		520 = -1 # Foggia
+		519 = -1 # Anzio
+		368 = -1
+		369 = -1
+		513 = -1
+		515 = -1
+		514 = -1
+		31  = -1 # Malta
+		405 = -1
+		399 = -1
+		398 = -1
+		
+		#Temp Shut Down of Europe
+		# Med Island
+		367 = -1
+		534 = -1
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax
+		
+		# Southern France
+		358 = -1
+		362 = -1
+		364 = -1
+		365 = -1
+		366 = -1
+
+		# Kwantung Long areas
+		1196 = -1 # Busan
+		1199 = -1 # Seoul
+		1201 = -1 # Pyongyang
+		1204 = -1 # Tianjin
+		1214 = -1 # Yantai
+		1215 = -1 # Oingdao
+		1217 = -1 # Lianyungang
+		1219 = -1 # Nantong
+		1237 = -1 # Shanghai
+		
+		#Japan
+		1189 = -1 # Shikoku
+		1188 = -1 # Hiroshima
+		1187 = -1 # Osaka
+		1186 = -1 # Kanazawa
+		1185 = -1 # Nagoya
+		1184 = -1 # Tokyo
+		1183 = -1 # Niigata
+		1182 = -1 # Fukushima
+		1181 = -1 # Akita
+		1180 = -1 # Sendai
+	} 
+}

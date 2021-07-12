@@ -1,0 +1,713 @@
+###########################################
+# 法國事件 5900000~
+###########################################
+event = {
+  	id = 5900000
+  	random = no
+	country = FRA
+  
+  	name = "戰後經濟 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+
+ 	}
+
+  
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "滿目瘡痍"
+   		command = { type = dissent value = 10 }
+		command = { type = free_money value = -10 }
+		command = { type = free_supplies value = -15 }
+    		command = { type = industrial_modifier which = supplies value = -30 }  
+    		command = { type = industrial_modifier which = total value = -30 }
+  	}
+}
+
+event = {
+  	id = 5900001
+  	random = no
+	country = FRA
+  	name = "從中東撤軍 " # https://en.wikipedia.org/wiki/Levant_Crisis
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		OR = {
+			access = { country = SYR country = FRA }  
+			access = { country = SYR country = FRA }  
+		}
+ 	}
+
+  	date = { day = 16 month = april year = 1946 } 
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 2 }
+		command = { type = trigger which = 5900002 }
+		command = { type = trigger which = 5900003 }
+#		command = { type = end_military_control which = SYR }
+  	}
+}
+
+event = {
+  	id = 5900002
+  	random = no
+	country = SYR
+  	name = "法國撤軍（Evacuation Day） " # https://en.wikipedia.org/wiki/Evacuation_Day_(Syria)
+  	desc = " "
+    	style = 0
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = -1 }
+		command = { type = end_access which = FRA }
+  	}
+}
+
+event = {
+  	id = 5900003
+  	random = no
+	country = LEB
+  	name = "法國撤軍（Evacuation Day） " #
+  	desc = " "
+    	style = 0
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = -1 }
+		command = { type = end_access which = FRA }
+  	}
+}
+###########################################
+# 法國政府更換
+###########################################
+event = {
+  	id = 5900004
+  	random = no
+	country = FRA
+  	name = "戴高樂辭職 " 
+  	desc = "1946年1月20日，由於以法國共產黨為首的左派反對他擬
+		定加強總統權力的憲法，戴高樂被迫辭去臨時政府總理職
+		務。 "
+    	style = 0
+ 
+	trigger = { 
+		OR = {
+			headofstate =  2031
+			headofgovernment = 2046 
+		}
+ 	}
+
+  	date = { day = 19 month = january year = 1946 } 
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofstate which = 2291 } #费利克斯 古昂 
+		command = { type = headofgovernment which = 2034 } #费利克斯 古昂 
+		command = { type = foreignminister which = 2056 } #乔治 皮杜尔 
+		command = { type = ministerofsecurity which = 2116 } #安德烈 勒 乔奎 
+  	}
+}
+
+event = {
+  	id = 5900005
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 1 month = june year = 1946 } 
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofstate which = 2290 } #乔治 皮杜尔 
+		command = { type = headofgovernment which = 2039 } #乔治 皮杜尔 
+  	}
+}
+
+event = {
+  	id = 5900006
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 15 month = december year = 1946 } 
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2033 } #莱昂 布鲁姆 
+  	}
+}
+
+event = {
+  	id = 5900007
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 21 month = january year = 1947 } 
+  
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2035 } #保羅·拉馬迪埃
+  	}
+}
+
+event = {
+  	id = 5900008
+  	random = no
+	country = FRA
+  	name = "1947年總統選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 15 month = january year = 1947 } 
+  
+  	action_a = {
+    		name = "左派:樊尚·奧里奧爾(Vincent Auriol)"
+		command = { type = headofstate which = 2022 } #樊尚·奧里奧爾
+  	}
+}
+
+event = {
+  	id = 5900009
+  	random = no
+	country = FRA
+  	name = "1953年總統選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 22 month = december year = 1953 } 
+  
+  	action_a = {
+    		name = "右派:勒內·科蒂(René Coty)"
+		command = { type = headofstate which = 2292 }
+  	}
+  	action_b = {
+    		name = "左派:馬塞爾-埃德蒙·內熱朗"
+		command = { type = headofstate which = 2293 }
+  	}
+}
+
+event = {
+  	id = 5900010
+  	random = no
+	country = FRA
+  	name = "1958年總統選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 20 month = december year = 1958 } 
+  
+  	action_a = {
+    		name = "夏爾·戴高樂"
+		command = { type = headofstate which = 2031 }
+  	}
+}
+
+event = {
+  	id = 5900011
+  	random = no
+	country = FRA
+  	name = "1946年國民議會選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 9 month = november year = 1946 } 
+  
+  	action_a = {
+    		name = "三黨聯合政府(共產-社會-基民)"
+   		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofgovernment which = 2039 } #乔治 皮杜尔 
+  	}
+}
+
+event = {
+  	id = 5900012
+  	random = no
+	country = FRA
+  	name = "1951年國民議會選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 16 month = june year = 1951 } 
+  
+  	action_a = {
+    		name = "中間派:「第三種力量」"
+   		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofgovernment which = 2218 } # 勒内 普利文 
+  	}
+  	action_b = {
+    		name = "右派:法蘭西人民聯盟"
+   		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 1 }
+		command = { type = headofgovernment which = 2046 } # 夏尔 戴高乐 
+  	}
+  	action_c = {
+    		name = "左派:法國共產黨"
+   		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofgovernment which = 2294 } #莫里斯 多列士 
+  	}
+}
+
+event = {
+  	id = 5900013
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+		ideology = market_liberal
+ 	}
+
+  	date = { day = 23 month = november year = 1947 } 
+    	offset = 1
+  	deathdate = { day = 26 month = july year = 1948 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2216 } #罗伯特 舒曼 (ML)
+  	}
+}
+
+event = {
+  	id = 5900014
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+		ideology = social_liberal
+ 	}
+
+  	date = { day = 23 month = november year = 1947 } 
+    	offset = 1
+  	deathdate = { day = 25 month = july year = 1948 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2201 } #罗伯特 舒曼 (SL)
+  	}
+}
+
+event = {
+  	id = 5900015
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 25 month = july year = 1948 } 
+    	offset = 1
+  	deathdate = { day = 4 month = september year = 1948 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2041 } #安德烈 马里  
+  	}
+}
+
+event = {
+  	id = 5900016
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 5 month = september year = 1948 } 
+    	offset = 1
+  	deathdate = { day = 9 month = september year = 1948 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2216 } #罗伯特 舒曼 (ML) 
+  	}
+}
+
+event = {
+  	id = 5900017
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 10 month = september year = 1948 } 
+    	offset = 1
+  	deathdate = { day = 27 month = october year = 1949 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2295 } #亨利·克耶
+  	}
+}
+
+event = {
+  	id = 5900018
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 27 month = october year = 1949 } 
+    	offset = 1
+  	deathdate = { day = 1 month = july year = 1950 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2039 } #乔治 皮杜尔 
+  	}
+}
+
+event = {
+  	id = 5900019
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 1 month = july year = 1950 } 
+    	offset = 1
+  	deathdate = { day = 11 month = july year = 1950 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2295 } #亨利·克耶
+  	}
+}
+
+event = {
+  	id = 5900020
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 11 month = july year = 1950 } 
+    	offset = 1
+  	deathdate = { day = 9 month = march year = 1951 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2218 } # 勒内 普利文 
+  	}
+}
+
+event = {
+  	id = 5900021
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 9 month = march year = 1951 } 
+    	offset = 1
+  	deathdate = { day = 10 month = august year = 1951 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2295 } #亨利·克耶 
+  	}
+}
+
+# 5900012 1951 election above
+
+event = {
+  	id = 5900022
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 19 month = january year = 1952 } 
+    	offset = 1
+  	deathdate = { day = 7 month = march year = 1952 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2219 } #埃德加 福尔 
+  	}
+}
+
+event = {
+  	id = 5900023
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 7 month = march year = 1952 } 
+    	offset = 1
+  	deathdate = { day = 7 month = january year = 1953 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2220 } #安托万 皮内 
+  	}
+}
+
+event = {
+  	id = 5900024
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 7 month = january year = 1953 } 
+    	offset = 1
+  	deathdate = { day = 27 month = june year = 1953 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2221 } #勒内 梅耶 
+  	}
+}
+
+event = {
+  	id = 5900025
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 27 month = june year = 1953 } 
+    	offset = 1
+  	deathdate = { day = 17 month = june year = 1954 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2222 } #约瑟夫 拉尼埃  
+  	}
+}
+
+event = {
+  	id = 5900026
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 17 month = june year = 1954 } 
+    	offset = 1
+  	deathdate = { day = 21 month = february year = 1955 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2296 } #皮埃爾·孟戴斯-弗朗斯  
+  	}
+}
+
+event = {
+  	id = 5900027
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 21 month = february year = 1955 } 
+    	offset = 1
+  	deathdate = { day = 1 month = february year = 1956 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2219 } #埃德加 福尔 
+  	}
+}
+
+event = {
+  	id = 5900028
+  	random = no
+	country = FRA
+  	name = "1956年國民議會選舉" 
+  	desc = "ELECTION_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 1 month = january year = 1956 } 
+  
+  	action_a = {
+    		name = "中左派聯盟 "
+   		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofgovernment which = 2297 } # 居伊·摩勒
+  	}
+  	action_b = {
+    		name = "中右派聯盟 "
+   		command = { type = set_domestic which = democratic value = 10 }
+		command = { type = set_domestic which = political_left value = 4 }
+#		command = { type = headofgovernment which = 2046 } # 夏尔 戴高乐 
+  	}
+  	action_c = {
+    		name = "法國共產黨掌權！"
+   		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofgovernment which = 2294 } #莫里斯 多列士 
+  	}
+}
+
+event = {
+  	id = 5900029
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 12 month = june year = 1957 } 
+    	offset = 1
+  	deathdate = { day = 5 month = november year = 1957 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2298 } #莫里斯·布爾熱-莫努里
+  	}
+}
+
+event = {
+  	id = 5900030
+  	random = no
+	country = FRA
+  	name = "EVT_120_NAME" 
+  	desc = "EVT_120_DESC"
+    	style = 0
+ 
+	trigger = { 
+		government = democratic
+ 	}
+
+  	date = { day = 5 month = november year = 1957 } 
+    	offset = 1
+  	deathdate = { day = 13 month = may year = 1958 } 
+  	action_a = {
+    		name = "OK"
+   		command = { type = dissent value = 1 }
+		command = { type = headofgovernment which = 2299 } #費利克斯·加亞爾
+  	}
+}

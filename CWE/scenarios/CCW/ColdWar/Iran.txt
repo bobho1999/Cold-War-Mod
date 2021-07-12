@@ -1,0 +1,363 @@
+###################################################
+###伊朗石油国有化&伊斯兰革命事件组 by Fall_weiss###
+###################################################
+#70100- 石油国有化-开端
+#70101- 石油国有化-国内不满
+#70102- 石油国有化-决议
+#70103- 对石油国有化的反应(ENG)
+#70104- 外国干涉下的艰难抉择(PER)
+#70105- 对伊朗的最终解决方案(ENG)
+#70106- 情况的新变化-动乱
+#70107- 情况的新变化-通牒
+
+
+
+
+
+#############################################
+###### 伊朗石油国有化-开端 # 
+#############################################
+event = {
+        id = 70100
+        random = no
+        country = PER
+        trigger = {
+                control = { province = 1825 data = -1 }
+                atwar = no
+
+        }
+ 
+        name = "伊朗石油国有化-开端"
+        desc = "大战结束后美、英、苏军队先后从伊 朗撤出，但是英国在伊朗仍享有巨大 的权益，美国势力也向伊朗渗透，企 图取代英国。这使伊朗成为帝国主义 在西亚争夺霸权和石油产地的重要场 所。战后伊朗人民维护国家主权、要求 收回石油资源的斗争日益高涨。1947 年底，伊朗政府向英国提出了修改33 年石油协定的要求。1949年7月，英伊 签订了一个对33年协定的补充协定。 但是，它仅仅增加些许税金，却未触 动英伊石油公司原已取得的所有权利。"
+        style = 0
+        picture = "oil_per"
+ 
+        date = { day = 1 month = june year = 1949 }
+        offset = 7
+        deathdate = { day = 1 month = september year = 1949 }
+ 
+        action_a = {
+                name = "签署协定"
+                command = { type = free_money value = 7 }
+                command = { type = free_oil value = -5 }
+                command = { type = relation which = ENG value = 30 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = dissent value = 3 }
+        }
+        action_b = {
+                name = "伟大的伊朗人民绝不接受剥削！"
+                command = { type = dissent value = -5 }
+                command = { type = money value = -500 }
+                command = { type = free_oil value = 5 }
+                command = { type = relation which = ENG value = -50 }
+                command = { type = relation which = USA value = -20 }
+                command = { type = sleepevent which = 70101 }
+        }
+
+}
+
+#############################################
+######  # 石油国有化-国内不满
+#############################################
+event = {
+        id = 70101
+        random = no
+        country = PER
+        trigger = {
+                event = 70100
+                random = 50
+                dissent = 1
+                atwar = no
+
+        }
+ 
+        name = "石油国有化-国内不满"
+        desc = "伊朗人民开展了强大的群众运动，反对49补充协定，要求废除条约并立即 实现石油国有化。1949年10月，以众 议员摩萨台为首的资产阶级人士组成 “民族阵线”，发表声明反对英伊石 油公司，反对独裁。"
+        style = 0
+        picture = "oil_per"
+ 
+        date = { day = 1 month = july year = 1949 }
+        offset = 7
+        deathdate = { day = 1 month = december year = 1949 }
+ 
+        action_a = {
+                name = "麻烦......"
+                command = { type = dissent value = 7 }
+                command = { type = relation which = ENG value = -10 }
+                command = { type = relation which = USA value = -5 }
+        }
+
+}
+#############################################
+######  # 石油国有化-通过决议
+#############################################
+event = {
+        id = 70102
+        random = no
+        country = PER
+        trigger = {
+                event = 70101
+                NOT = { 
+                        ideology = nazi
+                        ideology = stalinist
+                }
+
+        }
+ 
+        name = "石油国有化-通过决议"
+        desc = "在人民群众的支持和推动下，1951年 1月11日，伊朗议会否决了补充协定 ，3月15日通过了关于石油工业国有 化法案的决议。4月29日，“民族 阵线”领袖摩萨台就任首相。他的政 纲主要是实施议会通过的石油国有化 决议。5月，关于国有化的决议和包 括九点方案的石油法获国王的签署成 为法律，受到广大群众和爱国人士的 欢迎和拥护。6月，摩萨台政府接管 英伊石油公司，并宣布改名为“伊 朗国家石油公司”。
+
+"
+        style = 0
+        picture = "oil_per"
+ 
+        date = { day = 1 month = june year = 1950 }
+        offset = 10
+        deathdate = { day = 1 month = june year = 1951 }
+ 
+        action_a = {
+                name = "这是人民的胜利"
+                command = { type = dissent value = -5 }
+                command = { type = oilpool value = 2000 }
+                command = { type = industrial_modifier which = total value = 1 }
+                command = { type = relation which = ENG value = -20 }
+                command = { type = domestic which = free_market value = -1 }
+                command = { type = domestic which = democratic value = 1 }
+                command = { type = headofgovernment which = 53116 }
+                command = { type = foreignminister which = 53118 }
+        }
+        action_b = {
+                name = "不能让暴民轻易得逞"
+                command = { type = dissent value = 15 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = sleepleader which = -1 }
+                command = { type = sleepleader which = -1 }
+                command = { type = sleepleader which = -1 }
+                command = { type = sleepleader which = -1 }
+                command = { type = sleepleader which = -1 }
+                command = { type = sleepevent which = 70103 }
+        }
+
+}
+#############################################
+###### 对伊朗石油国有化的反应 # 
+#############################################
+event = {
+        id = 70103
+        random = no
+        country = ENG
+        trigger = {
+                event = 70102
+
+        }
+ 
+        name = "对伊朗石油国有化的反应"
+        desc = "当伊朗议会通过石油国有化决议的消 息传出后，英国政府立即发出照会， 拒不承认该决议，并派遣军舰驶入波 斯湾进行军事恫吓。英伊石油公司还 停发伊朗石油工人三成补贴。在其抗 议照会被伊朗政府拒绝后，五月二十 六日，英国向海牙国际法庭提出所谓 “申诉”，要求对伊朗的“不法行为 ”进行“审处”和“仲裁”。十月又 将这一问题交安理会处理，企图利用 联合国迫使伊朗让步。"
+        style = 0
+        picture = "British_naval_reinforcments"
+ 
+        date = { day = 1 month = september year = 1950 }
+        offset = 15
+        deathdate = { day = 1 month = september year = 1951 }
+ 
+        action_a = {
+                name = "大英帝国必须作出回应"
+                command = { type = relation which = PER value = -10 }
+                command = { type = domestic which = interventionism value = 1 }
+                command = { type = belligerence value = 1 }
+                command = { type = money value = -50 }
+                command = { type = manpowerpool value = -2 }
+                command = { type = trigger which = 70104 }
+        }
+        action_b = {
+                name = "随他们去吧"
+                command = { type = dissent value = 5 }
+                command = { type = relation which = PER value = 30 }
+                command = { type = end_trades which = ENG where = PER }
+        }
+
+}
+#############################################
+###### 外国干涉下的艰难抉择 # 
+#############################################
+event = {
+        id = 70104
+        random = no
+        country = PER
+        trigger = {
+                event = 70103
+
+        }
+ 
+        name = "外国干涉下的艰难抉择"
+        desc = "当伊朗决心实现石油工业国有化，并 且它的斗争还带动了中东各产油国人 民斗争的时候，美国害怕这一运动危 及它在中东的经济和战略利益，便转 而支持英国，共同对付伊朗。1951年 6月美国总统杜鲁门致函摩萨台，要 求重开英伊谈判；7月中旬，美国总 统特使哈里曼到达德黑兰，他以调停 人自居，并以“经援”为诱饵，企图 使伊朗就范。"
+        style = 0
+        picture = "oil_per"
+ 
+ 
+        action_a = {
+                name = "伊朗人民不会屈服"
+                command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+                command = { type = morale which = naval value = 5 }
+                command = { type = morale which = air value = 5 }
+                command = { type = relation which = ENG value = -15 }
+                command = { type = free_oil value = 5 }
+                command = { type = money value = -400 }
+                command = { type = oilpool value = 2000 }
+                command = { type = belligerence value = 3 }
+        }
+        action_b = {
+                name = "坚决不能冒这个险"
+                command = { type = dissent value = 10 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = revolt which = 1502 }
+                command = { type = morale which = land value = -5 }
+                command = { type = morale which = naval value = -5 }
+                command = { type = morale which = air value = -5 }
+                command = { type = relation which = ENG value = 40 }
+                command = { type = relation which = USA value = 10 }
+                command = { type = free_money value = 15 }
+                command = { type = free_oil value = -20 }
+                command = { type = sleepevent which = 70105 }
+        }
+
+}
+
+#############################################
+######  # 对伊朗的最终解决方案
+#############################################
+event = {
+        id = 70105
+        random = no
+        country = ENG
+        trigger = {
+                event = 70104
+                domestic = { type = interventionism value = 5 }
+
+        }
+ 
+        name = "对伊朗的最终解决方案"
+        desc = "1951年8月，摩萨台政府拒绝了美英 所提出的放弃石油国有化的要求。10 月间，伊朗采取了实施石油国有化的 有关措施，300名英国技术人员只得 撤离伊朗。这时，英美勾结起来，对 伊朗实行了经济封锁，并采取禁运伊 朗石油产品、冻结伊朗在英国银行的 存款等手段。英国还积极策划颠覆阴 谋，利用反对党进行反摩萨台政府的 活动。"
+        style = 0
+        picture = "Foreign_policy"
+ 
+        date = { day = 1 month = december year = 1951 }
+        offset = 7
+        deathdate = { day = 1 month = april year = 1952 }
+ 
+        action_a = {
+                name = "台面上完成不了就交给台面下吧(策划颠覆)"
+                command = { type = money value = -1000 }
+                command = { type = manpowerpool value = -1 }
+                command = { type = intelligence  which = us value = 2 }
+                command = { type = domestic which = interventionism value = 1 }
+                command = { type = sleepevent which = 70107 }
+        }
+        action_b = {
+                name = "发出措词强硬的最后通牒(准备战争)"
+                command = { type = belligerence value = 5 }
+                command = { type = dissent value = -1 }
+                command = { type = domestic which = interventionism value = 2 }
+                command = { type = ai_prepare_war which = PER }
+                command = { type = relation which = PER value = -30 }
+                command = { type = sleepevent which = 70106 }
+        }
+        action_c = {
+                name = "事已至此，我们无能为力了..."
+                command = { type = domestic which = interventionism value = -2 }
+                command = { type = dissent value = 5 }
+                command = { type = relation which = PER value = 10 }
+                command = { type = sleepevent which = 70106 }
+                command = { type = sleepevent which = 70107 }
+        }
+
+}
+################
+#摩萨台政府垮台
+#############################################
+event = {
+  id = 70106
+  random = no
+  country = PER
+  
+  name = "摩萨台政府垮台 " 
+  desc = "1953年8月19日，在伊朗军队将领、什叶派保守势力和美国中央情 报局的支持下，巴列维国王发动政变，摩萨台遭到逮捕，石油国 有化运动随之流产。 "
+  style = 0
+  
+  trigger = {
+    event = 70105
+    headofgovernment = 53116
+    not = { government = communist }
+  } 
+  date = { day = 18 month = august  year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "建立一个极权的伊朗 "
+    command = { type = dissent value = 10 }
+    command = { type = relation which = ENG value = 15 }
+    command = { type = headofgovernment which = 53117 }
+    command = { type = domestic which = democratic value = -2 }
+    command = { type = domestic which = political_left value = -2 }
+  }
+}
+################
+#美国人的援助——美国
+#############################################
+event = {
+  id = 85000
+  random = no
+  country = USA
+  
+  name = "给伊朗的援助 " 
+  desc = "伊朗国王已经推翻了摩萨台的政府，建立了一个亲近我们的极权 王国。为了让伊朗经济尽快恢复，并且更多的接受我们的影响， 我们应当对伊朗进行一定的援助。 "
+  style = 0
+  
+  trigger = {
+    event = 70106
+    headofstate = 6034
+    government = democratic
+  } 
+  date = { day = 2 month = september year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "给他们援助 "
+    ai_chance = 90
+    command = { type = relation which = PER value = 20 }
+    command = { type = domestic which = interventionism value = 1 }
+    command = { type = money value = -200 }
+    command = { type = trigger which = 85001 }
+  }
+  action_b = {
+    name = "不给他们援助 "
+    ai_chance = 10
+    command = { type = relation which = PER value = -10 }
+    command = { type = domestic which = interventionism value = -1 }
+  }
+}
+################
+#美国人的援助——伊朗
+#############################################
+event = {
+  id = 85001
+  random = no
+  country = PER
+  
+  name = "美国人的援助 " 
+  desc = "鉴于我国政变后的财政困难，美国人给了我们一定的资金援助， 这对于我们稳定政权来说真是一个好消息！ "
+  style = 0
+  
+  action_a = {
+    name = "好极了 "
+    command = { type = money value = 200 }
+  }
+}

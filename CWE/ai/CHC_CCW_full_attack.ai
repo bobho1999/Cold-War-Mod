@@ -1,0 +1,1940 @@
+#CHC AI
+switch = no			# Default is "yes". If turned off, the AI will not automatically try to switch to a more appropriate AI file every year.
+
+# Inter-Agent distribution variables
+
+# Modifier to chance that country will accept a demand for territory.
+claim_acceptance = -49
+
+# The countries we will demand territory from if we have claims on them.
+demand_claims = { 
+	#Europe
+	POL
+	DDR
+	ROM
+	BUL
+	YUG
+	ALB
+	HUN
+	CZE
+	DFR
+	SCH
+	DEN
+	DFR
+	SPA
+	SPR
+	GRE
+	SWE
+	FIN
+	NOR
+	ENG
+	FRA
+	IRE
+	ITA
+	AUS
+	U65
+	POR
+	#Middle East
+	TUR
+	LEB
+	SYR
+	ISR
+	SAU
+	IRQ
+	PER
+	YEM
+	OMN
+	AFG
+	#Africa
+	LBY
+	EGY
+	MOR
+	TUN
+	ALG
+	LIB
+	SAF
+	SOM
+	ETH
+	SUD
+	#Asia
+	MON
+	PAK
+	IND
+	U41
+	BUR
+	SIA
+	LAO
+	CAM
+	VIE
+	U66
+	PRK
+	KOR
+	JAP
+	CHI
+	CGX
+	CSX
+	SIK
+	TIB
+	CXB
+	#Oceania
+	INO
+	MLY
+	AST
+	NZL
+	#South America
+	ARG
+	CHL
+	BOL
+	PRU
+	ECU
+	BRA
+	VEN
+	GUY
+	COL
+	#Central America
+	PAN
+	NIC
+	COS
+	HON
+	GUA
+	SAL
+	MEX
+	#Caribbean
+	CUB
+	HAI
+	DOM
+	#North America
+	CAN
+	USA
+	}
+# The countries we will set free if we control their territory.
+liberate = {
+	#Europe
+	U65
+	U66
+	VIC #Commie France
+	DDR
+	EUS
+	SCO
+	PAL
+	U71
+	U72
+	U73
+	U74
+	#Asia
+	PRK
+	U72
+	U50
+	CMB
+	BUR
+	SIA
+	BHU
+	#Middle East
+	U36
+}
+# Special resistance against "influence" by the listed nations. Value range = [0 - 10]
+resistance = { 
+	#Europe - NATO members
+	ENG = 10
+	FRA = 10
+	DFR = 10
+	DEN = 10
+	NOR = 10
+	ITA = 10
+	SPA = 10
+	POR = 10
+	AUS = 10
+	GRE = 10
+	TUR = 10
+	ICL = 10
+	BEL = 10
+	LUX = 10
+	HOL = 10
+	#Europe - Non NATO
+	SWE = 7
+	FIN = 7
+	SCH = 9
+	IRE = 8
+	#North America
+	USA = 10
+	CAN = 10
+	MEX = 10
+	#Central & Caribbean
+	CUB = 4
+	HAI = 8
+	DOM = 8
+	NIC = 6
+	PAN = 8
+	GUA = 8
+	HON = 8
+	SAL = 8
+	COS = 8
+	#South America
+	COL = 8
+	VEN = 8
+	BRA = 6
+	PRU = 8
+	BOL = 8
+	CHL = 8
+	ARG = 8
+	ECU = 8
+	PAR = 8
+	URU = 8
+	#Oceania 
+	AST = 10
+	NZL = 10
+	INO = 8
+	#Asia
+	JAP = 10
+	KOR = 10
+	MLY = 10
+	VIE = 10
+	CHI = 10
+	PHI = 10
+	IND = 8
+	BUR = 5
+	SIA = 8
+	LAO = 7
+	CAM = 7
+	BHU = 8
+	NEP = 8
+	PAK = 10
+	PER = 10
+	AFG = 10
+	IRQ = 10
+	#Middle East
+	SAU = 10
+	ISR = 10
+	LEB = 2
+	SYR = 2
+	#Africa
+	EGY = 1
+	LBY = 3
+	ETH = 4
+	YEM = 6
+	OMN = 7
+}
+# Country tags listed with a value specifying how much we want to destroy them.
+combat = {
+	#Europe
+	ENG = 85
+	FRA = 85
+	BEL = 70
+	LUX = 50
+	HOL = 70
+	DFR = 75
+	SPA = 80
+	POR = 60
+	ITA = 60
+	NOR = 60
+	DEN = 60
+	GRE = 60
+	#North America
+	USA = 100
+	CAN = 90
+	#Middle East
+	ISR = 90
+	AFG = 80
+	#Asia 
+	JAP = 80
+	KOR = 80
+	CHI = 95
+	#Oceania
+	AST = 70
+	NZL = 70
+}
+# Countries listed here are considered withing our 'sphere of influence'. We will strive to guarantee their independence.
+protect = {
+	#CHC Sphere of influence - Asia
+	PRK = 90
+	U72 = 90
+}
+# Countries listed here are considered our natural allies. We will try to influence them and ally with them.
+befriend = {
+	#CHC Sphere of influence - Europe & Asia
+	#SOV = 100
+	PRK = 90
+	U72 = 90
+}
+# Provinces with an assigned priority. These are strategic goals for the AI (it will try to take them in wars and demand them in peace treaties.)
+target = {
+	#ASIA
+	#Northeast China
+	1380 = 100
+	1379 = 100
+	1378 = 100
+	1390 = 100
+	1403 = 100
+	1389 = 100
+	1396 = 100
+	2930 = 100
+	1397 = 100
+	#Northern China
+	1205 = 100
+	1204 = 100
+	1209 = 100
+	1210 = 100
+	1225 = 100
+	1211 = 80
+	1216 = 100
+	1215 = 100
+	1214 = 100
+	1206 = 90
+	1207 = 80
+	1208 = 100
+	#Northwest China
+	1269 = 100
+	1271 = 100
+	1272 = 100
+	1273 = 100
+	1276 = 100
+	1443 = 100
+	1442 = 100
+	1433 = 100
+	1430 = 100
+	#Eastern China
+	1235 = 100
+	1237 = 100
+	1221 = 100
+	1234 = 100
+	1238 = 100
+	1217 = 90
+	1218 = 90
+	1251 = 100
+	1252 = 90
+	1250 = 80
+	1244 = 100
+	1247 = 100
+	1219 = 100
+	#Central China
+	1227 = 80
+	1228 = 90
+	1229 = 80
+	1232 = 100
+	1253 = 100
+	1255 = 100
+	1257 = 100
+	#Southern China
+	1313 = 100
+	1315 = 100
+	1316 = 100
+	1248 = 100
+	1321 = 100
+	1325 = 100
+	1258 = 100
+	1310 = 100
+	#Southwest China	
+	1280 = 100
+	1360 = 100
+	1364 = 100
+	1307 = 100
+	1281 = 100
+	1293 = 100
+	1283 = 100
+	1453 = 100
+	#Korea
+	1201 = 90
+ 	1199 = 90
+	1196 = 80
+}
+upgrading = 0.4		#max % of ic used on this slider.
+reinforcement = 0.3	#max % of ic used on this slider.
+
+desperation = 0.3	#If more than this % of ic is occupied by enemy, panic and build militia hordes.
+
+# The ETA at which the AI uses strat. redeploy.
+strat_redeploy_threshold = 150
+
+# Proportion of divisions that may be strategically redeploying at the same time. Default: 0.25
+max_redeploying = 0.25
+
+# if the ai should use offensive supply
+use_offensive_supply = yes
+
+# only use offensive supply if the fuel needed for it is less than this divided by unit strength. Default: 100
+max_fuel_offensive = 200
+
+#if ai should evacuate troops from island with low value
+evac_islands = yes
+
+# The "war monger" value affects the propensity of a country for declaring wars:
+war = 0
+
+# The tendency of a nation to create and accept alliances, and accept military access. The higher the value, the more "neutral" the nation. NOTE: this does not affect the tendency of a nation to start wars.
+neutrality = 200
+
+max_front_ratio			= 6.0		# The max wanted friendly-to-enemy division ratio along the front. Default is 4.0.
+max_front_ratios = { 			# Override the default against specific countries. Ignored against humans.
+	#Europe
+	FRA = 5.0
+	ENG = 5.0
+	POR = 4.0
+	SOV = 5.0
+	#America
+	USA = 5.0
+	#OCeania
+
+	#Asia
+	CHI = 5.0
+	CSX = 5.0
+	CGX = 5.0
+	CXB = 4.0
+	KOR = 4.0
+	JAP = 4.0
+	IND = 4.0
+}
+# Proportion of our land divisions that we are prepared to relinquish control over.
+# NOTE: Do not set too low - the AI must be allowed to give over control of its forces in "allied war zones". Default: 0.75.
+exp_force_ratio			= 0.75
+# Will never send exp. forces _overseas_ to these countries:
+# NOTE: May still give some to neighboring allies though.
+no_exp_forces_to = {
+	#Europe
+	DFR
+	DEN
+	NOR
+	SWE
+	FIN
+	HOL
+	LUX
+	BEL
+	FRA
+	ENG
+	SPA
+	SCH
+	AUS
+	ITA
+	POR
+	GRE
+	TUR
+	#America
+	USA
+	CAN
+	MEX
+	#Middle East
+	ISR
+	SAU
+	YEM
+	OMN
+	IRQ
+	#Asia
+	CHI
+	KOR
+	PRK
+	VIE
+	U72
+	BUR
+	IND
+	PHI
+	JAP
+	NEP
+	BHU
+	PAK
+	PER
+	U41
+	SIA
+	MLY
+	INO
+	#Oceania
+	AST
+	NZL
+}
+max_garrison_prop		= 0.4 	# The war-time desired proportion of troops allocated to garrison duty
+min_garrison_prop		= 0.2 	# The war-time minimum proportion of troops allocated to garrison duty
+# NOTE: In areas without fronts, _all_ land units are controlled by the Garrison AI (except forces preparing for an invasion.)
+construction = {
+	max_factor			= 0.8		# Proportion of Production IC that should be used for province buildings.
+
+	AA_batteries	 	= yes	# yes = all the time, no = none, atwar = build during wars, not_atwar = build during peace
+	max_AA_level		= 10			# Don't improve beyond this level.
+	AA_provs			= { }		# List of prioritized provinces
+
+	coastal_fort 		= not_atwar
+	max_coastal_level	= 10				# Don't improve beyond this level.
+	coastal_fort_provs	= { 
+							2930
+							1202
+							1204
+							2861
+							1215
+							1237
+							1239
+							1313
+							2718		
+				}		# List of prioritized provinces
+
+	radar_station 		= yes
+	max_radar			= 10			# Don't improve beyond this level.
+	radar_provs			= { }		# List of prioritized provinces
+
+	air_base 			= yes
+	max_air_base		= 10			# Don't improve beyond this level.
+	air_base_provs		= { }		# List of prioritized provinces
+
+	naval_base 			= yes
+	max_naval_base		= 10			# Don't improve beyond this level.
+	naval_base_provs		= { 
+							2930
+							1202
+							1204
+							2861
+							1215
+							1237
+							1239
+							1313
+							2718
+							}	# List of prioritized provinces
+
+	land_fort			= yes
+	max_land_level		= 10				# Don't improve land forts beyond this level.
+	fort_borders = {					# Build land forts along these borders
+		SOV
+		PRK
+		KOR
+		IND
+		CHI
+	}
+	fort_provs		= { }	# List of prioritized provinces
+
+	ic_at_war			= yes 		# Normally, we always build IC if there is a large resource surplus. The exception could be during wars.
+	force_ic_until		= 1995				# Ignore presence of a resource surplus and build IC anyway, until year X. (Useful for countries anticipating expansion.)
+	ic_end_year			= 1995				# Stop building IC at the end of year X.
+	IC_provs			= {  
+							   }		# List of prioritized provinces
+
+	nuclear_reactor = yes
+	nuclear_reactor_prov = 2999				#新疆羅布泊
+	max_nuclear = 10					#max nuclear reactor size ai will try to get
+	rocket_test = yes
+	rocket_test_prov = 1440				#province to build rocket test site in
+	max_rocket = 10 					#max rocket test site size
+}
+garrison = {
+
+	# OVERSEAS GARRISONING:
+	defend_overseas_beaches = yes # "no" is default
+
+	# Basic need is X divisions per area where X is: number of provinces - attrition provinces
+	home_multiplier = 0.5 # In home area, multiply basic need by X. Default: 0.5
+	overseas_multiplier = 0.4 # In other area, multiply basic need by X. Default: 0.3333
+	home_peace_cap = 1 # If at peace, we need at most X divisions in our capital area.
+	war_zone_odds = 2.0  # Default: 2.0 (strive to transport in 2x enemy nr of divisions)
+	area_multiplier = { 
+		#Chinese,Afghan & Iranian Border
+		
+		}
+
+	# PRIORITIES:
+
+	beach = 30					# Beach prio
+	capital = 30				# Our capital
+	human_border = 0			# Ignored for allied human players
+	war_target = 50			# The next country targeted for attack by this AI
+
+	reserves = 20	# bonus for provinces just behind a frontline.
+
+	opposing_alliance = 50		# For neutrals, all alliances are "opposing"
+	claim_threat = 0			# If we are neutral, countries with claims on us get this
+	unstable_border	= 0		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		SOV = -1
+		MON = -1
+		PRK = -1
+		CHI = 100
+		JAP = -1
+	}
+
+	# Specific provinces
+	province_priorities = {
+		#Chinese,Afghan & Iranian Border
+		1491 = 50
+		1487 = 50
+		1485 = 50
+		1428 = 50
+		1429 = 50
+		1490 = 50
+		1907 = 50
+		1858 = 50
+		1856 = 80
+		1422 = 50
+		1423 = 50
+		1557 = 50
+		1420 = 50
+		1434 = 50
+		1436 = 50
+		1438 = 50
+		1399 = 50
+		1385 = 50
+		1383 = 50
+		1522 = 50
+		1523 = 70
+		1528 = 50
+		1529 = 50
+		1368 = 50
+		1367 = 50
+		1370 = 50
+		1373 = 50
+		1372 = 80
+	}
+	
+	ignore = { 3471 }
+
+	key_point_prio_mult		= 0.300	# Value * key point value in a province = prio for that province
+}
+front = {
+	river = 		1.0   	(What to multiply attacking power with if crossing a river. < 1.0 is an advantage..)
+
+	# the following modifies the odds-strength for defender.   (1.0 = no difference.)
+	largefort 	= 1.0 #for forts above level 6.
+	smallfort	= 1.0 #for forts 6 and below
+	occupied	= 1.0 #for surrounded pocket at enemy territory
+	owned		= 1.0 #for surrounded pocket at own territory
+
+	#Odds modifiying variables
+	# the following is to reduce odds-strength for attacker.
+	frozen_attack 	= 1.0 #0.50
+	snow_attack 	= 1.0 #0.50
+	blizzard_attack = 1.0 #0.25
+	storm_attack 	= 1.0 #0.60
+	muddy_attack 	= 1.0 #0.75
+
+	#reduces the size of odds in total.. (1.0 = no difference, 0.5 = halved.)
+	jungle_attack 	= 1.0 #0.85
+	mountain_attack	= 1.0 #0.60
+	swamp_attack 	= 1.0 #0.60
+	forest_attack 	= 1.0 #0.85
+	hill_attack 	= 1.0 #0.75
+	urban_attack 	= 1.0 #0.40
+	
+	# Proportion of divisions in a front province that may be used to support the defense of neighboring provinces. Default 0.33
+	support_defense_prop = 0.33
+	recklessness 		= 	3
+	
+	# Even - Distribute forces evenly along the whole front.
+	# Reactive - Try to match enemy troop concentrations.
+	# Defensive - More troops in strategically important provinces (IC, Victory Points, Oil, etc)
+	# Offensive - Concentrate more troops where the enemy us weak
+	# Operational Defensive - The fewer avenues of escape, the less troops (to avoid encirclement.)
+	distrib_vs_ai 		= 	offensive
+	distrib_vs_human 	= 	defensive
+
+	# Countries we do not counter-attack for a certain number of days
+	enemy_handicap = {
+		# NOTE: These values are ignored for human-controlled enemies.
+		# CAUTION: Values apply for _every_new_ war with a set nation.
+		NOR = 20
+		DEN = 20
+		FIN = 20
+		DFR = 20
+		FRA = 20
+		HOL = 20
+		BEL = 20
+		LUX = 20
+		ENG = 10
+		SPA = 20
+		ITA = 20
+		GRE = 20
+		TUR = 20
+		POR = 20
+		USA = 10
+		CAN = 10
+		AST = 10
+		NZL = 10
+		}
+
+	passivity = { # Against specified enemies.
+		# Valid values: 0-100 (%)
+		NOR = 50
+		DEN = 50
+		FIN = 80
+		DFR = 10
+		FRA = 0
+		HOL = 0
+		BEL = 0
+		LUX = 0
+		ENG = 0
+		SPA = 50
+		ITA = 40
+		GRE = 30
+		TUR = 30
+		POR = 20
+		USA = 0
+		CAN = 0
+		AST = 0
+		NZL = 0
+	}
+	
+	province_priorities = { }
+	
+
+	reserve_prop			= 	0.2	# Maximum proportion of total divisions in a front allowed to remain behind the front line ( HQs and divisions needing to recover.)
+
+	panic_ratio_vs_ai		=	1.5	# Front requests more troops if outnumbered by this factor. NOTE: this results in troops being drawn from garrison duties, etc, so set HIGH.
+	panic_ratio_vs_human	=	2.0	# Front requests more troops if outnumbered by this factor. NOTE: this results in troops being drawn from garrison duties, etc, so set HIGH.
+
+	enemy_reinf_days 		= 	1.5	# Count enemy units less than X days from a target province in odds calculations
+
+	base_attack_odds		=	1.2	# Will attack at X odds or better
+	min_attack_odds			=	1.0	# If stalemated for a long period, may go as low as these attack odds
+	max_attack_odds			=	2.0	# Don't use more force than necessary to reach these odds
+	reinforce_odds			=	1.0	# Send in more troops if the attacking force is at these odds
+	withdraw_odds			= 	0.8	# Break off attacks and withdraw at these odds
+	# NOTE: the calculations for retreating from _defensive_ positions are too complex to condense to a few variables
+	# NOTE: will _also_ retreat if the average organization is too low
+}
+military = {
+	relative_build_scheme 	= no	# Should the AI strive to maintain a relative balance between unit types [yes] or simply allocate percentages (see below) of the total production [no]. Default: yes
+
+	max_batch_peace = 800					# Max production run length in DAYS while at peace
+	max_batch_war = 500			 			# Max production run length in DAYS while at war with no home front
+	max_batch_home_front = 190				# Max production run length in DAYS while at war with home fronts
+	# NOTE: AI production run size is also limited by other factors, such as Total IC capacity, days until end of scenario, and desperation.
+
+# Example Build scheme:
+	infantry = 		35
+	cavalry = 		5
+	motorized = 	0
+	mechanized = 	0
+	light_armor = 	0
+	armor = 		0
+	paratrooper = 	0
+	marine = 		0
+	bergsjaeger = 	20
+	garrison = 		0
+	hq = 			5
+	militia = 		30
+					# 95 %
+
+	multi_role = 	0
+	interceptor = 	0
+	strategic_bomber = 0
+	tactical_bomber = 0
+	naval_bomber = 	0
+	cas = 			0
+	transport_plane = 0
+	flying_bomb = 	0
+	flying_rocket = 0
+					# 0 %
+
+	battleship = 	0
+	light_cruiser = 0
+	heavy_cruiser = 0
+	battlecruiser = 0
+	destroyer = 	0
+	carrier = 		0
+	escort_carrier = 0
+	submarine = 	0
+	nuclear_submarine = 0
+	transport = 	5
+					# 5 %
+					# 100%
+# NOTE: The sum _must_ be exactly 100%!
+
+
+# Brigade preferences:
+# (% of eligible division types that should be built with a certain brigade type)
+# Land types:
+	artillery			=	20
+	sp_artillery		=	15
+	rocket_artillery	=	5
+	sp_rocket_artillery	=	5
+	anti_tank			=	10
+	tank_destroyer		=	10
+	light_armor_brigade	=	10
+	heavy_armor			=	25
+	super_heavy_armor	=	25
+	armored_car			=	15
+	anti_air			=	20
+	police				=	15
+	engineer			= 	15
+# Sum of these should be <= 100
+
+# Naval types:
+	cag				=	50
+	naval_asw = 40
+	naval_anti_air_s = 40
+	naval_anti_air_l = 20
+	naval_radar_s = 20
+	naval_radar_l = 20
+	naval_fire_controll_l = 20
+	naval_fire_controll_s = 20
+	naval_torpedoes_l = 40
+	naval_torpedoes_s = 40
+	naval_anti_air_l = 20
+	naval_anti_air_s = 20
+	naval_radar_l = 20
+	naval_radar_s = 20
+# Sum of these should be <= 100
+
+#The AI will always build escort fighters when it builds tactical bombers and strategic bombers.
+}
+air_marshal = {
+	icxdayscostfactor = 10.0
+	manpowercostfactor = 100.0
+	destructionriskthreashold = 0.2
+
+	airsuperioritydesirability = 10.0	
+	airsuperioritylosstolerance = 1.0	
+	groundattacklosstolerance = 1.0
+	groundattackdesirability = 1.0
+	interdictionlosstolerance = 1.5
+	inderdictiondesirability = 1.0
+	logisticalstrikelosstolerance = 4.5
+	logisticalstrikeefficency = 0.2	
+	logisticalstrikedesirability = 100000.0
+	runwaycrateringlosstolerance = 1.5
+	runwaycrateringefficency = 0.01
+	runwaycrateringdesirability = 20000.0
+	strategicstriketolerance = 4.5
+	strategicstrikeefficency = 0.01
+	strategicstrikedesirability = 1000000.0
+	installationstriketolerance = 1.5
+	installationstrikeefficency = 0.01
+	installationstrikedesirability = 10.0
+	navalstriketolerance = 1.0
+	navalstrikedesirability = 10.0
+	portstriketolerance = 1.0
+	portstrikedesirability = 9.0
+	portstriketolerance = 1.0
+	portstrikedesirability = 0.0
+
+
+	# The defaults currently are:
+	taskforcetype = { 
+		name = "Air Superiority" 
+		desiredratio = 0.200 		
+		rangeweight = 10.000 
+		airkillpowerweight = 2000.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = yes 
+	}
+	taskforcetype = {
+		name = "interdiction"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 2000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "ground_attack"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "logistical_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "runway_cratering"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 1000.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "strategic_bombardment"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 2000.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "installation_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 1000.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 1000.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "naval_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "port_strike"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "convoy_air_raiding"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 2000.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = -1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "airborne_assault"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = 1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	taskforcetype = {
+		name = "air_supply"
+		desiredratio = 0.100 		
+		rangeweight = 10.000 
+		airkillpowerweight = 0.000 
+		hardkillpowerweight = 0.000 
+		softkillpowerweight = 0.000  
+		navalkillpowerweight = 0.000 
+		strategickillpowerweight = 0.000 
+		
+		transportcapacityweight = 1000000.000 
+		
+		airvulnurabilityweight = -1.000  
+		surfacevulnurabilityweight = 0.000 
+		
+		idle = yes 
+		reorganize = yes 
+		air_superiority = no 
+	}
+	
+	
+	# the other defaults
+	taskforcetype = { 
+	name = "Soft Bombing" 
+	desiredratio = 0.200 
+	rangeweight = 10.000 
+	airkillpowerweight = 0.000 
+	hardkillpowerweight = 0.000 
+	softkillpowerweight = 2000.000 
+	navalkillpowerweight = 0.000 
+	strategickillpowerweight = 0.000 
+	transportcapacityweight = -1000000.000 
+	airvulnurabilityweight = 0.000 
+	surfacevulnurabilityweight = -1.000 
+	idle = yes 
+	reorganize = yes 
+	interdiction = yes 
+	ground_attack = yes } 
+	taskforcetype = { name = "Hard Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 2000.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes interdiction = yes ground_attack = yes } 
+	taskforcetype = { name = "Strategic Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 0.000 strategickillpowerweight = 2000.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = -0.500 surfacevulnurabilityweight = -0.500 idle = yes reorganize = yes logistical_strike = yes runway_cratering = yes strategic_bombardment = yes installation_strike = yes } 
+	taskforcetype = { name = "Naval Bombing" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = 0.000 softkillpowerweight = 0.000 navalkillpowerweight = 2000.000 strategickillpowerweight = 0.000 transportcapacityweight = -1000000.000 airvulnurabilityweight = 0.000 surfacevulnurabilityweight = -1.000 idle = yes reorganize = yes naval_strike = yes port_strike = yes convoy_air_raiding = yes } 
+	taskforcetype = { name = "Airlift" desiredratio = 0.100 rangeweight = 10.000 airkillpowerweight = 0.000 hardkillpowerweight = -2000.000 softkillpowerweight = -2000.000 navalkillpowerweight = 0.000 strategickillpowerweight = -2000.000 transportcapacityweight = 1000000.000 airvulnurabilityweight = -1.000 surfacevulnurabilityweight = 0.000 idle = yes reorganize = yes airborne_assault = yes air_supply = yes } 
+
+}
+leader_ratio = {
+	land_field_marshal =0.02
+	land_general =0.031
+	land_lt_general =0.41
+
+	sea_grand_admiral =0.02
+	sea_admiral =0.061
+	sea_vice_admiral =0.401
+
+	air_marshal =0.02
+	air_general =0.091
+	air_lt_General =0.11
+
+
+
+}
+#Factors regarding amphibious invasions by ai.
+invasion = {
+  	#for evaluating specific province target.
+	base = 1.0						# Relative modifier. (lower = specific targets much more important.)
+	random = 1.0					# How big a random range.  (1.0 = 1%)
+	coastal = 1.0                   # increase to avoid coastal forts more.
+	beach = 1.0                     # higher, avoid worst beaches.
+	distance = 1.0                  # higher = avoid long distance.
+	max_distance = 20.0		# ignore distances at higher distance than this.. 1 = 100km ingame.
+	pocket = 1.0                    # prioritise pockets, ie provinces with no adjacent controlled by same.
+	island = 1.0                    # prioritise taking pure islands.
+	enemy = 1.0                     # higher = much more wary of troops in province.
+	adjacentenemy = 1.0             # higher = much more wary of troops nearby
+	air_base	= 0.1   			# add this priority for air bases within adjacentenemy
+	naval_base	= 0.1				# add this priority for naval bases within adjacentenemy
+	air_support	= 0.1   			# add this priority for beaches within reach of air_bases
+	ignore = no				# Launch invasions even if we have a home front. Default: no.
+
+	redirect	  = nearest   # priority refers to targets in the AI file,
+						    				# nearest is the closest enemy beach where the AI has
+						    				# good attack odds and home is to return back to port
+
+	#specific provinces can be targetted to get special bonuses..
+	target = {
+		#China
+		2706 = 1000
+		1323 = 1000
+		1322 = 1000
+		2991 = 1000
+		1321 = 1000
+		3590 = 1000
+		3591 = 1000
+		3592 = 1000
+		3593 = 1000
+		3594 = 1000
+		#Japan
+		1193 = 1000
+		3666 = 1000
+		3667 = 1000
+		1191 = 1000
+		1189 = 1000
+		1187 = 1000
+		1186 = 1000
+		1185 = 1000
+		1184 = 1000
+		1179 = 1000
+		1178 = 1000
+		1181 = 1000
+		1183 = 1000
+		3651 = 1000
+		3689 = 1000
+		3661 = 1000
+		3669 = 1000
+		#US East Coast
+		583 = 500
+		600 = 500
+		601 = 500
+		602 = 550
+		603 = 500
+		604 = 500
+		605 = 500
+		607 = 500
+		606 = 600
+		633 = 550
+		634 = 500
+		644 = 500
+		646 = 500
+		648 = 500
+		650 = 500
+		651 = 500
+		649 = 500
+		#US West Coast
+		761 = 500
+		762 = 500
+		765 = 500
+		766 = 500
+		786 = 500
+		782 = 500
+		780 = 500
+		#Canada West Coast
+		556 = 500
+		541 = 500
+		#Canada East Coast
+		578 = 500
+		579 = 500
+		580 = 500
+		576 = 500
+		1909 = 500
+		586 = 500
+		574 = 500
+		575 = 500
+		564 = 500
+		565 = 500
+		566 = 500
+		561 = 500
+		560 = 500
+		#Alaska
+		549 = 500
+		550 = 100
+		553 = 500
+		#U.K. & Ireland
+		5 = 500
+		6 = 500
+		7 = 500
+		20 = 500
+		19 = 500
+		17 = 500
+		23 = 500
+		24 = 500
+		30 = 500
+		27 = 500
+		28 = 500
+		#Mediterranean Islands
+		535 = 500
+		534 = 500
+		367 = 500
+		91 = 500
+		396 = 500
+		444 = 500
+		525 = 500
+		526 = 500
+		#Atlantic Islands
+		1867 = 650
+		538 = 500
+		652 = 500
+		653 = 500
+		964 = 500
+		963 = 500
+		1146 = 500
+		#OCEANIA
+		#Australia
+		1712 = 600
+		1703 = 600
+		1722 = 600
+		1727 = 600
+		1728 = 600
+		#New Zealand
+		1871 = 600
+		1872 = 600
+	}
+}
+#Factors controlling the naval AI
+admiral = {
+	#specific provinces can be targetted to get special bonuses..
+	target = { }
+
+	#This is used to determine that it's a core seazone and its control is important.
+	core = {
+		2189
+		2190
+		2188
+		3625
+		3620
+		3622
+		2186
+		3623
+		3621
+		2447
+		2235
+		2263
+		2158
+		2156
+		2238
+		2157
+		2154
+		2152
+	}
+	
+	#Which provinces to use as bases..
+	base = {
+		1204
+		1215
+		1202
+		2930
+		1217
+		1237
+		1239
+		1313
+		1323
+		1322
+		1321
+		1315
+	}
+	
+	#Which areas to ignore.
+	ignore = { }
+
+	min_org		= 95%	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 95%   # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60% 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 50% 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+}
+# Factors to modify Trade Agreements.
+trade = {
+	favored = {
+		DDR = 80
+		POL = 80
+		CZE = 80
+		HUN = 80
+		ROM = 80
+		BUL = 80
+		ALB = 80
+		U65 = 80
+		U66 = 80
+		MON = 100
+		IRE = 75
+		SWE = 75
+		FIN = 75
+		SCH = 75
+		AUS = 75
+		LEB = 75
+		SYR = 75
+		EGY = 75
+		IND = 80
+		U41 = 75
+		SOV = 100
+		PRK = 50
+		U72 = 50
+	}
+	embargo = {
+		DEN
+		NOR
+		DFR
+		FRA
+		ENG
+		SPA
+		ITA
+		GRE
+		TUR
+		ISR
+		POR
+		USA
+		CAN
+		JAP
+		KOR
+		CHI
+		AST
+		NZL
+		VIE
+	}
+	
+	# A threshold for when the AI should cancel trade agreements. Default is 4.0. A lower value means the AI will be more eager to cancel bad deals.
+	cancel_deal_threshold = 6.0		
+
+	# These override the resource values in "db\resource_values.csv" for this AI unless set to -1 (default.)
+	energy = 			-1
+	rare_materials = 	-1
+	metal =				-1
+	oil = 				-1
+	supplies = 			-1
+	money = 			-1
+}
+
+# Factors to modify Tech Sharing
+tech_sharing = {
+	favored = {
+		DDR = 100
+		POL = 100
+		CZE = 100
+		HUN = 100
+		ROM = 100
+		BUL = 100
+		ALB = 100
+		U65 = 100
+		U66 = 100
+		MON = 100
+		IRE = 75
+		SWE = 75
+		FIN = 75
+		SCH = 75
+		AUS = 75
+		LEB = 75
+		SYR = 75
+		EGY = 75
+		IND = 75
+		U41 = 75
+		SOV = 50
+		PRK = 50
+		U72 = 50
+	}
+	embargo = {
+		DEN
+		NOR
+		DFR
+		FRA
+		ENG
+		SPA
+		ITA
+		GRE
+		TUR
+		ISR
+		POR
+		USA
+		CAN
+		JAP
+		KOR
+		CHI
+		AST
+		NZL
+		VIE
+	}
+	not = { }
+	prioritized = { }
+}
+#prevents ai from accepting peace deals
+
+ferocity = yes
+
+#controls how much forces ai can send to different countries (not implemented internally)
+exp_force_ratios = { } 
+
+# Factors to modify for technological development.
+technology = {
+	endgoal = { 
+	#INFANTRY TECH TREE
+	1080 # Future Inf. Div.
+	1200 # Future Warsaw Pact Mot. Division
+	1280 # Future Inf. Div. Motorization
+	1360 # Future Heavy Marines Div
+	1440 # Future Mechanized
+	1600 # Future Airborne
+	1680 # Future Mountain
+	1890 # Future Commands & Comm.
+	1970 # Future Logistics
+	10060 # Future Mar. Equipt.
+	10150 # Future Airb. Equipt.
+	}			#list of endgoals to achieve.
+	#The rest of the list will be completed when the tech trees are completely done
+	preference = { }		# list of techs to give bonus too.
+	ignore = { } 			# Techs we will never research
+
+	#preference to weight importance of research in these field.s
+	armor = 3.0
+	infantry = 3.0
+	industry = 2.75
+	aircraft = 3.0
+	naval = 2.75
+	land_doctrines = 4.0
+	air_doctrines = 2.5
+	naval_doctrines = 2.5
+	secret_weapons = 2.5
+}
+################################################## #########
+# SPY
+################################################## #########
+
+
+
+spyprefs =
+{
+percentage_on_spies = 0.4
+#percentage_on_spies: the amount of the income a country will spend on intelligence.
+
+percentage_foreign_mission = 0.8
+#The amount of the income a country will spend on intelligence.
+
+spyprefsdata =
+{
+	country_priorities= 10
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = USA
+}
+spyprefsdata =
+{
+	country_priorities= 10
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = ENG
+}
+spyprefsdata =
+{
+	country_priorities= 9
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = FRA
+}
+spyprefsdata =
+{
+	country_priorities= 9
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = CHI
+}
+spyprefsdata =
+{
+	country_priorities= 9
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = SOV
+}
+spyprefsdata =
+{
+	country_priorities= 9
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = JAP
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = IND
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = KOR
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = MON
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = U72
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = VIE
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = PAK
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = LAO
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = CMB
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = PRK
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = DFR
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = HOL
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = AST
+}
+spyprefsdata =
+{
+	country_priorities= 8
+	#Is an integer value between 0 and 10. The higher the value is the more spy actions will be preformed in the target nation.
+
+	number_of_spies10
+	#This is the number of spies a nation desire too has in the target nation.
+
+	min_number_of_spies = 2
+	#When this number is reacted a nation will start to do spy action in the target nation.
+	
+	#All the values below must be integers.
+	steal_blueprint = 10
+	minister_assassination = 0
+	smear_campaign = 10
+	coup = 0
+	sabotage_industry = 10
+	nuclear_sabotage = 15
+	found_partisans = 0
+	massmedia = 10
+	counter_espionage = 5
+	disrupt_techteam = 10
+
+	#The target country.
+	country = NZL
+}
+# when country is the same as the AI file that data will be used for intelligence protecting the country i.e. counter espionage.
+spyprefsdata = 
+{
+	NumberOfSpies = 3
+	counter_espionage =  10
+	country =	 CHC
+}
+#An Example :
+
+#steal_blueprint = 10
+#minister_assassination = 1
+#sabotage_industry = 20
+
+#In the long run the nation will perform 10 more “steal_blueprint” then minister_assassination and 10 more “sabotage_industry” then “steal_blueprint”.
+
+}

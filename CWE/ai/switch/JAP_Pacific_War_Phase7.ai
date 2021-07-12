@@ -1,0 +1,52 @@
+# Japan AI prepares to invade the Hawaiis
+# by Radu
+
+invasion = {
+
+	staging_province = {
+		1786 # Wake
+		1608 # Kwajalein		
+	}
+
+	target = {
+		# Australia
+		1694 = 3 # Weipa
+		1695 = 3 # Normanton
+		1701 = 3 # Boroloola
+		1702 = 3 # Nhulunbuy
+		1703 = 3 # Darwin
+		1704 = 3 # Katherine
+
+		
+		662 = 150 # Midway		
+		1766 = 100 # Johnson Island
+		1762 = 100 # Phoenix Island
+		1765 = 100 # Palmyra
+		1764 = 100 # Jarvis Island
+		1763 = 100 # Christmas Island
+		1751 = 100 # Tahiti
+
+		661 = 50 # Niihau
+		660 = 50 # Kauai
+		663 = 50 # Pearl Harbor
+		659 = 50 # Maui
+		658 = 50 # Hawaii
+	}
+}
+
+admiral = {
+
+	target = {
+		1944 = 100 # French Frigate Shoals
+		1931 = 100 # Mendelsson Seamount
+		1943 = 100 # West Molokai Francture Zone
+		2564 = 100 # Central Clarion Fracture Zone
+		2563 = 100 # East Hawaiian Rise
+		2562 = 100 # Necker Ridge
+
+		1927 = 100 # West Hawaiian Rise
+		1929 = 100 # North Central Hawaiian Rise
+		1945 = 100 # South Central Hawaiian Rise
+	}
+
+}

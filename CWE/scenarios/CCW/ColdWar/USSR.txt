@@ -1,0 +1,697 @@
+################
+#米哈伊爾·加里寧的退休
+#############################################
+event = {
+  	id = 140000
+  	random = no
+  	country = SOV
+
+  	name = "米哈伊爾·加里寧的退休 "  
+  	desc = " "
+  	style = 0
+  
+  	trigger = {  
+		headofstate = 4001
+  	} 
+  	date = { day = 18 month = march year = 1946 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = headofstate which = 4070 }
+		command = { type = sleepminister which = 4001 }
+  	}
+}
+################
+#联共（布）第十九次代表大会
+#############################################
+event = {
+  	id = 140003
+  	random = no
+  	country = SOV
+
+  	name = "联共（布）第十九次代表大会 "  
+  	desc = "1952年10月5日，联共（布）第十九次代表大会在莫斯科举行。出席代表大会 的有1192名有表决权的代表和167名有发言权的代表，共代表6013259名 党员和868886名预备党员。马林科夫做了报告，报告指出，自十 八大以来，苏联进行了同法西斯势力的斗争，中欧、中南欧建立 人民民主国家，中国革命的胜利都有力的打击了帝国主义体系。 斯大林在最后一次会议上发表演说，代表十九大对所有的兄弟党 和团体表示感谢，同时对资本主义国家工人政党的活动做了分析。 大会选举了新的领导机构。 "
+  	style = 0
+  
+  	trigger = {  
+    		government = communist
+   	 	atwar = no
+  	} 
+  	date = { day = 4 month = october year = 1952 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "庆祝大会召开 "
+    		command = { type = dissent value = -2 }
+    		command = { type = domestic which = political_left value = 1 }
+  	}
+}
+################
+#“五五”计划开始
+#############################################
+event = {
+  id = 140004
+  random = no
+  country = SOV
+
+  name = "“五五”计划开始 "  
+  desc = "1952年10月10日，联共（布）第十九次代表大会根据国家计划委 员会主席萨布罗夫的报告，通过《关于1951-1955年发展苏联的 第五个五年计划的指示》的决议。决议说，由于“四五”计划的 出色完成，党的第十九次代表大会认为有必要做第五个五年计划 的指示。主要内容是：在优先发展重工业和提高人民物质生活和 文化水平的基础上，进一步发展国民经济的一切部门。 "
+  style = 0
+  
+  trigger = {  
+    government = communist
+    atwar = no
+    event = 140003
+  } 
+  date = { day = 4 month = october year = 1952 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "开展“五五”计划 "
+    command = { type = dissent value = -2 }
+    command = { type = domestic which = political_left value = 1 }
+    command = { type = domestic which = democratic value = -1 }
+    command = { type = domestic which = free_market value = -1 }
+    command = { type = money value = -500 }
+  }
+}
+#############################################
+###### 逮捕叛国者—“列宁格勒派” # 
+#############################################
+event = {
+	id = 23299
+        random = no
+        country = SOV
+
+	trigger = { government = communist }
+
+	name = "审判“列宁格勒派” "
+	desc = "
+内务部公开了1948年12月的一封匿名信，来信称列宁格勒当局操 纵选举，宣称自己获得了人民的全票支持。苏共政治局和内务部都 认为这是列宁格勒市委第一书记波普科夫试图将列宁格勒独立于 中央委员会之外的行为，库兹涅佐夫和罗季奥诺夫于此也难逃干 系。随后内务部决定对苏共高层的数个候补委员，苏联国家计委主 任尼古拉·沃兹涅先斯基、阿列克谢·库兹涅佐夫、罗季奥诺夫、还 有列宁格勒第二书记卡普斯京签发逮捕令。不久内务部就在列宁 格勒市委和市政府逮捕了二百名左右涉及这一案件的官员。他们 将面临叛国罪、分裂国家和间谍罪的指控。 "
+	style = 0
+	picture = "shenpanliening"
+
+	date = { day = 30 month = september year = 1949 }
+
+  action_a = {
+    name = "逮捕叛徒，准备交付审理 "
+                command = { type = change_policy which = democratic value = -1 }
+                command = { type = dissent value = -2 }
+  }
+}
+
+#############################################
+###### 审判“列宁格勒派” # 
+#############################################
+event = {
+	id = 23300
+        random = no
+        country = SOV
+
+	trigger = { event = 23299 }
+
+	name = "审判“列宁格勒派” "
+	desc = "
+今天列宁格勒法院非公开审判了一年前被逮捕的“列宁格勒派”成 员。据悉该市有六百名党员出席了审判。尼古拉·沃兹涅先斯基、阿 列克谢·库兹涅佐夫、罗季奥诺夫等被告被指控为叛国罪、分裂国 家和间谍罪判处枪决。被算入“列宁格勒派”的人中只有柯西金保 住了性命，直到苏共十九大以后才回到苏共中央主席团成为候补 委员。由于米高扬被发现与“列宁格勒派”有联系，被开除出主 席团委员达数年之久。 "
+	style = 0
+	picture = "shenpanliening"
+
+	date = { day = 30 month = september year = 1950 }
+
+  action_a = {
+    name = "不能宽恕叛国者 "
+                ai_chance = 85
+                command = { type = change_policy which = defense_lobby value = 1 }
+                command = { type = dissent value = -10 }
+                command = { type = setflag which = lenin1 }
+  }
+  action_b = {
+                name = "不需要死刑，我们可以更温和的处理这个案件 "
+		ai_chance = 15
+                command = { type = setflag which = lenin2 }
+                command = { type = change_policy which = defense_lobby value = -2 }
+                command = { type = change_policy which = democratic value = -1 }
+  }
+}
+################
+#莫洛托夫出席波兰国庆日
+#############################################
+event = {
+  id = 140000
+  random = no
+  country = SOV
+
+  name = "莫洛托夫出席波兰国庆日 "  
+  desc = "1951年7月21日，莫洛托夫代表联共（布）中央、苏联政府和斯大 林本人，出席在华沙举行的波兰国庆日大会，并发表讲话。讲话 赞扬了苏联和波兰之间的友谊，抨击了南斯拉夫铁托集团。 "
+  style = 0
+  
+  trigger = {  
+    government = communist
+    atwar = no
+  } 
+  date = { day = 20 month = july year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "苏波友谊的进步！ "
+    command = { type = 	relation which = POL value = 5 }
+    command = { type = 	relation which = YUG value = -10 }
+  }
+}
+################
+#伏罗希洛夫出席罗马尼亚解放七周年大会
+#############################################
+event = {
+  id = 140001
+  random = no
+  country = SOV
+
+  name = "伏罗希洛夫出席罗马尼亚解放七周年大会 "  
+  desc = "1951年8月22日，伏罗希洛夫代表联共（布）和苏联政府出席在布 加勒斯特举行的罗马尼亚解放七周年纪念大会，并发表讲话。伏 罗希洛夫表达了国际形势的紧张，表示资本主义一定灭亡。同时 他抨击了南斯拉夫铁托集团，指责铁托集团是法西斯政权，进行 了资本主义复辟。 "
+  style = 0
+  
+  trigger = {  
+    government = communist
+    atwar = no
+  } 
+  date = { day = 21 month = august year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "苏罗友谊的进步！ "
+    command = { type = 	relation which = ROM value = 5 }
+    command = { type = 	relation which = YUG value = -10 }
+  }
+}
+################
+#库兹涅佐夫出席民主德国建国两周年大会
+#############################################
+event = {
+  id = 140002
+  random = no
+  country = SOV
+
+  name = "库兹涅佐夫出席民主德国建国两周年大会 "  
+  desc = "1951年10月7日，库兹涅佐夫代表联共（布）和苏联政府出席民主 德国建国两周年大会，并发表讲话。库兹涅佐夫引用了斯大林给 皮克的电报，表达了苏联和民主德国保卫和平和防止帝国主义侵 略的决心。 "
+  style = 0
+  
+  trigger = {  
+    government = communist
+    atwar = no
+  } 
+  date = { day = 6 month = october year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "苏德友谊的进步！ "
+    command = { type = 	relation which = DDR value = 5 }
+    command = { type = 	relation which = DFR value = -10 }
+    command = { type = 	relation which = USA value = -10 }
+  }
+}
+################
+#克里姆林宫医生案
+#############################################
+event = {
+  	id = 140005
+  	random = no
+  	country = SOV
+
+  	name = "克里姆林宫医生案 "  
+  	desc = "1953年1月13日，《真理报》等报刊报道了克林姆林宫一些医生密 谋破坏苏联领导人健康的案件。报道称这些医生与犹太人国际组 织有联系，曾经害死了日丹诺夫，并企图使苏联的元帅失去工作 能力，斯大林亲自领导了对这一案件的调查。 "
+  	style = 0
+  
+  	trigger = {  
+    		government = communist
+    		atwar = no
+    		headofgovernment = 4002
+  	} 
+  	date = { day = 12 month = january year = 1953 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "处置这些人 "
+    		ai_chance = 95
+    		command = { type = dissent value = 2 }
+    		command = { type = domestic which = political_left value = 1 }
+    		command = { type = domestic which = democratic value = -1 }
+    		command = { type = domestic which = freedom value = -1 }
+    		command = { type = local_setflag which = "doctor" }
+  	}
+  	action_b = {
+    		name = "这些人是无辜的 "
+    		ai_chance = 5
+    		command = { type = dissent value = 5 }
+    		command = {type = domestic which = democratic value = 1 }
+  	}
+}
+################
+#克里姆林宫医生案平反
+#############################################
+event = {
+  	id = 140006
+  	random = no
+  	country = SOV
+
+  	name = "克里姆林宫医生案平反 "  
+  	desc = "1953年4月4日，苏联内务部发表通告，宣布1月公布的医生间谍 恐怖集团的控告“是不真实的”，决定恢复这个案件中的一切人 的名誉，并予以释放。4月6日，《真理报》发表社论，指责保安 部部长伊格纳捷夫表现了政治盲目性，“前国家保安机关穷凶极 恶地违反苏维埃法律”。4月8日，解除了伊格纳捷夫的苏共中央 书记职务。 "
+  	style = 0
+  
+  	trigger = {  
+    		government = communist
+    		atwar = no
+    		event = 59107036
+    		local_flag = "doctor"
+  	} 
+  	date = { day = 3 month = april year = 1953 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1960 }
+  
+  	action_a = {
+    		name = "为这些人平反 "
+    		ai_chance = 95
+    		command = { type = dissent value = -2 }
+    		command = { type = domestic which = political_left value = -1 }
+    		command = { type = domestic which = democratic value = 1 }
+    		command = { type = domestic which = freedom value = 1 }
+  	}
+  	action_b = {
+    		name = "必须处置他们 "
+    		ai_chance = 5
+    		command = { type = dissent value = 5 }
+    		command = {type = domestic which = democratic value = -1 }
+    		command = { type = domestic which = political_left value = 1 }
+    		command = { type = domestic which = freedom value = -1 }
+  	}
+}
+#########################################################################
+# 斯大林体制事件组
+#########################################################################
+event = {
+	id = 59107040
+	country = sov
+	random = no
+
+ 	trigger = {
+  		country = sov
+	}
+
+	name = "日益僵化都斯大林体制 "
+	desc = "在斯大林时代晚期，斯大林体制的负面效应日益凸显。 "
+	style = 2
+#	picture = "tomb_of_stalin"
+   
+  	date = { day = 1 month = january year = 1950 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "确定 "
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = research_mod value = -10 }
+	}           	  	       	         	
+}
+
+#########################################################################
+# 苏联改革
+#########################################################################
+event = {
+	id = 59107036
+	random = no
+	country = SOV
+
+	name = "斯大林去世"
+	desc = EVT_8014205_DESC
+#	picture = "death_of_stalin"
+	style = 1
+
+	trigger = {
+		OR = {
+			headofstate = 4074
+			headofgovernment = 4002
+		}
+	}
+
+	date = { day = 5 month = march year = 1953 }
+	offset = 1
+	deathdate = { day = 30 month = april year = 1953 }
+
+	
+	action_a = {
+		name = "馬林科夫同志继任"
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = set_domestic which = free_market value = 1 }
+		command = { type = set_domestic which = freedom value = 3 }
+		command = { type = local_setflag which = soviet_instability }
+		command = { type = headofstate which = 4083 } # 伏罗希洛夫
+		command = { type = headofgovernment which = 4085 } # 馬林科夫
+		command = { type = armamentminister which = 4037 } # Dmitriy F. Ustinov
+		command = { type = ministerofsecurity which = 4041 } # Lavrentiy P. Beria
+		command = { type = foreignminister which = 4034 } # Vyacheslav M. Molotov
+		command = { type = chiefofarmy which = 4055 } # Nikolay A. Bulganin 
+		command = { type = sleepminister which = 4002 } # Iosif V. Stalin
+		command = { type = sleepminister which = 4059 } # Iosif V. Stalin
+		command = { type = sleepminister which = 4074 } # Iosif V. Stalin
+		command = { type = sleepminister which = 4073 } # Iosif V. Stalin
+	}
+}
+event = {
+	id = 59107035
+	country = SOV
+
+	name = "贝利亚叛国"
+	desc = "6月26日的克里姆林宫会议上，马林科夫等人突然展开了对贝利亚的围 攻，并在莫斯卡连科、朱可夫等军人的协助下将他逮捕。又 于12月18日以叛国罪、恐怖主义和反革命罪将贝利亚处决。"
+#	picture = "death_of_stalin"
+	style = 1
+
+	trigger = {
+		headofgovernment = 30085
+	}
+
+	date = { day = 25 month = june year = 1953 }
+	offset = 1
+	deathdate = { day = 30 month = april year = 1953 }
+
+	
+	action_a = {
+		name = "处决贝利亚"
+		ai_chance = 100
+		command = { type = dissent value = 5 } 
+		command = { type = sleepminister which = 4075 } # 贝利亚
+		command = { type = sleepminister which = 4041 } # 贝利亚
+		command = { type = sleepminister which = 902001 } # 贝利亚
+		command = { type = sleepminister which = 902002 } # 贝利亚
+		command = { type = sleepminister which = 902008 } # 贝利亚
+	}
+	action_b = {
+		name = "支持贝利亚同志"
+		command = { type = dissent value = 5 }
+		command = { type = headofgovernment which = 4075 } # 贝利亚
+		command = { type = sleepminister which = 4085 } # 马林科夫
+	}
+}
+event = {
+  	id = 59107069
+  	random = no
+	country = SOV
+  
+  	name = "提高农产品收购价  " 
+  	desc = "1953年8月，马林科夫提出降低税收、增加国家对谷物的采购价 格、鼓励农民经营小块自留地的农业政策。 "
+  	style = 0
+#	picture = "SOV132" 
+
+ 	trigger = { 
+ 		random = 50
+ 		event = 59107035
+ 	}
+
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 }
+  
+  	action_a = {
+   	 	name = "乌拉 "
+    		command = { type = dissent value = -5 }
+		command = { type = free_money value = -1 } 
+    		command = { type = industrial_modifier which = supplies value = 15 }    
+  	}
+}
+event = {
+  	id = 59107070
+  	random = no
+	country = SOV
+  
+  	name = "解除马林科夫职务  " 
+  	desc = "1955年2月的最高苏维埃会议上，赫鲁晓夫及其支持者指控马林科夫 对列宁格勒案件中的责任，最终马林科夫被解除了总理 职务。 "
+  	style = 2
+#	picture = "succession_of_stalin"
+  
+ 	trigger = { 
+ 		random = 5
+ 		event = 59107069
+ 	}
+  
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 }
+  
+  	action_a = {
+    		name = "确定"
+    		command = { type = dissent value = 5 }
+    		command = { type = headofgovernment which = 4081 } # 赫鲁晓夫
+		command = { type = sleepminister which = 4085 } # 马林科夫 
+  	}
+}
+event = {
+  	id = 59107071
+  	random = no
+	country = SOV
+  
+  	name = "召开苏共二十大 " 
+  	desc = "苏共二十大的秘密报告中赫鲁晓夫猛烈的抨击了 斯大林，然而这份秘密报告在5个月后被公布。 "
+  	style = 2
+#	picture = "succession_of_stalin"
+ 
+ 	trigger = { 
+ 		random = 25
+ 		event = 59107070
+ 	}
+  
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "乌拉?"
+    		command = { type = dissent value = 5 }
+  		command = { type = trigger which = 59107072 value = 150 }     
+  	}
+}
+event = {
+  	id = 59107072
+  	random = no
+	country = SOV
+  
+  	name = "秘密报告被公布 " 
+  	desc = "苏共二十大的秘密报告中赫鲁晓夫猛烈的抨击了 斯大林，然而这份秘密报告在5个月后被公布。 "
+  	style = 2
+#	picture = "strikesruspetro"
+
+  
+  	action_a = {
+    		name = "乌拉?"
+    		command = { type = dissent value = 20 } 
+   	 	command = { type = industrial_modifier which = total value = -5 }
+    		command = { type = relation which = usa value = -10 }
+    		command = { type = morale which = land value = -10 } 
+    		command = { type = morale which = naval value = -10 }
+    		command = { type = morale which = air value = -10 }   
+  	}
+}
+event = {
+  	id = 59107073
+  	random = no
+	country = SOV
+  
+  	name = "文艺自由化 " 
+  	desc = "斯大林去世后，苏联的文化艺术领域逐渐解冻。赫鲁晓夫在任 期间，一些具有改革思想和批评苏联现状的作品得到发 表，他本人则致力于平衡自由主义和保守主义的关系。 "
+  	style = 2
+#	picture = "spread_revolution"
+ 
+ 	trigger = { 
+ 		random = 25
+ 		event = 59107072
+ 		not = { dissent = 15 }
+ 	}
+
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "乌拉"
+    		command = {  type = dissent value = 5 }
+    		command = { type = research_mod value = 15 }    
+  	}
+}
+event = {
+  	id = 59107074
+  	random = no
+	country = SOV
+  
+  	name = "经济改革 " 
+  	desc = "59107074desc"
+    	style = 2
+#	picture = "spread_revolution"
+
+ 	trigger = { 
+ 		random = 25
+ 		event = 59107072
+		not = { dissent = 10 }
+ 	}
+
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "乌拉"
+    		command = {  type = dissent value = 5 }
+    		command = { type = industrial_modifier which = supplies value = 15 }  
+    		command = { type = industrial_modifier which = total value = 10 }
+    		command = { type = free_oil value = 10 }
+    		command = { type = free_metal value = 10 }
+    		command = { type = free_energy value = 10 }
+  	}
+}
+event = {
+  	id = 59107075
+  	random = no
+	country = SOV
+  
+  	name = "政治改革 " 
+  	desc = "赫鲁晓夫上台后，国家安全机关成员的审判特权 被废除，对政治犯的起诉只得通过地方党委。"
+    	style = 2
+#	picture = "spread_revolution"
+ 
+ 	trigger = { 
+ 		random = 25
+ 		event = 59107072
+ 		not = { dissent = 5 }	
+ 	}
+
+  
+  	date = { day = 25 month = january year = 1949 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "乌拉"
+    		command = {  type = dissent value = 5 }
+    		command = { type = relative_manpower value = 10 }  
+    		command = { type = research_mod value = 5 } 
+  	}
+}
+
+
+#########################################################################
+# 第四个五年计划事件组
+#########################################################################
+event = {
+	id = 1107060
+	country = sov
+	random = no
+
+	trigger = {
+		not = { exists = GER }
+		atwar = no
+	}
+
+	name = "第四个五年计划开始 "
+	desc = "卫国战争的胜利和法西斯德国的灭亡，为苏联人民继续建设社会 主义国家提供了安定的环境。卫国战争造成的创伤是巨大的，损 失是惨重的，必须尽快将工农业生产恢复过来，才能恢复人民的 生活水平。在这一背景下，中央计划委员会制定了第四个五年计 划的纲要，全国上下又投入到热火朝天的建设当中。"
+	style = 2
+#	picture = "soviet_economy"
+
+	date = { day = 10 month = april year = 1942 }
+	offset = 5
+	deathdate = { day = 29 month = january year = 1949 }
+
+	action_a = {
+		name = "加速工业化，建设苏维埃！ "
+		command = { type = research_mod value = 5 }
+	}
+}
+#############################################
+event = {
+	id = 1107061
+	country = sov
+	random = no
+
+	trigger = { event = 1107060 } #第四个五年计划开始
+
+	name = "发行四五计划国库券 "
+	desc = "和往常的五年计划一样，四五计划再次推出了国库券。由于大战 刚刚结束，百废待兴，资金缺口特别巨大，而人民群众经历了苦 难的卫国战争之后，生活水平下降到了最低点，因而这次的国库 券可由实物抵押购买，人民一如既往地支持国家的重建事业。"
+	style = 2
+#	picture = "sov094"
+
+	date = { day = 1 month = april year = 1942 }
+	offset = 5
+	deathdate = { day = 29 month = january year = 1999 }
+
+	action_a = {
+		name = "发行国库券 "
+		ai_chance = 50
+		command = { type = money value = 10000 }
+		command = { type = dissent value = 1 }
+		command = { type = local_setflag which = SOVMONEYB }		
+	}
+	action_b = {
+		name = "不必发行 "
+		ai_chance = 50
+		command = { type = sleepevent which = 1107062 }
+	}
+}
+#############################################
+event = {
+	id = 1107062
+	country = sov
+	random = no
+
+	trigger = { local_flag = SOVMONEYB random = 20 }
+
+	name = "兑现四五计划国库券 "
+	desc = "四五计划的成就是十分巨大的。国家兴建了一批大型工矿企业， 生产力快速回升，消费品供应日趋充足，价格也开始下降，人民 群众的生活水平得到了提高。由于战后的和平时光来之不易，所 有人都倍加珍惜当前的生活，积极劳动，因而四五计划的完成时 间再度提前了。中央计划委员会决定将该批国库券的回报率提高 到100%，作为献给全国人民的礼物！"
+	style = 2
+#	picture = "sov080"
+
+	date = { day = 2 month = march year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = january year = 1999 }
+
+	action_a = {
+		name = "兑现国库券！ "
+		ai_chance = 100
+		command = { type = money value = -12000 }
+		command = { type = dissent value = -5 }
+	}
+	action_b = {
+		name = "人民的财富就是苏维埃的财富"
+		ai_chance = 0
+		command = { type = dissent value = 25 }
+	}
+}
+
+################
+#《人民是历史的创造者》
+#############################################
+event = {
+  id = 140008
+  random = no
+  country = SOV
+
+  name = "《人民是历史的创造者》 "  
+  desc = "1953年8月，苏共中央理论刊物以显著地位发表未署名文章《人民 是历史的创造者》。文章中说，近年来关于个人在历史上的作用 已经脱离了马列主义，常常陷入个人迷信，降低党的领导核心的 作用。个人迷信破坏了党最高的领导原则——领导集体性。必须 从宣传工作中铲除对个人在历史上的作用不正确的、非马克思主 义说法。 "
+  style = 0
+  
+  trigger = {  
+    government = communist
+    atwar = no
+    headofgovernment = 4085
+  } 
+  date = { day = 5 month = august year = 1953 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "反对个人迷信 "
+    command = { type = dissent value = -1 }
+    command = { type = domestic which = political_left value = -1 }
+  }
+}

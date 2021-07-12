@@ -1,0 +1,432 @@
+#########################################
+### Iran Crisis of 1946
+#########################################
+# 615400-615404 Soviets withdraw
+# from Northern Iran series
+############################
+# Soviets found the Republic of Mahabad
+event = {
+	id = 850900
+	country = SOV
+
+	name = "庫爾德人政府"
+	desc = EVT_8500901_DESC
+#	picture = "nwo\republic_of_mahabad"
+	style = 0
+
+	trigger = {
+#		flag = cold_war
+		control = { province = 3888 data = -1 }
+	}
+
+	date = { day = 0 month = december year = 1945 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "扶植政體"
+		ai_chance = 100
+		command = { type = independence which = KUR value = 1 }
+		command = { type = make_puppet which = KUR }
+		command = { type = trigger which = 850901 }
+		command = { type = relation which = PER value = -50 }
+	}
+	action_b = {
+		name = "鎮壓庫爾德人活動"
+		ai_chance = 0
+		command = { type = dissent value = 2 }
+		command = { type = relation which = PER value = 50 }
+	}
+}
+
+# Mahabad Republic
+event = {
+	id = 850901
+	country = KUR
+
+	name = "馬哈巴德共和國"
+	desc = EVT_8500902_DESC
+#	picture = "nwo\republic_of_mahabad"
+	style = 0
+
+	trigger = {
+#		flag = cold_war
+		control = { province = 3888 data = -1 }
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = april year = 1946 }
+
+	action_a = {
+		name = "庫爾德人的獨立萬歲！"
+		command = { type = access which = SOV }
+		command = { type = relation which = SOV value = 100 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+	}
+}
+event = {
+	id = 850902
+	country = SOV
+
+	name = "亞塞拜然人民共和國"
+	desc = EVT_8500901_DESC
+#	picture = "nwo\republic_of_mahabad"
+	style = 0
+
+	trigger = {
+#		flag = cold_war
+		control = { province = 1859 data = -1 }
+	}
+
+	date = { day = 0 month = november year = 1945 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "扶植政體"
+		ai_chance = 100
+		command = { type = independence which = AZB value = 1 }
+		command = { type = make_puppet which = AZB }
+		command = { type = trigger which = 850903 }
+		command = { type = relation which = PER value = -50 }
+	}
+	action_b = {
+		name = "鎮壓活動"
+		ai_chance = 0
+		command = { type = dissent value = 2 }
+		command = { type = relation which = PER value = 50 }
+	}
+}
+
+event = {
+	id = 850903
+	country = AZB
+	trigger = {
+#		flag = cold_war
+		control = { province = 1859 data = -1 }
+	}
+	name = "亞塞拜然人民共和國"
+	desc = EVT_8500911_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 0
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = april year = 1946 }
+
+	action_a = {
+		name = "獨立萬歲"
+		command = { type = secedeprovince which = SOV value = 1907 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3435 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3436 when = 1 }
+		command = { type = secedeprovince which = SOV value = 1858 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3446 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3447 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3444 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3888 when = 1 }
+		command = { type = secedeprovince which = SOV value = 3887 when = 1 }
+    		command = { type = capital which = 1859 }
+		command = { type = access which = SOV }
+		command = { type = relation which = SOV value = 100 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+	}
+	
+}
+event = {
+	id = 850904
+	random = no
+	country = SOV
+
+	trigger = {
+		NOT = { atwar = SOV }
+		NOT = { exists = GER }
+		NOT = { atwar = JAP }
+		NOT = { atwar = USA }
+		NOT = { atwar = ENG }
+		NOT = { puppet = { country = PER country = SOV } }
+		exists = PER
+		exists = USA
+		NOT = { ispuppet = USA }
+#		alliance = { country = USA country = ENG }
+		OR = {
+			exists = KUR
+			exists = AZB
+			control = { province = 1859 data = SOV } # 伊朗走廊
+			control = { province = 1787 data = SOV } # 
+			control = { province = 3949 data = SOV } # 
+			control = { province = 1503 data = SOV } # 
+			control = { province = 3882 data = SOV } # 
+			control = { province = 3884 data = SOV } # 
+			control = { province = 3885 data = SOV } # 
+			control = { province = 3887 data = SOV } # 
+			control = { province = 3888 data = SOV } # 
+		}
+	}
+	date = { day = 1 month = march year = 1946 }
+	
+	name = "從伊朗撤退?"
+	desc = "Our diplomats have promised to evacuate Northern Iran 6 months after the end of hostilities against the Axis. Our political operatives have made things difficult, as they are trying to get a pro-Soviet secessionist movement in power."
+	
+	action_a = {
+		name = "測試西方反應"
+		ai_chance = 90
+		command = { type = belligerence value = 2 } 
+		command = { type = trigger which = 850905 }
+	}
+	action_b = {
+		name = "如期撤退"
+		ai_chance = 10
+		command = { type = secedeprovince which = PER value = 3882 } # 
+		command = { type = secedeprovince which = PER value = 1503 } # 
+		command = { type = secedeprovince which = PER value = 3949 } # 
+		command = { type = secedeprovince which = PER value = 1859 } # 
+		command = { type = secedeprovince which = PER value = 1787 } # 
+		command = { type = secedeprovince which = PER value = 3884 } # 
+		command = { type = secedeprovince which = PER value = 3885 } # 
+		command = { type = secedeprovince which = PER value = 3888 } # 
+		command = { type = secedeprovince which = PER value = 3887 } # 
+	}
+}
+event = {
+	id = 850905
+	random = no
+	country = USA
+
+	#triggered by 850901
+	
+	name = "伊朗危機"
+	desc = "The Soviet Union is not out of Northern Iran, and is violating its agreement to pull out. What shall we do?"
+	
+	action_a = {
+		name = "Demand withdrawal or war!"
+		ai_chance = 90
+		command = { type = trigger which = 850906 }
+	}
+	action_b = {
+		name = "Do not anger our WW2 allies!"
+		ai_chance = 10
+		command = { type = trigger which = 850907 }
+	}
+}
+event = {
+	id = 850906
+	random = no
+	country = SOV
+
+	#triggered by 615400
+	
+	name = "伊朗危機"
+	desc = "The USA has let us know that it is serious about spheres of influence. They have made it clear that what we do in our own sphere of influence is OK but we must respect theirs. The only alternative is war."
+	
+	action_a = {
+		name = "Withdraw!"
+		ai_chance = 95
+		command = { type = secedeprovince which = PER value = 3882 } # 
+		command = { type = secedeprovince which = PER value = 1503 } # 
+		command = { type = secedeprovince which = PER value = 3949 } # 
+		command = { type = secedeprovince which = PER value = 1859 } # 
+		command = { type = secedeprovince which = PER value = 1787 } # 
+		command = { type = secedeprovince which = PER value = 3884 } # 
+		command = { type = secedeprovince which = PER value = 3885 } # 
+		command = { type = secedeprovince which = PER value = 3888 } # 
+		command = { type = secedeprovince which = PER value = 3887 } # 
+		command = { type = setflag which = SOV_withdraw }
+		command = { type = trigger which = 850912 }
+		command = { type = trigger which = 850913 }
+		command = { type = end_guarantee which = SOV where = KUR }
+		command = { type = end_guarantee which = SOV where = AZB }
+	}
+	action_b = {
+		name = "This means WAR!"
+		ai_chance = 5
+		command = { type = war which = USA }
+		command = { type = belligerence value = 8 } 
+		command = { type = addcore which = 3882 } # 
+		command = { type = addcore which = 1503 } # 
+		command = { type = addcore which = 3949 } # 
+		command = { type = addcore which = 1787 } # 
+	}
+}
+event = {
+	id = 850907
+	random = no
+	country = SOV
+
+	#triggered by 850905
+	
+	name = "The USA Gives In"
+	desc = "The USA has shown its weakness! The northern Persian provinces are ours!"
+	
+	action_a = {
+		name = "Excellent!"
+		command = { type = belligerence value = 3 } 
+		command = { type = addcore which = 3882 } # 
+		command = { type = addcore which = 1503 } # 
+		command = { type = addcore which = 3949 } #
+		command = { type = addcore which = 1787 } #  
+		command = { type = trigger which = 850908 }
+		command = { type = trigger which = 850910 }
+		command = { type = trigger which = 850911 }
+	}
+}
+event = {
+	id = 850908
+	random = no
+	country = PER
+
+	#triggered by SOV events
+	# ownership needed for independence events to fire properly
+	
+	name = "Loss of the Northern Regions"
+	desc = "We have installed a puppet regime in Kurdistan."
+	
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = SOV value = 3882 } # 
+		command = { type = secedeprovince which = SOV value = 1503 } # 
+		command = { type = secedeprovince which = SOV value = 3949 } # 
+	}
+}
+
+
+## Iran reasserts control over Mahabad
+
+event = {
+	id = 850909
+	country = PER
+
+	name = "恢復北方秩序！"
+	desc = EVT_8500908_DESC
+#	picture = "nwo\republic_of_mahabad"
+	style = 1
+
+	trigger = {
+		flag = SOV_withdraw 
+		exists = KUR
+	}
+	date = { day = 0 month = january year = 1945 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		name = "收復馬哈巴德是我們的神聖責任！"
+		ai_chance = 100
+		command = { type = war which = KUR }
+		command = { type = war which = AZB }
+		command = { type = dissent value = -5 }
+		command = { type = add_division value = infantry when = 5 where = artillery }
+		command = { type = add_division value = infantry when = 5 where = artillery }
+	}
+	
+	action_b = {
+		name = "不要挑釁蘇聯"
+		ai_chance = 0
+		command = { type = dissent value = 20 }
+	}
+}
+
+### Iran is betrayed - USA allows for independent Kurdistan
+
+event = {
+	id = 850910
+	country = PER
+
+	name = "西方的背叛"
+	desc = EVT_8500909_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 1
+
+	action_a = {
+		name = "可惡的西方盟國"
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+	}
+	
+}
+
+### Soviet support for Kurdistan continues
+
+event = {
+	id = 850911
+	country = SOV
+
+	name = "和庫爾德斯坦的聯盟"
+	desc = EVT_8500910_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 1
+
+	action_a = {
+		name = "民族獨立的里程碑！"
+		command = { type = alliance which = KUR }
+		command = { type = make_puppet which = KUR }
+	}
+	
+}
+
+### Soviet support for Kurdistan is ended
+
+event = {
+	id = 850912
+	country = KUR
+
+	name = "蘇聯正式從我國撤退"
+	desc = EVT_8500911_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 1
+
+	action_a = {
+		name = "蘇聯還是靠不住"
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which = SOV }
+		command = { type = delete_unit which = -1 }
+	}
+}
+
+event = {
+	id = 850913
+	country = AZB
+
+	name = "蘇聯正式從我國撤退"
+	desc = EVT_8500911_DESC
+#	picture = "nwo\iran_crisis_1946"
+	style = 1
+
+	action_a = {
+		name = "蘇聯還是靠不住"
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+		command = { type = end_access which = SOV }
+		command = { type = delete_unit which = -1 }
+	}
+}
+
+### Iran ceases to be a puppet
+
+event = {
+	id = 850922
+	country = PER
+
+	name = EVT_8500922_NAME
+	desc = EVT_8500922_DESC
+#	picture = "nwo\mohammed_reza_pahlavi"
+	style = 1
+
+	trigger = {
+		flag = cold_war
+		ispuppet = yes
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_8500922_A
+		command = { type = end_puppet }
+		command = { type = add_division value = infantry when = 5 }
+	}
+}

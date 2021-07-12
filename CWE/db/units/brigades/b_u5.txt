@@ -1,0 +1,46 @@
+land_unit_type = 1
+# 0 - Basic Assault Gun
+model = {
+	cost 				= 6
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 			= 1
+	toughness 			= 2
+	softness			= -10
+	softattack			= 2
+	hardattack			= 1
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0.4
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 1.2
+}
+# 1 - Improved Assault Gun
+model = {
+	cost 				= 6
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 			= 2
+	toughness 			= 3
+	softness			= -11
+	softattack			= 2
+	hardattack			= 2
+	supplyconsumption 		= 0.35
+	fuelconsumption			= 0.4
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 1.2
+}
+# 2 - Advanced Assault Gun
+model = {
+	cost 				= 6
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 			= 3
+	toughness 			= 4
+	softness			= -14
+	softattack			= 3
+	hardattack			= 3
+	supplyconsumption 		= 0.4
+	fuelconsumption			= 0.4
+	upgrade_time_factor 		= 0.6
+	upgrade_cost_factor 		= 1.2
+}

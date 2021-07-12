@@ -1,0 +1,145 @@
+# Soviets Change politcal demand stance on Finland
+
+max_garrison_prop = 0.80
+min_garrison_prop = 0.60
+neutrality = 100.000 
+war = 5
+max_front_ratio = 1.0 
+max_front_ratios = { }
+
+no_exp_forces_to = { FIN JAP SIA MAN VIC }
+
+###################################
+# Diplomacy
+###################################
+demand_claims = {
+	EST
+	LAT
+	ROM
+	LIT
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.0
+	overseas_multiplier		= 0.0
+	home_peace_cap 			= 250
+	war_zone_odds 			= 1.0
+	key_point_prio_mult		= 0.3
+	revolt_risk_mult		= 0.3
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 50	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 60	# bonus for provinces just behind a frontline.
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = -1
+		TAN = -1
+		SIK = -1
+		CHI = -1
+		AFG = -1
+		PER = 5
+		TUR = 5
+		CGX = -1
+		CYN = -1
+		CHC = -1
+		CHI = -1
+		CSX = -1
+		FIN = 30
+		ROM = 25
+		POL = 70
+		GER = 70
+		ITA = 50
+		JAP = 5
+		MAN = 5
+		SWE = -1
+		NOR = -1
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		187  = 120 # Leningrad
+		238  = 50 # Kiev
+		235  = 30 # Dnepropetrovsk
+		163  = 50 # Stalingrad
+		248  = 50 # Kharkov
+		277  = 30 # Bryansk
+		1372 = 20 # Vladivostock
+		133  = 20 # Murmansk
+		253  = 30 # Sevastopool
+		243 = 50 # kursk
+		282 = 30 
+		
+		250 = 40 # Meli
+		246 = 40 # zapo
+		245 = 40 # Pol
+		239 = 40 # pril
+		273 = 40 # gomel
+		274 = 40
+		217 = 80 # Vitebsk
+		219 = 80 # smol
+		1874 = 40
+		247 = 50 
+		275 = 50
+
+		181 = 30 
+		258 = 30
+
+		241 = 30
+		260 = 30
+
+		# moscow
+		175 = 120 
+		94 = 30
+		176 = 30 
+		174 = 40 
+		288 = 50
+
+
+		# north
+		197 = 30
+		189 = 40 # Novo
+		289 = 30
+		185 = 30
+		152 = 30 # petro
+		154 = 30
+
+		# south
+		269 = 40
+	}
+	ignore = {
+		205 # Mazirbe (German Border easy surround hex)
+	}
+	area_multiplier = {	
+		175 = 2.0 
+		243 = 2.5
+		163 = 2.5
+		}
+}
+front = { 
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= even
+	distrib_vs_human 	= even
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.3
+	panic_ratio_vs_ai		= 1.75
+	panic_ratio_vs_human	= 1.25
+	base_attack_odds		= 1.07
+	min_attack_odds		= 1.001
+	max_attack_odds		= 2.0
+	reinforce_odds		= 1.02
+	withdraw_odds		= 0.95
+}

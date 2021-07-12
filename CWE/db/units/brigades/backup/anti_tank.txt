@@ -1,0 +1,78 @@
+land_unit_type = 1
+# 0 - Early
+model = {
+	cost 				= 3
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 2
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 1 - Basic
+model = {
+	cost 				= 4
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 4
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - Improved
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 6
+	supplyconsumption 	= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - Advanced
+model = {
+	cost 				= 6
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 8
+	supplyconsumption 	= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - Semi-Modern
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 10
+	supplyconsumption 	= 1.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - Modern
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 12
+	supplyconsumption 	= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - Cold-War
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	maxspeed 			= -1
+	hardattack			= 14
+	supplyconsumption 	= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

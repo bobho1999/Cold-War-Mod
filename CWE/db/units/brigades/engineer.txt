@@ -1,0 +1,28 @@
+land_unit_type = 1
+### 0 - Engineer '36
+model = { 
+	cost 				= 4
+	buildtime	 		= 45
+	manpower 			= 2.5
+	toughness 			= 3
+	defensiveness 			= 5
+	maxspeed 			= 0.0
+	supplyconsumption		= 0.12
+	fuelconsumption			= 0.0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+
+### 1 - Engineer '43
+model = {
+	cost = 4
+	buildtime = 45
+	manpower = 2.5
+	toughness = 4
+	defensiveness = 6
+	maxspeed = 0.0
+	supplyconsumption = 0.14
+	fuelconsumption = 0.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

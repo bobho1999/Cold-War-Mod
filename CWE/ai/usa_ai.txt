@@ -1,0 +1,184 @@
+event = {
+	id = 3750
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = June year = 1937 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_1937.ai" }
+	}
+
+}
+
+event = {
+	id = 3751
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = June year = 1938 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_1938.ai" }
+	}
+
+}
+
+event = {
+	id = 3752
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = January year = 1939 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_1939.ai" }
+	}
+
+}
+
+event = {
+	id = 3753
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = July year = 1939 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_39_2.ai" }
+	}
+
+}
+
+event = {
+	id = 3754
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = January year = 1940 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = january year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_1940.ai" }
+	}
+
+}
+
+event = {
+	id = 3755
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = August year = 1940 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_40_2.ai" }
+	}
+
+}
+
+event = {
+	id = 3756
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = March year = 1941 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_1941.ai" }
+	}
+
+}
+
+event = {
+	id = 3757
+	random = no 
+	country = USA
+	
+	trigger = {
+		ai = yes
+		atwar = yes
+	}
+
+	name = "AI_EVENT"
+	desc = ""
+	style = 0	
+	
+	date = { day = 1 month = January year = 1936 }
+	offset = 30 # Check for trigger conditions every month
+	deathdate = { day = 30 month = december year = 1947 }
+
+	action_a = {
+		command = { type = ai which = "USA_War.ai" }
+	}
+
+}

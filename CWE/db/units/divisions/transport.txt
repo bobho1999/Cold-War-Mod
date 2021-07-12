@@ -1,0 +1,157 @@
+naval_unit_type = 1
+# 0 - General Purpose
+model = {
+	cost						= 5
+	buildtime 					= 90
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 12
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 0
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 3000
+	supplyconsumption				= 0.3
+	fuelconsumption					= 1
+	distance					= 0.1
+}
+# 1 Long Range 1950
+model = {
+	cost						= 6
+	buildtime 					= 100
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 20
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 0
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 4500
+	supplyconsumption				= 0.3
+	fuelconsumption					= 1
+	distance					= 0.1
+}
+# 2 AAV (WW2)
+model = {
+	cost						= 6
+	buildtime 					= 100
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 24
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 2
+	airdefence					= 2
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 500
+	supplyconsumption				= 0.5
+	fuelconsumption					= 1.2
+	distance					= 0.13
+}
+# 3 AAV (1950)
+model = {
+	cost						= 6.5
+	buildtime 					= 105
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 30
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 4
+	airdefence					= 4
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 1500
+	supplyconsumption				= 0.6
+	fuelconsumption					= 1.5
+	distance					= 0.13
+}
+# 4 AAV (1957)
+model = {
+	cost						= 7
+	buildtime 					= 110
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 34
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 6
+	airdefence					= 6
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 3000
+	supplyconsumption				= 0.7
+	fuelconsumption					= 2
+	distance					= 0.13
+}
+# 5 Nuclear 1955
+model = {
+	cost						= 8
+	buildtime 					= 160
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 34
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 0
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 25000
+	supplyconsumption				= 0.7
+	fuelconsumption					= 0
+	distance					= 0.15
+}

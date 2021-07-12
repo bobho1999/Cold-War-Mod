@@ -1,0 +1,77 @@
+# Soviet war with Germany AI File by ÃÏŒ 
+
+max_front_ratios = { }
+
+combat = {
+	CHI = 150
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 	= 1.0
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 20
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 10	# Beach level 2
+	capital			= 40	# Our capital
+	human_border		= 10	# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 20	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		MON = 20
+		TAN = 20
+		SIK = 30
+		CHI = 100
+		AFG = -1
+		PER = 10
+		TUR = 20
+		FIN = 30
+		ROM = 25
+		POL = 10
+		GER = 50
+		USA = 20
+		ENG = 20
+		FRA = 20
+		ITA = 20
+		JAP = -1
+		MAN = 20
+		SWE = 20
+		NOR = 20
+		HUN = 15
+		SLO = 15
+		BUL = 15
+	}
+	province_priorities = {
+		187 = 50 # Leningrad
+		238 = 50 # Kiev
+		235 = 50 # Dnepropetrovsk
+		163 = 50 # Stalingrad
+		248 = 50 # Kharkov
+		277 = 50 # Bryansk
+		1372 = 50 # Vladivostock
+		133 = 50 # Murmansk
+	}
+	area_multiplier = {
+		113 = 2.0 # Murmansk
+		205 = 0.0 # Mazirbe (German Border easy surround hex)
+	}
+}
+front = { 
+	recklessness 		= 2 # 0-3
+	distrib_vs_ai 		= reactive
+	distrib_vs_human 	= reactive
+
+      	enemy_handicap = { } 
+      	passivity = { } 
+} 

@@ -1,0 +1,63 @@
+# Japan prepares to invade the Philippines
+# by Radu
+
+invasion = {
+	
+	staging_province = {
+		1322 # Taiwan
+	}
+
+	target = {
+		# If any aren't secured yet, they take a back seat
+		1315 = 2 # Hong Kong
+		1624 = 2 # Guam
+		1786 = 2 # Wake
+
+		# Philippines
+		1741 = 2000 # Aparri
+		1740 = 2000 # Lingay
+		1737 = 2000 # Manila
+		1742 = 2000 # Lamon
+		1743 = 2000 # Legaspi
+		1744 = 1000 # Samar
+		1745 = 1000 # Leyte
+		1749 = 1000 # Cagayan
+		1750 = 1000 # Davao
+		1748 = 1000 # Zamboanga
+		1747 = 1000 # Negros
+		1746 = 1000 # Panay
+		1736 = 1000 # Mindoro
+		1735 = 1000 # Palawan
+	}
+}
+
+admiral = {
+	
+	target = {
+		2158 = 0 # Hainan Strait - Cutoff Hong Kong
+		2175 = 0 # South Mariana Trench - Cutoff Guam
+		2203 = 0 # Mapmaker Seamounts - Cutoff Wake
+
+		# Cutoff Philippines
+		2257 = 100 # Lingayen Gulf
+		2256 = 100 # Manila Bay
+		2159 = 100 # Palawan Passage
+		2160 = 100 # West Celebes Sea
+		2251 = 100 # Davao Gulf
+		2255 = 100 # Leyte Gulf
+		2260 = 100 # Oras Gulf
+		2259 = 100 # San Bernadino Strait
+		2258 = 100 # Lamon Bay
+		2261 = 100 # Divilancan Bay
+		2252 = 100 # Panay Gulf
+		2254 = 100 # Sibuyan Sea
+		2253 = 100 # Surigao Strait
+	}
+
+	core = {
+		2158 # Hainan Strait - Hong Kong
+		2203 # Mapmaker Seamounts - Wake
+		2175 # South Mariana Trench - Guam
+	}
+}
+

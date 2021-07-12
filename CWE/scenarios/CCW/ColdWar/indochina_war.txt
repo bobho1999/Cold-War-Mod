@@ -1,0 +1,2464 @@
+event = {
+	id = 194592
+	random = no
+	country = U72		
+	name = "越南民主共和国 "
+	desc = "9月2日，越盟集合民众到市内巴亭广场，宣告越南民主共和国成立。 之后接受投降的日本军虽然拒绝交出自己的武器，但是却答应把从 法国手中没收来的武器转给越盟。 "
+	style = 0
+#	picture = ""
+
+	date = { day = 1 month = september year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1950 }
+	
+	action_a = {
+		name = "越南独立了！ " 
+		command = { type = change_idea which = policy_economy_Stalinism-planned value = U72 }
+		command = { type = change_idea which = policy_social_collectivism value = u72 }
+		command = { type = change_idea which = policy_political_nationalism value = u72 }
+
+		command = { type = manpowerpool value = 200 }
+		command = { type = supplies value = 2000 }
+		command = { type = oilpool value = 200 }
+		command = { type = metalpool value = 5000 }
+		command = { type = energypool value = 10000 }
+		command = { type = rarematerialspool value = 2500 }
+		
+		command = { type = add_corps which = "越南人民军 " value = land when = 542035 where = 1328 } #河内
+#		command = { type = add_division which = "人民军第301师 " value = motorized when = 22 where = artillery }
+#		command = { type = add_division which = "人民军第302师 " value = infantry when = 23 where = artillery }
+#		command = { type = add_division which = "人民军第303师 " value = infantry when = 23 where = artillery }
+#		command = { type = add_division which = "人民军第304师 " value = infantry when = 23 where = artillery }
+		command = { type = add_division which = "人民军河内师 " value = militia when = 5 where = artillery }
+		command = { type = add_division which = "人民军海防师 " value = militia when = 5 }
+		command = { type = add_division which = "人民军高坪师 " value = militia when = 5 }
+		command = { type = add_division which = "人民军顺化师 " value = militia when = 5 }
+		command = { type = province_keypoints which = 3704 value = 1 }
+		command = { type = province_keypoints which = 3705 value = 1 }
+#		command = { type = construct which = infrastructure where = 3704 value = 20 }
+		command = { type = construct which = land_fort where = 3704 value = 10 }
+		command = { type = construct which = ic where = 3704 value = 2 }
+		}
+}
+
+event = {
+	id = 1945000
+	random = no
+	country = FRA
+
+	trigger = {
+ 		exists = U72
+		control = { province = 1337 data = -1 }
+
+}
+
+	name = "重返印度支那 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 12 month = january year = 1945 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
+	action_a = {
+		name = "恢復統治 " 
+		command = { type = dissent value = -5 }
+    		command = { type = war which = U72 }
+#		command = { type = tc_mod value = 10 }                  #改变TC修正率
+#               command = { type = tc_occupied_mod value = 5  }         #改变占领区TC修正率 
+#               command = { type = attrition_mod value = 5 }            #改变TC消耗率
+#               command = { type = supply_dist_mod value = 5 }  
+#		command = { type = extra_tc value = 20 }
+		command = { type = add_corps which = "法國遠征陸軍 " value = land where = 1337 } #西貢
+		command = { type = add_division which = "第3殖民地步兵师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "第9殖民地步兵师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "第2装甲师 " value = armor when = 3 }
+		command = { type = add_division which = "遠東步兵旅 " value = bergsjaeger when = 4 where = engineer }
+		command = { type = add_division which = "北圻师 " value = infantry when = 5 }
+		command = { type = add_division which = "交趾·支那师 " value = infantry when = 5 }
+		command = { type = add_division which = "安南师 " value = infantry when = 5 }
+#		command = { type = add_division value = militia when = 4  where = police }
+		command = { type = add_corps which = "法國遠征空軍 " value = air where = 1337 } #西貢
+		command = { type = add_division value = multi_role when = 2 }
+		command = { type = add_division value = multi_role when = 2 }
+		command = { type = add_division value = tactical_bomber when = 2 }
+		command = { type = add_corps value = land where = 1337 }
+		command = { type = activate_division which = 13500 value = 32 where = 1337 }
+		command = { type = relation which = U72 value = -50 }
+	}
+}	 
+
+event = {
+	id = 1945001
+	country = U72
+	random = no
+	persistent = yes
+
+	name = "深入敵後 "
+	desc = " "
+#	picture = "nwo\indonesian_national_revolution"
+	style = 0
+	
+	trigger = {
+		event = 1945009
+		OR = {
+			war = { country = U72 country = U01 }
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+		exists = U72
+#		random = 60
+		day = 29
+	}
+	
+	date = { day = 1 month = january year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "鞏固北部"
+		ai_chance = 30
+#		command = { type = add_corps which = "越共游擊隊 " value = land where = 1328 }
+#		command = { type = add_division value = militia when = 5 }
+		command = { type = manpowerpool value = 2 }
+		command = { type = trigger which = 1945015 }
+	}
+	
+	action_b = {
+		name = "深入中部"
+		ai_chance = 35
+		command = { type = add_corps which = "越共游擊隊 " value = land where = 3708 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = supplies value = 250 where = 3708 }
+#		command = { type = oilpool value = 100 where = 3708 }
+		command = { type = manpowerpool value = 2 }
+		command = { type = trigger which = 1945013 }
+	}
+	
+	action_c = {
+		name = "深入南部"
+		ai_chance = 35
+		command = { type = add_corps which = "越共游擊隊 " value = land where = 3712 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = supplies value = 250 where = 3712 }
+#		command = { type = oilpool value = 100 where = 3712 }
+		command = { type = manpowerpool value = 2 }
+		command = { type = trigger which = 1945014 }
+	}
+}
+
+#1945002
+
+event = {
+	id = 1945013
+	random = no
+	country = fra
+	persistent = yes
+
+	name = "越中地区的游击队活动频繁 "
+	desc = "越南战争期间，大量的共产党游击队活跃于敌后，建立 了各种各样的敌后根据地。他们通过多种多样的游击战 争伏击法军小股部队，牵制了法军在越南战场的行动。 "
+	picture = "genjudi"
+	style = 0
+
+	action_a = {
+		name = "后方不靖... "
+		command = { type = change_partisan_activity which = 1333 value = 20 }
+		command = { type = change_partisan_activity which = 1334 value = 20 }
+		command = { type = change_partisan_activity which = 3710 value = 20 }
+		command = { type = change_partisan_activity which = 3709 value = 20 }
+		command = { type = change_partisan_activity which = 3708 value = 20 }
+#		command = { type = revolt which = 3708 }
+	}
+}
+
+event = {
+	id = 1945014
+	random = no
+	country = fra
+	persistent = yes
+
+	name = "越南地区的游击队活动频繁 "
+	desc = "越南战争期间，大量的共产党游击队活跃于敌后，建立 了各种各样的敌后根据地。他们通过多种多样的游击战 争伏击法军小股部队，牵制了法军在越南战场的行动。 "
+	picture = "genjudi"
+	style = 0
+
+	action_a = {
+		name = "后方不靖... "
+		command = { type = change_partisan_activity which = 1338 value = 20 }
+		command = { type = change_partisan_activity which = 1337 value = 20 }
+		command = { type = change_partisan_activity which = 3712 value = 20 }
+		command = { type = change_partisan_activity which = 3711 value = 20 }
+		command = { type = change_partisan_activity which = 1335 value = 20 }
+#		command = { type = revolt which = 3712 }
+	}
+}
+
+event = {
+	id = 1945015
+	random = no
+	country = fra
+	persistent = yes
+
+	name = "越北地区的游击队活动频繁 "
+	desc = "越南战争期间，大量的共产党游击队活跃于敌后，建立 了各种各样的敌后根据地。他们通过多种多样的游击战 争伏击法军小股部队，牵制了法军在越南战场的行动。 "
+	picture = "genjudi"
+	style = 0
+
+	action_a = {
+		name = "后方不靖... "
+		command = { type = change_partisan_activity which = 3707 value = 20 }
+		command = { type = change_partisan_activity which = 3702 value = 20 }
+		command = { type = change_partisan_activity which = 3705 value = 20 }
+		command = { type = change_partisan_activity which = 3706 value = 20 }
+#		command = { type = revolt which = 3707 }
+	}
+}
+event = {
+	id = 1945003
+	random = no
+	country = U72
+	persistent = yes
+	trigger = {
+		exists = u72
+		OR = { 
+			war = { country = U72 country = FRA }
+			war = { country = U72 country = USA }
+		}
+		government = communist
+#		day = 29
+		OR = {
+			AND = {
+				NOT = { year = 1947 }
+				NOT = { militia = { country = U72 value = 6 } }
+			}
+			AND = {
+				year = 1947
+				NOT = { militia = { country = U72 value = 10 } }
+				day = 29
+			}
+		}
+
+	}	
+	name = "人民戰爭 "
+	desc = " "
+	style = 0
+#	picture = "sik_sheng"
+
+	date = { day = 1 month = july year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "自力更生 "
+		command = { type = add_division which = "越共游擊队 " value = militia when = 4 }
+#		command = { type = damage_division which = -1 where = -75 }
+		command = { type = manpowerpool value = 2 }
+		command = { type = supplies value = 500 }
+		command = { type = oilpool value = 100 }
+	}
+}
+
+#1945004-05	
+	
+
+#1945006
+
+event = {
+	id = 1945007
+	country = FRA
+	random = no
+	name = "《三·六協定》--法國"
+	desc = EVT_8206005_DESC
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	trigger = {
+		war = { country = FRA country = U72 }
+	}
+
+	date = { day = 1 month = march year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = november year = 1945 }
+	
+	# Propose ceasefire
+	action_a = {
+		name = "提出"
+		ai_chance = 100
+		command = { type = belligerence value = -5 }
+		command = { type = relation which = U72 value = 20 }
+		command = { type = trigger which = 1945008 }
+		command = { type = add_corps value = land where = 1333 }
+		command = { type = activate_division which = 13500 value = 31 where = 1333 }
+#		command = { type = peace which = INO value = 0 }
+	}
+	
+	# Fight on
+#	action_b = {
+#		name = "絕不"
+#		ai_chance = 5
+#		command = { type = dissent value = 5 }
+#		command = { type = sleepevent which = 1945008 }
+#		command = { type = sleepevent which = 1945009 }
+#	}
+}
+
+
+event = {
+	id = 1945008
+	country = U72
+
+	name = "《三·六協定》--越共"
+	desc = EVT_8206007_DESC
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	
+	# Agree
+	action_a = {
+		name = "同意"
+		ai_chance = 100
+		command = { type = dissent value = -3 }
+#		command = { type = trigger which = 8206008 }
+		command = { type = peace which = FRA value = 0 }
+		command = { type = secedeprovince which = FRA value = 3709 }
+		command = { type = secedeprovince which = FRA value = 1333 }
+		command = { type = secedeprovince which = FRA value = 1334 }
+		command = { type = secedeprovince which = FRA value = 3710 }
+		command = { type = secedeprovince which = FRA value = 1335 }
+		command = { type = secedeprovince which = FRA value = 3711 }
+		command = { type = secedeprovince which = FRA value = 3712 }
+		command = { type = secedeprovince which = FRA value = 1337 }
+		command = { type = secedeprovince which = FRA value = 1338 }
+	}
+	
+	# Disagree
+#	action_b = {
+#		name = "拒絕"
+#		ai_chance = 5
+#		command = { type = dissent value = 3 }
+#		command = { type = war which = FRA }
+#		command = { type = sleepevent which = 194597 }
+#	}
+}
+
+event = {
+	id = 1945009
+	country = FRA
+	random = no
+	name = "海防事件"
+	desc = EVT_8206008_DESC
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	trigger = {
+		event = 1945008
+		NOT = { war = { country = U72 country = FRA } }
+	}
+
+	date = { day = 22 month = november year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1946 }
+	
+	# Never! (resumption of war)
+	action_a = {
+		name = "砲擊"
+		ai_chance = 100
+		command = { type = trigger which = 1945010 }
+		command = { type = war which = U72 }
+		command = { type = add_corps value = land where = 1326 }
+		command = { type = activate_division which = 13500 value = 33 where = 1326 }
+		command = { type = activate_division which = 13500 value = 34 where = 1326 }
+		command = { type = activate_division which = 13500 value = 35 where = 1326 }
+		command = { type = disorg_division which = 13500 value = 33 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 34 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 35 where = -1000 }
+	}
+	
+	# Agree
+#	action_b = {
+#		name = "同意"
+#		ai_chance = 0
+#		command = { type = trigger which = 8206030 } # End of war
+#		command = { type = setflag which = federated_indonesia }
+#	}
+}
+
+
+# 1945010 on hold
+
+event = {
+	id = 1945010
+	country = FRA
+	random = no
+	name = "AI_EVENT"
+
+	style = 1
+	
+	trigger = {
+		event = 1945009
+		control = { province = 1328 data = -1 } #
+		ai = yes
+	}
+
+	date = { day = 1 month = november year = 1946 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1946 }
+	
+	action_a = {
+		name = "OK"
+		ai_chance = 100
+		command = { type = construct which = land_fort where = 1328 value = 10 }
+		command = { type = add_corps value = land where = 1328 }
+		command = { type = activate_division which = 13500 value = 39 where = 1328 }
+		command = { type = disorg_division which = 13500 value = 39 where = -1000 }	
+	}
+}
+
+event = {
+	id = 1945011
+	random = no
+	country = FRA
+
+	trigger = {
+ 		exists = U72
+		control = { province = 3708 data = -1 }
+
+}
+
+	name = "美宅屠殺 "
+	desc = "美宅屠殺是於1947年11月29日由法國軍隊在廣平省麗水縣美水社美宅村製造的屠殺。屠殺從12點半夜到2點。受難者被強制到火車鐵道旁邊來處死。總共有320受害人被法軍殺害，大多數是非武裝的婦女、兒童和老人。大概半村人口受害。"
+	style = 0
+##	picture = ""
+
+	date = { day = 24 month = november year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1953 }
+	action_a = {
+		name = "執行 " 
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 1945012 } 
+	}
+}
+	 
+event = {
+	id = 1945012
+	random = no
+	country = U72
+
+
+	name = "美宅屠殺 "
+	desc = "美宅屠殺是於1947年11月29日由法國軍隊在廣平省麗水縣美水社美宅村製造的屠殺。屠殺從12點半夜到2點。受難者被強制到火車鐵道旁邊來處死。總共有320受害人被法軍殺害，大多數是非武裝的婦女、兒童和老人。大概半村人口受害。"
+	style = 0
+##	picture = ""
+
+	action_a = {
+		name = " " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+	}
+}
+
+
+### 南越 8212361 in end_of_colonialism
+
+############### Battle of Dien Bien Phu ############### 
+
+event = {
+	id = 1945036
+	country = FRA
+
+	name = "空降奠邊府"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		OR = {
+			war = { country = U72 country = FRA }
+		}
+		control = { province = 3705 data = -2 } # 
+	}
+
+	date = { day = 10 month = november year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "突擊"
+		command = { type = add_corps value = land where = 3705 }
+		command = { type = activate_division which = 13500 value = 36 where = 3705 }
+		command = { type = activate_division which = 13500 value = 37 where = 3705 }
+		command = { type = activate_division which = 13500 value = 38 where = 3705 }
+		command = { type = disorg_division which = 13500 value = 36 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 37 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 38 where = -1000 }
+		command = { type = start_pattern which = 4712 value = 821 where = 3705 when = storm }
+		command = { type = storm_attack which = paratrooper value = 1000 }
+		command = { type = storm_defense which = paratrooper value = 1000 }
+	}	
+}
+
+event = {
+	id = 1945037
+	country = FRA
+
+	name = "控制奠邊府"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		event = 1945036
+		war = { country = U72 country = FRA }
+		control = { province = 3705 data = -1 } # 
+	}
+
+	date = { day = 10 month = november year = 1953 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "修築防禦工事"
+#		command = { type = secedeprovince which = FRA value = 3705 }
+		command = { type = delay value = 5 }
+		command = { type = supplies value = 1000 where = 3705 }	
+		command = { type = oilpool value = 250 where = 3705 }	
+		command = { type = construct which = ic where = 3705 value = 1 }
+		command = { type = construct which = land_fort where = 3705 value = 7 }	
+		command = { type = construct which = infrastructure where = 3705 value = 20 } #
+		command = { type = disorg_division which = 13500 value = 36 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 37 where = -1000 }
+		command = { type = disorg_division which = 13500 value = 38 where = -1000 }
+		command = { type = end_pattern which = 4712 value = 602 }
+		command = { type = storm_attack which = paratrooper value = -1000 }
+		command = { type = storm_defense which = paratrooper value = -1000 }
+		command = { type = sleepevent which = 1945038 }
+	}	
+}
+
+event = {
+	id = 1945038
+	country = FRA
+
+	name = "空降奠邊府失敗"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		event = 1945036
+		war = { country = U72 country = FRA }
+		NOT = {
+			control = { province = 3705 data = -3 }
+          	}
+		NOT = {
+			land_combat = 3705
+          	}
+		NOT = {             				
+			garrison = { country = FRA province = 3705 size = 1 }
+		}
+	}
+
+	date = { day = 10 month = november year = 1953 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "損失慘重"
+		command = { type = dissent value = 15 }
+		command = { type = end_pattern which = 4712 value = 602 }
+		command = { type = storm_attack which = paratrooper value = -1000 }
+		command = { type = storm_defense which = paratrooper value = -1000 }
+		command = { type = sleepevent which = 1945037 }
+	}	
+}
+
+event = {
+	id = 1945039
+	country = U72
+
+	name = "奠邊府戰役"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		ai = no
+		OR = {
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+		control = { province = 3705 data = -2 } #
+		control = { province = 3706 data = -1 } # 
+		event = 1945037
+	}
+
+	date = { day = 1 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "發起戰役——45天殲滅法軍"
+		ai_chance = 100
+		command = { type = assault value = 5 }
+		command = { type = breakthrough value = 5 }
+		command = { type = encirclement value = 5 }
+		command = { type = morale which = land value = 5 }
+		command = { type = trigger which = 1945040 value = 45 }
+		command = { type = sleepevent which = 19450390 }
+	}	
+}
+
+
+
+
+
+event = {
+	id = 19450390
+	country = U72
+
+	name = "奠邊府戰役"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		ai = yes
+		OR = {
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+		control = { province = 3705 data = -2 } # 
+		control = { province = 3706 data = -1 } # 
+		event = 1945037
+	}
+
+	date = { day = 1 month = march year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "發起戰役——45天殲滅法軍"
+		ai_chance = 100
+		command = { type = assault value = 5 }
+		command = { type = breakthrough value = 5 }
+		command = { type = encirclement value = 5 }
+		command = { type = morale which = land value = 5 }
+		command = { type = add_corps value = land where = 3706 }
+		command = { type = add_division which = "人民军第308师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "人民军第312师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "人民军第316师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "人民军炮兵第351师 " value = infantry when = 5 where = artillery }
+		command = { type = trigger which = 1945040 value = 45 }
+		command = { type = sleepevent which = 1945039 }
+	}	
+}
+
+event = {
+	id = 1945040
+	country = U72
+
+	name = "奠邊府戰役-沒有達到戰略目的"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+
+	action_a = {
+		name = "損失慘重"
+		ai_chance = 100
+		command = { type = assault value = -5 }
+		command = { type = breakthrough value = -5 }
+		command = { type = encirclement value = -5 }
+		command = { type = morale which = land value = -7 }
+		command = { type = trigger which = 1945041 }
+        	command = { type = damage_division which = -1 where = 50 } 
+        	command = { type = damage_division which = -1 where = 50 } 
+        	command = { type = damage_division which = -1 where = 50 } 
+        	command = { type = damage_division which = -1 where = 50 } 
+		command = { type = sleepevent which = 1945042 }
+		command = { type = sleepevent which = 1945043 }
+	}	
+}
+event = {
+	id = 1945041
+	country = FRA
+
+	name = "奠邊府戰役-達成戰略目的"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+
+	action_a = {
+		name = "成功消耗越盟實力"
+		ai_chance = 100
+		command = { type = delay value = -4 } 
+		command = { type = morale which = land value = 2 }
+	}	
+}
+
+event = {
+	id = 1945042
+	country = U72
+
+	name = "奠邊府戰役-達成戰略目的"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+	
+	trigger = {
+		OR = {
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+		control = { province = 3705 data = -1 } # 
+		event = 1945037
+	}
+
+	date = { day = 1 month = march year = 1954 }
+	offset = 2
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "發起戰役——45天殲滅法軍"
+		ai_chance = 100
+		command = { type = assault value = -4.5 }
+		command = { type = breakthrough value = -4.5 }
+		command = { type = encirclement value = -4.5 }
+		command = { type = morale which = land value = -3 }
+		command = { type = construct which = ic where = 3705 value = -1 }
+		command = { type = construct which = land_fort where = 3705 value = -7 }	
+		command = { type = construct which = infrastructure where = 3705 value = -40 } #
+		command = { type = trigger which = 1945043 }
+		command = { type = sleepevent which = 1945040 }
+		command = { type = sleepevent which = 1945041 }
+	}	
+}
+
+event = {
+	id = 1945043
+	country = FRA
+
+	name = "奠邊府戰役-慘痛失敗"
+	desc = EVT_8228033_DESC
+#	picture = nwo\dien_bien_phu
+	style = 1	
+
+	action_a = {
+		name = "損失慘重"
+		command = { type = dissent value = 15 }
+		command = { type = delay value = -5 }
+		command = { type = morale which = land value = -3 }
+	}	
+}
+############## 根據地的整訓 ####################
+event = {
+	id = 1945044
+	country = U72
+	random = no
+	persistent = yes
+
+	name = "根據地的整訓"
+	desc = "根據地的整訓"
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	trigger = {
+		war = { country = U72 country = FRA }
+		OR = {
+			day = 29
+			AND = {
+				NOT = { ai = FRA }
+				day = 15
+				NOT = { day = 16 }
+			}
+		}
+				
+	}
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "自力更生"
+		ai_chance = 100
+		command = { type = manpowerpool value = -2 }
+		command = { type = construct which = land_fort where = 3704 value = 10 }
+		command = { type = disorg_division which = 60100 value = 2 where = -1000 }
+#		command = { type = damage_division which = 60100 value = 2 where = -100 }
+		command = { type = supplies value = 500 }	
+		command = { type = oilpool value = 100 }
+	}
+}
+
+
+############## 六大主力師 ####################
+event = {
+	id = 1945045
+	random = no
+	country = U72
+
+	trigger = {
+
+}
+
+	name = "組建第308師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 18 month = august year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } # 
+		command = { type = add_division which = "人民军第308师 " value = motorized when = 5 where = artillery }
+	}
+}
+
+event = {
+	id = 1945046
+	random = no
+	country = U72
+
+	trigger = {
+		supplies = 750
+
+}
+
+	name = "組建第304師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } #
+		command = { type = add_division which = "人民军第304师 " value = motorized when = 5 where = artillery }
+		command = { type = supplies value = -500 }
+	}
+}
+
+event = {
+	id = 1945047
+	random = no
+	country = U72
+
+	trigger = {
+		supplies = 500
+
+}
+
+	name = "組建第316師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = march year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } # 
+		command = { type = add_division which = "人民军第316师 " value = motorized when = 5 where = artillery }
+		command = { type = supplies value = -500 }
+	}
+}
+
+event = {
+	id = 1945048
+	random = no
+	country = U72
+
+	trigger = {
+		supplies = 750
+
+}
+
+	name = "組建第320師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = march year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } # 
+		command = { type = add_division which = "人民军第320师 " value = motorized when = 5 where = artillery }
+		command = { type = supplies value = -500 }
+	}
+}
+
+event = {
+	id = 1945049
+	random = no
+	country = U72
+
+	trigger = {
+		supplies = 750
+
+}
+
+	name = "組建第351師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = january year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } # 
+		command = { type = add_division which = "人民军第351师 " value = motorized when = 5 where = artillery }
+		command = { type = supplies value = -500 }
+	}
+}
+
+event = {
+	id = 1945050
+	random = no
+	country = U72
+
+	trigger = {
+		supplies = 750
+
+}
+
+	name = "組建第325師 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = june year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 1 }
+		command = { type = add_corps which = "越南人民軍 " value = land where = 3704 } #
+		command = { type = add_division which = "人民军第325师 " value = motorized when = 5 where = artillery }
+		command = { type = supplies value = -500 }
+	}
+}
+
+event = {
+	id = 1945051
+	random = no
+	country = U72
+
+	trigger = {
+		event = 1945045
+		event = 1945046
+		event = 1945047
+		event = 1945048
+		event = 1945049
+		event = 1945050
+
+}
+
+	name = "六大主力師組建完成 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = june year = 1952 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "成立 " 
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 4 }
+		command = { type = max_organization which = land value = 3 }
+	}
+}
+
+############## 中國援助 ####################
+event = {
+	id = 1945052
+	random = no
+	country = U72
+
+	trigger = {
+		flag = CHC_won_CW
+		random = 50
+		event = 1945057 #中越建交
+}
+
+	name = "尋求中國援助 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = january year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+	action_a = {
+		name = "出訪 " 
+		command = { type = trigger which = 1945053 value = 2 }
+       		command = { type = relation which = CHC value = 5 }
+	}
+}
+
+event = {
+	id = 1945053
+	random = no
+	country = CHC
+
+	name = "越共向我們請求援助 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	action_a = {
+		name = "提供物資並派出軍事顧問團 " 
+		command = { type = trigger which = 1945054 value = 2 }
+		command = { type = free_money value = -5 }
+		command = { type = free_supplies value = -15 }
+		command = { type = oilpool value = -1000 }
+		command = { type = supplies value = -5000 }
+		command = { type = money value = -500 }
+       		command = { type = relation which = U72 value = 20 }
+	}
+
+	action_b = {
+		name = "只提供物資 " 
+		command = { type = trigger which = 1945055 value = 2 }
+		command = { type = free_money value = -2 }
+		command = { type = free_supplies value = -7 }
+       		command = { type = relation which = U72 value = 10 }
+	}
+}
+
+event = {
+	id = 1945054
+	random = no
+	country = U72
+
+	name = "中國軍事顧問團到來 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	action_a = {
+		name = "中越友誼萬歲 " 
+		command = { type = free_money value = 5 }
+		command = { type = free_supplies value = 15 }
+		command = { type = supplies value = 5000 }
+		command = { type = money value = 500 }
+		command = { type = oilpool value = 1000 }
+		command = { type = morale which = land value = 5 }
+		command = { type = max_organization which = land value = 5 }
+       		command = { type = relation which = CHC value = 20 }
+	}
+}
+
+event = {
+	id = 1945055
+	random = no
+	country = U72
+
+	name = "中國物資到來 "
+	desc = "1945年9月23日，在美、英支持下，法國派遣遠征軍接管越南南部，1946年1月，法國的接管完成，1946年5月初，中華民國國民革命軍全部撤出越南，法國軍隊開始接管越南北方，1946年7月6日，越南獨立同盟會與法國政府在法國楓丹白露開始談判，9月14日，雙方簽訂臨時協定，但是法國無意守約，1946年11月，法國開始向越南獨立同盟會發動全面進攻，法越戰爭正式爆發。"
+	style = 0
+##	picture = ""
+
+	action_a = {
+		name = "中越友誼萬歲 " 
+		command = { type = free_money value = 2 }
+		command = { type = free_supplies value = 7 }
+       		command = { type = relation which = CHC value = 10 }
+	}
+}
+
+######################################################
+# 中越建交
+######################################################
+event = { 
+	id = 1945056
+	random = no
+	country = CHC
+
+	trigger = {
+		exists = U72
+		flag = CHC_won_CW	
+	}
+
+	name = "中越建交"
+        desc="中越建交 "
+	style = 0
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+#	picture = "zhongying"
+	action_a = {
+                name = "建交"
+               	ai_chance = 100
+		command = { type = trigger which = 1945057 }
+       		command = { type = relation which = U72 value = 50 }
+	}
+        action_b = { 
+               name = "拒絕"
+               ai_chance = 0
+       		command = { type = relation which = U72 value = -50 }
+            
+   }
+}
+
+event = { 
+   	id = 1945057
+   	country = U72
+   	random = no
+
+   	name = " 中越建交 "
+   	desc=" 中越建交 "
+   	style = 0
+   #	picture = "american_naval_reinforcments3"
+
+   	action_a = { 
+       		name = "中越建交 "
+       		command = { type = relation which = CHC value = 50 }
+   	}
+}
+################################
+# 印支共南部委員會（越南勞動黨南方局）
+################################
+event = {
+	id = 1945072 
+	random = no
+	country = U72
+	
+   	trigger = {
+		random = 50
+		OR = {
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+       		OR = {
+			control = { province = 3712 data = -1  } 
+			control = { province = 3712 data = -2  }
+		}
+   	}
+
+	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 30 month = june year = 1999 }
+		
+	name = "印支共南部委員會"
+	desc = "EVT_61929_DESC"
+	style = 0
+	picture = "dabieshan"
+
+
+	action_a = {
+		name = "領導南越革命運動"
+		command = { type = add_corps which = "越共南方局 " value = land where = 3712 }
+	  	command = { type = activate_division which = 60100 value = 7 where = 3712 }
+		command = { type = disorg_division which = 60100 value = 7 where = -1000 }
+		command = { type = add_corps which = "越共游擊隊 " value = land where = 3712 }
+	  	command = { type = add_division which = "越共游擊隊 " value = militia when = 4 }
+	  	command = { type = add_division which = "越共游擊隊 " value = militia when = 4 }
+	  	command = { type = add_division which = "越共游擊隊 " value = militia when = 4 }
+		command = { type = start_pattern which = 3712 value = 601 }
+		command = { type = storm_attack which = militia value = 1000 }		
+		command = { type = storm_defense which = militia value = 1000 }		  				  
+	  	command = { type = local_setflag which = dabieshan }  												
+		command = { type = manpowerpool value = -50 }
+		command = { type = trigger which = 1945077 value = 10 }				
+		}		
+}
+
+event = {
+	id = 1945073
+	random = no
+	country = U72 
+
+  	trigger = {
+      		event = 1945072 
+      		control = { province = 3712 data = U72 }
+	}
+
+	name = "越共南方局建立！ "
+	desc = "越共南方局的建立，形成了中央突出两翼包抄的战略 格局，解放军由战略防御转入战略反攻 "
+	style = 0
+	
+	date = { day = 30 month = may year = 1937 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action_a = {
+		name = "转入战略反攻！ "
+		command = { type = supplies value = 3000 where = 3712 }	
+		command = { type = oilpool value = 1000 where = 3712 }			
+		command = { type = construct which = land_fort where = 3712 value = 8 } #
+		command = { type = construct which = infrastructure where = 3712 value = 20 } #
+		command = { type = secedeprovince which = U72 value = 3712 }
+	  	command = { type = local_clrflag which = dabieshan } 		
+		command = { type = trigger which = 1945074 value = 100 }
+		command = { type = end_pattern which = 3712 value = 601 }
+		command = { type = storm_attack which = militia value = -1000 }		
+		command = { type = storm_defense which = militia value = -1000 }						
+		command = { type = sleepevent which = 1945077 }		
+	}
+}
+event = {
+	id = 1945074
+	random = no
+	country = U72 
+  	persistent = yes
+
+	name = "根据地的自力更生 "
+	desc = "解放战争期间，大量的共产党游击队活跃于农村，建立 了各种各样的敌后根据地。他们的补给大多来自战利品 或是伏击政府军运输队，此外根据地群众也提供了大量的补给和帮助。"
+  	picture = "genjudi"
+	style = 0
+
+	action_a = {
+		name = "越南共产党万岁！ "
+		command = { type = supplies value = 500 where = 3712 }	
+		command = { type = oilpool value = 200 where = 3712 }				
+		command = { type = trigger which = 1945074 value = 100 }	
+	}
+}
+
+event = {
+	id = 1945075
+	random = no
+	country = U72 
+
+	trigger = {
+     		atwar = yes
+     		or = {
+      			event = 942412 
+       			event = 942413 
+       		}
+     		not = { 
+         		control = { province = 2648 data = chc } 
+         		control = { province = 2648 data = u03 }          
+         	}
+     	}
+
+	name = "越共南方局被摧毁！ "
+	desc = "帝國主義侵略者调集重兵摧毁我南方局！深入敌人腹心的计划失败了 "
+	style = 0
+	
+	date = { day = 30 month = may year = 1937 }
+	offset = 7
+	deathdate = { day = 30 month = december year = 1999 }
+
+	action_a = {
+		name = "战略反攻的重大挫折…… "
+		command = { type = construct which = land_fort where = 3712 value = -10 } #
+		command = { type = construct which = infrastructure where = 3712 value = -20 } #
+		command = { type = morale which = land value = -5 }
+		command = { type = sleepevent which = 1945074 }
+	}
+}
+
+event = {
+	id = 1945077
+	random = no
+	country = U72 
+
+
+	name = "越共南方局建立失败 "
+	desc = " "
+	picture = "dabieshan"
+	style = 0
+
+
+	action_a = {
+		name = "损失惨重！ "
+		command = { type = morale which = land value = -1 }
+		command = { type = end_pattern which = 3712 value = 601 }
+		command = { type = storm_attack which = militia value = -1000 }		
+		command = { type = storm_defense which = militia value = -1000 }		
+		command = { type = sleepevent which = 1945074 }			
+	  	command = { type = sleepevent which = 1945073 }	
+	}	
+}
+
+event = {
+	id = 1945078
+	random = no
+	country = U72 
+
+
+	trigger = {
+		event = 1975430
+	}
+
+	name = "根据地时代结束了"
+	desc = "根据地时代结束了，新的时代向我们走来。"
+	style = 0
+
+	date = { day = 22 month = october year = 1937 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "新的纪元 "
+		command = { type = construct which = land_fort where = 3712 value = -10 } #
+		command = { type = construct which = infrastructure where = 3712 value = -20 } #
+		command = { type = sleepevent which = 1945074 }						
+	}
+}
+############## 日內瓦會議 ####################
+
+# Geneva Conference - France gives green light
+event = {
+	id = 8228040
+	country = FRA
+
+	name = "日內瓦會議 "
+	desc = EVT_8228040_DESC
+#	picture = nwo\geneva_conference
+	style = 1	
+	
+	trigger = {
+		OR = {
+			event = 1945043
+			dissent = 20
+			AND = { year = 1954
+				month = 1
+			}
+		}
+		OR = {
+			war = { country = U72 country = VIE }
+			war = { country = U72 country = FRA }
+		}
+		puppet = { country = VIE country = FRA }
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+		name = "进行谈判 "
+		ai_chance = 95
+		command = { type = domestic which = interventionism value = -1 }
+    		command = { type = relation which = SOV value = 5 }
+    		command = { type = relation which = USA value = 5 }
+    		command = { type = relation which = U72 value = 5 }
+    		command = { type = relation which = ENG value = 5 }
+    		command = { type = relation which = CHC value = 5 }
+		command = { type = trigger which = 8228041 }
+		command = { type = trigger which = 8228042 }
+		command = { type = trigger which = 8228043 }
+		command = { type = trigger which = 8228044 }
+		command = { type = trigger which = 8228045 }
+	}
+	action_b = {
+		name = "决不谈判 "
+		ai_chance = 5
+		command = { type = dissent value = 15 }
+		command = { type = belligerence value = 15 }
+    		command = { type = relation which = U72 value = -20 }
+    		command = { type = relation which = USA value = -10 }
+    		command = { type = relation which = SOV value = -10 }
+    		command = { type = relation which = CHC value = -5 }
+    		command = { type = relation which = ENG value = -5 }
+	}		
+}
+
+# Both Vietnam states agree
+
+event = {
+	id = 8228041
+	country = U72
+
+	name = "日內瓦協議"
+	desc = EVT_8228041_DESC
+#	picture = nwo\geneva_conference
+	style = 1	
+
+	action_a = {
+		name = "签署 "
+		ai_chance = 100
+		command = { type = leave_alliance }
+		command = { type = dissent value = -5 }
+		command = { type = peace which = FRA value = 0 }
+		command = { type = peace which = LAO value = 0 }
+		command = { type = peace which = VIE value = 0 }
+		command = { type = peace which = CMB value = 0 }
+		command = { type = sleepevent which = 1945006 }
+		command = { type = damage_division which = 60100 value = 7 where = 1000 }
+		command = { type = construct which = land_fort where = 3712 value = -10 } #
+		command = { type = construct which = infrastructure where = 3712 value = -20 } #
+		command = { type = secedeprovince which = VIE value = 3709 }
+		command = { type = secedeprovince which = VIE value = 1333 }
+		command = { type = secedeprovince which = VIE value = 1334 }
+		command = { type = secedeprovince which = VIE value = 3710 }
+		command = { type = secedeprovince which = VIE value = 1335 }
+		command = { type = secedeprovince which = VIE value = 3711 }
+		command = { type = secedeprovince which = VIE value = 3712 }
+		command = { type = secedeprovince which = VIE value = 1337 }
+		command = { type = secedeprovince which = VIE value = 1338 }
+	}	
+	
+#	action_b = {
+#		name = "不签署 "
+#		ai_chance = 0
+#		command = { type = dissent value = 15 }
+#		command = { type = sleepevent which = 8228043 }
+#	}	
+}
+
+event = {
+	id = 8228042
+	country = FRA
+
+	name = "日內瓦協議"
+	desc = EVT_8228042_DESC
+#	picture = nwo\geneva_conference
+	style = 1
+	
+	action_a = {
+		name = "签署 "
+		ai_chance = 100
+    		command = { type = leave_alliance when = 1 }
+		command = { type = end_mastery which = CMB }
+		command = { type = end_mastery which = LAO }
+		command = { type = end_mastery which = IDC }
+		command = { type = end_mastery which = VIE }
+		command = { type = peace which = U72 value = 0 }
+		command = { type = peace which = U50 value = 0 }
+		command = { type = secedeprovince which = U72 value = 3702 }
+		command = { type = secedeprovince which = U72 value = 3703 }
+		command = { type = secedeprovince which = U72 value = 3704 }
+		command = { type = secedeprovince which = U72 value = 3705 }
+		command = { type = secedeprovince which = U72 value = 3706 }
+		command = { type = secedeprovince which = U72 value = 3707 }
+		command = { type = secedeprovince which = U72 value = 1326 }
+		command = { type = secedeprovince which = U72 value = 1328 }
+		command = { type = secedeprovince which = U72 value = 3708 }
+
+		command = { type = secedeprovince which = VIE value = 3709 }
+		command = { type = secedeprovince which = VIE value = 1333 }
+		command = { type = secedeprovince which = VIE value = 1334 }
+		command = { type = secedeprovince which = VIE value = 3710 }
+		command = { type = secedeprovince which = VIE value = 1335 }
+		command = { type = secedeprovince which = VIE value = 3711 }
+		command = { type = secedeprovince which = VIE value = 3712 }
+		command = { type = secedeprovince which = VIE value = 1337 }
+		command = { type = secedeprovince which = VIE value = 1338 }
+	}	
+	
+#	action_b = {
+#		name = "不签署 "
+#		ai_chance = 0
+#		command = { type = dissent value = 15 }
+#		command = { type = sleepevent which = 8228043 }
+#	}
+}
+
+# Geneva Accord
+event = {
+	id = 8228043
+	country = VIE
+
+	name = "日內瓦協議"
+	desc = EVT_8228043_DESC
+#	picture = nwo\geneva_conference
+	style = 1	
+
+	action_a = {
+		name = "签署 "
+		ai_chance = 100
+		command = { type = leave_alliance }
+		command = { type = peace which = U72 value = 0 }
+		command = { type = peace which = U50 value = 0 }
+		command = { type = secedeprovince which = U72 value = 3702 }
+		command = { type = secedeprovince which = U72 value = 3703 }
+		command = { type = secedeprovince which = U72 value = 3704 }
+		command = { type = secedeprovince which = U72 value = 3705 }
+		command = { type = secedeprovince which = U72 value = 3706 }
+		command = { type = secedeprovince which = U72 value = 3707 }
+		command = { type = secedeprovince which = U72 value = 1326 }
+		command = { type = secedeprovince which = U72 value = 1328 }
+		command = { type = secedeprovince which = U72 value = 3708 }
+	}
+#	action_b = {
+#		name = "不签署 "
+#		ai_chance = 0
+#		command = { type = dissent value = 15 }
+#		command = { type = sleepevent which = 8228043 }
+#	}
+}
+
+event = {
+	id = 8228044
+	country = LAO
+
+	name = "日內瓦協議"
+	desc = EVT_8228043_DESC
+#	picture = nwo\geneva_conference
+	style = 1	
+
+	action_a = {
+		name = "签署 "
+		ai_chance = 100
+		command = { type = leave_alliance }
+		command = { type = peace which = U72 value = 0 }
+		command = { type = peace which = U50 value = 0 }
+		command = { type = secedeprovince which = U72 value = 3702 }
+		command = { type = secedeprovince which = U72 value = 3703 }
+		command = { type = secedeprovince which = U72 value = 3704 }
+		command = { type = secedeprovince which = U72 value = 3705 }
+		command = { type = secedeprovince which = U72 value = 3706 }
+		command = { type = secedeprovince which = U72 value = 3707 }
+		command = { type = secedeprovince which = U72 value = 1326 }
+		command = { type = secedeprovince which = U72 value = 1328 }
+		command = { type = secedeprovince which = U72 value = 3708 }
+		command = { type = secedeprovince which = VIE value = 3709 }
+		command = { type = secedeprovince which = VIE value = 1333 }
+		command = { type = secedeprovince which = VIE value = 1334 }
+		command = { type = secedeprovince which = VIE value = 3710 }
+		command = { type = secedeprovince which = VIE value = 1335 }
+		command = { type = secedeprovince which = VIE value = 3711 }
+		command = { type = secedeprovince which = VIE value = 3712 }
+		command = { type = secedeprovince which = VIE value = 1337 }
+		command = { type = secedeprovince which = VIE value = 1338 }
+	}
+#	action_b = {
+#		name = "不签署 "
+#		ai_chance = 0
+#		command = { type = dissent value = 15 }
+#		command = { type = sleepevent which = 8228043 }
+#	}
+}
+
+event = {
+	id = 8228045
+	country = CMB
+
+	name = "日內瓦協議"
+	desc = EVT_8228043_DESC
+#	picture = nwo\geneva_conference
+	style = 1	
+
+	action_a = {
+		name = "签署 "
+		ai_chance = 100
+		command = { type = leave_alliance }
+		command = { type = peace which = U72 value = 0 }
+		command = { type = peace which = U50 value = 0 }
+		command = { type = secedeprovince which = U72 value = 3702 }
+		command = { type = secedeprovince which = U72 value = 3703 }
+		command = { type = secedeprovince which = U72 value = 3704 }
+		command = { type = secedeprovince which = U72 value = 3705 }
+		command = { type = secedeprovince which = U72 value = 3706 }
+		command = { type = secedeprovince which = U72 value = 3707 }
+		command = { type = secedeprovince which = U72 value = 1326 }
+		command = { type = secedeprovince which = U72 value = 1328 }
+		command = { type = secedeprovince which = U72 value = 3708 }
+		command = { type = secedeprovince which = VIE value = 3709 }
+		command = { type = secedeprovince which = VIE value = 1333 }
+		command = { type = secedeprovince which = VIE value = 1334 }
+		command = { type = secedeprovince which = VIE value = 3710 }
+		command = { type = secedeprovince which = VIE value = 1335 }
+		command = { type = secedeprovince which = VIE value = 3711 }
+		command = { type = secedeprovince which = VIE value = 3712 }
+		command = { type = secedeprovince which = VIE value = 1337 }
+		command = { type = secedeprovince which = VIE value = 1338 }
+	}
+#	action_b = {
+#		name = "不签署 "
+#		ai_chance = 0
+#		command = { type = dissent value = 15 }
+#		command = { type = sleepevent which = 8228043 }
+#	}
+}
+
+event = {
+	id = 1975430
+	random = no
+	country = U72		
+
+	trigger = {
+		atwar = no
+		owned = { province = 1337 data = U72 }
+		owned = { province = 1336 data = U72 }
+		owned = { province = 1338 data = U72 }
+		}
+		
+	name = "越南社会主义共和国 "
+	desc = "1973年1月越美在巴黎签订关于在越南结束战争、恢复和平的协定， 美军开始从南方撤走。1975年5月南方全部解放，1976年4月选出 统一的国会，7月宣布全国统一，定国名为越南社会主义共和国。 "
+	style = 0
+#	picture = ""	
+
+	date = { day = 1 month = january year = 1944 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "越南统一了！ " 
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = research_mod value = 1 }
+		command = { type = tc_mod value = 5 }
+		command = { type = dissent value = -15 }
+		command = { type = peacetime_ic_mod value = -15 }
+		command = { type = manpowerpool  value = 200 }
+		}
+}
+
+
+# Ho Chi Minh trail
+
+event = {
+	id = 8228200
+	country = U72
+
+	name = "胡志明小徑"
+	desc = EVT_8228200_DESC
+#	picture = nwo\ho_chi_minh_trail
+	style = 1	
+	
+	trigger = {
+		war = { country = U72 country = VIE }
+		exists = LAO
+		NOT = { war = { country = LAO } }
+	}
+
+	date = { day = 0 month = january year = 1959 }
+	offset = 180
+	deathdate = { day = 29 month = december year = 1963 }
+	action_a = {
+		name = EVT_8228200_A
+		ai_chance = 99
+		command = { type = supplies value = -1000 }
+		command = { type = trigger which = 8228201 }
+	}
+	
+	action_b = {
+		name = EVT_8228200_B
+		ai_chance = 1
+		command = { type = money value = 1 }
+	}
+}
+
+event = {
+	id = 8228201
+	country = LAO
+
+	name = "胡志明小徑"
+	desc = EVT_8228201_DESC
+#	picture = nwo\ho_chi_minh_trail
+	style = 1	
+	
+	action_a = {
+		name = EVT_8228201_A
+		command = { type = access which = U72 }
+	}
+}
+
+event = {
+	id = 1945031
+	random = no
+	country = FRA
+
+	trigger = {
+ 		exists = LAO
+		control = { province = 1337 data = -1 }
+
+	}
+
+	name = "重返寮國 "
+	desc = "1946年1月，法國發動對寮國的侵略，試圖恢復其在寮國的統治。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = january year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1949 }
+	action_a = {
+		name = "發動攻擊 " 
+		command = { type = dissent value = -5 }
+    		command = { type = war which = LAO }
+		command = { type = add_corps which = "法國遠征陸軍 " value = land where = 1333 } #峴港
+		command = { type = add_division value = infantry when = 5 where = artillery }
+		command = { type = trigger which = 1945032 } 
+	}
+}
+
+event = {
+	id = 1945032
+	random = no
+	country = LAO
+
+	name = "法軍襲擊 "
+	desc = "1946年1月，法國發動對寮國的侵略，試圖恢復其在寮國的統治。"
+	style = 0
+##	picture = ""
+
+	action_a = {
+		name = "抵抗法軍! " 
+		command = { type = dissent value = -5 }
+		command = { type = province_keypoints which = 1336 value = 1 }
+		command = { type = province_keypoints which = 1306 value = 1 }
+		command = { type = province_keypoints which = 1329 value = 1 }
+		command = { type = add_corps value = land where = 3715 } #峴港
+		command = { type = add_division value = militia when = 6 }
+	}
+}
+
+event = {
+	id = 1945033
+	random = no
+	country = FRA
+
+	trigger = {
+# 		NOT = {	exists = LAO }
+		control = { province = 1336 data = -1 }
+		control = { province = 1306 data = -1 }
+		control = { province = 1329 data = -1 }
+
+	}
+
+	name = "寮國自由民族統一戰線(「伊沙拉」)流亡曼谷 "
+	desc = "。"
+	style = 0
+##	picture = ""
+
+	date = { day = 1 month = january year = 1946 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1953 }
+	action_a = {
+		name = "重新控制了寮國 " 
+		command = { type = dissent value = -5 }
+    		command = { type = inherit which = LAO }
+		command = { type = add_corps which = "法國駐寮部隊 " value = land where = 1329 }
+		command = { type = activate_division which = 13500 value = 40 where = 1329 }
+		command = { type = disorg_division which = 13500 value = 40 where = -1000 }
+	}
+}
+
+event = {
+	id = 1945034
+	random = no
+	country = FRA
+
+	trigger = {
+ 		NOT = {	exists = LAO }
+		control = { province = 1329 data = -1 }
+
+	}
+
+	name = "寮國自治 "
+	desc = "1946年8月27日，法國與寮國簽訂臨時協定，寮國獲得了在
+		印度支那聯邦內的統一與內政自治。法國殖民官吏以顧問
+		名義參與行政，軍事外交警察權力仍掌握在法國手中。"
+	style = 0
+
+	date = { day = 7 month = august year = 1946 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		ai_chance = 95
+		name = "給予有限自治權 " 
+		command = { type = dissent value = -2 }
+		command = { type = removecore which = 1336 }
+		command = { type = removecore which = 1332 }
+		command = { type = removecore which = 3716 }
+		command = { type = removecore which = 3715 }
+		command = { type = removecore which = 1329 }
+		command = { type = removecore which = 1306 }
+		command = { type = removecore which = 3713 }
+		command = { type = removecore which = 3714 }
+	}
+	action_b = {
+		ai_chance = 5
+		name = "維持殖民統治 " 
+		command = { type = dissent value = 5 }
+		command = { type = province_revoltrisk which = 1336 value = 40 }
+		command = { type = province_revoltrisk which = 1332 value = 40 }
+		command = { type = province_revoltrisk which = 3716 value = 40 }
+		command = { type = province_revoltrisk which = 3715 value = 40 }
+		command = { type = province_revoltrisk which = 3714 value = 40 }
+		command = { type = province_revoltrisk which = 3713 value = 40 }
+		command = { type = province_revoltrisk which = 1306 value = 40 }
+		command = { type = province_revoltrisk which = 1329 value = 40 }
+	}
+}
+
+event = {
+	id = 1945060
+	random = no
+	country = FRA
+
+	trigger = {
+ 		NOT = {	exists = LAO }
+		control = { province = 3714 data = -1 }
+
+	}
+
+	name = "伊沙拉突擊 "
+	desc = "1947年3月，作為伊沙拉軍總司令、伊沙拉臨時抗戰政府外交部
+		長兼國防部長的蘇發努馮親王率軍在寮國北部向法國殖民軍發起
+		進攻。"
+	style = 0
+
+	date = { day = 1 month = march year = 1947 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1953 }
+
+	action_a = {
+		name = "消滅他們 " 
+		command = { type = dissent value = -2 }
+		command = { type = revolt which = 3714 }
+	}
+}
+
+event = {
+	id = 1945061
+	random = no
+	country = LAO
+
+	trigger = {
+ 		exists = LAO
+	}
+
+	name = "寮國自由民族統一戰線解散 "
+	desc = "1949年7月19日，寮王國政府與法國在巴黎簽訂《法國寮國協定》，
+		確立寮國為法蘭西聯邦內的獨立國家。但外交仍必須取得法國的同
+		意，接受法國的裁決；軍事和經濟上也受限於法國。寮國自由民族
+		統一戰線(「伊沙拉」)的很多人就認為寮國已經取得了獨立，紛紛
+		從境外流亡返回了永珍，在王國政府里擔任要職。1949年10月24日，
+		寮國自由民族統一戰線(「伊沙拉」)因為大分裂而宣告解散。"
+	style = 0
+
+	date = { day = 13 month = october year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "Ok " 
+		command = { type = dissent value = -1 }
+		command = { type = province_revoltrisk which = 1336 value = -20 }
+		command = { type = province_revoltrisk which = 1332 value = -20 }
+		command = { type = province_revoltrisk which = 3716 value = -20 }
+		command = { type = province_revoltrisk which = 3715 value = -20 }
+		command = { type = province_revoltrisk which = 3714 value = -20 }
+		command = { type = province_revoltrisk which = 3713 value = -20 }
+		command = { type = province_revoltrisk which = 1306 value = -20 }
+		command = { type = province_revoltrisk which = 1329 value = -20 }
+	}
+}
+
+#1945062 63 onhold
+
+
+event = {
+	id = 1945064
+	random = no
+	country = U72
+
+	trigger = {
+ 		event = 1945061
+	}
+
+	name = "寮國自由民族統一戰線的重建 "
+	desc = "1950年8月13日至15日蘇發努馮親王在越北宣光省的抗法游擊根據地的
+		叢林中，召開了第一屆-寮国-全國人民代表大會，與會代表150人，總
+		結了五年的抗戰工作，選出了以蘇發努馮親王為首相兼外交部長的寮国
+		抗戰政府，以及以蘇發努馮親王為主席、富米·馮維希為總書記的寮國
+		伊沙拉陣線中央委員會。重建了寮國自由民族統一戰線(「伊沙拉」)。
+		寮国，即巴特寮（Pathet Lao），其中Pathet表示國家、土地之意，Lao
+		則指寮國。"
+	style = 0
+
+	date = { day = 3 month = august year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "Ok " 
+       		command = { type = relation which = LAO value = -10 }
+		command = { type = trigger which = 1945065 }
+	}
+}
+
+event = {
+	id = 1945065
+	random = no
+	country = LAO
+
+
+	name = "寮國自由民族統一戰線的重建 "
+	desc = "1950年8月13日至15日蘇發努馮親王在越北宣光省的抗法游擊根據地的
+		叢林中，召開了第一屆-寮国-全國人民代表大會，與會代表150人，總
+		結了五年的抗戰工作，選出了以蘇發努馮親王為首相兼外交部長的寮国
+		抗戰政府，以及以蘇發努馮親王為主席、富米·馮維希為總書記的寮國
+		伊沙拉陣線中央委員會。重建了寮國自由民族統一戰線(「伊沙拉」)。
+		寮国，即巴特寮（Pathet Lao），其中Pathet表示國家、土地之意，Lao
+		則指寮國。"
+	style = 0
+
+
+	action_a = {
+		name = "Ok " 
+		command = { type = dissent value = 1 }
+       		command = { type = relation which = U72 value = -10 }
+		command = { type = province_revoltrisk which = 1336 value = 20 }
+		command = { type = province_revoltrisk which = 1332 value = 20 }
+		command = { type = province_revoltrisk which = 3716 value = 20 }
+		command = { type = province_revoltrisk which = 3715 value = 20 }
+		command = { type = province_revoltrisk which = 3714 value = 20 }
+		command = { type = province_revoltrisk which = 3713 value = 20 }
+		command = { type = province_revoltrisk which = 1306 value = 20 }
+	}
+}
+
+event = {
+	id = 1945066
+	random = no
+	country = U72
+
+	trigger = {
+ 		event = 1945064
+		OR = {
+			control = { province = 1306 data = -1 } #
+			control = { province = 3714 data = -1 } #
+		}
+	}
+
+	name = "支援巴特寮 "
+	desc = "1953年4月，一支由越南人武元甲指揮的越南人民軍入侵了寮國東北
+		部，其中包括蘇發努·馮親王領導的巴特寮成員，此次入侵的目的在
+		於奪取琅勃拉邦和石缸平原。他們受到了寮國軍隊的抵抗，北越成功
+		占領了毗鄰越南北部位於石缸平原東北部邊緣的蓬沙里省和桑怒省。
+		隨後他們繼續前進並允許雜亂的巴特寮部隊占領該地。"
+	style = 0
+
+	date = { day = 3 month = august year = 1950 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "Ok " 
+		command = { type = independence which = U50 value = 1 when = 0 } 
+		command = { type = secedeprovince which = U50 value = 3714 when = 2 }
+		command = { type = secedeprovince which = U50 value = 1306 when = 2 }
+		command = { type = secedeprovince which = U50 value = 3713 when = 2 }
+		command = { type = secedeprovince which = U50 value = 3715 when = 2 }
+		command = { type = secedeprovince which = U50 value = 3716 when = 2 }
+		command = { type = secedeprovince which = U50 value = 1329 when = 2 }
+		command = { type = secedeprovince which = U50 value = 1306 when = 2 }
+		command = { type = secedeprovince which = U50 value = 1336 when = 2 }
+		command = { type = access which = U50 }
+       		command = { type = relation which = LAO value = -20 }
+	}
+}
+
+event = {
+	id = 1945067
+	country = U50
+	trigger = {
+ 		event = 1945064
+		OR = {
+			control = { province = 1306 data = -1 } #
+#			control = { province = 3714 data = -1 } #
+		}
+	}
+	name = "巴特寮"
+	desc = EVT_MILACCESS_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	date = { day = 3 month = august year = 1950 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_MILACCESS_A
+		command = { type = access which = U72 }
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 3 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 580012 }
+		command = { type = headofgovernment which = 540017 }
+#		command = { type = foreignminister which = 540021 }
+#		command = { type = armamentminister which = 540024 }
+#		command = { type = ministerofsecurity which = 540027 }
+#		command = { type = ministerofintelligence which = 540030 }
+#		command = { type = chiefofstaff which = 540033 }
+#		command = { type = chiefofarmy which = 540008 }
+#		command = { type = chiefofnavy which = 540009 }
+#		command = { type = chiefofair which = 540010 }
+		command = { type = add_corps value = land where = 1306 } #
+		command = { type = add_division value = infantry when = 5 }
+	}
+}
+
+### Prolonged fight events
+
+# 1944/45
+
+event = {
+	id = 1945068
+	country = FRA
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206060_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = U72 country = FRA }
+#			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1944 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1945 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+#		command = { type = belligerence value = 1 }
+	}
+}
+
+# 1946/47
+
+event = {
+	id = 1945069
+	country = FRA
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206061_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = U72 country = FRA }
+#			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1946 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1947 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+#		command = { type = belligerence value = 1 }
+	}
+}
+
+# 1948/49
+
+event = {
+	id = 1945070
+	country = FRA
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206062_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = U72 country = FRA }
+#			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1949 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 95
+		command = { type = dissent value = 3 }
+#		command = { type = belligerence value = 2 }
+	}
+}
+
+# 1950+
+
+event = {
+	id = 1945071
+	country = FRA
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206063_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+			war = { country = U72 country = FRA }
+#			flag = indonesian_revolution
+	}
+	
+	date = { day = 0 month = january year = 1950 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 50
+		command = { type = dissent value = 5 }
+#		command = { type = belligerence value = 3 }
+	}
+}
+#######################################
+### #寮國
+#######################################
+event = {
+	id = 8212171
+	country = FRA
+	persistent = yes
+
+	name = "《法國寮國協定》"
+	desc = EVT_SELFRULE_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		government = democratic
+		OR = { 
+			war = { country = FRA country = U72 }
+			atwar = no 
+		}
+		control = { province = 1329 data = FRA } #
+		NOT = {
+#			exists = LAO
+#			exists = GER
+		}
+	}
+
+	date = { day = 4 month = july year = 1949 } #1949/7/19
+	offset = 15
+	deathdate = { day = 29 month = december year = 1954 }
+
+	action_a = {
+		name = "給予自治 "
+		ai_chance = 95
+		command = { type = independence which = LAO value = 1 }
+		command = { type = make_puppet which = LAO }
+		command = { type = trigger which = 8212172 }
+		command = { type = trigger which = 2002024 }
+		command = { type = removecore which = 3714 }
+		command = { type = removecore which = 1306 }
+		command = { type = removecore which = 3713 }
+		command = { type = removecore which = 1329 }
+		command = { type = removecore which = 3715 }
+		command = { type = removecore which = 1332 }
+		command = { type = removecore which = 3716 }
+		command = { type = removecore which = 1336 }
+		command = { type = secedeprovince which = LAO value = 3714 when = 2 }
+		command = { type = secedeprovince which = LAO value = 1306 when = 2 }
+		command = { type = secedeprovince which = LAO value = 3713 when = 2 }
+		command = { type = secedeprovince which = LAO value = 3715 when = 2 }
+		command = { type = secedeprovince which = LAO value = 3716 when = 2 }
+		command = { type = secedeprovince which = LAO value = 1329 when = 2 }
+		command = { type = secedeprovince which = LAO value = 1306 when = 2 }
+		command = { type = secedeprovince which = LAO value = 1336 when = 2 }
+	}
+
+	action_b = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 5
+		command = { type = dissent value = 2 }
+	}
+}
+
+event = {
+	id = 8212172
+	country = LAO
+
+	name = "寮國的自治 "
+	desc = EVT_MILACCESS_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	action_a = {
+		name = EVT_MILACCESS_A
+#		command = { type = leave_alliance }
+		command = { type = access which = FRA }
+		command = { type = access which = VIE }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 540001 }
+		command = { type = headofgovernment which = 540017 }
+		command = { type = foreignminister which = 540021 }
+		command = { type = armamentminister which = 540024 }
+		command = { type = ministerofsecurity which = 540027 }
+		command = { type = ministerofintelligence which = 540030 }
+		command = { type = chiefofstaff which = 540033 }
+		command = { type = chiefofarmy which = 540008 }
+		command = { type = chiefofnavy which = 540009 }
+		command = { type = chiefofair which = 540010 }
+		command = { type = free_ic value = 3 } # was 6
+		command = { type = free_supplies value = 2 } # 
+		command = { type = free_manpower value = 0.03 }
+		command = { type = free_energy value = 8 } # was 12
+		command = { type = free_metal value = 4 } # was 6
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 } # was 3
+		command = { type = dissent value = 8 }  # On July 19, 1949, France formally grants Laos independence. Three factions struggle for power
+		command = { type = add_corps value = land where = 1329 } #永珍
+		command = { type = add_division which = "皇家陸軍第1师 " value = infantry when = 5 }
+	}
+}
+
+event = {
+	id = 8212173
+	country = LAO
+
+  	name = "寮國独立 " 
+  	desc = " "
+  	style = 0
+  
+  	trigger = {
+    		puppet = { country = LAO country = FRA }
+  	} 
+
+#	date = { day = 0 month = january year = 1954 }
+#	offset = 360
+#	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = FRA }
+	}
+}
+
+##### FRANCE puppets its new CAMBODIAN friend
+
+event = {
+	id = 2002023
+	random = no
+	country = FRA
+	style = 2
+#	picture = "news_paper"
+
+	name = "EVT_124_NAME"
+	desc = "EVT_146_DESC"
+
+
+	# triggered by CMB Independence
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = CMB }
+		}
+	}
+
+event = {
+	id = 2002024
+	random = no
+	country = FRA
+	style = 2
+#	picture = "news_paper"
+
+	name = "老撾的自治"
+	desc = "EVT_146_DESC"
+
+
+	# triggered by CMB Independence
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = LAO }
+		}
+	} 
+
+#######################################
+### #白色南越 #8212361 in end_of_colonialism
+#######################################
+event = {
+	id = 8212361
+	country = FRA
+	persistent = yes
+
+	name = "扶植南越 "
+	desc = EVT_SELFRULE_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		government = democratic
+		OR = { 
+			war = { country = FRA country = U72 }
+			war = { country = U03 country = U72 }
+			atwar = no 
+		}
+#		random = 8 # 8% chance every month
+		control = { province = 1337 data = FRA } # 
+		NOT = {
+			exists = VIE
+		}
+	}
+
+	date = { day = 0 month = june year = 1949 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = "扶植反共政權"
+		ai_chance = 99
+		command = { type = dissent value = -5 }
+		command = { type = independence which = VIE value = 1 }
+		command = { type = trigger which = 8212362 value = 1 }
+		command = { type = trigger which = 2002025 }
+		command = { type = removecore which =	1333	}
+		command = { type = removecore which =	1334	}
+		command = { type = removecore which =	1335	}
+		command = { type = removecore which =	1337	}
+		command = { type = removecore which =	1338	}
+		command = { type = removecore which =	3709	}
+		command = { type = removecore which =	3710	}
+		command = { type = removecore which =	3711	}
+		command = { type = removecore which =	3712	}
+		command = { type = removecore which =	1326	}
+		command = { type = removecore which =	1328	}
+		command = { type = removecore which =	3702	}
+		command = { type = removecore which =	3703	}
+		command = { type = removecore which =	3704	}
+		command = { type = removecore which =	3705	}
+		command = { type = removecore which =	3706	}
+		command = { type = removecore which =	3707	}
+		command = { type = removecore which =	3708	}
+		command = { type = make_puppet which = VIE }
+
+	}
+
+	action_b = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 1
+		command = { type = dissent value = 8 }
+	}
+}
+
+event = {
+	id = 8212362
+	country = VIE
+
+	name = "越南國成立"
+	desc = EVT_MILACCESS_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	action_a = {
+		name = EVT_MILACCESS_A
+		command = { type = alliance which = LAO }
+		command = { type = capital which = 1337 }
+		command = { type = dissent value = -10 }
+		command = { type = war which = U72 }
+#		command = { type = grant_military_control which = FRA }
+		command = { type = access which = FRA }
+		command = { type = access which = USA }
+		command = { type = headofstate which = 543001 } #
+		command = { type = headofgovernment which = 543101 } #
+		command = { type = foreignminister which = 543003 } #
+		command = { type = armamentminister which = 543004 } #
+		command = { type = ministerofsecurity which = 543005 } #
+		command = { type = ministerofintelligence which = 543006 } #
+		command = { type = chiefofstaff which = 543007 } #
+		command = { type = chiefofarmy which = 543008 } #
+		command = { type = chiefofnavy which = 543009 } #
+		command = { type = chiefofair which = 543010 } #
+   		command = { type = set_domestic which = democratic value = 6 }
+   		command = { type = set_domestic which = political_left value = 3 }
+		command = { type = add_corps value = land where = 1337 } #西貢
+		command = { type = add_division which = "越南第1师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "越南第2师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "越南第3师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "越南第4师 " value = infantry when = 5 where = artillery }
+		command = { type = add_corps which = "法國遠征军 " value = land where = 1337 } #西貢
+		command = { type = add_division which = "第3殖民地步兵师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "第9殖民地步兵师 " value = infantry when = 5 where = artillery }
+		command = { type = add_division which = "第2装甲师 " value = armor when = 3 }
+		command = { type = add_division which = "遠東步兵旅 " value = bergsjaeger when = 5 where = engineer }
+		command = { type = add_division which = "北圻师 " value = infantry when = 5 }
+		command = { type = add_division which = "交趾·支那师 " value = infantry when = 5 }
+		command = { type = add_division which = "安南师 " value = infantry when = 5 }
+	}
+}
+
+event = {
+	id = 2002025
+	random = no
+	country = FRA
+	style = 2
+#	picture = "news_paper"
+
+	name = "越南的自治"
+	desc = "EVT_146_DESC"
+
+
+	# triggered by CMB Independence
+
+	action_a = {
+		name = ACTION_NAME_OK
+		command = { type = make_puppet which = VIE }
+		command = { type = sleepevent which = 1945013 }
+		command = { type = sleepevent which = 1945014 }
+		command = { type = sleepevent which = 1945015 }
+#		command = { type = change_partisan_activity which = 1333 value = -100 }
+#		command = { type = change_partisan_activity which = 1334 value = -100 }
+#		command = { type = change_partisan_activity which = 3710 value = -100 }
+#		command = { type = change_partisan_activity which = 3709 value = -100 }
+#		command = { type = change_partisan_activity which = 3708 value = -100 }
+#		command = { type = change_partisan_activity which = 1338 value = -100 }
+#		command = { type = change_partisan_activity which = 1337 value = -100 }
+#		command = { type = change_partisan_activity which = 3712 value = -100 }
+#		command = { type = change_partisan_activity which = 3711 value = -100 }
+#		command = { type = change_partisan_activity which = 1335 value = -100 }
+#		command = { type = change_partisan_activity which = 3707 value = -100 }
+#		command = { type = change_partisan_activity which = 3702 value = -100 }
+#		command = { type = change_partisan_activity which = 3705 value = -100 }
+#		command = { type = change_partisan_activity which = 3706 value = -100 }
+		command = { type = secedeprovince which = VIE value = 3702 }
+		command = { type = secedeprovince which = VIE value = 3703 }
+		command = { type = secedeprovince which = VIE value = 3704 }
+		command = { type = secedeprovince which = VIE value = 3705 }
+		command = { type = secedeprovince which = VIE value = 3706 }
+		command = { type = secedeprovince which = VIE value = 3707 }
+		command = { type = secedeprovince which = VIE value = 1326 }
+		command = { type = secedeprovince which = VIE value = 1328 }
+		command = { type = secedeprovince which = VIE value = 3708 }
+		command = { type = remove_division which = "第3殖民地步兵师 " value = FRA }
+		command = { type = remove_division which = "第9殖民地步兵师 " value = FRA }
+		command = { type = remove_division which = "第2装甲师 " value = FRA }
+		command = { type = remove_division which = "遠東步兵旅 " value = FRA }
+		command = { type = remove_division which = "北圻师 " value = FRA }
+		command = { type = remove_division which = "交趾·支那师 " value = FRA }
+		command = { type = remove_division which = "安南师 " value = FRA }
+		}
+	}

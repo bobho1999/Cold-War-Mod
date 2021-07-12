@@ -1,0 +1,318 @@
+#######################################################
+#### Atomic America
+#######################################################
+
+
+event = {
+	id = 1200000
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "美國的核試驗"
+	desc = "我國進行了核試驗。 這將進一步改善我國的核彈技術。"
+	style = 0
+
+	trigger = {
+	random = 10
+	NOT = { war = { country = SOV country = USA } }
+	}
+
+        date = { day = 0 month = january year = 1937 }
+        offset = 40
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "實施"
+		ai_chance = 90
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 10
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+event = {
+	id = 1200001
+	random = no
+	country = USA
+
+	name = "遊騎兵行動"
+	desc = "在內華達試驗場"
+	style = 0
+
+        date = { day = 15 month = january year = 1951 }
+        offset = 15
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+
+event = {
+	id = 1200002
+	random = no
+	country = USA
+
+	name = "溫室行動"
+	desc = "在太平洋試驗場"
+	style = 0
+
+        date = { day = 0 month = 4 year = 1951 }
+        offset = 15
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+event = {
+	id = 1200003
+	random = no
+	country = USA
+
+	name = "不倒翁-鯛魚行動"
+	desc = "在內華達試驗場"
+	style = 0
+
+        date = { day = 0 month = 4 year = 1952 }
+        offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+
+event = {
+	id = 1200004
+	random = no
+	country = USA
+
+	name = "常春藤行動"
+	desc = "在太平洋試驗場"
+	style = 0
+
+        date = { day = 0 month = 11 year = 1952 }
+        offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+#######################################################
+#### Atomic Soviet
+#######################################################
+
+
+
+event = {
+	id = 1200100
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "蘇聯的核試驗"
+	desc = "我國進行了核試驗。 這將進一?改善我國的核彈技術。"
+	style = 0
+
+	trigger = {
+	random = 25
+	NOT = { war = { country = SOV country = USA } }
+	}
+
+        date = { day = 0 month = january year = 1937 }
+        offset = 40
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "実行せよ"
+		ai_chance = 90
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 10
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+event = {
+	id = 1200101
+	random = no
+	country =SOV
+
+	name = "RDS"
+	desc = "蘇聯的核試驗稱為RDS，它是“ Rosina della la Sama（祖國成功?現）的首字母縮寫”。"
+	style = 0
+
+        date = { day = 0 month = 1 year = 1937 }
+        offset = 20
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+event = {
+	id = 1200102
+	random = no
+	country = SOV
+
+	name = "RDS-6"
+	desc = "它被認為是蘇聯第一次進行氫彈試驗，但後來被認為是增強型原子彈試驗。"
+	style = 0
+
+        date = { day = 11 month = 8 year = 1953 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}
+
+
+
+event = {
+	id = 1200103
+	random = no
+	country = SOV
+
+	name = "RDS-37"
+	desc = "蘇聯的第一次氫彈試驗"
+	style = 0
+
+        date = { day = 21 month = 10 year = 1955 }
+        offset = 1
+	deathdate = { day = 29 month = december year = 1953 }
+
+
+	action_a = {
+		name = "這將進一步提高核武器生產能力"
+		ai_chance = 100
+      		command = { type = nuke_damage value = 60 }
+      		command = { type = double_nuke_prod }
+		command = { type = belligerence value = 1 }
+		command = { type = dissent value = -5 }
+		command = { type = vp value = 5 }
+	}
+	action_b = {
+		name = "沒這個必要"
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 5 }
+		command = { type = vp value = -5 }
+	}
+}

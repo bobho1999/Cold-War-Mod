@@ -1,0 +1,129 @@
+naval_unit_type = 1
+# 0 - Early Carrier Air Group
+model = {
+	cost 				= 7.5
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	= 10
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 4
+	subdetectioncapability		= 2
+	airdefence			= 6
+	seaattack			= 6
+	convoyattack			= 4
+	subattack			= 2
+	airattack			= 6
+	shorebombardment		= 0
+	distance			= 1.6
+	supplyconsumption 		= 2.4
+	fuelconsumption			= 0.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - Basic Carrier Air Group
+model = {
+	cost 				= 9
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	        = 10
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 6
+	subdetectioncapability		= 3
+	airdefence			= 10
+	seaattack			= 8
+	convoyattack			= 6
+	subattack			= 3
+	airattack			= 10
+	shorebombardment		= 0
+	distance			= 2.0
+	supplyconsumption 		= 3.5
+	fuelconsumption			= 1.0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - Improved Carrier Air Group
+model = {
+	cost 				= 10.5
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	= 10
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 8
+	subdetectioncapability		= 4
+	airdefence			= 14
+	seaattack			= 10
+	convoyattack			= 8
+	subattack			= 4
+	airattack			= 14
+	shorebombardment		= 0
+	distance			= 2.4
+	supplyconsumption 		= 4.6
+	fuelconsumption			= 1.4
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - Advanced Carrier Air Group
+model = {
+	cost 				= 12
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	= 10
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 10
+	subdetectioncapability		= 5
+	airdefence			= 18
+	seaattack			= 12
+	convoyattack			= 10
+	subattack			= 5
+	airattack			= 18
+	shorebombardment		= 0
+	distance			= 2.8
+	supplyconsumption 		= 5.7
+	fuelconsumption			= 1.8
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - Turbojet Carrier Air Group
+model = {
+	cost 				= 13.5
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	= 10
+	surfacedetectioncapability	= 12
+	airdetectioncapability		= 12
+	subdetectioncapability		= 6
+	airdefence			= 22
+	seaattack			= 14
+	convoyattack			= 12
+	subattack			= 6
+	airattack			= 22
+	shorebombardment		= 0
+	distance			= 3.2
+	supplyconsumption 		= 6.8
+	fuelconsumption			= 2.2
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 5 - Improved Turbojet Carrier Air Group
+model = {
+	cost 				= 18
+	buildtime			= 360
+	manpower 			= 1
+	defaultorganisation 	= 10
+	surfacedetectioncapability	= 16
+	airdetectioncapability		= 16
+	subdetectioncapability		= 8
+	airdefence			= 26
+	seaattack			= 18
+	convoyattack			= 16
+	subattack			= 8
+	airattack			= 26
+	shorebombardment		= 0
+	distance			= 3.6
+	supplyconsumption 		= 8.6
+	fuelconsumption			= 2.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+
+

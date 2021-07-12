@@ -1,0 +1,518 @@
+naval_unit_type = 1
+allowed_brigades = naval_spotter_s
+allowed_brigades = naval_mines
+# 0 - Dive Boat
+model = {
+	cost				= 2
+	buildtime			= 90
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.2
+	maxspeed			= 10
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 10
+	seadefence			= 1
+	airdefence			= 4
+	seaattack			= 2
+	convoyattack			= 3
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 500
+	supplyconsumption		= 0.3
+	fuelconsumption			= 0.3
+	distance			= 0.15
+}
+# 1 - Short-Range
+model = {
+	cost				= 2
+	buildtime			= 110
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.3
+	maxspeed			= 12
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 8
+	seadefence			= 2
+	airdefence			= 5
+	seaattack			= 3
+	convoyattack			= 5
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 2500
+	supplyconsumption		= 0.4
+	fuelconsumption			= 0.5
+	distance			= 0.16
+}
+# 2 - Medium-Range
+model = {
+	cost				= 2
+	buildtime			= 160
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.4
+	maxspeed			= 16
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 8
+	seadefence			= 3
+	airdefence			= 6
+	seaattack			= 4
+	convoyattack			= 6
+	subattack			= 3
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 3000
+	supplyconsumption		= 0.5
+	fuelconsumption			= 0.7
+	distance			= 0.17
+}
+# 3 - Long-Range
+model = {
+	cost				= 3
+	buildtime			= 160
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.5
+	maxspeed			= 18
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 7
+	seadefence			= 4
+	airdefence			= 8
+	seaattack			= 4
+	convoyattack			= 7
+	subattack			= 4
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 3500
+	supplyconsumption		= 0.6
+	fuelconsumption			= 0.8
+	distance			= 0.18
+}
+# 4 - Electro-Submarine
+model = {
+	cost				= 4
+	buildtime			= 160
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.5
+	maxspeed			= 18
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 1
+	subdetectioncapability		= 3
+	visibility			= 4
+	seadefence			= 5
+	airdefence			= 9
+	seaattack			= 5
+	convoyattack			= 9
+	subattack			= 8
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 4000 # was 3500
+	supplyconsumption		= 0.7
+	fuelconsumption			= 0.5
+	distance			= 0.19
+}
+# 5 - Semi-Modern
+model = {
+	cost				= 5
+	buildtime			= 160
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.5
+	maxspeed			= 21
+	surfacedetectioncapability	= 5
+	airdetectioncapability		= 1
+	subdetectioncapability		= 4
+	visibility			= 3
+	seadefence			= 6
+	airdefence			= 11
+	seaattack			= 6
+	convoyattack			= 10
+	subattack			= 10
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 4300 # was 4000
+	supplyconsumption		= 0.7
+	fuelconsumption			= 0.6
+	distance			= 0.2
+}
+# 6 - Nuclear
+model = {
+	cost				= 8
+	buildtime			= 320
+	defaultorganisation 		= 30
+	morale				= 40 # nuclear
+	manpower			= 0.5
+	maxspeed			= 25
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 1
+	subdetectioncapability		= 5
+	visibility			= 2
+	seadefence			= 10
+	airdefence			= 14
+	seaattack			= 7
+	convoyattack			= 12
+	subattack			= 12
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 20000
+	supplyconsumption		= 1.9
+	fuelconsumption			= 0
+	distance			= 0.2
+}
+# 7 - Modern
+model = {
+	cost				= 5
+	buildtime			= 160
+	defaultorganisation 		= 30
+	morale				= 30
+	manpower			= 0.5
+	maxspeed			= 21
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 1
+	subdetectioncapability		= 4
+	visibility			= 2
+	seadefence			= 8 # was 10
+	airdefence			= 13
+	seaattack			= 6
+	convoyattack			= 11
+	subattack			= 11
+	airattack			= 1
+	shorebombardment		= 0
+	transportcapability		= 0
+	
+	range				= 4700
+	supplyconsumption		= 0.7
+	fuelconsumption			= 0.6
+	distance			= 0.2
+}
+# 8 - Elite Attack Submarine (1955 )
+model = {
+	cost						= 5.5
+	buildtime					= 160
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 22
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 2
+	subdetectioncapability		= 5
+	visibility					= 2
+	seadefence					= 10
+	airdefence					= 15
+	seaattack					= 7
+	convoyattack					= 12
+	subattack					= 12
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	
+	range						= 5000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.2
+}
+# 9 - Early Killer Sub
+model = {
+	cost						= 5
+	buildtime					= 160
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 21
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 1
+	subdetectioncapability		= 8
+	visibility					= 1
+	seadefence					= 9
+	airdefence					= 11
+	seaattack					= 6
+	convoyattack					= 10
+	subattack					= 15
+	airattack					= 1
+	shorebombardment			= 0
+	transportcapability			= 0
+	
+	range						= 4000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.23
+}
+# 10 - 1975 SSK
+model = {
+	cost						= 5.5
+	buildtime					= 160
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 0.5
+	maxspeed					= 22
+	surfacedetectioncapability	= 9
+	airdetectioncapability		= 2
+	subdetectioncapability		= 9
+	visibility					= 1
+	seadefence					= 11
+	airdefence					= 15
+	seaattack					= 7
+	convoyattack					= 12
+	subattack					= 15
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	
+	range						= 5000
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.23
+}
+# 11 - 1990 SSK (fuel cells)
+model = {
+	cost						= 5 # cheaper!
+	buildtime					= 160
+	defaultorganisation 		= 30
+	morale						= 40 # Fuel cells
+	manpower					= 0.5
+	maxspeed					= 23
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 1
+	seadefence					= 13
+	airdefence					= 15
+	seaattack					= 9
+	convoyattack					= 12
+	subattack					= 18
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	
+	range						= 8000 # Fuel cells
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.24
+}
+# 12 - 2005 SSK (fuel cells)
+model = {
+	cost						= 5
+	buildtime					= 160
+	defaultorganisation 		= 30
+	morale						= 40 # Fuel cells
+	manpower					= 0.5
+	maxspeed					= 25
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 3
+	subdetectioncapability		= 10
+	visibility					= 1
+	seadefence					= 15
+	airdefence					= 15
+	seaattack					= 9
+	convoyattack					= 12
+	subattack					= 20
+	airattack					= 2
+	shorebombardment			= 0
+	transportcapability			= 0
+	
+	range						= 8000 # Fuel cells
+	supplyconsumption			= 0.7
+	fuelconsumption				= 0.5
+	distance					= 0.24
+}
+# 13 - Improved Nuclear Attack Sub
+model = {
+	cost						= 8
+	buildtime					= 320
+	defaultorganisation 				= 30
+	morale						= 40 # nuclear
+	manpower					= 0.5
+	maxspeed					= 28
+	surfacedetectioncapability			= 7
+	airdetectioncapability				= 1
+	subdetectioncapability				= 5
+	visibility					= 2
+	seadefence					= 13
+	airdefence					= 16
+	seaattack					= 7
+	convoyattack					= 14
+	subattack					= 15
+	airattack					= 1
+	shorebombardment				= 0
+	transportcapability				= 0
+	
+	range						= 20000
+	supplyconsumption				= 1.9
+	fuelconsumption					= 0
+	distance					= 0.2
+}
+# 14 - Advanced Nuclear Attack Submarine
+model = {
+	cost                        = 6.5
+	buildtime                   = 290
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 0.5
+	maxspeed                    = 34
+	surfacedetectioncapability  = 12
+	airdetectioncapability      = 3
+	subdetectioncapability      = 8
+	visibility                  = 2
+	seadefence                  = 24
+	airdefence                  = 28
+	seaattack                   = 20
+	subattack                   = 15
+	convoyattack                = 20
+	airattack                   = 3
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.1
+	fuelconsumption             = 0.0
+	distance                    = 0.23
+}
+# 15 - Deep Water Nuclear Submarine--1000+ m test depth instead of normal 200-300 m.
+model = {
+	cost                        = 7.5
+	buildtime                   = 320
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 0.5
+	maxspeed                    = 36
+	surfacedetectioncapability  = 12
+	airdetectioncapability      = 3
+	subdetectioncapability      = 8
+	visibility                  = 1
+	seadefence                  = 60
+	airdefence                  = 60
+	seaattack                   = 20
+	subattack                   = 15
+	convoyattack                = 18
+	airattack                   = 3
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.2
+	fuelconsumption             = 0.0
+	distance                    = 0.25
+}
+# 16 - Advanced Killer Sub (nuclear)
+model = {
+	cost                        = 7
+	buildtime                   = 280
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 1
+	maxspeed                    = 36
+	surfacedetectioncapability  = 14
+	airdetectioncapability      = 4
+	subdetectioncapability      = 10
+	visibility                  = 1
+	seadefence                  = 60
+	airdefence                  = 60
+	seaattack                   = 22
+	subattack                   = 18
+	convoyattack                = 18
+	airattack                   = 1
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.5
+	fuelconsumption             = 0.0
+	distance                    = 0.25
+}
+# 17 - 1975 Nuclear Powered Fast Attack Submarine
+model = {
+	cost                        = 7
+	buildtime                   = 290
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 1
+	maxspeed                    = 40 # officially 37 true speed classified
+	surfacedetectioncapability  = 16
+	airdetectioncapability      = 4
+	subdetectioncapability      = 14
+	visibility                  = 1
+	seadefence                  = 60
+	airdefence                  = 60
+	seaattack                   = 23
+	subattack                   = 20
+	convoyattack                = 18
+	airattack                   = 1
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.5
+	fuelconsumption             = 0.0
+	distance                    = 0.25
+}
+# 18 - 1990 Nuclear Powered Fast Attack Submarine
+model = {
+	cost                        = 7
+	buildtime                   = 300
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 1
+	maxspeed                    = 50
+	surfacedetectioncapability  = 17
+	airdetectioncapability      = 5
+	subdetectioncapability      = 15
+	visibility                  = 1
+	seadefence                  = 60
+	airdefence                  = 60
+	seaattack                   = 24
+	subattack                   = 21
+	convoyattack                = 18
+	airattack                   = 1
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.5
+	fuelconsumption             = 0.0
+	distance                    = 0.25
+}
+# 19 - 2005 Nuclear Powered Fast Attack Submarine
+model = {
+	cost                        = 6 # designed as cheaper alternative to preceding class
+	buildtime                   = 300
+	defaultorganisation         = 30
+	morale                      = 40 # nuclear
+	manpower                    = 1
+	maxspeed                    = 50
+	surfacedetectioncapability  = 17
+	airdetectioncapability      = 5
+	subdetectioncapability      = 15
+	visibility                  = 1
+	seadefence                  = 60
+	airdefence                  = 60
+	seaattack                   = 24
+	subattack                   = 21
+	convoyattack                = 18
+	airattack                   = 1
+	shorebombardment            = 0
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.5
+	fuelconsumption             = 0.0
+	distance                    = 0.25
+}
+

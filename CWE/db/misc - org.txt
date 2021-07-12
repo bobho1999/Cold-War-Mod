@@ -1,0 +1,588 @@
+# NOTE: Obviously, the order of these variables cannot be changed.
+
+economy = {
+# IC to TC ratio
+	1.30
+# IC to Supplies ratio
+	4.0
+# IC to Consumer Goods Ratio
+	1.5
+# IC to Money Ratio
+	2.0
+# Dissent Change Speed
+	1.0
+# Max Gearing Bonus ( never lower than value * build time )
+	0.40
+# Gearing Bonus Increment ( lessening of build time per successive build, down to Max Gearing Bonus )
+	0.05
+# Gearing Bonus Resource Cost Increment ( 1.0 = if 10% faster production 10% more resource usage)
+	0.6	
+# Gearing Loss if no IC assigned ( 0.01 = 1% loss / day)
+	0.02
+# IC Non-National Province Multiplier
+	0.3
+# IC Non-Owned (i.e. occupied) Province Multiplier (overrides Non-National where applicable)
+	0.15
+# TC Undeployed Division Load
+	10.0
+# TC Occupied Province Load
+	2.0
+# TC Land Division Load Multiplier
+	1.0
+# TC Air Division Load Multiplier
+	0.8
+# TC Naval Division Load Multiplier
+	0.4
+# TC Load from partisans
+	10.0
+# TC load factor from offensives
+	3.0
+# TC Load from province dev
+	5.0
+# TC Load from bases in queue
+	100.0
+# National Province Manpower Multiplier (income per day)
+	0.006
+# Non-National Province Manpower Multiplier (income per day.) Note: Some types of ministers can affect this value.
+	0.001
+# Colonial Province Manpower Multiplier (multiplied on the other)
+	0.2
+# Requirement for "Influence Nation" to affect domestic sliders: Our IC >= Target IC * X
+	2.0
+# Trickle-back factor for manpower from losses in battle. (ie, how many are just wounded.)
+	0.35
+# Reinforcement Manpower Cost Factor
+	1.0
+# Reinforce cost
+	1
+# Reinforce time
+	0.7
+# Upgrade cost	
+	0.5
+# Upgrade time
+	1
+# Nationalism starting value
+	17.5
+# Manpower Nationalism Value
+	2.5
+# Monthly Nationalism reduction
+	0.075
+# Time in days to send a division to an ally
+	360	
+# TC Load from undeployed brigades (multiplied on top of the division cost)
+	0.3
+# If units can be sold/transfered to non allied countries
+	0
+# Cost to repair Province buildings
+	0.50
+# Time to repair Province buildings
+	0.15
+# Province Efficiency rise time in days ( _EV_PROV_EFF_RISE_TIME_ )
+	180
+# Core Province Efficiency rise time in days ( _EV_CORE_PROV_EFF_RISE_TIME_ )
+	90
+# Line Upkeep (of base IC)
+	0.15
+# Startup Retooling Time (days) - first time a line is opened
+	80
+# Retooling Time (days) - line upgrade
+	40
+# Retooling Cost (of base IC)
+	1.0
+# Retooling Resource Cost (of base IC)
+	0.25
+# daily aging of MP
+	0.00006
+# Suppplies usage on convoy hunt (times combat!)
+	1.2
+# Supply Usage Naval Static (value below * normal supply consumtion)
+	1.0
+# Supply Usage Naval Moving (value below * normal supply consumtion)
+	1.1
+# Supply Usage Naval Battle (value below * normal supply consumtion)
+	5.0
+# Supply Usage Aviation Static (value below * normal supply consumtion)
+	1.0
+# Supply Usage Aviation Moving (value below * normal supply consumtion)
+	2.5
+# Supply Usage Aviation Battle (value below * normal supply consumtion)
+	4.0
+# Supply Usage Aviation Bombing (value below * normal supply consumtion)
+	6.0
+# Supply Usage Land Static (value below * normal supply consumtion)
+	1.0
+# Supply Usage Land Moving (value below * normal supply consumtion)
+	1.5
+# Supply Usage Land Battle (value below * normal supply consumtion)
+	4.0
+# Supply Usage Land Bombing (artillery Bombardment, cost is below supplies * bombing stat)
+	10.0
+# _EV_SUPPLIES_STOCK_LAND_, amount of stock stored in each divison - of combat usage
+	4.0
+# _EV_SUPPLIES_STOCK_AIR_, amount of stock stored in each divison - of combat usage
+	3.0
+# _EV_SUPPLIES_STOCK_NAVAL_, amount of stock stored in each divison - of combat usage
+	12.0
+# _EV_SUPPLIES_RESTOCK_LAND_,The resupply speed compared to normal usage
+	1.0
+# _EV_SUPPLIES_RESTOCK_AIR_,The resupply speed compared to normal usage
+	2.0
+# _EV_SUPPLIES_RESTOCK_NAVAL_,The resupply speed compared to normal usage
+	10.0
+# Synthetic Oil plant conversion multiplier (this value below is the maxumum convertet oil producable by each Synthetic oil plant)
+	5.0
+# Synthetic Rares plant conversion multiplier (this value below is the maxumum conversion of each plant)
+	3.0
+# Military salary cost.. each MP in military service will cost this amount.
+	0.022
+# Max intelligence expenditure
+	0.10
+# Max Research expenditure
+	1.0
+# Military Salary Attriction Modifier (attriction multiplier added when no salary paid, this simulates deserters)
+	1.5
+# Military Salary Dissent Modifier (Dissent added when no salaries paid)
+	1.1
+# Nuclear Site upkeep cost (modified by sliders and ministers)
+	2.5
+# Nuclear Power Plant upkeep cost (modified by sliders and ministers)
+	0.0
+# Synthetic Oil site upkeep cost (in addition to resource cost,modified by sliders and ministers)
+	0.0
+# Synthetic Rares site upkeep cost (in addition to resource cost,modified by sliders and ministers)
+	0.0
+# Duration of detection (in days)
+	14.00
+# _EV_CONVOY_PROV_HOSTILE_TIME_, Convoy will try to avoid this province if last attack < this value
+	15.00
+# _EV_CONVOY_PROV_BLOCKED_TIME_, Convoy WILL NOT enter province if last attack < this value
+	7.00
+# _EV_AUTOTRADE_CONVOY_, when determining a trading partner use score = (neededtransports  / unassigned transports) * value below
+	100
+# _EV_SPY_UPKEEP_COST_, Each spy will demand xx investment each day.
+	1.0
+# _EV_SPY_DETECTION CHANCE_, Probability of a defending spy to detect a invading spy 
+	3.0
+# _EV_SPY_COUP_DISSENT_MODIFIER_, Increased coup odds per dissent point of target country
+	0.0
+# _EV_INFRA_EFFICIENCY_MODIFIER_, the influence of infra on Efficiency
+	0.5
+# _EV_MP_TO_CG_, How much IC does each MP provide in CG?
+	0.015
+# _EV_TIME_BETWEEN_SLIDER_CHANGES - Time between slider changes!
+	360
+# _EV_MIN_PLACEMENT_IC_, Minimum IC to allow non capital placement
+	40
+# _EV_Nuclear_Power_, Each reactor can give below energy
+	1.5
+# _EV_FREE_INFRA_REPAIR_, Each day all province structures are repaired for free with below amount:
+	0.05
+# _EV_MAX_SLIDER_DISSENT_, For moving slider before timeout - how much dissent gained?
+	18
+# _EV_MIN_SLIDER_DISSENT_, Default dissent changing costs
+	0
+# _EV_MAX_DISSENT_FOR_SLIDER_MOVE_, if above this, you cannot move the slider.
+	25
+# _EV_IC_CONCENTRATION_BONUS_, each ic increases max effectivity by below value
+	0.01
+# _EV_CONVOY_DUTY_CONVERSION_, Amount of Convoys generated when sending a transport unit to convoy duty
+	10
+# _EV_ESCORT_DUTY_CONVERSION_, Amount of Escorts generated when sending a destroyer unit to escort duty
+	10
+# _EV_MINISTER_CHANGE_DELAY_, freely changed minister
+	60
+# _EV_MINISTER_CHANGE_EVENT_DELAY_, when events cause a minister change like for example death or elections
+	0
+# _EV_IDEA_CHANGE_DELAY_, freely changed national idea
+	180
+# _EV_IDEA_CHANGE_EVENT_DELAY_, when events causes an idea change
+	0
+# _EV_LEADER_CHANGE_DELAY_
+	7
+# _EV_CHANGE_IDEA_DISSENT_,
+	0
+# _EV_CHANGE_MINISTER_DISSENT_,
+	1
+# _EV_MIN_DISSENT_REVOLT_, Min Dissent for revolt risk
+	40
+# _EV_DISSENT_REVOLT_MULTIPLIER_, # chance for each dissent above _EV_MIN_DISSENT_REVOLT_,
+	0.5
+# _EV_TP_MAX_ATTACH, Max number of attachments to transports
+	0
+# _EV_SS_MAX_ATTACH, Max number of attachments to subs
+	1
+# _EV_SSN_MAX_ATTACH, Max number of attachments to nuclear subs
+	1
+# _EV_DD_MAX_ATTACH, Max number of attachments to destroyers
+	2
+# _EV_CL_MAX_ATTACH, Max number of attachments to light cruisers
+	3
+# _EV_CA_MAX_ATTACH, Max number of attachments to heavy cruisers
+	3
+# _EV_BC_MAX_ATTACH, Max number of attachments to battlecruisers
+	4
+# _EV_BB_MAX_ATTACH, Max number of attachments to battleships
+	5
+# _EV_CVL_MAX_ATTACH, Max number of attachments to escort carriers
+	1
+# _EV_CV_MAX_ATTACH, Max number of attachments to fleet carriers
+	1
+# _EV_CAN_CHANGE_IDEAS_, 1 - Player can change ideas freely, 0 - Ideas can only be changed via events
+	0
+}
+
+combat = {
+# Land XP gain Factor
+	1.0
+# Naval XP gain Factor
+	5.0
+# Air XP gain Factor
+	2.0
+# Division XP gain Factor
+	1.0
+# Leader XP gain Factor
+	0.6
+# Attrition Severity Modifier
+	0.15
+# _CV_NO_SUPPLY_ATTRITION_SEVERITY_, Multiplier for out of supply!
+	5
+# _CV_NO_SUPPLY_MIN_ATTRITION_, Minimum attrition ->after<- multiplier
+	5
+# Combat Modifier: Base Proximity
+	0.15
+# Combat Modifier: Shore Bombardment Multiplier (Applies to the SB value of ships for org damage)
+	0.005
+# Shore Bombardment cap
+	0.35
+# Combat Modifier: Total Invasion Mod for each division above three.
+	-0.1
+# Combat Modifier: Multiple Combat Mod
+	-0.3
+# Combat Modifier: Offensive Combined Arms Bonus
+	0.15
+# Combat Modifier: Defensive Combined Arms Bonus
+	0.15
+# Combat Modifier: Surprise Mod
+	-0.3
+# Combat Modifier: Land Exceeding Max Command Limit Mod
+	-0.85
+# Combat Modifier: Air Exceeding Max Command Limit Mod
+	-0.75
+# Combat Modifier: Naval Exceeding Max Command Limit Mod
+	-0.66
+# Combat Modifier: Envelopment Mod (for each attack direction above one)
+	0.1
+# Combat Modifier: Encircled Mod (for completely surrounded units)
+	-0.2
+# Combat Modifier: Land Fort Multiplier ( value * fort level)
+	-0.1
+# Combat Modifier: Coastal Fort Multiplier ( value * fort level)
+	-0.1
+# Combat Modifier: Dissent Multiplier
+	-0.02
+# Combat Modifier: Supply Problems Mod
+	-0.5
+# Combat Modifier: Radar Station ( value * radar level)
+	0.02
+# Combat Modifier: Radar Station AA multiplier ( value * radar level) 
+	0.15  #15% extra for each Radar level
+# Combat Modifier: Interceptor vs Bomber Mod
+	0.15
+# Combat Modifier: Total Air Overstacking Mod for each division above the enemy.
+	-0.50
+# Combat Modifier: Total Naval Overstacking Mod for each non-transport division above two.
+	-0.02
+# Land Leader Command Limit (nr of divisions), Rank 0 (highest)
+	12
+# Land Leader Command Limit (nr of divisions), Rank 1
+	9
+# Land Leader Command Limit (nr of divisions), Rank 2
+	6
+# Land Leader Command Limit (nr of divisions), Rank 3 (lowest)
+	3
+# Air Leader Command Limit (nr of divisions), Rank 0 (highest)
+	12  
+# Air Leader Command Limit (nr of divisions), Rank 1
+	8  
+# Air Leader Command Limit (nr of divisions), Rank 2
+	6 
+# Air Leader Command Limit (nr of divisions), Rank 3 (lowest)
+	4 
+# Naval Leader Command Limit (nr of ships), Rank 0 (highest)
+	32
+# Naval Leader Command Limit (nr of ships), Rank 1
+	24
+# Naval Leader Command Limit (nr of ships), Rank 2
+	16
+# Naval Leader Command Limit (nr of ships), Rank 3 (lowest)
+	12
+# HQ Command Limit Factor (value * HQ Leader Command Limit)
+	2
+# Convoy protection factor  (higher, the more fearful convoy escorts are for raiders.)
+	1.0
+# Delay in hours after a combat ends before new orders can be given.	
+	48
+# Land Delay in hours before orders can be executed. (planning time)
+	6
+# Naval Delay in hours before orders can be executed. (planning time)
+	4
+# Air Delay in hours before orders can be executed. (planning time)
+	2
+# Maximum sizes of air-stacks
+	8
+# Effect of experience on combat
+	0.5
+# Damage factor versus Naval Bases from bombing
+	0.5
+# Damage factor versus Air Bases from bombing
+	0.5
+# Damage factor versus AA from bombing
+	0.3
+# Damage factor versus rocket from bombing
+	0.8
+# Damage factor versus nuke from bombing
+	0.8
+# Damage factor versus Radar from bombing
+	0.8
+# Damage factor versus Infra from bombing
+	0.05
+# Damage factor versus IC from bombing
+	0.5
+# Damage factor versus resources from bombing
+	1.0
+# Damage factor versus Synthetic Oil plant from bombing
+	1.0
+# How effective is ground-def efficiency when applied to defence chance rolls.
+	1.1
+# Base chance to avoid hit if defences left.
+	0.8
+# Base chance to avoid hit if no defences left.
+	0.6
+# CHANCE TO GET TERRAIN TRAIT 
+	1500
+# CHANCE TO GET EVENT TRAIT 
+	1500
+# BONUS ON TERRAIN TRAIT
+	0.1
+# BONUS_ON_EVENT_TRAIT_
+	0.05
+# Chance of leaders dying while in combat per day
+	0.0005
+# _CV_AIR_ORG_DMG_MODIFYER1_ Increasing this value will increase the str dmg air units takes (Str dmg * (ORG / below value))
+	25.0
+# Land - Air Combat ORG damage (Increasing this value will increase the org dmg air units takes from land units)
+	0.15
+# Land - Air Combat STR damage (Increasing this value will increase the str dmg air units takes from land units)
+	0.05
+# Ratio of Soft/Hard damage dealt by artillery bombardment
+	3.0
+# Damage factor versus Infra from artillery bombardment
+	0.025
+# Damage factor versus IC from artillery bombardment
+	0.05
+# Damage factor versus Resources from artillery bombardment
+	0.05
+# Penalty for artillery bombarder being attacked by enemy land units
+	-0.5 # 50% penalty
+# Artillery STR damage factor (also affected by Land-Land combat)
+	0.10
+# Artillery ORG damage factor (also affected by Land-Land combat)
+	0.20
+# Land - Land Combat STR damage (All land based units attacks against other land based units)
+	0.075
+# Land - Land Combat ORG damage (All land based units attacks against other land based units)
+	0.30 #was originally 0.6... should lengthen battles
+# Air - Land Combat STR damage (All Air units attacks against land units)
+	1.00
+# Air - Land Combat ORG damage (All Air units attacks against land units)
+	0.50
+# Air - Naval Combat STR damage (All Air units attacks against Naval units)
+	0.4
+# Air - Naval Combat ORG damage (All Air units attacks against Naval units)
+	0.8
+# Air - Air Combat STR damage (All Air units attacks against Air units)
+	1.0
+# Air - Air Combat ORG damage (All Air units attacks against Air units)
+	1.0
+# Naval - Naval Combat STR damage (All Naval units attacks against Naval units)
+	0.75
+# Naval - Naval Combat ORG damage (All Naval units attacks against Naval units)
+	1.0
+# Naval - Air Combat STR damage (All Naval units attacks against Air based units)
+	0.1
+# Naval - Air Combat ORG damage (All Naval units attacks against Air based units)
+	0.25
+# _CV_MILITARY_EXPENSE_ATTRITION_MOD (value below is how lower military expense affects attrition severity)
+	1.3
+# _CV_NAVAL_MIN_COMBAT_TIME, minimum combat time before retreat possible (prevent bouncing) | DO NOT CHANGE to less then 8 (wyk)
+	10.0
+# _CV_LAND_MIN_COMBAT_TIME, minimum combat time before retreat possible (prevent bouncing)
+	8.0
+# _CV_AIR_MIN_COMBAT_TIME,minimum combat time before retreat possible (prevent bouncing)
+	2.0
+# _CV_LAND_OVERSTACKING_MOD_, severity of overstacking
+	0.8
+# _CV_LAND_ORGLOSS, organization loss when moving
+	0.2
+# _CV_AIR_ORGLOSS, organization loss when moving
+	0.2
+# _CV_NAVAL_ORGLOSS, organization loss when moving
+	0.0
+# _CV_SUPPLY_DISTANCE_SEVERITY_, the amount supply distance affects combat
+	2.0
+# _CV_SUPPLY_BASE_, the base ESE value
+	100.0
+# _CV_LAND_ORGGAIN_, Org Gain divisor
+	1.0
+# _CV_AIR_ORGGAIN_,Org Gain divisor
+	1.0
+# _CV_NAVAL_ORGGAIN_,Org Gain divisor
+	1.0
+# _CV_NUKE_MP_DISSENT_, MP dissent modifier
+	0.5
+# _CV_NUKE_IC_DISSENT_, IC dissent modifer
+	0.25
+# _CV_NUKE_DISSENT_, total modifier
+	1.0
+# _CV_LAND_FRIENDLY_ORGGAIN_, Extra orggain in friendly provinces
+	1.25
+# _CV_AIR_LAND_STOCK_MOD_, how much interdiction affects stock
+	0.8
+# _CV_SCORCH_DAMAGE_, how much each STR affects scorch damage
+	0.0005
+# _CV_STAND_GROUND_DISSENT_, each MP lost while using this command will result in below dissent
+	0.01
+# _CV_SCORCH_GROUND_BELLIGERENCE_, each hour the land is scorched - add below beliggerence
+	0.001
+# _CV_DEFAULT_LAND_STACK_, how much should multideployment aim for?
+	3
+# _CV_DEFAULT_NAVAL_STACK_, how much should multideployment aim for?
+	18
+# _CV_DEFAULT_AIR_STACK_, how much should multideployment aim for?
+	4
+# _CV_DEFAULT_ROCKET_STACK_, how much should multideployment aim for?
+	1
+# _CV_ARTILLERYBOMBARDMENT_FORT_DAMAGE_, damage done to forts
+	0.0001
+# _CV_ARTILLERYBOMBARDMENT_ORG_COST_, each hour any active artillery bombarding unit will loose below ORG
+	3.0
+# _CV_LAND_COMBAT_FORT_DAMAGE_, timed STR of all units attacking
+	0.000025
+# _CV_AIR_REBASE_FACTOR_Percentge of ORG lost when rebasing full range
+	0.3
+# _CV_AIR_MAX_DISORGANIZED_, how many days is max disorganized
+	-20
+# _CV_AA_INFLICTED_STR_DAMAGE_, modefier for damage each hit makes
+	0.5
+# _CV_AA_INFLICTED_ORG_DAMAGE_, modefier for damage each hit makes
+	2
+# _CV_AA_INFLICTED_FLYING_, modefier for damage each hit makes - when flying past
+	0.25
+# _CV_AA_INFLICTED_BOMBING_, modifier for damage each hit makes - when bombing current port / province
+	1	
+# _CV_HARD_ATTACK_STR_DAMAGE_, These are the extra effects of a used hard attack - below value value is added as extra damage to attack 
+	4.5
+# _CV_HARD_ATTACK_ORG_DAMAGE_, These are the extra effects of a used hard attack - below value value is added as extra damage to attack 
+	2.5
+# _CV_ARM_SOFT_BREAKTHROUGH_MIN_, This is the actual gain from beeing low softness - you can blow through the lines of badly defeded fronts (low hardness attack and high softness)
+	0.25
+# _CV_ARM_SOFT_BREAKTHROUGH_MAX_, This is the actual gain from beeing low softness - you can blow through the lines of badly defeded fronts (low hardness attack and high softness)
+	0.75
+# _CV_NAVAL_CRITICAL_HIT_CHANCE_, in % for each shot that hit!
+	10
+# _CV_NAVAL_CRITICAL_HIT_EFFECT_, STR damage * below
+	10
+# _CV_LAND_FORT_DAMAGE_, how much land forts are  damaged by land combat
+	1.0
+# _CV_PORT_ATTACK_SUPRISE_CHANCE_DAY_, Base chance to suprise during day
+	33
+# _CV_PORT_ATTACK_SUPRISE_CHANCE_NIGHT_, Base chance to suprise during night
+	75
+# _CV_PORT_ATTACK_SUPRISE_MOD_, How much suprise means for defendant.
+	-0.33
+# _CV_RADAR_ANTI_SUPRISE_CHANCE_, How much each radar reduces suprise chance.
+	1.0
+# _CV_RADAR_ANTI_SUPRISE_MOD_, How much suprise panality is reduced by radar.
+	0.25
+# _CE_COUNTERATTACK_ str modifier vs attacker
+	1.5
+# _CE_COUNTERATTACK_ org modifier vs attacker
+	1.0
+# _CE_COUNTERATTACK_ str modifier vs defender
+	1.25
+# _CE_COUNTERATTACK_ org modifier vs defender
+	1.0
+# _CE_ASSAULT_ str modifier vs attacker
+	1.25
+# _CE_ASSAULT_ org modifier vs attacker
+	1.0
+# _CE_ASSAULT_ str modifier vs defender
+	2.0
+# _CE_ASSAULT_ org modifier vs defender
+	1.0
+# _CE_ENCIRCLEMENT_ str modifier vs attacker
+	0.5
+# _CE_ENCIRCLEMENT_ org modifier vs attacker
+	1.0
+# _CE_ENCIRCLEMENT_ str modifier vs defender
+	1.5
+# _CE_ENCIRCLEMENT_ org modifier vs defender
+	1.0
+# _CE_AMBUSH_ str modifier vs attacker
+	1.0
+# _CE_AMBUSH_ org modifier vs attacker
+	1.25
+# _CE_AMBUSH_ str modifier vs defender
+	1.0
+# _CE_AMBUSH_ org modifier vs defender
+	2.0
+# _CE_DELAY_ str modifier vs attacker
+	1.0
+# _CE_DELAY_ org modifier vs attacker
+	1.5
+# _CE_DELAY_ str modifier vs defender
+	1.0
+# _CE_DELAY_ org modifier vs defender
+	1.25
+# _CE_TACTICAL_WITHDRAWAL_ str modifier vs attacker
+	0.5
+# _CE_TACTICAL_WITHDRAWAL_ org modifier vs attacker
+	0.50
+# _CE_TACTICAL_WITHDRAWAL_ str modifier vs defender
+	0.25
+# _CE_TACTICAL_WITHDRAWAL_ org modifier vs defender
+	0.25
+# _CE_BREAKTHROUGH_ str modifier vs attacker
+	1.0
+# _CE_BREAKTHROUGH_ org modifier vs attacker
+	0.5
+# _CE_BREAKTHROUGH_ str modifier vs defender
+	1.0
+# _CE_BREAKTHROUGH_ org modifier vs defender
+	1.5
+}
+
+research = {
+# Blueprint Bonus
+	2.0
+# Pre-Historical Date Mod (value * days prior to historical date. Lower limit for the total is -0.9. )
+	-0.00100
+# Money cost for each skill-level
+	3.0
+# Mean number of "invention" events occuring per year
+	6
+# After-Historical Date Mod (value * days after to historical date. limit for the total is 1.50. )
+	0.00050
+# Tech speed modifier - value below affects tech speed
+	2.5
+# _RV_PRE_HISTORICAL_PENALTY_LIMIT_, Can not go below
+	0.2
+# _RV_AFTER_HISTORICAL_PENALTY_LIMIT_, Can not go above
+	1.5
+# _RV_MAX_TECH_SLOTS_, Maximum number of tech slots
+	8
+# _RV_SLOT_IC_INCREMENT_, IC increment when a slot is gained
+	25
+# Maximum random modifier (eg. a value of 0.2 will result in a daily random modifier between 0.8 - 1.2)
+	0.5
+}

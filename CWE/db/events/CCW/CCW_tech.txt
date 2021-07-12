@@ -1,0 +1,2884 @@
+#######################################################################################
+# 48006 Germany Division   by 天问
+#######################################################################################
+
+event = {
+	id = 48006
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 74500 
+	    not = { local_flag = germanycrops }
+	    }
+
+	name = "德国陆军的编制 "
+	desc = "德军最重要的编制是师，分为步兵师、摩托化步兵师、装甲师 、轻型师和山地师。后来又发展出伞兵师等特种师，而由预备 役和民兵人员组成的动员师或国民师也在战争后期开始出现。 陆军系统中又分为国防军与武装党卫军两大分支。 "
+	style = 0
+#	picture = "15th_army"
+	
+	date = { day = 11 month = january year = 1934 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "德军36年编制"
+		command = { type = build_cost which = militia value = 2.5 }
+		command = { type = max_organization which = militia value = 5 }
+		command = { type = morale which = militia value = 5 }
+		command = { type = defensiveness which = militia value = 5 }
+		command = { type = soft_attack which = militia value = 3 }
+		command = { type = fuel_consumption which = militia value = 0.1 }
+
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+		command = { type = local_setflag which = germanycrops }						
+	}
+}
+event = {
+	id = 48003
+	country = GER
+	random = no
+
+	trigger = { 
+	    technology = 1200 
+	    }
+
+	name = "国防军王牌机械化步兵师编制 "
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7  value = 3 }
+		command = { type = scrap_model which = b_u7  value = 0	} # 通用
+		command = { type = scrap_model which = b_u7  value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u7  value = 2	} # 日本
+		command = { type = scrap_model which = b_u7  value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u7  value = 5	} # 民國
+		command = { type = scrap_model which = b_u7  value = 6	} # 中共
+	}
+}
+
+event = {
+	id = 48004
+	country = GER
+	random = no
+
+	trigger = { technology = 1270 }
+
+	name = "国防军王牌装甲师 "
+	desc = "德国是第一个尝试将装甲部队的集中运用付诸实践的国家，在 古德里安出任装甲兵总监后，这一进程大大加快了。到194 1-42年间，装甲师编制基本固定，满员15600人，1 50-200装甲战斗车辆，含1个2-3营的坦克团、1个 2团制的装甲掷弹兵旅、1个炮兵团和标准的支援兵力包括反 坦克营和侦察营。"
+	style = 0
+#	picture = "germanyarmor"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "新的陆军单位 "
+		command = { type = activate_unit_type which = super_heavy_armor }
+	}
+}
+
+#######################################################################################
+# 48010-35 Allied Divisional Formation (by 天问)
+#######################################################################################
+event = {
+	id = 48010
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 74600 
+	    not = { local_flag = usacrops }
+	    }	
+
+	name = "同盟国陆军师级编制 "
+	desc = "同盟国阵营的陆军编制以英美为代表，其编制成为大多数盟国 的样板，而其中又以美国更为典型，至40年美国陆军师编制 稳定下来，采取3-3制，15500人员的“允许摩托化输 送的开阔地作战的通用编制”。师辖3个步兵团和1个炮团（ 4群x12门炮）以及通常的工程、信号和后勤部[分]队。 "
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 11 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "盟军陆军编制 "
+		command = { type = manpowerpool value = 10 }   
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 1 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+				
+		command = { type = local_setflag which = usacrops }																																																				
+	}
+}
+
+event = {
+	id = 48013
+	random = no
+	persistent = yes
+
+	trigger = { 	technology = 1200 
+			local_flag = usacrops 
+			NOT = { local_flag = usaheavy }
+	}
+
+	name = "盟军精銳重裝步兵师编制 "
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 7 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7 value = 1 }
+		command = { type = scrap_model which = b_u7 value = 0	} # 通用
+		command = { type = scrap_model which = b_u7 value = 2	} # 日本
+		command = { type = scrap_model which = b_u7 value = 3	} # 德國
+		command = { type = scrap_model which = b_u7 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u7 value = 5	} # 民國
+		command = { type = scrap_model which = b_u7 value = 6	} # 中共
+		command = { type = local_setflag which = usaheavy }
+	}
+}
+
+event = {
+	id = 48014
+	random = no
+	persistent = yes
+
+	trigger = { 	technology = 1200 
+			local_flag = usacrops 
+			NOT = { local_flag = usaarmor }
+	}
+
+	name = "美军王牌装甲师 "
+	desc = "尽管拥有十分优良的坦克与坦克工业，但是在坦克运用的理念 上，同盟国无疑大大落后于德国，直到1939年，英国才有 一个正在组建的第7装甲师。尽管起步晚，甚至走了弯路，但 是美军的装甲师由于强大的工业力量很快便后来居上，美式装 甲师的一个特点是自1942年3月起，组成了2个“战斗指 挥部”，各辖1个坦克营、1个装甲步兵营和1个自行炮营， 以及一个总预备队。这个合成战斗队完全机械化，非常灵活有 效，从1943年9月起，定为1师3个战斗指挥部。"
+	style = 0
+#	picture = "USAarmor"
+
+	date = { day = 2 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "新的陆军单位 "
+		command = { type = activate_unit_type which = super_heavy_armor }
+		command = { type = local_setflag which = usaarmor }
+	}
+}
+
+event = {
+	id = 48015
+	country = usa
+	random = no
+
+	name = "EVT_48015_NAME"
+	desc = "EVT_48015_DESC"
+	style = 0
+#	picture = "marine"
+
+	date = { day = 4 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "海岛尖兵"
+		command = { type = new_model which = marine value = 13 }
+		command = { type = scrap_model which = marine value = 0 }
+		command = { type = scrap_model which = marine value = 1 }
+		command = { type = scrap_model which = marine value = 2 }
+		command = { type = scrap_model which = marine value = 3 }
+		command = { type = scrap_model which = marine value = 4 }
+		command = { type = scrap_model which = marine value = 5 }
+		command = { type = scrap_model which = marine value = 6 }
+		command = { type = scrap_model which = marine value = 7 }
+		command = { type = scrap_model which = marine value = 8 }
+		command = { type = scrap_model which = marine value = 9 }
+		command = { type = scrap_model which = marine value = 10 }
+		command = { type = scrap_model which = marine value = 11 }
+		command = { type = scrap_model which = marine value = 12 }
+	}
+}
+
+event = {
+	id = 48016
+	country = usa
+	random = no
+
+	name = "EVT_48016_NAME"
+	desc = "EVT_48016_DESC"
+	style = 0
+#	picture = "paratrooper"
+
+	date = { day = 6 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "雄鹰起航"
+		command = { type = new_model which = paratrooper value = 12 }
+		command = { type = scrap_model which = paratrooper value = 0 }
+		command = { type = scrap_model which = paratrooper value = 1 }
+		command = { type = scrap_model which = paratrooper value = 2 }
+		command = { type = scrap_model which = paratrooper value = 3 }
+		command = { type = scrap_model which = paratrooper value = 4 }
+		command = { type = scrap_model which = paratrooper value = 5 }
+		command = { type = scrap_model which = paratrooper value = 6 }
+		command = { type = scrap_model which = paratrooper value = 7 }
+		command = { type = scrap_model which = paratrooper value = 8 }
+		command = { type = scrap_model which = paratrooper value = 9 }
+		command = { type = scrap_model which = paratrooper value = 10 }
+		command = { type = scrap_model which = paratrooper value = 11 }
+
+	}
+}
+
+event = {
+	id = 48017
+	country = usa
+	random = no
+
+	name = "國民警衛隊"
+	desc = "EVT_48017_DESC"
+	style = 0
+#	picture = "nationalguards"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "巨大的战争潜力"
+		command = { type = build_cost which = militia value = 3 }
+		command = { type = max_organization which = militia value = 10 }
+		command = { type = morale which = militia value = 5 }
+		command = { type = defensiveness which = militia value = 10 }
+		command = { type = soft_attack which = militia value = 6 }
+		command = { type = hard_attack which = militia value = 2 }
+		command = { type = fuel_consumption which = militia value = 0.15 }
+		command = { type = supply_consumption which = militia value = 0.35 }
+	}
+}
+
+
+
+#######################################################################################
+# 48050-54 SOV Divisional Formation (by 天问)
+#######################################################################################
+
+event = {
+	id = 48050
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 74700 
+	    not = { local_flag = sovcrops }
+	    }	
+
+
+	name = "苏军陆军师级编制 "
+	desc = "30年代的苏军步兵师编制19000人，理论上是装备完整 的“合成”力量。但是缺乏足够的受训人员和技术装备，步兵 师也不过是有炮兵支援的步兵编制。步兵师炮兵编制是大手笔 ，含12门152mm、28门122mm榴弹炮、42门76mm、 54门45mm炮以及50mm-120mm的100 多门迫击炮。步兵团有官兵2900人，使用7.62mm莫 辛纳干步枪，支援武器包括81挺轻机枪、58挺重机枪 （7.62mm马克西姆）、6门步兵炮和6门反坦克炮。"
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 11 month = january year = 1936 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 4 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+		
+		command = { type = local_setflag which = sovcrops }										
+	}
+}
+
+event = {
+	id = 48053
+	persistent = yes
+	random = no
+
+	trigger = { 
+			technology = 1200
+			local_flag = sovcrops 
+			NOT = { local_flag = sovheavy }	
+	}
+
+	name = "苏联红军王牌机械化步兵师编制 "
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7 value = 4 }
+		command = { type = scrap_model which = b_u7 value = 0	} # 通用
+		command = { type = scrap_model which = b_u7 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u7 value = 2	} # 日本
+		command = { type = scrap_model which = b_u7 value = 3	} # 德國
+		command = { type = scrap_model which = b_u7 value = 5	} # 民國
+		command = { type = scrap_model which = b_u7 value = 6	} # 中共
+		command = { type = local_setflag which = sovheavy }
+	}
+}
+
+event = {
+	id = 48055
+	country = u04
+	random = no
+
+	name = "苏军陆军师级编制 "
+	desc = "30年代的苏军步兵师编制19000人，理论上是装备完整 的“合成”力量。但是缺乏足够的受训人员和技术装备，步兵 师也不过是有炮兵支援的步兵编制。步兵师炮兵编制是大手笔 ，含12门152mm、28门122mm榴弹炮、42门76mm、 54门45mm炮以及50mm-120mm的100 多门迫击炮。步兵团有官兵2900人，使用7.62mm莫 辛纳干步枪，支援武器包括81挺轻机枪、58挺重机枪 （7.62mm马克西姆）、6门步兵炮和6门反坦克炮。"
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+		command = { type = new_model which = b_u4 value = 4 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+		command = { type = activate_unit_type which = militia }
+		command = { type = activate_unit_type which = cavalry }
+		command = { type = activate_unit_type which = infantry }
+		command = { type = activate_unit_type which = motorized }
+	}
+}
+
+event = {
+	id = 48058
+	country = u04
+	random = no
+
+	trigger = { technology = 1200 }
+
+	name = "苏联红军王牌机械化步兵师编制 "
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始升级我们的部队 "
+#		command = { type = activate_unit_type which = mechanized }
+	}
+}
+
+#######################################################################################
+# 48060-61 JAP Divisional Formation (by 天问)
+#######################################################################################
+event = {
+	id = 48060
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 74800 
+	    not = { local_flag = japcrops }
+	    not = { country = U74 }
+	    not = { country = U87 }	    
+	    }	
+	    
+	name = "EVT_48060_NAME"
+	desc = "EVT_48060_DESC"
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "日本陆军的编制 "
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 2 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+										
+		command = { type = local_setflag which = japcrops }								   
+	}
+}
+
+#######################################################################################
+# 48070-035 民国陆军的编制 (by 天问)
+#######################################################################################
+event = {
+	id = 48070
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 74900 
+	    not = { local_flag = chicrops }
+	    }	
+
+	name = "民国陆军的编制 "
+	desc = "1934年2月，蒋介石采纳德国军事总顾问佛采尔建议，决 定以第87、88及36师为试点，对中央军展开德式整训， 以期训练改组为“教导总队”，推进“全面整顿中国陆军”。 1934年12月，蒋介石任命陈诚为军事委员会陆军整理处 处长，负责整理全国军队。时国民党部队包括中央军、东北军 、西北军、晋军、川军、滇军等共有180师、94旅和40 个独立团。有甲种整编、乙等标准、丙等简编等诸种编制。 "
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 11 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "民国陆军编制 "
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 5 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }		
+		command = { type = local_setflag which = chicrops }						
+	}
+}
+
+event = {
+	id = 48092
+	random = no
+	country = chi
+
+	trigger = {
+		ai = no
+		technology = 1200
+		ic = 150
+	}
+
+	name = "建立王牌机械化步兵师"
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "民国第一军！"
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7 value = 5 }
+		command = { type = scrap_model which = b_u7 value = 0	} # 通用
+		command = { type = scrap_model which = b_u7 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u7 value = 2	} # 日本
+		command = { type = scrap_model which = b_u7 value = 3	} # 德國
+		command = { type = scrap_model which = b_u7 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u7 value = 6	} # 中共
+	}
+}
+
+event = {
+	id = 48093
+	random = no
+	country = chi
+
+	trigger = {
+		technology = 1280
+		ic = 180
+	}
+
+	name = "建立王牌装甲师 "
+	desc = "自从德军闪击法国以来，快速有力的装甲部队就成了强国的至 强武力，而逐步实现民族复兴的中国也急需组建这样精锐的武 力而像世界发出自己的声音！"
+	style = 0
+#	picture = "USAarmor"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "虎贲！"
+		command = { type = activate_unit_type which = super_heavy_armor }
+	}
+}
+
+event = {
+	id = 48078
+	random = no
+	persistent = yes
+
+	name = "伪政府陆军的编制 "
+	desc = "华北临时政府和南京政府的军队多来自投降的原国民党军警， 甚至招降的土匪，素质良莠不齐，尽管日军补充了一定的武器 装备但是十分缺乏战斗意志。"
+	style = 0
+#	picture = "15th_army"
+
+	action_a = {
+		name = "伪政府陆军编制 "
+		command = { type = attrition_mod value = -10 }
+		command = { type = trickleback_mod value = -10 }
+		command = { type = morale which = land value = -40 }	
+		command = { type = max_organization which = land value = -30 }
+		command = { type = new_model which = b_u4 value = 5 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+		command = { type = activate_unit_type which = militia }
+		command = { type = activate_unit_type which = cavalry }
+		command = { type = activate_unit_type which = infantry }
+		command = { type = activate_unit_type which = motorized }
+	}
+}
+##################################################
+# 48090-91 中共军队编制系列 (by 天问)
+##################################################
+
+event = {
+	id = 48090
+	random = no
+	persistent = yes
+	
+	trigger = { 
+	    technology = 78000 
+	    not = { local_flag = chccrops }
+	    }	
+
+	name = "中共陆军的编制 "
+	desc = "自27年建军至今，经过长期的游击战争和长征，中共武装逐 渐形成具备一定运动作战能力的主力部队与袭扰作战为主的地 方游击武装。"
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 11 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "中共陆军编制 "
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 6 }
+		command = { type = scrap_model which = b_u4 value = 0	} # 通用
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }			
+		command = { type = local_setflag which = chccrops }											
+	}
+}
+# 48039为中华人民共和国序列，待确认
+
+event = {
+	id = 48094
+	random = no
+	country = chc
+
+	trigger = {
+		ai = no
+		technology = 1200
+		ic = 150
+	}
+
+	name = "建立王牌机械化步兵师"
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "祖国第一军！"
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7 value = 6 }
+		command = { type = scrap_model which = b_u7 value = 0	} # 通用
+		command = { type = scrap_model which = b_u7 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u7 value = 2	} # 日本
+		command = { type = scrap_model which = b_u7 value = 3	} # 德國
+		command = { type = scrap_model which = b_u7 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u7 value = 5	} # 民國
+	}
+}
+
+event = {
+	id = 48095
+	random = no
+	country = chc
+
+	trigger = {
+		technology = 1280
+		ic = 180
+	}
+
+	name = "建立王牌装甲师 "
+	desc = "自从德军闪击法国以来，快速有力的装甲部队就成了强国的至 强武力，而逐步实现民族复兴的中国也急需组建这样精锐的武 力而像世界发出自己的声音！"
+	style = 0
+#	picture = "USAarmor"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "铁甲雄风振国威！"
+		command = { type = activate_unit_type which = super_heavy_armor }
+	}
+}
+
+##################################################
+# 48100 通用编制系列 (by 天问)
+##################################################
+event = {
+	id = 48100
+	random = no
+	persistent = yes
+
+	trigger = {
+	   or = { 
+	    technology = 78100 
+	    not = {
+	      technology = 74500 
+	      technology = 74600 	
+	      technology = 74700 	
+	      technology = 74800 	
+	      technology = 74900 	  
+	      technology = 78000 	
+	      }         
+	     }                     	    
+	    NOT = {
+			local_flag = customarmy
+		}
+	}
+
+	name = "通用陆军的编制 "
+	desc = "通用陆军编制的规模通常较小，适合于不需要维持较强军力 的中小国家。"
+	style = 0
+#	picture = "15th_army"
+
+	date = { day = 11 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "通用陆军编制 "
+		command = { type = activate_unit_type which = b_u4 }
+		command = { type = new_model which = b_u4 value = 0 }
+		command = { type = scrap_model which = b_u4 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u4 value = 2	} # 日本
+		command = { type = scrap_model which = b_u4 value = 3	} # 德國
+		command = { type = scrap_model which = b_u4 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u4 value = 5	} # 民國
+		command = { type = scrap_model which = b_u4 value = 6	} # 中共
+
+		command = { type = scrap_model which = marine value = 14 }
+		command = { type = scrap_model which = marine value = 15 }
+		command = { type = scrap_model which = marine value = 16 }
+		command = { type = scrap_model which = marine value = 17 }
+		command = { type = scrap_model which = marine value = 18 }
+		command = { type = scrap_model which = marine value = 19 }
+		command = { type = scrap_model which = marine value = 20 }
+		command = { type = scrap_model which = marine value = 21 }
+		command = { type = scrap_model which = marine value = 22 }
+		command = { type = scrap_model which = marine value = 23 }
+		command = { type = scrap_model which = marine value = 24 }
+		command = { type = scrap_model which = marine value = 25 }
+		command = { type = scrap_model which = marine value = 13 }
+				
+		command = { type = local_setflag which = customarmy }
+	}
+}
+
+event = {
+	id = 48101
+	random = no
+
+	trigger = {
+		ai = no
+		technology = 1200
+		ic = 150
+	}
+
+	name = "建立精銳机械化步兵师"
+	desc = "机械化步兵是在摩托化步兵的机动能力上加上了轻型装甲和支 援自行炮火的突破能力，他们比装甲师有更好的适应性，比普 通步兵有更好的机动性，比摩托化步兵有更好的战斗力，是装 甲部队不可或缺的搭档。当然，昂贵的造价使得只有原来的一 些骑兵师开始转变为这一角色，他们也被称为“装甲骑兵”。 "
+	style = 0
+#	picture = "mecinfantry"
+
+	date = { day = 2 month = january year = 1934 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "祖国第一军！"
+#		command = { type = activate_unit_type which = mechanized }
+		command = { type = activate_unit_type which = b_u7 }
+		command = { type = new_model which = b_u7 value = 0	} # 通用
+		command = { type = scrap_model which = b_u7 value = 1	} # 盟軍
+		command = { type = scrap_model which = b_u7 value = 2	} # 日本
+		command = { type = scrap_model which = b_u7 value = 3	} # 德國
+		command = { type = scrap_model which = b_u7 value = 4	} # 蘇聯
+		command = { type = scrap_model which = b_u7 value = 5	} # 民國
+		command = { type = scrap_model which = b_u7 value = 6	} # 中共
+
+	}
+}
+
+##################################################
+# 
+##################################################
+event = {
+	id = 1730
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5050
+			technology = 5050
+			local_flag = IndustrydevelopA1
+		}
+		local_flag = Openindustry1
+	}
+
+	name = "农业社会向近代工业的转型 "
+	desc = "随着文化的提高和近代冶炼技术、交通设施、工业水平的提高 ，我们终于迈入了近代工业国家的行列。然而，每一次转型都 必然是痛苦的，我们必须投资大量的资本在工业、交通、乃至 农业上，这是转型期不得不面对的阵痛。 "
+	style = 0
+#	picture = "Industry1"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "产业升级的阵痛 "
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = IndustrydevelopA1 }
+	}
+}
+
+event = {
+	id = 1731
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5050
+		local_flag = IndustrydevelopA1
+    }
+
+	name = "近代工业的形成 "
+	desc = "在漫长的奋斗与建设后，我们的国家已经初具雏形，一个新的 近代工业国家屹立了起来。 "
+	style = 0
+#	picture = "Industry1"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "近代工业国家 "
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA1 }
+	}
+}
+
+event = {
+	id = 1740
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5050
+		NOT = { technology = 5050 }
+		local_flag = IndustrydevelopA1
+	}
+
+	name = "放弃转型 "
+	desc = "我们放弃了工业的升级，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA1 }
+	}
+}
+
+event = {
+	id = 1732
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5110
+			technology = 5110
+			local_flag = IndustrydevelopA2
+		}
+		local_flag = Openindustry2
+	}
+
+	name = "近代工业向基本工业的转型 "
+	desc = "随着文化的提高和基本冶炼技术、交通设施、工业水平的提高 ，我们终于迈入了基本工业国家的行列，我们可以当之无愧的 称呼自己为工业国。然而，每一次转型都必然是痛苦的，我们 必须投资大量的资本在工业、交通、乃至农业上，这是转型期 不得不面对的阵痛。 "
+	style = 0
+#	picture = "Industry1"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "产业升级的阵痛 "
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = IndustrydevelopA2 }
+	}
+}
+
+event = {
+	id = 1733
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5110
+		local_flag = IndustrydevelopA2
+	}
+
+	name = " 基本工业国家的形成 "
+	desc = " 基本工业国家意味着我们已经摆脱了为人宰割的地位，我们的 国家已经拥有了自己生产的钢铁、汽车乃至轮船，我们开始建 设高速公路，开始建设铁路，甚至开始计划航空工业的建立。 "
+	style = 0
+#	picture = "Industry1"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "基本工业国家 "
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA2 }
+	}
+}
+
+event = {
+	id = 1734
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5120
+			technology = 5120
+			local_flag = IndustrydevelopA3
+		}
+		local_flag = Openindustry3
+	}
+
+	name = "基本工业向改良工业的转型 "
+	desc = "随着文化的提高和基本冶炼技术、交通设施、工业水平的提高 ，我们终于可以提升到改良工业国家，我们已经迈入了世界上 最发达的几十个国家的行列。然而，每一次转型都必然是痛苦 的，我们必须投资大量的资本在工业、交通、乃至农业上，这 是转型期不得不面对的阵痛。 "
+	style = 0
+#	picture = "Industry2"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "产业升级的阵痛 "
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = IndustrydevelopA3 }
+	}
+}
+
+event = {
+	id = 1735
+	random = no
+	persistent = yes	
+
+	trigger = {
+		technology = 5120
+		local_flag = IndustrydevelopA3
+    }
+
+	name = "改良工业国家的形成 "
+	desc = "改良工业国家拥有更多的科技和工业实力，我们能够研发20 世纪诞生的普遍科技，如果拥有合适的人口与资源，我们也将 在不久的将来步入先进工业国的行列。 "
+	style = 0
+#	picture = "Industry2"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "改良工业国家 "
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA3 }
+	}
+}
+
+event = {
+	id = 1736
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5140
+			technology = 5140
+			local_flag = IndustrydevelopB1
+		}
+		local_flag = Openindustry4
+	}
+
+	name = "改良工业向先进工业的转型 "
+	desc = "随着文化的提高和改良冶炼技术、交通设施、工业水平的提高 ，我们已经成了先进工业国家，我们是这个世界上强大的无人 可忽视的存在。然而，每一次转型都必然是痛苦的，我们必须 投资大量的资本在工业、交通、乃至农业上，这是转型期不得 不面对的阵痛。 "
+	style = 0
+#	picture = "Industry3"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "产业升级的阵痛 "
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = local_setflag which = IndustrydevelopB1 }
+	}
+}
+
+event = {
+	id = 1737
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5140
+		local_flag = IndustrydevelopB1
+    }
+
+	name = "先进工业国家的形成 "
+	desc = "先进工业国家可以向最尖端的科技发起挑战，我们拥有强大的 工厂，优秀的科学家和发达的交通网，先进工业国是地区的主 宰力量，并在一定程度上影响着全球。 "
+	style = 0
+#	picture = "Industry3"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "先进工业国家 "
+		command = { type = industrial_modifier which = total value = 25 }
+		command = { type = local_clrflag which = IndustrydevelopB1 }
+	}
+}
+
+event = {
+	id = 1738
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5740
+			technology = 5740
+			local_flag = IndustrydevelopB2
+		}
+		local_flag = Openindustry5
+	}
+
+	name = "先进工业向现代工业的转型 "
+	desc = "生产力的发展已经达到了匪夷所思的地步，100年前的人类 绝对想象不到他们的后代能够在工业上达到什么样的高度，而 我们，已经成为了这个世界的代表。现代工业国家是这个世界 最强大的存在，我们左右着世界的意志。然而，每一次转型都 必然是痛苦的，我们必须投资大量的资本在工业、交通、乃至 农业上，这是转型期不得不面对的阵痛。 "
+	style = 0
+#	picture = "Industry4"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "产业升级的阵痛 "
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = IndustrydevelopB2 }
+	}
+}
+
+event = {
+	id = 1739
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5740
+		local_flag = IndustrydevelopB2
+    }
+
+	name = "现代工业国家的形成 "
+	desc = "现代工业国家是人类目前最高的工业成就，我们拥有最强大的 工业，最顶尖的科研人员和最发达的交通体系，我们拥有控制 世界发展的力量。 "
+	style = 0
+#	picture = "Industry4"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "现代工业国家 "
+		command = { type = industrial_modifier which = total value = 30 }
+		command = { type = local_clrflag which = IndustrydevelopB2 }
+	}
+}
+
+event = {
+	id = 1741
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5110
+		NOT = { technology = 5110 }
+		local_flag = IndustrydevelopA2
+	}
+
+	name = "放弃转型 "
+	desc = "我们放弃了工业的升级，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA2 }
+	}
+}
+
+event = {
+	id = 1742
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5120
+		NOT = { technology = 5120 }
+		local_flag = IndustrydevelopA3
+	}
+
+	name = "放弃转型 "
+	desc = "我们放弃了工业的升级，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 20 }
+		command = { type = local_clrflag which = IndustrydevelopA3 }
+	}
+}
+
+event = {
+	id = 1743
+	random = no
+	persistent = yes	
+
+	trigger = {
+		is_tech_active = 5140
+		NOT = { technology = 5140 }
+		local_flag = IndustrydevelopB1
+	}
+
+	name = "放弃转型 "
+	desc = "我们放弃了工业的升级，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 30 }
+		command = { type = local_clrflag which = IndustrydevelopB1 }
+	}
+}
+
+event = {
+	id = 1744
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5740
+		NOT = { technology = 5740 }
+		local_flag = IndustrydevelopB2
+	}
+
+	name = "放弃转型 "
+	desc = "我们放弃了工业的升级，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = 30 }
+		command = { type = local_clrflag which = IndustrydevelopB2 }
+	}
+}
+
+event = {
+	id = 1750
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5180
+			technology = 5180
+			local_flag = EducationdevelopA1
+		}
+	}
+
+	name = "投资普及现代启蒙教育 "
+	desc = "现代启蒙教育是指传播现代科学、政治乃至公民知识的普及教 育，最早可以追溯到近代的自然理性运动与启蒙运动，启蒙教 育是无数落后国家开始向西方看齐，开启民智的第一步。 "
+	style = 0
+#	picture = "education"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "我们需要向现代文明看齐 "
+		command = { type = resource which = money value = -200 }
+		command = { type = local_setflag which = EducationdevelopA1 }
+	}
+}
+
+event = {
+	id = 1751
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5180
+		NOT = { local_flag = EducationdevelopB1 }
+    }
+
+	name = "启蒙教育的完成 "
+	desc = "在几代人的努力下，我们终于完成了国民的启蒙教育，这标志 着我们完成了转型现代社会的第一步。 "
+	style = 0
+#	picture = "education"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "利在当代，功在千秋 "
+		command = { type = vp value = 1 }
+		command = { type = free_money value = -1 }
+		command = { type = local_setflag which = EducationdevelopB1 }
+	}
+}
+
+event = {
+	id = 1752
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5660
+			technology = 5660
+			local_flag = EducationdevelopA2
+		}
+	}
+
+	name = "投资建立高等教育体系 "
+	desc = "高等教育体系是现代文明的一大标志，我们需要投入大量资金 建立实验室、图书馆、规模宏大的校园，最重要的是聘请一批 世界知名的学者迅速提高我们的科研能力。 "
+	style = 0
+#	picture = "university"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "璀璨的教育之果 "
+		command = { type = resource which = money value = -400 }
+		command = { type = local_setflag which = EducationdevelopA2 }
+	}
+}
+
+event = {
+	id = 1753
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5660
+		NOT = { local_flag = EducationdevelopB2 }
+    }
+
+	name = "高等教育体系的建立 "
+	desc = "高等教育的建立意味着我们拥有了自己的人才培养基地，他们 的健康成长将会是我们发展的有力保障。 "
+	style = 0
+#	picture = "university"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 璀璨的教育之果 "
+		command = { type = vp value = 2 }
+		command = { type = free_money value = -2 }
+		command = { type = local_setflag which = EducationdevelopB2 }
+	}
+}
+
+event = {
+	id = 1754
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5670
+			technology = 5670
+			local_flag = EducationdevelopA3
+		}
+	}
+
+	name = "义务教育的普及投入 "
+	desc = "义务教育的建立意味着我们必须兴建大量的合格校舍，培训各 个层次教师，同时建立统一的国家教育行政系统，甚至还有各 种仪器的购置，这都是一笔不小的投入。但每一个作出这个决 策的统治者都是值得尊敬的，这些投资带来的将是不可估量的 回报。 "
+	style = 0
+#	picture = "education"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "利在当代，功在千秋 "
+		command = { type = resource which = money value = -600 }
+		command = { type = local_setflag which = EducationdevelopA3 }
+	}
+}
+
+event = {
+	id = 1755
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 5670
+		NOT = { local_flag = EducationdevelopB3 }
+    }
+
+	name = "义务教育的建成 "
+	desc = "在我们的不懈努力下，一个涵盖全体国民的义务教育体系已经 形成，藏富于民是真正的强国之策。 "
+	style = 0
+#	picture = "education"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "利在当代，功在千秋 "
+		command = { type = vp value = 3 }
+		command = { type = free_money value = -3 }
+		command = { type = local_setflag which = EducationdevelopB3 }
+	}
+}
+
+event = {
+	id = 1756
+	random = no
+	persistent = yes
+
+	trigger = {
+		NOT = {
+			is_tech_active = 5680
+			technology = 5680
+			local_flag = EducationdevelopA4
+		}
+	}
+
+	name = "投资建立国家科研系统 "
+	desc = "国家支持的科研系统需要大量的资金来购置设备，必要的时候 还需要直接向国外购买基础科技，这对任何国家来说都是不小 的投入。 "
+	style = 0
+#	picture = "Research"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "我们需要自己的科学家 "
+		command = { type = resource which = money value = -600 }
+		command = { type = local_setflag which = EducationdevelopA4 }
+	}
+}
+
+event = {
+	id = 1757
+	random = no
+	persistent = yes	
+
+	trigger = {
+		technology = 5680
+		NOT = { local_flag = EducationdevelopB4 }
+    }
+
+	name = "国家科研系统的建立 "
+	desc = "科研系统的建立不仅意味着我们的科技研发更加高效，也意味 着我们可以使用不同的学术政策来影响科研的发展取向。 "
+	style = 0
+#	picture = "Research"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "完善的科研系统 "
+		command = { type = vp value = 3 }
+		command = { type = free_money value = -3 }
+		command = { type = local_setflag which = EducationdevelopB4 }
+	}
+}
+
+event = {
+	id = 1758
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5180
+		NOT = { technology = 5180 }
+		local_flag = EducationdevelopA1
+	}
+
+	name = "放弃投资 "
+	desc = "我们放弃了教育的投资，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = resource which = money value = 150 }
+		command = { type = local_clrflag which = EducationdevelopA1 }
+	}
+}
+
+event = {
+	id = 1759
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5660
+		NOT = { technology = 5660 }
+		local_flag = EducationdevelopA2
+	}
+
+	name = "放弃投资 "
+	desc = "我们放弃了教育的投资，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = resource which = money value = 300 }
+		command = { type = local_clrflag which = EducationdevelopA2 }
+	}
+}
+
+event = {
+	id = 1760
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5670
+		NOT = { technology = 5670 }
+		local_flag = EducationdevelopA3
+	}
+
+	name = "放弃投资 "
+	desc = "我们放弃了教育的投资，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = resource which = money value = 600 }
+		command = { type = local_clrflag which = EducationdevelopA3 }
+	}
+}
+
+event = {
+	id = 1761
+	random = no
+	persistent = yes
+
+	trigger = {
+		is_tech_active = 5680
+		NOT = { technology = 5680 }
+		local_flag = EducationdevelopA4
+	}
+
+	name = "放弃投资 "
+	desc = "我们放弃了教育的投资，无论如何，决策者需要承担责任。 "
+	style = 0
+#	picture = "IndustryFailure"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "无谓的代价 "
+		command = { type = dissent value = 5 }
+		command = { type = resource which = money value = 450 }
+		command = { type = local_clrflag which = EducationdevelopA4 }
+	}
+}
+###########################################
+#  人口红利事件组 by 天问  3000043——3000050
+############################################
+
+event = {
+	id = 1762
+	random = no
+  persistent = yes	
+
+	trigger = {
+       not = { local_flag = ManpowerA }
+       not = { local_flag = ManpowerB }
+       not = { local_flag = ManpowerC }
+       not = { local_flag = ManpowerD }
+       not = { local_flag = ManpowerE }
+	     technology = 7390
+    }
+
+	name = "人口系统 "
+	desc = "人口系统是啤酒馆１．５的一个独特系统，它代表着你的劳动力 资源能够带给你的特殊加成，人口的减少会让你的人口红利减少 ，当然当人口恢复时相应红利也会恢复。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 丰富人口的回报 "
+      		command = { type = local_setflag which = ManpowerA }
+	}
+}
+
+event = {
+	id = 1763
+	random = no
+        persistent = yes	
+
+	trigger = {
+       not = { local_flag = ManpowerA }
+       not = { local_flag = ManpowerB }
+       not = { local_flag = ManpowerC }
+       not = { local_flag = ManpowerD }
+       not = { local_flag = ManpowerE }
+	     technology = 7400
+    }
+
+	name = "人口系统 "
+	desc = "人口系统是啤酒馆１．５的一个独特系统，它代表着你的劳动力 资源能够带给你的特殊加成，人口的减少会让你的人口红利减少 ，当然当人口恢复时相应红利也会恢复。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 丰富人口的回报 "
+                		command = { type = local_setflag which = ManpowerB }
+	}
+}
+
+event = {
+	id = 1764
+	random = no
+        persistent = yes	
+
+	trigger = {
+       not = { local_flag = ManpowerA }
+       not = { local_flag = ManpowerB }
+       not = { local_flag = ManpowerC }
+       not = { local_flag = ManpowerD }
+       not = { local_flag = ManpowerE }
+	     technology = 7410
+    }
+
+	name = "人口系统 "
+	desc = "人口系统是啤酒馆１．５的一个独特系统，它代表着你的劳动力 资源能够带给你的特殊加成，人口的减少会让你的人口红利减少 ，当然当人口恢复时相应红利也会恢复。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 丰富人口的回报 "
+                		command = { type = local_setflag which = ManpowerC }
+	}
+}
+
+event = {
+	id = 1765
+	random = no
+        persistent = yes	
+
+	trigger = {
+       not = { local_flag = ManpowerA }
+       not = { local_flag = ManpowerB }
+       not = { local_flag = ManpowerC }
+       not = { local_flag = ManpowerD }
+       not = { local_flag = ManpowerE }
+	     technology = 7420
+    }
+
+	name = "人口系统 "
+	desc = "人口系统是啤酒馆１．５的一个独特系统，它代表着你的劳动力 资源能够带给你的特殊加成，人口的减少会让你的人口红利减少 ，当然当人口恢复时相应红利也会恢复。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 丰富人口的回报 "
+                		command = { type = local_setflag which = ManpowerD }
+	}
+}
+
+event = {
+	id = 1766
+	random = no
+        persistent = yes	
+
+	trigger = {
+       not = { local_flag = ManpowerA }
+       not = { local_flag = ManpowerB }
+       not = { local_flag = ManpowerC }
+       not = { local_flag = ManpowerD }
+       not = { local_flag = ManpowerE }
+	     technology = 7430
+    }
+
+	name = "人口系统 "
+	desc = "人口系统是啤酒馆１．５的一个独特系统，它代表着你的劳动力 资源能够带给你的特殊加成，人口的减少会让你的人口红利减少 ，当然当人口恢复时相应红利也会恢复。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 丰富人口的回报 "
+                		command = { type = local_setflag which = ManpowerE }
+	}
+}
+
+event = {
+	id = 1767
+	random = no
+	
+	trigger = {   ai = yes   }
+	
+	name = "ai_event"
+	desc = " "
+	style = 0
+
+	date = { day = 1 month = january year = 1937 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "ok"
+		command = { type = sleepevent which = 1762 }
+		command = { type = sleepevent which = 1763 }
+		command = { type = sleepevent which = 1764 }
+		command = { type = sleepevent which = 1765 }
+		command = { type = sleepevent which = 1766 }
+	}
+}
+
+event = {
+	id = 3000043
+	random = no
+        persistent = yes	
+
+	trigger = {
+                 local_flag = ManpowerA
+	         not = { manpower = 3000 }
+    }
+
+	name = "人口红利减少-降为人力丰富国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "人力受到一定损失"
+      		command = { type = local_clrflag which = ManpowerA }
+      		command = { type = local_setflag which = ManpowerB }
+      		command = { type = industrial_modifier which = total value = -5 }
+      		command = { type = industrial_modifier which = supplies value = -5 }
+	}
+}
+
+event = {
+	id = 3000044
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerB
+	         not = { manpower = 2000 }
+    }
+
+	name = "人口红利减少-降为人力充足国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口能够满足经济要求 "
+      		command = { type = local_clrflag which = ManpowerB }
+      		command = { type = local_setflag which = ManpowerC }
+      		command = { type = industrial_modifier which = total value = -5 }
+      		command = { type = industrial_modifier which = supplies value = -5 }
+	}
+}
+
+event = {
+	id = 3000045
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerC
+	         not = { manpower = 1000 }
+    }
+
+	name = "人力桎梏-降为人力不足国家 "
+	desc = "在人力少于需求的时候，人力与经济增长呈现正相关，缺乏人力 会导致工业开工不足、商业效率低下、农业入不敷出，这是急需 改变的状况。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口不能满足经济要求 "
+      		command = { type = local_clrflag which = ManpowerC }
+      		command = { type = local_setflag which = ManpowerD }
+      		command = { type = industrial_modifier which = total value = -5 }
+      		command = { type = industrial_modifier which = supplies value = -5 }
+	}
+}
+
+event = {
+	id = 3000046
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerD
+	         not = { manpower = 500 }
+    }
+
+	name = "人力桎梏-降为人力贫乏国家 "
+	desc = "在人力少于需求的时候，人力与经济增长呈现正相关，缺乏人力 会导致工业开工不足、商业效率低下、农业入不敷出，这是急需 改变的状况。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 经济的停滞 "
+      		command = { type = local_clrflag which = ManpowerD }
+      		command = { type = local_setflag which = ManpowerE }
+      		command = { type = industrial_modifier which = total value = -5 }
+      		command = { type = industrial_modifier which = supplies value = -5 }
+	}
+}
+
+event = {
+	id = 3000047
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerE
+	          manpower = 500
+    }
+
+	name = "人口红利增加-升为人力不足国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口不能满足经济要求 "
+      		command = { type = local_clrflag which = ManpowerE }
+      		command = { type = local_setflag which = ManpowerD }
+      		command = { type = industrial_modifier which = total value = 5 }
+      		command = { type = industrial_modifier which = supplies value = 5 }
+	}
+}
+
+event = {
+	id = 3000048
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerD
+	          manpower = 1000
+    }
+
+	name = "人口红利增加-升为人力充足国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口满足经济要求 "
+      		command = { type = local_clrflag which = ManpowerD }
+      		command = { type = local_setflag which = ManpowerC }
+      		command = { type = industrial_modifier which = total value = 5 }
+      		command = { type = industrial_modifier which = supplies value = 5 }
+	}
+}
+
+event = {
+	id = 3000049
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerC
+	          manpower = 2000
+    }
+
+	name = "人口红利增加-升为人力丰富国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口助益经济 "
+      		command = { type = local_clrflag which = ManpowerC }
+      		command = { type = local_setflag which = ManpowerB }
+      		command = { type = industrial_modifier which = total value = 5 }
+      		command = { type = industrial_modifier which = supplies value = 5 }
+	}
+}
+
+event = {
+	id = 3000050
+	random = no
+  persistent = yes	
+
+	trigger = {
+	         local_flag = ManpowerB
+	          manpower = 3000
+    }
+
+	name = "人口红利增加-人力充沛国家 "
+	desc = "人口红利，是指一个国家的劳动年龄人口占总人口比重较大，抚 养率比较低，为经济发展创造了有利的人口条件，整个国家的经 济成高储蓄、高投资和高增长的局面。 "
+	style = 0
+#	picture = "Finance"
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = " 人口助益经济 "
+      		command = { type = local_clrflag which = ManpowerB }
+      		command = { type = local_setflag which = ManpowerA }
+      		command = { type = industrial_modifier which = total value = 5 }
+      		command = { type = industrial_modifier which = supplies value = 5 }
+	}
+}
+
+
+event = {
+	id = 10000
+	random = no
+	country = CHI	
+
+	trigger = { ai = no }
+
+	name = "移除AI部队 "
+	desc = "我们将在开局删除本国AI专属部队，以节约你的军费开支。 "
+#	picture = "Manpowerpeace"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1936 }
+
+	action_a = {
+		name = "就这样吧 "
+		command = { type = remove_division which = 22000 value = 292  }
+		command = { type = remove_division which = 22000 value = 627  }
+		command = { type = remove_division which = 22000 value = 629  }
+		command = { type = remove_division which = 22000 value = 279  }
+		command = { type = remove_division which = 22000 value = 614  }
+		command = { type = remove_division which = 22000 value = 628  }
+		command = { type = remove_division which = 22000 value = 295  }
+		command = { type = remove_division which = 22000 value = 296  }
+		command = { type = remove_division which = 22000 value = 298  }
+		command = { type = remove_division which = 22000 value = 310  }
+		command = { type = remove_division which = 22000 value = 314  }
+		command = { type = remove_division which = 22000 value = 322  }
+		command = { type = remove_division which = 22000 value = 282  }
+		command = { type = remove_division which = 22000 value = 323  }
+		command = { type = remove_division which = 22000 value = 324  }
+		command = { type = remove_division which = 22000 value = 325  }
+		command = { type = remove_division which = 22000 value = 500  }
+		command = { type = remove_division which = 22000 value = 311  }
+		command = { type = remove_division which = 22000 value = 317  }
+		command = { type = remove_division which = 22000 value = 281  }
+		command = { type = remove_division which = 22000 value = 320  }
+		command = { type = remove_division which = 22000 value = 318  }
+		command = { type = remove_division which = 22000 value = 283  }
+		command = { type = remove_division which = 22000 value = 285  }
+		command = { type = remove_division which = 22000 value = 288  }
+		command = { type = remove_division which = 22000 value = 289  }
+		command = { type = remove_division which = 22000 value = 290  }
+		command = { type = remove_division which = 22000 value = 297  }
+		command = { type = manpowerpool value = -245 }
+	}
+	action_b = {
+		name = "就这样吧 "
+		command = {  }
+	}
+}
+
+event = {
+	id = 10001
+	random = no
+	country = ITA	
+
+	trigger = { ai = no }
+
+	name = "移除AI部队 "
+	desc = "我们将在开局删除本国AI专属部队，以节约你的军费开支。 "
+#	picture = "Manpowerpeace"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1936 }
+
+	action_a = {
+		name = "就这样吧 "
+                		command = { type = remove_division which = 23500 value = 1001  }
+                		command = { type = remove_division which = 23500 value = 1002  }
+                		command = { type = remove_division which = 23500 value = 1004  }
+                		command = { type = remove_division which = 23500 value = 81  }
+                		command = { type = remove_division which = 23500 value = 98  }
+                		command = { type = remove_division which = 23500 value = 99  }
+                		command = { type = remove_division which = 23500 value = 103  }
+                		command = { type = remove_division which = 23500 value = 101  }
+                		command = { type = remove_division which = 23500 value = 82  }
+                		command = { type = remove_division which = 23500 value = 83  }
+                		command = { type = remove_division which = 23500 value = 97  }
+                		command = { type = remove_division which = 23500 value = 1003  }
+                		command = { type = remove_division which = 23500 value = 1005  }
+                		command = { type = remove_division which = 23500 value = 1006  }
+                		command = { type = remove_division which = 23500 value = 1007  }
+                		command = { type = remove_division which = 23500 value = 1008  }
+		command = { type = manpowerpool value = -165 }
+	}
+}
+
+event = {
+	id = 10003
+	random = no
+	country = usa
+
+	trigger = { ai = no }
+
+	name = "移除AI部队 "
+	desc = "我们将在开局删除本国AI专属部队，以节约你的军费开支。 "
+#	picture = "Manpowerpeace"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1936 }
+
+	action_a = {
+		name = "就这样吧 "
+                		command = { type = remove_division which = 14800 value = 9999  }
+                		command = { type = remove_division which = 14800 value = 9998  }
+                		command = { type = remove_division which = 14800 value = 9994  }
+                		command = { type = remove_division which = 14800 value = 601  }
+                		command = { type = remove_division which = 14800 value = 602  }
+                		command = { type = remove_division which = 14800 value = 603  }
+                		command = { type = remove_division which = 14800 value = 604  }
+                		command = { type = remove_division which = 14800 value = 605  }
+                		command = { type = remove_division which = 14800 value = 608  }
+                		command = { type = remove_division which = 14800 value = 609  }
+                		command = { type = remove_division which = 14800 value = 611  }
+                		command = { type = remove_division which = 14800 value = 612  }
+                		command = { type = remove_division which = 14800 value = 613  }
+                		command = { type = remove_division which = 14800 value = 614  }
+                		command = { type = remove_division which = 14800 value = 616  }
+                		command = { type = remove_division which = 14800 value = 621  }
+                		command = { type = remove_division which = 14800 value = 622  }
+                		command = { type = remove_division which = 14800 value = 623  }
+                		command = { type = remove_division which = 14800 value = 624  }
+                		command = { type = remove_division which = 14800 value = 625  }
+                		command = { type = remove_division which = 14800 value = 600  }
+                		command = { type = remove_division which = 14800 value = 6198  }
+                		command = { type = remove_division which = 14800 value = 6199  }
+                		command = { type = remove_division which = 14800 value = 6200  }
+                		command = { type = remove_division which = 14800 value = 6201  }
+                		command = { type = remove_division which = 14800 value = 6202  }
+                		command = { type = remove_division which = 14800 value = 6203  }
+                		command = { type = remove_division which = 14800 value = 6204  }
+                		command = { type = remove_division which = 14800 value = 6205  }
+                		command = { type = remove_division which = 14800 value = 6206  }
+                		command = { type = remove_division which = 14800 value = 6207  }
+                		command = { type = remove_division which = 14800 value = 6208  }
+                		command = { type = remove_division which = 14800 value = 6209  }
+                		command = { type = remove_division which = 14800 value = 6211  }
+                		command = { type = remove_division which = 14800 value = 6212  }
+                		command = { type = remove_division which = 14800 value = 6213  }
+                		command = { type = remove_division which = 14800 value = 6214  }
+                		command = { type = remove_division which = 14800 value = 6215  }
+                		command = { type = remove_division which = 14800 value = 6216  }
+                		command = { type = remove_division which = 14800 value = 6217  }
+		command = { type = manpowerpool value = -530 }
+	}
+}
+
+event = {
+	id = 10004
+	random = no
+	country = eng	
+
+	trigger = { ai = no }
+
+	name = "移除AI部队 "
+	desc = "我们将在开局删除本国AI专属部队，以节约你的军费开支。 "
+#	picture = "Manpowerpeace"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1936 }
+
+	action_a = {
+		name = "就这样吧 "
+                		command = { type = remove_division which = 12700 value = 338  }
+                		command = { type = remove_division which = 12700 value = 377  }
+                		command = { type = remove_division which = 12700 value = 378  }
+                		command = { type = remove_division which = 12700 value = 341  }
+                		command = { type = remove_division which = 12700 value = 342  }
+                		command = { type = remove_division which = 12700 value = 343  }
+                		command = { type = remove_division which = 12700 value = 344  }
+                		command = { type = remove_division which = 12700 value = 345  }
+                		command = { type = remove_division which = 12700 value = 346  }
+                		command = { type = remove_division which = 12700 value = 347  }
+                		command = { type = remove_division which = 12700 value = 348  }
+                		command = { type = remove_division which = 12700 value = 349  }
+                		command = { type = remove_division which = 12700 value = 350  }
+                		command = { type = remove_division which = 12700 value = 409  }
+                		command = { type = remove_division which = 12700 value = 340  }
+                		command = { type = remove_division which = 12700 value = 359  }
+                		command = { type = remove_division which = 12700 value = 401  }
+                		command = { type = remove_division which = 12700 value = 387  }
+                		command = { type = remove_division which = 12700 value = 413  }
+                		command = { type = remove_division which = 12700 value = 414  }
+                		command = { type = remove_division which = 12700 value = 415  }
+                		command = { type = remove_division which = 12700 value = 416  }
+                		command = { type = remove_division which = 12700 value = 393  }
+                		command = { type = remove_division which = 12700 value = 394  }
+                		command = { type = remove_division which = 12700 value = 395  }
+                		command = { type = remove_division which = 12700 value = 399  }
+                		command = { type = remove_division which = 12700 value = 364  }
+                		command = { type = remove_division which = 12700 value = 403  }
+                		command = { type = remove_division which = 12700 value = 360  }
+                		command = { type = remove_division which = 12700 value = 411  }
+                		command = { type = remove_division which = 12700 value = 412  }
+                		command = { type = remove_division which = 12700 value = 391  }
+                		command = { type = remove_division which = 12700 value = 336  }
+                		command = { type = remove_division which = 12700 value = 351  }
+                		command = { type = remove_division which = 12700 value = 352  }
+                		command = { type = remove_division which = 12700 value = 339  }
+                		command = { type = remove_division which = 12700 value = 358  }
+                		command = { type = remove_division which = 12700 value = 361  }
+                		command = { type = remove_division which = 12700 value = 362  }
+                		command = { type = remove_division which = 12700 value = 363  }
+                		command = { type = remove_division which = 12700 value = 408  }
+                		command = { type = remove_division which = 12700 value = 410  }
+                		command = { type = remove_division which = 12700 value = 370  }
+                		command = { type = remove_division which = 12700 value = 389  }
+                		command = { type = remove_division which = 12700 value = 375  }
+                		command = { type = remove_division which = 12700 value = 376  }
+                		command = { type = remove_division which = 12700 value = 400  }
+                		command = { type = remove_division which = 12700 value = 420  }
+                		command = { type = remove_division which = 12700 value = 421  }
+                		command = { type = remove_division which = 12700 value = 422  }
+                		command = { type = remove_division which = 12700 value = 423  }
+                		command = { type = remove_division which = 12700 value = 424  }
+		command = { type = manpowerpool value = -625 }
+	}
+}
+
+event = {
+	id = 10005
+	random = no
+	country = sov	
+
+	trigger = { ai = no }
+
+	name = "移除AI部队 "
+	desc = "我们将在开局删除本国AI专属部队，以节约你的军费开支。 "
+#	picture = "Manpowerpeace"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1936 }
+
+	action_a = {
+		name = "就这样吧 "
+                		command = { type = remove_division which = 10848 value = 747  }
+                		command = { type = remove_division which = 10848 value = 748  }
+                		command = { type = remove_division which = 10848 value = 749  }
+                		command = { type = remove_division which = 10848 value = 750  }
+                		command = { type = remove_division which = 10848 value = 751  }
+                		command = { type = remove_division which = 10848 value = 752  }
+                		command = { type = remove_division which = 10848 value = 753  }
+                		command = { type = remove_division which = 10848 value = 766  }
+                		command = { type = remove_division which = 10848 value = 761  }
+                		command = { type = remove_division which = 10848 value = 767  }
+                		command = { type = remove_division which = 10848 value = 768  }
+                		command = { type = remove_division which = 10848 value = 769  }
+                		command = { type = remove_division which = 10848 value = 770  }
+                		command = { type = remove_division which = 10848 value = 771  }
+                		command = { type = remove_division which = 10848 value = 772  }
+                		command = { type = remove_division which = 10848 value = 773  }
+                		command = { type = remove_division which = 10848 value = 774  }
+                		command = { type = remove_division which = 10848 value = 775  }
+                		command = { type = remove_division which = 10848 value = 776  }
+                		command = { type = remove_division which = 10848 value = 777  }
+                		command = { type = remove_division which = 10848 value = 778  }
+                		command = { type = remove_division which = 10848 value = 779  }
+                		command = { type = remove_division which = 10848 value = 780  }
+                		command = { type = remove_division which = 10848 value = 781  }
+                		command = { type = remove_division which = 10848 value = 782  }
+                		command = { type = remove_division which = 10848 value = 783  }
+                		command = { type = remove_division which = 10848 value = 500  }
+                		command = { type = remove_division which = 10848 value = 501  }
+                		command = { type = remove_division which = 10848 value = 502  }
+                		command = { type = remove_division which = 10848 value = 715  }
+                		command = { type = remove_division which = 10848 value = 503  }
+                		command = { type = remove_division which = 10848 value = 716  }
+                		command = { type = remove_division which = 10848 value = 510  }
+                		command = { type = remove_division which = 10848 value = 504  }
+                		command = { type = remove_division which = 10848 value = 506  }
+                		command = { type = remove_division which = 10848 value = 457  }
+                		command = { type = remove_division which = 10848 value = 458  }
+                		command = { type = remove_division which = 10848 value = 459  }
+                		command = { type = remove_division which = 10848 value = 462  }
+                		command = { type = remove_division which = 10848 value = 463  }
+                		command = { type = remove_division which = 10848 value = 577  }
+                		command = { type = remove_division which = 10848 value = 578  }
+                		command = { type = remove_division which = 10848 value = 717  }
+                		command = { type = remove_division which = 10848 value = 507  }
+                		command = { type = remove_division which = 10848 value = 718  }
+                		command = { type = remove_division which = 10848 value = 719  }
+                		command = { type = remove_division which = 10848 value = 505  }
+                		command = { type = remove_division which = 10848 value = 523  }
+                		command = { type = remove_division which = 10848 value = 514  }
+                		command = { type = remove_division which = 10848 value = 515  }
+                		command = { type = remove_division which = 10848 value = 517  }
+                		command = { type = remove_division which = 10848 value = 518  }
+                		command = { type = remove_division which = 10848 value = 519  }
+                		command = { type = remove_division which = 10848 value = 520  }
+                		command = { type = remove_division which = 10848 value = 521  }
+                		command = { type = remove_division which = 10848 value = 524  }
+                		command = { type = remove_division which = 10848 value = 789  }
+                		command = { type = remove_division which = 10848 value = 790  }
+                		command = { type = remove_division which = 10848 value = 792  }
+                		command = { type = remove_division which = 10848 value = 793  }
+                		command = { type = remove_division which = 10848 value = 794  }
+                		command = { type = remove_division which = 10848 value = 795  }
+                		command = { type = remove_division which = 10848 value = 796  }
+                		command = { type = remove_division which = 10848 value = 785  }
+                		command = { type = remove_division which = 10848 value = 786  }
+                		command = { type = remove_division which = 10848 value = 787  }
+                		command = { type = remove_division which = 10848 value = 800  }
+                		command = { type = remove_division which = 10848 value = 801  }
+                		command = { type = remove_division which = 10848 value = 802  }
+                		command = { type = remove_division which = 10848 value = 803  }
+                		command = { type = remove_division which = 10848 value = 804  }
+                		command = { type = remove_division which = 10848 value = 805  }
+                		command = { type = remove_division which = 10848 value = 806  }
+                		command = { type = remove_division which = 10848 value = 807  }
+                		command = { type = remove_division which = 10848 value = 808  }
+                		command = { type = remove_division which = 10848 value = 809  }
+                		command = { type = remove_division which = 10848 value = 810  }
+                		command = { type = remove_division which = 10848 value = 811  }
+                		command = { type = remove_division which = 10848 value = 812  }
+                		command = { type = remove_division which = 10848 value = 813  }
+                		command = { type = remove_division which = 10848 value = 814  }
+                		command = { type = remove_division which = 10848 value = 815  }
+                		command = { type = remove_division which = 10848 value = 816  }
+                		command = { type = remove_division which = 10848 value = 817  }
+                		command = { type = remove_division which = 10848 value = 818  }
+                		command = { type = remove_division which = 10848 value = 819  }
+                		command = { type = remove_division which = 10848 value = 820  }
+                		command = { type = remove_division which = 10848 value = 821  }
+                		command = { type = remove_division which = 10848 value = 822  }
+                		command = { type = remove_division which = 10848 value = 823  }
+                		command = { type = remove_division which = 10848 value = 824  }
+                		command = { type = remove_division which = 10848 value = 825  }
+                		command = { type = remove_division which = 10848 value = 826  }
+                		command = { type = remove_division which = 10848 value = 827  }
+                		command = { type = remove_division which = 10848 value = 828  }
+                		command = { type = remove_division which = 10848 value = 829  }
+                		command = { type = remove_division which = 10848 value = 508  }
+		command = { type = manpowerpool value = -997 }
+	}
+}
+#########################################################################
+# 美国陆军
+#########################################################################
+
+event = {	
+	id = 941275
+	random = no
+	country = usa
+
+	name = "美国军队的素质 "
+	desc = "美国军队经受了二战洗礼，战斗水平得到了提升。但二 战老兵普遍厌战，不希望战争继续，这也使美国的军队士气低落。 美国的空军和海军拥有无比的优势，并且装备相当先进。但在后 来的朝鲜战争中，美国军队暴露出其山地作战能力不足的弱点。  "
+	style = 0
+
+	date = { day = 6 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1955 }
+
+	action_a = {
+		name = "上帝保佑美国 "
+		command = { type = hill_attack which = marine value = 20 }
+		command = { type = desert_attack which = marine value = 20 }
+		command = { type = mountain_attack which = marine value = 20 }
+		command = { type = forest_attack which = marine value = 20 }
+		command = { type = jungle_attack which = marine value = 20 }
+		command = { type = swamp_attack which = marine value = 20 }
+
+		command = { type = desert_defense which = marine value = 20 }
+		command = { type = mountain_defense which = marine value = 20 }
+		command = { type = hill_defense which = marine value = 20 }
+		command = { type = forest_defense which = marine value = 20 }
+		command = { type = jungle_defense which = marine value = 20 }
+		command = { type = swamp_defense which = marine value = 20 }
+
+		command = { type = hill_attack which = paratrooper value = 20 }
+		command = { type = desert_attack which = paratrooper value = 20 }
+		command = { type = mountain_attack which = paratrooper value = 20 }
+		command = { type = hill_attack which = paratrooper value = 20 }
+		command = { type = forest_attack which = paratrooper value = 20 }
+		command = { type = jungle_attack which = paratrooper value = 20 }
+		command = { type = swamp_attack which = paratrooper value = 20 }
+
+		command = { type = desert_defense which = paratrooper value = 20 }
+		command = { type = mountain_defense which = paratrooper value = 20 }
+		command = { type = hill_defense which = paratrooper value = 20 }
+		command = { type = forest_defense which = paratrooper value = 20 }
+		command = { type = jungle_defense which = paratrooper value = 20 }
+		command = { type = swamp_defense which = paratrooper value = 20 }
+
+		command = { type = hill_move which = marine value = 20 }
+		command = { type = desert_move which = marine value = 20 }
+		command = { type = mountain_move which = marine value = 20 }
+		command = { type = forest_move which = marine value = 20 }
+		command = { type = jungle_move which = marine value = 20 }
+		command = { type = swamp_move which = marine value = 20 }
+		command = { type = hill_move which = paratrooper value = 20 }
+		command = { type = desert_move which = paratrooper value = 20 }
+		command = { type = mountain_move which = paratrooper value = 20 }
+		command = { type = forest_move which = paratrooper value = 20 }
+		command = { type = jungle_move which = paratrooper value = 20 }
+		command = { type = swamp_move which = paratrooper value = 20 }
+
+		command = { type = shore_attack which = marine value = 20 }
+		command = { type = paradrop_attack which = paratrooper value = 20 }
+
+		#海軍
+		command = { type = morale which = naval value = 10 } 
+		command = { type = max_organization which = naval value = 10 }
+		command = { type = convoy_prod_mod which = transports value = 25 }
+		command = { type = convoy_prod_mod which = escorts value = 25 }
+
+		command = { type = range which = battleship value = 1000 } 
+	 	command = { type = max_positioning which = battleship value = 0.05 }
+	 	command = { type = min_positioning which = battleship value = 0.05 }
+	 	command = { type = naval_attack which = battleship value = 2 } 
+		command = { type = naval_defense which = battleship value = 1 } 
+	 	command = { type = shore_attack which = battleship value = 2 } 
+		command = { type = air_attack which = battleship value = 1 } 
+
+		command = { type = range which = battlecruiser value = 500 }
+	 	command = { type = naval_attack which = battlecruiser value = 1 }
+		command = { type = naval_defense which = battlecruiser value = 1 } 
+
+		command = { type = range which = carrier value = 1000 }
+	 	command = { type = max_positioning which = carrier value = 0.1 }
+	 	command = { type = min_positioning which = carrier value = 0.1 }
+	 	command = { type = speed which = carrier value = 2 } 
+		command = { type = naval_defense which = carrier value = -2 } 
+
+		command = { type = naval_defense which = heavy_cruiser value = 1 }
+		command = { type = range which = heavy_cruiser value = 500 }
+
+		command = { type = range which = light_cruiser value = 500 }
+	 	command = { type = naval_attack which = light_cruiser value = 2 }
+		command = { type = naval_defense which = light_cruiser value = 1 } 
+	 	command = { type = max_positioning which = light_cruiser value = 0.05 }
+	 	command = { type = min_positioning which = light_cruiser value = 0.05 }
+
+		command = { type = range which = destroyer value = 500 }
+
+		command = { type = speed which = submarine value = 1 } 
+		command = { type = range which = submarine value = 1000 } 
+
+ 		# 国籍特色——战略轰炸
+		command = { type = max_organization which = air value = 10 }
+		command = { type = morale which = air value = 10 }
+		command = { type = max_organization which = strategic_bomber value = 10 }
+		command = { type = morale which = strategic_bomber value = 10 }
+		command = { type = max_organization which = cag value = 10 }
+		command = { type = morale which = cag value = 10 }
+		command = { type = max_organization which = transport_plane value = -10 }
+		command = { type = morale which = transport_plane value = 10 }
+
+		command = { type = task_efficiency which = air_superiority value = 0.2 }
+		command = { type = task_efficiency which = ground_attack value = 0.2 }
+		command = { type = task_efficiency which = strategic_bombardment value = 0.2 }
+		command = { type = task_efficiency which = industrial_bombardment value = 0.2 }
+		command = { type = task_efficiency which = naval_strike value = 0.2 }
+		command = { type = task_efficiency which = port_strike value = 0.2 }
+	}
+}
+
+#########################################################################################
+# 苏联陆军
+#########################################################################################
+event = {	
+	id = 941278
+	random = no
+	country = sov
+
+	name = "苏联军队的素质 "
+	desc = "苏联军队大部分是二战存活下来的老兵，作战经验丰富， 且意志坚定。但战后苏联厌战情绪普遍，使军队士气有所下降。 苏军的陆军在世界上拥有极高的地位，其海军和空军亦处于世界 前列。 "
+	style = 0
+
+	date = { day = 6 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = january year = 1955 }
+
+	action_a = {
+		name = "乌拉 "
+		command = { type = urban_defense which = motorized value = 20 }
+		command = { type = urban_defense which = infantry value = 20 }
+		command = { type = urban_defense which = cavalry value = 20 }
+		command = { type = urban_defense which = mechanized value = 20 }
+		command = { type = urban_defense which = armor value = 20 }
+		command = { type = urban_defense which = light_armor value = 20 }
+
+		command = { type = frozen_attack which = motorized value = 10 }
+		command = { type = frozen_attack which = infantry value = 10}
+		command = { type = frozen_attack which = cavalry value = 10 }
+		command = { type = frozen_attack which = mechanized value = 10 }
+		command = { type = frozen_attack which = armor value = 10 }
+		command = { type = frozen_attack which = light_armor value = 10 }
+
+		command = { type = frozen_defense which = motorized value = 20 }
+		command = { type = frozen_defense which = infantry value = 20 }
+		command = { type = frozen_defense which = cavalry value = 20 }
+		command = { type = frozen_defense which = mechanized value = 20 }
+		command = { type = frozen_defense which = armor value = 20 }
+		command = { type = frozen_defense which = light_armor value = 20 }
+
+		command = { type = frozen_move which = motorized value = 20 }
+		command = { type = frozen_move which = infantry value = 20 }
+		command = { type = frozen_move which = cavalry value = 20 }
+		command = { type = frozen_move which = mechanized value = 20 }
+		command = { type = frozen_move which = armor value = 20 }
+		command = { type = frozen_move which = light_armor value = 20 }
+
+		command = { type = snow_attack which = motorized value = 10 }
+		command = { type = snow_attack which = infantry value = 10 }
+		command = { type = snow_attack which = cavalry value = 10 }
+		command = { type = snow_attack which = mechanized value = 10 }
+		command = { type = snow_attack which = armor value = 10 }
+		command = { type = snow_attack which = light_armor value = 10 }
+
+		command = { type = snow_defense which = motorized value = 20 }
+		command = { type = snow_defense which = infantry value = 20 }
+		command = { type = snow_defense which = cavalry value = 20 }
+		command = { type = snow_defense which = mechanized value = 20 }
+		command = { type = snow_defense which = armor value = 20 }
+		command = { type = snow_defense which = light_armor value = 20 }
+
+		command = { type = snow_move which = motorized value = 20 }
+		command = { type = snow_move which = infantry value = 20 }
+		command = { type = snow_move which = cavalry value = 20 }
+		command = { type = snow_move which = mechanized value = 20 }
+		command = { type = snow_move which = armor value = 20 }
+		command = { type = snow_move which = light_armor value = 20 }
+
+		command = { type = muddy_move which = motorized value = 20 }
+		command = { type = muddy_move which = infantry value = 20 }
+		command = { type = muddy_move which = cavalry value = 20 }
+		command = { type = muddy_move which = mechanized value = 20 }
+		command = { type = muddy_move which = armor value = 20 }
+		command = { type = muddy_move which = light_armor value = 20 }
+		
+		#空軍
+		command = { type = max_organization which = interceptor value = 5 }
+		command = { type = morale which = interceptor value = 5 }
+		command = { type = task_efficiency which = air_superiority value = 0.2 }
+
+		#海軍
+		command = { type = dissent value = 1 }
+	}
+}
+
+#########################################################################################
+# 中共
+#########################################################################################
+event = {
+	id = 941281
+	random = no
+	country = chc
+
+	name = "红军的实力 "
+	desc = "中共的军队在经历了8年抗日战争（游击战）后，变得更有经 验和战斗力。他们顽强不屈的精神，坚不可摧的意志使他们无坚 不摧，在后来与国民党和美国军队的战斗中表现的非常出色"
+	style = 0
+
+	date = { day = 6 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = january year = 1955 }
+
+	action_a = {
+		name = "为有牺牲多壮志，敢教日月换新天！ "
+		command = { type = repair_mod value = 10 }
+
+		command = { type = hill_attack which = militia value = 20 } # original 20
+		command = { type = hill_attack which = bergsjaeger value = 10 }
+		command = { type = hill_attack which = infantry value = 10 }
+
+		command = { type = hill_defense which = militia value = 20 }
+		command = { type = hill_defense which = bergsjaeger value = 10 }
+		command = { type = hill_defense which = infantry value = 10 }
+
+		command = { type = hill_move which = militia value = 20 }
+		command = { type = hill_move which = bergsjaeger value = 10 }
+		command = { type = hill_move which = infantry value = 10 }
+
+		command = { type = mountain_attack which = militia value = 20 }
+		command = { type = mountain_attack which = bergsjaeger value = 10 }
+		command = { type = mountain_attack which = infantry value = 10 }
+
+		command = { type = mountain_defense which = militia value = 20 }
+		command = { type = mountain_defense which = bergsjaeger value = 10 }
+		command = { type = mountain_defense which = infantry value = 10 }
+
+		command = { type = mountain_move which = militia value = 20 }
+		command = { type = mountain_move which = bergsjaeger value = 10 }
+		command = { type = mountain_move which = infantry value = 10 }
+
+		command = { type = night_attack which = militia value = 20 }
+		command = { type = night_attack which = bergsjaeger value = 10 }
+		command = { type = night_attack which = infantry value = 10 }
+
+#		command = { type = fuel_consumption which = militia value = -0.1 }
+#		command = { type = supply_consumption which = militia value = -0.1 }
+#		command = { type = fuel_consumption which = infantry value = -0.1 }
+#		command = { type = fuel_consumption which = bergsjaeger value = -0.1 }
+
+		command = { type = free_oil value = 5  }
+	}
+}
+#########################################################################################
+# 民国
+#########################################################################################
+event = {
+	id = 941282
+	random = no
+	country = chi
+
+	name = "民国军队的实力 "
+	desc = "中华民国的军队经过8年抗战之后在数量上增加了一倍， 但质量参差不齐，派系林立，将领之间勾心斗角， 军队腐败吃空饷现象严重，这些成为后来国民党败走大陆 的最重要的原因之一  "
+	style = 0
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1955 }
+
+	action_a = {
+		name = "一个政党，一个主义，一个领袖 "
+#		command = { type = repair_mod value = 10 }
+
+		command = { type = urban_attack which = mechanized value = 10 }
+		command = { type = urban_defense which = mechanized value = 10 }
+
+		command = { type = urban_attack which = motorized value = 10 }
+		command = { type = urban_defense which = motorized value = 10 }
+
+		command = { type = urban_attack which = infantry value = 5 }
+		command = { type = urban_defense which = infantry value = 5 }
+
+		command = { type = urban_attack which = militia value = 5 }
+		command = { type = urban_defense which = militia value = 5 }
+
+        	command = { type = free_supplies value = -20 } #吃空餉
+		
+		command = { type = disorg_division which = 11616 value = 600 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1205 }
+		command = { type = disorg_division which = 11616 value = 601 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1204 }
+		command = { type = disorg_division which = 11616 value = 602 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1211 }
+		command = { type = disorg_division which = 11616 value = 603 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1216 }
+		command = { type = disorg_division which = 11616 value = 604 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1215 }
+		command = { type = disorg_division which = 11616 value = 605 when = 1 where = -10000 }
+        		command = { type = supplies value = 1000 where = 1217 }
+		command = { type = disorg_division which = 11616 value = 606 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1225 }
+		command = { type = disorg_division which = 11616 value = 607 when = 1 where = -1000 }
+        		command = { type = supplies value = 1000 where = 1225 }
+	}
+}
+#########################################################################################
+# 英国陆军
+#########################################################################################
+event = {
+	id = 941283
+	random = no
+	country = eng
+
+	name = "英国军队的素质 "
+	desc = "英国军队战后的创伤导致了大规模裁军，士气降低。而 反殖民地浪潮又迫使英国镇压殖民地斗争。空降兵、海军陆战队 是英国建设的重点。 "
+	style = 0
+
+	date = { day = 5 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = january year = 1955 }
+
+	action_a = {
+		name = "天佑吾皇 " 
+		command = { type = desert_attack which = motorized value = 20 }
+		command = { type = desert_attack which = infantry value = 20 }
+		command = { type = desert_attack which = armor value = 20 }
+		command = { type = desert_attack which = light_armor value = 20 }
+		command = { type = desert_attack which = cavalry value = 20 }
+		command = { type = desert_attack which = mechanized value = 20 }
+
+		command = { type = desert_defense which = motorized value = 20 }
+		command = { type = desert_defense which = infantry value = 20 }
+		command = { type = desert_defense which = mechanized value = 20 }
+		command = { type = desert_defense which = armor value = 20 }
+		command = { type = desert_defense which = light_armor value = 20 }
+		command = { type = desert_defense which = cavalry value = 20 }
+
+		command = { type = desert_move which = motorized value = 20 }
+		command = { type = desert_move which = infantry value = 20 }
+		command = { type = desert_move which = armor value = 20 }
+		command = { type = desert_move which = light_armor value = 20 }
+		command = { type = desert_move which = cavalry value = 20 }
+		command = { type = desert_move which = mechanized value = 20 }
+
+		command = { type = urban_defense which = motorized value = 20 }
+		command = { type = urban_defense which = infantry value = 20 }
+		command = { type = urban_defense which = mechanized value = 20 }
+		command = { type = urban_defense which = armor value = 20 }
+		command = { type = urban_defense which = light_armor value = 20 }
+		command = { type = urban_defense which = cavalry value = 20 }
+
+		#海軍
+		command = { type = morale which = naval value = 10 } 
+		command = { type = max_organization which = naval value = 10 } 
+		command = { type = convoy_prod_mod which = transports value = 20 }
+		command = { type = convoy_prod_mod which = escorts value = 20 }
+		command = { type = task_efficiency which = amphibious_assault value = 0.20 }
+
+		command = { type = range which = battleship value = 500 } 
+	 	command = { type = max_positioning which = battleship value = 0.1 }
+	 	command = { type = min_positioning which = battleship value = 0.1 }
+
+		command = { type = range which = battlecruiser value = 500 }
+	        command = { type = speed which = battlecruiser value = 1 } 
+		command = { type = naval_attack which = battlecruiser value = 2 }  
+
+		command = { type = speed which = carrier value = 2 } 
+		command = { type = max_positioning which = carrier value = 0.05 }
+		command = { type = min_positioning which = carrier value = 0.05 }
+
+		command = { type = range which = heavy_cruiser value = 500 }
+		command = { type = max_positioning which = heavy_cruiser value = 0.02 }
+		command = { type = min_positioning which = heavy_cruiser value = 0.02 }
+
+		command = { type = range which = light_cruiser value = 500 }
+		command = { type = range which = destroyer value = 500 }
+
+ 		# 国籍特色——战略轰炸
+		command = { type = max_organization which = air value = 5 }
+		command = { type = morale which = air value = 5 }
+		command = { type = max_organization which = strategic_bomber value = 5 }
+		command = { type = morale which = strategic_bomber value = 5 }
+		command = { type = max_organization which = transport_plane value = -5 }
+		command = { type = morale which = transport_plane value = 5 }
+
+		command = { type = task_efficiency which = air_superiority value = 0.2 }
+		command = { type = task_efficiency which = strategic_bombardment value = 0.2 }
+		command = { type = task_efficiency which = industrial_bombardment value = 0.2 }
+		command = { type = task_efficiency which = naval_strike value = 0.2 }
+		command = { type = task_efficiency which = port_strike value = 0.2 }
+	}
+}
+
+#########################################################################################
+# 法国陆军
+#########################################################################################
+event = {
+	id = 941286
+	random = no
+	country = fra
+
+	date = { day = 6 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1955 }
+
+	name = "法国军队的素质"
+	desc = "法国军队还是主要由戴高乐的自由法国军组成的，士气 和经验均一般。法国也困于战后反殖民斗争，加强对殖民地的镇 压能力。并且法国也重视海军陆战队和空降兵的发展。 "
+	style = 0
+#	picture = "ger_army"
+
+	action_a = {
+		name = "法兰西共和国万岁 "  
+
+		# 国籍特色——静态防御		
+		command = { type = building_prod_mod which = land_fort value = 25 }
+		command = { type = repair_mod value = 10 }
+
+		command = { type = hill_defense which = motorized value = 20 }
+		command = { type = hill_defense which = infantry value = 20 }
+		command = { type = hill_defense which = militia value = 20 }
+
+		command = { type = forest_defense which = motorized value = 20 }
+		command = { type = forest_defense which = infantry value = 20 }
+		command = { type = forest_defense which = militia value = 20 }
+
+		#海軍
+	 	command = { type = naval_defense which = battleship value = 2 }
+	 	command = { type = speed which = battleship value = 2 } # Fast	
+
+	 	command = { type = shore_attack which = battlecruiser value = 1 } # Poor throw weight
+	 	command = { type = naval_attack which = battlecruiser value = 1 } # Poor throw weigth
+	 	command = { type = naval_defense which = battlecruiser value = 1 }
+	 	command = { type = speed which = battlecruiser value = 2 } # Fast
+	 		
+	 	command = { type = speed which = heavy_cruiser value = 2 } # Fast
+	 	command = { type = max_positioning which = heavy_cruiser value = 0.02 }
+	 	command = { type = min_positioning which = heavy_cruiser value = 0.02 }
+
+	 	command = { type = speed which = light_cruiser value = 2 } # Fast
+
+	 	command = { type = speed which = destroyer value = 2 } # Fast
+	 	command = { type = max_positioning which = destroyer value = 0.02 }
+	 	command = { type = min_positioning which = destroyer value = 0.02 }
+
+		# 空軍——航空工业国有化
+		command = { type = dissent value = 1 }	
+		command = { type = industrial_modifier which = total value = 1 }
+		command = { type = domestic which = free_market value = -1 }
+	}
+}
+
+
+event = {
+	id = 111111
+	random = no
+	country = CHC
+#	persistent = yes
+
+	trigger = { 
+#		ai = yes
+		}
+
+	name = "解放區"
+#	desc = "地太爛了"
+	style = 0
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "廣大的根據地"
+	        command = { type = free_ic value = 5 }
+		command = { type = extra_tc value = 200 }
+	        command = { type = free_money value = 2 }
+	        command = { type = free_supplies value = 20 }
+		command = { type = tc_occupied_mod value = 15 }
+		command = { type = tc_mod value = 10 }
+		command = { type = attrition_mod value = 10 }
+		command = { type = supply_dist_mod value = 10 }
+		command = { type = supply_consumption which = garrison value = -5 }  
+	        command = { type = free_oil value = 3 }
+		}
+}	
+
+event = {
+	id = 111112
+	random = no
+	country = CHI
+#	persistent = yes
+
+	trigger = { 
+#		ai = yes
+		}
+
+	name = "AI_EVENT"
+#	desc = "地太爛了"
+	style = 0
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = "控制點與線"
+	        command = { type = tc_mod value = 10 }
+		command = { type = extra_tc value = 300 }
+		command = { type = attrition_mod value = 10 }
+		command = { type = supply_dist_mod value = 10 }
+		command = { type = supply_consumption which = garrison value = -7 } 
+		}
+}		
+

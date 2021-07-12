@@ -1,0 +1,420 @@
+naval_unit_type = 1
+allowed_brigades = naval_anti_air_l
+allowed_brigades = naval_radar_l
+allowed_brigades = naval_fire_controll_l
+# allowed_brigades = naval_improved_hull_l
+# allowed_brigades = naval_torpedoes_l
+allowed_brigades = naval_spotter_l
+allowed_brigades = naval_sa_l
+allowed_brigades = b_u2
+allowed_brigades = b_u6
+
+# 0 - Great War
+model = {
+	cost						= 2.5
+	buildtime 					= 280
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 20
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 5
+	airdefence					= 1
+	seaattack					= 6
+	convoyattack					= 3
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 2500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.5
+	distance					= 0.24
+}
+# 1 - Early
+model = {
+	cost						= 2.5
+	buildtime 					= 290
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 23
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 5
+	airdefence					= 1
+	seaattack					= 6
+	convoyattack					= 4
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 2500
+	supplyconsumption				= 0.5
+	fuelconsumption					= 0.5
+	distance					= 0.26
+}
+# 2 - Basic
+model = {
+	cost						= 3.5
+	buildtime 					= 320
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 25
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 6
+	airdefence					= 2
+	seaattack					= 8
+	convoyattack					= 6
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 4
+	transportcapability				= 0
+	
+	range						= 3000
+	supplyconsumption				= 0.5
+	fuelconsumption					= 0.5
+	distance					= 0.28
+}
+# 3 - Improved
+model = {
+	cost						= 4
+	buildtime 					= 320
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 28
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 7
+	airdefence					= 2
+	seaattack					= 8
+	convoyattack					= 6
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 4
+	transportcapability				= 0
+	
+	range						= 3500
+	supplyconsumption				= 0.6
+	fuelconsumption					= 0.6
+	distance					= 0.29
+}
+# 4 - Advanced
+model = {
+	cost						= 5.5
+	buildtime 					= 320
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 30
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 8
+	airdefence					= 4
+	seaattack					= 9
+	convoyattack					= 7
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 5
+	transportcapability				= 0
+	
+	range						= 4000
+	supplyconsumption				= 0.6
+	fuelconsumption					= 0.6
+	distance					= 0.30
+}
+# 5 - Semi-Modern
+model = {
+	cost						= 6 # was 5.5
+	buildtime 					= 365 # was 320
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1.25
+	maxspeed					= 30
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 9
+	airdefence					= 4
+	seaattack					= 9
+	convoyattack					= 7
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 5
+	transportcapability				= 0
+	
+	range						= 4000
+	supplyconsumption				= 0.7
+	fuelconsumption					= 0.6
+	distance					= 0.32
+}
+# 6 - Nuclear
+model = {
+	cost						= 6 # was 4
+	buildtime 					= 450
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 30
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 10
+	airdefence					= 6
+	seaattack					= 10
+	convoyattack					= 8
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 6
+	transportcapability				= 0
+	
+	range						= 20000
+	supplyconsumption				= 1.6
+	fuelconsumption					= 0
+	distance					= 0.32
+}
+# 7 - Modern
+model = {
+	cost						= 7
+	buildtime 					= 365
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 30
+	surfacedetectioncapability			= 1
+	airdetectioncapability				= 1
+	subdetectioncapability				= 1
+	visibility					= 70
+	seadefence					= 10
+	airdefence					= 6
+	seaattack					= 10
+	convoyattack					= 8
+	subattack					= 0
+	airattack					= 0
+	shorebombardment				= 6
+	transportcapability				= 0
+	
+	range						= 4000
+	supplyconsumption				= 0.7
+	fuelconsumption					= 0.6
+	distance					= 0.32
+}
+# 7- Cold War Heavy Cruiser (1949) # makes Battlecruisers obsolete
+model = {
+	cost						= 7
+	buildtime 					= 365
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 2
+	maxspeed                    = 32
+	surfacedetectioncapability  = 1
+	airdetectioncapability	    = 1
+	subdetectioncapability	    = 1
+	visibility                  = 55
+	seadefence                  = 14 
+	airdefence                  = 13
+	seaattack                   = 20 # Gun-launched rocket boosted munitions
+	subattack                   = 4
+	convoyattack                = 30
+	airattack                   = 17
+	shorebombardment            = 7
+	transportcapability         = 0
+	range                       = 4000
+	supplyconsumption           = 1.2
+	fuelconsumption             = 1.3
+	distance                    = 0.36 # makes BC obsolete
+}
+# 8 - Guided Missile Heavy Cruiser
+model = {
+	cost                        = 7
+	buildtime                   = 390
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 1
+	airdetectioncapability      = 1
+	subdetectioncapability      = 1
+	visibility                  = 55
+	seadefence                  = 20
+	airdefence                  = 25
+	seaattack                   = 28
+	subattack                   = 7
+	convoyattack                = 25
+	airattack                   = 25
+	shorebombardment            = 9
+	transportcapability         = 0
+	range                       = 4300
+	supplyconsumption           = 1.8
+	fuelconsumption             = 1.0
+	distance                    = 0.55 # Rockets makes BB obsolete
+}
+# 9 - Nuclear Missile Heavy Cruiser
+model = {
+	cost                        = 8
+	buildtime                   = 420
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 1
+	airdetectioncapability      = 1
+	subdetectioncapability      = 1
+	visibility                  = 55
+	seadefence                  = 20
+	airdefence                  = 25
+	seaattack                   = 28
+	subattack                   = 7
+	convoyattack                = 25
+	airattack                   = 25
+	shorebombardment            = 9
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2.2
+	fuelconsumption             = 0
+	distance                    = 0.55 # Rockets
+}
+# 10 - Guided Missile Super Cruiser
+model = {
+	cost                        = 8
+	buildtime                   = 400
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 4
+	airdetectioncapability      = 1
+	subdetectioncapability      = 2
+	visibility                  = 55
+	seadefence                  = 20
+	airdefence                  = 30
+	seaattack                   = 32
+	subattack                   = 7
+	convoyattack                = 30
+	airattack                   = 30
+	shorebombardment            = 10
+	transportcapability         = 0
+	range                       = 4300
+	supplyconsumption           = 1.8
+	fuelconsumption             = 1.0
+	distance                    = 0.55 # 0.55+0.15=.70 Rockets + improved missile control
+}
+# 11 - Nuclear Missile Super Cruiser
+model = {
+	cost                        = 9
+	buildtime                   = 450
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 4
+	airdetectioncapability      = 1
+	subdetectioncapability      = 2
+	visibility                  = 55
+	seadefence                  = 20
+	airdefence                  = 30
+	seaattack                   = 32
+	subattack                   = 7
+	convoyattack                = 30
+	airattack                   = 30
+	shorebombardment            = 10
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2
+	fuelconsumption             = 0
+	distance                    = 0.55 # Rockets
+}
+# 12 - Guided Missile Super Cruiser II
+model = {
+	cost                        = 8.5
+	buildtime                   = 400
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 4
+	airdetectioncapability      = 1
+	subdetectioncapability      = 2
+	visibility                  = 55
+	seadefence                  = 22
+	airdefence                  = 32
+	seaattack                   = 34
+	subattack                   = 7
+	convoyattack                = 32
+	airattack                   = 32
+	shorebombardment            = 11
+	transportcapability         = 0
+	range                       = 4300
+	supplyconsumption           = 1.8
+	fuelconsumption             = 1.0
+	distance                    = 0.57
+}
+# 13 - Nuclear Missile Super Cruiser II
+model = {
+	cost                        = 9.5
+	buildtime                   = 450
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 4
+	airdetectioncapability      = 1
+	subdetectioncapability      = 2
+	visibility                  = 55
+	seadefence                  = 22
+	airdefence                  = 32
+	seaattack                   = 34
+	subattack                   = 7
+	convoyattack                = 32
+	airattack                   = 32
+	shorebombardment            = 11
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2
+	fuelconsumption             = 0
+	distance                    = 0.57
+}
+# 14 - Nuclear Missile Super Cruiser III
+model = {
+	cost                        = 10
+	buildtime                   = 450
+	defaultorganisation         = 30
+	morale                      = 30
+	manpower                    = 1
+	maxspeed                    = 34
+	surfacedetectioncapability  = 4
+	airdetectioncapability      = 1
+	subdetectioncapability      = 2
+	visibility                  = 55
+	seadefence                  = 24
+	airdefence                  = 34
+	seaattack                   = 35
+	subattack                   = 7
+	convoyattack                = 33
+	airattack                   = 34
+	shorebombardment            = 12
+	transportcapability         = 0
+	range                       = 20000
+	supplyconsumption           = 2
+	fuelconsumption             = 0
+	distance                    = 0.59
+}
+

@@ -1,0 +1,167 @@
+# Japan AI prepares to invade Australian New Guinea and the South-Eastern Pacific Islands
+# by Radu
+
+# Facilities for further invasions
+
+construction = {
+max_factor = 0.4
+
+air_base 		= yes
+max_air_base	= 4
+air_base_provs	= { 
+	1685 # Guadalcanal
+	1692 # Noumea
+	1611 # Nauru
+	1752 # Fiji
+	1756 # Samoa
+	1757 # Tamana
+	1767 # Makin
+	}
+
+naval_base 		= yes
+max_naval_base	= 4
+naval_base_provs	= { 
+	1685 # Guadalcanal
+	1692 # Noumea
+	1611 # Nauru
+	1752 # Fiji
+	1756 # Samoa
+	1757 # Tamana
+	1767 # Makin
+	}
+}
+
+invasion = {
+	staging_province = {
+		1613 # Truk
+		1670 # Rabaul
+		1679 # Port Moresby
+	}
+
+	target = {
+		# Malaysia & Singapore
+		1349 = 3 # Alor Star
+		1350 = 3 # Kota Bahru
+		1352 = 3 # Kuala Lumpur
+		1351 = 3 # Kuantan
+		1353 = 3 # Singapore
+
+		# Dutch East Indies
+		1359 = 3 # Oosthaven
+		1358 = 3 # Palembang
+		1356 = 3 # Dumai
+		1355 = 3 # Medan
+		1357 = 3 # Padang
+
+		1628 = 3 # Batavia
+		1632 = 3 # Sorebaja
+		1630 = 3 # Semarang
+		1629 = 3 # Tijilatjap
+		1631 = 3 # Djokjakarta
+		1633 = 3 # Malang
+		1634 = 3 # Madura
+
+		1653 = 3 # Menado
+		1651 = 3 # Palu
+		1640 = 3 # Makassar
+		1652 = 3 # Kendari
+
+		1644 = 3 # Kuching
+		1642 = 3 # Pontianak
+		1641 = 3 # Bandjermasin
+		1650 = 3 # Balikapan
+		1649 = 3 # Samarinda
+		1648 = 3 # Tarakan
+
+		# Dutch New Guinea
+		1665 = 3 # Hollandia
+
+		# Australian New Guinea and islands
+		1671 = 90 # Gasmata
+		1670 = 100  # Rabaul
+
+		1666 = 50 # Aitape
+		1667 = 50 # Wekwak
+		1672 = 90 # Lae
+		1677 = 50 # Buna
+		1680 = 90 # Milne Bay
+		1675 = 90 # Kerema
+		1679 = 100 # Port Moresby
+
+		1685 = 100 # Guadalcanal
+		1692 = 100 # Noumea
+		1611 = 100 # Nauru
+		1752 = 100 # Fiji
+		1756 = 100 # Samoa
+		1757 = 100 # Tamana
+		1767 = 100 # Makin
+	}
+}
+
+admiral = {
+	core = {
+		2153 # Brunei Bay
+		2145 # Searasan Strait
+		2143 # Cape Awarawar
+		2141 # Madura Strait
+		2161 # Makassar Strait
+		2166 # East Celebes Sea
+		2162 # North Molucca Sea
+		2163 # Central Molucca Sea
+		2139 # South Molucca Sea
+		2140 # Sape Strait
+		2142 # Bali Strait
+		2081 # East Java Trench
+		2077 # Sunda Strait
+		2075 # Mentawi Strait
+		2074 # Tapanuli Gulf
+		2073 # North Malacca Strait
+		2147 # South Malacca Strait
+		2146 # Bangka Strait
+		2144 # Gaspar Strait
+		2150 # West Gulf of Siam
+	}
+
+	target = {
+		2153 = 0 # Brunei Bay
+		2145 = 0 # Searasan Strait
+		2143 = 0 # Cape Awarawar
+		2141 = 0 # Madura Strait
+		2161 = 0 # Makassar Strait
+		2166 = 0 # East Celebes Sea
+		2162 = 0 # North Molucca Sea
+		2163 = 0 # Central Molucca Sea
+		2139 = 0 # South Molucca Sea
+		2140 = 0 # Sape Strait
+		2142 = 0 # Bali Strait
+		2081 = 0 # East Java Trench
+		2077 = 0 # Sunda Strait
+		2075 = 0 # Mentawi Strait
+		2074 = 0 # Tapanuli Gulf
+		2073 = 0 # North Malacca Strait
+		2147 = 0 # South Malacca Strait
+		2146 = 0 # Bangka Strait
+		2144 = 0 # Gaspar Strait
+		2150 = 0 # West Gulf of Siam
+
+		2121 = 100 # New Britain Trench
+		2168 = 100 # Humboldt Bay
+		2169 = 100 # Dampier Strait
+		2122 = 100 # Huon Gulf
+		2127 = 100 # Goodenough Bay
+		2126 = 100 # Gulf of Papua
+		2131 = 100 # Torres Strait
+		2118 = 100 # The Slot
+		2115 = 100 # Central South Solomon Trench
+		2120 = 100 # West South Solomon Trench
+		2107 = 100 # New Caledonian Basin
+		1977 = 100 # Kermadec Trench
+		1980 = 100 # West Tonga Trench
+		1981 = 100 # East Tonga Trench
+		1975 = 100 # North Tonga Trench
+		1951 = 100 # Central Gilberts
+		1950 = 100 # South Magellan Rise
+		2180 = 100 # Southeast Marshalls
+	}
+}
+

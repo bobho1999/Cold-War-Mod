@@ -1,0 +1,66 @@
+科技组修改原则：
+
+1：经常不修改科技组等级，只修改科技组匹配
+2：科技组的结束日期均修改为1990（现在大部分即是1990）
+3：同类型科技组过多的，可以删除或者移作其他类型科技组。
+4：只修改现有科技组，不新增。
+5：主要参战国家的科技组尽量按照其史实情况来安排适性，小国随意。
+6：适性对应的科技，可以进游戏查看。
+
+科技组等级匹配表：
+
+技能1   = 1适性
+技能2-3 = 2适性
+技能4-5 = 3适性
+技能6-7 = 4适性
+技能8-9 = 5适性
+
+简单的科技组代码说明：
+
+113;雷神公司 ;T113;9;1930;1999;electronics;aeronautics;mechanics;management;general_equipment;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+
+113 ：科技组代码，所有科技组这一项均不能重复
+T113：科技组图片
+9   ：科技组等级
+1930：科技组出现时间
+1999：科技组结束时间
+之后均为科技组适性，最多5项，由分号隔开
+分号不能少或者多，否则会导致科技组显示出现问题
+
+科技组适性表：
+
+ARTILLERY               :火炮技术
+MECHANICS               :机械学
+ELECTRONICS             :电子学
+CHEMISTRY               :化学
+TRAINING                :训练
+GENERAL_EQUIPMENT       :通用设备
+ROCKETRY                :火箭动力学
+NAVAL_ENGINEERING       :海军工程学
+AERONAUTICS             :航空学
+NUCLEAR_PHYSICS         :核物理学
+NUCLEAR_ENGINEERING     :核工程学
+MANAGEMENT              :管理学
+INDUSTRIAL_ENGINEERING  :工业管理学
+MATHEMATICS             :数学
+SMALL_UNIT_TACTICS      :小兵团战术
+LARGE_UNIT_TACTICS      :大兵团战术
+CENTRALIZED_EXECUTION   :集中行动
+DECENTRALIZED_EXECUTION :分散行动
+TECHNICAL_EFFICIENCY    :流水线作业
+INDIVIDUAL_COURAGE      :个人英雄主义
+INFANTRY_FOCUS          :步兵协同
+COMBINED_ARMS_FOCUS     :步坦协同
+LARGE_UNIT_FOCUS        :大兵团协同
+NAVAL_ARTILLERY         :海军炮兵射击术
+NAVAL_TRAINING          :海军训练
+AIRCRAFT_TESTING        :飞机测试
+FIGHTER_TACTICS         :战斗机战术
+BOMBER_TACTICS          :轰炸机战术
+LARGE_TASKFORCE_TACTICS :大编队战术
+SMALL_TASKFORCE_TACTICS :小编队战术
+SEAMANSHIP              :航海术
+PILOTING                :地标领航
+SUBMARINE_TACTICS       :潜艇战术
+CARRIER_TACTICS         :航母战术
+

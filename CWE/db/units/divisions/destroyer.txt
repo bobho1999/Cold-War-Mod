@@ -1,0 +1,350 @@
+naval_unit_type = 1
+allowed_brigades = naval_asw
+allowed_brigades = naval_anti_air_s
+allowed_brigades = naval_radar_s
+allowed_brigades = naval_fire_controll_s
+# allowed_brigades = naval_improved_hull_s
+# allowed_brigades = naval_torpedoes_s
+allowed_brigades = naval_mines
+allowed_brigades = b_u3
+
+# 0 - Great War
+model = {
+	cost						= 3
+	buildtime 					= 100
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.6
+	maxspeed					= 24
+	surfacedetectioncapability			= 3
+	airdetectioncapability				= 1
+	subdetectioncapability				= 4
+	visibility					= 50
+	seadefence					= 1
+	airdefence					= 2
+	seaattack					= 3
+	convoyattack					= 4
+	subattack					= 1
+	airattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 0
+	
+	range						= 1500
+	supplyconsumption				= 0.35
+	fuelconsumption					= 0.25
+	distance					= 0.14
+}
+# 1 - Early
+model = {
+	cost						= 4
+	buildtime 					= 125
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.6
+	maxspeed					= 28
+	surfacedetectioncapability			= 3
+	airdetectioncapability				= 1
+	subdetectioncapability				= 5
+	visibility					= 50
+	seadefence					= 1
+	airdefence					= 3
+	seaattack					= 3
+	convoyattack					= 4
+	subattack					= 3
+	airattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 0
+	
+	range						= 2000
+	supplyconsumption				= 0.35
+	fuelconsumption					= 0.25
+	distance					= 0.16
+}
+# 2 - Basic
+model = {
+	cost						= 5
+	buildtime 					= 140
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.6
+	maxspeed					= 28
+	surfacedetectioncapability			= 3
+	airdetectioncapability				= 2
+	subdetectioncapability				= 7
+	visibility					= 50
+	seadefence					= 2
+	airdefence					= 3
+	seaattack					= 3
+	convoyattack					= 4
+	subattack					= 5
+	airattack					= 0
+	shorebombardment				= 1
+	transportcapability				= 0
+	
+	range						= 2500
+	supplyconsumption				= 0.37
+	fuelconsumption					= 0.25
+	distance					= 0.17
+}
+# 3 - Improved
+model = {
+	cost						= 5.5
+	buildtime 					= 175
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.7
+	maxspeed					= 30
+	surfacedetectioncapability			= 4
+	airdetectioncapability				= 3
+	subdetectioncapability				= 9
+	visibility					= 50
+	seadefence					= 2
+	airdefence					= 4
+	seaattack					= 3
+	convoyattack					= 4
+	subattack					= 6
+	airattack					= 1
+	shorebombardment				= 1
+	transportcapability				= 0
+	
+	range						= 3000
+	supplyconsumption				= 0.37
+	fuelconsumption					= 0.25
+	distance					= 0.18
+}
+# 4 - Advanced
+model = {
+	cost						= 6.5 # was 7.5
+	buildtime 					= 200
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.7
+	maxspeed					= 33
+	surfacedetectioncapability			= 4
+	airdetectioncapability				= 4
+	subdetectioncapability				= 11
+	visibility					= 50
+	seadefence					= 3
+	airdefence					= 5
+	seaattack					= 4
+	convoyattack					= 5
+	subattack					= 7
+	airattack					= 3
+	shorebombardment				= 2
+	transportcapability				= 0
+	
+	range						= 3500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.19
+}
+# 5 - Semi-Modern
+model = {
+	cost						= 7 # was 7.5
+	buildtime 					= 220
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.8
+	maxspeed					= 34
+	surfacedetectioncapability			= 4
+	airdetectioncapability				= 4
+	subdetectioncapability				= 11
+	visibility					= 50
+	seadefence					= 3
+	airdefence					= 6
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 7
+	airattack					= 4
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4000
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.2
+}
+# 6 - Modern
+model = {
+	cost						= 7.5
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 35
+	surfacedetectioncapability			= 5
+	airdetectioncapability				= 5
+	subdetectioncapability				= 13
+	visibility					= 50
+	seadefence					= 3
+	airdefence					= 7
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 9
+	airattack					= 4
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4300
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.2
+}
+# 7 - Elite
+model = {
+	cost						= 7.5
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 36
+	surfacedetectioncapability			= 6
+	airdetectioncapability				= 6
+	subdetectioncapability				= 15
+	visibility					= 50
+	seadefence					= 4
+	airdefence					= 8
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 9
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.2
+}
+# 8 - Missile Destroyer
+model = {
+	cost						= 8
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 36
+	surfacedetectioncapability			= 7
+	airdetectioncapability				= 7
+	subdetectioncapability				= 17
+	visibility					= 50
+	seadefence					= 4
+	airdefence					= 9
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 10
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.25
+}
+# diversifies into frigates (continuation of destroyer line)
+# and heavy destroyers (CL in game)
+# 9 - Missile Frigate
+model = {
+	cost						= 6.5 # same stats but cheaper
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 38
+	surfacedetectioncapability			= 7
+	airdetectioncapability				= 7
+	subdetectioncapability				= 17
+	visibility					= 50
+	seadefence					= 4
+	airdefence					= 9
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 10
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.35
+}
+# 10 - Missile Frigate II
+model = {
+	cost						= 7
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 38
+	surfacedetectioncapability			= 8
+	airdetectioncapability				= 8
+	subdetectioncapability				= 18
+	visibility					= 50
+	seadefence					= 4
+	airdefence					= 10
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 11
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.35
+}
+# 11 - Missile Frigate III
+model = {
+	cost						= 7.2
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 38
+	surfacedetectioncapability			= 9
+	airdetectioncapability				= 9
+	subdetectioncapability				= 19
+	visibility					= 50
+	seadefence					= 4
+	airdefence					= 11
+	seaattack					= 5
+	convoyattack					= 5
+	subattack					= 12
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.35
+}
+# 12 - Missile Frigate IV
+model = {
+	cost						= 7.4
+	buildtime 					= 240
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 0.9
+	maxspeed					= 38
+	surfacedetectioncapability			= 10
+	airdetectioncapability				= 10
+	subdetectioncapability				= 20
+	visibility					= 50
+	seadefence					= 5
+	airdefence					= 12
+	seaattack					= 6
+	convoyattack					= 6
+	subattack					= 13
+	airattack					= 6
+	shorebombardment				= 3
+	transportcapability				= 0
+	
+	range						= 4500
+	supplyconsumption				= 0.4
+	fuelconsumption					= 0.3
+	distance					= 0.35
+}

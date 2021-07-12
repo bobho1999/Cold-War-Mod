@@ -1,0 +1,126 @@
+# German End of Norway Invasion AI File by Lothos
+
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= yes
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 20.0	#higher = avoid long distance.
+	max_distance = 20.0  #About the distance from Rostock to Narvik
+	pocket		= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy = 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5 
+    naval_base 	= 0.1 
+    air_support = 3.0 
+    redirect 	= priority
+	ignore		= no
+	help_allies = no	#[yes/no]
+      
+	target = { 
+		#England
+		20 = -1 # Dover
+		17 = -1 # Norwich
+		21 = -1 # Portsmouth
+		23 = -1 # Plymouth
+		13 = -1 # Sheiffield
+		28 = -1 # Belfast
+		22 = -1 # Bristol
+		14 = -1 # Liverpool
+		12 = -1 # Blackpool
+		11 = -1 # Sunderland
+		10 = -1 # Edinburgh
+		9  = -1 # Glasgow
+		3004 = -1
+		3005 = -1
+		3011 = -1		
+
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		43  = -1 # Dunkerque
+		18  = -1 # Calais
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax	
+
+		#Norway
+		107 = 4000 # Oslo
+		108 = 4000 # Kristiansan
+		109 = 4000 # Stavanger
+		110 = 4000 # Bergen
+		125 = 4000 # Narvik
+		117 = 3750 # Alesund
+		118 = 3750 # Trondheim
+		124 = 3750 # Mo I Ran
+
+		#Sweden
+		106 = 4000 # Amal
+		98  = 4000 # Goterborg
+		93  = 4000 # Malmo
+		97  = 4000 # Jonkoping
+		100 = 3750 # Norrkoping
+		101 = 3750 # Stockholm
+		102 = 3750 # Uppsala
+		114 = 3750 # Gavle
+		120 = 4000 # Sundsuall
+		122 = 4000 # Umea
+		127 = 4000 # Lulea
+
+		#Finland
+		142 = 2000 # Helsinki
+		141 = 2000 # Turku
+		140 = 2000 # Pori
+		138 = 2000 # Vaasa
+		137 = 1750 # Oulu
+		131 = 1750 # Tornio
+	} 
+}
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	#Which provinces to use as bases..
+	base = {
+		90  # Kiel
+		296 # Rostock
+	}
+	target = { }
+	core = { 
+		2494
+		2493
+		2489
+		2483
+		2481
+		2491
+		2492
+		2484
+		2482
+		2480
+		2479
+		2478
+		2477
+		2476
+		290
+	} 
+}

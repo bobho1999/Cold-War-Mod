@@ -1,0 +1,262 @@
+# Japan AI gathers troops for Pacific War
+# by Radu
+
+switch = no
+max_front_ratio = 1.0
+max_front_ratios = {
+	CHI = 0.1
+}
+max_garrison_prop = 0.4
+min_garrison_prop = 0.3
+use_offensive_supply = no
+
+########################
+# Diplomacy            #
+########################
+
+target = {
+	1280 = 0 # Chongqing # War in China takes a back seat
+}
+
+#################################
+# Garrison and Ground Combat
+#################################
+
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.5
+	overseas_multiplier 	= 0.5
+	home_peace_cap 		= 10
+	war_zone_odds = 1.0
+	key_point_prio_mult	= 0
+	revolt_risk_mult	= 1.0
+
+	beach			= 30	# Beach level 2
+	capital			= 20	# Our capital
+	human_border	= 0		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	reserves 		= 20
+	
+	opposing_alliance	= 50	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0	# If we are neutral, countries with claims on us get this
+	unstable_border		= 0	# Bordering countries at war with someone else get this
+
+	country_priorities = {
+		CSX = 0
+		CHC = 1		
+	}
+
+	province_priorities = {	
+		1322 = 100 # Kaohsiung - Taiwan(Formosa)
+		1184 = 100 # Tokyo
+		1608 = 100 # Kwajalein
+		1613 = 100 # Truk				
+	}
+
+	area_multiplier = {	
+		1322 = 1.5 # Kaohsiung - Taiwan(Formosa)
+		1184 = 1.5 # Tokyo
+		1608 = 1.5 # Kwajalein
+		1613 = 1.5 # Truk	
+	}
+
+}
+
+front = {
+	recklessness 		= 0 # 0-3
+	distrib_vs_ai 		= offensive
+	distrib_vs_human 	= offensive
+
+	river = 0.5
+
+	largefort = 2.0
+
+	occupied = 0.7
+	owned = 0.7
+
+	frozen_attack 	= 0.50
+	snow_attack 	= 0.50
+	blizzard_attack   = 0.25
+	storm_attack 	= 0.50
+	muddy_attack 	= 0.50
+
+	jungle_attack 	= 0.50
+	mountain_attack	= 0.25
+	swamp_attack 	= 0.30
+	forest_attack 	= 0.70
+	hill_attack 	= 0.60
+	urban_attack 	= 0.40
+
+	reserve_prop = 0.2
+	panic_ratio_vs_ai = 4.0
+	panic_ratio_vs_human = 4.0
+
+	enemy_reinf_days = 7
+
+	base_attack_odds = 2.0
+	min_attack_odds = 1.5
+	max_attack_odds = 2.5
+	withdraw_odds = 0.2	
+}
+
+##################################
+# Invasions and Naval
+##################################
+
+invasion = {
+	
+	staging_province = {
+		1322 # Kaohsiung - Taiwan(Formosa)
+		1184 # Tokyo
+		1608 # Kwajalein
+		1613 # Truk
+	}
+}
+
+admiral = { 
+	min_org		= 100	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 98    # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 60 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 80 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	target = {		
+	} 
+	core = {
+		2589
+		2193
+		2187
+		2192
+		2194
+		2213
+		2185
+	}
+
+	ignore = {
+		#Baltic Area
+		"Northern Baltic"
+		"Southern Baltic" 
+		"Bothnian Bay"
+		
+		#Murmansk/Archangel
+		"Barents Sea"
+		"Arctic Ocean"
+		
+		#Norway Coast (Denmark Coast)
+		"Norwegian Sea"
+		"East North Sea"
+		"Kattegat"
+		
+		#North Sea, East Coast of England
+		"Central Northsea"
+		"West Northsea"
+		"Southeast Northsea"
+		
+		#England/France border Sea Areas
+		"English Channel"
+		"Bay of Biscay"
+		"Cape Finisterre"
+		
+		#Spanish Coast (Atlantic Side)
+		"Portugese Coast"
+		"Cap St Vincent"
+		
+		#Iceland
+		"Faroes Gap"
+		"Denmark Strait"
+		
+		#Ireland/West Coast of England
+		"Irish Sea"
+		"The Hebreides"
+		"Irish West Coast"
+		
+		#Greenland
+		"Greenland Coast"
+		"Northern Sea of Labrador" 
+		"Southern Sea of Labrador"
+		
+		#Canada East Coast
+		"Hudson Bay"
+		"Grand Banks"
+		"Canadian Maritimes"
+		
+		#Western Mediterranean
+		"Costa del Sol"
+		"Gulf of Lyon"
+		"Algerian Coast"
+		
+		#Central Mediterranean
+		"Tyrrhenian Sea"
+		"Adriatic Sea"
+		
+		#Eastern Mediterranean
+		"Black Sea"
+		"Aegean Sea"
+		"Egyptian Coast"
+		
+		
+		#North Atlantic
+		"North Atlantic"
+		"Western Approaches"
+		"The Seamounts"
+		"Azores"
+		
+		#Central Atlantic
+		"Central Atlantic"
+		"Central Mid-Atlantic Ridge"
+		"Bermuda Triangle"
+		"Guiana Basin"
+		"South-Central Mid-Atlantic Ridge"
+		"Cap Verde"
+		
+		#South Atlantic
+		"Pernambuco Plain"
+		"Ascension Fracture Zone"
+		"Argentine Plain"
+		"Angola Plain"
+		
+		#Caribbean Sea and Guilf of Mexico
+		"West Gulf of Mexico"
+		"East Gulf of Mexico" 
+		"Florida Strait"
+		"Yucatan Strait"
+		"Windward Islands"
+		"Central Carribean"
+		
+		#Brazil and Argentina Coast
+		"Coast of Guyana"
+		"Coast of Recife" 
+		"Coast of Uruguay"
+		"Coast of Brazil"
+		"Coast of Argentina"
+		
+		# West Africa
+		"Coast of Africa"
+		"Coast of Bissao" 
+		
+		#Equitorial Africa
+		"Gulf of Guinea"
+		"Coast of Angola-Namibia"
+		
+		#South Africa
+		"Coast of South Africa"
+		"Atlantic-Indian Ridge"
+		
+		#East Africa
+		"Red Sea"
+		"Horn of Africa"
+		
+		#Madagascar Coast
+		"South Mozambique Channel"
+		"North Mozambique Channel" 
+		"Northeast Coast of Madagascar"
+		"Southeast Coast of Madagascar" 
+		
+		# South American West Coast
+		"Southeast Pacific Basin"
+		"West Coast of Chile"
+		"West Coast of Peru"
+		"South Southeast Pacific Ocean"
+		"North Southeast Pacific Ocean"
+	}
+ 
+}

@@ -1,0 +1,926 @@
+######################################################
+# 國府經濟事件組
+######################################################
+event = {
+    id = 60500
+    random = no
+    country = CHI
+    persistent = yes
+   trigger = {
+		NOT = { flag = JinYuan }
+		NOT = { flag = money_reform }
+		OR = { 
+			NOT = { money = 300 }
+			NOT = { supplies = 1000 }
+		}
+   }  
+    #	picture = "fb"
+    name = "大量印刷法币 "
+    desc = "由于国民政府支付不起庞大的军费开支，政府便大量 
+印刷法币减轻军费。自从1946年后，法币的发行量更加 
+大增，由抗战胜利时的5569亿上升至1948年8月的604 
+兆元，三年间增加超过一千倍，造成了民间的恶性通 
+货膨胀。"
+    style = 0
+
+    date = { day = 1 month = january year = 1945 }
+    offset = 10
+    deathdate = { day = 30 month = august year = 1950 }
+
+    	action_a = {
+       		name = "印刷"
+       		command = { type = dissent value = 1 }
+		command = { type = resource which = money value = 500 }
+		command = { type = resource which = supplies value = 600 }
+       		command = { type = industrial_modifier which = total value = -0.5 } #-1
+    	}
+    	action_b = {
+       		name = "不需要"
+       		command = {  } 
+    	}
+}
+
+event = {
+    	id = 60501
+    	random = no
+    	country = CHI
+    	persistent = yes
+   	trigger = {
+		flag = JinYuan 
+		NOT = { flag = money_reform }
+		OR = { 
+			NOT = { money = 300 }
+			NOT = { supplies = 1000 }
+		}
+   }  
+    #	picture = "fb"
+    	name = "大量印刷金圓券 "
+    	desc = "由于国民政府支付不起庞大的军费开支，政府便大量 
+		印刷法币减轻军费。自从1946年后，法币的发行量更加 
+		大增，由抗战胜利时的5569亿上升至1948年8月的604 
+		兆元，三年间增加超过一千倍，造成了民间的恶性通 
+		货膨胀。"
+    	style = 0
+
+    	date = { day = 1 month = january year = 1945 }
+    	offset = 10
+    	deathdate = { day = 30 month = august year = 1950 }
+
+    	action_a = {
+       		name = "印刷"
+       		command = { type = dissent value = 1 }
+		command = { type = resource which = money value = 500 }
+		command = { type = resource which = supplies value = 600 }
+       		command = { type = industrial_modifier which = total value = -0.5 } 
+    	}
+    	action_b = {
+       		name = "不需要"
+       		command = {  } 
+    	}
+}
+event = {
+	id = 60502
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		OR = {
+			random = 10
+			year = 1945
+			NOT = {	money = 500 }
+			NOT = {	supplies = 1000 }
+		}
+	}
+
+	name = "1945年法幣增發計畫"
+	desc = "EVT_60503_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = january year = 1945 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1945 }
+
+	action_a = {
+		name = "增发法币 "
+		command = { type = dissent value = 2 }
+		command = { type = resource which = money value = 400 }
+		command = { type = resource which = supplies value = 500 }
+		command = { type = trigger which = 60514 value = 30 }
+	}
+}
+event = {
+	id = 60503
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		OR = {
+			random = 10
+			year = 1946
+			NOT = {	money = 500 }
+			NOT = {	supplies = 1000 }
+		}
+	}
+
+	name = "1946年法幣增發計畫"
+	desc = "EVT_60503_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = january year = 1946 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1946 }
+
+	action_a = {
+		name = "增发法币 "
+		command = { type = dissent value = 2 }
+		command = { type = resource which = money value = 800 }
+		command = { type = resource which = supplies value = 1000 }
+		command = { type = trigger which = 60518 value = 30 }
+	}
+}
+
+event = {
+	id = 60504
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		OR = {
+			random = 10
+			year = 1947
+			NOT = {	money = 500 }
+			NOT = {	supplies = 1000 }
+		}
+	}
+
+	name = "1947年法幣增發計畫"
+	desc = "EVT_60503_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = january year = 1947 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1947 }
+
+	action_a = {
+		name = "增发法币 "
+		command = { type = dissent value = 4 }
+		command = { type = resource which = money value = 1600 }
+		command = { type = resource which = supplies value = 2000 }
+		command = { type = trigger which = 60522 value = 30 }
+	}
+}
+
+event = {
+	id = 60505
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		OR = {
+			random = 10
+			year = 1948
+			NOT = {	money = 500 }
+			NOT = {	supplies = 1000 }
+		}
+	}
+
+	name = "1948年法幣增發計畫"
+	desc = "EVT_60503_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1948 }
+
+	action_a = {
+		name = "加速印刷  "
+		command = { type = dissent value = 8 }
+		command = { type = resource which = money value = 3200 }
+		command = { type = resource which = supplies value = 4000 }
+		command = { type = trigger which = 60524 value = 30 }
+	}
+}
+
+event = {
+	id = 60506
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		NOT = { flag = JinYuan }
+		OR = {
+			random = 10
+			year = 1949
+			NOT = {	money = 500 }
+			NOT = {	supplies = 1000 }
+		}
+	}
+
+	name = "1949年法幣增發計畫"
+	desc = "EVT_60503_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = "加速印刷  "
+		command = { type = dissent value = 10 }
+		command = { type = resource which = money value = 3200 }
+		command = { type = resource which = supplies value = 4000 }
+		command = { type = trigger which = 60526 value = 30 }
+	}
+}
+######################################################
+event = {
+	id = 60514
+	random = no
+	country = chi
+
+	name = "国统区的通货膨胀 "
+	desc = "EVT_60504_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "通货膨胀 "
+		command = { type = dissent value = 1 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+#		command = { type = trigger which = 60516 value = 360 }
+#		command = { type = sleepevent which = 60515 }
+	}
+}
+
+event = {
+	id = 60518
+	random = no
+	country = chi
+
+	name = "国统区的通货膨胀 "
+	desc = "EVT_60505_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "通货膨胀的恶化 "
+		command = { type = dissent value = 3 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+#		command = { type = trigger which = 60520 value = 360 }
+#		command = { type = sleepevent which = 60519 }
+	}
+}
+event = {
+	id = 60522
+	random = no
+	country = chi
+
+	name = "国统区的通货膨胀 "
+	desc = "EVT_60505_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "大规模的萧条即将开始 "
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+#		command = { type = trigger which = 60524 value = 360 }
+#		command = { type = sleepevent which = 60523 }
+	}
+}
+
+event = {
+	id = 60524
+	random = no
+	country = chi
+
+	name = "经济崩溃的前兆 "
+	desc = "EVT_60505_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "大规模的萧条即将开始 "
+		command = { type = dissent value = 8 }
+		command = { type = industrial_modifier which = total value = -8 }
+		command = { type = industrial_modifier which = supplies value = -8 }
+#		command = { type = trigger which = 60526 value = 360 }
+#		command = { type = sleepevent which = 60525 }
+	}
+}
+
+event = {
+	id = 60526
+	random = no
+	country = chi
+
+	name = "国统区经济的全面崩溃! "
+	desc = "EVT_60506_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "全面崩溃! "
+		command = { type = dissent value = 25 }
+		command = { type = industrial_modifier which = total value = -10 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = morale which = land value = -20 }
+		command = { type = max_organization which = land value = -10 }
+	}
+}
+
+event = {
+	id = 60528
+	random = no
+	country = chi
+   	persistent = yes
+	name = "通膨造成的經濟損失! "
+	desc = "EVT_60506_DESC"
+	style = 0
+	#	picture = "fabibianzhi"
+
+	action_a = {
+		name = "財金損失! "
+		command = { type = money value = -1000 }
+	}
+}
+#########################################
+event = {
+	id = 60530
+	country = chi
+	random = no
+
+	trigger = {
+		war = { country = CHC country = CHI }
+		event = 60524
+	}
+
+	name = "財政經濟緊急處分令"
+	desc = " "
+	style = 0
+	#	picture = "fabibianzhi"
+
+	date = { day = 1 month = august year = 1948 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = "改革幣制，挽救經濟 "
+		command = { type = trigger which = 60531 }
+		command = { type = trigger which = 60534 }
+	}
+	action_b = {
+		name = "沒必要 "
+		command = { type = resource which = money value = -1000 }
+	}
+}
+
+event = {
+  	id = 60531
+  	random = no
+  	country = chi
+  
+  	name = "幣制改革"
+	desc = "随着重庆新政的成功，在重庆耳熏目染日久的蒋经国 也培植其了自己的班底，庄继华有意鼓励其开始在赣 南推广新政。（改革期间CHI金钱不能低于500） "   
+	style = 0
+	#	picture = "gannan"
+
+  	action_a = {
+   		name = "發行金圓券 "
+		command = { type = resource which = money value = 1000 }
+		command = { type = resource which = supplies value = 5000 }
+   		command = { type = dissent value = 10 } 
+   		command = { type = free_money value = -50 } 
+   		command = { type = trigger which = 60532 value = 90 }  
+		command = { type = setflag which = JinYuan } 
+#   		command = { type = sleepevent which = 61950 }   
+   	}
+	action_b = {
+		name = "法幣要堅持 "
+		command = { type = resource which = money value = -500 }
+	}
+ }
+event = {
+  id = 60532
+  random = no
+  country = chi
+
+	name = "幣制改革的成功"
+	desc = "土地改革改变了封建土地制度，解放和发展了农业生产力，实现 了发展生产、降低物价、增加供给、提供工业原料的目的。土改 使得地主阶级的力量大大削弱，而新兴的民营资本得以开始发展 "
+	style = 0
+	#	picture = "gannan"
+
+        action_a = {
+                 name = "民生是三民主义的根本"
+ 		command = { type = dissent value = -10 }
+ 		command = { type = free_money value = 50 }
+	 		command = { type = sleepevent which = 60533 }
+        }
+ }
+
+event = {
+        id = 60533
+        random = no
+        country = chi
+
+        trigger = {
+#    		ai = no
+		event = 60531 
+#		event = 61305
+		or = {
+			not = { money = 500 }
+	 		not = { control = { province = 1237 data = chi } }
+			not = { control = { province = 1235 data = chi } }
+			event = 60539
+	            }
+        }
+
+	name = "幣制改革的失败 "
+	desc = "赎买土地尽管是土地改革中最为和缓的方式，但是它同样不容于 庞大的军阀地主阶层，脆弱的改革面对极右势力的疯狂反扑、试 验区赣南的失守、经济长期的赤字都可能失败，很不幸这场艰难 的改革无可挽回的失败了，历史不再有新的可能。 "
+	style = 0
+	#	picture = "news_paper"
+
+	date = { day = 10 month = march year = 1945 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+	          name = "改革黯然落幕"
+	  		command = { type = dissent value = 5 }
+	  		command = { type = sleepevent which = 60532 }
+        }
+ }
+
+#  八一九限價
+ event = {
+  	id = 60534
+  	random = no
+  	country = CHI
+
+	name = "八一九限價"
+	desc = "EVT_82074_DESC"
+	style = 0
+	#	picture = "news_paper"
+
+  	action_a = {
+   		name = "限制物價，遏止通膨"
+   		command = { type = dissent value = 5 }
+   		command = { type = domestic	which = democratic value = 1 }
+   		command = { type = trigger which = 60535 }
+   	}
+  	action_b = {
+   		name = "沒有必要"
+   		command = { type = dissent value = 5 }
+   	}
+ }
+
+event = {
+  	id = 60535
+  	random = no
+  	country = CHI
+
+	name = "官僚资本家的疯狂反扑"
+	desc = "孔祥熙的查处引来了诸多官僚资本家的反扑，他们囤积物资哄 抬物价，破坏金融秩序，妄图使国民政府的反腐败行动无疾而 终。"
+	style = 0
+	#	picture = "news_paper"
+
+  	action_a = {
+  		name = "一个月内回复物价！（1个月内补给不能低于5000）"
+   		command = { type = dissent value = 15 }   
+   		command = { type = free_supplies value = -1000 }
+   		command = { type = trigger which = 60537 value = 30 }
+   	}
+ }
+
+ event = {
+  	id = 60536
+  	random = no
+  	country = CHI
+
+  	trigger = {
+       		event = 60535
+  		not = { event = 60537 }
+       		OR = {
+			not = { supplies = 5000 }
+			AND = {	NOT = { flag = Yangzi }
+				event = 60538 
+			}
+		}
+    	}
+
+	name = "物價管制失败"
+	desc = "官僚资本家们的反扑使本已捉襟见肘的国民政府经济更加窘迫 ，尤其是前线部队怨言尤大，此种情形下，打老虎的反腐行动 最终只能打了耗子。"
+	style = 0
+	#	picture = "news_paper"
+
+  	date = { day = 10 month = december year = 1945 }
+  	offset = 5
+  	deathdate = { day = 29 month = december year = 1999 }
+
+ 	action_a = {
+   		name = "無力回天"
+   		command = { type = dissent value = 15 }   
+   		command = { type = sleepevent which = 60537 }
+   	}
+}
+
+ event = {
+  	id = 60537
+  	random = no
+  	country = CHI
+
+	name = "物價管制初見成效"
+	desc = "官僚资本家的反扑未能取得任何效果，中央政府以铁腕强硬的 粉碎了他们的经济行动，未来，也许新的时代正在开启。"
+	style = 0
+	#	picture = "news_paper"
+
+  	action_a = {
+   		name = "新的时代"
+   		command = { type = dissent value = -15 }
+   		command = { type = free_supplies value = 1000 }
+#   		command = { type = change_idea which = policy_economy_Laisser-faire value = CHI }
+   		command = { type = sleepevent which = 60536 }   
+   	}
+}
+
+ event = {
+  	id = 60538
+  	random = no
+  	country = CHI
+
+	name = "揚子公司案"
+	desc = " "
+	style = 0
+#	#	picture = "news_paper"
+
+  	action_a = {
+   		name = "清查"
+   		command = { type = dissent value = 5 }
+   		command = { type = sleepevent which = 61953 }
+   		command = { type = sleepminister which = 52030 }
+   		command = { type = sleepminister which = 52071 }
+   		command = { type = sleepminister which = 52124 }
+   		command = { type = domestic which = democratic value = 1 }
+   		command = { type = setflag which = Yangzi }
+   	}
+  	action_b = {
+   		name = "申请将孔祥熙免职了事"
+   		command = { type = dissent value = 5 }
+   		command = { type = sleepminister which = 52124 }
+   	}
+ }
+
+event = {
+  	id = 60539
+  	random = no
+  	country = CHI
+
+  	trigger = {
+       		OR = {
+			event = 60536
+			event = 60533 
+		}
+    	}
+
+	name = "財政經濟緊急處分令失败"
+	desc = "官僚资本家们的反扑使本已捉襟见肘的国民政府经济更加窘迫 ，尤其是前线部队怨言尤大，此种情形下，打老虎的反腐行动 最终只能打了耗子。"
+	style = 0
+	#	picture = "news_paper"
+
+  	date = { day = 10 month = december year = 1945 }
+  	offset = 5
+  	deathdate = { day = 29 month = december year = 1999 }
+
+ 	action_a = {
+   		name = "無力回天"
+   		command = { type = dissent value = 5 }   
+		command = { type = trigger which = 60526 }
+	  	command = { type = free_money value = 30 }
+   		command = { type = free_supplies value = 1000 }
+		command = { type = sleepevent which = 60532 }
+		command = { type = sleepevent which = 60537 }
+   	}
+}
+
+event = {
+  	id = 60540
+  	random = no
+  	country = CHI
+
+  	trigger = {
+		event = 60532
+		event = 60537
+    	}
+
+	name = "財政經濟緊急處分令見效"
+	desc = "官僚资本家们的反扑使本已捉襟见肘的国民政府经济更加窘迫 ，尤其是前线部队怨言尤大，此种情形下，打老虎的反腐行动 最终只能打了耗子。"
+	style = 0
+	#	picture = "news_paper"
+
+  	date = { day = 10 month = december year = 1945 }
+  	offset = 5
+  	deathdate = { day = 29 month = december year = 1999 }
+
+ 	action_a = {
+   		name = "經濟回穩"
+   		command = { type = dissent value = -10 }   
+		command = { type = sleepevent which = 60526 }
+		command = { type = sleepevent which = 60539 }
+       		command = { type = supplies value = 5000 }
+       		command = { type = money value = 500 }
+       		command = { type = industrial_modifier which = total value = 10 }
+   	}
+}
+
+######################################################
+# 上海打虎(失敗版)
+######################################################
+event = {
+    id = 60541
+    random = no
+    country = CHI
+    trigger = {
+	event = 60536        
+   }
+    #	picture = "dahu"
+    name = "上海打虎 "
+    desc = "国民党的腐败和国统区的通货膨胀已经严重危及了
+            南京国民政府的统治，蒋介石决定派其子蒋经国到
+            上海整顿经济，控制物价，虽然初期取得了一些成
+            效，但最后因触及四大家族的利益而草草收场 "
+    style = 0
+
+    date = { day = 5 month = june year = 1946 }
+    offset = 2
+    deathdate = { day = 30 month = december year = 1955 }
+
+    action_a = {
+       name = "有心杀贼，无力回天"
+       		command = { type = industrial_modifier which = total value = 5 }
+       		command = { type = supplies value = 2000 }
+       		command = { type = dissent value = -5 }
+       		command = { type = sleepevent which = 60542 }
+    }
+}
+######################################################
+##上海打虎(成功版)	
+######################################################
+event = { 
+   id = 60542
+   country = CHI
+   random = no
+   
+   trigger = {
+       	NOT = { exists = CHC }         
+   }
+
+   name = " 上海打虎 "
+   desc="国民党的腐败和国统区的通货膨胀已经严重危及了 
+         南京国民政府的统治，在打败了共产党之后蒋介石  
+         决定派其子蒋经国到上海整顿经济，控制物价，提 示：仍需要20000补给和5000錢"
+   style = 0
+   date = { day = 1 month = march year = 1945 }
+   offset = 1
+   deathdate = { day = 30 month = december year = 1955 }
+   #	picture = "dahu"
+
+   action_a = { 
+       name = "ok"
+       		command = { type = leave_alliance }
+       		command = { type = industrial_modifier which = total value = 10 }
+   }
+   
+}
+######################################################
+##平抑物价	
+######################################################
+event = { 
+   id = 60543
+   country = CHI
+   random = no
+   
+   trigger = {
+       	OR = {
+		event = 60542
+		event = 60540
+	}    
+       and = { supplies = 20000 money = 5000 } 
+   }
+
+   name = " 平抑物价 "
+   desc="由于长期发行法币来维持战争。导致国统区内物价飞涨， 现在我们需要大量物资来弥补货币贬值"
+   style = 0
+   date = { day = 1 month = march year = 1945 }
+   offset = 30
+   deathdate = { day = 30 month = december year = 1955 }
+   #	picture = "jieshou"
+
+   action_a = { 
+       name = "ok"
+       		command = { type = industrial_modifier which = total value = 15 }
+       		command = { type = industrial_modifier which = supplies value = 25 }
+       		command = { type = supplies value = -20000 }
+		command = { type = supplies value = -5000 }
+   }  
+}
+
+######################################################
+# 黄金运台
+######################################################
+event = {
+    	id = 60544 #941296
+    	random = no
+    	country = CHI
+    	trigger = {
+       		event = 943019
+   	}
+    #	picture = "huangjin"
+    	name = "黄金运台 "
+    	desc = "当三大战役结束时，蒋介石就做出了最坏的打算，万一
+	长江防线不保，国民政府将退往台湾以遥控大西南的军队，为此蒋介 
+		石将上海的黄金和物资秘密运往台湾，有趣的是这件事就连当时的总 
+		统李宗仁都不知情"
+    	style = 0
+    	date = { day = 1 month = january year = 1945 }
+    	offset = 1
+    	deathdate = { day = 30 month = december year = 1955 }
+    	action_a = {
+       		name = "抢运"
+       		command = { type = money value = -4500 }
+	}
+}
+
+#############################################
+###### 国民党的残存财富 # 
+#############################################
+event = {
+	id = 60545
+        random = no
+        country = CHI
+
+	trigger = { event = 60544 event = 941220 }
+
+	name = "国民党的残存财富 "
+	desc = "在我们在败退台湾之前，值得庆幸的是我们从大陆抢救了一批财 富和各领域专家，这也是我们在台湾重振旗鼓，反攻大陆的希望。 "
+	style = 0
+	picture = "cancuncaifu"
+
+  	date = { day = 5 month = april year = 1949 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1990 }
+
+  	action_a = {
+    		name = "我们必须珍视这笔财富！ "
+                command = { type = money value = 5000 }
+                command = { type = supplies value = 10000 }
+                command = { type = research_mod value = 2 }
+  	}
+}
+
+event = {
+	id = 60546 #69107004
+	country = chi
+	random = no
+
+ 	trigger = { 
+		event = 941220
+ 		or = { 
+			flag = quanmian 
+        		flag = bufeng 
+        	} 
+#  		NOT = { dissent = 10 }      
+	} 
+  
+	name = "颁布三七五减租法案 "
+	desc = "69107004desc"
+	style = 0
+   
+  	date = { day = 25 month = october year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "国民党万岁 "
+		command = { type = dissent value = -5 }
+		command = { type = relative_manpower value = 2 }
+		command = { type = industrial_modifier which = supplies value = 5 }
+           	}         	
+}
+event = {
+	id = 60547 #69107005
+	country = chi
+	random = no
+
+ 	trigger = { 
+ 		or = { flag = quanmian 
+        		flag = bufeng 
+        	} 
+  		NOT = { dissent = 10 } 
+  		event = 60546 
+  		supplies = 6000
+  		money = 600    
+	} 
+
+  
+	name = "公地放领 "
+	desc = "1951年1月31日，蒋介石手令陈诚，从速办理土地改革。陈诚根据蒋介
+		石的手令，开始了大规模的公地放领，即把“国有”及“省有”耕地的
+		所有权转移为农民所有，使他们成为在自己土地上耕作的自耕农。这实
+		际上是“政府”先给地主作个表率，以求在一定范围内实现“耕者有其田”。"
+	style = 0
+   
+  	date = { day = 1 month = january year = 1951 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "国民党万岁 "
+		command = { type = dissent value = -5 }
+		command = { type = relative_manpower value = 3 }
+		command = { type = industrial_modifier which = supplies value = 7 }
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = supplies value = -5000 }
+		command = { type = money value = -500 }
+	}         	
+}
+event = {
+	id = 60548 #69107007
+	country = chi
+	random = no
+
+
+ 	trigger = { 
+ 		or = { flag = quanmian 
+ 	       		flag = bufeng 
+        	} 
+  		NOT = { dissent = 10 } 
+  		event = 60547 
+	} 
+
+  
+	name = "实施耕者有其田 "
+	desc = "1952年7月24日，国民党中央改造委员会召开第371 次会议，确定下一年度的施政中心为实施耕者有 其田，并提出三条基本原则： (1)采取温和手段： (2)在不增加农民负担基础上使其获得土地，兼顾地主利益： (3)地主所获地价需由政府引导转向工业。"
+	style = 0
+   
+  	date = { day = 23 month = july year = 1952 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "国民党万岁 "
+		command = { type = money value = -500 }
+		command = { type = dissent value = -5 }
+		command = { type = relative_manpower value = 5 }
+		command = { type = industrial_modifier which = supplies value = 15 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = sleepevent which = 69107006 }
+	}         	
+}
+
+event = {
+	id = 60549
+	country = chi
+	random = no
+
+ 	trigger = { 
+		event = 941220
+		money = 1000    
+	} 
+  
+	name = "發行新臺幣 "
+	desc = "1949年黃金運臺，為穩定貨幣價值，規劃以其中80萬兩作為發行新臺
+		幣的準備金，以取得國際信任，並採「最高限額發行制」，限制發行
+		總額為2億元，期能遏止通貨膨脹。1949年6月15日，臺灣省政府，正
+		式發行新臺幣，規定舊臺幣40,000元折合新臺幣1元。臺語俗語「四
+		萬換一箍」由此而生，意即「四萬換一圓」。1950年6月21日行政院發
+		布命令，中華民國國幣單位保留銀圓本位，而記帳單位自1950年7月1日
+		起改為新臺幣，銀圓與新臺幣以1949年12月29日最後牌告匯率固定為
+		1銀圓=新臺幣3圓。"
+	style = 0
+   
+  	date = { day = 13 month = january year = 1949 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+    	action_a = {
+		name = "四萬換一箍 "
+#		command = { type = dissent value = -5 }
+		command = { type = money value = -1000 }
+		command = { type = free_money value = 20 }
+		command = { type = industrial_modifier which = total value = 50 }
+		command = { type = setflag which = money_reform }
+           	}         	
+}

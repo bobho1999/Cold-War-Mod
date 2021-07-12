@@ -1,0 +1,110 @@
+land_unit_type = 1
+# Heavy Field Artillery
+# 0 - Import Heavy Field Artillery 進口重炮
+model = {
+	cost 			= 7.5
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 3
+        softattack          = 8
+	supplyconsumption = 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Great War Heavy Field Artillery 一戰重炮
+model = {
+	cost 				= 3
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= -2
+	softattack			= 2
+	artillery_bombardment		= 1
+	supplyconsumption 	= 0.7
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - Early Heavy Field Artillery 36
+model = {
+	cost 			= 6
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 2
+        softattack          = 6
+	supplyconsumption = 1.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - Basic Heavy Field Artillery 38
+model = {
+	cost 			= 7.5
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 3
+        softattack          = 8
+	supplyconsumption = 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - Improved Heavy Field Artillery 40
+model = {
+	cost 			= 9
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 4
+        softattack          = 10
+	supplyconsumption = 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - Advanced Heavy Field Artillery 42
+model = {
+	cost 			= 10.5
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 5
+        softattack          = 12
+	supplyconsumption = 3.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 6 - Semi-Modern Heavy Field Artillery 45
+model = {
+	cost 			= 12
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 6
+        softattack          = 14
+	supplyconsumption = 4.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 7 - Modern Heavy Field Artillery 48
+model = {
+	cost 			= 13.5
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 7
+        softattack          = 16
+	supplyconsumption = 5.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 8 - Cold-War Heavy Field Artillery 51
+model = {
+	cost 			= 15
+	buildtime	 	= 180
+	manpower 		= 2
+        maxspeed            = -2 
+        artillery_bombardment		= 8
+        softattack          = 18
+	supplyconsumption = 6.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

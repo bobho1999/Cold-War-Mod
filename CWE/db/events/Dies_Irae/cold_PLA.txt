@@ -1,0 +1,3545 @@
+
+
+#############################################################################
+### Soviet Alliance
+#############################################################################
+
+
+
+
+event = {
+	id = 4310000
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_01_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	NOT = { flag = sov_PAL_alliance01 }
+	random = 50
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_01_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = sov_PAL_alliance01 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+
+	action_c = {
+		name = "COLD_NEGO_03_SELE"
+		ai_chance = 0
+		 command = { type = sleepevent which = 4310000 }
+		}
+}
+
+
+
+
+
+
+event = {
+	id = 4310001
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_02_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { flag = usa_PAL_alliance01 }
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 60
+		command = { type = setflag which = sov_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310002
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_02_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+		flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+		flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = sov_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310003
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_02_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = sov_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310004
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_02_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 20
+		command = { type = setflag which = sov_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 80
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 4310005
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_03_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { flag = usa_PAL_alliance01 }
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 60
+		command = { type = setflag which = sov_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310006
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_03_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+		flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = sov_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310007
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_03_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = sov_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310008
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_03_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 20
+		command = { type = setflag which = sov_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 80
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310009
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_03_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 10
+		command = { type = setflag which = sov_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 90
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310010
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_04_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { flag = usa_PAL_alliance01 }
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 80
+		command = { type = setflag which = sov_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 20
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310011
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_04_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 70
+		command = { type = setflag which = sov_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 30
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310012
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_04_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = sov_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310013
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_04_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = sov_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310014
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_04_NAME"
+	desc = "PAL_SOV_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 10
+		command = { type = setflag which = sov_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 90
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310015
+	random = no
+	country = PAL
+
+	name = "PAL_SOV_05_NAME"
+	desc = "PAL_SOV_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	random = 50
+	flag = sov_PAL_alliance01
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { war = { country = SOV country = PAL } }
+	relation = { which = SOV value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+		command = { type = money value = 1000 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310016
+	random = no
+	country = PAL
+
+	name = "PAL_SOV_06_NAME"
+	desc = "PAL_SOV_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	random = 5
+	flag = sov_PAL_alliance02
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { war = { country = SOV country = PAL } }
+	relation = { which = SOV value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+ 		command = { type = supplies value = 500 }
+		command = { type = resource which = energy value = 3000 }
+		command = { type = resource which = metal value = 1000 }
+		command = { type = resource which = rare_materials value = 500 }
+		command = { type = resource which = oil value = 300 }
+	}
+}
+
+
+event = {
+	id = 4310017
+	random = no
+	country = PAL
+
+	name = "PAL_SOV_07_NAME"
+	desc = "PAL_SOV_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	random = 45
+	flag = sov_PAL_alliance03
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { war = { country = SOV country = PAL } }
+	NOT = { army = 30 }
+	relation = { which = SOV value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+                command = { type = add_division which = infantry value = infantry when = 2 }
+                command = { type = add_division which = infantry value = infantry when = 2 }
+                command = { type = add_division which = infantry value = infantry when = 2 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310018
+	random = no
+	country = PAL
+
+	name = "PAL_SOV_08_NAME"
+	desc = "PAL_SOV_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	random = 20
+	flag = sov_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { war = { country = SOV country = PAL } }
+	NOT = { vp = 10 }
+	relation = { which = SOV value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+		command = { type = construct which = ic where = -1 value = 1 }
+		command = { type = construct which = ic where = -1 value = 1 }
+	}
+}
+
+
+event = {
+	id = 4310019
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_09_NAME"
+	desc = "COLD_NEGO_12_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	NOT = { flag = usa_PAL_alliance01 }
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 95
+		command = { type = alliance which = SOV }
+
+		command = { type = domestic which = democratic value = -6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_07_SELE"
+		ai_chance = 5
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+event = {
+	id = 4310020
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_09_NAME"
+	desc = "COLD_NEGO_12_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 90
+		command = { type = alliance which = SOV }
+
+		command = { type = domestic which = democratic value = -6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_07_SELE"
+		ai_chance = 10
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310021
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_09_NAME"
+	desc = "COLD_NEGO_12_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 80
+		command = { type = alliance which = SOV }
+
+		command = { type = domestic which = democratic value = -6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_07_SELE"
+		ai_chance = 20
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310022
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_09_NAME"
+	desc = "COLD_NEGO_12_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 60
+		command = { type = alliance which = SOV }
+
+		command = { type = domestic which = democratic value = -6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_07_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310023
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SOV_09_NAME"
+	desc = "COLD_NEGO_12_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = SOV value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 30
+		command = { type = alliance which = SOV }
+
+		command = { type = domestic which = democratic value = -6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_07_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+#############################################################################
+### America Alliance
+#############################################################################
+
+
+
+event = {
+	id = 4310100
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_01_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	NOT = { flag = usa_PAL_alliance01 }
+	random = 50
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_01_SELE" 
+		ai_chance = 70
+		command = { type = setflag which = usa_PAL_alliance01 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 30
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+
+	action_c = {
+		name = "COLD_NEGO_03_SELE"
+		ai_chance = 0
+		 command = { type = sleepevent which = 4310100 }
+		}
+}
+
+
+
+
+
+
+event = {
+	id = 4310101
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_02_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { flag = sov_PAL_alliance01 }
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 60
+		command = { type = setflag which = usa_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310102
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_02_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+		flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+		flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = usa_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310103
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_02_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = usa_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310104
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_02_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	NOT = { flag = usa_PAL_alliance02 }
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 20
+		command = { type = setflag which = usa_PAL_alliance02 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 80
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+
+
+
+
+
+
+event = {
+	id = 4310105
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_03_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { flag = sov_PAL_alliance01 }
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 60
+		command = { type = setflag which = usa_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310106
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_03_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+		flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = usa_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310107
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_03_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = usa_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310108
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_03_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 20
+		command = { type = setflag which = usa_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 80
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310109
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_03_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	NOT = { flag = usa_PAL_alliance03 }
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 10
+		command = { type = setflag which = usa_PAL_alliance03 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 90
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+event = {
+	id = 4310110
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_04_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	NOT = { flag = sov_PAL_alliance01 }
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 80
+		command = { type = setflag which = usa_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 20
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+event = {
+	id = 4310111
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_04_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 70
+		command = { type = setflag which = usa_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 30
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310112
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_04_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 50
+		command = { type = setflag which = usa_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 50
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310113
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_04_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 30
+		command = { type = setflag which = usa_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310114
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_04_NAME"
+	desc = "PAL_USA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	NOT = { flag = usa_PAL_alliance04 }
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_04_SELE" 
+		ai_chance = 10
+		command = { type = setflag which = usa_PAL_alliance04 }
+		command = { type = supplies value = 100 }
+	}
+
+	action_b = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 90
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310115
+	random = no
+	country = PAL
+
+	name = "PAL_USA_05_NAME"
+	desc = "PAL_USA_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { alliance = { country = USA country = PAL } }
+	NOT = { war = { country = USA country = PAL } }
+	random = 50
+	flag = usa_PAL_alliance01
+	relation = { which = USA value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+		command = { type = money value = 1000 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310116
+	random = no
+	country = PAL
+
+	name = "PAL_USA_06_NAME"
+	desc = "PAL_USA_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { alliance = { country = USA country = PAL } }
+	NOT = { war = { country = USA country = PAL } }
+	random = 5
+	flag = usa_PAL_alliance02
+	relation = { which = USA value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+ 		command = { type = supplies value = 500 }
+		command = { type = resource which = energy value = 3000 }
+		command = { type = resource which = metal value = 1000 }
+		command = { type = resource which = rare_materials value = 500 }
+		command = { type = resource which = oil value = 300 }
+	}
+}
+
+
+event = {
+	id = 4310117
+	random = no
+	country = PAL
+
+	name = "PAL_USA_07_NAME"
+	desc = "PAL_USA_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { alliance = { country = USA country = PAL } }
+	NOT = { war = { country = USA country = PAL } }
+	random = 35
+	flag = usa_PAL_alliance03
+	NOT = { army = 25 }
+	relation = { which = USA value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+                command = { type = add_division which = armor value = armor when = 4 }
+                command = { type = add_division which = armor value = armor when = 4 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310118
+	random = no
+	country = PAL
+
+	name = "PAL_USA_08_NAME"
+	desc = "PAL_USA_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { alliance = { country = USA country = PAL } }
+	NOT = { war = { country = USA country = PAL } }
+	random = 20
+	flag = usa_PAL_alliance04
+	NOT = { vp = 10 }
+	relation = { which = USA value = 120 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_05_SELE" 
+		ai_chance = 100
+		command = { type = construct which = ic where = -1 value = 1 }
+		command = { type = construct which = ic where = -1 value = 1 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310119
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_09_NAME"
+	desc = "COLD_NEGO_11_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	NOT = { flag = sov_PAL_alliance01 }
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 25
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 45
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+	action_b = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 45
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = -10 }
+	}
+	action_c = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 10
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310120
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_09_NAME"
+	desc = "COLD_NEGO_11_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	flag = sov_PAL_alliance01
+	NOT = { flag = sov_PAL_alliance02 }
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 25
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 30
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+	action_b = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 30
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = -10 }
+	}
+
+	action_c = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 40
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+event = {
+	id = 4310121
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_09_NAME"
+	desc = "COLD_NEGO_11_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	NOT = { flag = sov_PAL_alliance03 }
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 25
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 20
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+	action_b = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 20
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = -10 }
+	}
+
+	action_c = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 60
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310122
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_09_NAME"
+	desc = "COLD_NEGO_11_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	NOT = { flag = sov_PAL_alliance04 }
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 25
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 15
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+	action_b = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 15
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = -10 }
+	}
+	action_c = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 70
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+event = {
+	id = 4310123
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_USA_09_NAME"
+	desc = "COLD_NEGO_11_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { atwar = USA }
+	NOT = { atwar = SOV }
+	NOT = { atwar = PAL }
+	flag = usa_PAL_alliance01
+	flag = usa_PAL_alliance02
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+	flag = sov_PAL_alliance01
+	flag = sov_PAL_alliance02
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 25
+	relation = { which = USA value = 100 }
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 10
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = 10 }
+	}
+	action_b = {
+		name = "COLD_NEGO_06_SELE" 
+		ai_chance = 10
+		command = { type = alliance which = USA }
+
+		command = { type = domestic which = democratic value = 6 }
+		command = { type = domestic which = political_left value = -10 }
+	}
+
+	action_c = {
+		name = "COLD_NEGO_02_SELE"
+		ai_chance = 80
+		command = { type = supplies value = 10 }
+		command = { type = relation which = USA value = -20 }
+		}
+}
+
+
+
+
+#############################################################################
+### cold war
+#############################################################################
+
+
+
+event = {
+	id = 4310200
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 100
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+event = {
+	id = 4310201
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 100
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+	}
+}
+
+
+
+event = {
+	id = 4310202
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 100
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+		command = { type = revolt which = -1 }
+	}
+}
+
+event = {
+	id = 4310203
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = political_left value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_b = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = political_left value = 1 }
+		command = { type = dissent value = 2 }
+	}
+	action_c = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = professional_army value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_d = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+
+event = {
+	id = 4310204
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = free_market value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_b = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = dissent value = 2 }
+	}
+	action_c = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_d = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = interventionism value = 1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+
+event = {
+	id = 4310205
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = professional_army value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_b = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = freedom value = 1 }
+		command = { type = dissent value = 2 }
+	}
+	action_c = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = defense_lobby value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_d = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = free_market value = 1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+
+event = {
+	id = 4310206
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "COLD_NEGO_13_SELE"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = freedom value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_b = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = professional_army value = 1 }
+		command = { type = dissent value = 2 }
+	}
+	action_c = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 2 }
+	}
+	action_d = {
+		name = "COLD_NEGO_14_SELE" 
+		ai_chance = 25
+		command = { type = domestic which = defense_lobby value = 1 }
+		command = { type = dissent value = 2 }
+	}
+}
+
+
+
+event = {
+	id = 4310207
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { flag = usa_worldwar3_01 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 100
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 0
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310208
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = usa_worldwar3_01
+	NOT = { flag = usa_worldwar3_02 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 95
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 5
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+event = {
+	id = 4310209
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = usa_worldwar3_01
+	flag = usa_worldwar3_02
+	NOT = { flag = usa_worldwar3_03 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 30
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 90
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 10
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310210
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = usa_worldwar3_01
+	flag = usa_worldwar3_02
+	flag = usa_worldwar3_03
+	NOT = { flag = usa_worldwar3_04 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 45
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 85
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 15
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310211
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = usa_worldwar3_01
+	flag = usa_worldwar3_02
+	flag = usa_worldwar3_03
+	flag = usa_worldwar3_04
+	NOT = { flag = usa_worldwar3_05 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 70
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 30
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+event = {
+	id = 4310212
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = usa_worldwar3_01
+	flag = usa_worldwar3_02
+	flag = usa_worldwar3_03
+	flag = usa_worldwar3_04
+	flag = usa_worldwar3_05
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 60
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 50
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 50
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310213
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	NOT = { flag = sov_worldwar3_01 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 100
+		command = { type = belligerence value = 1 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 0
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310214
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = sov_worldwar3_01
+	NOT = { flag = sov_worldwar3_02 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 100
+		command = { type = belligerence value = 1 }
+		command = { type = setflag which = sov_PAL_alliance_tairitugekika02 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 0
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+event = {
+	id = 4310215
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = sov_worldwar3_01
+	flag = sov_worldwar3_02
+	NOT = { flag = sov_worldwar3_03 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 30
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 95
+		command = { type = belligerence value = 1 }
+		command = { type = setflag which = sov_PAL_alliance_tairitugekika03 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 5
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310216
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = sov_worldwar3_01
+	flag = sov_worldwar3_02
+	flag = sov_worldwar3_03
+	NOT = { flag = sov_worldwar3_04 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 45
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 92
+		command = { type = belligerence value = 1 }
+		command = { type = setflag which = sov_PAL_alliance_tairitugekika04 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 8
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310217
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = sov_worldwar3_01
+	flag = sov_worldwar3_02
+	flag = sov_worldwar3_03
+	flag = sov_worldwar3_04
+	NOT = { flag = sov_worldwar3_05 }
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 90
+		command = { type = belligerence value = 1 }
+		command = { type = setflag which = sov_PAL_alliance_tairitugekika05 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 10
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+		command = { type = clrflag which = sov_PAL_alliance_tairitugekika01 }
+		command = { type = clrflag which = sov_PAL_alliance_tairitugekika02 }
+		command = { type = clrflag which = sov_PAL_alliance_tairitugekika03 }
+		command = { type = clrflag which = sov_PAL_alliance_tairitugekika04 }
+		command = { type = clrflag which = sov_PAL_alliance_tairitugekika05 }
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+
+
+event = {
+	id = 4310218
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "PAL_SUA_01_NAME"
+	desc = "PAL__SUA_01_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	flag = sov_worldwar3_01
+	flag = sov_worldwar3_02
+	flag = sov_worldwar3_03
+	flag = sov_worldwar3_04
+	flag = sov_worldwar3_05
+	OR = {
+	flag = usa_PAL_alliance03
+	flag = usa_PAL_alliance04
+		}
+	OR = {
+	flag = sov_PAL_alliance03
+	flag = sov_PAL_alliance04
+		}
+	NOT = { alliance = { country = SOV country = PAL } }
+	NOT = { alliance = { country = USA country = PAL } }
+	random = 60
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 18
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_08_SELE" 
+		ai_chance = 90
+		command = { type = belligerence value = 5 }
+	}
+	action_b = {
+		name = "COLD_NEGO_09_SELE" 
+		ai_chance = 10
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+
+
+		command = { type = relation which = PAL value = -100 }
+	}
+}
+
+##################################################################################
+### PAL Alliance
+##################################################################################
+
+
+event = {
+	id = 4310300
+	random = no
+	country = PAL
+	persistent = yes
+
+	name = "PAL_SUA_02_NAME"
+	desc = "PAL_SUA_02_DESC"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	OR = {
+	flag = usa_PAL_alliance01
+	flag = sov_PAL_alliance01
+		}
+	OR = {
+	alliance = { country = SOV country = PAL }
+	alliance = { country = USA country = PAL }
+		}
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "COLD_NEGO_10_SELE" 
+		ai_chance = 100
+		command = { type = supplies value = 5000 }
+
+		command = { type = clrflag which = usa_PAL_alliance01 }
+		command = { type = clrflag which = usa_PAL_alliance02 }
+		command = { type = clrflag which = usa_PAL_alliance03 }
+		command = { type = clrflag which = usa_PAL_alliance04 }
+
+		command = { type = clrflag which = sov_PAL_alliance01 }
+		command = { type = clrflag which = sov_PAL_alliance02 }
+		command = { type = clrflag which = sov_PAL_alliance03 }
+		command = { type = clrflag which = sov_PAL_alliance04 }
+	}
+}
+
+
+
+event = {
+	id = 4310400
+	random = no
+	country = USA
+
+	name = "AI_EVENT"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	ai = yes
+	flag = sov_PAL_alliance03
+	random = 25
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		ai_chance = 100
+		command = { type = setflag which = usa_PAL_alliance01 }
+		command = { type = setflag which = usa_PAL_alliance02 }
+	}
+}
+
+
+
+event = {
+	id = 4310401
+	random = no
+	country = SOV
+
+	name = "AI_EVENT"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	ai = yes
+	flag = usa_PAL_alliance03
+	random = 25
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 1990 }
+
+
+	action_a = {
+		ai_chance = 100
+		command = { type = setflag which = sov_PAL_alliance01 }
+		command = { type = setflag which = sov_PAL_alliance02 }
+	}
+}
+
+
+
+
+event = {
+	id = 4310402
+	random = no
+	country = USA
+
+	name = "AI_EVENT"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	event = 4310400
+	ai = yes
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		ai_chance = 100
+		command = { type = setflag which = usa_PAL_alliance03 }
+	}
+}
+
+
+
+event = {
+	id = 4310403
+	random = no
+	country = SOV
+
+	name = "AI_EVENT"
+	style = 0
+
+	trigger = {
+	flag = coldwar
+	ai = yes
+	event = 4310401
+	random = 50
+	}
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 20
+	deathdate = { day = 29 month = december year = 1990 }
+
+
+	action_a = {
+		ai_chance = 100
+		command = { type = setflag which = sov_PAL_alliance03 }
+	}
+}

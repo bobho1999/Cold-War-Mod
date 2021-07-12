@@ -1,0 +1,180 @@
+################################################################################################
+#杂牌军，剿匪师	成本极低，装备烂，所以攻防数值增加少，补给消耗很少，但是组织度和士气稍微调高一点。
+################################################################################################
+#杂牌军 Heavy Division 1918 (36)
+model = {
+	cost 				= 3	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 4	#2
+	defensiveness 			= 4	#5
+	toughness 			= 3
+	defaultorganisation 		= 5	#0
+	morale				= 5	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 2	#0 (special equipment)
+	hardattack			= 0	#0 (special equipment)
+	airattack			= 0	#0
+	airdefence			= 0	#0
+	suppression			= 2
+	maxspeed 			= 0	#1 
+	supplyconsumption		= 0.2
+	fuelconsumption			= 0.0
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+
+#杂牌军 Heavy Division 1936 (37)
+model = {
+	cost 				= 3	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 4	#2
+	defensiveness 			= 7	#5
+	toughness 			= 7
+	defaultorganisation 		= 5	#0
+	morale				= 5	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 2	#0 (special equipment)
+	hardattack			= 0	#0 (special equipment)
+	airattack			= 0	#0
+	airdefence			= 1	#0
+	suppression			= 2
+	maxspeed 			= 0	#1 
+	supplyconsumption		= 0.2
+	fuelconsumption			= 0.0
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+#杂牌军 Heavy Division 1939 (38)
+
+model = {
+	cost 				= 3	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 4	#2
+	defensiveness 			= 10	#5
+	toughness 			= 8
+	defaultorganisation 		= 6	#0
+	morale				= 6	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 3	#0 (special equipment)
+	hardattack			= 0	#0 (special equipment)
+	airattack			= 0	#0
+	airdefence			= 2	#0
+	suppression			= 2
+	maxspeed 			= 0	#1 
+	supplyconsumption		= 0.2
+	fuelconsumption			= 0.0
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+#杂牌军 Heavy Division 1941 (39)
+
+model = {
+	cost 				= 3	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 5	#2
+	defensiveness 			= 12	#5
+	toughness 			= 10
+	defaultorganisation 		= 8	#0
+	morale				= 8	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 4	#0 (special equipment)
+	hardattack			= 1	#0 (special equipment)
+	airattack			= 0	#0
+	airdefence			= 2	#0
+	suppression			= 3
+	maxspeed 			= 0	#1 
+	fuelconsumption			= 0.0
+	supplyconsumption		= 0.2
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+
+#杂牌军 Heavy Division 1943 (40)
+
+model = {
+	cost 				= 4	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 5	#2
+	defensiveness 			= 15	#5
+	toughness 			= 12
+	defaultorganisation 		= 9	#0
+	morale				= 9	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 5	#0 (special equipment)
+	hardattack			= 1	#0 (special equipment)
+	airattack			= 0	#0
+	airdefence			= 3	#0
+	suppression			= 4
+	maxspeed 			= 0	#1 
+	fuelconsumption			= 0.0
+	supplyconsumption		= 0.2
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+
+#45年型宪兵省总队 Heavy Division 1945 (41)
+
+model = {
+	cost 				= 6	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 6	#2
+	defensiveness 			= 25	#5
+	toughness 			= 20
+	defaultorganisation 		= 10	#0
+	morale				= 10 	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 8	#0 (special equipment)
+	hardattack			= 2	#0 (special equipment)
+	airattack			= 1	#0
+	airdefence			= 3	#0
+	suppression			= 7
+	maxspeed 			= 0	#1 
+	fuelconsumption			= 0.0
+	supplyconsumption		= 0.4
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+#47年型宪兵省总队 Heavy Division 1947 (42)
+
+model = {
+	cost 				= 6	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 6	#2
+	defensiveness 			= 28	#5
+	toughness 			= 23
+	defaultorganisation 		= 13	#0
+	morale				= 13 	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 10	#0 (special equipment)
+	hardattack			= 2	#0 (special equipment)
+	airattack			= 1	#0
+	airdefence			= 4	#0
+	suppression			= 9
+	maxspeed 			= 0	#1 
+	fuelconsumption			= 0.0
+	supplyconsumption		= 0.4
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}
+#51年型宪兵省总队 Heavy Division 1951 (43)
+
+model = {
+	cost 				= 7	#6	
+	buildtime	 		= 70	#70
+	manpower 			= 6	#2
+	defensiveness 			= 30	#5
+	toughness 			= 25
+	defaultorganisation 		= 15	#0
+	morale				= 15 	#0 
+	softness			= 0	#0 (mines)
+	softattack			= 12	#0 (special equipment)
+	hardattack			= 3	#0 (special equipment)
+	airattack			= 2	#0
+	airdefence			= 5	#0
+	suppression			= 12
+	maxspeed 			= 0	#1 
+	fuelconsumption			= 0.1
+	supplyconsumption		= 0.5
+	upgrade_time_factor 		= 0.3
+	upgrade_cost_factor 		= 1.0
+}

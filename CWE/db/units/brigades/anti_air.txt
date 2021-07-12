@@ -1,0 +1,158 @@
+land_unit_type = 1
+# 0 - Basic
+model = {
+	cost 				= 5
+	buildtime	 		= 40
+	manpower 			= 2
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 1
+	airdefence			= 2
+	maxspeed 			= -1
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved
+model = {
+	cost 				= 5
+	buildtime	 		= 42
+	manpower 			= 2
+	defensiveness 		= 1
+	hardattack			= 1
+	airattack			= 2
+	airdefence			= 3
+	supplyconsumption 	= 0.14
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced
+model = {
+	cost 				= 5
+	buildtime	 		= 44
+	manpower 			= 2
+	defensiveness 		= 1
+	hardattack			= 2
+	airattack			= 3
+	airdefence			= 3
+	supplyconsumption 	= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Semi-Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 46
+	manpower 			= 2
+	defensiveness 		= 2
+	hardattack			= 3
+	airattack			= 4
+	airdefence			= 4
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 48
+	manpower 			= 2
+	defensiveness 		= 3
+	hardattack			= 3
+	airattack			= 5
+	airdefence			= 5
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Elite Gun AA
+model = {
+	cost 				= 5
+	buildtime	 		= 50
+	manpower 			= 2
+	defensiveness 		= 2
+	hardattack			= 2
+	airattack			= 6
+	airdefence			= 6
+	supplyconsumption 	= 0.20
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - Mobile SAM SA-3
+model = {
+	cost 				= 6
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 4
+	hardattack			= 0
+	airattack			= 12
+	airdefence			= 12
+	supplyconsumption 	= 0.38
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - Tracked SAM SA-6
+model = {
+	cost 				= 7
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 8
+	hardattack			= 0
+	airattack			= 14
+	airdefence			= 14
+	supplyconsumption 	= 0.45
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 8 - 1979 Tracked SAM SA-11
+model = {
+	cost 				= 7
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 9
+	hardattack			= 0
+	airattack			= 15
+	airdefence			= 15
+	supplyconsumption 	= 0.48
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 9 - 1984 Tracked SAM
+model = {
+	cost 				= 7
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 10
+	hardattack			= 0
+	airattack			= 16
+	airdefence			= 16
+	supplyconsumption 	= 0.50
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 10 - 1995 Tracked SAM
+model = {
+	cost 				= 7
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 11
+	hardattack			= 0
+	airattack			= 17
+	airdefence			= 17
+	supplyconsumption 	= 0.52
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 11 - 2007 Tracked SAM
+model = {
+	cost 				= 7
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 12
+	hardattack			= 0
+	airattack			= 18
+	airdefence			= 18
+	supplyconsumption 	= 0.54
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

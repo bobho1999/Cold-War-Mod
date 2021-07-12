@@ -1,0 +1,92 @@
+# Italy Reset Garrison after Ethiopia AI File by Lothos
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################	
+target = {
+		# Med Island Yugoslavia and Greece
+		390 = 400  	# Tirana
+		534	= 400	# Sardinia
+		31  = 400  	# Malta
+		444 = 300	# Cyprus
+		396 = 300  	# Crete
+		388 = 200  	# Dubrovnik
+		384 = 200  	# Split
+		400 = 100  	# Cyclades
+		393 =  50	# more Beachheads in Greece
+		394 =  50	# more Beachheads in Greece
+
+		# Libya
+		916 = 220	# Tobruk
+		919 = 220	# Bardia
+		924 = 220	# Bengazi
+		932 = 220	# Zuara
+		933 = 220	# Tripoli
+
+		# Egypt
+		900 = 200	# Suez
+		901 = 200	# Port Said
+		906 = 200	# Alexandra
+		909 = 200	# El Alamein
+		910 = 200	# Fuka
+		
+		# Tunisia
+		938 = 200	# Sousse
+		939 = 200	# Tunis
+		940 = 200	# Bizerte
+
+		# Algeria
+		949 = 200	# Oran
+		953 = 200	# Algiers
+
+		# Morocco
+		954 = 200	# Melilla
+		958 = 200	# Casablanca
+
+		# Spain
+		536 = 200 # Menorca
+		535 = 200 # Mallorca
+		537 = 200 # Ibiza
+		357 = 200 # Barcellona
+		356 = 200 # Tarragona
+		354 = 200 # Valencia
+		352 = 200 # Murcia
+
+		# Middle East
+		404 = 100	# Palestine
+		406 = 100	#
+		1793 = 100	# Syria
+		1794 = 100	#
+		1798 = 100	# Palestine
+		1799 = 100	#
+		1800 = 100	#
+		1801 = 100	#
+		1862 = 100	# Lebanon
+	}
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 0.6
+	overseas_multiplier = 0.6
+}
+invasion = {
+        invasion = yes
+ 	base		= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random		= 28.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.1	#increase to avoid coastal forts more.
+	beach		= 0.1	#higher, avoid worst beaches.
+	distance	= 0.1	#higher = avoid long distance.
+	max_distance    = 120.0  #About the distance from Rostock to Narvik
+        max_staging_distance = 30
+	pocket		= 10.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 0.1	#prioritise taking pure islands.
+	enemy		= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 2.0	#higher = much more vary of troops nearby
+	air_base	= 1.5
+      	naval_base 	= 0.1
+      	air_support 	= 3.0
+      	redirect 	= home
+	ignore		= no
+        help_allies 		= yes
+	staging_province = {
+		523 # Taranto
+	}

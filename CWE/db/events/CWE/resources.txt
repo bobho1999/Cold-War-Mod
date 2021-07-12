@@ -1,0 +1,3626 @@
+### ID's 619000-619999 Technology and Resource Events
+#Soviet oil
+#WW2 era
+event = {
+	id = 619000
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1943 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 1 where = energy }
+		command = { type = add_prov_resource which = 1828 value = 1 where = oil }
+		command = { type = add_prov_resource which = 1828 value = 1 where = metal }
+		command = { type = add_prov_resource which = 1828 value = 1 where = rare_materials }
+	}
+}
+event = {
+	id = 619001
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1943 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 1 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 1 where = metal }
+	}
+}
+event = {
+	id = 619002
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = july year = 1943 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 1 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 1 where = metal }
+	}
+}
+event = {
+	id = 619003
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = august year = 1943 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 1 where = oil }
+	}
+}
+event = {
+	id = 619004
+	random = no
+
+	trigger = {
+		control = { province = 1847 data = -1 }#Grozny
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = april year = 1944 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1847 value = 6 where = oil }
+	}
+}
+event = {
+	id = 619005
+	random = no
+
+	trigger = {
+		control = { province = 1907 data = -1 }#Baku
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 3 month = april year = 1938 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1907 value = 7 where = oil }
+		command = { type = add_prov_resource which = 1907 value = 1 where = metal }
+	}
+}
+event = {
+	id = 619006
+	random = no
+
+	trigger = {
+		control = { province = 1907 data = -1 }#Baku
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 3 month = april year = 1940 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1907 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1907 value = 2 where = energy }
+	}
+}
+event = {
+	id = 619007
+	random = no
+
+	trigger = {
+		control = { province = 1907 data = -1 }#Baku
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 3 month = april year = 1942 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1907 value = 7 where = oil }
+	}
+}
+event = {
+	id = 619008
+	random = no
+
+	trigger = {
+		control = { province = 1907 data = -1 }#Baku
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 3 month = april year = 1944 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1907 value = 7 where = oil }
+		command = { type = add_prov_resource which = 1907 value = 1 where = rare_materials }
+	}
+}
+##postwar Ural Volga fields
+event = {
+	id = 619009
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 3 where = energy }
+		command = { type = add_prov_resource which = 1828 value = 2 where = oil }
+	}
+}
+event = {
+	id = 619010
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 2 where = oil }
+	}
+}
+event = {
+	id = 619011
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = july year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 2 where = oil }
+	}
+}
+event = {
+	id = 619012
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = august year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 2 where = oil }
+	}
+}
+#1948
+event = {
+	id = 619013
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 3 where = oil }
+	}
+}
+event = {
+	id = 619014
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 3 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619015
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = july year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 3 where = oil }
+	}
+}
+event = {
+	id = 619016
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = august year = 1948 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 3 where = oil }
+	}
+}
+#1952-53
+event = {
+	id = 619017
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1952 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 5 where = oil }
+	}
+}
+event = {
+	id = 619018
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1952 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 5 where = oil }
+	}
+}
+event = {
+	id = 619019
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = july year = 1953 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619020
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = august year = 1953 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 5 where = oil }
+	}
+}
+#1955-56
+event = {
+	id = 619021
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1955 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 9 where = oil }
+	}
+}
+event = {
+	id = 619022
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1955 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 9 where = oil }
+	}
+}
+event = {
+	id = 619023
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = july year = 1956 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 9 where = oil }
+	}
+}
+event = {
+	id = 619024
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = august year = 1956 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 9 where = oil }
+		command = { type = add_prov_resource which = 1827 value = 3 where = energy }
+	}
+}
+#1957-60
+event = {
+	id = 619025
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1957 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 16 where = oil }
+		command = { type = add_prov_resource which = 1828 value = 2 where = energy }
+	}
+}
+event = {
+	id = 619026
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1958 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 16 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 2 where = energy }
+	}
+}
+event = {
+	id = 619027
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1959 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 16 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 2 where = energy }
+	}
+}
+event = {
+	id = 619028
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1960 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 16 where = oil }
+		command = { type = add_prov_resource which = 1827 value = 2 where = energy }
+	}
+}
+#1965-68
+event = {
+	id = 619029
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1961 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1828 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619030
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1962 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619031
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1963 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619032
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1964 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1827 value = 3 where = energy }
+	}
+}
+
+#1965-68
+event = {
+	id = 619033
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1965 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 35 where = oil }
+		command = { type = add_prov_resource which = 1828 value = 4 where = energy }
+	}
+}
+event = {
+	id = 619034
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1966 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 35 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 4 where = energy }
+	}
+}
+event = {
+	id = 619035
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1967 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 35 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 4 where = energy }
+	}
+}
+event = {
+	id = 619036
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1968 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 35 where = oil }
+		command = { type = add_prov_resource which = 1827 value = 4 where = energy }
+	}
+}
+#1969-72
+event = {
+	id = 619037
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = june year = 1969 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1828 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619038
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 25  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = june year = 1970 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1570 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619039
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1971 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1150 value = 3 where = energy }
+	}
+}
+event = {
+	id = 619040
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 25 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1972 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1827 value = 3 where = energy }
+	}
+}
+#Depletion of Volga Ural basin
+event = {
+	id = 619041
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 2
+		event = 619025
+		event = 619029
+		event = 619033
+		event = 619037 #to prevent negative totals
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = november year = 1973 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619042
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 2
+		event = 619026
+		event = 619030
+		event = 619034
+		event = 619038 #to prevent negative totals 
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = november year = 1973 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619043
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 2
+		event = 619027
+		event = 619031
+		event = 619035
+		event = 619039 #to prevent negative totals  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = november year = 1973 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619044
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 2
+		event = 619028
+		event = 619032
+		event = 619036
+		event = 619040 #to prevent negative totals  
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = november year = 1972 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619045
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 2
+		event = 619041
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = november year = 1986 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = -13 where = oil }
+	}
+}
+event = {
+	id = 619046
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 2
+		event = 619042
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = november year = 1986 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = -13 where = oil }
+	}
+}
+event = {
+	id = 619047
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 2
+		event = 619043
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = november year = 1986 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = -13 where = oil }
+	}
+}
+event = {
+	id = 619048
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 2
+		event = 619044
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = november year = 1986 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = -13 where = oil }
+	}
+}
+event = {
+	id = 619049
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 2
+		event = 619041
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = november year = 1992 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = -17 where = oil }
+	}
+}
+event = {
+	id = 619050
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 2
+		event = 619042
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = november year = 1992 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = -17 where = oil }
+	}
+}
+event = {
+	id = 619051
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 2
+		event = 619043
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = november year = 1992 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = -17 where = oil }
+	}
+}
+event = {
+	id = 619052
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 2
+		event = 619044
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = november year = 1992 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = -17 where = oil }
+	}
+}
+event = {
+	id = 619053
+	random = no
+
+	trigger = {
+		control = { province = 1828 data = -1 }
+		random = 2
+		event = 619041
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = november year = 2012 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = -25 where = oil }
+	}
+}
+event = {
+	id = 619054
+	random = no
+
+	trigger = {
+		control = { province = 1570 data = -1 }
+		random = 2
+		event = 619042
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = november year = 2012 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = -25 where = oil }
+	}
+}
+event = {
+	id = 619055
+	random = no
+
+	trigger = {
+		control = { province = 1150 data = -1 }
+		random = 2
+		event = 619043
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = november year = 2012 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = -25 where = oil }
+	}
+}
+event = {
+	id = 619056
+	random = no
+
+	trigger = {
+		control = { province = 1827 data = -1 }
+		random = 2
+		event = 619044
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = november year = 2012 }
+	offset = 33
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = -25 where = oil }
+	}
+}
+#Extra life if no Soviet Union
+event = {
+	id = 619057
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1828 data = RUS }
+		random = 12
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 25 month = november year = 1998 }
+	offset = 21
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1828 value = 15 where = oil }
+	}
+}
+event = {
+	id = 619058
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1570 data = RUS }
+		random = 12
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 28 month = november year = 1998 }
+	offset = 21
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1570 value = 15 where = oil }
+	}
+}
+event = {
+	id = 619059
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1150 data = RUS }
+		random = 12
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = november year = 1998 }
+	offset = 21
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1150 value = 15 where = oil }
+	}
+}
+event = {
+	id = 619060
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1827 data = RUS }
+		random = 12
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = november year = 1998 }
+	offset = 21
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1827 value = 15 where = oil }
+	}
+}
+# 619061-619064 reserved for alternate history
+##################################
+# Western Siberia Oil and Gas 1953-92
+# and post-peak depletion
+##################################
+# Province 1564 Muzhi oil and gas
+event = {
+	id = 619065
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		random = 20
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1953 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619066
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		random = 20
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1958 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619067
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		random = 20
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1965 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619068
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		random = 20
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1972 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619069
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		random = 20
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1984 }
+	offset = 9
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = 6 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619070
+	random = no
+
+	trigger = {
+		control = { province = 1564 data = -1 }
+		event = 619067
+		event = 619068
+		event = 619069
+		random = 6
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 24 month = june year = 1989 }
+	offset = 22
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1564 value = -14 where = oil }
+		command = { type = add_prov_resource which = 1564 value = 10 where = energy }
+	}
+}
+#1597 Khanty Mansijsk
+event = {
+	id = 619071
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1960 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 12 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 1 where = energy }
+	}
+}
+event = {
+	id = 619072
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1965 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 18 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 1 where = energy }
+	}
+}
+event = {
+	id = 619073
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1970 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 24 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 1 where = energy }
+	}
+}
+event = {
+	id = 619074
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1975 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 28 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 1 where = energy }
+	}
+}
+event = {
+	id = 619075
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1980 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 33 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 2 where = energy }
+	}
+}
+event = {
+	id = 619076
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		random = 18
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1985 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 25 where = oil }
+		command = { type = add_prov_resource which = 1597 value = 1 where = energy }
+	}
+}
+event = {
+	id = 619077
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		event = 619073
+		event = 619074
+		event = 619075
+		event = 619076
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1989 }
+	offset = 37
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = -10 where = oil }
+		command = { type = add_prov_resource which = 1597 value = -1 where = energy }
+	}
+}
+event = {
+	id = 619078
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		event = 619077
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1991 }
+	offset = 37
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = -15 where = oil }
+		command = { type = add_prov_resource which = 1597 value = -1 where = energy }
+	}
+}
+event = {
+	id = 619079
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		event = 619077
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 2005 }
+	offset = 37
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = -20 where = oil }
+		command = { type = add_prov_resource which = 1597 value = -1 where = energy }
+	}
+}
+event = {
+	id = 619080
+	random = no
+
+	trigger = {
+		control = { province = 1597 data = -1 }
+		event = 619077
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 2012 }
+	offset = 37
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = -25 where = oil }
+		command = { type = add_prov_resource which = 1597 value = -2 where = energy }
+	}
+}
+event = {
+	id = 619081
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1597 data = RUS }
+		random = 16
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1997 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 15 where = oil }
+		command = { type = sleepevent which = 619082 }
+	}
+}
+event = {
+	id = 619082
+	random = no
+	country = SIB
+
+	trigger = {
+		control = { province = 1597 data = SIB }
+		random = 16
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 22 month = june year = 1997 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1597 value = 15 where = oil }
+		command = { type = sleepevent which = 619081 }
+	}
+}
+#619083 reserved alternate history
+# Province 1541 Nizhny-Vartovsk oil
+event = {
+	id = 619084
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1963 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 12 where = oil }
+		command = { type = province_keypoints which = 1541 value = 4 }
+	}
+}
+event = {
+	id = 619085
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1968 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 18 where = oil }
+	}
+}
+event = {
+	id = 619086
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1973 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 25 where = oil }
+	}
+}
+event = {
+	id = 619087
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1978 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 30 where = oil }
+	}
+}
+event = {
+	id = 619088
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1983 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 21 where = oil }
+	}
+}
+event = {
+	id = 619089
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		random = 19
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1987 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 14 where = oil }
+	}
+}
+event = {
+	id = 619090
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		event = 619087
+		event = 619088
+		event = 619089
+		random = 6
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1989 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = -8 where = oil }
+	}
+}
+event = {
+	id = 619091
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		event = 619090
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1991 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619092
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		event = 619090
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 2005 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = -12 where = oil }
+	}
+}
+event = {
+	id = 619093
+	random = no
+
+	trigger = {
+		control = { province = 1541 data = -1 }
+		event = 619090
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 2012 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = -14 where = oil }
+	}
+}
+event = {
+	id = 619094
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1541 data = RUS }
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1996 }
+	offset = 44
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 15 where = oil }
+		command = { type = sleepevent which = 619095 }
+	}
+}
+event = {
+	id = 619095
+	random = no
+	country = SIB
+
+	trigger = {
+		control = { province = 1541 data = SIB }
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 20 month = june year = 1996 }
+	offset = 44
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1541 value = 15 where = oil }
+		command = { type = sleepevent which = 619094 }
+	}
+}
+# 619096 reserved alternate history
+# Province 1542 Alexandrovskoye oil
+event = {
+	id = 619097
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 6 where = oil }
+	}
+}
+event = {
+	id = 619098
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1962 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 12 where = oil }
+	}
+}
+event = {
+	id = 619099
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1966 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 25 where = oil }
+	}
+}
+event = {
+	id = 619100
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 32 where = oil }
+	}
+}
+event = {
+	id = 619101
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1976 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 35 where = oil }
+	}
+}
+event = {
+	id = 619102
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1981 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 25 where = oil }
+	}
+}
+event = {
+	id = 619103
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		random = 23
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1986 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 15 where = oil }
+	}
+}
+event = {
+	id = 619104
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		event = 619101
+		event = 619102
+		event = 619103
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1989 }
+	offset = 16
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619105
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		event = 619104
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1992 }
+	offset = 16
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = -12 where = oil }
+	}
+}
+event = {
+	id = 619106
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		event = 619104
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 2005 }
+	offset = 16
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = -15 where = oil }
+	}
+}
+event = {
+	id = 619107
+	random = no
+
+	trigger = {
+		control = { province = 1542 data = -1 }
+		event = 619104
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 2012 }
+	offset = 16
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = -20 where = oil }
+	}
+}
+event = {
+	id = 619108
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1542 data = RUS }
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1996 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 15 where = oil }
+		command = { type = sleepevent which = 619109 }
+	}
+}
+event = {
+	id = 619109
+	random = no
+	country = SIB
+
+	trigger = {
+		control = { province = 1542 data = SIB }
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1996 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1542 value = 15 where = oil }
+		command = { type = sleepevent which = 619108 }
+	}
+}
+#619110 reserved alternate history
+# Province 1596 Surgut oil
+event = {
+	id = 619111
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1962 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 5 where = oil }
+	}
+}
+event = {
+	id = 619112
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1965 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 10 where = oil }
+	}
+}
+event = {
+	id = 619113
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1968 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 15 where = oil }
+	}
+}
+event = {
+	id = 619114
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1972 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 23 where = oil }
+	}
+}
+event = {
+	id = 619115
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1974 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 32 where = oil }
+	}
+}
+event = {
+	id = 619116
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1977 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 27 where = oil }
+	}
+}
+event = {
+	id = 619117
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1984 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 22 where = oil }
+	}
+}
+event = {
+	id = 619118
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1987 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = 16 where = oil }
+	}
+}
+event = {
+	id = 619119
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		event = 619115
+		event = 619116
+		event = 619117
+		event = 619118
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1989 }
+	offset = 19
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -5 where = oil }
+	}
+}
+event = {
+	id = 619120
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		event = 619119
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1993 }
+	offset = 19
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -6 where = oil }
+	}
+}
+event = {
+	id = 619121
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		event = 619119
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1999 }
+	offset = 19
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -6 where = oil }
+	}
+}
+event = {
+	id = 619122
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		event = 619119
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 2005 }
+	offset = 19
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -6 where = oil }
+	}
+}
+event = {
+	id = 619123
+	random = no
+
+	trigger = {
+		control = { province = 1596 data = -1 }
+		event = 619119
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 2012 }
+	offset = 19
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -6 where = oil }
+	}
+}
+event = {
+	id = 619124
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1596 data = RUS }
+		random = 6
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1997 }
+	offset = 27
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -5 where = oil }
+		command = { type = sleepevent which = 619125 }
+	}
+}
+event = {
+	id = 619125
+	random = no
+	country = SIB
+
+	trigger = {
+		control = { province = 1596 data = SIB }
+		random = 6
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 7 month = july year = 1997 }
+	offset = 27
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1596 value = -5 where = oil }
+		command = { type = sleepevent which = 619124 }
+	}
+}
+#619126 reserved alternate history
+# Province 1594 Tobolsk oil
+event = {
+	id = 619127
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 1961 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = 5 where = oil }
+	}
+}
+event = {
+	id = 619128
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 1967 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = 8 where = oil }
+	}
+}
+event = {
+	id = 619129
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 1974 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = 12 where = oil }
+	}
+}
+event = {
+	id = 619130
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 1981 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = 14 where = oil }
+	}
+}
+event = {
+	id = 619131
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		random = 26
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 1988 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = 11 where = oil }
+	}
+}
+event = {
+	id = 619132
+	random = no
+
+	trigger = {
+		control = { province = 1594 data = -1 }
+		event = 619131
+		random = 5
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 19 month = august year = 2002 }
+	offset = 31
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1594 value = -10 where = oil }
+	}
+}
+# Province 1598 Tarko Sale oil
+event = {
+	id = 619133
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1961 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 8 where = oil }
+	}
+}
+event = {
+	id = 619134
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1966 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 17 where = oil }
+	}
+}
+event = {
+	id = 619135
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1972 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 24 where = oil }
+	}
+}
+event = {
+	id = 619136
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1978 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 30 where = oil }
+	}
+}
+event = {
+	id = 619137
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1984 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 24 where = oil }
+	}
+}
+event = {
+	id = 619138
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		random = 17
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1987 }
+	offset = 6
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 17 where = oil }
+	}
+}
+event = {
+	id = 619139
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		event = 619136
+		event = 619137
+		event = 619138
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1990 }
+	offset = 22
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = -6 where = oil }
+	}
+}
+event = {
+	id = 619140
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		event = 619139
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1993 }
+	offset = 22
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = -9 where = oil }
+	}
+}
+event = {
+	id = 619141
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		event = 619139
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 2004 }
+	offset = 22
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = -13 where = oil }
+	}
+}
+event = {
+	id = 619142
+	random = no
+
+	trigger = {
+		control = { province = 1598 data = -1 }
+		event = 619139
+		random = 3
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 2012 }
+	offset = 22
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = -18 where = oil }
+	}
+}
+event = {
+	id = 619143
+	random = no
+	country = RUS
+
+	trigger = {
+		control = { province = 1598 data = RUS }
+		random = 7
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1996 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 12 where = oil }
+		command = { type = sleepevent which = 619144 }
+	}
+}
+event = {
+	id = 619144
+	random = no
+	country = SIB
+
+	trigger = {
+		control = { province = 1598 data = SIB }
+		random = 7
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 13 month = july year = 1996 }
+	offset = 25
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1598 value = 12 where = oil }
+		command = { type = sleepevent which = 619143 }
+	}
+}
+# 619145 Reserved alternate history
+# Province 1155 Tazov oil & gas
+event = {
+	id = 619146
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1962 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 6 where = oil }
+		command = { type = province_keypoints which = 1155 value = 5 }
+	}
+}
+event = {
+	id = 619147
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1964 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 6 where = oil }
+	}
+}
+event = {
+	id = 619148
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1966 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 6 where = oil }
+	}
+}
+event = {
+	id = 619149
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1970 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 10 where = oil }
+	}
+}
+event = {
+	id = 619150
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1977 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 20 where = oil }
+	}
+}
+event = {
+	id = 619151
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1984 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 28 where = oil }
+	}
+}
+event = {
+	id = 619152
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1987 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 24 where = oil }
+	}
+}
+event = {
+	id = 619153
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		event = 619150
+		event = 619151
+		event = 619152
+		event = 2803105
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 4 month = october year = 1990 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = -10 where = oil }
+	}
+}
+event = {
+	id = 619154
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		event = 619153
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 4 month = october year = 1993 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = -10 where = oil }
+		command = { type = add_prov_resource which = 1155 value = -20 where = energy }
+	}
+}
+event = {
+	id = 619155
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		event = 619153
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 4 month = october year = 1996 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = -10 where = oil }
+		command = { type = add_prov_resource which = 1155 value = -20 where = energy }
+	}
+}
+event = {
+	id = 619156
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		event = 619153
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 4 month = october year = 2002 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = -10 where = oil }
+		command = { type = add_prov_resource which = 1155 value = -20 where = energy }
+	}
+}
+event = {
+	id = 619157
+	random = no
+
+	trigger = {
+		control = { province = 1155 data = -1 }
+		event = 619153
+		random = 4
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 4 month = october year = 2011 }
+	offset = 23
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = -10 where = oil }
+		command = { type = add_prov_resource which = 1155 value = -20 where = energy }
+	}
+}
+#no political conditions--area known to be huge gas field
+# accounted for by 2803105 (1155)
+# Province 1534 Poloi oil & gas
+event = {
+	id = 619159
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1962 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619160
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1968 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619161
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1974 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619162
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1979 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619163
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1983 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+event = {
+	id = 619164
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		random = 27
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1986 }
+	offset = 8
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 6 where = energy }
+	}
+}
+#no political conditions
+event = {
+	id = 619165
+	random = no
+
+	trigger = {
+		control = { province = 1534 data = -1 }
+		event = 619161
+		event = 619162
+		event = 619163
+		event = 619165
+		random = 5
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 11 month = july year = 1992 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 2199 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1534 value = -15 where = oil }
+		command = { type = add_prov_resource which = 1534 value = 18 where = energy }
+	}
+}

@@ -1,0 +1,37 @@
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	# Borders with specific countries
+	country_priorities = {
+		SOV = -1
+		MON = -1
+		FRA = -1
+		ENG = -1
+		CHI = 130
+		CHC = 20
+		MAN = -1
+		CXB = 30
+		CYN = 5
+		CGX = 15
+	}
+	province_priorities = {
+                                1218 = 10
+                                1217 = 15
+                                1219 = 15
+                                1220 = 15
+                                1235 = 20 
+                                1236 = 15
+                                1237 = 80
+                                1216 = 15   }
+	area_multiplier = {     1218 = 1.0
+                                1217 = 1.5
+                                1219 = 1.5
+                                1220 = 1.5
+                                1235 = 2.0 
+                                1236 = 1.5
+                                1237 = 9.0
+                                1216 = 1.0 
+	}
+}

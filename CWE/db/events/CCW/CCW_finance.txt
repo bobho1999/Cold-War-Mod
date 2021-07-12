@@ -1,0 +1,303 @@
+######################################################
+event = {
+	id = 1714
+	random = no
+	persistent = yes
+
+	trigger = {
+#		technology = 5710
+		technology = 4260 # 市場規範
+		NOT = { local_flag = finance1 }
+	}
+
+	name = "改革财政 "
+	desc = "通过现代的财政与税收系统，我们能够更有效率的收集和利用 资金，预决算制度能够让资金更加透明。 "
+	style = 0
+	picture = "Finance"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "开始改革 "
+		command = { type = trigger which = 1715 value = 180 }
+		command = { type = local_setflag which = finance1 }
+	}
+}
+
+event = {
+	id = 1715
+	random = no
+	persistent = yes
+
+	name = "改革财政的效果 "
+	desc = "通过现代的财政与税收系统，我们能够更有效率的收集和利用 资金，预决算制度能够让资金更加透明。 "
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "财政收入增加 "
+		command = { type = resource which = money value = 200 }
+		command = { type = trigger which = 1715 value = 180 }
+	}
+}
+
+event = {
+	id = 1716
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 4120 #鑄幣標準
+		NOT = { local_flag = finance2 }
+	}
+
+	name = "金融的重要作用 "
+	desc = "现代社会，金融已经成为不可或缺的重要经济领域，通过有效 的利用中央银行、外汇和金融市场，国家可以得到大量的资金 ，也能直接对经济进行干预。 "
+	style = 0
+	picture = "Finance"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "ok"
+		command = { type = trigger which = 1717 value = 180 }
+		command = { type = local_setflag which = finance2 }
+	}
+}
+
+event = {
+	id = 1717
+	random = no
+	persistent = yes
+
+	name = "现代金融-铸币税 "
+	desc = "铸币税泛指政府从货币发行中获得的收益。包括：中央银行所 获得并上交中央财政的利润；中央银行和商业银行在货币创造 过程通过购买国债向中央财政提供的资金；财政直接发行通货 所获得的收益。 "
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "财政收入增加 "
+		command = { type = resource which = money value = 250 }
+		command = { type = trigger which = 1717 value = 180 }
+	}
+}
+
+event = {
+	id = 1718
+	random = no
+	persistent = yes
+
+	trigger = {
+		technology = 4190 #國債
+		local_flag = finance1
+		local_flag = finance2
+		NOT = { local_flag = finance3 }
+	}
+
+	name = "现代金融-中短期国债 "
+	desc = "国债是国家信用的主要形式。中央政府发行国债的目的往往是 弥补国家财政赤字，或者为一些耗资巨大的建设项目、以及某 些特殊经济政策乃至为战争筹措资金。 "
+	style = 0
+	picture = "Finance"
+
+	date = { day = 1 month = january year = 1934 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "发行一年期国债 "
+		ai_chance = 50
+		command = { type = resource which = money value = 1800 }
+		command = { type = trigger which = 1719 value = 360 }
+		command = { type = local_setflag which = finance3 }
+	}
+	action_b = {
+		name = "资金足够充裕 "
+		ai_chance = 50
+		command = { type = local_setflag which = finance3 }
+		command = { type = trigger which = 1721 value = 360 }
+	}
+}
+
+event = {
+	id = 1719
+	random = no
+	persistent = yes
+
+	name = "偿还中短期国债 "
+	desc = "一年期国债到期了，我们可以选择偿还或者延期，当然后者会 给我们带来更多的利息损失，而不偿还带来的将是政府信用的 丧失。 "
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "偿还一年期国债 "
+		ai_chance = 90
+		command = { type = resource which = money value = -1890 }
+		command = { type = local_clrflag which = finance3 }
+	}
+	action_b = {
+		name = "延期一年偿还 "
+		ai_chance = 10
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 1720 value = 360 }
+	}	
+	action_c = {
+		name = "不偿还 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+		command = { type = industrial_modifier which = total value = -2 }
+		command = { type = local_clrflag which = finance3 }
+	}
+}
+
+event = {
+	id = 1720
+	random = no
+	persistent = yes
+
+	name = "偿还中短期国债 "
+	desc = "延期的国债偿还期到期了，我们只能选择偿还或者不偿还。"
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "偿还一年期国债 "
+		ai_chance = 100
+		command = { type = resource which = money value = -2000 }
+		command = { type = local_clrflag which = finance3 }
+	}
+	action_b = {
+		name = "不偿还 "
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_clrflag which = finance3 }
+	}		
+}
+
+event = {
+	id = 1721
+	random = no
+	persistent = yes
+
+	name = "新一年的国债发行计划 "
+	desc = "国债是国家信用的主要形式。中央政府发行国债的目的往往是 弥补国家财政赤字，或者为一些耗资巨大的建设项目、以及某 些特殊经济政策乃至为战争筹措资金。 "
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "开始计划 "
+		command = { type = local_clrflag which = finance3 }
+	}
+}
+
+######################################
+### #償還外債
+######################################
+event = {
+	id = 60510
+	random = no
+	persistent = yes
+
+	trigger = {
+		incabinet = 16120 
+		money = 5000
+		NOT = { local_flag = foreigndebt }
+	}
+
+	name = "龐大的外債 "
+	desc = " "
+	style = 0
+	picture = "Finance"
+
+	date = { day = 1 month = january year = 1925 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "償還 "
+		ai_chance = 50
+		command = { type = money value = -10000 } #包含前幾年的
+		command = { type = trigger which = 60511 value = 360 }
+		command = { type = local_setflag which = foreigndebt }
+	}
+	action_b = {
+		name = "償還 "
+		ai_chance = 50
+		command = { type = money value = -5000 } #包含前幾年的
+		command = { type = supplies value = -7500 } #包含前幾年的
+		command = { type = trigger which = 60511 value = 360 }
+		command = { type = local_setflag which = foreigndebt }
+	}
+}
+
+event = {
+	id = 60511
+	random = no
+	persistent = yes
+
+	name = "償還外債 "
+	desc = "一年期国债到期了，我们可以选择偿还或者延期，当然后者会 给我们带来更多的利息损失，而不偿还带来的将是政府信用的 丧失。 "
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "偿还一年期外债 "
+		ai_chance = 90
+		command = { type = resource which = money value = -2500 }
+#		command = { type = local_clrflag which = finance3 }
+	}
+	action_b = {
+		name = "延期一年偿还 "
+		ai_chance = 10
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 60512 value = 360 }
+	}	
+	action_c = {
+		name = "不偿还 "
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+		command = { type = industrial_modifier which = total value = -10 }
+#		command = { type = local_clrflag which = finance3 }
+	  	command = { type = relation which = JAP value = -50 }
+	  	command = { type = relation which = USA value = -50 }
+	  	command = { type = relation which = ENG value = -50 }
+	  	command = { type = relation which = FRA value = -50 }
+	}
+}
+
+event = {
+	id = 60512
+	random = no
+	persistent = yes
+
+	name = "償還外債 "
+	desc = "延期的外债偿还期到期了，我们只能选择偿还或者不偿还。"
+	style = 0
+	picture = "Finance"
+
+	action_a = {
+		name = "偿还一年期国债 "
+		ai_chance = 100
+		command = { type = resource which = money value = -5000 }
+		command = { type = trigger which = 60511 value = 360 }
+#		command = { type = local_clrflag which = finance3 }
+	}
+	action_b = {
+		name = "不偿还 "
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+		command = { type = industrial_modifier which = total value = -10 }
+#		command = { type = local_clrflag which = finance3 }
+	  	command = { type = relation which = JAP value = -50 }
+	  	command = { type = relation which = USA value = -50 }
+	  	command = { type = relation which = ENG value = -50 }
+	  	command = { type = relation which = FRA value = -50 }
+	}		
+}
+#60513~60514備用
+
+

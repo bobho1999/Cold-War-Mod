@@ -1,0 +1,303 @@
+################
+#波河洪水
+#############################################
+event = {
+  id = 21200
+  random = no
+  country = ITA
+	trigger = {
+           owned = { province = 379 data = ITA }
+           owned = { province = 2664 data = ITA }
+           owned = { province = 2667 data = ITA }
+		}
+
+  name = "波河洪水 " 
+  desc = "1951年夏，阿尔卑斯山脉连降暴雨，意大利北部山洪暴发，大小河 流满溢，全国最大河流波河猛涨，不少水库崩溃。洪峰扫荡下游村 镇，波河流域几万公顷良田覆埋在泥石之下，百里沃野成了不毛之 地，死伤千余人 "
+  style = 0
+  picture = "洪水"
+
+
+	date = { day = 5 month = July year = 1951 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1976 }
+
+  action_a = {
+    name = "洪水给我们带来了灾难 "
+    command = { type = manpowerpool value = -1 }
+    command = { type = construct which = infrastructure where = 379 value = -20 }
+    command = { type = construct which = infrastructure where = 2667 value = -20 }
+    command = { type = construct which = infrastructure where = 2664 value = -20 }
+    command = { type = supplies value = -500 }
+    command = { type = dissent value = 5 }
+  }
+}
+
+
+#########################################################################
+#  的里雅斯特危机
+#########################################################################
+event = {
+	id = 21201
+	random = no
+	country = SOV
+
+	name = "的里雅斯特危机-苏联 "
+	desc = "1945年，当时铁托元帅的部队收回了这座前意大利港口城市，归属 南斯拉夫。之后意南签订的和平条约规定的里雅斯特为独立中立 的自由区，并将该区分为A、B两区。A区由美国和英国管理，B区由南 斯拉夫控制。10月8日，美国和英国宣布他们决定把A区交给意大利 控制。 "
+	style = 0
+	picture = "的里雅斯特"
+
+  action_a = {
+    name = "简单的支持南斯拉夫 "
+    ai_chance = 70
+    command = { type = relation which = YUG value = 50 }
+    command = { type = relation which = ITA value = -20 }
+    command = { type = relation which = USA value = -10 }
+    command = { type = relation which = ENG value = -10 }
+  }
+   action_b = {
+    name = "何必惹恼西方？ "
+    ai_chance = 30
+    command = { type = sleepevent which = 21207 }
+    command = { type = relation which = YUG value = -50 }
+    command = { type = relation which = ITA value = 20 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = ENG value = 10 }
+  }
+}
+
+#########################################################################
+#  的里雅斯特危机
+#########################################################################
+event = {
+	id = 21202
+	random = no
+	country = YUG
+	trigger = {
+           owned = { province = 2713 data = ENG }
+           atwar = no 
+		}
+
+	name = "的里雅斯特危机-南斯拉夫 "
+	desc = "1945年，当时铁托元帅的部队收回了这座前意大利港口城市，归属 南斯拉夫。之后意南签订的和平条约规定的里雅斯特为独立中立 的自由区，并将该区分为A、B两区。A区由美国和英国管理，B区由南 斯拉夫控制。10月8日，美国和英国宣布他们决定把A区交给意大利 控制。 "
+	style = 0
+	picture = "的里雅斯特"
+
+	date = { day = 8 month = october year = 1954 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1976 }
+
+  action_a = {
+    name = "这是对我们的侮辱 "
+    ai_chance = 99
+    command = { type = relation which = ITA value = -40 }
+    command = { type = relation which = USA value = -20 }
+    command = { type = relation which = ENG value = -20 }
+    command = { type = trigger which = 21203 }
+  }
+   action_b = {
+    name = "保持同西方的良好关系 "
+    ai_chance = 1
+    command = { type = sleepevent which = 21204 }
+    command = { type = sleepevent which = 21205 }
+    command = { type = relation which = ITA value = 40 }
+    command = { type = relation which = USA value = 20 }
+    command = { type = relation which = ENG value = 20 }
+    command = { type = dissent value = 10 }
+  }
+}
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21203
+        random = no
+        country = ITA
+
+	name = "的里雅斯特危机-意大利 "
+	desc = "1945年，当时铁托元帅的部队收回了这座前意大利港口城市，归属 南斯拉夫。之后意南签订的和平条约规定的里雅斯特为独立中立 的自由区，并将该区分为A、B两区。A区由美国和英国管理，B区由南 斯拉夫控制。10月8日，美国和英国宣布他们决定把A区交给意大利 控制。 "
+	style = 0
+	picture = "的里雅斯特"
+
+
+  action_a = {
+    name = "的里雅斯特必须属于我们 "
+    command = { type = dissent value = -1 }
+    command = { type = relation which = USA value = 10 }
+    command = { type = relation which = ENG value = 10 }
+    command = { type = trigger which = 21201 }
+
+  }
+}
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21204
+        random = no
+        country = YUG
+	trigger = {
+            event = 21202
+            not = { event = 21207 }
+           atwar = no
+		}
+
+	name = "南斯拉夫逼近的里雅斯特 "
+	desc = "10月23日，南斯拉夫人民军逼近的里雅斯特。铁托元帅在讲话中强 调“这是为了应对美英决定的必要措施，也是对意大利8月份行动 的回应。如果美英继续一意孤行，那么南斯拉夫随时可以占领A区。 "
+	style = 0
+	picture = "的里雅斯特"
+
+  date = { day = 23 month = october year = 1954 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1990 }
+
+  action_a = {
+    name = "捍卫我们的主权！ "
+    command = { type = dissent value = -1 }
+  }
+}
+
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21205
+        random = no
+        country = YUG
+	trigger = {
+          event = 21202
+            not = { event = 21207 }
+          atwar = no
+		}
+
+	name = "南斯拉夫反意游行 "
+	desc = "10月23日，南斯拉夫全境爆发大规模反意游行，抗议意大利在美英 支持下攫取的里雅斯特市。 "
+	style = 0
+	picture = "的里雅斯特"
+
+  date = { day = 23 month = october year = 1954 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1990 }
+
+
+  action_a = {
+    name = "反对帝国主义 "
+    command = { type = relation which = ITA value = -20 }
+
+  }
+}
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21207
+        random = no
+        country = ENG
+	trigger = {
+             event = 21201
+         atwar = no
+		}
+
+	name = "的里雅斯特政策 "
+	desc = "面对南斯拉夫在苏联支持下咄咄逼人的态势，我们应当怎么办呢？ "
+	style = 0
+	picture = "的里雅斯特"
+
+  date = { day = 26 month = october year = 1953 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1990 }
+
+
+  action_a = {
+    name = "照常归还 "
+    ai_chance = 95
+    command = { type = relation which = ITA value = 10 }
+    command = { type = relation which = YUG value = -10 }
+    command = { type = sleepevent which = 21208 }
+    command = { type = secedeprovince which = ITA value = 2713 }
+    command = { type = trigger which = 21211 }
+    command = { type = sleepevent which = 21209 }
+  }
+   action_b = {
+    name = "重新讨论 "
+    ai_chance = 5
+    command = { type = relation which = ITA value = -50 }
+    command = { type = relation which = YUG value = 10 }
+    command = { type = dissent value = 2 }
+    command = { type = secedeprovince which = YUG value = 2713 }
+    command = { type = trigger which = 21208 }
+    command = { type = trigger which = 21209 }
+  }
+}
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21208
+        random = no
+        country = YUG
+
+	name = "的里雅斯特回归 "
+	desc = "西方在我们面前妥协了，是时候庆祝伟大的胜利，收回我们的领土 了。 "
+	style = 0
+	picture = "的里雅斯特"
+
+
+
+  action_a = {
+    name = "这是人民的胜利！ "
+    command = { type = relation which = ITA value = -20 }
+    command = { type = relation which = SOV value = 50 }
+    command = { type = relation which = ENG value = 20 }
+    command = { type = relation which = USA value = 20 }
+  }
+}
+
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21209
+        random = no
+        country = ITA
+
+
+	name = "的里雅斯特的失败 "
+	desc = "我们被“盟友”出卖了，我们失去了的里雅斯特。 "
+	style = 0
+	picture = "的里雅斯特"
+
+
+  action_a = {
+    name = "该死的叛徒 "
+    command = { type = relation which = ENG value = -30 }
+    command = { type = relation which = USA value = -30 }
+    command = { type = relation which = YUG value = -80 }
+  }
+}
+
+#############################################
+###### 的里亚斯特危机 
+#############################################
+event = {
+	id = 21211
+        random = no
+        country = ITA
+
+	name = "的里雅斯特回归 "
+	desc = "几经周折，的里雅斯特终于回归了意大利。 "
+	style = 0
+	picture = "的里雅斯特"
+
+
+  action_a = {
+    name = "欢迎回归！ "
+    command = { type = relation which = ENG value = 10 }
+    command = { type = relation which = USA value = 10 }
+  }
+}

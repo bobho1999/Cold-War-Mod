@@ -1,0 +1,113 @@
+land_unit_type = 1
+# 0 - Import
+model = {
+	cost 				= 7.5
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -6
+	softattack			= 9
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	max_supply_stock = 54
+	max_oil_stock = 18
+}
+# 1 - Early
+model = {
+	cost 				= 7.5
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -6
+	softattack			= 9
+	supplyconsumption 	= 1.8
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 54
+	max_oil_stock = 18
+}
+# 2 - Basic
+model = {
+	cost 				= 9
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -9
+	softattack			= 11
+	supplyconsumption 	= 2.2
+	fuelconsumption		= 0.9
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 66
+	max_oil_stock = 27
+}
+# 3 - Improved
+model = {
+	cost 				= 10.5
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -12
+	softattack			= 13
+	supplyconsumption 	= 2.6
+	fuelconsumption		= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 78
+	max_oil_stock = 36
+}
+# 4 - Advanced
+model = {
+	cost 				= 12
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -15
+	softattack			= 15
+	supplyconsumption 	= 3.0
+	fuelconsumption		= 1.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 90
+	max_oil_stock = 45
+}
+# 5 - Semi-Modern
+model = {
+	cost 				= 13.5
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -18
+	softattack			= 17
+	supplyconsumption 	= 3.4
+	fuelconsumption		= 1.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 102
+	max_oil_stock = 54
+}
+# 5 - Modern
+model = {
+	cost 				= 15
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -21
+	softattack			= 19
+	supplyconsumption 	= 3.8
+	fuelconsumption		= 2.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 114
+	max_oil_stock = 63
+}
+# 6 - Cold War
+model = {
+	cost 				= 16.5
+	buildtime	 		= 180
+	manpower 			= 2
+	softness			= -24
+	softattack			= 21
+	supplyconsumption 	= 4.2
+	fuelconsumption		= 2.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 126
+	max_oil_stock = 72
+}

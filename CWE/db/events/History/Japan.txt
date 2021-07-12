@@ -1,0 +1,693 @@
+######################################################
+##控制日本
+######################################################
+event = { 
+   	id = 145000
+   	country = USA
+   	random = no
+
+   	trigger = {    
+		NOT = { puppet = { country = JAP country = USA } }
+  	} 
+
+   	persistent = yes
+   	date = { day = 1 month = january year = 1945 }
+   	offset = 30
+  	deathdate = { day = 30 month = december year = 1952 }
+
+   	name = "控制日本"
+   	desc="日本是反共的桥头堡"
+   	style = 0
+#	picture = "korea_independent"
+
+   	action_a = {  
+       		name = "ok"
+		command = { type = access which = JAP } 
+		command = { type = make_puppet which = JAP }
+   	}
+}
+
+#############################################
+#戰後日本经济
+#############################################
+event = {
+  	id = 145001
+  	random = no
+  	country = jap
+  
+  	name = "戰後的日本經濟 " 
+  	desc = "1945年的玉音放送宣告了大东亚圣战的全灭式 结局，随后美国的占领与战争中留下的一片废 墟，绝望与不安笼罩着这个国家。 "
+  	style = 2
+#  	picture = "jap_ec"
+  
+  	trigger = {
+  		OR = {
+    			puppet = { country = JAP country = USA }
+  		}	 
+  	}
+ 
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 15
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "百廢待興 "
+		command = { type = dissent value = 1 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+#    		command = { type = trigger which = 145002 value = 365 }  
+  	}
+}
+event = {
+  	id = 145002
+  	random = no
+  	country = jap
+  
+  	name = "战后的日本(I) " 
+  	desc = "我国经济在日渐好转。 "
+  	style = 2
+#  	picture = "jap_ec"
+  
+  	action_a = {
+    		name = "确定 "
+    		command = { type = dissent value = -1 }
+		command = { type = industrial_modifier which = total value = 10 }
+		command = { type = industrial_modifier which = supplies value = 10 }
+    		command = { type = trigger which = 145003 value = 365 }
+  	}
+}
+
+#############################################
+# 日本戰後改革
+#############################################
+event = {
+  	id = 145006
+  	random = no
+  	country = USA
+ 
+  	trigger = {
+    		puppet = { country = JAP country = USA }
+		event = 941111
+  	} 
+ 
+  	name = "日本戰後改革 " 
+  	desc = "1945年日本戰敗後，在駐日盟軍總司令部的指示下，日本政
+		府施行一系列民主化、自由化改革。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+    		command = { type = relation which = JAP value = 10 }
+		command = { type = trigger which = 145007 }
+  	}
+}
+
+event = {
+  	id = 145007
+  	random = no
+  	country = JAP
+ 
+  	name = "日本戰後改革 " 
+  	desc = "1945年日本戰敗後，在駐日盟軍總司令部的指示下，日本政
+		府施行一系列民主化、自由化改革。 "
+  	style = 0
+  
+  	action_a = {
+    		name = "OK "
+    		command = { type = relation which = USA value = 10 }
+		command = { type = dissent value = 1 }
+		command = { type = local_setflag which = JAP_postwar_reform }
+  	}
+}
+
+########## 政治改革 ##########
+event = {
+  	id = 145008
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+  	} 
+ 
+  	name = "修改憲法 " 
+  	desc = "日本的戰後改革從政治層面的憲法開始。1945年10月，
+		在麥克阿瑟的指示下，日本開始進行修改1889年《大日
+		本帝國憲法》的工作。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 3 }
+  	}
+}
+
+event = {
+  	id = 145009
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "改革天皇制 " 
+  	desc = "在新憲法中，天皇被除去原有的統治權力，僅存象徵地位與有限
+		的職權，而且沒有明文給予其國家元首的地位，即所謂的「象徵
+		天皇制」。日本憲法第一章，將天皇定位為日本國家與國民整體
+		的象徵，只能執行任命內閣總理大臣、召集國會等國家禮儀相關
+		的事務（稱作為「國事行為」）。日本皇室財產大多被轉移給予
+		國家與地方政府。1946年1月1日，裕仁天皇發表《人間宣言》，
+		否定了天皇作為「現人神」（現世人間的神）的身分。  "
+  	style = 0
+  
+  	date = { day = 0 month = january year = 1946 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145010
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "改革議會制 " 
+  	desc = "戰前日本議會分為眾議院和貴族院，貴族院的權力大於眾議院，
+		議會不對選民負責，而對天皇負責；通過改革，取消了貴族院，
+		設眾議院和參議院，兩院均由20歲以上男女公民直接選舉產生。
+		其次，取消天皇以敕令、敕語立法的權利，排除天皇和軍隊對議
+		會的控制和干涉。新憲法第41條規定，「國會是國家的最高權力
+		機關和唯一的立法機關」，修改憲法、制定法律、審議預算、任
+		命總理大臣等一切重大問題均由國會決定。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145011
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "改革內閣制 " 
+  	desc = "戰前總理大臣由元老和重臣推薦，由天皇任命，總理大臣奉天皇
+		之命組織內閣；經改革，建立了議會制內閣，總理大臣由國會確
+		定，一般由在眾議院中占多數席位的政黨總裁擔任。新憲法第65
+		、66條規定，「行政權屬於內閣」，「內閣行使行政權，對國會
+		負連帶責任」。總理大臣和其他國務大臣均由文官擔任，職業軍
+		人不得擔任。內閣負責總理國務，處理外交，締結條約，編制預
+		算，制定政令，掌握人事等有關行政事務。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145012
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "改革中央集權制，實行地方自治 " 
+  	desc = "戰前地方的一切行政事務和人事，均由中央決定和管理；新憲法
+		第92、95條規定，都、道、府、縣、市、町、村在憲法和法律所
+		允許的範圍內實行地方自治。地方領導人由當地居民直接選舉產
+		生。地方可設各級議會，編制預算、制訂地方性條例和法令。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145013
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "改革司法制度 " 
+  	desc = "戰前，天皇是法律的最高主宰；經改革，一切司法權均歸最高法
+		院和下級法院。同時，擴大了司法機構的獨立性，最高法院成為
+		同國會、內閣鼎立的獨立機構。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145014
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "擴大民主權利 " 
+  	desc = "新憲法第10～40條規定了國民的義務和權利，特別是過去政治地位很低
+		的婦女，從此也和男人一樣享有選舉權和被選舉權。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = democratic value = 1 }
+  	}
+}
+
+event = {
+  	id = 145015
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		random = 50
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145008
+  	} 
+ 
+  	name = "放棄宣戰權  " 
+  	desc = "《日本國憲法》最為重大的一條修改便是其第九條，規定戰後日本放棄戰爭、不維持武力、不擁有宣戰權。《日本國憲法》也因而得名「和平憲法」或「非戰憲法」。  "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1945 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = belligerence which = JAP value = -10 }
+    		command = { type = set_domestic	which = defense_lobby value = 1 }
+    		command = { type = set_domestic	which = interventionism value = 1 }
+    		command = { type = deactivate which = 5470  } # 核能
+    		command = { type = deactivate which = 5480  }
+    		command = { type = deactivate which = 5490  }
+    		command = { type = deactivate which = 5500  }
+    		command = { type = deactivate which = 5510  }
+    		command = { type = deactivate which = 5520  }
+    		command = { type = deactivate which = 5530  }
+    		command = { type = deactivate which = 5540  }
+    		command = { type = deactivate which = 3550 } # 核子潛艦
+    		command = { type = deactivate which = 3560 }
+    		command = { type = deactivate which = 3570 }
+    		command = { type = deactivate which = 3580 }
+    		command = { type = deactivate which = 3590 }
+    		command = { type = deactivate which = 3320 } # 航母
+    		command = { type = deactivate which = 3330 }
+    		command = { type = deactivate which = 3340 }
+    		command = { type = deactivate which = 3350 }
+    		command = { type = deactivate which = 3360 }
+    		command = { type = deactivate which = 3370 }
+    		command = { type = deactivate which = 3380 }
+    		command = { type = deactivate which = 3390 }
+    		command = { type = deactivate which = 12060 }
+    		command = { type = deactivate which = 12250 }
+    		command = { type = deactivate which = 12260 }
+    		command = { type = deactivate which = 12270 }
+    		command = { type = deactivate which = 12280 }
+    		command = { type = deactivate which = 12290 }
+  	}
+}
+
+event = {
+  	id = 145016
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145009
+		event = 145010
+		event = 145011
+		event = 145012
+		event = 145013
+		event = 145014
+		event = 145015
+  	} 
+ 
+  	name = "《日本國憲法》 " 
+  	desc = "經由GHQ的草擬、與日本方面的修訂後，新的《日本國憲法》
+		自1946年11月3日公布、於1947年5月3日起施行，原有的《大
+		日本帝國憲法》同時失效。新憲法公布之後，日本的政治體
+		制從天皇職掌大權的二元制君主立憲制，改變為國民主權的
+		君主立憲制。 "
+  	style = 0
+  
+  	date = { day = 0 month = october year = 1946 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = -10 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = change_idea which = policy_political_republicanism value = JAP }
+  	}
+}
+# 實施新版《日本國憲法》145017 reserved
+
+event = {
+  	id = 145018
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+  	} 
+ 
+  	name = "公職追放 " 
+  	desc = " "
+  	style = 0
+  
+  	date = { day = 3 month = january year = 1946 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "驅逐戰犯及軍國主義傾向者！ "
+		command = { type = dissent value = 3 }
+		command = { type = domestic which = political_left value = 1 }
+  	}
+}
+########## 經濟改革 ##########
+event = {
+  	id = 145026
+  	random = no
+  	country = JAP
+
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+	}
+
+	name = "財閥解體 "
+	desc = "日本於戰後著手實行「經濟民主化」，依盟軍總司令部指令實行財閥
+		解體政策，成立控股公司整理委員會，命令被整肅的控股公司和財閥
+		家族上交持有股票，繳稅後公開出售，使得財閥家族失去股票與資本
+		，各子公司間的控股關係瓦解，財閥趨於解體。 "
+	style = 0
+#	picture = "gannan"
+
+  	date = { day = 0 month = november year = 1945 }
+  	offset = 10
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "整肅財閥！ "
+   		command = { type = dissent value = 3 }
+		command = { type = money value = 1000 }
+		command = { type = domestic which = free_market value = 2 }
+		command = { type = change_idea which = policy_economy_Laisser-faire value = JAP }
+   	}
+}
+
+event = {
+  	id = 145027
+  	random = no
+  	country = JAP
+
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145026
+	}
+
+	name = "《反托拉斯法》 "
+	desc = "1947年日本政府頒布《反托拉斯法》和《過度經濟力集中排除法》
+		，禁止卡特爾式商業壟斷，指定「經濟力過度集中」企業，命令
+		其分散分拆，進而達到防止壟斷財團復活的目的。 "
+	style = 0
+#	picture = "gannan"
+
+  	date = { day = 0 month = july year = 1947 }
+  	offset = 1
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "整肅財閥！ "
+   		command = { type = dissent value = -1 }
+		command = { type = domestic which = free_market value = 1 }
+   	}
+}
+
+event = {
+  	id = 145020
+  	random = no
+  	country = JAP
+
+  	trigger = {
+#		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+	}
+
+	name = "《農地改革法》"
+	desc = " "
+	style = 0
+#	picture = "gannan"
+
+  	date = { day = 0 month = december year = 1945 }
+  	offset = 10
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "民生是民主的根本！（改革期间金钱不能低于500）"
+   		command = { type = dissent value = 5 }
+		command = { type = money value = -100 }
+   		command = { type = free_money value = -10 }
+   		command = { type = trigger which = 145021 value = 300 }
+		command = ( type = local_setflag = land_reform }
+   	}
+}
+
+event = {
+  	id = 145021
+  	random = no
+  	country = JAP
+
+	name = "農地改革初見成效"
+	desc = "土地改革改变了封建土地制度，解放和发展了农业生产力，实 现了发展生产、降低物价、增加供给、提供工业原料的目的。 土改使得地主阶级的力量大大削弱，而新兴的民营资本得以开 始发展。"
+	style = 0
+#	picture = "gannan"
+
+  	action_a = {
+   		name = "民生是民主的根本 "
+   		command = { type = dissent value = -5 }
+   		command = { type = free_money value = 10 }
+	 	command = { type = industrial_modifier which = supplies value = 8 }
+		command = ( type = local_clrflag = land_reform }
+   	}
+}
+
+event = {
+  	id = 145022
+  	random = no
+  	country = JAP
+
+  	trigger = {
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		event = 145021
+	}
+
+	name = "第二次《農地改革法》"
+	desc = "1949年金钱不低于500、補給高於10000時觸發成功 "
+	style = 0
+#	picture = "gannan"
+
+  	date = { day = 0 month = october year = 1946 }
+  	offset = 5
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "深化改革！（金钱不低于500、補給高於10000）"
+   		command = { type = dissent value = 10 }
+   		command = { type = free_money value = -10 }
+		command = ( type = local_setflag = land_reform2 }
+   	}
+}
+
+event = {
+  	id = 145023
+  	random = no
+  	country = JAP
+
+  	trigger = {
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+		money = 500
+		supplies = 10000
+	}
+
+	name = "農地改革的成功"
+	desc = " "
+	style = 0
+#	picture = "gannan"
+
+  	date = { day = 0 month = january year = 1949 }
+  	offset = 5
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "改革成功！"
+   		command = { type = dissent value = -5 }
+   		command = { type = free_money value = 10 }
+		command = { type = supplies value = -8000 }
+	 	command = { type = industrial_modifier which = supplies value = 17 }
+		command = ( type = local_clrflag = land_reform2 }
+   	}
+}
+
+event = {
+  	id = 145024
+  	random = no
+  	country = JAP
+
+  	trigger = {
+		ai = no
+      		OR = {
+			local_flag = land_reform
+			local_flag = land_reform2
+		}
+      		OR = {
+	      		atwar = yes
+	      		not = { money = 500 }
+	         }
+      	}
+
+	name = "農地改革的失敗"
+	desc = "赎买土地尽管是土地改革中最为和缓的方式，但是它同样不容 于庞大的军阀地主阶层，脆弱的改革面对极右势力的疯狂反扑 、试验区赣南的失守、经济长期的赤字都可能失败，很不幸， 这场艰难的改革无可挽回的失败了，历史不再有新的可能。"
+	style = 0
+	picture = "news_paper"
+
+  	date = { day = 10 month = december year = 1945 }
+  	offset = 15
+  	deathdate = { day = 29 month = december year = 1999 }
+
+  	action_a = {
+   		name = "改革黯然落幕"
+   		command = { type = dissent value = 5 }
+   		command = { type = free_money value = 15 }
+   		command = { type = sleepevent which = 145021 }
+   	}
+}
+# 145025 reserved 
+
+########## 教育改革 ##########
+event = {
+  	id = 145030
+  	random = no
+  	country = JAP
+ 
+  	trigger = {
+		NOT = { dissent = 10 }
+		local_flag = JAP_postwar_reform 
+  	} 
+ 
+  	name = "教育改革 " 
+  	desc = "戰前日本曾在教育體系中加入軍國主義和國家神道內容，戰後日
+		本政府依盟總司令部要求改革教育體制，實行「學校教育自由化
+		」，1947年3月31日頒布《教育基本法》，下放教育權力予民選
+		的各級教育委員會，並延長國民義務教育至9年，開發「人才資
+		源」推動經濟發展。 "
+  	style = 0
+  
+  	date = { day = 30 month = march year = 1947 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "OK "
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = research_mod value = 3 }
+#		command = { type = change_idea which = policy_political_republicanism value = JAP }
+  	}
+}
+
+######################################################
+#日本经济复苏
+######################################################

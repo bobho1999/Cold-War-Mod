@@ -1,0 +1,131 @@
+# Japan AI sets up to take Wake,Guam and Hong Kong
+# by Radu
+
+max_garrison_prop = 0.3
+min_garrison_prop = 0.2
+
+invasion = {
+	invasion			= yes
+ 	base				= 0.1	
+	random				= 1.0	
+	coastal				= 1.0
+	beach				= 1.0	
+	max_distance   		= 30.0  
+	max_staging_distance = 200	
+	distance			= 1.0	
+	pocket				= 2.0	
+	island				= 2.0
+	enemy				= 1.0	
+	adjacentenemy 		= 1.0	
+	air_base			= 0.1 
+    naval_base 			= 0.1 
+    air_support 		= 0.1 
+    redirect 			= priority
+	ignore				= no
+      
+	staging_province = {		
+		1322 # Taiwan
+		1184 # Tokyo
+		1608 # Kwajalein
+	}
+
+	target = {	
+		# Any remaining China landings put on hold
+		1204 = 0 # Tianjin
+		1214 = 0 # Yantai
+		1215 = 0 # Qingdao
+		1237 = 0 # Shanghai
+		1217 = 0 # Nantong
+		1219 = 0 # Lianyungang		
+
+		1313 = 0 # Guangzhou
+		1314 = 0 # Bao'an
+		1321 = 0 # Hainan
+		1320 = 0 # Zhanjiang
+
+		# 3 Targets : Hong Kong,Guam,Wake
+		1315 = 1998 # Hong Kong	
+		1624 = 2000 # Guam
+		1786 = 1999 # Wake
+	} 
+
+}
+
+admiral = {
+	min_org		= 95	# NEW: Percent of org gained back before the unit can leave port
+	min_dmg		= 95   # NEW: Percent of dmg gained back before the unit can leave port
+	return_org 	= 30 	# NEW: PERCENT OF ORG LOST BEFORE RETURNING TO PORT applies to all fleets/ships
+	return_dmg 	= 50 	# NEW: PERCENT OF DMG LOST BEFORE RETURNING TO PORT for repairs applies to all fleets/ships
+
+	#specific provinces can be targetted to get special bonuses..
+	target = {
+		2158 = 100 # Hainan Strait - Cutoff Hong Kong
+		2175 = 100 # South Mariana Trench - Cutoff Guam
+		2203 = 100 # Mapmaker Seamounts - Cutoff Wake
+	}
+
+	#This is used to determine that it's a core seazone and its control is important.
+	core = {
+		# Japan Home Islands
+		2223 # Kurile Strait
+		2212 # Abashiri Strait
+		2214 # West Kuril Basin
+		2215 # Southern Gulf of Tartary
+		2590 # Ishikari Bay
+		2213 # Tsugaru Strait
+		2589 # Tokyo Bay
+		2194 # Toyama Bay
+		2193 # Inland Sea
+		2192 # Tsushima Strait
+		2187 # North Ryukyu
+		
+		# Korean Coast
+		2191 # Vladivostok Bay
+		2188 # South Yellow Sea
+		2189 # North Yellow Sea
+		
+		# Okinawa
+		2185 # South Ryukyu
+
+		# Taiwan
+		2186 # Hangzhou Bay
+		2262 # Babuyan Channel
+		2263 # Shenquan Gulf
+
+		# Iwo Jima & Bonin
+		2196 # Bonin Trench
+		2183 # North Kyushu-Palau Trench
+		2182 # West Mariana Basin
+
+		# Saipan
+		2181 # North Mariana Trench
+		
+		# Palau
+		2267 # Palau Trench
+	
+		# Truk & Caroline Islands
+		2247 # East Carolines
+		2249 # Central Carolines
+		2177 # Yap Trench
+
+		# Kwajalein & Marshall Islands
+		2172 # Central Marshalls
+		2202 # North-East Marshalls
+		2199 # N-W Marshalls
+		2198 # North Magellan Seamounts
+		2173 # South Magellan Seamounts
+		2171 # S-W Marshalls
+		1946 # Magellan Rise
+
+		# Marcus Islands
+		2204 # Grosvenor Seamount		
+	}
+	
+	#Which provinces to use as bases..
+	base = {
+		1322 # Taiwan
+		1184 # Tokyo
+		1608 # Kwajalein
+		1613 # Truk
+	}	
+}

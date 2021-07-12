@@ -1,0 +1,1683 @@
+
+#################################################################
+## World War Third Soviet
+#################################################################
+event = {
+	id = 1400000
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	NOT = { flag = sov_worldwar3_01 }
+	belligerence = { country = USA value = 10 }
+	atwar = no
+	random = 50
+	}
+
+	name = "atomicwar_01_tex"
+	desc = "atomicwar_02_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 100
+		command = { type = setflag which = sov_worldwar3_01 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400001
+	random = no
+	persistent = yes
+	country = SOV
+
+	trigger = {
+	NOT = { flag = sov_worldwar3_02 }
+	belligerence = { country = USA value = 20 }
+	atwar = no
+	random = 50
+	}
+
+	name = "atomicwar_01_tex"
+	desc = "atomicwar_02_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 90
+		command = { type = setflag which = sov_worldwar3_02 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 10
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+event = {
+	id = 1400002
+	random = no
+	persistent = yes
+	country = SOV
+
+	trigger = {
+	NOT = { flag = sov_worldwar3_03 }
+	belligerence = { country = USA value = 30 }
+	atwar = no
+	}
+
+	name = "atomicwar_01_tex"
+	desc = "atomicwar_02_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 70
+		command = { type = setflag which = sov_worldwar3_03 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 30
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+event = {
+	id = 1400003
+	random = no
+	persistent = yes
+	country = SOV
+
+	trigger = {
+	NOT = { flag = sov_worldwar3_04 }
+	belligerence = { country = USA value = 40 }
+	atwar = no
+	}
+
+	name = "atomicwar_01_tex"
+	desc = "atomicwar_02_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 80
+		command = { type = setflag which = sov_worldwar3_04 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 20
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+event = {
+	id = 1400004
+	random = no
+	country = SOV
+
+	trigger = {
+	NOT = { flag = sov_worldwar3_05 }
+	belligerence = { country = USA value = 50 }
+	atwar = no
+	}
+
+	name = "atomicwar_01_tex"
+	desc = "atomicwar_02_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_03_SELE" # OK
+		ai_chance = 100
+		command = { type = setflag which = sov_worldwar3_05 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 20 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400005
+	random = no
+	country = SOV
+
+	trigger = {
+	flag = sov_worldwar3_01
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 354 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 355 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 356 where = 253 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 357 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 358 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 359 where = 253 }
+	}
+}
+
+
+
+event = {
+	id = 1400006
+	random = no
+	country = SOV
+
+	trigger = {
+	flag = sov_worldwar3_02
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 360 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 361 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 362 where = 253 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 363 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 364 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 365 where = 253 }
+	}
+}
+
+
+
+event = {
+	id = 1400007
+	random = no
+	country = SOV
+
+	trigger = {
+	flag = sov_worldwar3_03
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 366 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 365 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 366 where = 253 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 367 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 368 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 369 where = 253 }
+	}
+}
+
+event = {
+	id = 1400008
+	random = no
+	country = SOV
+
+	trigger = {
+	flag = sov_worldwar3_04
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 370 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 371 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 372 where = 253 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 373 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 374 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 375 where = 253 }
+	}
+}
+event = {
+	id = 1400009
+	random = no
+	country = SOV
+
+	trigger = {
+	flag = sov_worldwar3_05
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 376 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 377 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 378 where = 253 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 300 } 
+		command = { type = activate_division which = 30156 value = 379 where = 300 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1372 } 
+		command = { type = activate_division which = 30156 value = 380 where = 1372 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 253 } 
+		command = { type = activate_division which = 30156 value = 381 where = 253 }
+	}
+}
+event = {
+	id = 1400010
+	random = no
+	country = SOV
+
+	trigger = {
+	atwar = no
+	belligerence = { country = USA value = 50 }
+	ai = yes
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_04_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		command = { type = war which = USA }
+	}
+}
+
+
+event = {
+	id = 1400011
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	random = 30
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = USA value = 40 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_04_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 50
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 80
+		command = { type = war which = USA }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400012
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	random = 20
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = USA value = 30 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_04_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 80
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 50
+		command = { type = war which = USA }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 50
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400013
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	random = 10
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = USA value = 20 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_04_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 80
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 20
+		command = { type = war which = USA }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400014
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	random = 5
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = USA value = 10 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_04_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 1
+		command = { type = war which = USA }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 99
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+#################################################################
+## World War Third America
+#################################################################
+
+event = {
+	id = 1400100
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+	NOT = { flag = usa_worldwar3_01 }
+	belligerence = { country = SOV value = 10 }
+	atwar = no
+	}
+
+	name = "atomicwar_05_tex"
+	desc = "atomicwar_06_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 100
+		command = { type = setflag which = usa_worldwar3_01 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 0
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400101
+	random = no
+	persistent = yes
+	country = USA
+
+	trigger = {
+	NOT = { flag = usa_worldwar3_02 }
+	belligerence = { country = SOV value = 20 }
+	atwar = no
+	}
+
+	name = "atomicwar_05_tex"
+	desc = "atomicwar_06_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 90
+		command = { type = setflag which = usa_worldwar3_02 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 10
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+event = {
+	id = 1400102
+	random = no
+	persistent = yes
+	country = USA
+
+	trigger = {
+	NOT = { flag = usa_worldwar3_03 }
+	belligerence = { country = SOV value = 30 }
+	atwar = no
+	}
+
+	name = "atomicwar_05_tex"
+	desc = "atomicwar_06_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 70
+		command = { type = setflag which = usa_worldwar3_03 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 30
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+event = {
+	id = 1400103
+	random = no
+	persistent = yes
+	country = USA
+
+	trigger = {
+	NOT = { flag = usa_worldwar3_04 }
+	belligerence = { country = SOV value = 40 }
+	atwar = no
+	}
+
+	name = "atomicwar_05_tex"
+	desc = "atomicwar_06_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_01_SELE" # OK
+		ai_chance = 80
+		command = { type = setflag which = usa_worldwar3_04 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+	action_b = {
+		name = "atomicwar_comon_02_SELE" # OK
+		ai_chance = 20
+		command = { type = belligerence value = -2 }
+		command = { type = dissent value = 15 }
+	}
+}
+
+
+
+event = {
+	id = 1400104
+	random = no
+	country = USA
+
+	trigger = {
+	NOT = { flag = usa_worldwar3_05 }
+	belligerence = { country = SOV value = 50 }
+	atwar = no
+	}
+
+	name = "atomicwar_05_tex"
+	desc = "atomicwar_06_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_03_SELE" # OK
+		ai_chance = 100
+		command = { type = setflag which = usa_worldwar3_05 }
+		command = { type = belligerence value = 1 }
+		command = { type = peacetime_ic_mod value = 20 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400105
+	random = no
+	country = USA
+
+	trigger = {
+	flag = usa_worldwar3_01
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1181 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1182 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1183 where = 440 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1184 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1185 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1186 where = 440 }
+	}
+}
+
+
+
+event = {
+	id = 1400106
+	random = no
+	country = USA
+
+	trigger = {
+	flag = usa_worldwar3_02
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1187 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1188 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1189 where = 440 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1190 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1191 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1192 where = 440 }
+	}
+}
+
+
+
+event = {
+	id = 1400107
+	random = no
+	country = USA
+
+	trigger = {
+	flag = usa_worldwar3_03
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1193 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1194 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1195 where = 440 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1195 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1196 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1197 where = 440 }
+	}
+}
+
+event = {
+	id = 1400108
+	random = no
+	country = USA
+
+	trigger = {
+	flag = usa_worldwar3_04
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1198 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1199 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1200 where = 440 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1201 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1202 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1203 where = 440 }
+
+	}
+}
+event = {
+	id = 1400109
+	random = no
+	country = USA
+
+	trigger = {
+	flag = usa_worldwar3_05
+	war = { country = USA country = SOV }
+	}
+
+	name = "Dies Irae"
+	desc = "atomicwar_08_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_04_SELE" # OK
+		ai_chance = 100
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1204 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1205 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1206 where = 440 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 1193 } 
+		command = { type = activate_division which = 30306 value = 1207 where = 1193 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 521 } 
+		command = { type = activate_division which = 30306 value = 1208 where = 521 }
+
+		command = { type = add_corps which = "核子彈道飛彈" value = air where = 440 } 
+		command = { type = activate_division which = 30306 value = 1209 where = 440 }
+
+	}
+}
+
+
+
+
+
+event = {
+	id = 1400110
+	random = no
+	country = USA
+
+	trigger = {
+	atwar = no
+	belligerence = { country = SOV value = 35 }
+	ai = yes
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_10_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		command = { type = war which = SOV }
+	}
+}
+
+
+
+event = {
+	id = 1400111
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+	random = 30
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = SOV value = 30 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_10_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 50
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 80
+		command = { type = war which = SOV }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 20
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400112
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+	random = 20
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = SOV value = 20 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_10_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 80
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 50
+		command = { type = war which = SOV }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 50
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400113
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+	random = 10
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = SOV value = 10 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_10_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 80
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 20
+		command = { type = war which = SOV }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 80
+		command = { type = dissent value = 5 }
+	}
+}
+
+
+
+
+event = {
+	id = 1400114
+	random = no
+	country = USA
+	persistent = yes
+
+	trigger = {
+	random = 5
+	atwar = no
+	OR = {
+	atwar = USA
+	belligerence = { country = SOV value = 5 }
+	}
+	}
+
+	name = "atomicwar_03_tex"
+	desc = "atomicwar_10_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 100
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_05_SELE" # OK
+		ai_chance = 1
+		command = { type = war which = SOV }
+	}
+	action_b = {
+		name = "atomicwar_comon_06_SELE" # OK
+		ai_chance = 99
+		command = { type = dissent value = 5 }
+	}
+}
+
+##################################################################
+## Atomic Winter
+##################################################################
+
+
+event = {
+	id = 1400200
+	random = no
+	country = USA
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 150 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_11_tex"
+	desc = "atomicwar_12_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+event = {
+	id = 1400201
+	random = no
+	country = SOV
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 220 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_13_tex"
+	desc = "atomicwar_14_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+
+event = {
+	id = 1400202
+	random = no
+	country = JAP
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 100 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_15_tex"
+	desc = "atomicwar_16_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+event = {
+	id = 1400203
+	random = no
+	country = FRA
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 50 }
+
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_17_tex"
+	desc = "atomicwar_18_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+event = {
+	id = 1400204
+	random = no
+	country = CHC
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 50 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_19_tex"
+	desc = "atomicwar_20_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1949 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+event = {
+	id = 1400205
+	random = no
+	country = ENG
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 100 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_21_tex"
+	desc = "atomicwar_22_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+
+event = {
+	id = 1400206
+	random = no
+	country = ITA
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 50 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_23_tex"
+	desc = "atomicwar_24_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+
+event = {
+	id = 1400208
+	random = no
+	country = DFR
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 30 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_25_tex"
+	desc = "atomicwar_26_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+
+event = {
+	id = 1400209
+	random = no
+	country = IND
+
+	trigger = {
+	atwar = yes
+	NOT = { VP = 30 }
+	war = { country = SOV country = USA }
+	}
+
+	name = "atomicwar_27_tex"
+	desc = "atomicwar_40_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_28_tex" # OK
+		ai_chance = 100
+		command = { type = dissent value = 50 }
+	}
+}
+
+
+event = {
+	id = 1400210
+	random = no
+
+	trigger = {
+	event = 1400201
+	event = 1400200
+	event = 1400202
+	war = { country = SOV country = USA }
+	OR = {
+			OR = {
+				event = 1400204
+				event = 1400209
+					}
+			AND = {
+				event = 1400208
+				event = 1400206
+				event = 1400205
+				event = 1400203
+					}
+
+				}
+
+	}
+
+	name = "Acta est Fabula"
+	desc = "atomicwar_30_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_31_tex" # OK
+		ai_chance = 100
+		command = { type = endgame value =1 }
+	}
+}
+
+
+event = {
+	id = 1400211
+	random = no
+
+	trigger = {
+	event = 1400204
+	event = 1400209
+	event = 1400202
+	war = { country = SOV country = USA }
+	OR = {
+			OR = {
+				event = 1400201
+				event = 1400200
+					}
+			AND = {
+				event = 1400208
+				event = 1400206
+				event = 1400205
+				event = 1400203
+					}
+
+				}
+
+	}
+
+	name = "Acta est Fabula"
+	desc = "atomicwar_30_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_31_tex" # OK
+		ai_chance = 100
+		command = { type = endgame value =1 }
+	}
+}
+
+
+event = {
+	id = 1400300
+	random = no
+	country = SOV
+	persistent = yes
+
+	trigger = {
+	flag = sov_worldwar3_04
+	flag = usa_worldwar3_04
+	atwar = no
+	relation = { which = USA value = 150 }
+	}
+
+	name = "atomicwar_32_tex"
+	desc = "atomicwar_33_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1990 }
+
+	action_a = {
+		name = "atomicwar_comon_07_SELE" # OK
+		ai_chance = 100
+		command = { type = trigger which = 1400301 }
+	}
+	action_b = {
+		name = "atomicwar_comon_09_SELE"
+		ai_chance = 0
+		command = { type = belligerence value = 5 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+}
+
+
+
+event = {
+	id = 1400301
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "atomicwar_34_tex"
+	desc = "atomicwar_35_tex"
+	style = 0
+
+	action_a = {
+		name = "atomicwar_comon_08_SELE" # OK
+		ai_chance = 100
+		command = { type = trigger which = 1400302 }
+		command = { type = trigger which = 1400303 }
+	}
+	action_b = {
+		name = "atomicwar_comon_09_SELE"
+		ai_chance = 0
+		command = { type = belligerence value = 5 }
+		command = { type = peacetime_ic_mod value = 10 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 1400302
+	random = no
+	country = USA
+	persistent = yes
+
+	name = "atomicwar_36_tex"
+	desc = "atomicwar_37_tex"
+	style = 0
+
+	action_a = {
+		name = "atomicwar_comon_10_SELE" # OK
+		ai_chance = 100
+		command = { type = relation which = SOV value = -50 }
+		command = { type = belligerence value = -25 }
+		command = { type = peacetime_ic_mod value = -40 }
+		command = { type = clrflag which = usa_worldwar3_01 }
+		command = { type = clrflag which = usa_worldwar3_02 }
+		command = { type = clrflag which = usa_worldwar3_03 }
+		command = { type = clrflag which = usa_worldwar3_04 }
+	}
+}
+
+
+event = {
+	id = 1400303
+	random = no
+	country = SOV
+	persistent = yes
+
+	name = "atomicwar_38_tex"
+	desc = "atomicwar_39_tex"
+	style = 0
+
+	action_a = {
+		name = "atomicwar_comon_10_SELE" # OK
+		ai_chance = 100
+		command = { type = relation which = USA value = -50 }
+		command = { type = belligerence value = -25 }
+		command = { type = peacetime_ic_mod value = -40 }
+		command = { type = clrflag which = sov_worldwar3_01 }
+		command = { type = clrflag which = sov_worldwar3_02 }
+		command = { type = clrflag which = sov_worldwar3_03 }
+		command = { type = clrflag which = sov_worldwar3_04 }
+	}
+}
+
+
+
+
+
+event = {
+	id = 1400310
+	random = no
+	country = USA
+
+	trigger = {
+	allies = 1050
+	NOT = { war = { country = USA country = SOV } }
+	}
+
+	name = "atomicwar_41_tex"
+	desc = "atomicwar_42_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action_a = {
+		name = "atomicwar_43_tex"
+		ai_chance = 100
+		command = { type = endgame value = 6 }
+	}
+	action_b = {
+		name = "atomicwar_44_tex"
+		ai_chance = 0
+		command = { type = war which = SOV }
+	}
+}
+
+
+
+event = {
+	id = 1400311
+	random = no
+	country = SOV
+
+	trigger = {
+	comintern = 700
+	NOT = { war = { country = USA country = SOV } }
+	}
+
+	name = "atomicwar_45_tex"
+	desc = "atomicwar_46_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action_a = {
+		name = "atomicwar_47_tex"
+		ai_chance = 100
+		command = { type = endgame value = 8 }
+	}
+	action_b = {
+		name = "atomicwar_48_tex"
+		ai_chance = 0
+		command = { type = war which = USA }
+	}
+}
+
+  
+
+
+event = {
+	id = 1400312
+	random = no
+
+	trigger = {
+	ai = no
+	war = { country = USA country = SOV }
+	}
+
+	name = "atomicwar_49_tex"
+	desc = "atomicwar_50_tex"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1989 }
+
+	action_a = {
+		name = "atomicwar_51_tex"
+		ai_chance = 100
+		 command = { type = sleepevent which = 1400310 }
+		 command = { type = sleepevent which = 1400311 }
+	}
+}
+
+  

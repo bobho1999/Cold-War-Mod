@@ -1,0 +1,392 @@
+################################
+#### events for Western Europe 613500-613999
+################################
+
+#############################
+# France Overseas Departments
+#############################
+event = {
+	id = 613900
+	country = FRA
+	random = no
+	
+	trigger = {
+		government = democratic
+		NOT = {
+			exists = VIC
+			exists = GER
+			atwar = FRA
+		}
+		alliance = { country = FRA country = ENG }
+		control = { province = 875 data = FRA } # Guyane
+		control = { province = 898 data = FRA } # Guadeloupe
+		control = { province = 899 data = FRA } # Martinique
+		control = { province = 1135 data = FRA } # Reunion
+		control = { province = 1751 data = FRA } # Tahiti
+		control = { province = 1692 data = FRA } # Noumea (NC)
+		control = { province = 1691 data = FRA } # Lifou (NC)
+		# the below provinces constitute Vanuatu--a joint French-British condominium
+		control = { province = 1687 data = FRA }  
+		control = { province = 1688 data = FRA }
+		control = { province = 1689 data = FRA }
+		control = { province = 1690 data = FRA }
+	}
+	
+	date = { day = 15 month = march year = 1946 }# real date Mar 19 1946
+	offset = 7
+	deathdate = { day = 29 month = december year = 1959 }
+
+	
+	name = "Départements d'outre-mer"
+	desc = "The French National Assembly passed legislation establishing Overseas Departments of France and granting overseas islanders representation in the French National Assembly. The move bolstered forces favoring a continued association with France and dealt a blow to pro-independence forces."
+
+	action_a = {
+		name = "Fantastic!"
+		command = { type = addcore which = 875 } # Guyane
+		command = { type = addcore which = 898 } # Guadeloupe
+		command = { type = addcore which = 899 } # Martinique
+		command = { type = addcore which = 1135 } # Reunion
+		command = { type = addcore which = 1751 } # Tahiti
+		# Vanuatu does not get these when it achieves independence
+		command = { type = addcore which = 1692 } # Noumea (NC)
+		command = { type = addcore which = 1691 } # Lifou (NC)
+		#Vanuatu (1687-1690) does not get cored since it is a joint British-French
+		#condominium and becomes independent in 1980
+	}
+}
+#############################
+# The Diego Garcia Transfer
+#############################
+event = {
+	id = 613901
+	country = ENG
+	random = no
+	
+	trigger = {
+		NOT = {
+			exists = VIC
+			exists = GER
+			atwar = ENG
+		}
+		alliance = { country = ENG country = USA }
+		control = { province = 1817 data = ENG } # Diego Garcia
+		control = { province = 1136 data = ENG } # Mauritius
+		control = { province = 1816 data = ENG } # Seychelles
+	
+	}
+	
+	date = { day = 5 month = november year = 1965 }# real date Nov 8 1965
+	offset = 7
+	deathdate = { day = 29 month = december year = 1990 }
+
+	
+	name = "British Indian Ocean Territory"
+	desc = "The USA wanted bases in the Indian Ocean, so Diego Garcia and the Seychelles were detached from Mauritius, forming the British Indian Ocean Territory. This led to the forcible deportation of the Chagos Islanders, who were resettled on Mauritius. The issue was covered up but after the Cold War era became a major embarrassment for the British."
+
+	action_a = {
+		name = "OK"
+		command = { type = addcore which = 1817 } # Diego Garcia
+		command = { type = addcore which = 1816 } # Seychelles--independent in 1980
+		# means when Mauritius becomes independent they don't get these.
+	}
+}
+###################################
+# Soviet evacuation of Bornholm
+event = {
+	id = 613902
+	country = SOV
+	random = no
+	
+	trigger = {
+		NOT = {
+			exists = VIC
+			exists = GER
+			atwar = SOV
+		}
+		exists = DEN
+		control = { province = 295 data = SOV } # Bornholm
+	
+	}
+	
+	date = { day = 2 month = april year = 1946 }# real date Apr 5 1946
+	offset = 7
+	deathdate = { day = 29 month = december year = 1990 }
+
+	
+	name = "Evacuation of Bornholm"
+	desc = "The Soviet Union captured Borhnolm from Germany in the closing days of World War 2, and returned the island to Denmark without incident."
+
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = DEN value = 295 } 
+	}
+}
+# UK evacuation of Rhodes
+event = {
+	id = 613903
+	country = ENG
+	random = no
+	
+	trigger = {
+		NOT = {
+			exists = VIC
+			exists = GER
+			atwar = ENG
+			atwar = GRE
+		}
+		exists = GRE
+		control = { province = 399 data = ENG } # Rhodes
+	
+	}
+	
+	date = { day = 6 month = february year = 1947 }# real date Feb 10 1947
+	offset = 7
+	deathdate = { day = 29 month = december year = 1990 }
+
+	
+	name = "Return of Rhodes to Greece"
+	desc = "As a result of the World War I alliance, and Greek failure in the subsequent Greco-Turkish War, Rhodes and the rest of the Dodecanese Islands were awarded to Italy. Upon the defeat of the Axis, Rhodes was administered by Britain, and ceded to Greece upon the formal signing of the Treaty of Peace with Italy."
+
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = GRE value = 399 } 
+	}
+}
+
+####################################
+# Switzerland and Sweden goodwill research
+# bonuses--both major neutrals w/o alliance
+####################################
+event = {
+	id = 613993
+	country = SCH
+	random = no
+	
+	trigger = {
+		government = democratic
+		NOT = {
+			alliance = { country = USA country = SCH }
+			alliance = { country = SOV country = SCH }
+			alliance = { country = GER country = SCH }
+			alliance = { country = ENG country = SCH }
+			alliance = { country = FRA country = SCH }
+			alliance = { country = JAP country = SCH }
+			alliance = { country = CHI country = SCH }
+			alliance = { country = CHC country = SCH }
+			alliance = { country = U13 country = SCH }
+			alliance = { country = U39 country = SCH }
+			alliance = { country = ITA country = SCH }
+		}
+	}
+	
+	date = { day = 0 month = january year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 9999 }
+
+	
+	name = "Research Bonus"
+	desc = "Our country's neutralist stand in foreign affairs is appealing to many scientists, who want to share their knowledge with us or even work in our country!"
+
+	action_a = {
+		name = "Fantastic!"
+		command = { type = research_mod value = 100 } 
+	}
+}
+event = {
+	id = 613994
+	country = SCH
+	random = no
+	persistent = yes
+
+	trigger = {
+		event = 613993
+		government = democratic
+		atwar = no
+		NOT = {
+			alliance = { country = USA country = SCH }
+			alliance = { country = SOV country = SCH }
+			alliance = { country = GER country = SCH }
+			alliance = { country = ENG country = SCH }
+			alliance = { country = FRA country = SCH }
+			alliance = { country = JAP country = SCH }
+			alliance = { country = CHI country = SCH }
+			alliance = { country = CHC country = SCH }
+			alliance = { country = U13 country = SCH }
+			alliance = { country = U39 country = SCH }
+			alliance = { country = ITA country = SCH }
+		}
+		random = 2		
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 11
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "EVT_1011R_NAME"
+	desc = "EVT_1011R_DESC"
+	picture = "scientist"
+	
+	action_a = {
+		name = "ACTIONNAME1011A"
+		command = { type = steal_tech which = -1 }
+	}
+}
+event = {
+	id = 613995
+	country = SWE
+	random = no
+	
+	trigger = {
+		government = democratic
+		NOT = {
+			alliance = { country = USA country = SWE }
+			alliance = { country = SOV country = SWE }
+			alliance = { country = GER country = SWE }
+			alliance = { country = ENG country = SWE }
+			alliance = { country = FRA country = SWE }
+			alliance = { country = JAP country = SWE }
+			alliance = { country = CHI country = SWE }
+			alliance = { country = CHC country = SWE }
+			alliance = { country = U13 country = SWE }
+			alliance = { country = U39 country = SWE }
+			alliance = { country = ITA country = SWE }
+		}
+	}
+	
+	date = { day = 0 month = january year = 1946 }
+	offset = 7
+	deathdate = { day = 29 month = december year = 9999 }
+
+	
+	name = "Research Bonus"
+	desc = "Our country's neutralist stand in foreign affairs is appealing to many scientists, who want to share their knowledge with us or even work in our country!"
+
+	action_a = {
+		name = "Fantastic!"
+		command = { type = research_mod value = 60 } 
+	}
+}
+event = {
+	id = 613996
+	country = SWE
+	random = no
+	persistent = yes
+
+	trigger = {
+		event = 613995
+		government = democratic
+		atwar = no
+		NOT = {
+			alliance = { country = USA country = SWE }
+			alliance = { country = SOV country = SWE }
+			alliance = { country = GER country = SWE }
+			alliance = { country = ENG country = SWE }
+			alliance = { country = FRA country = SWE }
+			alliance = { country = JAP country = SWE }
+			alliance = { country = CHI country = SWE }
+			alliance = { country = CHC country = SWE }
+			alliance = { country = U13 country = SWE }
+			alliance = { country = U39 country = SWE }
+			alliance = { country = ITA country = SWE }
+		}
+		random = 3		
+	}
+
+	date = { day = 0 month = january year = 1946 }
+	offset = 17
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "EVT_1011R_NAME"
+	desc = "EVT_1011R_DESC"
+	picture = "scientist"
+	
+	action_a = {
+		name = "ACTIONNAME1011A"
+		command = { type = steal_tech which = -1 }
+	}
+}
+
+
+#########################################
+# Bugfix for wild Spanish AI--makes separate peace
+# with USSR if neither USA nor Germany is at war but 
+# Spain still is as a result of separate wars bug
+#########################################
+event = {
+	id = 613997
+	random = no
+	country = SPA
+
+	trigger = {	
+		ai = yes
+		war = { country = SPA country = SOV }
+	}
+
+	date = { day = 9 month = may year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	
+	action_a = {
+		name = "OK"
+		command = { type = relation which = SOV value = -1 }#just to do something
+	}
+}
+event = {
+	id = 613998
+	random = no
+	country = SPA
+
+	trigger = {	
+		ai = yes
+		OR = {
+			war = { country = USA country = SOV }
+			war = { country = GER country = SOV }
+		}
+		event = 613997
+	}
+
+	date = { day = 9 month = may year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	
+	action_a = {
+		name = "OK"
+		command = { type = relation which = SOV value = -1 }#just to do something
+	}
+}
+event = {
+	id = 613999
+	random = no
+	country = SPA
+
+	trigger = {	
+		ai = yes
+		event = 613997
+		event = 613998
+		war = { country = SPA country = SOV }
+		NOT = {
+			war = { country = USA country = SOV }
+			war = { country = GER country = SOV }
+		}
+	}
+
+	date = { day = 9 month = may year = 1936 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	
+	action_a = {
+		name = "OK"
+		command = { type = peace which = SOV }
+	}
+}

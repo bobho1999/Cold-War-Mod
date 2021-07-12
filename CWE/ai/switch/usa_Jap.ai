@@ -1,0 +1,192 @@
+# USA North Africa1 AI File by Lothos adapted to MIH by Civdemof
+###################################
+# Diplomacy
+###################################
+combat = {
+	JAP = 250
+	ger = 300
+}
+
+max_garrison_prop = 0.20
+min_garrison_prop = 0.10
+
+exp_force_ratio = 0.00
+exp_force_ratios = { } 
+
+max_front_ratios = {
+	JAP = 8.0
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+  passivity = {
+		GER = 120
+		JAP = 120
+	}
+}	
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 10.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	distance			= 0.1	#higher = avoid long distance.
+	max_distance  		= 250.0  #About the distance from Washington to Morocco
+	max_staging_distance = 25	# How far should the staging area be from the target invasion point
+	pocket				= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 0.1	#higher = much more vary of troops in province.
+	adjacentenemy 		= 0.1	#higher = much more vary of troops nearby
+	air_base			= 0.1 
+    naval_base 			= 0.1 
+    air_support 		= 0.1 
+    redirect 			= priority
+	ignore				= no
+	help_allies 		= yes
+      
+	staging_province = { 
+		1737  # Plymouth
+		1624	# Gibraltar
+		1299
+		663
+	}
+
+	target = {
+		#England
+		20 = -1 # Dover
+		17 = -1 # Norwich
+		21 = -1 # Portsmouth
+		23 = -1 # Plymouth
+		13 = -1 # Sheiffield
+		28 = -1 # Belfast
+		22 = -1 # Bristol
+		14 = -1 # Liverpool
+		12 = -1 # Blackpool
+		11 = -1 # Sunderland
+		10 = -1 # Edinburgh
+		9  = -1 # Glasgow
+		
+		# North Africa
+		958	= -1 	# Casalanca
+		953 = -1	# Oran
+		949 = -1	# Algiers
+		940 = -1	# Bizerte
+		939 = -1	# Tunis
+		938	= -1	# Sousse
+
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		525 = -1 # Palermo
+		521 = -1 # Naples
+		523 = -1 # Taranto
+		520 = -1 # Foggia
+		519 = -1 # Anzio
+		368 = -1
+		369 = -1
+		513 = -1
+		515 = -1
+		514 = -1
+		31  = -1 # Malta
+		405 = -1
+		399 = -1
+		398 = -1
+		
+		#Temp Shut Down of Europe
+		# Med Island
+		367 = -1
+		534 = -1
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax
+		
+		# Southern France
+		358 = -1
+		362 = -1
+		364 = -1
+		365 = -1
+		366 = -1
+
+		# Kwantung Long areas
+		1196 = -1 # Busan
+		1199 = -1 # Seoul
+		1201 = -1 # Pyongyang
+		1204 = -1 # Tianjin
+		1214 = -1 # Yantai
+		1215 = -1 # Oingdao
+		1217 = -1 # Lianyungang
+		1219 = -1 # Nantong
+		1237 = -1 # Shanghai
+		
+		#Japan
+    1599 = 6000
+    1624 = 6000
+    2196 = 5000
+    3669 = 4000
+    1191 = 4000
+    1192 = 4000 
+    1193 = 4000       
+    1737 = 6000
+    1644 = 4000
+    1350 = 3000 
+    1351 = 3000
+    1333 = 3000 
+    1334 = 3000   
+    1322 = 4000 
+    1323 = 4000         
+	} 
+}

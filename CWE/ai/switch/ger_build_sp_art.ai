@@ -1,0 +1,117 @@
+
+construction = { 
+	max_factor = 0.20 
+	ic_at_war = yes
+	force_ic_until = 1935
+	ic_end_year = 1941
+}
+
+military = { 
+	relative_build_scheme 	= yes
+	
+	#### Divisions etc...
+	infantry 		= 21
+	cavalry 		= 0
+	motorized 		= 18
+	mechanized 		= 1
+	light_armor 		= 0
+	armor 			= 5
+	paratrooper 		= 1
+	marine 			= 0
+	bergsjaeger 		= 1
+	garrison		= 2
+	hq 			= 1
+	militia 		= 0
+#				50 %
+	interceptor 		= 9
+	multi_role 		= 3
+	cas 			= 3
+	strategic_bomber 	= 0
+	tactical_bomber 	= 3
+	naval_bomber 		= 1
+	transport_plane 	= 1
+	flying_bomb 		= 0
+	flying_rocket 		= 0
+#				20 %
+	battleship 		= 1
+	carrier 		= 0
+	escort_carrier		= 0
+	destroyer 		= 3
+	light_cruiser 		= 2
+	heavy_cruiser 		= 1
+	battlecruiser 		= 0
+	submarine 		= 18
+	nuclear_submarine 	= 0
+	transport 		= 5
+#				30 %
+	
+	attachment_preferences = {
+
+		infantry = {
+
+			extra1 = {
+			
+				artillery = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+		motorized = {
+
+			extra1 = {
+			
+				artillery = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+		mechanized = {
+
+			extra1 = {
+			
+				engineer = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+		light_armor = {
+
+			extra1 = {
+			
+				engineer = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+		armor = {
+
+			extra1 = {
+			
+				engineer = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+		marine = {
+
+			extra1 = {
+			
+				artillery = 0
+				sp_artillery = 100
+			
+			}
+
+		}
+		
+	}
+}

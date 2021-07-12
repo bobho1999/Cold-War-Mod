@@ -1,0 +1,772 @@
+event = {
+  	id = 8510000
+  	random = no
+	country = GRE
+  
+  	name = "1946年議會選舉 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		
+ 	}
+ 
+  	date = { day = 29 month = march year = 1946 }
+  
+  	action_a = {
+    		name = "舉行"
+    		command = { type = trigger which = 8510001 }  
+  	}
+}
+
+event = {
+  	id = 8510001
+  	random = no
+	country = U33
+  
+  	name = "1946年議會選舉 " 
+  	desc = " "
+    	style = 0
+  
+  	action_a = {
+    		name = "杯葛選舉"
+    		command = { type = dissent value = -1 }
+		command = { type = trigger which = 8510002 }
+  	}
+}
+
+event = {
+  	id = 8510002
+  	random = no
+	country = GRE
+  
+  	name = "KKE杯葛選舉 " 
+  	desc = " "
+    	style = 0
+  
+  	action_a = {
+    		name = "如期舉行"
+    		command = { type = dissent value = 3 }
+		command = { type = trigger which = 8510003 }
+  	}
+}
+event = {
+  	id = 8510003
+  	random = no
+	country = U33
+  
+  	name = "內戰再開 " 
+  	desc = " "
+    	style = 0
+
+  
+  	action_a = {
+    		name = " "
+    		command = { type = dissent value = -5 }
+    		command = { type = war which = GRE } 
+		command = { type = setflag which = greek_cw } 
+		command = { type = province_keypoints which = 392 value = 1 }
+		command = { type = add_corps value = land where = 395 }
+		command = { type = add_division value = infantry when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_corps value = land where = 392 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+  	}
+}
+
+event = {
+  	id = 8510004
+  	random = no
+	country = GRE
+  
+  	name = "內戰再開 " 
+  	desc = " "
+    	style = 0
+
+  
+  	action_a = {
+    		name = " "
+		command = { type = province_keypoints which = 394 value = 1 }
+		command = { type = province_keypoints which = 3234 value = 1 }
+		command = { type = province_keypoints which = 396 value = 1 }
+  	}
+}
+
+event = {
+  	id = 8510005
+  	random = no
+	country = GRE
+  
+  	name = "白色恐怖 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		
+ 	}
+ 
+  	date = { day = 29 month = march year = 1945 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+  	action_a = {
+    		name = "迫害左翼分子"
+    		command = { type = dissent value = 10 }
+       		command = { type = relation which = U33 value = -10 } 
+#            	command = { type = domestic which = democratic value = -1 }
+            	command = { type = domestic which = political_left value = -2 }
+            	command = { type = domestic which = freedom value = -1 }
+            	command = { type = manpowerpool value = -10 }
+    		command = { type = trigger which = 8510006 }  
+  	}
+}
+
+event = {
+  	id = 8510006
+  	random = no
+	country = U33
+  
+  	name = "白色恐怖 " 
+  	desc = " "
+    	style = 0
+  
+  	action_a = {
+    		name = "武裝自己"
+       		command = { type = relation which = GRE value = -10 } 
+       		command = { type = supplies value = 1000 }
+            	command = { type = manpowerpool value = -5 } 
+  	}
+}
+
+event = {
+  	id = 8510007
+  	random = no
+	country = YUG
+  
+  	name = "希臘內戰 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+ 	}
+ 
+  	date = { day = 1 month = january year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+  	action_a = {
+    		name = "支援希臘民主軍"
+		ai_chance = 97
+       		command = { type = relation which = U33 value = 20 } 
+            	command = { type = domestic which = interventionism value = 1 }
+            	command = { type = supplies value = -1000 }
+            	command = { type = money value = -200 }
+    		command = { type = trigger which = 8510008 }  
+  	}
+  	action_b = {
+    		name = "出兵干涉"
+		ai_chance = 1
+       		command = { type = relation which = U33 value = 20 } 
+            	command = { type = domestic which = interventionism value = 2 }
+		command = { type = alliance which = U33 }
+            	command = { type = supplies value = -1000 }
+            	command = { type = money value = -200 }
+    		command = { type = trigger which = 8510008 }  
+  	}
+  	action_c = {
+    		name = "不要刺激西方"
+		ai_chance = 2
+       		command = { type = relation which = U33 value = -20 }  
+  	}
+}
+
+event = {
+  	id = 8510008
+  	random = no
+	country = U33
+  
+  	name = "來自南斯拉夫的援助 " 
+  	desc = " "
+    	style = 0
+
+  	action_a = {
+    		name = "感謝鐵托"
+       		command = { type = relation which = YUG value = 20 } 
+            	command = { type = dissent value = -1 }
+            	command = { type = supplies value = 1000 }
+            	command = { type = money value = 200 }
+		command = { type = add_division value = infantry when = 6 where = artillery }
+		command = { type = add_division value = infantry when = 6 }
+  	}
+}
+
+#8510009-10 onhold
+
+event = {
+  	id = 8510011
+  	random = no
+	country = SOV
+  
+  	name = "希臘內戰 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+ 	}
+ 
+  	date = { day = 1 month = january year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "不要刺激西方"
+		ai_chance = 90
+       		command = { type = relation which = U33 value = -20 }  
+       		command = { type = relation which = GRE value = 20 } 
+       		command = { type = relation which = USA value = 20 } 
+       		command = { type = relation which = ENG value = 20 } 
+  	}
+	action_b = {
+    		name = "支援希臘民主軍"
+		ai_chance = 9
+       		command = { type = relation which = U33 value = 20 } 
+            	command = { type = domestic which = interventionism value = 1 }
+            	command = { type = supplies value = -4000 }
+            	command = { type = oilpool value = -1000 }
+            	command = { type = money value = -400 }
+    		command = { type = trigger which = 8510012 }  
+  	}
+#  	action_c = {
+#    		name = "出兵干涉"
+#		ai_chance = 1
+#		command = { type = relation which = U33 value = 20 } 
+#		command = { type = domestic which = interventionism value = 2 }#
+#		command = { type = alliance which = U33 }
+#		command = { type = supplies value = -4000 }
+#		command = { type = oilpool value = -1000 }
+#	     	command = { type = money value = -400 }
+#		command = { type = trigger which = 8510012 }  
+#  	}
+}
+
+event = {
+  	id = 8510012
+  	random = no
+	country = U33
+  
+  	name = "來自蘇聯的援助 " 
+  	desc = " "
+    	style = 0
+
+  	action_a = {
+    		name = "感謝史達林"
+       		command = { type = relation which = SOV value = 20 } 
+            	command = { type = dissent value = -1 }
+            	command = { type = supplies value = 4000 }
+            	command = { type = oilpool value = 1000 }
+            	command = { type = money value = 400 }
+		command = { type = add_division value = infantry when = 6 where = artillery }
+		command = { type = add_division value = infantry when = 6 where = artillery }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+  	}
+}
+
+event = {
+  	id = 8510013
+  	random = no
+	country = ENG
+  
+  	name = "希臘內戰 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+ 	}
+ 
+  	date = { day = 1 month = january year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "支援雅典政府"
+		ai_chance = 99
+       		command = { type = relation which = GRE value = 20 } 
+            	command = { type = domestic which = interventionism value = 1 }
+            	command = { type = supplies value = -2000 }
+            	command = { type = oilpool value = -500 }
+            	command = { type = money value = -200 }
+            	command = { type = free_money value = -3 }
+            	command = { type = free_supplies value = -12 }
+    		command = { type = trigger which = 8510014 }  
+  	}
+	action_b = {
+    		name = "希臘不重要"
+		ai_chance = 1
+       		command = { type = relation which = U33 value = 20 }  
+       		command = { type = relation which = GRE value = -20 } 
+       		command = { type = relation which = USA value = -20 } 
+       		command = { type = relation which = SOV value = 20 } 
+  	}
+#  	action_c = {
+#    		name = "出兵干涉"
+#		ai_chance = 1
+#		command = { type = relation which = SOV value = -20 } 
+#		command = { type = domestic which = interventionism value = 2 }#
+#		command = { type = alliance which = GRE }
+#		command = { type = supplies value = -4000 }
+#		command = { type = oilpool value = -1000 }
+#	     	command = { type = money value = -400 }
+#		command = { type = trigger which = 8510008 }  
+#  	}
+}
+
+event = {
+  	id = 8510014
+  	random = no
+	country = GRE
+  
+  	name = "來自英國的援助 " 
+  	desc = " "
+    	style = 0
+
+  	action_a = {
+    		name = "感謝"
+       		command = { type = relation which = ENG value = 20 } 
+            	command = { type = dissent value = -2 }
+            	command = { type = free_money value = 3 }
+            	command = { type = free_supplies value = 12 }
+            	command = { type = supplies value = 2000 }
+            	command = { type = oilpool value = 500 }
+            	command = { type = money value = 200 }
+		command = { type = add_division value = infantry when = 6 where = artillery }
+		command = { type = add_division value = infantry when = 6 where = artillery }
+  	}
+}
+
+### Initial fervor for communist cause
+event = {
+	id = 8510015
+	country = U33
+	persistent = yes
+
+	name = "游擊隊" #Partisans
+	desc = "A groups of valiant partisans recruiting itself from local peasants has joined our cause."
+	style = 1
+
+	trigger = {
+		OR = {
+			AND = {
+				year = 1945
+				NOT = { year = 1947 }
+				random = 25
+			}
+			AND = {
+				year = 1947
+				NOT = { year = 1948 }
+				random = 40
+			}
+			AND = {
+				year = 1948
+				NOT = { year = 1950 }
+				random = 25
+			}
+		}
+		war = { country = GRE country = U33 }
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = "編入軍隊" 
+		ai_chance = 100
+		command = { type = add_division which = "游擊隊" value = militia when = 6 }
+	}	
+	
+	action_b = {
+		name = "編入後備役" 
+		ai_chance = 0
+		command = { type = manpowerpool value = 5 }
+	}	
+}
+
+### Communists are wearing out
+
+event = {
+	id = 8510016
+	country = U33
+	persistent = yes
+
+	name = EVT_8500540_NAME
+	desc = EVT_8500540_DESC
+	style = 1
+
+	trigger = {
+		war = { country = GRE country = U33 }
+		flag = cold_war
+		NOT = {
+			lost_national = { country = GRE value = 40 }
+		}
+	}
+
+	date = { day = 0 month = january year = 1949 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1955 }
+
+	action_a = {
+		name = EVT_8500540_A
+		command = { type = dissent value = 3 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = damage_division which = -1 where = 50 }
+		command = { type = construct which = land_fort where = 401 value = -1 }
+	}		
+}
+
+event = {
+  	id = 8510017
+  	random = no
+	country = ENG
+  
+  	name = "經濟困難 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+		event = 8510014
+		OR = {
+			ai = yes
+			not = { money = 500 }
+		}
+ 	}
+ 
+  	date = { day = 1 month = january year = 1947 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "無力援助"
+		ai_chance = 99
+            	command = { type = free_money value = 3 }
+            	command = { type = free_supplies value = 12 }  
+  	}
+}
+event = {
+  	id = 8510018
+  	random = no
+	country = USA
+  
+  	name = "希臘內戰 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+		flag = Truman_Doctrine #杜魯門主義
+		event = 8510017
+ 	}
+ 
+  	date = { day = 1 month = january year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "援助雅典政府，圍堵共產主義"
+		ai_chance = 99
+       		command = { type = relation which = GRE value = 20 } 
+            	command = { type = domestic which = interventionism value = 1 }
+            	command = { type = supplies value = -2000 }
+            	command = { type = oilpool value = -500 }
+            	command = { type = money value = -200 }
+            	command = { type = free_money value = -3 }
+            	command = { type = free_supplies value = -12 } 
+  	}
+	action_b = {
+    		name = "希臘不重要"
+		ai_chance = 1
+       		command = { type = relation which = U33 value = 20 }  
+       		command = { type = relation which = GRE value = -20 } 
+       		command = { type = relation which = ENG value = -20 } 
+       		command = { type = relation which = SOV value = 20 } 
+    		command = { type = trigger which = 8510019 } 
+  	}
+#  	action_c = {
+#    		name = "出兵干涉"
+#		ai_chance = 1
+#		command = { type = relation which = SOV value = -20 } 
+#		command = { type = domestic which = interventionism value = 2 }#
+#		command = { type = alliance which = GRE }
+#		command = { type = supplies value = -2000 }
+#		command = { type = oilpool value = -500 }
+#	     	command = { type = money value = -200 }
+#		command = { type = trigger which = 8510008 }  
+#  	}
+}
+event = {
+  	id = 8510019
+  	random = no
+	country = GRE
+  
+  	name = "西方停止援助 " 
+  	desc = " "
+    	style = 0
+
+  	action_a = {
+    		name = "OK"
+            	command = { type = dissent value = 1 }
+            	command = { type = free_money value = -3 }
+            	command = { type = free_supplies value = -12 }
+  	}
+}
+
+#8510020 onhold
+
+event = {
+  	id = 8510021
+  	random = no
+	country = YUG
+  
+  	name = "蘇南決裂 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		OR = {
+			NOT = { relation = { which = SOV value = 150 } }
+			NOT = { ideology  = stalinist }
+		}
+ 	}
+ 
+  	date = { day = 1 month = june year = 1948 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = " "
+		ai_chance = 99
+       		command = { type = relation which = SOV value = -200 } 
+            	command = { type = domestic which = defense_lobby value = 1 }
+            	command = { type = leave_alliance }
+            	command = { type = setflag which = Tito_Stalin_split }
+  	}
+}
+
+event = {
+  	id = 8510022
+  	random = no
+	country = SOV
+  
+  	name = "蘇南決裂 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = " "
+		ai_chance = 99
+       		command = { type = relation which = YUG value = -200 } 
+  	}
+}
+
+event = {
+  	id = 8510023
+  	random = no
+	country = U33
+  
+  	name = "蘇南決裂 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = Tito_Stalin_split
+ 	}
+ 
+  	date = { day = 1 month = june year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "忠於蘇聯"
+		ai_chance = 95
+       		command = { type = relation which = YUG value = -50 }  
+       		command = { type = relation which = SOV value = 20 } 
+    		command = { type = trigger which = 8510024 }  
+  	}
+	action_b = {
+    		name = "忠於南斯拉夫"
+		ai_chance = 5
+       		command = { type = relation which = SOV value = -50 }  
+       		command = { type = relation which = YUG value = 50 } 
+    		command = { type = trigger which = 8510025 }  
+  	}
+}
+
+event = {
+  	id = 8510024
+  	random = no
+	country = YUG
+  
+  	name = "停止對希臘民主軍的援助 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = "關閉邊界"
+		ai_chance = 95
+       		command = { type = end_access which = U33 }   
+  	}
+}
+
+event = {
+  	id = 8510025
+  	random = no
+	country = SOV
+  
+  	name = "停止對希臘民主軍的援助 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = "關閉邊界"
+       		command = { type = end_access which = U33 }  
+    		command = { type = trigger which = 8510026 } 
+    		command = { type = trigger which = 8510027 }  
+  	}
+}
+
+event = {
+  	id = 8510026
+  	random = no
+	country = BUL
+  
+  	name = "停止對希臘民主軍的援助 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = "關閉邊界"
+       		command = { type = end_access which = U33 }   
+  	}
+}
+
+event = {
+  	id = 8510027
+  	random = no
+	country = ALB
+  
+  	name = "停止對希臘民主軍的援助 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = "關閉邊界"
+       		command = { type = end_access which = U33 }   
+  	}
+}
+
+event = {
+  	id = 8510030
+  	random = no
+	country = GRE
+  
+  	name = "敗退克里特島 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+		control = { province = 401 data = U33 }
+		control = { province = 411 data = U33 }
+		control = { province = 392 data = U33 }
+		control = { province = 394 data = U33 }
+		control = { province = 3234 data = U33 }
+		control = { province = 396 data = GRE }
+ 	}
+ 
+  	date = { day = 1 month = june year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "逃離本土"
+		ai_chance = 95
+		command = { type = trigger which = 8510031 value = 1 } 
+		command = { type = dissent value = 10 } 
+		command = { type = capital which = 396 }  
+    		command = { type = secedeprovince which = U33  value = 392 } 
+    		command = { type = secedeprovince which = U33  value = 393 } 
+    		command = { type = secedeprovince which = U33  value = 394 } 
+    		command = { type = secedeprovince which = U33  value = 395 } 
+    		command = { type = secedeprovince which = U33  value = 398 } 
+    		command = { type = secedeprovince which = U33  value = 399 }  
+    		command = { type = secedeprovince which = U33  value = 400 } 
+    		command = { type = secedeprovince which = U33  value = 401 } 
+    		command = { type = secedeprovince which = U33  value = 402 } 
+    		command = { type = secedeprovince which = U33  value = 403 } 
+    		command = { type = secedeprovince which = U33  value = 405 } 
+    		command = { type = secedeprovince which = U33  value = 412 } 
+    		command = { type = secedeprovince which = U33  value = 411 } 
+    		command = { type = secedeprovince which = U33  value = 410 } 
+    		command = { type = secedeprovince which = U33  value = 3225 }
+    		command = { type = secedeprovince which = U33  value = 3229 } 
+    		command = { type = secedeprovince which = U33  value = 3248 } 
+    		command = { type = secedeprovince which = U33  value = 3234 } 
+    		command = { type = secedeprovince which = U33  value = 3233 }  
+    		command = { type = secedeprovince which = U33  value = 3232 } 
+    		command = { type = secedeprovince which = U33  value = 3231 }
+    		command = { type = secedeprovince which = U33  value = 3948 }
+  	}
+}
+
+event = {
+  	id = 8510031
+  	random = no
+	country = U33
+  
+  	name = "希臘內戰的勝利 " 
+  	desc = " "
+    	style = 0
+
+
+	action_a = {
+    		name = "共產主義萬歲"
+		ai_chance = 95
+		command = { type = dissent value = -5 } 
+		command = { type = capital which = 401 }  
+  	}
+}
+
+event = {
+  	id = 8510032
+  	random = no
+	country = GRE
+  
+  	name = "希臘內戰的勝利 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+		flag = greek_cw
+		NOT = { exists = U33 }
+ 	}
+ 
+  	date = { day = 1 month = june year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1963 }
+
+	action_a = {
+    		name = "OK"
+		ai_chance = 95
+		command = { type = trigger which = 8510033 } 
+		command = { type = dissent value = -5 } 
+		command = { type = capital which = 401 }  
+  	}
+}

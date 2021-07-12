@@ -1,0 +1,136 @@
+land_unit_type = 1
+# 0 - Basic
+model = {
+	cost 				= 3
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 1
+	toughness 			= 1 
+	defaultorganisation = 5
+	softness			= -6
+	softattack			= 2
+	suppression		= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved
+model = {
+	cost 				= 3
+	buildtime	 		= 65
+	manpower 			= 2
+	defensiveness 		= 2
+	toughness 			= 2
+	defaultorganisation = 8
+	softness			= -6
+	softattack			= 3
+	hardattack			= 1
+	supplyconsumption 	= 0.4
+	fuelconsumption		= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression		= 1
+}
+# 2 - Modern
+model = {
+	cost = 3
+	buildtime = 70
+	manpower = 2
+	defensiveness = 2
+	toughness = 2
+	defaultorganisation = 12
+	softness = -6
+	softattack = 3
+	hardattack = 1
+	supplyconsumption = 0.5
+	fuelconsumption = 0.19
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 1
+}
+# 3 - 1960
+model = {
+	cost = 4
+	buildtime = 70
+	manpower = 2
+	defensiveness = 3
+	toughness = 3
+	defaultorganisation = 15
+	softness = -6
+	softattack = 4
+	hardattack = 2
+	supplyconsumption = 0.5
+	fuelconsumption = 0.20
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 1
+}
+# 4 - 1972 (AFV)
+model = {
+	cost = 5
+	buildtime = 80
+	manpower = 2
+	defensiveness = 4
+	toughness = 4
+	defaultorganisation = 15
+	softness = -6
+	softattack = 7
+	hardattack = 2
+	supplyconsumption = 0.5
+	fuelconsumption = 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 2
+}
+# 5 - Wheeled Tank Destroyer 90 mm
+model = {
+	cost = 6
+	buildtime = 85
+	manpower = 2
+	defensiveness = 4
+	toughness = 4
+	defaultorganisation = 15
+	softness = -6
+	softattack = 4
+	hardattack = 5
+	supplyconsumption = 0.5
+	fuelconsumption = 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 1
+}
+# 6 - Wheeled Tank Destroyer 105 mm
+model = {
+	cost = 6.5
+	buildtime = 90
+	manpower = 2
+	defensiveness = 5
+	toughness = 5
+	defaultorganisation = 15
+	softness = -6
+	softattack = 4
+	hardattack = 7
+	supplyconsumption = 0.5
+	fuelconsumption = 0.35
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 1
+}
+# 7 - Multipurpose AFV
+model = {
+	cost = 7
+	buildtime = 95
+	manpower = 2
+	defensiveness = 6
+	toughness = 6
+	defaultorganisation = 15
+	softness = -6
+	softattack = 8
+	hardattack = 8
+	supplyconsumption = 0.5
+	fuelconsumption = 0.40
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+	suppression = 2
+}

@@ -1,0 +1,32 @@
+# China 1936 AI File by Lothos
+
+max_front_ratios = { 	
+	  JAP = 2.0 
+		U74 = 2.0
+		U87 = 2.0		
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+front = { 
+
+	recklessness 		= 1 # 0-3
+	distrib_vs_ai 		= op_defensive
+	distrib_vs_human 	= op_defensive
+
+	enemy_reinf_days	= 6
+	reserve_prop		= 0.1
+	panic_ratio_vs_ai	= 1
+	panic_ratio_vs_human	= 1
+	base_attack_odds	= 1.3
+	min_attack_odds		= 1.1
+	max_attack_odds		= 3.0
+	reinforce_odds		= 1.2
+	withdraw_odds		= 0.6
+	
+      	passivity = {
+		JAP = 50
+		U74 = 50
+		U87 = 50		
+	} 
+}

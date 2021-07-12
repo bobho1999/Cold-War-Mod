@@ -1,0 +1,170 @@
+land_unit_type = 1
+# 0 - Early
+model = {
+	cost 				= 4
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 1
+	hardattack			= 2
+	softattack			= 1
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.12
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Basic
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 2
+	hardattack			= 3
+	softattack			= 2
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.14
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+
+# 2 - Improved
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 3
+	hardattack			= 5
+	softattack			= 3
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.16
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Advanced
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 4
+	hardattack			= 6
+	softattack			= 4
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.18
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Semi-Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 5
+	hardattack			= 7
+	softattack			= 5
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Modern
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 6
+	hardattack			= 8
+	softattack			= 5
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.22
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - 1955
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 7
+	hardattack			= 9
+	softattack			= 6
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.24
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - 1960
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 8
+	hardattack			= 10
+	softattack			= 6
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.26
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 8 - 1975
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 9
+	hardattack			= 11
+	softattack			= 7
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.28
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 9 - 1985
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 10
+	hardattack			= 12
+	softattack			= 7
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 10 - 1995
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 11
+	hardattack			= 13
+	softattack			= 8
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.32
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 11 - 2007
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 12
+	hardattack			= 14
+	softattack			= 8
+	maxspeed 			= -1
+	softness			= -3
+	supplyconsumption 	= 0.34
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

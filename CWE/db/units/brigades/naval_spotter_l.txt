@@ -1,0 +1,127 @@
+naval_unit_type = 1
+# 0 - Naval Spotter Capital 0
+model = {
+	cost 				= 1.0
+	buildtime			= 50
+	manpower 			= 0.1
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - Naval Spotter Capital 1
+model = {
+	cost 				= 1.0
+	buildtime			= 65
+	manpower 			= 0.1
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.01
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 2 - Naval Spotter Capital 2
+model = {
+	cost 				= 1
+	buildtime			= 125
+	manpower 			= 0.1
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	subdetectioncapability		= 1
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 1
+	distance			= 0.02
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - Naval Spotter Capital 3
+model = {
+	cost 				= 3
+	buildtime			= 75
+	manpower 			= 0.1
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 2
+	subdetectioncapability		= 2
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 2
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 2
+	distance			= 0.02
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - Naval Spotter Capital 4
+model = {
+	cost 				= 3.0
+	buildtime			= 110
+	manpower 			= 0.1
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 2
+	subdetectioncapability		= 2
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 2
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 2
+	distance			= 0.02
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - Naval Spotter Capital 5
+model = {
+	cost 				= 3.5
+	buildtime			= 110
+	manpower 			= 0.1
+	surfacedetectioncapability	= 3
+	airdetectioncapability		= 2
+	subdetectioncapability		= 3
+	visibility			= 5
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 2
+	subattack			= 3
+	airattack			= 0
+	shorebombardment		= 2
+	distance			= 0.02
+	supplyconsumption 		= 0.1
+	fuelconsumption			= 0.05
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}

@@ -1,0 +1,100 @@
+land_unit_type = 1
+# 0 - 一战工兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 1 - 戰間工兵营 
+model = {
+	cost 				= 2
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 4
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 2 - 早期工兵营 
+model = {
+	cost 				= 3
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 6
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 3 - 基本工兵营 
+model = {
+	cost 				= 4
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 8
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 4 - 改良工兵营 
+model = {
+	cost 				= 5
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 10
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 5 - 先进工兵营 
+model = {
+	cost 				= 6
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 12
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 6 - 准现代工兵营 
+model = {
+	cost 				= 7
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 14
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 7 - 现代工兵营 
+model = {
+	cost 				= 8
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 16
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}
+# 8 - 冷战工兵营 
+model = {
+	cost 				= 9
+	buildtime	 		= 180
+	manpower 			= 2
+	maxspeed 			= 1
+	morale					= 18
+	supplyconsumption 	= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+}

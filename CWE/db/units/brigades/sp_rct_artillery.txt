@@ -1,0 +1,177 @@
+land_unit_type = 1
+# 0 - Basic
+model = {
+	cost 				= 5.5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -6
+	softattack			= 5
+	hardattack			= 1
+	artillery_bombardment		= 3
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved
+model = {
+	cost 				= 6
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -7
+	softattack			= 6
+	hardattack			= 1
+	artillery_bombardment		= 4
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced
+model = {
+	cost 				= 6.5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 5
+	toughness 			= 5
+	softness			= -8
+	softattack			= 7
+	hardattack			= 3
+	artillery_bombardment		= 5
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - SemiModern
+model = {
+	cost 				= 7
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 6
+	toughness 			= 6
+	softness			= -9
+	softattack			= 8
+	hardattack			= 3
+	artillery_bombardment		= 6
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Modern
+model = {
+	cost 				= 7.5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 7
+	toughness 			= 7
+	softness			= -10
+	softattack			= 9
+	hardattack			= 4
+	artillery_bombardment		= 7
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Post Modern (1956)
+model = {
+	cost 				= 8
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 8
+	toughness 			= 8
+	softness			= -10
+	softattack			= 10
+	hardattack			= 4
+	artillery_bombardment		= 8
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - Post Modern (1963)
+model = {
+	cost 				= 8
+	buildtime	 		= 65
+	manpower 			= 2
+	defensiveness 		= 9
+	toughness 			= 9
+	softness			= -10
+	softattack			= 11
+	hardattack			= 5
+	artillery_bombardment		= 9
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - 1975 SPRA
+model = {
+	cost 				= 8.5
+	buildtime	 		= 65
+	manpower 			= 2
+	defensiveness 		= 10
+	toughness 			= 10
+	softness			= -10
+	softattack			= 12
+	hardattack			= 5
+	artillery_bombardment		= 10
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 8 - 1985 SPRA
+model = {
+	cost 				= 8.5
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 11
+	toughness 			= 11
+	softness			= -10
+	softattack			= 13
+	hardattack			= 6
+	artillery_bombardment		= 11
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 9 - 1995 SPRA
+model = {
+	cost 				= 9
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 12
+	toughness 			= 12
+	softness			= -10
+	softattack			= 14
+	hardattack			= 6
+	artillery_bombardment		= 12
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 10 - 2007 SPRA
+model = {
+	cost 				= 9
+	buildtime	 		= 75
+	manpower 			= 2
+	defensiveness 		= 13
+	toughness 			= 13
+	softness			= -10
+	softattack			= 15
+	hardattack			= 7
+	artillery_bombardment		= 13
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

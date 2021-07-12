@@ -1,0 +1,1416 @@
+### War of Independence
+
+# September: Japanese arm Indonesians
+
+
+# September: Dutch East India receives units, mostly allied help
+
+
+# October: An all-out conflict starts
+
+
+# Insurgencies in Sumatra
+event = {
+	id = 8206011
+	country = INO
+ 
+
+	name = EVT_8206031_NAME
+	desc = EVT_8206031_DESC
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	trigger = {
+		war = { country = INO country = HOL }
+		event = 611512 
+	}
+	
+	date = { day = 0 month = january year = 1946 }
+	offset = 10
+	deathdate = { day = 29 month = june year = 1950 }
+	
+	action_a = {
+		name = EVT_8206031_A
+		ai_chance = 34
+		command = { type = add_corps which = "蘇門答臘游擊隊" value = land where = 3750 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = add_division value = militia when = 6 }
+		command = { type = manpowerpool value = 30 }
+	}
+}
+
+
+###############################################
+event = {
+	id = 611500
+	country = INO
+	trigger = {
+		event = 611508
+	}
+	name = "召集軍隊 "
+	desc = EVT_8206001_DESC
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 13 month = january year = 1946 }
+
+	action_a = {
+		name = EVT_8206001_A
+		command = { type = add_corps which = "爪哇軍團 " where = 1631 }
+		command = { type = add_division which = "第1步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第2步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第3步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第4步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第5步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第6步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第7步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第8步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第9步兵师 " value = infantry when = 4 }
+		command = { type = add_division which = "第10步兵师 " value = infantry when = 4 }
+		command = { type = add_corps which = "蘇門答臘軍團 " where = 3750 }
+		command = { type = add_division which = "第1蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_division which = "第2蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_division which = "第3蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_division which = "第4蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_division which = "第5蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_division which = "第6蘇門答臘师 " value = infantry when = 4 }
+		command = { type = add_corps which = "日惹守備隊 " value = land where = 1631 }
+		command = { type = activate_division which = 40500 value = 33 where = 1631 }
+		command = { type = construct which = infrastructure where = 1631 value = 20 }
+		command = { type = construct which = land_fort where = 1631 value = 5 }
+		command = { type = construct which = ic where = 1631 value = 2 }
+		command = { type = max_organization which = land value = 5 }
+		command = { type = supplies value = 2000 where = 3750 }
+		command = { type = oilpool value = 500 where = 3750 }
+		command = { type = transport_pool which = INO value = 100 }
+	}
+}
+event = {
+	id = 611505
+	random = no
+	country = HOL
+	
+	trigger = { 
+	}
+
+	date = { day = 28 month = october year = 1945 }
+	offset = 1
+	deathdate = { day = 29 month = january year = 1946 }
+
+	name = "英軍協降 "
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "接受援助 "
+		ai_chance = 100
+		command = { type = trigger which = 611506 }
+	}
+	action_b = {
+		name = " "
+		ai_chance = 0
+		command = { }
+	}
+}
+
+event = {
+	id = 611506
+	random = no
+	country = ENG
+
+	name = "英軍協降 "
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "派出部隊 "
+		ai_chance = 100
+		command = { type = remove_division which = "第5印度师 " value = ENG }
+		command = { type = trigger which = 611507 value = 1 }
+	}
+}
+
+
+event = {
+	id = 611507
+	random = no
+	country = HOL
+
+	name = "泗水戰鬥 "
+	desc = "EVT_611508_DESC"
+       	style = 0
+
+	action_a = {
+		name = "重返印尼! "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = morale which = land value = 5 }
+		command = { type = add_corps which = "英國受降部隊 " value = land where = 1632 }
+		command = { type = add_division which = "第5印度师 " value = infantry when = 5 }
+		command = { type = add_division which = "第49印度师 " value = infantry when = 5 } # actually a brigade
+		command = { type = add_corps which = "British Troop Transport Corps" value = naval where = 1632 }
+		command = { type = add_division which = "British Transport Division" value = transport when = 0 }
+		command = { type = add_corps which = "泗水守備隊 " value = land where = 1632 }
+		command = { type = activate_division which = 40100 value = 9 where = 1632 }
+		command = { type = construct which = land_fort where = 1632 value = 5 }
+		command = { type = war which = INO }
+		command = { type = supplies value = 2000 where = 1632 }
+		command = { type = oilpool value = 500 where = 1632 }
+		command = { type = trigger which = 611508 }
+	}
+
+	action_b = {
+		name = "承認印尼獨立 "
+		ai_chance = 0
+		command = { type = trigger which = 611508 }
+		command = { type = dissent value = 25 }
+	}
+}
+
+event = {
+	id = 611508
+	random = no
+	country = INO
+
+	name = "泗水戰鬥"
+	desc = "EVT_611508_DESC"
+       	style = 0
+
+	action_a = {
+		name = "Good!"
+		command = { type = dissent value = -1 }
+		command = { type = morale which = land value = 5 }
+		command = { type = manpowerpool value = -8 } #6-10
+		command = { type = secedeprovince which = HOL value = 1632 }
+		command = { type = setflag which = indonesian_revolution }
+	}
+}
+
+event = {
+	id = 611510
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611508
+		war = { country = HOL country = INO }
+		flag = indonesian_revolution
+	}
+
+	name = "《林加嘉蒂協議》"
+	desc = "EVT_611509_DESC"
+       	style = 0
+	date = { day = 5 month = november year = 1946 }
+	offset = 10
+	deathdate = { day = 30 month = january year = 1950 }
+
+	action_a = {
+		name = "OK"
+		command = { type = trigger which = 611511 }
+		command = { type = dissent value = -3 }
+		command = { type = belligerence value = -5 }
+		command = { type = peace which = INO value = 0 }
+		command = { type = removecore which =	1628	}
+		command = { type = removecore which =	1632	}
+		command = { type = removecore which =	3751	}
+		command = { type = removecore which =	1629	}
+		command = { type = removecore which =	1631	}
+		command = { type = removecore which =	1630	}
+		command = { type = removecore which =	1634	}
+		command = { type = removecore which =	1633	}
+		command = { type = removecore which =	1636	}
+		command = { type = removecore which =	1356	}
+		command = { type = removecore which =	1358	}
+		command = { type = removecore which =	3750	}
+		command = { type = removecore which =	1354	}
+		command = { type = removecore which =	3746	}
+		command = { type = removecore which =	3747	}
+		command = { type = removecore which =	3748	}
+		command = { type = removecore which =	3749	}
+		command = { type = removecore which =	1357	}
+		command = { type = removecore which =	1359	}
+		command = { type = removecore which =	3744	}
+		command = { type = removecore which =	3745	}
+		command = { type = removecore which =	1355	}
+		command = { type = removecore which =	1635	}
+		command = { type = removecore which =	1637	}
+		command = { type = removecore which =	1638	}
+		command = { type = removecore which =	1639	}
+		command = { type = removecore which =	1657	}
+		command = { type = removecore which =	1658	}
+
+		# adjust VPs
+		command = { type = province_keypoints which = 1355 value = -1 }
+		command = { type = province_keypoints which = 1358 value = -1 }
+		command = { type = province_keypoints which = 1359 value = -1 }
+		command = { type = province_keypoints which = 1628 value = -1 }
+		command = { type = province_keypoints which = 1631 value = 1 }
+		command = { type = province_keypoints which = 1632 value = 1 }
+		command = { type = province_keypoints which = 1630 value = 1 }
+		command = { type = province_keypoints which = 1629 value = 1 }
+		command = { type = province_keypoints which = 1633 value = 1 }
+	}
+}
+
+event = {
+	id = 611511
+	random = no
+	country = INO
+
+
+	name = "《林加嘉蒂協議》"
+	desc = "EVT_611509_DESC"
+       	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = -3 }
+	}
+}
+
+#  Linggajati Agreement: the Dutch agree on Indonesian independence
+event = {
+	id = 8206014
+	country = HOL
+
+	name = "印度尼西亞聯邦的提案 "
+	desc = "民族主義者最初是為從荷蘭獲得完全獨立而戰，而長期的戰爭
+		卻帶來了更廣泛地討論獨立的意願。當時，荷蘭準備承認印尼
+		共和國為爪哇，馬杜拉和蘇門答臘的事實上的當局。雙方同意
+		在1949年1月1日之前組建“印度尼西亞聯邦共和國”，這是一
+		個以荷蘭君主制為首的半自治聯邦制國家。由共和國控制的爪
+		哇和蘇門答臘將是其州之一，以及受荷蘭影響較大的地區，包
+		括加里曼丹南部和由蘇拉威西島，馬魯古島，小蘇打群島和新
+		西部地區組成的“大東方” 幾內亞。"
+#	picture = "nwo\linggajati_agreement"
+	style = 0
+	
+	trigger = {
+		NOT = {	war = { country = INO country = HOL } }
+		event = 611511
+	}
+	
+	date = { day = 0 month = may year = 1947 }
+	offset = 30
+	deathdate = { day = 29 month = december year = 1947 }
+	
+	action_a = {
+		name = "提出 "
+		ai_chance = 99
+		command = { type = trigger which = 8206007 } 
+	}
+	
+	# Carry out police action!!!
+	action_b = {
+		name = "發動'警察行動' "
+		ai_chance = 1
+		command = { type = trigger which = 611512 }
+	}
+}
+# Indonesia is faced with Federated Indonesia proposal
+event = {
+	id = 8206007
+	country = INO
+
+	name = "印度尼西亞聯邦的提案 "
+	desc = "民族主義者最初是為從荷蘭獲得完全獨立而戰，而長期的戰爭
+		卻帶來了更廣泛地討論獨立的意願。當時，荷蘭準備承認印尼
+		共和國為爪哇，馬杜拉和蘇門答臘的事實上的當局。雙方同意
+		在1949年1月1日之前組建“印度尼西亞聯邦共和國”，這是一
+		個以荷蘭君主制為首的半自治聯邦制國家。由共和國控制的爪
+		哇和蘇門答臘將是其州之一，以及受荷蘭影響較大的地區，包
+		括加里曼丹南部和由蘇拉威西島，馬魯古島，小蘇打群島和新
+		西部地區組成的“大東方” 幾內亞。"
+#	picture = "nwo\indonesian_national_revolution"
+	style = 1
+	
+	
+	# Disagree
+	action_a = {
+		name = "拒絕 "
+		ai_chance = 95
+		command = { type = dissent value = -3 }
+	}
+
+	# Agree
+	action_b = {
+		name = "同意 "
+		ai_chance = 5
+		command = { type = dissent value = 3 }
+		command = { type = trigger which = 8206030 } # End of war
+		command = { type = sleepevent which = 611512 }
+		command = { type = setflag which = federated_indonesia }
+	}
+}
+
+event = {
+	id = 611512
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611511
+	}
+	
+	date = { day = 20 month = july year = 1947 }
+
+	name = "第一次警察行動 "
+	desc = "EVT_611512_DESC"
+       	style = 0
+
+	action_a = {
+		name = "Stop the violations!"
+		ai_chance = 95
+		command = { type = leave_alliance } # Allies do not want to get involved
+		command = { type = war which = INO }
+		command = { type = relation which = INO value = -200 }
+		command = { type = relation which = AST value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = belligerence which = 5 }
+		command = { type = sleepevent which = 611513 }
+		command = { type = sleepevent which = 611514 }
+		command = { type = add_corps where = 1628 }
+		command = { type = add_division which = "海軍陸戰旅 " value = marine when = 4 }
+		command = { type = add_division which = "第1'十二月七日'步兵师 " value = motorized when = 3 where = artillery }
+		command = { type = add_division which = "第2步兵师 " value = motorized when = 3 where = artillery }
+		command = { type = add_division which = "第1步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_division which = "第2步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_corps where = 1632 }
+		command = { type = add_division which = "第3步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_division which = "第4步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_corps where = 1635 }
+		command = { type = add_division which = "第5步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_corps where = 1358 }
+		command = { type = add_division which = "第6步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_division which = "第7步兵旅 " value = infantry when = 5 where = b_u4 }
+		command = { type = add_corps where = 1355 }
+		command = { type = add_division which = "第8步兵旅 " value = infantry when = 5 where = b_u4 }
+
+#		command = { type = remove_division which = "第5印度师 " value = HOL }
+#		command = { type = remove_division which = "第49印度师 " value = HOL }
+	}
+	action_b = {
+		name = "Respect Indonesian sovereignty"
+		ai_chance = 5
+		command = { }
+	}
+}
+
+
+event = {
+	id = 611515
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611512
+		war = { country = HOL country = INO }
+#		alliance = { country = ENG country = USA }
+		OR = {
+			control = { province = 1628 data = HOL }
+			control = { province = 1629 data = HOL }
+			control = { province = 1630 data = HOL }
+			control = { province = 1631 data = HOL }
+			control = { province = 1632 data = HOL }
+			lost_VP = { country = INO value = 20 }	
+		}
+	}
+	
+	date = { day = 29 month = august year = 1947 }
+	offset = 1
+	deathdate = { day = 29 month = october year = 1948 }
+
+	name = "《倫維爾協議》"
+	desc = "EVT_611515_DESC"
+
+	action_a = {
+		name = "Van Mook Line"
+		command = { type = peace which = INO }
+#		command = { type = alliance which = USA }
+		command = { type = trigger which = 611516 }
+	}
+}
+
+event = {
+	id = 611516
+	random = no
+	country = INO
+	
+	# triggered by 611516
+
+	name = "《倫維爾協議》"
+	desc = "EVT_611515_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = secedeprovince which = HOL value = 1629 }
+#		command = { type = secedeprovince which = HOL value = 1630 }
+		command = { type = secedeprovince which = HOL value = 1633 }
+		command = { type = secedeprovince which = HOL value = 1634 }
+		command = { type = secedeprovince which = HOL value = 3751 }
+	}
+}
+
+###################################
+# ahistorical Dutch did not gain on battlefield
+###################################
+event = {
+	id = 611517
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611512
+		war = { country = HOL country = INO }
+		random  = 20
+	}
+	
+#	date = { day = 29 month = july year = 1947 }
+#	offset = 3
+#	deathdate = { day = 29 month = october year = 1948 }
+
+	name = "UN Mandated Cease Fire"
+	desc = "EVT_611517_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = peace which = INO }
+#		command = { type = alliance which = USA }
+	}
+}
+
+#############################
+# Indonesia government 1945-48
+#############################
+# First government of Indonesia
+event = {
+	id = 611518
+	random = no
+	country = INO
+	
+	trigger = {
+		government = democratic
+	}
+	
+	date = { day = 0 month = january year = 1936 }
+	offset = 3
+	deathdate = { day = 29 month = june year = 1947 }
+
+	name = "Government of Indonesia"
+	desc = "EVT_611518_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = set_domestic which = democratic value = 9 }
+		command = { type = set_domestic which = political_left value = 9 }
+		command = { type = headofstate which = 577066 }
+		command = { type = headofgovernment which = 577065 }
+	}
+}
+
+event = {
+	id = 611519
+	random = no
+	country = INO
+	
+	trigger = {
+		government = democratic
+	}
+	
+	date = { day = 2 month = july year = 1947 }
+
+	name = "Sjarifuddin becomes PM"
+	desc = "EVT_611519_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = headofgovernment which = 577016 }
+	}
+}
+
+event = {
+	id = 611520
+	random = no
+	country = INO
+	
+	trigger = {
+		government = democratic
+	}
+	
+	date = { day = 28 month = january year = 1948 }
+
+	name = "Hatta becomes PM"
+	desc = "EVT_611520_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = headofgovernment which = 577067 }
+	}
+}
+
+
+event = {
+	id = 611521
+	random = no
+	country = INO
+	
+	trigger = {
+		NOT = { government = communist } 	
+	}
+	
+	date = { day = 17 month = september year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = october year = 1948 }
+
+	name = "Madiun Uprising"
+	desc = "EVT_611521_DESC"
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which =  577013 } #Musso
+		command = { type = sleepminister which =  577016 } #Amir Sjarifuddin
+		command = { type = sleepminister which =  577042 } #Tan Malaka
+		command = { type = sleepleader which =  577008 } #Tan Malaka
+		command = { type = dissent value = 3 }
+		command = { type = relation which = USA value = 50 }
+	}
+}
+
+event = {
+	id = 611522
+	random = no
+	country = HOL
+	
+	trigger = {
+		OR = { 
+			event = 611516
+			event = 611517
+		} 
+		flag = indonesian_revolution	
+	}
+	
+	date = { day = 17 month = december year = 1948 }
+	
+	name = "烏鴉行動" 	# Operatie Kraai
+	desc = "EVT_611522_DESC"
+
+	action_a = {
+		name = "It is WAR!!"
+		command = { type = leave_alliance }
+		command = { type = war which = INO }
+		command = { type = relation which = INO value = -200 }
+		command = { type = relation which = AST value = -50 }
+		command = { type = relation which = USA value = -50 }
+		command = { type = relation which = ENG value = -50 }
+		command = { type = belligerence which = 5 }
+#		command = { type = trigger which = 611523 }
+	}
+	action_b = {
+		name = "Let them be"
+		command = { }
+	}
+}
+
+event = {
+	id = 611523
+	random = no
+	country = INO
+	
+	#triggered by 611522
+	
+	name = "Agresi Militer Belanda II"
+	desc = "EVT_611523_DESC"
+
+	action_a = {
+		name = "Death to the colonialists!"
+#		command = { type = peacetime_ic_mod value = 50 } #when peace comes the guerrilla campaign continues
+#		command = { type = control which = HOL value = 1631 }
+		command = { type = add_corps which = "Republican Forces #1" value = land where = 1628 }
+		command = { type = add_division which = "Indonesian Guerrillas #1" value = militia when = 6 }
+		command = { type = add_corps which = "Republican Forces #2" value = land where = 1632 }
+		command = { type = add_division which = "Indonesian Guerrillas #2" value = militia when = 6 }
+	}
+}
+
+event = {
+	id = 611524
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611522
+		control = { province = 1631 data = HOL }
+		war = { country = HOL country = INO }	
+	}
+	
+	date = { day = 23 month = december year = 1948 }
+	
+	name = "停火協議 "
+	desc = "EVT_611524_DESC"
+
+	action_a = {
+		name = "Peace"
+		ai_chance = 100
+		command = { type = peace which = INO }
+#		command = { type = alliance which = USA }
+	}
+	action_b = {
+		name = "Continue the war"
+		command = { type = end_trades which = HOL where = USA }
+		command = { type = end_trades which = HOL where = ENG }
+		command = { type = end_trades which = HOL where = CAN }
+		command = { type = end_trades which = HOL where = SAF }
+		command = { type = end_trades which = HOL where = AST }
+		command = { type = end_trades which = HOL where = NZL }
+		command = { type = end_trades which = HOL where = SOV }
+		command = { type = end_trades which = HOL where = DFR }
+		command = { type = end_trades which = HOL where = IND }
+		command = { type = end_trades which = HOL where = FRA }
+		command = { type = end_trades which = HOL where = CHI }
+		command = { type = relation which = USA value = -100 }
+		command = { type = relation which = FRA value = -100 }
+		command = { type = relation which = SOV value = -100 }
+		command = { type = relation which = ENG value = -100 }
+		command = { type = relation which = CHI value = -100 }
+		command = { type = relation which = IND value = -100 }
+		command = { type = relation which = AST value = -100 }
+		command = { type = belligerence which = 5 }
+	}
+}
+
+event = {
+	id = 611525
+	random = no
+	country = HOL
+	
+	trigger = {
+		event = 611524
+		exists = INO
+		NOT = { war = { country = HOL country = INO } }
+#		alliance = { country = USA country = ENG }	
+	}
+	
+#	date = { day = 26 month = december year = 1949 }
+	
+	name = "印尼獨立"
+	desc = "EVT_611525_DESC"
+
+	action_a = {
+		name = "Farewell to an Empire"
+	    	command = { type = peace which = INO value = 0 }
+#		command = { type = dissent value = -10 }
+		command = { type = secedeprovince which = INO value =	1652	}
+		command = { type = secedeprovince which = INO value =	1653	}
+		command = { type = secedeprovince which = INO value =	1651	}
+		command = { type = secedeprovince which = INO value =	3757	}
+		command = { type = secedeprovince which = INO value =	3758	}
+		command = { type = secedeprovince which = INO value =	1640	}
+		command = { type = secedeprovince which = INO value =	1635	}
+		command = { type = secedeprovince which = INO value =	1637	}
+		command = { type = secedeprovince which = INO value =	1638	}
+		command = { type = secedeprovince which = INO value =	1639	}
+		command = { type = secedeprovince which = INO value =	1657	}
+		command = { type = secedeprovince which = INO value =	1658	}
+		command = { type = secedeprovince which = INO value =	1654	}
+		command = { type = secedeprovince which = INO value =	1655	}
+		command = { type = secedeprovince which = INO value =	1656	}
+		command = { type = secedeprovince which = INO value =	3759	}
+		command = { type = secedeprovince which = INO value =	3760	}
+		command = { type = secedeprovince which = INO value =	3741	}
+		command = { type = secedeprovince which = INO value =	1644	}
+		command = { type = secedeprovince which = INO value =	1646	}
+		command = { type = secedeprovince which = INO value =	1648	}
+		command = { type = secedeprovince which = INO value =	3742	}
+		command = { type = secedeprovince which = INO value =	3743	}
+		command = { type = secedeprovince which = INO value =	1645	}
+		command = { type = secedeprovince which = INO value =	1647	}
+		command = { type = secedeprovince which = INO value =	3740	}
+		command = { type = secedeprovince which = INO value =	1641	}
+		command = { type = secedeprovince which = INO value =	1642	}
+		command = { type = secedeprovince which = INO value =	1649	}
+		command = { type = secedeprovince which = INO value =	1650	}
+		command = { type = secedeprovince which = INO value =	3756	}
+		command = { type = secedeprovince which = INO value =	3753	}
+		command = { type = secedeprovince which = INO value =	3755	}
+		command = { type = secedeprovince which = INO value =	1643	}
+		command = { type = secedeprovince which = INO value =	3754	}
+		command = { type = secedeprovince which = INO value =	1356	}
+		command = { type = secedeprovince which = INO value =	1358	}
+		command = { type = secedeprovince which = INO value =	3750	}
+		command = { type = secedeprovince which = INO value =	1354	}
+		command = { type = secedeprovince which = INO value =	3746	}
+		command = { type = secedeprovince which = INO value =	3747	}
+		command = { type = secedeprovince which = INO value =	3748	}
+		command = { type = secedeprovince which = INO value =	3749	}
+		command = { type = secedeprovince which = INO value =	1357	}
+		command = { type = secedeprovince which = INO value =	1359	}
+		command = { type = secedeprovince which = INO value =	3744	}
+		command = { type = secedeprovince which = INO value =	3745	}
+		command = { type = secedeprovince which = INO value =	1355	}
+		command = { type = secedeprovince which = INO value =	1628	}
+		command = { type = secedeprovince which = INO value =	1632	}
+		command = { type = secedeprovince which = INO value =	3751	}
+		command = { type = secedeprovince which = INO value =	1629	}
+		command = { type = secedeprovince which = INO value =	1631	}
+		command = { type = secedeprovince which = INO value =	1630	}
+		command = { type = secedeprovince which = INO value =	1634	}
+		command = { type = secedeprovince which = INO value =	1633	}
+		command = { type = secedeprovince which = INO value =	1636	}
+		
+		command = { type = removecore which =	1652	}
+		command = { type = removecore which =	1653	}
+		command = { type = removecore which =	1651	}
+		command = { type = removecore which =	3757	}
+		command = { type = removecore which =	3758	}
+		command = { type = removecore which =	1640	}
+		command = { type = removecore which =	1635	}
+		command = { type = removecore which =	1637	}
+		command = { type = removecore which =	1638	}
+		command = { type = removecore which =	1639	}
+		command = { type = removecore which =	1657	}
+		command = { type = removecore which =	1658	}
+		command = { type = removecore which =	1654	}
+		command = { type = removecore which =	1655	}
+		command = { type = removecore which =	1656	}
+		command = { type = removecore which =	3759	}
+		command = { type = removecore which =	3760	}
+		command = { type = removecore which =	3741	}
+		command = { type = removecore which =	1644	}
+		command = { type = removecore which =	1646	}
+		command = { type = removecore which =	1648	}
+		command = { type = removecore which =	3742	}
+		command = { type = removecore which =	3743	}
+		command = { type = removecore which =	1645	}
+		command = { type = removecore which =	1647	}
+		command = { type = removecore which =	3740	}
+		command = { type = removecore which =	1641	}
+		command = { type = removecore which =	1642	}
+		command = { type = removecore which =	1649	}
+		command = { type = removecore which =	1650	}
+		command = { type = removecore which =	3756	}
+		command = { type = removecore which =	3753	}
+		command = { type = removecore which =	3755	}
+		command = { type = removecore which =	1643	}
+		command = { type = removecore which =	3754	}
+		command = { type = removecore which =	1356	}
+		command = { type = removecore which =	1358	}
+		command = { type = removecore which =	3750	}
+		command = { type = removecore which =	1354	}
+		command = { type = removecore which =	3746	}
+		command = { type = removecore which =	3747	}
+		command = { type = removecore which =	3748	}
+		command = { type = removecore which =	3749	}
+		command = { type = removecore which =	1357	}
+		command = { type = removecore which =	1359	}
+		command = { type = removecore which =	3744	}
+		command = { type = removecore which =	3745	}
+		command = { type = removecore which =	1355	}
+		command = { type = removecore which =	1628	}
+		command = { type = removecore which =	1632	}
+		command = { type = removecore which =	3751	}
+		command = { type = removecore which =	1629	}
+		command = { type = removecore which =	1631	}
+		command = { type = removecore which =	1630	}
+		command = { type = removecore which =	1634	}
+		command = { type = removecore which =	1633	}
+		command = { type = removecore which =	1636	}
+	}
+}
+### Prolonged fight events
+
+# 1944/45
+
+event = {
+	id = 8206020
+	country = HOL
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206060_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = INO country = HOL }
+			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1944 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1945 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = belligerence value = 1 }
+	}
+	# End the War
+	action_b = {
+		name = "結束這場戰爭"
+		ai_chance = 0
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -3 }
+	}
+}
+
+# 1946/47
+
+event = {
+	id = 8206021
+	country = HOL
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206061_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = INO country = HOL }
+			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1946 }
+	offset = 60
+	deathdate = { day = 29 month = december year = 1947 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = belligerence value = 1 }
+	}
+	# End the War
+	action_b = {
+		name = "結束這場戰爭"
+		ai_chance = 0
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -3 }
+	}
+}
+
+# 1948/49
+
+event = {
+	id = 8206022
+	country = HOL
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206062_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		OR = {
+			war = { country = INO country = HOL }
+			war = { country = INO country = U05 }
+			flag = indonesian_revolution
+		}
+	}
+	
+	date = { day = 0 month = january year = 1948 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1949 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 95
+		command = { type = dissent value = 3 }
+		command = { type = belligerence value = 2 }
+	}
+	# End the War
+	action_b = {
+		name = "結束這場戰爭"
+		ai_chance = 5
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -3 }
+	}
+}
+
+# 1950+
+
+event = {
+	id = 8206023
+	country = HOL
+	persistent = yes
+
+	name = "曠日持久的戰爭"
+	desc = EVT_8206063_DESC
+#	picture = "nwo\indonesia_prolonged_fight"
+	style = 1
+	
+	trigger = {
+		war = { country = INO country = HOL }
+	}
+	
+	date = { day = 0 month = january year = 1950 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = "堅持下去"
+		ai_chance = 50
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = 3 }
+	}
+	# End the War
+	action_b = {
+		name = "結束這場戰爭"
+		ai_chance = 50
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -3 }
+	}
+}
+
+### Decision to end the war
+# 1949+ (UN does not condemn Netherlands) 8206027 removed
+
+
+# 1949+ (UN condemns Netherlands)
+
+event = {
+	id = 8206028
+	country = HOL
+#	persistent = yes
+
+	name = EVT_8206068_NAME
+	desc = EVT_8206068_DESC
+#	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 0
+
+
+	# End the War
+	action_a = {
+		name = EVT_8206068_A
+		command = { type = trigger which = 8206030 }
+		command = { type = dissent value = -5 }
+	}
+}
+
+# 1949+ (HOL's dissent is high)
+
+event = {
+	id = 8206029
+	country = HOL
+
+	name = EVT_8206069_NAME
+	desc = EVT_8206069_DESC
+	style = 0
+	
+	trigger = {
+		OR = {
+			war = { country = INO country = HOL }
+			flag = indonesian_revolution 
+		}
+		dissent = 20
+	}
+	
+	date = { day = 0 month = january year = 1949 }
+	offset = 90
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# End the War
+	action_a = {
+		name = EVT_8206069_A
+		ai_chance = 100
+		command = { type = trigger which = 8206030 }
+		command = { type = belligerence value = -5 }
+	}
+}
+
+### End of the Indonesian National Revolution
+
+event = {
+	id = 8206030
+	country = HOL
+
+	name = "印尼獨立戰爭結束"
+	desc = EVT_8206070_DESC
+#	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 1
+	
+	action_a = {
+		name = EVT_8206070_A
+	    	command = { type = peace which = INO value = 0 }
+#		command = { type = dissent value = -10 }
+   		command = { type = clrflag which = indonesian_revolution }
+		command = { type = secedeprovince which = INO value =	1652	}
+		command = { type = secedeprovince which = INO value =	1653	}
+		command = { type = secedeprovince which = INO value =	1651	}
+		command = { type = secedeprovince which = INO value =	3757	}
+		command = { type = secedeprovince which = INO value =	3758	}
+		command = { type = secedeprovince which = INO value =	1640	}
+		command = { type = secedeprovince which = INO value =	1635	}
+		command = { type = secedeprovince which = INO value =	1637	}
+		command = { type = secedeprovince which = INO value =	1638	}
+		command = { type = secedeprovince which = INO value =	1639	}
+		command = { type = secedeprovince which = INO value =	1657	}
+		command = { type = secedeprovince which = INO value =	1658	}
+		command = { type = secedeprovince which = INO value =	1654	}
+		command = { type = secedeprovince which = INO value =	1655	}
+		command = { type = secedeprovince which = INO value =	1656	}
+		command = { type = secedeprovince which = INO value =	3759	}
+		command = { type = secedeprovince which = INO value =	3760	}
+		command = { type = secedeprovince which = INO value =	3741	}
+		command = { type = secedeprovince which = INO value =	1644	}
+		command = { type = secedeprovince which = INO value =	1646	}
+		command = { type = secedeprovince which = INO value =	1648	}
+		command = { type = secedeprovince which = INO value =	3742	}
+		command = { type = secedeprovince which = INO value =	3743	}
+		command = { type = secedeprovince which = INO value =	1645	}
+		command = { type = secedeprovince which = INO value =	1647	}
+		command = { type = secedeprovince which = INO value =	3740	}
+		command = { type = secedeprovince which = INO value =	1641	}
+		command = { type = secedeprovince which = INO value =	1642	}
+		command = { type = secedeprovince which = INO value =	1649	}
+		command = { type = secedeprovince which = INO value =	1650	}
+		command = { type = secedeprovince which = INO value =	3756	}
+		command = { type = secedeprovince which = INO value =	3753	}
+		command = { type = secedeprovince which = INO value =	3755	}
+		command = { type = secedeprovince which = INO value =	1643	}
+		command = { type = secedeprovince which = INO value =	3754	}
+		command = { type = secedeprovince which = INO value =	1356	}
+		command = { type = secedeprovince which = INO value =	1358	}
+		command = { type = secedeprovince which = INO value =	3750	}
+		command = { type = secedeprovince which = INO value =	1354	}
+		command = { type = secedeprovince which = INO value =	3746	}
+		command = { type = secedeprovince which = INO value =	3747	}
+		command = { type = secedeprovince which = INO value =	3748	}
+		command = { type = secedeprovince which = INO value =	3749	}
+		command = { type = secedeprovince which = INO value =	1357	}
+		command = { type = secedeprovince which = INO value =	1359	}
+		command = { type = secedeprovince which = INO value =	3744	}
+		command = { type = secedeprovince which = INO value =	3745	}
+		command = { type = secedeprovince which = INO value =	1355	}
+		command = { type = secedeprovince which = INO value =	1628	}
+		command = { type = secedeprovince which = INO value =	1632	}
+		command = { type = secedeprovince which = INO value =	3751	}
+		command = { type = secedeprovince which = INO value =	1629	}
+		command = { type = secedeprovince which = INO value =	1631	}
+		command = { type = secedeprovince which = INO value =	1630	}
+		command = { type = secedeprovince which = INO value =	1634	}
+		command = { type = secedeprovince which = INO value =	1633	}
+		command = { type = secedeprovince which = INO value =	1636	}
+		
+		command = { type = removecore which =	1652	}
+		command = { type = removecore which =	1653	}
+		command = { type = removecore which =	1651	}
+		command = { type = removecore which =	3757	}
+		command = { type = removecore which =	3758	}
+		command = { type = removecore which =	1640	}
+		command = { type = removecore which =	1635	}
+		command = { type = removecore which =	1637	}
+		command = { type = removecore which =	1638	}
+		command = { type = removecore which =	1639	}
+		command = { type = removecore which =	1657	}
+		command = { type = removecore which =	1658	}
+		command = { type = removecore which =	1654	}
+		command = { type = removecore which =	1655	}
+		command = { type = removecore which =	1656	}
+		command = { type = removecore which =	3759	}
+		command = { type = removecore which =	3760	}
+		command = { type = removecore which =	3741	}
+		command = { type = removecore which =	1644	}
+		command = { type = removecore which =	1646	}
+		command = { type = removecore which =	1648	}
+		command = { type = removecore which =	3742	}
+		command = { type = removecore which =	3743	}
+		command = { type = removecore which =	1645	}
+		command = { type = removecore which =	1647	}
+		command = { type = removecore which =	3740	}
+		command = { type = removecore which =	1641	}
+		command = { type = removecore which =	1642	}
+		command = { type = removecore which =	1649	}
+		command = { type = removecore which =	1650	}
+		command = { type = removecore which =	3756	}
+		command = { type = removecore which =	3753	}
+		command = { type = removecore which =	3755	}
+		command = { type = removecore which =	1643	}
+		command = { type = removecore which =	3754	}
+		command = { type = removecore which =	1356	}
+		command = { type = removecore which =	1358	}
+		command = { type = removecore which =	3750	}
+		command = { type = removecore which =	1354	}
+		command = { type = removecore which =	3746	}
+		command = { type = removecore which =	3747	}
+		command = { type = removecore which =	3748	}
+		command = { type = removecore which =	3749	}
+		command = { type = removecore which =	1357	}
+		command = { type = removecore which =	1359	}
+		command = { type = removecore which =	3744	}
+		command = { type = removecore which =	3745	}
+		command = { type = removecore which =	1355	}
+		command = { type = removecore which =	1628	}
+		command = { type = removecore which =	1632	}
+		command = { type = removecore which =	3751	}
+		command = { type = removecore which =	1629	}
+		command = { type = removecore which =	1631	}
+		command = { type = removecore which =	1630	}
+		command = { type = removecore which =	1634	}
+		command = { type = removecore which =	1633	}
+		command = { type = removecore which =	1636	}
+	}
+}
+
+event = {
+	id = 8206031
+	country = INO
+
+	name = "印尼獨立戰爭結束"
+	desc = EVT_8206071_DESC
+#	picture = "nwo\end_of_indonesian_national_revolution"
+	style = 1
+	
+	trigger = {
+		NOT = { war = { country = INO country = HOL } }
+		OR = {
+			event = 8206030
+			event = 611525
+		}
+	}
+	
+	date = { day = 0 month = january year = 1945 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	action_a = {
+		name = EVT_8206071_A
+		command = { type = dissent value = -5 }
+    		command = { type = capital which = 1628 }
+	}
+}
+
+# Federates States of Indonesia
+event = {
+	id = 8206032
+	country = HOL
+
+	name = "印度尼西亞聯邦成立 "
+	desc = EVT_8206072_DESC
+#	picture = "nwo\federated_indonesia"
+	style = 1
+	
+	trigger = {
+		event = 8206031
+		flag = federated_indonesia
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1955 }
+	
+	action_a = {
+		name = EVT_8206072_A
+		command = { type = make_puppet which = INO }
+	    	command = { type = peace which = INO value = 0 }
+#		command = { type = dissent value = -10 }
+		command = { type = secedeprovince which = INO value =	1652	}
+		command = { type = secedeprovince which = INO value =	1653	}
+		command = { type = secedeprovince which = INO value =	1651	}
+		command = { type = secedeprovince which = INO value =	3757	}
+		command = { type = secedeprovince which = INO value =	3758	}
+		command = { type = secedeprovince which = INO value =	1640	}
+		command = { type = secedeprovince which = INO value =	1635	}
+		command = { type = secedeprovince which = INO value =	1637	}
+		command = { type = secedeprovince which = INO value =	1638	}
+		command = { type = secedeprovince which = INO value =	1639	}
+		command = { type = secedeprovince which = INO value =	1657	}
+		command = { type = secedeprovince which = INO value =	1658	}
+		command = { type = secedeprovince which = INO value =	1654	}
+		command = { type = secedeprovince which = INO value =	1655	}
+		command = { type = secedeprovince which = INO value =	1656	}
+		command = { type = secedeprovince which = INO value =	3759	}
+		command = { type = secedeprovince which = INO value =	3760	}
+		command = { type = secedeprovince which = INO value =	3741	}
+		command = { type = secedeprovince which = INO value =	1644	}
+		command = { type = secedeprovince which = INO value =	1646	}
+		command = { type = secedeprovince which = INO value =	1648	}
+		command = { type = secedeprovince which = INO value =	3742	}
+		command = { type = secedeprovince which = INO value =	3743	}
+		command = { type = secedeprovince which = INO value =	1645	}
+		command = { type = secedeprovince which = INO value =	1647	}
+		command = { type = secedeprovince which = INO value =	3740	}
+		command = { type = secedeprovince which = INO value =	1641	}
+		command = { type = secedeprovince which = INO value =	1642	}
+		command = { type = secedeprovince which = INO value =	1649	}
+		command = { type = secedeprovince which = INO value =	1650	}
+		command = { type = secedeprovince which = INO value =	3756	}
+		command = { type = secedeprovince which = INO value =	3753	}
+		command = { type = secedeprovince which = INO value =	3755	}
+		command = { type = secedeprovince which = INO value =	1643	}
+		command = { type = secedeprovince which = INO value =	3754	}
+		command = { type = secedeprovince which = INO value =	1356	}
+		command = { type = secedeprovince which = INO value =	1358	}
+		command = { type = secedeprovince which = INO value =	3750	}
+		command = { type = secedeprovince which = INO value =	1354	}
+		command = { type = secedeprovince which = INO value =	3746	}
+		command = { type = secedeprovince which = INO value =	3747	}
+		command = { type = secedeprovince which = INO value =	3748	}
+		command = { type = secedeprovince which = INO value =	3749	}
+		command = { type = secedeprovince which = INO value =	1357	}
+		command = { type = secedeprovince which = INO value =	1359	}
+		command = { type = secedeprovince which = INO value =	3744	}
+		command = { type = secedeprovince which = INO value =	3745	}
+		command = { type = secedeprovince which = INO value =	1355	}
+		command = { type = secedeprovince which = INO value =	1628	}
+		command = { type = secedeprovince which = INO value =	1632	}
+		command = { type = secedeprovince which = INO value =	3751	}
+		command = { type = secedeprovince which = INO value =	1629	}
+		command = { type = secedeprovince which = INO value =	1631	}
+		command = { type = secedeprovince which = INO value =	1630	}
+		command = { type = secedeprovince which = INO value =	1634	}
+		command = { type = secedeprovince which = INO value =	1633	}
+		command = { type = secedeprovince which = INO value =	1636	}
+		command = { type = removecore which =	1652	}
+		command = { type = removecore which =	1653	}
+		command = { type = removecore which =	1651	}
+		command = { type = removecore which =	3757	}
+		command = { type = removecore which =	3758	}
+		command = { type = removecore which =	1640	}
+		command = { type = removecore which =	1635	}
+		command = { type = removecore which =	1637	}
+		command = { type = removecore which =	1638	}
+		command = { type = removecore which =	1639	}
+		command = { type = removecore which =	1657	}
+		command = { type = removecore which =	1658	}
+		command = { type = removecore which =	1654	}
+		command = { type = removecore which =	1655	}
+		command = { type = removecore which =	1656	}
+		command = { type = removecore which =	3759	}
+		command = { type = removecore which =	3760	}
+		command = { type = removecore which =	3741	}
+		command = { type = removecore which =	1644	}
+		command = { type = removecore which =	1646	}
+		command = { type = removecore which =	1648	}
+		command = { type = removecore which =	3742	}
+		command = { type = removecore which =	3743	}
+		command = { type = removecore which =	1645	}
+		command = { type = removecore which =	1647	}
+		command = { type = removecore which =	3740	}
+		command = { type = removecore which =	1641	}
+		command = { type = removecore which =	1642	}
+		command = { type = removecore which =	1649	}
+		command = { type = removecore which =	1650	}
+		command = { type = removecore which =	3756	}
+		command = { type = removecore which =	3753	}
+		command = { type = removecore which =	3755	}
+		command = { type = removecore which =	1643	}
+		command = { type = removecore which =	3754	}
+		command = { type = removecore which =	1356	}
+		command = { type = removecore which =	1358	}
+		command = { type = removecore which =	3750	}
+		command = { type = removecore which =	1354	}
+		command = { type = removecore which =	3746	}
+		command = { type = removecore which =	3747	}
+		command = { type = removecore which =	3748	}
+		command = { type = removecore which =	3749	}
+		command = { type = removecore which =	1357	}
+		command = { type = removecore which =	1359	}
+		command = { type = removecore which =	3744	}
+		command = { type = removecore which =	3745	}
+		command = { type = removecore which =	1355	}
+		command = { type = removecore which =	1628	}
+		command = { type = removecore which =	1632	}
+		command = { type = removecore which =	3751	}
+		command = { type = removecore which =	1629	}
+		command = { type = removecore which =	1631	}
+		command = { type = removecore which =	1630	}
+		command = { type = removecore which =	1634	}
+		command = { type = removecore which =	1633	}
+		command = { type = removecore which =	1636	}		
+	}
+}
+
+### Acquisition of Dutch New Guinea
+
+# The Dutch are asked
+
+event = {
+	id = 8206040
+	country = HOL
+
+	name = EVT_8206080_NAME
+	desc = EVT_8206080_DESC
+#	picture = nwo\dutch_west_guinea
+	style = 1
+	
+	trigger = {
+		event = 8206030
+		NOT = { flag = federated_indonesia } # Indonesia won the revolution
+	}
+	
+	date = { day = 0 month = january year = 1962 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+	
+	# OK
+	action_a = {
+		name = EVT_8206080_A
+		command = { type = trigger which = 8206042 }	
+	}
+	
+	# Dont' agree (this means war!)
+	action_b = {
+		name = EVT_8206080_B
+		command = { type = trigger which = 8206041 }
+		command = { type = dissent value = 15 }
+		command = { type = belligerence value = 25 }
+	}
+}
+
+# The Dutch do not comply
+
+event = {
+	id = 8206041
+	country = INO
+
+	name = EVT_8206081_NAME
+	desc = EVT_8206081_DESC
+#	picture = nwo\dutch_west_guinea
+	style = 1
+
+	# Then it is war!
+	action_a = {
+		name = EVT_8206081_A
+		ai_chance = 90
+		command = { type = war which = U05 }	
+	}
+	
+	# Back off
+	action_b = {
+		name = EVT_8206081_B
+		command = { type = dissent value = 5 }
+		command = { type = domestic which = interventionism value = -3 }
+	}
+}
+
+# The Dutch agree
+
+event = {
+	id = 8206042
+	country = INO
+
+	name = EVT_8206082_NAME
+	desc = EVT_8206082_DESC
+#	picture = nwo\dutch_west_guinea
+	style = 1
+	
+	# OK
+	action_a = {
+		name = EVT_8206082_A
+		command = { type = inherit which = U05 }	
+	}
+}

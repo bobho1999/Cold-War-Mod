@@ -1,0 +1,320 @@
+air_unit_type = 1
+allowed_brigades =  escort
+allowed_brigades =  b_u9
+# 0 - Basic Strategic Bomber
+model = {
+	cost 					= 20
+	buildtime				= 208
+	defaultorganisation 		= 30
+	morale					= 30
+	manpower				= 2
+	maxspeed				= 250
+	surfacedefence				= 9
+	airdefence				= 8
+	airattack				= 1
+	strategicattack				= 10
+	softattack				= 2
+	hardattack				= 1
+	navalattack				= 2
+	range					= 800
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved Strategic Bomber
+model = {
+	cost 					= 22
+	buildtime				= 220
+	defaultorganisation 		= 30
+	morale					= 30
+	manpower				= 2
+	maxspeed				= 300
+	surfacedefence				= 12
+	airdefence				= 10
+	airattack				= 2
+	strategicattack				= 15
+	softattack				= 3
+	hardattack				= 2
+	navalattack				= 3
+	range					= 1000
+	supplyconsumption 			= 2.2
+	fuelconsumption				= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced Strategic Bomber
+model = {
+	cost 					= 24
+	buildtime				= 228
+	defaultorganisation 		= 30
+	morale					= 30
+	manpower				= 2
+	maxspeed				= 350
+	surfacedefence				= 16
+	airdefence				= 12
+	airattack				= 2
+	strategicattack				= 20
+	softattack				= 5
+	hardattack				= 3
+	navalattack				= 5
+	range					= 1300
+	supplyconsumption 			= 2.5
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+
+}
+# 3 - Turbojet Strategic Bomber
+model = {
+	cost 					= 27
+	buildtime				= 234
+	defaultorganisation 		= 30
+	morale					= 30
+	manpower				= 2
+	maxspeed				= 650
+	surfacedefence				= 20
+	airdefence				= 18
+	airattack				= 4
+	strategicattack				= 30
+	softattack				= 6
+	hardattack				= 4
+	navalattack				= 6
+	range					= 1300
+	supplyconsumption 			= 3.0
+	fuelconsumption				= 4.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Improved Turbojet Strategic Bomber
+model = {
+	cost 					= 30
+	buildtime				= 234
+	defaultorganisation 		= 30
+	morale					= 30
+	manpower				= 2
+	maxspeed				= 800
+	surfacedefence				= 23
+	airdefence				= 20
+	airattack				= 5
+	strategicattack				= 40
+	softattack				= 7
+	hardattack				= 5
+	navalattack				= 7
+	range					= 1400
+	supplyconsumption 			= 3.5
+	fuelconsumption				= 4.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Intercontinental Strategic Bomber
+model = {
+	cost 						= 40
+	buildtime					= 234
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 900 # was 800
+	surfacedefence				= 27
+	airdefence					= 25
+	airattack					= 5
+	strategicattack				= 50
+	softattack					= 7
+	hardattack					= 5
+	navalattack					= 7
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - Dummy Model
+model = {
+	cost 						= 40
+	buildtime					= 234
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 900
+	surfacedefence				= 27
+	airdefence					= 25
+	airattack					= 5
+	strategicattack				= 50
+	softattack					= 7
+	hardattack					= 5
+	navalattack					= 7
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - Mach 2 Strategic Bomber (B-58)
+model = {
+	cost 						= 50
+	buildtime					= 312
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 2200
+	surfacedefence				= 30
+	airdefence					= 30
+	airattack					= 8
+	strategicattack				= 60
+	softattack					= 7
+	hardattack					= 5
+	navalattack					= 8
+	range						= 3000
+	supplyconsumption 			= 5.0
+	fuelconsumption				= 8.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 8 - Mach 3 Strategic Bomber (XB-70)
+model = {
+	cost 						= 50
+	buildtime					= 400
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 3200
+	surfacedefence				= 32
+	airdefence					= 40
+	airattack					= 8
+	strategicattack				= 60
+	softattack					= 7
+	hardattack					= 5
+	navalattack					= 8
+	range						= 7000
+	supplyconsumption 			= 6.0
+	fuelconsumption				= 10.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 9 - Orbital bomber (Silbervogel, Dynasoar, etc) Secret weapon
+model = {
+	cost 						= 60
+	buildtime					= 500
+	defaultorganisation 		= 40
+	morale						= 40
+	manpower					= 2
+	maxspeed					= 6000 #(est mach 5.5+)
+	surfacedefence				= 50
+	airdefence					= 70
+	airattack					= 0
+	strategicattack				= 100
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= 25000
+	supplyconsumption 			= 6.0
+	fuelconsumption				= 10.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 10 - Dummy model
+model = {
+	cost 						= 60
+	buildtime					= 500
+	defaultorganisation 		= 40
+	morale						= 40
+	manpower					= 2
+	maxspeed					= 6000 #(est mach 5.5+)
+	surfacedefence				= 50
+	airdefence					= 70
+	airattack					= 0
+	strategicattack				= 100
+	softattack					= 0
+	hardattack					= 0
+	navalattack					= 0
+	range						= 25000
+	supplyconsumption 			= 6.0
+	fuelconsumption				= 10.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+
+# 11 - Generation 3.5 Strategic Bomber (B-1)
+model = {
+	cost 						= 45
+	buildtime					= 280
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 1600
+	surfacedefence				= 32
+	airdefence					= 30
+	airattack					= 9
+	strategicattack				= 55
+	softattack					= 8
+	hardattack					= 6
+	navalattack					= 8
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 12 - Generation 3.5 Strategic Bomber (B-1 +)
+model = {
+	cost 						= 48
+	buildtime					= 290
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 2200
+	surfacedefence				= 33
+	airdefence					= 32
+	airattack					= 9
+	strategicattack				= 60
+	softattack					= 8
+	hardattack					= 6
+	navalattack					= 8
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 13 - Early Stealth Strategic Bomber (B-2)
+model = {
+	cost 						= 50
+	buildtime					= 290
+	defaultorganisation 		= 35 # stealth
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 1600
+	surfacedefence				= 44 # stealth
+	airdefence					= 36 # stealth
+	airattack					= 10
+	strategicattack				= 65 # stealth
+	softattack					= 8
+	hardattack					= 6
+	navalattack					= 8
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 14 - Generation 5 Strategic Bomber (future stealth)
+model = {
+	cost 						= 55
+	buildtime					= 290
+	defaultorganisation 		= 40 # stealth
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 2200
+	surfacedefence				= 50 # stealth
+	airdefence					= 38 # stealth
+	airattack					= 10
+	strategicattack				= 70 # stealth
+	softattack					= 8
+	hardattack					= 6
+	navalattack					= 8
+	range						= 7000
+	supplyconsumption 			= 4.5
+	fuelconsumption				= 5.0
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}

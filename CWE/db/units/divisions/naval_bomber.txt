@@ -1,0 +1,236 @@
+air_unit_type = 1
+allowed_brigades =  escort
+allowed_brigades =  b_u9
+# 0 - Basic Naval Bomber
+model = {
+	cost 						= 13
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 200
+	surfacedetectioncapability	= 0.5
+	airdetectioncapability		= 0
+	surfacedefence				= 6
+	airdefence					= 2
+	airattack					= 1
+	strategicattack				= 0
+	softattack					= 1
+	hardattack					= 1
+	navalattack					= 4
+	range						= 800
+	supplyconsumption 			= 1.0
+	fuelconsumption				= 3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved Naval Bomber
+model = {
+	cost 						= 16
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 2
+	maxspeed					= 300
+	surfacedetectioncapability	= 0.75
+	airdetectioncapability		= 1
+	surfacedefence				= 7
+	airdefence					= 3
+	airattack					= 2
+	strategicattack				= 0
+	softattack					= 1
+	hardattack					= 2
+	navalattack					= 6
+	range						= 1000
+	supplyconsumption 			= 1.2
+	fuelconsumption				= 3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced Naval Bomber
+model = {
+	cost 						= 18
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 350
+	surfacedetectioncapability	= 1.25
+	airdetectioncapability		= 1
+	surfacedefence				= 8
+	airdefence					= 4
+	airattack					= 2
+	strategicattack				= 0
+	softattack					= 2
+	hardattack					= 3
+	navalattack					= 8
+	range						= 1300
+	supplyconsumption 			= 1.4
+	fuelconsumption				= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+## ranges upgraded over vanilla based on known stats which were even higher
+# last propeller model
+# 3 - Long Range PBM-5 / BE-6 / Avro Shackleton
+model = {
+	cost 						= 20 # was 21
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 400
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 10
+	airdefence					= 5 #4
+	airattack					= 4 #3
+	strategicattack				= 2
+	softattack					= 2
+	hardattack					= 4
+	navalattack					= 11
+	range						= 1600 #was 1300
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# models 4-7 have both jets and propellers
+# 4 - Turbojet Naval Bomber-1949 P2V / BE-10
+model = {
+	cost 						= 22 # was 21
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 500
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 12
+	airdefence					= 6 #5
+	airattack					= 4 #3
+	strategicattack				= 3
+	softattack					= 2
+	hardattack					= 5
+	navalattack					= 13
+	range						= 2000 #was 1400
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#5 - Improved Turbojet Naval Bomber-1955 P2V-6B added misiles and ASW / BE-12
+model = {
+	cost 						= 24
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 500
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 14
+	airdefence					= 7
+	airattack					= 5
+	strategicattack				= 4
+	softattack					= 2
+	hardattack					= 6
+	navalattack					= 15
+	range						= 2000
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#6 - Modern Turbojet Naval Bomber-1961 P3-Orion / Il-38 Developmental
+model = {
+	cost 						= 26
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 600
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 16
+	airdefence					= 7
+	airattack					= 5 
+	strategicattack				= 5
+	softattack					= 2
+	hardattack					= 7
+	navalattack					= 17
+	range						= 3000
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#7 - Elite Turbojet Naval Bomber-1968 P3C / Il-38 / H-S Nimrod
+model = {
+	cost 						= 28
+	buildtime					= 180
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 600
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 18
+	airdefence					= 7
+	airattack					= 5
+	strategicattack				= 5
+	softattack					= 2
+	hardattack					= 7
+	navalattack					= 19
+	range						= 3000
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#8 - 1976 Naval Bomber e.g. Nimrod MR2
+model = {
+	cost 						= 29
+	buildtime					= 185
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 600
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 20
+	airdefence					= 7
+	airattack					= 5
+	strategicattack				= 5
+	softattack					= 2
+	hardattack					= 7
+	navalattack					= 22
+	range						= 3000
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#9 - 21st century Naval Bomber-(Nimrod MRA4 & P-8 Pegasys)
+model = {
+	cost 						= 30
+	buildtime					= 190
+	defaultorganisation 		= 30
+	morale						= 30
+	manpower					= 3
+	maxspeed					= 600
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 1
+	surfacedefence				= 24
+	airdefence					= 7
+	airattack					= 5
+	strategicattack				= 5
+	softattack					= 2
+	hardattack					= 7
+	navalattack					= 28
+	range						= 3000
+	supplyconsumption 			= 2.0
+	fuelconsumption				= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

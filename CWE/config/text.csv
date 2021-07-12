@@ -1,0 +1,2223 @@
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+LANGUAGE;英语 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+MENU;菜单 ;;;;;;;;;;X
+GOTO;转到 ;;;;;;;;;;X
+CANCEL;取消 ;;;;;;;;;;X
+DEFAULT;默认值 ;;;;;;;;;;X
+ALLPAUSE;全部暂停 ;;;;;;;;;;X
+BACK;返回 ;;;;;;;;;;X
+BACKTOMAIN;返回主菜单 ;;;;;;;;;;X
+OK;好的 ;;;;;;;;;;X
+NONE;无 ;;;;;;;;;;X
+NOFILE;没有这个文件！ ;;;;;;;;;;X
+NO;否 ;;;;;;;;;;X
+YES;确定 ;;;;;;;;;;X
+;;;;;;;;;;;X
+INVAND;和 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DWBRKALL4;与 ;;;;;;;;;;X
+PLEASECONFIRM;请确定: ;;;;;;;;;;X
+PLEASESELECT;左键点击一个地区或者单位可以选择。\n\n右键点击一个地区或者单位可以打开命 令快捷方式。\n\n如果已选择了一个单位，右键点击它的 目的地可以移动。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+HOSTLEFT;主机已经离开游戏！ ;;;;;;;;;;X
+CLIENTLEFT;%s(%s)已经离开游戏！ ;;;;;;;;;;X
+PLAYERLAG_HEADER;网络延时 ;;;;;;;;;;X
+PLAYERLAG_MSG_HOST;踢掉一个延迟的玩家，状况可能会有所改 善，但被踢的玩家就无法继续游戏了。如 果你进行了储存并退出操作，你可以在网 络延时有所改善時重新连接到已存档的游 戏中。 ;;;;;;;;;;X
+PLAYERLAG_MSG_CLIENT;越多项目记号则连接越佳。 ;;;;;;;;;;X
+BTN_DROPCONT;离开并继续游戏 ;;;;;;;;;;X
+BTN_SAVEQUIT;储存并退出 ;;;;;;;;;;X
+;;;;;;;;;;;X
+GOTOBOX;请输入你想寻找的地区名称。 ;;;;;;;;;;X
+GOTOBOX_FAIL;没有这样的地区，请输入你想寻找的地区 名称。 ;;;;;;;;;;X
+MP_OK;状态确定 ;;;;;;;;;;X
+MP_WAITING;连接中…… ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+EVENTWINDOW_GOTO;转到 ;;;;;;;;;;X
+EVENTWINDOW_CLOSE;关闭 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+JANUARY;1月;;;;;;;;;;X
+FEBRUARY;2月;;;;;;;;;;X
+MARCH;3月;;;;;;;;;;X
+APRIL;4月;;;;;;;;;;X
+MAY;5月;;;;;;;;;;X
+JUNE;6月;;;;;;;;;;X
+JULY;7月;;;;;;;;;;X
+AUGUST;8月;;;;;;;;;;X
+SEPTEMBER;9月;;;;;;;;;;X
+OCTOBER;10月;;;;;;;;;;X
+NOVEMBER;11月;;;;;;;;;;X
+DECEMBER;12月;;;;;;;;;;X
+;;;;;;;;;;;X
+JAN;1月;;;;;;;;;;X
+FEB;2月;;;;;;;;;;X
+MAR;3月;;;;;;;;;;X
+APR;4月;;;;;;;;;;X
+MAYS;5月;;;;;;;;;;X
+JUN;6月;;;;;;;;;;X
+JUL;7月;;;;;;;;;;X
+AUG;8月;;;;;;;;;;X
+SEP;9月;;;;;;;;;;X
+OCT;10月;;;;;;;;;;X
+NOV;11月;;;;;;;;;;X
+DEC;12月;;;;;;;;;;X
+;;;;;;;;;;;X
+TERRAINCOGNITA;未探索地区 ;;;;;;;;;;X
+BORDER;各国边界 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CHAR_BILLION;G ;;;;;;;;;;X
+CHAR_MILLION;M ;;;;;;;;;;X
+CHAR_THOUSAND;K ;;;;;;;;;;X
+;;;;;;;;;;;X
+RESOURCE_OIL;石油 ;;;;;;;;;;X
+RESOURCE_METAL;金属 ;;;;;;;;;;X
+RESOURCE_RARE_MATERIALS;稀有材料 ;;;;;;;;;;X
+RESOURCE_MONEY;金钱 ;;;;;;;;;;X
+RESOURCE_TC;运输能力(TC) ;;;;;;;;;;X
+RESOURCE_MANPOWER;兵源 ;;;;;;;;;;X
+RESOURCE_ENERGY;煤炭 ;;;;;;;;;;X
+RESOURCE_IC;产能(IC) ;;;;;;;;;;X
+RESOURCE_SUPPLY;补给 ;;;;;;;;;;X
+RESOURCE_DISSENT;不满度 ;;;;;;;;;;X
+NUKE_NEXT;我们的下一个核武器将于 %s完成。 ;;;;;;;;;;X
+NUKES;核武器 ;;;;;;;;;;X
+NUKES_UNKNOWN;我们还不知道怎样生产核弹。 ;;;;;;;;;;X
+NUKES_LOW_CAP;我们的核反应堆太小了，不能制造核武器。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+WAR_BELLIGERENCE;- 战时好战性: %s%.1f每月\n;;;;;;;;;;X
+PEACE_BELLIGERENCE;- 和平时期的好战性: %s%.1f每月\n;;;;;;;;;;X
+DOW_BELLIGERENCE;- 宣战所需要的好战性: %s%d\%%\n;;;;;;;;;;X
+DISSENT_GROWTH;- 我们的不满度每天增长: %s%d\%%\n;;;;;;;;;;X
+MONEY_PRODUCTION;- 货币产量: %s%d\%%\n;;;;;;;;;;X
+OIL_PRODUCTION;- 石油产量: %s%d\%%\n;;;;;;;;;;X
+COUP_VS_US;- 我们的政变几率: %s%d\%%\n;;;;;;;;;;X
+ALLIANCE_W_DICTATORSHIPS;- 盟国改变为专制政体: %s%d\%%\n;;;;;;;;;;X
+ALLIANCE_W_DEMOCRACIES;- 盟国改变为民主政体: %s%d\%%\n;;;;;;;;;;X
+ALLIANCE_W_CLOSE_IDEOLOGY;- 盟国改变为相近的意识形态: %s%d\%%\n;;;;;;;;;;X
+ALLIANCE_W_ALL;- 盟国改变为: %s%d\%%\n;;;;;;;;;;X
+UNIT_COST;- 组建部队花费: %s%d\%%\n;;;;;;;;;;X
+DIPLO_COST;- 外交花费: %s%d\%%\n;;;;;;;;;;X
+TC_BONUS;- 运输能力: %s%d\%%\n;;;;;;;;;;X
+LEADER_SKILL_EFF;- 将领技能的效率: %s%d\%%\n;;;;;;;;;;X
+UNIT_ORG;- 单位的组织度: %s%d\%%\n;;;;;;;;;;X
+;;;;;;;;;;;X
+OIL_DRO;我们目前每天生产%.2f的石油。\n我们的部队每天需要%.2f的石油以保持最 大战斗力。\n如果我们缺乏石油，将以煤炭按%.2f的比 率转化。 ;;;;;;;;;;X
+METAL_DRO;我们目前每天生产%.2f的金属。\n我们的工业每天需要%.2f的金属以保持全 效运作。 ;;;;;;;;;;X
+RARE_MATERIALS_DRO;我们目前每天生产%.2f的稀有材料。\n我们的工业每天需要%.2f的金属以保持全 效运作。\n如果我们缺乏稀有材料，将以石油按%.2f 的比率加以转化。 ;;;;;;;;;;X
+RES_DRO;每天的变化率:%.2f ;;;;;;;;;;X
+RES_DRO_PROD;\n本国产量:%.2f ;;;;;;;;;;X
+RES_DRO_TRADE_IN;\n交易获得:%.2f ;;;;;;;;;;X
+RES_DRO_PUPPET;\n来自傀儡国:%.2f ;;;;;;;;;;X
+RES_DRO_CONVOY_IN;\n护航输入:%.2f ;;;;;;;;;;X
+RES_DRO_CONVERTED;\n转化得到:%.2f ;;;;;;;;;;X
+RES_DRO_TRADE_OUT;\n交易付出:%.2f ;;;;;;;;;;X
+RES_DRO_CONVOY_OUT;\n护航输出:%.2f ;;;;;;;;;;X
+RES_DRO_MASTER;\n上交宗主国:%.2f ;;;;;;;;;;X
+RES_DRO_USAGE;\n用量:%.2f ;;;;;;;;;;X
+RES_DRO_ALLIED_USAGE;\n盟国用量:%.2f ;;;;;;;;;;X
+RES_OFFMAP;地图外产量:%.2f ;;;;;;;;;;X
+ENERGY_DRO;我们目前每天生产%.2f的煤炭。\n我们的工业每天需要%.2f的煤炭以保持全 效运作。 ;;;;;;;;;;X
+SUPPLIES_DRO;我们目前每天生产%.2f补给。\n我们的部队每天消耗%.2f补给。 ;;;;;;;;;;X
+IC_DRO;工业生产能力（??）是贵国工业生产能力。基础 ??是你的省份所拥有的??值。可用??是在基 础??总合的基础上，经过科技、部长等因素修正 后的??值。浪费的??是由于那些超过需要分配 而浪费的??值。每一点??值每天消耗２点煤炭 ，１点金属和１／２点稀有材料。\n浪费IC:%d/可用IC:%d/基础IC:%d\n;;;;;;;;;;X
+ROL_IC_BASE;\n基础IC:%d ;;;;;;;;;;X
+ROL_IC_MINISTER;\n部长和理念修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_DISSENT;\n游击队修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_POLICY;\n政策修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_TECH;\n科技修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_DIFF;\n难度修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_PEACETIME;\n和平时期修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_RESOURCE;\n资源缺乏修正效果:%.1f(%.f\%%) ;;;;;;;;;;X
+ROL_IC_SUM;\n==可用IC:%d ;;;;;;;;;;X
+DAILY_DISSENT;我们的不满度每天变化%.2f ;;;;;;;;;;X
+TC_DRO;运输能力（TC）代表卡车、火车和江河驳船。当超过可用 的TC时，部队移动速度和组织度恢复速度都会下降。TC 直接取决于TC，每一点TC将使你获得%.1f点TC。\n已用TC:%d/可用TC:%d\n;;;;;;;;;;X
+ROL_TC_SUPPLY;\n燃料和补给运输消耗:%.2f ;;;;;;;;;;X
+ROL_TC_OCCUPIED;\n维持占领的领土消耗:%.2f ;;;;;;;;;;X
+ROL_TC_UNDEP;\n调遣部队消耗:%.2f ;;;;;;;;;;X
+ROL_TC_PARTISANS;\n游击队活动消耗:%.2f ;;;;;;;;;;X
+ROL_TC_EFF;\n==当前的补给效率:%.2f\%% ;;;;;;;;;;X
+;;;;;;;;;;;X
+FUELPROBLEM;这些单位由于缺乏燃料而不能移动。 ;;;;;;;;;;X
+OUTOFRANGE;超出了这些单位的活动范围。 ;;;;;;;;;;X
+RANGE_INFO;%s\n(距离%.fkm，活动半径%.fkm) ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONVOYINFO1;运转的运输线:%d/%d。 ;;;;;;;;;;X
+CONVOYINFO2;%d输送船/%d护航舰。 ;;;;;;;;;;X
+CONVOYBUTTON;护航管理 ;;;;;;;;;;X
+MARKETBUTTON;世界市场交易 ;;;;;;;;;;X
+WORLDMARKET;世界市场 ;;;;;;;;;;X
+TRADEOFFER;提出贸易提议 ;;;;;;;;;;X
+IWM_FOR;对应 ;;;;;;;;;;X
+IWM_OIL;石油 ;;;;;;;;;;X
+IWM_ENERGY;煤炭 ;;;;;;;;;;X
+IWM_METAL;金属 ;;;;;;;;;;X
+IWM_RARE_MATERIALS;稀有材料 ;;;;;;;;;;X
+IWM_TRADING;%d%s对应%d%s ;;;;;;;;;;X
+IWM_AMOUNT;数量 ;;;;;;;;;;X
+IWM_PRICE;比率 ;;;;;;;;;;X
+CREATE_DEAL;提出交易 ;;;;;;;;;;X
+CANCEL_DEAL;取消交易 ;;;;;;;;;;X
+CONVOY_BUT_IRO;点击此处管理你的资源运输护航，以把货物安全的从殖民地 运输到本国，同时为远征部队提供补给。 ;;;;;;;;;;X
+MARKET_BUT_IRO;点击此处进入世界市场，在这里你可以通过国际贸易取获得你 所缺乏的资源。 ;;;;;;;;;;X
+PROD_NEED;需要%.2f ;;;;;;;;;;X
+SLIDER_PRODUCTION;调整此滑动条决定分配给用于组建军队的IC值 ;;;;;;;;;;X
+SLIDER_CONSUMER;调整此滑动条决定分配给用于消费品生产的IC值 ;;;;;;;;;;X
+SLIDER_SUPPLIES;调整此滑动条决定分配给用于补给品生产的IC值 ;;;;;;;;;;X
+SLIDER_REINFORCEMENT;调整此滑动条决定分配给用于加强和修复单位的IC值 ;;;;;;;;;;X
+SLIDER_UPGRADE;调整此滑动条决定分配给用于升级军队的IC值 ;;;;;;;;;;X
+IWP_NOT_ALLOWED;我们还未拥有必须的科技 ;;;;;;;;;;X
+DEL_SLIDER_SUPPLIES;我们每日制造%.2f补给。\n我们每日至少需要%.2f补给。 ;;;;;;;;;;X
+DEL_SLIDER_REINFORCEMENT;在当前设定下我们每天能够增强%.2f\%%的部队。 \n当前增强部队所需要的兵源是:%.2f\n;;;;;;;;;;X
+DEL_SLIDER_UPGRADE;在当前设定下我们能够升级%.2f\%%的部队。 \n过时的师:%d\n过时的旅:%d ;;;;;;;;;;X
+DEL_SLIDER_PRODUCTION;在当前设定下我们能够获得%.2f\%%的计划产量。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONVOY_TRANSPORTSNEEDED;该护航输送船队至少还需%d艘输送船才能正常运作 ;;;;;;;;;;X
+CONVOY_NEW;成立一支新的护航输送船队 ;;;;;;;;;;X
+CONVOY_FROM;从: ;;;;;;;;;;X
+CONVOY_TO;到: ;;;;;;;;;;X
+CONVOY_NONE;(未指定) ;;;;;;;;;;X
+CONVOY_DAILYSHIPPING;每天运输如下: \n;;;;;;;;;;X
+CONVOY_ENERGY;%.1f煤炭 \n;;;;;;;;;;X
+CONVOY_RARE_MATERIALS;%.1f稀有材料 \n;;;;;;;;;;X
+CONVOY_OIL;%.1f石油 \n;;;;;;;;;;X
+CONVOY_METAL;%.1f金属 \n;;;;;;;;;;X
+CONVOY_SUPPLIES;%.1f补给 \n;;;;;;;;;;X
+CONVOY_NADA;(无) ;;;;;;;;;;X
+CONVOY_CREATE_RES;建立资源输送船队 ;;;;;;;;;;X
+CONVOY_CREATE_SUP;建立补给输送船队 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CIW_TRANSPORTS;输送船 ;;;;;;;;;;X
+CIW_ESCORTS;护航舰 ;;;;;;;;;;X
+CIW_TRANS_EXPL;%d输送船可用。 ;;;;;;;;;;X
+CIW_ESC_EXPL;%d护航舰可用。 ;;;;;;;;;;X
+CIW_OIL;石油 ;;;;;;;;;;X
+CIW_METAL;金属 ;;;;;;;;;;X
+CIW_ENERGY;煤炭 ;;;;;;;;;;X
+CIW_RARE_MATERIALS;稀有材料 ;;;;;;;;;;X
+CIW_SUPPLY;补给 ;;;;;;;;;;X
+CONVOY_DELETE;取消输送 ;;;;;;;;;;X
+CONVOY_DELETE_IRO;这条输送路线会被取消，其输送船和护航舰将编入预备役 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+TIMEMENU_ATTACK;%s在 ;;;;;;;;;;X
+;;;;;;;;;;;X
+TASK_MOVE;移动到 ;;;;;;;;;;X
+TASK_BLITZ;闪击战 ;;;;;;;;;;X
+TASK_FEINT;佯攻 ;;;;;;;;;;X
+TASK_DIGIN;设防 ;;;;;;;;;;X
+TASK_CAMOFLAUGE;伪装 ;;;;;;;;;;X
+TASK_REBASE;转场 ;;;;;;;;;;X
+TASK_INTERCEPT;截击 ;;;;;;;;;;X
+TASK_PARADROP;空降 ;;;;;;;;;;X
+TASK_PATROL;巡逻 ;;;;;;;;;;X
+TASK_TACTICAL;战术轰炸 ;;;;;;;;;;X
+TASK_NAVAL;对海轰炸 ;;;;;;;;;;X
+TASK_STRATEGIC;战略轰炸 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SELECT_BLITZ;选择要闪击的地区。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CRB_AMPH;两栖突袭会给攻击者带来巨大损失。 ;;;;;;;;;;X
+CRB_BASE;如果航空部队与空军基地在同一地区或是相邻地区，可以提 高战机的作战效率。 ;;;;;;;;;;X
+CRB_BLI;大风雪会使作战部队无法进行任何有效的进攻性活动。 ;;;;;;;;;;X
+CRB_CARR;航母技术能让我们在战斗中得到更多优势。 ;;;;;;;;;;X
+CRB_DISSENT;不满度会对部队的战斗力产生负面影响。 ;;;;;;;;;;X
+CRB_DIVPEN;如果指挥太多的部队，指挥官的能力就会下降。 ;;;;;;;;;;X
+CRB_DUG;如果一支部队修建了防御工事，那么它在进行防御时会得到 额外加成。 ;;;;;;;;;;X
+CRB_ENCIRCLE;一支被包围的部队在进行防御时，战斗力将会下降。 ;;;;;;;;;;X
+CRB_ENVELOP;从多个方向进行攻击将会带给攻击方带来额外的好处。 ;;;;;;;;;;X
+CRB_FOREST;森林将影响机动部队的攻击力，特別是对于装甲部队。 ;;;;;;;;;;X
+CRB_FORT;要塞将为防守方提供极大的优势。 ;;;;;;;;;;X
+CRB_FROZEN;寒冷天气将严重影响进攻方的攻击力。 ;;;;;;;;;;X
+CRB_HQ;成为或接近指挥中心会对部队产生积极作用。 ;;;;;;;;;;X
+CRB_JUNGLE;丛林会影响机动部队的攻击力，特別是装甲部队。 ;;;;;;;;;;X
+CRB_LEADER;指挥官对部队的积极作用将取决于他的技能等级。 ;;;;;;;;;;X
+CRB_MARSH;沼泽地带会影响机动部队的攻击力，特別是装甲部队。 ;;;;;;;;;;X
+CRB_MOUNTAIN;山地会影响机动部队的攻击力，特別是装甲部队。 ;;;;;;;;;;X
+CRB_MUDDY;阴雨连绵的天气会对部队造成负面影响。 ;;;;;;;;;;X
+CRB_NIGHT;夜间将使瞄准变得困难，极大地影响进了攻方的战斗力。 ;;;;;;;;;;X
+CRB_PARATROOP;当进攻过大的地区时，伞兵的能力将会下降。 ;;;;;;;;;;X
+CRB_RAIN;雨天会影响进攻方的攻击力。 ;;;;;;;;;;X
+CRB_RIVER;跨河进攻会对进攻部队造成很大影响，特別是没有随军工程 兵的部队。 ;;;;;;;;;;X
+CRB_SNOW;雪天会影响进攻方的攻击力。 ;;;;;;;;;;X
+CRB_STORM;暴风雪会影响进攻方的攻击力，且无法使用任何空军部队。 ;;;;;;;;;;X
+CRB_URBAN;巷战会严重影响火力，致使战斗持续更久。 ;;;;;;;;;;X
+CRB_HILLS;山地将极大地降低进攻方的机动性，特别是装甲部队，而将 为防御方提供有力的防御位置。 ;;;;;;;;;;X
+CRB_SHORE;舰队的对岸炮击能够降低对方的作战效率。 ;;;;;;;;;;X
+NOTENOUGHROOM;运输单位的运力不足，不能运输此部队。 ;;;;;;;;;;X
+CRB_NIGHTF;拥有夜航专家技能的指挥官在夜间战斗时将获得很大的战斗 加成。 ;;;;;;;;;;X
+CRB_OFFDOC;拥有进攻学说技能的指挥官在进攻时将获得战斗加成。 ;;;;;;;;;;X
+CRB_DEFDOC;拥有防御学说技能的指挥官在防御时将获得战斗加成。 ;;;;;;;;;;X
+CRB_SUPTAC;海军或空军的指挥官具有高级战术专家技能时，将为部队带 来战斗加成。 ;;;;;;;;;;X
+CRB_STAPEN;当战斗中的一方部队数量超出指挥官的指挥上限之后，将会 遭到堆垒惩罚。 ;;;;;;;;;;X
+CRB_DIFFIC;在高难度下游戏，你在战斗中会遭到高难度惩罚。 ;;;;;;;;;;X
+CRB_LACKOF;缺乏补给的部队在作战中将处于极大劣势。 ;;;;;;;;;;X
+CRB_DESERT;未装备良好的沙漠战装备的部队在沙漠地区作战更为困难。 ;;;;;;;;;;X
+CRB_WEATEQ;未装备对付恶劣天气装备的部队在相应的气候下作战将更为 困难。 ;;;;;;;;;;X
+CRB_COSDEF;防御学说的总参谋长将为防御中的部队带来战斗加成。 ;;;;;;;;;;X
+CRB_COAEDC;陆军总长拥有“弹性防御学说”将给防守中的机械化和摩托 化部队带来战斗加成。 ;;;;;;;;;;X
+CRB_COASDD;陆军总长拥有“静态防御学说”，将给防守的步兵师带来战 斗加成。 ;;;;;;;;;;X
+CRB_COADED;陆军总长拥有“战略决战学说”，将会给攻击部队带来战斗 加成。 ;;;;;;;;;;X
+CRB_COAASP;装甲、轻型装甲或机械化部队的指挥官具有“装甲指挥官” 技能时将得到战斗加成。 ;;;;;;;;;;X
+CRB_PNZLDR;装甲指挥官在指挥装甲、轻型装甲或机械化部队时具优势。 ;;;;;;;;;;X
+CRB_COMAND;特种战专家指挥的伞兵、山地部队及海军陆战队等特种部队 作战时会得到战斗加成。 ;;;;;;;;;;X
+CRB_SEAWOL;潜艇部队的指挥官具有“海狼战专家”技能时，部队将得到战 斗加成。 ;;;;;;;;;;X
+CRB_SURPNL;遭受奇袭的部队将受到一定惩罚，使其变得更为脆弱。 ;;;;;;;;;;X
+CRB_RDRSTN;雷达站将降低进攻空军单位的作战效率。 ;;;;;;;;;;X
+CRB_COMARM;拥有１／３～２／３机械化或装甲部队的地面部队和按均衡 比例的船型组成的舰队在战斗时将获得“联合作战”战斗加 成。 ;;;;;;;;;;X
+CRB_BCOMAR;新的 ;;;;;;;;;;X
+CRB_MULTIP;在大规模战斗中侧翼受到攻击的部队更加脆弱。 ;;;;;;;;;;X
+CRB_EXPERI;有经验的部队在作战中的表现更好。 ;;;;;;;;;;X
+CRB_INTERC;截击机在对付轰炸机的空战中将得到战斗加成。 ;;;;;;;;;;X
+CRB_MISEFF;单位的作战效率 ;;;;;;;;;;X
+CRB_AIRCOMBAT;当执行轰炸任务的飞机被卷入空战时，他的表现会较差。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+EYR_EXIT;退出 ;;;;;;;;;;X
+EYR_T_MANPOWER;兵源 ;;;;;;;;;;X
+EYR_CHAPTER_TECH;科技 ;;;;;;;;;;X
+EYR_CHAPTER_GLOBAL;概要 ;;;;;;;;;;X
+EYR_CHAPTER_ECONOMY;经济 ;;;;;;;;;;X
+EYR_CHAPTER_MILITARY;军事 ;;;;;;;;;;X
+EYR_CHAPTER_HISTORY;历史 ;;;;;;;;;;X
+EYRLANDTECH;陆军科技 ;;;;;;;;;;X
+EYRAIRTECH;空军科技 ;;;;;;;;;;X
+EYRNAVALTECH;海军科技 ;;;;;;;;;;X
+EYRRESOURCE;日资金流量 ;;;;;;;;;;X
+EYR_R_CATEGORY;种类 ;;;;;;;;;;X
+EYR_RES_HP;生产于国内地区 ;;;;;;;;;;X
+EYR_RES_CH;运送到国内地区 ;;;;;;;;;;X
+EYR_RES_TA;在世界市场上卖出 ;;;;;;;;;;X
+EYR_RES_TF;在世界市场上买入 ;;;;;;;;;;X
+EYR_RES_CO;由进程导致的更改 ;;;;;;;;;;X
+EYR_RES_US;工业使用 ;;;;;;;;;;X
+EYR_RES_UST;本国部队使用 ;;;;;;;;;;X
+EYR_RES_USTA;盟国部队使用 ;;;;;;;;;;X
+EYRLNAME;姓名 ;;;;;;;;;;X
+EYRLTYPE;军种 ;;;;;;;;;;X
+EYRLRANK;等级 ;;;;;;;;;;X
+EYRLSKILL;技能 ;;;;;;;;;;X
+EYRLEXP;经验 ;;;;;;;;;;X
+EYRLCOMMISION;委任 ;;;;;;;;;;X
+EYRANAME;名称 ;;;;;;;;;;X
+EYRTYPE;类型 ;;;;;;;;;;X
+EYRUNIT;单位 ;;;;;;;;;;X
+EYRAPROV;位置 ;;;;;;;;;;X
+EYRASTR;规模 ;;;;;;;;;;X
+EYRAORG;组织度 ;;;;;;;;;;X
+EYRTOTAL;总计 ;;;;;;;;;;X
+EYRARMIES;陆军师 ;;;;;;;;;;X
+EYRFLEETS;海军舰船 ;;;;;;;;;;X
+EYRAIR;空军联队 ;;;;;;;;;;X
+EYRARMYLEADERS;陆军指挥官 ;;;;;;;;;;X
+EYRNAVYLEADERS;海军指挥官 ;;;;;;;;;;X
+EYRAIRLEADERS;空军指挥官 ;;;;;;;;;;X
+EYR_INT;截击机 ;;;;;;;;;;X
+EYR_MUL;战斗机 ;;;;;;;;;;X
+EYR_ESC;护航机 ;;;;;;;;;;X
+EYR_STR;战略轰炸机 ;;;;;;;;;;X
+EYR_TAC;战术轰炸机 ;;;;;;;;;;X
+EYR_DIV;俯冲轰炸机 ;;;;;;;;;;X
+EYR_NAV;海军轰炸机 ;;;;;;;;;;X
+EYR_TOR;鱼雷攻击机 ;;;;;;;;;;X
+EYR_TPL;运输机 ;;;;;;;;;;X
+EYR_FBO;V1飞弹 ;;;;;;;;;;X
+EYR_ROC;V2导弹 ;;;;;;;;;;X
+EYR_INF;步兵 ;;;;;;;;;;X
+EYR_CAV;骑兵 ;;;;;;;;;;X
+EYR_MOT;摩托化 ;;;;;;;;;;X
+EYR_MEC;机械化 ;;;;;;;;;;X
+EYR_CAS;俯冲轰炸机 ;;;;;;;;;;X
+EYR_LARM;轻装甲 ;;;;;;;;;;X
+EYR_ARM;装甲 ;;;;;;;;;;X
+EYR_GAR;卫戍 ;;;;;;;;;;X
+EYR_HQ;指挥部 ;;;;;;;;;;X
+EYR_PAR;空降 ;;;;;;;;;;X
+EYR_MAR;海军陆战队 ;;;;;;;;;;X
+EYR_BER;山地部队 ;;;;;;;;;;X
+EYR_MIL;民兵 ;;;;;;;;;;X
+EYR_BAT;战列舰 ;;;;;;;;;;X
+EYR_LCRU;轻巡洋舰 ;;;;;;;;;;X
+EYR_HCRU;重巡洋舰 ;;;;;;;;;;X
+EYR_BCRU;战列巡洋舰 ;;;;;;;;;;X
+EYR_DES;驱逐舰 ;;;;;;;;;;X
+EYR_CAR;航母 ;;;;;;;;;;X
+EYR_SUB;潜艇 ;;;;;;;;;;X
+EYR_TRA;运输舰 ;;;;;;;;;;X
+EYRHISTORY;历史 ;;;;;;;;;;X
+EYR_COUNTRY;国家 ;;;;;;;;;;X
+EYRCOUNTRY;国家 ;;;;;;;;;;X
+EYRCOMARMIES;国家陆军力量对比 ;;;;;;;;;;X
+EYRCOMAIR;国家空军力量对比 ;;;;;;;;;;X
+EYRCOMNAVIES;国家海军力量对比 ;;;;;;;;;;X
+EYRPROVINCE;领土信息 ;;;;;;;;;;X
+EYR_VPPROVS;当前胜利点分布 ;;;;;;;;;;X
+EYR_T_PROVINCE;地区 ;;;;;;;;;;X
+EYR_T_IC;IC ;;;;;;;;;;X
+EYR_T_ENERGY;煤炭 ;;;;;;;;;;X
+EYR_T_METAL;金属 ;;;;;;;;;;X
+EYR_T_RARE_MATERIALS;稀有材料 ;;;;;;;;;;X
+EYR_T_OIL;油料 ;;;;;;;;;;X
+EYRCONVOY;护航摘要 ;;;;;;;;;;X
+EYR_C_FROM;出发地 ;;;;;;;;;;X
+EYR_C_TO;目的地 ;;;;;;;;;;X
+EYR_C_TRA;输送船 ;;;;;;;;;;X
+EYR_C_ESC;护航舰 ;;;;;;;;;;X
+EYR_C_ENERGY;煤炭 ;;;;;;;;;;X
+EYR_C_METAL;金属 ;;;;;;;;;;X
+EYR_C_RARE_MATERIALS;稀有材料 ;;;;;;;;;;X
+EYR_C_OIL;油料 ;;;;;;;;;;X
+EYR_C_SUP;补给 ;;;;;;;;;;X
+EYR_V_PROV;地区 ;;;;;;;;;;X
+EYR_V_VALUE;胜利点 ;;;;;;;;;;X
+EYR_WHO;国家 ;;;;;;;;;;X
+EYR_AXIS; ;;;;;;;;;;X
+EYR_ALLIES;西方集團;;;;;;;;;;X
+EYR_COM;東方集團;;;;;;;;;;X
+EYR_NEUTRAL;中立 ;;;;;;;;;;X
+;;;;;;;;;;;X
+WAR_ENTRY;当前%d\%%的民众支持开战。 ;;;;;;;;;;X
+ALIGN_F;法西斯主义 ;;;;;;;;;;X
+ALIGN_D;民主制度 ;;;;;;;;;;X
+ALIGN_C;共产主义 ;;;;;;;;;;X
+END_AXIS;轴心国 ;;;;;;;;;;X
+END_ALLIES;盟国 ;;;;;;;;;;X
+END_COMINTERN;共产国际 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+UIW_PRIORITIZED;优先升级补给 ;;;;;;;;;;X
+UIW_PRIORITIZED_DELAYED;设定该部队是否优先升级和补给 ;;;;;;;;;;X
+UIW_OFFENSIVE;攻势补给 ;;;;;;;;;;X
+UIW_OFFENSIVE_DELAYED;为选定部队的攻势提供燃料和补给。这将在30天里增加他们 的补给效率%.f\%%.\n此将消耗补给:%.1f\n耗费燃料:%.1f ;;;;;;;;;;X
+UIW_OFFENSIVE_NO_SUPPLIES;我们缺乏%.1f的补给 ;;;;;;;;;;X
+UIW_OFFENSIVE_NO_FUEL;我们缺乏%.1f的石油 ;;;;;;;;;;X
+UIW_OFFENSIVE_NOT_LAND;只有陆军部队能发起进攻 ;;;;;;;;;;X
+UIW_OFFENSIVE_OOS;部队缺乏补给，不能发动进攻 ;;;;;;;;;;X
+UIW_OFFENSIVE_ALREADY;一个或多个选定的部队已经投入了进攻。 ;;;;;;;;;;X
+CONFIRMLOADPARA;你确定要用运输机运送这个单位吗？ ;;;;;;;;;;X
+UIW_PARATROOP;伞兵已经登上这个空军单位(点击让他们撤出) ;;;;;;;;;;X
+UIW_OUT_OF_RANGE;这支队伍中有舰船已超出其%.f公里的最大航程 ;;;;;;;;;;X
+UIW_IN_RANGE;本单位最大航程为%.f公里 ;;;;;;;;;;X
+DIGIN_MSG;设防:%d ;;;;;;;;;;X
+UIW_AIR_BUTTON;在舰队中选择空中单位的驻扎点，并下达命令 ;;;;;;;;;;X
+NONUKES;当前没有核弹可用 ;;;;;;;;;;X
+UNLOADNUKE;点击从这个单位上移除核弹 ;;;;;;;;;;X
+LOADNUKE;点击在当前单位上装载核弹 ;;;;;;;;;;X
+OIL_USE_EXPLAIN;许多种部队都需要石油供给，特别是在移动中。不过停泊在 港口的舰船、降落在地面的飞机则完全不需要油料，同样， 尚未部署的部队也不需要。 ;;;;;;;;;;X
+OIL_OUT;缺乏油料 ;;;;;;;;;;X
+SUPPLY_OUT;缺乏补给 ;;;;;;;;;;X
+OIL_USAGE;目前每天使用%.2f石油。\n(最大使用量:%.2f/天) ;;;;;;;;;;X
+UIW_REINFORE;本单位当前的兵力。(点击补充) ;;;;;;;;;;X
+UIW_OIL_PROBLEM;这支队伍中有单位因缺少足够的油料而无法进行某些行动 ;;;;;;;;;;X
+UIW_PLANES_ABOARD;这支舰队上搭载了飞机 ;;;;;;;;;;X
+UIW_TROOPS_ABOARD;这是目前舰队中搭载的陆军单位 ;;;;;;;;;;X
+UIW_DIGIN;本单位挖掘了战壕，在防御时能获得一些战斗加成 (当前防御加成:%.f) ;;;;;;;;;;X
+UIW_LEADERBUTTON;(点击可以更换指挥官) ;;;;;;;;;;X
+UNITLEDBY;被 %s领导 ;;;;;;;;;;X
+UNITBASED;基地:%s;;;;;;;;;;X
+UNITRANGE;(%.f km);;;;;;;;;;X
+UNITNOORDER;没有命令 ;;;;;;;;;;X
+REORG_TO;分配到 %s ;;;;;;;;;;X
+UIW_REORG;建立一支新部队 ;;;;;;;;;;X
+UIW_REORG_DIS;至少需要有两个单位才能从中抽建一支新部队 ;;;;;;;;;;X
+UIW_REORG_DESC;要从目前选中的部队中抽建一支新部队，点击‘＋’按钮将 需要的单位添加到右边的重组画面中。要创建一支新部队， 至少需要从原部队中移出一个单位。 ;;;;;;;;;;X
+UIW_SUPPLY;这支部队得到了补给。 ;;;;;;;;;;X
+UIW_OUTOFSUPPLY;这支部队目前没有获得补给。 ;;;;;;;;;;X
+UIW_SUPPLY_DESC;这支部队有补给的前提，是他们能在本国控制之下的地区拥 有一条通向补给品基地，即首都或补给站的不间断的路径。 ;;;;;;;;;;X
+UIW_HQ;这支部队有一个指挥部。 ;;;;;;;;;;X
+UIW_HQ_DESC;HQ(指挥部)能够提高相邻地区部队的补给效率、指挥上限及 战斗效率 ;;;;;;;;;;X
+UIW_HQ_INACTIVE;该HQ未能发挥效力，因为该部队的指挥官级别不够。 ;;;;;;;;;;X
+UIW_TSTRENGTH;本部队总兵力。 ;;;;;;;;;;X
+UIW_TSTRENGTH_DESC;这个指数表现了当前选中部队中所有单位的总兵力。是每支 独立单位兵力的总和，后者表现在战略栏目中的图标上。 ;;;;;;;;;;X
+UIW_STRENGTH;兵力 ;;;;;;;;;;X
+UIW_ORG;组织度 ;;;;;;;;;;X
+UIW_HARDATTACK;装甲攻击 ;;;;;;;;;;X
+UIW_SOFTATTACK;非装甲攻击 ;;;;;;;;;;X
+UIW_AIRATTACK;对空攻击 ;;;;;;;;;;X
+UIW_DEFENCE;对地防御 ;;;;;;;;;;X
+UIW_AIRDEFENCE;对空防御 ;;;;;;;;;;X
+UIW_SEAATTACK;对海攻击 ;;;;;;;;;;X
+UIW_SEADEFENCE;对海防御 ;;;;;;;;;;X
+UIW_NAVALATTACK;对海轰炸 ;;;;;;;;;;X
+UIW_STRATATTACK;战略轰炸 ;;;;;;;;;;X
+UIW_SURFACEDEFENCE;对地防御 ;;;;;;;;;;X
+UIW_STRENGTH_DESC;这个指数表示目前还有多少人员或机动单位能继续战斗 ;;;;;;;;;;X
+UIW_ORG_DESC;这个指数表示该单位的整体士气以及组织度 ;;;;;;;;;;X
+UIW_HARDATTACK_DESC;这个单位对装甲目标的攻击值，如对机械化部队或装甲部队 ;;;;;;;;;;X
+UIW_SOFTATTACK_DESC;这个单位对非装甲目标的攻击值，这些目标包括除了装甲和 机械化部队以外的地面部队 ;;;;;;;;;;X
+UIW_AIRATTACK_DESC;这个单位对空中目标的攻击值 ;;;;;;;;;;X
+UIW_DEFENCE_DESC;对其它地面攻击的防御，每一点在防御一次攻击时提供百分 之十的成功率 ;;;;;;;;;;X
+UIW_AIRDEFENCE_DESC;对其它空中攻击的防御，每一点在防御一次攻击时提供百分 之十的成功率 ;;;;;;;;;;X
+UIW_SEAATTACK_DESC;这是一个单位对其它舰船的攻击值 ;;;;;;;;;;X
+UIW_SEADEFENCE_DESC;这是一个单位抵挡其他战舰攻击的防御力 ;;;;;;;;;;X
+UIW_NAVALATTACK_DESC;击伤或击沉舰船的能力 ;;;;;;;;;;X
+UIW_TACTICALATTACK_DESC;摧毁敌人坦克、车辆和堡垒，及干扰敌人地面部队的能力 ;;;;;;;;;;X
+UIW_STRATATTACK_DESC;空军部队破坏敌工厂、城市和码头设施的能力 ;;;;;;;;;;X
+UIW_SURFACEDEFENCE_DESC;防御对空火力的能力。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UIW_REDEPLOY;战略部署单位 ;;;;;;;;;;X
+UIW_RD_DRO;此举将通过运输系统将单位输送到目的地。在运输过程中， 该单位将从地图上消失，并在一段时间之后出现在目的地， 所耗费的时间取决于距离和我们的运输能力。 ;;;;;;;;;;X
+UIW_RD_IRO0;@doomdark? ;;;;;;;;;;X
+UIW_RD_IRO1;@doomdark? ;;;;;;;;;;X
+UIW_RD_IRO2;你只能在自己的国土上战略部署单位。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIVISION_UPGRADE;升级到最新型 ;;;;;;;;;;X
+DIVISION_REINFORCE;补充到最大兵力 ;;;;;;;;;;X
+DIVISION_CONVOY;转换成护航舰 ;;;;;;;;;;X
+DIVISION_REPAIR;修理舰船 ;;;;;;;;;;X
+DIVISION_DISBAND;解散 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DISBAND_IRO;解散这个单位可以把%.1f人员返回预备队。\n(你可以解散任何不处于作战状态的舰船和 部队，以重获兵源) ;;;;;;;;;;X
+DIV_RE_IRO0;现在不能补充这个部队。 ;;;;;;;;;;X
+DIV_RE_IRO1;这个单位目前并不属于任何部队，因此不能被补充 ;;;;;;;;;;X
+DIV_RE_IRO2;这个单位缺少补给，所以无法补充。 ;;;;;;;;;;X
+DIV_RE_IRO3;这个单位已经达到最大兵力，所以不需要任何补充 ;;;;;;;;;;X
+DIV_RE_IRO4;国内没有足够的兵源对这个单位进行补充 ;;;;;;;;;;X
+DIV_RE_IRO_RIGHT;你需要%.1f的兵源 和%.1f的补给 来补充这个单位 (点击补满兵力) ;;;;;;;;;;X
+DIV_RE_DRO;可以从总预备队直接抽调兵源补充部队， 这样可能会降低原部队的组织度。 ;;;;;;;;;;X
+DIV_UP_DRO;经过科技研究，升级一个兵团，可为它装备最新式的武器装 备，新式武器将提高该单位的作战能力。 ;;;;;;;;;;X
+DIV_UP_IRO0;现在你不能升级此单位 ;;;;;;;;;;X
+DIV_UP_IRO_RIGHT;(点击将本单位升级为最新型) ;;;;;;;;;;X
+;;;;;;;;;;;X
+MUW_DIV;%d师 ;;;;;;;;;;X
+DEV_READY;%s完成 ;;;;;;;;;;X
+DEV_COST;花费:%.1fIC ;;;;;;;;;;X
+DEV_PRIO1;优先置顶 ;;;;;;;;;;X
+DEV_PRIO2;升高一位 ;;;;;;;;;;X
+DEV_PRIO3;降低一位 ;;;;;;;;;;X
+DEV_PRIO4;排在最后 ;;;;;;;;;;X
+DEV_CANCEL;取消开发 ;;;;;;;;;;X
+FORCEPOOL;军工生产(%.1f/%.1f) ;;;;;;;;;;X
+DEV_NO_SPEED;目前停止 ;;;;;;;;;;X
+DEV_MANPOWER_LACK;生产因缺乏人手而停顿 ;;;;;;;;;;X
+DEV_SPEED;目前进度为标准速度的%.1f\%% ;;;;;;;;;;X
+DEV_FULL_SPEED;目前正全速进展 ;;;;;;;;;;X
+DIV_REDEP;重新部署 %s ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+DIP_DECLARE_WAR;宣战 ;;;;;;;;;;X
+DIP_BRING_TO_ALLIANCE;邀请加入联盟 ;;;;;;;;;;X
+DIP_JOIN_ALLIANCE;加入联盟 ;;;;;;;;;;X
+DIP_LEAVE_ALLIANCE;离开联盟 ;;;;;;;;;;X
+DIP_OFFER_ALLIANCE;提出联盟 ;;;;;;;;;;X
+DIP_INFLUENCE_NATION;影响该国政治趋向 ;;;;;;;;;;X
+DIP_COUP_NATION;颠覆政权 ;;;;;;;;;;X
+DIP_ASK_FOR_MILITARY_ACCESS;要求军事通行 ;;;;;;;;;;X
+DIP_CANCEL_MILITARY_ACCESS;取消军事通行 ;;;;;;;;;;X
+DIP_REVOKE_MILITARY_ACCESS;撤回军事通行 ;;;;;;;;;;X
+DIP_REQUEST_SPECIFIC_ATTACK;要求特殊攻击 ;;;;;;;;;;X
+DIP_ASSUME_MILITARY_CONTROL;要求军事控制 ;;;;;;;;;;X
+DIP_CANCEL_MILITARY_CONTROL;放弃军事管制 ;;;;;;;;;;X
+DIP_OFFER_LEND_LEASE;提供借款 ;;;;;;;;;;X
+DIP_SEND_EXPEDITIONARY_FORCE;派遣远征军 ;;;;;;;;;;X
+DIP_GUARANTEE_INDEPENDENCE;保障独立 ;;;;;;;;;;X
+DIP_ANNEX_NATION;吞并国家 ;;;;;;;;;;X
+DIP_PUPPET_REGIME;傀儡政权 ;;;;;;;;;;X
+DIP_DEMAND_TERRITORY;索要领土 ;;;;;;;;;;X
+DIP_TRADE;提出贸易谈判 ;;;;;;;;;;X
+DIP_OFFER_NON_AGGRESSION;提出互不侵犯协定 ;;;;;;;;;;X
+DIP_CANCEL_NA;废除互不侵犯协定 ;;;;;;;;;;X
+DIP_CANCEL_TA;废除贸易协定 ;;;;;;;;;;X
+DIP_OFFER_TA;提供贸易协定 ;;;;;;;;;;X
+DIP_CANCEL_PT;废除和平条约 ;;;;;;;;;;X
+DIP_RELEASE_PUPPET;解散傀儡政权 ;;;;;;;;;;X
+DIP_SUE_FOR_PEACE;请求和平 ;;;;;;;;;;X
+PO_FORCED_DISARMAMENT;强迫裁军 ;;;;;;;;;;X
+PO_MILITARY_ACCESS;军事通行 ;;;;;;;;;;X
+PO_MAKE_PUPPET;建立傀儡政权 ;;;;;;;;;;X
+;;;;;;;;;;;X
+WE_AXIS;我们是轴心国的成员。 ;;;;;;;;;;X
+WE_ALLIES;我们是同盟国的成员。 ;;;;;;;;;;X
+WE_COMMIE;我们是共产国际的成员。 ;;;;;;;;;;X
+WE_NEUTRAL;我们是中立国。 ;;;;;;;;;;X
+THEY_AXIS;他们是轴心国的成员。 ;;;;;;;;;;X
+THEY_ALLIES;他们是同盟国的成员。 ;;;;;;;;;;X
+THEY_COMMIE;他们是共产国际的成员。 ;;;;;;;;;;X
+THEY_NEUTRAL;他们是中立国。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+HPROV_NOPOOL;这里没有资源库 ;;;;;;;;;;X
+HPROV_IC;工业产量 ;;;;;;;;;;X
+HPROV_AA;防空炮 ;;;;;;;;;;X
+HPROV_FORT;地面要塞 ;;;;;;;;;;X
+HPROV_CFORT;海岸要塞 ;;;;;;;;;;X
+HPROV_INFRA;基础设施 ;;;;;;;;;;X
+HPROV_RARE_MATERIALS;稀有材料产量 ;;;;;;;;;;X
+HPROV_ENERGY;煤炭产量 ;;;;;;;;;;X
+HPROV_METAL;金属产量 ;;;;;;;;;;X
+HPROV_OIL;石油产量 ;;;;;;;;;;X
+HPROV_MAN;兵源 ;;;;;;;;;;X
+HPROV_AIR_BASE;空军基地 ;;;;;;;;;;X
+HPROV_NAVAL_BASE;海军基地 ;;;;;;;;;;X
+HPROV_RADAR_STATION;雷达站 ;;;;;;;;;;X
+HPROV_NUCLEAR_REACTOR;核反应堆 ;;;;;;;;;;X
+HPROV_ROCKET_TEST;火箭测试场 ;;;;;;;;;;X
+HPROV_B_IN;建造更多工业设施 ;;;;;;;;;;X
+HPROV_B_CO;增强海岸防御工事 ;;;;;;;;;;X
+HPROV_B_LA;增强地面防御工事 ;;;;;;;;;;X
+HPROV_B_AA;增强防空设施 ;;;;;;;;;;X
+HPROV_B_IF;改善交通基础设施 ;;;;;;;;;;X
+NOPROJECT;目前没有方案 ;;;;;;;;;;X
+PROJECT_PROGRESS;进度:%d/%d ;;;;;;;;;;X
+PROJECT_INDUSTRY;改进工业设施 ;;;;;;;;;;X
+PROJECT_COASTAL;改进海岸工事 ;;;;;;;;;;X
+PROJECT_LAND;改进地面工事 ;;;;;;;;;;X
+PROJECT_AA;建造防空工事 ;;;;;;;;;;X
+PROJECT_INFRA;改进交通设施 ;;;;;;;;;;X
+;;;;;;;;;;;X
+HPROV_IRO_IIN;改进工业设施需要%d天 ;;;;;;;;;;X
+HPROV_IRO_BCF;改进海岸防御工事需要%d天 ;;;;;;;;;;X
+HPROV_IRO_BLF;改进地面防御工事需要%d天 ;;;;;;;;;;X
+HPROV_IRO_CAA;建造防空工事需要%d天 ;;;;;;;;;;X
+HPROV_IRO_III;改进交通设施需要%d天 ;;;;;;;;;;X
+HPROV_IRO_IC;本地区的工业产值 ;;;;;;;;;;X
+HPROV_IRO_AAR;本地区防空工事数量 ;;;;;;;;;;X
+HPROV_IRO_FORT;陆地防御体系的等级 ;;;;;;;;;;X
+HPROV_IRO_CFORT;海岸防御体系的等级 ;;;;;;;;;;X
+HPROV_IRO_INFRA;本地区的交通设施 ;;;;;;;;;;X
+HPROV_IRO_PARTISAN;游击队活动性 ;;;;;;;;;;X
+HPROV_IRO_RARE_MATERIALS;稀有材料日产量 ;;;;;;;;;;X
+HPROV_IRO_ENERGY;煤炭日产量 ;;;;;;;;;;X
+HPROV_IRO_METAL;金属日产量 ;;;;;;;;;;X
+HPROV_IRO_OIL;石油日产量 ;;;;;;;;;;X
+HPROV_IRO_MANPOWER;兵源 ;;;;;;;;;;X
+HPROV_DRO_PARTISAN;游击队会扰乱和破坏所控制的地区的治安和生产 ;;;;;;;;;;X
+HPROV_DRO_IC;本地区工厂数量，每建一个工厂，工业总产值增加一点。 ;;;;;;;;;;X
+HPROV_DRO_AAR;本地区防空工事的级别。受到敌方战略轰炸时，防空工事可 以保护本地的部分资产。 ;;;;;;;;;;X
+HPROV_DRO_FORT;本地区地面防御工事的级别。受到敌方攻击时，地面防御工 事可以为防御单位提供防御加成。 ;;;;;;;;;;X
+HPROV_DRO_CFORT;本地区海岸防御工事的级别。受到敌方海上或岸炮攻击时， 海岸防御工事可以为防御单位提供防御加成。 ;;;;;;;;;;X
+HPROV_DRO_INFRA;本地区交通设施的级别。例如公路和铁路条件。这个数字越 高，表示基础设施越好，地面部队越容易通行。 ;;;;;;;;;;X
+HPROV_DRO_RARE_MATERIALS;这是本地区稀有材料日产量 ;;;;;;;;;;X
+HPROV_DRO_ENERGY;这是本地区能量日产量 ;;;;;;;;;;X
+HPROV_DRO_METAL;这是本地区金属日产量 ;;;;;;;;;;X
+HPROV_DRO_OIL;这是本地区石油日产量 ;;;;;;;;;;X
+HPROV_DRO_MANPOWER;这是本地区每天达到服役年龄的人数 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONSUMER_IRO;消费 ;;;;;;;;;;X
+SUPPLY_IRO;补给 ;;;;;;;;;;X
+RESEARCH_IRO;研究 ;;;;;;;;;;X
+PRODUCTION_IRO;产量 ;;;;;;;;;;X
+CONSUMER_DRO;愉快的市民需要消费品—特别是在民主社会中。这是你的工 业生产中可以用来满足市民需求的产量比例。它保证国家不 会解体，但或许用来满足军事需求会更好。民主主义制度下 需要大量消费品来保证团结，法西斯主义制度下则需求稍少 一些，但仍达到一定数量，共产主义制度下需求的最少。 ;;;;;;;;;;X
+SUPPLY_DRO;补给用来让你的部队保持战斗力。这包括从弹药到食物的各 个方面的产品。无论如何，补给的生产占据了工业产品的最 大比例，它需要各个领域的资源。 ;;;;;;;;;;X
+RESEARCH_DRO;这是你的工业产值中用于科研的部分。这部分的比例越大， 则越多的研究可以同时进行。然而这将需要更多其它领域的 资源。 ;;;;;;;;;;X
+PRODUCTION_DRO;这是你的工业产值中用于生产新武器及工业设施的部分。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+HOS_ACCEPT;接受以下意识形态: ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+TECH_REQUIRED;所需前提科技 %s。\n;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+INSTALL_MINISTER;替换 %s ;;;;;;;;;;X
+NOREPMIN;没有候选人 ;;;;;;;;;;X
+HOIG_HEAD_OF_STATE;国家元首 ;;;;;;;;;;X
+HOIG_HEAD_OF_GOVERNMENT;政府首脑 ;;;;;;;;;;X
+HOIG_FOREIGN_MINISTER;外交部长 ;;;;;;;;;;X
+HOIG_ARMAMENT_MINISTER;财政部长 ;;;;;;;;;;X
+HOIG_MINISTER_OF_SECURITY;安全部长 ;;;;;;;;;;X
+HOIG_MINISTER_OF_INTELLIGENCE;情报部长 ;;;;;;;;;;X
+HOIG_CHIEF_OF_STAFF;国防部长 ;;;;;;;;;;X
+HOIG_CHIEF_OF_ARMY;陆军总长 ;;;;;;;;;;X
+HOIG_CHIEF_OF_NAVY;海军总长 ;;;;;;;;;;X
+HOIG_CHIEF_OF_AIR;空军总长 ;;;;;;;;;;X
+KEEPCURRENT;维持原状 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CATEGORY_NATIONAL_SOCIALIST;国家社会主义制度 ;;;;;;;;;;X
+CATEGORY_FASCIST;法西斯主义制度 ;;;;;;;;;;X
+CATEGORY_PATERNAL_AUTOCRAT;独裁制度 ;;;;;;;;;;X
+CATEGORY_SOCIAL_CONSERVATIVE;社会保守主义制度 ;;;;;;;;;;X
+CATEGORY_MARKET_LIBERAL;贸易自由主义制度 ;;;;;;;;;;X
+CATEGORY_SOCIAL_LIBERAL;社会自由主义制度 ;;;;;;;;;;X
+CATEGORY_SOCIAL_DEMOCRAT;社会民主主义制度 ;;;;;;;;;;X
+CATEGORY_LEFT_WING_RADICAL;左翼激进制度 ;;;;;;;;;;X
+CATEGORY_LENINIST;列宁主义制度 ;;;;;;;;;;X
+CATEGORY_STALINIST;斯大林主义制度 ;;;;;;;;;;X
+;;;;;;;;;;;X
+MORON;笨蛋 ;;;;;;;;;;X
+INCOMPETENT;不合格者 ;;;;;;;;;;X
+COMPETENT;合格者 ;;;;;;;;;;X
+GIFTED;有天赋的人 ;;;;;;;;;;X
+GENIUS;天才 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SRWIN_GIVE;分享科研 ;;;;;;;;;;X
+SRWIN_TITLE;选择科技 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BATTLE_ATTACKMOD;攻击效率:%.f\%%\n;;;;;;;;;;X
+BATTLE_DEFENDMOD;防御效率:%.f\%%\n;;;;;;;;;;X
+BATTLE_DIVRATIO;可指挥的陆军师和海军舰只的数量，以及本次战斗中可供指 挥的指挥官数量。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+INIT_SOUND;初始化音乐…… ;;;;;;;;;;X
+INIT_INTERFACE;初始化界面…… ;;;;;;;;;;X
+INIT_GAMEMAP_SPRITES;初始化图象…… ;;;;;;;;;;X
+INIT_GLOBALS;初始化世界…… ;;;;;;;;;;X
+INIT_PROVINCES;初始化省份…… ;;;;;;;;;;X
+INIT_SCENARIO;读取剧本中…… ;;;;;;;;;;X
+INIT_SCRIPT;初始化脚本…… ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FEMAINBTN_TUTORIAL;新手指南 ;;;;;;;;;;X
+FEMAINBTN_SINGLE;单人游戏 ;;;;;;;;;;X
+FEMAINBTN_MULTIPLAYER;多人游戏 ;;;;;;;;;;X
+FEMAINBTN_CREDITS;制作组 ;;;;;;;;;;X
+FEMAINBTN_REPLAYINTRO;动画回放 ;;;;;;;;;;X
+FEMAINBTN_EXIT;退出 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FECONNBTN_IPX;局域网模式 ;;;;;;;;;;X
+FECONNBTN_EURONET;战网模式 ;;;;;;;;;;X
+FECONNBTN_TCPIP;互联网模式 ;;;;;;;;;;X
+FECONN_ENTERNAME;输入姓名 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FETCPIPXBTN_JOIN;加入 ;;;;;;;;;;X
+FETCPIPXBTN_HOST;主机 ;;;;;;;;;;X
+FETCPIPX_CHOOSEGAME;选择一个游戏 ;;;;;;;;;;X
+FETCPIPX_IPADDRESS;输入IP ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FEBTN_INFO;信息 ;;;;;;;;;;X
+FEBTN_VICTORY;胜利 ;;;;;;;;;;X
+FEBTN_OPTIONS;选项 ;;;;;;;;;;X
+FEBTN_START;开始 ;;;;;;;;;;X
+FEBTN_ACCEPT;接受 ;;;;;;;;;;X
+FEBTN_STRATEGY;战略 ;;;;;;;;;;X
+FEBTN_BACK;退回 ;;;;;;;;;;X
+FEBTN_CANCEL;取消 ;;;;;;;;;;X
+FEBTN_BAN;踢人 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FESTR_SCENARIOS;剧本 ;;;;;;;;;;X
+FESTR_SAVEDGAMES;储存游戏 ;;;;;;;;;;X
+FESTR_PLAYERS;玩家 ;;;;;;;;;;X
+FESTR_NOSELECTION;(未选择) ;;;;;;;;;;X
+FESTR_STRATEGY;战略 ;;;;;;;;;;X
+FESTR_DIFFICULTY;难度: ;;;;;;;;;;X
+FESTR_ECONOMY;经济: ;;;;;;;;;;X
+FESTR_MILITARY;军事: ;;;;;;;;;;X
+FESTR_DIPLOMACY;外交: ;;;;;;;;;;X
+FESTR_CHANGECOUNTRY;右键点击旗帜来另选国家 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FESTR_HISTORICALINFO;历史简介 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FESTR_NOSCENARIO;请在左边的列表中选择剧情 ;;;;;;;;;;X
+FESTR_NOCOUNTRY;请在上面的旗帜中选择国家 ;;;;;;;;;;X
+FESTR_WAITSCENARIO;建立者没有选择剧情 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FECLI_HOSTSET1;<%s改变 ;;;;;;;;;;X
+FECLI_HOSTSET2;为 %s> ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_HEADER;选项 ;;;;;;;;;;X
+FEOPT_AIAGGRE;A.I.进攻性 ;;;;;;;;;;X
+FEOPT_DIFFICULTY;游戏难度 ;;;;;;;;;;X
+FEOPT_GAMESPEED;游戏速度 ;;;;;;;;;;X
+FEOPT_MULTI;战争迷雾 ;;;;;;;;;;X
+FEOPT_GAMEEVENTS;游戏事件 ;;;;;;;;;;X
+FEOPT_CONQCAP;强迫吞并 ;;;;;;;;;;X
+FEOPT_MISSIONS;动态任务 ;;;;;;;;;;X
+FEOPT_BASEVP;基本胜利点数 ;;;;;;;;;;X
+FEOPT_COUNTERS;使用军事符号 ;;;;;;;;;;X
+FEOPT_OK;确定 ;;;;;;;;;;X
+FEOPT_RANDOM;随机事件 ;;;;;;;;;;X
+FEOPT_MONARCH;历史事件 ;;;;;;;;;;X
+FEOPT_AUTOSAVE;自动存储 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_AI_LEVEL1;胆怯 ;;;;;;;;;;X
+FEOPT_AI_LEVEL2;懦弱 ;;;;;;;;;;X
+FEOPT_AI_LEVEL3;普通 ;;;;;;;;;;X
+FEOPT_AI_LEVEL4;好斗 ;;;;;;;;;;X
+FEOPT_AI_LEVEL5;疯狂 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_AUTOSAVE1;从不 ;;;;;;;;;;X
+FEOPT_AUTOSAVE2;每月 ;;;;;;;;;;X
+FEOPT_AUTOSAVE3;每三个月 ;;;;;;;;;;X
+FEOPT_AUTOSAVE4;每五个月 ;;;;;;;;;;X
+FEOPT_AUTOSAVE5;每十个月 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+GAMESPEED7;游戏速度设置为最快 ;;;;;;;;;;X
+GAMESPEED6;游戏速度设置为很快 ;;;;;;;;;;X
+GAMESPEED5;游戏速度设置为快 ;;;;;;;;;;X
+GAMESPEED4;游戏速度设置为稍快 ;;;;;;;;;;X
+GAMESPEED3;游戏速度设置为正常 ;;;;;;;;;;X
+GAMESPEED2;游戏速度设置为稍慢 ;;;;;;;;;;X
+GAMESPEED1;游戏速度设置为慢 ;;;;;;;;;;X
+GAMESPEED0;游戏速度设置为很慢 ;;;;;;;;;;X
+FEOPT_GAMESPEED7;最快 ;;;;;;;;;;X
+FEOPT_GAMESPEED6;很快 ;;;;;;;;;;X
+FEOPT_GAMESPEED5;快 ;;;;;;;;;;X
+FEOPT_GAMESPEED4;稍快 ;;;;;;;;;;X
+FEOPT_GAMESPEED3;正常 ;;;;;;;;;;X
+FEOPT_GAMESPEED2;稍慢 ;;;;;;;;;;X
+FEOPT_GAMESPEED1;慢 ;;;;;;;;;;X
+FEOPT_GAMESPEED0;很慢 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_ON;开 ;;;;;;;;;;X
+FEOPT_OFF;关 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_EVENS_NO;无 ;;;;;;;;;;X
+FEOPT_EVENTS_RANDOM;只有随机事件 ;;;;;;;;;;X
+FEOPT_EVENTS_HISTORICAL;只有历史事件 ;;;;;;;;;;X
+FEOPT_EVENTS_BOTH;随机和历史事件 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEOPT_DELAY_1;1秒 ;;;;;;;;;;X
+FEOPT_DELAY_2;2秒 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEVIC_HEADER;胜利条件 ;;;;;;;;;;X
+FEVIC_STANDARD;标准 ;;;;;;;;;;X
+FEVIC_MISSION;任务 ;;;;;;;;;;X
+FEVIC_SUPREMACY;霸权 ;;;;;;;;;;X
+FEVIC_DEATHMATCH;死亡模式 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEVIC_STANDARD_DESC;在剧情结束的时候获得大多数胜利点数则 胜利。 ;;;;;;;;;;X
+FEVIC_SUPREMACY_DESC;第一个获得特定胜利点数的国家则胜利。 ;;;;;;;;;;X
+FEVIC_DEATHMATCH_DESC;第一个征服特定地区的国家则胜利。 ;;;;;;;;;;X
+FEVIC_MISSION_DESC;第一个完成剧情任务的国家则胜利。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FEVIC_STANDARD_LOG;<胜利条件改变为标准(到%d年)。> ;;;;;;;;;;X
+FEVIC_SUPREMACY_LOG;<胜利条件改变为霸权(%d胜利点数)。> ;;;;;;;;;;X
+FEVIC_DEATHMATCH_LOG;<胜利条件改变为死亡模式(%d地区)。> ;;;;;;;;;;X
+FEVIC_MISSION_LOG;<胜利条件改变为任务模式。> ;;;;;;;;;;X
+;;;;;;;;;;;X
+FE_DIFFI5;非常简单 ;;;;;;;;;;X
+FE_DIFFI4;简单 ;;;;;;;;;;X
+FE_DIFFI3;一般 ;;;;;;;;;;X
+FE_DIFFI2;困难 ;;;;;;;;;;X
+FE_DIFFI1;非常困难 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FE_STAT1;非常弱 ;;;;;;;;;;X
+FE_STAT2;弱 ;;;;;;;;;;X
+FE_STAT3;一般 ;;;;;;;;;;X
+FE_STAT4;强 ;;;;;;;;;;X
+FE_STAT5;非常强 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BAN_HEADER;踢人！ ;;;;;;;;;;X
+BAN_TEXT;你被游戏创建者踢出游戏。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FINVP_MILITARY;军事 ;;;;;;;;;;X
+FINVP_RESOURCE;经济 ;;;;;;;;;;X
+FINVP_DIPLOMACY;外交 ;;;;;;;;;;X
+FINVP_MISSION;任务 ;;;;;;;;;;X
+FINVP_TOTAL;总共 ;;;;;;;;;;X
+;;;;;;;;;;;X
+VP_PEACE;和平决议 ;;;;;;;;;;X
+VP_BATTLE;战斗 ;;;;;;;;;;X
+VP_ECONOMY;经济 ;;;;;;;;;;X
+VP_DISCOVERIES;探索 ;;;;;;;;;;X
+VP_ESTABLISHMENT;设施 ;;;;;;;;;;X
+VP_DIPLOMACY;外交 ;;;;;;;;;;X
+VP_MISSION;任务 ;;;;;;;;;;X
+VP_DEATHMATCH;地区 ;;;;;;;;;;X
+VP_TOTAL;总共 ;;;;;;;;;;X
+;;;;;;;;;;;X
+VP_COUNTRY;国家 ;;;;;;;;;;X
+AICONTROLL;电脑控制 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+FETCP_FAIL;没有找到游戏 ;;;;;;;;;;X
+FETCP_FAILTEXT;在IP地址 %s没有找到游戏。请检查地 址和互联网连接然后重试。 ;;;;;;;;;;X
+DROPDOWN_NO_SELECTION;<没有找到游戏> ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+SCENARIO_MISSION_HEADER;任务情况 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SCENARIO_STANDSUP_INFO1;你可以在任何时候按F6键(并转入第一页) 来详细检查胜利点数或在任何时候按F1键 来查看各集团摘要。 ;;;;;;;;;;X
+SCENARIO_STANDSUP_BASEVP;胜利点数将在得到相应点数的地区后累加。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+STANDARDGAME_HEADER;游戏目标摘要 ;;;;;;;;;;X
+STANDARDGAME_1;标准剧情 ;;;;;;;;;;X
+STANDARDGAME_2;最多胜利点数的派系 ;;;;;;;;;;X
+STANDARDGAME_3;%s ;;;;;;;;;;X
+STANDARDGAME_4;将取得胜利。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+STANDARDGAME_INFO_HEADER;胜利进程 ;;;;;;;;;;X
+STANDARDGAME_INFO_1;标准剧情 ;;;;;;;;;;X
+STANDARDGAME_INFO_2;最多胜利点数的派系 ;;;;;;;;;;X
+STANDARDGAME_INFO_3;%s ;;;;;;;;;;X
+STANDARDGAME_INFO_4;将取得胜利。 ;;;;;;;;;;X
+STANDARDGAME_INFO_5;目前状况 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+SCENARIOMISS_HEADER;游戏目标摘要 ;;;;;;;;;;X
+SCENARIOMISS_1;战役剧情 ;;;;;;;;;;X
+SCENARIOMISS_2;第一个达成以下 ;;;;;;;;;;X
+SCENARIOMISS_3;剧情任务之一 ;;;;;;;;;;X
+SCENARIOMISS_4;的国家将取得胜利。 ;;;;;;;;;;X
+SCENARIOMISS_5;摘要:\n;;;;;;;;;;X
+;;;;;;;;;;;X
+SCENARIOMISS_INFO_HEADER;胜利进程 ;;;;;;;;;;X
+SCENARIOMISS_INFO_1;战役剧情 ;;;;;;;;;;X
+SCENARIOMISS_INFO_2;第一个达成以下 ;;;;;;;;;;X
+SCENARIOMISS_INFO_3;剧情任务之一 ;;;;;;;;;;X
+SCENARIOMISS_INFO_4;的国家将取得胜利。 ;;;;;;;;;;X
+SCENARIOMISS_INFO_5;;;;;;;;;;;X
+;;;;;;;;;;;X
+END_GOOD_HEADER;%t，我们有个好消息: ;;;;;;;;;;X
+END_GOOD_1;祝贺，你胜利了！ ;;;;;;;;;;X
+END_GOOD_2;最后状况 ;;;;;;;;;;X
+;;;;;;;;;;;X
+END_BAD_HEADER;%t，我们有个坏消息: ;;;;;;;;;;X
+END_BAD_1;你失败了！ ;;;;;;;;;;X
+END_BAD_2;最后状况 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BOX_BUTTON;开始游戏！ ;;;;;;;;;;X
+RESUME_BUTTON;返回 ;;;;;;;;;;X
+END_BUTTON;结束剧情 ;;;;;;;;;;X
+DEATHMATCH_ACTIVE;已激活 ;;;;;;;;;;X
+DEATHMATCH_ELIMINATED;已关闭 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+AUTOSAVE;自动储存…… ;;;;;;;;;;X
+QUICKSAVE;快速储存…… ;;;;;;;;;;X
+QUICKLOAD;快速读取…… ;;;;;;;;;;X
+NORMALSAVE;储存游戏…… ;;;;;;;;;;X
+WAITING_FOR_PLAYERS;(等待其他玩家……) ;;;;;;;;;;X
+;;;;;;;;;;;X
+PAUSE;游戏暂停 ;;;;;;;;;;X
+PAUSEOK;点击确定以便继续 ;;;;;;;;;;X
+PAUSEREMOVAL;游戏将在%d秒后继续…… ;;;;;;;;;;X
+PAUSETIMEOUT;在%d秒后请求暂停…… ;;;;;;;;;;X
+NOPAUSE;(没有可用的暂停) ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+SEA_CLEAR;清澈海域 ;;;;;;;;;;X
+SEA_ICEY;浮冰海域 ;;;;;;;;;;X
+SEA_STORMY;风暴！ ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONFIRMDISBAND;你真的决定永远裁减这个选定单位吗？ ;;;;;;;;;;X
+CONFIRMDISBANDHIS;这会裁减除了指挥官 %s和他的忠诚下 属之外的所有单位。你确信吗？ ;;;;;;;;;;X
+CONFIRMREMOVELEADERS;你真的决定裁减所有将领吗？ ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+ALR_WAR;%s在和 %s交战。\n;;;;;;;;;;X
+ALR_MILITARY;%s有一个军事同盟(直到 %s%d)。\n;;;;;;;;;;X
+;;;;;;;;;;;X
+LEAD_SORT_RANK;按等级排列 ;;;;;;;;;;X
+LEAD_SORT_SKILL;按技能排列 ;;;;;;;;;;X
+LEAD_SORT_NAME;按姓名排列 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RVIEW;关于 %s的信息 ;;;;;;;;;;X
+ROWN;%s所有 ;;;;;;;;;;X
+ROWNCON;%s所有\n%s占领 ;;;;;;;;;;X
+RINFO;关于 %s的信息 ;;;;;;;;;;X
+;;;;;;;;;;;X
+MECENATROLLOVER;从 %s到 %s的殖民者 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RPPORT;港口 ;;;;;;;;;;X
+RPNAVY;海军 ;;;;;;;;;;X
+RPARMY;陆军 ;;;;;;;;;;X
+RPEMPTY;空 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+MINIMAP_DRO;左键点击移动到点击地区的中心。右键点 击查看地区资讯并对选定单位下达命令。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+COV_EDIT_RES;我们当前每天从该地区运出%.1f%s 该地区共有%.1f%s\n;;;;;;;;;;X
+NUM_CONV;我们总共拥有:%d\n正在运转:%d\n正在生产:%d ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+OPTHEADER;游戏控制 ;;;;;;;;;;X
+OPTBTN_LOAD;载入存档 ;;;;;;;;;;X
+OPTBTN_SAVE;保存游戏 ;;;;;;;;;;X
+OPTBTN_OPTIONS;参数设置 ;;;;;;;;;;X
+OPTBTN_HINTS;提示信息 ;;;;;;;;;;X
+OPTBTN_QUIT;结束游戏 ;;;;;;;;;;X
+OPTBTN_BACK;返回游戏 ;;;;;;;;;;X
+OPTIONHEADER;选项 ;;;;;;;;;;X
+INGAME_MESSAGES;信息设置 ;;;;;;;;;;X
+;;;;;;;;;;;X
+OPTION_SFXVOLUME;音效音量 ;;;;;;;;;;X
+OPTION_MUSICVOLUME;音乐音量 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+HEADER_MISSIONS_AND_MONARCHS;全球事件 ;;;;;;;;;;X
+HEADER_ECONOMICAL;经济 ;;;;;;;;;;X
+HEADER_DIPLOMATIC;外交 ;;;;;;;;;;X
+HEADER_BATTLES_AND_MILITARY;战争和军事 ;;;;;;;;;;X
+HEADER_COLONIZATION_AND_EXPLORATION;殖民化和探险 ;;;;;;;;;;X
+HEADER_RELIGION;宗教 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DO_NOT_DISPLAY; 不显示此消息 ;;;;;;;;;;X
+DISPLAY_IN_LOG; 在游戏日志中显示 ;;;;;;;;;;X
+DISPLAY_TAB; 通告显示此类消息 ;;;;;;;;;;X
+DISPLAY_IN_BOX; 在消息框显示 ;;;;;;;;;;X
+DISPLAY_PAUSE; 在消息框显示并暂停 ;;;;;;;;;;X
+MESSAGE_HEADER;游戏内消息 ;;;;;;;;;;X
+MESSAGE_HEADER_PROPERTIES;消息设定 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_MAP;地图 ;;;;;;;;;;X
+BUTTON_TECH;科技 ;;;;;;;;;;X
+BUTTON_MIL;军事 ;;;;;;;;;;X
+BUTTON_PROD;生产 ;;;;;;;;;;X
+BUTTON_DIP;外交 ;;;;;;;;;;X
+BUTTON_LEDGER;统计表 ;;;;;;;;;;X
+BUTTON_ECO;经济地图模式 ;;;;;;;;;;X
+BUTTON_WEATHER;气候地图模式 ;;;;;;;;;;X
+BUTTON_0098;编辑城市 ;;;;;;;;;;X
+BUTTON_0100;编辑港口 ;;;;;;;;;;X
+BUTTON_0102;编辑单位 ;;;;;;;;;;X
+BUTTON_0104;编辑海滩 ;;;;;;;;;;X
+BUTTON_0106;编辑堡垒 ;;;;;;;;;;X
+BUTTON_0108;编辑防空 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CLOSE;关闭 ;;;;;;;;;;X
+;;;;;;;;;;;X
+HPCONI2;假如一个地区被其他国家控制，将不会有 任何收入也不会能建造部队。要确保控制 一个地区，请用一支部队进入该地区并击 败所有敌军。 ;;;;;;;;;;X
+HPOWNI2;该地区的占有者将得到全部税收和产出， 可以征兵，修筑要塞和工业设施。 ;;;;;;;;;;X
+HPOWNI1;由 %s控制的地区 ;;;;;;;;;;X
+HPCONI1;(由 %s控制的地区) ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+BADBOY0;我们的声誉极好。 ;;;;;;;;;;X
+BADBOY1;我们的声誉较好。 ;;;;;;;;;;X
+BADBOY2;我们的声誉略欠光彩。 ;;;;;;;;;;X
+BADBOY3;我们的声誉不太光彩。 ;;;;;;;;;;X
+BADBOY4;我们的声誉较差。 ;;;;;;;;;;X
+BADBOY5;我们的声誉极差。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+POLEADER;%s作为联盟领导 ;;;;;;;;;;X
+PONATION;%s单独(单独和谈) ;;;;;;;;;;X
+PONEGBLABLA;和平谈判与 ;;;;;;;;;;X
+PO_VASSAL;要求成为附庸 ;;;;;;;;;;X
+PO_RELIGION;要求宗教转变 ;;;;;;;;;;X
+PO_ACCESS;要求军事通行 ;;;;;;;;;;X
+;;;;;;;;;;;X
+PCCANCEL;取消 ;;;;;;;;;;X
+PCSEND;递交提议 ;;;;;;;;;;X
+PCANNEX;吞并 ;;;;;;;;;;X
+PCAMSG;阁下，我们已取得对 %s的全面胜利， 并有可能完全吞并他们。但这将会给世界的其他国家带来极 大不满。(点击‘取消’ 以进行常规和平解决。) ;;;;;;;;;;X
+PCRMSG;这将自动转变 %s到 %s并且不做 地区改变的结束战争，并给予你相当的胜利点数加成。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+POPROVINCE;地区 ;;;;;;;;;;X
+PORECIVER;接收者 ;;;;;;;;;;X
+POSCORE;价值 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+POROLLPROV;移除 %s从 %s。 ;;;;;;;;;;X
+POROLLPLUS;给 %s增加25$。 ;;;;;;;;;;X
+POROLLMINUS;从 %s移除25$。 ;;;;;;;;;;X
+POROLLDEMAND;和平请求 ;;;;;;;;;;X
+POROLLOFFER;和平提议 ;;;;;;;;;;X
+;;;;;;;;;;;X
+POROLLCENTER;置中地图于 %s。 ;;;;;;;;;;X
+POROLLDEMPROV;要求割让 %s。 ;;;;;;;;;;X
+POROLLOFFPROV;割让 %s。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+WARDESC_US;-100:我们什么也不控制。\n;;;;;;;;;;X
+WARDESC_THEM;+100:他们什么也不控制。\n;;;;;;;;;;X
+WARDESC_OCCUPIED;-%d:他们占领 %s。\n;;;;;;;;;;X
+WARDESC_LIBERATED;+%d:我们占领 %s。\n;;;;;;;;;;X
+WARDESC_BATTLE;%d:与 %s一起作战\n;;;;;;;;;;X
+WARDESC_ALLIANCE;%d:与联盟一起作战\n;;;;;;;;;;X
+;;;;;;;;;;;X
+VERYEASY;很简单 ;;;;;;;;;;X
+EASY;简单 ;;;;;;;;;;X
+MODERATE;适中 ;;;;;;;;;;X
+DIFFICULT;困难 ;;;;;;;;;;X
+VERYDIFFICULT;很困难 ;;;;;;;;;;X
+MNTHLYINCM;月收入:%d ;;;;;;;;;;X
+MNTHLYEXP;月支出:%d ;;;;;;;;;;X
+MNTHLYBAL;月平衡:%d ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+GENERAL;陆军将军 ;;;;;;;;;;X
+ADMIRAL;海军将军 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+UNITNAMESQUADRON;海军支队 ;;;;;;;;;;X
+UNITNAMEAIRFLEET;空军大队 ;;;;;;;;;;X
+UNITNAMEFLEET;舰队 ;;;;;;;;;;X
+UNITNAMECORPS;军团 ;;;;;;;;;;X
+UNITNAMEARMY;集团军 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UNITLEADERNAME;将领姓名 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RANKLADMIRAL;海军大将 ;;;;;;;;;;X
+RANKADMIRAL;海军上将 ;;;;;;;;;;X
+RANKVADMIRAL;海军中将 ;;;;;;;;;;X
+RANKRADMIRAL;海军少将 ;;;;;;;;;;X
+RANKCOMMODORE;海军准将 ;;;;;;;;;;X
+RANKSEACAPTAIN;海军上校 ;;;;;;;;;;X
+RANKKING;君主 ;;;;;;;;;;X
+RANKFMARSHAL;元帅 ;;;;;;;;;;X
+RANKMARSHAL;上将 ;;;;;;;;;;X
+RANKGENERAL;中将 ;;;;;;;;;;X
+RANKCOLONEL;少将 ;;;;;;;;;;X
+RANKMAJOR;准将 ;;;;;;;;;;X
+RANKCAPTAIN;上校 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UNITMANUEVER1;机动数值 ;;;;;;;;;;X
+UNITMANUEVER2;影响单位的总体效果 ;;;;;;;;;;X
+UNITNAVALSHOCK1;登船数值 ;;;;;;;;;;X
+UNITNAVALSHOCK2;影响单位在海战中登船阶段的效果 ;;;;;;;;;;X
+UNITNAVALFIRE1;火力数值 ;;;;;;;;;;X
+UNITNAVALFIRE2;影响单位在海战中开火阶段的效果 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UNITLANDSHOCK1;打击力 ;;;;;;;;;;X
+UNITLANDSHOCK2;在陆战打击时决定单位的持续力 ;;;;;;;;;;X
+UNITLANDFIRE1;火力 ;;;;;;;;;;X
+UNITLANDFIRE2;在陆战时决定单位的杀伤力 ;;;;;;;;;;X
+UNITSIEGE1;攻城力 ;;;;;;;;;;X
+UNITSIEGE2;影响单位在攻城时的表现 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+ANWMORALE;士气 ;;;;;;;;;;X
+;;;;;;;;;;;X
+INVINCIBLE;无敌的 ;;;;;;;;;;X
+VERYSTRONG;很高 ;;;;;;;;;;X
+STRONG;高 ;;;;;;;;;;X
+DISCIPLINED;有纪律的 ;;;;;;;;;;X
+WEAK;弱 ;;;;;;;;;;X
+BREAKING;低落的 ;;;;;;;;;;X
+PANIC;惊慌的 ;;;;;;;;;;X
+;;;;;;;;;;;X
+ANW_MORALE_IRO;士气越高，部队在战斗中能坚持而不溃败的时间越长。当部 队处于非战斗时士气会自动增长。 ;;;;;;;;;;X
+ANW_MORALE_DRO;最大士气:\n%.1f 正常士气(由科技决定)\n%.1f 宗教修正\n%.1f 维护修正 ;;;;;;;;;;X
+;;;;;;;;;;;X
+NIWNTP;TC:%d/%d ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+IWUNIT_REORG;建立一个新单位 ;;;;;;;;;;X
+IWUNIT_RETURN;归还控制权 ;;;;;;;;;;X
+EXP_SEND;派遣 %s ;;;;;;;;;;X
+IWUNIT_UNLOAD;卸载部队 ;;;;;;;;;;X
+IWUNIT_AIR;命令运输机 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+ANWNAVIES;%d个海军单位被选中 ;;;;;;;;;;X
+ANWARMIES;%d个陆军单位被选中 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UIW_NAVY;%d个海军单位被选中 ;;;;;;;;;;X
+UIW_ARMY;%d个陆军单位被选中 ;;;;;;;;;;X
+;;;;;;;;;;;X
+UIW_NOREORG;在单位移动、战斗或并不处于同一省份时你不能重组部队。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BADBOY6;我们的名誉很差。 ;;;;;;;;;;X
+BADBOY7;许多国家害怕和憎恨我们。 ;;;;;;;;;;X
+BADBOY8;大部分国家害怕和憎恨我们。 ;;;;;;;;;;X
+BADBOY9;全世界都憎恨我们！ ;;;;;;;;;;X
+;;;;;;;;;;;X
+ALL_EXPIRE;此联盟将自动于 %s%d到期。 ;;;;;;;;;;X
+ALL_VASSAL;该仆从国从 %s%d开始即已存在。 ;;;;;;;;;;X
+DIWROLL_ALL_I;查看所选择的国家与其它国家的联盟情况。 ;;;;;;;;;;X
+DIWROLL_ALL_D;联盟是一种正式条约，用以确定在发生敌 对行动时应当采取何种惩罚。你可以点击 ‘派遣外交官’按钮来建立新的联盟 ;;;;;;;;;;X
+DIWROLL_REL_I;查看所选择的国家与其它国家的外交关系。 ;;;;;;;;;;X
+DIWROLL_REL_D;你与其它国家的关系决定了他们对你的行 动和建议所采取的是敌对还是友好的态度。 你可以通过点击“派遣外交官”按钮来 改变双方的关系。(注意:关系值对于人 类玩家是无效的。) ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIWROLL_BACK;返回主菜单 ;;;;;;;;;;X
+DIWROLL_GOTO;将地图转到 %s ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPROL_COST;我们需要%.f金钱来进行这项活动 ;;;;;;;;;;X
+DIPROL_DIPS_INSTANT;(目前没有外交人员可用) ;;;;;;;;;;X
+DIPROL_DIPS_DELAYED;你必须等到有下一个外交人员可用。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPROL_NO_INSTANT;(外交官在途中) ;;;;;;;;;;X
+DIPROL_NO_DELAYED;当我们已经向一个国家派遣了一位外交官， 你必须等上一段时间(到%d%s%d) 才能向对方派遣另一个外交官。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BTNREL;关系 ;;;;;;;;;;X
+BTNNAT;国家 ;;;;;;;;;;X
+;;;;;;;;;;;X
+NOALLIANCES;(没有盟友) ;;;;;;;;;;X
+;;;;;;;;;;;X
+TREATY_PEACE;和平 ;;;;;;;;;;X
+TREATY_NON_AGGRESSION;互不侵犯条约 ;;;;;;;;;;X
+TREATY_TRADE;贸易协定 ;;;;;;;;;;X
+DIPOFFVAS;傀儡对方 ;;;;;;;;;;X
+DIPCANVAS;解散傀儡政权 ;;;;;;;;;;X
+DIPBRKVAS;解散傀儡政权 ;;;;;;;;;;X
+DIPANNEX;吞并 ;;;;;;;;;;X
+DIPWAR;宣战 ;;;;;;;;;;X
+DIPPEACE;求和 ;;;;;;;;;;X
+DIPINVAL;邀请加盟 ;;;;;;;;;;X
+DIPCNALL;建立一个新的联盟 ;;;;;;;;;;X
+DIPJOINALL;加入联盟 ;;;;;;;;;;X
+DIPBANALL;禁止加入联盟 ;;;;;;;;;;X
+DIPBRKALL;退出联盟 ;;;;;;;;;;X
+DIPATRADE;允许贸易 ;;;;;;;;;;X
+DIPRTRADE;贸易禁运 ;;;;;;;;;;X
+DIPOLOAN;提供借款 ;;;;;;;;;;X
+DIP_WARNING;发出警告(%d$) ;;;;;;;;;;X
+DIP_INSULT;发出侮辱信(%d$) ;;;;;;;;;;X
+DIP_CLAIM;宣布拥有主权(%d$) ;;;;;;;;;;X
+DIP_GUARANTEE;宣布保护(%d$) ;;;;;;;;;;X
+DIPCANTRADE;取消贸易协定 ;;;;;;;;;;X
+DIPOFFTRADE;提出贸易协定 ;;;;;;;;;;X
+DIPRACCESS;放弃军事通行权 ;;;;;;;;;;X
+DIPCACCESS;取消军事通行权 ;;;;;;;;;;X
+DIPAACCESS;索要军事通行权 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPROL_AMC_0;对 %s采取军事控制。 只有当对方是你联盟中的一员才能这么做。 ;;;;;;;;;;X
+DIPROL_CMC_0;取消军事控制 %s。 ;;;;;;;;;;X
+DIPROL_RPUP_0;结束我们对 %s政权的军事控制。 ;;;;;;;;;;X
+DIPROL_SE_0;向 %s派遣远征军。这将打开一个界面 以选择我们要向该国派遣哪些部队。 ;;;;;;;;;;X
+DIPROL_SE_1;我们只能向盟友派遣远征军 ;;;;;;;;;;X
+DIPROL_PUP_0;在 %s建立傀儡政权。只有当我们至少控制了 对方国家６６％以上的胜利点才能实现。他们将满足我们的 所有领土要求并建立忠实于我们的政府，他们还将加入我们 的联盟并允许我们的军队通过他们的领土。 ;;;;;;;;;;X
+DIPROL_DEMT_0;我们将要求 %s放弃属于我们的正当领土 ;;;;;;;;;;X
+DIPROL_SHARE_0;这将打开一个界面以选择我们可以交给 %s的科技。 ;;;;;;;;;;X
+DIPROL_LA_0;我们还不是任何一个军事联盟的成员，所以不能脱离联盟。 ;;;;;;;;;;X
+DIPROL_LA_1;我们不能退出当前的联盟。因为它是一个重大的联盟，我们 领导着它；或者联盟正处于战争中。 ;;;;;;;;;;X
+DIPROL_LA_2;我们将退出与 %s的军事联盟 ;;;;;;;;;;X
+DIPROL_IN_0;影响 %s以使他们的政策与我们的更趋接近 ;;;;;;;;;;X
+DIPROL_CN_0;取代 %s的现有政府并建立一个对我们更为 友好的政府 ;;;;;;;;;;X
+DIPROL_WEISO;我们是孤立主义者并对国外的事物不感兴趣 ;;;;;;;;;;X
+DIPROL_THEYISO;%s是孤立主义者并对国外的事物不感兴趣 ;;;;;;;;;;X
+DIPROL_WAR0;当你同另一国家处于战争中，你可以将部队开进对方国土并 占领它，被占领土的资源将为你所用。如果你完全征服了一 个国家，你可以吞并他们。 ;;;;;;;;;;X
+DIPROL_WAR1;你不能再次对 %s宣战，直到 %s%d。 ;;;;;;;;;;X
+DIPROL_WAR2;你不能对 %s宣战，因为你们同属一军事联盟， 要先退出联盟或将对方逐出联盟。 ;;;;;;;;;;X
+DIPROL_WAR3;他们同意了我们的军事通行，你不能在这种状况下对其宣战 ;;;;;;;;;;X
+DIPROL_WAR4;作为一个民主国家，你不能在和平时期对其他国家宣战，除 非全民的好战性高涨且你有一个稳固的干涉主义政策。 ;;;;;;;;;;X
+DIPROL_WAR5;你不能对 %s宣战，因为你与对方之间有 互不侵犯条约。 ;;;;;;;;;;X
+DIPROL_WAR6;你不能对 %s宣战，因为对方是你的傀儡政权。 ;;;;;;;;;;X
+DIPROL_PEACE0;我们将发出求和请求，这将恢复到双方战前的状态。 ;;;;;;;;;;X
+DIPROL_PEACE1;你必须等到 %s%d才能再次求和。 ;;;;;;;;;;X
+DIPROL_PEACE2;你已经提出了求和，在得到答复之前不能再次求和。 ;;;;;;;;;;X
+DIPROL_REFT1;你已经与 %s达成了停火协议，所以目前 你不能拒绝他们的贸易协定。 ;;;;;;;;;;X
+DIPROL_REFT0;通过拒绝与 %s进行贸易，该国的商人将 不能从你占有的省份或你的贸易中心获得任何利润，也不能 再安置更多的商人进入你的贸易中心。然而这将使 %s获得与你开战的借口，只要贸易禁运还存在。 ;;;;;;;;;;X
+DIPROL_ALLT0;通过恢复和 %s进行贸易。他们失去对你 宣战的理由。 ;;;;;;;;;;X
+DIPROL_RELIGION0;你只能与和你具有同一宗教信仰的国家进 行皇室联姻 (%s)。 ;;;;;;;;;;X
+DIPROL_RELIGION1;我们两国的皇室联姻大大加强了彼此之间 的关系。如果对他们宣战，这场皇室婚姻 将会在 %s %d 失效。 ;;;;;;;;;;X
+DIPROL_DYN_VASSAL;%s不能进行进行皇室婚姻当他还是 %s的附属国时。 ;;;;;;;;;;X
+DIPROL_DYNBRK0;;;;;;;;;;;X
+DIPROL_VASSAL0;;;;;;;;;;;X
+DIPROL_VASSAL1;;;;;;;;;;;X
+DIPROL_VASBRK0;;;;;;;;;;;X
+DIPROL_ANNEX0;吞并将使一个国家的土地和军事单位永久而不可逆转地为你 所有 ;;;;;;;;;;X
+DIPROL_ANNEX1;只有占有了一个国家的首都和所有关键地区你才能吞并一个 国家 ;;;;;;;;;;X
+DIPROL_CNA0;%s已经是 %s的军事联盟的一个成员。 选择该军事联盟的领导者并选择“加入联盟”以加盟。 ;;;;;;;;;;X
+DIPROL_CNA1;你已经是 %s的军事联盟的一个成员。 选择‘邀请入盟’来邀请 %s加入。 ;;;;;;;;;;X
+DIPROL_CNA2;作为军事联盟的一个成员，必须履行对盟友的宣战国家宣战 的义务，在一个时刻只能加入一个军事联盟，该联盟将持续 10年。 ;;;;;;;;;;X
+DIPROL_BRKMIL2;我们和 %s没有联盟关系。要离开现在的联盟， 选择 %s(联盟首领)点击‘离开联盟’。 (如果你是联盟首领并且你的联盟是三个联盟中最大的，你 将不能离开联盟。) ;;;;;;;;;;X
+DIPROL_BRKMIL1;;;;;;;;;;;X
+DIPROL_BRKMIL0;我们未加入任何一个军事联盟 ;;;;;;;;;;X
+DIPROL_BAN0;只有 %s联盟的首领能把他们踢出联盟， 但那会给他们一个对我们宣战的借口。 ;;;;;;;;;;X
+DIPROL_BAN1;这样做将会把 %s踢出联盟并且给了他对 我们宣战的理由，联盟中的其他成员也有可能会因此离开。 ;;;;;;;;;;X
+DIPROL_INV0;邀请 %s加入我们的军事联盟。 ;;;;;;;;;;X
+DIPROL_INV1;%s已经与 %s结为军事联盟。 ;;;;;;;;;;X
+DIPROL_INV2;向 %s提出军事联盟建议。 ;;;;;;;;;;X
+DIPROL_INV3;我们与 %s开战！ ;;;;;;;;;;X
+DIPROL_INV4;作为民主政体，我们必须要有足够高的战争倾向才能开战。 ;;;;;;;;;;X
+DIPROL_INV5;作为民主政体，%s不能加入军事联盟 直到有足够高的战争倾向。 ;;;;;;;;;;X
+DIPROL_JOIN0;向 %s请求加入他们与 %s的军事联盟 ;;;;;;;;;;X
+DIPROL_JOIN1;你已经是一个军事联盟的成员了 ;;;;;;;;;;X
+DIPROL_JOIN2;我们在同 %s作战，他们是这个军事联盟的成员。 ;;;;;;;;;;X
+DIPROL_JOIN3;他们是由 %s领导的军事联盟的一员。 你需要请求 %s让你加入！ ;;;;;;;;;;X
+DIPROL_LOAN0;;;;;;;;;;;X
+DIPROL_DISC0;和 %s交换土地。 ;;;;;;;;;;X
+DIPROL_WARNING;这会向 %s表明我们对可能爆发战争 的严正立场：如果该国在未来六个月内向我们的邻国宣战， 我们将有充分的理由向该国宣战。 ;;;;;;;;;;X
+DIPROL_INSULT;我们对该国的侮辱会严重影响我们与 %s的关系。 这会让他们拥有向我们宣战的充分理由。 ;;;;;;;;;;X
+DIPROL_CLAIM;如果我们与 %s 的皇室联姻，我们就可以 向他们提出主权要求。这是向他们宣战的 好理由，但同时这也会破坏我们与其他皇 室的联姻关系。 ;;;;;;;;;;X
+DIPROL_GUARANTEE;如果我们保障 %s独立，那么我们可以 有理由在五年内对攻击该国的国家进行宣战。 ;;;;;;;;;;X
+DIPROL_ASKACC;我们向 %s要求允许军事通行。作为保证， 我们将不能对其宣战。 ;;;;;;;;;;X
+DIPROL_REVACC;我们正给 %s军事通行的权利。收回通行 权他们将不能通过我们的领土，但他们将获得对我们开战的 借口。 ;;;;;;;;;;X
+DIPROL_CANACC;%s答应给我们军事通行的权利。我们的 军队在他们的境内时不能取消这个协议。 ;;;;;;;;;;X
+DIPROL_CANTRA;我们与 %s签署了贸易协定，所以我们不 能在同一框架内破坏他们的贸易。如果违反这个贸易协定，会 让他们拥有向我们宣战的充分理由。 ;;;;;;;;;;X
+DIPROL_OFFTRA;通过签署贸易协定，能够让我们与签署国在同一框架内进行 合作贸易。 ;;;;;;;;;;X
+DIPROL_SAT;傀儡国没有权力这样做。 ;;;;;;;;;;X
+DIPROL_NEGOT;向 %s提出商业谈判。 ;;;;;;;;;;X
+DIPROL_TRADE;向 %s提出贸易协议。 ;;;;;;;;;;X
+DIPROL_NONAGG;向 %s提出互不侵犯协议。 ;;;;;;;;;;X
+DIP_STATE_GIFT;赠送国家赠礼(%d$) ;;;;;;;;;;X
+DIP_PERSONAL_GIFT;赠送私人礼物(%d$) ;;;;;;;;;;X
+DIP_INTRODUCTION;发送介绍函(%d$) ;;;;;;;;;;X
+;;;;;;;;;;;X
+RELCH_A_SGIFT;我们的国家级赠礼 ;;;;;;;;;;X
+RELCH_A_PGIFT;我们的私人礼物 ;;;;;;;;;;X
+RELCH_A_INT;我们的介绍函 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPROL_R0;尝试大力改善外交关系。改善程度由领袖 的外交能力 (%d)，礼物和运气来决定， 而最坏的结果则是两国关系的进一步恶化。 ;;;;;;;;;;X
+DIPROL_R1;尝试改善外交关系。改善程度由领袖的外交 能力 (%d)，礼物和运气来决定，而最坏的 结果则是两国关系的进一步恶化。 ;;;;;;;;;;X
+DIPROL_R2;尝试谨慎的改善外交关系。改善程度由领袖 的外交能力 (%d)，礼物和运气来决定， 而最坏的结果则是两国关系的进一步恶化。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIP_SENDDIPLO;派遣外交官到 ;;;;;;;;;;X
+DIP_MODALL;改变同盟 ;;;;;;;;;;X
+DIP_MODREL;改变关系 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIP_CURR_ALL;现在的盟友 ;;;;;;;;;;X
+DIP_CURR_REL;现在的关系 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DW_VIEW_ALL;查看盟友 ;;;;;;;;;;X
+DW_VIEW_REL;查看关系 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DW_OURREL;与你的关系:%c%d ;;;;;;;;;;X
+;;;;;;;;;;;X
+DWINFO;信息 ;;;;;;;;;;X
+DWOWNINFO;查看 %s的盟友 ;;;;;;;;;;X
+DWGOTO;小地图…… ;;;;;;;;;;X
+DWSEND;派遣外交官 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DWSENDTO;向 %s派遣外交官 ;;;;;;;;;;X
+DWSVIWI;当前联盟 ;;;;;;;;;;X
+DWSENDI;派遣外交官前往 ;;;;;;;;;;X
+DWCLICK1;要选择一个国家，请在地图上 ;;;;;;;;;;X
+DWCLICK2;用鼠标左键单击。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+DWMLORD;请确认 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SUEPEACE;我们将与 %s议和。我们将退回到战前 的边界并不再制造更多对立。 ;;;;;;;;;;X
+CONFIRM_LEAVEALL;我们将退出联盟 ;;;;;;;;;;X
+;;;;;;;;;;;X
+AWRTRADE;我们将开始针对 %s的贸易禁运。\n我们将损失１点稳定度并使其拥有对我们宣战的理由，直到 我们解除禁运。 ;;;;;;;;;;X
+AWEXCHANGE;我们将与 %s共享情报。\n他们告诉我们%d区域的情况。 我们把%d的情况和他们分享。 ;;;;;;;;;;X
+AWBANALL;我们将把 %s踢出联盟。\n他们将获得针对我们的开战理由。 ;;;;;;;;;;X
+AWLVALL;我们将脱离同 %s的军事联盟。\n我们将损失１点稳定度并在未来的１２个月里使其他成员拥 有对我们宣战的理由。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+AWJOIN;我们将请求 %s接受我们加入他们 ;;;;;;;;;;X
+;;;;;;;;;;;X
+AWINVWP;我们将邀请 %s参战一同对抗 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+AWCNEW;我们将与 %s结成军事同盟 ;;;;;;;;;;X
+AWINV;我们将邀请 %s加入我们同以下国家的军事联盟 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONTROLSBY;同意被军事控制 ;;;;;;;;;;X
+WECONTROLS;军事控制 ;;;;;;;;;;X
+WECLAIMSON;宣称领土主权，对 ;;;;;;;;;;X
+DIMIL;军事联盟，同 ;;;;;;;;;;X
+DIMIL_LONE;是如下联盟的领袖: ;;;;;;;;;;X
+DIAGAINST;对抗 ;;;;;;;;;;X
+DIAND;和 ;;;;;;;;;;X
+DIWAR;与以下国家并肩 ;;;;;;;;;;X
+DIWARALONE;作战 ;;;;;;;;;;X
+VERSUS;对抗 ;;;;;;;;;;X
+DITRADEAGREE;与以下国家有贸易条约 ;;;;;;;;;;X
+DIACCESS;具有在以下国家的军事通行权 ;;;;;;;;;;X
+DIACCESS2;同意开放军事通行权给 ;;;;;;;;;;X
+DIGUAR;保证以下国家的独立 ;;;;;;;;;;X
+DIGUAR2;受到以下国家的保证独立 ;;;;;;;;;;X
+DITRUCE;同他们有一个休战协定，到 %s截止。 ;;;;;;;;;;X
+DIP_DEMANDTEXT;索要 %s来自 %s。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+NOUNLOADSPACE;长官，我们不能在这里卸载部队。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CR_PRESIDENT;总监制 ;;;;;;;;;;X
+CR_EXECUTIVE_PRODUCER;执行制作人； ;;;;;;;;;;X
+CR_PRODUCER;制作人 ;;;;;;;;;;X
+CR_CREATIVE_DIRECTOR;创意设计 ;;;;;;;;;;X
+CR_PRODUCT_MANAGER;产品管理 ;;;;;;;;;;X
+CR_CODE;计划 ;;;;;;;;;;X
+CR_LPROGRAMMING;程序设计主管 ;;;;;;;;;;X
+CR_PROGRAMMING;编程 ;;;;;;;;;;X
+CR_ADDITIONAL_PROGRAMMING;附加程序设计 ;;;;;;;;;;X
+CR_ART;艺术 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+CR_ART_LEAD;艺术指导 ;;;;;;;;;;X
+CR_ARTISTS;美工 ;;;;;;;;;;X
+CR_FMV_SEQUENCES;FMV次序 ;;;;;;;;;;X
+CR_ADDITIONAL_ART;附加艺术 ;;;;;;;;;;X
+CR_DESIGN;设计 ;;;;;;;;;;X
+CR_SCENARIO;剧本设计 ;;;;;;;;;;X
+CR_ASCENARIO;新增剧本设计 ;;;;;;;;;;X
+CR_PROJECT_LEAD_CREATIVE_DIRECTOR;计划指导/创造指导 ;;;;;;;;;;X
+CR_BASED;基础设计 ;;;;;;;;;;X
+CR_MUSIC;音乐和特技音效 ;;;;;;;;;;X
+CR_ORIGINAL_MUSIC;背景音效 ;;;;;;;;;;X
+CR_SOUND_EFFECTS;声音效果 ;;;;;;;;;;X
+CR_VOICES;语音 ;;;;;;;;;;X
+CR_MEDIA;媒体 ;;;;;;;;;;X
+CR_EDITOR;编剧 ;;;;;;;;;;X
+CR_MANUAL;指导 ;;;;;;;;;;X
+CR_TRANSLATION;翻译 ;;;;;;;;;;X
+CR_DTP;DTP ;;;;;;;;;;X
+CR_COVER_DESIGN;封面设计 ;;;;;;;;;;X
+CR_TESTING;测试 ;;;;;;;;;;X
+CR_TEST_MANAGER;测试负责人 ;;;;;;;;;;X
+CR_TESTERS;测试者 ;;;;;;;;;;X
+CR_SPECIAL_CONTRIBUTIONS;特别致谢 ;;;;;;;;;;X
+CR_ADDITIONAL_CONTRIBUTIONS;额外致谢 ;;;;;;;;;;X
+CR_EU1;欧洲中世纪原版制作者: ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+BZIP_COMPRESSING_FILE_WAIT;正在加载剧本，请稍等，这将需要15－30 秒，观察电脑是否死机。 ;;;;;;;;;;X
+BZIP_COMPRESSION_FAILED;加载剧本文件失败，请与游戏提供者联系。 ;;;;;;;;;;X
+BZIP_DECOMPRESSION_FAILED;剧本文件解压失败，请与游戏提供者联系。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+EN_GAME_NAME;钢铁雄心2 ;;;;;;;;;;X
+EN_VERSION;版本号: ;;;;;;;;;;X
+EN_WRONG_VERSION;你的版本与主机的版本不一致 ;;;;;;;;;;X
+EN_NAME;决战 ;;;;;;;;;;X
+EN_USER_LEFT_CHANNEL;已离开频道…… ;;;;;;;;;;X
+EN_HOST_GAME_NAME;的游戏 ;;;;;;;;;;X
+EN_CHOOSE_CHANNEL;请从可用频道列表中选择一个频道 ;;;;;;;;;;X
+EN_CHANGING_CHANNEL;切换频道 ;;;;;;;;;;X
+EN_GETTING_CHANNEL_LIST;恢复频道列表，请稍等…… ;;;;;;;;;;X
+EN_CONNECT_CHANNEL_FIRST;请先连接到一个频道 ;;;;;;;;;;X
+EN_GAME_CHANNEL_FOUND;已找到指定的游戏和频道！ ;;;;;;;;;;X
+EN_GAME_NOT_FOUND;没有找到指定的游戏。 ;;;;;;;;;;X
+EN_CHANNEL_NOT_FOUND;无法连接到指定频道。 ;;;;;;;;;;X
+EN_NO_NAME_SERVER;无法连接到服务器，请检查你是否已连接 到互联网 ;;;;;;;;;;X
+EN_SERVER_TIMED_OUT;服务器没有响应。 ;;;;;;;;;;X
+EN_CONNECTION_BROKE;你没有连接到网络 ;;;;;;;;;;X
+EN_NO_CONNECTION;连接不可用。请检查你是否已连接到互联网 ;;;;;;;;;;X
+EN_ERROR_RPC_THREAD;远程调用客户端程序取消时出错。 ;;;;;;;;;;X
+EN_GAME_INFO_IP_ADDRESS;IP地址: ;;;;;;;;;;X
+EN_GAME_INFO_DESCRIPTION;说明: ;;;;;;;;;;X
+EN_GAME_INFO_PLAYER_LIMIT;最大玩家数:%d ;;;;;;;;;;X
+EN_GAME_INFO_HOSTED_BY;主机: ;;;;;;;;;;X
+EN_GAME_INFO_PLAYERS;玩家: ;;;;;;;;;;X
+EN_USER_EXISTS_CHANNEL;已经存在一个同名的玩家了。请改变你的 名字或频道 ;;;;;;;;;;X
+EN_GAME_EXISTS;已经存在同名的游戏了 ;;;;;;;;;;X
+EN_GAME_LIMIT_REACHED;这个频道不能再建立更多的游戏了 ;;;;;;;;;;X
+EN_GAME_USER_ALREADY_JOINED;你已经登陆了一个游戏。 ;;;;;;;;;;X
+EN_GAME_OK;行了，你已经成功连接游戏 ;;;;;;;;;;X
+EN_GAME_FULL;你不能进入游戏，因为它已经达到最大玩 家数 ;;;;;;;;;;X
+EN_GAME_JOINED_FAILED_NOT_EXIST;此游戏已不再存在 ;;;;;;;;;;X
+EN_GAME_LEAVE_OK;你已离开游戏。 ;;;;;;;;;;X
+EN_GAME_LEAVE_FAILED_NO_EXISTS;你不能离开游戏，因为它已经不存在 ;;;;;;;;;;X
+EN_GAME_LEAVE_HOST;主机已离开游戏并取消了它 ;;;;;;;;;;X
+EN_GAME_REMOVE_OK;游戏已删除 ;;;;;;;;;;X
+EN_GAME_REMOVE_NO_EXISTS;游戏不能被删除，因为它已经不存在 ;;;;;;;;;;X
+EN_GAME_REMOVE_NOT_HOST;只有主机才能删除它。 ;;;;;;;;;;X
+EN_LAUNCH_GAME_OK;游戏开始。 ;;;;;;;;;;X
+EN_LAUNCH_GAME_FAILED_NO_EXIST;游戏不能开始，因为它还不存在 ;;;;;;;;;;X
+EN_LAUNCH_GAME_NOT_HOST;只有主机才能开始游戏 ;;;;;;;;;;X
+EN_RPC_UPDATE_MESSAGE_GAME_LAUNCH;主机已开始游戏 ;;;;;;;;;;X
+EN_RPC_UPDATE_MESSAGE_GAME_FORCE_LEAVE;主机已离开游戏 ;;;;;;;;;;X
+EN_GAME_STARTED_WITH_NAME;创造一个游戏的名字: ;;;;;;;;;;X
+EN_PLAYER_LOGGED_IN_TO_CHANNEL;登陆该频道 ;;;;;;;;;;X
+EN_NO_CHANNEL;没有选择频道 ;;;;;;;;;;X
+EN_GAMEINFO_STANDARD;EU2游戏 ;;;;;;;;;;X
+EN_NOT_CREATE_STATUS_THREAD;未建立连接状态。 ;;;;;;;;;;X
+EN_NOT_CREATE_CONNECT_THREAD;无法建立连接。 ;;;;;;;;;;X
+EURONET_CHAT_HEADLINE;聊天 ;;;;;;;;;;X
+EURONET_PLAYER_LIST_HEADLINE;玩家列表 ;;;;;;;;;;X
+EURONET_CURRENT_GAMES_HEADLINE;当前游戏 ;;;;;;;;;;X
+EURONET_GAME_INFO;游戏信息 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+IWPTLIMIT;全部可用的 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+DYNASTIC;皇家婚礼 ;;;;;;;;;;X
+MILALL;军事联盟 ;;;;;;;;;;X
+VASSALI;傀儡 ;;;;;;;;;;X
+ANNEX;吞并 ;;;;;;;;;;X
+WARALL;战争集团 ;;;;;;;;;;X
+SENDDIPLO;派外交官 ;;;;;;;;;;X
+ACPTSALC;同意联盟 ;;;;;;;;;;X
+DECALC;退出联盟 ;;;;;;;;;;X
+CNCLALC;取消你的联盟 ;;;;;;;;;;X
+HSOFFRD;向你提出 ;;;;;;;;;;X
+ACCEPT;同意联盟 ;;;;;;;;;;X
+DECLINE;退出联盟 ;;;;;;;;;;X
+CANCELPREV;取消先前的联盟 ;;;;;;;;;;X
+DCLRWAR;宣战 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+ADDAND;和 ;;;;;;;;;;X
+ADDOPP1;选择国家 ;;;;;;;;;;X
+ADDOPP2;联盟应该反对 ;;;;;;;;;;X
+CANTALLYAGAINST;你不能联合对抗那个国家 ;;;;;;;;;;X
+CANTALLY5;你最多只能以５个国家为目标 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CANTSENDTRADER1;长官，这个省份没有有价值的交易物品生产 ;;;;;;;;;;X
+CANTSENDMER;不能向那里派遣商人 ;;;;;;;;;;X
+SNDMERCHANT;向 %s派遣商人，花费的费用为%d$ ;;;;;;;;;;X
+SNDTRADER1;向 %s派遣商人 ;;;;;;;;;;X
+SNDTRADER2;有%d/100的机会以%d$的代价达成交易 ;;;;;;;;;;X
+SNDTRADER3;需要时间:%d月 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+MILWLANDTOG;查看陆军 ;;;;;;;;;;X
+MILWNAVTOG;查看海军 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DWCANTJOIN;你不能要求加入他们的联盟！ ;;;;;;;;;;X
+DWCANTINVITE;你不能请求加入他们的联盟！ ;;;;;;;;;;X
+DWADDOPPOTITEL1;提出 ;;;;;;;;;;X
+DWADDOPPOTITEL2;新的联盟 ;;;;;;;;;;X
+DWSIRE;长官！ ;;;;;;;;;;X
+DWSEL1;选择你反对的目标 ;;;;;;;;;;X
+DWSEL2;军事联盟，同 ;;;;;;;;;;X
+DWVERSUS;对 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPSTATUS;要求情况 ;;;;;;;;;;X
+DIPASKRTR;正式要求贸易禁运 ;;;;;;;;;;X
+DIPASKPEA;求和 ;;;;;;;;;;X
+DIPASKLN;要求离开民族独立 ;;;;;;;;;;X
+DIPASKWAR;要求宣战 ;;;;;;;;;;X
+DIPASKLA;要求地区独立 ;;;;;;;;;;X
+DIPASKHA;要求支配地区 ;;;;;;;;;;X
+DIPASKLOA;要求经济援助 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+DIPOURSELVES;长官，我们不能对自己派外交官。 ;;;;;;;;;;X
+DIPIMPOSSIBLE;长官，不要开玩笑！ ;;;;;;;;;;X
+;;;;;;;;;;;X
+GAME_END_QUIT;你离开了游戏 ;;;;;;;;;;X
+GAME_END_ELIMINATED;你被游戏赶出去了 ;;;;;;;;;;X
+GAME_END_AXIS_VICTORY;轴心国赢得了游戏的胜利 ;;;;;;;;;;X
+GAME_END_AXIS_TOTAL;轴心国赢得了全面的游戏胜利 ;;;;;;;;;;X
+GAME_END_ALLIES_VICTORY;盟国赢得了游戏的胜利 ;;;;;;;;;;X
+GAME_END_ALLIES_TOTAL;盟国赢得了全面的游戏胜利 ;;;;;;;;;;X
+GAME_END_COMMIES_VICTORY;共产国际赢得了游戏的胜利 ;;;;;;;;;;X
+GAME_END_COMMIES_TOTAL;共产国际赢得了全面的游戏胜利 ;;;;;;;;;;X
+;;;;;;;;;;;X
+GAME_SURRENDER;你投降了！ ;;;;;;;;;;X
+;;;;;;;;;;;X
+GAME_LOSER_MISSION;;;;;;;;;;;X
+GAME_WINNER_MISSION;;;;;;;;;;;X
+;;;;;;;;;;;X
+CONTROLL_YOUR;你如果控制了以下省份将会赢得游戏: %s。 ;;;;;;;;;;X
+CONTROLL_OTHER;控制了全部这些省份将取得胜利: %s。 ;;;;;;;;;;X
+MISS_INFO;任务信息 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+EVENTBUTTON_INFO;(你可以将鼠标放在按钮上 以了解你选择的效果。) ;;;;;;;;;;X
+;;;;;;;;;;;X
+DIP_PUPPET_SHORT;是 %s的傀儡国。 ;;;;;;;;;;X
+DIP_PUPPET;%s是 %s的傀儡国。 ;;;;;;;;;;X
+DIP_PURPUPPET;%s控制 %s成为傀儡国。 ;;;;;;;;;;X
+DIP_NON_AGGRESSION;%s和 %s签订了互不侵犯协议。 ;;;;;;;;;;X
+DIP_GOV;%s是 %s。 ;;;;;;;;;;X
+WM_OURS;己方置顶 ;;;;;;;;;;X
+WM_NAME;数量 ;;;;;;;;;;X
+WM_PRIO;优先权 ;;;;;;;;;;X
+EYR_PUPPET;来自傀儡国 ;;;;;;;;;;X
+EYR_OVERLORD;送交宗主国 ;;;;;;;;;;X
+UIW_OUT_OF_RANGE2;这个单位的船只已经航行了%.f公里，超出 其%.f公里的最大航程(上次部署在 %s， 从那里进行了物资和燃油的补给。) ;;;;;;;;;;X
+UIW_IN_RANGE2;这个单位的船只已经航行了%.f公里，超出 其%.f公里的最大航程(上次部署在 %s， 从那里进行了物资和燃油的补给。) ;;;;;;;;;;X
+NUW_DIV;%d编队 ;;;;;;;;;;X
+AUW_DIV;%d联队 ;;;;;;;;;;X
+T_DIVISIONS;陆军师 ;;;;;;;;;;X
+T_DIVISION;陆军师 ;;;;;;;;;;X
+T_AIR_DIVISIONS;空军师 ;;;;;;;;;;X
+T_AIR_DIVISION;空军师 ;;;;;;;;;;X
+T_AIR_WINGS;空军联队 ;;;;;;;;;;X
+T_AIR_WING;航空军 ;;;;;;;;;;X
+T_ARMY_CORPS;陆军军 ;;;;;;;;;;X
+T_BOMBER;轰炸机 ;;;;;;;;;;X
+T_DAYS;日 ;;;;;;;;;;X
+T_IC;IC ;;;;;;;;;;X
+T_CAPITAL_SHIPS;主力舰 ;;;;;;;;;;X
+T_CAPITAL_SHIP;主力舰 ;;;;;;;;;;X
+T_SQUADRONS;小型舰艇编队 ;;;;;;;;;;X
+T_SQUADRON;小型舰艇编队 ;;;;;;;;;;X
+DET_REPORT;侦察报告: ;;;;;;;;;;X
+REB;游击队 ;;;;;;;;;;X
+KPVALUE;本省的胜利点数。 ;;;;;;;;;;X
+MANPOWER_DRO;每日人力增长%.2f。 ;;;;;;;;;;X
+MANPOWER_DC;每日补充消耗%.2f人力。我们需要%.2f的人力来给部队提 供补充，以达到齐装满员。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+FB_IND;建设更多的工业 ;;;;;;;;;;X
+FB_CF;加固我们的海岸防御工事 ;;;;;;;;;;X
+FB_LF;加固我们的防御工事 ;;;;;;;;;;X
+FB_AA;建造更多的防空火炮 ;;;;;;;;;;X
+FB_INF;提高基础设施 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_SUPPLY;补给地图形式 ;;;;;;;;;;X
+EYRSORTBY;排序 ;;;;;;;;;;X
+UIW_RE_DRO;你需要%.1f的人力和%.1f的物资来增援该单位 ;;;;;;;;;;X
+CONVOY_TRANS;我们的商船运输每月可提供%.1f船只的运输量 ;;;;;;;;;;X
+UIW_ATTRITION;这个单位消耗过大，其现有实力每周会损失%.2f\%%。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+TE_SUB_ATTACK;潜艇攻击 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DATE;Y年MD日 ;;;;;;;;;;X
+TIME;Y年MD日H:00 ;;;;;;;;;;X
+LOADGAME;载入游戏 ;;;;;;;;;;X
+SAVEGAME;存储游戏 ;;;;;;;;;;X
+ERROR_SOUND_NAME;严重错误！ ;;;;;;;;;;X
+ERROR_SOUND_DESC;HOI2与你的声卡不兼容。请安装最新的声 卡驱动程序。如果问题仍然存在，请联系 技术支持人员。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+JOINMPGAME;<%s已经加入> ;;;;;;;;;;X
+LEFTMPGAME;<%s已经离开> ;;;;;;;;;;X
+;;;;;;;;;;;X
+TE_NUKE_PROD;核弹生产效率加倍。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+PARANOTSUPPLY;空降兵无法在没有补给的省份进入运输机 ;;;;;;;;;;X
+TE_SPEED_CAP_ART;炮兵团的速度上限 ;;;;;;;;;;X
+TE_SPEED_CAP_ENG;工兵团的速度上限 ;;;;;;;;;;X
+TE_SPEED_CAP_AA;防空团的速度上限 ;;;;;;;;;;X
+TE_SPEED_CAP_AT;反坦克团的速度上限 ;;;;;;;;;;X
+DIV_RD_IRO4;你的运输网只能同时支持%d个师的重新部署 ;;;;;;;;;;X
+REDEPLOY_CAP;重新部署%d个师／容量%d ;;;;;;;;;;X
+3RD;;;;;;;;;;;X
+1TH;;;;;;;;;;;X
+2TH;;;;;;;;;;;X
+FLOTILLA;海军 ;;;;;;;;;;X
+EPERSONALITY_OTHER_GOV;目标政府是另一个类型: ;;;;;;;;;;X
+EPERSONALITY_SAME_GOV;目标政府是同一个类型: ;;;;;;;;;;X
+EPERSONALITY_BIGGER_COUNTRY;目标国家小于己方疆域的一半: ;;;;;;;;;;X
+T_CONSTRUCTION;建设修正 ;;;;;;;;;;X
+T_ARMY_INTELLIGENCE;陆军情报局 ;;;;;;;;;;X
+T_INTELLIGENCE;情报局 ;;;;;;;;;;X
+T_DI;国防工业 ;;;;;;;;;;X
+T_CHANCE;机会 ;;;;;;;;;;X
+NAVAL_DETECTION;海军侦察 ;;;;;;;;;;X
+LAND_UNIT_SPEED;陆上单位速度 ;;;;;;;;;;X
+MANPOWER_GROWTH;人力增长 ;;;;;;;;;;X
+ORG_REGAIN;组织度恢复 ;;;;;;;;;;X
+DEF_COMBAT_MODIFIER;防御战修正 ;;;;;;;;;;X
+OFF_COMBAT_MODIFIER;进攻战修正 ;;;;;;;;;;X
+T_LAND_FORT;陆地要塞 ;;;;;;;;;;X
+T_FOREIGN_MANPOWER_USE;外国人力使用 ;;;;;;;;;;X
+T_FOREIGN_IC_USE;外国IC使用 ;;;;;;;;;;X
+SELECT_MODEL;选择型号 ;;;;;;;;;;X
+WHICH_MODEL;改为 %s ;;;;;;;;;;X
+CONVOYWHERE;%s－ %s的输送船队在 %s ;;;;;;;;;;X
+LIBERATE_NATION;解放国家 ;;;;;;;;;;X
+LIBVAS_TITLE;他们将得到如下省份: ;;;;;;;;;;X
+VASSAL_GRANT;批准 ;;;;;;;;;;X
+VASSAL_CURRENT;产生: %s ;;;;;;;;;;X
+VASSAL_NONE;未选择 ;;;;;;;;;;X
+LIB_NATION_TITLE;选择需要解放的国家 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DOMW_DELAY;我们到 %s才能再次调整。 ;;;;;;;;;;X
+DOMW_MODIFY;向 %s前进一步，就可以得到以下效果:\n;;;;;;;;;;X
+DOMW_CAP;我们现在的意识形态不允许这个变化\n;;;;;;;;;;X
+DOMNAME_DEM_L;民主主义 ;;;;;;;;;;X
+DOMNAME_DEM_R;独裁主义 ;;;;;;;;;;X
+DOMNAME_POL_L;左翼 ;;;;;;;;;;X
+DOMNAME_POL_R;右翼 ;;;;;;;;;;X
+DOMNAME_FRE_L;开放社会 ;;;;;;;;;;X
+DOMNAME_FRE_R;保守社会 ;;;;;;;;;;X
+DOMNAME_FRM_L;自由市场 ;;;;;;;;;;X
+DOMNAME_FRM_R;中央计划 ;;;;;;;;;;X
+DOMNAME_PRO_L;常备军制 ;;;;;;;;;;X
+DOMNAME_PRO_R;征召军制 ;;;;;;;;;;X
+DOMNAME_DEF_L;鹰派 ;;;;;;;;;;X
+DOMNAME_DEF_R;鸽派 ;;;;;;;;;;X
+DOMNAME_INT_L;干涉主义 ;;;;;;;;;;X
+DOMNAME_INT_R;孤立主义 ;;;;;;;;;;X
+DOMESTIC_DEM_DEM;我们的国家是民主制度\n;;;;;;;;;;X
+DOMESTIC_DEM_ADEM;我们的国家是专制制度\n;;;;;;;;;;X
+DOMESTIC_POL_GOV;内阁成员会随意识形态而发生变化\n;;;;;;;;;;X
+DOMESTIC_FRE_DISN;本土省份的反对率: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRE_DISO;占领省份的反对率: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRE_CINT;反情报惩罚: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRM_CGM;生活消费品收入: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRM_RES;资源生产: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRM_PRC;生产时间和花费: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_FRM_IC;全部IC: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_PRA_EXP;人力经验: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_PRA_MAN;人力增长: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_DEF_PRC;生产时间和花费: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_DEF_CGM;生活消费品收入: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_INT_COST;外交行动支出: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_INT_REL;外交关系正常化加成: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_DOW_COST;宣战异议: %s%.1f\n;;;;;;;;;;X
+DOMESTIC_PART_RISK;游击行动: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_UPG_COST;升级时间和花费: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_DISSENT_GROWTH;反对率增长: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_CG_DEMAND;民用支出: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_GEARING_BONUS;流水线加成: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_ORG_BONUS;单位组织度加成: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_TEAM_SALARY;技术队伍薪水: %s%.1f\%%\n;;;;;;;;;;X
+DOMESTIC_REQ_BELLIGERENCE;宣战需要%d敌意。\n;;;;;;;;;;X
+DOMESTIC_CAN_ALLY;能提出和加入联盟。\n;;;;;;;;;;X
+DOMESTIC_CANNOT_ALLY;不能提出和加入联盟。\n;;;;;;;;;;X
+POLICYDESC_0;这个状态条表示政府对于政治倾向的态度。它可以从民主变 化到专制。 ;;;;;;;;;;X
+POLICYDESC_1;这个状态条表示政府对于社会平等性的态度。政治左派希望 以自由和秩序的代价来换取平等性，而政治右派则希望通过 降低平等性来提高自由和秩序。 ;;;;;;;;;;X
+POLICYDESC_2;这个状态条表示政府对于社会自由度的态度。开放社会的拥 护者希望以平等和秩序的代价来换取自由度，而封闭社会的 拥护者则希望通过降低自由度来提高平等性或者秩序。 ;;;;;;;;;;X
+POLICYDESC_3;这个状态条表示政府对于经济系统的态度。它可以是自由市 场、混合市场、中央计划市场。通常你会发现自由主义者支 持自由市场，而保守派和民主主义者则支持另一个方面。 ;;;;;;;;;;X
+POLICYDESC_4;这个状态条表示政府对于国防系统的态度。它可以是常备军 ，也可能是征募和志愿预备役。由于常备军通常耗费较大， 市场自由主义者和低花费者通常希望采取预备役制度，而传 统人士、社会保守派希望能采取常备军制度。 ;;;;;;;;;;X
+POLICYDESC_5;这个状态条表示政府对于战争与和平的态度。它可以是现实 主义的鹰派，或者理想主义抑或国际主义的鸽派。 ;;;;;;;;;;X
+POLICYDESC_6;这个状态条表示政府对于世界政治的态度。它可以是帝国扩 张主义、干涉主义、中立乃至孤立主义。 ;;;;;;;;;;X
+CE_COUNTERATTACK;反攻 ;;;;;;;;;;X
+CE_ASSAULT;突袭 ;;;;;;;;;;X
+CE_ENCIRCLEMENT;包围 ;;;;;;;;;;X
+CE_AMBUSH;伏击 ;;;;;;;;;;X
+CE_DELAY;阻击 ;;;;;;;;;;X
+CE_TACTICAL_WITHDRAWAL;战术撤退 ;;;;;;;;;;X
+CE_BREAKTHROUGH;突破 ;;;;;;;;;;X
+;;;;;;;;;;;X
+CED_COUNTERATTACK;这是防御一方为破坏敌方计划而发动的小规模反攻。尽管防 御方会在此期间经受一定甚至较大的损失，不过这种行动会 大大降低敌方攻击部队的组织度。 ;;;;;;;;;;X
+CED_ASSAULT;这是攻击一方采取的大规模的持续进攻行动，尽管进攻方会 在此期间经受较大的损失，不过这种行动会大大降低敌方防 御部队的组织度。 ;;;;;;;;;;X
+CED_ENCIRCLEMENT;这是攻击一方成功的把防御部队压制和包围在一定的地域之 中。当防御方持续处于这种态势会遭受很大的损失，而进攻 者很少会损失较大规模的组织度。(尽管他们也还是会遭受一 定的损失)。 ;;;;;;;;;;X
+CED_AMBUSH;攻击方成功的伏击了敌军部队，造成了敌方大量的兵力和士 气的损失，同时己方的损失很小。 ;;;;;;;;;;X
+CED_DELAY;防御方采取了阻击行动，在此期间大大降低了自己的损失。 ;;;;;;;;;;X
+CED_TACTICAL_WITHDRAWAL;在此期间，防御方谨慎的向这个省份的某个地点实施了战术 撤退。两方都回遭受一定的兵力和组织度的损失，不过防御 一方的组织度损失较小。 ;;;;;;;;;;X
+CED_BREAKTHROUGH;攻击方成功的在这个省份的部分地区突破了敌方的防御。这 会大大降低防御方的组织度，并降低攻击方的兵力损失。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SUPPLIED_FROM;补给来自 %s ;;;;;;;;;;X
+PROVLIST;省份: ;;;;;;;;;;X
+MIL_ARMYLIST;陆军单位: ;;;;;;;;;;X
+MIL_NAVYLIST;海军单位: ;;;;;;;;;;X
+MIL_AIRLIST;空军单位: ;;;;;;;;;;X
+COMBATLIST;战斗: ;;;;;;;;;;X
+;;;;;;;;;;;X
+CIWFILTER_ALL;全部 ;;;;;;;;;;X
+CIWFILTER_LAND;陆地 ;;;;;;;;;;X
+CIWFILTER_AIR;空基 ;;;;;;;;;;X
+CIWFILTER_NAVAL;海基 ;;;;;;;;;;X
+CIWFILTER_BOMBARDMENT;轰炸 ;;;;;;;;;;X
+AVAIL_REPL;可能的补充 ;;;;;;;;;;X
+NO_REPLACEMENTS;没有可能！ ;;;;;;;;;;X
+;;;;;;;;;;;X
+DEV_PROD_PERC;生产效率:%.1f\%% ;;;;;;;;;;X
+;;;;;;;;;;;X
+PRODIW_DIV;陆军 ;;;;;;;;;;X
+PRODIW_AIR;空军 ;;;;;;;;;;X
+PRODIW_NAV;海军 ;;;;;;;;;;X
+PRODIW_BRI;加强团 ;;;;;;;;;;X
+PRODIW_AIB;空军基地 ;;;;;;;;;;X
+PRODIW_NAB;海军基地 ;;;;;;;;;;X
+PRODIW_IC;工厂 ;;;;;;;;;;X
+PRODIW_AA;防空 ;;;;;;;;;;X
+PRODIW_LF;陆防 ;;;;;;;;;;X
+PRODIW_CF;海防 ;;;;;;;;;;X
+PRODIW_RA;雷达站 ;;;;;;;;;;X
+PRODIW_NU;反应堆 ;;;;;;;;;;X
+PRODIW_RO;火箭基地 ;;;;;;;;;;X
+PRODIW_IN;交通 ;;;;;;;;;;X
+PRODIW_CO;输送船 ;;;;;;;;;;X
+PRODIW_ES;护航舰 ;;;;;;;;;;X
+;;;;;;;;;;;X
+HOIPP_INDUSTRY;工厂 ;;;;;;;;;;X
+HOIPP_COASTAL;海岸要塞 ;;;;;;;;;;X
+HOIPP_LAND;陆上要塞 ;;;;;;;;;;X
+HOIPP_AA;防空火炮 ;;;;;;;;;;X
+HOIPP_INFRA;基础设施 ;;;;;;;;;;X
+HOIPP_AIR_BASE;空军基地 ;;;;;;;;;;X
+HOIPP_NAVAL_BASE;海军基地 ;;;;;;;;;;X
+HOIPP_RADAR_STATION;雷达站 ;;;;;;;;;;X
+HOIPP_NUCLEAR_REACTOR;核反应堆 ;;;;;;;;;;X
+HOIPP_ROCKET_TEST;火箭试验场 ;;;;;;;;;;X
+PRODIW_CONVOY;护航: ;;;;;;;;;;X
+PRODIW_SUDEP;资源站: ;;;;;;;;;;X
+RODIW_TA1;贸易: ;;;;;;;;;;X
+RODIW_TA2;支出: ;;;;;;;;;;X
+RODIW_TA3;收入: ;;;;;;;;;;X
+PRODIW_START;开始生产 ;;;;;;;;;;X
+PRODIW_CLOSE;关闭 ;;;;;;;;;;X
+PRODIW_DATE;需要%d天开发。 ;;;;;;;;;;X
+PRODIW_ICCOST;需要%.1fIC。 ;;;;;;;;;;X
+PRODIW_MPCOST;需要%.1f人力。 ;;;;;;;;;;X
+PRODIW_COUNT;顺序进行: ;;;;;;;;;;X
+PRODIW_RUNS;同时进行: ;;;;;;;;;;X
+;;;;;;;;;;;X
+CIF_ALL;全部 ;;;;;;;;;;X
+CIF_AXIS;轴心国 ;;;;;;;;;;X
+CIF_ALLIES;同盟国 ;;;;;;;;;;X
+CIF_COMMIES;共产国际 ;;;;;;;;;;X
+CIF_AFRICA;非洲 ;;;;;;;;;;X
+CIF_AMERICA;美洲 ;;;;;;;;;;X
+CIF_ASIA;亚洲 ;;;;;;;;;;X
+CIF_EUROPE;欧洲 ;;;;;;;;;;X
+;;;;;;;;;;;X
+TF_ALL;所有 ;;;;;;;;;;X
+TF_AXIS;轴心 ;;;;;;;;;;X
+TF_ALLIES;同盟 ;;;;;;;;;;X
+TF_COMMIES;共产国际 ;;;;;;;;;;X
+TF_AFRICA;非洲 ;;;;;;;;;;X
+TF_AMERICA;美洲 ;;;;;;;;;;X
+TF_ASIA;亚洲 ;;;;;;;;;;X
+TF_EUROPE;欧洲 ;;;;;;;;;;X
+TF_ENERGY;煤炭 ;;;;;;;;;;X
+TF_METAL;金属 ;;;;;;;;;;X
+TF_RARE;稀有材料 ;;;;;;;;;;X
+TF_OIL;石油 ;;;;;;;;;;X
+TF_SUPPLY;补给 ;;;;;;;;;;X
+TF_MONEY;金钱 ;;;;;;;;;;X
+;;;;;;;;;;;X
+DW_HAVETREATY;你与他们签署了和平协议，破坏它并不明智。\n;;;;;;;;;;X
+DW_DISSENT;开战会提高百分之%.1f的反对率。\n;;;;;;;;;;X
+DW_ALLIES;下列国家和他们有同盟关系，会在战争中站在他们一边。 ;;;;;;;;;;X
+DECLARE_WAR_TITLE;对 %s宣战 ;;;;;;;;;;X
+NEW_ALLIANCE_TITLE;与 %s结成同盟 ;;;;;;;;;;X
+NEWALL_EXPL;这会形成一个由你领导的新联盟，联盟的国家会共同作战。 ;;;;;;;;;;X
+INVITE_ALLIANCE_TITLE;邀请 %s加入我们的联盟 ;;;;;;;;;;X
+JOIN_ALLIANCE_TITLE;要求加入 %s的联盟 ;;;;;;;;;;X
+LEAVE_ALLIANCE_TITLE;离开 %s领导的联盟 ;;;;;;;;;;X
+INFLUENCE_NATION_TITLE;影响 %s的政治 ;;;;;;;;;;X
+COUP_NATION_TITLE;策划 %s的政变 ;;;;;;;;;;X
+PUPPET_NATION_TITLE;在 %s设立傀儡政府 ;;;;;;;;;;X
+RELEASE_PUPPET_TITLE;结束我们对于 %s的控制 ;;;;;;;;;;X
+ANNEX_NATION_TITLE;吞并 %s。 ;;;;;;;;;;X
+DEMAND_TERRITORY_TITLE;要求 %s割让领土 ;;;;;;;;;;X
+GUARANTEE_INDE_TITLE;允许 %s的独立 ;;;;;;;;;;X
+ASSUME_CONTROL_TITLE;对 %s军事控制。 ;;;;;;;;;;X
+CANCEL_CONTROL_TITLE;取消对 %s军事控制。 ;;;;;;;;;;X
+ASK_MILACC_TITLE;要求在 %s取得军事通行权 ;;;;;;;;;;X
+REV_MILACC_TITLE;废除 %s的军事通行权 ;;;;;;;;;;X
+CANCEL_MILACC_TITLE;取消我们在 %s的军事通行权 ;;;;;;;;;;X
+OURLEATION;我们与他们的关系:%+.0f ;;;;;;;;;;X
+SEND_EXP_TITLE;向 %s派遣远征军 ;;;;;;;;;;X
+OFFER_NAP_TITLE;向 %s提出互不侵犯协议 ;;;;;;;;;;X
+CANCEL_NAP_TITLE;取消与 %s的互不侵犯协议 ;;;;;;;;;;X
+CANCEL_TA_TITLE;取消与 %s的商业协议 ;;;;;;;;;;X
+OFFER_TA_TITLE;向 %s提出商业协议 ;;;;;;;;;;X
+;;;;;;;;;;;X
+NEG_PROV;省份 ;;;;;;;;;;X
+NEG_TECH;计划 ;;;;;;;;;;X
+NEG_RES;资源 ;;;;;;;;;;X
+NEG_GIV;给出 %s。 ;;;;;;;;;;X
+NEG_REC;收到 %s ;;;;;;;;;;X
+NEG_ONE;暂时协议: ;;;;;;;;;;X
+NEG_TA;商业协议: ;;;;;;;;;;X
+NEG_TA_INACTIVE;由于缺乏资源该协议无法生效。 ;;;;;;;;;;X
+NEG_NOTHING;没有 ;;;;;;;;;;X
+NEG_FOR;，交换 ;;;;;;;;;;X
+DEAL_TITLE;商谈贸易 ;;;;;;;;;;X
+FINAL_DEAL;最终协议 ;;;;;;;;;;X
+;;;;;;;;;;;X
+PRODUCTION_CONSUMER;生活消费品 ;;;;;;;;;;X
+PRODUCTION_SUPPLY;补给品 ;;;;;;;;;;X
+PRODUCTION_PRODUCTION;产品 ;;;;;;;;;;X
+PRODUCTION_REINFORCEMENT;增援 ;;;;;;;;;;X
+PRODUCTION_UPGRADE;升级 ;;;;;;;;;;X
+;;;;;;;;;;;X
+PARANOTRANSPORT;该省份没有足够的运输机可以运输伞兵单位 ;;;;;;;;;;X
+PARAULOCKED;一个以上的师无法行动或重新部署。 ;;;;;;;;;;X
+PARAMOVING;这个单位正在行动，无法进入运输机。 ;;;;;;;;;;X
+PARACOMBAT;这个单位正在作战，无法进入运输机。 ;;;;;;;;;;X
+PARAOKLOAD;点选该省份，命令作战单位进入运输机 ;;;;;;;;;;X
+;;;;;;;;;;;X
+SHIPNOTRANSPORT;该省份没有足够的运输舰可以载运这支部队 ;;;;;;;;;;X
+SHIPLMOVING;这个单位正在行动，无法进入运输舰。 ;;;;;;;;;;X
+SHIPLCOMBAT;这个单位正在作战，无法进入运输舰。 ;;;;;;;;;;X
+SHIPOKLOAD;点选该港口省份，命令作战单位进入运输舰。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RCDM_LOCATEARMIES;部署陆军 ;;;;;;;;;;X
+RCDM_LOCATEAIRS;部署空军 ;;;;;;;;;;X
+RCDM_LOCATENAVIES;部署海军 ;;;;;;;;;;X
+RCDM_CREATENEW;生成新的 ;;;;;;;;;;X
+RCDM_MERGE;合并 ;;;;;;;;;;X
+RCDM_UNLOAD;卸载 ;;;;;;;;;;X
+RCDM_ENTERPROVINCE;查看省份 ;;;;;;;;;;X
+RCDM_VIEWPROVINCE;查看省份 ;;;;;;;;;;X
+RCDM_DECLAREWAR;宣战 ;;;;;;;;;;X
+RCDM_OFFERPEACE;提出停火 ;;;;;;;;;;X
+;;;;;;;;;;;X
+TECHSKILL;技能:%.f ;;;;;;;;;;X
+NOPROJFORTEAM;(未提供计划) ;;;;;;;;;;X
+REPLACETEAM;代替 ;;;;;;;;;;X
+NOTEAMSELECTED;没有选择队伍 ;;;;;;;;;;X
+STARTPROJECT;开始计划 ;;;;;;;;;;X
+CANCELPROJECT;取消计划 ;;;;;;;;;;X
+BUTTON_REVOLT;游击队地图类型 ;;;;;;;;;;X
+PASSWORDBOX;请输入密码 ;;;;;;;;;;X
+OUTOFDISTANCE;这艘舰船只能在%.2fkm范围内作战。\n;;;;;;;;;;X
+INDISTANCE;与%.2fkm内的目标作战。\n;;;;;;;;;;X
+NOTARGET;目前未选择目标。\n;;;;;;;;;;X
+FIRESAT;向 %s开火。\n;;;;;;;;;;X
+ATTACKERS_POS;这是进攻方在战斗中的布署情况。数值过低表示更大的混乱 程度，可能会带来坏的影响。 ;;;;;;;;;;X
+DEFENDERS_POS;这是防御方在战斗中的布署情况。数值过低表示更大的混乱 程度，可能会带来坏的影响。 ;;;;;;;;;;X
+BATTLE_RANGE;这是海上作战力量之间的平均距离。攻击方瞄准%.2fkm的 距离，以确保他的作战力量占据地利，而防御方则瞄 准%.2fkm的距离。最熟练的舰队司令可以确定这个距离， 但是天气、智力和技术都会对此产生影响。 ;;;;;;;;;;X
+MAYNOTATTACK;你无法命令该单位在 %s之前发起攻击， 因为在经过上次战斗后它还在休整。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_MAP_IRO;该窗口用于处理所有和地图有关的问题，包括战斗、部队部 署、基地和设施的建设。 ;;;;;;;;;;X
+BUTTON_MAP_DRO; ;;;;;;;;;;X
+BUTTON_TECH_IRO;该窗口用于处理所有科研组的问题，并决定该研究哪方面。 ;;;;;;;;;;X
+BUTTON_TECH_DRO; ;;;;;;;;;;X
+BUTTON_DIP_IRO;该窗口用于控制你的政治，既包括对内也包括对外，可与其 他国家进行外交谈判。 ;;;;;;;;;;X
+BUTTON_DIP_DRO;;;;;;;;;;;X
+BUTTON_LEDGER_IRO;该窗口包括游戏中所有方面的统计信息。 ;;;;;;;;;;X
+BUTTON_LEDGER_DRO; ;;;;;;;;;;X
+BVP_IRO;观察你现在控制的省份 ;;;;;;;;;;X
+BVP_DRO;;;;;;;;;;;X
+BVA_IRO;观察你的陆军 ;;;;;;;;;;X
+BVA_DRO;;;;;;;;;;;X
+BVN_IRO;观察你的海军基地和舰队 ;;;;;;;;;;X
+BVN_DRO;;;;;;;;;;;X
+BVR_IRO;观察你的空军基地和航空部队 ;;;;;;;;;;X
+BVR_DRO;;;;;;;;;;;X
+BVC_IRO;观察正在进行的战斗 ;;;;;;;;;;X
+BVC_DRO;;;;;;;;;;;X
+BVF_IRO;从预备役里重新部署部队 ;;;;;;;;;;X
+BVF_DRO;;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_REGION;地域地图模式 ;;;;;;;;;;X
+BUTTON_AREA;地区地图模式 ;;;;;;;;;;X
+AUTOPROMOT;自动晋升将领 ;;;;;;;;;;X
+AUTOASSIGN;自动分配将领 ;;;;;;;;;;X
+DEPLOY_TITLE;部署这个单位 ;;;;;;;;;;X
+DEPLOY_TARGETS;选择地图上的一个单位或者省份。 ;;;;;;;;;;X
+DEPLOY_TO_PROV;选择地图上的一个省份。 ;;;;;;;;;;X
+DEPLOY_TO;布置 %s于: ;;;;;;;;;;X
+x;;;;;;;;;;;X
+NOSUNK_IRO;这艘舰船还没有击沉任何船只。 ;;;;;;;;;;X
+VIEWSUNK_IRO;点击来观看这艘舰船击沉的船只。 ;;;;;;;;;;X
+SHIPS_SUNK_BY;该单位击沉记录。 ;;;;;;;;;;X
+FORCEPOOL_TITLE;可以部署的单位: ;;;;;;;;;;X
+EYRMODEL;型号 ;;;;;;;;;;X
+EYRSOFT;非装甲 ;;;;;;;;;;X
+EYRHA;硬攻 ;;;;;;;;;;X
+EYRSA;软攻 ;;;;;;;;;;X
+EYRAA;对空 ;;;;;;;;;;X
+EYRDEF;防御 ;;;;;;;;;;X
+EYRTOU;坚韧 ;;;;;;;;;;X
+EYRAIRD;防空 ;;;;;;;;;;X
+EYRSUPP;镇压 ;;;;;;;;;;X
+EYRSPEED;速 ;;;;;;;;;;X
+EYRSUPPLY;补 ;;;;;;;;;;X
+EYRFUEL;油 ;;;;;;;;;;X
+EYRSEA;对海 ;;;;;;;;;;X
+EYRSHO;对岸 ;;;;;;;;;;X
+EYRRANGE;航程 ;;;;;;;;;;X
+EYRSDC;海侦 ;;;;;;;;;;X
+EYRADC;空侦 ;;;;;;;;;;X
+EYRSUBDC;索潜 ;;;;;;;;;;X
+EYRSUBA;反潜 ;;;;;;;;;;X
+EYRVIS;能见 ;;;;;;;;;;X
+EYRSTR;战略轰 ;;;;;;;;;;X
+EYRSEAD;防海 ;;;;;;;;;;X
+EYRNA;海轰 ;;;;;;;;;;X
+EYRSD;防地 ;;;;;;;;;;X
+EYRFD;射程 ;;;;;;;;;;X
+EYREXPS;经验 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_ZOOM_OUT_IRO;缩小(-) ;;;;;;;;;;X
+BUTTON_ZOOM_OUT_DRO;这让你可以看到更大范围的地图 ;;;;;;;;;;X
+BUTTON_ZOOM_IN_IRO;放大(+) ;;;;;;;;;;X
+BUTTON_ZOOM_IN_DRO;这让你可以看到地图上更多的细节 ;;;;;;;;;;X
+PSL_OWNED;这个省份属于我们 ;;;;;;;;;;X
+PSL_CONTROLLED;这个省份现在被我们占领 ;;;;;;;;;;X
+PSL_NODIVS;师的数量 ;;;;;;;;;;X
+PSL_IC;工业生产能力 ;;;;;;;;;;X
+PSL_COMBAT;在这个省份现在进行着战斗 ;;;;;;;;;;X
+ATTACH_IRO;点击把加强团配属于该部队 ;;;;;;;;;;X
+DETACH_IRO;点击把加强团分离出该部队 ;;;;;;;;;;X
+UIWSL_COMBAT;战斗中 ;;;;;;;;;;X
+UIWSL_STR;总兵力%.f。 ;;;;;;;;;;X
+UIWSL_ORG;平均组织度:%.f ;;;;;;;;;;X
+AUTORESCO;自动－创建／取消资源护航输送 ;;;;;;;;;;X
+AUTOMAICO;自动－维持输送／护航 ;;;;;;;;;;X
+AUTOSUPCO;自动－创建／取消补给护航输送 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RULES_TEC_DISABLED_IRO;在该剧情中取消了技术发展系统。 ;;;;;;;;;;X
+RULES_TEC_DISABLED_DRO;这意味着不能研究技术，但你或许可以从特定事件中得到新 技术。 ;;;;;;;;;;X
+RULES_PRO_DISABLED_IRO;在该剧情中取消了生产系统。 ;;;;;;;;;;X
+RULES_PRO_DISABLED_DRO;这意味着不能生产单位或者建设设施，但你或许可以从特定 事件中得到增援和补给。 ;;;;;;;;;;X
+RULES_DIP_DISABLED_IRO;在该剧情中取消了外交系统。 ;;;;;;;;;;X
+RULES_DIP_DISABLED_DRO;这意味着不能在这个剧情中进行外交活动。 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BUTTON_DIPMODE;外交地图模式 ;;;;;;;;;;X
+TA_EFF_EST;估计效率:%.2f\%%\n;;;;;;;;;;X
+CONVOY_THROUGH;这个护航队通过: ;;;;;;;;;;X
+CONVOY_FROM_TO;从 %s到 %s建立护航输送。 ;;;;;;;;;;X
+SEL_CONVOY_FR;选择护航输送的开始港口 ;;;;;;;;;;X
+SEL_CONVOY_TO;选择护航输送的目的地港口 ;;;;;;;;;;X
+TECHOVERVIEW;纵览 ;;;;;;;;;;X
+YESTECH;是 ;;;;;;;;;;X
+NOTECH;否 ;;;;;;;;;;X
+TOVV_MISSIONS;任务: ;;;;;;;;;;X
+TOVV_COMEVE;作战行动: ;;;;;;;;;;X
+RCDM_BUILD_INDUSTRY;建设工业 ;;;;;;;;;;X
+RCDM_BUILD_COASTAL;建设海岸要塞 ;;;;;;;;;;X
+RCDM_BUILD_LAND;建设陆地要塞 ;;;;;;;;;;X
+RCDM_BUILD_AA;建造空防 ;;;;;;;;;;X
+RCDM_BUILD_INFRA;提升基础设施 ;;;;;;;;;;X
+RCDM_BUILD_AIR_BASE;建造空军基地 ;;;;;;;;;;X
+RCDM_BUILD_NAVAL_BASE;建造海军基地 ;;;;;;;;;;X
+RCDM_BUILD_RADAR_STATION;建造雷达站 ;;;;;;;;;;X
+RCDM_BUILD_NUCLEAR_REACTOR;建立核反应堆 ;;;;;;;;;;X
+RCDM_BUILD_ROCKET_TEST;建设火箭试验设施 ;;;;;;;;;;X
+BINFO_FD;最大射程 ;;;;;;;;;;X
+TOVV_POSITIONING;海军布置 ;;;;;;;;;;X
+TOVV_DIGIN;陆军可以挖掘工事 ;;;;;;;;;;X
+TOVV_MISNUKE;导弹可能可以携带核弹头: ;;;;;;;;;;X
+TOVV_AAEFF;地区防空效率 ;;;;;;;;;;X
+TOVV_MISCMIL;多种军事 ;;;;;;;;;;X
+TOVV_ATTR;损耗修正 ;;;;;;;;;;X
+TOVV_PROD;生产＆补给 ;;;;;;;;;;X
+TOVV_TCMOD;TC修正 ;;;;;;;;;;X
+TOVV_TCOMOD;占领区TC损耗 ;;;;;;;;;;X
+TOVV_TSE;补给距离修正 ;;;;;;;;;;X
+TOVV_REPAIR;维修修正 ;;;;;;;;;;X
+TOVV_ETOCOAL;油料能量 ;;;;;;;;;;X
+TOVV_PRODEFF;生产效率 ;;;;;;;;;;X
+TOVV_SPRODEFF;补给生产效率 ;;;;;;;;;;X
+TOVV_INTEL;情报＆研究 ;;;;;;;;;;X
+TOVV_FRINT;获取敌人情报几率 ;;;;;;;;;;X
+TOVV_ENINT;被敌方获取情报几率 ;;;;;;;;;;X
+TOVV_RADAR;雷达效率 ;;;;;;;;;;X
+TOVV_RESMOD;研究速度 ;;;;;;;;;;X
+;;;;;;;;;;;X
+BATTLE_ORIGIN;从 %s攻击。\n;;;;;;;;;;X
+BELILIGINFO;好战性:%.0f ;;;;;;;;;;X
+MISSION_DEFEND;防御 ;;;;;;;;;;X
+RCDM_SELECTARMY;选择部队 ;;;;;;;;;;X
+RCDM_SELECTNAVY;选择舰队 ;;;;;;;;;;X
+RCDM_SELECTAIR;选择空军 ;;;;;;;;;;X
+CHAT_ALL;全部 ;;;;;;;;;;X
+CHAT_NONE;没有 ;;;;;;;;;;X
+CHAT_ALLIES;盟友 ;;;;;;;;;;X
+CHAT_ENEMY;敌人 ;;;;;;;;;;X
+CHAT_NEIGHBOR;邻国合作 ;;;;;;;;;;X
+UNITISLOCKED;这个单位已被锁定，只有解锁事件发生后它才能重新移动 ;;;;;;;;;;X
+TOVV_UNITS;更先进的单位型号 ;;;;;;;;;;X
+TOVV_UNITSB;更先进的团类型 ;;;;;;;;;;X
+CLICK_FOR_NEW_TEAM;点击这里委任研发队伍 ;;;;;;;;;;X
+CANCELPROJ_IRO;取消将意味着放弃正在进行的研究 ;;;;;;;;;;X
+TWIN_IRO_6;你已经进行了另一方面的研究，所以无法研究这项技术 ;;;;;;;;;;X
+TWIN_IRO_0;点击分配选择的科技组来研究这项技术 ;;;;;;;;;;X
+TWIN_IRO_1;我们已经研究了这项技术 ;;;;;;;;;;X
+TWIN_IRO_4;我们还没有研究这项技术的前提 ;;;;;;;;;;X
+TWIN_IRO_5;我们现在正在研究这项技术 ;;;;;;;;;;X
+OVERVIEWBUTTON_IRO;此窗口将提供科技修正的全球简介，并列出你所能建造的单 位类型，以及你的国家在多种任务和攻击中的地位。 ;;;;;;;;;;X
+BUTTON_0040;地形地图模式 ;;;;;;;;;;X
+BUTTON_0039;政治地图模式 ;;;;;;;;;;X
+PRLI_NAME_IRO;按字母顺序排列。 ;;;;;;;;;;X
+PRLI_UNIT_IRO;按每个省的师的数量排列。 ;;;;;;;;;;X
+PRLI_FACT_IRO;按工厂数量排列。 ;;;;;;;;;;X
+PRLI_COMB_IRO;按省份参战情况排列。 ;;;;;;;;;;X
+PRLI_RESO_IRO;按省份资源的富裕情况排列。 ;;;;;;;;;;X
+ADJ_NORMAL;与%s的连接是普通的方式。 ;;;;;;;;;;X
+ADJ_IMPASS;无法到达%s从%s。 ;;;;;;;;;;X
+ADJ_CANAL;这是从%s到%s的河流。它流经%s， 敌军在此处的活动将受到阻碍。 ;;;;;;;;;;X
+ADJ_SEA;从%s到%s的狭窄开阔水面。如果有敌方舰船在%s， 你的部队将不能通过此地。 ;;;;;;;;;;X
+ADJ_RIVER;在%s和%s存在着河流，难以跨越， 这有利于对岸的防御。 ;;;;;;;;;;X
+HRPOV_OWNER_IRO;属于%s。 ;;;;;;;;;;X
+HRPOV_CONTROLLER_IRO;当前被%s占领。 ;;;;;;;;;;X
+BUTTON_VPMODE;胜利点地图模式 ;;;;;;;;;;X
+EYRLTRAITS;特性 ;;;;;;;;;;X
+BUTTON_0050;点击可以暂停游戏。在暂停时间内你仍然可以下命令，而时 间不会改变。 ;;;;;;;;;;X
+UIW_MERGE_IRO;点击将把选定的单位合并成一个单位。 ;;;;;;;;;;X
+UIW_REORG_IRO;点击可重组这两个选定单位，在两者之间交换部队或船只。 ;;;;;;;;;;X
+UIW_MERGE_DIS_IRO;你只能合并同处一省且不处于作战状态下的部队。 ;;;;;;;;;;X
+UIW_REORG_DIS_IRO;你只能重组两支同处一省且不处于作战状态下的选定的部队 ;;;;;;;;;;X
+UIW_RETURNFORCE;点击将把这支部队归还给借出方 ;;;;;;;;;;X
+CONVOYBRIEF;T:%d E:%d ;;;;;;;;;;X
+SHIPUNLOADTROOPS;点击可以卸载当前船只中载运的部队 ;;;;;;;;;;X
+EN_WRONG_PASSWORD;你输入的密码不正确。 ;;;;;;;;;;X
+C_CR_DIS_IRO;你已经将资源产地的所有资源都运回国内 ;;;;;;;;;;X
+C_CS_DIS_IRO;所有需要运进资源的地区都已得到了资源 ;;;;;;;;;;X
+CON_PORT_AREA;此港口可以为以下地区服务: ;;;;;;;;;;X
+CON_PORT_LIST;以下地区是由此港口服务的: ;;;;;;;;;;X
+PCIW_DEMAND_TRIBUTE;坚持我们的要求 ;;;;;;;;;;X
+PCIW_NO_TRIBUTE;提供无条件停火 ;;;;;;;;;;X
+PCIW_OFFER_TRIBUTE;乞和 ;;;;;;;;;;X
+SUE_FOR_PEACE_TITLE;同 %s和谈 ;;;;;;;;;;X
+WARSCORE;战争得分: ;;;;;;;;;;X
+PCSELECTED;当前值 ;;;;;;;;;;X
+PO_DISAR;他们将被强迫解除武装，这需要 %d的战争得分 ;;;;;;;;;;X
+PO_ACCES;他们将允许我们的军队自由通过，这需要 %d的战争得分 ;;;;;;;;;;X
+PO_MAKSA;他们将成为我们的傀儡国，这需要 %d的战争得分 ;;;;;;;;;;X
+DIPROL_SUEING;你只需要求，不必付出。 ;;;;;;;;;;X
+PRIMARYYEAR;历史:%d ;;;;;;;;;;X
+BLUEPRINTS;是否有蓝图: %s ;;;;;;;;;;X
+NO_END_POSSIBLE;此战役缺少胜利事件。(请报告这个BUG) ;;;;;;;;;;X
+NO_TRIGGERS_IN_GAME;缺少作战目标！！(请报告这个BUG) ;;;;;;;;;;X
+ATTR_CLIMATE;气候:%+.2f\%%\n;;;;;;;;;;X
+ATTR_JUNGLE;丛林:%+.2f\%%\n;;;;;;;;;;X
+ATTR_WINTER_L;冬季专家:%+.2f\%%(领导技能)\n;;;;;;;;;;X
+ATTR_WINTER;严寒:%+.2f\%%\n;;;;;;;;;;X
+ATTR_LOGIST;后勤大师:/%d\n;;;;;;;;;;X
+ATTR_FRIEND;友方阵地:/%d\n;;;;;;;;;;X
+ATTR_FUEL;缺乏燃料:/%d\n;;;;;;;;;;X
+ATTR_TECH;科技加成:/%.2f\n;;;;;;;;;;X
+ATTR_SIZE;部队规模/ ;;;;;;;;;;X
+ATTR_MOD;作战效率:*%.2f\n;;;;;;;;;;X
+EYRUPGRADE;升级 ;;;;;;;;;;X
+SINGLEUNIT;你每次只能对一个空军单位下命令。(因为不同的部队的作 战半径或战斗性质不同) ;;;;;;;;;;X
+RES_MONEY_ON_TECH;研究:%+.1f\n;;;;;;;;;;X
+TT_OK_SALARY;当科研开始后，这个项目每天至少需经费$%.2f。 ;;;;;;;;;;X
+TT_BAD_SALARY;你不能支付该项目所需的经费:%.2f$， 所以今天的科研进度不能正常进行。 ;;;;;;;;;;X
+BUTTON_0041;查看游戏设置(F10) ;;;;;;;;;;X
+RR_IN_PROV;%s的叛乱几率是%d\%%。 ;;;;;;;;;;X
+DIPEACETREATY;同 %s的和平条约到 %s到期。 ;;;;;;;;;;X
+EYR_VP_HELD;本国领土 ;;;;;;;;;;X
+EYR_VP_OFF;占领区 ;;;;;;;;;;X
+EYR_VP_TOTAL;合计 ;;;;;;;;;;X
+EYR_VPCOUNTRY;胜利点数 ;;;;;;;;;;X
+DIPROL_JOIN5;和平时期的民主政府，由于高度的孤立主义，不能参加联盟 ;;;;;;;;;;X
+PO_SEPARATE;孤立的和平 ;;;;;;;;;;X
+PO_ALLIANCE;对于联盟来说 ;;;;;;;;;;X
+EYRLANDVAL;陆军单位修正 ;;;;;;;;;;X
+EYRNAVYVAL;海军单位修正 ;;;;;;;;;;X
+EYRAIRVAL;空军单位修正 ;;;;;;;;;;X
+;;;;;;;;;;;X
+IW_SECRET_PATH;秘密渠道 ;;;;;;;;;;X
+EYRBRIGADE;加强团 ;;;;;;;;;;X
+EYRCAG;舰载机 ;;;;;;;;;;X
+HP_ATWARWITHUS;我们处于战争状态 ;;;;;;;;;;X
+HP_ALLYTWITHUS;我们处于联盟。 ;;;;;;;;;;X
+TOVV_HQESE;HQ有效补给效率 ;;;;;;;;;;X
+TOVV_GDEF;地面防御效率 ;;;;;;;;;;X
+TOVV_HQCOMCHA;HQ附近战术触发加成 ;;;;;;;;;;X
+RCDM_CANCEL_TRADE_AGREEMENT;取消贸易合同 ;;;;;;;;;;X
+AT_DATE;在: %s\n;;;;;;;;;;X
+BETWEEN_DATE;在 %s和 %s之间\n;;;;;;;;;;X
+;;;;;;;;;;;X
+TOVV_CDEF;护航效率 ;;;;;;;;;;X
+TOVV_LFEF;陆上要塞效率 ;;;;;;;;;;X
+TOVV_CFEF;海防要塞效率 ;;;;;;;;;;X
+BATTLE_DPROGRESS;防御方在防御战中取得了%.1f\%%的优势 ;;;;;;;;;;X
+BATTLE_APROGRESS;进攻方在攻击战中取得了%.1f\%%的优势 ;;;;;;;;;;X
+DEV_REDEPLOY_T_IRO;该单位正在被重新部署中。 ;;;;;;;;;;X
+ETA;ETA ;;;;;;;;;;X
+;;;;;;;;;;;X
+NOPOSSBRIGADE;这种单位不能配给任何团 ;;;;;;;;;;X
+ATTACHTOTHIS;你可以给该单位配备下列加强团:\n;;;;;;;;;;X
+ATTACHTHIS;可以调配该团给:\n;;;;;;;;;;X
+;;;;;;;;;;;X
+CAPITAL;首都: ;;;;;;;;;;X
+;;;;;;;;;;;X
+AIRBASE_IRO;空军基地\n当前的规模:%.2f/%.0f\n----------------------------------\n;;;;;;;;;;X
+ORG_REGAIN_IRO;每日恢复 ;;;;;;;;;;X
+EYRSUNKNAME;被以下船只击沉 ;;;;;;;;;;X
+EYRSUNKPAGE;击沉船只 ;;;;;;;;;;X
+NOSTRATREDEP;你目前不能移动你的卫戍部队，除非你研究出了允许你重新 战略部署他们的相应科技。 ;;;;;;;;;;X
+TRANSPORT_MAY_NOTFIRE;运输单位不能在战斗中作战 ;;;;;;;;;;X
+ZEROORG_MAY_NOTFIRE;该单位组织度和士气过低，无法在这一轮战斗中行动。 ;;;;;;;;;;X
+NOTARGETSRANGE;在该任务范围内没有目标 ;;;;;;;;;;X
+PRIOICON_IRO;该单位将优先得到补充和升级 ;;;;;;;;;;X
+BEACH_IRO;这个地区的海滩可以让敌军登陆 ;;;;;;;;;;X
+PROV_DEPOT;这个地区拥有一个仓库，储备以下资源:\n;;;;;;;;;;X
+;;;;;;;;;;;X
+TOVV_MANPOWER;兵源增长 ;;;;;;;;;;X
+;;;;;;;;;;;X
+TOVV_GEARLIMIT;流水线加成上限 ;;;;;;;;;;X
+TOVV_GEAREFF;流水线加成效率 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RCDM_CREATE_SUPPLY_DUMP;创建补给堆场 ;;;;;;;;;;X
+RCDM_RETURN_STOCKPILE;返回储备 ;;;;;;;;;;X
+;;;;;;;;;;;X
+RIVER_CROSSING_DIFF;穿越困难 ;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+;;;;;;;;;;;X
+#EOF;;;;;;;;;;;X

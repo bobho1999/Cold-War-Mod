@@ -1,0 +1,105 @@
+naval_unit_type = 1
+
+# 0 - Electron naval_torpedoes
+model = {
+	cost 				= 2
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 2
+	convoyattack			= 0
+	subattack			= 1
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.06
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+
+# 1 - Passive Acoustic naval_torpedoes
+model = {
+	cost 				= 2.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 4
+	convoyattack			= 0
+	subattack			= 2
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.08
+	supplyconsumption 		= 0.6
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - Wire-guided naval_torpedoes
+model = {
+	cost 				= 3
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 6
+	convoyattack			= 0
+	subattack			= 3
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.10
+	supplyconsumption 		= 0.9
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - Active Acoustic naval_torpedoes
+model = {
+	cost 				= 3.5
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 8
+	convoyattack			= 0
+	subattack			= 4
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.12
+	supplyconsumption 		= 1.2
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - Active Acoustic naval_torpedoes
+model = {
+	cost 				= 4
+	buildtime			= 120
+	manpower 			= 0
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 0
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 10
+	convoyattack			= 0
+	subattack			= 5
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.14
+	supplyconsumption 		= 1.5
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+########################################
+

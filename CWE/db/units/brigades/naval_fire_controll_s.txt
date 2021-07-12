@@ -1,0 +1,125 @@
+naval_unit_type = 1
+# 0 - Naval FC Escort 0
+model = {
+	cost 				= 0.2
+	buildtime			= 60
+	manpower 			= 0.1
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 1
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 1
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.01
+	supplyconsumption 		= 0.05
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 1 - Naval FC Escort 1
+model = {
+	cost 				= 0.5
+	buildtime			= 65
+	manpower 			= 0.1
+	surfacedetectioncapability	= 0
+	airdetectioncapability		= 1
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 2
+	convoyattack			= 2
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 1
+	distance			= 0.02
+	supplyconsumption 		= 0.05
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 2 - Naval FC Escort 2
+model = {
+	cost 				= 1.5
+	buildtime			= 70
+	manpower 			= 0.1
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 0
+	airdefence			= 0
+	seaattack			= 2
+	convoyattack			= 2
+	subattack			= 0
+	airattack			= 1
+	shorebombardment		= 1
+	distance			= 0.03
+	supplyconsumption 		= 0.05
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 3 - Naval FC Escort 3
+model = {
+	cost 				= 1.5
+	buildtime			= 80
+	manpower 			= 0.1
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 3
+	convoyattack			= 3
+	subattack			= 0
+	airattack			= 1
+	shorebombardment		= 2
+	distance			= 0.04
+	supplyconsumption 		= 0.05
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 4 - SSM Targeting
+model = {
+	cost 				= 3
+	buildtime			= 180
+	manpower 			= 0.3
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 8
+	seadefence			= 0
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 1
+	shorebombardment		= -1 # conventional gun must be removed
+	distance			= 0.15 # range improvement
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0.1
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+# 5 - Advanced SSM Targeting
+model = {
+	cost 				= 3
+	buildtime			= 200
+	manpower 			= 0.3
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 12
+	convoyattack			= 1
+	subattack			= 0
+	airattack			= 1
+	shorebombardment		= -2 # conventional gun must be removed
+	distance			= 0.25 # substantial range improvement
+	supplyconsumption 		= 0.6
+	fuelconsumption			= 0.2
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+
+########################################
+

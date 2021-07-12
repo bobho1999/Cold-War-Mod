@@ -1,0 +1,44 @@
+naval_unit_type = 1
+# Battleship upgrade
+#0
+model = {
+	cost 				= 6 # not cheap
+	buildtime			= 760 # same as battleship
+	manpower 			= 0.5
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 5
+	seadefence			= 5
+	seaattack			= 2
+	convoyattack			= 0
+	subattack			= 2
+	airattack			= 2
+	shorebombardment		= 1
+	distance			= 0.15 # adds range need capital fire control also to get 0.70
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0.3
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}
+#1
+model = {
+	cost 				= 6 # not cheap
+	buildtime			= 760 # same as battleship
+	manpower 			= 0.6
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 7
+	seadefence			= 7
+	seaattack			= 4
+	convoyattack			= 0
+	subattack			= 4
+	airattack			= 4
+	shorebombardment		= 1
+	distance			= 0.18
+	supplyconsumption 		= 0.3
+	fuelconsumption			= 0.3
+	upgrade_time_factor 		= 1.0
+	upgrade_cost_factor 		= 1.0
+}

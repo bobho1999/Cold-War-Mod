@@ -1,0 +1,71 @@
+# German operation Barbarosa Invasion AI File by Lothos
+###################################
+# 调集最大兵力
+###################################
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+max_front_ratios = { SOV = 10.0000 }
+no_exp_forces_to = { JAP SIA MAN VIC FIN }
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+  # 集中最大兵力
+	key_point_prio_mult	= 0
+	revolt_risk_mult		= 0
+
+	# Borders with specific countries
+	country_priorities = {
+		VIC = -1
+		SWE = -1
+		FIN = -1
+		ITA = -1
+		SCH = -1
+		AUS = -1
+		TUR = -1
+		SPR = -1
+		SPA = -1
+		SOV = 150
+		ENG = 30
+		USA = 50
+		FRA = 50
+		YUG = 50
+	}
+	province_priorities = {
+		488 = 75 # Zamosc
+		489 = 75 # Przemyst
+		487 = 75 # Lubin
+		486 = 50 # Lomza
+		509 = 150 # Suwalki
+		510 = 150 # Konigsberg
+		206 = 150 # Memel
+		56 = 20 # Paris
+		44 = 20 # Lille
+		51 = 20 # Brussels
+		67 = 20 # Prague
+		72 = 20 # Metz
+		38 = 20 # Cherborg
+		37 = 20 # Avranches
+		323 = 10 # La Rochele
+		80 = 20 # Wilhelmshafen
+		87 = 20 # Bremen
+		79 = 20 # Groningen
+		453 = 20 # Belgrade
+	}
+	area_multiplier = {
+		488 = 6.0 # Zamosc
+		489 = 6.0 # Przemyst
+		487 = 6.0 # Lubin
+		486 = 2.0 # Lomza
+		509 = 8.0 # Suwalki
+		510 = 8.0 # Konigsberg
+		206 = 8.0 # Memel
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = { 
+	invasion	= yes
+} 

@@ -1,0 +1,46 @@
+air_unit_type = 1
+#Air-Launched Cruise Missile
+model = {#0
+	cost 					= 4
+	buildtime				= 30
+	defaultorganisation 			= 0
+	morale					= 0
+	manpower				= 0
+	maxspeed				= 0
+	surfacedetectioncapability		= 0
+	airdetectioncapability			= 0
+	surfacedefence				= 18
+	airdefence				= 18
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 5
+	hardattack				= 15
+	navalattack				= 15
+	range					= 25000
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 			= 0.5
+	upgrade_cost_factor 			= 1.0
+}
+model = {#1
+	cost 					= 4
+	buildtime				= 40
+	defaultorganisation 			= 0
+	morale					= 0
+	manpower				= 0
+	maxspeed				= 0
+	surfacedetectioncapability		= 0
+	airdetectioncapability			= 0
+	surfacedefence				= 30
+	airdefence				= 30
+	airattack				= 0
+	strategicattack				= 0
+	softattack				= 5
+	hardattack				= 25
+	navalattack				= 25
+	range					= 25000
+	supplyconsumption 			= 0
+	fuelconsumption				= 0
+	upgrade_time_factor 			= 0.5
+	upgrade_cost_factor 			= 1.0
+}

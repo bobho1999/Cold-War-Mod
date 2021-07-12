@@ -1,0 +1,17 @@
+land_unit_type = 1
+#
+model = {
+	cost 				= 10
+	buildtime	 		= 120
+	manpower 			= 2
+	defensiveness 		= 8
+	toughness 			= 2
+	maxspeed 			= -4
+	softness			= -40
+	hardattack			= 8
+	softattack			= 7
+	supplyconsumption 	= 0.6
+	fuelconsumption		= 2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

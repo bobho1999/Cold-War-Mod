@@ -1,0 +1,16 @@
+# USA Gear up 2 AI File by Lothos
+
+upgrading = 0.20
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	#AA_batteries = yes （Civdemof:有BUG,无法用no参数屏蔽)
+	radar_station = yes
+	air_base = yes
+	naval_base = yes
+	ic_at_war = yes
+	force_ic_until = 1936
+	ic_end_year = 1945
+}

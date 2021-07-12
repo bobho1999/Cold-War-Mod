@@ -1,0 +1,68 @@
+war = 50
+
+combat = { 
+	UTL = 100
+	UPS = 100
+	UES = 100
+	URO = 100
+	UAP = 100
+	UPE = 100
+	UCS = 100
+	UIC = 100
+	UPR = 100
+	UER = 100
+	UTO = 100
+	UIR = 100
+}
+
+befriend = {
+	USN = 50
+	UBO = 50
+	UGS = 50
+	UTC = 50
+	UAU = 50
+}
+
+trade = {
+	cancel_deal_threshold = 2
+
+	energy 		= -1
+	rare_materials 	= -1
+	metal 		= -1
+	oil 		= -1
+	supplies 	= -1
+	money 		= -1
+
+	favored = {
+		USN = 50
+		UBO = 50
+		UGS = 50
+		UTC = 50
+		UAU = 50
+	}
+	embargo = {
+		UTL
+		UPS
+		UES
+		URO
+		UAP
+		UPE
+		UCS
+		UIC
+		UPR
+		UER
+		UTO
+		UIR 
+	}
+}
+tech_sharing = {
+	favored = {
+		USN = 50
+		UBO = 50
+		UGS = 50
+		UTC = 50
+		UAU = 50
+	}
+}
+
+   

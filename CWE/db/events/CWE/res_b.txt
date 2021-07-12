@@ -1,0 +1,5830 @@
+###Agha Jari Field, Iran; Discovered: 1937; Reserves: 8.7bbr  
+event = {
+	id = 2803000
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1825 data = -1 }
+		year = 1937
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1937 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1825 value = 32 where = oil }
+		command = { type = province_keypoints which = 1825 value = 2 }
+	}
+}
+
+###Burgan Field, Kuwait; Discovered:1938(46prod); Reserves: 66-72bbr        
+# accounted for
+###Romashkino Field,Volga-Ural(Kazan); Discovered:1948; Reserves: 16-17bbr       
+event = {
+	id = 2803002
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1780 data = -1 }
+		year = 1948
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1780 value = 60 where = oil }
+		command = { type = province_keypoints which = 1780 value = 5 }
+	}
+}
+###Ghawar Field, Saudi Arabia; Discovered:1948(51 Prod); Reserves:75-83bbr    
+event = {
+	id = 2803003
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1821 data = -1 }
+		year = 1951
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1821 value = 320 where = oil }
+		command = { type = add_prov_resource which = 1821 value = 57 where = energy } #57 TCF of gas(if 1TCF=1energy)
+		command = { type = province_keypoints which = 1821 value = 20 }
+	}
+}
+###Safaniya-Khafji Field, Saudi Arabia(offshore); Discovered:1951; Reserves:30bbr  
+event = {
+	id = 2803004
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1821 data = -1 }
+		year = 1951
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1821 value = 120 where = oil }
+		command = { type = province_keypoints which = 1821 value = 5 }
+	}
+}
+###Rumaila Field, Iraq; Discovered:1953; Reserves:17bbr  
+event = {
+	id = 2803005
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1823 data = -1 }
+		year = 1953
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1823 value = 64 where = oil }
+		command = { type = province_keypoints which = 1823 value = 3 }
+	}
+}
+###Ahwaz Field	Iran; Discovered:1958; Reserves:10bbr  
+event = {
+	id = 2803006
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1825 data = -1 }
+		year = 1958
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1825 value = 40 where = oil }
+		command = { type = province_keypoints which = 1825 value = 2 }
+	}
+}
+###Daqing Field	China; Discovered:1959(60 prod); Reserves:16bbr  
+event = {
+	id = 2803007
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1374 data = -1 }
+		year = 1960
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1374 value = 60 where = oil }
+		command = { type = province_keypoints which = 1821 value = 3 }
+	}
+}
+###Serir Field	Libya; Discovered:1961; Reserves:12bbr  
+event = {
+	id = 2803008
+	random = no
+
+	trigger = {
+		random = 18
+		control = { province = 927 data = -1 }
+		year = 1961
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 927 value = 48 where = oil }
+		command = { type = province_keypoints which = 927 value = 2 }
+	}
+}
+###Bombay High	India; Discovered:1964(74 prod); Reserves:6.1bbr  
+event = {
+	id = 2803009
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1505 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1505 value = 24 where = oil }
+		command = { type = province_keypoints which = 1505 value = 1 }
+	}
+}
+## province 1541 already accounted for (2803009)
+###Zakum Field, Abu Dhabi,UAE ; Discovered:1965(67 prod); Reserves:12bbr 
+event = {
+	id = 2803011
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1504 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1504 value = 48 where = oil }
+		command = { type = province_keypoints which = 1504 value = 3 }
+	}
+}
+###Lyantorskoye field, West Siberia; Discovered:1966(79 prod); Reserves:13bbr 
+event = {
+	id = 2803012
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1596 data = -1 } ###?West Siberian Plain, nearest city mentioned Surgut
+		year = 1979
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1979 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		# accounted for already
+		#command = { type = add_prov_resource which = 1596 value = 52 where = oil }
+		command = { type = add_prov_resource which = 1596 value = 10 where = energy } #10 TCF Gas
+		command = { type = province_keypoints which = 1596 value = 4 }
+	}
+}
+###Fyodorovskoye field, West Siberia; Discovered:1971(74 prod); Reserves:11bbr 
+# same province-already accounted for (2803013)
+###Prudhoe Bay, US, Alaska; Discovered:1969(77 prod); Reserves:13bbr 
+event = {
+	id = 2803014
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 551 data = -1 } 
+		year = 1979
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 551 value = 52 where = oil }
+		command = { type = add_prov_resource which = 551 value = 26 where = energy } #26 TCF Gas
+		command = { type = province_keypoints which = 551 value = 3 }
+	}
+}
+###Cantarell Field, Mexico(offshore); Discovered:1979(81 prod); Reserves:35bbr
+event = {
+	id = 2803015
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 756 data = -1 } 
+		year = 1979
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1981 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 756 value = 140 where = oil }
+		command = { type = province_keypoints which = 756 value = 7 }
+	}
+}
+###Tengiz Field	Kazakhstan; Discovered:1979(93 prod); Reserves:15-26bbr
+event = {
+	id = 2803016
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1579 data = -1 } 
+		year = 1993
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1993 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1579 value = 100 where = oil }
+		command = { type = province_keypoints which = 1579 value = 5 }
+	}
+}
+###Oseberg, Norway(offshore); Discovered:1979(88 prod); Reserves:2.2bbr
+event = {
+	id = 2803017
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 110 data = -1 } 
+		year = 1988
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1988 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 110 value = 8 where = oil }
+	}
+}
+###Hibernia, Canada(offshore); Discovered:1979(97 prod); Reserves:3bbr
+event = {
+	id = 2803018
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 576 data = -1 } 
+		year = 1997
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1997 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 576 value = 12 where = oil }
+	}
+}
+###Priobskoye field, West Siberia; Discovered:1982(2000 prod); Reserves:13bbr
+event = {
+	id = 2803019
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1593 data = -1 } 
+		year = 2000
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2000 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1593 value = 52 where = oil }
+		command = { type = province_keypoints which = 1593 value = 2 }
+	}
+}
+###Vankor Field	Russia; Discovered:1983(2009 prod); Reserves:3.8bbr
+event = {
+	id = 2803020
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1560 data = -1 } 
+		year = 2009
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2009 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1560 value = 16 where = oil }
+	}
+}
+###Terra Nova Field, Canada; Discovered:1984(2002 prod); Reserves:1bbr
+event = {
+	id = 2803021
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 576 data = -1 } 
+		year = 2002
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2002 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 576 value = 4 where = oil }
+	}
+}
+###Mangala Area, India; Discovered:1999(2005 prod); Reserves:3.6bbr
+event = {
+	id = 2803022
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1478 data = -1 } 
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1478 value = 16 where = oil }
+	}
+}
+###Kashagan Field, Kazakhstan; Discovered:2000(2012 est prod); Reserves:38bbr
+event = {
+	id = 2803023
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1569 data = -1 } 
+		year = 2012
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2012 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1569 value = 160 where = oil }
+		command = { type = province_keypoints which = 1569 value = 7 }
+	}
+}
+###Ferdows/Mound/Zagheh Field	Iran; Discovered:2003(2014 est prod); Reserves:38bbr
+event = {
+	id = 2803024
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1498 data = -1 } 
+		year = 2014
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2014 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1498 value = 150 where = oil }
+		command = { type = province_keypoints which = 1498 value = 6 }
+	}
+}
+###Azadegan field, Iran; Discovered:1999(2013 est prod); Reserves:33bbr
+event = {
+	id = 2803025
+	random = no
+
+	trigger = {
+		random = 30
+		control = { province = 1825 data = -1 } 
+		year = 2013
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2013 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1825 value = 132 where = oil }
+		command = { type = province_keypoints which = 1825 value = 5 }
+	}
+}
+###Sugar Loaf field, Brazil(offshore); Discovered:2007(2012 est prod); Reserves:25-40bbr
+event = {
+	id = 2803026
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 886 data = -1 } 
+		year = 2012
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2012 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 886 value = 160 where = oil }
+		command = { type = province_keypoints which = 886 value = 6 }
+	}
+}
+###Tupi field, Brazil(offshore); Discovered:2006(2010 est prod); Reserves:5-8bbr
+event = {
+	id = 2803027
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 885 data = -1 } 
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 } 	
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 885 value = 32 where = oil }
+		command = { type = province_keypoints which = 885 value = 2 }
+	}
+}
+###Athabasca oil sands, Suncor Mine; Discovered:1967 production; Reserves:1700bbr  
+event = {
+	id = 2803028
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 557 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 10 where = oil }
+	}
+}
+###Athabasca oil sands, second Syncrude Mine; Discovered:1978 production; Reserves:1700bbr  
+event = {
+	id = 2803029
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 557 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 30 where = oil }
+		command = { type = province_keypoints which = 557 value = 2 }
+	}
+}
+###Athabasca oil sands, third Shell Canada Mine + expansion; Discovered:2003 production; Reserves:1700bbr  
+event = {
+	id = 2803030
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 557 data = -1 }
+		year = 2003
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2003 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 80 where = oil }
+		command = { type = province_keypoints which = 557 value = 4 }
+	}
+}
+###Athabasca oil sands, continued expansion; Discovered:2006 production; Reserves:1700bbr (1.1million barrels/day) 
+event = {
+	id = 2803031
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 557 data = -1 }
+		year = 2006
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2006 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 100 where = oil }
+		command = { type = province_keypoints which = 557 value = 5 }
+	}
+}
+###Athabasca oil sands, continued expansion; Discovered:2013 production; Reserves:1700bbr (2million barrels/day) 
+event = {
+	id = 2803032
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 557 data = -1 }
+		year = 2013
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2013 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 200 where = oil }
+		command = { type = province_keypoints which = 557 value = 7 }
+	}
+}
+###Athabasca oil sands, continued expansion; Discovered:2016 production; Reserves:1700bbr (2.5million barrels/day) 
+event = {
+	id = 2803033
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 557 data = -1 }
+		year = 2016
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2016 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 100 where = oil }
+		command = { type = province_keypoints which = 557 value = 4 }
+	}
+}
+###Athabasca oil sands, continued expansion; Discovered:2020 production; Reserves:1700bbr (3million barrels/day) 
+event = {
+	id = 2803034
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 557 data = -1 }
+		year = 2020
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2020 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 557 value = 100 where = oil }
+		command = { type = province_keypoints which = 557 value = 4 }
+	}
+}
+###Orinoco tar sands, Venezuela, Phase 1; Discovered:2013 production; Reserves:513bbr (~1million barrels/day) 
+event = {
+	id = 2803035
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 810 data = -1 }
+		year = 2013
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2013 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 810 value = 200 where = oil }
+		command = { type = province_keypoints which = 810 value = 7 }
+	}
+}
+###Orinoco tar sands, Venezuela, Phase 2; Discovered:2017 production; Reserves:513bbr (~2million barrels/day) 
+event = {
+	id = 2803036
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 810 data = -1 }
+		year = 2017
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2017 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 810 value = 200 where = oil }
+		command = { type = province_keypoints which = 810 value = 7 }
+	}
+}
+###Orinoco tar sands, Venezuela, Phase 3; Discovered:2020 production; Reserves:513bbr (~3million barrels/day) 
+event = {
+	id = 2803037
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 810 data = -1 }
+		year = 2020
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2020 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 810 value = 200 where = oil }
+		command = { type = province_keypoints which = 810 value = 7 }
+	}
+}
+###Majnoon Field, Iraq; Discovered:1975(1980 prod if no war, otherwise 2009); Reserves:23-25bbr 
+###http://www.offshore-technology.com/projects/majnoon-field/
+event = {
+	id = 2803038
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1823 data = -1 }
+		year = 1980
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1980 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1823 value = 100 where = oil }
+		command = { type = province_keypoints which = 1823 value = 3 }
+	}
+}
+###West Qurna Field, Iraq; Discovered:?(2009 prod); Reserves:15-21bbr 
+event = {
+	id = 2803039
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1806 data = -1 }
+		year = 2009
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2009 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1806 value = 80 where = oil }
+		command = { type = province_keypoints which = 1806 value = 3 }
+	}
+}
+###East Baghdad Field, Iraq; Discovered:1976(2010 prod); Reserves:8bbr 
+event = {
+	id = 2803040
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1866 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1866 value = 32 where = oil }
+		command = { type = province_keypoints which = 1866 value = 1 }
+	}
+}
+###Dukhan Field, Qatar; Discovered:1938(1949 prod); Reserves:2.2bbr 
+event = {
+	id = 2803041
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1820 data = -1 }
+		year = 1949
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1820 value = 8 where = oil }
+	}
+}
+###Halfaya Field, Iraq; Discovered:?(2010 prod); Reserves:4.1bbr 
+event = {
+	id = 2803042
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1824 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1824 value = 16 where = oil }
+	}
+}
+###Az Zubayr Field/Nahr Umr Field, Iraq; Discovered:1949(1955 prod??); Reserves:12bbr 
+event = {
+	id = 2803043
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1823 data = -1 }
+		year = 1955
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1823 value = 48 where = oil }
+		command = { type = province_keypoints which = 1823 value = 1 }
+	}
+}
+###Hassi Messaoud, Algeria; Discovered:1956; Reserves:9bbr 
+event = {
+	id = 2803044
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1013 data = -1 }
+		year = 1956
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1013 value = 36 where = oil }
+	}
+}
+###Zelten oil field, Libya; Discovered:1956(1961 production); Reserves:2.5bbr
+event = {
+	id = 2803045
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 925 data = -1 }
+		year = 1961
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 925 value = 10 where = oil }
+	}
+}
+###Agbami Field, Nigeria; Discovered:1998(2008 production); Reserves:1.2bbr
+event = {
+	id = 2803046
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1011 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1011 value = 6 where = oil }
+	}
+}
+###Bonga Field, Nigeria; Discovered:1996(2005 production); Reserves:1.4bbr
+event = {
+	id = 2803047
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1011 data = -1 }
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1011 value = 7 where = oil }
+	}
+}
+###Azeri-Chirag-Guneshli, Azerbaijan; Discovered:1985(1997 production); Reserves:5.4bbr
+event = {
+	id = 2803048
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1857 data = -1 }
+		year = 1997
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1997 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1857 value = 20 where = oil }
+	}
+}
+###Kurmangazy Field, Kazakhstan; Discovered:1985(2006 production); Reserves:6-7bbr
+event = {
+	id = 2803049
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1583 data = -1 }
+		year = 2006
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2006 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1583 value = 28 where = oil }
+	}
+}
+###Ekofisk oil field, Norway; Discovered:1969(1971 production); Reserves:3.3bbr
+event = {
+	id = 2803050
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 109 data = -1 }
+		year = 1971
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 109 value = 14 where = oil }
+	}
+}
+###Statfjord oil field, Norway; Discovered:1979(1987 production); Reserves:3.4bbr
+event = {
+	id = 2803051
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 117 data = -1 }
+		year = 1987
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1987 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 117 value = 15 where = oil }
+	}
+}
+###Sakhalin-I oil/gas field, Russia; Discovered:1976(1996 production); Reserves:2.3bbr, 17TCF
+event = {
+	id = 2803052
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1175 data = -1 }
+		year = 1996
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1996 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1175 value = 10 where = oil }
+		command = { type = add_prov_resource which = 1175 value = 17 where = energy }
+	}
+}
+###Sakhalin-II oil/gas field, Russia; Discovered:1984(1999 production); Reserves:1.2bbr, 18TCF
+event = {
+	id = 2803053
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1175 data = -1 }
+		year = 1999
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1999 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1175 value = 5 where = oil }
+		command = { type = add_prov_resource which = 1175 value = 18 where = energy }
+	}
+}
+###Clair oilfield, United Kingdom; Discovered:1977(2005 production); Reserves:1.75bbr
+event = {
+	id = 2803054
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 5 data = -1 }
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 5 value = 6 where = oil }
+	}
+}
+###Forties oilfield, United Kingdom; Discovered:1970(1975 production); Reserves:5bbr
+event = {
+	id = 2803055
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 7 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 7 value = 20 where = oil }
+	}
+}
+###Jupiter oilfield, Brazil; Discovered:2008(2012 production?); Reserves:8bbr, 17TCF
+event = {
+	id = 2803056
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 886 data = -1 }
+		year = 2012
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2012 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 886 value = 24 where = oil }
+		command = { type = add_prov_resource which = 886 value = 17 where = energy }
+	}
+}
+###Spraberry Trend oilfield, Texas; Discovered:1943(1952 production?); Reserves:10bbr, 2TCF
+event = {
+	id = 2803057
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 721 data = -1 }
+		year = 2012
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2012 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 721 value = 40 where = oil }
+		command = { type = add_prov_resource which = 721 value = 2 where = energy }
+	}
+}
+
+###Urengoy gas field, West Siberia; Discovered:1966(1978 production); Reserves:350TCF 
+event = {
+	id = 2803100
+	random = no
+
+	trigger = {
+		random = 25
+		control = { province = 1154 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1154 value = 350 where = energy }
+		command = { type = province_keypoints which = 1154 value = 5 }
+	}
+}
+###Kyzyloi Gas Field, Kazakhstan; Discovered:1966(2007 production); Reserves:50TCF 
+event = {
+	id = 2803101
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1580 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2007 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1580 value = 50 where = energy }
+		command = { type = province_keypoints which = 1580 value = 1 }
+	}
+}
+###North Pars Gas Field, Iran; Discovered:1967(1977 production); Reserves:59TCF 
+event = {
+	id = 2803102
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1498 data = -1 }
+		year = 1977
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1498 value = 59 where = energy }
+		command = { type = province_keypoints which = 1498 value = 1 }
+	}
+}
+###Vuktyl Gas Field, West Siberia; Discovered:1968(1977 production); Reserves:14TCF#accounted for
+###Yuzhno-Russkoye gas field, West Siberia; Discovered:1969(2007 production); Reserves:28TCF#accounted for 
+###Yamburg gas field, West Siberia; Discovered:1969(1986 production); Reserves:289TCF 
+event = {
+	id = 2803105
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1155 data = -1 }
+		year = 1986
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1986 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1155 value = 289 where = energy }
+		command = { type = province_keypoints which = 1155 value = 5 }
+	}
+}
+###South Pars, Iran; Discovered:1971(1989 production); Reserves:360TCF 
+event = {
+	id = 2803106
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1498 data = -1 }
+		year = 1989
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1989 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1498 value = 360 where = energy }
+		command = { type = province_keypoints which = 1498 value = 8 }
+	}
+}
+###North Dome Gas-Condensate field, Qatar; Discovered:1971(1989 production); Reserves:900TCF 
+event = {
+	id = 2803107
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1820 data = -1 }
+		year = 1989
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1989 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1820 value = 900 where = energy }
+		command = { type = province_keypoints which = 1820 value = 15 }
+	}
+}
+###Karachaganak Field, Kazakhstan; Discovered:1979(1984 production); Reserves:42TCF 
+event = {
+	id = 2803108
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1568 data = -1 }
+		year = 1984
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1984 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1568 value = 42 where = energy }
+	}
+}
+###Bovanenkovskoe field, Yamal Peninsula; Discovered:1981(2011 production); Reserves:154TCF 
+event = {
+	id = 2803109
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1154 data = -1 }
+		year = 2011
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2011 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1154 value = 154 where = energy }
+		command = { type = province_keypoints which = 1154 value = 2 }
+	}
+}
+###Leningradskoye field, Kara Sea; Discovered:1981(2013 production?); Reserves:140TCF 
+event = {
+	id = 2803110
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1154 data = -1 }
+		year = 2013
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2013 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1154 value = 140 where = energy }
+		command = { type = province_keypoints which = 1154 value = 2 }
+	}
+}
+###Rusanovskoye field, Kara Sea; Discovered:1981(2016 production?); Reserves:140TCF 
+event = {
+	id = 2803111
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1154 data = -1 }
+		year = 2016
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2016 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1154 value = 140 where = energy }
+		command = { type = province_keypoints which = 1154 value = 2 }
+	}
+}
+###Greater Gorgon gas field, Australia; Discovered:1981(2014 production); Reserves:40TCF 
+event = {
+	id = 2803112
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1710 data = -1 }
+		year = 2014
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2014 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1710 value = 40 where = energy }
+	}
+}
+###Dauletabad gas field, Turkmenistan; Discovered:?(1982 production); Reserves:49TCF 
+event = {
+	id = 2803113
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1491 data = -1 }
+		year = 1982
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1982 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1491 value = 49 where = energy }
+	}
+}
+###Yoloten Gas Field, Turkmenistan; Discovered:2006(2012 production); Reserves:~300TCF 
+event = {
+	id = 2803114
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1491 data = -1 }
+		year = 2012
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2012 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1491 value = 300 where = energy }
+		command = { type = province_keypoints which = 1491 value = 4 }
+	}
+}
+###Kovykta field, East Siberia; Discovered:1987(2007 production); Reserves:70TCF 
+event = {
+	id = 2803115
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1416 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2007 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1416 value = 70 where = energy }
+	}
+}
+###Shtokman field,  Barents Sea; Discovered:1988(2015 production); Reserves:133TCF 
+event = {
+	id = 2803116
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1771 data = -1 }
+		year = 2015
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2015 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1771 value = 133 where = energy }
+		command = { type = province_keypoints which = 1771 value = 1 }
+	}
+}
+###North West Shelf Venture, Australia; Discovered:1980s(1989 production); Reserves:33TCF 
+event = {
+	id = 2803117
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1709 data = -1 }
+		year = 1989
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1989 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1709 value = 33 where = energy }
+	}
+}
+###Jonah Field, Wyoming; Discovered:1993s(2011 production?); Reserves:11TCF 
+event = {
+	id = 2803118
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 705 data = -1 }
+		year = 2011
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2011 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 705 value = 11 where = energy }
+	}
+}
+###Troll gas field, Norway; Discovered:1990s(1995 production); Reserves:46TCF 
+event = {
+	id = 2803119
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 110 data = -1 }
+		year = 1995
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1995 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 110 value = 46 where = energy }
+	}
+}
+###Shah Deniz gas field, Azerbaijan; Discovered:1999(2006 production); Reserves:42TCF, 2bbl 
+event = {
+	id = 2803120
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 1907 data = -1 }
+		year = 2006
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2006 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1907 value = 42 where = energy }
+		command = { type = add_prov_resource which = 1907 value = 8 where = oil }
+	}
+}
+###Marcellus shale gas field, New York, US; Discovered:2003(2010 production?); Reserves:500TCF, 50TCF currently extractable 
+event = {
+	id = 2803121
+	random = no
+
+	trigger = {
+		random = 15
+		control = { province = 611 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 611 value = 50 where = energy }
+	}
+}
+###Marcellus shale gas field phase 2, New York, US; Discovered:2003(2015 production?); Reserves:500TCF, 262TCF extractable (enchanced recovery)
+event = {
+	id = 2803122
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 610 data = -1 }
+		year = 2015
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2015 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 610 value = 212 where = energy }
+		command = { type = province_keypoints which = 610 value = 3 }
+	}
+}
+###Kish Gas Field, Iran; Discovered:2006(2013 production?); Reserves:45TCF
+event = {
+	id = 2803123
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1498 data = -1 }
+		year = 2013
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2013 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1498 value = 45 where = energy }
+	}
+}
+###Golshan Gas Field, Iran; Discovered:2006(2014 production?); Reserves:50TCF
+event = {
+	id = 2803124
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1498 data = -1 }
+		year = 2014
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2014 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1498 value = 50 where = energy }
+		command = { type = province_keypoints which = 1498 value = 1 }
+	}
+}
+###Ormen Lange Gas Field, Norway; Discovered:2000s(2007 production); Reserves:11TCF
+event = {
+	id = 2803125
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 117 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2007 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 117 value = 11 where = energy }
+	}
+}
+###Slochteren Gas Field, Netherlands; Discovered:1959(1963 production); Reserves:95TCF
+event = {
+	id = 2803126
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 79 data = -1 }
+		year = 1963
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1963 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 79 value = 95 where = energy }
+		command = { type = province_keypoints which = 79 value = 1 }
+	}
+}
+###Haynesville Shale Gas Field, East Texas; Discovered:2007(2008 production); Reserves:250TCF
+event = {
+	id = 2803127
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 682 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 682 value = 50 where = energy }
+	}
+}
+###Haynesville Shale Gas Field expansion, East Texas; Discovered:2007(2011 production?); Reserves:250TCF
+event = {
+	id = 2803128
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 682 data = -1 }
+		year = 2011
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2011 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 682 value = 200 where = energy }
+		command = { type = province_keypoints which = 682 value = 4 }
+	}
+}
+###Point Tomson Gas Field, Alaska; Discovered:?(2011 production); Reserves:113TCF
+event = {
+	id = 2803129
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 551 data = -1 }
+		year = 2011
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2011 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 551 value = 113 where = energy }
+		command = { type = province_keypoints which = 551 value = 2 }
+	}
+}
+###Hassi R'mel Gas Field, Algeria; Discovered:1956(1960 production); Reserves:90TCF
+event = {
+	id = 2803130
+	random = no
+
+	trigger = {
+		random = 20
+		control = { province = 1013 data = -1 }
+		year = 1960
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1013 value = 90 where = energy }
+		command = { type = province_keypoints which = 1013 value = 1 }
+	}
+}
+###Tangguh gas field, West Papua; Discovered:1990s(2008 production); Reserves:17TCF
+event = {
+	id = 2803131
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1659 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1659 value = 17 where = energy }
+	}
+}
+
+
+###1Mt of Coal = 1 unit of energy
+###Australia Coal Fields/Production = 260Mt (2000), 430Mt (2010)
+###Bowen Basin, Queensland; Discovered:????(xxx production); Est Production:100Mt/yr(2000), 180Mt/yr(2010)
+event = {
+	id = 2803300
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1944
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1944 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803301
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1954
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1954 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803302
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1964
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1964 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803303
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803304
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1984
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1984 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803305
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 1998
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1998 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803306
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1698 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1698 value = 40 where = energy }
+                command = { type = province_keypoints which = 1698 value = 1 }
+	}
+}
+###Hunter Valley, New South Wales; Discovered:????(xxx production); Est Production:100Mt/yr(2000), 180Mt/yr(2010)
+event = {
+	id = 2803307
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 1948
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803308
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 1958
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803309
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 1968
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1968 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803310
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803311
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 1988
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1988 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803312
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 2002
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2002 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803313
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1724 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1724 value = 40 where = energy }
+                command = { type = province_keypoints which = 1724 value = 1 }
+	}
+}
+###Latrobe Valley, Victoria; Discovered:????(xxx production); Est Production:60Mt/yr(2000)
+event = {
+	id = 2803314
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1730 data = -1 }
+		year = 1950
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1730 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803315
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1730 data = -1 }
+		year = 1970
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1970 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1730 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803316
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1730 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1730 value = 20 where = energy }
+	}
+}
+###China Coal Fields/Production = 1000Mt (2000), 3000Mt (2010)
+###Anhui Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010)
+event = {
+	id = 2803317
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1221 data = -1 }
+		year = 1955
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1221 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803318
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1222 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1222 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803319
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1222 data = -1 }
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1222 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803320
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1222 data = -1 }
+		year = 2004
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1222 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803321
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1223 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2007 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1223 value = 50 where = energy }
+	}
+}
+###Guizhou Province; Discovered:????(xxx production); Est Production:80Mt/yr(2000), 240Mt/yr(2010) 
+event = {
+	id = 2803322
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1262 data = -1 }
+		year = 1962
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1962 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1262 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803323
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1364 data = -1 }
+		year = 1982
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1982 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1364 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803324
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1364 data = -1 }
+		year = 2002
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2002 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1364 value = 60 where = energy }
+	}
+}
+event = {
+	id = 2803325
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1365 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1365 value = 100 where = energy }
+	}
+}
+###Hebei Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010) 1210 – 1213
+event = {
+	id = 2803326
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1210 data = -1 }
+		year = 1970
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1970 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1210 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803327
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1211 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1211 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803328
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1212 data = -1 }
+		year = 2000
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2000 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1212 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803329
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1213 data = -1 }
+		year = 2009
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2009 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1213 value = 50 where = energy }
+	}
+}
+###Heilongjiang Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010) 1375
+event = {
+	id = 2803330
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1375 data = -1 }
+		year = 1964
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1964 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1375 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803331
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1375 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1375 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803332
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1375 data = -1 }
+		year = 2004
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1375 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803333
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1375 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1375 value = 50 where = energy }
+	}
+}
+###Henan Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010) 1228 – 1232
+event = {
+	id = 2803334
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1228 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1228 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803335
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1229 data = -1 }
+		year = 1988
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1988 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1229 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803336
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1230 data = -1 }
+		year = 2001
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2001 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1230 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803337
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1231 data = -1 }
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1231 value = 30 where = energy }
+	}
+}
+event = {
+	id = 2803338
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1232 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1232 value = 20 where = energy }
+	}
+}
+###Inner Mongolia Province; Discovered:????(xxx production); Est Production:220Mt/yr(2000), 650Mt/yr(2010) 1207, 1208, 1439
+event = {
+	id = 2803339
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1207 data = -1 }
+		year = 1960
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1207 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803340
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1208 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1208 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803341
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1208 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1208 value = 80 where = energy }
+	}
+}
+event = {
+	id = 2803342
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1208 data = -1 }
+		year = 2001
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2001 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1208 value = 130 where = energy }
+                command = { type = province_keypoints which = 1208 value = 2 }
+	}
+}
+event = {
+	id = 2803343
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1207 data = -1 }
+		year = 2003
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2003 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1207 value = 150 where = energy }
+                command = { type = province_keypoints which = 1207 value = 1 }
+	}
+}
+event = {
+	id = 2803344
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1439 data = -1 }
+		year = 2006
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2006 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1439 value = 150 where = energy }
+                command = { type = province_keypoints which = 1439 value = 1 }
+	}
+}
+###Liaoning Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010) 1396, 1389
+event = {
+	id = 2803345
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1396 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1396 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803346
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1396 data = -1 }
+		year = 2004
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1396 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803347
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1389 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1389 value = 50 where = energy }
+	}
+}
+###Shaanxi Province; Discovered:????(xxx production); Est Production:220Mt/yr(2000), 650Mt/yr(2010) 1209, 1225, 1226
+event = {
+	id = 2803348
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1209 data = -1 }
+		year = 1963
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1963 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1209 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803349
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1225 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1225 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803350
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1225 data = -1 }
+		year = 1993
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1993 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1225 value = 80 where = energy }
+	}
+}
+event = {
+	id = 2803351
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1225 data = -1 }
+		year = 2002
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2002 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1225 value = 130 where = energy }
+                command = { type = province_keypoints which = 1225 value = 2 }
+	}
+}
+event = {
+	id = 2803352
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1209 data = -1 }
+		year = 2004
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1209 value = 150 where = energy }
+                command = { type = province_keypoints which = 1209 value = 1 }
+	}
+}
+event = {
+	id = 2803353
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1226 data = -1 }
+		year = 2007
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2007 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1226 value = 150 where = energy }
+                command = { type = province_keypoints which = 1226 value = 1 }
+	}
+}
+### Province; Discovered:????(xxx production); Est Production:220Mt/yr(2000), 650Mt/yr(2010) 1270 – 1272
+event = {
+	id = 2803354
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1270 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1270 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803355
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1271 data = -1 }
+		year = 1982
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1982 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1271 value = 70 where = energy }
+	}
+}
+event = {
+	id = 2803356
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1271 data = -1 }
+		year = 1996
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1996 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1271 value = 80 where = energy }
+	}
+}
+event = {
+	id = 2803357
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1271 data = -1 }
+		year = 2003
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2003 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1271 value = 130 where = energy }
+                command = { type = province_keypoints which = 1271 value = 2 }
+	}
+}
+event = {
+	id = 2803358
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1270 data = -1 }
+		year = 2005
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2005 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1270 value = 150 where = energy }
+                command = { type = province_keypoints which = 1270 value = 1 }
+	}
+}
+event = {
+	id = 2803359
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1272 data = -1 }
+		year = 2008
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2008 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1272 value = 150 where = energy }
+                command = { type = province_keypoints which = 1272 value = 1 }
+	}
+}
+###Shandong Province; Discovered:????(xxx production); Est Production:40Mt/yr(2000), 130Mt/yr(2010) 1214 – 1216
+event = {
+	id = 2803360
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1214 data = -1 }
+		year = 1971
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1214 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803361
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1214 data = -1 }
+		year = 1991
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1991 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1214 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803362
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1215 data = -1 }
+		year = 2001
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2001 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1215 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803363
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1216 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1216 value = 50 where = energy }
+	}
+}
+###Russia Coal Fields/Production = 350Mt (2000), 550Mt (2010)
+###Kuznetsk Basin; Discovered:????(xxx production); Est Production:300Mt/yr(2000)
+event = {
+	id = 2803364
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1546 data = -1 }
+		year = 1947
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1947 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1546 value = 50 where = energy }
+	}
+}
+event = {
+	id = 2803365
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1546 data = -1 }
+		year = 1957
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1546 value = 50 where = energy }
+                command = { type = province_keypoints which = 1546 value = 1 }
+	}
+}
+event = {
+	id = 2803366
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1546 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1546 value = 50 where = energy }
+	}
+}
+event = {
+	id = 2803367
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1546 data = -1 }
+		year = 1977
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1546 value = 50 where = energy }
+                command = { type = province_keypoints which = 1546 value = 1 }
+	}
+}
+event = {
+	id = 2803368
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1546 data = -1 }
+		year = 1987
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1987 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1546 value = 100 where = energy }
+                command = { type = province_keypoints which = 1546 value = 1 }
+	}
+}
+###Kansk-Achunsky Basin; Discovered:????(xxx production); Est Production:50Mt/yr(2000), 100Mt/yr(2010)
+event = {
+	id = 2803369
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1560 data = -1 }
+		year = 1976
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1976 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1560 value = 50 where = energy }
+	}
+}
+event = {
+	id = 2803370
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1560 data = -1 }
+		year = 2006
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2006 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1560 value = 50 where = energy }
+                command = { type = province_keypoints which = 1560 value = 1 }
+	}
+}
+###Yakutia Basin; Discovered:????(xxx production); Est Production:100Mt/yr(2010)
+event = {
+	id = 2803371
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1409 data = -1 }
+		year = 2009
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2009 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1409 value = 100 where = energy }
+                command = { type = province_keypoints which = 1409 value = 1 }
+	}
+}
+###Poland Coal Fields/Production = 160Mt (2000)
+###Silesia Basin; Discovered:????(xxx production); Est Production:160Mt/yr(2000)
+event = {
+	id = 2803372
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 482 data = -1 }
+		year = 1951
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 482 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803373
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 482 data = -1 }
+		year = 1971
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 482 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803374
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 473 data = -1 }
+		year = 1961
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 473 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803375
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 473 data = -1 }
+		year = 1981
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1981 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 473 value = 40 where = energy }
+	}
+}
+###Kazakhstan Coal Fields/Production = 100Mt (1990)
+###Ekibastuz coal basin (Pavlodar province); Discovered:????(xxx production); Est Production:100Mt/yr(1990)
+event = {
+	id = 2803376
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1551 data = -1 }
+		year = 1951
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1551 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803377
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1551 data = -1 }
+		year = 1961
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1551 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803378
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1551 data = -1 }
+		year = 1971
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1551 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803379
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1551 data = -1 }
+		year = 1981
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1981 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1551 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803380
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1551 data = -1 }
+		year = 1988
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1988 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1551 value = 20 where = energy }
+                command = { type = province_keypoints which = 1551 value = 1 }
+	}
+}
+###Columbia Coal Fields/Production = 75Mt (2000)
+###El Cerrejón Coal Mine; Discovered:????(xxx production); Est Production:75Mt/yr(2000)
+event = {
+	id = 2803381
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 803 data = -1 }
+		year = 1970
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1970 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 803 value = 30 where = energy }
+	}
+}
+event = {
+	id = 2803382
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 803 data = -1 }
+		year = 1986
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1986 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 803 value = 45 where = energy }
+	}
+}
+###India Coal Fields/Production = 530Mt (2000)
+###1458; Discovered:????(xxx production); Est Production:130Mt/yr(2000)
+event = {
+	id = 2803383
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1458 data = -1 }
+		year = 1956
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1458 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803384
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1458 data = -1 }
+		year = 1966
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1966 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1458 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803385
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1458 data = -1 }
+		year = 1976
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1976 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1458 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803386
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1458 data = -1 }
+		year = 1986
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1986 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1458 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803387
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1458 data = -1 }
+		year = 1996
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1996 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1458 value = 30 where = energy }
+	}
+}
+###1459; Discovered:????(xxx production); Est Production:130Mt/yr(2000)
+event = {
+	id = 2803388
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1459 data = -1 }
+		year = 1955
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1459 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803389
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1459 data = -1 }
+		year = 1965
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1965 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1459 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803390
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1459 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1459 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803391
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1459 data = -1 }
+		year = 1985
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1985 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1459 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803392
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1459 data = -1 }
+		year = 1995
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1995 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1459 value = 30 where = energy }
+	}
+}
+###1460; Discovered:????(xxx production); Est Production:130Mt/yr(2000)
+event = {
+	id = 2803393
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1460 data = -1 }
+		year = 1960
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1460 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803394
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1460 data = -1 }
+		year = 1970
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1970 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1460 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803395
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1460 data = -1 }
+		year = 1980
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1980 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1460 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803396
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1460 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1460 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803397
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1460 data = -1 }
+		year = 2000
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2000 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1460 value = 30 where = energy }
+	}
+}
+###1461; Discovered:????(xxx production); Est Production:130Mt/yr(2000)
+event = {
+	id = 2803398
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1461 data = -1 }
+		year = 1953
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1461 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803399
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1461 data = -1 }
+		year = 1963
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1963 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1461 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803400
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1461 data = -1 }
+		year = 1973
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1973 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1461 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803401
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1461 data = -1 }
+		year = 1983
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1983 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1461 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803402
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1461 data = -1 }
+		year = 1993
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1993 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1461 value = 30 where = energy }
+	}
+}
+###South Africa Coal Fields/Production = 250Mt (2000)
+###1119; Discovered:????(xxx production); Est Production:80Mt/yr(2000)
+event = {
+	id = 2803403
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1119 data = -1 }
+		year = 1948
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1119 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803404
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1119 data = -1 }
+		year = 1958
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1958 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1119 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803405
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1119 data = -1 }
+		year = 1968
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1968 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1119 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803406
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1119 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1119 value = 20 where = energy }
+	}
+}
+###1120; Discovered:????(xxx production); Est Production:80Mt/yr(2000)
+event = {
+	id = 2803407
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1120 data = -1 }
+		year = 1953
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1120 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803408
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1120 data = -1 }
+		year = 1963
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1963 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1120 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803409
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1120 data = -1 }
+		year = 1973
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1973 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1120 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803410
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1120 data = -1 }
+		year = 1983
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1983 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1120 value = 20 where = energy }
+	}
+}
+###1121; Discovered:????(xxx production); Est Production:80Mt/yr(2000)
+event = {
+	id = 2803411
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1121 data = -1 }
+		year = 1957
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1121 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803412
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1121 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1121 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803413
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1121 data = -1 }
+		year = 1977
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1121 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803414
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1121 data = -1 }
+		year = 1987
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1987 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1121 value = 20 where = energy }
+	}
+}
+###Indonesia Coal Fields/Production = 180Mt (2000), 230Mt (2010)
+###1649; Discovered:????(xxx production); Est Production:45Mt/yr(2000)
+event = {
+	id = 2803415
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1649 data = -1 }
+		year = 1984
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1984 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1649 value = 45 where = energy }
+	}
+}
+###1641; Discovered:????(xxx production); Est Production:50Mt/yr(2000)
+event = {
+	id = 2803416
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1641 data = -1 }
+		year = 2004
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2004 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1641 value = 50 where = energy }
+	}
+}
+###1643; Discovered:????(xxx production); Est Production:45Mt/yr(2000)
+event = {
+	id = 2803417
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1643 data = -1 }
+		year = 1994
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1994 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1643 value = 45 where = energy }
+	}
+}
+###1358; Discovered:????(xxx production); Est Production:45Mt/yr(2000)
+event = {
+	id = 2803418
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1358 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1358 value = 45 where = energy }
+	}
+}
+###1359; Discovered:????(xxx production); Est Production:45Mt/yr(2000)
+event = {
+	id = 2803419
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 1359 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 1359 value = 45 where = energy }
+	}
+}
+###USA Coal Fields/Production = 1060Mt (2000)
+###Black Thunder Coal Mine, WY, USA; Discovered:????(1977 production); Est Production:340Mt/yr(2000) 90/340
+event = {
+	id = 2803420
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1977
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 90 where = energy }
+	}
+}
+###Cordero Rojo Coal Mine, WY, USA; Discovered:????(1993 production); Est Production:340Mt/yr(2000) 126/340
+event = {
+	id = 2803421
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1993
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1993 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 36 where = energy }
+                command = { type = province_keypoints which = 704 value = 1 }
+	}
+}
+###Belle Ayr Mine, WY, USA; Discovered:????(1972 production); Est Production:340Mt/yr(2000) 154/340
+event = {
+	id = 2803422
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1972
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1972 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 28 where = energy }
+	}
+}
+###Eagle Butte Mine, WY, USA; Discovered:????(1978 production); Est Production:340Mt/yr(2000) 174/340
+event = {
+	id = 2803423
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1978
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1978 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 20 where = energy }
+	}
+}
+###Rawhide Mine, WY, USA; Discovered:????(1978 production); Est Production:340Mt/yr(2000) 191/340
+event = {
+	id = 2803424
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1977
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1977 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 17 where = energy }
+	}
+}
+###Jacobs Ranch Mine, WY, USA; Discovered:????(1980 production); Est Production:340Mt/yr(2000) 230/340
+event = {
+	id = 2803425
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1980
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1980 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 39 where = energy }
+                command = { type = province_keypoints which = 704 value = 1 }
+	}
+}
+###WY Misc Expansions, USA; Discovered:????(1990 production); Est Production:340Mt/yr(2000) 280/340
+event = {
+	id = 2803426
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 50 where = energy }
+	}
+}
+###WY Misc Expansions #2, USA; Discovered:????(1998 production); Est Production:340Mt/yr(2000) 340/340
+event = {
+	id = 2803427
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 704 data = -1 }
+		year = 1998
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1998 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 704 value = 60 where = energy }
+                command = { type = province_keypoints which = 704 value = 1 }
+	}
+}
+###West Virginia, USA; Discovered:????(??? production); Est Production:160Mt/yr(2000) 
+event = {
+	id = 2803428
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 630 data = -1 }
+		year = 1955
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1955 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 630 value = 60 where = energy }
+	}
+}
+event = {
+	id = 2803429
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 630 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 630 value = 60 where = energy }
+	}
+}
+event = {
+	id = 2803430
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 630 data = -1 }
+		year = 1995
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1995 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 630 value = 40 where = energy }
+	}
+}
+###Kentucky, USA; Discovered:????(??? production); Est Production:130Mt/yr(2000)
+event = {
+	id = 2803431
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 640 data = -1 }
+		year = 1965
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1965 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 640 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803432
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 641 data = -1 }
+		year = 1974
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1974 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 641 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803433
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 640 data = -1 }
+		year = 1984
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1984 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 640 value = 40 where = energy }
+	}
+}
+###PA, USA; Discovered:????(??? production); Est Production:75Mt/yr(2000)
+event = {
+	id = 2803434
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 614 data = -1 }
+		year = 1970
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1970 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 614 value = 40 where = energy }
+	}
+}
+event = {
+	id = 2803435
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 614 data = -1 }
+		year = 1990
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1990 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 614 value = 35 where = energy }
+	}
+}
+###TX, USA; Discovered:????(??? production); Est Production:50Mt/yr(2000)
+event = {
+	id = 2803436
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 715 data = -1 }
+		year = 1963
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1963 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 715 value = 25 where = energy }
+	}
+}
+event = {
+	id = 2803437
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 717 data = -1 }
+		year = 1969
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1969 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 717 value = 25 where = energy }
+	}
+}
+###Montana, USA; Discovered:????(??? production); Est Production:38Mt/yr(2000)
+event = {
+	id = 2803438
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 772 data = -1 }
+		year = 1971
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1971 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 772 value = 19 where = energy }
+	}
+}
+event = {
+	id = 2803439
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 772 data = -1 }
+		year = 1991
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1991 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 772 value = 19 where = energy }
+	}
+}
+###Illinois, USA; Discovered:????(??? production); Est Production:33Mt/yr(2000)
+event = {
+	id = 2803440
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 626 data = -1 }
+		year = 1953
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1953 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 626 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803441
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 626 data = -1 }
+		year = 1962
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1962 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 626 value = 13 where = energy }
+	}
+}
+###Virginia, USA; Discovered:????(??? production); Est Production:33Mt/yr(2000)
+event = {
+	id = 2803442
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 639 data = -1 }
+		year = 1951
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 639 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803443
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 639 data = -1 }
+		year = 1979
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1979 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 639 value = 13 where = energy }
+	}
+}
+###North Dakota, USA; Discovered:????(??? production); Est Production:32Mt/yr(2000)
+event = {
+	id = 2803444
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 698 data = -1 }
+		year = 1950
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1950 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 698 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803445
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 698 data = -1 }
+		year = 1979
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1979 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 698 value = 12 where = energy }
+	}
+}
+###Colorado, USA; Discovered:????(??? production); Est Production:29Mt/yr(2000)
+event = {
+	id = 2803446
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 706 data = -1 }
+		year = 1983
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1983 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 706 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803447
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 706 data = -1 }
+		year = 1999
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1999 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 706 value = 9 where = energy }
+	}
+}
+###Indiana, USA; Discovered:????(??? production); Est Production:28Mt/yr(2000)
+event = {
+	id = 2803448
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 627 data = -1 }
+		year = 1973
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1973 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 627 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803449
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 627 data = -1 }
+		year = 2010
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 2010 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 627 value = 8 where = energy }
+	}
+}
+###New Mexico, USA; Discovered:????(??? production); Est Production:27Mt/yr(2000)
+event = {
+	id = 2803450
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 725 data = -1 }
+		year = 1967
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1967 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 725 value = 10 where = energy }
+	}
+}
+event = {
+	id = 2803451
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 725 data = -1 }
+		year = 1997
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1997 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 725 value = 17 where = energy }
+	}
+}
+###Utah, USA; Discovered:????(??? production); Est Production:27Mt/yr(2000)
+event = {
+	id = 2803452
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 732 data = -1 }
+		year = 1961
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1961 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 732 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803453
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 732 data = -1 }
+		year = 1941
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1941 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 732 value = 7 where = energy }
+	}
+}
+###Ohio, USA; Discovered:????(??? production); Est Production:22Mt/yr(2000)
+event = {
+	id = 2803454
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 628 data = -1 }
+		year = 1949
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1949 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 628 value = 22 where = energy }
+	}
+}
+###Alabama, USA; Discovered:????(??? production); Est Production:29Mt/yr(2000)
+event = {
+	id = 2803455
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 672 data = -1 }
+		year = 1948
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1948 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 672 value = 20 where = energy }
+	}
+}
+event = {
+	id = 2803456
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 672 data = -1 }
+		year = 1975
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1975 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 672 value = 9 where = energy }
+	}
+}
+###Arizona, USA; Discovered:????(??? production); Est Production:13Mt/yr(2000)
+event = {
+	id = 2803457
+	random = no
+
+	trigger = {
+		random = 10
+		control = { province = 730 data = -1 }
+		year = 1960
+	}
+
+	name = AI_EVENT
+	desc = AI_EVENT
+	style = 0	
+	
+	date = { day = 1 month = january year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 2099 }
+
+	action_a = {
+		name = "Ok"
+		command = { type = add_prov_resource which = 730 value = 13 where = energy }
+	}
+}

@@ -1,0 +1,2878 @@
+#  STRING NAME (do not change!);English;French;Italian;Spanish;German;Polish;Portuguese;Russian;;Extra2;x
+###########################################;;;;;;;;;;;x
+########### MESSAGE HANDLER    ############;;;;;;;;;;;x
+###########################################;;;;;;;;;;;x
+##;;;;;;;;;;;x
+#  PLAYER TITLES;;;;;;;;;;;x
+##;;;;;;;;;;;x
+MESS_RANK0;阁下 ;;;;;;;;;;X
+MESS_RANK1;阁下 ;;;;;;;;;;X
+MESS_RANK2;阁下 ;;;;;;;;;;X
+MESS_RANK3;阁下 ;;;;;;;;;;X
+MESS_RANK4;阁下 ;;;;;;;;;;X
+MESS_RANK5;阁下 ;;;;;;;;;;X
+MESS_RANK6;阁下 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MESS_MASTERCALL1;阁下 ;;;;;;;;;;X
+MESS_MASTERCALL2;阁下 ;;;;;;;;;;X
+MESS_MASTERCALL3;阁下 ;;;;;;;;;;X
+MESS_MASTERCALL4;阁下 ;;;;;;;;;;X
+MESS_MASTERCALL5;阁下 ;;;;;;;;;;X
+MESS_MASTERCALL6;阁下 ;;;;;;;;;;X
+##;;;;;;;;;;;x
+#  These following pejorative adjectives are randomly inserted in some messages. The definite article ('the') can either be in the actual message or in this string ? the syntax in the english version is 'the %s [in %s have declared war on us]'.;;;;;;;;;;;x
+##;;;;;;;;;;;x
+MESS_BADWORDS1;那帮混蛋 ;;;;;;;;;;X
+MESS_BADWORDS2;那群猪猡 ;;;;;;;;;;X
+MESS_BADWORDS3;那些异端 ;;;;;;;;;;X
+MESS_BADWORDS4;那些叛徒 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+EFFECTS;效果 ;;;;;;;;;;x
+HISTORY;历史 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+MESS_NOSUNK;（没有船只被击沉） ;;;;;;;;;;X
+MESS_SUNKLIST;以下船只被击沉：\n;;;;;;;;;;X
+##;;;;;;;;;;;x
+#  NOTE: The messages work this way:;*_SETUP = the string displayed in the in-game message display options listing;;*_SETUP = the string displayed in the in-game message display options listing;;*_SETUP = the string displayed in the in-game message display options listing;;;;;;x
+##;*_HEADER = small orange header in message box;;*_HEADER = small orange header in message box;;*_HEADER = small orange header in message box;;;;;;x
+##;*_1 = large white header in message box (limited space!);;*_1 = large white header in message box (limited space!);;*_1 = large white header in message box (limited space!);;;;;;x
+##;*_2 = small orange text in message box;;*_2 = small orange text in message box;;*_2 = small orange text in message box;;;;;;x
+##;*_3 = all caps white text in message box;;*_3 = all caps white text in message box;;*_3 = all caps white text in message box;;;;;;x
+##;*_4 = small orange text in message box;;*_4 = small orange text in message box;;*_4 = small orange text in message box;;;;;;x
+##;*_5 = all caps white text in message box;;*_5 = all caps white text in message box;;*_5 = all caps white text in message box;;;;;;x
+##;*_6 = small orange text in message box;;*_6 = small orange text in message box;;*_6 = small orange text in message box;;;;;;x
+##;*_LOG = the text that is displayed in the game log (in the bottom of the screen) ? most often this is just a shorter recap of all the other text strings.;;*_LOG = the text that is displayed in the game log (in the bottom of the screen) ? most often this is just a shorter recap of all the other text strings.;;*_LOG = the text that is displayed in the game log (in the bottom of the screen) ? most often this is just a shorter recap of all the other text strings.;;;;;;x
+##;*_BTN1 = left button;;*_BTN1 = left button;;*_BTN1 = left button;;;;;;x
+##;*_BTN2 = right button;;*_BTN2 = right button;;*_BTN2 = right button;;;;;;x
+##;;;;;;;;;;;x
+##;If any field is left blank it will not be displayed at all in the message box. If a button is left blank the button will not be displayed. Functionality of buttons cannot be changed.;;If any field is left blank it will not be displayed at all in the message box. If a button is left blank the button will not be displayed. Functionality of buttons cannot be changed.;;If any field is left blank it will not be displayed at all in the message box. If a button is left blank the button will not be displayed. Functionality of buttons cannot be changed.;;;;;;x
+##;All texts EXCEPT the '*_HEADER' can be of virtually any length ? the box and button size will change accordingly.;;All texts EXCEPT the '*_HEADER' can be of virtually any length ? the box and button size will change accordingly.;;All texts EXCEPT the '*_HEADER' can be of virtually any length ? the box and button size will change accordingly.;;;;;;x
+##;VERY VERY VERY IMPORTANT!!! YOU MUST NOT CHANGE THE ORDER OF ANY VARIABLES ('%s' and '%d') OR ADD OR REMOVE ANY VARIABLES!!!;;VERY VERY VERY IMPORTANT!!! YOU MUST NOT CHANGE THE ORDER OF ANY VARIABLES ('%s' and '%d') OR ADD OR REMOVE ANY VARIABLES!!!;;VERY VERY VERY IMPORTANT!!! YOU MUST NOT CHANGE THE ORDER OF ANY VARIABLES ('%s' and '%d') OR ADD OR REMOVE ANY VARIABLES!!!;;;;;;x
+##;;;;;;;;;;;x
+TASKFORCE_SETUP;当我们发现一个敌方海上单位 ;;;;;;;;;;X
+TASKFORCE_HEADER;海军简报%s ;;;;;;;;;;X
+TASKFORCE_1;发现目标 ;;;;;;;;;;X
+TASKFORCE_2;%t， 我们发现一个来自 ;;;;;;;;;;X
+TASKFORCE_3;%s ;;;;;;;;;;X
+TASKFORCE_4;的海上目标，位于 ;;;;;;;;;;X
+TASKFORCE_5;%s ;;;;;;;;;;X
+TASKFORCE_6;;;;;;;;;;;X
+TASKFORCE_LOG;我们发现一个来自%s的海上目标，位于%s ;;;;;;;;;;X
+TASKFORCE_BTN1;知道了 ;;;;;;;;;;X
+TASKFORCE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+DIVDEPLOY_SETUP;当我们重整军队 ;;;;;;;;;;X
+DIVDEPLOY_HEADER;总参谋部简报%s ;;;;;;;;;;X
+DIVDEPLOY_1;部队重整 ;;;;;;;;;;X
+DIVDEPLOY_2;%t， 我们发出了 ;;;;;;;;;;X
+DIVDEPLOY_3;%s ;;;;;;;;;;X
+DIVDEPLOY_4;成为 ;;;;;;;;;;X
+DIVDEPLOY_5;%s ;;;;;;;;;;X
+DIVDEPLOY_6;的一部分的命令 ;;;;;;;;;;X
+DIVDEPLOY_LOG;%s已被指派到%s。 ;;;;;;;;;;X
+DIVDEPLOY_BTN1;知道了 ;;;;;;;;;;X
+DIVDEPLOY_BTN2;选择 ;;;;;;;;;;X
+DIVFROM; 来自%s ;;;;;;;;;;X
+#;;;;;;;;;;;X 
+AMISFIN_SETUP;本国空军在指定时间内完成指派的任务 ;;;;;;;;;;X
+AMISFIN_HEADER;空军简报%s ;;;;;;;;;;X
+AMISFIN_1;任务完成 ;;;;;;;;;;X
+AMISFIN_2;%t， 空军部队 ;;;;;;;;;;X
+AMISFIN_3;%s ;;;;;;;;;;X
+AMISFIN_4;已完成指派的任务 ;;;;;;;;;;X
+AMISFIN_5;;;;;;;;;;;X
+AMISFIN_6;;;;;;;;;;;X
+AMISFIN_LOG;%s已完成所指派的‘%s’任务 ;;;;;;;;;;X
+AMISFIN_BTN1;知道了 ;;;;;;;;;;X
+AMISFIN_BTN2;选择 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+NMISFIN_SETUP;本国海军在指定时间内完成指派的任务 ;;;;;;;;;;X
+NMISFIN_HEADER;海军简报%s ;;;;;;;;;;X
+NMISFIN_1;任务完成 ;;;;;;;;;;X
+NMISFIN_2;%t， 海军部队 ;;;;;;;;;;X
+NMISFIN_3;%s ;;;;;;;;;;X
+NMISFIN_4;已完成指派的任务 ;;;;;;;;;;X
+NMISFIN_5;;;;;;;;;;;X
+NMISFIN_6;;;;;;;;;;;X
+NMISFIN_LOG;%s已完成所指派的‘%s’任务 ;;;;;;;;;;X
+NMISFIN_BTN1;知道了 ;;;;;;;;;;X
+NMISFIN_BTN2;选择 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_HEADER;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_1;失去连接 ;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_2;你已经失去了同主机的联系， 可能是他离开了游戏，也 可能是他的网络连接故障， 假如主机保存了游戏你可以 重新连接并从保存的游戏开 始。不管怎样你将退出当前 游戏(点击继续你还可以查看 你的国家) ;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_3;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_4;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_5;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_6;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_LOG;;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_BTN1;结束 ;;;;;;;;;;X
+HOST_DROP_MSG_CLIENT_BTN2;继续 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+WEADT_SETUP;当我们屈服于他国的领土要求 ;;;;;;;;;;X
+WEADT_HEADER;外交简报%s ;;;;;;;;;;X
+WEADT_1;领土割让 ;;;;;;;;;;X
+WEADT_2;%t， 我们同意 ;;;;;;;;;;X
+WEADT_3;%s ;;;;;;;;;;X
+WEADT_4;的要求割让 ;;;;;;;;;;X
+WEADT_5;%s ;;;;;;;;;;X
+WEADT_6;给他们 ;;;;;;;;;;X
+WEADT_LOG;我们被迫向%s割让%s。 ;;;;;;;;;;X
+WEADT_BTN1;知道了 ;;;;;;;;;;X
+WEADT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+THEYADT_SETUP;当他国屈服于另一国的领土要求 ;;;;;;;;;;X
+THEYADT_HEADER;情报部简报%s ;;;;;;;;;;X
+THEYADT_1;领土割让 ;;;;;;;;;;X
+THEYADT_2;%t， %s同意 ;;;;;;;;;;X
+THEYADT_3;%s ;;;;;;;;;;X
+THEYADT_4;的要求割让 ;;;;;;;;;;X
+THEYADT_5;%s ;;;;;;;;;;X
+THEYADT_6;给他们 ;;;;;;;;;;X
+THEYADT_LOG;%s被迫向%s割让%s。 ;;;;;;;;;;X
+THEYADT_BTN1;知道了 ;;;;;;;;;;X
+THEYADT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+ADTUS_SETUP;当他国屈服于我们的领土要求 ;;;;;;;;;;X
+ADTUS_HEADER;情报部简报%s ;;;;;;;;;;X
+ADTUS_1;领土割让 ;;;;;;;;;;X
+ADTUS_2;%t， %s 接受我们的合理要求将 ;;;;;;;;;;X
+ADTUS_3;%s ;;;;;;;;;;X
+ADTUS_4;交给我们 ;;;;;;;;;;X
+ADTUS_5;;;;;;;;;;;X
+ADTUS_6;;;;;;;;;;;X
+ADTUS_LOG;%s接受我们的要求割让%s。 ;;;;;;;;;;X
+ADTUS_BTN1;知道了 ;;;;;;;;;;X
+ADTUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+WEDDT_SETUP;当我们拒绝他国的领土要求 ;;;;;;;;;;X
+WEDDT_HEADER;外交简报%s ;;;;;;;;;;X
+WEDDT_1;拒绝要求 ;;;;;;;;;;X
+WEDDT_2;%t， 我国拒绝了来自 ;;;;;;;;;;X
+WEDDT_3;%s ;;;;;;;;;;X
+WEDDT_4;的无理要求， 捍卫了我国的领土主权 ;;;;;;;;;;X
+WEDDT_5;;;;;;;;;;;X
+WEDDT_6;;;;;;;;;;;X
+WEDDT_LOG;我们拒绝了来自%s的领土要求。 ;;;;;;;;;;X
+WEDDT_BTN1;知道了 ;;;;;;;;;;X
+WEDDT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X 
+THEYDDT_SETUP;当他国拒绝另一国的领土要求 ;;;;;;;;;;X
+THEYDDT_HEADER;情报部简报%s ;;;;;;;;;;X
+THEYDDT_1;拒绝要求 ;;;;;;;;;;X
+THEYDDT_2;%s ;;;;;;;;;;X
+THEYDDT_3;拒绝屈服于来自 ;;;;;;;;;;X
+THEYDDT_4;%s ;;;;;;;;;;X
+THEYDDT_5;的领土要求 ;;;;;;;;;;X
+THEYDDT_6;;;;;;;;;;;X
+THEYDDT_LOG;%s拒绝了来自%s的领土要求。 ;;;;;;;;;;X
+THEYDDT_BTN1;知道了 ;;;;;;;;;;X
+THEYDDT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+DDTUS_SETUP;当他国拒绝我们的领土要求 ;;;;;;;;;;X
+DDTUS_HEADER;外交简报%s ;;;;;;;;;;X
+DDTUS_1;拒绝要求 ;;;;;;;;;;X
+DDTUS_2;%s ;;;;;;;;;;X
+DDTUS_3;拒绝了我国的领土要求 ;;;;;;;;;;X
+DDTUS_4;;;;;;;;;;;X
+DDTUS_5;;;;;;;;;;;X
+DDTUS_6;;;;;;;;;;;X
+DDTUS_LOG;%s拒绝了我国的领土要求。 ;;;;;;;;;;X
+DDTUS_BTN1;知道了 ;;;;;;;;;;X
+DDTUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+THEYCOUPUSF_SETUP;当他国颠覆我们失败 ;;;;;;;;;;X
+THEYCOUPUSF_HEADER;安全简报%s ;;;;;;;;;;X
+THEYCOUPUSF_1;政变企图 ;;;;;;;;;;X
+THEYCOUPUSF_2;%t， 我们怀疑 ;;;;;;;;;;X
+THEYCOUPUSF_3;%s ;;;;;;;;;;X
+THEYCOUPUSF_4;在背后支持着政变的阴谋 ;;;;;;;;;;X
+THEYCOUPUSF_5;;;;;;;;;;;X
+THEYCOUPUSF_6;;;;;;;;;;;X
+THEYCOUPUSF_LOG;%s在我国发动政变失败。 ;;;;;;;;;;X
+THEYCOUPUSF_BTN1;知道了 ;;;;;;;;;;X
+THEYCOUPUSF_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+RANEVENT_BTN2;历史 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+RANEVENTHIST_SETUP;当一个随机历史事件发生 ;;;;;;;;;;X
+RANEVENTHIST_HEADER;史实背景 ;;;;;;;;;;X
+RANEVENTHIST_1;%s ;;;;;;;;;;X
+RANEVENTHIST_2;%s ;;;;;;;;;;X
+RANEVENTHIST_3;;;;;;;;;;;X
+RANEVENTHIST_4;;;;;;;;;;;X
+RANEVENTHIST_5;;;;;;;;;;;X
+RANEVENTHIST_6;;;;;;;;;;;X
+RANEVENTHIST_LOG;%s ;;;;;;;;;;X
+RANEVENTHIST_BTN1;知道了 ;;;;;;;;;;X
+RANEVENTHIST_BTN2;详情 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+HISTEVENT_SETUP;当一个历史事件发生 ;;;;;;;;;;X
+HISTEVENT_HEADER;历史事件 ;;;;;;;;;;X
+HISTEVENT_1;%s ;;;;;;;;;;X
+HISTEVENT_2;%s ;;;;;;;;;;X
+HISTEVENT_3;;;;;;;;;;;X
+HISTEVENT_4;;;;;;;;;;;X
+HISTEVENT_5;;;;;;;;;;;X
+HISTEVENT_6;;;;;;;;;;;X
+HISTEVENT_LOG;%s ;;;;;;;;;;X
+HISTEVENT_BTN1;知道了 ;;;;;;;;;;X
+HISTEVENT_BTN2;历史 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+EVENTOTHER_SETUP;当一个单项选择的事件在他国发生 ;;;;;;;;;;X
+EVENTOTHER_HEADER;情报部简报 \n关于%s ;;;;;;;;;;X
+EVENTOTHER_1;%s ;;;;;;;;;;X
+EVENTOTHER_2;发生了 ;;;;;;;;;;X
+EVENTOTHER_3;%s ;;;;;;;;;;X
+EVENTOTHER_4;事件 ;;;;;;;;;;X
+EVENTOTHER_5;;;;;;;;;;;X
+EVENTOTHER_6;;;;;;;;;;;X
+EVENTOTHER_LOG;%s发生了%s事件。 ;;;;;;;;;;X
+EVENTOTHER_BTN1;知道了 ;;;;;;;;;;X
+EVENTOTHER_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;X
+EVENTOTHERS_SETUP;当一个多项选择的事件在他国发生 ;;;;;;;;;;X
+EVENTOTHERS_HEADER;情报部简报 \n关于%s ;;;;;;;;;;X
+EVENTOTHERS_1;%s ;;;;;;;;;;X
+EVENTOTHERS_2;选择 ;;;;;;;;;;X
+EVENTOTHERS_3;%s ;;;;;;;;;;X
+EVENTOTHERS_4;在 ;;;;;;;;;;X
+EVENTOTHERS_5;%s ;;;;;;;;;;X
+EVENTOTHERS_6;;;;;;;;;;;X
+EVENTOTHERS_LOG;%s选择了%s在%s事件。 ;;;;;;;;;;X
+EVENTOTHERS_BTN1;知道了 ;;;;;;;;;;X
+EVENTOTHERS_BTN2;;;;;;;;;;x
+#;;;;;;;;;;;x
+WGEXP_SETUP;当我们派遣远征部队 ;;;;;;;;;;X
+WGEXP_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WGEXP_1;远征部队 ;;;;;;;;;;X
+WGEXP_2;%t， 我们派遣远征军到 ;;;;;;;;;;X
+WGEXP_3;%s ;;;;;;;;;;X
+WGEXP_4;他们已接收了我们的 ;;;;;;;;;;X
+WGEXP_5;%s ;;;;;;;;;;X
+WGEXP_6;远征军 ;;;;;;;;;;X
+WGEXP_LOG;%s收到了我们派出的%s。 ;;;;;;;;;;X
+WGEXP_BTN1;知道了 ;;;;;;;;;;X
+WGEXP_BTN2;查看 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+TGEXP_SETUP;当他国派遣远征部队 ;;;;;;;;;;X
+TGEXP_HEADER;情报部简报%s ;;;;;;;;;;X
+TGEXP_1;远征部队 ;;;;;;;;;;X
+TGEXP_2;%t， 我们得到重要信息: ;;;;;;;;;;X
+TGEXP_3;%s ;;;;;;;;;;X
+TGEXP_4;派出远征军 %s给 ;;;;;;;;;;X
+TGEXP_5;%s ;;;;;;;;;;X
+TGEXP_6;;;;;;;;;;;X
+TGEXP_LOG;%s派出远征军%s给%s。 ;;;;;;;;;;X
+TGEXP_BTN1;知道了 ;;;;;;;;;;X
+TGEXP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+TGEXPUS_SETUP;当我们接收远征部队 ;;;;;;;;;;X
+TGEXPUS_HEADER;总参谋部简报%s ;;;;;;;;;;X
+TGEXPUS_1;远征部队 ;;;;;;;;;;X
+TGEXPUS_2;%t， 一些部队暂时交由我们指挥， 他们来自 ;;;;;;;;;;X
+TGEXPUS_3;%s ;;;;;;;;;;X
+TGEXPUS_4;他们把 ;;;;;;;;;;X
+TGEXPUS_5;%s ;;;;;;;;;;X
+TGEXPUS_6;派给我们 ;;;;;;;;;;X
+TGEXPUS_LOG;%s派遣%s给我们。 ;;;;;;;;;;X
+TGEXPUS_BTN1;知道了 ;;;;;;;;;;X
+TGEXPUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+WRETEXP_SETUP;当我们收回远征部队 ;;;;;;;;;;X
+WRETEXP_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WRETEXP_1;归还远征部队 ;;;;;;;;;;X
+WRETEXP_2;%t， 我们已重新指挥我们的远征军 ;;;;;;;;;;X
+WRETEXP_3;%s ;;;;;;;;;;X
+WRETEXP_4;已将 ;;;;;;;;;;X
+WRETEXP_5;%s ;;;;;;;;;;X
+WRETEXP_6;归还 ;;;;;;;;;;X
+WRETEXP_LOG;%s已将%s归还给我们。 ;;;;;;;;;;X
+WRETEXP_BTN1;知道了 ;;;;;;;;;;X
+WRETEXP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+TRETEXP_SETUP;当他国收回远征部队 ;;;;;;;;;;X
+TRETEXP_HEADER;情报部简报%s ;;;;;;;;;;X
+TRETEXP_1;归还远征部队 ;;;;;;;;;;X
+TRETEXP_2;%t， 我们得到重要信息： ;;;;;;;;;;X
+TRETEXP_3;%s ;;;;;;;;;;X
+TRETEXP_4;将%s归还给 ;;;;;;;;;;X
+TRETEXP_5;%s ;;;;;;;;;;X
+TRETEXP_6;;;;;;;;;;;X
+TRETEXP_LOG;%s将%s归还给%s。 ;;;;;;;;;;X
+TRETEXP_BTN1;知道了 ;;;;;;;;;;X
+TRETEXP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+TRETEXPUS_SETUP;当我们归还远征部队 ;;;;;;;;;;X
+TRETEXPUS_HEADER;总参谋部简报%s ;;;;;;;;;;X
+TRETEXPUS_1;归还远征部队 ;;;;;;;;;;X
+TRETEXPUS_2;%t， 我们将 ;;;;;;;;;;X
+TRETEXPUS_3;%s ;;;;;;;;;;X
+TRETEXPUS_4;归还给 ;;;;;;;;;;X
+TRETEXPUS_5;%s ;;;;;;;;;;X
+TRETEXPUS_6;;;;;;;;;;;X
+TRETEXPUS_LOG;我们将%s归还给%s。 ;;;;;;;;;;X
+TRETEXPUS_BTN1;知道了 ;;;;;;;;;;X
+TRETEXPUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X 
+RANEVENT_SETUP;当一个随机事件发生 ;;;;;;;;;;X
+RANEVENT_HEADER;报纸头条 ;;;;;;;;;;X
+RANEVENT_1;%s ;;;;;;;;;;X
+RANEVENT_2;%s ;;;;;;;;;;X
+RANEVENT_3;引致 ;;;;;;;;;;X
+RANEVENT_4;%s ;;;;;;;;;;X
+RANEVENT_5;;;;;;;;;;;X
+RANEVENT_6;;;;;;;;;;;X
+RANEVENT_LOG;%s ;;;;;;;;;;X
+RANEVENT_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NUKE_SETUP;当一个地区遭受核攻击 ;;;;;;;;;;X
+NUKE_HEADER;情报部简报 ;;;;;;;;;;X
+NUKE_1;核武器%s ;;;;;;;;;;X
+NUKE_2;已经向 ;;;;;;;;;;X
+NUKE_3;%s ;;;;;;;;;;X
+NUKE_4;发射 ;;;;;;;;;;X
+NUKE_5;;;;;;;;;;;X
+NUKE_6;;;;;;;;;;;X
+NUKE_LOG;%s遭到核攻击。 ;;;;;;;;;;X
+NUKE_BTN1;知道了 ;;;;;;;;;;X
+NUKE_BTN2;查看 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+TECHFINISHED_SETUP;当我们发展出新科技 ;;;;;;;;;;X
+TECHFINISHED_HEADER;军备简报%s ;;;;;;;;;;X
+TECHFINISHED_1;发展出新科技 ;;;;;;;;;;X
+TECHFINISHED_2;%t， %s完成了对 ;;;;;;;;;;X
+TECHFINISHED_3;%s ;;;;;;;;;;X
+TECHFINISHED_4;的研究 ;;;;;;;;;;X
+TECHFINISHED_5;;;;;;;;;;;X
+TECHFINISHED_6;;;;;;;;;;;X
+TECHFINISHED_LOG;%s发展出‘%s’。 ;;;;;;;;;;X
+TECHFINISHED_BTN1;知道了 ;;;;;;;;;;X
+TECHFINISHED_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+GAINTECH_SETUP;当他国给我们分享科技 ;;;;;;;;;;X
+GAINTECH_HEADER;军备简报%s ;;;;;;;;;;X
+GAINTECH_1;分享科技 ;;;;;;;;;;X
+GAINTECH_2;%t，  我们在 ;;;;;;;;;;X
+GAINTECH_3;%s ;;;;;;;;;;X
+GAINTECH_4;的朋友分享了有关 ;;;;;;;;;;X
+GAINTECH_5;%s ;;;;;;;;;;X
+GAINTECH_6;的研究 ;;;;;;;;;;X
+GAINTECH_LOG;%s向我们分享了‘%s’。 ;;;;;;;;;;X
+GAINTECH_BTN1;知道了 ;;;;;;;;;;X
+GAINTECH_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+BOMB_OIL;%.2f 石油 ;;;;;;;;;;X
+BOMB_RARE_MATERIALS;%.2f 稀有原料 ;;;;;;;;;;X
+BOMB_ENERGY;%.2f 能源 ;;;;;;;;;;X
+BOMB_METAL;%.2f 金属 ;;;;;;;;;;X
+BOMB_IC;%.2f 工业产值 ;;;;;;;;;;X
+BOMB_INFRA;%.2f\%%的基础建设 ;;;;;;;;;;X
+BOMB_NONE;微不足道 ;;;;;;;;;;X
+BOMB_COAST;%.2f 级的海防要塞 ;;;;;;;;;;X
+BOMB_LAND;%.2f 级的要塞 ;;;;;;;;;;X
+BOMB_AA;%.2f 防空设施 ;;;;;;;;;;X
+BOMB_AIRB;%.2f 级的空军基地 ;;;;;;;;;;X
+BOMB_NAVB;%.2f 级的海军基地 ;;;;;;;;;;X
+BOMB_RAD;%.2f 级的雷达站 ;;;;;;;;;;X
+BOMB_NUC;%.2f 级的核武器试验场 ;;;;;;;;;;X
+BOMB_ROC;%.2f 级的火箭基地 ;;;;;;;;;;X
+NODAMAGE;具体不详 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WSTRBOMB_SETUP;当我们空袭敌方地区 ;;;;;;;;;;X
+WSTRBOMB_HEADER;空军简报%s ;;;;;;;;;;X
+WSTRBOMB_1;空袭行动 ;;;;;;;;;;X
+WSTRBOMB_2;%t， 我英勇的空军已轰炸了 ;;;;;;;;;;X
+WSTRBOMB_3;%s ;;;;;;;;;;X
+WSTRBOMB_4;当地损失了 %s ;;;;;;;;;;X
+WSTRBOMB_5;;;;;;;;;;;X
+WSTRBOMB_6;;;;;;;;;;;X
+WSTRBOMB_LOG;我空军轰炸了%s，令当地损失了%s。 ;;;;;;;;;;X
+WSTRBOMB_BTN1;知道了 ;;;;;;;;;;X
+WSTRBOMB_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x 
+TSTRBOMB_SETUP;当他国空袭敌对地区 ;;;;;;;;;;X
+TSTRBOMB_HEADER;情报部简报%s ;;;;;;;;;;X
+TSTRBOMB_1;空袭行动 ;;;;;;;;;;X
+TSTRBOMB_2;%t， %s空袭了 ;;;;;;;;;;X
+TSTRBOMB_3;%s ;;;;;;;;;;X
+TSTRBOMB_4;当地损失了 %s ;;;;;;;;;;X
+TSTRBOMB_5;;;;;;;;;;;X
+TSTRBOMB_6;;;;;;;;;;;X
+TSTRBOMB_LOG;%s空袭了%s，令当地损失了%s。 ;;;;;;;;;;X
+TSTRBOMB_BTN1;知道了 ;;;;;;;;;;X
+TSTRBOMB_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TSTRBOMBUS_SETUP;当我方地区遭到空袭 ;;;;;;;;;;X
+TSTRBOMBUS_HEADER;安全部简报%s ;;;;;;;;;;X
+TSTRBOMBUS_1;我方城市遭空袭 ;;;;;;;;;;X
+TSTRBOMBUS_2;%t， 下流的%s空袭了 ;;;;;;;;;;X
+TSTRBOMBUS_3;%s ;;;;;;;;;;X
+TSTRBOMBUS_4;当地损失了 %s ;;;;;;;;;;X
+TSTRBOMBUS_5;;;;;;;;;;;X
+TSTRBOMBUS_6;;;;;;;;;;;X
+TSTRBOMBUS_LOG;%s空袭了我们的%s，造成%s的损失。 ;;;;;;;;;;X
+TSTRBOMBUS_BTN1;知道了 ;;;;;;;;;;X
+TSTRBOMBUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WAMC_SETUP;当我们准许他国控制我们的军队 ;;;;;;;;;;X
+WAMC_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WAMC_1;军事控制 ;;;;;;;;;;X
+WAMC_2;%t， 我们准许 ;;;;;;;;;;X
+WAMC_3;%s ;;;;;;;;;;X
+WAMC_4;指挥我们的军队 ;;;;;;;;;;X
+WAMC_5;;;;;;;;;;;X
+WAMC_6;;;;;;;;;;;X
+WAMC_LOG;我们准许%s指挥我国的军队。 ;;;;;;;;;;X
+WAMC_BTN1;知道了 ;;;;;;;;;;X
+WAMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TAMC_SETUP;当他国准许另一国控制其军队 ;;;;;;;;;;X
+TAMC_HEADER;情报部简报%s ;;;;;;;;;;X
+TAMC_1;军事控制 ;;;;;;;;;;X
+TAMC_2;%t， %s准许 ;;;;;;;;;;X
+TAMC_3;%s ;;;;;;;;;;X
+TAMC_4;指挥他们的军队 ;;;;;;;;;;X
+TAMC_5;;;;;;;;;;;X
+TAMC_6;;;;;;;;;;;X
+TAMC_LOG;%s准许%s指挥他们的军队。 ;;;;;;;;;;X
+TAMC_BTN1;知道了 ;;;;;;;;;;X
+TAMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TAMCU_SETUP;当他国准许我们控制其军队 ;;;;;;;;;;X
+TAMCU_HEADER;外交简报%s ;;;;;;;;;;X
+TAMCU_1;军事控制 ;;;;;;;;;;X
+TAMCU_2;%t ;;;;;;;;;;X
+TAMCU_3;%s ;;;;;;;;;;X
+TAMCU_4;允许我们完全控制他们的军队 ;;;;;;;;;;X
+TAMCU_5;;;;;;;;;;;X
+TAMCU_6;;;;;;;;;;;X
+TAMCU_LOG;%s允许我们控制他们的军队。 ;;;;;;;;;;X
+TAMCU_BTN1;知道了 ;;;;;;;;;;X
+TAMCU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WDMC_SETUP;当我们拒绝他国控制我们的军队 ;;;;;;;;;;X
+WDMC_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WDMC_1;军事控制 ;;;;;;;;;;X
+WDMC_2;%t， 我们拒绝 ;;;;;;;;;;X
+WDMC_3;%s ;;;;;;;;;;X
+WDMC_4;控制我们的军队 ;;;;;;;;;;X
+WDMC_5;;;;;;;;;;;X
+WDMC_6;;;;;;;;;;;X
+WDMC_LOG;我们拒绝%s控制我们的军队。 ;;;;;;;;;;X
+WDMC_BTN1;知道了 ;;;;;;;;;;X
+WDMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x 
+TDMC_SETUP;当他国拒绝另一国控制其军队 ;;;;;;;;;;X
+TDMC_HEADER;情报部简报%s ;;;;;;;;;;X
+TDMC_1;军事控制 ;;;;;;;;;;X
+TDMC_2;%t， %s拒绝 ;;;;;;;;;;X
+TDMC_3;%s ;;;;;;;;;;X
+TDMC_4;控制他们的军队 ;;;;;;;;;;X
+TDMC_5;;;;;;;;;;;X
+TDMC_6;;;;;;;;;;;X
+TDMC_LOG;%s拒绝%s控制他们的军队。 ;;;;;;;;;;X
+TDMC_BTN1;知道了 ;;;;;;;;;;X
+TDMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TDMCU_SETUP;当他国拒绝我们控制其军队 ;;;;;;;;;;X
+TDMCU_HEADER;外交简报 ;;;;;;;;;;X
+TDMCU_1;军事控制 ;;;;;;;;;;X
+TDMCU_2;%t， ;;;;;;;;;;X
+TDMCU_3;%s ;;;;;;;;;;X
+TDMCU_4;拒绝我们完全控制他们的军队 ;;;;;;;;;;X
+TDMCU_5;;;;;;;;;;;X
+TDMCU_6;;;;;;;;;;;X
+TDMCU_LOG;%s拒绝我们控制他们的军队。 ;;;;;;;;;;X
+TDMCU_BTN1;知道了 ;;;;;;;;;;X
+TDMCU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WCMC_SETUP;当我们取消他国的军事控制 ;;;;;;;;;;X
+WCMC_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WCMC_1;军事控制结束 ;;;;;;;;;;X
+WCMC_2;%t， 我们已取消 ;;;;;;;;;;X
+WCMC_3;%s ;;;;;;;;;;X
+WCMC_4;对我国军队的控制权 ;;;;;;;;;;X
+WCMC_5;;;;;;;;;;;X
+WCMC_6;;;;;;;;;;;X
+WCMC_LOG;我们取消了%s的军事控制。 ;;;;;;;;;;X
+WCMC_BTN1;知道了 ;;;;;;;;;;X
+WCMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCMC_SETUP;当他国取消对另一国的军事控制 ;;;;;;;;;;X
+TCMC_HEADER;情报部简报%s ;;;;;;;;;;X
+TCMC_1;军事控制结束 ;;;;;;;;;;X
+TCMC_2;%t， %s已取消 ;;;;;;;;;;X
+TCMC_3;%s ;;;;;;;;;;X
+TCMC_4;对他们的军队的控制权 ;;;;;;;;;;X
+TCMC_5;;;;;;;;;;;X
+TCMC_6;;;;;;;;;;;X
+TCMC_LOG;%s取消了%s的军事控制。 ;;;;;;;;;;X
+TCMC_BTN1;知道了 ;;;;;;;;;;X
+TCMC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCMCU_SETUP;当他国取消对我们的军事控制 ;;;;;;;;;;X
+TCMCU_HEADER;外交简报 ;;;;;;;;;;X
+TCMCU_1;军事控制结束 ;;;;;;;;;;X
+TCMCU_2;%t， ;;;;;;;;;;X
+TCMCU_3;%s ;;;;;;;;;;X
+TCMCU_4;取消我们对他们军队的控制权 ;;;;;;;;;;X
+TCMCU_5;;;;;;;;;;;X
+TCMCU_6;;;;;;;;;;;X
+TCMCU_LOG;%s 取消我国的军事控制。 ;;;;;;;;;;X
+TCMCU_BTN1;知道了 ;;;;;;;;;;X
+TCMCU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x 
+WECOUP_SETUP;当我们成功令他国政变 ;;;;;;;;;;X
+WECOUP_HEADER;情报部简报 ;;;;;;;;;;X
+WECOUP_1;政府倒台 ;;;;;;;;;;X
+WECOUP_2;%t， 我们的间谍已成功令 ;;;;;;;;;;X
+WECOUP_3;%s ;;;;;;;;;;X
+WECOUP_4;的政府倒台， 并成立了一个更亲近我国的政府 ;;;;;;;;;;X
+WECOUP_5;;;;;;;;;;;X
+WECOUP_6;;;;;;;;;;;X
+WECOUP_LOG;我们颠覆了%s的政府，令他们对我国更亲近。 ;;;;;;;;;;X
+WECOUP_BTN1;知道了 ;;;;;;;;;;X
+WECOUP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYCOUP_SETUP;当他国成功令另一国政变 ;;;;;;;;;;X
+THEYCOUP_HEADER;情报部简报 ;;;;;;;;;;X
+THEYCOUP_1;政府倒台 ;;;;;;;;;;X
+THEYCOUP_2;%t， %s颠覆了 ;;;;;;;;;;X
+THEYCOUP_3;%s ;;;;;;;;;;X
+THEYCOUP_4;的政府 并成立了一个更亲近他们的政府 ;;;;;;;;;;X
+THEYCOUP_5;;;;;;;;;;;X
+THEYCOUP_6;;;;;;;;;;;X
+THEYCOUP_LOG;%s颠覆了%s的政府，使该国对他们更亲近。 ;;;;;;;;;;X
+THEYCOUP_BTN1;知道了 ;;;;;;;;;;X
+THEYCOUP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYCOUPUS_SETUP;当他国成功令我们政变 ;;;;;;;;;;X
+THEYCOUPUS_HEADER;报纸头条 ;;;;;;;;;;X
+THEYCOUPUS_1;政府倒台 ;;;;;;;;;;X
+THEYCOUPUS_2;%t， 我们的政府被颠覆了， 新成立一个对 ;;;;;;;;;;X
+THEYCOUPUS_3;%s ;;;;;;;;;;X
+THEYCOUPUS_4;更亲近的政府 ;;;;;;;;;;X
+THEYCOUPUS_5;;;;;;;;;;;X
+THEYCOUPUS_6;;;;;;;;;;;X
+THEYCOUPUS_LOG;%s颠覆了我国的政府，使我国对他们更亲近。 ;;;;;;;;;;X
+THEYCOUPUS_BTN1;知道了 ;;;;;;;;;;X
+THEYCOUPUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WECOUPF_SETUP;当我们颠覆另一国失败 ;;;;;;;;;;X，
+WECOUPF_HEADER;情报部简报 ;;;;;;;;;;X
+WECOUPF_1;政变企图 ;;;;;;;;;;X
+WECOUPF_2;%t， 我们的特工试图在 ;;;;;;;;;;X
+WECOUPF_3;%s发动政变 ;;;;;;;;;;X
+WECOUPF_4;但被他们的秘密警察挫败 ;;;;;;;;;;X
+WECOUPF_5;;;;;;;;;;;X
+WECOUPF_6;;;;;;;;;;;X
+WECOUPF_LOG;我们对%s的政变企图失败。 ;;;;;;;;;;X
+WECOUPF_BTN1;确定 ;;;;;;;;;;X
+WECOUPF_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYCOUPF_SETUP;当他国颠覆另一国失败 ;;;;;;;;;;X
+THEYCOUPF_HEADER;情报部简报%s ;;;;;;;;;;X
+THEYCOUPF_1;政变企图 ;;;;;;;;;;X
+THEYCOUPF_2;%t， %s 企图策划政变于 ;;;;;;;;;;X
+THEYCOUPF_3;%s ;;;;;;;;;;X
+THEYCOUPF_4;但是他们失败了 ;;;;;;;;;;X
+THEYCOUPF_5;;;;;;;;;;;X
+THEYCOUPF_6;;;;;;;;;;;X
+THEYCOUPF_LOG;%s 颠覆%s的企图失败。 ;;;;;;;;;;X
+THEYCOUPF_BTN1;确定 ;;;;;;;;;;X
+THEYCOUPF_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DECLWAR_SETUP;当他国对我们宣战 ;;;;;;;;;;X
+DECLWAR_HEADER;紧急内阁会议 ;;;;;;;;;;X
+DECLWAR_1;战争！ ;;;;;;;;;;X
+DECLWAR_2;%t， %s ;;;;;;;;;;X
+DECLWAR_3;%s 对我们宣战 ;;;;;;;;;;X
+DECLWAR_4;逼近了！敌人的部队正准备 入侵我们的国家。我们必须 立刻计划我们的防御。 ;;;;;;;;;;X
+DECLWAR_5;;;;;;;;;;;X
+DECLWAR_6;;;;;;;;;;;X
+DECLWAR_LOG;%s 对我们宣战！ ;;;;;;;;;;X
+DECLWAR_BTN1;确定 ;;;;;;;;;;X
+DECLWAR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DECLWAR_SETUP;当他国对我们宣战 ;;;;;;;;;;x
+DECLWAR_HEADER;紧急内阁会议 ;;;;;;;;;;x
+DECLWAR_1;战争！ ;;;;;;;;;;x
+DECLWAR_2;%t， %s  ;;;;;;;;;;x
+DECLWAR_3;%s 对我们宣战 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+PEACEPROP_SETUP;当他国向我们提出和约 ;;;;;;;;;;X
+PEACEPROP_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+PEACEPROP_1;%s ;;;;;;;;;;X
+PEACEPROP_2;%t， %s向我们提供 ;;;;;;;;;;X
+PEACEPROP_3;和约， %s ;;;;;;;;;;X
+PEACEPROP_4;下列作为报答: ;;;;;;;;;;X
+PEACEPROP_5;%s ;;;;;;;;;;X
+PEACEPROP_6;你的回应是什么？ ;;;;;;;;;;X
+PEACEPROP_LOG;;;;;;;;;;;X
+PEACEPROP_BTN1;接受 ;;;;;;;;;;X
+PEACEPROP_BTN2;决不！ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PEACEACCEPT_SETUP;当他国接受我们的和约 ;;;;;;;;;;X
+PEACEACCEPT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+PEACEACCEPT_1;%s ;;;;;;;;;;X
+PEACEACCEPT_2;%t， %s ;;;;;;;;;;X
+PEACEACCEPT_3;接受了 ;;;;;;;;;;X
+PEACEACCEPT_4;我们慷慨的 ;;;;;;;;;;X
+PEACEACCEPT_5;和约提议 ;;;;;;;;;;X
+PEACEACCEPT_6;;;;;;;;;;;X
+PEACEACCEPT_LOG;%s 接受了我们慷慨的和约提议。 ;;;;;;;;;;X
+PEACEACCEPT_BTN1;很好！ ;;;;;;;;;;X
+PEACEACCEPT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PEACEACCEPTOTHER_SETUP;当他国接受另一国的和约 ;;;;;;;;;;X
+PEACEACCEPTOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+PEACEACCEPTOTHER_1;%s ;;;;;;;;;;X
+PEACEACCEPTOTHER_2;%t， %s ;;;;;;;;;;X
+PEACEACCEPTOTHER_3;接受了和约 ;;;;;;;;;;X
+PEACEACCEPTOTHER_4;来自他们的前敌人 ;;;;;;;;;;X
+PEACEACCEPTOTHER_5;%s ;;;;;;;;;;X
+PEACEACCEPTOTHER_6;通过以下条约： %s ;;;;;;;;;;X
+PEACEACCEPTOTHER_LOG;%s接受了%s的和约，通过以下条约：%s ;;;;;;;;;;X
+PEACEACCEPTOTHER_BTN1;确定 ;;;;;;;;;;X
+PEACEACCEPTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PEACETERM_PROV;%s到%s ;;;;;;;;;;X
+PEACETERM_PUPPET;%s将被傀儡。 ;;;;;;;;;;X
+PEACETERM_ACCESS;%s不得不放弃军事通行。 ;;;;;;;;;;X
+PEACETERM_QUO;回到现状。 ;;;;;;;;;;X
+PEACETERM_DISARM;%s将被迫解除武装。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PEACEREJECT_SETUP;当他国否决我们的和约 ;;;;;;;;;;X
+PEACEREJECT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+PEACEREJECT_1;%s ;;;;;;;;;;X
+PEACEREJECT_2;%t， %s ;;;;;;;;;;X
+PEACEREJECT_3;否决了 ;;;;;;;;;;X
+PEACEREJECT_4;我们慷慨的 ;;;;;;;;;;X
+PEACEREJECT_5;和约提议 ;;;;;;;;;;X
+PEACEREJECT_6;;;;;;;;;;;X
+PEACEREJECT_LOG;%s否决了我们慷慨的和约提议！ ;;;;;;;;;;X
+PEACEREJECT_BTN1;确定 ;;;;;;;;;;X
+PEACEREJECT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WHITEPEACEUS_SETUP;当我们与他国达成无条件停火 ;;;;;;;;;;X
+WHITEPEACEUS_HEADER;外交简报%s ;;;;;;;;;;X
+WHITEPEACEUS_1;无条件停火！ ;;;;;;;;;;X
+WHITEPEACEUS_2;%t 在36个月的僵持之后， 一个无条件停火最终签署 ;;;;;;;;;;X
+WHITEPEACEUS_3;%s ;;;;;;;;;;X
+WHITEPEACEUS_4;和我们的前敌人 ;;;;;;;;;;X
+WHITEPEACEUS_5;%s ;;;;;;;;;;X
+WHITEPEACEUS_6;和平休战，任何一方都不会得到赔偿 ;;;;;;;;;;X
+WHITEPEACEUS_LOG;无条件停火在%s和%s之间签署。 ;;;;;;;;;;X
+WHITEPEACEUS_BTN1;确定 ;;;;;;;;;;X
+WHITEPEACEUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+WHITEPEACEOTHER_SETUP;当他国与另一国达成无条件停火 ;;;;;;;;;;X
+WHITEPEACEOTHER_HEADER;情报部简报%s ;;;;;;;;;;X
+WHITEPEACEOTHER_1;无条件停火！ ;;;;;;;;;;X
+WHITEPEACEOTHER_2;%t 在36个月的僵持之后， 一个无条件停火最终签署 ;;;;;;;;;;X
+WHITEPEACEOTHER_3;%s ;;;;;;;;;;X
+WHITEPEACEOTHER_4;和他们的前敌人 ;;;;;;;;;;X
+WHITEPEACEOTHER_5;%s ;;;;;;;;;;X
+WHITEPEACEOTHER_6;和平休战，双方都不会得到赔偿 ;;;;;;;;;;X
+WHITEPEACEOTHER_LOG;无条件停火在%s和%s之间签署。 ;;;;;;;;;;X
+WHITEPEACEOTHER_BTN1;确定 ;;;;;;;;;;X
+WHITEPEACEOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PEACEEXPIRY_SETUP;当我们与他国和约过期 ;;;;;;;;;;X
+PEACEEXPIRY_HEADER;外交简报 ;;;;;;;;;;X
+PEACEEXPIRY_1;和约过期！ ;;;;;;;;;;X
+PEACEEXPIRY_2;%t， ;;;;;;;;;;X
+PEACEEXPIRY_3;我国同 ;;;;;;;;;;X
+PEACEEXPIRY_4;%s的和约 ;;;;;;;;;;X
+PEACEEXPIRY_5;过期了 ;;;;;;;;;;X
+PEACEEXPIRY_6;;;;;;;;;;;X
+PEACEEXPIRY_LOG;我国同%s的和约过期了。 ;;;;;;;;;;X
+PEACEEXPIRY_BTN1;确定 ;;;;;;;;;;X
+PEACEEXPIRY_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+TRADEEXPIRY_SETUP;当我们与他国贸易协定过期 ;;;;;;;;;;X
+TRADEEXPIRY_HEADER;外交简报 ;;;;;;;;;;X
+TRADEEXPIRY_1;贸易协定过期了！ ;;;;;;;;;;X
+TRADEEXPIRY_2;%t， ;;;;;;;;;;X
+TRADEEXPIRY_3;我国同 ;;;;;;;;;;X
+TRADEEXPIRY_4;%s 的贸易协定 ;;;;;;;;;;X
+TRADEEXPIRY_5;过期了。 ;;;;;;;;;;X
+TRADEEXPIRY_6;;;;;;;;;;;X
+TRADEEXPIRY_LOG;我国同%s的贸易协定过期了。 ;;;;;;;;;;X
+TRADEEXPIRY_BTN1;确定 ;;;;;;;;;;X
+TRADEEXPIRY_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+NAPEXPIRY_SETUP;当我们与他国互不侵犯条约过期 ;;;;;;;;;;X
+NAPEXPIRY_HEADER;外交简报 ;;;;;;;;;;X
+NAPEXPIRY_1;互不侵犯条约过期！ ;;;;;;;;;;X
+NAPEXPIRY_2;%t， ;;;;;;;;;;X
+NAPEXPIRY_3;互不侵犯条约 ;;;;;;;;;;X
+NAPEXPIRY_4;我国与 ;;;;;;;;;;X
+NAPEXPIRY_5;%s ;;;;;;;;;;X
+NAPEXPIRY_6;互不侵犯条约过期了 ;;;;;;;;;;X
+NAPEXPIRY_LOG;我国同%s的互不侵犯条约过期了。 ;;;;;;;;;;X
+NAPEXPIRY_BTN1;确定 ;;;;;;;;;;X
+NAPEXPIRY_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+SUCC_HARDLY;几乎没有的影响 ;;;;;;;;;;X
+SUCC_BARELY;略微的影响 ;;;;;;;;;;X
+SUCC_OK;一定的影响 ;;;;;;;;;;X
+SUCC_GOOD;成功的影响 ;;;;;;;;;;X
+SUCC_VGOOD;完全的影响 ;;;;;;;;;;X
+SUCC_EXTREMELY;完全的动摇 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PUPPET_SETUP;当他国变成了另一国的傀儡 ;;;;;;;;;;X
+PUPPET_HEADER;情报部简报 \n关于%s ;;;;;;;;;;X
+PUPPET_1;%s ;;;;;;;;;;X
+PUPPET_2;%t， 他们已使 ;;;;;;;;;;X
+PUPPET_3;%s ;;;;;;;;;;X
+PUPPET_4;成为他们的傀儡政权 ;;;;;;;;;;X
+PUPPET_5;;;;;;;;;;;X
+PUPPET_6;;;;;;;;;;;X
+PUPPET_LOG;%s已经使%s成为他们的傀儡政权。 ;;;;;;;;;;X
+PUPPET_BTN1;确定 ;;;;;;;;;;X
+PUPPET_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PUPPETUS_SETUP;当我们被迫成为另一国的傀儡 ;;;;;;;;;;X
+PUPPETUS_HEADER;外交简报 \n关于%s ;;;;;;;;;;X
+PUPPETUS_1;%s ;;;;;;;;;;X
+PUPPETUS_2;%t， 我们已被迫成为他们的傀儡 ;;;;;;;;;;X
+PUPPETUS_3;;;;;;;;;;;X
+PUPPETUS_4;;;;;;;;;;;X
+PUPPETUS_5;;;;;;;;;;;X
+PUPPETUS_6;;;;;;;;;;;X
+PUPPETUS_LOG;我们已被迫成为%s的傀儡。 ;;;;;;;;;;X
+PUPPETUS_BTN1;确定 ;;;;;;;;;;X
+PUPPETUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RPUPPET_SETUP;当他国失去了对另一国的傀儡宗主权 ;;;;;;;;;;X
+RPUPPET_HEADER;外交简报 \n关于%s ;;;;;;;;;;X
+RPUPPET_1;%s ;;;;;;;;;;X
+RPUPPET_2;%t， 失去了对 ;;;;;;;;;;X
+RPUPPET_3;%s ;;;;;;;;;;X
+RPUPPET_4;的傀儡宗主权 ;;;;;;;;;;X
+RPUPPET_5;;;;;;;;;;;X
+RPUPPET_6;;;;;;;;;;;X
+RPUPPET_LOG;%s失去了对%s的傀儡宗主权。 ;;;;;;;;;;X
+RPUPPET_BTN1;确定 ;;;;;;;;;;X
+RPUPPET_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RPUPPETUS_SETUP;当他国失去了对我国的傀儡宗主权 ;;;;;;;;;;X
+RPUPPETUS_HEADER;外交简报 \n关于%s ;;;;;;;;;;X
+RPUPPETUS_1;%s ;;;;;;;;;;X
+RPUPPETUS_2;%t， 我们解放了！ ;;;;;;;;;;X
+RPUPPETUS_3;;;;;;;;;;;X
+RPUPPETUS_4;;;;;;;;;;;X
+RPUPPETUS_5;;;;;;;;;;;X
+RPUPPETUS_6;;;;;;;;;;;X
+RPUPPETUS_LOG;%s政府失去了对我国的傀儡宗主权。 ;;;;;;;;;;X
+RPUPPETUS_BTN1;确定 ;;;;;;;;;;X
+RPUPPETUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WEINFL_SETUP;当我们使他国听随我们的政见 ;;;;;;;;;;X
+WEINFL_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+WEINFL_1;%s ;;;;;;;;;;X
+WEINFL_2;%t， 我们已制造了 ;;;;;;;;;;X
+WEINFL_3;%s ;;;;;;;;;;X
+WEINFL_4;让%s听随我们的政见 ;;;;;;;;;;X
+WEINFL_5;;;;;;;;;;;X
+WEINFL_6;;;;;;;;;;;X
+WEINFL_LOG;我们制造了%s，让%s听随我们的政见。 ;;;;;;;;;;X
+WEINFL_BTN1;确定 ;;;;;;;;;;X
+WEINFL_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYINFL_SETUP;当他国使另一国听随他们的政见 ;;;;;;;;;;X
+THEYINFL_HEADER;情报部简报 \n关于%s ;;;;;;;;;;X
+THEYINFL_1;%s ;;;;;;;;;;X
+THEYINFL_2;%t， 他们已制造了 ;;;;;;;;;;X
+THEYINFL_3;%s ;;;;;;;;;;X
+THEYINFL_4;让%s听随他们的政见 ;;;;;;;;;;X
+THEYINFL_5;;;;;;;;;;;X
+THEYINFL_6;;;;;;;;;;;X
+THEYINFL_LOG;%s制造了%s，让%s听随他们的政见。 ;;;;;;;;;;X
+THEYINFL_BTN1;确定 ;;;;;;;;;;X
+THEYINFL_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+INFLUS_SETUP;当他国使我们听随他们的政见 ;;;;;;;;;;X
+INFLUS_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+INFLUS_1;%s ;;;;;;;;;;X
+INFLUS_2;%t，我们受到 ;;;;;;;;;;X
+INFLUS_3;%s ;;;;;;;;;;X
+INFLUS_4;使我们与下列国家更亲近 ;;;;;;;;;;X
+INFLUS_5;%s\n%s ;;;;;;;;;;X
+INFLUS_6;;;;;;;;;;;X
+INFLUS_LOG;我们受到%s，使我们听随%s的政见。 ;;;;;;;;;;X
+INFLUS_BTN1;确定 ;;;;;;;;;;X
+INFLUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CALLALLIES_SETUP;当你得到召集联盟的机会。 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+MILALLACCEPT_SETUP;当他国接受我们的军事联盟提议 ;;;;;;;;;;X
+MILALLACCEPT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLACCEPT_1;%s ;;;;;;;;;;X
+MILALLACCEPT_2;%t， %s ;;;;;;;;;;X
+MILALLACCEPT_3;同意 ;;;;;;;;;;X
+MILALLACCEPT_4;加入我们的 ;;;;;;;;;;X
+MILALLACCEPT_5;军事联盟。 ;;;;;;;;;;X
+MILALLACCEPT_6;;;;;;;;;;;X
+MILALLACCEPT_LOG;%s加入了我们的军事联盟。 ;;;;;;;;;;X
+MILALLACCEPT_BTN1;完美！ ;;;;;;;;;;X
+MILALLACCEPT_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLREJECT_SETUP;当他国否决我们的军事联盟提议 ;;;;;;;;;;X
+MILALLREJECT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLREJECT_1;%s ;;;;;;;;;;X
+MILALLREJECT_2;%t， 我有坏消息告诉你: ;;;;;;;;;;X
+MILALLREJECT_3;%s ;;;;;;;;;;X
+MILALLREJECT_4;拒绝加入我们的 ;;;;;;;;;;X
+MILALLREJECT_5;军事联盟 ;;;;;;;;;;X
+MILALLREJECT_6;;;;;;;;;;;X
+MILALLREJECT_LOG;%s否决了我们的军事联盟提议。 ;;;;;;;;;;X
+MILALLREJECT_BTN1;确定 ;;;;;;;;;;X
+MILALLREJECT_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLINVACCEPT_SETUP;当他国接受我们的加入军事联盟的邀请 ;;;;;;;;;;X
+MILALLINVACCEPT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLINVACCEPT_1;%s ;;;;;;;;;;X
+MILALLINVACCEPT_2;%t， %s ;;;;;;;;;;X
+MILALLINVACCEPT_3;同意 ;;;;;;;;;;X
+MILALLINVACCEPT_4;加入我们的 ;;;;;;;;;;X
+MILALLINVACCEPT_5;军事联盟 ;;;;;;;;;;X
+MILALLINVACCEPT_6;与 %s ;;;;;;;;;;X
+MILALLINVACCEPT_LOG;%s加入了我们与%s的军事联盟。 ;;;;;;;;;;X
+MILALLINVACCEPT_BTN1;好极了！ ;;;;;;;;;;X
+MILALLINVACCEPT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLINVREJECT_SETUP;当他国否决我们的加入军事联盟的邀请 ;;;;;;;;;;X
+MILALLINVREJECT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLINVREJECT_1;%s ;;;;;;;;;;X
+MILALLINVREJECT_2;%t， %s ;;;;;;;;;;X
+MILALLINVREJECT_3;拒绝 ;;;;;;;;;;X
+MILALLINVREJECT_4;加入我们的 ;;;;;;;;;;X
+MILALLINVREJECT_5;军事联盟 ;;;;;;;;;;X
+MILALLINVREJECT_6;与 %s ;;;;;;;;;;X
+MILALLINVREJECT_LOG;%s拒绝加入我们与%s的军事联盟。 ;;;;;;;;;;X
+MILALLINVREJECT_BTN1;混蛋 ;;;;;;;;;;X
+MILALLINVREJECT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLBAN_SETUP;当他国将你逐出了军事联盟 ;;;;;;;;;;X
+MILALLBAN_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLBAN_1;%s ;;;;;;;;;;X
+MILALLBAN_2;%t， %s ;;;;;;;;;;X
+MILALLBAN_3;竟然逐出 ;;;;;;;;;;X
+MILALLBAN_4;我们 ;;;;;;;;;;X
+MILALLBAN_5;取消我们同 ;;;;;;;;;;X
+MILALLBAN_6;%s的联盟 ;;;;;;;;;;X
+MILALLBAN_LOG;%s将我们逐出了他们和%s的军事联盟。 ;;;;;;;;;;X
+MILALLBAN_BTN1;确定 ;;;;;;;;;;X
+MILALLBAN_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLEXPIRY_SETUP;当我们的一个军事联盟终止 ;;;;;;;;;;X
+MILALLEXPIRY_HEADER;外交简报 ;;;;;;;;;;X
+MILALLEXPIRY_1;联盟终止！ ;;;;;;;;;;X
+MILALLEXPIRY_2;%t， 我们的 ;;;;;;;;;;X
+MILALLEXPIRY_3;军事联盟 ;;;;;;;;;;X
+MILALLEXPIRY_4;与 %s ;;;;;;;;;;X
+MILALLEXPIRY_5;已经终止 ;;;;;;;;;;X
+MILALLEXPIRY_6;;;;;;;;;;;X
+MILALLEXPIRY_LOG;我们与%s的军事联盟终止。 ;;;;;;;;;;X
+MILALLEXPIRY_BTN1;确定 ;;;;;;;;;;X
+MILALLEXPIRY_BTN2;;;;;;;;;;;x
+#;;;;;;;;;;;x
+ANNEXACCEPTOTHER_SETUP;当他国吞并另一国 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_1;%s ;;;;;;;;;;X
+ANNEXACCEPTOTHER_2;%t ;;;;;;;;;;X
+ANNEXACCEPTOTHER_3;%s吞并了%s ;;;;;;;;;;X
+ANNEXACCEPTOTHER_4;后者现在是他们国家的一部分 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_5;国际社会将不会容忍此行为 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_6;;;;;;;;;;;X
+ANNEXACCEPTOTHER_LOG;%s吞并了%s。 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_BTN1;确定 ;;;;;;;;;;X
+ANNEXACCEPTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANNEXACCEPT_SETUP;当他国接受我们的吞并要求 ;;;;;;;;;;X
+ANNEXACCEPT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+ANNEXACCEPT_1;%s ;;;;;;;;;;X
+ANNEXACCEPT_2;%t， %s ;;;;;;;;;;X
+ANNEXACCEPT_3;接受了 ;;;;;;;;;;X
+ANNEXACCEPT_4;我们无法抗拒的提议 ;;;;;;;;;;X
+ANNEXACCEPT_5;吞并 ;;;;;;;;;;X
+ANNEXACCEPT_6;成为我们光荣祖国的一部分！ ;;;;;;;;;;X
+ANNEXACCEPT_LOG;%s现在是我们国家的一部分！ ;;;;;;;;;;X
+ANNEXACCEPT_BTN1;完美！ ;;;;;;;;;;X
+ANNEXACCEPT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANNEXREJECT_SETUP;当他国拒绝我们的吞并要求 ;;;;;;;;;;X
+ANNEXREJECT_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+ANNEXREJECT_1;%s ;;;;;;;;;;X
+ANNEXREJECT_2;%t， %s ;;;;;;;;;;X
+ANNEXREJECT_3;拒绝了 ;;;;;;;;;;X
+ANNEXREJECT_4;我们友善的吞并 ;;;;;;;;;;X
+ANNEXREJECT_5;提议 ;;;;;;;;;;X
+ANNEXREJECT_6;他们没看到成为我们光荣祖国 一部分的好处 ;;;;;;;;;;X
+ANNEXREJECT_LOG;%s拒绝被我们吞并。 ;;;;;;;;;;X
+ANNEXREJECT_BTN1;确定 ;;;;;;;;;;X
+ANNEXREJECT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILLALLJOINREJECTOTHER_SETUP;当他国拒绝另一国加入其军事联盟 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_1;%s ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_2;%t， %s ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_3;拒绝了%s ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_4;加入军事联盟 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_5;的要求 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_6;;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_LOG;%s拒绝了%s加入其军事联盟的要求。 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_BTN1;确定 ;;;;;;;;;;X
+MILLALLJOINREJECTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLLEAVE_SETUP;当他国退出了与另一国的军事联盟 ;;;;;;;;;;X
+MILALLLEAVE_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+MILALLLEAVE_1;%s ;;;;;;;;;;X
+MILALLLEAVE_2;%t， %s退出 ;;;;;;;;;;X
+MILALLLEAVE_3;军事联盟 ;;;;;;;;;;X
+MILALLLEAVE_4;与 ;;;;;;;;;;X
+MILALLLEAVE_5;%s ;;;;;;;;;;X
+MILALLLEAVE_6;;;;;;;;;;;X
+MILALLLEAVE_LOG;%s 退出了与%s的军事联盟。 ;;;;;;;;;;X
+MILALLLEAVE_BTN1;确定 ;;;;;;;;;;X
+MILALLLEAVE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILLALLINVACCEPTOTHER_SETUP;当他国接受另一国的军事联盟邀请 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_1;%s ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_2;%t， %s ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_3;加入了军事联盟 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_4;与 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_5;%s ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_6;;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_LOG;%s加入了与%s的军事联盟。 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_BTN1;确定 ;;;;;;;;;;X
+MILLALLINVACCEPTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLJOINACCEPTOTHER_SETUP;当他国加入另一国的军事联盟 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_1;%s ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_2;%t， %s ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_3;加入军事联盟 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_4;与 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_5;%s ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_6;;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_LOG;%s加入了与%s的军事联盟。 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_BTN1;确定 ;;;;;;;;;;X
+MILALLJOINACCEPTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLBANOTHER_SETUP;当他国被一个军事联盟的领导逐出 ;;;;;;;;;;X
+MILALLBANOTHER_HEADER;情报部报告来自 ;;;;;;;;;;X
+MILALLBANOTHER_1;%s ;;;;;;;;;;X
+MILALLBANOTHER_2;%t， %s 被 ;;;;;;;;;;X
+MILALLBANOTHER_3;逐出原军事联盟 ;;;;;;;;;;X
+MILALLBANOTHER_4;由他们的前盟友 ;;;;;;;;;;X
+MILALLBANOTHER_5;%s ;;;;;;;;;;X
+MILALLBANOTHER_6;;;;;;;;;;;X
+MILALLBANOTHER_LOG;%s被%s逐出了军事联盟。 ;;;;;;;;;;X
+MILALLBANOTHER_BTN1;确定 ;;;;;;;;;;X
+MILALLBANOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILLALLINVDECLINEOTHER_SETUP;当他国拒绝另一国的军事联盟提议 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_HEADER;情报部报告来自 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_1;%s ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_2;%t， %s ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_3;拒绝了提议 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_4;来自%s 让其加入 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_5;军事联盟 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_6;与 %s ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_LOG;%s拒绝了%s加入一个军事联盟的提议。 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_BTN1;确定 ;;;;;;;;;;X
+MILLALLINVDECLINEOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLDISHONOROTHER_SETUP;当他国取消与另一国的军事联盟 ;;;;;;;;;;X
+MILALLDISHONOROTHER_HEADER;情报部报告来自 ;;;;;;;;;;X
+MILALLDISHONOROTHER_1;%s ;;;;;;;;;;X
+MILALLDISHONOROTHER_2;%t， %s ;;;;;;;;;;X
+MILALLDISHONOROTHER_3;取消了 ;;;;;;;;;;X
+MILALLDISHONOROTHER_4;该国与 ;;;;;;;;;;X
+MILALLDISHONOROTHER_5;%s的军事联盟 ;;;;;;;;;;X
+MILALLDISHONOROTHER_6;;;;;;;;;;;X
+MILALLDISHONOROTHER_LOG;%s取消了它与%s的军事联盟。 ;;;;;;;;;;X
+MILALLDISHONOROTHER_BTN1;确定 ;;;;;;;;;;X
+MILALLDISHONOROTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DECLWAROTHER_SETUP;当他国向另一国宣战 ;;;;;;;;;;X
+DECLWAROTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+DECLWAROTHER_1;%s ;;;;;;;;;;X
+DECLWAROTHER_2;%t， %s ;;;;;;;;;;X
+DECLWAROTHER_3;宣战 ;;;;;;;;;;X
+DECLWAROTHER_4;对他们的新敌人 ;;;;;;;;;;X
+DECLWAROTHER_5;%s ;;;;;;;;;;X
+DECLWAROTHER_6;;;;;;;;;;;X
+DECLWAROTHER_LOG;%s向%s宣战。 ;;;;;;;;;;X
+DECLWAROTHER_BTN1;确定 ;;;;;;;;;;X
+DECLWAROTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+JOINWAROTHER_SETUP;当他国参战 ;;;;;;;;;;X
+JOINWAROTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+JOINWAROTHER_1;%s ;;;;;;;;;;X
+JOINWAROTHER_2;%t， %s ;;;;;;;;;;X
+JOINWAROTHER_3;已参战，与 ;;;;;;;;;;X
+JOINWAROTHER_4;%s 一起对抗 ;;;;;;;;;;X
+JOINWAROTHER_5;%s ;;;;;;;;;;X
+JOINWAROTHER_6;;;;;;;;;;;X
+JOINWAROTHER_LOG;%s参战了，与%s一起对抗%s。 ;;;;;;;;;;X
+JOINWAROTHER_BTN1;确定 ;;;;;;;;;;X
+JOINWAROTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLDISHONOR_SETUP;当他国取消与我们的军事联盟 ;;;;;;;;;;X
+MILALLDISHONOR_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+MILALLDISHONOR_1;%s ;;;;;;;;;;X
+MILALLDISHONOR_2;%t， %s ;;;;;;;;;;X
+MILALLDISHONOR_3;竟然取消 ;;;;;;;;;;X
+MILALLDISHONOR_4;与我国的 ;;;;;;;;;;X
+MILALLDISHONOR_5;军事联盟！ ;;;;;;;;;;X
+MILALLDISHONOR_6;这种懦弱无法容忍！ ;;;;;;;;;;X
+MILALLDISHONOR_LOG;%s取消了与我们的军事联盟。 ;;;;;;;;;;X
+MILALLDISHONOR_BTN1;确定 ;;;;;;;;;;X
+MILALLDISHONOR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WEMILALLDISHONOR_SETUP;当我们取消与他国的军事联盟 ;;;;;;;;;;X
+WEMILALLDISHONOR_HEADER;外交简报 ;;;;;;;;;;X
+WEMILALLDISHONOR_1;退出！%s ;;;;;;;;;;X
+WEMILALLDISHONOR_2;%t， 我们取消了 ;;;;;;;;;;X
+WEMILALLDISHONOR_3;原来的 ;;;;;;;;;;X
+WEMILALLDISHONOR_4;军事联盟！ ;;;;;;;;;;X
+WEMILALLDISHONOR_5;%s 对我们感到非常失望 ;;;;;;;;;;X
+WEMILALLDISHONOR_6;;;;;;;;;;;X
+WEMILALLDISHONOR_LOG;我们取消了和%s的军事联盟。 ;;;;;;;;;;X
+WEMILALLDISHONOR_BTN1;确定 ;;;;;;;;;;X
+WEMILALLDISHONOR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLBREAK_SETUP;当他国撕毁军事联盟 ;;;;;;;;;;X
+MILALLBREAK_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+MILALLBREAK_1;%s ;;;;;;;;;;X
+MILALLBREAK_2;%t， %s ;;;;;;;;;;X
+MILALLBREAK_3;撕毁了 ;;;;;;;;;;X
+MILALLBREAK_4;该国 ;;;;;;;;;;X
+MILALLBREAK_5;与 ;;;;;;;;;;X
+MILALLBREAK_6;%s的军事联盟 ;;;;;;;;;;X
+MILALLBREAK_LOG;%s撕毁了它与%s的军事联盟。 ;;;;;;;;;;X
+MILALLBREAK_BTN1;确定 ;;;;;;;;;;X
+MILALLBREAK_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANNEXTOUS_SETUP;当他国要求我们吞并 ;;;;;;;;;;X
+ANNEXTOUS_HEADER;;;;;;;;;;;X
+ANNEXTOUS_1;;;;;;;;;;;X
+ANNEXTOUS_2;;;;;;;;;;;X
+ANNEXTOUS_3;;;;;;;;;;;X
+ANNEXTOUS_4;;;;;;;;;;;X
+ANNEXTOUS_5;;;;;;;;;;;X
+ANNEXTOUS_6;;;;;;;;;;;X
+ANNEXTOUS_LOG;;;;;;;;;;;X
+ANNEXTOUS_BTN1;;;;;;;;;;;X
+ANNEXTOUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+TRADETOUS_SETUP;当他国向我们提供贸易协议。 ;;;;;;;;;;X
+TRADETOUS_HEADER;;;;;;;;;;;X
+TRADETOUS_1;;;;;;;;;;;X
+TRADETOUS_2;;;;;;;;;;;X
+TRADETOUS_3;;;;;;;;;;;X
+TRADETOUS_4;;;;;;;;;;;X
+TRADETOUS_5;;;;;;;;;;;X
+TRADETOUS_6;;;;;;;;;;;X
+TRADETOUS_LOG;;;;;;;;;;;X
+TRADETOUS_BTN1;;;;;;;;;;;X
+TRADETOUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+ACCTOUS_SETUP;当他国要求我们给予军事通行权  ;;;;;;;;;;X
+ACCTOUS_HEADER;;;;;;;;;;;X
+ACCTOUS_1;;;;;;;;;;;X
+ACCTOUS_2;;;;;;;;;;;X
+ACCTOUS_3;;;;;;;;;;;X
+ACCTOUS_4;;;;;;;;;;;X
+ACCTOUS_5;;;;;;;;;;;X
+ACCTOUS_6;;;;;;;;;;;X
+ACCTOUS_LOG;;;;;;;;;;;X
+ACCTOUS_BTN1;;;;;;;;;;;X
+ACCTOUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+GUARATOUS_SETUP;当他国宣布保障我们的独立 ;;;;;;;;;;X
+GUARATOUS_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+GUARATOUS_1;%s ;;;;;;;;;;X
+GUARATOUS_2;%t， 我们的独立 ;;;;;;;;;;X
+GUARATOUS_3;现在 ;;;;;;;;;;X
+GUARATOUS_4;得到 ;;;;;;;;;;X
+GUARATOUS_5;%s的保障 ;;;;;;;;;;X
+GUARATOUS_6;;;;;;;;;;;X
+GUARATOUS_LOG;%s从现在起保障我们的独立。 ;;;;;;;;;;X
+GUARATOUS_BTN1;确定 ;;;;;;;;;;X
+GUARATOUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+GUARANDISHONOROTHER_SETUP;当他国拒绝履行对另一国的独立保障 ;;;;;;;;;;X
+GUARANDISHONOROTHER_HEADER;我们的情报部门从 ;;;;;;;;;;X
+GUARANDISHONOROTHER_1;%s 接到情报 ;;;;;;;;;;X
+GUARANDISHONOROTHER_2;%t， %s ;;;;;;;;;;X
+GUARANDISHONOROTHER_3;拒绝履行 ;;;;;;;;;;X
+GUARANDISHONOROTHER_4;他对 ;;;;;;;;;;X
+GUARANDISHONOROTHER_5;%s的独立保障 ;;;;;;;;;;X
+GUARANDISHONOROTHER_6;;;;;;;;;;;X
+GUARANDISHONOROTHER_LOG;%s拒绝履行对%s的独立保障。 ;;;;;;;;;;X
+GUARANDISHONOROTHER_BTN1;确定 ;;;;;;;;;;X
+GUARANDISHONOROTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+GUARANDISHONOR_SETUP;当他国拒绝履行对我们的独立保障 ;;;;;;;;;;X
+GUARANDISHONOR_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+GUARANDISHONOR_1;%s ;;;;;;;;;;X
+GUARANDISHONOR_2;%t， %s ;;;;;;;;;;X
+GUARANDISHONOR_3;竟拒绝履行 ;;;;;;;;;;X
+GUARANDISHONOR_4;对我们的 ;;;;;;;;;;X
+GUARANDISHONOR_5;独立保障！ ;;;;;;;;;;X
+GUARANDISHONOR_6;这种懦夫行为不可容忍！ ;;;;;;;;;;X
+GUARANDISHONOR_LOG;%s拒绝履行对我们的独立保障！ ;;;;;;;;;;X
+GUARANDISHONOR_BTN1;确定 ;;;;;;;;;;X
+GUARANDISHONOR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WEGUARANDISHONOR_SETUP;当我们拒绝履行对他国的独立保障 ;;;;;;;;;;X
+WEGUARANDISHONOR_HEADER;外交简报 ;;;;;;;;;;X
+WEGUARANDISHONOR_1;%s言而无信！ ;;;;;;;;;;X
+WEGUARANDISHONOR_2;%t， ;;;;;;;;;;X
+WEGUARANDISHONOR_3;我国拒绝履行对 ;;;;;;;;;;X
+WEGUARANDISHONOR_4;;;;;;;;;;;X
+WEGUARANDISHONOR_5;%s的独立保障！ 他们对我们极其失望。 ;;;;;;;;;;X
+WEGUARANDISHONOR_6;;;;;;;;;;;X
+WEGUARANDISHONOR_LOG;我国拒绝履行对%s的独立保障。 ;;;;;;;;;;X
+WEGUARANDISHONOR_BTN1;确定 ;;;;;;;;;;X
+WEGUARANDISHONOR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DETRAWITHUS_SETUP;当他国拒绝我们的贸易协定 ;;;;;;;;;;X
+DETRAWITHUS_HEADER;特使来自 ;;;;;;;;;;X
+DETRAWITHUS_1;%s ;;;;;;;;;;X
+DETRAWITHUS_2;%t， 我们很遗憾地通知你 %s ;;;;;;;;;;X
+DETRAWITHUS_3;拒绝了我们提议的 ;;;;;;;;;;X
+DETRAWITHUS_4;贸易协定 ;;;;;;;;;;X
+DETRAWITHUS_5;;;;;;;;;;;X
+DETRAWITHUS_6;;;;;;;;;;;X
+DETRAWITHUS_LOG;%s拒绝了我们提议的贸易协定。 ;;;;;;;;;;X
+DETRAWITHUS_BTN1;确定 ;;;;;;;;;;X
+DETRAWITHUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+ACTRAWITHUS_SETUP;当他国接受我们的贸易协议 ;;;;;;;;;;X
+ACTRAWITHUS_HEADER;特使来自 ;;;;;;;;;;X
+ACTRAWITHUS_1;%s ;;;;;;;;;;X
+ACTRAWITHUS_2;%t， 我国签署了 ;;;;;;;;;;X
+ACTRAWITHUS_3;贸易协定 ;;;;;;;;;;X
+ACTRAWITHUS_4;同 ;;;;;;;;;;X
+ACTRAWITHUS_5;%s ;;;;;;;;;;X
+ACTRAWITHUS_6;;;;;;;;;;;X
+ACTRAWITHUS_LOG;我国同%s签署了贸易协定。 ;;;;;;;;;;X
+ACTRAWITHUS_BTN1;确定 ;;;;;;;;;;X
+ACTRAWITHUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+OTHERTRADEAG_SETUP;当他国同另一国签署贸易协议 ;;;;;;;;;;X
+OTHERTRADEAG_HEADER;特使来自 ;;;;;;;;;;X
+OTHERTRADEAG_1;%s ;;;;;;;;;;X
+OTHERTRADEAG_2;%t， ;;;;;;;;;;X
+OTHERTRADEAG_3;我国获悉 %s ;;;;;;;;;;X
+OTHERTRADEAG_4;已经同 ;;;;;;;;;;X
+OTHERTRADEAG_5;%s签署了贸易协定 ;;;;;;;;;;X
+OTHERTRADEAG_6;;;;;;;;;;;X
+OTHERTRADEAG_LOG;%s同%s签署了贸易协定。 ;;;;;;;;;;X
+OTHERTRADEAG_BTN1;确定 ;;;;;;;;;;X
+OTHERTRADEAG_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+BRKTRADEUS_SETUP;当他国取消与我们的贸易协议 ;;;;;;;;;;X
+BRKTRADEUS_HEADER;特使来自 ;;;;;;;;;;X
+BRKTRADEUS_1;%s ;;;;;;;;;;X
+BRKTRADEUS_2;%t， 我们很遗憾地通知你 ;;;;;;;;;;X
+BRKTRADEUS_3;%s ;;;;;;;;;;X
+BRKTRADEUS_4;取消了 ;;;;;;;;;;X
+BRKTRADEUS_5;同我们的贸易协定 ;;;;;;;;;;X
+BRKTRADEUS_6;;;;;;;;;;;X
+BRKTRADEUS_LOG;%s取消了同我们的贸易协定。 ;;;;;;;;;;X
+BRKTRADEUS_BTN1;确定 ;;;;;;;;;;X
+BRKTRADEUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+BRKTRADEOTH_SETUP;当他国取消与另一国的贸易协议 ;;;;;;;;;;X
+BRKTRADEOTH_HEADER;特使来自 ;;;;;;;;;;X
+BRKTRADEOTH_1;%s ;;;;;;;;;;X
+BRKTRADEOTH_2;%t， 我们获知 ;;;;;;;;;;X
+BRKTRADEOTH_3;%s ;;;;;;;;;;X
+BRKTRADEOTH_4;取消了同 ;;;;;;;;;;X
+BRKTRADEOTH_5;%s ;;;;;;;;;;X
+BRKTRADEOTH_6;的贸易协定 ;;;;;;;;;;X
+BRKTRADEOTH_LOG;%s取消了同%s的贸易协定。 ;;;;;;;;;;X
+BRKTRADEOTH_BTN1;确定 ;;;;;;;;;;X
+BRKTRADEOTH_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+DECMILUS_SETUP;当他国拒绝我们军事通行 ;;;;;;;;;;X
+DECMILUS_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+DECMILUS_1;%s ;;;;;;;;;;X
+DECMILUS_2;%t ;;;;;;;;;;X
+DECMILUS_3;%s ;;;;;;;;;;X
+DECMILUS_4;拒绝让我们军事通行。 ;;;;;;;;;;X
+DECMILUS_5;;;;;;;;;;;X
+DECMILUS_6;;;;;;;;;;;X
+DECMILUS_LOG;%s拒绝给与我们军事通行权。 ;;;;;;;;;;X
+DECMILUS_BTN1;确定 ;;;;;;;;;;X
+DECMILUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+ACCMILUS_SETUP;当他国准许我们军事通行 ;;;;;;;;;;X
+ACCMILUS_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+ACCMILUS_1;%s ;;;;;;;;;;X
+ACCMILUS_2;%t ;;;;;;;;;;X
+ACCMILUS_3;%s ;;;;;;;;;;X
+ACCMILUS_4;将准许我们军事通行 ;;;;;;;;;;X
+ACCMILUS_5;我们现在可以指挥我们的部队 穿越他们的领土 ;;;;;;;;;;X
+ACCMILUS_6;;;;;;;;;;;X
+ACCMILUS_LOG;%s准许给与我们军事通行权。 ;;;;;;;;;;X
+ACCMILUS_BTN1;确定 ;;;;;;;;;;X
+ACCMILUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+ACCMILOTHER_SETUP;当他国准许另一国军事通行 ;;;;;;;;;;X
+ACCMILOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+ACCMILOTHER_1;%s ;;;;;;;;;;X
+ACCMILOTHER_2;%t ;;;;;;;;;;X
+ACCMILOTHER_3;%s ;;;;;;;;;;X
+ACCMILOTHER_4;现在准许军事通行给 ;;;;;;;;;;X
+ACCMILOTHER_5;%s ;;;;;;;;;;X
+ACCMILOTHER_6;;;;;;;;;;;X
+ACCMILOTHER_LOG;%s现在准许%s军事通行他们的国家。 ;;;;;;;;;;X
+ACCMILOTHER_BTN1;确定 ;;;;;;;;;;X
+ACCMILOTHER_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+CANCMILUS_SETUP;当他国放弃在我们的军事通行权 ;;;;;;;;;;X
+CANCMILUS_HEADER;外交简报 \n关于 ;;;;;;;;;;X
+CANCMILUS_1;%s ;;;;;;;;;;X
+CANCMILUS_2;%t ;;;;;;;;;;X
+CANCMILUS_3;%s ;;;;;;;;;;X
+CANCMILUS_4;已放弃他们在我国的军事通行权 ;;;;;;;;;;X
+CANCMILUS_5;;;;;;;;;;;X
+CANCMILUS_6;;;;;;;;;;;X
+CANCMILUS_LOG;%s放弃了他们在我国的军事通行权。 ;;;;;;;;;;X
+CANCMILUS_BTN1;确定 ;;;;;;;;;;X
+CANCMILUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+CANMILOTHE_SETUP;当他国放弃在另一国的军事通行权 ;;;;;;;;;;X
+CANMILOTHE_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+CANMILOTHE_1;%s ;;;;;;;;;;X
+CANMILOTHE_2;%t ;;;;;;;;;;X
+CANMILOTHE_3;%s ;;;;;;;;;;X
+CANMILOTHE_4;已经放弃了在 ;;;;;;;;;;X
+CANMILOTHE_5;%s的军事通行权 ;;;;;;;;;;X
+CANMILOTHE_6;;;;;;;;;;;X
+CANMILOTHE_LOG;%s已经放弃了他们在%s的军事通行权。 ;;;;;;;;;;X
+CANMILOTHE_BTN1;确定 ;;;;;;;;;;X
+CANMILOTHE_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+REVMILUS_SETUP;当他国取消给予我们的军事通行权 ;;;;;;;;;;X
+REVMILUS_HEADER;外交简报 \n关于%s ;;;;;;;;;;X
+REVMILUS_1;%s ;;;;;;;;;;X
+REVMILUS_2;%t， 我们被通知 ;;;;;;;;;;X
+REVMILUS_3;他们已取消了我们的 ;;;;;;;;;;X
+REVMILUS_4;军事通行权 ;;;;;;;;;;X
+REVMILUS_5;;;;;;;;;;;X
+REVMILUS_6;;;;;;;;;;;X
+REVMILUS_LOG;%s已经取消了我们的军事通行权。 ;;;;;;;;;;X
+REVMILUS_BTN1;确定 ;;;;;;;;;;X
+REVMILUS_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+REVMILOTHER_SETUP;当他国取消给予另一国的军事通行权 ;;;;;;;;;;X
+REVMILOTHER_HEADER;情报部简报 \n关于 ;;;;;;;;;;X
+REVMILOTHER_1;%s ;;;;;;;;;;X
+REVMILOTHER_2;%t， 我们已获知 ;;;;;;;;;;X
+REVMILOTHER_3;他们已取消了给予 ;;;;;;;;;;X
+REVMILOTHER_4;%s的军事通行权 ;;;;;;;;;;X
+REVMILOTHER_5;;;;;;;;;;;X
+REVMILOTHER_6;;;;;;;;;;;X
+REVMILOTHER_LOG;%s已取消了给予%s的军事通行权。 ;;;;;;;;;;X
+REVMILOTHER_BTN1;确定 ;;;;;;;;;;X
+REVMILOTHER_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+LEADERDIES_SETUP;当我们的一名将领去世 ;;;;;;;;;;X
+LEADERDIES_HEADER;总参谋部简报%s ;;;;;;;;;;X
+LEADERDIES_1;一名指挥官去世！ ;;;;;;;;;;X
+LEADERDIES_2;%t ;;;;;;;;;;X
+LEADERDIES_3;%s ;;;;;;;;;;X
+LEADERDIES_4;去世了！他将被授予国葬。 ;;;;;;;;;;X
+LEADERDIES_5;;;;;;;;;;;X
+LEADERDIES_6;;;;;;;;;;;X
+LEADERDIES_LOG;%s去世。 ;;;;;;;;;;X
+LEADERDIES_BTN1;确定 ;;;;;;;;;;X
+LEADERDIES_BTN2;选择 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+OTHER_LEADERDIES_SETUP;当他国的一名将领去世 ;;;;;;;;;;X
+OTHER_LEADERDIES_HEADER;总参谋部简报%s ;;;;;;;;;;X
+OTHER_LEADERDIES_1;一名指挥官去世！ ;;;;;;;;;;X
+OTHER_LEADERDIES_2;%t ;;;;;;;;;;X
+OTHER_LEADERDIES_3;%s ;;;;;;;;;;X
+OTHER_LEADERDIES_4;去世了！他将被授予国葬。 ;;;;;;;;;;X
+OTHER_LEADERDIES_5;;;;;;;;;;;X
+OTHER_LEADERDIES_6;;;;;;;;;;;X
+OTHER_LEADERDIES_LOG;%s去世。 ;;;;;;;;;;X
+OTHER_LEADERDIES_BTN1;确定 ;;;;;;;;;;X
+OTHER_LEADERDIES_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+LEADERNEW_SETUP;当我们得到一名新将领 ;;;;;;;;;;X
+LEADERNEW_HEADER;总参谋部简报%s ;;;;;;;;;;X
+LEADERNEW_1;新指挥官！ ;;;;;;;;;;X
+LEADERNEW_2;%t ;;;;;;;;;;X
+LEADERNEW_3;%s ;;;;;;;;;;X
+LEADERNEW_4;已完成在学院的培训正待命于 ;;;;;;;;;;X
+LEADERNEW_5;%s ;;;;;;;;;;X
+LEADERNEW_6;;;;;;;;;;;X
+LEADERNEW_LOG;%s正在%s待命。 ;;;;;;;;;;X
+LEADERNEW_BTN1;确定 ;;;;;;;;;;X
+LEADERNEW_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PROVOWNOCC_SETUP;当他国占领我们一个地区 ;;;;;;;;;;X
+PROVOWNOCC_HEADER;总参谋部简报%s ;;;;;;;;;;X
+PROVOWNOCC_1;发现敌人! ;;;;;;;;;;X
+PROVOWNOCC_2;%t ;;;;;;;;;;X
+PROVOWNOCC_3;%s ;;;;;;;;;;X
+PROVOWNOCC_4;已被卑劣的 ;;;;;;;;;;X
+PROVOWNOCC_5;%s 占领 ;;;;;;;;;;X
+PROVOWNOCC_6;;;;;;;;;;;X
+PROVOWNOCC_LOG;我们失去了%s，它已被%s占领。 ;;;;;;;;;;X
+PROVOWNOCC_BTN1;确定 ;;;;;;;;;;X
+PROVOWNOCC_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NBLOSS_SETUP;当我们输掉一场海战 ;;;;;;;;;;X
+NBLOSS_HEADER;海军简报%s ;;;;;;;;;;X
+NBLOSS_1;战败！ ;;;;;;;;;;X
+NBLOSS_2;%t， 我们英勇的海军 在一场海战中输给了 ;;;;;;;;;;X
+NBLOSS_3;%s ;;;;;;;;;;X
+NBLOSS_4;在如下水域 ;;;;;;;;;;X
+NBLOSS_5;%s. ;;;;;;;;;;X
+NBLOSS_6;%s ;;;;;;;;;;X
+NBLOSS_LOG;我们在一场海战中输给了%s，%s对我们来说是个不幸的海域。 ;;;;;;;;;;X
+NBLOSS_BTN1;确定 ;;;;;;;;;;X
+NBLOSS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOYSPOT_SETUP;当我们海军发现敌军重兵护航的船队 ;;;;;;;;;;X
+CONVOYSPOT_HEADER;海军简报%s ;;;;;;;;;;X
+CONVOYSPOT_1;注意！ ;;;;;;;;;;X
+CONVOYSPOT_2;%t， ;;;;;;;;;;X
+CONVOYSPOT_3;%s 的指挥官 ;;;;;;;;;;X
+CONVOYSPOT_4;在 ;;;;;;;;;;X
+CONVOYSPOT_5;%s 海域发现敌军重兵护航的船队 ;;;;;;;;;;X
+CONVOYSPOT_6;;;;;;;;;;;X
+CONVOYSPOT_LOG;%s在%s海域发现敌军重兵护航的输送船队。 ;;;;;;;;;;X
+CONVOYSPOT_BTN1;确定 ;;;;;;;;;;X
+CONVOYSPOT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOYLOSS_SETUP;当我们损失输送船队的船只 ;;;;;;;;;;X
+CONVOYLOSS_HEADER;海军简报%s ;;;;;;;;;;X
+CONVOYLOSS_1;糟糕！ ;;;;;;;;;;X
+CONVOYLOSS_2;%t， 我们一支从 ;;;;;;;;;;X
+CONVOYLOSS_3;%s ;;;;;;;;;;X
+CONVOYLOSS_4;遭受攻击损失了 ;;;;;;;;;;X
+CONVOYLOSS_5;%s ;;;;;;;;;;X
+CONVOYLOSS_6;;;;;;;;;;;X
+CONVOYLOSS_LOG;我们一支从%s遭受攻击损失了%s。 ;;;;;;;;;;X
+CONVOYLOSS_BTN1;确定 ;;;;;;;;;;X
+CONVOYLOSS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOYLOSST_SETUP;当我们击沉了他国的运输船队 ;;;;;;;;;;X
+CONVOYLOSST_HEADER;海军简报%s ;;;;;;;;;;X
+CONVOYLOSST_1;捷报！ ;;;;;;;;;;X
+CONVOYLOSST_2;%t， 我们的舰队在 ;;;;;;;;;;X
+CONVOYLOSST_3;%s ;;;;;;;;;;X
+CONVOYLOSST_4;击沉了某运输队的下列船只 ;;;;;;;;;;X
+CONVOYLOSST_5;%s ;;;;;;;;;;X
+CONVOYLOSST_6;;;;;;;;;;;X
+CONVOYLOSST_LOG;我们的海军在%s击沉了%s ;;;;;;;;;;X
+CONVOYLOSST_BTN1;确定 ;;;;;;;;;;X
+CONVOYLOSST_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOYLOSSES;%d输送船和%d护航舰 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AIRDESTROY_SETUP;当我们的一支空军被歼灭 ;;;;;;;;;;X
+AIRDESTROY_HEADER;空军简报%s ;;;;;;;;;;X
+AIRDESTROY_1;灾难! ;;;;;;;;;;X
+AIRDESTROY_2;%t， 我们的空军部队在 ;;;;;;;;;;X
+AIRDESTROY_3;%s ;;;;;;;;;;X
+AIRDESTROY_4;被敌人全部歼灭！ ;;;;;;;;;;X
+AIRDESTROY_5;;;;;;;;;;;X
+AIRDESTROY_6;;;;;;;;;;;X
+AIRDESTROY_LOG;我们在%s的空军部队被敌人全歼！ ;;;;;;;;;;X
+AIRDESTROY_BTN1;确定 ;;;;;;;;;;X
+AIRDESTROY_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NAVYDESTROY_SETUP;当我们的一支舰队被歼灭 ;;;;;;;;;;X
+NAVYDESTROY_HEADER;海军简报%s ;;;;;;;;;;X
+NAVYDESTROY_1;灾难! ;;;;;;;;;;X
+NAVYDESTROY_2;%t， 我们的舰队在 ;;;;;;;;;;X
+NAVYDESTROY_3;%s ;;;;;;;;;;X
+NAVYDESTROY_4;被敌人全部歼灭！ ;;;;;;;;;;X
+NAVYDESTROY_5;;;;;;;;;;;X
+NAVYDESTROY_6;;;;;;;;;;;X
+NAVYDESTROY_LOG;我们在%s的海军舰队被敌人全歼！ ;;;;;;;;;;X
+NAVYDESTROY_BTN1;确定 ;;;;;;;;;;X
+NAVYDESTROY_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NAVYWASTE_SETUP;当我们的一支舰队因缺乏补给而毁灭 ;;;;;;;;;;X
+NAVYWASTE_HEADER;海军简报%s ;;;;;;;;;;X
+NAVYWASTE_1;灾难! ;;;;;;;;;;X
+NAVYWASTE_2;%t， 我们在 ;;;;;;;;;;X
+NAVYWASTE_3;%s ;;;;;;;;;;X
+NAVYWASTE_4;的舰队因缺乏补给而毁灭！ ;;;;;;;;;;X
+NAVYWASTE_5;;;;;;;;;;;X
+NAVYWASTE_6;;;;;;;;;;;X
+NAVYWASTE_LOG;我们位于%s的舰队因为缺乏补给而毁灭！ ;;;;;;;;;;X
+NAVYWASTE_BTN1;确定 ;;;;;;;;;;X
+NAVYWASTE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ARMYDESTROY_SETUP;当我们的一支陆军被歼灭 ;;;;;;;;;;X
+ARMYDESTROY_HEADER;陆军简报%s ;;;;;;;;;;X
+ARMYDESTROY_1;灾难！ ;;;;;;;;;;X
+ARMYDESTROY_2;%t， 我们的陆军在 ;;;;;;;;;;X
+ARMYDESTROY_3;%s ;;;;;;;;;;X
+ARMYDESTROY_4;被敌人全部歼灭！ 防线已被突破！ ;;;;;;;;;;X
+ARMYDESTROY_5;;;;;;;;;;;X
+ARMYDESTROY_6;;;;;;;;;;;X
+ARMYDESTROY_LOG;我们在%s的陆军部队被敌人全歼！ ;;;;;;;;;;X
+ARMYDESTROY_BTN1;确定 ;;;;;;;;;;X
+ARMYDESTROY_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ARMYWASTE_SETUP;当我们的一支陆军因缺乏补给而解散 ;;;;;;;;;;X
+ARMYWASTE_HEADER;陆军简报%s ;;;;;;;;;;X
+ARMYWASTE_1;灾难！ ;;;;;;;;;;X
+ARMYWASTE_2;%t， 我们在 ;;;;;;;;;;X
+ARMYWASTE_3;%s ;;;;;;;;;;X
+ARMYWASTE_4;的部队因缺乏补给而解散！ ;;;;;;;;;;X
+ARMYWASTE_5;;;;;;;;;;;X
+ARMYWASTE_6;;;;;;;;;;;X
+ARMYWASTE_LOG;我们在%s的部队因为缺乏补给而解散！ ;;;;;;;;;;X
+ARMYWASTE_BTN1;确定 ;;;;;;;;;;X
+ARMYWASTE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NBWIN_SETUP;当我们赢得一场海战 ;;;;;;;;;;X
+NBWIN_HEADER;海军简报%s ;;;;;;;;;;X
+NBWIN_1;捷报! ;;;;;;;;;;X
+NBWIN_2;%t， 我们已经赢得了对 ;;;;;;;;;;X
+NBWIN_3;%s ;;;;;;;;;;X
+NBWIN_4;的海战，在如下海域： ;;;;;;;;;;X
+NBWIN_5;%s ;;;;;;;;;;X
+NBWIN_6;%s ;;;;;;;;;;X
+NBWIN_LOG;我们赢得了对%s的海战，在如下海域：%s %s ;;;;;;;;;;X
+NBWIN_BTN1;确定 ;;;;;;;;;;X
+NBWIN_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ABLOSS_SETUP;当我们输掉一场空战 ;;;;;;;;;;X
+ABLOSS_HEADER;空军简报%s ;;;;;;;;;;X
+ABLOSS_1;战败! ;;;;;;;;;;X
+ABLOSS_2;%t， 我们英勇的空军对 ;;;;;;;;;;X
+ABLOSS_3;%s ;;;;;;;;;;X
+ABLOSS_4;空战失利，在 ;;;;;;;;;;X
+ABLOSS_5;%s ;;;;;;;;;;X
+ABLOSS_6;幸存者不得不撤退重组。 ;;;;;;;;;;X
+ABLOSS_LOG;我们输掉了一场对%s在%s上空的空战。 ;;;;;;;;;;X
+ABLOSS_BTN1;确定 ;;;;;;;;;;X
+ABLOSS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ABWIN_SETUP;当我们赢得一场空战 ;;;;;;;;;;X
+ABWIN_HEADER;空军简报%s ;;;;;;;;;;X
+ABWIN_1;捷报！ ;;;;;;;;;;X
+ABWIN_2;%t， 我们空中雄鹰赢得对 ;;;;;;;;;;X
+ABWIN_3;%s ;;;;;;;;;;X
+ABWIN_4;的空战，在 ;;;;;;;;;;X
+ABWIN_5;%s ;;;;;;;;;;X
+ABWIN_6;;;;;;;;;;;X
+ABWIN_LOG;我们赢得了对%s在%s空域的空战。 ;;;;;;;;;;X
+ABWIN_BTN1;确定 ;;;;;;;;;;X
+ABWIN_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LIBPROV_SETUP;当我们解放了一个地区 ;;;;;;;;;;X
+LIBPROV_HEADER;陆军简报%s ;;;;;;;;;;X
+LIBPROV_1;地区解放！ ;;;;;;;;;;X
+LIBPROV_2;%t， 我们解放了 ;;;;;;;;;;X
+LIBPROV_3;%s ;;;;;;;;;;X
+LIBPROV_4;自非法占有者 ;;;;;;;;;;X
+LIBPROV_5;%s ;;;;;;;;;;X
+LIBPROV_6;;;;;;;;;;;X
+LIBPROV_LOG;我们解放了%s地区，从%s手中。 ;;;;;;;;;;X
+LIBPROV_BTN1;确定 ;;;;;;;;;;X
+LIBPROV_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AIRARRIVE_SETUP;当我们空军部队到达目的地 ;;;;;;;;;;X
+AIRARRIVE_HEADER;空军简报%s ;;;;;;;;;;X
+AIRARRIVE_1;%s ;;;;;;;;;;X
+AIRARRIVE_2;已到达目的地 ;;;;;;;;;;X
+AIRARRIVE_3;%s ;;;;;;;;;;X
+AIRARRIVE_4;;;;;;;;;;;X
+AIRARRIVE_5;;;;;;;;;;;X
+AIRARRIVE_6;;;;;;;;;;;X
+AIRARRIVE_LOG;%s已到达了%s。 ;;;;;;;;;;X
+AIRARRIVE_BTN1;确定 ;;;;;;;;;;X
+AIRARRIVE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ARMYARRIVE_SETUP;当我们陆军部队到达目的地 ;;;;;;;;;;X
+ARMYARRIVE_HEADER;陆军简报%s ;;;;;;;;;;X
+ARMYARRIVE_1;%s ;;;;;;;;;;X
+ARMYARRIVE_2;已到达目的地 ;;;;;;;;;;X
+ARMYARRIVE_3;%s ;;;;;;;;;;X
+ARMYARRIVE_4;;;;;;;;;;;X
+ARMYARRIVE_5;;;;;;;;;;;X
+ARMYARRIVE_6;;;;;;;;;;;X
+ARMYARRIVE_LOG;%s已经到达了%s。 ;;;;;;;;;;X
+ARMYARRIVE_BTN1;确定 ;;;;;;;;;;X
+ARMYARRIVE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ARMYLOAD_SETUP;当我们部队登船完毕 ;;;;;;;;;;X
+ARMYLOAD_HEADER;总参谋部简报%s ;;;;;;;;;;X
+ARMYLOAD_1;%s ;;;;;;;;;;X
+ARMYLOAD_2;已登载上 ;;;;;;;;;;X
+ARMYLOAD_3;%s ;;;;;;;;;;X
+ARMYLOAD_4;该部队可以开始海上运输 ;;;;;;;;;;X
+ARMYLOAD_5;;;;;;;;;;;X
+ARMYLOAD_6;;;;;;;;;;;X
+ARMYLOAD_LOG;%s已经全部登上%s。 ;;;;;;;;;;X
+ARMYLOAD_BTN1;确定 ;;;;;;;;;;X
+ARMYLOAD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ARMYUNLOAD_SETUP;当我们军队完成了登陆 ;;;;;;;;;;X
+ARMYUNLOAD_HEADER;总参谋部简报%s ;;;;;;;;;;X
+ARMYUNLOAD_1;%s ;;;;;;;;;;X
+ARMYUNLOAD_2;已经从舰船登陆到 ;;;;;;;;;;X
+ARMYUNLOAD_3;%s. ;;;;;;;;;;X
+ARMYUNLOAD_4;该部队现在可以开始作战 ;;;;;;;;;;X
+ARMYUNLOAD_5;;;;;;;;;;;X
+ARMYUNLOAD_6;;;;;;;;;;;X
+ARMYUNLOAD_LOG;%s已经登陆到%s。 ;;;;;;;;;;X
+ARMYUNLOAD_BTN1;确定 ;;;;;;;;;;X
+ARMYUNLOAD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+FLEETARRIVE_SETUP;当我们海军舰队到达目的地 ;;;;;;;;;;X
+FLEETARRIVE_HEADER;海军简报%s ;;;;;;;;;;X
+FLEETARRIVE_1;%s ;;;;;;;;;;X
+FLEETARRIVE_2;已到达目的地 ;;;;;;;;;;X
+FLEETARRIVE_3;%s ;;;;;;;;;;X
+FLEETARRIVE_4;;;;;;;;;;;X
+FLEETARRIVE_5;;;;;;;;;;;X
+FLEETARRIVE_6;;;;;;;;;;;X
+FLEETARRIVE_LOG;%s已经到达了%s。 ;;;;;;;;;;X
+FLEETARRIVE_BTN1;确定 ;;;;;;;;;;X
+FLEETARRIVE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+FLEETATT_SETUP;当我们一支舰队消耗巨大返回港口 ;;;;;;;;;;X
+FLEETATT_HEADER;海军简报%s ;;;;;;;;;;X
+FLEETATT_1;%s ;;;;;;;;;;X
+FLEETATT_2;消耗巨大而返回了 ;;;;;;;;;;X
+FLEETATT_3;%s ;;;;;;;;;;X
+FLEETATT_4;;;;;;;;;;;X
+FLEETATT_5;;;;;;;;;;;X
+FLEETATT_6;;;;;;;;;;;X
+FLEETATT_LOG;%s已返回%s以进行补给。 ;;;;;;;;;;X
+FLEETATT_BTN1;确定 ;;;;;;;;;;X
+FLEETATT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WESNCOM_SETUP;当我们的海军进攻敌舰 ;;;;;;;;;;X
+WESNCOM_HEADER;海军简报%s ;;;;;;;;;;X
+WESNCOM_1;;;;;;;;;;;X
+WESNCOM_2;我们的舰队在 ;;;;;;;;;;X
+WESNCOM_3;%s ;;;;;;;;;;X
+WESNCOM_4;向敌舰进攻 ;;;;;;;;;;X
+WESNCOM_5;;;;;;;;;;;X
+WESNCOM_6;;;;;;;;;;;X
+WESNCOM_LOG;我海军舰队在%s进攻敌舰。 ;;;;;;;;;;X
+WESNCOM_BTN1;确定 ;;;;;;;;;;X
+WESNCOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYSNCOM_SETUP;当我们的海军遭到攻击 ;;;;;;;;;;X
+THEYSNCOM_HEADER;海军简报%s ;;;;;;;;;;X
+THEYSNCOM_1;;;;;;;;;;;X
+THEYSNCOM_2;我们的舰队在 ;;;;;;;;;;X
+THEYSNCOM_3;%s ;;;;;;;;;;X
+THEYSNCOM_4;遭到 ;;;;;;;;;;X
+THEYSNCOM_5;%s 攻击 ;;;;;;;;;;X
+THEYSNCOM_6;;;;;;;;;;;X
+THEYSNCOM_LOG;我们的舰队遭到%s海军的攻击，在%s。 ;;;;;;;;;;X
+THEYSNCOM_BTN1;确定 ;;;;;;;;;;X
+THEYSNCOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WESLCOM_SETUP;当我们的陆军攻击敌军 ;;;;;;;;;;X
+WESLCOM_HEADER;陆军简报%s ;;;;;;;;;;X
+WESLCOM_1;;;;;;;;;;;X
+WESLCOM_2;我们的军队在 ;;;;;;;;;;X
+WESLCOM_3;%s ;;;;;;;;;;X
+WESLCOM_4;向敌军进攻 ;;;;;;;;;;X
+WESLCOM_5;;;;;;;;;;;X
+WESLCOM_6;;;;;;;;;;;X
+WESLCOM_LOG;我军在%s向敌军发起攻击。 ;;;;;;;;;;X
+WESLCOM_BTN1;确定 ;;;;;;;;;;X
+WESLCOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYSLCOM_SETUP;当我们的陆军遭到进攻 ;;;;;;;;;;X
+THEYSLCOM_HEADER;陆军简报%s ;;;;;;;;;;X
+THEYSLCOM_1;;;;;;;;;;;X
+THEYSLCOM_2;我们的军队在 ;;;;;;;;;;X
+THEYSLCOM_3;%s ;;;;;;;;;;X
+THEYSLCOM_4;遭到进攻来自 ;;;;;;;;;;X
+THEYSLCOM_5;%s 他们企图抢占阵地 ;;;;;;;;;;X
+THEYSLCOM_6;;;;;;;;;;;X
+THEYSLCOM_LOG;我们的陆军遭到%s军队的进攻，在%s。 ;;;;;;;;;;X
+THEYSLCOM_BTN1;确定 ;;;;;;;;;;X
+THEYSLCOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WESACOM_SETUP;当我们的空军进攻敌机 ;;;;;;;;;;X
+WESACOM_HEADER;空军简报%s ;;;;;;;;;;X
+WESACOM_1;;;;;;;;;;;X
+WESACOM_2;我们的飞机在 ;;;;;;;;;;X
+WESACOM_3;%s ;;;;;;;;;;X
+WESACOM_4;进攻敌机 ;;;;;;;;;;X
+WESACOM_5;;;;;;;;;;;X
+WESACOM_6;;;;;;;;;;;X
+WESACOM_LOG;我空军部队在%s进攻敌机。 ;;;;;;;;;;X
+WESACOM_BTN1;确定 ;;;;;;;;;;X
+WESACOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+THEYSACOM_SETUP;当我们的空军遭到攻击 ;;;;;;;;;;X
+THEYSACOM_HEADER;空军简报%s ;;;;;;;;;;X
+THEYSACOM_1;;;;;;;;;;;X
+THEYSACOM_2;我们的空军在 ;;;;;;;;;;X
+THEYSACOM_3;%s ;;;;;;;;;;X
+THEYSACOM_4;遭到 ;;;;;;;;;;X
+THEYSACOM_5;%s 的攻击 ;;;;;;;;;;X
+THEYSACOM_6;;;;;;;;;;;X
+THEYSACOM_LOG;我们的空军遭到%s战机的攻击，在%s。 ;;;;;;;;;;X
+THEYSACOM_BTN1;确定 ;;;;;;;;;;X
+THEYSACOM_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+REVOLT_SETUP;当我们发生叛乱 ;;;;;;;;;;X
+REVOLT_HEADER;安全部简报%s ;;;;;;;;;;X
+REVOLT_1;叛乱! ;;;;;;;;;;X
+REVOLT_2;%t， 一些暴民在 ;;;;;;;;;;X
+REVOLT_3;%s 发动叛乱！ ;;;;;;;;;;X
+REVOLT_4;必须在那些游击队造成更多 麻烦之前迅速地消灭他们。 ;;;;;;;;;;X
+REVOLT_5;;;;;;;;;;;X
+REVOLT_6;;;;;;;;;;;X
+REVOLT_LOG;%s发生叛乱！ ;;;;;;;;;;X
+REVOLT_BTN1;确定 ;;;;;;;;;;X
+REVOLT_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LIBPROVOTHERALLY_SETUP;当他国为其盟友解放了一个地区 ;;;;;;;;;;X
+LIBPROVOTHERALLY_HEADER;情报部简报 ;;;;;;;;;;X
+LIBPROVOTHERALLY_1;%s ;;;;;;;;;;X
+LIBPROVOTHERALLY_2;%t， %s的部队已经 ;;;;;;;;;;X
+LIBPROVOTHERALLY_3;解放了 ;;;;;;;;;;X
+LIBPROVOTHERALLY_4;如下地区 ;;;;;;;;;;X
+LIBPROVOTHERALLY_5;%s ;;;;;;;;;;X
+LIBPROVOTHERALLY_6;为他们的盟友 %s。 ;;;;;;;;;;X
+LIBPROVOTHERALLY_LOG;%s已经解放了%s地区，为他们的盟友%s。 ;;;;;;;;;;X
+LIBPROVOTHERALLY_BTN1;确定 ;;;;;;;;;;X
+LIBPROVOTHERALLY_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+REVOLTOTHER_SETUP;当他国发生叛乱 ;;;;;;;;;;X
+REVOLTOTHER_HEADER;情报部简报 ;;;;;;;;;;X
+REVOLTOTHER_1;%s ;;;;;;;;;;X
+REVOLTOTHER_2;%t， %s的部队已经 ;;;;;;;;;;X
+REVOLTOTHER_3;战胜了 %s ;;;;;;;;;;X
+REVOLTOTHER_4;在如下地区 ;;;;;;;;;;X
+REVOLTOTHER_5;%s ;;;;;;;;;;X
+REVOLTOTHER_6;;;;;;;;;;;X
+REVOLTOTHER_LOG;%s战胜了%s在%s ;;;;;;;;;;X
+REVOLTOTHER_BTN1;确定 ;;;;;;;;;;X
+REVOLTOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SBWINOTHER_SETUP;当他国赢得一场海战 ;;;;;;;;;;X
+SBWINOTHER_HEADER;情报部简报 ;;;;;;;;;;X
+SBWINOTHER_1;%s ;;;;;;;;;;X
+SBWINOTHER_2;%t， %s海军击败 ;;;;;;;;;;X
+SBWINOTHER_3;%s海军 ;;;;;;;;;;X
+SBWINOTHER_4;在如下水域 ;;;;;;;;;;X
+SBWINOTHER_5;%s ;;;;;;;;;;X
+SBWINOTHER_6;%s ;;;;;;;;;;X
+SBWINOTHER_LOG;%s赢得一场对%s的海战，在%s。%s ;;;;;;;;;;X
+SBWINOTHER_BTN1;确定 ;;;;;;;;;;X
+SBWINOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LBWINOTHER_SETUP;当他国赢得一场陆战 ;;;;;;;;;;X
+LBWINOTHER_HEADER;情报部简报 ;;;;;;;;;;X
+LBWINOTHER_1;%s ;;;;;;;;;;X
+LBWINOTHER_2;%t， %s陆军击败 ;;;;;;;;;;X
+LBWINOTHER_3;%s陆军 ;;;;;;;;;;X
+LBWINOTHER_4;在如下地区 ;;;;;;;;;;X
+LBWINOTHER_5;%s ;;;;;;;;;;X
+LBWINOTHER_6;;;;;;;;;;;X
+LBWINOTHER_LOG;%s赢得一场对%s的陆战，在%s。 ;;;;;;;;;;X
+LBWINOTHER_BTN1;确定 ;;;;;;;;;;X
+LBWINOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NBWINOTHER_SETUP;当他国赢得一场海战 ;;;;;;;;;;X
+NBWINOTHER_HEADER;情报部简报 ;;;;;;;;;;X
+NBWINOTHER_1;%s ;;;;;;;;;;X
+NBWINOTHER_2;%t， %s海军击败 ;;;;;;;;;;X
+NBWINOTHER_3;%s海军 ;;;;;;;;;;X
+NBWINOTHER_4;在如下水域 ;;;;;;;;;;X
+NBWINOTHER_5;%s ;;;;;;;;;;X
+NBWINOTHER_6;;;;;;;;;;;X
+NBWINOTHER_LOG;%s赢得一场对%s的海战，在%s。 ;;;;;;;;;;X
+NBWINOTHER_BTN1;确定 ;;;;;;;;;;X
+NBWINOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PROMOTED_SETUP;当你被晋升 ;;;;;;;;;;X
+PROMOTED_HEADER;我们的君主宣布：%s ;;;;;;;;;;X
+PROMOTED_1;做的好！ ;;;;;;;;;;X
+PROMOTED_2;%t 你因为表现卓越而被授予军衔 ;;;;;;;;;;X
+PROMOTED_3;%s ;;;;;;;;;;X
+PROMOTED_4;你将从此被称为 ;;;;;;;;;;X
+PROMOTED_5;'%t' ;;;;;;;;;;X
+PROMOTED_6;你做的很好，继续努力！ ;;;;;;;;;;X
+PROMOTED_LOG;你被晋升为%s。 ;;;;;;;;;;X
+PROMOTED_BTN1;确定 ;;;;;;;;;;X
+PROMOTED_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+DEMOTED_SETUP;当你被降职 ;;;;;;;;;;X
+DEMOTED_HEADER;我们的君主宣布：%s ;;;;;;;;;;X
+DEMOTED_1;太懦弱了！ ;;;;;;;;;;X
+DEMOTED_2;%t 我们对你的工作根本就没什么印象， 你因此而被 ;;;;;;;;;;X
+DEMOTED_3;降职 ;;;;;;;;;;X
+DEMOTED_4;到这个职务： ;;;;;;;;;;X
+DEMOTED_5;%s ;;;;;;;;;;X
+DEMOTED_6;你最好努力些。 ;;;;;;;;;;X
+DEMOTED_LOG;你被降成了%s。 ;;;;;;;;;;X
+DEMOTED_BTN1;确定 ;;;;;;;;;;X
+DEMOTED_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+NEWNATION_SETUP;当一个新国家独立 ;;;;;;;;;;X
+NEWNATION_HEADER;我们的政府通告%s ;;;;;;;;;;X
+NEWNATION_1;新的国家 ;;;;;;;;;;X
+NEWNATION_2;%t， 自由的人民在 ;;;;;;;;;;X
+NEWNATION_3;%s ;;;;;;;;;;X
+NEWNATION_4;宣布独立，脱离 ;;;;;;;;;;X
+NEWNATION_5;%s ;;;;;;;;;;X
+NEWNATION_6;我们已与其建立外交关系 ;;;;;;;;;;X
+NEWNATION_LOG;%s的人民宣布脱离%s独立。 ;;;;;;;;;;X
+NEWNATION_BTN1;确定 ;;;;;;;;;;X
+NEWNATION_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BROKENUS_SETUP;当我国政府垮台 ;;;;;;;;;;X
+BROKENUS_HEADER;我们的政府通告%s ;;;;;;;;;;X
+BROKENUS_1;政府垮台！ ;;;;;;;;;;X
+BROKENUS_2;%t， 叛乱自 ;;;;;;;;;;X
+BROKENUS_3;%s ;;;;;;;;;;X
+BROKENUS_4;已经推翻了我们的旧政府 ;;;;;;;;;;X
+BROKENUS_5;;;;;;;;;;;X
+BROKENUS_6;;;;;;;;;;;X
+BROKENUS_LOG;我们当前的%s政府已经垮台。 ;;;;;;;;;;X
+BROKENUS_BTN1;确定 ;;;;;;;;;;X
+BROKENUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BROKENOTHER_SETUP;当他国政府垮台 ;;;;;;;;;;X
+BROKENOTHER_HEADER;我们的政府通告%s ;;;;;;;;;;X
+BROKENOTHER_1;叛乱成功！ ;;;;;;;;;;X
+BROKENOTHER_2;%t， 叛乱自 ;;;;;;;;;;X
+BROKENOTHER_3;%s ;;;;;;;;;;X
+BROKENOTHER_4;已经推翻了旧政府。 ;;;;;;;;;;X
+BROKENOTHER_5;;;;;;;;;;;X
+BROKENOTHER_6;;;;;;;;;;;X
+BROKENOTHER_LOG;%s的政府已经垮台。 ;;;;;;;;;;X
+BROKENOTHER_BTN1;确定 ;;;;;;;;;;X
+BROKENOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RELCHANGE_SETUP;赠送、羞辱的结果 ;;;;;;;;;;X
+RELCHANGE_HEADER;宣布自 ;;;;;;;;;;X
+RELCHANGE_1;%s ;;;;;;;;;;X
+RELCHANGE_2;%t， %s 已经 ;;;;;;;;;;X
+RELCHANGE_3;%s ;;;;;;;;;;X
+RELCHANGE_4;了我们和 %s 的关系。 他们会被看作是 ;;;;;;;;;;X
+RELCHANGE_5;%s ;;;;;;;;;;X
+RELCHANGE_6;;;;;;;;;;;X
+RELCHANGE_LOG;%t，%s已经%s我们和%s的关系。他们会被看作是%s。 ;;;;;;;;;;X
+RELCHANGE_BTN1;确定 ;;;;;;;;;;X
+RELCHANGE_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RELCH_DEC_5;极大削弱 ;;;;;;;;;;X
+RELCH_DEC_4;严重削弱 ;;;;;;;;;;X
+RELCH_DEC_3;较大削弱 ;;;;;;;;;;X
+RELCH_DEC_2;适当削弱 ;;;;;;;;;;X
+RELCH_DEC_1;略微削弱 ;;;;;;;;;;X
+RELCH_INC_1;略微改善 ;;;;;;;;;;X
+RELCH_INC_2;适当改善 ;;;;;;;;;;X
+RELCH_INC_3;较大改善 ;;;;;;;;;;X
+RELCH_INC_4;显著改善 ;;;;;;;;;;X
+RELCH_INC_5;极大改善 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+RELCH_R_0;最亲密的朋友！ ;;;;;;;;;;X
+RELCH_R_1;亲近的朋友 ;;;;;;;;;;X
+RELCH_R_2;我们的朋友 ;;;;;;;;;;X
+RELCH_R_3;完全中立 ;;;;;;;;;;X
+RELCH_R_4;我们的敌人 ;;;;;;;;;;X
+RELCH_R_5;我们憎恨的敌人 ;;;;;;;;;;X
+RELCH_R_6;我们的死敌！ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+QUIT_HEADER;;;;;;;;;;;X
+QUIT_1;放弃？ ;;;;;;;;;;X
+QUIT_2;这将退出当前场景且不作 保存。 要存档， 按F10然后选择‘储存’。 ;;;;;;;;;;X
+QUIT_3;;;;;;;;;;;X
+QUIT_4;;;;;;;;;;;X
+QUIT_5;;;;;;;;;;;X
+QUIT_6;;;;;;;;;;;X
+QUIT_BTN1;退出 ;;;;;;;;;;X
+QUIT_BTN2;取消 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+QUITHOST_HEADER;;;;;;;;;;;X
+QUITHOST_1;放弃？ ;;;;;;;;;;X
+QUITHOST_2;这将退出当前场景且不作 保存。 请注意， 这也将同时结束所有其他玩家的游戏！ ;;;;;;;;;;X
+QUITHOST_3;储存 ;;;;;;;;;;X
+QUITHOST_4;要存档， 按F10然后选择‘储存’。 你可以稍后与相同的玩家 或其他人继续游戏。 ;;;;;;;;;;X
+QUITHOST_5;;;;;;;;;;;X
+QUITHOST_6;;;;;;;;;;;X
+QUITHOST_BTN1;退出 ;;;;;;;;;;X
+QUITHOST_BTN2;取消 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+QUITCLIENT_HEADER;;;;;;;;;;;X
+QUITCLIENT_1;放弃？ ;;;;;;;;;;X
+QUITCLIENT_2;将退出当前场景且不作保存。 只有游戏主机可以储存。 其他玩家将可以继续游戏。 ;;;;;;;;;;X
+QUITCLIENT_3;;;;;;;;;;;X
+QUITCLIENT_4;;;;;;;;;;;X
+QUITCLIENT_5;;;;;;;;;;;X
+QUITCLIENT_6;;;;;;;;;;;X
+QUITCLIENT_BTN1;退出 ;;;;;;;;;;X
+QUITCLIENT_BTN2;取消 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLPROP_SETUP;当他国向我们发出军事联盟的提议 ;;;;;;;;;;X
+MILALLPROP_HEADER;宣布自 ;;;;;;;;;;X
+MILALLPROP_1;%s ;;;;;;;;;;X
+MILALLPROP_2;%t， %s 提议我们加入一个 ;;;;;;;;;;X
+MILALLPROP_3;军事联盟 ;;;;;;;;;;X
+MILALLPROP_4;以直接对抗 ;;;;;;;;;;X
+MILALLPROP_5;%s ;;;;;;;;;;X
+MILALLPROP_6;您的答复是？ ;;;;;;;;;;X
+MILALLPROP_LOG;%s提议我们加入对抗%s的军事联盟。 ;;;;;;;;;;X
+MILALLPROP_BTN1;接受 ;;;;;;;;;;X
+MILALLPROP_BTN2;不，谢谢 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLINVPROP_SETUP;当他国邀请我们加入军事联盟 ;;;;;;;;;;X
+MILALLINVPROP_HEADER;外交官来自 ;;;;;;;;;;X
+MILALLINVPROP_1;%s ;;;;;;;;;;X
+MILALLINVPROP_2;%t， %s邀请我们加入一个 ;;;;;;;;;;X
+MILALLINVPROP_3;军事联盟 ;;;;;;;;;;X
+MILALLINVPROP_4;同 %s， 对抗 ;;;;;;;;;;X
+MILALLINVPROP_5;%s ;;;;;;;;;;X
+MILALLINVPROP_6;您的答复是？ ;;;;;;;;;;X
+MILALLINVPROP_LOG;%s邀请我们加入对抗%s的军事联盟。 ;;;;;;;;;;X
+MILALLINVPROP_BTN1;接受 ;;;;;;;;;;X
+MILALLINVPROP_BTN2;不，谢谢 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+MILALLJOINPROP_SETUP;当他国希望加入我们的军事联盟 ;;;;;;;;;;X
+MILALLJOINPROP_HEADER;特使来自 ;;;;;;;;;;X
+MILALLJOINPROP_1;%s ;;;;;;;;;;X
+MILALLJOINPROP_2;%t， %s 希望加入我们的 ;;;;;;;;;;X
+MILALLJOINPROP_3;军事联盟 ;;;;;;;;;;X
+MILALLJOINPROP_4;以对抗 ;;;;;;;;;;X
+MILALLJOINPROP_5;%s ;;;;;;;;;;X
+MILALLJOINPROP_6;您的答复是？ ;;;;;;;;;;X
+MILALLJOINPROP_LOG;%s希望加入我们的军事联盟对抗%s。 ;;;;;;;;;;X
+MILALLJOINPROP_BTN1;欢迎！ ;;;;;;;;;;X
+MILALLJOINPROP_BTN2;没门！ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+GUARHONORWISH_SETUP;当他国希望我们保障其独立 ;;;;;;;;;;X
+GUARHONORWISH_HEADER;特使来自 ;;;;;;;;;;X
+GUARHONORWISH_1;%s ;;;;;;;;;;X
+GUARHONORWISH_2;%t， %s 请求我们保障 ;;;;;;;;;;X
+GUARHONORWISH_3;他们的独立 ;;;;;;;;;;X
+GUARHONORWISH_4;并对下列国家宣战 ;;;;;;;;;;X
+GUARHONORWISH_5;%s ;;;;;;;;;;X
+GUARHONORWISH_6;您的答复是？ ;;;;;;;;;;X
+GUARHONORWISH_LOG;%s请求我们保障他们的独立并对%s宣战 ;;;;;;;;;;X
+GUARHONORWISH_BTN1;宣战！ ;;;;;;;;;;X
+GUARHONORWISH_BTN2;置之不理！ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WPINVITPROP_SETUP;当他国邀请我们加入军事协约 ;;;;;;;;;;X
+WPINVITPROP_HEADER;特使来自 ;;;;;;;;;;X
+WPINVITPROP_1;%s ;;;;;;;;;;X
+WPINVITPROP_2;%t， %s 邀请我们加入他们的 ;;;;;;;;;;X
+WPINVITPROP_3;战争 ;;;;;;;;;;X
+WPINVITPROP_4;对抗 ;;;;;;;;;X
+WPINVITPROP_5;%s ;;;;;;;;;;X
+WPINVITPROP_6;您的答复是？ ;;;;;;;;;;X
+WPINVITPROP_LOG;%s邀请我们对%s宣战 ;;;;;;;;;;X
+WPINVITPROP_BTN1;宣战 ;;;;;;;;;;X
+WPINVITPROP_BTN2;没门！ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CWARUS_SETUP;当我们爆发内战 ;;;;;;;;;;X
+CWARUS_HEADER;我们的政府通告%s ;;;;;;;;;;X
+CWARUS_1;内战 ;;;;;;;;;;X
+CWARUS_2;%t， 我们的一些军队加入叛乱 欲推翻政府 ;;;;;;;;;;X
+CWARUS_3;;;;;;;;;;;X
+CWARUS_4;;;;;;;;;;;X
+CWARUS_5;;;;;;;;;;;X
+CWARUS_6;;;;;;;;;;;X
+CWARUS_LOG;我们的国家爆发内战。 ;;;;;;;;;;X
+CWARUS_BTN1;确定 ;;;;;;;;;;X
+CWARUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CWAROTHER_SETUP;当他国爆发内战 ;;;;;;;;;;X
+CWAROTHER_HEADER;我们的政府通告%s ;;;;;;;;;;X
+CWAROTHER_1;内战 ;;;;;;;;;;X
+CWAROTHER_2;%t， 我们已经确认了如下报告 ;;;;;;;;;;X
+CWAROTHER_3;%s ;;;;;;;;;;X
+CWAROTHER_4;爆发内战 ;;;;;;;;;;X
+CWAROTHER_5;;;;;;;;;;;X
+CWAROTHER_6;;;;;;;;;;;X
+CWAROTHER_LOG;%s爆发内战。 ;;;;;;;;;;X
+CWAROTHER_BTN1;确定 ;;;;;;;;;;X
+CWAROTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BFIN_SETUP;当部队组建完成准备部署 ;;;;;;;;;;X
+BFIN_HEADER;总参谋部简报%s ;;;;;;;;;;X
+BFIN_1;%s ;;;;;;;;;;X
+BFIN_2;准备部署。 ;;;;;;;;;;X
+BFIN_3;;;;;;;;;;;X
+BFIN_4;;;;;;;;;;;X
+BFIN_5;;;;;;;;;;;X
+BFIN_6;;;;;;;;;;;X
+BFIN_LOG;%s已准备部署。 ;;;;;;;;;;X
+BFIN_BTN1;确定 ;;;;;;;;;;X
+BFIN_BTN2;部署 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+BPFIN_SETUP;当舰船建造完成准备部署 ;;;;;;;;;;X
+BPFIN_HEADER;总参谋部简报%s ;;;;;;;;;;X
+BPFIN_1;%s ;;;;;;;;;;X
+BPFIN_2;准备部署。 ;;;;;;;;;;X
+BPFIN_3;;;;;;;;;;;X
+BPFIN_4;;;;;;;;;;;X
+BPFIN_5;;;;;;;;;;;X
+BPFIN_6;;;;;;;;;;;X
+BPFIN_LOG;%s已准备部署。 ;;;;;;;;;;X
+BPFIN_BTN1;确定 ;;;;;;;;;;X
+BPFIN_BTN2;部署 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CFIN_SETUP;当输送船或护航舰建造完毕 ;;;;;;;;;;X
+CFIN_HEADER;总参谋部简报%s ;;;;;;;;;;X
+CFIN_1;%s ;;;;;;;;;;X
+CFIN_2;已被部署在护航输送船队 ;;;;;;;;;;X
+CFIN_3;;;;;;;;;;;X
+CFIN_4;;;;;;;;;;;X
+CFIN_5;;;;;;;;;;;X
+CFIN_6;;;;;;;;;;;X
+CFIN_LOG;%s已被部署在护航输送船队。 ;;;;;;;;;;X
+CFIN_BTN1;确定 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+PFIN_SETUP;当一个地区的建设完成 ;;;;;;;;;;X
+PFIN_HEADER;总参谋部简报%s ;;;;;;;;;;X
+PFIN_1;%s ;;;;;;;;;;X
+PFIN_2;位于：%s ;;;;;;;;;;X
+PFIN_3;已建设完成 ;;;;;;;;;;X
+PFIN_4;;;;;;;;;;;X
+PFIN_5;;;;;;;;;;;X
+PFIN_6;;;;;;;;;;;X
+PFIN_LOG;%s在%s已经完成建设。 ;;;;;;;;;;X
+PFIN_BTN1;确定 ;;;;;;;;;;X
+PFIN_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+UFIN_BRIG_STRING;以下单位的附属 ;;;;;;;;;;X
+UFIN_SETUP;当一个师被升级时 ;;;;;;;;;;X
+UFIN_HEADER;总参谋部简报%s ;;;;;;;;;;X
+UFIN_1;%s ;;;;;;;;;;X
+UFIN_2;已经升级为 ;;;;;;;;;;X
+UFIN_3;%s ;;;;;;;;;;X
+UFIN_4;;;;;;;;;;;X
+UFIN_5;;;;;;;;;;;X
+UFIN_6;;;;;;;;;;;X
+UFIN_LOG;%s 已经升级为%s。 ;;;;;;;;;;X
+UFIN_BTN1;确定 ;;;;;;;;;;X
+UFIN_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ABWINOTHER_SETUP;当他国赢得一场空战 ;;;;;;;;;;X
+ABWINOTHER_HEADER;情报部简报 ;;;;;;;;;;X
+ABWINOTHER_1;%s ;;;;;;;;;;X
+ABWINOTHER_2;%t， %s空军击败 ;;;;;;;;;;X
+ABWINOTHER_3;%s空军在%s上空 ;;;;;;;;;;X
+ABWINOTHER_4;;;;;;;;;;;X
+ABWINOTHER_5;;;;;;;;;;;X
+ABWINOTHER_6;;;;;;;;;;;X
+ABWINOTHER_LOG;%s赢得一场对%s的空战，在%s上空。 ;;;;;;;;;;X
+ABWINOTHER_BTN1;确定 ;;;;;;;;;;X
+ABWINOTHER_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WTACBOMB_SETUP;当我们空袭敌方陆军 ;;;;;;;;;;X
+WTACBOMB_HEADER;空军简报%s ;;;;;;;;;;X
+WTACBOMB_1;;;;;;;;;;;X
+WTACBOMB_2;我们的空军在 ;;;;;;;;;;X
+WTACBOMB_3;%s ;;;;;;;;;;X
+WTACBOMB_4;发现了敌军并开始轰炸！ ;;;;;;;;;;X
+WTACBOMB_5;;;;;;;;;;;X
+WTACBOMB_6;;;;;;;;;;;X
+WTACBOMB_LOG;我们空袭了位于%s的敌军。 ;;;;;;;;;;X
+WTACBOMB_BTN1;确定 ;;;;;;;;;;X
+WTACBOMB_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WTACBOMBUS_SETUP;当我方陆军遭到空袭 ;;;;;;;;;;X
+WTACBOMBUS_HEADER;空军简报%s ;;;;;;;;;;X
+WTACBOMBUS_1;;;;;;;;;;;X
+WTACBOMBUS_2;我们的部队在 ;;;;;;;;;;X
+WTACBOMBUS_3;%s ;;;;;;;;;;X
+WTACBOMBUS_4;遭到空袭，来自 ;;;;;;;;;;X
+WTACBOMBUS_5;%s！ ;;;;;;;;;;X
+WTACBOMBUS_6;;;;;;;;;;;X
+WTACBOMBUS_LOG;我们的部队在%s遭到%s的空袭。 ;;;;;;;;;;X
+WTACBOMBUS_BTN1;确定 ;;;;;;;;;;X
+WTACBOMBUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WNAVBOMB_SETUP;当我们空袭敌方海军 ;;;;;;;;;;X
+WNAVBOMB_HEADER;空军简报%s ;;;;;;;;;;X
+WNAVBOMB_1;;;;;;;;;;;X
+WNAVBOMB_2;我们的空军在 ;;;;;;;;;;X
+WNAVBOMB_3;%s ;;;;;;;;;;X
+WNAVBOMB_4;发现敌舰队并开始空袭！ ;;;;;;;;;;X
+WNAVBOMB_5;;;;;;;;;;;X
+WNAVBOMB_6;;;;;;;;;;;X
+WNAVBOMB_LOG;我们空袭了位于%s的敌舰队。 ;;;;;;;;;;X
+WNAVBOMB_BTN1;确定 ;;;;;;;;;;X
+WNAVBOMB_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WNAVBOMBUS_SETUP;当我方海军遭到空袭 ;;;;;;;;;;X
+WNAVBOMBUS_HEADER;海军简报%s ;;;;;;;;;;X
+WNAVBOMBUS_1;;;;;;;;;;;X
+WNAVBOMBUS_2;我们的舰队在 ;;;;;;;;;;X
+WNAVBOMBUS_3;%s ;;;;;;;;;;X
+WNAVBOMBUS_4;遭到空袭，来自 ;;;;;;;;;;X
+WNAVBOMBUS_5;%s！ ;;;;;;;;;;X
+WNAVBOMBUS_6;;;;;;;;;;;X
+WNAVBOMBUS_LOG;我们的舰队在%s遭到%s的空袭。 ;;;;;;;;;;X
+WNAVBOMBUS_BTN1;确定 ;;;;;;;;;;X
+WNAVBOMBUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;X
+WADD_SETUP;当我们与他国达成外交协议 ;;;;;;;;;;X
+WADD_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WADD_1;外交协议 ;;;;;;;;;;X
+WADD_2;%t， 我们达成外交协议，同: ;;;;;;;;;;X
+WADD_3;%s ;;;;;;;;;;X
+WADD_4;;;;;;;;;;;X
+WADD_5;;;;;;;;;;;X
+WADD_6;;;;;;;;;;;X
+WADD_LOG;我们同%s达成了外交协议。 ;;;;;;;;;;X
+WADD_BTN1;确定 ;;;;;;;;;;X
+WADD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TADD_SETUP;当他国与另一国达成外交协议 ;;;;;;;;;;X
+TADD_HEADER;情报部简报%s ;;;;;;;;;;X
+TADD_1;外交协议 ;;;;;;;;;;X
+TADD_2;%t， %s 达成了外交协议，与 ;;;;;;;;;;X
+TADD_3;%s ;;;;;;;;;;X
+TADD_4;;;;;;;;;;;X
+TADD_5;;;;;;;;;;;X
+TADD_6;;;;;;;;;;;X
+TADD_LOG;%s 与 %s达成了外交协议。 ;;;;;;;;;;X
+TADD_BTN1;确定 ;;;;;;;;;;X
+TADD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TADDU_SETUP;当他国接受我们的外交协议 ;;;;;;;;;;X
+TADDU_HEADER;外交部简报 ;;;;;;;;;;X
+TADDU_1;外交协议 ;;;;;;;;;;X
+TADDU_2;%t， ;;;;;;;;;;X
+TADDU_3;%s ;;;;;;;;;;X
+TADDU_4;已经同我们达成了外交协议 ;;;;;;;;;;X
+TADDU_5;;;;;;;;;;;X
+TADDU_6;;;;;;;;;;;X
+TADDU_LOG;%s 已经同我们达成了外交协议。 ;;;;;;;;;;X
+TADDU_BTN1;确定 ;;;;;;;;;;X
+TADDU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WDDD_SETUP;当我们拒绝他国的外交提议 ;;;;;;;;;;X
+WDDD_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WDDD_1;外交协议 ;;;;;;;;;;X
+WDDD_2;%t， 我们拒绝了外交提议，来自 ;;;;;;;;;;X
+WDDD_3;%s ;;;;;;;;;;X
+WDDD_4;;;;;;;;;;;X
+WDDD_5;;;;;;;;;;;X
+WDDD_6;;;;;;;;;;;X
+WDDD_LOG;我们拒绝了来自 %s的外交提议。 ;;;;;;;;;;X
+WDDD_BTN1;确定 ;;;;;;;;;;X
+WDDD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TDDD_SETUP;当他国拒绝了另一国的外交提议 ;;;;;;;;;;X
+TDDD_HEADER;情报部简报%s ;;;;;;;;;;X
+TDDD_1;外交协议 ;;;;;;;;;;X
+TDDD_2;%t， %s拒绝了外交提议，来自 ;;;;;;;;;;X
+TDDD_3;%s ;;;;;;;;;;X
+TDDD_4;;;;;;;;;;;X
+TDDD_5;;;;;;;;;;;X
+TDDD_6;;;;;;;;;;;X
+TDDD_LOG;%s拒绝了 %s的外交提议。 ;;;;;;;;;;X
+TDDD_BTN1;确定 ;;;;;;;;;;X
+TDDD_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TDDDU_SETUP;当他国拒绝了我国的外交提议 ;;;;;;;;;;X
+TDDDU_HEADER;外交部简报%s ;;;;;;;;;;X
+TDDDU_1;外交协议 ;;;;;;;;;;X
+TDDDU_2;%t， ;;;;;;;;;;X
+TDDDU_3;%s ;;;;;;;;;;X
+TDDDU_4;已经拒绝了我们的外交提议 ;;;;;;;;;;X
+TDDDU_5;;;;;;;;;;;X
+TDDDU_6;;;;;;;;;;;X
+TDDDU_LOG;%s已经拒绝了我们的外交提议。 ;;;;;;;;;;X
+TDDDU_BTN1;确定 ;;;;;;;;;;X
+TDDDU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DEALWE_SETUP;当他国提出贸易合同 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AOW_TA;%t， %s 提出一个贸易合同，他们将提供 ;;;;;;;;;;X
+AOW_DEAL;%t， %s ;;;;;;;;;;X
+AOW_DEAL2;向我们交换 ;;;;;;;;;;X
+AOW_DEAL3;%s ;;;;;;;;;;X
+#;;;;;;;;;;;X
+TCPTUS_SETUP;当他国废除了与我们的和平条约 ;;;;;;;;;;X
+TCPTUS_HEADER;外交部简报%s ;;;;;;;;;;X
+TCPTUS_1;和平条约被废除 ;;;;;;;;;;X
+TCPTUS_2;%t， ;;;;;;;;;;X
+TCPTUS_3;%s ;;;;;;;;;;X
+TCPTUS_4;已废除了与我国签订的和平条约 ;;;;;;;;;;X
+TCPTUS_5;;;;;;;;;;;X
+TCPTUS_6;;;;;;;;;;;X
+TCPTUS_LOG;%s已废除了与我国签订的和平条约。 ;;;;;;;;;;X
+TCPTUS_BTN1;确定 ;;;;;;;;;;X
+TCPTUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCTAUS_SETUP;当他国取消了与我们的贸易协定 ;;;;;;;;;;X
+TCTAUS_HEADER;外交部简报%s ;;;;;;;;;;X
+TCTAUS_1;贸易协定被取消 ;;;;;;;;;;X
+TCTAUS_2;%t， ;;;;;;;;;;X
+TCTAUS_3;%s ;;;;;;;;;;X
+TCTAUS_4;已取消了同我们的贸易协定 ;;;;;;;;;;X
+TCTAUS_5;（%s） ;;;;;;;;;;X
+TCTAUS_6;;;;;;;;;;;X
+TCTAUS_LOG;%s取消了同我们的贸易协定 ;;;;;;;;;;X
+TCTAUS_BTN1;确定 ;;;;;;;;;;X
+TCTAUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TCNAUS_SETUP;当他国撕毁了与我们的互不侵犯条约 ;;;;;;;;;;X
+TCNAUS_HEADER;外交部简报%s ;;;;;;;;;;X
+TCNAUS_1;互不侵犯条约被取消 ;;;;;;;;;;X
+TCNAUS_2;%t， ;;;;;;;;;;X
+TCNAUS_3;%s ;;;;;;;;;;X
+TCNAUS_4;撕毁了与我们的互不侵犯条约 ;;;;;;;;;;X
+TCNAUS_5;;;;;;;;;;;X
+TCNAUS_6;;;;;;;;;;;X
+TCNAUS_LOG;%s撕毁了与我们签订的互不侵犯条约 ;;;;;;;;;;X
+TCNAUS_BTN1;确定 ;;;;;;;;;;X
+TCNAUS_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WANAP_SETUP;当我们接受他国的互不侵犯条约提议 ;;;;;;;;;;X
+WANAP_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WANAP_1;互不侵犯条约 ;;;;;;;;;;X
+WANAP_2;%t， 我们接受了互不侵犯条约来自 ;;;;;;;;;;X
+WANAP_3;%s。 ;;;;;;;;;;X
+WANAP_4;;;;;;;;;;;X
+WANAP_5;;;;;;;;;;;X
+WANAP_6;;;;;;;;;;;X
+WANAP_LOG;我们接受了%s提出的互不侵犯条约。 ;;;;;;;;;;X
+WANAP_BTN1;确定 ;;;;;;;;;;X
+WANAP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TANAP_SETUP;当他国与另一国达成了互不侵犯条约 ;;;;;;;;;;X
+TANAP_HEADER;情报部简报%s ;;;;;;;;;;X
+TANAP_1;互不侵犯条约 ;;;;;;;;;;X
+TANAP_2;%t， %s达成互不侵犯条约与 ;;;;;;;;;;X
+TANAP_3;%s ;;;;;;;;;;X
+TANAP_4;;;;;;;;;;;X
+TANAP_5;;;;;;;;;;;X
+TANAP_6;;;;;;;;;;;X
+TANAP_LOG;%s同%s达成了互不侵犯条约。 ;;;;;;;;;;X
+TANAP_BTN1;确定 ;;;;;;;;;;X
+TANAP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TANAPU_SETUP;当他国与我们达成了互不侵犯条约 ;;;;;;;;;;X
+TANAPU_HEADER;外交部简报 %s ;;;;;;;;;;X
+TANAPU_1;互不侵犯条约 ;;;;;;;;;;X
+TANAPU_2;%t， ;;;;;;;;;;X
+TANAPU_3;%s ;;;;;;;;;;X
+TANAPU_4;与我们达成了互不侵犯条约 ;;;;;;;;;;X
+TANAPU_5;;;;;;;;;;;X
+TANAPU_6;;;;;;;;;;;X
+TANAPU_LOG;%s与我们达成了互不侵犯条约 ;;;;;;;;;;X
+TANAPU_BTN1;确定 ;;;;;;;;;;X
+TANAPU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+WDNAP_SETUP;当我们拒绝他国的互不侵犯条约提议 ;;;;;;;;;;X
+WDNAP_HEADER;总参谋部简报%s ;;;;;;;;;;X
+WDNAP_1;互不侵犯条约 ;;;;;;;;;;X
+WDNAP_2;%t， 我们拒绝了互不侵犯条约提议， 来自 ;;;;;;;;;;X
+WDNAP_3;%s ;;;;;;;;;;X
+WDNAP_4;;;;;;;;;;;X
+WDNAP_5;;;;;;;;;;;X
+WDNAP_6;;;;;;;;;;;X
+WDNAP_LOG;我们拒绝了来自%s的互不侵犯条约提议。 ;;;;;;;;;;X
+WDNAP_BTN1;确定 ;;;;;;;;;;X
+WDNAP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TDNAP_SETUP;当他国拒绝另一国的互不侵犯条约提议 ;;;;;;;;;;X
+TDNAP_HEADER;情报部简报%s ;;;;;;;;;;X
+TDNAP_1;互不侵犯条约 ;;;;;;;;;;X
+TDNAP_2;%t， %s 拒绝了互不侵犯条约提议， 来自 ;;;;;;;;;;X
+TDNAP_3;%s ;;;;;;;;;;X
+TDNAP_4;;;;;;;;;;;X
+TDNAP_5;;;;;;;;;;;X
+TDNAP_6;;;;;;;;;;;X
+TDNAP_LOG;%s拒绝了来自%s的互不侵犯条约提议。 ;;;;;;;;;;X
+TDNAP_BTN1;确定 ;;;;;;;;;;X
+TDNAP_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TDNAPU_SETUP;当他国拒绝我们的互不侵犯条约提议 ;;;;;;;;;;X
+TDNAPU_HEADER;外交部简报%s ;;;;;;;;;;X
+TDNAPU_1;互不侵犯条约 ;;;;;;;;;;X
+TDNAPU_2;%t， ;;;;;;;;;;X
+TDNAPU_3;%s ;;;;;;;;;;X
+TDNAPU_4;拒绝了我们的互不侵犯条约提议 ;;;;;;;;;;X
+TDNAPU_5;;;;;;;;;;;X
+TDNAPU_6;;;;;;;;;;;X
+TDNAPU_LOG;%s拒绝了我们的互不侵犯条约提议。 ;;;;;;;;;;X
+TDNAPU_BTN1;确定 ;;;;;;;;;;X
+TDNAPU_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+NAGGWE_SETUP;当他国提出互不侵犯条约提议 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+WEGUARA_SETUP;当我们宣布保障另一国的独立 ;;;;;;;;;;X
+WEGUARA_HEADER;外交方针简报 \n关于 ;;;;;;;;;;X
+WEGUARA_1;%s ;;;;;;;;;;X
+WEGUARA_2;%t,我们现在 ;;;;;;;;;;X
+WEGUARA_3;宣布保障 ;;;;;;;;;;X
+WEGUARA_4;以下国家的独立 ;;;;;;;;;;X
+WEGUARA_5;%s ;;;;;;;;;;X
+WEGUARA_6;;;;;;;;;;;;X
+WEGUARA_LOG;现在我们保障了%s的独立。 ;;;;;;;;;;X
+WEGUARA_BTN1;知道了 ;;;;;;;;;;X
+WEGUARA_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+UNITDETECT;我方间谍成功获得情报：一支%s海军舰队正在执行任务%s ;;;;;;;;;;X
+UNITDETECT_SETUP;当我方间谍发来对方舰队的情报 ;;;;;;;;;;X
+UNITDETECT_HEADER;谍报摘要 ;;;;;;;;;;X
+UNITDETECT_1;获得机密文件 ;;;;;;;;;;X
+UNITDETECT_2;%t，我方间谍从 ;;;;;;;;;;X
+UNITDETECT_3;%s ;;;;;;;;;;X
+UNITDETECT_4;发来位于%s的舰队情报： ;;;;;;;;;;X
+UNITDETECT_5;%s ;;;;;;;;;;X
+UNITDETECT_6;执行任务：\n %s ;;;;;;;;;;X
+UNITDETECT_LOG;获得外方舰队的机密信息。 ;;;;;;;;;;X
+UNITDETECT_BTN1;确定 ;;;;;;;;;;X
+UNITDETECT_BTN2;转到 ;;;;;;;;;;X
+UNITDETECT_INFO;名称：%s\n%d 大型舰\n%d 小型舰\n%d 潜艇\n%d 运输舰 ;;;;;;;;;;X
+UNITDETECT_NAME;名称 ;;;;;;;;;;X
+UNITDETECT_LRGE;大型舰 ;;;;;;;;;;X
+UNITDETECT_SML;小型舰 ;;;;;;;;;;X
+UNITDETECT_OTHR;其它舰种 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+CONVOYDETECT_SETUP;当我方间谍发来对方商船的情报 ;;;;;;;;;;X
+CONVOYDETECT_HEADER;谍报摘要 ;;;;;;;;;;X
+CONVOYDETECT_1;获得机密文件 ;;;;;;;;;;X
+CONVOYDETECT_2;%t，我方间谍从 ;;;;;;;;;;X
+CONVOYDETECT_3;%s ;;;;;;;;;;X
+CONVOYDETECT_4;发来有关其商船的情报： ;;;;;;;;;;X
+CONVOYDETECT_5;%s ;;;;;;;;;;X
+CONVOYDETECT_6; ;;;;;;;;;;X
+CONVOYDETECT_LOG;获得外方商船的机密信息。 ;;;;;;;;;;X
+CONVOYDETECT_BTN1;确定 ;;;;;;;;;;X
+CONVOYDETECT_BTN2;转到 ;;;;;;;;;;X
+CONVOYDETECT_INFO;从 %s到 %s，包括：\n%d 输送船\n%d 护航舰 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LBWIN_SETUP;当我们赢得一场陆战 ;;;;;;;;;;X
+LBWIN_HEADER;陆军简报%s ;;;;;;;;;;X
+LBWIN_1;捷报! ;;;;;;;;;;X
+LBWIN_2;%t， 我们的常胜军已击败了 ;;;;;;;;;;X
+LBWIN_3;%s ;;;;;;;;;;X
+LBWIN_4;的军队，在 ;;;;;;;;;;X
+LBWIN_5;%s ;;;;;;;;;;X
+LBWIN_6;%s ;;;;;;;;;;X
+LBWIN_LOG;%s军队在%s被我们击败。 ;;;;;;;;;;X
+LBWIN_BTN1;确定 ;;;;;;;;;;X
+LBWIN_BTN2;转到 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LBLOSS_SETUP;当我们输掉一场陆战 ;;;;;;;;;;X
+LBLOSS_HEADER;陆军简报%s ;;;;;;;;;;X
+LBLOSS_1;战败! ;;;;;;;;;;X
+LBLOSS_2;%t， 我们英勇的军队输给了 ;;;;;;;;;;X
+LBLOSS_3;%s ;;;;;;;;;;X
+LBLOSS_4;的优势部队，在 ;;;;;;;;;;X
+LBLOSS_5;%s ;;;;;;;;;;X
+LBLOSS_6;幸存者无奈撤退重整 \n%s ;;;;;;;;;;X
+LBLOSS_LOG;%s在%s击败了我们。 ;;;;;;;;;;X
+LBLOSS_BTN1;确定 ;;;;;;;;;;X
+LBLOSS_BTN2;转到 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+TECHGAINSKILL_SETUP;当一个科研小组技能等级提升或降低 ;;;;;;;;;;X
+TECHGAINSPECIALITY_SETUP;当一个科研小组获得或失去一项专长 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+LEADTR_SETUP;当我们的一个指挥官获得新技能 ;;;;;;;;;;X
+LEADTR_HEADER;指挥官简报%s ;;;;;;;;;;X
+LEADTR_1;新的指挥官特性 ;;;;;;;;;;X
+LEADTR_2;%t，指挥官 ;;;;;;;;;;X
+LEADTR_3;%s ;;;;;;;;;;X
+LEADTR_4;已成为 %s ;;;;;;;;;;X
+LEADTR_5;;;;;;;;;;;X
+LEADTR_6;;;;;;;;;;;X
+LEADTR_LOG;%s已经获得了'%s'的特性。 ;;;;;;;;;;X
+LEADTR_BTN1;好的 ;;;;;;;;;;X
+LEADTR_BTN2;查看 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+REMOVETECH_SETUP;当我们放弃一个学说 ;;;;;;;;;;X
+REMOVETECH_HEADER;军备简报%s ;;;;;;;;;;X
+REMOVETECH_1;放弃学说 ;;;;;;;;;;X
+REMOVETECH_2;%t, %s我们放弃了这个学说 ;;;;;;;;;;X
+REMOVETECH_3;%s ;;;;;;;;;;X
+REMOVETECH_4;;;;;;;;;;;X
+REMOVETECH_5;;;;;;;;;;;X
+REMOVETECH_6;;;;;;;;;;;X
+REMOVETECH_LOG;我们放弃了%s%s学说。 ;;;;;;;;;;X
+REMOVETECH_BTN1;好的 ;;;;;;;;;;X
+REMOVETECH_BTN2;;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3DNUCF_SETUP;当他国摧毁核弹任务成功 ;;;;;;;;;;x
+SPY3DNUCF_HEADER;情报部门简报 ;;;;;;;;;;x
+SPY3DNUCF_1;间谍 ;;;;;;;;;;x
+SPY3DNUCF_2;成功 ;;;;;;;;;;x
+SPY3DNUCF_3;摧毁位于 ;;;;;;;;;;x
+SPY3DNUCF_4;%s的核弹 ;;;;;;;;;;x
+SPY3DNUCF_5;%s ;;;;;;;;;;x
+SPY3DNUCF_6;;;;;;;;;;;x
+SPY3DNUCF_LOG;%s的间谍成功摧毁位于%s的核弹，%s ;;;;;;;;;;x
+SPY3DNUCF_BTN1;知道了 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY3DNUCS_SETUP;当他国摧毁核弹任务失败 ;;;;;;;;;;X
+SPY3DNUCS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3DNUCS_1;间谍 ;;;;;;;;;;X
+SPY3DNUCS_2;未能 ;;;;;;;;;;X
+SPY3DNUCS_3;摧毁位于 ;;;;;;;;;;X
+SPY3DNUCS_4;%s的核弹 ;;;;;;;;;;X
+SPY3DNUCS_5;%s ;;;;;;;;;;X
+SPY3DNUCS_6;;;;;;;;;;;X
+SPY3DNUCS_LOG;%s的间谍未能摧毁位于%s的核弹，%s ;;;;;;;;;;X
+SPY3DNUCS_BTN1;知道了 ;;;;;;;;;;x
+#;;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPY3COUF_SETUP;当他国反谍失败 ;;;;;;;;;;X
+SPY3COUF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3COUF_1;%s未能清除任何间谍 ;;;;;;;;;;X
+SPY3COUF_2;;;;;;;;;;;X
+SPY3COUF_3;;;;;;;;;;;X
+SPY3COUF_4;;;;;;;;;;;X
+SPY3COUF_5;;;;;;;;;;;X
+SPY3COUF_6;;;;;;;;;;;X
+SPY3COUF_LOG;%s未能清除任何间谍。 ;;;;;;;;;;X
+SPY3COUF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3COUS_SETUP;当他国反谍成功 ;;;;;;;;;;X
+SPY3COUS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3COUS_1;%s已清除了 ;;;;;;;;;;X
+SPY3COUS_2;一名来自 ;;;;;;;;;;X
+SPY3COUS_3;%s的间谍 ;;;;;;;;;;X
+SPY3COUS_4;;;;;;;;;;;X
+SPY3COUS_5;;;;;;;;;;;X
+SPY3COUS_6;;;;;;;;;;;X
+SPY3COUS_LOG;%s已清除了一名来自%s的间谍。 ;;;;;;;;;;X
+SPY3COUS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3SMF_SETUP;当他国的造谣行动失败 ;;;;;;;;;;X
+SPY3SMF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3SMF_1;%s ;;;;;;;;;;X
+SPY3SMF_2;的造谣行动在 ;;;;;;;;;;X
+SPY3SMF_3;%s失败了 ;;;;;;;;;;X
+SPY3SMF_4;%s ;;;;;;;;;;X
+SPY3SMF_5;;;;;;;;;;;X
+SPY3SMF_6;;;;;;;;;;;X
+SPY3SMF_LOG;%s在%s的造谣行动失败了。 ;;;;;;;;;;X
+SPY3SMF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3SMS_SETUP;当他国的造谣行动成功 ;;;;;;;;;;X
+SPY3SMS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3SMS_1;%s ;;;;;;;;;;X
+SPY3SMS_2;的造谣行动在 ;;;;;;;;;;X
+SPY3SMS_3;%s成功了 ;;;;;;;;;;X
+SPY3SMS_4;;;;;;;;;;;X
+SPY3SMS_5;;;;;;;;;;;X
+SPY3SMS_6;;;;;;;;;;;X
+SPY3SMS_LOG;%s在%s成功散布了谣言。 ;;;;;;;;;;X
+SPY3SMS_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3MASSF_SETUP;当他国未能影响世界舆论 ;;;;;;;;;;X
+SPY3MASSF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3MASSF_1;%s 未能影响 ;;;;;;;;;;X
+SPY3MASSF_2;世界对于 ;;;;;;;;;;X
+SPY3MASSF_3;%s的看法 ;;;;;;;;;;X
+SPY3MASSF_4;;;;;;;;;;;X
+SPY3MASSF_5;;;;;;;;;;;X
+SPY3MASSF_6;;;;;;;;;;;X
+SPY3MASSF_LOG;%s未能影响世界对于%s的看法。 ;;;;;;;;;;X
+SPY3MASSF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3MASSS_SETUP;当他国成功影响世界舆论 ;;;;;;;;;;X
+SPY3MASSS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3MASSS_1;%s 成功影响了 ;;;;;;;;;;X
+SPY3MASSS_2;世界对于 ;;;;;;;;;;X
+SPY3MASSS_3;%s的看法 ;;;;;;;;;;X
+SPY3MASSS_4;;;;;;;;;;;X
+SPY3MASSS_5;;;;;;;;;;;X
+SPY3MASSS_6;;;;;;;;;;;X
+SPY3MASSS_LOG;%s成功地影响了世界对于%s的看法。 ;;;;;;;;;;X
+SPY3MASSS_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3BLUEF_SETUP;当他国窃取蓝图失败 ;;;;;;;;;;X
+SPY3BLUEF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3BLUEF_1;%s未能窃取 ;;;;;;;;;;X
+SPY3BLUEF_2;%s的蓝图 ;;;;;;;;;;X
+SPY3BLUEF_3;;;;;;;;;;;X
+SPY3BLUEF_4;;;;;;;;;;;X
+SPY3BLUEF_5;;;;;;;;;;;X
+SPY3BLUEF_6;;;;;;;;;;;X
+SPY3BLUEF_LOG;%s未能窃取%s的蓝图。 ;;;;;;;;;;X
+SPY3BLUEF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3BLUES_SETUP;当他国窃取蓝图成功 ;;;;;;;;;;X
+SPY3BLUES_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3BLUES_1;%s成功窃取 ;;;;;;;;;;X
+SPY3BLUES_2;%s ;;;;;;;;;;X
+SPY3BLUES_3;的蓝图，从 ;;;;;;;;;;X
+SPY3BLUES_4;%s ;;;;;;;;;;X
+SPY3BLUES_5;;;;;;;;;;;X
+SPY3BLUES_6;;;;;;;;;;;X
+SPY3BLUES_LOG;%s成功把%s的蓝图从%s那里窃取出来。 ;;;;;;;;;;X
+SPY3BLUES_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3DTEF_SETUP;当他国拖延科研小组进度失败 ;;;;;;;;;;X
+SPY3DTEF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3DTEF_1;%s 未能 ;;;;;;;;;;X
+SPY3DTEF_2;拖延 ;;;;;;;;;;X
+SPY3DTEF_3;%s科研进度 ;;;;;;;;;;X
+SPY3DTEF_4;;;;;;;;;;;X
+SPY3DTEF_5;;;;;;;;;;;X
+SPY3DTEF_6;;;;;;;;;;;X
+SPY3DTEF_LOG;%s未能拖延%s科研小组的进度。 ;;;;;;;;;;X
+SPY3DTEF_BTN1;好的 ;;;;;;;;;;X,
+#;;;;;;;;;;;x
+SPY3DTES_SETUP;当他国拖延科研小组进度成功 ;;;;;;;;;;X
+SPY3DTES_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3DTES_1;%s成功拖延 ;;;;;;;;;;X
+SPY3DTES_2;%s ;;;;;;;;;;X
+SPY3DTES_3;科研组在 ;;;;;;;;;;X
+SPY3DTES_4;%s的科研进度 ;;;;;;;;;;X
+SPY3DTES_5;;;;;;;;;;;X
+SPY3DTES_6;;;;;;;;;;;X
+SPY3DTES_LOG;%s成功拖延了%s科研进度，那是%s的科研组。 ;;;;;;;;;;X
+SPY3DTES_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3PRODF_SETUP;当他国破坏生产失败 ;;;;;;;;;;X
+SPY3PRODF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3PRODF_1;%s未能破坏 ;;;;;;;;;;X
+SPY3PRODF_2;%s的生产 ;;;;;;;;;;X
+SPY3PRODF_3;;;;;;;;;;;X
+SPY3PRODF_4;;;;;;;;;;;X
+SPY3PRODF_5;;;;;;;;;;;X
+SPY3PRODF_6;;;;;;;;;;;X
+SPY3PRODF_LOG;%s未能破坏%s的生产。 ;;;;;;;;;;X
+SPY3PRODF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3FPS_SETUP;当他国资助游击队成功 ;;;;;;;;;;X
+SPY3FPS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3FPS_1;%s成功 ;;;;;;;;;;X
+SPY3FPS_2;资助了 ;;;;;;;;;;X
+SPY3FPS_3;%s的游击队 ;;;;;;;;;;X
+SPY3FPS_4;;;;;;;;;;;X
+SPY3FPS_5;;;;;;;;;;;X
+SPY3FPS_6;;;;;;;;;;;X
+SPY3FPS_LOG;%s成功资助了在%s的游击队。 ;;;;;;;;;;X
+SPY3FPS_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3FPF_SETUP;当他国资助游击队失败 ;;;;;;;;;;X
+SPY3FPF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3FPF_1;%s 未能 ;;;;;;;;;;X
+SPY3FPF_2;资助 ;;;;;;;;;;X
+SPY3FPF_3;%s的游击队 ;;;;;;;;;;X
+SPY3FPF_4;;;;;;;;;;;X
+SPY3FPF_5;;;;;;;;;;;X
+SPY3FPF_6;;;;;;;;;;;X
+SPY3FPF_LOG;%s未能资助在%s的游击队。 ;;;;;;;;;;X
+SPY3FPF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3PRODS_SETUP;当他国破坏生产成功 ;;;;;;;;;;X
+SPY3PRODS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3PRODS_1;%s成功 ;;;;;;;;;;X
+SPY3PRODS_2;破坏了 ;;;;;;;;;;X
+SPY3PRODS_3;%s ;;;;;;;;;;X
+SPY3PRODS_4;在 ;;;;;;;;;;X
+SPY3PRODS_5;%s的生产 ;;;;;;;;;;X
+SPY3PRODS_6;%s ;;;;;;;;;;X
+SPY3PRODS_LOG;%s成功破坏了%s在%s的生产。 ;;;;;;;;;;X
+SPY3PRODS_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3AF_SETUP;当他国派遣间谍失败 ;;;;;;;;;;X
+SPY3AF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3AF_1;%s未能 ;;;;;;;;;;X
+SPY3AF_2;向 ;;;;;;;;;;X
+SPY3AF_3;%s派遣间谍 ;;;;;;;;;;X
+SPY3AF_4;%s ;;;;;;;;;;X
+SPY3AF_5;;;;;;;;;;;X
+SPY3AF_6;;;;;;;;;;;X
+SPY3AF_LOG;%s未能向%s派遣间谍。 ;;;;;;;;;;X
+SPY3AF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3AS_SETUP;当他国派遣间谍成功 ;;;;;;;;;;X
+SPY3AS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3AS_1;%s成功 ;;;;;;;;;;X
+SPY3AS_2;向 ;;;;;;;;;;X
+SPY3AS_3;%s派遣间谍 ;;;;;;;;;;X
+SPY3AS_4;%s ;;;;;;;;;;X
+SPY3AS_5;;;;;;;;;;;X
+SPY3AS_6;;;;;;;;;;;X
+SPY3AS_LOG;%s向%s派遣了一名间谍。%s ;;;;;;;;;;X
+SPY3AS_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3ASF_SETUP;当他国刺杀另一国内阁成员失败 ;;;;;;;;;;X
+SPY3ASF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3ASF_1;%s未能刺杀 ;;;;;;;;;;X
+SPY3ASF_2;%s ;;;;;;;;;;X
+SPY3ASF_3;他是 ;;;;;;;;;;X
+SPY3ASF_4;%s的内阁成员 ;;;;;;;;;;X
+SPY3ASF_5;;;;;;;;;;;X
+SPY3ASF_6;;;;;;;;;;;X
+SPY3ASF_LOG;%s未能刺杀%s，他是%s的内阁成员。 ;;;;;;;;;;X
+SPY3ASF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPY3ASS_SETUP;当他国刺杀另一国内阁成员成功 ;;;;;;;;;;X
+SPY3ASS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPY3ASS_1;%s成功刺杀 ;;;;;;;;;;X
+SPY3ASS_2;%s ;;;;;;;;;;X
+SPY3ASS_3;他是 ;;;;;;;;;;X
+SPY3ASS_4;%s的内阁成员 ;;;;;;;;;;X
+SPY3ASS_5;;;;;;;;;;;X
+SPY3ASS_6;;;;;;;;;;;X
+SPY3ASS_LOG;%s成功刺杀了%s，他是%s的内阁成员。 ;;;;;;;;;;X
+SPY3ASS_BTN1;知道了 ;;;;;;;;;;X,
+#;;;;;;;;;;;x
+SPYASF_SETUP;当我们刺杀他国内阁成员失败 ;;;;;;;;;;X
+SPYASF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYASF_1;我们未能刺杀 ;;;;;;;;;;X
+SPYASF_2;%s ;;;;;;;;;;X
+SPYASF_3;他是 ;;;;;;;;;;X
+SPYASF_4;%s的内阁成员 ;;;;;;;;;;X
+SPYASF_5;;;;;;;;;;;X
+SPYASF_6;;;;;;;;;;;X
+SPYASF_LOG;我们未能刺杀%s，他是%s的内阁成员。 ;;;;;;;;;;X
+SPYASF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYASS_SETUP;当我们刺杀他国内阁成员成功 ;;;;;;;;;;X
+SPYASS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYASS_1;我们成功刺杀 ;;;;;;;;;;X
+SPYASS_2;%s ;;;;;;;;;;X
+SPYASS_3;他是 ;;;;;;;;;;X
+SPYASS_4;%s的内阁成员 ;;;;;;;;;;X
+SPYASS_5;;;;;;;;;;;X
+SPYASS_6;;;;;;;;;;;X
+SPYASS_LOG;我们成功刺杀%s，他是%s的内阁成员。 ;;;;;;;;;;X
+SPYASS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYSMS_SETUP;当我们对他国的造谣行动成功 ;;;;;;;;;;X
+SPYSMS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYSMS_1;我们已经 ;;;;;;;;;;X
+SPYSMS_2;散布了针对 ;;;;;;;;;;X
+SPYSMS_3;%s的谣言 ;;;;;;;;;;X
+SPYSMS_4;%s ;;;;;;;;;;X
+SPYSMS_5;;;;;;;;;;;X
+SPYSMS_6;;;;;;;;;;;X
+SPYSMS_LOG;我们已经散布了针对%s的谣言。%s ;;;;;;;;;;X
+SPYSMS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYSMF_SETUP;当我们对他国的造谣行动失败 ;;;;;;;;;;X
+SPYSMF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYSMF_1;我们散布的 ;;;;;;;;;;X
+SPYSMF_2;针对 ;;;;;;;;;;X
+SPYSMF_3;%s的谣言失败 ;;;;;;;;;;X
+SPYSMF_4;%s ;;;;;;;;;;X
+SPYSMF_5;;;;;;;;;;;X
+SPYSMF_6;;;;;;;;;;;X
+SPYSMF_LOG;我们针对%s散布的谣言失败。%s ;;;;;;;;;;X
+SPYSMF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYMASSF_SETUP;当我们未能影响世界对他国的观点 ;;;;;;;;;;X
+SPYMASSF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYMASSF_1;我们未能影响 ;;;;;;;;;;X
+SPYMASSF_2;世界对于 ;;;;;;;;;;X
+SPYMASSF_3;%s的看法 ;;;;;;;;;;X
+SPYMASSF_4;%s ;;;;;;;;;;X
+SPYMASSF_5;;;;;;;;;;;X
+SPYMASSF_6;;;;;;;;;;;X
+SPYMASSF_LOG;我们未能影响世界对于%s的看法。%s ;;;;;;;;;;X
+SPYMASSF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYMASSS_SETUP;当我们成功影响世界对他国的观点 ;;;;;;;;;;X
+SPYMASSS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYMASSS_1;我们成功影响 ;;;;;;;;;;X
+SPYMASSS_2;世界对于 ;;;;;;;;;;X
+SPYMASSS_3;%s的看法 ;;;;;;;;;;X
+SPYMASSS_4;%s ;;;;;;;;;;X
+SPYMASSS_5;;;;;;;;;;;X
+SPYMASSS_6;;;;;;;;;;;X
+SPYMASSS_LOG;我们成功影响了世界对于%s的看法。%s ;;;;;;;;;;X
+SPYMASSS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYBLUEF_SETUP;当我们窃取蓝图失败 ;;;;;;;;;;X
+SPYBLUEF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYBLUEF_1;我们未能 ;;;;;;;;;;X
+SPYBLUEF_2;从 ;;;;;;;;;;X
+SPYBLUEF_3;%s窃取蓝图 ;;;;;;;;;;X
+SPYBLUEF_4;;;;;;;;;;;X
+SPYBLUEF_5;;;;;;;;;;;X
+SPYBLUEF_6;;;;;;;;;;;X
+SPYBLUEF_LOG;我们未能从%s窃取蓝图。 ;;;;;;;;;;X
+SPYBLUEF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYBLUES_SETUP;当我们窃取蓝图成功 ;;;;;;;;;;X
+SPYBLUES_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYBLUES_1;我们成功窃取 ;;;;;;;;;;X
+SPYBLUES_2;%s ;;;;;;;;;;X
+SPYBLUES_3;的蓝图，从 ;;;;;;;;;;X
+SPYBLUES_4;%s ;;;;;;;;;;X
+SPYBLUES_5;%s ;;;;;;;;;;X
+SPYBLUES_6;;;;;;;;;;;X
+SPYBLUES_LOG;我们成功地把%s的蓝图从%s那里窃取出来。%s ;;;;;;;;;;X
+SPYBLUES_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYDTEF_SETUP;当我们拖延他国科研进度失败 ;;;;;;;;;;X
+SPYDTEF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYDTEF_1;我们未能 ;;;;;;;;;;X
+SPYDTEF_2;拖延 ;;;;;;;;;;X
+SPYDTEF_3;%s的科研进度 ;;;;;;;;;;X
+SPYDTEF_4;;;;;;;;;;;X
+SPYDTEF_5;;;;;;;;;;;X
+SPYDTEF_6;;;;;;;;;;;X
+SPYDTEF_LOG;我们未能拖延%s的科研进度。 ;;;;;;;;;;X
+SPYDTEF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYDTES_SETUP;当我们拖延他国科研进度成功 ;;;;;;;;;;X
+SPYDTES_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYDTES_1;我们成功拖延 ;;;;;;;;;;X
+SPYDTES_2;%s ;;;;;;;;;;X
+SPYDTES_3;的科研进度，那是 ;;;;;;;;;;X
+SPYDTES_4;%s的科研组 ;;;;;;;;;;X
+SPYDTES_5;%s ;;;;;;;;;;X
+SPYDTES_6;;;;;;;;;;;X
+SPYDTES_LOG;我们成功拖延了%s的科研进度，那是%s的科研组。%s ;;;;;;;;;;X
+SPYDTES_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYPRODF_SETUP;当我们未能拖延他国的生产 ;;;;;;;;;;X
+SPYPRODF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYPRODF_1;我们未能 ;;;;;;;;;;X
+SPYPRODF_2;拖延 ;;;;;;;;;;X
+SPYPRODF_3;%s的生产 ;;;;;;;;;;X
+SPYPRODF_4;%s ;;;;;;;;;;X
+SPYPRODF_5;;;;;;;;;;;X
+SPYPRODF_6;;;;;;;;;;;X
+SPYPRODF_LOG;我们未能拖延%s的生产。%s ;;;;;;;;;;X
+SPYPRODF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYFPS_SETUP;当我们资助他国游击队成功 ;;;;;;;;;;X
+SPYFPS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYFPS_1;我们成功 ;;;;;;;;;;X
+SPYFPS_2;资助 ;;;;;;;;;;X
+SPYFPS_3;%s的游击队 ;;;;;;;;;;X
+SPYFPS_4;%s ;;;;;;;;;;X
+SPYFPS_5;;;;;;;;;;;X
+SPYFPS_6;;;;;;;;;;;X
+SPYFPS_LOG;我们成功地资助了%s的游击队。%s ;;;;;;;;;;X
+SPYFPS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYFPF_SETUP;当我们资助他国游击队失败 ;;;;;;;;;;X
+SPYFPF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYFPF_1;我们未能 ;;;;;;;;;;X
+SPYFPF_2;资助 ;;;;;;;;;;X
+SPYFPF_3;%s的游击队 ;;;;;;;;;;X
+SPYFPF_4;%s ;;;;;;;;;;X
+SPYFPF_5;;;;;;;;;;;X
+SPYFPF_6;;;;;;;;;;;X
+SPYFPF_LOG;我们未能在%s资助游击队。%s ;;;;;;;;;;X
+SPYFPF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYPRODS_SETUP;当我们成功拖延他国的生产 ;;;;;;;;;;X
+SPYPRODS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYPRODS_1;我们成功 ;;;;;;;;;;X
+SPYPRODS_2;拖延了 ;;;;;;;;;;X
+SPYPRODS_3;%s ;;;;;;;;;;X
+SPYPRODS_4;在 ;;;;;;;;;;X
+SPYPRODS_5;%s的生产 ;;;;;;;;;;X
+SPYPRODS_6;%s ;;;;;;;;;;X
+SPYPRODS_LOG;我们成功拖延了%s在%s的生产。%s ;;;;;;;;;;X
+SPYPRODS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYCOUF_SETUP;当我们反谍失败 ;;;;;;;;;;X
+SPYCOUF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYCOUF_1;我们未能锁定 ;;;;;;;;;;X
+SPYCOUF_2;任何间谍 ;;;;;;;;;;X
+SPYCOUF_3;;;;;;;;;;;X
+SPYCOUF_4;;;;;;;;;;;X
+SPYCOUF_5;;;;;;;;;;;X
+SPYCOUF_6;;;;;;;;;;;X
+SPYCOUF_LOG;我们未能锁定任何间谍。 ;;;;;;;;;;X
+SPYCOUF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYCOUS_SETUP;当我们反谍成功 ;;;;;;;;;;X
+SPYCOUS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYCOUS_1;我们成功清除了 ;;;;;;;;;;X
+SPYCOUS_2;一名来自 ;;;;;;;;;;X
+SPYCOUS_3;%s的间谍 ;;;;;;;;;;X
+SPYCOUS_4;;;;;;;;;;;X
+SPYCOUS_5;;;;;;;;;;;X
+SPYCOUS_6;;;;;;;;;;;X
+SPYCOUS_LOG;我们成功清除了一名来自%s的间谍。 ;;;;;;;;;;X
+SPYCOUS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPYCHAF_SETUP;当我们潜伏间谍 ;;;;;;;;;;X
+SPYCHAF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYCHAF_1;我们位于 ;;;;;;;;;;X
+SPYCHAF_2;%s ;;;;;;;;;;X
+SPYCHAF_3;的间谍将潜伏起来 ;;;;;;;;;;X
+SPYCHAF_4;直到我们需要他们 ;;;;;;;;;;X
+SPYCHAF_5;;;;;;;;;;;X
+SPYCHAF_6;;;;;;;;;;;X
+SPYCHAF_LOG;我们在%s的间谍将潜伏起来，直到我们需要他们。 ;;;;;;;;;;X
+SPYCHAF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYCHAS_SETUP;当我们激活间谍 ;;;;;;;;;;X
+SPYCHAS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYCHAS_1;我们激活潜伏在 ;;;;;;;;;;X
+SPYCHAS_2;%s的间谍 ;;;;;;;;;;X
+SPYCHAS_3;;;;;;;;;;;X
+SPYCHAS_4;;;;;;;;;;;X
+SPYCHAS_5;;;;;;;;;;;X
+SPYCHAS_6;;;;;;;;;;;X
+SPYCHAS_LOG;我们在%s的间谍再次被激活。 ;;;;;;;;;;X
+SPYCHAS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+#;;;;;;;;;;;x
+SPYDNUCF_SETUP;当我们的间谍未能摧毁一颗核弹 ;;;;;;;;;;X
+SPYDNUCF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYDNUCF_1;我们未能摧毁 ;;;;;;;;;;X
+SPYDNUCF_2;在 ;;;;;;;;;;X
+SPYDNUCF_3;%s的核弹 ;;;;;;;;;;X
+SPYDNUCF_4;%s ;;;;;;;;;;X
+SPYDNUCF_5;;;;;;;;;;;X
+SPYDNUCF_6;;;;;;;;;;;X
+SPYDNUCF_LOG;当我们未能摧毁在%s的核弹。%s ;;;;;;;;;;X
+SPYDNUCF_BTN1;知道了 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYDNUCS_SETUP;当我们的间谍成功摧毁一颗核弹 ;;;;;;;;;;X
+SPYDNUCS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYDNUCS_1;我们成功摧毁 ;;;;;;;;;;X
+SPYDNUCS_2;在 ;;;;;;;;;;X
+SPYDNUCS_3;%s的核弹 ;;;;;;;;;;X
+SPYDNUCS_4;%s ;;;;;;;;;;X
+SPYDNUCS_5;;;;;;;;;;;X
+SPYDNUCS_6;;;;;;;;;;;X
+SPYDNUCS_LOG;我们在%s摧毁了一枚核弹。%s ;;;;;;;;;;X
+SPYDNUCS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYAF_SETUP;当我们派遣间谍失败 ;;;;;;;;;;X
+SPYAF_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYAF_1;我们派遣间谍失败 ;;;;;;;;;;X
+SPYAF_2;目的地 ;;;;;;;;;;X
+SPYAF_3;%s ;;;;;;;;;;X
+SPYAF_4;%s ;;;;;;;;;;X
+SPYAF_5;;;;;;;;;;;X
+SPYAF_6;;;;;;;;;;;X
+SPYAF_LOG;我们向%s派遣间谍的尝试失败。%s ;;;;;;;;;;X
+SPYAF_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+SPYAS_SETUP;当我们派遣间谍成功 ;;;;;;;;;;X
+SPYAS_HEADER;情报部门简报 ;;;;;;;;;;X
+SPYAS_1;我们派遣间谍成功 ;;;;;;;;;;X
+SPYAS_2;目的地 ;;;;;;;;;;X
+SPYAS_3;%s ;;;;;;;;;;X
+SPYAS_4;%s ;;;;;;;;;;X
+SPYAS_5;;;;;;;;;;;X
+SPYAS_6;;;;;;;;;;;X
+SPYAS_LOG;我们成功向%s派遣了间谍。%s ;;;;;;;;;;X
+SPYAS_BTN1;好的 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+DEMTERR_SETUP;他国对我国领土要求的提示 ;;;;;;;;;;x
+###########################################;;;;;;;;;;;x
+########### IN-GAME MESSAGES   ############;;;;;;;;;;;x
+###########################################;;;;;;;;;;;x
+#;;;;;;;;;;;x
+INVACCEPT;同意 ;;;;;;;;;;X
+INVDECLINE;拒绝 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+POPDIPLO;特使来自 ;;;;;;;;;;X
+POPRESP;你的答复？ ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERINVITATION;%t， %s邀请我们加入 ;;;;;;;;;;X
+INVDYN;王室婚姻 ;;;;;;;;;;X
+INVMIL;军事同盟 ;;;;;;;;;;X
+INVVAS;请求成为我们的附庸国 ;;;;;;;;;;X
+INVALONG;随着 ;;;;;;;;;;X
+INVAGAINST;指挥对抗 ;;;;;;;;;;X
+INWARWITH;他们正在作战，同 ;;;;;;;;;;X
+INV_D_ROLL;%s提出王室婚姻 ;;;;;;;;;;X
+INV_V_ROLL;%s要求我们成为其仆从 ;;;;;;;;;;X
+INV_M_ROLL;%s建议结成军事同盟 ;;;;;;;;;;X
+DEM_ROLL;%s索要你的领土的一部分。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERDEMAND1;%t， %s向我们 ;;;;;;;;;;X
+ANSWERDEMAND2;索要领土 ;;;;;;;;;;X
+ANSWERDEMAND3;他们索要以下地区。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERNAP1;%t， %s向我们提供 ;;;;;;;;;;X
+ANSWERNAP2;互不侵犯条约 ;;;;;;;;;;X
+NAP_ROLL;%s向我们提出互不侵犯条约。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERJOIN1;%t， %s希望加入我们的 ;;;;;;;;;;X
+ANSWERJOIN2;军事联盟 ;;;;;;;;;;X
+ANSWERJOIN3;对抗 ;;;;;;;;;;X
+JOIN_ROLL;%s要求加入我们的军事联盟 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AOW_ANNEX;%t， %s希望我们接受 ;;;;;;;;;;X
+AOW_ANNEX2;完全合并 ;;;;;;;;;;X
+AOW_ANNEX3;接受这一条件意味着我们放弃独立并将被 从游戏中赶出来。 ;;;;;;;;;;X
+ANNEX_ROLL;%s要求我们放弃独立 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AOW_TRADE1;%t， %s向我们提出一个协议 ;;;;;;;;;;X
+AOW_TRADE2;贸易协定 ;;;;;;;;;;X
+AOW_TRADE3;根据协议，我们不反对双方在市场上竞争。 ;;;;;;;;;;X
+TRADEAGR_ROLL;%s向我们提出一个商业协议。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+AOW_MILACC1;%t， %s向我们提出 ;;;;;;;;;;X
+AOW_MILACC2;军事通行 ;;;;;;;;;;X
+AOW_MILACC3;这样，我们将允许他们的军队自由通过我 们的国家。 ;;;;;;;;;;X
+MILACC_ROLL;%s要求军事通行。 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERWARPACT1;%t， %s请求我们加入他们 ;;;;;;;;;;X
+ANSWERWARPACT2;战争 ;;;;;;;;;;X
+ANSWERWARPACT3;对抗 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERHONOR1;%t， %s要求我们遵守 ;;;;;;;;;;X
+ANSWERHONOR2;军事同盟 ;;;;;;;;;;X
+ANSWERHONOR3;宣战，对 ;;;;;;;;;;X
+HONOR_ROLL;%s要求我们遵守军事同盟 ;;;;;;;;;;X
+ANSWERGUARHONOR1;%t， %s请求我们履行 ;;;;;;;;;;X
+ANSWERGUARHONOR2;保护独立协定 ;;;;;;;;;;X
+ANSWERGUARHONOR3;宣战，对 ;;;;;;;;;;X
+HONOR_GUAR_ROLL;%s请求我们履行保护独立的协定 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANCALL1;%t，我们现在宣战，对 ;;;;;;;;;;X
+ANCALL2;我们要向盟友求助吗？ ;;;;;;;;;;X
+CALL_ROLL;要求我们的盟友一起对抗 %s ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWERPEACEOFF;提供 ;;;;;;;;;;X
+ANSWERPEACEDEM;要求 ;;;;;;;;;;X
+ANSWERPEACEWHI;无条件停火 ;;;;;;;;;;X
+ANSWERPEACE1;%t， %s向我们提出 ;;;;;;;;;;X
+ANSWERPEACE2;和平 ;;;;;;;;;;X
+PEACECASH;%d$ ;;;;;;;;;;X
+PEACEPROV;%s ;;;;;;;;;;X
+PEACE_ROLL;%s向我们求和 ;;;;;;;;;;X
+PEACEBETTER;\n(这协议比我们期望的还好，拒绝它将引起国内的不满) ;;;;;;;;;;X
+PEACE_ACCESS;作为和平条款的一部分，我们将给他们军事通行权。 ;;;;;;;;;;X
+PEACE_PUPPET;作为和平条款的一部分，我们将成为他们的傀儡国。 ;;;;;;;;;;X
+PEACE_DISARM;我们将遣散我们的军队。 ;;;;;;;;;;X
+PEACE_DEMAND;他们的和平条款里有一条要求我们改变信仰。 ;;;;;;;;;;X
+WS_1;支配敌方领土:%d/%d+%d\%%(最小 1\%%/地区) ;;;;;;;;;;X
+WS_2;友方领土被占领:%d/%d-%d\%%(最小 1\%%/地区) ;;;;;;;;;;X
+WS_3;占领敌国首都:%d(+%d\%%) ;;;;;;;;;;X
+WS_4;友方首都被占领:%d(-%d\%%) ;;;;;;;;;;X
+WS_SUM;总计:%d\%%(最大 100\%%) ;;;;;;;;;;X
+#;;;;;;;;;;;x
+JOINWAR;参战，对抗 ;;;;;;;;;;X
+#;;;;;;;;;;;x
+ANSWEREXCHANGE1;%t， %s希望 ;;;;;;;;;;X
+ANSWEREXCHANGE2;分享探测成果 ;;;;;;;;;;X
+EXCHANGE_ROLL;%s希望分享探测成果 ;;;;;;;;;;X
+#EOF;;;;;;;;;;;x

@@ -1,0 +1,496 @@
+# USA Italy AI File by Lothos adapted to MIH by Civdemof
+
+exp_force_ratio = 0.00
+exp_force_ratios = { }
+
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion	= yes
+ 	base		= 0.3	#Relative modifier. (lower = specific targets much more important.)
+	random		= 10.0	#How big a random range.  (1.0 = 1%)
+	coastal		= 0.0	#increase to avoid coastal forts more.
+	beach		= 1.0	#higher, avoid worst beaches.
+	distance	= 0.0	#higher = avoid long distance.
+	max_distance  		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 20	# How far should the staging area be from the target invasion point
+	pocket		= 0.1	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island		= 1.0	#prioritise taking pure islands.
+	enemy		= 0.0	#higher = much more vary of troops in province.
+	adjacentenemy 	= 0.5	#higher = much more vary of troops nearby
+	air_base	= 0.15 
+  naval_base 	= 0.15 
+  air_support 	= 1.0 
+  redirect 	= priority
+	ignore		= no
+	help_allies 	= yes
+      
+	staging_province = { } #备用港口(953 949 939)
+
+	target = {
+		#England
+		20 = 9000 # Dover
+		17 = 9000 # Norwich
+		21 = 9000 # Portsmouth
+		23 = 9000 # Plymouth
+		13 = 9000 # Sheiffield
+		28 = 9000 # Belfast
+		22 = 9000 # Bristol
+		14 = 9000 # Liverpool
+		12 = 9000 # Blackpool
+		11 = 9000 # Sunderland
+		10 = 9000 # Edinburgh
+		9  = 9000 # Glasgow
+
+		# PACIFIC OCEAN
+		# -------------
+		#Alaska
+		548 = 50	# Unimak Island
+		547 = 50	# Unalaska Island
+		546 = 50	# Unmak Island
+		545 = 50	# Yunasaka Island
+		544 = 50	# Andrean Island
+		542 = 50	# Kisgan Island
+
+		#Alaska - mainland
+		553 = 5000 # Juneau
+
+		#Kurils
+		1177 = -1 	# Estorofu
+		1174 = -1 	# Shumushushima
+
+		#Central Pacific
+		658 = 4000 #Hawai
+		659 = 4000 #Maui
+		660 = 4000 #Kawai
+		661 = 4000 #Niihau
+		662 = 3000 #Midway
+		663 = 4000 #Pearl Harbour
+		1766 = 3000 #Johnson
+		1785 = 60 #Marcus
+		1786 = 60 #Wake
+		1799 = 30 #IwoJima
+		1784 = 30 #Bonin Isl.
+		1602 = 40 #Wotje
+		1600 = 40 #Bikini
+		1601 = 45 #Eniwetok
+		1608 = 45 #Kwajelein
+		1605 = 40 #Majuro
+		1606 = 40 #Mili
+		1607 = 40 #Jaluit
+		1610 = 40 #Ponape
+		1609 = 40 #Kosrae
+		1611 = 40 #Nauru
+
+		#South Pacific
+		1753 = 40 # Vanua Levu
+		1751 = 40 # Tahiti
+		1752 = 40 #Lau Group
+		1755 = 40 #Taveuni
+		1756 = 3000 # Samoa
+		1757 = 40 # Tamara
+		1770 = 40 #Maiana
+		1761 = 40 #Apamana
+		1769 = 40 #Tarawa
+		1768 = 40 #Abaiang
+		1767 = 40 #Makin
+		1762 = 45 #Phoenix Island
+		1763 = 45 #Christmas isl.
+		1764 = 45 #Jarvis
+		1765 = 45 #Palmira
+		1760 = 40 #Nanuti
+		1758 = 40 #Arorae
+
+		#New Zealand
+		1871 = 3000 #Wellington
+		1871 = 3000 #Darwina
+		1868 = 3000 #Auckland
+		1872 = 3000 #ChristChurch
+
+		#Australia
+		1703 = 2750 # Darwin
+		1702 = 2750 # Mhuluibuy
+		1701 = 2750 # Borroloa
+		1695 = 2750 # Normanton
+		1694 = 2750 # Welpa
+		1722 = 2750 # Brisbane
+		1723 = 2750 # Coff's Harbour
+		1724 = 2750 # Newcastle, Australia
+		1727 = 2750 # Sydney
+		1730 = 2750 # Melbourne
+		1732 = 2750 # Mount Gambier
+		1733 = 2750 # Adelaide
+		1729 = 2750 # Tasmania
+		1718 = 2750 # Port Augusta
+		1717 = 2750 # Port Lincoln
+		1716 = 2750 # Penong
+		1713 = 2750 # Esperance
+		1712 = 2750 # Perth
+		1711 = 2750 # Geralton
+		1710 = 2750 # Carnav
+		1704 = 2750 # Katherine
+
+		#Coral Sea
+		1692 = 40 #Noumea
+		1691 = 40 #Lifu
+		1687 = 40 #Nare
+		1690 = 40 #Etafe
+		1688 = 40 #Bank Isl.
+		1686 = 40 #Santa Cruz
+		1685 = 40 #Guadalcanal
+		1684 = 40 #New Georgia
+		1622 = 40 #Kolombangia
+		1614 = 40 #Villa Lavella
+		1683 = 40 #Shortland Island
+		1682 = 40 #Boungainville
+		1681 = 40 #Buka
+		1669 = 40 #New Ireland
+		1670 = 40 #Rabaul
+		1671 = 40 #Gasmata
+		1675 = 40 #Kerema
+		1679 = 45 #Port Moresby
+		1680 = 40 #Milne Bay
+		1677 = 40 #Buna
+		1672 = 40 #Lae
+
+		#Carolinese
+		1668 = 40 #Admiralty
+		1667 = 40 #Wewak
+		1666 = 40 #Aitape
+		1665 = 40 #Hollandia
+		1664 = 40 #Sarmi
+		1663 = 40 #arare
+		1661 = 40 #Biak_isl.
+		1612 = 40 #Satawan
+		1613 = 45 #Truk
+		1615 = 40 #Ulul
+		1617 = 40 #Woleai
+		1616 = 40 #Pulusuk
+		1604 = 40 #Wolelai
+		1618 = 40 #Ulithi
+		1619 = 40 #Yap
+		1620 = 20 #Ngulu
+
+		#Molucca
+		1674 = 35 #Mereuke
+		1673 = 35 #Agats
+		1660 = 35 #Babo
+		1659 = 35 #Sarang
+		1654 = 35 #Helmahera
+		1656 = 35 #Ceram
+		1655 = 35 #Buru
+		1653 = 35 #Menado
+		1651 = 35 #Palu
+		1640 = 35 #Makassar
+		1652 = 35 #Kendari
+		1658 = 35 #Timor
+		1657 = 35 #West Timor
+		1635 = 35 #Bali
+		1636 = 35 #Lambok
+		1637 = 35 #Sumbaung
+		1638 = 35 #Flores
+		1639 = 35 #Flores
+
+		#Borneo
+		1642 = 10 #Pontianak
+		1641 = 10 #Bandjermasin
+		1650 = 10 #Balikpapan
+		1649 = 10 #Samarinda
+		1648 = 10 #Tarakan
+		1647 = 10 #Jesselton
+		1646 = 10 #Miri
+		1644 = 10 #Kuching
+
+		#Java
+		1633 = 10 #Malang
+		1634 = 10 #Madura
+		1631 = 10 #Djokjakarta
+		1630 = 10 #Samarang
+		1629 = 10 #Tjilajap
+		1628 = 10 #Batavia
+
+		#Sumatra
+		1358 = 5  #Palembang
+		1359 = 5  #Oosthaven
+		1354 = 5  #Bangka Isl.
+		1356 = 5  #Dumai
+		1351 = 5  #Padang
+		1355 = 5  #Medan
+
+		#Hainan
+		1321 = -1
+
+		#Philippines
+		1735 = 30 #Palawan
+		1736 = 30 #Mindoro
+		1744 = 30 #Samar
+		1745 = 30 #Leyte
+		1749 = 30 #Cagayan
+		1747 = 30 #Negros
+		1750 = 30 #Davos
+		1746 = 30 #Panay
+
+		#Luzon
+		1743 = 35 #Legaspi
+		1742 = 35 #Lamon Bay
+		1740 = 35 #Lingayen Gulf
+		1741 = 35 #Aparii
+
+		#Formose
+		1323 = 30
+		1322 = 30
+
+		#RyuKyu Islands
+		1193 = 35 #Okinawa
+		1192 = 35 #Amami
+
+		#Malaisia
+		1353 = 15 #Singapore
+		1349 = 15 #Kuala Lumpur
+		1351 = 15 #Kuanta
+		1350 = 15 #Kota Bahru
+		1348 = 15 #Singora
+
+		#Indochina
+		1345 = 10 #Thom Buri
+		1343 = 10 #Bangkok
+		1339 = 10 #Battambang
+		1338 = 10 #Rachgio
+		1337 = 10 #Saigon
+		1335 = 10 #Nha Trang
+		1334 = 10 #Qui Non
+		1333 = 10 #DaNang
+		1328 = 10 #Hanoi
+		1326 = 10 #Haiphong
+
+		#Sakhalin
+		1176 = 10 #Toyohara
+		75   = 10 #Ocha
+
+		#China-Korea
+		1316 = -1 #Macao
+		1248 = -1 #Shantou
+		1247 = -1 #Xianen
+		1244 = -1 #Fuzhou
+		1235 = -1 #Shangai
+		1215 = -1 #Qingdao
+		1214 = -1 #Yantai
+		1204 = -1 #Tianjin
+		1202 = -1 #Dalian
+		1199 = 0 #Seoul
+		1196 = 0 #Busan
+
+		#Kyushu
+		1190 = 20 #Fukuoka
+		1191 = 20 #Kagoshima
+
+		#Shikoku
+		1189 = 20
+
+		#Japan
+		1188 = 0 #Hiroshima
+		1187 = 0 #Osaka
+		1186 = 0 #Kanazawa
+		1185 = 0 #Nagoya
+		1184 = 0 #Tokyo
+		1183 = 0 #Niigata
+		1182 = 0 #Fukushima
+		1181 = 0 #Akita
+		1180 = 0 #Sendai
+
+		#Hokaido
+		1179 = 20 #Saporo
+		1178 = 20 #Asahikawa
+
+		#Canada - vancouver
+		556 = 40 #Vancouver Island
+		541 = 40 #Vancouver
+
+		#USA-West Coast
+		780 = 40 #Seattle
+		782 = 40 #Tacoma
+		765 = 40 #San Francisco
+		762 = 40 #Los Angeles
+		761 = 40 #San diego
+
+		#Latin America
+		737 = 5000 # Mexicali
+		738 = 5000 # Lapaz
+		739 = 5000 # Hermisillo
+		743 = 5000 # Culliacom
+		751 = 5000 # Guadalajara
+		754 = 5000 # Acapulco
+		755 = 5000 # Villahermosa
+		759 = 5000 # San Salvador
+		539 = 5000 # San Jose
+		888 = 5000 # Panama
+		890 = 5000 # Medellin
+		814 = 5000 # Guadayaquil
+
+
+		# ATLANTIC OCEAN
+		# -------------
+		#Islands in cold Water
+		563 = 4750 #Baffin Bay
+		800 = 4750 #Greenland
+		1   = 4750 #Reijavik
+		576 = 4750 #New Foundland
+		578 = 4750 #Cape Breton
+
+		#Bahamas and Bermuda
+		538 = 4750 #Bermuda
+		652 = 4750 #Andros
+		665 = 4750 #Abbacos
+		664 = 4750 #Grand Bahamas
+		653 = 4750 #New Providence
+		666 = 4750 #Eleuthera
+		668 = 4750 #Long Island
+
+		#Mid Atlantic
+		1867 = 4750 #Azores
+		866  = 4750 #Falklands have substantial logistic facilities
+
+		#South America
+		802  = 4750 #Barquisimoto
+		810  = 4750 #Cananca
+		870  = 4750 #Ciudad Guyana
+		871  = 4750 #Guyana
+		873  = 4750 #Georgetown
+		874  = 4750 #Parameibo
+		875  = 4750 #Cayenne
+		876  = 4750 #Macapa
+		877  = 4750 #Marajo
+		879  = 4750 #Belem
+		881  = 4750 #Recife
+		882  = 4750 #Salvador
+		884  = 4750 #Vitoria
+		885  = 4750 #Rio de Janeiro
+		886  = 4750 #Sao Paulo
+		847  = 4750 #Curibita
+		848  = 4750 #Porto Allegre
+		849  = 4750 #Monte Video
+		667  = 4750 #Buenos Aires
+		852  = 4750 #Mardel Plata
+		853  = 4750 #Bahia Blanca
+		854  = 4750 #Viedna
+		857  = 4750 #Puerto Madrin
+		858  = 4750 #Comodo Rivada
+		863  = 4750 #Santa Cruz
+
+		#Carabean
+		654 = 5000 #Havana
+		655 = 5000 #Santa Cruz
+		656 = 5000 #Camaguay
+		657 = 5000 #Guantanamo
+		758 = 5000 #Belize
+		891 = 5000 #Jamaica
+		892 = 5000 #Port au Prince
+		893 = 5000 #Santiago
+		894 = 5000 #Santo Domingo
+		895 = 5000 #Puerto Rico
+		896 = 5000 #Virgin Island
+		897 = 5000 #Antigua
+		898 = 5000 #Guadeloupe
+		899 = 5000 #Martinique
+		805 = 5000 #Ste Lucie
+		807 = 5000 #Barbados
+		806 = 5000 #St George
+		809 = 5000 #Port of Spain
+
+		# MEDITERRANEAN SEA
+		# -----------------
+		# Italy
+		525 = 8000 # Palermo
+		526 = 9600 # Catania
+		521 = 7000 # Naples
+		523 = 8000 # Taranto
+		520 = 8000 # Foggia
+		519 = 8000 # Anzio
+
+		31  = 4000 # Malta
+
+		# North Africa
+		900 = 35	# Suez
+		901 = 35	# Port Said
+		906 = 35	# Alexandra
+		909 = 35	# El Alamein
+		910 = 35	# Fuka
+		916 = 35	# Tobruk
+		919 = 35	# Bardia
+		924 = 35	# Bengazi
+		932 = 35	# Lybia
+		933 = 35
+		938 = 2500 # Tunisia
+		939 = 2500 
+		940 = 2500 
+		949 = 3000 # Algeria
+		953 = 3000 
+		954 = 3000 # Morocco
+		958 = 3000 
+
+		# Middle East
+		404 = 35	# Palestine
+		406 = 35	#
+		1793 = 35	# Syria
+		1794 = 35	#
+		1798 = 35	# Palestine
+		1799 = 35	#
+		1800 = 35	#
+		1801 = 35	#
+		1862 = 35	# Lebanon
+
+		#Temp Shut Down of Europe
+		#Norway
+		107 = 500 # Oslo
+		108 = 500 # Kristiansan
+		109 = 500 # Stavanger
+		110 = 500 # Bergen
+		125 = 500 # Narvik
+		117 = 500 # Alesund
+		118 = 500 # Trondheim
+		124 = 500 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall （对大西洋防线的骚扰性登陆）
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		42  = 2000 # Dieppe
+		41  = 2000 # Le Havre
+		39  = 2000 # Caen
+		33  = 2000 # Rennes
+		32  = 2000 # Brest
+		34  = 2000 # Lorient
+		35  = 2000 # Nantes
+		59  = 2000 # Cholet
+		325 = 2000 # Bordeaux
+		326 = 2000 # Dax	
+	} 
+}

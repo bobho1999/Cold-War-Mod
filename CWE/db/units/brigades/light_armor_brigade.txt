@@ -1,0 +1,65 @@
+land_unit_type = 1
+# 0 - Advanced Light Tank
+model = {
+	cost 				= 5
+	buildtime	 		= 60
+	manpower 			= 2
+	defensiveness 		= 3
+	toughness 			= 3
+	defaultorganisation = 8
+	softness			= -18
+	hardattack			= 3
+	softattack			= 2
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Armored Recon vehicle I (1967)
+model = {
+	cost 				= 6
+	buildtime	 		= 70
+	manpower 			= 2
+	defensiveness 		= 5
+	toughness 			= 3
+	defaultorganisation = 8
+	softness			= -18
+	hardattack			= 4
+	softattack			= 3
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Armored Recon vehicle II (1984)
+model = {
+	cost 				= 6.5
+	buildtime	 		= 75
+	manpower 			= 2
+	defensiveness 		= 6
+	toughness 			= 3
+	defaultorganisation = 8
+	softness			= -18
+	hardattack			= 5
+	softattack			= 4
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 3 - Armored Recon vehicle III (2002)
+model = {
+	cost 				= 7
+	buildtime	 		= 80
+	manpower 			= 2
+	defensiveness 		= 7
+	toughness 			= 3
+	defaultorganisation = 8
+	softness			= -18
+	hardattack			= 6
+	softattack			= 5
+	supplyconsumption 	= 0.28
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

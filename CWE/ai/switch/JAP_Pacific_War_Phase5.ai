@@ -1,0 +1,50 @@
+# Japan AI prepares to invade New Zealand
+# by Radu
+
+invasion = {
+
+	staging_province = {
+		1679 # Port Moresby
+	}
+
+	target = {
+		# Australian New Guinea and islands
+
+		1671 = 4 # Gasmata
+		1670 = 4  # Rabaul
+
+		1666 = 4 # Aitape
+		1667 = 4 # Wekwak
+		1672 = 4 # Lae
+		1677 = 4 # Buna
+		1680 = 4 # Milne Bay
+		1675 = 4 # Kerema
+		1679 = 4 # Buna
+
+		1685 = 4 # Guadalcanal
+		1692 = 4 # Noumea
+		1611 = 4 # Nauru
+		1752 = 4 # Fiji
+            1756 = 4 # Samoa
+		1757 = 4 # Tamana
+		1767 = 4 # Makin
+
+		# New Zealand
+		1868 = 100 # Auckland
+		1870 = 100 # New Plymouth
+		1871 = 100 # Wellington
+		1872 = 100 # Christchurch
+	}
+}
+
+admiral = {
+
+	target = {
+		2108 = 100 # Great Exhibition Bay
+		2106 = 100 # Bay of Plenty
+		2105 = 100 # Hawke Bay
+		2103 = 100 # Fouveaux Strait
+		2102 = 100 # West Cape
+		2110 = 100 # Cook Strait
+	}
+}

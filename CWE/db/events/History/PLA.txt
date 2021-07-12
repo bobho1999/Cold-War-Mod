@@ -1,0 +1,604 @@
+#########################################################################
+#  解放军整编
+#########################################################################
+event = {
+	id = 20500
+	random = no
+	country = CHC
+	trigger = {
+		event = 19540
+		atwar = no
+		not = { exists = CXB }
+		}
+
+	name = "解放军整编 "
+	desc = "解放战争已经结束，为了更好地进行经济建设，提升军队战斗力，中 国人民解放军进行了部队整编。 "
+	style = 0
+	picture = "PLA"
+
+	date = { day = 10 month = october year = 1949 }
+	offset = 10
+	deathdate = { day = 30 month = december year = 1976 }
+
+  	action_a = {
+    		name = "这是大有好处的 "
+		command = { type = delete_unit which = -1 when = 100  }
+    		command = { type = morale which = land value = 3 }
+    		command = { type = morale which = naval value = 3 }
+    		command = { type = morale which = air value = 3 }
+  }
+}
+
+################
+#中国人民解放军第1集团军
+#############################################
+event = {
+  id = 20501
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第1集团军 " 
+  desc = "中国人民解放军第1集团军是中国人民解放军中历史最悠久的部 队之一。其前身可追溯到贺龙在第一次国共内战中于1930年在湘 鄂西创建的中国工农红军红二军团。在中国抗日战争中，红2军团 被编为国民革命军第十八集团军（八路军）120师358旅，当时后方 的晋绥根据地就是这支部队创建的。 "
+  picture = "PLA"
+  style = 0
+
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 }
+  
+  
+  action_a = {
+    name = "中国人民解放军第1集团军 "
+    command = { type = add_corps which = "中国人民解放军第1集团军 " value = land where = 3290 }
+    command = { type = add_division which = "“天下第一师”中国人民解放军第1师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第2师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第7师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第27集团军
+#############################################
+event = {
+  id = 20502
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第27集团军 " 
+  desc = "27集团军的前身是原八路军胶东军区地方部队。1946年，胶东军区 的大部分主力部队进军东北 (即后来的第41集团军)，余下部队整 合为华东野战军第9纵，许世友任司令员，林浩任政委。1947年，参 加孟良崮战役。1948年，该部队在济南战役中率先攻破城池，俘虏 国军陆军上将王耀武，毛泽东亲写“济南第一团”表彰该部队。渡 江战役中为上海战役的主力，参加中共军进攻上海的战斗。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第27集团军 "
+    command = { type = add_corps which = "中国人民解放军第27集团军 " value = land where = 1211 }
+    command = { type = add_division which = "“千里扫敌”中国人民解放军第79师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第80师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第81师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第38集团军
+#############################################
+event = {
+  id = 20503
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第38集团军 " 
+  desc = "中国人民解放军第38集团军属北京军区，军部驻地为河北省保定 市。第38集团军的历史可追溯至1928年参加平江起义的湘军独5师 第1团，之后汇入工农红军红五军，因此7月22日（平江起义日期）为 第38集团军的纪念日。在解放战争中，其名称为“东北民主联军第 一纵队”，于1946年11月改称“中国人民解放军第38军”。在朝鲜战 争第二次战役中表现出色，被誉为“万岁军”。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第38集团军 "
+    command = { type = add_corps which = "中国人民解放军第38集团军 " value = land where = 1210 }
+    command = { type = add_division which = "“万岁王牌”中国人民解放军第112师 " value = bergsjaeger  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第113师 " value = bergsjaeger  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第114师 " value = bergsjaeger  when = 6 where = artillery }
+  }
+}
+
+
+################
+#中国人民解放军第65集团军
+#############################################
+event = {
+  id = 20504
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第65集团军 " 
+  desc = "其前身为1930年1月组成的红6军，后改为红1军团1师。1937年改编 为八路军115师独立团，后扩编为八路军独立第1师，并兼晋察冀军 区第1军分区。抗日战争后，后改编为冀察纵队第6旅、晋察冀野战 军第2纵队4旅。1948年，第4旅与由晋察冀、冀察热辽军区地方部队 编成的华北野战军第8纵队，司令员邱蔚，政委王道邦，1949年改 编为解放军第65军，军长邱蔚，政委王道邦，下辖第193、194、195师。 该军先后参加了平津、太原、扶眉、陕中、兰州、宁夏等战役。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第65集团军 "
+    command = { type = add_corps which = "中国人民解放军第65集团军 " value = land where = 1211 }
+    command = { type = add_division which = "中国人民解放军第193师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第194师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第195师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第16集团军
+#############################################
+event = {
+  id = 20505
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第16集团军 " 
+  desc = "中国人民解放军第16集团军最早可以追溯到南昌起义、平江起义 及湘南暴动和闽西暴动等时期中国共产党所建立的武装力量。在 中国抗日战争时期，这些武装力量逐渐发展成为共产党的冀鲁豫 军区部队。第二次国共内战爆发后，冀鲁豫军区部队于1945年10月 重组为中国人民解放军晋冀鲁豫军区第1纵队，纵队成立后即参与 了平汉战役，1947年3月，与同一军区第7纵队合编为新的第1纵队， 在参与豫北战役和鲁西南战役后，于1947年8月随本军区的中国人 民解放军晋冀鲁豫野战军（亦称刘邓大军）千里跃进大别山。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第16集团军 "
+    command = { type = add_corps which = "中国人民解放军第16集团军 " value = land where = 1390 }
+    command = { type = add_division which = "中国人民解放军第48师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第186师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第49师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第39集团军
+#############################################
+event = {
+  id = 20506
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第39集团军 " 
+  desc = "第39集团军的前身是红15军团，包括红25军和红26军。红25军由徐 海东任军长，参加长征。抗日战争期间，红15军团编为八路军115师 344旅，由徐海东将军率领。第二次国共内战期间，进军东北。在 辽沈战役中参加锦州战役，占领锦州。平津战役中，率先攻破天津。 后进攻中国南方，占领桂林、南宁等大中城市。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第39集团军 "
+    command = { type = add_corps which = "中国人民解放军第39集团军 " value = land where = 3424 }
+    command = { type = add_division which = "中国人民解放军第115师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "“红军师”中国人民解放军第116师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第117师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第40集团军
+#############################################
+event = {
+  id = 20507
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第40集团军 " 
+  desc = "中国抗日战争结束后，中国共产党将由鲁中军区部队组成的山东 军区第3师和警备第3旅派往东北沈阳、鞍山地区。此时由冀察热辽 军区进入东北的八路军李运昌部亦发展为第21、第23、第24旅。19 46年1月，原山东军区第3师、警备第3旅和第21旅、第23旅合编为东 北民主联军第3纵队，1948年11月，东北民主联军第3纵队被改编为 中国人民解放军第40军，军长为韩先楚，政治委员为罗舜初，辖第 118、第119、第120共计3个师。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第40集团军 "
+    command = { type = add_corps which = "中国人民解放军第40集团军 " value = land where = 3421 }
+    command = { type = add_division which = "中国人民解放军第118师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第119师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第120师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第20集团军
+#############################################
+event = {
+  id = 20508
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第20集团军 " 
+  desc = "第20集团军的前身是第三野战军第一纵队。抗日战争爆发后改编 为新四军第3支队第6团，1941年1月“皖南事变”后，编为新四军第1 师。1949年2月改编成中国人民解放军第二十军，辖58、59、60师，属 第三野战军第九兵团。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第20集团军 "
+    command = { type = add_corps which = "中国人民解放军第20集团军 " value = land where = 1223 }
+    command = { type = add_division which = "中国人民解放军第58师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第59师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第60师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第26集团军
+#############################################
+event = {
+  id = 20509
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第26集团军 " 
+  desc = "第26军前身是华东野战军第8纵队。1947年，鲁中军区第4师和第9 师合并为华东野战军第8纵队，司令员王建安，政委向明。参加了鲁 南、莱芜、孟良崮、沙土集、洛阳、开封、淮海等战役。1949年1月第8 纵队改编为中国人民解放军第26军，军长张仁初，政委王一平，随 后参加渡江战役。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第26集团军 "
+    command = { type = add_corps which = "中国人民解放军第26集团军 " value = land where = 3384 }
+    command = { type = add_division which = "中国人民解放军第76师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第77师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第78师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第54集团军
+#############################################
+event = {
+  id = 20510
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第54集团军 " 
+  desc = "第54集团军的127师前身是孙中山的“广州陆海军大元帅府铁甲车 队”，即北伐战争中的“叶挺独立团”，后组织“南昌起义”，并为中共 红一方面军主力。162师为长征时期的红军第九兵团。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第54集团军 "
+    command = { type = add_corps which = "中国人民解放军第54集团军 " value = land where = 3376 }
+    command = { type = add_division which = "中国人民解放军第160师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "“铁军”中国人民解放军第127师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第162师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第12集团军
+#############################################
+event = {
+  id = 20511
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第12集团军 " 
+  desc = "第12集团军的前身是原晋冀鲁豫野战军第六纵队，在国共内战期 间，于晋冀鲁豫军区活动。1948年5月，改称中原野战军第六纵队，司 令员王近山，政委杜义德。1948年7月，攻破襄阳。后来参加淮海战 役。1949年2月9日，改编成中国人民解放军第二野战军第十二军，军 长王近山，辖34、35、36师。1949年4月20日时隶属第二野战军第3兵 团参加渡江战役。。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第12集团军 "
+    command = { type = add_corps which = "中国人民解放军第12集团军 " value = land where = 1218 }
+    command = { type = add_division which = "“尖刀”中国人民解放军第35师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第34师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第36师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第31集团军
+#############################################
+event = {
+  id = 20517
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第31集团军 " 
+  desc = "31军出自胶东军区。1947年，胶东军区地方部队先后组成新编第5、 第6和第7师，后合编为华东野战军第13纵队，司令员为周志坚，政 委为廖海光，各师改称第37、38、39师。1948年9月的济南战役中 ，37师109团首先突破济南防线。随后该军参加淮海战役中与黄维 兵团等战斗。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第31集团军 "
+    command = { type = add_corps which = "中国人民解放军第31集团军 " value = land where = 1247 }
+    command = { type = add_division which = "中国人民解放军第91师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第92师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第93师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第21集团军
+#############################################
+event = {
+  id = 20512
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第21集团军 " 
+  desc = "中国人民解放军第21军的前身是华东野战军第2纵队。由新四军第 2师、第4师组建。1946年朝阳集战役中，第2纵队全歼国民党军第92 旅。后参加泗县战役、淮阴、涟水保卫战，全歼国民党军第69师。19 47年参加鲁南战役，后与第9纵队合编，韦国清任司令员兼政治委 员，张震任副司令员。1948年2月，第2纵队奉命南下华中，参与宿北 战役。随后参加莱芜战役、孟良崮战役、淮海战役，围歼黄百韬兵团 并活捉杜聿明。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第21集团军 "
+    command = { type = add_corps which = "中国人民解放军第21集团军 " value = land where = 1247 }
+    command = { type = add_division which = "中国人民解放军第61师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第62师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第55师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第47集团军
+#############################################
+event = {
+  id = 20513
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第47集团军 " 
+  desc = "第47集团军的前身可以追溯至彭德怀、黄公略领导的“平江起义” 时，所组建的红五军一部。后发展为红八军，曾在湘赣一带战斗；长 征时，被编为红六军团，由萧克担任军团长，王震任政治委员。抗日 战争时期，红六军团被编入八路军120师359旅，以“南泥湾大生产” 而闻名。抗战胜利前夕，359旅分两个梯队南进华南。当日本投降后 ，奉命移师东北。1947年1月，被改编为东北民主联军独立第1师；参 与了攻占哈尔滨市、攻占合江等战斗。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第47集团军 "
+    command = { type = add_corps which = "中国人民解放军第47集团军 " value = land where = 1257 }
+    command = { type = add_division which = "中国人民解放军第139师 " value = bergsjaeger  when = 5 where = artillery }
+    command = { type = add_division which = "中国人民解放军第140师 " value = bergsjaeger  when = 5 where = artillery }
+    command = { type = add_division which = "中国人民解放军第141师 " value = bergsjaeger  when = 5 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第13集团军
+#############################################
+event = {
+  id = 20514
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第13集团军 " 
+  desc = "第13集团军的前身是红军时期在鄂豫皖苏区的红四方面军第73师 。红四方面军转移到川陕苏区后该师编为红31军，抗日战争中编为 八路军129师386旅，参加了开创太岳敌后根据地等抗日战争。抗 战结束后，太岳军区主力（太岳兵团）编为晋冀鲁豫军区第4纵队， 陈赓任司令，谢富治任政委。在解放战争中该纵队一直担负战略机 动任务，是挺进中原的三大主力之一。淮海战役后该纵队的第10、13 旅编为中国人民解放军第13军，军长为周希汉，政委为刘有光，归 第4兵团指挥。此后，在林彪带领下参加渡江战役。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第13集团军 "
+    command = { type = add_corps which = "中国人民解放军第13集团军 " value = land where = 1280 }
+    command = { type = add_division which = "中国人民解放军第37师 " value = bergsjaeger  when = 5 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第38师 " value = bergsjaeger  when = 5 where = artillery }
+    command = { type = add_division which = "中国人民解放军第39师 " value = bergsjaeger  when = 5 where = artillery }
+  }
+}
+
+
+################
+#中国人民解放军第14集团军
+#############################################
+event = {
+  id = 20515
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第14集团军 " 
+  desc = "第14集团军的前身是抗日战争的山西新军，后编入太岳兵团，其中 40师的前身是薄一波的“抗日决死旅”。国共内战期间，参加了渡江 战役。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第14集团军 "
+    command = { type = add_corps which = "中国人民解放军第14集团军 " value = land where = 1307 }
+    command = { type = add_division which = "中国人民解放军第40师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第41师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第42师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第41集团军
+#############################################
+event = {
+  id = 20516
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第41集团军 " 
+  desc = "抗日战争期间，中共胶东特委书记理琪发动起义，成立山东人民抗 日救国军第3军。1938年9月，组建合编为山东人民抗日游击第5支 队，后改称第5旅，旅长吴克华，政委高锦纯。1945年，吴克华、彭嘉 庆奉命率山东解放军第5、6师进入东北。1946年编为东北民主联军 第4纵队，司令员吴克华，政委彭嘉庆。4纵先后参加了四保临江、夏 季攻势、秋季攻势、冬季攻势、辽沈战役、平津战役。塔山战役中，4 纵死守塔山，伤亡过半，断绝东北的国军与其它援军的通道，直接 决定了辽沈战役的结局。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第41集团军 "
+    command = { type = add_corps which = "中国人民解放军第41集团军 " value = land where = 1310 }
+    command = { type = add_division which = "中国人民解放军第121师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第122师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "“浴血塔山”中国人民解放军第123师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#中国人民解放军第42集团军
+#############################################
+event = {
+  id = 20518
+  random = no
+  country = CHC
+	trigger = {
+           event = 20500
+		}
+  
+  name = "中国人民解放军第42集团军 " 
+  desc = "该军曾参与辽沈战役和平津战役，并在随解放军南下时留在河南 与国军残部进行交战，是整个第四野战军中唯一没有渡过长江的 部队。建国后调至齐齐哈尔准备集体转业从事农垦。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 11 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "中国人民解放军第42集团军 "
+    command = { type = add_corps which = "中国人民解放军第42集团军 " value = land where = 3262 }
+    command = { type = add_division which = "中国人民解放军第124师 " value = infantry  when = 6 where = artillery  }
+    command = { type = add_division which = "中国人民解放军第126师 " value = infantry  when = 6 where = artillery }
+    command = { type = add_division which = "中国人民解放军第163师 " value = infantry  when = 6 where = artillery }
+  }
+}
+
+################
+#新疆生产建设兵团
+#############################################
+event = {
+  id = 20519
+  random = no
+  country = CHC
+	trigger = {
+           control = { province = 1430 data = CHC }
+           control = { province = 1433 data = CHC }
+           control = { province = 1431 data = CHC }
+           supplies = 6000
+           manpower = 1000
+		}
+  
+  name = "新疆生产建设兵团 " 
+  desc = "中国人民解放军第一兵团进驻新疆各地区，新疆的屯垦事业揭开了崭新 的历史篇章。解放前，新疆经济十分落后，百业凋零，物资奇缺。19 49年全疆工农业总产值仅7.2亿元（以1980年不变价计），其中工业产 值仅占0.5%。广大农村异常贫困。1949年全疆粮食总产8.48亿千克 ，人均占有195.7千克。鉴于此，毛泽东高瞻远瞩，认真分析新疆形 势，借鉴历代屯田戍边经验，为了西陲边疆长治久安，决心在新疆 大兴屯垦戍边事业。12月25日中央军委发布《关于1950年军队参加 生产建设工作的指示》，决心在全军立即开展大生产运动，从根本 上解决部队粮饷问题。 "
+  picture = "PLA"
+  style = 0
+  
+  date = { day = 21 month = january year = 1950 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1976 } 
+
+  action_a = {
+    name = "建立新疆生产建设兵团 "
+    command = { type = add_corps which = "农垦一师 " value = land where = 1431 }
+    command = { type = add_division which = "农垦一师 " value = infantry  when = 6 }
+    command = { type = add_corps which = "农垦二师 " value = land where = 1445 }
+    command = { type = add_division which = "农垦二师 " value = infantry  when = 6 }
+    command = { type = add_corps which = "农垦四师 " value = land where = 1432 }
+    command = { type = add_division which = "农垦四师 " value = infantry  when = 6 }
+    command = { type = add_corps which = "农垦六师 " value = land where = 1430 }
+    command = { type = add_division which = "农垦六师 " value = infantry  when = 6 }
+    command = { type = add_corps which = "农垦七师 " value = land where = 3449 }
+    command = { type = add_division which = "农垦七师 " value = infantry  when = 6 }
+    command = { type = dissent value = -3 }
+    command = { type = manpowerpool value = -200 }
+    command = { type = supplies value = -1000 }
+    command = { type = industrial_modifier which = supplies value = 3 }
+    command = { type = construct which = infrastructure where = 3448 value = 10 }
+    command = { type = construct which = infrastructure where = 3449 value = 10 }
+    command = { type = construct which = infrastructure where = 3450 value = 10 }
+    command = { type = construct which = infrastructure where = 1431 value = 10 }
+    command = { type = construct which = infrastructure where = 1430 value = 10 }
+    command = { type = construct which = infrastructure where = 1432 value = 10 }
+  }
+}

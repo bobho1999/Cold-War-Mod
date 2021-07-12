@@ -1,0 +1,40 @@
+naval_unit_type = 1
+# Naval Camouflage
+
+model = {
+	cost 			= 1.5
+	buildtime	 	= 240
+	manpower 		= 0
+	visibility		= -5
+	supplyconsumption = 0.15
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+
+model = {
+	cost 			= 2
+	buildtime	 	= 240
+	manpower 		= 0
+	visibility		= -10
+	supplyconsumption = 0.20
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+model = {
+	cost 			= 2.5
+	buildtime	 	= 240
+	manpower 		= 0
+	visibility		= -15
+	supplyconsumption = 0.25
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+model = {
+	cost 			= 3
+	buildtime	 	= 240
+	manpower 		= 0
+	visibility		= -20
+	supplyconsumption = 0.30
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

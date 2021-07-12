@@ -1,0 +1,2525 @@
+
+event = {
+	id = 1851
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 1353 data = -1 } # 新加坡
+		NOT = { local_flag = AddNavalMorale1 }
+	}
+
+	name = "重要航道枢纽：马六甲海峡 "
+	desc = "重要航道枢纽：马六甲海峡大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale1 }
+	}
+}
+
+event = {
+	id = 1852
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale1
+		NOT = { control = { province = 1353 data = -3 } } # 新加坡
+	}
+
+	name = "失去重要航道枢纽：马六甲海峡 "
+	desc = "我们失去了重要的航道枢纽：马六甲海峡，这使得海军的作战士 气降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 1352 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale1 }
+	}
+}
+
+event = {
+	id = 1853
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 889 data = -1 } # 巴拿马运河
+		NOT = { local_flag = AddNavalMorale2 }
+	}
+
+	name = "重要航道枢纽：巴拿马运河 "
+	desc = "重要航道枢纽：巴拿马运河大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale2 }
+	}
+}
+
+event = {
+	id = 1854
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale2
+		NOT = { control = { province = 889 data = -3 } } # 巴拿马运河
+	}
+
+	name = "失去重要航道枢纽：巴拿马运河 "
+	desc = "我们失去了重要的航道枢纽：巴拿马运河，这使得海军的作战士气 降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 889 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale2 }
+	}
+}
+
+event = {
+	id = 1855
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 348 data = -1 } # 直布罗陀
+		NOT = { local_flag = AddNavalMorale3 }
+	}
+
+	name = "重要航道枢纽：直布罗陀海峡 "
+	desc = "重要航道枢纽：直布罗陀海峡大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale3 }
+	}
+}
+
+event = {
+	id = 1856
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale3
+		NOT = { control = { province = 348 data = -3 } } # 直布罗陀
+	}
+
+	name = "失去重要航道枢纽：直布罗陀海峡 "
+	desc = "我们失去了重要的航道枢纽：直布罗陀海峡，这使得海军的作战 士气降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 348 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale3 }
+	}
+}
+
+event = {
+	id = 1857
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 900 data = -1 } # 苏伊士
+		NOT = { local_flag = AddNavalMorale4 }
+	}
+
+	name = "重要航道枢纽—苏伊士运河 "
+	desc = "重要航道枢纽—苏伊士运河大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale4 }
+	}
+}
+
+event = {
+	id = 1858
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale4
+		NOT = {
+			control = { province = 900 data = -3 } # 苏伊士
+		}
+	}
+
+	name = "失去重要航道枢纽—苏伊士运河 "
+	desc = "我们失去了重要的航道枢纽—苏伊士运河，这使得海军的作战士气 降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 900 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale4 }
+	}
+}
+event = {
+	id = 1579
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 409 data = -1 } 
+		NOT = { local_flag = AddNavalMorale20 }
+	}
+
+	name = "重要航道枢纽：博斯普鲁斯海峡 "
+	desc = "重要航道枢纽：博斯普鲁斯海峡大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale20 }
+	}
+}
+
+event = {
+	id = 1580
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale20
+		NOT = { control = { province = 409 data = -3 } } 
+	}
+
+	name = "失去重要航道枢纽：博斯普鲁斯海峡 "
+	desc = "我们失去了重要的航道枢纽：博斯普鲁斯海峡，这使得海军的作 战士气降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 409 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale20 }
+	}
+}
+event = {
+	id = 1581
+	random = no
+	persistent = yes
+
+	trigGER = {
+		control = { province = 294 data = -1 } 
+		NOT = { local_flag = AddNavalMorale21 }
+	}
+
+	name = "重要航道枢纽：厄勒海峡 "
+	desc = "重要航道枢纽：厄勒海峡大大增加了海军的作战士气。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = 5 }
+		command = { type = free_money value = 5 }
+		command = { type = extra_tc value = 25 }
+		command = { type = local_setflag which = AddNavalMorale21 }
+	}
+}
+
+event = {
+	id = 1582
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = AddNavalMorale21
+		NOT = { control = { province = 294 data = -3 } } 
+	}
+
+	name = "失去重要航道枢纽：厄勒海峡 "
+	desc = "我们失去了重要的航道枢纽：厄勒海峡，这使得海军的作战士气 降低了。 "
+	style = 0
+	picture = "dd_transfer"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "OK"
+                command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = free_money value = -5 }
+		command = { type = extra_tc value = -25 }
+		command = { type = construct which = land_fort where = 294 value = -10 }
+		command = { type = local_clrflag which = AddNavalMorale21 }
+	}
+}
+event = {
+	id = 1901
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1205 data = -1 } # 北京
+		     NOT = { local_flag = LandMorale1 }
+	}
+
+	name = "控制重要城市：北京 "
+	desc = "北京，中国的政治中心、文化中心。是中国“四大古都”之一， 拥有六项世界遗产，是世界上拥有文化遗产项目数最多的城市， 是一座有三千余年建城历史、八百六十余年建都史的历史文化名 城，拥有众多历史名胜古迹和人文景观。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+##		command = { type = dissent value = -5 }
+                command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = LandMorale1 }
+	}
+}
+
+event = {
+	id = 1902
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale1
+		NOT = { control = { province = 1205 data = -3 } } 
+	}
+
+	name = "重要城市失守：北京 "
+	desc = "北京，中国的政治中心、文化中心。是中国“四大古都”之一， 拥有六项世界遗产，是世界上拥有文化遗产项目数最多的城市， 是一座有三千余年建城历史、八百六十余年建都史的历史文化名 城，拥有众多历史名胜古迹和人文景观。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+##		command = { type = dissent value = 5 }
+                command = { type = research_mod value = -5 }
+		command = { type = construct which = land_fort where = 1205 value = -10 }
+		command = { type = local_clrflag which = LandMorale1 }
+	}
+}
+event = {
+	id = 1903
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1235 data = -1 } # 南京
+		     NOT = { local_flag = LandMorale2 }
+	}
+
+	name = "控制重要城市：南京 "
+	desc = "南京历史悠久，有着６０００多年文明史、近２６００年建城史 和近５００年的建都史，是中国四大古都之一，有“六朝古都” 、“十朝都会”之称，是中华文明的重要发祥地。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+##		command = { type = dissent value = -5 }
+		command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale2 }
+	}
+}
+
+event = {
+	id = 1904
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale2
+		NOT = { control = { province = 1235 data = -3 } } 
+	}
+
+	name = "重要城市失守：南京 "
+	desc = "南京历史悠久，有着６０００多年文明史、近２６００年建城史 和近５００年的建都史，是中国四大古都之一，有“六朝古都” 、“十朝都会”之称，是中华文明的重要发祥地。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+##		command = { type = dissent value = 5 }
+		command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 1235 value = -10 }
+		command = { type = local_clrflag which = LandMorale2 }
+	}
+}
+event = {
+	id = 1905
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1237 data = -1 } # 上海
+		     NOT = { local_flag = LandMorale3 }
+	}
+
+	name = "控制重要城市：上海 "
+	desc = "上海，地处中国漫长海岸线的中心，其自由开放的环境吸引了全 国乃至全世界的商贾贵族、文人墨客、革命者各色人等的大量涌 入，至２０世纪初，上海成为当时中国的经济文化中心以及亚洲 的金融贸易中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+##		command = { type = dissent value = -5 }
+		command = { type = free_money value = 10 }
+		command = { type = local_setflag which = LandMorale3 }
+	}
+}
+
+event = {
+	id = 1906
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale3
+		NOT = { control = { province = 1237 data = -3 } } 
+	}
+
+	name = "重要城市失守：上海 "
+	desc = "上海，地处中国漫长海岸线的中心，其自由开放的环境吸引了全 国乃至全世界的商贾贵族、文人墨客、革命者各色人等的大量涌 入，至２０世纪初，上海成为当时中国的经济文化中心以及亚洲 的金融贸易中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+##		command = { type = dissent value = 5 }
+		command = { type = free_money value = -10 }
+		command = { type = construct which = land_fort where = 1237 value = -10 }
+		command = { type = local_clrflag which = LandMorale3 }
+	}
+}
+event = {
+	id = 1907
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1232 data = -1 } # 汉口
+		     control = { province = 1253 data = -1 } # 武昌
+		     control = { province = 2660 data = -1 } # 汉阳
+		     NOT = { local_flag = LandMorale4 }
+	}
+
+	name = "控制重要城市：武汉 "
+	desc = "武汉市，湖北省省会，因武昌、汉口、汉阳三地合称而得名，是 中国内陆最大的水陆空交通枢纽，历来被称为“九省通衢”之地 。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+##		command = { type = dissent value = -3 }
+		command = { type = relative_manpower value = 3 }
+		command = { type = local_setflag which = LandMorale4 }
+	}
+}
+
+event = {
+	id = 1908
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale4
+		NOT = { control = { province = 1232 data = -3 } } 
+		NOT = { control = { province = 1253 data = -3 } } 
+		NOT = { control = { province = 2660 data = -3 } } 
+	}
+
+	name = "重要城市失守：武汉 "
+	desc = "武汉市，湖北省省会，因武昌、汉口、汉阳三地合称而得名，是 中国内陆最大的水陆空交通枢纽，历来被称为“九省通衢”之地 。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+##		command = { type = dissent value = 3 }
+		command = { type = relative_manpower value = -3 }
+		command = { type = construct which = land_fort where = 1232 value = -10 }
+		command = { type = construct which = land_fort where = 1253 value = -10 }
+		command = { type = construct which = land_fort where = 2660 value = -10 }
+		command = { type = local_clrflag which = LandMorale4 }
+	}
+}
+event = {
+	id = 1909
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1313 data = -1 } # 广州
+		     NOT = { local_flag = LandMorale5 }
+	}
+
+	name = "控制重要城市：广州 "
+	desc = "广州有着两千多年的历史，是中国历史文化名城，历史最悠久的 对外通商口岸，海上丝绸之路的起点之一，有“千年商都”之称 。是华南地区的政治、经济与文化的中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = supplies value = 3 }
+		command = { type = local_setflag which = LandMorale5 }
+	}
+}
+
+event = {
+	id = 1910
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale5
+		NOT = { control = { province = 1313 data = -3 } } 
+	}
+
+	name = "重要城市失守：广州 "
+	desc = "广州有着两千多年的历史，是中国历史文化名城，历史最悠久的 对外通商口岸，海上丝绸之路的起点之一，有“千年商都”之称 。是华南地区的政治、经济与文化的中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = construct which = land_fort where = 1313 value = -10 }
+		command = { type = local_clrflag which = LandMorale5 }
+	}
+}
+event = {
+	id = 1911
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1255 data = -1 } # 长沙
+		     NOT = { local_flag = LandMorale6 }
+	}
+
+	name = "控制重要城市：长沙 "
+	desc = "长沙，有３０００年悠久的文化历史，是著名的楚汉名城、屈贾 之乡、伟人故里，楚文化和湖湘文化的重要始源地之一，是湖南 省的政治、经济、文化、交通和科教中心，中南地区重要的交通 和航运中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲"
+#		command = { type = dissent value = -3 }
+		command = { type = attrition_mod value = 3 }
+		command = { type = local_setflag which = LandMorale6 }
+	}
+}
+
+event = {
+	id = 1912
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale6
+		NOT = { control = { province = 1255 data = -3 } } 
+	}
+
+	name = "重要城市失守：长沙 "
+	desc = "长沙，有３０００年悠久的文化历史，是著名的楚汉名城、屈贾 之乡、伟人故里，楚文化和湖湘文化的重要始源地之一，是湖南 省的政治、经济、文化、交通和科教中心，中南地区重要的交通 和航运中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+		command = { type = attrition_mod value = -3 }
+		command = { type = construct which = land_fort where = 1255 value = -10 }
+		command = { type = local_clrflag which = LandMorale6 }
+	}
+}
+event = {
+	id = 1913
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1280 data = -1 } # 
+		     NOT = { local_flag = LandMorale7 }
+	}
+
+	name = "控制重要城市：重庆 "
+	desc = "重庆位于中国西南部，地处长江上游经济带核心地区，长江、嘉 陵江两江环抱，域内各式桥梁层出不穷，素有“桥都”美誉。又 因地处丘陵地区，坡地较多，有“山城”之称。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+		command = { type = tc_occupied_mod value = 3 }
+		command = { type = local_setflag which = LandMorale7 }
+	}
+}
+
+event = {
+	id = 1914
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale7
+		NOT = { control = { province = 1280 data = -3 } } 
+	}
+
+	name = "重要城市失守：重庆 "
+	desc = "重庆位于中国西南部，地处长江上游经济带核心地区，长江、嘉 陵江两江环抱，域内各式桥梁层出不穷，素有“桥都”美誉。又 因地处丘陵地区，坡地较多，有“山城”之称。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+		command = { type = tc_occupied_mod value = -3 }
+		command = { type = construct which = land_fort where = 1280 value = -10 }
+		command = { type = local_clrflag which = LandMorale7 }
+	}
+}
+event = {
+	id = 1915
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1269 data = -1 } # 
+		     NOT = { local_flag = LandMorale8 }
+	}
+
+	name = "控制重要城市：西安 "
+	desc = "西安，古称长安、京兆，举世闻名的世界四大古都之一，是中华文明 的发祥地，中华文化的杰出代表。是丝绸之路的起点，是中国历 史上建都时间最长，建都朝代最多，影响力最大的都城，居“中 国古都”之首。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲"
+#		command = { type = dissent value = -3 }
+                command = { type = supply_dist_mod value = 3 }
+		command = { type = local_setflag which = LandMorale8 }
+	}
+}
+
+event = {
+	id = 1916
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale8
+		NOT = { control = { province = 1269 data = -3 } } 
+	}
+
+	name = "重要城市失守：西安 "
+	desc = "西安，古称长安、京兆，举世闻名的世界四大古都之一，是中华文明 的发祥地，中华文化的杰出代表。是丝绸之路的起点，是中国历 史上建都时间最长，建都朝代最多，影响力最大的都城，居“中 国古都”之首。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+                command = { type = supply_dist_mod value = -3 }
+		command = { type = construct which = land_fort where = 1269 value = -10 }
+		command = { type = local_clrflag which = LandMorale8 }
+	}
+}
+event = {
+	id = 1917
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1216 data = -1 } # 济南
+		     NOT = { local_flag = LandMorale9 }
+	}
+
+	name = "控制重要城市：济南 "
+	desc = "济南因境内泉水众多，故被称为“泉城”，集“山泉河湖城”于 一体，素有“四面荷花三面柳，一城山色半城湖”的美誉。是山 东省的政治、金融、交通、文化和科教中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+		command = { type = repair_mod value = 3 }
+		command = { type = local_setflag which = LandMorale9 }
+	}
+}
+
+event = {
+	id = 1918
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale9
+		NOT = { control = { province = 1216 data = -3 } } 
+	}
+
+	name = "重要城市失守：济南 "
+	desc = "济南因境内泉水众多，故被称为“泉城”，集“山泉河湖城”于 一体，素有“四面荷花三面柳，一城山色半城湖”的美誉。是山 东省的政治、金融、交通、文化和科教中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+		command = { type = repair_mod value = -3 }
+		command = { type = construct which = land_fort where = 1216 value = -10 }
+		command = { type = local_clrflag which = LandMorale9 }
+	}
+}
+event = {
+	id = 1919
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1389 data = -1 } # 
+		     NOT = { local_flag = LandMorale10 }
+	}
+
+	name = "控制重要城市：沈阳 "
+	desc = "沈阳，古称盛京，奉天。有２３００年建城史，素有“一朝发祥 地，两代帝王都”之称。是中国重要的工业基地，有“东方鲁尔 ”的美誉。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲"
+#		command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 }
+		command = { type = local_setflag which = LandMorale10 }
+	}
+}
+
+event = {
+	id = 1920
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale10
+		NOT = { control = { province = 1389 data = -3 } } 
+	}
+
+	name = "重要城市失守：沈阳 "
+	desc = "沈阳，古称盛京，奉天。有２３００年建城史，素有“一朝发祥 地，两代帝王都”之称。是中国重要的工业基地，有“东方鲁尔 ”的美誉。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = total value = -3 }
+		command = { type = construct which = land_fort where = 1389 value = -10 }
+		command = { type = local_clrflag which = LandMorale10 }
+	}
+}
+event = {
+	id = 1921
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1199 data = -1 } # 汉城
+		     NOT = { local_flag = LandMorale11 }
+	}
+
+	name = "控制重要城市：汉城 "
+	desc = "汉城，位于韩国西北部的汉江流域，朝鲜半岛的中部，是朝鲜的 经济、政治、文化中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲"
+#		command = { type = dissent value = -3 }
+                command = { type = relative_manpower value = 3 }
+		command = { type = local_setflag which = LandMorale11 }
+	}
+}
+
+event = {
+	id = 1922
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale11
+		NOT = { control = { province = 1199 data = -3 } } 
+	}
+
+	name = "重要城市失守：汉城 "
+	desc = "汉城，位于韩国西北部的汉江流域，朝鲜半岛的中部，是朝鲜的 经济、政治、文化中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！ "
+#		command = { type = dissent value = 3 }
+                command = { type = relative_manpower value = -3 }
+		command = { type = construct which = land_fort where = 1199 value = -10 }
+		command = { type = local_clrflag which = LandMorale11 }
+	}
+}
+event = {
+	id = 1923
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1218 data = -1 } # 徐州
+		     NOT = { local_flag = LandMorale12 }
+	}
+
+	name = "控制重要城市：徐州 "
+	desc = "徐州，华东重要的交通枢纽，自古便是北国锁钥、南国门户、兵 家必争之地和商贾云集中心。徐州有悠久的历史，有“九朝帝王徐 州籍”之说。徐州是两汉文化的发源地，拥有大量文化遗产、名 胜古迹和深厚的历史底蕴，也被称作“东方雅典”。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = tc_mod value = 3 } 
+		command = { type = local_setflag which = LandMorale12 }
+	}
+}
+
+event = {
+	id = 1924
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale12
+		NOT = { control = { province = 1218 data = -3 } } 
+	}
+
+	name = "重要城市失守：徐州 "
+	desc = "徐州，华东重要的交通枢纽，自古便是北国锁钥、南国门户、兵 家必争之地和商贾云集中心。徐州有悠久的历史，有“九朝帝王徐 州籍”之说。徐州是两汉文化的发源地，拥有大量文化遗产、名 胜古迹和深厚的历史底蕴，也被称作“东方雅典”。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难 "
+#		command = { type = dissent value = 3 }
+                command = { type = tc_mod value = -3 } 
+		command = { type = construct which = land_fort where = 1218 value = -10 }
+		command = { type = local_clrflag which = LandMorale12 }
+	}
+}
+event = {
+	id = 1925
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1315 data = -1 } # 香港
+		     NOT = { local_flag = LandMorale13 }
+	}
+
+	name = "控制重要城市：香港  "
+	desc = "香港是全球闻名遐迩的国际大都市，也是重要的贸易、航运中心 和空港。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+		command = { type = free_money value = 10 } 
+		command = { type = local_setflag which = LandMorale13 }
+	}
+}
+
+event = {
+	id = 1926
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale13
+		NOT = { control = { province = 1315 data = -3 } } 
+	}
+
+	name = "重要城市失守：香港 "
+	desc = "香港是全球闻名遐迩的国际大都市，也是重要的贸易、航运中心 和空港 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难 "
+#		command = { type = dissent value = 3 }
+		command = { type = free_money value = -10 }  
+		command = { type = construct which = land_fort where = 1315 value = -10 }
+		command = { type = local_clrflag which = LandMorale13 }
+	}
+}
+event = {
+	id = 1927
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1184 data = -1 } # 东京都
+		     NOT = { local_flag = LandMorale14 }
+	}
+
+	name = "控制重要城市：东京都  "
+	desc = "东京位于关东平原，面向东京湾，是日本首都及第一大城市。也 是日本政治、文化、经济、教育、交通中心和重要的工业基地。 明治二年，明治天皇迁都江户，并改名为东京。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale14 }
+	}
+}
+
+event = {
+	id = 1928
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale14
+		NOT = { control = { province = 1184 data = -3 } } 
+	}
+
+	name = "重要城市失守：东京都 "
+	desc = "东京位于关东平原，面向东京湾，是日本首都及第一大城市。也 是日本政治、文化、经济、教育、交通中心和重要的工业基地。 明治二年，明治天皇迁都江户，并改名为东京。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难 "
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 1184 value = -10 }
+		command = { type = local_clrflag which = LandMorale14 }
+	}
+}
+event = {
+	id = 1929
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 606 data = -1 } # 华盛顿
+		     NOT = { local_flag = LandMorale15 }
+	}
+
+	name = "控制重要城市：华盛顿  "
+	desc = "美国首都华盛顿，全称“华盛顿哥伦比亚特区”，是美国的政治 中心，白宫、国会、美国最高法院以及绝大多数政府机构均设在 这里；也是文化中心，拥有为数众多的博物馆与文化史迹。同时 也是世界上少有的仅以行政职能为主的大城市，管理国家是华盛 顿的主要工作。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale15 }
+	}
+}
+
+event = {
+	id = 1931
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale15
+		NOT = { control = { province = 606 data = -3 } } 
+	}
+
+	name = "重要城市失守：华盛顿 "
+	desc = "美国首都华盛顿，全称“华盛顿哥伦比亚特区”，是美国的政治 中心，白宫、国会、美国最高法院以及绝大多数政府机构均设在 这里；也是文化中心，拥有为数众多的博物馆与文化史迹。同时 也是世界上少有的仅以行政职能为主的大城市，管理国家是华盛 顿的主要工作。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 606 value = -10 }
+		command = { type = local_clrflag which = LandMorale15 }
+	}
+}
+event = {
+	id = 1932
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 300 data = -1 } # 柏林
+		     NOT = { local_flag = LandMorale16 }
+	}
+
+	name = "控制重要城市：柏林"
+	desc = "柏林，德国首都，也是德国第一大城市，德国政治、文化、经济 中心。四面被勃兰登堡州环绕。施普雷河和哈维尔河流经该市。 扼东西欧交通要道，不仅是全国交通中心，也是殴洲非常重要的 交通枢纽之一。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale16 }
+	}
+}
+
+event = {
+	id = 1933
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale16
+		NOT = { control = { province = 300 data = -3 } } 
+	}
+
+	name = "重要城市失守：柏林"
+	desc = "柏林，德国首都，也是德国第一大城市，德国政治、文化、经济 中心。四面被勃兰登堡州环绕。施普雷河和哈维尔河流经该市。 扼东西欧交通要道，不仅是全国交通中心，也是殴洲非常重要的 交通枢纽之一。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 300 value = -10 }
+		command = { type = local_clrflag which = LandMorale16 }
+	}
+}
+event = {
+	id = 1934
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 67 data = -1 } # 埃森
+		     NOT = { local_flag = LandMorale17 }
+	}
+
+	name = "控制重要城市：埃森"
+	desc = "埃森坐落于德国西部北莱茵-威斯特法伦州,位于莱茵河-黑尔 讷运河与鲁尔河之间。十九世纪发展起埃森钢铁公司，迅速成为 鲁尔区最大工业城市，随煤铁资源开发兴起为鲁尔区工业中。也 是德国钢铁工业先驱克虏伯家族发迹地。主要工业有采煤、钢铁 、机械、军工、化工等。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 } 
+                command = { type = industrial_modifier which = total value = 3 } 
+		command = { type = local_setflag which = LandMorale17 }
+	}
+}
+
+event = {
+	id = 1935
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale17
+		NOT = { control = { province = 67 data = -3 } } 
+	}
+
+	name = "重要城市失守：埃森"
+	desc = "埃森坐落于德国西部北莱茵-威斯特法伦州,位于莱茵河-黑尔 讷运河与鲁尔河之间。十九世纪发展起埃森钢铁公司，迅速成为 鲁尔区最大工业城市，随煤铁资源开发兴起为鲁尔区工业中。也 是德国钢铁工业先驱克虏伯家族发迹地。主要工业有采煤、钢铁 、机械、军工、化工等。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = -3 } 
+                command = { type = industrial_modifier which = total value = 3 } 
+		command = { type = construct which = land_fort where = 67 value = -10 }
+		command = { type = local_clrflag which = LandMorale17 }
+	}
+}
+event = {
+	id = 1936
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 376 data = -1 } # 慕尼黑
+		     NOT = { local_flag = LandMorale18 }
+	}
+
+	name = "控制重要城市：慕尼黑"
+	desc = "慕尼黑位于德国南部阿尔卑斯山北麓的伊萨尔河畔，是德国南部 第一大城，全德国第三大城市，盛产啤酒。是德国 主要的经济、文化、科技和交通中心之一，也是欧洲最繁荣的城 市之一。慕尼黑拥有许多知名品牌，如宝马、西门子、曼恩等。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 } 
+                command = { type = tc_mod value = 3 }
+		command = { type = local_setflag which = LandMorale18 }
+	}
+}
+
+event = {
+	id = 1937
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale18
+		NOT = { control = { province = 376 data = -3 } } 
+	}
+
+	name = "重要城市失守：慕尼黑"
+	desc = "慕尼黑位于德国南部阿尔卑斯山北麓的伊萨尔河畔，是德国南部 第一大城，全德国第三大城市，盛产啤酒。是德国 主要的经济、文化、科技和交通中心之一，也是欧洲最繁荣的城 市之一。慕尼黑拥有许多知名品牌，如宝马、西门子、曼恩等。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }  
+                command = { type = tc_mod value = -3 }
+		command = { type = construct which = land_fort where = 376 value = -10 }
+		command = { type = local_clrflag which = LandMorale18 }
+	}
+}
+event = {
+	id = 1938
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 56 data = -1 } # 巴黎
+		     NOT = { local_flag = LandMorale19 }
+	}
+
+	name = "控制重要城市：巴黎"
+	desc = "巴黎，法国首都和最大城市，法国的政治、经济、文化、商业中 心，是世界上最繁华的大都市之一，素有“浪漫之都”“时尚之 都”“世界花都”之美称。巴黎是法国最大的工业城市和世界上 重要的综合性交通枢纽。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale19 }
+	}
+}
+
+event = {
+	id = 1939
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale19
+		NOT = { control = { province = 56 data = -3 } } 
+	}
+
+	name = "重要城市失守：巴黎"
+	desc = "巴黎，法国首都和最大城市，法国的政治、经济、文化、商业中 心，是世界上最繁华的大都市之一，素有“浪漫之都”“时尚之 都”“世界花都”之美称。巴黎是法国最大的工业城市和世界上 重要的综合性交通枢纽。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 56 value = -10 }
+		command = { type = local_clrflag which = LandMorale19 }
+	}
+}
+event = {
+	id = 1940
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 364 data = -1 } # 马赛
+		     NOT = { local_flag = LandMorale20 }
+	}
+
+	name = "控制重要城市：马赛"
+	desc = "马赛，法国的第二大城市和最大的海港及商业港口，也是地中海 最大的商业港口，马赛东南濒地中海，水深港阔，无急流险滩， 万吨级轮可畅通无阻，马赛是法国的一个重要工业中心、维修船 只中心。法国国歌《马赛曲》诞生于此。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = free_money value = 10 }
+		command = { type = local_setflag which = LandMorale20 }
+	}
+}
+
+event = {
+	id = 1941
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale20
+		NOT = { control = { province = 364 data = -3 } } 
+	}
+
+	name = "重要城市失守：马赛"
+	desc = "马赛，法国的第二大城市和最大的海港及商业港口，也是地中海 最大的商业港口，马赛东南濒地中海，水深港阔，无急流险滩， 万吨级轮可畅通无阻，马赛是法国的一个重要工业中心、维修船 只中心。法国国歌《马赛曲》诞生于此。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = free_money value = -10 }
+		command = { type = construct which = land_fort where = 364 value = -10 }
+		command = { type = local_clrflag which = LandMorale20 }
+	}
+}
+event = {
+	id = 1942
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 528 data = -1 } # 里昂
+		     NOT = { local_flag = LandMorale21 }
+	}
+
+	name = "控制重要城市：里昂"
+	desc = "里昂是法国第三大城市，坐落在索恩河同罗讷河汇合处。这座城 市扼巴黎到地中海沿岸的主要通路，罗马时代就十分繁荣，同时 也是重要的商业中心、水陆交通枢纽和法国人口第二大城市，历 史悠久，丝绸工业发达，是个名副其实的文化之城、欧洲丝都。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = attrition_mod value = 3 }
+		command = { type = local_setflag which = LandMorale21 }
+	}
+} 
+event = {
+	id = 1943
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale21
+		NOT = { control = { province = 528 data = -3 } } 
+	}
+
+	name = "重要城市失守：里昂"
+	desc = "里昂是法国第三大城市，坐落在索恩河同罗讷河汇合处。这座城 市扼巴黎到地中海沿岸的主要通路，罗马时代就十分繁荣，同时 也是重要的商业中心、水陆交通枢纽和法国人口第二大城市，历 史悠久，丝绸工业发达，是个名副其实的文化之城、欧洲丝都。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = attrition_mod value = -3 }
+		command = { type = construct which = land_fort where = 528 value = -10 }
+		command = { type = local_clrflag which = LandMorale21 }
+	}
+}
+event = {
+	id = 1944
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 19 data = -1 } # 伦敦
+		     NOT = { local_flag = LandMorale22 }
+	}
+
+	name = "控制重要城市：伦敦"
+	desc = "伦敦，英国首都及政治、经济、文化、金融中心，也是英国王室 、政府、议会以及各政党总部的所在地，欧洲最大城市和第一大 港口，也是全球最繁华的城市之一。伦敦是欧洲的经济金融贸易 中心。伦敦港是英国最大海港，海运昌盛。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale22 }
+	}
+}
+
+event = {
+	id = 1945
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale22
+		NOT = { control = { province = 19 data = -3 } } 
+	}
+
+	name = "重要城市失守：伦敦"
+	desc = "伦敦，英国首都及政治、经济、文化、金融中心，也是英国王室 、政府、议会以及各政党总部的所在地，欧洲最大城市和第一大 港口，也是全球最繁华的城市之一。伦敦是欧洲的经济金融贸易 中心。伦敦港是英国最大海港，海运昌盛。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 19 value = -10 }
+		command = { type = local_clrflag which = LandMorale22 }
+	}
+}
+event = {
+	id = 1946
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 16 data = -1 } # 伯明翰
+		     NOT = { local_flag = LandMorale23 }
+	}
+
+	name = "控制重要城市：伯明翰"
+	desc = "伯明翰，英国第二大城市，制造业、工业发达，以重工业为主。 冶金业、机床、仪表、飞机、化学、军工、汽车业等亦为重要， 伯明翰是世界上最大最集中的工业区，瓦特于此发明万能蒸汽机 ，伯明翰是工业革命的发源地，火车船舶的制造中心，伯明翰造币厂是世界上最早的独立造 币厂。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 } 
+		command = { type = local_setflag which = LandMorale23 }
+	}
+}
+
+event = {
+	id = 1947
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale23
+		NOT = { control = { province = 16 data = -3 } } 
+	}
+
+	name = "重要城市失守：伯明翰"
+	desc = "伯明翰，英国第二大城市，制造业、工业发达，以重工业为主。 冶金业、机床、仪表、飞机、化学、军工、汽车业等亦为重要， 伯明翰是世界上最大最集中的工业区，瓦特于此发明万能蒸汽机 ，伯明翰是工业革命的发源地，火车船舶的制造中心，伯明翰造币厂是世界上最早的独立造 币厂。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = total value = -3 } 
+		command = { type = construct which = land_fort where = 16 value = -10 }
+		command = { type = local_clrflag which = LandMorale23 }
+	}
+}
+event = {
+	id = 1948
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 12 data = -1 } # 曼彻斯特
+		     NOT = { local_flag = LandMorale23 }
+	}
+
+	name = "控制重要城市：曼彻斯特"
+	desc = "曼彻斯特，英国第三大城市，英国重要的交通枢纽与商业、金融、 工业、文化中心。曼彻斯特是英格兰主要的工业中心和商品集散 中心，曼彻斯特是英国除伦敦以外最大的金融中心城市。哈格里 夫斯于此发明了珍妮纺纱机，开启了工业革命，建立首家棉纺织 厂，棉纺工业繁荣，有棉都、仓库之城等美称。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -3 }
+                command = { type = relative_manpower value = 3 }
+		command = { type = local_setflag which = LandMorale24 }
+	}
+}
+
+event = {
+	id = 1949
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale24
+		NOT = { control = { province = 12 data = -3 } } 
+	}
+
+	name = "重要城市失守：曼彻斯特"
+	desc = "曼彻斯特，英国第三大城市，英国重要的交通枢纽与商业、金融、 工业、文化中心。曼彻斯特是英格兰主要的工业中心和商品集散 中心，曼彻斯特是英国除伦敦以外最大的金融中心城市。哈格里 夫斯于此发明了珍妮纺纱机，开启了工业革命，建立首家棉纺织 厂，棉纺工业繁荣，有棉都、仓库之城等美称。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = relative_manpower value = -3 }
+		command = { type = construct which = land_fort where = 12 value = -10 }
+		command = { type = local_clrflag which = LandMorale24 }
+	}
+}
+event = {
+	id = 1950
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 175 data = -1 } # 莫斯科
+		     NOT = { local_flag = LandMorale25 }
+	}
+
+	name = "控制重要城市：莫斯科"
+	desc = "莫斯科，苏联国都，全俄最大的城市和经济、文化、金融、交通 中心。欧亚大陆上重要的交通枢纽。同时，莫斯科还是一个重要 的工业制造业中心，工业总产值居全国首位，工业门类齐全，莫 斯科是全国科技文化中心，教育设施众多。莫斯科是一座历史悠 久和具有光荣传统的城市，卫国战争中约有七十万红军战士为保 卫莫斯科而战死。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale25 }
+	}
+}
+
+event = {
+	id = 1951
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale25
+		NOT = { control = { province = 175 data = -3 } } 
+	}
+
+	name = "重要城市失守：莫斯科"
+	desc = "莫斯科，苏联国都，全俄最大的城市和经济、文化、金融、交通 中心。欧亚大陆上重要的交通枢纽。同时，莫斯科还是一个重要 的工业制造业中心，工业总产值居全国首位，工业门类齐全，莫 斯科是全国科技文化中心，教育设施众多。莫斯科是一座历史悠 久和具有光荣传统的城市，卫国战争中约有七十万红军战士为保 卫莫斯科而战死。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 175 value = -10 }
+		command = { type = local_clrflag which = LandMorale25 }
+	}
+}
+
+event = {
+	id = 1952
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 187 data = -1 } # 列宁格勒
+		     NOT = { local_flag = LandMorale26 }
+	}
+
+	name = "控制重要城市：列宁格勒"
+	desc = "列宁格勒是苏联第二大城市，位于苏联西北部，波罗的海沿岸， 涅瓦河口，是苏联第二大政治经济中心，重要的水陆交通枢纽和 贸易口岸，拥有众多的高等院校，科学研究机构，被称为俄国科 学文化艺术的首都。光荣的列宁格勒在二战中被德军围困了８７ ２天，不屈不饶的苏联军民顽强抗争到了最后的胜利。同时也是 三次革命之城。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -5 }
+                command = { type = free_money value = 10 } 
+		command = { type = local_setflag which = LandMorale26 }
+	}
+}
+event = {
+	id = 1953
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale26
+		NOT = { control = { province = 187 data = -3 } } 
+	}
+
+	name = "重要城市失守：列宁格勒"
+	desc = "列宁格勒是苏联第二大城市，位于苏联西北部，波罗的海沿岸， 涅瓦河口，是苏联第二大政治经济中心，重要的水陆交通枢纽和 贸易口岸，拥有众多的高等院校，科学研究机构，被称为俄国科 学文化艺术的首都。光荣的列宁格勒在二战中被德军围困了８７ ２天，不屈不饶的苏联军民顽强抗争到了最后的胜利。同时也是 三次革命之城。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = free_money value = -10 } 
+		command = { type = construct which = land_fort where = 187 value = -10 }
+		command = { type = local_clrflag which = LandMorale26 }
+	}
+}
+event = {
+	id = 1954
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 163 data = -1 } # 斯大林格勒
+		     NOT = { local_flag = LandMorale27 }
+	}
+
+	name = "控制重要城市：斯大林格勒"
+	desc = "斯大林格勒位于伏尔加河畔，物产丰富，是著名的南部粮仓，是 俄罗斯南部的水陆交通要冲。重工业发达，如拖拉机制造厂、“ 红色十月”冶金厂、“街垒”工厂、国营轴承厂等，卫国战争中 在此爆发惨烈的巷战，全城军民英勇奋战，付出上百万人的牺牲 ，使斯大林格勒保卫战成为了二战的根本转折点。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 }
+		command = { type = local_setflag which = LandMorale27 }
+	}
+}
+
+event = {
+	id = 1955
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale27
+		NOT = { control = { province = 163 data = -3 } } 
+	}
+
+	name = "重要城市失守：斯大林格勒"
+	desc = "斯大林格勒位于伏尔加河畔，物产丰富，是著名的南部粮仓，是 俄罗斯南部的水陆交通要冲。重工业发达，如拖拉机制造厂、“ 红色十月”冶金厂、“街垒”工厂、国营轴承厂等，卫国战争中 在此爆发惨烈的巷战，全城军民英勇奋战，付出上百万人的牺牲 ，使斯大林格勒保卫战成为了二战的根本转折点。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = total value = -3 }
+		command = { type = construct which = land_fort where = 163 value = -10 }
+		command = { type = local_clrflag which = LandMorale27 }
+	}
+}
+event = {
+	id = 1956
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 238 data = -1 } # 基辅
+		     NOT = { local_flag = LandMorale28 }
+	}
+
+	name = "控制重要城市：基辅"
+	desc = "基辅位于位于乌克兰中北部，第聂伯河畔，是东欧重要的工业、 科学、文化及教育中心，１９世纪末，基辅因俄罗斯帝国的工业 革命而再度兴起。基辅在经历１９１７年俄国革命引发的动荡时 期后，１９３４年成为乌克兰苏维埃社会主义共和国首都，素有 “乌克兰粮仓”的美名。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = supplies value = 3 }
+		command = { type = local_setflag which = LandMorale28 }
+	}
+}
+
+event = {
+	id = 1957
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale28
+		NOT = { control = { province = 238 data = -3 } } 
+	}
+
+	name = "重要城市失守：基辅"
+	desc = "基辅位于位于乌克兰中北部，第聂伯河畔，是东欧重要的工业、 科学、文化及教育中心，１９世纪末，基辅因俄罗斯帝国的工业 革命而再度兴起。基辅在经历１９１７年俄国革命引发的动荡时 期后，１９３４年成为乌克兰苏维埃社会主义共和国首都，素有 “乌克兰粮仓”的美名。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = construct which = land_fort where = 238 value = -10 }
+		command = { type = local_clrflag which = LandMorale28 }
+	}
+}
+event = {
+	id = 1958
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1572 data = -1 } # 叶卡捷琳堡
+		     NOT = { local_flag = LandMorale29 }
+	}
+
+	name = "控制重要城市：叶卡捷琳堡"
+	desc = "叶卡捷琳堡，始建于1723年，以女皇叶卡捷琳娜一世的名字 命名。坐落于坐落于乌拉尔山脉东麓，伊赛特河畔，是乌拉尔和 俄罗斯联邦重要工业、交通、贸易、科学、文化和行政中心，叶 卡捷琳堡是科学与教育中心，拥有乌拉尔历史最悠久的１５座高校 ，上百所科研机构、规划和学术机构坐落于此。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -5 }
+                command = { type = research_mod value = 5 }
+		command = { type = local_setflag which = LandMorale29 }
+	}
+}
+
+event = {
+	id = 1959
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale29
+		NOT = { control = { province = 1572 data = -3 } } 
+	}
+
+	name = "重要城市失守：叶卡捷琳堡"
+	desc = "叶卡捷琳堡，始建于１７２３年，以女皇叶卡捷琳娜一世的名字 命名。坐落于坐落于乌拉尔山脉东麓，伊赛特河畔，是乌拉尔和 俄罗斯联邦重要工业、交通、贸易、科学、文化和行政中心，叶 卡捷琳堡是科学与教育中心，拥有乌拉尔历史最悠久的１５座高校 ，上百所科研机构、规划和学术机构坐落于此。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = research_mod value = -5 }
+		command = { type = construct which = land_fort where = 1572 value = -10 }
+		command = { type = local_clrflag which = LandMorale29 }
+	}
+}
+event = {
+	id = 1960
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1372 data = -1 } # 符拉迪沃斯托克
+		     NOT = { local_flag = LandMorale30 }
+	}
+
+	name = "控制重要城市：符拉迪沃斯托克"
+	desc = "符拉迪沃斯托克位于亚欧大陆东面，阿穆尔半岛最南端。符拉迪 沃斯托克是苏联在远东最重要的城市，太平洋舰队司令部所在地 ，拥有优良的天然港湾、不冻港，地理位置优越，是俄罗斯在太 平洋沿岸最重要的港口，西伯利亚大铁道的终点。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = tc_mod value = 3 }  
+		command = { type = local_setflag which = LandMorale30 }
+	}
+}
+
+event = {
+	id = 1961
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale30
+		NOT = { control = { province = 1372 data = -3 } } 
+	}
+
+	name = "重要城市失守：符拉迪沃斯托克"
+	desc = "符拉迪沃斯托克位于亚欧大陆东面，阿穆尔半岛最南端。符拉迪 沃斯托克是苏联在远东最重要的城市，太平洋舰队司令部所在地 ，拥有优良的天然港湾、不冻港，地理位置优越，是俄罗斯在太 平洋沿岸最重要的港口，西伯利亚大铁道的终点。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = tc_mod value = -3 }
+		command = { type = construct which = land_fort where = 1372 value = -10 }
+		command = { type = local_clrflag which = LandMorale30 }
+	}
+}
+event = {
+	id = 1962
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 519 data = -1 } # 罗马
+		     NOT = { local_flag = LandMorale31 }
+	}
+
+	name = "控制重要城市：罗马"
+	desc = "罗马为意大利首都也是全国最大的城市，也是国家政治、经济、 文化和交通中心，世界著名的历史文化名城，古罗马帝国的发祥 地，因建城历史悠久而被昵称为“永恒之城”。罗马被喻为全球最 大的“露天历史博物馆”。罗马有“条条大道通罗马”之称，形 象地表明了罗马作为意大利的交通枢纽，它有铁路、公路通往全 国各地。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+#		command = { type = dissent value = -5 }
+                command = { type = morale which = land value = 5 }
+		command = { type = local_setflag which = LandMorale31 }
+	}
+}
+
+event = {
+	id = 1963
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale31
+		NOT = { control = { province = 519 data = -3 } } 
+	}
+
+	name = "重要城市失守：罗马"
+	desc = "罗马为意大利首都也是全国最大的城市，也是国家政治、经济、 文化和交通中心，世界著名的历史文化名城，古罗马帝国的发祥 地，因建城历史悠久而被昵称为“永恒之城”。罗马被喻为全球最 大的“露天历史博物馆”。罗马有“条条大道通罗马”之称，形 象地表明了罗马作为意大利的交通枢纽，它有铁路、公路通往全 国各地。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = morale which = land value = -5 }
+		command = { type = construct which = land_fort where = 519 value = -10 }
+		command = { type = local_clrflag which = LandMorale31 }
+	}
+}
+event = {
+	id = 1964
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 378 data = -1 } # 威尼斯
+		     NOT = { local_flag = LandMorale32 }
+	}
+
+	name = "控制重要城市：威尼斯"
+	desc = "威尼斯是意大利东北部城市，亚得里亚海威尼斯湾西北岸重要 港口。由１１８个小岛组成，以舟相通，有“水上都市”之称。 威尼斯港是意大利最大的港口之一，港口长１２千米，总面积达 ２５０公顷，伸展出去，宽阔广大，每年进出港门的船只在万艘 以上。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = free_money value = 10 }
+		command = { type = local_setflag which = LandMorale32 }
+	}
+}
+
+event = {
+	id = 1965
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale32
+		NOT = { control = { province = 378 data = -3 } } 
+	}
+
+	name = "重要城市失守：威尼斯"
+	desc = "威尼斯是意大利东北部城市，亚得里亚海威尼斯湾西北岸重要 港口。由１１８个小岛组成，以舟相通，有“水上都市”之称。 威尼斯港是意大利最大的港口之一，港口长１２千米，总面积达 ２５０公顷，伸展出去，宽阔广大，每年进出港门的船只在万艘 以上。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = free_money value = -10 }
+		command = { type = construct which = land_fort where = 378 value = -10 }
+		command = { type = local_clrflag which = LandMorale32 }
+	}
+}
+event = {
+	id = 1966
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 370 data = -1 } # 米兰
+		     NOT = { local_flag = LandMorale33 }
+	}
+
+	name = "控制重要城市：米兰"
+	desc = "米兰，意大利第二大城市，是欧洲南方的重要交通要点，历史相 当悠久，埃马努埃莱二世长廊被认为是世界上最古老的购物中心 。诞生了许多世界顶级服装名牌。米兰是意大利最重要的工业中 心，米兰的冶金、化学、机械制造、服装工业等都极为发达。曾 承办过１９０６年世界博览会，蒙提拿破仑街是世界最为著名的 奢侈品大道。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 }
+		command = { type = local_setflag which = LandMorale33 }
+	}
+}
+
+event = {
+	id = 1967
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale33
+		NOT = { control = { province = 370 data = -3 } } 
+	}
+
+	name = "重要城市失守：米兰"
+	desc = "米兰，意大利第二大城市，是欧洲南方的重要交通要点，历史相 当悠久，埃马努埃莱二世长廊被认为是世界上最古老的购物中心 。诞生了许多世界顶级服装名牌。米兰是意大利最重要的工业中 心，米兰的冶金、化学、机械制造、服装工业等都极为发达。曾 承办过１９０６年世界博览会，蒙提拿破仑街是世界最为著名的 奢侈品大道。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = total value = -3 }
+		command = { type = construct which = land_fort where = 370 value = -10 }
+		command = { type = local_clrflag which = LandMorale33 }
+	}
+}
+event = {
+	id = 1968
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 602 data = -1 } # 纽约
+		     NOT = { local_flag = LandMorale34 }
+	}
+
+	name = "控制重要城市：纽约"
+	desc = "纽约是一座美丽的海滨城市，位于美国东部，是美国重要港口城市 ，同时也是美国政治、经济、文化及交通等领域的枢纽中心。直 接影响着全球的经济、金融、媒体、政治、教育、娱乐与时尚界 。美国最大城市及最大的商港。是世界的经济中心，被人们誉为 世界之都。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"		
+                command = { type = dissent value = -5 }
+                command = { type = free_money value = 10 }
+		command = { type = local_setflag which = LandMorale34 }
+	}
+}
+
+event = {
+	id = 1969
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale34
+		NOT = { control = { province = 602 data = -3 } } 
+	}
+
+	name = "重要城市失守：纽约"
+	desc = "纽约是一座美丽的海滨城市，位于美国东部，是美国重要港口城市 ，同时也是美国政治、经济、文化及交通等领域的枢纽中心。直 接影响着全球的经济、金融、媒体、政治、教育、娱乐与时尚界 。美国最大城市及最大的商港。是世界的经济中心，被人们誉为 世界之都。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = free_money value = -10 }
+		command = { type = construct which = land_fort where = 602 value = -10 }
+		command = { type = local_clrflag which = LandMorale34 }
+	}
+}
+event = {
+	id = 1970
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 663 data = -1 } # 珍珠港
+		     NOT = { local_flag = LandMorale35 }
+	}
+
+	name = "控制重要军港：珍珠港"
+	desc = "随着美日矛盾加深，珍珠港被美国视为太平洋的前进基地，得到 重视和建设。建成后的珍珠港是美国在太平洋最重要的海空军基 地之一，最多可停泊五百艘舰船，还可以为航空母舰、巡洋舰等 大型海军舰只提供维修、保养等服务，珍珠港中有一个岛屿，上 面设有福特岛海军航空站。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = attrition_mod value = 3 }
+		command = { type = local_setflag which = LandMorale35 }
+	}
+}
+
+event = {
+	id = 1971
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale35
+		NOT = { control = { province = 663 data = -3 } } 
+	}
+
+	name = "重要军港失守：珍珠港"
+	desc = "随着美日矛盾加深，珍珠港被美国视为太平洋的前进基地，得到 重视和建设。建成后的珍珠港是美国在太平洋最重要的海空军基 地之一，最多可停泊五百艘舰船，还可以为航空母舰、巡洋舰等 大型海军舰只提供维修、保养等服务，珍珠港中有一个岛屿，上 面设有福特岛海军航空站。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = attrition_mod value = -3 }
+		command = { type = construct which = land_fort where = 663 value = -10 }
+		command = { type = local_clrflag which = LandMorale35 }
+	}
+}
+event = {
+	id = 1972
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 616 data = -1 } # 底特律
+		     NOT = { local_flag = LandMorale36 }
+	}
+
+	name = "控制重要城市：底特律"
+	desc = "底特律是美国密歇根州最大的城市。是位于美国东北部，加拿大 温莎以南、底特律河沿岸的一座重要的港口城市、世界传统汽车 中心和音乐之都。世界第一条城市高速公路在底特律建成。汽车 制造业为城市工业的核心部门，与汽车制造业有关的钢材、仪表 、塑料、玻璃以及轮胎、发动机等零部件生产相当发达。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = total value = 3 }
+		command = { type = local_setflag which = LandMorale36 }
+	}
+}
+
+event = {
+	id = 1973
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale36
+		NOT = { control = { province = 616 data = -3 } } 
+	}
+
+	name = "重要城市失守：底特律"
+	desc = "底特律是美国密歇根州最大的城市。是位于美国东北部，加拿大 温莎以南、底特律河沿岸的一座重要的港口城市、世界传统汽车 中心和音乐之都。世界第一条城市高速公路在底特律建成。汽车 制造业为城市工业的核心部门，与汽车制造业有关的钢材、仪表 、塑料、玻璃以及轮胎、发动机等零部件生产相当发达。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = total value = -3 }
+		command = { type = construct which = land_fort where = 616 value = -10 }
+		command = { type = local_clrflag which = LandMorale36 }
+	}
+}
+
+event = {
+	id = 1974
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1185 data = -1 } # 名古屋
+		     NOT = { local_flag = LandMorale37 }
+	}
+
+	name = "控制重要城市：名古屋"
+	desc = "名古屋过去是尾张德川的城下町。因为它是中部地区的商、工业 ，交通的中心地，而且位于东京和京都的中间，所以又被称作中 京，一九三五年人口突破一百万人。是源赖朝、织田信长、丰臣 秀吉、柴田胜家等历史名人的故乡。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = industrial_modifier which = supplies value = 3 }
+		command = { type = local_setflag which = LandMorale37 }
+	}
+}
+
+event = {
+	id = 1975
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale37
+		NOT = { control = { province = 1185 data = -3 } } 
+	}
+
+	name = "重要城市失守：名古屋"
+	desc = "名古屋过去是尾张德川的城下町。因为它是中部地区的商、工业 ，交通的中心地，而且位于东京和京都的中间，所以又被称作中 京，一九三五年人口突破一百万人。是源赖朝、织田信长、丰臣 秀吉、柴田胜家等历史名人的故乡。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = construct which = land_fort where = 1185 value = -10 }
+		command = { type = local_clrflag which = LandMorale37 }
+	}
+}
+
+event = {
+	id = 1976
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 1187 data = -1 } # 大阪
+		     NOT = { local_flag = LandMorale38 }
+	}
+
+	name = "控制重要城市：大阪"
+	desc = "大阪市位于日本本州西部，是日本第二大城市，仅次于首都东京 。拥有以钢铁、机械制造、金属加工为主的重工业。大阪市的商 业经济十分繁荣，是日本商业和贸易发展的最早地区，也是日本 的历史文化名域，并因此孕育了其独特的娱乐、艺术、饮食文化 。"
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = free_money value = 10 }
+		command = { type = local_setflag which = LandMorale38 }
+	}
+}
+
+event = {
+	id = 1977
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale38
+		NOT = { control = { province = 1187 data = -3 } } 
+	}
+
+	name = "重要城市失守：大阪"
+	desc = "大阪市位于日本本州西部，是日本第二大城市，仅次于首都东京 。拥有以钢铁、机械制造、金属加工为主的重工业。大阪市的商 业经济十分繁荣，是日本商业和贸易发展的最早地区，也是日本 的历史文化名域，并因此孕育了其独特的娱乐、艺术、饮食文化 。"
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = free_money value = -10 }
+		command = { type = construct which = land_fort where = 1187 value = -10 }
+		command = { type = local_clrflag which = LandMorale38 }
+	}
+}
+
+event = {
+	id = 1978
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 9 data = -1 } # 格拉斯哥
+		     NOT = { local_flag = LandMorale39 }
+	}
+
+	name = "控制重要城市：格拉斯哥"
+	desc = "格拉斯哥是苏格兰第一大城市与第一大商港，英国第三大城市， 位于苏格兰西部，以其辉煌的文化和传统闻名于世，城市毗邻加 洛瓦森林,又有“森林之都”的美誉。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -3 }
+                command = { type = supply_dist_mod value = 3 }
+		command = { type = local_setflag which = LandMorale39 }
+	}
+}
+
+event = {
+	id = 1979
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale39
+		NOT = { control = { province = 9 data = -3 } } 
+	}
+
+	name = "重要城市失守：格拉斯哥"
+	desc = "格拉斯哥是苏格兰第一大城市与第一大商港，英国第三大城市， 位于苏格兰西部，以其辉煌的文化和传统闻名于世，城市毗邻加 洛瓦森林,又有“森林之都”的美誉。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 3 }
+                command = { type = supply_dist_mod value = -3 }
+		command = { type = construct which = land_fort where = 9 value = -10 }
+		command = { type = local_clrflag which = LandMorale39 }
+	}
+}
+
+event = {
+	id = 1980
+	random = no
+	persistent = yes
+
+	trigGER = {
+		     control = { province = 409 data = -1 } # 伊斯坦布尔
+		     NOT = { local_flag = LandMorale40 }
+	}
+
+	name = "控制重要城市：伊斯坦布尔 "
+	desc = "伊斯坦布尔是土耳其最大城市和港口，也是土耳其的文化、经济 和金融中心，亦是欧洲最繁华的国际大都市之一，还一直是土耳 其经济生活的中心，因为它地处国际陆上和海上贸易路线的交界 位置。伊斯坦布尔也是土耳其最大的工业中心。 "
+	style = 0
+	picture = "chENGshiguangfu"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+            	name = "国之骄傲！"
+		
+                command = { type = dissent value = -5 }
+                command = { type = relative_manpower value = 5 }
+		command = { type = local_setflag which = LandMorale40 }
+	}
+}
+
+event = {
+	id = 1981
+	random = no
+	persistent = yes
+
+	trigGER = {
+		local_flag = LandMorale40
+		NOT = { control = { province = 409 data = -3 } } 
+	}
+
+	name = "重要城市失守：伊斯坦布尔 "
+	desc = "伊斯坦布尔是土耳其最大城市和港口，也是土耳其的文化、经济 和金融中心，亦是欧洲最繁华的国际大都市之一，还一直是土耳 其经济生活的中心，因为它地处国际陆上和海上贸易路线的交界 位置。伊斯坦布尔也是土耳其最大的工业中心。 "
+	style = 0
+	picture = "chENGshilunxian"
+
+	date = { day = 0 month = october year = 1945 }
+	offset = 30
+	deathdate = { day = 29 month = october year = 1999 }
+
+	action_a = {
+		name = "国之灾难！"
+#		command = { type = dissent value = 5 }
+                command = { type = relative_manpower value = -5 }
+		command = { type = construct which = land_fort where = 409 value = -10 }
+		command = { type = local_clrflag which = LandMorale40 }
+	}
+}
+

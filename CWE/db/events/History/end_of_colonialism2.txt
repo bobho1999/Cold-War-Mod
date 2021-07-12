@@ -1,0 +1,3252 @@
+# next 340896
+
+#######################################
+### #印巴分治
+#######################################
+event = {
+	id = 3406
+	random = no
+	country = ENG
+	persistent = yes
+	trigger = {
+		government = democratic
+                OR = {
+                       	and = {
+               			control = { province = 19 data = ENG  } # 伦敦
+                               	ATWAR = YES
+        		}
+                       	and = {
+               			NOT = { exists = GER  }  
+                               ATWAR = NO
+        		}
+ 		}
+		control = { province = 1494 data = ENG  } # 
+		control = { province = 1469 data = ENG  } # 
+		NOT = {
+			exists = PAK
+			exists = IND
+ 		}
+ 	}
+
+	name = "EVT_3406_NAME"
+	desc = "EVT_3406_DESC"
+#	picture = "india"
+	style = 0
+
+	date = { day = 1 month = august year = 1947 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "ACTIONNAME3406A" 
+		ai_chance = 100
+		command = { type = removecore which =	1284	}
+		command = { type = removecore which =	1285	}
+		command = { type = removecore which =	1286	}
+		command = { type = removecore which =	1287	}
+		command = { type = removecore which =	1288	}
+		command = { type = removecore which =	1454	}
+		command = { type = removecore which =	1456	}
+		command = { type = removecore which =	1457	}
+		command = { type = removecore which =	1458	}
+		command = { type = removecore which =	1459	}
+		command = { type = removecore which =	1460	}
+		command = { type = removecore which =	1461	}
+		command = { type = removecore which =	1462	}
+		command = { type = removecore which =	1463	}
+		command = { type = removecore which =	1464	}
+		command = { type = removecore which =	1465	}
+		command = { type = removecore which =	1466	}
+		command = { type = removecore which =	1467	}
+		command = { type = removecore which =	1468	}
+		command = { type = removecore which =	1469	}
+		command = { type = removecore which =	1470	}
+		command = { type = removecore which =	1471	}
+		command = { type = removecore which =	1472	}
+		command = { type = removecore which =	1474	}
+		command = { type = removecore which =	1475	}
+		command = { type = removecore which =	1476	}
+		command = { type = removecore which =	1477	}
+		command = { type = removecore which =	1478	}
+		command = { type = removecore which =	1479	}
+		command = { type = removecore which =	1480	}
+		command = { type = removecore which =	1481	}
+		command = { type = removecore which =	1482	}
+		command = { type = removecore which =	1483	}
+		command = { type = removecore which =	1494	}
+		command = { type = removecore which =	1505	}
+		command = { type = removecore which =	1506	}
+		command = { type = removecore which =	1507	}
+		command = { type = removecore which =	1508	}
+		command = { type = removecore which =	1509	}
+		command = { type = removecore which =	1510	}
+		command = { type = removecore which =	1511	}
+		command = { type = removecore which =	1512	}
+		command = { type = removecore which =	1513	}
+		command = { type = removecore which =	1514	}
+		command = { type = removecore which =	1515	}
+		command = { type = removecore which =	1516	}
+		command = { type = removecore which =	1517	}
+		command = { type = removecore which =	1518	}
+		command = { type = removecore which =	1519	}
+		command = { type = removecore which =	1877	}
+		command = { type = removecore which =	1878	}
+		command = { type = removecore which =	3771	}
+		command = { type = removecore which =	3772	}
+		command = { type = removecore which =	3773	}
+		command = { type = removecore which =	3774	}
+		command = { type = removecore which =	3775	}
+		command = { type = removecore which =	3776	}
+
+		command = { type = removecore which = 3777 }
+		command = { type = removecore which = 3778 }
+		command = { type = removecore which = 3779 }
+		command = { type = removecore which = 3780 }
+		command = { type = removecore which = 3781 }
+		command = { type = removecore which = 3782 }
+		command = { type = removecore which = 3783 }
+		command = { type = removecore which = 3784 }
+		command = { type = removecore which = 3785 }
+		command = { type = removecore which = 3786 }
+		command = { type = removecore which = 3787 }
+		command = { type = removecore which = 3788 }
+		command = { type = removecore which = 3789 }
+		command = { type = removecore which = 3790 }
+		command = { type = removecore which = 3791 }
+		command = { type = removecore which = 3792 }
+		command = { type = removecore which = 3793 }
+		command = { type = removecore which = 3794 }
+		command = { type = removecore which = 3795 }
+		command = { type = removecore which = 3796 }
+		command = { type = removecore which = 3797 }
+		command = { type = removecore which = 3798 }
+		command = { type = removecore which = 3799 }
+		command = { type = removecore which = 3800 }
+		command = { type = removecore which = 3801 }
+		command = { type = removecore which = 3802 }
+		command = { type = removecore which = 3803 }
+		command = { type = removecore which = 3804 }
+		command = { type = removecore which = 3805 }
+		command = { type = removecore which = 3806 }
+		command = { type = removecore which = 3807 }
+		command = { type = removecore which = 3808 }
+		command = { type = removecore which = 3809 }
+		command = { type = removecore which = 3810 }
+		command = { type = removecore which = 3811 }
+		command = { type = removecore which = 3812 }
+		command = { type = removecore which = 3813 }
+		command = { type = removecore which = 3814 }
+		command = { type = removecore which = 3815 }
+		command = { type = removecore which = 3816 }
+		command = { type = removecore which = 3817 }
+		command = { type = removecore which = 3818 }
+		command = { type = removecore which = 3819 }
+		command = { type = removecore which = 3820 }
+		command = { type = removecore which = 3821 }
+		command = { type = removecore which = 3822 }
+		command = { type = removecore which = 3823 }
+		command = { type = removecore which = 3824 }
+		command = { type = removecore which = 3825 }
+		command = { type = removecore which = 3826 }
+		command = { type = removecore which = 3827 }
+		command = { type = removecore which = 3828 }
+		command = { type = removecore which = 3829 }
+		command = { type = removecore which = 3830 }
+		command = { type = removecore which = 3831 }
+		command = { type = removecore which = 3832 }
+		command = { type = removecore which = 3833 }
+		command = { type = removecore which = 3834 }
+		command = { type = removecore which = 3835 }
+		command = { type = removecore which = 3836 }
+		command = { type = removecore which = 3837 }
+		command = { type = removecore which = 3838 }
+		command = { type = removecore which = 3839 }
+		command = { type = removecore which = 3840 }
+		command = { type = removecore which = 3841 }
+		command = { type = removecore which = 3842 }
+		command = { type = removecore which = 3844 }
+		command = { type = removecore which = 3845 }
+		command = { type = removecore which = 3846 }
+		command = { type = removecore which = 3847 }
+		command = { type = removecore which = 3848 }
+		command = { type = removecore which = 3849 }
+		command = { type = removecore which = 3850 }
+		command = { type = removecore which = 3851 }
+		command = { type = removecore which = 3852 }
+		command = { type = removecore which = 3853 }
+		command = { type = removecore which = 3854 }
+		command = { type = removecore which = 3855 }
+		command = { type = removecore which = 3856 }
+		command = { type = removecore which = 3857 }
+		command = { type = removecore which = 3858 }
+		command = { type = removecore which = 3859 }
+		command = { type = removecore which = 3860 }
+		command = { type = removecore which = 3861 }
+		command = { type = removecore which = 3862 }
+		command = { type = removecore which = 3863 }
+		command = { type = removecore which = 3950 }
+		command = { type = removecore which = 3843 }
+		command = { type = removecore which = 2675 }
+		command = { type = removecore which = 2970 }
+		command = { type = removecore which = 2967 }
+		command = { type = removecore which = 2966 }
+		command = { type = trigger which = 3407 value = 2 }
+ }
+
+action_b = {
+name = "ACTIONNAME3406B" 
+ai_chance = 0
+		command = { type = dissent value = 20  }
+		command = { type = province_revoltrisk which = 	1284	 value = 100 }
+		command = { type = province_revoltrisk which = 	1285	 value = 100 }
+		command = { type = province_revoltrisk which = 	1286	 value = 100 }
+		command = { type = province_revoltrisk which = 	1287	 value = 100 }
+		command = { type = province_revoltrisk which = 	1288	 value = 100 }
+		command = { type = province_revoltrisk which = 	1454	 value = 100 }
+		command = { type = province_revoltrisk which = 	1456	 value = 100 }
+		command = { type = province_revoltrisk which = 	1457	 value = 100 }
+		command = { type = province_revoltrisk which = 	1458	 value = 100 }
+		command = { type = province_revoltrisk which = 	1459	 value = 100 }
+		command = { type = province_revoltrisk which = 	1460	 value = 100 }
+		command = { type = province_revoltrisk which = 	1461	 value = 100 }
+		command = { type = province_revoltrisk which = 	1462	 value = 100 }
+		command = { type = province_revoltrisk which = 	1463	 value = 100 }
+		command = { type = province_revoltrisk which = 	1464	 value = 100 }
+		command = { type = province_revoltrisk which = 	1465	 value = 100 }
+		command = { type = province_revoltrisk which = 	1466	 value = 100 }
+		command = { type = province_revoltrisk which = 	1467	 value = 100 }
+		command = { type = province_revoltrisk which = 	1468	 value = 100 }
+		command = { type = province_revoltrisk which = 	1469	 value = 100 }
+		command = { type = province_revoltrisk which = 	1470	 value = 100 }
+		command = { type = province_revoltrisk which = 	1471	 value = 100 }
+		command = { type = province_revoltrisk which = 	1472	 value = 100 }
+		command = { type = province_revoltrisk which = 	1474	 value = 100 }
+		command = { type = province_revoltrisk which = 	1475	 value = 100 }
+		command = { type = province_revoltrisk which = 	1476	 value = 100 }
+		command = { type = province_revoltrisk which = 	1477	 value = 100 }
+		command = { type = province_revoltrisk which = 	1478	 value = 100 }
+		command = { type = province_revoltrisk which = 	1479	 value = 100 }
+		command = { type = province_revoltrisk which = 	1480	 value = 100 }
+		command = { type = province_revoltrisk which = 	1481	 value = 100 }
+		command = { type = province_revoltrisk which = 	1482	 value = 100 }
+		command = { type = province_revoltrisk which = 	1483	 value = 100 }
+		command = { type = province_revoltrisk which = 	1494	 value = 100 }
+		command = { type = province_revoltrisk which = 	1505	 value = 100 }
+		command = { type = province_revoltrisk which = 	1506	 value = 100 }
+		command = { type = province_revoltrisk which = 	1507	 value = 100 }
+		command = { type = province_revoltrisk which = 	1508	 value = 100 }
+		command = { type = province_revoltrisk which = 	1509	 value = 100 }
+		command = { type = province_revoltrisk which = 	1510	 value = 100 }
+		command = { type = province_revoltrisk which = 	1511	 value = 100 }
+		command = { type = province_revoltrisk which = 	1512	 value = 100 }
+		command = { type = province_revoltrisk which = 	1513	 value = 100 }
+		command = { type = province_revoltrisk which = 	1514	 value = 100 }
+		command = { type = province_revoltrisk which = 	1515	 value = 100 }
+		command = { type = province_revoltrisk which = 	1516	 value = 100 }
+		command = { type = province_revoltrisk which = 	1517	 value = 100 }
+		command = { type = province_revoltrisk which = 	1518	 value = 100 }
+		command = { type = province_revoltrisk which = 	1519	 value = 100 }
+		command = { type = province_revoltrisk which = 	1877	 value = 100 }
+		command = { type = province_revoltrisk which = 	1878	 value = 100 }
+		command = { type = province_revoltrisk which = 	3771	 value = 100 }
+		command = { type = province_revoltrisk which = 	3772	 value = 100 }
+		command = { type = province_revoltrisk which = 	3773	 value = 100 }
+		command = { type = province_revoltrisk which = 	3774	 value = 100 }
+		command = { type = province_revoltrisk which = 	3775	 value = 100 }
+		command = { type = province_revoltrisk which = 	3776	 value = 100 }
+
+		command = { type = province_revoltrisk which = 3777 value = 100  }
+		command = { type = province_revoltrisk which = 3778 value = 100  }
+		command = { type = province_revoltrisk which = 3779 value = 100  }
+		command = { type = province_revoltrisk which = 3780 value = 100  }
+		command = { type = province_revoltrisk which = 3781 value = 100  }
+		command = { type = province_revoltrisk which = 3782 value = 100  }
+		command = { type = province_revoltrisk which = 3783 value = 100  }
+		command = { type = province_revoltrisk which = 3784 value = 100  }
+		command = { type = province_revoltrisk which = 3785 value = 100  }
+		command = { type = province_revoltrisk which = 3786 value = 100  }
+		command = { type = province_revoltrisk which = 3787 value = 100  }
+		command = { type = province_revoltrisk which = 3788 value = 100  }
+		command = { type = province_revoltrisk which = 3789 value = 100  }
+		command = { type = province_revoltrisk which = 3790 value = 100  }
+		command = { type = province_revoltrisk which = 3791 value = 100  }
+		command = { type = province_revoltrisk which = 3792 value = 100  }
+		command = { type = province_revoltrisk which = 3793 value = 100  }
+		command = { type = province_revoltrisk which = 3794 value = 100  }
+		command = { type = province_revoltrisk which = 3795 value = 100  }
+		command = { type = province_revoltrisk which = 3796 value = 100  }
+		command = { type = province_revoltrisk which = 3797 value = 100  }
+		command = { type = province_revoltrisk which = 3798 value = 100  }
+		command = { type = province_revoltrisk which = 3799 value = 100  }
+		command = { type = province_revoltrisk which = 3800 value = 100  }
+		command = { type = province_revoltrisk which = 3801 value = 100  }
+		command = { type = province_revoltrisk which = 3802 value = 100  }
+		command = { type = province_revoltrisk which = 3803 value = 100  }
+		command = { type = province_revoltrisk which = 3804 value = 100  }
+		command = { type = province_revoltrisk which = 3805 value = 100  }
+		command = { type = province_revoltrisk which = 3806 value = 100  }
+		command = { type = province_revoltrisk which = 3807 value = 100  }
+		command = { type = province_revoltrisk which = 3808 value = 100  }
+		command = { type = province_revoltrisk which = 3809 value = 100  }
+		command = { type = province_revoltrisk which = 3810 value = 100  }
+		command = { type = province_revoltrisk which = 3811 value = 100  }
+		command = { type = province_revoltrisk which = 3812 value = 100  }
+		command = { type = province_revoltrisk which = 3813 value = 100  }
+		command = { type = province_revoltrisk which = 3814 value = 100  }
+		command = { type = province_revoltrisk which = 3815 value = 100  }
+		command = { type = province_revoltrisk which = 3816 value = 100  }
+		command = { type = province_revoltrisk which = 3817 value = 100  }
+		command = { type = province_revoltrisk which = 3818 value = 100  }
+		command = { type = province_revoltrisk which = 3819 value = 100  }
+		command = { type = province_revoltrisk which = 3820 value = 100  }
+		command = { type = province_revoltrisk which = 3821 value = 100  }
+		command = { type = province_revoltrisk which = 3822 value = 100  }
+		command = { type = province_revoltrisk which = 3823 value = 100  }
+		command = { type = province_revoltrisk which = 3824 value = 100  }
+		command = { type = province_revoltrisk which = 3825 value = 100  }
+		command = { type = province_revoltrisk which = 3826 value = 100  }
+		command = { type = province_revoltrisk which = 3827 value = 100  }
+		command = { type = province_revoltrisk which = 3828 value = 100  }
+		command = { type = province_revoltrisk which = 3829 value = 100  }
+		command = { type = province_revoltrisk which = 3830 value = 100  }
+		command = { type = province_revoltrisk which = 3831 value = 100  }
+		command = { type = province_revoltrisk which = 3832 value = 100  }
+		command = { type = province_revoltrisk which = 3833 value = 100  }
+		command = { type = province_revoltrisk which = 3834 value = 100  }
+		command = { type = province_revoltrisk which = 3835 value = 100  }
+		command = { type = province_revoltrisk which = 3836 value = 100  }
+		command = { type = province_revoltrisk which = 3837 value = 100  }
+		command = { type = province_revoltrisk which = 3838 value = 100  }
+		command = { type = province_revoltrisk which = 3839 value = 100  }
+		command = { type = province_revoltrisk which = 3840 value = 100  }
+		command = { type = province_revoltrisk which = 3841 value = 100  }
+		command = { type = province_revoltrisk which = 3842 value = 100  }
+		command = { type = province_revoltrisk which = 3844 value = 100  }
+		command = { type = province_revoltrisk which = 3845 value = 100  }
+		command = { type = province_revoltrisk which = 3846 value = 100  }
+		command = { type = province_revoltrisk which = 3847 value = 100  }
+		command = { type = province_revoltrisk which = 3848 value = 100  }
+		command = { type = province_revoltrisk which = 3849 value = 100  }
+		command = { type = province_revoltrisk which = 3850 value = 100  }
+		command = { type = province_revoltrisk which = 3851 value = 100  }
+		command = { type = province_revoltrisk which = 3852 value = 100  }
+		command = { type = province_revoltrisk which = 3853 value = 100  }
+		command = { type = province_revoltrisk which = 3854 value = 100  }
+		command = { type = province_revoltrisk which = 3855 value = 100  }
+		command = { type = province_revoltrisk which = 3856 value = 100  }
+		command = { type = province_revoltrisk which = 3857 value = 100  }
+		command = { type = province_revoltrisk which = 3858 value = 100  }
+		command = { type = province_revoltrisk which = 3859 value = 100  }
+		command = { type = province_revoltrisk which = 3860 value = 100  }
+		command = { type = province_revoltrisk which = 3861 value = 100  }
+		command = { type = province_revoltrisk which = 3862 value = 100  }
+		command = { type = province_revoltrisk which = 3863 value = 100  }
+		command = { type = province_revoltrisk which = 3950 value = 100  }
+		command = { type = province_revoltrisk which = 3843 value = 100  }
+		command = { type = province_revoltrisk which = 2675 value = 100  }
+
+		command = { type = revolt which = 3777 }
+		command = { type = revolt which = 3778 }
+		command = { type = revolt which = 3779 }
+		command = { type = revolt which = 3780 }
+		command = { type = revolt which = 3781 }
+		command = { type = revolt which = 3782 }
+		command = { type = revolt which = 3783 }
+		command = { type = revolt which = 3784 }
+		command = { type = revolt which = 3785 }
+		command = { type = revolt which = 3786 }
+		command = { type = revolt which = 3787 }
+		command = { type = revolt which = 3788 }
+		command = { type = revolt which = 3789 }
+		command = { type = revolt which = 3790 }
+		command = { type = revolt which = 3791 }
+		command = { type = revolt which = 3792 }
+		command = { type = revolt which = 3793 }
+		command = { type = revolt which = 3794 }
+		command = { type = revolt which = 3795 }
+		command = { type = revolt which = 3796 }
+		command = { type = revolt which = 3797 }
+		command = { type = revolt which = 3798 }
+		command = { type = revolt which = 3799 }
+		command = { type = revolt which = 3800 }
+		command = { type = revolt which = 3801 }
+		command = { type = revolt which = 3802 }
+		command = { type = revolt which = 3803 }
+		command = { type = revolt which = 3804 }
+		command = { type = revolt which = 3805 }
+		command = { type = revolt which = 3806 }
+		command = { type = revolt which = 3807 }
+		command = { type = revolt which = 3808 }
+		command = { type = revolt which = 3809 }
+		command = { type = revolt which = 3810 }
+		command = { type = revolt which = 3811 }
+		command = { type = revolt which = 3812 }
+		command = { type = revolt which = 3813 }
+		command = { type = revolt which = 3814 }
+		command = { type = revolt which = 3815 }
+		command = { type = revolt which = 3816 }
+		command = { type = revolt which = 3817 }
+		command = { type = revolt which = 3818 }
+		command = { type = revolt which = 3819 }
+		command = { type = revolt which = 3820 }
+		command = { type = revolt which = 3821 }
+		command = { type = revolt which = 3822 }
+		command = { type = revolt which = 3823 }
+		command = { type = revolt which = 3824 }
+		command = { type = revolt which = 3825 }
+		command = { type = revolt which = 3826 }
+		command = { type = revolt which = 3827 }
+		command = { type = revolt which = 3828 }
+		command = { type = revolt which = 3829 }
+		command = { type = revolt which = 3830 }
+		command = { type = revolt which = 3831 }
+		command = { type = revolt which = 3832 }
+		command = { type = revolt which = 3833 }
+		command = { type = revolt which = 3834 }
+		command = { type = revolt which = 3835 }
+		command = { type = revolt which = 3836 }
+		command = { type = revolt which = 3837 }
+		command = { type = revolt which = 3838 }
+		command = { type = revolt which = 3839 }
+		command = { type = revolt which = 3840 }
+		command = { type = revolt which = 3841 }
+		command = { type = revolt which = 3842 }
+		command = { type = revolt which = 3844 }
+		command = { type = revolt which = 3845 }
+		command = { type = revolt which = 3846 }
+		command = { type = revolt which = 3847 }
+		command = { type = revolt which = 3848 }
+		command = { type = revolt which = 3849 }
+		command = { type = revolt which = 3850 }
+		command = { type = revolt which = 3851 }
+		command = { type = revolt which = 3852 }
+		command = { type = revolt which = 3853 }
+		command = { type = revolt which = 3854 }
+		command = { type = revolt which = 3855 }
+		command = { type = revolt which = 3856 }
+		command = { type = revolt which = 3857 }
+		command = { type = revolt which = 3858 }
+		command = { type = revolt which = 3859 }
+		command = { type = revolt which = 3860 }
+		command = { type = revolt which = 3861 }
+		command = { type = revolt which = 3862 }
+		command = { type = revolt which = 3863 }
+		command = { type = revolt which = 3950 }
+		command = { type = revolt which = 3843 }
+		command = { type = revolt which = 2675 }
+
+ }
+ }
+event = {
+id = 3407
+random = no
+country = ENG
+	persistent = yes
+
+name = "EVT_3406_NAME"
+desc = "EVT_3406_DESC"
+picture = "india"
+style = 0
+
+
+action_a = {
+name = "ACTIONNAME3406A" 
+		command = { type = independence which = PAK value = 1  }
+		command = { type = independence which = IND value = 1  }
+		command = { type = independence which = U07 value = 1  }
+		command = { type = independence which = U80 value = 1  }
+		command = { type = alliance which = PAK  }
+		command = { type = alliance which = IND  }
+		command = { type = trigger which = 900127  }
+		command = { type = trigger which = 900130  }
+ }
+ }
+
+#########################################################################
+#  The Independance of 印尼 (Edited by 兰々)
+#########################################################################
+event = {
+id = 102
+random = no
+country = HOL
+
+trigger = {
+government = democratic
+                OR = {
+                       and = {
+                               control = { province = 47 data = HOL  }
+                               ATWAR = YES
+        }
+                       and = {
+               NOT = { exists = GER  }  
+                               ATWAR = NO
+        }
+ }
+control = { province = 1631 data = HOL  } # 雅加达
+NOT = { exists = INO  }
+ }
+
+name = "EVT_121_NAME"
+desc = "EVT_121_DESC"
+picture = "indonesia" #needs event picture
+style = 0
+
+date = { day = 16 month = august year = 1945  }
+offset = 30
+deathdate = { day = 29 month = december year = 1999  }
+
+action_a = {
+name = "EVT_121_ACTA"
+ai_chance = 25
+		command = { type = independence which = INO  }
+		command = { type = trigger which = 103  }
+		command = { type = sleepevent which = 15134  }
+ }
+action_b = {
+name = "EVT_121_ACTB"
+ai_chance = 75
+		command = { type = independence which = INO  }
+		command = { type = trigger which = 103  }
+		command = { type = trigger which = 8206001  }
+		command = { type = dissent value = 20  }
+#		command = { type = province_revoltrisk which = 1631 value = 100  }
+#		command = { type = revolt which = 1631  }
+#		command = { type = province_revoltrisk which = 1355 value = 100  }
+#		command = { type = revolt which = 1355  }
+#		command = { type = province_revoltrisk which = 1358 value = 100  }
+#		command = { type = revolt which = 1358  }
+#		command = { type = province_revoltrisk which = 1632 value = 100  }
+#		command = { type = revolt which = 1632  }
+#		command = { type = province_revoltrisk which = 1640 value = 100  }
+#		command = { type = revolt which = 1640  }
+#		command = { type = province_revoltrisk which = 1665 value = 100  }
+#		command = { type = revolt which = 1665  }
+ }
+ }
+
+event = {
+id = 103
+random = no
+country = INO
+style = 0
+
+name = "EVT_122_NAME" ### needs event desc
+desc = "EVT_121_DESC"
+picture = "events_empty"
+
+# triggered by HOL 102
+
+action_a = {
+ai_chance = 100
+name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10  }
+		command = { type = set_domestic which = democratic value = 4  }
+		command = { type = set_domestic which = political_left value = 4  }
+		command = { type = headofstate which = 577011  }
+		command = { type = headofgovernment which = 577014  }
+		command = { type = foreignminister which = 577017  }
+		command = { type = armamentminister which = 577024  }
+		command = { type = ministerofsecurity which = 577062  }
+		command = { type = ministerofintelligence which = 577035  }
+		command = { type = chiefofstaff which = 577038  }
+		command = { type = chiefofarmy which = 577043  }
+		command = { type = chiefofnavy which = 577049  }
+		command = { type = chiefofair which = 577052  }
+ }
+ }
+
+
+#######################################
+### #斯里蘭卡
+#######################################
+event = {
+	id = 340801
+	random = no
+	country = ENG
+
+
+	trigger = {
+		government = democratic
+		random = 80
+                OR = {
+                       and = {
+		               control = { province = 19 data = ENG } # 伦敦
+                               ATWAR = YES
+		       }
+                       and = {
+		               NOT = { exists = GER }  
+                               ATWAR = NO
+		       }
+		}
+		control = { province = 1517 data = ENG } # 科隆坡
+		NOT = {
+			exists = U83
+		}
+	}
+
+	name = "錫蘭的獨立"
+	desc = "EVT_3406_DESC"
+#	picture = "india"
+	style = 0
+
+	date = { day = 3 month = february year = 1948 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	action_a = {
+		name = "ACTIONNAME3406A" 
+		command = { type = independence which = U83 value = 1 }
+	}
+}
+#######################################
+### #阿爾及利亞
+#######################################
+
+#######################################
+### #法蘭西共同體
+#######################################
+event = {
+	id = 340802
+	random = no
+	country = FRA
+
+
+	trigger = {
+		flag = French_Fifth_Republic #or something similar
+		government = democratic
+	}
+
+	name = "法蘭西共同體"
+	desc = "隨著非洲的民族獨立運動不斷發展，1946年建立的“法蘭西聯邦”
+		日趨瓦解。1958年9月法國製訂的第五共和國憲法規定，把“法
+		蘭西聯邦”改為“法蘭西共同體”。共同體各成員國在內政、經
+		濟方面享有自主權，但外交、國防等仍由法國控制。1959年2月，
+		共同體正式成立。除幾內亞獨立外，馬達加斯加、達荷美等所有
+		海外領地均加入。"
+	style = 0
+
+	date = { day = 0 month = september year = 1958 }
+	offset = 15
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	action_a = {
+		name = "成立 " 
+		command = { type = trigger which = 340803 }
+	}
+}
+event = {
+	id = 340803
+	random = no
+	country = U01
+
+	name = "法蘭西共同體的成立"
+	desc = "隨著非洲的民族獨立運動不斷發展，1946年建立的“法蘭西聯邦”
+		日趨瓦解。1958年9月法國製訂的第五共和國憲法規定，把“法
+		蘭西聯邦”改為“法蘭西共同體”。共同體各成員國在內政、經
+		濟方面享有自主權，但外交、國防等仍由法國控制。1959年2月，
+		共同體正式成立。除幾內亞獨立外，馬達加斯加、達荷美等所有
+		海外領地均加入。"
+
+	action_a = {
+		name = "OK" 
+#		command = { type = independence which = ALG value = 1 }
+		command = { type = independence which = BEN value = 1 }
+#		command = { type = independence which = CAM value = 1 }
+		command = { type = independence which = GAB value = 1 } #加彭
+		command = { type = independence which = GUI value = 1 } #幾內亞
+		command = { type = independence which = MAD value = 1 } #馬達加斯加
+		command = { type = independence which = MAL value = 1 } #馬利
+		command = { type = independence which = U81 value = 1 } #布吉納法索
+		command = { type = independence which = U82 value = 1 } #中非共和國
+		command = { type = independence which = U84 value = 1 } #查德
+		command = { type = independence which = U85 value = 1 } #剛果(布)
+		command = { type = independence which = U88 value = 1 } #象牙海岸
+		command = { type = independence which = U93 value = 1 } #茅利塔尼亞
+		command = { type = independence which = U94 value = 1 } #尼日
+#		command = { type = independence which = U99 value = 1 } #多哥
+		command = { type = trigger which = 340804 value = 1 }
+		command = { type = trigger which = 340806 value = 1 }
+		command = { type = trigger which = 340808 value = 1 }
+		command = { type = trigger which = 340810 value = 1 }
+		command = { type = trigger which = 340812 value = 1 }
+		command = { type = trigger which = 340814 value = 1 }
+		command = { type = trigger which = 340816 value = 1 }
+		command = { type = trigger which = 340818 value = 1 }
+		command = { type = trigger which = 340820 value = 1 }
+		command = { type = trigger which = 340822 value = 1 }
+		command = { type = trigger which = 340824 value = 1 }
+		command = { type = trigger which = 340826 value = 1 }
+#		command = { type = trigger which = 340828 value = 1 }
+	}
+}
+
+############### #貝寧 ############### 
+event = {
+	id = 340804
+	random = no
+	country = BEN
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340805 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = BEN_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340805
+	random = no
+	country = FRA
+
+	name = "貝寧加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = BEN }
+	}
+}
+
+event = {
+	id = 340830
+	country = BEN 
+	persistent = yes
+
+	name = "貝寧的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1006 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 21 month = july year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340831
+
+############### #加彭 ############### 
+event = {
+	id = 340806
+	random = no
+	country = GAB
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340807 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = GAB_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340807
+	random = no
+	country = FRA
+
+	name = "加彭加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = GAB }
+	}
+}
+
+event = {
+	id = 340832
+	country = GAB
+	persistent = yes
+
+	name = "加彭的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1092 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 7 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340833
+############### #幾內亞 ############### 
+event = {
+	id = 340808
+	random = no
+	country = GUI
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 1
+		command = { type = trigger which = 340809 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = GUI_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 99
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340809
+	random = no
+	country = FRA
+
+	name = "幾內亞加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = GUI }
+	}
+}
+
+event = {
+	id = 340834
+	country = GUI
+	persistent = yes
+
+	name = "幾內亞的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 987 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 21 month = july year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340835
+############### #馬達加斯加 ############### 
+event = {
+	id = 340810
+	random = no
+	country = MAD
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340811 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = MAD_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340811
+	random = no
+	country = FRA
+
+	name = "馬達加斯加加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = MAD }
+	}
+}
+
+event = {
+	id = 340836
+	country = MAD
+	persistent = yes
+
+	name = "馬達加斯加的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1137 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 16 month = june year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340837
+############### #馬利 ############### 
+event = {
+	id = 340812
+	random = no
+	country = MAL
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340813 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = MAL_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340813
+	random = no
+	country = FRA
+
+	name = "馬利加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = MAL }
+	}
+}
+
+event = {
+	id = 340838
+	country = MAL
+	persistent = yes
+
+	name = "馬利的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 985 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 10 month = june year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340839
+############### #上伏塔(布吉納法索) ############### 
+event = {
+	id = 340814
+	random = no
+	country = U81
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340815 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U81_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340815
+	random = no
+	country = FRA
+
+	name = "上伏塔(布吉納法索)加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U81 }
+	}
+}
+event = {
+	id = 340840
+	country = U81
+	persistent = yes
+
+	name = "上伏塔(布吉納法索)的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 997 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 25 month = july year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340841
+############### #中非共和國 ############### 
+event = {
+	id = 340816
+	random = no
+	country = U82
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340817 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U82_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340817
+	random = no
+	country = FRA
+
+	name = "中非共和國加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U82 }
+	}
+}
+event = {
+	id = 340842
+	country = U82
+	persistent = yes
+
+	name = "中非共和國的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1078 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 3 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340843
+############### #查德 ############### 
+event = {
+	id = 340818
+	random = no
+	country = U84
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340819 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U84_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340819
+	random = no
+	country = FRA
+
+	name = "查德加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U84 }
+	}
+}
+
+event = {
+	id = 340844
+	country = U84
+	persistent = yes
+
+	name = "查德的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1080 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 1 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340845
+############### #剛果(布) ############### 
+event = {
+	id = 340820
+	random = no
+	country = U85
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340821 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U85_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340821
+	random = no
+	country = FRA
+
+	name = "剛果(布)加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U85 }
+	}
+}
+
+event = {
+	id = 340846
+	country = U85
+	persistent = yes
+
+	name = "剛果(布)的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 1075 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 5 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340847
+############### #象牙海岸 ############### 
+event = {
+	id = 340822
+	random = no
+	country = U88
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340823 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U88_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340823
+	random = no
+	country = FRA
+
+	name = "象牙海岸加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U88 }
+	}
+}
+
+event = {
+	id = 340848
+	country = U88
+	persistent = yes
+
+	name = "象牙海岸的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 993 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 21 month = july year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340849
+############### #茅利塔尼亞 ############### 
+event = {
+	id = 340824
+	random = no
+	country = U93
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340825 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U93_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340825
+	random = no
+	country = FRA
+
+	name = "茅利塔尼亞加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U93 }
+	}
+}
+
+event = {
+	id = 340850
+	country = U93
+	persistent = yes
+
+	name = "茅利塔尼亞的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 973 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 8 month = november year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340851
+############### #尼日 ############### 
+event = {
+	id = 340826
+	random = no
+	country = U94
+
+	name = "加入法蘭西共同體？"
+	desc = "1958年法蘭西第五共和國憲法規定，成立法蘭西共同體代替法蘭
+		西聯邦，法國總統任共同體總統，各成員國在內政、經濟方面有
+		自主權，法國政府設有專門負責與這些國家磋商合作政策的部門
+		，外交防務等方面仍受法國控制，所有海外領地可以自行決定加
+		入共同體或獨立。"
+
+	action_a = {
+		name = "加入" 
+		ai_chance = 99
+		command = { type = trigger which = 340827 }
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+    		command = { type = steal_tech which = FRA } #some benefit
+    		command = { type = steal_tech which = FRA } #some benefit
+#		command = { type = setflag which = U94_join_FC }
+	}
+	action_b = {
+		name = "獨立" 
+		ai_chance = 1
+		command = { type = dissent value = -5 }
+    		command = { type = relation which = FRA value = -20 }
+	}
+}
+
+event = {
+	id = 340827
+	random = no
+	country = FRA
+
+	name = "尼日加入法蘭西共同體"
+
+	action_a = {
+		name = "OK" 
+		command = { type = dissent value = -1 }
+		command = { type = make_puppet which = U94 }
+	}
+}
+
+event = {
+	id = 340852
+	country = U94
+	persistent = yes
+
+	name = "尼日的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 998 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 23 month = july year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+
+#340853
+############### #塞內加爾 ############### 
+
+# 340828,340829 deleted
+# U96 independence moved to Africa.txt
+
+event = {
+	id = 340854
+	country = U96
+	persistent = yes
+
+	name = "塞內加爾的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		ispuppet = -1
+		control = { province = 981 data = -1 }
+#		flag = cold_war
+#		NOT = { government = fascist }
+	}
+
+	date = { day = 10 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = dissent value = -5 }
+		command = { type = end_puppet }
+	}
+
+	action_b = {
+		name = "留在共同體 "
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+    		command = { type = relation which = FRA value = 20 }
+	}
+}
+#340855
+
+#######################################
+### #安哥拉
+#######################################
+
+#######################################
+### #喀麥隆
+#######################################
+event = {
+	id = 340868
+	country = ALS
+	persistent = yes
+
+	name = "對喀麥隆的託管到期"
+	desc = " "
+	style = 0
+
+	trigger = {
+		OR = {
+			control = { province = 1077 data = U01 }			
+			control = { province = 1077 data = -1 }
+			control = { province = 1077 data = FRA }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 21 month = december year = 1959 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "終止託管 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 340869 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340870 }
+#	}
+}
+
+event = {
+	id = 340869
+	country = U01
+	persistent = yes
+
+	name = "對喀麥隆的託管到期"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = independence which = CAM value = 1 }
+		command = { type = trigger which = 340871 }
+	}
+}
+
+event = {
+	id = 340870
+	country = U01
+	persistent = yes
+
+	name = "摩洛哥保護領動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340871
+	country = CAM
+	persistent = yes
+
+	name = "喀麥隆的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#####################################
+#8212051~8212052 CMB independent
+##### The Independance of 柬埔寨 (puppet at first!)
+#####################################
+event = {
+	id = 2030006
+	random = no
+	country = FRA
+
+	trigger = {
+		government = democratic
+		OR = { war = { country = FRA country = U72 }
+			atwar = no }
+#		random = 8 # 8% chance every month
+		control = { province = 1340 data = FRA } # Phnom Phen
+		NOT = {
+			exists = CMB
+			exists = GER
+		}
+	}
+
+	name = "EVT_123_NAME"
+	desc = "EVT_123_DESC"
+	style = 2
+#	picture = "news_paper"
+
+	date = { day = 1 month = july year = 1945 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_123_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = CMB value = 1 }
+		command = { type = trigger which = 2119001 }
+		command = { type = trigger which = 2002023 }
+		command = { type = removecore which = 3720 }
+		command = { type = removecore which = 3721 }
+		command = { type = removecore which = 3718 }
+		command = { type = removecore which = 3719 }
+		command = { type = removecore which = 3717 }
+		command = { type = removecore which = 1340 }
+		command = { type = removecore which = 1339 }
+
+	}
+	action_b = {
+		name = "EVT_123_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2119001
+	random = no
+	country = CMB
+	style = 2
+#	picture = "news_paper"
+
+	trigger = {
+		}
+
+	name = "EVT_124_NAME"
+	desc = "EVT_123_DESC"
+
+	# triggered by FRA 2030006
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 590011 }
+		command = { type = headofgovernment which = 590017 }
+		command = { type = foreignminister which = 590067 }
+		command = { type = armamentminister which = 590029 }
+		command = { type = ministerofsecurity which = 590035 }
+		command = { type = ministerofintelligence which = 590040 }
+		command = { type = chiefofstaff which = 590044 }
+		command = { type = chiefofarmy which = 590048 }
+		command = { type = chiefofnavy which = 590052 }
+		command = { type = chiefofair which = 590056 }
+		}
+	}
+
+
+event = {
+	id = 8212053
+	country = CMB
+
+  	name = "柬埔寨独立 " 
+  	desc = "柬埔寨在1863年沦为法国保护国。1940年被日本占领。1945年日 本投降后被法国重新占领。1953年11月9日独立。 "
+  	style = 0
+  	
+  	trigger = {
+    		puppet = { country = CMB country = FRA }
+  	} 
+
+	date = { day = 0 month = january year = 1953 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = FRA }
+	}
+}
+#######################################
+### #剛果-Leopoldville
+#######################################
+
+#######################################
+### #伊拉克
+#######################################
+event = {
+        id = 2001073
+        random = no
+        country = IRQ
+	
+	trigger = { NOT = { exists = GER }
+			event = 44 }
+
+        name = "伊拉克的獨立"
+        desc = "EVT_147_DESC"
+        style = 2
+    #	picture = "news_paper"
+
+	date = { day = 1 month = may year = 1943 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+        action_a = {
+            name = ACTION_NAME_OK
+		command = { type = end_puppet }
+		command = { type = leave_alliance }
+            }
+        }
+################
+#不丹独立
+#############################################
+event = {
+  	id = 204110
+  	random = no
+  	country = BHU
+  
+  	name = "不丹独立 " 
+  	desc = "印度独立后于1949年8月同不丹签订《永久和平与友好条约》。规 定不丹对外关系受印度“指导”。不丹不再受英国控制 "
+  	style = 0
+  
+  	trigger = {
+# 		ispuppet = BHU
+  	} 
+  	date = { day = 1 month = august year = 1949 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1970 }
+  
+  	action_a = {
+    		name = "脱离了英国，却投入印度 "
+    		command = { type = end_puppet }
+		command = { type = leave_alliance }
+  	}
+}
+#######################################
+### #賽普勒斯
+#######################################
+
+#######################################
+### #埃及
+#######################################
+event = {
+	id = 8212081
+	country = ENG
+	persistent = yes
+
+	name = "EVT_125_NAME"
+	desc = "EVT_125_DESC"
+	style = 2
+#	picture = "news_paper"
+
+	trigger = {
+		government = democratic
+#		random = 8 # 8% chance every month
+		control = { province = 903 data = ENG } # Cairo
+		atwar = no
+		NOT = {
+			exists = EGY
+			exists = GER
+		}
+	}
+
+	date = { day = 0 month = january year = 1945 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1949 }
+
+	action_a = {
+		name = EVT_LIBERATE
+		ai_chance = 90
+		command = { type = independence which = EGY value = 1 }
+#		command = { type = make_puppet which = EGY }
+		command = { type = trigger which = 8212082 }
+	}
+
+	action_b = {
+		name = EVT_DONTLIBERATE
+		ai_chance = 10
+		command = { type = dissent value = 3 }
+	}
+}
+
+event = {
+	id = 8212082
+	country = EGY
+
+	name = EVT_MILACCESS_NAME
+	desc = EVT_MILACCESS_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	action_a = {
+		name = EVT_MILACCESS_A
+		command = { type = leave_alliance }
+		command = { type = access which = ENG }
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 4 }
+		command = { type = headofstate which = 340011 }
+		command = { type = headofgovernment which = 340016 }
+		command = { type = foreignminister which = 340033 }
+		command = { type = armamentminister which = 340047 }
+		command = { type = ministerofsecurity which = 340061 }
+		command = { type = ministerofintelligence which = 340072 }
+		command = { type = chiefofstaff which = 340078 }
+		command = { type = chiefofarmy which = 340083 }
+		command = { type = chiefofnavy which = 340087 }
+		command = { type = chiefofair which = 340093 }
+		}
+	}
+
+event = {
+	id = 8212083
+	country = EGY
+
+	name = EVT_FULLINDEPENDENCE_NAME
+	desc = EVT_FULLINDEPENDENCE_DESC
+#	picture = "nwo\colonialism"
+	style = 1
+
+	trigger = {
+		puppet = { country = EGY country = ENG }
+		flag = cold_war
+		NOT = { atwar = ENG }
+	}
+
+	date = { day = 0 month = january year = 1952 }
+	offset = 360
+	deathdate = { day = 29 month = december year = 1956 }
+
+	action_a = {
+		name = EVT_FULLINDEPENDENCE_A
+		command = { type = leave_alliance }
+		command = { type = end_puppet }
+		command = { type = end_access which = ENG }
+	}
+}
+#######################################
+### #衣索比亞
+#######################################
+
+#######################################
+### #迦納
+#######################################
+event = {
+	id = 340876
+	country = ENG
+	persistent = yes
+
+	name = "迦納自治領"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { control = { province = 1002 data = GLD } }
+		OR = {
+			control = { province = 1002 data = -1 }
+			control = { province = 1002 data = U08 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 26 month = february year = 1957 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "給予獨立 "
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 340877 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340878 }
+#	}
+}
+
+event = {
+	id = 340877
+	country = U08
+	persistent = yes
+
+	name = "迦納自治領的建立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = GLD value = 1 }
+		command = { type = trigger which = 340879 }
+	}
+}
+
+event = {
+	id = 340878
+	country = U08
+	persistent = yes
+
+	name = "迦納自治領動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340879
+	country = GLD 
+	persistent = yes
+
+	name = "迦納的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#######################################
+### #圭亞那
+#######################################
+
+#######################################
+### #約旦
+#######################################
+
+event = {
+	id = 2001071
+	random = no
+	country = U08
+
+	trigger = {
+#		government = democratic
+#		random = 8 # 8% chance every month
+		control = { province = 1796 data = U08 } #
+		atwar = no
+		NOT = {
+			exists = JOR
+			exists = GER
+		}
+	}
+
+	name = "EVT_131_NAME"
+	desc = "EVT_131_DESC"
+	style = 2
+#	picture = "news_paper"
+
+	date = { day = 24 month = may year = 1946 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_131_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = JOR value = 1 }
+		command = { type = trigger which = 2075001 }
+	}
+	action_b = {
+		name = "EVT_131_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2075001
+	random = no
+	country = JOR
+	style = 2
+#	picture = "news_paper"
+
+	trigger = { }
+
+	name = "EVT_132_NAME"
+	desc = "EVT_131_DESC"
+
+
+	# triggered by ENG 2001071
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 556001 }
+		command = { type = headofgovernment which = 556038 }
+		command = { type = foreignminister which = 556003 }
+		command = { type = armamentminister which = 556004 }
+		command = { type = ministerofsecurity which = 556020 }
+		command = { type = ministerofintelligence which = 556024 }
+		command = { type = chiefofstaff which = 556027 }
+		command = { type = chiefofarmy which = 556030 }
+		command = { type = chiefofnavy which = 556009 }
+		command = { type = chiefofair which = 556010 }
+		}
+	}
+
+
+#######################################
+### #菲律賓
+#######################################
+event = {
+	id = 2002026
+	random = no
+	country = USA
+
+	trigger = {
+		government = democratic
+#		random = 8 # 8% chance every month
+		control = { province = 1737 data = USA } #Manila
+		atwar = no
+		NOT = {
+			exists = PHI
+			exists = GER
+		}
+	}
+
+	name = "美屬菲律賓的地位"
+	desc = "1946年4月，菲律賓舉行了大選。曼努埃爾·羅哈斯成為第一任菲律賓總統。 1946年7月4日，美國將菲律賓主權轉交與菲律賓，菲律賓獲得完全獨立。"
+	style = 2
+#	picture = "news_paper"
+
+	date = { day = 3 month = july year = 1946 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "給予獨立" 
+		ai_chance = 100
+		command = { type = independence which = PHI value = 1 }
+		command = { type = trigger which = 2002027 }
+	}
+	action_b = {
+		name = "留著也好" 
+		ai_chance = 0
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 2002027
+	random = no
+	country = PHI
+	style = 2
+#	picture = "news_paper"
+
+	trigger = { }
+
+	name = "菲律賓獨立"
+	desc = "1946年4月，菲律賓舉行了大選。曼努埃爾·羅哈斯成為第一任菲律賓總統。 1946年7月4日，美國將菲律賓主權轉交與菲律賓，菲律賓獲得完全獨立。"
+
+
+	# triggered by FRA 2002021
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 6 }
+		command = { type = headofstate which = 50001 }
+		command = { type = headofgovernment which = 50036 }
+		command = { type = foreignminister which = 50043 }
+		command = { type = armamentminister which = 50055 }
+		command = { type = ministerofsecurity which = 50067 }
+		command = { type = ministerofintelligence which = 50081 }
+#		command = { type = chiefofstaff which = 430047 }
+#		command = { type = chiefofarmy which = 430051 }
+#		command = { type = chiefofnavy which = 430054 }
+#		command = { type = chiefofair which = 430057 }
+		}
+	}
+#######################################
+### #利比亞
+#######################################
+event = {
+	id = 340872
+	country = ALS
+	persistent = yes
+
+	name = "利比亞的獨立"
+	desc = "EVT_135_DESC"
+	style = 0
+
+	trigger = {
+		OR = {
+			NOT = { control = { province = 932 data = LBY }	}	
+			NOT = { control = { province = 924 data = LBY }	}
+		}
+#		flag = cold_war
+#		government = government
+	}
+
+	date = { day = 14 month = december year = 1951 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "通過決議 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 340873 }
+	}
+}
+
+event = {
+	id = 340873
+	country = U08
+	persistent = yes
+
+	name = "利比亞的獨立"
+	desc = "EVT_135_DESC"
+	style = 0
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = independence which = LBY value = 1 }
+		command = { type = trigger which = 340874 }
+	}
+}
+
+event = {
+	id = 340874
+	country = U01
+	persistent = yes
+
+	name = "利比亞的獨立"
+	desc = "EVT_135_DESC"
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = trigger which = 340875 }
+		command = { type = secedeprovince which = LBY value = 928 }
+		command = { type = secedeprovince which = LBY value = 1015 }
+		command = { type = secedeprovince which = LBY value = 1016 }
+	}
+}
+
+event = {
+	id = 340875
+	random = no
+	country = LBY
+	style = 0
+
+
+	name = "EVT_136_NAME"
+	desc = "EVT_135_DESC"
+      	picture = "libya"
+
+	action_a = {
+		ai_chance = 100
+		name = "EVT_900127_ACTA"
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 7 }
+		command = { type = set_domestic which = political_left value = 5 }
+		command = { type = headofstate which = 576011 }
+		command = { type = headofgovernment which = 576012 }
+		command = { type = foreignminister which = 576015 }
+		command = { type = armamentminister which = 576017 }
+		command = { type = ministerofsecurity which = 576020 }
+		command = { type = ministerofintelligence which = 576022 }
+		command = { type = chiefofstaff which = 576024 }
+		command = { type = chiefofarmy which = 576026 }
+		command = { type = chiefofnavy which = 576028 }
+		command = { type = chiefofair which = 576030 }
+		}
+	}
+
+#######################################
+### #黎巴嫩
+#######################################
+
+#######################################
+### #馬來西亞
+#######################################
+
+#######################################
+### #摩洛哥
+#######################################
+event = {
+	id = 340856
+	country = FRA
+	persistent = yes
+
+	name = "摩洛哥保護領的終結"
+	desc = " "
+	style = 0
+
+	trigger = {
+		OR = {
+			control = { province = 958 data = U01 }			
+			control = { province = 958 data = -1 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 0 month = march year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 340857 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340858 }
+#	}
+}
+
+event = {
+	id = 340857
+	country = U01
+	persistent = yes
+
+	name = "摩洛哥保護領的終結"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = MOR value = 1 }
+		command = { type = trigger which = 340859 }
+	}
+}
+
+event = {
+	id = 340858
+	country = U01
+	persistent = yes
+
+	name = "摩洛哥保護領動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340859
+	country = MOR
+	persistent = yes
+
+	name = "摩洛哥的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+#######################################
+### #莫三比克
+#######################################
+
+#######################################
+### #納米比亞
+#######################################
+
+#######################################
+### #奈及利亞
+#######################################
+event = {
+	id = 340880
+	country = ENG
+	persistent = yes
+
+	name = "奈及利亞的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { control = { province = 1008 data = NIG } }
+		OR = {
+			control = { province = 1008 data = -1 }
+			control = { province = 1008 data = U08 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 21 month = spetember year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "給予獨立 "
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 340881 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340882 }
+#	}
+}
+
+event = {
+	id = 340881
+	country = U08
+	persistent = yes
+
+	name = "奈及利亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = NIG value = 1 }
+		command = { type = trigger which = 340883 }
+	}
+}
+
+event = {
+	id = 340882
+	country = U08
+	persistent = yes
+
+	name = "奈及利亞動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340883
+	country = NIG
+	persistent = yes
+
+	name = "奈及利亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+#######################################
+### #羅德西亞
+#######################################
+
+#######################################
+### #沙勞越
+#######################################
+
+#######################################
+### #獅子山(賽拉利昂)
+#######################################
+event = {
+	id = 340884
+	country = ENG
+	persistent = yes
+
+	name = "獅子山的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { control = { province = 988 data = SIE } }
+		OR = {
+			control = { province = 988 data = -1 }
+			control = { province = 988 data = U08 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 17 month = april year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "給予獨立 "
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 340885 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340886 }
+#	}
+}
+
+event = {
+	id = 340885
+	country = U08
+	persistent = yes
+
+	name = "獅子山的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = SIE value = 1 }
+		command = { type = trigger which = 340887 }
+	}
+}
+
+event = {
+	id = 340886
+	country = U08
+	persistent = yes
+
+	name = "獅子山動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340887
+	country = SIE
+	persistent = yes
+
+	name = "獅子山的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#######################################
+### #索馬利亞
+#######################################
+
+#######################################
+### #蘇丹
+#######################################
+
+#######################################
+### #敘利亞
+#######################################
+
+#######################################
+### #突尼西亞
+#######################################
+event = {
+	id = 340860
+	country = FRA
+	persistent = yes
+
+	name = "突尼西亞的獨立"
+	desc = TUN_INDEPENDENT_DESC
+	style = 0
+
+	trigger = {
+		OR = {
+			control = { province = 939 data = U01 }			
+			control = { province = 939 data = -1 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 0 month = march year = 1956 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 340861 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340862 }
+#	}
+}
+
+event = {
+	id = 340861
+	country = U01
+	persistent = yes
+
+	name = "突尼西亞的獨立"
+	desc = TUN_INDEPENDENT_DESC
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = TUN value = 1 }
+		command = { type = trigger which = 340863 }
+	}
+}
+
+event = {
+	id = 340862
+	country = U01
+	persistent = yes
+
+	name = "突尼西亞動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340863
+	country = TUN
+	persistent = yes
+
+	name = "突尼西亞的獨立"
+	desc = TUN_INDEPENDENT_DESC
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+
+#######################################
+### #烏干達
+#######################################
+
+#######################################
+### #新加坡
+#######################################
+
+#######################################
+### #甘比亞
+#######################################
+event = {
+	id = 340892
+	country = ENG
+	persistent = yes
+
+	name = "甘比亞的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { control = { province = 982 data = U86 } }
+		OR = {
+			control = { province = 982 data = -1 }
+			control = { province = 982 data = U08 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 8 month = february year = 1965 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "給予獨立 "
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 340893 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340894 }
+#	}
+}
+
+event = {
+	id = 340893
+	country = U08
+	persistent = yes
+
+	name = "甘比亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = U86 value = 1 }
+		command = { type = trigger which = 340895 }
+	}
+}
+
+event = {
+	id = 340894
+	country = U08
+	persistent = yes
+
+	name = "甘比亞動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340895
+	country = U86
+	persistent = yes
+
+	name = "甘比亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#######################################
+### #牙買加
+#######################################
+
+#######################################
+### #肯亞
+#######################################
+
+#######################################
+### #科威特
+#######################################
+
+#######################################
+### #馬爾他
+#######################################
+
+#######################################
+### #盧安達
+#######################################
+
+#######################################
+### #坦尚尼亞
+#######################################
+event = {
+	id = 340888
+	country = ENG
+	persistent = yes
+
+	name = "坦尚尼亞的獨立"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { control = { province = 1140 data = U97 } }
+		OR = {
+			control = { province = 1140 data = -1 }
+			control = { province = 1140 data = U08 }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 29 month = november year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "給予獨立 "
+		ai_chance = 100
+		command = { type = dissent value = 1 }
+		command = { type = trigger which = 340889 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340878 }
+#	}
+}
+
+event = {
+	id = 340889
+	country = U08
+	persistent = yes
+
+	name = "坦尚尼亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "隨它去吧 "
+		ai_chance = 100
+		command = { type = independence which = U97 value = 1 }
+		command = { type = trigger which = 340891 }
+	}
+}
+
+event = {
+	id = 340890
+	country = U08
+	persistent = yes
+
+	name = "坦尚尼亞動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340891
+	country = U97
+	persistent = yes
+
+	name = "坦尚尼亞的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#######################################
+### #
+#######################################
+
+#######################################
+### #多哥
+#######################################
+event = {
+	id = 340864
+	country = ALS
+	persistent = yes
+
+	name = "對多哥蘭的託管到期"
+	desc = " "
+	style = 0
+
+	trigger = {
+		OR = {
+			control = { province = 1003 data = U01 }			
+			control = { province = 1003 data = -1 }
+			control = { province = 1003 data = FRA }
+		}
+#		flag = cold_war
+		government = government
+	}
+
+	date = { day = 17 month = april year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "終止託管 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = trigger which = 340865 }
+	}
+#	action_b = {
+#		name = " "
+#		ai_chance = 0
+#		command = { type = dissent value = -2 }
+#		command = { type = trigger which = 340866 }
+#	}
+}
+
+event = {
+	id = 340865
+	country = U01
+	persistent = yes
+
+	name = "對多哥蘭的託管到期"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "獨立建國 "
+		ai_chance = 100
+		command = { type = independence which = U99 value = 1 }
+		command = { type = trigger which = 340867 }
+	}
+}
+
+event = {
+	id = 340866
+	country = U01
+	persistent = yes
+
+	name = "法屬多哥蘭動盪"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "人心惶惶 "
+		ai_chance = 100
+		command = { type = dissent value = 3 }
+#		command = { type = province_revoltrisk which = 3790 value = 40  }
+	}
+}
+
+event = {
+	id = 340867
+	country = U99
+	persistent = yes
+
+	name = "多哥的獨立"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = " "
+		ai_chance = 100
+		command = { type = dissent value = -1 }
+	}
+}
+#######################################
+### #納米比亞
+#######################################
+
+#######################################
+### #讚比亞
+#######################################
+
+#######################################
+### #波茲瓦納
+#######################################
+
+#######################################
+### #馬拉威
+#######################################
+
+#######################################
+### #南葉門
+#######################################
+
+
+# Burma ceases to be a British puppet
+event = {
+	id = 8214004
+	country = ENG
+	persistent = yes
+
+	name = "EVT_127_NAME"
+	desc = "EVT_127_DESC"
+#	picture = "nwo\independence_of_burma"
+	style = 1
+
+	trigger = {
+		puppet = { country = BUR country = ENG }
+		not = { flag = event_8214004 }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 4
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_127_ACTA
+		ai_chance = 100
+		command = { type = end_mastery which = BUR }
+		command = { type = setflag which = event_8214004 }
+	}
+	
+	action_b = {
+		name = EVT_127_ACTB
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+		command = { type = belligerence value = 7 }
+		command = { type = setflag which = event_8214004 }
+	}
+}
+
+event = {
+	id = 8214006
+	country = ENG
+
+	name = EVT_8020211_NAME
+	desc = EVT_8020211_DESC
+#	picture = "nwo\independence_of_burma"
+	style = 1
+
+	action_a = {
+		name = EVT_8020211_A
+		command = { type = make_puppet which = BUR }
+		command = { type = trigger which = 8214003 }
+	}
+}
+
+##### The Independance of BURMA
+
+event = {
+	id = 108
+	random = no
+	country = ENG
+
+	trigger = {
+		government = democratic
+		random = 8 # 8% chance every month
+		control = { province = 1299 data = ENG } #
+		atwar = no
+		NOT = {
+			exists = BUR
+		}
+	}
+
+	name = "EVT_127_NAME" 
+	desc = "EVT_127_DESC"
+#	picture = "burma"
+	style = 0
+
+	date = { day = 1 month = january year = 1948 }
+	offset = 30
+	deathdate = { day = 30 month = december year = 1963 }
+
+	action_a = {
+		name = "EVT_127_ACTA" 
+		ai_chance = 95
+		command = { type = independence which = BUR value = 1 }
+		command = { type = trigger which = 109 }
+		command = { type = trigger which = 133 }
+	}
+	action_b = {
+		name = "EVT_127_ACTB" 
+		ai_chance = 5
+		command = { type = dissent value = 10 }
+	}
+}
+
+
+event = {
+	id = 109
+	random = no
+	country = BUR
+	style = 0
+
+	trigger = {
+		NOT = { puppet = { country = BUR country = ENG } }
+	}
+
+	date = { day = 0 month = january year = 1948 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+
+	name = "EVT_128_NAME"
+	desc = "EVT_127_DESC"
+#	picture = "burma"
+
+	# triggered by ENG 108
+
+	action_a = {
+		ai_chance = 90
+		name = "EVT_900127_ACTA"
+		command = { type = leave_alliance }
+		command = { type = dissent value = -10 }
+		command = { type = set_domestic which = democratic value = 8 }
+		command = { type = set_domestic which = political_left value = 8 }
+		command = { type = headofstate which = 563012 }
+		command = { type = headofgovernment which = 563054 }
+		command = { type = foreignminister which = 563020 }
+		command = { type = armamentminister which = 563024 }
+		command = { type = ministerofsecurity which = 563028 }
+		command = { type = ministerofintelligence which = 563032 }
+		command = { type = chiefofstaff which = 563036 }
+#		command = { type = chiefofarmy which = 563041 }
+		command = { type = chiefofnavy which = 563046 }
+		command = { type = chiefofair which = 563050 }
+		}
+	}

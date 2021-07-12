@@ -1,0 +1,174 @@
+event = {
+	id = 3450000
+	random = no
+	country = MOR
+	
+	trigger = {
+		OR = {
+			control = { province = 954 data = SPA }
+			control = { province = 955 data = SPA }
+			control = { province = 957 data = SPA }
+			control = { province = 3318 data = SPA }
+		}
+		exists = MOR
+	}
+	
+	name = "Demand the end of the protectorate."
+	desc = "Spain has been controlling a big part of our country since 1913, we could demand them the return of those territories using the UN."
+	style = 0
+	
+	date = { day = 4 month = april year = 1956 }
+		
+	action_a = {
+		ai_chance = 90
+		name = "Ask them via UN."
+		command = { type = setflag which = mor_un }
+	}
+	action_b = {
+		ai_chance = 2
+		name = "Take that land by the force!." #This one is intended for the Human player only.
+		command = { type = war which = SPA }
+	}
+}
+event = {
+	id = 3450001
+	random = no
+	country = ALS
+	
+	trigger = {
+		flag = mor_un
+	}
+	
+	name = "Morocco demands the end of the protectorate."
+	desc = "Morocco has choosen the democratic way to claim his northern lands, should we attend them?."
+	style = 0
+	
+	date = { day = 5 month = april year = 1956 }
+		
+	action_a = {
+		ai_chance = 90
+		name = "We will support their claims."
+		command = { type = clrflag which = mor_un }
+		command = { type = setflag which = un_a_sp }
+		}
+	action_b = {
+		ai_chance = 10
+		name = "That's not our bussiness."
+		command = { type = clrflag which = mor_un }
+		command = { type = relation which = MOR value = -50 }
+		command = { type = relation which = SPA value = 50 }
+		command = { type = relation which = USA value = -20 }
+		command = { type = relation which = SOV value = -20 }
+		}
+}
+event = { 
+	id = 3450002
+	random = no
+	country = SPA
+	
+	trigger = {
+		flag = un_a_sp
+	}
+	
+	name = "UN presures to end protectorate."
+	desc = "Morocco has pressed us via the UN to return the protectorate territories to them. What should we do?."
+	style = 0
+		
+	date = { day = 6 month = april year = 1956 }
+		
+	action_a = {
+		ai_chance = 90
+		name = "Ok, return 'their' provinces." #'Their' has commas because as you know, spain considers Ceuta and Melilla as national provinces.
+		command = { type = clrflag which = un_a_sp }
+		command = { type = secedeprovince which = MOR value = 955 }
+		command = { type = secedeprovince which = MOR value = 3318 }
+		command = { type = relation which = MOR value = 30 }
+		command = { type = dissent value = 5 }
+		}
+	action_b = {
+		ai_chance = 8
+		name = "Disband all our Moroccan possessions."
+		command = { type = clrflag which = un_a_sp }
+		command = { type = secedeprovince which = MOR value = 955 }
+		command = { type = secedeprovince which = MOR value = 957 }
+		command = { type = secedeprovince which = MOR value = 954 }
+		command = { type = secedeprovince which = MOR value = 3318 }
+		command = { type = relation which = MOR value = 100 }
+		command = { type = relation which = ALS value = 50 }
+		command = { type = relation which = USA value = 20 }
+		command = { type = dissent value = 10 }
+		}
+	action_c = {
+		ai_chance = 2
+		name = "Punish those Moors!." #Intended only for human player
+		command = { type = clrflag which = un_a_sp }
+		command = { type = war which = MOR }
+		command = { type = belligerence value = 5 }
+		command = { type = set_relation which = ALS value = -100 }
+		command = { type = set_relation which = MOR value = -200 }
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = USA value = -50 }
+		}
+}
+
+event = {
+	id = 3450003
+	country = MAL
+
+	name = "塞內加爾退出聯邦"
+	desc = " "
+	style = 0
+
+	trigger = {
+		NOT = { ispuppet = -1 } 
+		control = { province = 981 data = -1 }
+#		dissent = 1
+	}
+
+	date = { day = 10 month = august year = 1960 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "聯邦解體 "
+		ai_chance = 100
+		command = { type = dissent value = 2 }
+		command = { type = capital which = 986 }
+		command = { type = independence which = U96 value = 1 } #塞內加爾
+		command = { type = secedeprovince which = U96 value = 981 }
+		command = { type = trigger which = 3450004 }
+	}
+	# possible path: disagree--> civil war
+}
+
+event = {
+	id = 3450004
+	country = MAL
+
+	name = "馬利共和國"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "成立 "
+		ai_chance = 100
+		command = { type = capital which = 986 }
+		command = { type = secedeprovince which = U96 value = 981 }
+		command = { type = trigger which = 3450005 }
+	}
+}
+
+event = {
+	id = 3450005
+	country = U96
+
+	name = "塞內加爾共和國"
+	desc = " "
+	style = 0
+
+	action_a = {
+		name = "成立 "
+		ai_chance = 100
+		command = { type = capital which = 981 }
+	}
+}

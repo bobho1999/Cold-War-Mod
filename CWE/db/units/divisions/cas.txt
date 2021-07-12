@@ -1,0 +1,270 @@
+air_unit_type = 1
+allowed_brigades =  escort
+# 0 - Basic Close Air Support Aircraft
+model = {
+	cost 					= 8
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 200
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 4
+	airdefence				= 1
+	softattack				= 12
+	hardattack				= 7
+	airattack				= 1
+	navalattack				= 4
+	supplyconsumption 		= 0.8
+	range					= 250
+	fuelconsumption			= 2.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved Close Air Support Aircraft
+model = {
+	cost 					= 9
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 200
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 5
+	airdefence				= 1
+	softattack				= 14
+	hardattack				= 10
+	navalattack				= 6
+	airattack				= 2
+	supplyconsumption 		= 1.0
+	range					= 275
+	fuelconsumption			= 2.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced Close Air Support Aircraft
+model = {
+	cost 					= 11
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 200
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 6
+	airdefence				= 2
+	softattack				= 17
+	hardattack				= 12
+	navalattack				= 8
+	airattack				= 3
+	supplyconsumption 		= 1.2
+	range					= 300
+	fuelconsumption			= 2.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+#############################################
+#### Jet propulsion not an advantage to early Cold War
+#### CAS. Planes need to be slow and loiter long to
+#### maximize kill. They remained prop planes for many
+#### years ( turbojets phased in 1945-60 also turboprops)
+#### HOI2 stats retained for CAS 3-5 with small
+#### changes but model descriptions changed.
+#############################################
+# 3 - 1945 CAS --some models are turbojets and some are not
+model = {
+	cost 					= 13
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 250
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 7
+	airdefence				= 4
+	softattack				= 19
+	hardattack				= 13
+	navalattack				= 10
+	airattack				= 5
+	supplyconsumption 		= 1.4
+	range					= 400
+	fuelconsumption			= 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 4 - Improved Turbojet Close Air Support Aircraft
+model = {
+	cost 					= 15
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 300 # was 250
+	defaultorganisation 			= 30
+	morale					= 30
+	surfacedefence				= 8
+	airdefence				= 5
+	softattack				= 21
+	hardattack				= 14
+	navalattack				= 12
+	airattack				= 5
+	supplyconsumption 			= 1.5
+	range					= 450
+	fuelconsumption				= 2.5
+	upgrade_time_factor 			= 0.5
+	upgrade_cost_factor 			= 1.0
+}
+# 5 - Turbojet Close Air Support Aircraft - Naval Version (A-4 Skyhawk)
+model = {
+	cost 					= 15
+	buildtime	 			= 180
+	manpower 				= 2
+	maxspeed 				= 400 # was 300
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 7
+	airdefence				= 6
+	softattack				= 21
+	hardattack				= 15
+	navalattack				= 14
+	airattack				= 5
+	supplyconsumption 		= 1.6
+	range					= 500
+	fuelconsumption			= 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - A-4M
+model = {
+	cost 					= 15
+	buildtime	 			= 190
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 6
+	softattack				= 21
+	hardattack				= 18
+	navalattack				= 15
+	airattack				= 5
+	supplyconsumption 		= 1.7
+	range					= 500
+	fuelconsumption			= 2.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - A-7
+model = {
+	cost 					= 15
+	buildtime	 			= 190
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 6
+	softattack				= 21
+	hardattack				= 19
+	navalattack				= 13
+	airattack				= 5
+	supplyconsumption 		= 1.7
+	range					= 500
+	fuelconsumption			= 3.0
+	# does not upgrade
+}
+
+# 8 - Gunship 1 AC-47D
+model = {
+	cost 					= 15
+	buildtime	 			= 200
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 6
+	softattack				= 25
+	hardattack				= 18
+	navalattack				= 11
+	airattack				= 5
+	supplyconsumption 		= 1.8
+	range					= 500
+	fuelconsumption			= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 9 - Gunship 2 AC-130A / AC
+model = {
+	cost 					= 16
+	buildtime	 			= 200
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 8
+	airdefence				= 7
+	softattack				= 30
+	hardattack				= 20
+	navalattack				= 11
+	airattack				= 5
+	supplyconsumption 		= 2.0
+	range					= 550
+	fuelconsumption			= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 10 - Late Cold War (A-10 Thunderbolt or Sukhoi Frogfoot) purpose-designed
+model = {
+	cost 					= 18
+	buildtime	 			= 200
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 13 # armor engine location etc
+	airdefence				= 10
+	softattack				= 33
+	hardattack				= 25
+	navalattack				= 15
+	airattack				= 5
+	supplyconsumption 		= 2.0
+	range					= 600
+	fuelconsumption			= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 11 - Post Cold War 1995
+model = {
+	cost 					= 19
+	buildtime	 			= 200
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 30
+	morale					= 30
+	surfacedefence			= 14
+	airdefence				= 11
+	softattack				= 36
+	hardattack				= 28
+	navalattack				= 16
+	airattack				= 5
+	supplyconsumption 		= 2.0
+	range					= 600
+	fuelconsumption			= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 12 - Future Stealth CAS
+model = {
+	cost 					= 21
+	buildtime	 			= 220
+	manpower 				= 2
+	maxspeed 				= 500
+	defaultorganisation 	= 40 # stealth
+	morale					= 30
+	surfacedefence			= 30 # stealth
+	airdefence				= 20 # stealth
+	softattack				= 38
+	hardattack				= 30
+	navalattack				= 17
+	airattack				= 5
+	supplyconsumption 		= 2.0
+	range					= 600
+	fuelconsumption			= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

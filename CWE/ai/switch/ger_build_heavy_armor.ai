@@ -1,0 +1,37 @@
+
+military = { 
+	
+	attachment_preferences = {
+
+		infantry = {
+
+			extra1 = {
+			
+				heavy_armor = 100
+			
+			}
+
+		}
+		
+		light_armor = {
+
+			extra1 = {
+			
+				heavy_armor = 100
+			
+			}
+
+		}
+		
+		armor = {
+
+			extra1 = {
+			
+				heavy_armor = 100
+			
+			}
+
+		}
+
+	}
+}

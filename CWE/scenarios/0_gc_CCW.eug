@@ -1,0 +1,141 @@
+name       = "‡ø¹²ƒÈ‘ð "
+panel      = "scenarios/data/nwo_scenario_1945.bmp"
+header = {
+  name       = "Chinese Civil War"
+  startdate  = { year = 1945 }
+  selectable = { AFG ALB ARG AST BEL BHU BOL BRA BUL BUR CAN CHI CHC CGX CHL CMB COL COS CUB CYN CSX CXB CZE DEN DOM ECU EGY ETH FIN GRE GUA HAI HOL HON HUN ICL INO IRE IRQ ITA LEB LIB LUX MEX NEP NIC NOR NZL OMN PAN PAR PER POL POR PRU SAF SAL SCH SIA SPA SWE SYR TIB MON SIK JAP TUR URU USA SOV FRA ENG VEN YEM YUG U02 U72 LAO U03}
+  CHI        = { }
+  CHC        = { }
+  USA        = { }
+  SOV        = { }
+  FRA        = { }
+  ENG        = { }
+  JAP        = { }
+  HOL        = { }
+  INO        = { }
+  U72        = { }
+}
+globaldata = {
+  startdate = { year = 1945 month = october day = 0 }
+  axis = {
+    id          = { type = 15000 id = 2 }
+    participant = { }
+  }
+  allies = {
+    id          = { type = 15000 id = 1 }
+    participant = { USA ENG }
+  }
+  comintern = {
+    id          = { type = 15000 id = 3 }
+    participant = { SOV }
+  }
+  alliance = {
+    id          = { type = 15000 id = 10 }
+    participant = { CHI CGX CSX CYN CXB }
+  }
+  war = {
+    id          = { type = 9430 id = 4 }
+    date        = { year = 1936 month = january day = 0 }
+    enddate     = { year = 1936 month = january day = 0 }
+    attackers   = {
+      id          = { type = 9430 id = 5 }
+      participant = { CHC }
+    }
+    defenders   = {
+      id          = { type = 9430 id = 6 }
+      participant = { CHI CXB CGX CSX CYN }
+    }
+  }
+  enddate   = { year = 1964 month = january day = 0 }
+}
+
+include = "db\events.txt"
+include = "scenarios\CCW\bases.inc"
+include = "scenarios\CCW\vp.inc"
+include = "scenarios\CCW\arg.inc"
+include = "scenarios\CCW\ast.inc"
+include = "scenarios\CCW\can.inc"
+include = "scenarios\CCW\cgx.inc"
+include = "scenarios\CCW\chc.inc"
+include = "scenarios\CCW\chi.inc"
+include = "scenarios\CCW\csx.inc"
+include = "scenarios\CCW\cxb.inc"
+include = "scenarios\CCW\cyn.inc"
+include = "scenarios\CCW\eng.inc"
+include = "scenarios\CCW\france.inc"
+#include = "scenarios\CCW\france_without_idc.inc"
+include = "scenarios\CCW\jap.inc"
+include = "scenarios\CCW\mon.inc"
+include = "scenarios\CCW\por.inc"
+include = "scenarios\CCW\siam.inc"
+include = "scenarios\CCW\sik.inc"
+include = "scenarios\CCW\sov.inc"
+include = "scenarios\CCW\tib.inc"
+include = "scenarios\CCW\UN.inc"
+include = "scenarios\CCW\usa.inc"
+include = "scenarios\CCW\U72.inc"
+include = "scenarios\CCW\cmb.inc"
+include = "scenarios\CCW\bur.inc"
+include = "scenarios\CCW\lao.inc"
+include = "scenarios\CCW\ino.inc"
+include = "scenarios\CCW\hol.inc"
+include = "scenarios\CCW\afg.inc"
+include = "scenarios\CCW\bel.inc"
+include = "scenarios\CCW\bhu.inc"
+include = "scenarios\CCW\bol.inc"
+include = "scenarios\CCW\bra.inc"
+include = "scenarios\CCW\chl.inc"
+include = "scenarios\CCW\col.inc"
+include = "scenarios\CCW\cos.inc"
+include = "scenarios\CCW\cub.inc"
+include = "scenarios\CCW\den.inc"
+include = "scenarios\CCW\dom.inc"
+include = "scenarios\CCW\ecu.inc"
+include = "scenarios\CCW\eth.inc"
+include = "scenarios\CCW\fin.inc"
+include = "scenarios\CCW\gre.inc"
+include = "scenarios\CCW\gua.inc"
+include = "scenarios\CCW\hai.inc"
+include = "scenarios\CCW\hon.inc"
+include = "scenarios\CCW\icl.inc"
+include = "scenarios\CCW\ire.inc"
+include = "scenarios\CCW\irq.inc"
+include = "scenarios\CCW\ita.inc"
+include = "scenarios\CCW\leb.inc"
+include = "scenarios\CCW\lib.inc"
+include = "scenarios\CCW\lux.inc"
+include = "scenarios\CCW\mex.inc"
+include = "scenarios\CCW\nep.inc"
+include = "scenarios\CCW\nic.inc"
+include = "scenarios\CCW\nor.inc"
+include = "scenarios\CCW\nzl.inc"
+include = "scenarios\CCW\omn.inc"
+include = "scenarios\CCW\pan.inc"
+include = "scenarios\CCW\par.inc"
+include = "scenarios\CCW\per.inc"
+include = "scenarios\CCW\pru.inc"
+include = "scenarios\CCW\saf.inc"
+include = "scenarios\CCW\sal.inc"
+include = "scenarios\CCW\sau.inc"
+include = "scenarios\CCW\sch.inc"
+include = "scenarios\CCW\spa.inc"
+include = "scenarios\CCW\swe.inc"
+include = "scenarios\CCW\syr.inc"
+include = "scenarios\CCW\tur.inc"
+include = "scenarios\CCW\uru.inc"
+include = "scenarios\CCW\ven.inc"
+include = "scenarios\CCW\yem.inc"
+include = "scenarios\CCW\egy.inc"
+include = "scenarios\CCW\alb.inc"
+include = "scenarios\CCW\hun.inc"
+include = "scenarios\CCW\bul.inc"
+include = "scenarios\CCW\pol.inc"
+include = "scenarios\CCW\rom.inc"
+include = "scenarios\CCW\yug.inc"
+include = "scenarios\CCW\cze.inc"
+#include = "scenarios\CCW\kor.inc"
+#include = "scenarios\CCW\prk.inc"
+include = "scenarios\CCW\u02.inc"
+#include = "scenarios\CCW\u03.inc"
+include = "scenarios\CCW\u18.inc"
+include = "scenarios\CCW\u19.inc"

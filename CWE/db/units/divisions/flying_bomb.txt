@@ -1,0 +1,70 @@
+air_unit_type = 1
+# 0 --ww2 model
+model = {
+	cost 						= 2
+	buildtime					= 30
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower					= 0
+	maxspeed					= 650
+	surfacedefence				=  5
+	airdefence					=  5
+	strategicattack				= 60
+	softattack					= 0
+	hardattack					= 0
+	range						= 250
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+}
+#1 cruise missile-1959
+model = {
+	cost 						= 3
+	buildtime					= 30
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower					= 0
+	maxspeed					= 950
+	surfacedefence				=  30
+	airdefence					=  30
+	strategicattack				= 60
+	softattack					= 5
+	hardattack					= 20
+	range						= 400
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+}
+#2 imp cruise missile-1979
+model = {
+	cost 						= 3
+	buildtime					= 40
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower					= 0
+	maxspeed					= 950
+	surfacedefence				=  60
+	airdefence					=  60
+	strategicattack				= 60
+	softattack					= 5
+	hardattack					= 60
+	range						= 600
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+}
+
+#3 LR_cruise missile 1991
+model = {
+	cost 						= 4
+	buildtime					= 40
+	defaultorganisation 		= 100
+	morale					= 100
+	manpower					= 0
+	maxspeed					= 950
+	surfacedefence				=  80
+	airdefence					=  80
+	strategicattack				= 80
+	softattack					= 5
+	hardattack					= 80
+	range						= 1000
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+}

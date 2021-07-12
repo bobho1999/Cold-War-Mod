@@ -1,0 +1,74 @@
+# Japan Homeland defense AI File by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 25
+	cavalry 		= 10
+	motorized 		= 5
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 3
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 10
+	garrison		= 0
+    hq 				= 4
+	militia 		= 23
+#				80 %
+	interceptor 	= 5
+	multi_role 		= 0
+	cas 			= 5
+	strategic_bomber = 0
+	tactical_bomber = 0
+	naval_bomber 	= 0
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				10 %
+	battleship 		= 0
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 7
+	light_cruiser 	= 0
+	heavy_cruiser 	= 0
+	battlecruiser 	= 0
+	submarine 		= 0
+	nuclear_submarine = 0
+	transports 		= 3
+#				10 %
+
+	#### Brigades
+	artillery 			= 20
+	sp_artillery 		= 0
+	rocket_artillery	= 0 
+	sp_rct_artillery 	= 0
+	anti_tank 			= 5
+	tank_destroyer 		= 0
+	light_armor_brigade = 10
+	heavy_armor 		= 0
+	super_heavy_armor 	= 0
+	armored_car 		= 15
+	anti_air 			= 5
+	police 				= 20
+	engineer 			= 15
+
+	b_u5 = 0
+	b_u8 = 5
+	b_u9 = 5
+	b_u10 = 0
+	b_u11 = 0
+
+}
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = no
+	home_multiplier 		= 1.5
+	overseas_multiplier 	= 0.5
+}

@@ -1,0 +1,14 @@
+# USA Gear up 1 AI File by Lothos
+
+upgrading = 0.10
+
+###################################
+# Construction and Tech Research
+###################################
+construction = { 
+	max_factor = 0.20 
+	AA_batteries = no
+	radar_station = no
+	air_base = yes
+	naval_base = yes
+}

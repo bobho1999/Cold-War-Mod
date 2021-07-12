@@ -1,0 +1,112 @@
+###################################
+#美国科技发展路径一 (by Civdemof)
+###################################
+technology = { 
+	endgoal 	= { } 
+	preference 	= {
+
+		#Infantry
+		1010 1020 1030 1040 1050 1060
+
+		# Heavy Techs
+		2310 2320 2330 2340 2350 2360 2400 2410 2420 2430 2440 2450 2460 2510 2520 2530 2540 2220 2230 2240 2250
+
+		# Arcriculture
+		5020 5030 5040
+
+		# Inf support
+		1310 1320 1330 1340 1350 1360
+
+		# Production
+		5050 5060 5070 5080 5090 5100 5110 5120
+
+		# Assembly
+		5130 5140 5150 5160 5180
+
+    # Refining
+    5190 5200 5210  
+
+		# Motorized
+		1230 1240 1250
+
+		# Mechanized
+		1260 1270 1280 1290
+
+		# Marines
+		1150 1160 1170 1180
+
+		# Light tanks
+		2020 2030 2040 2050 2060
+
+    # Medium tanks
+		2070 2080 2090
+
+ 		# 速度优先
+ 		2160 2650
+
+		# Strategic bombers
+		4220 4230 4240
+
+		# Naval Bomber
+		4190 4200 4210
+
+		# Tactical Bomber
+		4130 4140 4150 4160
+
+    # Computers
+    5320 5330 5340 
+
+    # Aircraft Carriers
+    3330 3340 3350 3360 3370
+
+		# Battleships
+		3280 3290
+
+    # Naval Doctrines
+    8060 8180 8160 8320
+
+    # Air Doctrines
+    9140 9090 9110 9120 9130 9190 9180 9210 9430 9350 9310 9450 9460 9330
+
+    # Atomic Research 
+    5470 5480 5490 5500 5510 5520 5530 5540 7170 7180 7190 16010
+
+		# Land Doctrines (优势火力——机械化进攻)
+		6010 6020 6100
+
+    # Decryption
+    5360 5380 5400
+
+		# CLV
+		12100 12110 12120
+
+		# Turbojet Engine
+		5550 5560 5570
+	} 
+	ignore 		= {
+
+    # Battle Cruiser
+		3230 3240
+
+		# Super Heavy BB
+		3310
+
+		# Air Transports
+		4250
+
+		# Land Doctrines
+		6030
+
+	}
+ 
+	armor 		= 4 
+	infantry 	= 5
+	industry 	= 4
+	aircraft 	= 4
+	naval 		= 4
+	land_doctrines 	= 3
+	secret_weapons 	= 2
+	air_doctrines 	= 3
+	naval_doctrines = 4
+}
+###################################

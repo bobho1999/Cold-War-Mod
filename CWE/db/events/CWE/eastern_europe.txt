@@ -1,0 +1,506 @@
+######################################
+#### events for Eastern Europe 610500-610999
+######################################
+####################################
+# The future of the Albanian Communist Party # 
+####################################
+event = {
+	id = 610500
+	random = no
+	country = ALB
+	trigger = {
+		government = communist
+		exists = YUG
+		exists = SOV
+	}
+ 
+	name = "The Future of the Albanian Communist Party"
+	desc = "The ACP was divided into two factions: the nationalist; pro-Soviet but also (at this point) pro-Yugoslav faction led by Enver Hoxha, and the pro-Yugoslav faction led by, among others, Koçi Xoxe. The period of 1946-1948 was filled with intrigue between these two groups."
+
+	date = { day = 5 month = january year = 1946 }
+ 
+	action_a = {
+		name = "Nationalists reign supreme"
+		ai_chance = 90
+		command = { type = end_puppet }
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+		command = { type = headofstate which = 32049 }
+		command = { type = headofgovernment which = 32062 }
+		command = { type = foreignminister which = 32077 }
+		command = { type = armamentminister which = 32099 }
+		command = { type = ministerofsecurity which = 32203 }
+		command = { type = ministerofintelligence which = 32142 }
+		command = { type = chiefofstaff which = 32215 }
+		command = { type = chiefofarmy which = 32172 }
+		command = { type = chiefofnavy which = 32185 }
+		command = { type = chiefofair which = 32201 }
+		command = { type = relation which = YUG value = -20 }
+		command = { type = relation which = SOV value = 30 }
+		command = { type = trigger which = 0 }
+	}
+	action_b = {
+		name = "Pro-Yugoslav faction takes hold"
+		ai_chance = 10
+		command = { type = end_puppet }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = headofstate which = 32226 }
+		command = { type = headofgovernment which = 32227 }
+		command = { type = relation which = YUG value = 100 }
+		command = { type = trigger which = 610501 }
+	}
+}
+################################
+# Pro-Yugoslav forces in Albania prevail # 
+################################
+event = {
+	id = 610501
+	random = no
+	country = YUG
+
+	#
+ 
+	name = "Pro-Yugoslav Forces in Albania Prevail"
+	desc = "In Albania, pro-Yugoslav factions of the Albanian Communist Party have come to power. Yugoslavia now holds sway over the Albanian state."
+ 
+	action_a = {
+		name = "Good"
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = make_puppet which = ALB }
+		command = { type = relation which = SOV value = -10 }
+	}
+}
+##############################
+# Yugoslavia expelled from Cominform
+##############################
+event = {
+	id = 610502
+	random = no
+	country = YUG
+
+	trigger = {
+		headofstate = 20031
+		government = communist
+		alliance = { country = YUG country = SOV }
+	}
+
+	date = { day = 27 month = june year = 1948 }
+ 
+	name = "Yugoslavia Expelled from Cominform"
+	desc = "The Soviet Union established the Cominform to counter the Marshall Plan and coordinate the political activities of member states under the direction of the Soviet Union. Tito refused obedience and the member countries of the Cominform expelled Yugoslavia. Tito later became one of the founders of the Non-Aligned Movement."
+ 
+	action_a = {
+		name = "So be it"
+		ai_chance = 99
+		command = { type = leave_alliance }
+		command = { type = set_domestic which = democratic value = 2 }
+		command = { type = set_domestic which = political_left value = 7 }
+		command = { type = relation which = SOV value = -150 }
+		command = { type = relation which = ROM value = -150 }
+		command = { type = relation which = CZE value = -150 }
+		command = { type = relation which = HUN value = -150 }
+		command = { type = relation which = POL value = -150 }
+		command = { type = relation which = DDR value = -150 }
+		command = { type = relation which = BUL value = -150 }
+	}
+	action_b = {
+		name = "Accept Soviet Direction"
+		ai_chance = 1
+		command = { type = set_domestic which = democratic value = 1 }
+		command = { type = set_domestic which = political_left value = 10 }
+	}
+}
+####################
+# Suicide of Nako Spiru # 
+####################
+event = {
+	id = 610503
+	random = no
+	country = ALB
+	trigger = {
+		government = communist
+	}
+ 
+	name = "Suicide of Nako Spiru"
+	desc = "By 1947, Nako Spiru, a nationalist and anti-Yugoslav member of the Albanian Communist Party, was bitterly opposed to Koçi Xoxe's pro-Yugoslav stand. Isolated from the rest of the party, he committed suicide in November."
+
+	date = { day = 1 month = november year = 1947 }
+ 
+	action_a = {
+		name = "Damn"
+		command = { type = sleepminister which = 32215 }	
+	}
+}
+###################
+# Prime Minister Hoxha# 
+###################
+event = {
+	id = 610504
+	random = no
+	country = ALB
+	trigger = {
+	 	 ideology = stalinist
+	 	 headofgovernment = 32062
+	 	 NOT = { puppet = { country = ALB country = YUG } }
+	}
+ 
+	name = "Prime Minister"
+	desc = "By 1954, Hoxha had relieved himself of various ministries, including the post of Foreign Affairs. During an internal power struggle Hoxha chose to give up the position of Prime Minister to Mehmet Shehu while Hoxha remained de facto leader of Albania."
+	style = 0
+ 
+	date = { day = 20 month = july year = 1954 }
+ 
+	action_a = {
+		name = "Mehmet Shehu becomes Prime Minister"
+		ai_chance = 95
+		command = { type = headofstate which = 32051 }
+	 	command = { type = headofgovernment which = 32204 }
+	}
+	action_b = {
+		name = "Mehmet Shehu is purged"
+		ai_chance = 5
+		command = { type = dissent value = 7 }
+		command = { type = headofstate which = 32051 }
+		command = { type = sleepminister which = 32204 }
+		command = { type = sleepminister which = 32154 }
+		command = { type = sleepminister which = 32169 }
+	}
+}
+#################
+# Seventh Republic? # 
+#################
+event = {
+	id = 610505
+	random = no
+	country = YUG
+	trigger = {
+		event = 610502
+		puppet = { country = ALB country = YUG }
+		NOT = { alliance = { country = YUG country = SOV } }
+		random = 15
+	}
+ 
+	date = { day = 27 month = june year = 1948 }
+ 	offset = 10
+	deathdate = { day = 5 month = decmber year = 1949 }
+
+	name = "Albania - Seventh Republic?"
+	desc = "With the Stalin-Tito break and Albania being led by pro-Yugoslav elements, the Yugoslavs may want to intimidate Stalin (and expand Yugoslavia) by annexing Albania and incorporating it as a Seventh Republic within Yugoslavia."
+ 
+ 
+	action_a = {
+		name = "Albania is ours!"
+		ai_chance = 80
+		command = { type = relation which = SOV value = -50 }
+		command = { type = relation which = GRE value = -100 }
+		command = { type = relation which = ITA value = -30 }
+		command = { type = relation which = BUL value = -50 }
+		command = { type = inherit which = ALB }
+		command = { type = trigger which = 610506 }
+	}
+	action_b = {
+		name = "It is not worth the possibility of war"
+		ai_chance = 20
+		command = { }
+	}
+}
+
+###########################
+# Yugoslav Annexation of Albania # 
+###########################
+event = {
+	id = 610506
+	random = no
+	country = SOV
+
+	#triggered by 610505
+	
+	name = "Yugoslav Annexation of Albania"
+	desc = "In response to the break between our two states, Yugoslavia has incorporated Albania into its territory as a Seventh Republic. A vocal nationalist and pro-Soviet grouping within Albania has called on the Soviet Union for help."
+
+ 
+	action_a = {
+		name = "To war!"
+		ai_chance = 40
+		command = { type = war which = YUG }
+	}
+	action_b = {
+		name = "We would look like aggressors"
+		ai_chance = 60
+		command = { }
+	}
+}
+event = {
+	id = 610507
+	random = no
+	country = YUG
+
+	trigger = {
+		lost_national = 20
+		war = { country = YUG country = SOV }
+		war = { country = YUG country = BUL }
+		NOT = { alliance = { country = YUG country = USA } }
+		NOT = { alliance = { country = YUG country = ENG } }
+		NOT = { alliance = { country = YUG country = GER } }
+		NOT = { alliance = { country = YUG country = FRA } }
+		NOT = { alliance = { country = YUG country = JAP } }
+		NOT = { alliance = { country = YUG country = ITA } }
+		NOT = { alliance = { country = YUG country = HUN } }
+		NOT = { alliance = { country = YUG country = CHI } }
+		NOT = { alliance = { country = YUG country = CHC } }
+		NOT = { alliance = { country = YUG country = ROM } }
+	}
+
+	date = { day = 1 month = june year = 1948 }
+ 	offset = 7
+	deathdate = { day = 29 month = decmber year = 1969 }
+
+	name = "The End of Yugoslavia"
+	desc = "Tito once enjoyed strong support from the Soviet Union. However, an ill-fated power grab at Albania has destroyed the foundation of the Yugoslav state forever."
+
+ 
+	action_a = {
+		name = "We surrender!"
+		command = { type = peace which = SOV }
+		command = { type = access which = SOV }
+		command = { type = access which = HUN }
+		command = { type = access which = BUL }
+		command = { type = access which = ROM }
+		command = { type = access which = CZE }
+		command = { type = access which = DDR }
+		command = { type = access which = POL }
+		command = { type = trigger which = 610508 }
+	}
+	action_b = {
+		name = "We will never surrender!"
+		command = { }
+	}
+}
+event = {
+	id = 610508
+	random = no
+	country = SOV
+
+	# triggered by 610507
+
+	name = "The End of Yugoslavia"
+	desc = "Tito once enjoyed strong support from the Soviet Union. However, an ill-fated power grab at Albania has destroyed the foundation of the Yugoslav state forever."
+
+ 
+	action_a = {
+		name = "For the glory of communism!"
+		command = { type = inherit which = YUG }
+	}
+}
+event = {
+	id = 610509
+	random = no
+	country = SOV
+
+	trigger = {
+		event = 610508
+	}
+
+	date = { day = 1 month = june year = 1948 }
+ 	offset = 7
+	deathdate = { day = 29 month = decmber year = 1969 }
+
+	name = "The Break-Up of Yugoslavia"
+	desc = "The Soviet Union decided to break up the former Yugoslavia into smaller puppet states. It had to decide whether to reward Bulgaria and Albania for their cooperation in the war effort, or to appease international opinion."
+
+ 
+	action_a = {
+		name = "Reward Albania and Bulgaria"
+		command = { type = secedeprovince which = BUL value = 413 }
+		command = { type = secedeprovince which = BUL value = 414 }
+		command = { type = independence which = ALB }
+		command = { type = independence which = SLV }
+		command = { type = independence which = BOS }
+		command = { type = independence which = CRO }
+		command = { type = independence which = SER }
+		command = { type = trigger which = 610510 }
+	}
+	action_b = {
+		name = "Satisfy Western Opinions"
+		command = { type = independence which = U24 } #Macedonia
+		command = { type = independence which = SLV }
+		command = { type = independence which = BOS }
+		command = { type = independence which = CRO }
+		command = { type = independence which = SER }
+		command = { type = independence which = ALB }
+		command = { type = trigger which = 610510 }
+	}
+}
+event = {
+	id = 610510
+	random = no
+	country = SOV
+
+	# triggered by 610509
+
+	name = "New Allies in the Balkans"
+	desc = "After the failed experiment with Yugoslavia, the Soviet Union decided that smaller states representing the ethnic diversity of former Yugoslavia was a better idea."
+ 
+	action_a = {
+		name = "For the glory of communism!"
+		command = { type = make_puppet which = U24 }
+		command = { type = make_puppet which = SLV }
+		command = { type = make_puppet which = BOS }
+		command = { type = make_puppet which = SER }
+		command = { type = make_puppet which = ALB }
+		command = { type = make_puppet which = CRO }
+	}
+}
+#####################
+# Execution of Koçi Xoxe # 
+#####################
+event = {
+	id = 610511
+	random = no
+	country = ALB
+
+	trigger = {
+		headofgovernment = 32062
+		exists = YUG
+		NOT = { puppet = { country = ALB country = YUG } }
+	}
+ 
+	name = "Execution of Koçi Xoxe"
+	desc = "Koçi Xoxe was a pro-Yugoslav member of the party. He was the Defence and Interior Minister of Albania but was put on trial on the pretext of plotting against the party at the behest of 'Titoite' Yugoslavia. He was found guilty and executed."
+	style = 0
+ 
+	date = { day = 11 month = july year = 1949 }
+ 
+	action_a = {
+		name = "It is done"
+		command = { type = sleepminister which = 32226 }
+		command = { type = sleepminister which = 32227 }
+		command = { type = sleepminister which = 32203 }
+		command = { type = relation which = YUG value = -30 }
+	}
+}
+######################################
+# First Congress of the Albanian Party of Labour # 
+######################################
+event = {
+	id = 610512
+	random = no
+	country = ALB
+
+	trigger = {
+		headofgovernment = 32062
+		ideology = stalinist
+		exists = YUG
+		event = 610502
+		NOT = { alliance = { country = YUG country = SOV } }
+	}
+
+	date = { day = 21 month = november year = 1949 }
+ 
+	name = "First Congress of the Albanian Party of Labour"
+	desc = "The First Congress of the PPSh (Partia e Punës e Shqipërisë, Party of Labour of Albania) was held from November 8 to 22. On the request of the Soviet leader the Party's name was changed from the Albanian Communist Party to the PPSh. With the Soviet-Yugoslav break in June, the party must decide its course of action towards Yugoslavia."
+ 
+	action_a = {
+		name = "Condemn Yugoslavia"	
+		ai_chance = 99
+		command = { type = leave_alliance }
+		command = { type = relation which = YUG value = -150 }
+		command = { type = relation which = SOV value = 100 }
+		command = { type = alliance which = SOV }
+	}
+	action_b = {
+		name = "The split is unfortunate"
+		ai_chance = 1
+		command = { type = leave_alliance }
+		command = { type = relation which = YUG value = 100 }
+		command = { type = relation which = SOV value = -150 }
+		command = { type = alliance which = YUG }
+	}
+}
+#####################################
+# AI commands to change diplomacy and spy AI
+#####################################
+event = {
+	id = 610997
+	random = no
+	country = USA
+
+	trigger = {
+		ai = yes
+		event = 610502
+		government = democratic
+		alliance = { country = USA country = ENG }
+		NOT = { 
+			alliance = { country = USA country = SOV }
+			alliance = { country = YUG country = SOV }
+		}
+	}
+
+	date = { day = 27 month = june year = 1948 }
+ 	offset = 3
+	deathdate = { day = 29 month = decmber year = 1969 }
+ 
+	name = "AI_EVENT"
+ 
+	action_a = {
+		name = "OK"	
+		command = { type = ai which = "usa_CW2.ai" }
+	}
+}
+event = {
+	id = 610998
+	random = no
+	country = ENG
+
+	trigger = {
+		ai = yes
+		event = 610502
+		government = democratic
+		alliance = { country = USA country = ENG }
+		NOT = { 
+			alliance = { country = ENG country = SOV }
+			alliance = { country = YUG country = SOV }
+		}
+	}
+
+	date = { day = 27 month = june year = 1948 }
+ 	offset = 3
+	deathdate = { day = 29 month = decmber year = 1969 }
+ 
+	name = "AI_EVENT"
+ 
+	action_a = {
+		name = "OK"	
+		command = { type = ai which = "eng_CW2.ai" }
+	}
+}
+event = {
+	id = 610999
+	random = no
+	country = FRA
+
+	trigger = {
+		ai = yes
+		event = 610502
+		government = democratic
+		alliance = { country = USA country = ENG }
+		alliance = { country = USA country = FRA }
+		NOT = { 
+			alliance = { country = FRA country = SOV }
+			alliance = { country = YUG country = SOV }
+		}
+	}
+
+	date = { day = 27 month = june year = 1948 }
+ 	offset = 3
+	deathdate = { day = 29 month = decmber year = 1969 }
+ 
+	name = "AI_EVENT"
+ 
+	action_a = {
+		name = "OK"	
+		command = { type = ai which = "fra_CW2.ai" }
+	}
+}

@@ -1,0 +1,911 @@
+#########################################################################
+# 印巴戰爭
+#########################################################################
+### India is set up
+
+event = {
+	id = 8007228
+	country = IND
+
+
+	name = "印度陸軍"
+	desc = EVT_8007228_DESC
+#	picture = "nwo\independence_of_india"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = OK
+		### First government
+		command = { type = dissent value = 5 }
+		command = { type = add_corps where = 1469 }
+		command = { type = add_division value = motorized when = 5 where = b_u4 }
+		command = { type = add_division value = motorized when = 5 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		# Core in Calcutta
+	}                                                           
+}
+event = {
+        id = 8007274
+        random = no
+        country = IND
+        trigger = {
+  			event = 8007244
+        }
+ 
+        name = "喀什米爾戰爭經驗總結"
+        desc = "The 1947 Indo-Pakistan War saw both sides commit limited forces. After the war, the two nations had to establish new regiments and divisions from the units they inherited at Partition."
+	#	picture = nwo\empty
+        style = 1
+ 
+        date = { day = 10 month = january year = 1947 }
+        offset = 3
+        deathdate = { day = 10 month = january year = 1954 }
+ 
+	action_a = {
+			name = "Finally, some Divisions"
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			command = { type = add_division value = infantry when = 5 where = b_u4 }
+			#command = { type = add_division value = infantry when = 5 }
+			#command = { type = add_division value = infantry when = 5 }
+			#command = { type = add_division value = infantry when = 5 }
+			#command = { type = add_division value = infantry when = 5 }
+			#command = { type = add_division value = infantry when = 5 }
+			command = { type = add_division value = motorized when = 5 where = b_u4 }
+			command = { type = add_division value = motorized when = 5 where = b_u4 }
+        }
+
+}
+### Pakistan is set up
+
+event = {
+	id = 8011022
+	country = PAK
+#	save_date = yes
+
+	name = "巴基斯坦陸軍"
+	desc = EVT_8011022_DESC
+#	picture = "nwo\independence_of_pakistan"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_8011022_A
+		### First government
+		command = { type = dissent value = 5 }
+		command = { type = add_corps where = 1494 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_corps where = 3850 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		command = { type = add_division value = infantry when = 6 where = b_u4 }
+		
+		## Transport force
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		command = { type = add_division value = transport when = 4 }
+		
+		## A separate force for Bangladesh
+#		command = { type = add_corps where = 3835 }
+#		command = { type = add_division value = garrison when = 1 }		
+		
+#		command = { type = add_corps where = 3834 }
+#		command = { type = add_division value = garrison when = 1 }
+		
+#		command = { type = add_corps where = 1285 }
+#		command = { type = add_division value = garrison when = 1 }
+		
+#		command = { type = add_corps where = 1286 }
+#		command = { type = add_division value = garrison when = 1 }
+		
+#		command = { type = add_corps where = 1288 }
+#		command = { type = add_division value = garrison when = 1 }
+		
+		command = { type = transport_pool which = PAK value = 100 }
+		command = { type = escort_pool which = PAK value = 30 }
+	}                                                           
+}
+event = {
+        id = 8011023
+        random = no
+        country = PAK
+        trigger = {
+  event = 8007245
+
+        }
+ 
+        name = "喀什米爾戰爭經驗總結"
+        desc = "The 1947 Indo-Pakistan War saw both sides commit limited forces. After the war, the two nations had to establish new regiments and divisions from the units they inherited at Partition."
+ #       picture = nwo\empty
+		style = 1
+ 
+        date = { day = 10 month = january year = 1947 }
+        offset = 3
+        deathdate = { day = 10 month = january year = 1954 }
+ 
+        action_a = {
+                name = "Finally, some Divisions"
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = infantry when = 5 where = b_u4 }
+                command = { type = add_division value = motorized when = 5 where = b_u4 }
+        }
+
+}
+#########################
+# 第一次喀什米爾戰爭
+#########################
+### Acquisition of princely states
+event = {
+	id = 8007229
+	country = IND
+
+	name = "南方土邦的處置"
+	desc = EVT_8007229_DESC
+#	picture = "nwo\independence_of_india"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 14
+	deathdate = { day = 29 month = december year = 1999 }
+
+	# Iron fist in a velvet glove
+	action_a = {
+		name = "強行併入"
+		ai_chance = 95
+		command = { type = dissent value = 10 }
+		command = { type = belligerence value = 20 }
+	}
+	
+	# Let them retain self-governance
+	action_b = {
+		name = EVT_8007229_B
+		ai_chance = 5
+		command = { type = dissent value = 20 }
+		command = { type = industrial_modifier which = total value = -10 }
+		# Prevent acquisition of Kashmir
+		command = { type = setflag which = princely_states }
+	}
+
+}
+
+### First Kashmir War
+# Kashmir is set up
+
+event = {
+	id = 8007230
+	country = U80
+
+        name = "喀什米爾武裝力量"
+	desc = EVT_8007230_DESC
+#	picture = "nwo\kashmir"
+	style = 1
+
+	trigger = {
+#		event = 3406 # event dividing India
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = EVT_8007230_A
+		command = { type = add_corps where = 1474 }
+		command = { type = add_division value = militia when = 4 }
+		command = { type = add_division value = militia when = 4 }
+#		command = { type = add_division value = militia when = 4 }
+	}
+}
+
+# Kashmir decides its alignment
+event = {
+	id = 8007231
+	country = U80
+
+        name = "喀什米爾的命運"
+	desc = EVT_8007231_DESC
+#	picture = "nwo\kashmir"
+	style = 1
+
+	trigger = {
+		event = 8007230 # event setting up Kashmir
+		### Armies have time to be set up
+		event = 8007228  
+		event = 8011022 
+		NOT = { war = { country = IND country = PAK } }
+		NOT = { flag = princely_states }
+	}
+
+	date = { day = 0 month = october year = 1947 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 1999 }
+
+	# Kashmir acceeds India
+	action_a = {
+		name = "加入印度"
+		ai_chance = 8
+		command = { type = trigger which = 8007232 }
+	}
+	
+	# Kashmir acceeds Pakistan
+	action_b = {
+		name = "加入巴基斯坦"
+		ai_chance = 2
+		command = { type = trigger which = 8007234 }
+	}
+	
+	# Kashmir tries to remain independent (very improbable)
+	action_c = {
+		name = "維持獨立"
+		ai_chance = 90
+		command = { type = dissent value = -1 }
+#		command = { type = trigger which = 8007236 }
+	}
+}
+
+# Kashmir is annexed by India, triggers reaction of Pakistan
+event = {
+	id = 8007232
+	country = IND
+
+	name = "喀什米爾加入印度"
+	desc = "克什米爾請求我們保護並決定加入我們。我們可以肯定的是巴基斯坦不會
+		喜歡這項決定。戰爭一觸即發。"
+#	picture = "nwo\kashmir"
+	style = 1
+
+	action_a = {
+		name = EVT_8007232_A
+		command = { type = trigger which = 8007233 }
+		command = { type = setflag which = Kashmir_IND }
+	}
+}
+
+event = {
+	id = 8007233
+	country = PAK
+
+	name = "喀什米爾加入印度"
+	desc = "由於克什米爾統治者的個人決定，該邦加入了新成立的印度。這一舉動令
+		人憤慨，人們普遍認為我們應該立即採取全面的反應。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "發動戰爭"
+		ai_chance = 99
+		command = { type = war which = U80 }
+		command = { type = dissent value = -10 }
+		command = { type = add_corps where = 3847 }
+		command = { type = add_division value = infantry when = 5 where = b_u4 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = trigger which = 8007244 value = 70 } #70天拿下否則僵持
+		command = { type = trigger which = 8007251 value = 5 } #印度反應
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "隨他去"
+		ai_chance = 1
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8007251
+	country = IND
+
+	name = "喀什米爾戰爭"
+	desc = "。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "派出軍隊"
+		ai_chance = 99
+		command = { type = trigger which = 8007252 value = 3 } #
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "隨他去"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 8007252
+	country = U80
+
+	name = "印軍到來"
+	desc = "。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "派出軍隊"
+		command = { type = add_corps where = 1474 }
+		command = { type = add_division value = infantry when = 5 where = armored_car }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_corps which = "斯利那加守備隊 " value = land where = 1474 }
+		command = { type = activate_division which = 9 value = 1 where = 1474 }
+	}
+}
+# Kashmir is annexed by Pakistan, triggers reaction of India
+
+event = {
+	id = 8007234
+	country = PAK
+
+	name = "喀什米爾加入巴基斯坦"
+	desc = "克什米爾請求我們保護並決定加入我們。我們可以肯定的是印度不會喜歡
+		這項決定。戰爭一觸即發。"
+#	picture = "nwo\kashmir"
+	style = 1
+
+	action_a = {
+		name = EVT_8007234_A
+#		command = { type = inherit which = U80 value = 1 }
+		command = { type = trigger which = 8007235 }
+		command = { type = setflag which = Kashmir_PAK }
+	}
+}
+
+event = {
+	id = 8007235
+	country = IND
+
+	name = "喀什米爾加入巴基斯坦"
+	desc = "由於克什米爾統治者的個人決定，該邦加入了新成立的巴基斯坦。這一舉
+		動令人憤慨，人們普遍認為我們應該立即採取全面的反應。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+
+	# First Kashmir War
+	action_a = {
+		name = "發動戰爭"
+		ai_chance = 95
+		command = { type = war which = U80 }
+		command = { type = dissent value = -10 }
+		command = { type = trigger which = 8007244 value = 70 } #70天拿下否則僵持
+		command = { type = trigger which = 8007253 value = 5 } #
+		command = { type = add_corps where = 3841 }
+		command = { type = add_division value = infantry when = 5 where = armored_car }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_division value = infantry when = 5 }
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "隨他去"
+		ai_chance = 5
+		command = { type = domestic which = interventionism value = -1 }
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 8007253
+	country = PAK
+
+	name = "喀什米爾戰爭"
+	desc = "。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "派出軍隊"
+		ai_chance = 99
+		command = { type = trigger which = 8007254 value = 3 } #
+		command = { type = domestic which = interventionism value = 1 }
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "隨他去"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 8007254
+	country = U80
+
+	name = "巴軍到來"
+	desc = "。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "派出軍隊"
+		command = { type = add_corps where = 1474 }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_corps which = "斯利那加守備隊 " value = land where = 1474 }
+		command = { type = activate_division which = 9 value = 1 where = 1474 }
+	}
+}
+
+
+# Kashmir withholds accession, triggers reaction of India and Pakistan
+
+event = {
+	id = 8007236
+	country = PAK
+	trigger = {
+		event = 8007231
+		NOT = { 
+			flag = Kashmir_PAK
+			flag = Kashmir_IND
+		}
+	}
+
+	name = "克什米爾問題"
+	desc = "在英國殖民時期，克什米爾實際由名義上獨立的英國保護國克什米
+		爾-查謨土邦所統治。英國從印度撤軍以後，從英屬印度獨立出來的
+		兩個國家印度和巴基斯坦都要求克什米爾加入。該邦上層王公貴族
+		大都屬印度教希望加入印度；而下層平民百姓大都屬伊斯蘭教希望
+		加入巴基斯坦。瑪哈拉賈（邦主）哈里·辛格則希望能保持克什米爾
+		的獨立地位，因此推遲對這個問題的決定。"
+#	picture = "nwo\kashmir"
+	style = 1
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1949 }
+
+	# Force Kashmir into submission
+	action_a = {
+		name = "派兵入侵"
+		ai_chance = 99
+		command = { type = dissent value = -10 }
+		command = { type = war which = U80 }
+		command = { type = add_corps where = 3847 }
+		command = { type = add_division value = infantry when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = add_division value = militia when = 5 }
+		command = { type = trigger which = 8007237 value = 1 }
+		command = { type = trigger which = 8007244 value = 70 } #70天拿下否則僵持
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "隨他去"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+event = {
+	id = 8007237
+	country = U80
+
+	name = "克什米爾解放軍的入侵"
+	desc = "在英國殖民時期，克什米爾實際由名義上獨立的英國保護國克什米
+		爾-查謨土邦所統治。英國從印度撤軍以後，從英屬印度獨立出來的
+		兩個國家印度和巴基斯坦都要求克什米爾加入。該邦上層王公貴族
+		大都屬印度教希望加入印度；而下層平民百姓大都屬伊斯蘭教希望
+		加入巴基斯坦。瑪哈拉賈（邦主）哈里·辛格則希望能保持克什米爾
+		的獨立地位，因此推遲對這個問題的決定。英國撤軍以後一支由親
+		巴基斯坦的部落和巴基斯坦士兵組成的軍隊從巴基斯坦西北邊省入
+		侵克什米爾。"
+#	picture = "nwo\kashmir"
+	style = 1
+	
+
+	# Force Kashmir into submission
+	action_a = {
+		name = "向印度求援"
+		ai_chance = 100
+		command = { type = trigger which = 8007238 }
+	}
+	
+	# Leave them in peace
+	action_b = {
+		name = "不需要外援"
+		ai_chance = 0
+		command = { type = dissent value = 5 }
+	}
+}
+
+# India/Pakistan DOWs independent Kashmir, triggers reaction of the other party
+
+event = {
+	id = 8007238
+	country = IND
+
+	name = "喀什米爾求援"
+	desc = "1947年10月22日一支強大的非正規軍從巴基斯坦入侵卡克
+		什米爾，其目標是克什米爾的首都斯利那加，克什米爾軍
+		隊很快被擊潰，通向斯里拉嘎的道路敞開了。局部也發生
+		了克什米爾正規軍倒向克什米爾解放軍的現象。克什米爾
+		土邦主哈里·辛向印度政府求援。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	# First Kashmir War
+	action_a = {
+		name = "要求喀什米爾加入印度"
+		ai_chance = 99
+#		command = { type = war which = PAK }
+		command = { type = trigger which = 8007239 }
+	}
+	action_b = {
+		name = "隨他去"
+		ai_chance = 1
+		command = { type = dissent value = 5 }
+	}
+}
+
+event = {
+	id = 8007239
+	country = U80
+
+	name = "加入印度?"
+	desc = "印度政府對辛說：只有在辛簽署加入印度聯邦的情況下印度才能夠
+		向克什米爾出兵來保護其聯邦領土。"
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	action_a = {
+		name = "同意"
+		ai_chance = 100
+		command = { type = setflag which = Kashmir_IND }
+		command = { type = trigger which = 8007251 }
+	}
+	
+	action_b = {
+		name = "不同意"
+		ai_chance = 0
+		command = { type = dissent value = -1 }
+	}
+}
+### End of the First Kashmir War
+# Total Pakistani victory
+
+event = {
+	id = 8007240
+	country = PAK
+
+	name = "喀什米爾戰爭——巴方勝利"
+	desc = EVT_8007240_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = {
+		event = 8007253
+		war = { country = IND country = U80 }
+		flag = Kashmir_PAK
+		NOT = { 
+			control = { province = 3844 data = IND }
+			control = { province = 3845 data = IND }
+			control = { province = 3846 data = IND }
+			control = { province = 3847 data = IND }
+			control = { province = 1474 data = IND }
+			control = { province = 3840 data = IND }
+			control = { province = 3841 data = IND }
+			control = { province = 3842 data = IND }
+			control = { province = 3843 data = IND }
+		}
+	}
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1948 }
+	
+	action_a = {
+		name = EVT_8007240_A
+		command = { type = peace which = IND value = 1 }
+		command = { type = trigger which = 8007241 }
+		# Sleep other peace events
+		command = { type = sleepevent which = 8007244 }
+		command = { type = sleepevent which = 8007248 }
+		
+		command = { type = addcore which = 3844 } # 
+		command = { type = addcore which = 3845  } # 
+		command = { type = addcore which = 3846  } # 
+		command = { type = addcore which = 3847  } # 
+		command = { type = addcore which = 1474  } # 
+		command = { type = addcore which = 3840  } # 
+		command = { type = addcore which = 3841  } # 
+		command = { type = addcore which = 3842  } # 
+		command = { type = addcore which = 3843  } #
+		command = { type = addcore which = 2962 } # 
+	}
+}
+
+event = {
+	id = 8007241
+	country = IND
+
+	name = "喀什米爾戰爭——印方失敗"
+	desc = EVT_8007241_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007241_A
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = PAK value = 3844 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3845 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3846 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3847 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 1474 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3840 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3841 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3842 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3843 when = 2 } #
+
+		command = { type = sleepevent which = 8007260 }
+		command = { type = sleepevent which = 8017050 }
+	}
+}
+event = {
+	id = 8007242
+	country = PAK
+
+	name = EVT_8007249_NAME
+	desc = EVT_8007249_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007249_A
+		command = { type = dissent value = -3 }
+		command = { type = inherit which = U80 } # 
+		command = { type = add_corps where = 1474 }
+		command = { type = add_division value = infantry when = 5 }
+	}
+}
+# Stalemate
+
+event = {
+	id = 8007244
+	country = IND
+
+	name = "喀什米爾戰爭——僵持"
+	desc = EVT_8007244_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007244_A
+		command = { type = inherit which = U80 value = 1 }
+		command = { type = peace which = PAK value = 1 }
+		command = { type = trigger which = 8007229 }
+		command = { type = trigger which = 8007245 }
+		command = { type = trigger which = 8007250 }
+		command = { type = sleepevent which = 8007240 }
+		command = { type = sleepevent which = 8007248 }
+		
+		command = { type = secedeprovince which = PAK value = 3844 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3845 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3846 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3847 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 1474 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3840 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3841 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3842 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3843 when = 2 } # 
+		
+		command = { type = addcore which = 3844 } # 
+		command = { type = addcore which = 3845 } # 
+		command = { type = addcore which = 3846 } # 
+		command = { type = addcore which = 3847 } # 
+		command = { type = addcore which = 1474 } # 
+		command = { type = addcore which = 3840 } # 
+		command = { type = addcore which = 3841 } # 
+		command = { type = addcore which = 3842 } # 
+		command = { type = addcore which = 3843 } # 
+		command = { type = addcore which = 2962 } # 
+	}
+}
+
+event = {
+	id = 8007245
+	country = PAK
+
+	name = "喀什米爾戰爭——僵持"
+	desc = EVT_8007245_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	action_a = {
+		name = EVT_8007245_A
+		command = { type = peace which = IND value = 1 }
+		command = { type = trigger which = 8007255 }
+		command = { type = secedeprovince which = PAK value = 3844 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3845 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3846 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3847 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 1474 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3840 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3841 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3842 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3843 when = 2 } # 
+		
+		command = { type = addcore which = 3844 } # 
+		command = { type = addcore which = 3845 } # 
+		command = { type = addcore which = 3846 } # 
+		command = { type = addcore which = 3847 } # 
+		command = { type = addcore which = 1474 } # 
+		command = { type = addcore which = 3840 } # 
+		command = { type = addcore which = 3841 } # 
+		command = { type = addcore which = 3842 } # 
+		command = { type = addcore which = 3843 } # 
+		command = { type = addcore which = 2962 } # 
+	}
+}
+event = {
+	id = 8007255
+	country = IND
+
+	name = "斯利那加停火線"
+	desc = EVT_8007245_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+
+	action_a = {
+		name = EVT_8007245_A
+		command = { type = secedeprovince which = PAK value = 3844 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3845 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3846 when = 2 } # 
+		command = { type = secedeprovince which = PAK value = 3847 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 1474 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3840 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3841 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3842 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3843 when = 2 } # 
+		
+		command = { type = addcore which = 3844 } # 
+		command = { type = addcore which = 3845 } # 
+		command = { type = addcore which = 3846 } # 
+		command = { type = addcore which = 3847 } # 
+		command = { type = addcore which = 1474 } # 
+		command = { type = addcore which = 3840 } # 
+		command = { type = addcore which = 3841 } # 
+		command = { type = addcore which = 3842 } # 
+		command = { type = addcore which = 3843 } # 
+		command = { type = addcore which = 2962 } # 
+	}
+}
+# Total Indian victory
+
+event = {
+	id = 8007248
+	country = IND
+
+	name = "喀什米爾戰爭——印方勝利"
+	desc = EVT_8007248_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	trigger = { 
+		event = 8007251
+		war = { country = PAK country = U80 }
+		flag = Kashmir_IND
+		NOT = { 
+			control = { province = 3844 data = PAK }
+			control = { province = 3845 data = PAK }
+			control = { province = 3846 data = PAK }
+			control = { province = 3847 data = PAK }
+			control = { province = 1474 data = PAK }
+			control = { province = 3840 data = PAK }
+			control = { province = 3841 data = PAK }
+			control = { province = 3842 data = PAK }
+			control = { province = 3843 data = PAK }
+		}
+	}
+
+	date = { day = 0 month = january year = 1947 }
+	offset = 3
+	deathdate = { day = 29 month = december year = 1948 }
+	
+	action_a = {
+		name = EVT_8007248_A
+		command = { type = peace which = PAK value = 1 }
+		command = { type = trigger which = 8007249 }
+		command = { type = sleepevent which = 8007240 }
+		command = { type = sleepevent which = 8007244 }
+		
+		command = { type = addcore which = 3844 } # 
+		command = { type = addcore which = 3845 } # 
+		command = { type = addcore which = 3846 } # 
+		command = { type = addcore which = 3847 } # 
+		command = { type = addcore which = 1474 } # 
+		command = { type = addcore which = 3840 } # 
+		command = { type = addcore which = 3841 } # 
+		command = { type = addcore which = 3842 } # 
+		command = { type = addcore which = 3843 } # 
+		command = { type = addcore which = 2962 } # 
+	}
+}
+event = {
+	id = 8007249
+	country = PAK
+
+	name = EVT_8007249_NAME
+	desc = EVT_8007249_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007249_A
+		command = { type = dissent value = 3 }
+		command = { type = secedeprovince which = IND value = 3844 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3845 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3846 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3847 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 1474 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3840 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3841 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3842 when = 2 } # 
+		command = { type = secedeprovince which = IND value = 3843 when = 2 } # 
+		command = { type = trigger which = 8007250 }
+		command = { type = sleepevent which = 8007260 }
+		command = { type = sleepevent which = 8017050 }
+	}
+}
+
+event = {
+	id = 8007250
+	country = IND
+
+	name = EVT_8007249_NAME
+	desc = EVT_8007249_DESC
+#	picture = "nwo\first_kashmir_war"
+	style = 1
+	
+	action_a = {
+		name = EVT_8007249_A
+		command = { type = dissent value = -3 }
+		command = { type = inherit which = U80 } # 
+		command = { type = add_corps where = 1474 }
+		command = { type = add_division value = infantry when = 5 }
+	}
+}

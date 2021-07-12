@@ -1,0 +1,173 @@
+land_unit_type = 1
+max_speed_step = 1
+allowed_brigades =  artillery
+#allowed_brigades =  anti_tank		
+allowed_brigades =  anti_air		
+allowed_brigades =  rocket_artillery
+allowed_brigades =  sp_artillery	
+allowed_brigades =  sp_rct_artillery
+#allowed_brigades =  tank_destroyer	
+#allowed_brigades =  light_armor_brigade
+#allowed_brigades =  heavy_armor	
+#allowed_brigades =  super_heavy_armor
+#allowed_brigades =  armored_car
+allowed_brigades =  engineer			
+allowed_brigades =  police
+
+# 0 - Basic HQ Division (1918)
+model = {
+	cost 					= 16
+	buildtime	 			= 270
+	manpower 				= 5
+	maxspeed 				= 2
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 25
+	toughness				= 25
+	softness				= 100
+	suppression				= 2
+	airdefence				= 3
+	softattack				= 1
+	hardattack				= 1
+	airattack				= 1
+	transportweight			= 10
+	supplyconsumption 		= 0.5
+	fuelconsumption			= 0
+	speed_cap_art			= 2
+	speed_cap_at			= 2
+	speed_cap_aa			= 2
+	upgrade_time_factor = 1.0
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved HQ Division (1939) #Motorized/Mechanized
+model = {
+	cost 					= 18
+	buildtime	 			= 250
+	manpower 				= 5
+	maxspeed 				= 5
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 30
+	toughness				= 30
+	softness				= 95
+	suppression				= 2
+	airdefence				= 4
+	softattack				= 2
+	hardattack				= 1
+	airattack				= 3
+	transportweight			= 10
+	supplyconsumption 		= 0.6
+	fuelconsumption			= 2
+	speed_cap_art			= 5
+	speed_cap_at			= 5
+	speed_cap_aa			= 5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced HQ Division (1943) #Armoured/Mechanized
+model = {
+	cost 					= 21
+	buildtime	 			= 200
+	manpower 				= 5
+	maxspeed 				= 10
+	defaultorganisation 	= 30
+	morale					= 30
+	defensiveness 			= 35
+	toughness				= 35
+	softness				= 80
+	suppression				= 2
+	airdefence				= 6
+	softattack				= 3
+	hardattack				= 1
+	airattack				= 4
+	transportweight			= 10
+	supplyconsumption 		= 0.7
+	fuelconsumption			= 4
+	speed_cap_art			= 10
+	speed_cap_at			= 10
+	speed_cap_aa			= 10
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+
+# Enabled by and disabling the previous model (HQ model 2)
+# Modern Blitzkrieg (14100)
+# Assualt Concentration Doctrine (14070)
+# Mechanized Wave (14060)
+# Air Land Battle (14050)
+#######################################################################
+# 3 - Modern HQ Division (1946)
+model = {
+cost = 25
+buildtime = 200
+manpower = 5
+maxspeed = 10
+defaultorganisation = 30
+morale = 30
+defensiveness = 40
+toughness = 40
+softness = 75
+suppression = 2
+airdefence = 8
+softattack = 4
+hardattack = 2
+airattack = 5
+transportweight = 10
+supplyconsumption = 0.9
+fuelconsumption = 6
+speed_cap_art = 10
+speed_cap_at = 10
+speed_cap_aa = 10
+upgrade_time_factor = 0.5
+upgrade_cost_factor = 1.0
+}
+# 4 - Elite HQ Division (1951)-enabled by air cavalry
+model = {
+cost = 25
+buildtime = 250
+manpower = 5
+maxspeed = 15
+defaultorganisation = 40
+morale = 40
+defensiveness = 50
+toughness = 50
+softness = 70
+suppression = 2
+airdefence = 9
+softattack = 6
+hardattack = 3
+airattack = 5
+transportweight = 12
+supplyconsumption = 1.2
+fuelconsumption = 8
+speed_cap_art = 14
+speed_cap_at = 14
+speed_cap_aa = 14
+upgrade_time_factor = 0.5
+upgrade_cost_factor = 1.0
+}
+#5 AWACS
+model = {
+cost = 30
+buildtime = 250
+manpower = 5
+maxspeed = 15
+defaultorganisation = 40
+morale = 40
+defensiveness = 60
+toughness = 60
+softness = 40
+suppression = 2
+airdefence = 18
+softattack = 7
+hardattack = 4
+airattack = 6
+transportweight = 16
+supplyconsumption = 1.8
+fuelconsumption = 12
+speed_cap_art = 20
+speed_cap_at = 20
+speed_cap_aa = 20
+upgrade_time_factor = 0.5
+upgrade_cost_factor = 1.0
+}

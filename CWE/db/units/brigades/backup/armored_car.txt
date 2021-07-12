@@ -1,0 +1,129 @@
+land_unit_type = 1
+# 0 - First-War
+model = {
+	cost 				= 1.5
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -2   
+        maxspeed            = 2
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 50
+	max_oil_stock = 50
+}
+# 1 - Early
+model = {
+	cost 				= 2
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -4     
+        maxspeed            = 2
+	fuelconsumption		= 0.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 75
+	max_oil_stock = 75
+}
+# 2 - Basic
+model = {
+	cost 				= 2.5
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -6   
+        maxspeed            = 2
+	fuelconsumption		= 0.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 100
+	max_oil_stock = 100
+}
+# 3 - Improved
+model = {
+	cost 				= 3
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -8 
+        maxspeed            = 2
+	fuelconsumption		= 0.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 125
+	max_oil_stock = 125
+}
+# 4 - Advanced
+model = {
+	cost 				= 3.5
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -10 
+        maxspeed            = 2
+	fuelconsumption		= 1.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 150
+	max_oil_stock = 150
+}
+# 5 - Semi-Modern
+model = {
+	cost 				= 4
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -12   
+        maxspeed            = 2
+	fuelconsumption		= 1.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 175
+	max_oil_stock = 175
+}
+# 6 - Modern
+model = {
+	cost 				= 4.5
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -14  
+        maxspeed            = 2
+	fuelconsumption		= 1.4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 200
+	max_oil_stock = 200
+}
+# 7 - Cold-War
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 2
+        softness            = -16  
+        maxspeed            = 2
+	fuelconsumption		= 1.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 0.5
+	max_supply_stock = 250
+	max_oil_stock = 250
+}
+# 8 - 华西精锐团
+model = {
+	cost 				= 999  #这是高达才有的花费
+	buildtime	 		= 999  #这是高达才要的时间
+	manpower 			= 50   #一个人能顶5个师
+        softness                        = -20  #穿越自备越野装甲车 
+        maxspeed                        = 5    #21世纪军用车辆的速度
+	defaultorganisation 	        = -20  #90后知道什么叫组织和纪律么？
+	morale				= 20   #报国的热忱可嘉
+	defensiveness 			= 20   #宅男规避危险的第六感很强
+	toughness			= -20  #90后知道什么叫坚韧么？
+	suppression			= 5    #曾在城管大队学习过
+	artillery_bombardment		= 10   #华西教导我们：君子不立于围墙之下！
+	airdefence			= 10   #华西可以打造21世纪级别的掩体
+	softattack			= -10  #我们才不上去当炮灰呢   
+	hardattack			= -10  #我们才不上去当炮灰呢 
+	airattack			= -10  #长时间打飞机会使视力模糊
+	supplyconsumption 	        = 10.0 #5个师需要消耗的补给     
+	fuelconsumption		        = 10.0 #500个师需要消耗的油料
+	upgrade_time_factor             = 50   #1937年可以升级21世纪的战车么？
+	upgrade_cost_factor             = 50   #1937年可以升级21世纪的战车么？
+	max_supply_stock = 1000
+	max_oil_stock = 1000
+}

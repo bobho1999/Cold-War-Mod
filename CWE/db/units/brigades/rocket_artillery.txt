@@ -1,0 +1,117 @@
+land_unit_type = 1
+# 0 - Basic
+model = {
+	cost 				= 4
+	buildtime	 		= 45
+	manpower 			= 2
+	defensiveness 		= 2
+	maxspeed 			= -1
+	softattack			= 5
+	hardattack			= 1
+	artillery_bombardment		= 5
+	supplyconsumption 	= 0.65
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 1 - Improved
+model = {
+	cost 				= 4.5
+	buildtime	 		= 45
+	manpower 			= 2
+	defensiveness 		= 3
+	maxspeed 			= -1
+	softattack			= 6
+	hardattack			= 1
+	artillery_bombardment		= 7
+	supplyconsumption 	= 0.67
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 2 - Advanced
+model = {
+	cost 				= 5
+	buildtime	 		= 45
+	manpower 			= 2
+	defensiveness 		= 4
+	maxspeed 			= -1
+	softattack			= 7
+	hardattack			= 3
+	artillery_bombardment		= 9
+	supplyconsumption 	= 0.69
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+############ Vietnam era rockets
+# 3 - Modern (1960)
+model = {
+	cost 				= 5
+	buildtime	 		= 45
+	manpower 			= 2
+	defensiveness 		= 5
+	maxspeed 			= -1
+	softattack			= 9
+	hardattack			= 3
+	artillery_bombardment		= 10
+	supplyconsumption 	= 0.70
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+ 
+#### extra models are primarily guerrilla/terrorist weapons
+#### meant to harrass and damage the enemy, not take territory
+# 4 - Early Short range missile (SRBM) (Scud-1965)
+model = {
+	cost 				= 5
+	buildtime	 		= 55
+	manpower 			= 2
+	defensiveness 		= 6
+	maxspeed 			= -2 #slow down unit movement
+	softattack			= 11
+	hardattack			= 4
+	artillery_bombardment		= 11
+	supplyconsumption 	= 0.71
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 5 - Short range missile (SRBM) (1980)
+model = {
+	cost 				= 5
+	buildtime	 		= 55
+	manpower 			= 2
+	defensiveness 		= 8
+	maxspeed 			= -2 #slow down unit movement
+	softattack			= 12
+	hardattack			= 6
+	artillery_bombardment		= 12
+	supplyconsumption 	= 0.72
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 6 - Improved SRBM (1992)
+model = {
+	cost 				= 5
+	buildtime	 		= 55
+	manpower 			= 2
+	defensiveness 		= 12
+	maxspeed 			= -3 #really slow movement
+	softattack			= 15
+	hardattack			= 18
+	artillery_bombardment		= 16
+	supplyconsumption 	= 0.75
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+# 7 - advanced SRBM (2005-Lebanon War)
+model = {
+	cost 				= 5
+	buildtime	 		= 55
+	manpower 			= 2
+	defensiveness 		= 16
+	maxspeed 			= -3
+	softattack			= 18
+	hardattack			= 24
+	artillery_bombardment		= 20
+	supplyconsumption 	= 0.77
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

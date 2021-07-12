@@ -1,0 +1,25 @@
+event = {
+  	id = 5900000
+  	random = no
+	country = FRA
+  
+  	name = "‘ğáá½›ú " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+
+ 	}
+
+  
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "MÄ¿¯ğê"
+    		command = { type = dissent value = 10 }
+    		command = { type = industrial_modifier which = supplies value = -25 }  
+    		command = { type = industrial_modifier which = total value = -25 }
+  	}
+}

@@ -1,0 +1,5547 @@
+##########################
+### REVOLTERS SET FREE ###
+###     AI EVENTS      ###
+##########################
+
+event = {
+	id = 15000
+	trigger = { }
+	random = no
+
+	country = ALG
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 16 }
+		command = { type = free_metal value = 8 }
+		# command = { type = free_oil value = 8 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 7 } #  independence in 1962
+		}
+	}
+
+event = {
+	id = 15001
+	trigger = { }
+	random = no
+
+	country = ANG
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  independence in 1975
+		}
+	}
+
+########################################
+#  Arab Federation per SMEP
+########################################
+event = {
+	id = 15002
+	trigger = { }
+	random = no
+
+	country = ARA
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action_a = {
+		name = ""
+		#command = { type = free_ic value = 10 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		#command = { type = free_oil value = 18 }
+		command = { type = free_rare_materials value = 6 }
+		#command = { type = dissent value = 10 } #"Hypothetical" nation
+	}
+}
+
+event = {
+	id = 15003
+	trigger = { }
+	random = no
+
+	country = ARM
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  independence in 1991
+		}
+	}
+
+event = {
+	id = 15004
+	trigger = { }
+	random = no
+
+	country = AZB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  independence in 1991
+		}
+	}
+
+event = {
+	id = 15005
+	trigger = { }
+	random = no
+
+	country = BEN
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		}
+	}
+
+event = {
+	id = 15006
+	trigger = { }
+	random = no
+
+	country = BUR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 4 } #  independence in 1948
+		}
+	}
+
+event = {
+	id = 15007
+	trigger = { }
+	random = no
+
+	country = BLR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = free_ic value = 12 } #was 12, then 6, now 12 again
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 24 }
+		#command = { type = free_oil value = 18 }
+		command = { type = free_rare_materials value = 6 }
+		#command = { type = dissent value = 8 } #independence in 1990
+		
+		}
+	}
+
+event = {
+	id = 15008
+	trigger = { }
+	random = no
+
+	country = BOS
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 3 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 8 } #  independence in 1991 & Civil War
+		}
+	}
+
+
+event = {
+	id = 15011
+	trigger = { }
+	random = no
+
+	country = CAM
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1960
+		}
+	}
+
+event = {
+	id = 15012
+	trigger = { }
+	random = no
+
+	country = CMB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_manpower value = 0.1 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #  independence in 1953
+		command = { type = province_keypoints which = 1339 value = 1 } # Battambang
+		command = { type = province_keypoints which = 1341 value = 1 } # Ubon Ratchthani
+		}
+	}
+
+event = {
+	id = 15013
+	trigger = { }
+	random = no
+
+	country = CON
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1960
+		}
+	}
+
+
+event = {
+	id = 15015
+	trigger = { }
+	random = no
+
+	country = CYP
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1960
+		}
+	}
+
+event = {
+	id = 15016
+	trigger = { }
+	random = no
+
+	country = EAF
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  Kenya independence in 1963
+
+		}
+	}
+
+event = {
+	id = 15017
+	trigger = { }
+	random = no
+
+	country = EGY
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = construct which = ic where = 903 value = 2 } #cairo
+		command = { type = construct which = ic where = 904 value = 1 } #tanta
+		command = { type = construct which = ic where = 902 value = 1 } #z
+		command = { type = free_energy value = 10 }
+		command = { type = free_metal value = 5 }
+		#command = { type = free_oil value = 4 }
+		command = { type = free_rare_materials value = 3 }
+		#command = { type = dissent value = 2 } #Egypt was actually a puppet of the UK in the HOI2 era
+	}
+	}
+
+event = {
+	id = 15018
+	trigger = { }
+	random = no
+
+	country = EQA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  The federation ended in 1959 after the territories had chosen ?in 1958 ?to become self-governing republics of the French Community.
+
+		}
+	}
+
+event = {
+	id = 15019
+	trigger = { }
+	random = no
+
+	country = EUS
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = free_ic value = 8 } #was 5
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		#command = { type = free_oil value = 5 }
+		command = { type = free_rare_materials value = 2 }
+		#command = { type = dissent value = 4 } #State of Israel was declared in 1948
+		command = { type = dissent value = 8 } #  Not independent as of 2005
+		}
+	}
+
+event = {
+	id = 15020
+	trigger = { }
+	random = no
+
+	country = GAB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1960
+		}
+	}
+
+event = {
+	id = 15021
+	trigger = { }
+	random = no
+
+	country = GEO
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  independence in 1991
+		}
+	}
+
+event = {
+	id = 15022
+	trigger = { }
+	random = no
+
+	country = GLD
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #  independence in 1956
+		}
+	}
+
+event = {
+	id = 15023
+	trigger = { }
+	random = no
+
+	country = GUI
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 7 } #  independence in 1968
+		}
+	}
+
+event = {
+	id = 15024
+	trigger = { }
+	random = no
+
+	country = GUY
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 7 } #  independence in 1966
+		}
+	}
+
+event = {
+	id = 15025
+	trigger = { }
+	random = no
+
+	country = ICL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 4 } #  independence in 1944
+		}
+	}
+
+event = {
+	id = 15026
+	trigger = { }
+	random = no
+
+	country = IDC
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 7 }
+		command = { type = free_energy value = 18 }
+		command = { type = free_metal value = 9 }
+		# command = { type = free_oil value = 9 }
+		command = { type = free_rare_materials value = 5 }
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		}
+	}
+
+
+event = {
+	id = 15028
+	trigger = { }
+	random = no
+
+	country = INO
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 18 }
+		command = { type = free_metal value = 9 }
+		# command = { type = free_oil value = 9 }
+		command = { type = free_rare_materials value = 5 }
+		command = { type = manpowerpool value = 10 }
+		command = { type = free_manpower value = 0.02 }
+		command = { type = dissent value = 10 } #  independence in 1949 following 5 years of war
+		command = { type = transport_pool which = INO value = 60 }#dissent inc to pay for transports
+		}
+	}
+
+event = {
+	id = 15029
+	trigger = { }
+	random = no
+
+	country = ISR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = free_ic value = 8 } #was 5
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		#command = { type = free_oil value = 5 }
+		command = { type = free_rare_materials value = 2 }
+		#command = { type = dissent value = 4 } #State of Israel was declared in 1948
+		}
+	}
+
+event = {
+	id = 15030
+	trigger = { }
+	random = no
+
+	country = JOR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 4 } #was 6
+		command = { type = free_energy value = 8 }
+		command = { type = free_metal value = 4 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }
+		#command = { type = dissent value = 4 } #Independence 1946 (from League of Nations mandate)
+		}
+	}
+
+event = {
+	id = 15031
+	trigger = { }
+	random = no
+
+	country = KAZ
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 18 }
+		command = { type = free_metal value = 9 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 5 }
+		#command = { type = dissent value = 8 } #independence in 1991
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		}
+	}
+
+event = {
+	id = 15032
+	trigger = { }
+	random = no
+
+	country = KOR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 6 } #  independence in 1948 + transports
+		command = { type = transport_pool which = KOR value = 20 }#for Jeju
+		}
+	}
+
+event = {
+	id = 15033
+	trigger = { }
+	random = no
+
+	country = KUR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  Not independent as of 2005
+		}
+	}
+
+event = {
+	id = 15034
+	trigger = { }
+	random = no
+
+	country = KYG
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# per SMEP
+		command = { type = free_ic value = 3 } #was 6
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		#command = { type = dissent value = 8 } #independence in 1991
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		}
+	}
+
+event = {
+	id = 15035
+	trigger = { }
+	random = no
+
+	country = LAO
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 } # was 6
+		command = { type = free_manpower value = 0.03 }
+		command = { type = free_energy value = 8 } # was 12
+		command = { type = free_metal value = 4 } # was 6
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 } # was 3
+		command = { type = dissent value = 8 }  # On July 19, 1949, France formally grants Laos independence. Three factions struggle for power
+		command = { type = province_keypoints which = 1306 value = 1 } # Luang Prabang
+		command = { type = province_keypoints which = 1329 value = 1 } # Vientiane
+		}
+	}
+
+event = {
+	id = 15036
+	trigger = { }
+	random = no
+
+	country = LBY
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 }  # Independence 1951 (from Italy)  
+		}
+	}
+
+event = {
+	id = 15037
+	trigger = { }
+	random = no
+
+	country = LEB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = construct which = ic where = 1794 value = 1 } #beirut
+		command = { type = construct which = ic where = 1793 value = 2 } #tripoli
+		command = { type = free_energy value = 8 } # was 12
+		command = { type = free_metal value = 4 } # was 6
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }# was 3
+		# command = { type = dissent value = 5 }  # Independence 1943 (from League of Nations mandate )  
+		}
+	}
+
+event = {
+	id = 15038
+	trigger = { }
+	random = no
+
+	country = MAD
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 }  # Independence 1960 
+		}
+	}
+
+event = {
+	id = 15039
+	trigger = { }
+	random = no
+
+	country = MAL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 }  # Independence 1960 
+		}
+	}
+
+event = {
+	id = 15040
+	trigger = { }
+	random = no
+
+	country = MLY
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 7 } # was 8
+		command = { type = free_energy value = 12 } # was 18
+		command = { type = free_metal value = 6 } # was 10
+		#command = { type = free_oil value = 10 }
+		command = { type = free_rare_materials value = 3 } # was 4
+		command = { type = dissent value = 10 }  # Independence 1956 + transport pay
+		command = { type = transport_pool which = MLY value = 40 }
+		}
+	}
+
+event = {
+	id = 15041
+	trigger = { }
+	random = no
+
+	country = MOR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 }  # Independence 1956
+		}
+	}
+
+event = {
+	id = 15042
+	trigger = { }
+	random = no
+
+	country = MOZ
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #  independence in 1975
+		}
+	}
+
+event = {
+	id = 15043
+	trigger = { }
+	random = no
+
+	country = MTN
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 8 } # was 6
+		command = { type = free_metal value = 4 } # was 3
+		# command = { type = free_oil value = 3 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 8 } #  Independent in 2006
+		}
+	}
+
+event = {
+	id = 15044
+	trigger = { }
+	random = no
+
+	country = NAM
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } # Independence 1990 (from South African mandate) 
+		}
+	}
+
+event = {
+	id = 15045
+	trigger = { }
+	random = no
+
+	country = NIG
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  Independence 1960
+		}
+	}
+
+
+event = {
+	id = 15047
+	trigger = { }
+	random = no
+
+	country = PAK
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 6 } #  Independence 1947 + transport pay
+		command = { type = transport_pool which = PAK value = 50 }
+		}
+	}
+
+event = {
+	id = 15048
+	trigger = { }
+	random = no
+
+	country = PAL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 4 } #  Hypothetical alternative to Israel 
+		}
+	}
+
+event = {
+	id = 15049
+	trigger = { }
+	random = no
+
+	country = PRI
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# modified for SMEP
+		command = { type = province_keypoints which = 1367 value = 2 }
+		command = { type = province_keypoints which = 1371 value = -2 }
+		command = { type = construct which = ic where = 1372 value = 6 }
+		command = { type = construct which = ic where = 1373 value = 2 }
+		command = { type = construct which = ic where = 1371 value = 2 }
+		command = { type = construct which = ic where = 1367 value = 2 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		#command = { type = free_oil value = 10 }
+		command = { type = free_rare_materials value = 6 }
+		#command = { type = dissent value = 10 } #Hypothetical
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		command = { type = dissent value = 12 } #  Hypothetical + transports
+		command = { type = transport_pool which = PRI value = 40 }
+		}
+	}
+
+event = {
+	id = 15050
+	trigger = { }
+	random = no
+
+	country = PRK
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+#	date = { day = 0 month = january year = 1930 }
+#	offset = 1
+#	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 5 }
+		command = { type = dissent value = 10 } #  Founding of the Democratic People's Republic of Korea 1948 
+		}
+	}
+
+event = {
+	id = 15051
+	trigger = { }
+	random = no
+
+	country = QUE
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 5 } #  "Hypothetical" nation
+		}
+	}
+
+event = {
+	id = 15052
+	trigger = { }
+	random = no
+
+	country = RHO
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1965
+		}
+	}
+
+
+event = {
+	id = 15054
+	trigger = { }
+	random = no
+
+	country = SAR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #  independence in 1965 later joined Malaysia
+		}
+	}
+
+
+event = {
+	id = 15056
+	trigger = { }
+	random = no
+
+	country = SER
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# command = { type = free_ic value = 3 }
+		# command = { type = free_energy value = 6 }
+		# command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 3 }
+		# command = { type = free_rare_materials value = 2 }
+		}
+	}
+
+event = {
+	id = 15057
+	trigger = { }
+	random = no
+
+	country = SIB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepminister which = 522011 }
+		command = { type = sleepminister which = 522012 }
+		command = { type = headofstate which = 522040 }
+		command = { type = headofgovernment which = 522041 }
+		# per SMEP
+		#command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		#command = { type = dissent value = 10 } #"Hypothetical" nation
+		}
+	}
+
+event = {
+	id = 15058
+	trigger = { }
+	random = no
+
+	country = SIE
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		}
+	}
+
+event = {
+	id = 15059
+	trigger = { }
+	random = no
+
+	country = SLV
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		}
+	}
+
+event = {
+	id = 15060
+	trigger = { }
+	random = no
+
+	country = SOM
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #  independence in 1960
+		}
+	}
+
+event = {
+	id = 15061
+	trigger = { }
+	random = no
+
+	country = SUD
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 4 } #  independence in 1956
+		}
+	}
+
+event = {
+	id = 15062
+	trigger = { }
+	random = no
+
+	country = SYR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = construct which = ic where = 1792 value = 2 } #Damascus
+		command = { type = construct which = ic where = 1795 value = 1 } #
+		command = { type = construct which = ic where = 1863 value = 1 } #
+		command = { type = construct which = ic where = 1862 value = 1 } #
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 } # was 4
+		#command = { type = dissent value = 3 } #independence in 1946
+		}
+	}
+
+event = {
+	id = 15063
+	trigger = { }
+	random = no
+
+	country = TAJ
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 } #was 6
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		#command = { type = dissent value = 8 } #independence in 1991
+		# lines below per SMEP
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		}
+	}
+
+
+event = {
+	id = 15065
+	trigger = { }
+	random = no
+
+	country = TRA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		}
+	}
+
+event = {
+	id = 15066
+	trigger = { }
+	random = no
+
+	country = TRK
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 } #was 6
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		#command = { type = dissent value = 8 } #independence in 1991
+		# lines below per SMEP
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		}
+	}
+
+event = {
+	id = 15067
+	trigger = { }
+	random = no
+
+	country = TUN
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 5 } #  independence in 1956
+		}
+	}
+
+event = {
+	id = 15068
+	trigger = { }
+	random = no
+
+	country = UKR
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 15 }
+		command = { type = free_energy value = 30 }
+		command = { type = free_metal value = 15 }
+		# command = { type = free_oil value = 15 }
+		command = { type = free_rare_materials value = 8 }
+		command = { type = dissent value = 8 } #  independence in 1991
+		}
+	}
+
+event = {
+	id = 15069
+	trigger = { }
+	random = no
+
+	country = UZB
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 } #was 6
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		#command = { type = dissent value = 8 } #independence in 1991
+		# lines below by SMEP
+		command = { type = energypool value = 1000 }
+		command = { type = metalpool value = 500 }
+		command = { type = rarematerialspool value = 250 }
+		command = { type = oilpool value = 100 }
+		command = { type = manpowerpool value = 20 }
+		command = { type = money value = 100 }
+		command = { type = supplies value = 1000 }
+		}
+	}
+
+event = {
+	id = 15070
+	trigger = { }
+	random = no
+
+	country = VIE
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_manpower value = 0.01 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = dissent value = 5 } #  Independence was declared after World War II, but the French continued to rule until 1954
+		command = { type = province_keypoints which = 1333 value = 1 } # Danang
+		command = { type = province_keypoints which = 1337 value = -5 } # Saigon
+		}
+	}
+
+event = {
+	id = 15071
+	trigger = { }
+	random = no
+
+	country = BRU
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		}
+	}
+
+
+event = {
+	id = 15072
+	trigger = { 
+		NOT = { 
+			event = 2032  #does not happen if already set free by GER
+		      }
+		  }
+	random = no
+
+	country = CRO
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 20 }
+		command = { type = free_metal value = 10 }
+		# command = { type = free_oil value = 10 }
+		command = { type = free_rare_materials value = 5 }
+		}
+	}
+
+event = {
+	id = 15073
+	trigger = {  }
+	random = no
+
+	country = CSA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 112 } # USA's Norfolk Naval Yard
+		command = { type = sleepteam which = 109 } # USA's Newport News Shipbuilding
+		command = { type = waketeam which = 129 }  # USA's Philadelphia Naval Shipyard
+
+		}
+	}
+
+event = {
+	id = 15074
+	trigger = {  }
+	random = no
+
+	country = CAL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 103 } # USA's Douglas Aircraft Company
+		command = { type = sleepteam which = 117 } # USA's Standard Oil of California
+		command = { type = waketeam which = 133 }  # USA's Standard Oil of Indiana
+
+		}
+	}
+
+event = {
+	id = 15075
+	trigger = {  }
+	random = no
+
+	country = TEX
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		command = { type = sleepteam which = 118 } # USA's Texas Oil Company
+
+		}
+	}
+
+event = {
+	id = 15076
+	trigger = {  
+		ispuppet = USA 
+		}
+
+	random = no
+
+	country = USA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #  The resistance & 'The Right to Bear Arms'
+		}
+	}
+
+event = {
+	id = 15077
+	trigger = {  
+		ispuppet = CAN 
+		}
+
+	random = no
+
+	country = USA
+
+	name = "國家建立"
+	desc = "Canada achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 4 } #  The resistance
+		}
+	}
+
+event = {
+	id = 15078
+	trigger = {  
+		puppet = { country = PHI country = JAP }
+		}
+
+	random = no
+
+	country = PHI
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 5 } #  The resistance
+		command = { type = sleepteam which = 6904 } #Douglas MacArthur
+		command = { type = sleepleader which = 430043 } # MacArthur
+		command = { type = sleepleader which = 430044 } # Wainwright
+
+		}
+	}
+
+event = {
+	id = 15079
+	trigger = {  
+		puppet = { country = POL country = GER }
+		}
+
+	random = no
+
+	country = POL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 5 } #  The resistance
+		}
+	}
+
+event = {
+	id = 15080
+	trigger = {  
+		}
+
+	random = no
+
+	country = FLA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 5 } #  The resistance
+		}
+	}
+
+event = {
+	id = 15081
+	trigger = {  
+		}
+
+	random = no
+
+	country = WLL
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 5 } #  The resistance
+		}
+	}
+
+event = {
+	id = 15082
+	trigger = {  }
+	random = no
+
+	country = SCA
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #  "Hypothetical" nation
+		}
+	}
+
+event = {
+	id = 15083
+	trigger = { }
+	random = no
+
+	country = MEN
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 5 }
+		command = { type = free_energy value = 14 }
+		command = { type = free_metal value = 9 }
+		command = { type = free_oil value = 2 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #  The resistance
+		}
+	}
+
+event = {
+	id = 15084
+	trigger = { }
+	random = no
+
+	country = U70
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15085
+	trigger = { }
+	random = no
+
+	country = U71
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 8 } #
+		}
+	}
+
+event = {
+	id = 15086
+	trigger = { 
+		OR = {	
+			event = 8228043
+			event = 1975430
+		}
+	}
+	random = no
+
+	country = U72
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_manpower value = 0.01 }
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 }
+		command = { type = province_keypoints which = 1333 value = -1 } # 峴港
+		command = { type = province_keypoints which = 1326 value = 1 } # Haiphong
+		}
+	}
+
+event = {
+	id = 15087
+	trigger = { }
+	random = no
+
+	country = U73
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = -16 } # added by SMEP
+		command = { type = dissent value = 10 } # was 15
+		}
+	}
+
+event = {
+	id = 15088
+	trigger = { }
+	random = no
+
+	country = U74
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		}
+	}
+
+event = {
+	id = 15089
+	trigger = { }
+	random = no
+
+	country = U75
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15090
+	trigger = { }
+	random = no
+
+	country = U76 # Wales
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 7 } # was 6
+		command = { type = free_energy value = 18 } # was 12
+		command = { type = free_metal value = 9 } # was 6
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 4 } # was 3
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15091
+	trigger = { }
+	random = no
+
+	country = U77
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 15 } #
+		}
+	}
+
+event = {
+	id = 15092
+	trigger = { }
+	random = no
+
+	country = U78
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = industrial_modifier which = total value = -40 } #Added by SMEP
+		command = { type = dissent value = 5 } # was 15
+		}
+	}
+
+event = {
+	id = 15093
+	trigger = { }
+	random = no
+
+	country = U79
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = transport_pool which = U79 value = 60 }
+		}
+	}
+
+event = {
+	id = 15094
+	trigger = { }
+	random = no
+
+	country = U80
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15095
+	trigger = { }
+	random = no
+
+	country = U81
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15096
+	trigger = { }
+	random = no
+
+	country = U82
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15097
+	trigger = { }
+	random = no
+
+	country = U83
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15098
+	trigger = { }
+	random = no
+
+	country = U84
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15099
+	trigger = { }
+	random = no
+
+	country = U85
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15300
+	trigger = { }
+	random = no
+
+	country = U86
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15301
+	trigger = { }
+	random = no
+
+	country = U87#puppet China
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = industrial_modifier which = total value = -35 } #added by SMEP
+		# command = { type = free_ic value = 6 }
+		# command = { type = free_energy value = 12 }
+		# command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		# command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports and dissent
+		command = { type = transport_pool which = U87 value = 80 }
+		}
+	}
+
+event = {
+	id = 15302
+	trigger = { }
+	random = no
+
+	country = U88
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15303
+	trigger = { }
+	random = no
+
+	country = U89
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15304
+	trigger = { }
+	random = no
+
+	country = U90
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15305
+	trigger = { }
+	random = no
+
+	country = U91
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15306
+	trigger = { }
+	random = no
+
+	country = U92
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15307
+	trigger = { }
+	random = no
+
+	country = U93
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15308
+	trigger = { }
+	random = no
+
+	country = U94
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15309
+	trigger = { }
+	random = no
+
+	country = U95
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15310
+	trigger = { }
+	random = no
+
+	country = U96
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15311
+	trigger = { }
+	random = no
+
+	country = U97
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15312
+	trigger = { }
+	random = no
+
+	country = U98
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+
+event = {
+	id = 15313
+	trigger = { }
+	random = no
+
+	country = U99
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 6 } #
+		}
+	}
+event = {
+	id = 15275
+	trigger = { }
+	random = no
+
+	country = SCO
+
+	name = "AI_EVENT"
+	desc = "AI_EVENT"
+	style = 0
+
+	date = { day = 1 month = january year = 1936 }
+	offset = 1
+	deathdate = { day = 30 month = december year = 1953 }
+
+	action_a = {
+		name = ""
+		command = { type = free_ic value = 9 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		#command = { type = free_oil value = 10 }
+		command = { type = free_rare_materials value = 3 }
+	}
+}
+event = {
+	id = 15280
+	trigger = { }
+	random = no
+
+	country = U00 #Catalonia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 20 } #artificial pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U00 value = 100 }
+		}
+	}
+event = {
+	id = 15281
+	trigger = { }
+	random = no
+
+	country = U01 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15282
+	trigger = { }
+	random = no
+
+	country = U02 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15283
+	trigger = { }
+	random = no
+
+	country = U03 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15284
+	trigger = { }
+	random = no
+
+	country = U04 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15285
+	trigger = { }
+	random = no
+
+	country = U05 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15286
+	trigger = { }
+	random = no
+
+	country = U06 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15287
+	trigger = { }
+	random = no
+
+	country = U07 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15288
+	trigger = { }
+	random = no
+
+	country = U08 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15289
+	trigger = { }
+	random = no
+
+	country = U09 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15290
+	trigger = { }
+	random = no
+
+	country = U10 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15291
+	trigger = { }
+	random = no
+
+	country = U11 #Idel-Ural
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# command = { type = free_ic value = 6 }
+		# command = { type = free_energy value = 12 }
+		# command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		# command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 10 } # hypothetical nation
+		# command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15292
+	trigger = { }
+	random = no
+
+	country = U12 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15293
+	trigger = { }
+	random = no
+
+	country = U13 #Empire of China
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# command = { type = free_ic value = 6 }
+		# command = { type = free_energy value = 12 }
+		# command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		# command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 10 } #
+		# command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15294
+	trigger = { }
+	random = no
+
+	country = U14 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15295
+	trigger = { }
+	random = no
+
+	country = U15 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15296
+	trigger = { }
+	random = no
+
+	country = U16 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15297
+	trigger = { }
+	random = no
+
+	country = U17 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15298
+	trigger = { }
+	random = no
+
+	country = U18 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15299
+	trigger = { }
+	random = no
+
+	country = U19 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+
+event = {
+	id = 15320
+	trigger = { }
+	random = no
+
+	country = U20 #not assigned
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15321
+	trigger = { }
+	random = no
+
+	country = U21#Alaska
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U21 value = 60 }
+		}
+	}
+event = {
+	id = 15322
+	trigger = { }
+	random = no
+
+	country = U22#New England
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15323
+	trigger = { }
+	random = no
+
+	country = U23#Atlantic Ocean Fed
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U23 value = 70 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = 1023000 value = 2 }
+		command = { type = set_leader_skill which = 1023002 value = 2 }
+		command = { type = set_leader_skill which = 1023003 value = 2 }
+		command = { type = set_leader_skill which = 1023004 value = 2 }
+		command = { type = set_leader_skill which = 1023005 value = 2 }
+		command = { type = set_leader_skill which = 1023006 value = 3 }
+		}
+	}
+event = {
+	id = 15324
+	trigger = { }
+	random = no
+
+	country = U24#Macedonia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 } # was 6
+		command = { type = free_energy value = 8 } # was 12
+		command = { type = free_metal value = 4 } # was 6
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 } # was 3
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15325
+	trigger = { }
+	random = no
+
+	country = U25#West Papua
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U25 value = 60 }
+		}
+	}
+event = {
+	id = 15326
+	trigger = { }
+	random = no
+
+	country = U26#Papua New Guinea
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U26 value = 60 }
+		}
+	}
+event = {
+	id = 15327
+	trigger = { }
+	random = no
+
+	country = U27#Newfoundland
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U27 value = 60 }
+		}
+	}
+event = {
+	id = 15328
+	trigger = { }
+	random = no
+
+	country = U28 # Iberia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15329
+	trigger = { }
+	random = no
+
+	country = U29#Fiji
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } # pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U29 value = 45 }
+		}
+	}
+event = {
+	id = 15330
+	trigger = { }
+	random = no
+
+	country = U30#Melanesia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 12 }
+		command = { type = free_energy value = 24 }
+		command = { type = free_metal value = 12 }
+		# command = { type = free_oil value = 12 }
+		command = { type = free_rare_materials value = 6 }
+		command = { type = dissent value = 15 } #hypothetical + pay for transports
+		command = { type = free_manpower value = 0.10 }
+		command = { type = transport_pool which = U30 value = 100 }
+		}
+	}
+event = {
+	id = 15331
+	trigger = { }
+	random = no
+
+	country = U31#Puerto Rico
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15332
+	trigger = { }
+	random = no
+
+	country = U32#Barbados
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #independence 1966 from West Indies Federation
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 3 }
+		command = { type = set_leader_skill which = -1 value = 3 }
+		}
+	}
+event = {
+	id = 15333
+	trigger = { }
+	random = no
+
+	country = U33
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 15 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U33 value = 160 }
+		}
+	}
+event = {
+	id = 15334
+	trigger = { }
+	random = no
+
+	country = U34
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U34 value = 60 }
+		}
+	}
+event = {
+	id = 15335
+	trigger = { }
+	random = no
+
+	country = U35#Turkestan
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = industrial_modifier which = total value = -40 } #added by SMEP
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15336
+	random = no
+	trigger = {  
+		OR = {
+			exists = YEM
+			NOT = { control = { province = 1812 } }
+		}
+		}
+	
+	country = U36#South Yemen
+
+	name = "國家建立"
+	desc = "The country achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 15 } #
+		command = { type = free_manpower value = 0.03 }
+		command = { type = sleepleader which = 1036030 }
+		command = { type = sleepleader which = 1036031 }
+		command = { type = sleepleader which = 1036032 }
+		command = { type = sleepleader which = 1036033 }
+		command = { type = sleepleader which = 1036034 }
+		command = { type = sleepleader which = 1036035 }
+		command = { type = sleepleader which = 1036036 }
+		command = { type = sleepleader which = 1036037 }
+		}
+	}
+event = {
+	id = 15337
+	trigger = { }
+	random = no
+
+	country = U37#Solomon Federation
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 15 } #artificial pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U37 value = 100 }
+		}
+	}
+event = {
+	id = 15338
+	trigger = { }
+	random = no
+
+	country = U38#Cape Verde
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15339
+	trigger = { }
+	random = no
+
+	country = U39#AHE
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = dissent value = 10 } #Hypothetical nation
+		}
+	}
+event = {
+	id = 15340
+	trigger = {
+		NOT = { control = { province = 1850 } }#Tblisi
+	 }
+	random = no
+
+	country = U40#Caucasia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15341
+	trigger = { }
+	random = no
+
+	country = U41#Kiribati
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 15 } # artificial pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U41 value = 100 }
+		}
+	}
+event = {
+	id = 15342
+	trigger = { }
+	random = no
+
+	country = U42#Mid-Atlantic Republic
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15343
+	trigger = { }
+	random = no
+
+	country = U43#Guinea-Bissau
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15344
+	trigger = { }
+	random = no
+
+	country = U44#Moldova
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 2 } # was 6
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		#command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15345
+	trigger = { }
+	random = no
+
+	country = U45#Djibouti
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15346
+	trigger = { }
+	random = no
+
+	country = U46#Botswana
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15347
+	trigger = { }
+	random = no
+
+	country = U47#Sao Tome
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15348
+	trigger = { }
+	random = no
+
+	country = U48#East Timor
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15349
+	trigger = { }
+	random = no
+
+	country = U49#Bahamas
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 15 } #artificial to fund transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U49 value = 100 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = sleepleader which = -1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 3 }
+		command = { type = set_leader_skill which = -1 value = 3 }
+		}
+	}
+event = {
+	id = 15350
+	trigger = { }
+	random = no
+
+	country = U50
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 12 } #artificial to pay for transports
+		command = { type = free_manpower value = 0.03 }
+		command = { type = transport_pool which = U50 value = 60 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 1 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = -1 value = 2 }
+		command = { type = set_leader_skill which = 1050001 value = 2 }
+		}
+	}
+event = {
+	id = 15351
+	trigger = { }
+	random = no
+
+	country = U51#Zambia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15352
+	trigger = { }
+	random = no
+
+	country = U52#Baltic Unioin
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15353
+	trigger = { }
+	random = no
+
+	country = U53#Malawi
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15354
+	trigger = { }
+	random = no
+
+	country = U54#Western Sahara
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15355
+	trigger = { }
+	random = no
+
+	country = U55#Free France
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		# command = { type = dissent value = 5 } #no dissent and inherits French manpower
+		command = { type = transport_pool which = U55 value = 150 }
+		command = { type = headofstate which = 855000 } #DeGaulle
+		command = { type = chiefofstaff which = 855006 }
+		}
+	}
+event = {
+	id = 15356
+	trigger = { }
+	random = no
+
+	country = U56#Bangladesh
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }
+		command = { type = free_energy value = 12 } # was 6
+		command = { type = free_metal value = 6 } # was 3
+		#command = { type = free_oil value = 6 } # was 2
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15357
+	trigger = { }
+	random = no
+
+	country = U57#Florida
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }#Half values
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15358
+	trigger = { }
+	random = no
+
+	country = U58#New Afrika
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }#Half values
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 100 }#new energy
+		}
+	}
+event = {
+	id = 15359
+	trigger = { }
+	random = no
+
+	country = U59#Eritrea
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.03 }
+		}
+	}
+event = {
+	id = 15360
+	trigger = { }
+	random = no
+
+	country = U60#Dietsland
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 50 }#initial manpower
+		}
+	}
+event = {
+	id = 15361
+	trigger = { }
+	random = no
+
+	country = U61#Taiwan
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 10 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15362
+	trigger = { }
+	random = no
+
+	country = U62#Qatar
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		command = { type = free_oil value = 8 } #has oil
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.02 }
+		}
+	}
+event = {
+	id = 15363
+	trigger = { }
+	random = no
+
+	country = U63#Dubai
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 6 }
+		command = { type = free_energy value = 12 }
+		command = { type = free_metal value = 6 }
+		command = { type = free_oil value = 9 }#has oil
+		command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		command = { type = free_manpower value = 0.02 }
+		}
+	}
+event = {
+	id = 15364
+	trigger = { }
+	random = no
+
+	country = U64#Cascadia
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		# command = { type = free_ic value = 6 }#has enough IC
+		command = { type = free_energy value = 6 }#1/2 energy
+		command = { type = free_metal value = 3 }#1/2 metals
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 3 }#free rares
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 20 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15365
+	trigger = { }
+	random = no
+
+	country = U65#East Turkestan
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }#Half values
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 50 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15366
+	trigger = { }
+	random = no
+
+	country = U66#Intermountain
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 2 }#1/3 values IC+rares only
+		# command = { type = free_energy value = 4 }
+		# command = { type = free_metal value = 2 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 1 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 30 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15367
+	trigger = { }
+	random = no
+
+	country = U67#Great Lakes Rep
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#command = { type = free_ic value = 6 }
+		#command = { type = free_energy value = 12 }
+		#command = { type = free_metal value = 6 }
+		# command = { type = free_oil value = 6 }
+		#command = { type = free_rare_materials value = 3 }
+		command = { type = dissent value = 5 } #
+		}
+	}
+event = {
+	id = 15368
+	trigger = { }
+	random = no
+
+	country = U68#Deseret
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 2 }#1/3 values IC + rares only
+		# command = { type = free_energy value = 4 }
+		# command = { type = free_metal value = 2 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 1 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 30 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15369
+	trigger = { }
+	random = no
+
+	country = U69#Oceti Sakowin
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = free_ic value = 3 }#Half values
+		command = { type = free_energy value = 6 }
+		command = { type = free_metal value = 3 }
+		# command = { type = free_oil value = 6 }
+		command = { type = free_rare_materials value = 2 }
+		command = { type = dissent value = 5 } #
+		command = { type = manpowerpool value = 30 }#initial manpower
+		command = { type = free_manpower value = 0.01 }
+		}
+	}
+event = {
+	id = 15370
+	trigger = {  
+		control = { province = 1812 }
+		control = { province = 1813 }
+		control = { province = 1814 }
+		NOT = { exists = U36 }#South Yemen
+		}
+	random = no
+
+	country = YEM
+
+	name = "United Yemen"
+	desc = "The nation achieved its unity without communism."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		command = { type = waketeam which = 11501 }
+		command = { type = waketeam which = 11502 }
+		command = { type = waketeam which = 11503 }
+		command = { type = waketeam which = 11504 }
+		command = { type = waketeam which = 11505 }
+		command = { type = sleepteam which = 11500 }
+		}
+	}
+event = {
+	id = 15371
+	trigger = {  
+		event = 15336
+		NOT = { exists = YEM }
+		control = { province = 1812 }
+		}
+	random = no
+
+	country = U36
+
+	name = "Yemen United"
+	desc = "Yemen achieved its unity at last under communism."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"#reversal free values
+		command = { type = free_ic value = -6 }
+		command = { type = free_energy value = -12 }
+		command = { type = free_metal value = -6 }
+		command = { type = free_rare_materials value = -3 }
+		}
+	}
+
+
+event = {
+	id = 15373
+	trigger = { }
+	random = no
+
+	country = UPS
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+	action_a = {
+		name = "OK"
+		#non-Japanese leaders of PRRS
+		command = { type = sleepminister which = 65406 }
+		command = { type = sleepminister which = 65410 }
+		command = { type = sleepminister which = 65405 }
+		command = { type = sleepminister which = 65426 }
+		command = { type = sleepminister which = 65435 }
+		command = { type = sleepminister which = 65438 }
+		command = { type = sleepminister which = 65444 }
+		command = { type = sleepminister which = 65452 }
+		command = { type = sleepminister which = 65456 }
+		command = { type = sleepminister which = 65420 }
+		command = { type = sleepminister which = 65414 }
+		command = { type = sleepminister which = 65430 }
+		command = { type = sleepminister which = 65424 }
+		command = { type = sleepminister which = 65434 }
+		command = { type = sleepminister which = 65440 }
+		command = { type = sleepminister which = 65446 }
+		command = { type = sleepminister which = 65450 }
+		command = { type = sleepminister which = 65455 }
+		command = { type = sleepminister which = 65413 }
+		command = { type = sleepminister which = 65425 }
+		command = { type = sleepminister which = 65407 }
+		command = { type = sleepminister which = 65427 }
+		command = { type = sleepminister which = 65433 }
+		command = { type = sleepminister which = 65445 }
+		command = { type = sleepminister which = 65451 }
+		command = { type = sleepminister which = 65457 }
+		command = { type = sleepminister which = 65408 }
+		command = { type = sleepminister which = 65432 }
+		command = { type = sleepminister which = 65447 }
+		command = { type = sleepminister which = 65449 }
+		command = { type = sleepminister which = 65454 }
+		command = { type = dissent value = 10 }#initial dissent + pay for transports
+		command = { type = transport_pool which = UPS value = 150 }
+	}
+}
+event = {
+	id = 15374
+	random = no
+	country = UPS
+
+	trigger = {
+		exists = JAP
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Japan Divided" 
+	desc = "Japan is divided, for now"
+	style = 0
+
+	action_a = {
+		name = "OK"	
+		command = { type = sleepteam which = 1986 }
+		command = { type = sleepteam which = 1987 }
+		command = { type = sleepteam which = 1988 }
+		command = { type = sleepteam which = 1989 }
+		command = { type = sleepteam which = 1990 }
+		command = { type = sleepteam which = 1991 }
+		command = { type = sleepteam which = 1992 }
+		command = { type = sleepteam which = 1993 }
+		command = { type = sleepteam which = 1994 }
+		command = { type = sleepteam which = 1995 }
+		command = { type = sleepteam which = 1996 }
+		command = { type = sleepteam which = 1997 }
+		command = { type = sleepteam which = 1998 }
+		command = { type = sleepteam which = 1999 }
+		command = { type = waketeam which = 1969 }
+		command = { type = waketeam which = 1970 }
+		command = { type = waketeam which = 1971 }
+		command = { type = waketeam which = 1972 }
+		command = { type = waketeam which = 1973 }
+		command = { type = waketeam which = 1974 }
+		command = { type = waketeam which = 1975 }
+		command = { type = waketeam which = 1976 }
+		command = { type = waketeam which = 1977 }
+		command = { type = waketeam which = 1978 }
+		command = { type = waketeam which = 1979 }
+		command = { type = waketeam which = 1980 }
+		command = { type = trigger which = 15375 }
+		command = { type = trigger which = 15377 }
+		command = { type = trigger which = 15378 }
+	}
+}
+event = {
+	id = 15375
+	random = no
+	country = UPS
+
+	trigger = {
+		event = 15374
+		NOT = { exists = MEN }
+		NOT = { exists = MAN }
+		puppet = { country = UPS country = SOV }
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Kwantung Army Defections" 
+	desc = "About 500,000 soldiers were in the Kwantung, Manchukuo and Mengjiang armies when they were overwhelmed by the Soviet armies in Operation August Storm. When taken prisoner, many agreed to cooperate with the Communists."
+	style = 0
+
+	action_a = {
+		name = "OK"	
+		command = { type = waketeam which = 1954 }
+		command = { type = waketeam which = 1955 }
+		command = { type = waketeam which = 1956 }
+		command = { type = waketeam which = 1957 }
+		command = { type = waketeam which = 1958 }
+		command = { type = waketeam which = 1959 }
+	}
+}
+
+event = { 
+	id = 15376
+	random = no
+	country = UPS
+
+	trigger = {
+		event = 15375
+		OR = {
+			exists = MEN
+			exists = MAN
+		}
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 5
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Japan Divided" 
+	desc = ""
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = sleepteam which = 1954 }
+		command = { type = sleepteam which = 1955 }
+		command = { type = sleepteam which = 1956 }
+		command = { type = sleepteam which = 1957 }
+		command = { type = sleepteam which = 1958 }
+		command = { type = sleepteam which = 1959 }
+		
+	}
+}
+event = { 
+	id = 15377
+	random = no
+	country = UPS
+
+	trigger = {
+		event = 15374
+		owned = { province = 1184 data = UPS } 
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Liberation of Yokohama and Tokyo" 
+	desc = "The Red Armies of the Soviet Union and the fledgling socialist Japan have obtained control of the vital Tokyo-Yokohama region and its associated resources."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		#tech teams skill lowered by one reflecting Japan division	
+		command = { type = waketeam which = 1960 }
+		command = { type = waketeam which = 1961 }
+		command = { type = waketeam which = 1962 }
+		command = { type = waketeam which = 1963 }
+		command = { type = waketeam which = 1964 }
+		command = { type = waketeam which = 1965 }
+		command = { type = waketeam which = 1966 }
+		command = { type = waketeam which = 1967 }
+		command = { type = waketeam which = 1968 }
+	}
+}
+event = { 
+	id = 15378
+	random = no
+	country = UPS
+
+	trigger = {
+		event = 15374
+		owned = { province = 1187 data = UPS } 
+		owned = { province = 1188 data = UPS } 
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Liberation of Hiroshima and Osaka" 
+	desc = "With control of the Osaka-Nagoya area, the ancient capital of Kyoto is now under Red control. With control of the Hiroshima area, the Kure Naval Yard is available for research."
+	style = 0
+
+	action_a = {
+		name = "OK"	
+		command = { type = waketeam which = 1996 }
+		
+	}
+}
+event = { 
+	id = 15379
+	random = no
+	country = JAP
+
+	trigger = {
+		exists = UPS
+	}
+
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Japan Divided" 
+	desc = "We must accept the division of Japan, for now."
+	style = 0
+
+	action_a = {
+		name = "OK"
+	#sleep duplicated leaders
+	command = { type = sleepleader which = 101003 } #Akashika
+command = { type = sleepleader which = 101004 } #Akashita
+command = { type = sleepleader which = 101005 } #Amano
+command = { type = sleepleader which = 101007 } #Anami
+command = { type = sleepleader which = 101008 } #Ando  R.
+command = { type = sleepleader which = 101010 } #Aoki
+command = { type = sleepleader which = 101011 } #Aotsu
+command = { type = sleepleader which = 101012 } #Araki
+command = { type = sleepleader which = 101013 } #Arikawa
+command = { type = sleepleader which = 101015 } #Aung San
+command = { type = sleepleader which = 101016 } #Ayabe
+command = { type = sleepleader which = 101017 } #Baba
+command = { type = sleepleader which = 101018 } #Banzai
+command = { type = sleepleader which = 101019 } #Chandra Bose
+command = { type = sleepleader which = 101021 } #Dohihara
+command = { type = sleepleader which = 101022 } #Endo
+command = { type = sleepleader which = 101023 } #Fujie
+command = { type = sleepleader which = 101026 } #Fukui
+command = { type = sleepleader which = 101027 } #Funabiki
+command = { type = sleepleader which = 101028 } #Gatot Mangkoepradja
+command = { type = sleepleader which = 101029 } #Hanada
+command = { type = sleepleader which = 101031 } #Hara
+command = { type = sleepleader which = 101034 } #Hata
+command = { type = sleepleader which = 101036 } #Hayashi
+command = { type = sleepleader which = 101037 } #Hayashida
+command = { type = sleepleader which = 101038 } #Higashikuni
+command = { type = sleepleader which = 101039 } #Higuchi
+command = { type = sleepleader which = 101041 } #Hirota
+command = { type = sleepleader which = 101044 } #Hong
+command = { type = sleepleader which = 101045 } #Hong Sa
+command = { type = sleepleader which = 101047 } #Homma
+command = { type = sleepleader which = 101048 } #Horii
+command = { type = sleepleader which = 101049 } #Horiuchi
+command = { type = sleepleader which = 101050 } #Hoshinato
+command = { type = sleepleader which = 101052 } #Ichiki
+command = { type = sleepleader which = 101055 } #Iida
+command = { type = sleepleader which = 101057 } #Ijuin
+command = { type = sleepleader which = 101058 } #Imai
+command = { type = sleepleader which = 101061 } #Inanba
+command = { type = sleepleader which = 101062 } #Ishiguro
+command = { type = sleepleader which = 101066 } #Ishiwara
+command = { type = sleepleader which = 101067 } #Isogai
+command = { type = sleepleader which = 101073 } #Izeki
+command = { type = sleepleader which = 101074 } #Kajika
+command = { type = sleepleader which = 101076 } #Kaneoka
+command = { type = sleepleader which = 101080 } #Katakura
+command = { type = sleepleader which = 101081 } #Kataoka
+command = { type = sleepleader which = 101085 } #Kawagishi
+command = { type = sleepleader which = 101090 } #Kaya
+command = { type = sleepleader which = 101091 } #Kido
+command = { type = sleepleader which = 101092 } #Kim
+command = { type = sleepleader which = 101096 } #Kita
+command = { type = sleepleader which = 101101 } #Koiso
+command = { type = sleepleader which = 101102 } #Kokubu
+command = { type = sleepleader which = 101104 } #Komatsuzaki
+command = { type = sleepleader which = 101105 } #Komoda
+command = { type = sleepleader which = 101106 } #Kozuki
+command = { type = sleepleader which = 101110 } #Kusgibichi
+command = { type = sleepleader which = 101112 } #Maeda
+command = { type = sleepleader which = 101113 } #Makino
+command = { type = sleepleader which = 101114 } #Maruyama
+command = { type = sleepleader which = 101116 } #Matsui
+command = { type = sleepleader which = 101117 } #Minami
+command = { type = sleepleader which = 101120 } #Miyazaki
+command = { type = sleepleader which = 101122 } #Mutaguchi
+command = { type = sleepleader which = 101127 } #Nakai
+command = { type = sleepleader which = 101131 } #Nishi
+command = { type = sleepleader which = 101134 } #Nishio  T.
+command = { type = sleepleader which = 101137 } #Ogisu
+command = { type = sleepleader which = 101141 } #Okamura
+command = { type = sleepleader which = 101143 } #Otani
+command = { type = sleepleader which = 101144 } #Renge
+command = { type = sleepleader which = 101145 } #Sagara
+command = { type = sleepleader which = 101148 } #Sakabara
+command = { type = sleepleader which = 101150 } #Sakai
+command = { type = sleepleader which = 101155 } #Shibashi
+command = { type = sleepleader which = 101156 } #Shibazaki
+command = { type = sleepleader which = 101158 } #Shima
+command = { type = sleepleader which = 101159 } #Shimizu
+command = { type = sleepleader which = 101161 } #Shoji
+command = { type = sleepleader which = 101162 } #Shojiro
+command = { type = sleepleader which = 101163 } #Sugiyama
+command = { type = sleepleader which = 101165 } #Sumida
+command = { type = sleepleader which = 101170 } #Tada
+command = { type = sleepleader which = 101171 } #Tadaki
+command = { type = sleepleader which = 101176 } #Tani
+command = { type = sleepleader which = 101177 } #Tashiro
+command = { type = sleepleader which = 101179 } #Terauchi  H.
+command = { type = sleepleader which = 101180 } #Terauchi  T.
+command = { type = sleepleader which = 101181 } #Tojo
+command = { type = sleepleader which = 101184 } #Tomonaga
+command = { type = sleepleader which = 101185 } #Toshikaza
+command = { type = sleepleader which = 101188 } #Tsuda
+command = { type = sleepleader which = 101189 } #Tsuji
+command = { type = sleepleader which = 101190 } #Uchiyama
+command = { type = sleepleader which = 101192 } #Umezu
+command = { type = sleepleader which = 101195 } #Ushijima  Mitsuru
+command = { type = sleepleader which = 101196 } #Ushijima  S.
+command = { type = sleepleader which = 101197 } #Wada
+command = { type = sleepleader which = 101198 } #Wakamatsu
+command = { type = sleepleader which = 101200 } #Yamada
+command = { type = sleepleader which = 101202 } #Yamaoka
+command = { type = sleepleader which = 101206 } #Yamazaki
+command = { type = sleepleader which = 101207 } #Yanagawa  H.
+command = { type = sleepleader which = 101208 } #Yanagawa  S.
+command = { type = sleepleader which = 101210 } #Yano
+command = { type = sleepleader which = 101212 } #Yokoyama  Isa.
+command = { type = sleepleader which = 101213 } #Yokoyama  Y.
+command = { type = sleepleader which = 101214 } #Yoshida
+command = { type = sleepleader which = 101216 } #Yoshioka
+command = { type = sleepleader which = 101220 } #Fujita
+command = { type = sleepleader which = 101221 } #Fujiwara
+command = { type = sleepleader which = 101224 } #Godo
+command = { type = sleepleader which = 101232 } #Hosonoya
+command = { type = sleepleader which = 101239 } #Kato  H.
+command = { type = sleepleader which = 101268 } #Oikawa
+command = { type = sleepleader which = 101272 } #Osami
+command = { type = sleepleader which = 101290 } #Triye
+command = { type = sleepleader which = 101310 } #Itou
+command = { type = sleepleader which = 101326 } #Saboru
+command = { type = sleepleader which = 101344 } #Hasebe
+command = { type = sleepleader which = 101345 } #Inagaki
+command = { type = sleepleader which = 101346 } #Moten
+command = { type = sleepleader which = 101347 } #Yuhi
+command = { type = sleepleader which = 101348 } #Yuyoushi
+command = { type = sleepteam which = 1920 }#Sin-Itiro Tomonaga
+	}
+}
+event = { 
+	id = 15380
+	random = no
+	country = UPR
+
+	trigger = {
+		exists = UPR
+		 } 
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "國家建立"
+	desc = "The nation achieved its independence."
+	style = 0
+
+	action_a = {
+		name = "OK"#Nazi leaders slept for non-Armageddon mode	
+		command = { type = sleepminister which = 79702 }
+		command = { type = sleepminister which = 79704 }
+		command = { type = sleepminister which = 79705 }
+		command = { type = sleepminister which = 79706 }
+		command = { type = sleepminister which = 79707 }
+		command = { type = sleepminister which = 79709 }
+		command = { type = sleepminister which = 79710 }
+		command = { type = sleepminister which = 79711 }
+		command = { type = sleepminister which = 79712 }
+		command = { type = sleepminister which = 79714 }
+		command = { type = sleepminister which = 79715 }
+		command = { type = sleepminister which = 79716 }
+		command = { type = sleepminister which = 79717 }
+		command = { type = sleepminister which = 79719 }
+		command = { type = sleepminister which = 79720 }
+		command = { type = sleepminister which = 79721 }
+		command = { type = sleepminister which = 79722 }
+		command = { type = sleepminister which = 79723 }
+		command = { type = sleepminister which = 79725 }
+		command = { type = sleepminister which = 79727 }
+		command = { type = sleepminister which = 79728 }
+		command = { type = sleepminister which = 79729 }
+		command = { type = sleepminister which = 79730 }
+		command = { type = sleepminister which = 79731 }
+		command = { type = sleepminister which = 79732 }
+		command = { type = sleepminister which = 79733 }
+		command = { type = sleepminister which = 79736 }
+		command = { type = sleepminister which = 79737 }
+		command = { type = sleepminister which = 79738 }
+		command = { type = sleepminister which = 79739 }
+		command = { type = sleepminister which = 79741 }
+		command = { type = sleepminister which = 79743 }
+		command = { type = sleepminister which = 79744 }
+		command = { type = sleepminister which = 79746 }
+		command = { type = sleepminister which = 79747 }
+		command = { type = sleepminister which = 79749 }
+		command = { type = sleepminister which = 79751 }
+		command = { type = sleepminister which = 79752 }
+		command = { type = sleepminister which = 79753 }
+		command = { type = sleepminister which = 79757 }
+	}
+}
+event = { 
+	id = 15381
+	random = no
+	country = YEM
+
+	trigger = {	control = { province = 1815 } } 
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Transports"
+	desc = "Transports are constructed."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = transport_pool which = YEM value = 35 }
+	}
+}
+event = { 
+	id = 15382
+	random = no
+	country = JAP
+
+	trigger = {
+		ispuppet = JAP
+		atwar = no
+	} 
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Transports"
+	desc = "Transports are constructed."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = transport_pool which = JAP value = 100 }
+	}
+}
+event = { 
+	id = 15383
+	random = no
+	country = ENG
+
+	trigger = {
+		ispuppet = ENG
+		atwar = no
+		control = { province = 28 }
+	}
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Transports"
+	desc = "Transports are constructed."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = transport_pool which = ENG value = 50 }
+	}
+}
+event = { 
+	id = 15384
+	random = no
+	country = USA
+
+	trigger = {
+		ispuppet = USA
+		atwar = no
+		OR = {
+			control = { province = 553 }#Alaska
+			control = { province = 663 }#Hawaii
+			control = { province = 895 }#Puerto Rico
+			control = { province = 889 }#Panama Canal
+		}
+	}
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 9999 }
+
+
+	name = "Transports"
+	desc = "Transports are constructed."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = transport_pool which = USA value = 100 }
+	}
+}
+event = { 
+	id = 15385
+	random = no
+	country = ENG
+
+	#
+
+	name = "Overseas Bases"
+	desc = "Overseas bases are constructed to permit potential revolters to have more technology. (Adjustment for this mod)"
+	style = 0
+	picture = "british_naval_reinforcments"
+
+	action_a = {
+		name = "OK"
+		#add some cores on overseas provinces
+		command = { type = addcore which = 538 } #Bermuda
+		command = { type = addcore which = 1817 } #Diego Garcia
+		# build ports and airbases
+		# doesn't matter if UK controls they get built anyway
+		command = { type = construct which = air_base where = 1813 value = 1 } #Aden
+		command = { type = construct which = naval_base where = 1504 value = 1 } #Dubai
+		command = { type = construct which = air_base where = 1504 value = 1 } #Dubai
+		command = { type = construct which = naval_base where = 1820 value = 1 } #Doha
+		command = { type = construct which = air_base where = 1820 value = 1 } #Doha
+		command = { type = construct which = air_base where = 1475 value = 1 } #Lahore
+		command = { type = construct which = naval_base where = 1285 value = 1 } #Dacca
+		command = { type = construct which = air_base where = 1285 value = 1 } #Dacca
+		command = { type = construct which = naval_base where = 1644 value = 1 } #Kuching
+		command = { type = construct which = naval_base where = 1665 value = 1 } #Hollandia
+		command = { type = construct which = air_base where = 1665 value = 1 } #Hollandia
+		command = { type = construct which = naval_base where = 1685 value = 1 } #Guadalcanal
+		command = { type = construct which = air_base where = 1685 value = 1 } #Guadalcanal
+		command = { type = construct which = naval_base where = 1752 value = 1 } #Fiji
+		command = { type = construct which = air_base where = 1752 value = 1 } #Fiji
+		command = { type = construct which = naval_base where = 1339 value = 1 } #Battambang
+		command = { type = construct which = air_base where = 1340 value = 1 } #Phnom Penh
+		command = { type = construct which = air_base where = 1329 value = 1 } #Vientiane
+		command = { type = construct which = naval_base where = 895 value = 1 } #Puerto Rico
+		command = { type = construct which = air_base where = 895 value = 1 } #Puerto Rico
+		command = { type = construct which = naval_base where = 891 value = 1 } #Jamaica
+		command = { type = construct which = air_base where = 891 value = 1 } #Jamaica
+		command = { type = construct which = naval_base where = 809 value = 1 } #Trinidad
+		command = { type = construct which = air_base where = 809 value = 1 } #Trinidad
+		command = { type = construct which = naval_base where = 653 value = 1 } #New Providence
+		command = { type = construct which = naval_base where = 1769 value = 1 } #Tarawa
+		command = { type = construct which = air_base where = 1769 value = 1 } #Tarawa
+		command = { type = construct which = naval_base where = 1136 value = 1 } #Mauritius
+		command = { type = construct which = air_base where = 1136 value = 1 } #Mauritius
+		command = { type = construct which = naval_base where = 1137 value = 1 } #Madagascar
+		command = { type = construct which = air_base where = 1137 value = 1 } #Madagascar
+		command = { type = construct which = naval_base where = 1037 value = 1 } #Djibouti
+		command = { type = construct which = air_base where = 1037 value = 1 } #Djibouti
+		command = { type = construct which = naval_base where = 1822 value = 1 } #Kuwait
+		command = { type = construct which = air_base where = 1822 value = 1 } #Kuwait
+		command = { type = construct which = naval_base where = 1862 value = 1 } #Aleppo
+		command = { type = construct which = air_base where = 1792 value = 1 } #Damascus
+		command = { type = construct which = air_base where = 1126 value = 1 } #Lusaka
+		command = { type = construct which = air_base where = 1132 value = 1 } #Malawi
+		command = { type = construct which = naval_base where = 680 value = 1 } #New Orleans
+	}
+}
+
+############################
+# event for compatibility with mods
+# that may have different start dates
+# change country if ENG does not
+# exist in the mod
+############################
+
+
+
+event = { 
+	id = 15396
+	random = no
+	country = USA
+
+	trigger = { 
+		NOT = { control = { province = 606 } }
+		control = { province = 604 }
+	 }
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Capital-Philadelphia"
+	desc = "We have to move our capital."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = capital which = 604 }
+	}
+}
+event = { 
+	id = 15397
+	random = no
+	country = USA
+
+	trigger = { 
+		NOT = { control = { province = 606 } }
+		NOT = ( control = { province = 604 } }
+		control = { province = 689 }
+	 }
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Capital-St Louis"
+	desc = "We have to move our capital."
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = capital which = 689 }
+	}
+}
+event = { 
+	id = 15398
+	random = no
+	country = USA
+
+	trigger = { 
+		control = { province = 606 }
+		OR = { 
+			ispuppet = USA
+			event = 15396
+			event = 15397
+			event = 15392
+			NOT = { army = 2 }
+		}
+	 }
+	
+	date = { day = 0 month = january year = 1930 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	name = "Capital-Washington"
+	desc = "We move our capital back to Washington"
+	style = 0
+
+	action_a = {
+		name = "OK"
+		command = { type = capital which = 606 }
+	}
+}
+
+####################################
+# optional dissent fix invoke at player discretion
+####################################
+event = {
+	id = 666666
+	random = no
+	country = -1
+	persistent = yes
+#	picture = "handshake"
+
+	name = "Dissent Fix"
+	desc = "This fixes the dissent that Paradox makes you pay for releasing a puppet."
+	style = 0
+
+	action_a = {
+		name = "Dissent -3"
+		command = { type = dissent value = -3 }
+	}
+	action_b = {
+		name = "Dissent -5"
+		command = { type = dissent value = -5 }
+	}
+	action_c = {
+		name = "Dissent -10"
+		command = { type = dissent value = -10 }
+	}
+	action_d = {
+		name = "Dissent -20"
+		command = { type = dissent value = -20 }
+	}
+	
+}

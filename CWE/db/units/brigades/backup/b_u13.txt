@@ -1,0 +1,133 @@
+land_unit_type = 1
+# 0 - 標準陸軍師
+model = {
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 5
+	defaultorganisation = 12
+	morale					= 12
+	defensiveness 		= 2
+	toughness 			= 2
+	softness			= -12
+	airdefence				= 2
+	softattack			= 11
+	hardattack			= 3
+	airattack			= 1
+	supplyconsumption 	= 0.8
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 1 - 盟军標準陸軍師 
+model = {
+	cost 				= 16
+	buildtime	 		= 140
+	manpower 			= 10
+	defaultorganisation = 10
+	morale					= 10
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -40
+	airdefence				= 3
+	softattack			= 23
+	hardattack			= 6
+	airattack			= 2
+	supplyconsumption 	= 2
+	fuelconsumption		= 0.3
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 2 - 日本挽馬制乙種師團
+model = {
+	cost 				= 12
+	buildtime	 		= 140
+	manpower 			= 14
+	defaultorganisation = 15
+	morale					= 20
+	defensiveness 		= 2
+	toughness 			= 2
+	softness			= -30
+	suppression			= 1
+	airdefence				= 2
+	softattack			= 17
+	hardattack			= 2
+	airattack			= 1
+	supplyconsumption 	= 1.3
+	fuelconsumption		= 0.1
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 3 - 德軍標準陸軍師 
+model = {
+	cost 				= 13
+	buildtime	 		= 140
+	manpower 			= 10
+	defaultorganisation = 16
+	morale					= 16
+	defensiveness 		= 4
+	toughness 			= 4
+	softness			= -35
+	suppression			= 1
+	airdefence				= 2
+	softattack			= 20
+	hardattack			= 6
+	airattack			= 1
+	supplyconsumption 	= 1.7
+	fuelconsumption		= 0.2
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 4 - 蘇聯紅軍標準師 
+model = {
+	cost 				= 7
+	buildtime	 		= 140
+	manpower 			= 7
+	defaultorganisation = 8
+	morale					= 12
+	defensiveness 		= 3
+	toughness 			= 3
+	softness			= -23
+	suppression			= 2
+	airdefence				= 2
+	softattack			= 12
+	hardattack			= 3
+	airattack			= 1
+	supplyconsumption 	= 1
+	fuelconsumption		= 0.15
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 5 - 民國乙種陸軍師
+model = {
+	cost 				= 6
+	buildtime	 		= 100
+	manpower 			= 8
+	defaultorganisation = 15
+	morale					= 15
+	defensiveness 		= 2
+	toughness 			= 2
+	softness			= -12
+	airdefence				= 2
+	softattack			= 8
+	hardattack			= 1
+	airattack			= 1
+	supplyconsumption 	= 0.5
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}
+# 6 - 中共標準陸軍師
+model = {
+	cost 				= 4.5
+	buildtime	 		= 100
+	manpower 			= 5
+	defaultorganisation = 10
+	morale					= 20
+	defensiveness 		= 1
+	toughness 			= 1
+	softness			= -12
+	airdefence				= 1
+	softattack			= 5
+	supplyconsumption 	= 0.4
+	upgrade_time_factor = 0.3
+	upgrade_cost_factor = 1
+}

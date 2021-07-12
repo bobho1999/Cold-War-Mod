@@ -1,0 +1,75 @@
+air_unit_type = 1
+model = { #Model 0#Flying Rocket V2A5
+	cost 						= 4
+	buildtime					= 60
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 5000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 70
+	softattack					= 0
+	hardattack					= 0
+	range						= 380
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+model = { #Model 1#Ballistic Missile V2A9
+	cost 						= 4
+	buildtime					= 70
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 6000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 80
+	softattack					= 0
+	hardattack					= 0
+	range						= 2400
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+model = { #Model 2#Inter Continental Ballistic Missile V2A10
+	cost 						= 6
+	buildtime					= 90
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 12000
+	surfacedefence				= 100
+	airdefence					= 100
+	strategicattack				= 160
+	softattack					= 0
+	hardattack					= 0
+	range						= 15000
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+model = { #Model 3#Armageddon ICBM --assumed nuclear and activated only by events
+        # in case of scripted global thermonuclear war so expense is cheap
+        # this is a weapon of mass destruction
+	cost 						= 2
+	buildtime					= 4
+	defaultorganisation 		= 100
+	morale						= 100
+	manpower					= 0
+	maxspeed					= 25000
+	surfacedefence				= 1000
+	airdefence					= 1000
+	strategicattack				= 1000
+	softattack					= 1000
+	hardattack					= 1000
+	range						= 25000
+	supplyconsumption 				= 0.0
+	fuelconsumption				= 0.0
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

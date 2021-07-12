@@ -1,0 +1,163 @@
+land_unit_type = 1
+##0 Attack Helicopter (Heli Gunship)-1959
+model = {
+	cost 			= 6.5
+	buildtime	 	= 180
+	manpower 		= 3
+	defensiveness 		= 6
+	toughness		= 8
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 7
+	hardattack		= 4
+	airattack		= 1
+	supplyconsumption 	= 1.0
+	fuelconsumption		= 2.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##1 Attack Helicopter (Heli Gunship)-1965
+model = {
+	cost 			= 6.5
+	buildtime	 	= 190
+	manpower 		= 3
+	defensiveness 		= 7
+	toughness		= 10
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 8
+	hardattack		= 4
+	airattack		= 1
+	supplyconsumption 	= 1.1
+	fuelconsumption		= 3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##2 Attack Helicopter (Heli Gunship)-1969
+model = {
+	cost 			= 7
+	buildtime	 	= 200
+	manpower 		= 3
+	defensiveness 		= 8
+	toughness		= 11
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 9
+	hardattack		= 5
+	airattack		= 1
+	supplyconsumption 	= 1.1
+	fuelconsumption		= 3.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##3 Attack Helicopter (Heli Gunship)-1975
+model = {
+	cost 			= 7.5
+	buildtime	 	= 205
+	manpower 		= 3
+	defensiveness 		= 10
+	toughness		= 12
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 10
+	hardattack		= 5
+	airattack		= 1
+	supplyconsumption 	= 1.1
+	fuelconsumption		= 3.5
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##4 Attack Helicopter (Heli Gunship)-1982
+model = {
+	cost 			= 7.5
+	buildtime	 	= 210
+	manpower 		= 3
+	defensiveness 		= 12
+	toughness		= 13
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 11
+	hardattack		= 5
+	airattack		= 1
+	supplyconsumption 	= 1.2
+	fuelconsumption		= 3.6
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##5 Attack Helicopter (Heli Gunship)-1989
+model = {
+	cost 			= 7.5
+	buildtime	 	= 220
+	manpower 		= 3
+	defensiveness 		= 13
+	toughness		= 14
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 12
+	hardattack		= 5
+	airattack		= 1
+	supplyconsumption 	= 1.2
+	fuelconsumption		= 3.8
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##6 Attack Helicopter (Heli Gunship)-1996
+model = {
+	cost 			= 8
+	buildtime	 	= 220
+	manpower 		= 3
+	defensiveness 		= 14
+	toughness		= 15
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 13
+	hardattack		= 6
+	airattack		= 1
+	supplyconsumption 	= 1.3
+	fuelconsumption		= 4
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##7 Attack Helicopter (Heli Gunship)-2003
+model = {
+	cost 			= 8
+	buildtime	 	= 220
+	manpower 		= 3
+	defensiveness 		= 15
+	toughness		= 16
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 14
+	hardattack		= 6
+	airattack		= 1
+	supplyconsumption 	= 1.3
+	fuelconsumption		= 4.2
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}
+##8 Attack Helicopter (Heli Gunship)-2010
+model = {
+	cost 			= 8
+	buildtime	 	= 220
+	manpower 		= 3
+	defensiveness 		= 16
+	toughness		= 17
+	softness		= -1
+	suppression		= 1
+	airdefence		= 1
+	softattack		= 15
+	hardattack		= 7
+	airattack		= 1
+	supplyconsumption 	= 1.3
+	fuelconsumption		= 4.3
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

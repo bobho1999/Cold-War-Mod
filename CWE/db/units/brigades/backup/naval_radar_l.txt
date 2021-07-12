@@ -1,0 +1,107 @@
+naval_unit_type = 1
+# 0 - Naval RA Capital 0
+model = {
+	cost 				= 3
+	buildtime			= 150
+	manpower 			= 0
+	surfacedetectioncapability	= 2
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.02
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 1 - Naval RA Capital 1
+model = {
+	cost 				= 4
+	buildtime			= 150
+	manpower 			= 0
+	surfacedetectioncapability	= 4
+	airdetectioncapability		= 4
+	subdetectioncapability		= 2
+        seadefence			= 0	
+        airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.04
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 2 - Naval RA Capital 2
+model = {
+	cost 				= 5
+	buildtime			= 150
+	manpower 			= 0
+	surfacedetectioncapability	= 6
+	airdetectioncapability		= 6
+	subdetectioncapability		= 3
+        seadefence			= 0	
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.06
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 3 - Naval RA Capital 3
+model = {
+	cost 				= 6
+	buildtime			= 150
+	manpower 			= 0
+	surfacedetectioncapability	= 8
+	airdetectioncapability		= 8
+	subdetectioncapability		= 4
+        seadefence			= 0		
+        airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.08
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+# 4 - Naval RA Capital 4
+model = {
+	cost 				= 7
+	buildtime			= 150
+	manpower 			= 0
+	surfacedetectioncapability	= 10
+	airdetectioncapability		= 10
+	subdetectioncapability		= 5
+        seadefence			= 0	
+	airdefence			= 0
+	seaattack			= 0
+	convoyattack			= 0
+	subattack			= 0
+	airattack			= 0
+	shorebombardment		= 0
+	distance			= 0.10
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+}
+########################################
+

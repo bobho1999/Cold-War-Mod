@@ -1,0 +1,11 @@
+land_unit_type = 1
+model = {
+	cost 			= 2
+	buildtime	 	= 35
+	manpower 		= 2
+	defaultorganisation = 3
+	suppression		= 3
+	supplyconsumption = 0.1
+	upgrade_time_factor = 0.5
+	upgrade_cost_factor = 1.0
+}

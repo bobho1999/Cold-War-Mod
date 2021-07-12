@@ -1,0 +1,285 @@
+# England changes his production levels atwar
+
+max_garrison_prop = 0.50
+min_garrison_prop = 0.40
+
+###################################
+# Diplomacy
+###################################
+combat = { 
+    ita = 120
+    ger = 80
+     }
+     
+###################################
+# Construction and Tech Research
+###################################
+#Default values
+construction = { 
+	max_factor = 0.10 
+
+	AA_batteries = no
+	max_AA_level = 10 
+	AA_provs = { } 
+
+	coastal_fort = no
+	max_coastal_level = 3
+	coastal_fort_provs = {
+		#England
+		20 # Dover
+		17 # Norwich
+		21 # Portsmouth
+		23 # Plymouth
+		13 # Sheiffield
+		28 # Belfast
+		22 # Bristol
+		14 # Liverpool
+		12 # Blackpool
+		11 # Sunderland
+		10 # Edinburgh
+		9  # Glasgow
+		31  # Malta
+	} 
+
+	radar_station = yes
+	max_radar = 3 
+	radar_provs = {
+		20 # Dover
+		17 # Norwich
+		21 # Portsmouth
+		23 # Plymouth
+		13 # Shefield
+		5  # Scapa Flow
+	} 
+
+	air_base = yes
+	max_air_base = 5 
+	air_base_provs = { } 
+
+	naval_base = no 
+	max_naval_base = 5 
+	naval_base_provs = { } 
+
+	land_fort = yes
+	max_land_level = 5
+	fort_provs	= { 
+		348 # Gibraltar
+		906 # Alexandria
+	}
+	fort_borders = { } 
+
+	ic_at_war = no
+	force_ic_until = 1938
+	ic_end_year = 1940
+	IC_provs = { 3 5 6 7 8 10 28 29	} 
+}
+
+###################################
+# Ground Combat, Leaders and Garrisons
+###################################
+garrison = {
+	defend_overseas_beaches = yes
+	home_multiplier 	= 1.4
+	overseas_multiplier = 0.2
+	home_peace_cap 		= 40
+	war_zone_odds 		= 2.0
+	key_point_prio_mult	= 1.0
+	revolt_risk_mult	= 0.0
+
+	# PRIORITIES:
+	beach			= 20	# Beach level 2
+	capital			= 40	# Our capital
+	human_border	= 50		# Ignored for allied human players
+	war_target		= 50	# The next country targeted for attack by this AI
+	
+	opposing_alliance	= 30	# For neutrals, all alliances are "opposing"
+	claim_threat		= 0		# If we are neutral, countries with claims on us get this
+	unstable_border		= 0		# Bordering countries at war with someone else get this
+
+	# Borders with specific countries
+	country_priorities = {
+		BEL = -1
+		HOL = -1
+		LUX = -1
+		GER = 100
+		SPA = -1
+		SPR = -1
+		ITA = 50
+		ETH = -1
+		SCH = -1
+		FRA = -1
+		CAN = -1
+		AST = -1
+		NZL = -1
+		POR = -1
+		CYN = -1
+		TUR = -1
+		SIK = -1
+		TIB = -1
+		AFG = -1
+		PER = -1
+		SAU = -1
+	}
+	province_priorities = {
+		348 = 30 # Gibraltar
+		31  = 30 # Malta
+		906 = 30 # Alexandria
+		
+		# England Coast
+		20 = 80 # Dover
+		17 = 80 # Norwich
+		21 = 80 # Portsmouth
+		23 = 80 # Plymouth
+		12 = 80 # Blackpool
+		13 = 80 # Sheifield
+		14 = 80 # Liverpool
+		22 = 80 # Bristol
+		11 = 80 # Sunderland
+		10 = 80 # Edinburgh
+		9 = 80 # Glasgow
+		5 = 80 # Scap Flow
+	}
+	area_multiplier = {
+		348 = 2.0 # Gibraltar
+		31  = 2.0 # Malta
+		906 = 1.5 # Alexandria
+
+		# England Coast
+		20 = 2.0 # Dover
+		17 = 2.0 # Norwich
+		21 = 2.0 # Portsmouth
+		23 = 2.0 # Plymouth
+		12 = 2.0 # Blackpool
+		13 = 2.0 # Sheifield
+		14 = 2.0 # Liverpool
+		22 = 2.0 # Bristol
+		11 = 2.0 # Sunderland
+		10 = 2.0 # Edinburgh
+		9 = 2.0 # Glasgow
+		5 = 2.0 # Scap Flow
+	}
+}
+###################################
+# Invasions and Naval
+###################################
+invasion = {
+	invasion			= yes
+ 	base				= 0.1	#Relative modifier. (lower = specific targets much more important.)
+	random				= 8.0	#How big a random range.  (1.0 = 1%)
+	coastal				= 0.1	#increase to avoid coastal forts more.
+	beach				= 0.1	#higher, avoid worst beaches.
+	max_distance   		= 250.0  #About the distance from Japan to Batavia
+	max_staging_distance = 15	# How far should the staging area be from the target invasion point
+	distance			= 0.1	#higher = avoid long distance.
+	pocket				= 20.0	#prioritise pockets, ie provinces with no adjacent controlled by same.
+	island				= 0.1	#prioritise taking pure islands.
+	enemy				= 2.0	#higher = much more vary of troops in province.
+	adjacentenemy 		= 2.0	#higher = much more vary of troops nearby
+	air_base			= 1.5 
+   	naval_base 			= 0.1 
+   	air_support 		= 3.0 
+   	redirect 			= priority
+	ignore				= no
+      
+	target = {
+		#Spain/Portugal
+		331 = 3000 # Bilbao
+		332 = 3000 # Oviedo
+		336 = 3000 # Lissabon
+		345 = 3000 # Faro
+		346 = 3000 # Huelva
+		347 = 3000 # Seville
+		352 = 2750 # Wurcia
+		354 = 2750 # Valencia
+		356 = 2750 # Tarragona
+		357 = 2750 # Barcelona
+
+		# Moroco
+		958 = 3000 # Casablanca
+		954 = 2750 # Welilla
+
+		# Algiers
+		953 = 2750 # Oran
+		949 = 2750 # Algiers
+
+		# Tunisia
+		940 = 2750 # Bizerte
+		939 = 2750 # Tunis
+		938 = 2750 # Sousse
+
+		# Libya
+		933 = 2500 # Zuara
+		932 = 2500 # Tripoli
+		924 = 2500 # Benghazi
+		919 = 2500 # Tobruk
+
+		# Egypt
+		910 = 4000 # Fuka
+		909 = 4000 # El Alamein
+		906 = 4000 # Alexandria
+		901 = 4000 # Port Said
+		900 = 4000 # Suez
+
+		# Middle East touching the Med
+		1800 = 5500 # el Arish
+		1799 = 5500 # Gaza
+		1798 = 5450 # Tel Aviv
+		404 = 5450  # Haifa
+		1794 = 5300 # Beirut
+		1793 = 5300 # Tripoli
+		1862 = 5100 # Aleppo
+
+		#Norway
+		107 = -1 # Oslo
+		108 = -1 # Kristiansan
+		109 = -1 # Stavanger
+		110 = -1 # Bergen
+		125 = -1 # Narvik
+		117 = -1 # Alesund
+		118 = -1 # Trondheim
+		124 = -1 # Mo I Ran
+
+		# Baltic States (in case of un-holy alliance)
+		205 = -1 # Marzibe
+		204 = -1 # Gelgava
+		197 = -1 # Riga
+		196 = -1 # Parnu
+		194 = -1 # Tallinn
+		193 = -1 # Narva
+		188 = -1 # Kingiseep
+		187 = -1 # Leningrad
+		145 = -1 # Vipurii
+
+		# German
+		206 = -1 # Memel
+		510 = -1 # Konigsburg
+		304 = -1 # Elbing
+		303 = -1 # Danzig
+		302 = -1 # Setting
+		301 = -1 # Stralsrul
+		296 = -1 # Rostock
+		89  = -1 # Lubeck
+	
+		# Atlantic Wall
+		292 = -1 # Arburg
+		92  = -1 # Arhus
+		91  = -1 # Kolding
+		90  = -1 # Kiel
+		78  = -1 # Leeweden
+		47  = -1 # Amsterdam
+		46  = -1 # Rotterdam
+		45  = -1 # Ghent
+		18  = -1 # Calais
+		43  = -1 # Dunquerque
+		42  = -1 # Dieppe
+		41  = -1 # Le Havre
+		39  = -1 # Caen
+		33  = -1 # Rennes
+		32  = -1 # Brest
+		34  = -1 # Lorient
+		35  = -1 # Nantes
+		59  = -1 # Cholet
+		325 = -1 # Bordeaux
+		326 = -1 # Dax	
+	} 
+} 

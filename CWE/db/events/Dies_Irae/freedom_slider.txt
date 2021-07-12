@@ -1,0 +1,565 @@
+
+
+event = {
+	id = 7740000
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 10 }
+		NOT = { local_flag = DIES_slider_FS_10 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 2500 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_10 }
+		command = { type = tc_mod value = 1 }
+	}
+}
+
+event = {
+	id = 7740001
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 9 }
+		NOT = { local_flag = DIES_slider_FS_09 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_09 }
+		command = { type = tc_mod value = 1 }
+	}
+}
+
+event = {
+	id = 7740002
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 8 }
+		NOT = { local_flag = DIES_slider_FS_08 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_08 }
+		command = { type = tc_mod value = 1 }
+	}
+}
+
+event = {
+	id = 7740003
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 7 }
+		NOT = { local_flag = DIES_slider_FS_07 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_07 }
+		command = { type = tc_mod value = 1 }
+	}
+}
+
+event = {
+	id = 7740004
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 6 }
+		NOT = { local_flag = DIES_slider_FS_06 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_06 }
+		command = { type = tc_mod value = 1 }
+	}
+}
+
+event = {
+	id = 7740005
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 6 } }
+		NOT = { local_flag = DIES_slider_FS_05 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_05 }
+		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = naval value = 1 }
+		command = { type = max_organization which = air value = 1 }
+	}
+}
+
+event = {
+	id = 7740006
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 5 } }
+		NOT = { local_flag = DIES_slider_FS_04 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_04 }
+		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = naval value = 1 }
+		command = { type = max_organization which = air value = 1 }
+	}
+}
+
+event = {
+	id = 7740007
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 4 } }
+		NOT = { local_flag = DIES_slider_FS_03 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_03 }
+		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = naval value = 1 }
+		command = { type = max_organization which = air value = 1 }
+	}
+}
+
+event = {
+	id = 7740008
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 3 } }
+		NOT = { local_flag = DIES_slider_FS_02 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_02 }
+		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = naval value = 1 }
+		command = { type = max_organization which = air value = 1 }
+	}
+}
+
+event = {
+	id = 7740009
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 2 } }
+		NOT = { local_flag = DIES_slider_FS_01 }
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = DIES_slider_FS_01 }
+		command = { type = max_organization which = land value = 1 }
+		command = { type = max_organization which = naval value = 1 }
+		command = { type = max_organization which = air value = 1 }
+	}
+}
+##############################################################################################
+##############################################################################################
+
+event = {
+	id = 7740010
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 10 } }
+		local_flag = DIES_slider_FS_10
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_10 }
+		command = { type = tc_mod value = -1 }
+	}
+}
+
+event = {
+	id = 7740011
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 9 } }
+		local_flag = DIES_slider_FS_09
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_09 }
+		command = { type = tc_mod value = -1 }
+	}
+}
+
+event = {
+	id = 7740012
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 8 } }
+		local_flag = DIES_slider_FS_08
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_08 }
+		command = { type = tc_mod value = -1 }
+	}
+}
+
+event = {
+	id = 7740013
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 7 } }
+		local_flag = DIES_slider_FS_07
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_07 }
+		command = { type = tc_mod value = -1 }
+	}
+}
+
+event = {
+	id = 7740014
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		NOT = { domestic = { type = freedom value = 6 } }
+		local_flag = DIES_slider_FS_06
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_06 }
+		command = { type = tc_mod value = -1 }
+
+	}
+}
+
+event = {
+	id = 7740015
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 6 }
+		local_flag = DIES_slider_FS_05
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_05 }
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+	}
+}
+
+event = {
+	id = 7740016
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 5 }
+		local_flag = DIES_slider_FS_04
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_04 }
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+	}
+}
+
+event = {
+	id = 7740017
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 4 }
+		local_flag = DIES_slider_FS_03
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_03 }
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+	}
+}
+
+event = {
+	id = 7740018
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 3 }
+		local_flag = DIES_slider_FS_02
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_02 }
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+	}
+}
+
+event = {
+	id = 7740019
+	random = no
+	persistent = yes
+
+	trigger = {
+
+		domestic = { type = freedom value = 2 }
+		local_flag = DIES_slider_FS_01
+	}
+
+	name = freedom_slider01
+	desc = freedom_slider02
+	style = 0
+
+	date = { day = 0 month = january year = 1900 }
+	offset = 1
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "OK"
+
+		command = { type = local_clrflag which = DIES_slider_FS_01 }
+		command = { type = max_organization which = land value = -1 }
+		command = { type = max_organization which = naval value = -1 }
+		command = { type = max_organization which = air value = -1 }
+	}
+}
+

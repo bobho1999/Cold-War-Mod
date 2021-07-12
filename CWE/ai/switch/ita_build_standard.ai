@@ -1,0 +1,66 @@
+# Italian Standard Build by Lothos
+
+###################################
+# Construction and Tech Research
+###################################
+military = { 
+	relative_build_scheme 	= no
+
+	#### Divisions etc...
+	infantry 		= 5
+	cavalry 		= 5
+	motorized 		= 4
+	mechanized 		= 0
+	light_armor 	= 0
+	armor 			= 3
+	paratrooper 	= 0
+	marine 			= 0
+	bergsjaeger 	= 8
+	garrison		= 0
+    hq 				= 2
+	militia 		= 3
+#				25 %
+	interceptor 	= 6
+	multi_role 		= 4
+	cas 			= 3
+	strategic_bomber = 0
+	tactical_bomber = 3
+	naval_bomber 	= 4
+	transport_plane = 0
+	flying_bomb 	= 0
+	flying_rocket 	= 0
+#				20 %
+	battleship 		= 5
+	carrier 		= 0
+	escort_carrier	= 0
+	destroyer 		= 15
+	light_cruiser 	= 12
+	heavy_cruiser 	= 0
+	battlecruiser 	= 5
+	submarine 		= 5
+	nuclear_submarine = 0
+	transports 		= 8
+#				50 %
+
+	#### Brigades
+	artillery 			= 20
+	sp_artillery 		= 10
+	rocket_artillery	= 0 
+	sp_rct_artillery 	= 0
+	anti_tank 			= 5
+	tank_destroyer 		= 5
+	light_armor_brigade = 10
+	heavy_armor 		= 5
+	super_heavy_armor 	= 0
+	armored_car 		= 10
+	anti_air 			= 5
+	police 				= 6
+	engineer 			= 10
+
+	b_u5 = 2
+	b_u8 = 5
+	b_u9 = 5
+	b_u10 = 2
+	b_u11 = 0
+
+}

@@ -1,0 +1,462 @@
+################
+#进军西藏
+#####################################
+event = {
+  id = 19660
+  random = no
+  country = U01
+  
+  name = "进军西藏 " 
+  desc = "随着解放战争的进行，新中国解放了中国大陆。 中共中央决定解放中国的最后一块地：西藏"
+  picture = "events_empty"
+  style = 0
+  
+  trigger = {
+    owned = { province = 1271 data = U01 }
+    owned = { province = 1205 data = U01 }
+    exists = TIB
+  } 
+  date = { day = 1 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "解放西藏！ "
+    ai_chance = 90
+    command = { type = dissent value = -2 }
+    command = { type = war which = TIB }
+    command = { type = sleepevent which = 19910 }
+  }
+  action_b = {
+    name = "时机欠佳 "
+    ai_chance = 10
+    command = { type = dissent value = 10 }
+    command = { type = sleepevent which = 19910 }
+    }
+}
+
+################
+#TUN BING TIB
+#############################################
+event = {
+  id = 19670
+  random = no
+  country = U01
+  
+  name = "解放西藏 " 
+  desc = "中共在解放中国大部分地区后，进军西藏。 最终在双方共同努力下实现了 西藏的和平解放。"
+  picture = "tibet"
+  style = 0
+  
+  trigger = {
+    ai = TIB
+    war = { country = U01  country = TIB }  
+    exists = TIB
+    owned = { province = 1271 data = U01 }
+    owned = { province = 1205 data = U01 }
+    control = { province = 1283 data = U01 }
+    event = 19660
+  } 
+  date = { day = 1 month = january year = 1951 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1960 }
+  
+  action_a = {
+    name = "和平解放万岁！ "
+    command = { type = inherit which = TIB } 
+    command = { type = dissent value = -1 }
+    command = { type = addcore which = 6297 }
+    command = { type = addcore which = 1454 }
+  }
+}
+################
+#苏联缺席联合国大会
+#############################################
+event = {
+  id = 19810
+  random = no
+  country = U01
+  
+  name = "苏联缺席联合国大会 " 
+  desc = "1950年，为了要求新中国在联合国取得合法席位，苏联驻联合国 代表缺席联合国大会以示抗议。 "
+  style = 0
+  
+  trigger = {
+    exists = SOV
+    atwar = no
+    event = 19800
+  } 
+  date = { day = 10 month = june
+ year = 1950 }
+  offset = 5
+  deathdate = { day = 30 month = december year = 1970 }
+  
+  action_a = {
+    name = "OK "
+    command = { type = relation which = USA value = -20 }
+    command = { type = relation which = SOV value = 10 }
+  }
+}
+################
+#国民不满 防宣西藏
+#####################################
+event = {
+  id = 19910
+  random = no
+  country = U01
+  persistent = yes
+  
+  name = "国民不满 " 
+  desc = "由于新中国过早地进攻西藏， 国民产生不满，要求停战。 "
+  style = 0
+  
+  trigger = {
+    war = { country = U01  country = TIB }  
+  } 
+  date = { day = 1 month = january year = 1949 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "停战 "
+    command = { type = dissent value = -5 }
+    command = { type = peace which = TIB value = 1 }
+  }
+}
+################
+#中苏建交
+#####################################
+event = {
+  id = 19920
+  random = no
+  country = U01
+  
+  name = "中苏建交 " 
+  desc = "1949年，新中国成立。苏联率先承认新中国并与新中国建交，表 现了苏联对我国的支持。 "
+  picture = "中苏建交"
+  style = 0
+  
+  
+  action_a = {
+    name = "莫斯科-北京！ "
+    command = { type = dissent value = -1 }
+    command = { type = relation which = SOV value = 15 }
+  }
+}
+################
+#毛泽东访问苏联
+#####################################
+event = {
+  id = 19930
+  random = no
+  country = U01
+  
+  name = "毛泽东访问苏联 " 
+  desc = "1949年，新中国成立。12月，毛泽东开始了第一次访苏之旅。同 时参加了斯大林的70寿礼。期间谈论了蒙古的问题，为获得苏联 支持，中国不得不放弃蒙古。 "
+  picture = "毛泽东访苏"
+  style = 0
+  
+  trigger = {
+  event = 19920
+  } 
+  date = { day = 12 month = december year = 1949 }
+  offset = 3
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "中苏友好万古长青 "
+    command = { type = dissent value = -1 }
+    command = { type = relation which = SOV value = 15 }
+    command = { type = removecore which = 1385 }
+    command = { type = removecore which = 1399 }
+    command = { type = removecore which = 1404 }
+    command = { type = removecore which = 1419 }
+    command = { type = removecore which = 1420 }
+    command = { type = removecore which = 1434 }
+    command = { type = removecore which = 1436 }
+    command = { type = removecore which = 1437 }
+    command = { type = removecore which = 1438 }
+    command = { type = removecore which = 1418 }
+    command = { type = trigger which = 20454 }
+  }
+}
+################
+#中苏友好同盟互助条约
+#####################################
+event = {
+  id = 19940
+  random = no
+  country = U01
+  
+  name = "中苏友好同盟互助条约 " 
+  desc = "1950年2月14日，中方代表和苏方代表在莫斯科签订了《中苏友好 同盟互助条约》，该条约规定了中苏双方友好合作，苏联向中国提供援助。 "
+  picture = "中苏结盟"
+  style = 0
+  
+  trigger = {
+  event = 19930
+  } 
+  date = { day = 13 month = february year = 1950 }
+  offset = 3
+  deathdate = { day = 30 month = december year = 1991 }
+  
+  action_a = {
+    name = "中苏友好万古长青 "
+    command = { type = dissent value = -1 }
+    command = { type = relation which = SOV value = 15 }
+    command = { type = trigger which = 20455 }
+  }
+}
+################
+#1958赫鲁晓夫访华
+#####################################
+event = {
+  id = 19704
+  random = no
+  country = U01
+  
+  name = "1958赫鲁晓夫访华 " 
+  desc = "1958年7月31日，苏联的领导人 赫鲁晓夫访问中国，主要来商谈关于 共同舰队和长波电台的问题， 中方对此予以了回绝。 中苏关系开始恶化。 "
+  picture = "1958赫鲁晓夫访华"
+  style = 0
+  
+  trigger = {
+  event = 19630
+  } 
+  date = { day = 25 month = july year = 1958 }
+  offset = 1
+  deathdate = { day = 30 month = december year = 1964 }
+  
+  action_a = {
+    name = "坚决不搞合作社！ "
+    ai_chance = 80
+    command = { type = dissent value = -10 }
+    command = { type = relation which = SOV value = -20 }
+    command = { type = sleepevent which = 19702 }
+  }
+  action_b = {
+    name = "建立共同舰队 "
+    ai_chance = 5
+    command = { type = dissent value = 20 }
+    command = { type = relation which = SOV value = 20 }
+    command = { type = trigger which = 19702 }
+  }
+  action_c = {
+    name = "建立长波电台 "
+    ai_chance = 10
+    command = { type = dissent value = 15 }
+    command = { type = relation which = SOV value = 15 }
+    command = { type = sleepevent which = 19702 }
+  }
+  action_d = {
+    name = "建立共同舰队和长波电台 "
+    ai_chance = 5
+    command = { type = dissent value = 35 }
+    command = { type = relation which = SOV value = 35 }
+    command = { type = trigger which = 19702 }
+  }
+}
+
+################
+#东南警报
+#############################################
+event = {
+  id = 20415
+  random = no
+  country = U01
+  persistent = yes
+  
+  name = "东南警报 " 
+  desc = "我们在东南沿海的兵力严重不足，处在危险境地，如果在一个月 之内没有足够的部队来驻守上海、宁波、厦门、福州、温州、杭 州、泉州，蒋介石就可能反攻大陆。在兵力充足前，本警报会十 天提醒一次。 "
+  style = 0
+
+  trigger = {
+     event = 16
+     event = 12
+   or = { 
+     not = { garrison = { country = U01 province = 1237 type = land size = 4 area = no } }
+     not = { garrison = { country = U01 province = 1239 type = land size = 2 area = no } }
+     not = { garrison = { country = U01 province = 1238 type = land size = 2 area = no } }
+     not = { garrison = { country = U01 province = 1240 type = land size = 2 area = no } }
+     not = { garrison = { country = U01 province = 1244 type = land size = 6 area = no } }
+     not = { garrison = { country = U01 province = 1245 type = land size = 4 area = no } }
+     not = { garrison = { country = U01 province = 1247 type = land size = 4 area = no } }
+   }
+   not = { ai = U01 }
+  } 
+  date = { day = 1 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1979 }
+  
+  action_a = {
+    name = "解决 "
+    command = { type = trigger which = 20416 }
+  }
+   action_b = {
+    name = "由他去吧 "
+    command = { type = trigger which = 20417 }
+  }
+}
+################
+#部署要求
+#############################################
+event = {
+  id = 20416
+  random = no
+  country = U01
+  persistent = yes
+  
+  name = "部署要求 " 
+  desc = "我们需要：上海4师、宁波2师、杭州2师、温州2师、福州6师、泉 州4师、厦门4师。 "
+  style = 0
+
+  action_a = {
+    name = "明白 "
+    command = {  }
+  }
+}
+################
+#西南警报
+#############################################
+event = {
+  id = 20419
+  random = no
+  country = U01
+  persistent = yes
+  
+  name = "西南警报 " 
+  desc = "我们在西南的兵力严重不足，处在危险境地，如果在一个月之内 没有足够的部队来驻守昆明、曲靖、景洪、保山、贵阳、阿坝、 遵义，蒋介石就可能反攻大陆。在兵力充足前，本警报会十天提 醒一次。 "
+  style = 0
+
+  trigger = {
+    event = 20280
+    event = 19620
+   or = { 
+     not = { garrison = { country = U01 province = 1307 type = land size = 3 area = no } }
+     not = { garrison = { country = U01 province = 1308 type = land size = 1 area = no } }
+     not = { garrison = { country = U01 province = 1305 type = land size = 1 area = no } }
+     not = { garrison = { country = U01 province = 1294 type = land size = 1 area = no } }
+     not = { garrison = { country = U01 province = 1364 type = land size = 2 area = no } }
+     not = { garrison = { country = U01 province = 1262 type = land size = 1 area = no } }
+     not = { garrison = { country = U01 province = 3347 type = land size = 2 area = no } }
+   }
+   not = { ai = U01 }
+  } 
+  date = { day = 1 month = october year = 1949 }
+  offset = 10
+  deathdate = { day = 30 month = december year = 1953 }
+  
+  action_a = {
+    name = "解决 "
+    command = { type = trigger which = 20420 }
+  }
+   action_b = {
+    name = "由他去吧 "
+    command = { type = trigger which = 20421 }
+  }
+}
+################
+#部署要求
+#############################################
+event = {
+  id = 20420
+  random = no
+  country = U01
+  persistent = yes
+  
+  name = "部署要求 " 
+  desc = "我们需要：昆明3师、曲靖1师、景洪1师、保山1师、贵阳2师、遵 义1师、阿坝2师。 "
+  style = 0
+
+  action_a = {
+    name = "明白 "
+    command = {  }
+  }
+}
+################
+#西南匪患
+#############################################
+event = {
+  id = 20421
+  random = no
+  country = U01
+  
+  name = "西南匪患 " 
+  desc = "因为我军在西南驻军不足，西南的匪军已经组成了新的滇系军阀 来对抗我们。 "
+  style = 0
+
+  action_a = {
+    name = "可恶 "
+    command = { type = independence which = CYN value = 1 when = 0 }
+    command = { type = trigger which = 20423 }
+  }
+}
+################
+#西南匪患
+#############################################
+event = {
+  id = 20423
+  random = no
+  country = U01
+  
+  name = "西南匪患 " 
+  desc = "因为我军在西南驻军不足，西南的匪军已经组成了新的滇系军阀 来对抗我们。 "
+  style = 0
+
+  action_a = {
+    name = "可恶 "
+    command = { type = secedeprovince which = CYN value = 1262 }
+    command = { type = secedeprovince which = CYN value = 1364 }
+    command = { type = secedeprovince which = CYN value = 3347 }
+    command = { type = trigger which = 20424 }
+  }
+}
+################
+#西南匪患
+#############################################
+event = {
+  id = 20424
+  random = no
+  country = CYN
+  
+  name = "西南匪患 " 
+  desc = "我们奉蒋总统的命令来骚扰共匪的西南，推动反攻大陆。 "
+  style = 0
+
+  action_a = {
+    name = "支援反攻大陆的计划 "
+    command = { type = war which = U01 }
+    command = { type = add_corps which = "匪军第一军 " value = land where = 1307 }
+    command = { type = add_division which = "第一师 " value = militia when = 3 }
+    command = { type = add_division which = "第二师 " value = militia when = 3 }
+    command = { type = add_division which = "第三师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第二军 " value = land where = 1307 }
+    command = { type = add_division which = "第四师 " value = militia when = 3 }
+    command = { type = add_division which = "第五师 " value = militia when = 3 }
+    command = { type = add_division which = "第六师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第三军 " value = land where = 1307 }
+    command = { type = add_division which = "第七师 " value = militia when = 3 }
+    command = { type = add_division which = "第八师 " value = militia when = 3 }
+    command = { type = add_division which = "第九师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第四军 " value = land where = 1364 }
+    command = { type = add_division which = "第10师 " value = militia when = 3 }
+    command = { type = add_division which = "第11师 " value = militia when = 3 }
+    command = { type = add_division which = "第12师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第五军 " value = land where = 1364 }
+    command = { type = add_division which = "第13师 " value = militia when = 3 }
+    command = { type = add_division which = "第14师 " value = militia when = 3 }
+    command = { type = add_division which = "第15师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第六军 " value = land where = 3347 }
+    command = { type = add_division which = "第16师 " value = militia when = 3 }
+    command = { type = add_division which = "第17师 " value = militia when = 3 }
+    command = { type = add_division which = "第18师 " value = militia when = 3 }
+    command = { type = add_corps which = "匪军第七军 " value = land where = 3347 }
+    command = { type = add_division which = "第19师 " value = militia when = 3 }
+    command = { type = add_division which = "第20师 " value = militia when = 3 }
+    command = { type = add_division which = "第21师 " value = militia when = 3 }
+    command = { type = supplies value = 2000 where = 1307 }
+    command = { type = trigger which = 20425 }
+    command = { type = supplies value = 2000 where = 1364 }
+    command = { type = supplies value = 2000 where = 3347 }
+  }
+}

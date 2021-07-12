@@ -1,0 +1,42 @@
+naval_unit_type = 1
+#Sub-Launched Cruise Missile
+model = { #0
+	cost 				= 4
+	buildtime			= 30
+	manpower			= 0
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 1
+	seaattack			= 1
+	seadefence			= 1
+	convoyattack			= 1
+	subattack			= 1
+	airattack			= 1
+	shorebombardment		= 15
+	distance			= 0
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}
+model = { #1
+	cost 				= 4
+	buildtime			= 40
+	manpower			= 0
+	surfacedetectioncapability	= 1
+	airdetectioncapability		= 2
+	subdetectioncapability		= 1
+	airdefence			= 1
+	seaattack			= 1
+	seadefence			= 1
+	convoyattack			= 1
+	subattack			= 1
+	airattack			= 1
+	shorebombardment		= 30
+	distance			= 0
+	supplyconsumption 		= 0
+	fuelconsumption			= 0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+}

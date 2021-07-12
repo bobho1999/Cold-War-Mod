@@ -1,0 +1,5195 @@
+#Nation individual flagsetting events by Killerrabbit
+#All nations will have these, which is a prerequsite for Scud's economic events to function.
+#
+#The modifiers are simulating the level of corruption in the country + Defence budget and Free Marked - Planned Economy settings.
+#
+#
+event = {
+	id = 23300
+	persistent = no
+	random = no
+	
+	trigger = {
+		ai = no
+		not = { flag = economy_on }
+	}
+
+	date = { day = 1 month = october year = 1945 }
+
+	name = "Economy On" 
+	desc = "EVT_233000_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "On"
+		command = { type = setflag which = economy_on }
+	}
+	action_b = {
+		name = "Off"
+		command = { type = clrflag which = economy_on }
+	}
+}
+
+event = {
+	id = 233000
+	persistent = no
+	random = no
+	country = ALB
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233000_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -5 } # -49
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233001
+	persistent = no
+	random = no
+	country = ALG
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233001_DESC"
+#	picture = "alg"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233002
+	persistent = no
+	random = no
+	country = ANG
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233002_DESC"
+#	picture = "ang"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233003
+	persistent = no
+	random = no
+	country = ARG
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233003_DESC"
+#	picture = "arg"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -5 } #-49
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233004
+	persistent = no
+	random = no
+	country = ARM
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233004_DESC"
+#	picture = "arm"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233005
+	persistent = no
+	random = no
+	country = AST
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233005_DESC"
+#	picture = "ast"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -62 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233006
+	persistent = no
+	random = no
+	country = AUS
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233006_DESC"
+#	picture = "aus_event"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = corruption_8 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233007
+	persistent = no
+	random = no
+	country = AXI  #Cape Verde
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233007_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233008
+	persistent = no
+	random = no
+	country = AZB
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233008_DESC"
+#	picture = "azb"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233009
+	persistent = no
+	random = no
+	country = BEL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233009_DESC"
+#	picture = "bel"
+	style = 0
+	action_a = {
+		name = "OK"
+
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 } # -58
+		command = { type = local_setflag which = corruption_8 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233010
+	persistent = no
+	random = no
+	country = BEN
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233010_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+	}
+}
+
+event = {
+	id = 233011
+	persistent = no
+	random = no
+	country = BLR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233011_DESC"
+#	picture = "blr"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -40 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233012
+	persistent = no
+	random = no
+	country = BOL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233012_DESC"
+#	picture = "bol"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 15 } # -53 / 25-10
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233013
+	persistent = no
+	random = no
+	country = BOS
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233013_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233014
+	persistent = no
+	random = no
+	country = BRA
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233014_DESC"
+#	picture = "bra"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 2 } # -44
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+        	command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233015
+	persistent = no
+	random = no
+	country = BRU #
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233015_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 22 } # -53
+	}
+}
+
+event = {
+	id = 233016
+	persistent = no
+	random = no
+	country = BUL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233016_DESC"
+#	picture = "bul"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -3 } # -39
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233017
+	persistent = no
+	random = no
+	country = BUR # Myanmar/Burma
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233017_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 10 } #-35
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+#		command = { type = free_supplies value = 40 }
+	}
+}
+event = {
+	id = 233018
+	persistent = no
+	random = no
+	country = CAL #Bangladesh
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233018_DESC"
+#	picture = "cal"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_1 }
+		command = { type = industrial_modifier which = supplies value = -33 }
+		command = { type = supply_dist_mod value = -50 }
+		command = { type = research_mod value = -33 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233019
+	persistent = no
+	random = no
+	country = CAM #Cameroon
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233019_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233020
+	persistent = no
+	random = no
+	country = CAN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233020_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 } #-67
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233021
+	persistent = no
+	random = no
+	country = CHC
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233021_DESC"
+#	picture = "chc"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_1 }
+		command = { type = building_prod_mod which = ic value = 50 }
+		command = { type = building_prod_mod which = infrastructure value = 50 }
+#		command = { type = industrial_modifier which = total value = -44 } #- 44
+
+#		command = { type = local_setflag which = invest }
+#		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233022
+	persistent = no
+	random = no
+	country = CHL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233022_DESC"
+#	picture = "chl"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 } #-43
+		command = { type = local_setflag which = corruption_7 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233023
+	persistent = no
+	random = no
+	country = CMB #Cambodia
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233023_DESC"
+#	picture = "cmb"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 12 } #-44
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+#		command = { type = local_setflag which = invest }
+#		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233024
+	persistent = no
+	random = no
+	country = COL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233024_DESC"
+#	picture = "col"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 22 } #-34
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233025
+	persistent = no
+	random = no
+	country = CON #Rep Congo
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233025_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -40 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233026
+	persistent = no
+	random = no
+	country = COS
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233026_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 22 } #-63
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233027
+	persistent = no
+	random = no
+	country = CRO
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233027_DESC"
+#	picture = "cro"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233028
+	persistent = no
+	random = no
+	country = CSA #Belize
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233028_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+	}
+}
+
+event = {
+	id = 233029
+	persistent = no
+	random = no
+	country = CSX # need fix
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233029_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233030
+	persistent = no
+	random = no
+	country = CUB
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233030_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 22 } #-25
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233031
+	persistent = no
+	random = no
+	country = CXB # need fix
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233031_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_6 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -38 }
+	}
+}
+
+event = {
+	id = 233032
+	persistent = no
+	random = no
+	country = CYP
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233032_DESC"
+#	picture = "cyp"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233033
+	persistent = no
+	random = no
+	country = CZE
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233033_DESC"
+#	picture = "cze"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = 3 } #-53
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233034
+	persistent = no
+	random = no
+	country = DDR #Djibouti
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233034_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233035
+	persistent = no
+	random = no
+	country = DEN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233035_DESC"
+#	picture = "den"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233036
+	persistent = no
+	random = no
+	country = DOM
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233036_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 20 } #-54
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233037
+	persistent = no
+	random = no
+	country = ECU
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233037_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -5 } #-44
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233038
+	persistent = no
+	random = no
+	country = EGY
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233038_DESC"
+#	picture = "egy"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 10 } #-39 
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233039
+	persistent = no
+	random = no
+	country = ENG
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233039_DESC"
+#	picture = "eng"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 } # -57
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233040
+	persistent = no
+	random = no
+	country = EQA
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233040_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233041
+	persistent = no
+	random = no
+	country = EST
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233041_DESC"
+#	picture = "est"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -62 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233042
+	persistent = no
+	random = no
+	country = ETH
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233042_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 10 } # -34
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233043
+	persistent = no
+	random = no
+	country = EUS
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233043_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233044
+	persistent = no
+	random = no
+	country = FIN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233044_DESC"
+#	picture = "fin"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 } #-67 
+		command = { type = local_setflag which = corruption_10 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233045
+	persistent = no
+	random = no
+	country = FLA #Pacific Federation
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233045_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+	}
+}
+
+event = {
+	id = 233046
+	persistent = no
+	random = no
+	country = FRA
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233046_DESC"
+#	picture = "fra"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 } # -48
+		command = { type = local_setflag which = corruption_7 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+		command = { type = free_ic value = -2 }
+	}
+}
+
+event = {
+	id = 233047
+	persistent = no
+	random = no
+	country = GAB #Gabon
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233047_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233048
+	persistent = no
+	random = no
+	country = GEO
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233048_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233049
+	persistent = no
+	random = no
+	country = GER
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233049_DESC"
+#	picture = "ger"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = corruption_8 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+		command = { type = free_ic value = -3 }
+	}
+}
+
+event = {
+	id = 233050
+	persistent = no
+	random = no
+	country = GLD #Ghana
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233050_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233051
+	persistent = no
+	random = no
+	country = GRE
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233051_DESC"
+#	picture = "gre"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 12 } #-43 
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233052
+	persistent = no
+	random = no
+	country = GUA #Guatemala
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233052_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 5 } #-58 
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233053
+	persistent = no
+	random = no
+	country = GUI #Guinea
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233053_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+	}
+}
+
+event = {
+	id = 233054
+	persistent = no
+	random = no
+	country = GUY #Guyana
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233054_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+
+	}
+}
+
+event = {
+	id = 233055
+	persistent = no
+	random = no
+	country = HAI #Haiti
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233055_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -25 } #-53 
+	}
+}
+
+event = {
+	id = 233056
+	persistent = no
+	random = no
+	country = HOL #Netherlands
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233056_DESC"
+#	picture = "hol"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 } #-53 
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = free_ic value = -1 }
+	}
+}
+
+event = {
+	id = 233057
+	persistent = no
+	random = no
+	country = HON #Honduras
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233057_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 5 } #-58 
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233058
+	persistent = no
+	random = no
+	country = HUN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233058_DESC"
+#	picture = "hun"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -36 } #-62 
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233059
+	persistent = no
+	random = no
+	country = ICL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233059_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 } #-72
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233060
+	persistent = no
+	random = no
+	country = IND
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233060_DESC"
+#	picture = "ind"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233061
+	persistent = no
+	random = no
+	country = INO
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233061_DESC"
+#	picture = "ino"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -6 } #-49 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233062
+	persistent = no
+	random = no
+	country = IRE
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233062_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 } #-72 }
+		command = { type = local_setflag which = corruption_8 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233063
+	persistent = no
+	random = no
+	country = IRQ
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233063_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = hawk_lobby_10 }
+	}
+}
+
+event = {
+	id = 233064
+	persistent = no
+	random = no
+	country = ISR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233064_DESC"
+#	picture = "isr_event"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -28 }
+		command = { type = local_setflag which = corruption_7 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+		command = { type = free_supplies value = 50 }
+	}
+}
+
+event = {
+	id = 233065
+	persistent = no
+	random = no
+	country = ITA
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233065_DESC"
+#	picture = "ita"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 14 } #-53 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = free_ic value = -2 }
+	}
+}
+
+event = {
+	id = 233066
+	persistent = no
+	random = no
+	country = JAP
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233066_DESC"
+#	picture = "jap_event"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+#		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_7 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233067
+	persistent = no
+	random = no
+	country = JOR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233067_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -28 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233068
+	persistent = no
+	random = no
+	country = KAZ
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233068_DESC"
+#	picture = "kazrus"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233069
+	persistent = no
+	random = no
+	country = KOR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233069_DESC"
+#	picture = "kor"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233070
+	persistent = no
+	random = no
+	country = KYG
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233070_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233071
+	persistent = no
+	random = no
+	country = LAO
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233071_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+#		command = { type = industrial_modifier which = total value = -35 }
+	}
+}
+
+event = {
+	id = 233072
+	persistent = no
+	random = no
+	country = LAT
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233072_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233073
+	persistent = no
+	random = no
+	country = LBY
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233073_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233074
+	persistent = no
+	random = no
+	country = LEB
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233074_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+#		command = { type = industrial_modifier which = total value = -43 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233075
+	persistent = no
+	random = no
+	country = LIB
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233075_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+	}
+}
+
+event = {
+	id = 233076
+	persistent = no
+	random = no
+	country = LIT
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233076_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+#		command = { type = industrial_modifier which = total value = -62 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233077
+	persistent = no
+	random = no
+	country = LUX
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233077_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+#		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233078
+	persistent = no
+	random = no
+	country = MAD
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233078_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+	}
+}
+
+event = {
+	id = 233079
+	persistent = no
+	random = no
+	country = MAL #Mali
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233079_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233080
+	persistent = no
+	random = no
+	country = MAN #Malta
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233080_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233081
+	persistent = no
+	random = no
+	country = MEN #Mauritania
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233081_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233082
+	persistent = no
+	random = no
+	country = MEX
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233082_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "mex"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+#		command = { type = industrial_modifier which = total value = -63 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233083
+	persistent = no
+	random = no
+	country = MLY
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233083_DESC"
+#	picture = "mly"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -43 }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233084
+	persistent = no
+	random = no
+	country = MON
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233084_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+#		command = { type = industrial_modifier which = total value = -44 }
+
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233085
+	persistent = no
+	random = no
+	country = MOR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233085_DESC"
+#	picture = "mor"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -34 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233086
+	persistent = no
+	random = no
+	country = MOZ
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233086_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233087
+	persistent = no
+	random = no
+	country = NAM
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233087_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233088
+	persistent = no
+	random = no
+	country = NEP
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233088_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233089
+	persistent = no
+	random = no
+	country = NIC
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233089_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233090
+	persistent = no
+	random = no
+	country = NIG
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233090_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_1 }
+		command = { type = industrial_modifier which = supplies value = -33 }
+		command = { type = supply_dist_mod value = -50 }
+		command = { type = research_mod value = -33 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233091
+	persistent = no
+	random = no
+	country = NOR
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233091_DESC"
+#	picture = "nor"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = oil }
+	        command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233092
+	persistent = no
+	random = no
+	country = NZL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233092_DESC"
+#	picture = "nzl"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233093
+	persistent = no
+	random = no
+	country = OMN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233093_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_9 }
+	}
+}
+
+event = {
+	id = 233094
+	persistent = no
+	random = no
+	country = OTT #Chad
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233094_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233095
+	persistent = no
+	random = no
+	country = PAK
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233095_DESC"
+#	picture = "pak"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -34 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233096
+	persistent = no
+	random = no
+	country = PAN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233096_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233097
+	persistent = no
+	random = no
+	country = PAR
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233097_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = industrial_modifier which = total value = -10 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233098
+	persistent = no
+	random = no
+	country = PER
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233098_DESC"
+#	picture = "ira"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233099
+	persistent = no
+	random = no
+	country = PHI
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233099_DESC"
+#	picture = "phi"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -58 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233100
+	persistent = no
+	random = no
+	country = POL
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233100_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233101
+	persistent = no
+	random = no
+	country = POR
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233101_DESC"
+#	picture = "por"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_7 }
+		command = { type = industrial_modifier which = supplies value = -3 }
+		command = { type = supply_dist_mod value = -1 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+      command = { type = activate which = 7010 }
+      command = { type = activate which = 7020 }
+      command = { type = activate which = 7030 }
+      command = { type = activate which = 7040 }
+      command = { type = activate which = 7050 }
+      command = { type = activate which = 7060 }
+      command = { type = activate which = 7070 }
+      command = { type = activate which = 7080 }
+      command = { type = activate which = 7090 }
+      command = { type = activate which = 7100 }
+      command = { type = activate which = 7110 }
+      command = { type = activate which = 7120 }
+      command = { type = activate which = 7130 }
+      command = { type = activate which = 7140 }
+      command = { type = activate which = 7150 }
+      command = { type = activate which = 7160 }
+      command = { type = activate which = 7170 }
+      command = { type = activate which = 7180 }
+      command = { type = activate which = 7190 }
+      command = { type = activate which = 7200 }
+      command = { type = activate which = 7210 }
+      command = { type = activate which = 7220 }
+      command = { type = activate which = 7230 }
+      command = { type = activate which = 7240 }
+      command = { type = activate which = 7250 }
+      command = { type = activate which = 7260 }
+      command = { type = activate which = 7270 }
+      command = { type = activate which = 7280 }
+      command = { type = activate which = 7290 }
+      command = { type = activate which = 7300 }
+      command = { type = activate which = 7310 }
+      command = { type = activate which = 7320 }
+      command = { type = activate which = 7330 }
+      command = { type = activate which = 7340 }
+      command = { type = activate which = 7350 }
+      command = { type = activate which = 7360 }
+      command = { type = activate which = 7370 }
+      command = { type = activate which = 7380 }
+      command = { type = activate which = 7390 }
+	}
+}
+
+event = {
+	id = 233102
+	persistent = no
+	random = no
+	country = PRK #Papua New-Guinea
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233102_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -54 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233103
+	persistent = no
+	random = no
+	country = PRU #Peru
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233103_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233104
+	persistent = no
+	random = no
+	country = QUE #Qatar
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233104_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -14 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_9 }
+	}
+}
+
+event = {
+	id = 233105
+	persistent = no
+	random = no
+	country = RHO #Togo
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233105_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233106
+	persistent = no
+	random = no
+	country = ROM
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233106_DESC"
+#	picture = "rom"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_2 }
+		command = { type = building_prod_mod which = ic value = 30 }
+		command = { type = building_prod_mod which = infrastructure value = 30 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233107
+	persistent = no
+	random = no
+	country = RSI #Rwanda
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233107_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_5 }
+		command = { type = free_supplies value = 7 }
+	}
+}
+
+event = {
+	id = 233108
+	persistent = no
+	random = no
+	country = SOV
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233108_DESC"
+#	picture = "rus"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_1 }
+		command = { type = building_prod_mod which = ic value = 50 }
+		command = { type = building_prod_mod which = infrastructure value = 50 }
+		command = { type = industrial_modifier which = total value = -45 } # -34
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+
+event = {
+	id = 233109
+	persistent = no
+	random = no
+	country = SAF #South Africa
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233109_DESC"
+#	picture = "saf"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233110
+	persistent = no
+	random = no
+	country = SAL #El Salvador
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233110_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233111
+	persistent = no
+	random = no
+	country = SAR #Sri Lanka
+
+	trigger = {
+		flag = economy_on
+	}
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233111_DESC"
+#	picture = "sar"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+		command = { type = free_supplies value = 20 }
+	}
+}
+
+event = {
+	id = 233112
+	persistent = no
+	random = no
+	country = SAU
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233112_DESC"
+#	picture = "sau"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233113
+	persistent = no
+	random = no
+	country = SCA #Macedonia/FYROM
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233113_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233114
+	persistent = no
+	random = no
+	country = SCH #Switzerland
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233114_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233115
+	persistent = no
+	random = no
+	country = SCO #Carribean
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233115_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_1 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -63 }
+	}
+}
+
+event = {
+	id = 233116
+	persistent = no
+	random = no
+	country = SER
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233116_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233117
+	persistent = no
+	random = no
+	country = SIA #Thailand
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233117_DESC"
+#	picture = "sia"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233118
+	persistent = no
+	random = no
+	country = SIB #Senegal
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233118_DESC"
+#	picture = "senegal"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233119
+	persistent = no
+	random = no
+	country = SIE #Sierra Leone
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233119_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -40 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233120
+	persistent = no
+	random = no
+	country = SIK # East Turkestan
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233120_DESC"
+#	picture = "sik"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -25 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233121
+	persistent = no
+	random = no
+	country = SLO #Slovakia
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233121_DESC"
+#	picture = "slo"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233122
+	persistent = no
+	random = no
+	country = SLV #Slovenia
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233122_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }		
+                command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233123
+	persistent = no
+	random = no
+	country = SOM
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233123_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = corruption_1 }
+		command = { type = industrial_modifier which = supplies value = -33 }
+		command = { type = supply_dist_mod value = -50 }
+		command = { type = research_mod value = -33 }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233124
+	persistent = no
+	random = no
+	country = SPA
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233124_DESC"
+#	picture = "spa"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp20k }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233125
+	persistent = no
+	random = no
+	country = SPR #Suriname
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233125_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233126
+	persistent = no
+	random = no
+	country = SUD
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233126_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+                command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233127
+	persistent = no
+	random = no
+	country = SWE
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233127_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+		command = { type = local_setflag which = corruption_9 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233128
+	persistent = no
+	random = no
+	country = SYR
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME"
+	desc = "EVT_233128_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 35 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_7 }
+		command = { type = free_supplies value = 25 }
+	}
+}
+
+event = {
+	id = 233129
+	persistent = no
+	random = no
+	country = TAJ
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233129_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233130
+	persistent = no
+	random = no
+	country = TAN
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233130_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233131
+	persistent = no
+	random = no
+	country = TEX #East Timor
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233131_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -35 }
+	}
+}
+
+event = {
+	id = 233132
+	persistent = no
+	random = no
+	country = TRA #Taiwan
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233132_DESC"
+#	picture = "tra"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp30k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -48 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233133
+	persistent = no
+	random = no
+	country = TRK #Turkmenistan
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233133_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_5 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -25 }
+	}
+}
+
+event = {
+	id = 233134
+	persistent = no
+	random = no
+	country = TUN
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233134_DESC"
+#	picture = "tun"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233135
+	persistent = no
+	random = no
+	country = TUR
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233135_DESC"
+#	picture = "tur"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = 5 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = industrial_modifier which = total value = -3 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = hawk_lobby_5 }
+	}
+}
+event = {
+	id = 233136
+	persistent = no
+	random = no
+	country = U01 #Zambia
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233136_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -63 }
+	}
+}
+
+event = {
+	id = 233137
+	persistent = no
+	random = no
+	country = U02 #Mauritius
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233137_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -63 }
+		command = { type = local_setflag which = corruption_4 }
+		command = { type = industrial_modifier which = supplies value = -15 }
+		command = { type = supply_dist_mod value = -10 }
+		command = { type = research_mod value = -5 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233138
+	persistent = no
+	random = no
+	country = U05 #Malawi
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233138_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -49 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+event = {
+	id = 233139
+	persistent = no
+	random = no
+	country = U06 #EU
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233139_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -67 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = hawk_lobby_2 }
+		command = { type = free_supplies value = 40 }
+		command = { type = free_ic value = 8 }
+	}
+}
+
+event = {
+	id = 233140
+	persistent = no
+	random = no
+	country = U07 #Botswana
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233140_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp10k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -48 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -43 }
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233141
+	persistent = no
+	random = no
+	country = U08 #Burkina Faso
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233141_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -35 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233142
+	persistent = no
+	random = no
+	country = U09 #DPRK
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233142_DESC"
+#	picture = "kim_event"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_1 }
+		command = { type = building_prod_mod which = ic value = 50 }
+		command = { type = building_prod_mod which = infrastructure value = 50 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = hawk_lobby_10 }
+		command = { type = free_supplies value = 125 }
+		command = { type = free_oil value = 5 }
+	}
+}
+
+event = {
+	id = 233143
+	persistent = no
+	random = no
+	country = U10 #Central African Rep
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233143_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -40 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233144
+	persistent = no
+	random = no
+	country = U11 #DR Congo
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233144_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -20 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_6 }
+	}
+}
+
+event = {
+	id = 233145
+	persistent = no
+	random = no
+	country = U12 #Cote d'Ivoire
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233145_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -44 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233146
+	persistent = no
+	random = no
+	country = U13 #Eritrea
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233146_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -9 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_10 }
+		command = { type = free_supplies value = 10 }
+	}
+}
+
+event = {
+	id = 233147
+	persistent = no
+	random = no
+	country = U14 #UAE
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233147_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = -57 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233148
+	persistent = no
+	random = no
+	country = U15 #Kenya
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233148_DESC"
+#	picture = "kenya"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -53 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233159
+	persistent = no
+	random = no
+	country = U16 #Kuwait
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233159_DESC"
+#	picture = "kuwait"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp15k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -28 }
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233149
+	persistent = no
+	random = no
+	country = U17 #Moldova
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233149_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = -63 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233150
+	persistent = no
+	random = no
+	country = U18 # Uganda
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233150_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_4 }
+		command = { type = free_supplies value = 8 }
+	}
+}
+
+event = {
+	id = 233151
+	persistent = no
+	random = no
+	country = UKR
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233151_DESC"
+#	picture = "ukr"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -30 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233152
+	persistent = no
+	random = no
+	country = URU
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233152_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp5k }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = corruption_6 }
+		command = { type = industrial_modifier which = supplies value = -5 }
+		command = { type = supply_dist_mod value = -3 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233153
+	persistent = no
+	random = no
+	country = USA
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233153_DESC"
+#	picture = "usa"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = setflag which = oil_20 } #Really 40 USD
+		command = { type = setflag which = economy_rise } #Global command
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp30p }
+		command = { type = local_setflag which = free_market_8 }
+		command = { type = building_prod_mod which = ic value = -150 }
+		command = { type = building_prod_mod which = infrastructure value = -150 }
+		command = { type = industrial_modifier which = total value = 25 } #-52
+		command = { type = local_setflag which = corruption_8 }
+		command = { type = industrial_modifier which = supplies value = -1 }
+		command = { type = local_setflag which = hawk_lobby_5 }
+#		command = { type = province_revoltrisk which = 1493 value = 85 }
+#		command = { type = province_revoltrisk which = 1492 value = 75 }
+#		command = { type = province_revoltrisk which = 1486 value = 60 }
+#		command = { type = province_revoltrisk which = 1484 value = 50 }
+	}
+}
+
+event = {
+	id = 233154
+	persistent = no
+	random = no
+	country = UZB
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233154_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_3 }
+		command = { type = building_prod_mod which = ic value = 20 }
+		command = { type = building_prod_mod which = infrastructure value = 20 }
+		command = { type = industrial_modifier which = total value = -45 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_1 }
+	}
+}
+
+event = {
+	id = 233155
+	persistent = no
+	random = no
+	country = VEN
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233155_DESC"
+#	picture = "ven"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp5k }
+
+		command = { type = local_setflag which = free_market_7 }
+		command = { type = building_prod_mod which = ic value = -50 }
+		command = { type = building_prod_mod which = infrastructure value = -50 }
+		command = { type = industrial_modifier which = total value = 15 }
+
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = oil }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = hawk_lobby_3 }
+	}
+}
+
+event = {
+	id = 233156
+	persistent = no
+	random = no
+	country = VIC #Niger
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233156_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -40 }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_2 }
+	}
+}
+
+event = {
+	id = 233157
+	persistent = no
+	random = no
+	country = WLL
+
+#	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233157_DESC"
+#	picture = "wll"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = corruption_2 }
+		command = { type = industrial_modifier which = supplies value = -25 }
+		command = { type = supply_dist_mod value = -25 }
+		command = { type = research_mod value = -20 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = tiger }
+		command = { type = local_setflag which = free_market_6 }
+		command = { type = building_prod_mod which = ic value = -10 }
+		command = { type = building_prod_mod which = infrastructure value = -10 }
+		command = { type = industrial_modifier which = total value = -39 }
+		command = { type = local_setflag which = hawk_lobby_4 }
+	}
+}
+
+event = {
+	id = 233158
+	persistent = no
+	random = no
+	country = YEM
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233158_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp500 }
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = industrial_modifier which = total value = -5 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_7 }
+		command = { type = free_supplies value = 40 }
+	}
+}
+
+event = {
+	id = 233160
+	persistent = no
+	random = no
+	country = CHI
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+		command = { type = local_setflag which = free_market_9 }
+		command = { type = building_prod_mod which = ic value = -300 }
+		command = { type = building_prod_mod which = infrastructure value = -300 }
+		command = { type = industrial_modifier which = total value = 30 } # original -15/ 35-5
+		command = { type = local_setflag which = corruption_3 }
+		command = { type = industrial_modifier which = supplies value = -20 }
+		command = { type = supply_dist_mod value = -15 }
+		command = { type = research_mod value = -10 }
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233161
+	persistent = no
+	random = no
+	country = YUG
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233162
+	persistent = no
+	random = no
+	country = U33
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = small_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_5 }
+		command = { type = industrial_modifier which = total value = -5 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233163
+	persistent = no
+	random = no
+	country = U50
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = large_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}
+
+event = {
+	id = 233164
+	persistent = no
+	random = no
+	country = U72
+
+	trigger = {
+		flag = economy_on
+	}
+
+	date = { day = 2 month = october year = 1945 }
+
+	name = "EVT_233001_NAME" 
+	desc = "EVT_233160_DESC"
+#	picture = "no"
+	style = 0
+	action_a = {
+		name = "OK"
+		command = { type = local_setflag which = medium_country }
+		command = { type = local_setflag which = gdp2k }
+
+		command = { type = local_setflag which = free_market_4 }
+		command = { type = building_prod_mod which = ic value = 10 }
+		command = { type = building_prod_mod which = infrastructure value = 10 }
+		command = { type = industrial_modifier which = total value = -15 }
+
+		command = { type = local_setflag which = corruption_5 }
+		command = { type = industrial_modifier which = supplies value = -10 }
+		command = { type = industrial_modifier which = total value = -1 }
+		command = { type = supply_dist_mod value = -5 }
+		command = { type = research_mod value = -1 }
+
+		command = { type = local_setflag which = invest }
+		command = { type = local_setflag which = hawk_lobby_8 }
+	}
+}

@@ -1,0 +1,11 @@
+# USA goes back to normal garrison ratio AI File by Lothos adapted to MIH by Civdemof
+
+max_garrison_prop = 0.30
+min_garrison_prop = 0.20
+
+max_front_ratio = 1.2000 
+max_front_ratios = { }
+
+exp_force_ratio = 0.00
+exp_force_ratios = { ENG = 0.1000 } 
+no_exp_forces_to = { PHI AST NZL }

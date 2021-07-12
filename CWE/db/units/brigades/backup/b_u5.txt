@@ -1,0 +1,122 @@
+land_unit_type = 1
+# Assault Gun
+# 0 - Import Assault Gun
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -4
+	softattack			= 4
+	hardattack			= 2
+	supplyconsumption 		= 1.0
+	fuelconsumption			= 0.4
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 1.0
+	max_supply_stock = 30
+	max_oil_stock = 12
+}
+# 1 - Early Assault Gun 39
+model = {
+	cost 				= 5
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -4
+	softattack			= 4
+	hardattack			= 2
+	supplyconsumption 		= 1.0
+	fuelconsumption			= 0.4
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 30
+	max_oil_stock = 12
+}
+# 2 - Basic Assault Gun 41
+model = {
+	cost 				= 6
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -6
+	softattack			= 5
+	hardattack			= 3
+	supplyconsumption 		= 1.3
+	fuelconsumption			= 0.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 39
+	max_oil_stock = 18
+}
+# # 3 - Improved Assault Gun 43
+model = {
+	cost 				= 7
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -8
+	softattack			= 6
+	hardattack			= 4
+	supplyconsumption 		= 1.6
+	fuelconsumption			= 0.8
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 48
+	max_oil_stock = 24
+}
+# 4 - Advanced Assault Gun 45
+model = {
+	cost 				= 8
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -10
+	softattack			= 7
+	hardattack			= 5
+	supplyconsumption 		= 1.9
+	fuelconsumption			= 1.0
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 57
+	max_oil_stock = 30
+}
+# 5 - Semi-Modern Assault Gun 48
+model = {
+	cost 				= 9
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -12
+	softattack			= 8
+	hardattack			= 6
+	supplyconsumption 		= 2.2
+	fuelconsumption			= 1.2
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 66
+	max_oil_stock = 36
+}
+# 6 - Modern Assault Gun
+model = {
+	cost 				= 10
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -14
+	softattack			= 9
+	hardattack			= 7
+	supplyconsumption 		= 2.5
+	fuelconsumption			= 1.4
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 75
+	max_oil_stock = 42
+}
+# 7 - Cold-War Assault Gun
+model = {
+	cost 				= 11
+	buildtime	 		= 120
+	manpower 			= 2
+	softness			= -16
+	softattack			= 10
+	hardattack			= 8
+	supplyconsumption 		= 2.8
+	fuelconsumption			= 1.6
+	upgrade_time_factor 		= 0.5
+	upgrade_cost_factor 		= 0.5
+	max_supply_stock = 84
+	max_oil_stock = 48
+}

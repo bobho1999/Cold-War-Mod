@@ -1,0 +1,77 @@
+event = {
+  	id = 5910000
+  	random = no
+	country = ENG
+  
+  	name = "戰後經濟 " 
+  	desc = " "
+    	style = 0
+ 
+	trigger = { 
+
+ 	}
+
+  
+  	date = { day = 1 month = january year = 1945 }
+  	offset = 5
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "滿目瘡痍"
+    		command = { type = dissent value = 10 }
+    		command = { type = industrial_modifier which = supplies value = -25 }  
+    		command = { type = industrial_modifier which = total value = -25 }
+  	}
+}
+
+event = {
+  	id = 5910001
+  	random = no
+	country = ENG
+  
+  	name = "紐芬蘭加入加拿大聯邦 " 
+  	desc = "1948年，紐芬蘭公投，決定加入加拿大聯邦。1949年3月31日子夜，紐芬蘭正式成為加拿大的第十個，亦是最後加入的省份。 "
+    	style = 0
+ 
+	trigger = { 
+		exists = CAN
+		OR = {
+			control = { province = 575 data = ENG } #
+			control = { province = 576 data = ENG } # 
+			control = { province = 3980 data = ENG } # 
+		}
+ 	}
+
+  
+  	date = { day = 30 month = march year = 1949 }
+  	offset = 1
+  	deathdate = { day = 30 month = december year = 1999 } 
+  
+  	action_a = {
+    		name = "移交主權 "
+    		command = { type = relation which = CAN value = 50 }
+    		command = { type = secedeprovince which = CAN value = 575 } #
+    		command = { type = secedeprovince which = CAN value = 576 } #
+    		command = { type = secedeprovince which = CAN value = 3980 } #
+		command = { type = trigger which 5910002 }
+  	}
+}
+
+event = {
+  	id = 5910002
+  	random = no
+	country = CAN
+  
+  	name = "紐芬蘭加入加拿大聯邦 " 
+  	desc = "1948年，紐芬蘭公投，決定加入加拿大聯邦。1949年3月31日子夜，紐芬蘭正式成為加拿大的第十個，亦是最後加入的省份。 "
+    	style = 0
+  
+  	action_a = {
+    		name = "移交主權 "
+    		command = { type = relation which = CAN value = 50 }
+    		command = { type = secedeprovince which = CAN value = 575 } #
+    		command = { type = secedeprovince which = CAN value = 576 } #
+    		command = { type = secedeprovince which = CAN value = 3980 } #
+		command = { type = trigger which 5910002 }
+  	}
+}
