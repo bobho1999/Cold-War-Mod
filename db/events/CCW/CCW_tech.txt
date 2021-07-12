@@ -178,9 +178,10 @@ event = {
 	random = no
 	persistent = yes
 
-	trigger = { 	technology = 1200 
-			local_flag = usacrops 
-			NOT = { local_flag = usaarmor }
+	trigger = { 	
+		technology = 1200 
+		local_flag = usacrops 
+		NOT = { local_flag = usaarmor }
 	}
 
 	name = "美军王牌装甲师 "
@@ -270,7 +271,7 @@ event = {
 	country = usa
 	random = no
 
-	name = "國民警衛隊"
+	name = "EVT_48017_NAME"
 	desc = "EVT_48017_DESC"
 	style = 0
 #	picture = "nationalguards"

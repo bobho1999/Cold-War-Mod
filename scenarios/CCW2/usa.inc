@@ -738,7 +738,7 @@ country = {
   landunit = {
     id       = { type = 30301 id = 17 }
     name     = "美国第6军团 "
-    location = 84
+    location = 4089
     division = {
       id             = { type = 30304 id = 56 }
       name           = "第44国民卫队 "
