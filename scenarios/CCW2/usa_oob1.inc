@@ -490,11 +490,11 @@ country = {
 
   landunit = {
     id       = { type = 30301 id = 3 }
-    name     = "美国第1军团 "
+    name     = "美国第1集团军 "
     location = 87
     division = {
       id             = { type = 30304 id = 5 }
-      name           = "美国第1军团 司令部 "
+      name           = "美国第1集团军司令部 "
       type           = hq
       model          = 2
       extra          = anti_air
@@ -504,11 +504,11 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 4 }
-    name     = "美国第3军团 "
+    name     = "美国第3集团军 "
     location = 313
     division = {
       id             = { type = 30304 id = 6 }
-      name           = "美国第3军团 司令部 "
+      name           = "美国第3集团军司令部 "
       type           = hq
       model          = 2
       extra          = police
@@ -518,11 +518,11 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 22 }
-    name     = "美国第6军团 "
+    name     = "美国第6集团军 "
     location = 1198
     division = {
       id             = { type = 30304 id = 69 }
-      name           = "美国第6军团 司令部 "
+      name           = "美国第6集团军司令部 "
       type           = hq
       model          = 2
       extra          = anti_air
@@ -546,11 +546,11 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 23 }
-    name     = "美国第8集团军 "
-    location = 1196
+    name     = "美国第8军团 "
+    location = 1184
     division = {
       id             = { type = 30304 id = 70 }
-      name           = "美国第8集团军司令部 "
+      name           = "美国第8军团司令部 "
       type           = hq
       model          = 2
       extra          = police
@@ -588,11 +588,11 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 19 }
-    name     = "美国第15军团 "
+    name     = "美国第15集团军 "
     location = 371
     division = {
       id             = { type = 30304 id = 63 }
-      name           = "美国第15军团 司令部 "
+      name           = "美国第15集团军司令部 "
       type           = hq
       model          = 2
       extra          = anti_air
@@ -604,15 +604,6 @@ country = {
     id       = { type = 30301 id = 29 }
     name     = "美国第1军团 "
     location = 1195
-    division = {
-      id             = { type = 30304 id = 83 }
-      name           = "第25'热带闪电'师 "
-      type           = motorized
-      model          = 5
-      extra          = engineer
-      brigade_model  = 3
-      experience     = 85
-    }
     division = {
       id             = { type = 30304 id = 84 }
       name           = "第41'夕阳'国民卫队 "
@@ -630,6 +621,36 @@ country = {
       extra          = anti_air
       brigade_model  = 2
       experience     = 85
+    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 38 }
+    name     = "第25'热带闪电'师 "
+    location = 1184
+    division = {
+      id             = { type = 30304 id = 83 }
+      name           = "第25'热带闪电'师 "
+      type           = motorized
+      model          = 5
+      extra          = engineer
+      brigade_model  = 3
+      experience     = 85
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 39 }
+    name     = "第1'一線隊'騎兵师"
+    location = 1184
+    division = {
+      id             = { type = 30304 id = 107 }
+      name           = "第1'一線隊'騎兵师"
+      type           = cavalry
+      model          = 4
+      extra          = artillery
+      brigade_model  = 4
+      experience     = 75
+      locked         = yes
     }
   }
   landunit = {
@@ -738,13 +759,13 @@ country = {
   landunit = {
     id       = { type = 30301 id = 17 }
     name     = "美国第6军团 "
-    location = 84
+    location = 4089
     division = {
       id             = { type = 30304 id = 56 }
       name           = "第44国民卫队 "
       type           = motorized
       model          = 4
-      extra          = rocket_artillery
+      extra          = sp_rct_artillery
       brigade_model  = 1
       experience     = 80
     }
@@ -874,8 +895,8 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 28 }
-    name     = "美国第10军团 "
-    location = 1184
+    name     = "第24'胜利'师 "
+    location = 1190
     division = {
       id             = { type = 30304 id = 81 }
       name           = "第24'胜利'师 "
@@ -884,15 +905,7 @@ country = {
       extra          = engineer
       brigade_model  = 3
       experience     = 75
-    }
-    division = {
-      id             = { type = 30304 id = 82 }
-      name           = "第31'美国南部'国民卫队 "
-      type           = motorized
-      model          = 5
-      extra          = artillery
-      brigade_model  = 5
-      experience     = 75
+      locked         = yes
     }
   }
   landunit = {
@@ -928,6 +941,21 @@ country = {
     }
   }
   landunit = {
+    id       = { type = 30301 id = 33 }
+    name     = "第31'美国南部'国民卫队 "
+    location = 672
+    division = {
+      id             = { type = 30304 id = 82 }
+      name           = "第31'美国南部'国民卫队 "
+      type           = motorized
+      model          = 5
+      extra          = artillery
+      brigade_model  = 4
+      experience     = 75
+      locked         = yes
+    }
+  }
+  landunit = {
     id       = { type = 30301 id = 13 }
     name     = "美国第12军团 "
     location = 81
@@ -945,7 +973,7 @@ country = {
       name           = "第26'美国佬'国民卫队 "
       type           = motorized
       model          = 4
-      extra          = sp_rct_artillery
+      extra          = rocket_artillery
       brigade_model  = 1
       experience     = 80
     }
@@ -980,9 +1008,9 @@ country = {
       id             = { type = 30304 id = 41 }
       name           = "第1'大红一'师 "
       type           = motorized
-      model          = 4
+      model          = 5
       extra          = artillery
-      brigade_model  = 6
+      brigade_model  = 4
       experience     = 80
     }
   }
@@ -1085,9 +1113,9 @@ country = {
       id             = { type = 30304 id = 51 }
       name           = "第3'马恩磐石'师 "
       type           = motorized
-      model          = 4
+      model          = 5
       extra          = engineer
-      brigade_model  = 4
+      brigade_model  = 3
       experience     = 80
     }
     division = {
@@ -1205,14 +1233,14 @@ country = {
       type           = paratrooper
       model          = 2
       extra          = artillery
-      brigade_model  = 6
+      brigade_model  = 4
       experience     = 80
     }
   }
   landunit = {
     id       = { type = 30301 id = 8 }
-    name     = "美国第19军团 "
-    location = 87
+    name     = "第2'车轮上的地狱'装甲师 "
+    location = 726
     division = {
       id             = { type = 30304 id = 19 }
       name           = "第2'车轮上的地狱'装甲师 "
@@ -1221,16 +1249,13 @@ country = {
       extra          = sp_artillery
       brigade_model  = 2
       experience     = 75
+      locked         = yes
     }
-    division = {
-      id             = { type = 30304 id = 20 }
-      name           = "第8'雷鸣的兽群'装甲师 "
-      type           = armor
-      model          = 4
-      extra          = tank_destroyer
-      brigade_model  = 3
-      experience     = 82
-    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 44 }
+    name     = "第3'先锋队'装甲师 "
+    location = 640
     division = {
       id             = { type = 30304 id = 21 }
       name           = "第3'先锋队'装甲师 "
@@ -1239,39 +1264,27 @@ country = {
       extra          = sp_artillery
       brigade_model  = 2
       experience     = 86
+      locked         = yes
     }
   }
   landunit = {
-    id       = { type = 30301 id = 14 }
-    name     = "美国第20军团 "
-    location = 376
-    division = {
-      id             = { type = 30304 id = 42 }
-      name           = "第65'战斧'师 "
-      type           = motorized
-      model          = 4
-      extra          = engineer
-      brigade_model  = 4
-      experience     = 68
-    }
-    division = {
-      id             = { type = 30304 id = 43 }
-      name           = "第71'红圆周'师 "
-      type           = motorized
-      model          = 4
-      extra          = sp_artillery
-      brigade_model  = 2
-      experience     = 69
-    }
+    id       = { type = 30301 id = 41 }
+    name     = "第2'印第安人头'师 "
+    location = 606
     division = {
       id             = { type = 30304 id = 44 }
       name           = "第2'印第安人头'师 "
       type           = motorized
-      model          = 4
+      model          = 5
       extra          = engineer
-      brigade_model  = 4
+      brigade_model  = 3
       experience     = 90
     }
+  }
+  landunit = {
+    id       = { type = 30301 id = 42 }
+    name     = "第80'蓝岭'师 "
+    location = 606
     division = {
       id             = { type = 30304 id = 45 }
       name           = "第80'蓝岭'师 "
@@ -1281,6 +1294,11 @@ country = {
       brigade_model  = 3
       experience     = 85
     }
+  }
+  landunit = {
+    id       = { type = 30301 id = 43 }
+    name     = "第13'黑猫'装甲师 "
+    location = 762
     division = {
       id             = { type = 30304 id = 46 }
       name           = "第13'黑猫'装甲师 "
@@ -1292,36 +1310,9 @@ country = {
     }
   }
   landunit = {
-    id       = { type = 30301 id = 15 }
-    name     = "美国第21军团 "
-    location = 82
-    division = {
-      id             = { type = 30304 id = 47 }
-      name           = "第36'得克萨斯'国民卫队 "
-      type           = motorized
-      model          = 4
-      extra          = engineer
-      brigade_model  = 4
-      experience     = 75
-    }
-    division = {
-      id             = { type = 30304 id = 48 }
-      name           = "第63'血与火'师 "
-      type           = motorized
-      model          = 4
-      extra          = rocket_artillery
-      brigade_model  = 1
-      experience     = 70
-    }
-    division = {
-      id             = { type = 30304 id = 49 }
-      name           = "第12'悍妇'装甲师 "
-      type           = armor
-      model          = 4
-      extra          = tank_destroyer
-      brigade_model  = 2
-      experience     = 76
-    }
+    id       = { type = 30301 id = 40 }
+    name     = "第101'尖叫的雄鹰'空降师 "
+    location = 641
     division = {
       id             = { type = 30304 id = 50 }
       name           = "第101'尖叫的雄鹰'空降师 "
@@ -1334,40 +1325,23 @@ country = {
   }
   landunit = {
     id       = { type = 30301 id = 20 }
-    name     = "美国第22军团 "
-    location = 371
-    division = {
-      id             = { type = 30304 id = 64 }
-      name           = "第94'九猫'师 "
-      type           = motorized
-      model          = 4
-      extra          = tank_destroyer
-      brigade_model  = 3
-      experience     = 75
-    }
-    division = {
-      id             = { type = 30304 id = 65 }
-      name           = "第17'天堂之雷'空降师 "
-      type           = paratrooper
-      model          = 2
-      extra          = anti_tank
-      brigade_model  = 3
-      experience     = 76
-    }
+    name     = "第10山地师"
+    location = 791
     division = {
       id             = { type = 30304 id = 176 }
       name           = "第10山地师"
       type           = bergsjaeger
-      model          = 4
+      model          = 5
       extra          = artillery
-      brigade_model  = 6
+      brigade_model  = 4
       experience     = 76
+      locked         = yes
     }
   }
   landunit = {
     id       = { type = 30301 id = 21 }
-    name     = "美国第23军团 "
-    location = 378
+    name     = "第28'楔石'国民卫队 "
+    location = 609
     division = {
       id             = { type = 30304 id = 66 }
       name           = "第28'楔石'国民卫队 "
@@ -1377,118 +1351,91 @@ country = {
       brigade_model  = 2
       experience     = 72
     }
-    division = {
-      id             = { type = 30304 id = 67 }
-      name           = "第66'黑豹'师 "
-      type           = motorized
-      model          = 4
-      extra          = sp_artillery
-      brigade_model  = 2
-      experience     = 80
-    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 55 }
+    name     = "第106'金狮'师 "
+    location = 895
     division = {
       id             = { type = 30304 id = 68 }
       name           = "第106'金狮'师 "
       type           = motorized
       model          = 4
       extra          = engineer
-      brigade_model  = 4
+      brigade_model  = 3
       experience     = 75
+      locked         = yes
     }
   }
   landunit = {
     id       = { type = 30301 id = 27 }
-    name     = "美国第24军团 "
-    location = 1199
+    name     = "第96'神枪手'师 "
+    location = 773
     division = {
       id             = { type = 30304 id = 78 }
       name           = "第96'神枪手'师 "
       type           = motorized
-      model          = 4
+      model          = 5
       extra          = artillery
-      brigade_model  = 6
+      brigade_model  = 4
       experience     = 80
+      locked         = yes
     }
-    division = {
-      id             = { type = 30304 id = 79 }
-      name           = "第7'刺刀'师 "
-      type           = motorized
-      model          = 4
-      extra          = anti_air
-      brigade_model  = 2
-      experience     = 80
-    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 53 }
+    name     = "第27'纽约师'国民卫队 "
+    location = 602
     division = {
       id             = { type = 30304 id = 80 }
       name           = "第27'纽约师'国民卫队 "
       type           = motorized
       model          = 4
       extra          = engineer
-      brigade_model  = 5
+      brigade_model  = 3
+      experience     = 80
+      locked         = yes
+    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 52 }
+    name     = "第7'刺刀'师 "
+    location = 1199
+    division = {
+      id             = { type = 30304 id = 79 }
+      name           = "第7'刺刀'师 "
+      type           = motorized
+      model          = 5
+      extra          = anti_air
+      brigade_model  = 3
       experience     = 80
     }
   }
   landunit = {
     id       = { type = 30301 id = 26 }
-    name     = "美国第3两栖军团 "
-    location = 1197
-    division = {
-      id             = { type = 30304 id = 75 }
-      name           = "第4海军陆战师 "
-      type           = marine
-      model          = 17
-      extra          = engineer
-      brigade_model  = 4
-      experience     = 75
-    }
-    division = {
-      id             = { type = 30304 id = 76 }
-      name           = "第6海军陆战师 "
-      type           = marine
-      model          = 17
-      extra          = engineer
-      brigade_model  = 4
-      experience     = 75
-    }
+    name     = "美国第1两栖军团 "
+    location = 761
     division = {
       id             = { type = 30304 id = 77 }
       name           = "第1'老种类'海军陆战师 "
       type           = marine
       model          = 17
       extra          = engineer
-      brigade_model  = 4
+      brigade_model  = 3
       experience     = 75
     }
   }
   landunit = {
     id       = { type = 30301 id = 25 }
-    name     = "美国第5两栖军团 "
-    location = 1198
+    name     = "美国第2两栖军团 "
+    location = 633
     division = {
       id             = { type = 30304 id = 72 }
       name           = "第2'跟我来'海军陆战师 "
       type           = marine
       model          = 17
       extra          = engineer
-      brigade_model  = 4
-      experience     = 59
-    }
-    division = {
-      id             = { type = 30304 id = 73 }
-      name           = "第5海军陆战师 "
-      type           = marine
-      model          = 17
-      extra          = engineer
-      brigade_model  = 4
-      experience     = 59
-    }
-    division = {
-      id             = { type = 30304 id = 74 }
-      name           = "第3海军陆战师 "
-      type           = marine
-      model          = 17
-      extra          = engineer
-      brigade_model  = 4
+      brigade_model  = 3
       experience     = 59
     }
   }
@@ -1625,6 +1572,61 @@ country = {
       brigade_model  = 4
       strength       = 100
       experience     = 35
+    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 14 }
+    name     = "美国第20军团 "
+    location = 376
+    division = {
+      id             = { type = 30304 id = 42 }
+      name           = "第65'战斧'师 "
+      type           = motorized
+      model          = 4
+      extra          = engineer
+      brigade_model  = 4
+      experience     = 68
+    }
+    division = {
+      id             = { type = 30304 id = 43 }
+      name           = "第71'红圆周'师 "
+      type           = motorized
+      model          = 4
+      extra          = sp_artillery
+      brigade_model  = 2
+      experience     = 69
+    }
+  }
+  landunit = {
+    id       = { type = 30301 id = 15 }
+    name     = "美国第21军团 "
+    location = 82
+    division = {
+      id             = { type = 30304 id = 48 }
+      name           = "第63'血与火'师 "
+      type           = motorized
+      model          = 4
+      extra          = rocket_artillery
+      brigade_model  = 1
+      experience     = 70
+    }
+    division = {
+      id             = { type = 30304 id = 49 }
+      name           = "第12'悍妇'装甲师 "
+      type           = armor
+      model          = 4
+      extra          = tank_destroyer
+      brigade_model  = 2
+      experience     = 76
+    }
+    division = {
+      id             = { type = 30304 id = 47 }
+      name           = "第36'得克萨斯'国民卫队 "
+      type           = motorized
+      model          = 4
+      extra          = engineer
+      brigade_model  = 4
+      experience     = 75
     }
   }
 
@@ -6570,46 +6572,16 @@ country = {
     brigade_model2 = 2
   }
 
-  landdivision = { dormant = yes id = { type = 30301 id = 101 } name = "第1'大红一'师 "  type = motorized model = 5 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 107 } name = "第7'刺刀'师 "  type = motorized model = 5 experience = 75 extra = anti_air brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 124 } name = "第24'胜利'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 125 } name = "第25'热带闪电'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 102 } name = "第2'印第安人头'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 103 } name = "第3'马恩磐石'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 201 } name = "第1'第一队'騎兵师"  type = cavalry model = 4 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 302 } name = "第2'车轮上的地狱'装甲师 "  type = armor model = 4 experience = 75 extra = sp_artillery brigade_model = 2 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 182 } name = "第82'全美'空降师 "  type = paratrooper model = 2 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 1101 } name = "第101'尖叫的雄鹰'空降师 "  type = paratrooper model = 2 experience = 75 extra = anti_tank brigade_model = 2 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 401 } name = "第1'老种类'海军陆战师 "  type = marine model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 402 } name = "第2'跟我来'海军陆战师 "  type = marine model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 40 } name = "第1'大红一'师 "  type = motorized model = 5 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
+  landdivision = { id = { type = 30301 id = 41 } name = "第7'刺刀'师 "  type = motorized model = 5 experience = 75 extra = anti_air brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 42 } name = "第24'胜利'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 43 } name = "第25'热带闪电'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 44 } name = "第2'印第安人头'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 45 } name = "第3'马恩磐石'师 "  type = motorized model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 46 } name = "第1'一線隊'騎兵师"  type = cavalry model = 4 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
+  landdivision = { id = { type = 30301 id = 47 } name = "第2'车轮上的地狱'装甲师 "  type = armor model = 4 experience = 75 extra = sp_artillery brigade_model = 2 locked = yes } 
+  landdivision = { id = { type = 30301 id = 48 } name = "第82'全美'空降师 "  type = paratrooper model = 2 experience = 75 extra = artillery brigade_model = 4 locked = yes } 
+  landdivision = { id = { type = 30301 id = 49 } name = "第1'老种类'海军陆战师 "  type = marine model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
+  landdivision = { id = { type = 30301 id = 50 } name = "第2'跟我来'海军陆战师 "  type = marine model = 5 experience = 75 extra = engineer brigade_model = 3 locked = yes } 
   landdivision = { id = { type = 30301 id = 51 } name = "美軍警察部隊 "  type = infantry model = 5 experience = 75 extra = police brigade_model = 3 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 301 } name = "第1'勇敢'装甲师 "  type = armor model = 4 experience = 75 extra = sp_artillery brigade_model = 2 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 304 } name = "第4'突破'装甲师 "  type = armor model = 4 experience = 75 extra = sp_artillery brigade_model = 2 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 349 } name = "第49'孤星'装甲师 "  type = armor model = 4 extra = none brigade_model = 0 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 350 } name = "第50'布鲁思夹克'装甲师 "  type = armor model = 4 extra = none brigade_model = 0 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 126 } name = "第26'美国人师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 127 } name = "第27'纽约师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 128 } name = "第28'楔石师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 129 } name = "第29'蓝与灰'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 130 } name = "第30'老山胡桃'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 131 } name = "第31'美国南部'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 132 } name = "第32'红箭师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 133 } name = "第33'大草原'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 134 } name = "第34'红色公牛'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 135 } name = "第35'圣达菲'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 136 } name = "第36'德克萨斯'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 137 } name = "第37'七叶树师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 138 } name = "第38'飓风师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 139 } name = "第39'三角洲'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 140 } name = "第40'阳光师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 141 } name = "第41'丛林部落'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 142 } name = "第42'彩虹'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 143 } name = "第43'红翅师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 144 } name = "第44步兵国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 145 } name = "第45'雷鸟'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 146 } name = "第46'闪电骑兵'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 147 } name = "第47'維京师'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 148 } name = "第48'幸运魔鬼'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 149 } name = "第49'四九人'国民卫队 "  type = infantry model = 5 locked = yes } 
-  landdivision = { dormant = yes id = { type = 30301 id = 151 } name = "第51'響尾蛇'国民卫队 "  type = infantry model = 5 locked = yes } 
 }

@@ -965,7 +965,7 @@ event = {
 	random = no
 
  	trigger = { 
-  		flag = maikaxi    
+  		local_flag = maikaxi    
 	} 
 
 	name = "卓别林离开美国 "
@@ -990,7 +990,7 @@ event = {
 	random = no
 
  	trigger = { 
-  		flag = maikaxi    
+  		local_flag = maikaxi    
 	} 
 
 	name = "爱因斯坦号召反法西斯 "
@@ -1014,7 +1014,7 @@ event = {
 	random = no
 
  	trigger = { 
-  		flag = maikaxi    
+  		local_flag = maikaxi    
 	} 
 
 	name = "罗森堡夫妇遇害 "
@@ -1056,12 +1056,96 @@ event = {
            	}       	   	       	         	
 }
 
+################################
+# McCarthy hearings
+####################
+event = {
+	id = 135046 #614033
+	random = no
+	country = USA
 
+	name = "軍隊對峙麥卡錫聽證會"
+	desc = "Sen. Joseph MCarthy opened hearings into alleged communist influence in the State Department and the entertainment industry. The hearings were televised and embarrassed Sen. McCarthy, resulting in his censure. VENONA decrypts later confirmed his charges to be largely true."
+
+	
+	trigger = {
+		NOT = { ideology = stalinist }
+		NOT = { ideology = leninist }
+		NOT = { ideology = nazi }
+		NOT = { ideology = fascist }
+		NOT = { ispuppet = USA }
+	}
+
+	date = { day = 21 month = april year = 1954 }
+
+	action_a = {
+		name = "嘲笑他！"
+		ai_chance = 97
+		command = { type = domestic which = democratic value = 1 }
+		command = { type = dissent value = -2 }
+		command = { type = local_clrflag which = maikaxi }
+	}
+	action_b = {
+		name = "查禁共產黨！"
+		ai_chance = 1
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = dissent value = 1 }
+	}
+	action_c = {
+		name = "清洗國家部門！"
+		ai_chance = 1
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = -2 }
+		command = { type = dissent value = 5 }
+	}
+	action_d = {
+		name = "共產黨是我們的朋友！"
+		ai_chance = 1
+		command = { type = domestic which = democratic value = -1 }
+		command = { type = domestic which = political_left value = 2 }
+		command = { type = dissent value = 5 }
+	}
+} 
+
+event = {
+	id = 135047 #614034
+	random = no
+	country = USA
+
+	name = "沃特金斯委員會"
+	desc = " "
+
+	
+	trigger = {
+		NOT = { ideology = stalinist }
+		NOT = { ideology = leninist }
+		NOT = { ideology = nazi }
+		NOT = { ideology = fascist }
+		NOT = { ispuppet = USA }
+		event = 135046
+	}
+
+	date = { day = 1 month = december year = 1954 }
+
+	action_a = {
+		name = "譴責麥卡錫，結束這場鬧劇！"
+		ai_chance = 99
+		command = { type = set_domestic which = freedom value = 1 }
+		command = { type = dissent value = -2 }
+		command = { type = local_clrflag which = maikaxi }
+	}
+	action_b = {
+		name = "麥卡錫是沒有錯！"
+		ai_chance = 1
+		command = { type = set_domestic which = freedom value = -1 }
+		command = { type = dissent value = 1 }
+	}
+} 
 ################
 #大规模报复战略
 #############################################
 event = {
-  	id = 135046
+  	id = 135048
   	random = no
   	country = USA
   
@@ -1086,66 +1170,17 @@ event = {
   	}
 }
 
-################################
-# McCarthy hearings
-####################
-event = {
-	id = 614033
-	random = no
-	country = USA
-
-	name = "McCarthy Hearings"
-	desc = "Sen. Joseph MCarthy opened hearings into alleged communist influence in the State Department and the entertainment industry. The hearings were televised and embarrassed Sen. McCarthy, resulting in his censure. VENONA decrypts later confirmed his charges to be largely true."
-
-	
-	trigger = {
-		NOT = { ideology = stalinist }
-		NOT = { ideology = leninist }
-		NOT = { ideology = nazi }
-		NOT = { ideology = fascist }
-		NOT = { ispuppet = USA }
-	}
-
-	date = { day = 21 month = april year = 1954 }
-
-	action_a = {
-		name = "Laugh at him!"
-		ai_chance = 97
-		command = { type = set_domestic which = democratic value = 10 }
-		command = { type = dissent value = -2 }
-	}
-	action_b = {
-		name = "Outlaw the Communist Party"
-		ai_chance = 1
-		command = { type = domestic which = political_left value = -2 }
-		command = { type = dissent value = 1 }
-	}
-	action_c = {
-		name = "Purge the State Department!"
-		ai_chance = 1
-		command = { type = domestic which = democratic value = -1 }
-		command = { type = domestic which = political_left value = -2 }
-		command = { type = dissent value = 5 }
-	}
-	action_d = {
-		name = "The Communists are our Friends!"
-		ai_chance = 1
-		command = { type = domestic which = democratic value = -1 }
-		command = { type = domestic which = political_left value = 2 }
-		command = { type = dissent value = 5 }
-	}
-} 
 
 ################################
-# Hawaii statehood thanks danielshannon
+# Alaska/Hawaii statehood 
 ################################
 event = {
-	id = 614027
+	id = 135049 #614027
 	random = no
 	country = USA
 
 	trigger = {
-                random = 90 # 90% chance every 30 days
+#                random = 90 # 90% chance every 30 days
 		control = { province = 661 }
 		control = { province = 660 }
 		control = { province = 663 }
@@ -1156,16 +1191,54 @@ event = {
 		}
 	}
 
-	name = "The Hawaii Admission Act"
-	desc = "The Admission Act, formally An Act to Provide for the Admission of the State of Hawaii into the Union  is a statute enacted by the United States Congress and signed into law by President Dwight D. Eisenhower which dissolved the Territory of Hawaii and established the State of Hawaii as the 50th state to be admitted into the Union. "
+	name = "阿拉斯加加入聯邦"
+	desc = "鑑於阿拉斯加戰略及經濟上的重要性，１９５８年７月７日
+		美國總統德懷特·艾森豪簽署了建州法令並由國會批准建州，
+		次年的１月３日阿拉斯加正式成為美國第４９個州。 "
 
 
-	date = { day = 17 month = september year = 1959 }
+	date = { day = 7 month = june year = 1958 }
+	offset = 30 # Check for trigger conditions every 30 days
+	deathdate = { day = 29 month = december year = 1999 }
+
+	action_a = {
+		name = "歡迎！" 
+		command = { type = addcore which = 661 } 
+		command = { type = addcore which = 660 } 
+		command = { type = addcore which = 663 } 
+		command = { type = addcore which = 659 } 
+		command = { type = addcore which = 658 } 
+		command = { type = dissent value = -5 }
+	}	
+}
+
+event = {
+	id = 135050 #614027
+	random = no
+	country = USA
+
+	trigger = {
+#                random = 90 # 90% chance every 30 days
+		control = { province = 661 }
+		control = { province = 660 }
+		control = { province = 663 }
+		control = { province = 659 }
+		control = { province = 658 }
+		NOT = {
+			exists = U34
+		}
+	}
+
+	name = "夏威夷加入聯邦"
+	desc = "《接納法案》，正式名稱為《允許夏威夷州加入聯邦的法案》，　是美國國會頒布並由德懷特·艾森豪威爾總統簽署成為法律的法　令，該法案解散了夏威夷領土並建立了夏威夷州，使其成為第　５０個加入聯邦的州。 "
+
+
+	date = { day = 21 month = july year = 1959 }
 	offset = 30 # Check for trigger conditions every 30 days
 	deathdate = { day = 29 month = december year = 1969 }
 
 	action_a = {
-		name = "Welcome to the union!" 
+		name = "歡迎！" 
 		command = { type = addcore which = 661 } 
 		command = { type = addcore which = 660 } 
 		command = { type = addcore which = 663 } 
@@ -1187,18 +1260,18 @@ event = {
 		control = { province = 895 }
 	}
 
-	name = "Puerto Rico Separatists Attack"
+	name = "波多黎各分離主義者襲擊"
 	desc = "On March 1, 1954, Lolita Lebron and three companions entered the U. S. House of Representatives and began shooting. Noone was killed in the attack but 5 representatives were injured. The attackers received prison terms but were freed in 1979 in a deal to return CIA agents captured by Fidel Castro."
 
 	date = { day = 0 month = march year = 1954 }
 	
 	action_a = {
-		name = "No Deals with Terrorists"
+		name = "不予恐怖份子談判"
 		ai_chance = 99
 		command = { type = dissent value = -2 }	
 	}
 	action_b = {
-		name = "Give Puerto Rico independence"
+		name = "給予獨立"
 		ai_chance = 1
 		command = { type = dissent value = 3 }
 		command = { type = independence which = U31 value = 1 }
@@ -1217,7 +1290,7 @@ event = {
 		NOT = { event = 614026 }
 	}
 
-	name = "The Status of Puerto Rico"
+	name = "波多黎各的地位"
 	desc = "The status of Puerto Rico repeatedly came up for debate. Historically, only a small but active minirity favored complete independence. The rest were about evenly divided between those favoring making Puerto Rico the 51st state, and those favoring continued commonwealth status which meant no income taxes but also no voting representation for Puerto Ricans in Congress. Statehood bills never succeeded."
 
 	date = { day = 5 month = march year = 1961 }
@@ -1225,7 +1298,7 @@ event = {
 	deathdate = { day = 25 month = december year = 2019 }
 	
 	action_a = {
-		name = "Make Puerto Rico the 51st state"
+		name = "成為第51州"
 		ai_chance = 1
 		command = { type = dissent value = 2 }
 		command = { type = addcore which = 895 }
@@ -1234,12 +1307,12 @@ event = {
 		command = { type = trigger which = 614026 }
 	}	
 	action_b = {
-		name = "Continue Commonwealth Status"
+		name = "維持其自治邦地位"
 		ai_chance = 99
 		command = { type = dissent value = -1 }	
 	}	
 	action_c = {
-		name = "Give Puerto Rico independence"
+		name = "給予獨立"
 		ai_chance = 0
 		command = { type = dissent value = 3 }
 		command = { type = independence which = U31 value = 1 }
@@ -1257,7 +1330,7 @@ event = {
 		flag = USA_PR_statehood
 	}
 
-	name = "The New US Flag"
+	name = "新的旗幟" #The New US Flag
 	desc = "It is suggested to use the flag-changing routine so that the USA can now proudly display its 51-star flag."
 
 	date = { day = 5 month = march year = 1961 }
@@ -1266,12 +1339,11 @@ event = {
 	
 	action_a = {
 		name = "OK"
-		command = { type = money value = 1 }
+		command = { type = money value = -1 }
 	}	
 	
 }
 ##########  Women's Armed Services Integration Act ########## 
-
 
 
 event = {
@@ -1281,7 +1353,7 @@ event = {
   	trigger = {  
     		atwar = no
   	} 		  
-  	name = "戰後軍隊復員 "
+  	name = "戰後軍隊復員(I) "
   	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的 时代到了 "
   	style = 0
 
@@ -1291,29 +1363,135 @@ event = {
 	
 	action_a = {
 		name = "和平万岁！"
-		command = { type = dissent value = -10 }
+		command = { type = dissent value = -5 }
 		command = { type = delete_unit which = -1 when = 100  }
 		command = { type = manpowerpool value = 500 }
-		command = { type = add_corps which = "美國第8軍團 " value = land where = 1184 } #東京
-		command = { type = add_division which = "第7'刺刀'师 " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "第24'胜利'师 " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "第25'热带闪电'师 " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "第1'一線隊'騎兵师 " value = motorized when = 6 where = artillery }
-		command = { type = add_corps which = "美國歐洲指揮部 " value = land where = 606 } #暫定
-		command = { type = add_division which = "第1'大红一'师  " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "美軍警察部隊 " value = infantry when = 6 where = artillery }
-		command = { type = add_corps which = "美國預備軍團 " value = land where = 606 } #暫定
-		command = { type = add_division which = "第82'全美'空降师 " value = paratrooper when = 15 where = artillery }
-		command = { type = add_division which = "第101'尖叫的雄鹰'空降师  " value = paratrooper when = 15 where = artillery }
-		command = { type = add_division which = "第2'印第安人头'师 " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "第3'马恩磐石'师 " value = motorized when = 6 where = artillery }
-		command = { type = add_division which = "第2'车轮上的地狱'装甲师 " value = armor when = 6 where = sp_artillery } #暫定
-		command = { type = add_corps which = "美國兩棲第1軍團 " value = land where = 765 } #暫定
-		command = { type = add_division which = "第1'老种类'海军陆战师 " value = marine when = 19 where = engineer }
-		command = { type = add_division which = "第2'跟我来'海军陆战师 " value = marine when = 19 where = engineer }
+		command = { type = trigger which = 1350211 value = 30 }
   	}
 }
 
+event = {
+	id = 1350211
+	random = no
+	country = usa
+		  
+  	name = "戰後軍隊復員(II) " # just in case first one missed some
+  	desc = "随着战争的结束，大量军人复员，战时经济也宣告结束，和平的 时代到了 "
+  	style = 0
+
+  	date = { day = 0 month = january year = 1946 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1960 }
+	
+	action_a = {
+		name = "和平万岁！"
+		command = { type = dissent value = -5 }
+    		command = { type = set_domestic which = professional_army value = 10 }
+		command = { type = delete_unit which = -1 } # removed 20 divisions
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = delete_unit which = -1 }
+		command = { type = add_corps which = "美國第8軍團 " value = land where = 1184 } #東京
+		command = { type = activate_division which = 30301 value = 125 where = 1184 when = 1 }
+		command = { type = activate_division which = 30301 value = 201 where = 1184 when = 1 }
+		command = { type = add_corps which = "第24'胜利'师 " value = land where = 1190 } #福岡 暫定
+		command = { type = activate_division which = 30301 value = 124 where = 1190 when = 1 }
+		command = { type = add_corps which = "第7'刺刀'师 " value = land where = 1180 } # 仙台 暫定
+		command = { type = activate_division which = 30301 value = 107 where = 1180 when = 1 }
+		command = { type = add_corps which = "美國歐洲指揮部 " value = land where = 312 } # 紐倫堡 暫定
+		command = { type = activate_division which = 30301 value = 101 where = 312 when = 1 }
+		command = { type = add_corps which = "美國憲警部隊 " value = land where = 3106 } # 拜罗伊特 United States Constabulary
+		command = { type = activate_division which = 30301 value = 301 where = 3106 when = 1 }
+		command = { type = activate_division which = 30301 value = 304 where = 3106 when = 1 }
+		command = { type = add_corps which = "美國預備軍團 " value = land where = 606 } # 華盛頓 暫定
+		command = { type = activate_division which = 30301 value = 102 where = 606 when = 1 }
+		command = { type = activate_division which = 30301 value = 103 where = 606 when = 1 }
+		command = { type = activate_division which = 30301 value = 182 where = 606 when = 1 }
+		command = { type = activate_division which = 30301 value = 1101 where = 606 when = 1 }
+		command = { type = activate_division which = 30301 value = 302 where = 606 when = 1 }
+		command = { type = add_corps which = "美國海軍陸戰隊第一遠征軍 " value = land where = 761 } # 聖地牙哥 暫定
+		command = { type = activate_division which = 30301 value = 401 where = 761 when = 1 }
+		command = { type = add_corps which = "美國海軍陸戰隊第二遠征軍 " value = land where = 633 } # 諾福克 暫定
+		command = { type = activate_division which = 30301 value = 402 where = 633 when = 1 }
+  	}
+}
+
+event = {
+	id = 1350212
+	random = no
+	country = usa
+  	trigger = {  
+    		event = 1350211
+  	} 		  
+  	name = "擴編國民警衛隊 "
+  	desc = "１９４５年１０月１３日，戰爭部發布了一份針對整個陸軍
+		的戰後政策聲明，呼籲建立一個由２７個師組成的陸軍國民
+		警衛隊，其中包括２５個步兵師和兩個裝甲師。 "
+  	style = 0
+
+  	date = { day = 0 month = january year = 1946 }
+  	offset = 30
+  	deathdate = { day = 30 month = december year = 1960 }
+	
+	action_a = {
+		name = "和平万岁！"
+		command = { type = add_corps which = "第26'洋基'师（国民兵） " value = land where = 600 } # Camp Myles Standish 麻州
+		command = { type = activate_division which = 30301 value = 126 where = 600 when = 1 }
+		command = { type = add_corps which = "第27'纽约'师（国民兵） " value = land where = 602 } # 
+		command = { type = activate_division which = 30301 value = 127 where = 602 when = 1 }
+		command = { type = add_corps which = "第28'楔石'师（国民兵） " value = land where = 609 } # 
+		command = { type = activate_division which = 30301 value = 128 where = 609 when = 1 }
+		command = { type = add_corps which = "第29'蓝与灰'师（国民兵） " value = land where = 633 } # 
+		command = { type = activate_division which = 30301 value = 129 where = 633 when = 1 }
+		command = { type = add_corps which = "第30'老山胡桃'师（国民兵） " value = land where = 636 } # 
+		command = { type = activate_division which = 30301 value = 130 where = 636 when = 1 }
+		command = { type = add_corps which = "第31'迪克西'师（国民兵） " value = land where = 672 } # 
+		command = { type = activate_division which = 30301 value = 131 where = 672 when = 1 }
+		command = { type = add_corps which = "第32'红箭'师（国民兵） " value = land where = 624 } # 暫定
+		command = { type = activate_division which = 30301 value = 132 where = 624 when = 1 }
+		command = { type = add_corps which = "第33'大草原'师（国民兵） " value = land where = 626 } # 
+		command = { type = activate_division which = 30301 value = 133 where = 626 when = 1 }
+		command = { type = add_corps which = "第34'红色公牛'师（国民兵） " value = land where = 692 } # 
+		command = { type = activate_division which = 30301 value = 134 where = 692 when = 1 }
+		command = { type = add_corps which = "第35'圣达菲'师（国民兵） " value = land where = 791 } # 
+		command = { type = activate_division which = 30301 value = 135 where = 791 when = 1 }
+		command = { type = add_corps which = "第36'德克萨斯'师（国民兵） " value = land where = 715 } # 
+		command = { type = activate_division which = 30301 value = 136 where = 715 when = 1 }
+		command = { type = add_corps which = "第37'七叶树'师（国民兵） " value = land where = 628 } # 
+		command = { type = activate_division which = 30301 value = 137 where = 628 when = 1 }
+		command = { type = add_corps which = "第38'飓风'师（国民兵） " value = land where = 619 } # 
+		command = { type = activate_division which = 30301 value = 138 where = 619 when = 1 }
+		command = { type = add_corps which = "第39'三角洲'师（国民兵） " value = land where = 684 } # 
+		command = { type = activate_division which = 30301 value = 139 where = 684 when = 1 }
+		command = { type = add_corps which = "第40'阳光'师（国民兵） " value = land where = 616 } # ?
+		command = { type = activate_division which = 30301 value = 140 where = 312 when = 1 }
+		command = { type = add_corps which = "第41'丛林部落'师（国民兵） " value = land where = 783 } #  
+		command = { type = activate_division which = 30301 value = 141 where = 783 when = 1 }
+		command = { type = add_corps which = "第42'彩虹'师（国民兵） " value = land where = 602 } # 
+		command = { type = activate_division which = 30301 value = 142 where = 602 when = 1 }
+		command = { type = add_corps which = "第43'红翅'师（国民兵） " value = land where = 601 } # 
+		command = { type = activate_division which = 30301 value = 143 where = 601 when = 1 }
+		command = { type = add_corps which = "第44师（国民兵） " value = land where = 626 } # 
+		command = { type = activate_division which = 30301 value = 144 where = 626 when = 1 }
+		command = { type = add_corps which = "第45'雷鸟'师（国民兵） " value = land where = 713 } # 
+		command = { type = activate_division which = 30301 value = 145 where = 713 when = 1 }
+		command = { type = add_corps which = "第46'闪电骑兵'师（国民兵） " value = land where = 616 } # 
+		command = { type = activate_division which = 30301 value = 146 where = 616 when = 1 }
+		command = { type = add_corps which = "第47'維京'师（国民兵） " value = land where = 693 } # 明州
+		command = { type = activate_division which = 30301 value = 147 where = 693 when = 1 }
+		command = { type = add_corps which = "第48'幸运魔鬼'师（国民兵） " value = land where = 645 } # 哥伦比亚（南卡罗来纳）
+		command = { type = activate_division which = 30301 value = 148 where = 645 when = 1 }
+		command = { type = add_corps which = "第49'四九人'师（国民兵） " value = land where = 762 } # 
+		command = { type = activate_division which = 30301 value = 149 where = 762 when = 1 }
+		command = { type = add_corps which = "第51'響尾蛇'师（国民兵） " value = land where = 649 } # 坦帕
+		command = { type = activate_division which = 30301 value = 151 where = 649 when = 1 }
+		command = { type = add_corps which = "第49'孤星'装甲师（国民兵） " value = land where = 715 } # 
+		command = { type = activate_division which = 30301 value = 349 where = 715 when = 1 }
+		command = { type = add_corps which = "第50'布鲁思夹克'装甲师（国民兵） " value = land where = 603 } # 
+		command = { type = activate_division which = 30301 value = 350 where = 603 when = 1 }
+  	}
+}
 
 ##### UNITED STATES CONGRESS (testing) #####
 
