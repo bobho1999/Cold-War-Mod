@@ -1414,6 +1414,22 @@ event = {
 		command = { type = activate_division which = 30301 value = 401 where = 761 when = 1 }
 		command = { type = add_corps which = "美國海軍陸戰隊第二遠征軍 " value = land where = 633 } # 諾福克 暫定
 		command = { type = activate_division which = 30301 value = 402 where = 633 when = 1 }
+		command = { type = add_corps which = "美國第一軍團 " value = land where = 602 } # 紐約
+    		command = { type = add_division which = "美國第一軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第二軍團 " value = land where = 607 } # 巴爾的摩
+   		command = { type = add_division which = "美國第二軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第三軍團 " value = land where = 312 } # 紐倫堡(德國某處)
+   		command = { type = add_division which = "美國第三軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第四軍團 " value = land where = 717 } # 聖安東尼奧
+   		command = { type = add_division which = "美國第四軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第五軍團 " value = land where = 620 } # 芝加哥
+   		command = { type = add_division which = "美國第五軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第六軍團 " value = land where = 765 } # Presidio of San Francisco,舊金山
+   		command = { type = add_division which = "美國第六軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第七軍團 " value = land where = 670 } # 亞特蘭大
+   		command = { type = add_division which = "美國第七軍團司令部 " value = hq when = 3 where = police }
+		command = { type = add_corps which = "美國第八軍團 " value = land where = 3656 } # 橫濱
+   		command = { type = add_division which = "美國第八軍團司令部 " value = hq when = 3 where = police }
   	}
 }
 
@@ -1464,8 +1480,8 @@ event = {
 		command = { type = activate_division which = 30301 value = 138 where = 619 when = 1 }
 		command = { type = add_corps which = "第39'三角洲'师（国民兵） " value = land where = 684 } # 
 		command = { type = activate_division which = 30301 value = 139 where = 684 when = 1 }
-		command = { type = add_corps which = "第40'阳光'师（国民兵） " value = land where = 616 } # ?
-		command = { type = activate_division which = 30301 value = 140 where = 312 when = 1 }
+		command = { type = add_corps which = "第40'阳光'师（国民兵） " value = land where = 762 } # 洛杉磯 ?
+		command = { type = activate_division which = 30301 value = 140 where = 762 when = 1 }
 		command = { type = add_corps which = "第41'丛林部落'师（国民兵） " value = land where = 783 } #  
 		command = { type = activate_division which = 30301 value = 141 where = 783 when = 1 }
 		command = { type = add_corps which = "第42'彩虹'师（国民兵） " value = land where = 602 } # 

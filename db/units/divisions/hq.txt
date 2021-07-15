@@ -123,7 +123,7 @@ model = {
 	upgrade_time_factor = 2
 	upgrade_cost_factor = 1
 }
-# 5 - @LAD55型指揮部 
+# 5 - @LAD60型指揮部 
 model = {
 	cost 					= 18
 	buildtime	 			= 300
@@ -145,7 +145,7 @@ model = {
 	upgrade_time_factor = 2
 	upgrade_cost_factor = 1
 }
-# 6 - @LAD55型指揮部 
+# 6 - @LAD70型指揮部 
 model = {
 	cost 					= 18
 	buildtime	 			= 300
@@ -167,7 +167,7 @@ model = {
 	upgrade_time_factor = 2
 	upgrade_cost_factor = 1
 }
-# 7 - @LAD55型指揮部 
+# 7 - @LAD80型指揮部 
 model = {
 	cost 					= 18
 	buildtime	 			= 300
@@ -189,29 +189,7 @@ model = {
 	upgrade_time_factor = 2
 	upgrade_cost_factor = 1
 }
-# 8 - @LAD55型指揮部 
-model = {
-	cost 					= 18
-	buildtime	 			= 300
-	manpower 				= 5
-	maxspeed 				= 12
-	defaultorganisation 	= 75
-	morale					= 75
-	defensiveness 			= 8
-	toughness				= 8
-	softness				= 80
-	suppression				= 6
-	airdefence				= 18
-	softattack				= 15
-	hardattack				= 5
-	airattack				= 8
-	transportweight			= 20
-	supplyconsumption 		= 1.55
-	fuelconsumption			= 1.5
-	upgrade_time_factor = 2
-	upgrade_cost_factor = 1
-}
-# 9 - @LAD55型指揮部 
+# 8 - @LAD90型指揮部 
 model = {
 	cost 					= 18
 	buildtime	 			= 300
