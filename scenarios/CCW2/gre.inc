@@ -81,6 +81,10 @@ country = {
   nationalculture        = "policy_political_fascist"
   dormant_ministers      = { 18001 18002 18003 18004 18091 18005 18006 18007 18010 18037 18040 18041 18042 18056 18057 18058 18076 18077 18078 18103 18104 18105 18123 18124 18125 18139 18140 18141 18142 18155 18157 18169 18170 18179 }
 
+#########################################################################
+# Greek OOB
+# https://en.wikipedia.org/wiki/3rd_Infantry_Division_(Greece)
+#########################################################################
   landunit = {
     id       = { type = 15500 id = 1 }
     name     = "希腊第1军团 "
@@ -99,30 +103,49 @@ country = {
       model          = 4
       strength       = 100
     }
-    division = {
-      id             = { type = 15500 id = 4 }
-      name           = "第4步兵师 "
-      type           = infantry
-      model          = 4
-      strength       = 100
-    }
   }
   landunit = {
     id       = { type = 15500 id = 5 }
     name     = "希腊第2军团 "
     location = 403
     division = {
-      id             = { type = 15500 id = 6 }
-      name           = "第1步兵师 "
+      id             = { type = 15500 id = 17 }
+      name           = "第8步兵师 "
       type           = infantry
-      model          = 3
+      model          = 4
       strength       = 100
     }
     division = {
       id             = { type = 15500 id = 7 }
       name           = "第9步兵师 "
       type           = infantry
-      model          = 3
+      model          = 4
+      strength       = 100
+    }
+    division = {
+      id             = { type = 15500 id = 11 }
+      name           = "第15步兵师 "
+      type           = infantry
+      model          = 4
+      strength       = 100
+    }
+  }
+  landunit = {
+    id       = { type = 15500 id = 9 }
+    name     = "希腊第3军团 "
+    location = 410
+    division = {
+      id             = { type = 15500 id = 13 }
+      name           = "第6步兵师 "
+      type           = infantry
+      model          = 4
+      strength       = 100
+    }
+    division = {
+      id             = { type = 15500 id = 14 }
+      name           = "第7步兵师 "
+      type           = infantry
+      model          = 4
       strength       = 100
     }
   }
@@ -131,18 +154,42 @@ country = {
     name     = "希腊第3军团 "
     location = 411
     division = {
-      id             = { type = 15500 id = 9 }
-      name           = "第6步兵师 "
-      type           = infantry
-      model          = 3
+      id             = { type = 15500 id = 10 }
+      name           = "第10步兵师 "
+      type           = bergsjaeger
+      model          = 4
       strength       = 100
     }
     division = {
-      id             = { type = 15500 id = 10 }
-      name           = "第10步兵师 "
+      id             = { type = 15500 id = 12 }
+      name           = "第11步兵师 "
       type           = infantry
-      model          = 3
+      model          = 4
       strength       = 100
+    }
+  }
+  landunit = {
+    id       = { type = 15500 id = 15 }
+    name     = "希腊第1步兵师 "
+    location = 3232
+    division = {
+      id             = { type = 15500 id = 16 }
+      name           = "第1步兵师 "
+      type           = infantry
+      model          = 4
+      strength       = 100
+    }
+  }
+  landunit = {
+    id       = { type = 15500 id = 18 }
+    name     = "希腊第5步兵师 "
+    location = 396
+    division = {
+      id             = { type = 15500 id = 19 }
+      name           = "第5步兵师 "
+      type           = infantry
+      model          = 4
+      strength       = 50
     }
   }
 

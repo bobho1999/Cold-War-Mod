@@ -341,8 +341,8 @@ event = {
             	command = { type = supplies value = 2000 }
             	command = { type = oilpool value = 500 }
             	command = { type = money value = 200 }
-		command = { type = add_division value = infantry when = 6 where = artillery }
-		command = { type = add_division value = infantry when = 6 where = artillery }
+		command = { type = add_division value = infantry when = 6 where = artillery } #
+		command = { type = add_division value = infantry when = 6 where = artillery } #
   	}
 }
 
