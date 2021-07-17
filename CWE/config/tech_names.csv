@@ -70,10 +70,10 @@ TECH_CAT_ANTITANKART;單兵反坦克武器;;;;;;;;;;X
 TECH_CAT_FIELDART;野战炮 ;;;;;;;;;;X
 TECH_CAT_SELFPROPART;自行火炮 ;;;;;;;;;;X
 TECH_CAT_SELFPROPRA;多管火箭炮;;;;;;;;;;X
-TECH_CAT_ROCKETART;巨型火炮 ;;;;;;;;;;X
+TECH_CAT_ROCKETART;火箭炮;;;;;;;;;;X
 TECH_CAT_HEAVYTANKS;重型坦克/主戰坦克;;;;;;;;;;X
-TECH_CAT_ANTIAIR;防空營;;;;;;;;;;X
-TECH_CAT_ANTIAIRBRIG;突击炮 ;;;;;;;;;;X
+TECH_CAT_ANTIAIR;靜態防空;;;;;;;;;;X
+TECH_CAT_ANTIAIRBRIG;防空營;;;;;;;;;;X
 TECH_CAT_ARMOUREDCAR;裝甲車/IFV;;;;;;;;;;X
 TECH_CAT_LIGHTCRUISERS;轻巡洋舰 ;;;;;;;;;;X
 TECH_CAT_BATTLECRUISERS;戰列巡洋艦;;;;;;;;;;X
@@ -166,7 +166,7 @@ TECH_CMP_INFANTRY_6_2_NAME;120mm 速射步兵炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_6_3_NAME;改良信号侦听及干扰设备 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_6_4_NAME;反坦克无坐力炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_6_5_NAME;步坦协同作战训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_7_NAME;48年型步兵师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_7_NAME;空降师 ;;;;;;;;;;X
 TECH_APP_INFANTRY_7_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_7_1_NAME;先进突击步枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_7_2_NAME;准现代步兵速射炮 ;;;;;;;;;;X
@@ -271,14 +271,14 @@ TECH_CMP_INFANTRY_21_2_NAME;改良连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_21_3_NAME;改良半履带式装甲输送车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_21_4_NAME;车载反坦克炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_21_5_NAME;机动反应训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_22_NAME;45年型机械化师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_22_NAME;半摩托化骑兵师 ;;;;;;;;;;X
 TECH_APP_INFANTRY_22_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_22_1_NAME;改良突击步枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_22_2_NAME;先进连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_22_3_NAME;先进半履带式装甲输送车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_22_4_NAME;轮式反坦克无坐力炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_22_5_NAME;行军梯队突击训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_23_NAME;48年型机械化师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_23_NAME;摩托化步兵師;;;;;;;;;;X
 TECH_APP_INFANTRY_23_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_23_1_NAME;先进突击步枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_23_2_NAME;准现代连级自行火炮支持 ;;;;;;;;;;X
@@ -292,7 +292,7 @@ TECH_CMP_INFANTRY_24_2_NAME;现代连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_24_3_NAME;现代半履带步兵战车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_24_4_NAME;2.8英寸自行反坦克炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_24_5_NAME;多兵种联合机械化作战训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_25_NAME;55年型机械化师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_25_NAME;先进摩托化步兵師;;;;;;;;;;X
 TECH_APP_INFANTRY_25_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_25_1_NAME;班组通用机枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_25_2_NAME;冷战连级自行火炮支持 ;;;;;;;;;;X
@@ -334,42 +334,42 @@ TECH_CMP_INFANTRY_30_2_NAME;准现代连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_30_3_NAME;准现代无线电通信设备 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_30_4_NAME;准现代远距离后勤保障 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_30_5_NAME;多兵种合成作战训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_31_NAME;48年型装甲师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_31_NAME;后方补给站;;;;;;;;;;X
 TECH_APP_INFANTRY_31_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_31_1_NAME;主战坦克突破火力配置 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_31_2_NAME;复合连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_31_3_NAME;军用信息系统试验 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_31_4_NAME;空地联合后勤保障试验 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_31_5_NAME;装甲敌后独立突破训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_32_NAME;51年型装甲师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_32_NAME;纵深后勤体系;;;;;;;;;;X
 TECH_APP_INFANTRY_32_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_32_1_NAME;主战坦克核心火力编组 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_32_2_NAME;现代连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_32_3_NAME;基本军用信息系统 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_32_4_NAME;基本空地联合后勤保障 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_32_5_NAME;装甲快速部署训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_33_NAME;55年型装甲师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_33_NAME;前线补给服务;;;;;;;;;;X
 TECH_APP_INFANTRY_33_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_33_1_NAME;改良主战坦克核心火力编组 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_33_2_NAME;冷战连级自行火炮支持 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_33_3_NAME;改良军用信息系统 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_33_4_NAME;改良空地联合后勤保障 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_33_5_NAME;装甲快速反应作战训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_34_NAME;39年型空降师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_34_NAME;后方车辆维修车间 ;;;;;;;;;;X
 TECH_APP_INFANTRY_34_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_34_1_NAME;基本冲锋枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_34_2_NAME;50mm 轻型迫击炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_34_3_NAME;伞兵靴 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_34_4_NAME;伞兵突击车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_34_5_NAME;伞兵运输训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_35_NAME;41年型空降师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_35_NAME;纵深车辆维修体系 ;;;;;;;;;;X
 TECH_APP_INFANTRY_35_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_35_1_NAME;改良冲锋枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_35_2_NAME;81mm 迫击炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_35_3_NAME;基本滑翔机 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_35_4_NAME;空降半履带式车辆 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_35_5_NAME;伞兵跳伞训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_36_NAME;43年型空降师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_36_NAME;前线车辆维修车间;;;;;;;;;;X
 TECH_APP_INFANTRY_36_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_36_1_NAME;基本突击步枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_36_2_NAME;75mm 山炮 ;;;;;;;;;;X
@@ -383,14 +383,14 @@ TECH_CMP_INFANTRY_37_2_NAME;105mm 山炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_37_3_NAME;大兵团密集空降 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_37_4_NAME;中型空降坦克 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_37_5_NAME;伞兵突击训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_38_NAME;48年型空降师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_38_NAME;基本装甲车辆铁路运输;;;;;;;;;;X
 TECH_APP_INFANTRY_38_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_38_1_NAME;先进突击步枪 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_38_2_NAME;山地速射炮 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_38_3_NAME;改良小型空降部队空降舱 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_38_4_NAME;改良空降轻型坦克 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_38_5_NAME;滑翔机空降训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_39_NAME;51年型空中骑兵师 ;;;;;;;;;;X
+TECH_APP_INFANTRY_39_NAME;改良装甲车辆铁路运输;;;;;;;;;;X
 TECH_APP_INFANTRY_39_DESC; ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_1_NAME;改良铁路运输货车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_2_NAME;改良装卸 ;;;;;;;;;;X
@@ -551,7 +551,7 @@ TECH_CMP_INFANTRY_61_2_NAME;复杂地形工程作业 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_61_3_NAME;改良野外通讯保障 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_61_4_NAME;独立后勤保障 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_61_5_NAME;精锐训练 ;;;;;;;;;;X
-TECH_APP_INFANTRY_62_NAME;装甲师防御训练 ;;;;;;;;;;X
+TECH_APP_INFANTRY_62_NAME;先进后勤组织;;;;;;;;;;X
 TECH_APP_INFANTRY_62_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_62_1_NAME;改良装甲车辆武器 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_62_2_NAME;改良便携重火力 ;;;;;;;;;;X
@@ -2257,7 +2257,7 @@ TECH_CMP_INDUSTRY_80_2_NAME;基本舰船动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_80_3_NAME;基本舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_80_4_NAME;基本舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_80_5_NAME;基本舰船模型研究 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_80_NAME;二戰造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_80_NAME;Adv Recycling;;;;;;;;;;X
 TECH_APP_INDUSTRY_81_NAME;50年代造船工艺 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_81_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_81_1_NAME;改良舰船火炮技术 ;;;;;;;;;;X
@@ -2265,7 +2265,7 @@ TECH_CMP_INDUSTRY_81_2_NAME;改良舰船动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_81_3_NAME;改良舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_81_4_NAME;改良舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_81_5_NAME;改良舰船模型研究 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_81_NAME;50年代造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_81_NAME;Mod Recycling;;;;;;;;;;X
 TECH_APP_INDUSTRY_82_NAME;60年代造船工艺 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_82_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_82_1_NAME;先进舰船火炮技术 ;;;;;;;;;;X
@@ -2273,7 +2273,7 @@ TECH_CMP_INDUSTRY_82_2_NAME;先进舰船动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_82_3_NAME;先进舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_82_4_NAME;先进舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_82_5_NAME;先进舰船模型研究 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_82_NAME;60年代造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_82_NAME;Sust Prod & Cons;;;;;;;;;;X
 TECH_APP_INDUSTRY_83_NAME;70年代造船工艺 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_83_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_83_1_NAME;现代舰船火炮技术 ;;;;;;;;;;X
@@ -2281,7 +2281,7 @@ TECH_CMP_INDUSTRY_83_2_NAME;现代舰船动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_83_3_NAME;现代舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_83_4_NAME;现代舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_83_5_NAME;现代舰船模型研究 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_83_NAME;70年代造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_83_NAME;Early Pack Sw Netwk;;;;;;;;;;X
 TECH_APP_INDUSTRY_84_NAME;基本陆军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_84_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_84_1_NAME;基本陆军火炮技术 ;;;;;;;;;;X
@@ -2289,7 +2289,7 @@ TECH_CMP_INDUSTRY_84_2_NAME;基本陆军驱动技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_84_3_NAME;基本陆军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_84_4_NAME;基本陆军枪支研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_84_5_NAME;陆军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_84_NAME;基本陆军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_84_NAME;Micro Computers;;;;;;;;;;X
 TECH_APP_INDUSTRY_85_NAME;先进陆军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_85_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_85_1_NAME;先进陆军火炮技术 ;;;;;;;;;;X
@@ -2297,7 +2297,7 @@ TECH_CMP_INDUSTRY_85_2_NAME;先进陆军驱动技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_85_3_NAME;先进陆军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_85_4_NAME;先进陆军枪支研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_85_5_NAME;陆军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_85_NAME;先进陆军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_85_NAME;Impr Pack Sw Network;;;;;;;;;;X
 TECH_APP_INDUSTRY_86_NAME;基本海军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_86_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_86_1_NAME;基本海军火炮技术 ;;;;;;;;;;X
@@ -2305,7 +2305,7 @@ TECH_CMP_INDUSTRY_86_2_NAME;基本海军动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_86_3_NAME;基本海军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_86_4_NAME;基本海军通信研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_86_5_NAME;海军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_86_NAME;基本海军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_86_NAME;Secure Mil Networks;;;;;;;;;;X
 TECH_APP_INDUSTRY_87_NAME;先进海军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_87_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_87_1_NAME;先进海军火炮技术 ;;;;;;;;;;X
@@ -2313,7 +2313,7 @@ TECH_CMP_INDUSTRY_87_2_NAME;先进海军动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_87_3_NAME;先进海军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_87_4_NAME;先进海军通信研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_87_5_NAME;海军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_87_NAME;先进海军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_87_NAME;Wide Area Civ Networks;;;;;;;;;;X
 TECH_APP_INDUSTRY_88_NAME;基本空军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_88_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_88_1_NAME;基本空军火炮技术 ;;;;;;;;;;X
@@ -2321,7 +2321,7 @@ TECH_CMP_INDUSTRY_88_2_NAME;基本空军动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_88_3_NAME;基本空军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_88_4_NAME;基本空军通信研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_88_5_NAME;空军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_88_NAME;基本空军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_88_NAME;16-bit PCs;;;;;;;;;;X
 TECH_APP_INDUSTRY_89_NAME;先进空军应用技术 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_89_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_89_1_NAME;先进空军火炮技术 ;;;;;;;;;;X
@@ -2329,7 +2329,7 @@ TECH_CMP_INDUSTRY_89_2_NAME;先进空军动力技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_89_3_NAME;先进空军装甲技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_89_4_NAME;先进空军通信研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_89_5_NAME;空军装配线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_89_NAME;先进空军应用 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_89_NAME;Early Bus Networks;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_SW_NAME;秘密武器 ;;;;;;;;;;X
@@ -2418,7 +2418,7 @@ TECH_CMP_SW_12_2_NAME;多级部件 ;;;;;;;;;;X
 TECH_CMP_SW_12_3_NAME;多阶段飞行测试 ;;;;;;;;;;X
 TECH_CMP_SW_12_4_NAME;陀螺稳定控制计算机 ;;;;;;;;;;X
 TECH_CMP_SW_12_5_NAME;弹道导弹原型测试 ;;;;;;;;;;X
-TECH_APP_SW_13_NAME;短程彈道飛彈;;;;;;;;;;X
+TECH_APP_SW_13_NAME;洲際彈道飛彈;;;;;;;;;;X
 TECH_APP_SW_13_DESC;;;;;;;;;;;X
 TECH_CMP_SW_13_1_NAME;准现代清算程序 ;;;;;;;;;;X
 TECH_CMP_SW_13_2_NAME;部件飞行分离 ;;;;;;;;;;X
@@ -2488,7 +2488,7 @@ TECH_CMP_SW_24_2_NAME;改良装卸 ;;;;;;;;;;X
 TECH_CMP_SW_24_3_NAME;改良走道 ;;;;;;;;;;X
 TECH_CMP_SW_24_4_NAME;重负载测试运行 ;;;;;;;;;;X
 TECH_CMP_SW_24_5_NAME;快速程序创建 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_39_NAME;51年型空中骑兵师 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_39_NAME;改良装甲铁路运输;;;;;;;;;;X
 TECH_APP_SW_44_NAME;第二代海軍偵察衛星;;;;;;;;;;X
 TECH_APP_SW_44_DESC;;;;;;;;;;;X
 TECH_CMP_SW_44_1_NAME;超音速发动机模型 ;;;;;;;;;;X
@@ -2517,14 +2517,14 @@ TECH_CMP_SW_29_2_NAME;改良涡轮喷气战斗机机身 ;;;;;;;;;;X
 TECH_CMP_SW_29_3_NAME;空空导弹 ;;;;;;;;;;X
 TECH_CMP_SW_29_4_NAME;先进机载厘米波雷达 ;;;;;;;;;;X
 TECH_CMP_SW_29_5_NAME;改良涡轮喷气战斗机原型测试 ;;;;;;;;;;X
-TECH_APP_sw_50_NAME;艙外活動;;;;;;;;;;X
+TECH_APP_sw_50_NAME;反艦飛彈;;;;;;;;;;X
 TECH_APP_sw_50_DESC;;;;;;;;;;;X
 TECH_CMP_SW_50_1_NAME;现代生产模块 ;;;;;;;;;;X
 TECH_CMP_SW_50_2_NAME;现代环境测试 ;;;;;;;;;;X
 TECH_CMP_SW_50_3_NAME;现代推进器调节 ;;;;;;;;;;X
 TECH_CMP_SW_50_4_NAME;现代装配线工艺 ;;;;;;;;;;X
 TECH_CMP_SW_50_5_NAME;现代生产测试 ;;;;;;;;;;X
-TECH_APP_sw_51_NAME;金星探測器;;;;;;;;;;X
+TECH_APP_sw_51_NAME;改良型反艦飛彈;;;;;;;;;;X
 TECH_APP_sw_51_DESC;;;;;;;;;;;X
 TECH_CMP_SW_51_1_NAME;零电阻效应 ;;;;;;;;;;X
 TECH_CMP_SW_51_2_NAME;高温超导 ;;;;;;;;;;X
@@ -4153,7 +4153,7 @@ TECH_CMP_AIRCRAFT_29_2_NAME;夜间照明技术 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_29_3_NAME;夜间无线电系统 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_29_4_NAME;夜间敌我识别装备 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_29_5_NAME;飞机夜间试验 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_29_NAME;改良第二代截擊機 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_29_NAME;Imp. Supersonic;;;;;;;;;;X
 TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_30_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_30_1_NAME;全天候机载雷达 ;;;;;;;;;;X
@@ -4161,7 +4161,7 @@ TECH_CMP_AIRCRAFT_30_2_NAME;全天候敌我识别装备 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_30_3_NAME;全天候无线电系统 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_30_4_NAME;全天候敌我识别设备 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_30_5_NAME;飞机全天候试验 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_30_NAME;Imp. Supersonic;;;;;;;;;;X
 TECH_APP_AIRCRAFT_31_NAME;Early Air Launched Cruise Missile;;;;;;;;;;X
 TECH_APP_AIRCRAFT_31_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_31_1_NAME;全天候机载雷达 ;;;;;;;;;;X
@@ -4169,7 +4169,7 @@ TECH_CMP_AIRCRAFT_31_2_NAME;全天候敌我识别装备 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_31_3_NAME;全天候无线电系统 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_31_4_NAME;全天候敌我识别设备 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_31_5_NAME;飞机全天候试验 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_31_NAME;Early Air Launched Cruise Missile;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_31_NAME;第二代戰鬥機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_32_NAME;先進喷气战术轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_32_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_32_1_NAME;夜用机载雷达 ;;;;;;;;;;X
@@ -4281,7 +4281,7 @@ TECH_CMP_INDUSTRY_66_2_NAME;专业学院 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_66_3_NAME;大学自治 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_66_4_NAME;教职等级 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_66_5_NAME;中央教育行政 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_66_NAME;高等教育体系 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_66_NAME;Brdband Internet;;;;;;;;;;X
 TECH_APP_INDUSTRY_67_NAME;国民义务教育 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_67_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_67_1_NAME;义务教育法案 ;;;;;;;;;;X
@@ -4289,7 +4289,7 @@ TECH_CMP_INDUSTRY_67_2_NAME;九年义务教育 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_67_3_NAME;教育师资充实 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_67_4_NAME;教育预算 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_67_5_NAME;教育投资 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_67_NAME;国民义务教育 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_67_NAME;Imp Broadband Inter;;;;;;;;;;X
 TECH_APP_INDUSTRY_68_NAME;国家科学研究系统 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_68_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_68_1_NAME;国家科学院 ;;;;;;;;;;X
@@ -4297,7 +4297,7 @@ TECH_CMP_INDUSTRY_68_2_NAME;独立科研机构 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_68_3_NAME;科研预算 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_68_4_NAME;科研投入 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_68_5_NAME;国家实验室 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_68_NAME;科学研究系统 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_68_NAME;IPV6 Internet;;;;;;;;;;X
 TECH_APP_INDUSTRY_69_NAME;学术自由政策 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_69_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_69_1_NAME;学术委员会 ;;;;;;;;;;X
@@ -4305,7 +4305,7 @@ TECH_CMP_INDUSTRY_69_2_NAME;独立研究保障 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_69_3_NAME;科研经费支持 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_69_4_NAME;政学分离 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_69_5_NAME;独立实验室 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_69_NAME;学术自由 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_69_NAME;Mod Surveillance;;;;;;;;;;X
 TECH_APP_INDUSTRY_70_NAME;国家学术管制政策 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_70_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_70_1_NAME;学术管理机构 ;;;;;;;;;;X
@@ -4313,7 +4313,7 @@ TECH_CMP_INDUSTRY_70_2_NAME;学术审查 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_70_3_NAME;科研计划 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_70_4_NAME;科研导向 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_70_5_NAME;国家实验室 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_70_NAME;学术管制 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_70_NAME;Gen 2 Nuc Reactor;;;;;;;;;;X
 TECH_APP_INDUSTRY_71_NAME;自由经济体系 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_71_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_71_1_NAME;现代化税制 ;;;;;;;;;;X
@@ -4321,7 +4321,7 @@ TECH_CMP_INDUSTRY_71_2_NAME;国家预决算 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_71_3_NAME;现代货币制度 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_71_4_NAME;国家投资 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_71_5_NAME;国有企业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_71_NAME;自由经济 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_71_NAME;Gen 3 Nuc Reactor;;;;;;;;;;X
 TECH_APP_INDUSTRY_72_NAME;计划经济体系 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_72_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_72_1_NAME;中央银行 ;;;;;;;;;;X
@@ -4329,7 +4329,7 @@ TECH_CMP_INDUSTRY_72_2_NAME;金融法案 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_72_3_NAME;近代银行体系 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_72_4_NAME;金融投资机构监管 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_72_5_NAME;外汇管制 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_72_NAME;计划经济 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_72_NAME;Gen 4 Nuc Reactor;;;;;;;;;;X
 TECH_APP_INDUSTRY_73_NAME;生产控制与计划 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_73_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_73_1_NAME;大规模生产 ;;;;;;;;;;X
@@ -4337,7 +4337,7 @@ TECH_CMP_INDUSTRY_73_2_NAME;科学管理 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_73_3_NAME;资源队列系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_73_4_NAME;生产控制发展工艺 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_73_5_NAME;生产计划发展工艺 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_73_NAME;生产控制与计划 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_73_NAME;Exp Fusion Power;;;;;;;;;;X
 TECH_APP_INDUSTRY_74_NAME;1975年工业体系;;;;;;;;;;X
 TECH_APP_INDUSTRY_74_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_74_1_NAME;现代矿产冶炼 ;;;;;;;;;;X
@@ -4345,7 +4345,7 @@ TECH_CMP_INDUSTRY_74_2_NAME;现代装备制造业 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_74_3_NAME;现代能源工业 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_74_4_NAME;立体交通路网 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_74_5_NAME;现代轻工业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_74_NAME;1975年工业体系;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_74_NAME;1965 Assy Line;;;;;;;;;;X
 TECH_APP_INDUSTRY_75_NAME;早期火力发电站 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_75_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_75_1_NAME;早期燃料系统 ;;;;;;;;;;X
@@ -4353,7 +4353,7 @@ TECH_CMP_INDUSTRY_75_2_NAME;早期燃烧系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_75_3_NAME;早期汽水系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_75_4_NAME;早期电气系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_75_5_NAME;早期控制系统 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_75_NAME;早期火电站 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_75_NAME;Autom Man Tech I;;;;;;;;;;X
 TECH_APP_INDUSTRY_76_NAME;改良火力发电站 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_76_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_76_1_NAME;改良燃料系统 ;;;;;;;;;;X
@@ -4361,7 +4361,7 @@ TECH_CMP_INDUSTRY_76_2_NAME;改良燃烧系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_76_3_NAME;改良汽水系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_76_4_NAME;改良电气系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_76_5_NAME;改良控制系统 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_76_NAME;改良火电站 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_76_NAME;Autom Man Tech II;;;;;;;;;;X
 TECH_APP_NAVAL_49_NAME;舰用合金钢装甲 ;;;;;;;;;;X
 TECH_APP_NAVAL_49_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_49_1_NAME;高弹性匀质钢 ;;;;;;;;;;X
@@ -4450,70 +4450,70 @@ TECH_CMP_NAVAL_59_3_NAME;燃气效率改进 ;;;;;;;;;;X
 TECH_CMP_NAVAL_59_4_NAME;联合动力装置稳定性 ;;;;;;;;;;X
 TECH_CMP_NAVAL_59_5_NAME;联合动力装置可靠性 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_59_NAME;准现代驱逐舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_60_NAME;現代驱逐舰 ;;;;;;;;;;X
+TECH_APP_NAVAL_60_NAME;Improved Nuclear Air Carrier;;;;;;;;;;X
 TECH_APP_NAVAL_60_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_60_1_NAME;120-127MM炮管铸造工艺 ;;;;;;;;;;X
 TECH_CMP_NAVAL_60_2_NAME;小型炮塔设计 ;;;;;;;;;;X
 TECH_CMP_NAVAL_60_3_NAME;光学测距 ;;;;;;;;;;X
 TECH_CMP_NAVAL_60_4_NAME;舰炮射击训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_60_5_NAME;炮塔动力装置 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_60_NAME;現代驱逐舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_61_NAME;現代轻巡洋舰 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_60_NAME;Imp Nuc Carrier;;;;;;;;;;X
+TECH_APP_NAVAL_61_NAME;21st Century Conventional Air Carrier;;;;;;;;;;X
 TECH_APP_NAVAL_61_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_61_1_NAME;203-206MM炮管铸造工艺 ;;;;;;;;;;X
 TECH_CMP_NAVAL_61_2_NAME;中型炮塔设计 ;;;;;;;;;;X
 TECH_CMP_NAVAL_61_3_NAME;光学测距 ;;;;;;;;;;X
 TECH_CMP_NAVAL_61_4_NAME;舰炮射击训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_61_5_NAME;炮塔动力装置 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_61_NAME;現代轻巡洋舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_62_NAME;Future轻巡洋舰 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_61_NAME;21 C Conv Carrier;;;;;;;;;;X
+TECH_APP_NAVAL_62_NAME;21st Century Nuclear Air Carrier;;;;;;;;;;X
 TECH_APP_NAVAL_62_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_62_1_NAME;381MM炮管铸造工艺 ;;;;;;;;;;X
 TECH_CMP_NAVAL_62_2_NAME;大型炮塔设计 ;;;;;;;;;;X
 TECH_CMP_NAVAL_62_3_NAME;舰炮火控协同 ;;;;;;;;;;X
 TECH_CMP_NAVAL_62_4_NAME;舰炮射击训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_62_5_NAME;炮塔动力装置 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_62_NAME;Future轻巡洋舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_63_NAME;晚期轻巡洋舰 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_62_NAME;21 C Nuc Carrier;;;;;;;;;;X
+TECH_APP_NAVAL_63_NAME;1980 Battleship Upgrade;;;;;;;;;;X
 TECH_APP_NAVAL_63_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_63_1_NAME;460MM炮管铸造工艺 ;;;;;;;;;;X
 TECH_CMP_NAVAL_63_2_NAME;巨型炮塔设计 ;;;;;;;;;;X
 TECH_CMP_NAVAL_63_3_NAME;舰炮火控协同 ;;;;;;;;;;X
 TECH_CMP_NAVAL_63_4_NAME;舰炮射击训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_63_5_NAME;炮塔动力装置 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_63_NAME;晚期轻巡洋舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_64_NAME;早期飛彈驅逐艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_63_NAME;1980;;;;;;;;;;X
+TECH_APP_NAVAL_64_NAME;1975 Diesel Electric SSK;;;;;;;;;;X
 TECH_APP_NAVAL_64_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_64_1_NAME;早期短程发动机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_64_2_NAME;早期水上飞机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_64_3_NAME;6.5mm 机枪 ;;;;;;;;;;X
 TECH_CMP_NAVAL_64_4_NAME;光学测距仪 ;;;;;;;;;;X
 TECH_CMP_NAVAL_64_5_NAME;早期水上飞机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_64_NAME;早期飛彈驅逐艦;;;;;;;;;;X
-TECH_APP_NAVAL_65_NAME;改良飛彈驅逐艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_64_NAME;1975;;;;;;;;;;X
+TECH_APP_NAVAL_65_NAME;1990 Fuel Cell SSK;;;;;;;;;;X
 TECH_APP_NAVAL_65_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_65_1_NAME;基本短程发动机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_65_2_NAME;基本水上飞机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_65_3_NAME;升降阀 ;;;;;;;;;;X
 TECH_CMP_NAVAL_65_4_NAME;光学测距仪 ;;;;;;;;;;X
 TECH_CMP_NAVAL_65_5_NAME;基本水上飞机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_65_NAME;改良飛彈驅逐艦;;;;;;;;;;X
-TECH_APP_NAVAL_66_NAME;先進飛彈驅逐艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_65_NAME;1990;;;;;;;;;;X
+TECH_APP_NAVAL_66_NAME;2005 Fuel Cell SSK;;;;;;;;;;X
 TECH_APP_NAVAL_66_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_66_1_NAME;早期舰载机短程发动机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_66_2_NAME;早期舰载机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_66_3_NAME;闭合内部弹仓 ;;;;;;;;;;X
 TECH_CMP_NAVAL_66_4_NAME;早期无线电导航 ;;;;;;;;;;X
 TECH_CMP_NAVAL_66_5_NAME;早期舰载机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_66_NAME;先進飛彈驅逐艦;;;;;;;;;;X
-TECH_APP_NAVAL_67_NAME;現代飛彈驅逐艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_66_NAME;2005;;;;;;;;;;X
+TECH_APP_NAVAL_67_NAME;Improved Nuclear Attack Submarine;;;;;;;;;;X
 TECH_APP_NAVAL_67_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_67_1_NAME;基本舰载机中程发动机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_67_2_NAME;基本舰载机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_67_3_NAME;舰载机编队协同训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_67_4_NAME;基本无线电导航与雷达指挥 ;;;;;;;;;;X
 TECH_CMP_NAVAL_67_5_NAME;基本舰载机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_67_NAME;現代飛彈驅逐艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_67_NAME;Imp Nuc Att Sub;;;;;;;;;;X
 TECH_APP_NAVAL_68_NAME;Future驱逐舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_68_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_68_1_NAME;改良舰载机中程发动机 ;;;;;;;;;;X
@@ -4521,7 +4521,7 @@ TECH_CMP_NAVAL_68_2_NAME;改良舰载机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_68_3_NAME;舰载机编队协同训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_68_4_NAME;改良无线电导航与雷达指挥 ;;;;;;;;;;X
 TECH_CMP_NAVAL_68_5_NAME;改良舰载机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_68_NAME;Future驱逐舰 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_68_NAME;Adv Nuc Att Sub;;;;;;;;;;X
 TECH_APP_NAVAL_69_NAME;晚期驱逐舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_69_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_69_1_NAME;先进舰载机中程发动机 ;;;;;;;;;;X
@@ -4529,15 +4529,15 @@ TECH_CMP_NAVAL_69_2_NAME;先进舰载机机身 ;;;;;;;;;;X
 TECH_CMP_NAVAL_69_3_NAME;舰载机编队协同训练 ;;;;;;;;;;X
 TECH_CMP_NAVAL_69_4_NAME;先进无线电导航与雷达指挥 ;;;;;;;;;;X
 TECH_CMP_NAVAL_69_5_NAME;先进舰载机原型测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_69_NAME;晚期驱逐舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_70_NAME;早期飛彈巡防艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_69_NAME;Deep Water Sub;;;;;;;;;;X
+TECH_APP_NAVAL_70_NAME;Nuclear Ballistic Missile Sub;;;;;;;;;;X
 TECH_APP_NAVAL_70_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_70_1_NAME;基本平板天线 ;;;;;;;;;;X
 TECH_CMP_NAVAL_70_2_NAME;10米/30MHz 发射频率 ;;;;;;;;;;X
 TECH_CMP_NAVAL_70_3_NAME;分米波接收器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_70_4_NAME;分米波震荡发射机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_70_5_NAME;基本位置计算 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_70_NAME;早期飛彈巡防艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_70_NAME;Nuc Missile Sub;;;;;;;;;;X
 TECH_APP_NAVAL_71_NAME;改良飛彈巡防艦;;;;;;;;;;X
 TECH_APP_NAVAL_71_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_71_1_NAME;改良平板天线 ;;;;;;;;;;X
@@ -4545,7 +4545,7 @@ TECH_CMP_NAVAL_71_2_NAME;1.5米/200MHz 发射频率 ;;;;;;;;;;X
 TECH_CMP_NAVAL_71_3_NAME;改良分米波接收器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_71_4_NAME;改良分米波震荡发射机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_71_5_NAME;改良机械计算 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_71_NAME;改良飛彈巡防艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_71_NAME;1976 Nuc Mis Sub;;;;;;;;;;X
 TECH_APP_NAVAL_72_NAME;先進飛彈巡防艦;;;;;;;;;;X
 TECH_APP_NAVAL_72_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_72_1_NAME;多组偶极平板天线 ;;;;;;;;;;X
@@ -4553,7 +4553,7 @@ TECH_CMP_NAVAL_72_2_NAME;10厘米/3GHz 发射频率 ;;;;;;;;;;X
 TECH_CMP_NAVAL_72_3_NAME;基本厘米波接收器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_72_4_NAME;基本厘米波震荡发射机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_72_5_NAME;多腔高能磁控管 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_72_NAME;先進飛彈巡防艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_72_NAME;Adv Nuc SSK;;;;;;;;;;X
 TECH_APP_NAVAL_73_NAME;現代飛彈巡防艦;;;;;;;;;;X
 TECH_APP_NAVAL_73_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_73_1_NAME;定相阵列天线 ;;;;;;;;;;X
@@ -4561,7 +4561,7 @@ TECH_CMP_NAVAL_73_2_NAME;12厘米/4GHz 发射频率 ;;;;;;;;;;X
 TECH_CMP_NAVAL_73_3_NAME;改良厘米波接收器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_73_4_NAME;改良厘米波震荡发射机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_73_5_NAME;水平面扫描雷达 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_73_NAME;現代飛彈巡防艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_73_NAME;1975 Nuc Attack;;;;;;;;;;X
 TECH_APP_NAVAL_74_NAME;晚期重型巡洋舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_74_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_74_1_NAME;抛物面形天线 ;;;;;;;;;;X
@@ -4569,15 +4569,15 @@ TECH_CMP_NAVAL_74_2_NAME;15厘米/5GHz 发射频率 ;;;;;;;;;;X
 TECH_CMP_NAVAL_74_3_NAME;先进厘米波接收器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_74_4_NAME;先进厘米波震荡发射机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_74_5_NAME;组合雷达系统 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_74_NAME;晚期重型巡洋舰 ;;;;;;;;;;X
-TECH_APP_NAVAL_75_NAME;早期飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_74_NAME;1990 Nuc Attack;;;;;;;;;;X
+TECH_APP_NAVAL_75_NAME;2005 Nuclear Attack Submarine;;;;;;;;;;X
 TECH_APP_NAVAL_75_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_75_1_NAME;相控阵列天线 ;;;;;;;;;;X
 TECH_CMP_NAVAL_75_2_NAME;V形波束应用 ;;;;;;;;;;X
 TECH_CMP_NAVAL_75_3_NAME;多波束接收器合成 ;;;;;;;;;;X
 TECH_CMP_NAVAL_75_4_NAME;三维机电扫描 ;;;;;;;;;;X
 TECH_CMP_NAVAL_75_5_NAME;多维度信息中控 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_75_NAME;早期飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_75_NAME;2005 Nuc Attack;;;;;;;;;;X
 TECH_APP_NAVAL_76_NAME;改良飛彈巡洋艦;;;;;;;;;;X
 TECH_APP_NAVAL_76_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_76_1_NAME;机械模拟计算机 ;;;;;;;;;;X
@@ -4585,7 +4585,7 @@ TECH_CMP_NAVAL_76_2_NAME;射击控制表 ;;;;;;;;;;X
 TECH_CMP_NAVAL_76_3_NAME;机械瞄准具 ;;;;;;;;;;X
 TECH_CMP_NAVAL_76_4_NAME;光学测距 ;;;;;;;;;;X
 TECH_CMP_NAVAL_76_5_NAME;射击诸元求解 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_76_NAME;改良飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_76_NAME;1976 Nuc Mis Sub;;;;;;;;;;X
 TECH_APP_NAVAL_77_NAME;先進飛彈巡洋艦;;;;;;;;;;X
 TECH_APP_NAVAL_77_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_77_1_NAME;机械模拟指挥仪 ;;;;;;;;;;X
@@ -4593,7 +4593,7 @@ TECH_CMP_NAVAL_77_2_NAME;本舰定测装置 ;;;;;;;;;;X
 TECH_CMP_NAVAL_77_3_NAME;半自动传感设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_77_4_NAME;目标运动参数解算 ;;;;;;;;;;X
 TECH_CMP_NAVAL_77_5_NAME;射击诸元解算 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_77_NAME;先進飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_77_NAME;1976 Nuc Mis Sub;;;;;;;;;;X
 TECH_APP_NAVAL_78_NAME;現代飛彈巡洋艦;;;;;;;;;;X
 TECH_APP_NAVAL_78_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_78_1_NAME;机电模拟指挥仪 ;;;;;;;;;;X
@@ -4601,7 +4601,7 @@ TECH_CMP_NAVAL_78_2_NAME;随动系统原理稳定性 ;;;;;;;;;;X
 TECH_CMP_NAVAL_78_3_NAME;自动传感设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_78_4_NAME;维纳最优滤波理论 ;;;;;;;;;;X
 TECH_CMP_NAVAL_78_5_NAME;超越方程模拟 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_78_NAME;現代飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_78_NAME;1976 Nuc Mis Sub;;;;;;;;;;X
 TECH_APP_NAVAL_79_NAME;晚期飛彈巡洋艦;;;;;;;;;;X
 TECH_APP_NAVAL_79_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_79_1_NAME;电子模拟指挥仪 ;;;;;;;;;;X
@@ -4609,7 +4609,7 @@ TECH_CMP_NAVAL_79_2_NAME;数字计算机应用试验 ;;;;;;;;;;X
 TECH_CMP_NAVAL_79_3_NAME;改良自动传感设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_79_4_NAME;维纳最优滤波理论有限记忆区间 ;;;;;;;;;;X
 TECH_CMP_NAVAL_79_5_NAME;电子计算机稳定性测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_79_NAME;晚期飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_79_NAME;2005 Nuc Mis Sub;;;;;;;;;;X
 TECH_APP_NAVAL_80_NAME;Future飛彈巡洋艦;;;;;;;;;;X
 TECH_APP_NAVAL_80_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_80_1_NAME;数字合成指挥仪 ;;;;;;;;;;X
@@ -4617,7 +4617,7 @@ TECH_CMP_NAVAL_80_2_NAME;小规模组件小型数字机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_80_3_NAME;先进自动传感设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_80_4_NAME;最小二乘原理 ;;;;;;;;;;X
 TECH_CMP_NAVAL_80_5_NAME;射击诸元求解简化 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_80_NAME;Future飛彈巡洋艦;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_80_NAME;Missile Battlecruiser;;;;;;;;;;X
 TECH_APP_NAVAL_81_NAME;改良飛彈战列巡洋舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_81_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_81_1_NAME;舰艇合成火控试验 ;;;;;;;;;;X
@@ -4625,7 +4625,7 @@ TECH_CMP_NAVAL_81_2_NAME;高档微型加固计算机 ;;;;;;;;;;X
 TECH_CMP_NAVAL_81_3_NAME;火控与传感系统合成 ;;;;;;;;;;X
 TECH_CMP_NAVAL_81_4_NAME;大闭环校射原理 ;;;;;;;;;;X
 TECH_CMP_NAVAL_81_5_NAME;拟片尔曼滤波 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_81_NAME;改良飛彈战列巡洋舰 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_81_NAME;Nuc Miss Battlecruiser;;;;;;;;;;X
 TECH_APP_NAVAL_82_NAME;攻擊型核子潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_82_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_82_1_NAME;热力发动机 ;;;;;;;;;;X
@@ -4633,7 +4633,7 @@ TECH_CMP_NAVAL_82_2_NAME;方位角控制鱼雷陀螺仪 ;;;;;;;;;;X
 TECH_CMP_NAVAL_82_3_NAME;燃料组元 ;;;;;;;;;;X
 TECH_CMP_NAVAL_82_4_NAME;早期鱼雷推进器 ;;;;;;;;;;X
 TECH_CMP_NAVAL_82_5_NAME;早期鱼雷弹药部 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_82_NAME;攻擊型核子潛艇;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_82_NAME;2005 Nuc Miss Battlecr;;;;;;;;;;X
 TECH_APP_NAVAL_83_NAME;基本攻擊型核子潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_83_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_83_1_NAME;改良热力发动机 ;;;;;;;;;;X
@@ -4641,7 +4641,7 @@ TECH_CMP_NAVAL_83_2_NAME;鱼雷射击控制装置 ;;;;;;;;;;X
 TECH_CMP_NAVAL_83_3_NAME;纯氧助燃剂 ;;;;;;;;;;X
 TECH_CMP_NAVAL_83_4_NAME;双重反转螺旋桨 ;;;;;;;;;;X
 TECH_CMP_NAVAL_83_5_NAME;改良鱼雷弹药部 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_83_NAME;基本SSN;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_83_NAME;Miss Hvy Cruiser III;;;;;;;;;;X
 TECH_APP_NAVAL_84_NAME;改良攻擊型核子潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_84_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_84_1_NAME;先进热力发动机 ;;;;;;;;;;X
@@ -4649,7 +4649,7 @@ TECH_CMP_NAVAL_84_2_NAME;先进鱼雷射击控制装置 ;;;;;;;;;;X
 TECH_CMP_NAVAL_84_3_NAME;先进多元化学燃料组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_84_4_NAME;泵喷射螺旋桨 ;;;;;;;;;;X
 TECH_CMP_NAVAL_84_5_NAME;半闭式循环动力系统 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_84_NAME;改良SSN;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_84_NAME;Nuc Miss Hvy Cr III;;;;;;;;;;X
 TECH_APP_NAVAL_85_NAME;先進攻擊型核子潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_85_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_85_1_NAME;电动鱼雷发动机 ;;;;;;;;;;X
@@ -4657,7 +4657,7 @@ TECH_CMP_NAVAL_85_2_NAME;鱼雷射击控制装置 ;;;;;;;;;;X
 TECH_CMP_NAVAL_85_3_NAME;铅酸电池组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_85_4_NAME;双重反转螺旋桨 ;;;;;;;;;;X
 TECH_CMP_NAVAL_85_5_NAME;改良鱼雷弹药部 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_85_NAME;先進SSN;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_85_NAME;2005 Nuc Mis Hvy Cr;;;;;;;;;;X
 TECH_APP_NAVAL_86_NAME;現代攻擊型核子潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_86_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_86_1_NAME;噪声接收器 ;;;;;;;;;;X
@@ -4665,7 +4665,7 @@ TECH_CMP_NAVAL_86_2_NAME;被动声自导系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_86_3_NAME;准现代动力组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_86_4_NAME;准现代推进系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_86_5_NAME;准现代鱼雷弹药部 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_86_NAME;現代SSN;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_86_NAME;Miss Frigate II;;;;;;;;;;X
 TECH_APP_NAVAL_87_NAME;晚期航空母舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_87_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_87_1_NAME;发射平台遥控系统 ;;;;;;;;;;X
@@ -4673,7 +4673,7 @@ TECH_CMP_NAVAL_87_2_NAME;末端声自导系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_87_3_NAME;高效率传输导线 ;;;;;;;;;;X
 TECH_CMP_NAVAL_87_4_NAME;雷上线导系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_87_5_NAME;导线连接控制测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_87_NAME;晚期航母 ;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_87_NAME;Miss Frigate III;;;;;;;;;;X
 TECH_APP_NAVAL_88_NAME;早期超級航空母艦;;;;;;;;;;X
 TECH_APP_NAVAL_88_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_88_1_NAME;声信号发射装置 ;;;;;;;;;;X
@@ -4681,7 +4681,7 @@ TECH_CMP_NAVAL_88_2_NAME;声信号接收装置 ;;;;;;;;;;X
 TECH_CMP_NAVAL_88_3_NAME;声信号处理系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_88_4_NAME;主被动系统联合测试 ;;;;;;;;;;X
 TECH_CMP_NAVAL_88_5_NAME;闭式循环动力系统 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_88_NAME;早期超級航母;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_88_NAME;Miss Frigate IV;;;;;;;;;;X
 TECH_APP_NAVAL_89_NAME;改良超級航空母艦;;;;;;;;;;X
 TECH_APP_NAVAL_89_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_89_1_NAME;基本运输舰舰体 ;;;;;;;;;;X
@@ -4689,7 +4689,7 @@ TECH_CMP_NAVAL_89_2_NAME;基本大型蒸汽动力设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_89_3_NAME;基本输送舰防空火力 ;;;;;;;;;;X
 TECH_CMP_NAVAL_89_4_NAME;远程航行可靠性测试 ;;;;;;;;;;X
 TECH_CMP_NAVAL_89_5_NAME;基本输送舰测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_89_NAME;改良超級航母;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_89_NAME;Nuc Mis Cruiser II;;;;;;;;;;X
 TECH_APP_NAVAL_90_NAME;核子超級航空母艦;;;;;;;;;;X
 TECH_APP_NAVAL_90_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_90_1_NAME;基本登陆舰舰体 ;;;;;;;;;;X
@@ -4697,7 +4697,7 @@ TECH_CMP_NAVAL_90_2_NAME;基本大型发动机组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_90_3_NAME;基本登陆舰防空火力 ;;;;;;;;;;X
 TECH_CMP_NAVAL_90_4_NAME;滚装\滑轨双重运输设备 ;;;;;;;;;;X
 TECH_CMP_NAVAL_90_5_NAME;基本登陆舰测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_90_NAME;核子核子超級航母;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_90_NAME;Nuc Mis Cruiser III;;;;;;;;;;X
 TECH_APP_NAVAL_91_NAME;改良核子超級航空母艦;;;;;;;;;;X
 TECH_APP_NAVAL_91_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_91_1_NAME;改良登陆舰舰体 ;;;;;;;;;;X
@@ -4705,7 +4705,7 @@ TECH_CMP_NAVAL_91_2_NAME;改良大型发动机组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_91_3_NAME;改良登陆舰防空火力 ;;;;;;;;;;X
 TECH_CMP_NAVAL_91_4_NAME;可变压舱系统 ;;;;;;;;;;X
 TECH_CMP_NAVAL_91_5_NAME;改良登陆舰测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_91_NAME;改良核子超級航母;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_91_NAME;Nuc Mis Cruiser IV;;;;;;;;;;X
 TECH_APP_NAVAL_92_NAME;基本直升機航空母艦;;;;;;;;;;X
 TECH_APP_NAVAL_92_DESC;;;;;;;;;;;X
 TECH_CMP_NAVAL_92_1_NAME;先进登陆舰舰体 ;;;;;;;;;;X
@@ -4713,7 +4713,7 @@ TECH_CMP_NAVAL_92_2_NAME;先进大型发动机组 ;;;;;;;;;;X
 TECH_CMP_NAVAL_92_3_NAME;先进登陆舰防空火力 ;;;;;;;;;;X
 TECH_CMP_NAVAL_92_4_NAME;伸缩式跳板设计 ;;;;;;;;;;X
 TECH_CMP_NAVAL_92_5_NAME;先进登陆舰测试 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_92_NAME;基本直升機航母;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_92_NAME;2012 Nucl Mis Cruiser;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_INDUSTRY_62_NAME;早期核电站 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_62_DESC;早期核电站 ;;;;;;;;;;X
@@ -4787,15 +4787,15 @@ TECH_CMP_SW_30_2_NAME;青霉素的分离 ;;;;;;;;;;X
 TECH_CMP_SW_30_3_NAME;青霉素的纯化 ;;;;;;;;;;X
 TECH_CMP_SW_30_4_NAME;青霉素药剂的研发 ;;;;;;;;;;X
 TECH_CMP_SW_30_5_NAME;青霉素的临床试验 ;;;;;;;;;;X
-SHORT_TECH_APP_SW_30_NAME;青霉素 ;;;;;;;;;;X
-TECH_APP_INFANTRY_39_NAME;51年型空中骑兵师 ;;;;;;;;;;X
+SHORT_TECH_APP_SW_30_NAME;改良噴氣式艦載機;;;;;;;;;;X
+TECH_APP_INFANTRY_39_NAME;改良装甲车辆铁路运输;;;;;;;;;;X
 TECH_APP_INFANTRY_39_DESC; ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_1_NAME;改良铁路运输货车 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_2_NAME;改良装卸 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_3_NAME;改良走道 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_4_NAME;重负载测试运行 ;;;;;;;;;;X
 TECH_CMP_INFANTRY_39_5_NAME;快速程序创建 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_39_NAME;51年型空中骑兵师 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_39_NAME;改良装甲铁路运输;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_NAVAL_46_NAME;远程重型潜艇 ;;;;;;;;;;X
 TECH_APP_NAVAL_46_DESC;;;;;;;;;;;X
@@ -5275,7 +5275,7 @@ SHORT_TECH_APP_NAVAL_102_NAME;现代重型巡洋舰 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_103_NAME;现代战列巡洋舰 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_104_NAME;现代战列舰 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_105_NAME;超重装甲战列舰 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_120_NAME;改良攻擊型潛艇;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_120_NAME;1944 CAG;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_106_NAME;现代航母 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_110_NAME;早期轻型航母 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_111_NAME;基础轻型航母 ;;;;;;;;;;X
@@ -5284,9 +5284,9 @@ SHORT_TECH_APP_NAVAL_113_NAME;先进轻型航母 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_114_NAME;准现代轻型航母 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_115_NAME;现代轻型航母 ;;;;;;;;;;X
 ;;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_100_NAME;58年农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_101_NAME;63年农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_102_NAME;1961年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_100_NAME;Advanced Prod;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_101_NAME;Modern Prod;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_102_NAME;Modern Plant;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_103_NAME;數位雷達 ;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_104_NAME;新型塑料科学 ;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_105_NAME;先进材料科学 ;;;;;;;;;;X
@@ -5299,10 +5299,10 @@ SHORT_TECH_APP_LD_108_NAME;游击战 ;;;;;;;;;;X
 ;;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_100_NAME;喷气截击机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_101_NAME;改良喷气截击机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_102_NAME;第二代截擊機 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_102_NAME;Supersonic;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_103_NAME;喷气式战斗轰炸机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_104_NAME;改良喷气式战轰机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_105_NAME;第二代戰鬥機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_105_NAME;Supersonic;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_106_NAME;喷气护航战斗机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_107_NAME;改良喷气护航战斗机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_108_NAME;超音速护航战斗机 ;;;;;;;;;;X
@@ -5339,48 +5339,48 @@ TECH_CMP_SW_103_5_NAME;远程轰炸机原型测试 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_103_NAME;远程战略轰炸机 ;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_CAT_LIGHTCARRIER;核子潛艇;;;;;;;;;;X
-TECH_CAT_MATERIALS;炼油与合成材料 ;;;;;;;;;;X
+TECH_CAT_MATERIALS;材料科学 ;;;;;;;;;;X
 TECH_CAT_system;经济体制 ;;;;;;;;;;X
 ;;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_1_NAME;18年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_2_NAME;36年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_3_NAME;39年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_4_NAME;41年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_5_NAME;43年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_6_NAME;45年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_7_NAME;48年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_8_NAME;51年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_9_NAME;55年型步兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_10_NAME;18年型骑兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_11_NAME;36年型骑兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_12_NAME;半摩托化骑兵师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_13_NAME;39年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_14_NAME;41年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_15_NAME;43年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_16_NAME;45年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_17_NAME;48年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_18_NAME;51年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_19_NAME;55年型摩托化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_20_NAME;41年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_21_NAME;43年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_22_NAME;45年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_23_NAME;48年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_24_NAME;51年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_25_NAME;55年型机械化师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_26_NAME;36年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_27_NAME;39年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_28_NAME;41年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_29_NAME;43年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_30_NAME;45年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_31_NAME;48年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_32_NAME;51年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_33_NAME;55年型装甲师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_34_NAME;39年型空降师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_35_NAME;41年型空降师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_36_NAME;43年型空降师 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_1_NAME;一战的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_2_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_3_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_4_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_5_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_6_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_7_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_8_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_9_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_10_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_11_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_12_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_13_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_14_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_15_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_16_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_17_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_18_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_19_NAME;一战的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_20_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_21_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_22_NAME;半摩托化的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_23_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_24_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_25_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_26_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_27_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_28_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_29_NAME;准现代化;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_30_NAME;装甲骑兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_31_NAME;后方补给;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_32_NAME;纵深后勤学;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_33_NAME;前线补给;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_34_NAME;后方维修;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_35_NAME;纵深维修;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_36_NAME;前线修理;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_37_NAME;45年型空降师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_38_NAME;48年型空降师 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_39_NAME;51年型空中骑兵师 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_38_NAME;装甲铁路运输;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_39_NAME;改良装甲铁路运输;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_40_NAME;55年型空中骑兵师 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_41_NAME;37年型山地师 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_42_NAME;39年型山地师 ;;;;;;;;;;X
@@ -5391,20 +5391,20 @@ SHORT_TECH_APP_INFANTRY_46_NAME;48年型山地师 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_47_NAME;51年型山地师 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_48_NAME;55年型山地师 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_49_NAME;38年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_50_NAME;40年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_51_NAME;42年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_52_NAME;44年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_53_NAME;47年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_54_NAME;51年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_55_NAME;55年型陆战队 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_56_NAME;野战训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_57_NAME;山地训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_58_NAME;丛林训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_59_NAME;沙漠训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_60_NAME;空降训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_61_NAME;防御训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_62_NAME;装甲训练 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_63_NAME;常备训练 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_50_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_51_NAME;精英的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_52_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_53_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_54_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_55_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_56_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_57_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_58_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_59_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_60_NAME;现代的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_61_NAME;精英的;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_62_NAME;先进后勤;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_63_NAME;准现代化维修 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_64_NAME;王装训练 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_65_NAME;王步训练 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_66_NAME;早期医院 ;;;;;;;;;;X
@@ -5421,71 +5421,71 @@ SHORT_TECH_APP_INFANTRY_76_NAME;区域快速响应 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_77_NAME;纵深后勤学 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_78_NAME;前线补给 ;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_79_NAME;先进后勤 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_80_NAME;后方区域维修 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_81_NAME;纵深维修组织 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_82_NAME;现代车辆维修 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_83_NAME;军事动员学 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_84_NAME;动员军区制 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_85_NAME;预备役兵制 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_86_NAME;有限动员 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_87_NAME;波次动员 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_88_NAME;国民动员 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_89_NAME;全面动员 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_80_NAME;1956;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_81_NAME;1962;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_82_NAME;1956;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_83_NAME;1962;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_84_NAME;1956;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_85_NAME;1962;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_86_NAME;1956;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_87_NAME;1962;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_88_NAME;1955;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_89_NAME;1959;;;;;;;;;;X
 ;;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_1_NAME;一战坦克 ;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_2_NAME;超轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_3_NAME;36年型轻坦 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_4_NAME;40年型轻坦 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_5_NAME;45年型轻坦 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_6_NAME;40年型中坦;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_7_NAME;45年型中坦;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_8_NAME;40年型重坦 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_9_NAME;45年型重坦 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_10_NAME;MBT 50;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_11_NAME;MBT 55;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_12_NAME;超重型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_13_NAME;MBT 60;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_14_NAME;MBT 65;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_15_NAME;MBT 70;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_16_NAME;40年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_17_NAME;45年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_18_NAME;50年代;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_19_NAME;60年代;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_20_NAME;70年代;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_21_NAME;80年代;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_22_NAME;40年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_23_NAME;45年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_24_NAME;50年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_25_NAME;55年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_26_NAME;60年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_27_NAME;65年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_28_NAME;18年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_3_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_4_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_5_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_6_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_7_NAME;基本中坦;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_8_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_9_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_10_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_11_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_12_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_13_NAME;超重型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_14_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_15_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_16_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_17_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_18_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_19_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_20_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_21_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_22_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_23_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_24_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_25_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_26_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_27_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_28_NAME;先进的;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_29_NAME;27年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_30_NAME;36年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_31_NAME;40年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_32_NAME;45年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_33_NAME;50年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_34_NAME;55年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_35_NAME;60年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_36_NAME;36年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_37_NAME;40年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_38_NAME;45年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_39_NAME;50年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_40_NAME;55年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_41_NAME;60年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_42_NAME;18年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_43_NAME;27年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_44_NAME;36年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_45_NAME;40年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_46_NAME;45年型 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_47_NAME;50年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_48_NAME;55年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_49_NAME;基本突击炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_50_NAME;改良突击炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_51_NAME;先进突击炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_52_NAME;准现代突击炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_53_NAME;现代突击炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_54_NAME;18年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_32_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_33_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_34_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_35_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_36_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_37_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_38_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_39_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_40_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_41_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_42_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_43_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_44_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_45_NAME;一战的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_46_NAME;早期的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_47_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_48_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_49_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_50_NAME;准现代的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_51_NAME;基本的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_52_NAME;改良的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_53_NAME;先进的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_54_NAME;准现代的;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_55_NAME;27年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_56_NAME;36年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_57_NAME;40年型;;;;;;;;;;X
@@ -5581,30 +5581,30 @@ SHORT_TECH_APP_NAVAL_42_NAME;中程潜艇 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_43_NAME;远程潜艇 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_44_NAME;电动潜艇 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_45_NAME;准现代潜艇 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_1_NAME;近代农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_2_NAME;44年农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_3_NAME;48年农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_4_NAME;53年农业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_5_NAME;近代工业体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_6_NAME;50年代机械制造 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_7_NAME;60年代机械制造 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_8_NAME;二戰建筑技术 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_9_NAME;50年代建筑技术 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_10_NAME;基本流水装配线 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_11_NAME;二戰工业体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_12_NAME;1955年工业体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_13_NAME;流水线试验 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_14_NAME;1965年工业体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_15_NAME;70年代建筑技术 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_16_NAME;70年代机械制造 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_17_NAME;二戰机械制造 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_18_NAME;近代启蒙教育 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_19_NAME;二戰冶炼体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_20_NAME;冷戰早期冶炼体系 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_21_NAME;60年代建筑技术 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_22_NAME;二戰油料合成 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_23_NAME;戰後油料合成 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_24_NAME;1953年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_1_NAME;Modern;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_2_NAME;Mechanized;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_3_NAME;Agrichemistry;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_4_NAME;Production;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_5_NAME;Bas M Tools;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_6_NAME;Imp M Tools;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_7_NAME;Adv M Tools;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_8_NAME;Bas Construction;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_9_NAME;Imp Construction;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_10_NAME;Adv Construction;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_11_NAME;生产控制 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_12_NAME;生产计划 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_13_NAME;Assembly Line Exp;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_14_NAME;Aircraft Ass Line;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_15_NAME;Ship Ass Line;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_16_NAME;Vehicle Ass Line;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_17_NAME;Rocket Ass Line;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_18_NAME;Sm Arms Ass Line;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_19_NAME;Basic Refining;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_20_NAME;Improved Refining;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_21_NAME;Advanced Refining;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_22_NAME;Basic Plant;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_23_NAME;Improved Plant;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_24_NAME;Advanced Plant;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_25_NAME;基础聚合体 ;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_26_NAME;改良聚合体 ;;;;;;;;;;X
 SHORT_TECH_APP_INDUSTRY_27_NAME;高级聚合体 ;;;;;;;;;;X
@@ -5648,7 +5648,7 @@ SHORT_TECH_APP_SW_9_NAME;喷气战略轰炸机 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_10_NAME;导弹 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_11_NAME;中程导弹 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_12_NAME;彈道飛彈;;;;;;;;;;X
-SHORT_TECH_APP_SW_13_NAME;SRBM;;;;;;;;;;X
+SHORT_TECH_APP_SW_13_NAME;ICBM;;;;;;;;;;X
 SHORT_TECH_APP_SW_14_NAME;初级电子计算机 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_15_NAME;改良电子计算机 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_16_NAME;先进电子计算机 ;;;;;;;;;;X
@@ -5662,8 +5662,8 @@ SHORT_TECH_APP_SW_44_NAME;第二代海軍偵察衛星;;;;;;;;;;X
 SHORT_TECH_APP_SW_26_NAME;空對地導彈 (ASM);;;;;;;;;;X
 SHORT_TECH_APP_SW_28_NAME;基本喷气战斗机 ;;;;;;;;;;X
 SHORT_TECH_APP_SW_29_NAME;改良喷气战斗机 ;;;;;;;;;;X
-SHORT_TECH_APP_SW_50_NAME;艙外活動;;;;;;;;;;X
-SHORT_TECH_APP_SW_51_NAME;金星探測器;;;;;;;;;;X
+SHORT_TECH_APP_SW_50_NAME;反艦飛彈;;;;;;;;;;X
+SHORT_TECH_APP_SW_51_NAME;改良型反艦飛彈;;;;;;;;;;X
 SHORT_TECH_APP_SW_52_NAME;Lunar Probe Landing;;;;;;;;;;X
 SHORT_TECH_APP_SW_53_NAME;交會對接;;;;;;;;;;X
 SHORT_TECH_APP_SW_54_NAME;Manned Lunar Fly-By;;;;;;;;;;X
@@ -5919,7 +5919,7 @@ TECH_CAT_INFANTRY_13;海軍陸戰隊;;;;;;;;;;X
 TECH_CAT_INFANTRY_14;空降師;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_INFANTRY_90_NAME;41年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_90_NAME;41年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_90_NAME;1963;;;;;;;;;;X
 TECH_APP_INFANTRY_90_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_90_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_90_2_NAME;;;;;;;;;;;X
@@ -5982,7 +5982,7 @@ TECH_APP_INFANTRY_262_NAME;81年型海軍陸戰師;;;;;;;;;;X
 TECH_APP_INFANTRY_263_NAME;88年型海軍陸戰師;;;;;;;;;;X
 TECH_APP_INFANTRY_264_NAME;38年型空降師;;;;;;;;;;X
 TECH_APP_INFANTRY_91_NAME;44年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_91_NAME;44年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_91_NAME;1955;;;;;;;;;;X
 TECH_APP_INFANTRY_91_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_91_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_91_2_NAME;;;;;;;;;;;X
@@ -5990,7 +5990,7 @@ TECH_CMP_INFANTRY_91_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_91_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_91_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_92_NAME;47年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_92_NAME;47年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_92_NAME;1959;;;;;;;;;;X
 TECH_APP_INFANTRY_92_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_92_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_92_2_NAME;;;;;;;;;;;X
@@ -5998,15 +5998,15 @@ TECH_CMP_INFANTRY_92_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_92_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_92_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_93_NAME;50年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_93_NAME;50年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_93_NAME;1963;;;;;;;;;;X
 TECH_APP_INFANTRY_93_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_93_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_93_2_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_93_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_93_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_93_5_NAME;;;;;;;;;;;X
-TECH_APP_INFANTRY_94_NAME;53年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_94_NAME;53年型;;;;;;;;;;X
+TECH_APP_INFANTRY_94_NAME;现代后勤体系;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_94_NAME;现代后勤学;;;;;;;;;;X
 TECH_APP_INFANTRY_94_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_94_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_94_2_NAME;;;;;;;;;;;X
@@ -6014,7 +6014,7 @@ TECH_CMP_INFANTRY_94_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_94_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_94_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_95_NAME;57年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_95_NAME;57年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_95_NAME;现代化维修 ;;;;;;;;;;X
 TECH_APP_INFANTRY_95_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_95_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_95_2_NAME;;;;;;;;;;;X
@@ -6022,7 +6022,7 @@ TECH_CMP_INFANTRY_95_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_95_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_95_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_96_NAME;61年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_96_NAME;61年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_96_NAME;1955;;;;;;;;;;X
 TECH_APP_INFANTRY_96_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_96_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_96_2_NAME;;;;;;;;;;;X
@@ -6030,7 +6030,7 @@ TECH_CMP_INFANTRY_96_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_96_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_96_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_97_NAME;66年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_97_NAME;66年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_97_NAME;1959;;;;;;;;;;X
 TECH_APP_INFANTRY_97_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_97_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_97_2_NAME;;;;;;;;;;;X
@@ -6038,7 +6038,7 @@ TECH_CMP_INFANTRY_97_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_97_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_97_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_98_NAME;72年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_98_NAME;72年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_98_NAME;1965;;;;;;;;;;X
 TECH_APP_INFANTRY_98_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_98_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_98_2_NAME;;;;;;;;;;;X
@@ -6046,7 +6046,7 @@ TECH_CMP_INFANTRY_98_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_98_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_98_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_99_NAME;82年型空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_99_NAME;82年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_99_NAME;1969;;;;;;;;;;X
 TECH_APP_INFANTRY_99_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_99_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_99_2_NAME;;;;;;;;;;;X
@@ -6054,7 +6054,7 @@ TECH_CMP_INFANTRY_99_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_99_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_99_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_100_NAME;90年空降師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_100_NAME;90年型;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_100_NAME;1971;;;;;;;;;;X
 TECH_APP_INFANTRY_100_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_100_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_100_2_NAME;;;;;;;;;;;X
@@ -6119,7 +6119,7 @@ SHORT_TECH_APP_INFANTRY_263_NAME;88年型;;;;;;;;;;X
 SHORT_TECH_APP_INFANTRY_264_NAME;38年型;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_INFANTRY_101_NAME;42年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_101_NAME;42年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_101_NAME;1980;;;;;;;;;;X
 TECH_APP_INFANTRY_101_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_101_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_101_2_NAME;;;;;;;;;;;X
@@ -6127,7 +6127,7 @@ TECH_CMP_INFANTRY_101_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_101_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_101_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_102_NAME;45年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_102_NAME;45年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_102_NAME;1990;;;;;;;;;;X
 TECH_APP_INFANTRY_102_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_102_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_102_2_NAME;;;;;;;;;;;X
@@ -6135,7 +6135,7 @@ TECH_CMP_INFANTRY_102_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_102_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_102_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_103_NAME;48年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_103_NAME;48年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_103_NAME;2000;;;;;;;;;;X
 TECH_APP_INFANTRY_103_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_103_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_103_2_NAME;;;;;;;;;;;X
@@ -6143,7 +6143,7 @@ TECH_CMP_INFANTRY_103_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_103_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_103_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_104_NAME;52年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_104_NAME;52年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_104_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_104_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_104_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_104_2_NAME;;;;;;;;;;;X
@@ -6151,7 +6151,7 @@ TECH_CMP_INFANTRY_104_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_104_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_104_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_105_NAME;56年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_105_NAME;56年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_105_NAME;1971;;;;;;;;;;X
 TECH_APP_INFANTRY_105_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_105_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_105_2_NAME;;;;;;;;;;;X
@@ -6159,7 +6159,7 @@ TECH_CMP_INFANTRY_105_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_105_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_105_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_106_NAME;60年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_106_NAME;60年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_106_NAME;1980;;;;;;;;;;X
 TECH_APP_INFANTRY_106_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_106_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_106_2_NAME;;;;;;;;;;;X
@@ -6167,7 +6167,7 @@ TECH_CMP_INFANTRY_106_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_106_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_106_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_107_NAME;68年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_107_NAME;68年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_107_NAME;1990;;;;;;;;;;X
 TECH_APP_INFANTRY_107_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_107_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_107_2_NAME;;;;;;;;;;;X
@@ -6175,7 +6175,7 @@ TECH_CMP_INFANTRY_107_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_107_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_107_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_108_NAME;74年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_108_NAME;74年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_108_NAME;2000;;;;;;;;;;X
 TECH_APP_INFANTRY_108_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_108_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_108_2_NAME;;;;;;;;;;;X
@@ -6183,7 +6183,7 @@ TECH_CMP_INFANTRY_108_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_108_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_108_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_109_NAME;81年機械化步兵師 ;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_109_NAME;81年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_109_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_109_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_109_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_109_2_NAME;;;;;;;;;;;X
@@ -6191,7 +6191,7 @@ TECH_CMP_INFANTRY_109_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_109_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_109_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_110_NAME;88年機械化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_110_NAME;88年機步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_110_NAME;1971;;;;;;;;;;X
 TECH_APP_INFANTRY_110_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_110_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_110_2_NAME;;;;;;;;;;;X
@@ -6199,7 +6199,7 @@ TECH_CMP_INFANTRY_110_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_110_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_110_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_111_NAME;35年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_111_NAME;35年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_111_NAME;1980;;;;;;;;;;X
 TECH_APP_INFANTRY_111_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_111_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_111_2_NAME;;;;;;;;;;;X
@@ -6207,7 +6207,7 @@ TECH_CMP_INFANTRY_111_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_111_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_111_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_112_NAME;39年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_112_NAME;39年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_112_NAME;1990;;;;;;;;;;X
 TECH_APP_INFANTRY_112_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_112_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_112_2_NAME;;;;;;;;;;;X
@@ -6215,7 +6215,7 @@ TECH_CMP_INFANTRY_112_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_112_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_112_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_113_NAME;42年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_113_NAME;42年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_113_NAME;2000;;;;;;;;;;X
 TECH_APP_INFANTRY_113_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_113_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_113_2_NAME;;;;;;;;;;;X
@@ -6223,7 +6223,7 @@ TECH_CMP_INFANTRY_113_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_113_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_113_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_114_NAME;45年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_114_NAME;45年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_114_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_114_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_114_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_114_2_NAME;;;;;;;;;;;X
@@ -6231,7 +6231,7 @@ TECH_CMP_INFANTRY_114_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_114_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_114_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_115_NAME;48年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_115_NAME;48年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_115_NAME;1971;;;;;;;;;;X
 TECH_APP_INFANTRY_115_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_115_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_115_2_NAME;;;;;;;;;;;X
@@ -6239,7 +6239,7 @@ TECH_CMP_INFANTRY_115_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_115_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_115_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_116_NAME;52年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_116_NAME;52年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_116_NAME;1980;;;;;;;;;;X
 TECH_APP_INFANTRY_116_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_116_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_116_2_NAME;;;;;;;;;;;X
@@ -6247,7 +6247,7 @@ TECH_CMP_INFANTRY_116_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_116_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_116_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_117_NAME;56年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_117_NAME;56年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_117_NAME;1990;;;;;;;;;;X
 TECH_APP_INFANTRY_117_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_117_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_117_2_NAME;;;;;;;;;;;X
@@ -6255,7 +6255,7 @@ TECH_CMP_INFANTRY_117_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_117_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_117_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_118_NAME;60年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_118_NAME;60年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_118_NAME;2000;;;;;;;;;;X
 TECH_APP_INFANTRY_118_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_118_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_118_2_NAME;;;;;;;;;;;X
@@ -6263,7 +6263,7 @@ TECH_CMP_INFANTRY_118_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_118_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_118_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_119_NAME;68年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_119_NAME;68年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_119_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_119_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_119_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_119_2_NAME;;;;;;;;;;;X
@@ -6271,7 +6271,7 @@ TECH_CMP_INFANTRY_119_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_119_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_119_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_120_NAME;74年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_120_NAME;74年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_120_NAME;1970;;;;;;;;;;X
 TECH_APP_INFANTRY_120_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_120_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_120_2_NAME;;;;;;;;;;;X
@@ -6279,7 +6279,7 @@ TECH_CMP_INFANTRY_120_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_120_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_120_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_121_NAME;81年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_121_NAME;81年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_121_NAME;1978;;;;;;;;;;X
 TECH_APP_INFANTRY_121_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_121_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_121_2_NAME;;;;;;;;;;;X
@@ -6287,7 +6287,7 @@ TECH_CMP_INFANTRY_121_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_121_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_121_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_122_NAME;84年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_122_NAME;84年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_122_NAME;1986;;;;;;;;;;X
 TECH_APP_INFANTRY_122_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_122_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_122_2_NAME;;;;;;;;;;;X
@@ -6295,7 +6295,7 @@ TECH_CMP_INFANTRY_122_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_122_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_122_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_123_NAME;88年摩托化步兵師;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_123_NAME;88年摩步;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_123_NAME;1994;;;;;;;;;;X
 TECH_APP_INFANTRY_123_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_123_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_123_2_NAME;;;;;;;;;;;X
@@ -6304,7 +6304,7 @@ TECH_CMP_INFANTRY_123_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_123_5_NAME;;;;;;;;;;;X
 TECH_CAT_INFANTRY_2;摩托化步兵師;;;;;;;;;;X
 TECH_APP_INFANTRY_124_NAME;一戰後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_124_NAME;18年型 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_124_NAME;2002;;;;;;;;;;X
 TECH_APP_INFANTRY_124_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_124_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_124_2_NAME;;;;;;;;;;;X
@@ -6312,7 +6312,7 @@ TECH_CMP_INFANTRY_124_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_124_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_124_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_125_NAME;戰間期後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_125_NAME;27年型 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_125_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_125_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_125_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_125_2_NAME;;;;;;;;;;;X
@@ -6320,7 +6320,7 @@ TECH_CMP_INFANTRY_125_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_125_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_125_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_126_NAME;36年型後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_126_NAME;36年型 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_126_NAME;1970;;;;;;;;;;X
 TECH_APP_INFANTRY_126_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_126_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_126_2_NAME;;;;;;;;;;;X
@@ -6328,7 +6328,7 @@ TECH_CMP_INFANTRY_126_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_126_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_126_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_127_NAME;40年代後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_127_NAME;40年代 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_127_NAME;1978;;;;;;;;;;X
 TECH_APP_INFANTRY_127_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_127_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_127_2_NAME;;;;;;;;;;;X
@@ -6336,7 +6336,7 @@ TECH_CMP_INFANTRY_127_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_127_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_127_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_128_NAME;50年代後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_128_NAME;50年代 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_128_NAME;1986 ;;;;;;;;;;X
 TECH_APP_INFANTRY_128_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_128_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_128_2_NAME;;;;;;;;;;;X
@@ -6344,7 +6344,7 @@ TECH_CMP_INFANTRY_128_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_128_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_128_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_129_NAME;60年代後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_129_NAME;60年代 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_129_NAME;1994;;;;;;;;;;X
 TECH_APP_INFANTRY_129_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_129_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_129_2_NAME;;;;;;;;;;;X
@@ -6352,7 +6352,7 @@ TECH_CMP_INFANTRY_129_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_129_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_129_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_130_NAME;70年代後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_130_NAME;70年代 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_130_NAME;2002;;;;;;;;;;X
 TECH_APP_INFANTRY_130_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_130_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_130_2_NAME;;;;;;;;;;;X
@@ -6360,7 +6360,7 @@ TECH_CMP_INFANTRY_130_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_130_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_130_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_131_NAME;80年代後勤服務;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_131_NAME;80年代 ;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_131_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_131_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_131_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_131_2_NAME;;;;;;;;;;;X
@@ -6370,7 +6370,7 @@ TECH_CMP_INFANTRY_131_5_NAME;;;;;;;;;;;X
 TECH_CAT_INFANTRY_3;後勤補給;;;;;;;;;;X
 TECH_CAT_INFANTRY_4;特種部隊;;;;;;;;;;X
 TECH_APP_INFANTRY_132_NAME;41年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_132_NAME;41年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_132_NAME;1975;;;;;;;;;;X
 TECH_APP_INFANTRY_132_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_132_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_132_2_NAME;;;;;;;;;;;X
@@ -6378,7 +6378,7 @@ TECH_CMP_INFANTRY_132_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_132_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_132_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_133_NAME;45年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_133_NAME;45年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_133_NAME;1982;;;;;;;;;;X
 TECH_APP_INFANTRY_133_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_133_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_133_2_NAME;;;;;;;;;;;X
@@ -6386,7 +6386,7 @@ TECH_CMP_INFANTRY_133_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_133_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_133_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_134_NAME;51年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_134_NAME;51年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_134_NAME;1989;;;;;;;;;;X
 TECH_APP_INFANTRY_134_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_134_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_134_2_NAME;;;;;;;;;;;X
@@ -6394,7 +6394,7 @@ TECH_CMP_INFANTRY_134_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_134_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_134_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_135_NAME;57年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_135_NAME;57年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_135_NAME;1996;;;;;;;;;;X
 TECH_APP_INFANTRY_135_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_135_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_135_2_NAME;;;;;;;;;;;X
@@ -6402,7 +6402,7 @@ TECH_CMP_INFANTRY_135_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_135_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_135_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_136_NAME;63年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_136_NAME;63年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_136_NAME;2003;;;;;;;;;;X
 TECH_APP_INFANTRY_136_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_136_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_136_2_NAME;;;;;;;;;;;X
@@ -6410,7 +6410,7 @@ TECH_CMP_INFANTRY_136_3_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_136_4_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_136_5_NAME;;;;;;;;;;;X
 TECH_APP_INFANTRY_137_NAME;75年特種部隊;;;;;;;;;;X
-SHORT_TECH_APP_INFANTRY_137_NAME;75年特戰兵;;;;;;;;;;X
+SHORT_TECH_APP_INFANTRY_137_NAME;2010;;;;;;;;;;X
 TECH_APP_INFANTRY_137_DESC;;;;;;;;;;;X
 TECH_CMP_INFANTRY_137_1_NAME;;;;;;;;;;;X
 TECH_CMP_INFANTRY_137_2_NAME;;;;;;;;;;;X
@@ -6428,10 +6428,10 @@ TECH_CMP_INFANTRY_138_5_NAME;;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_86_NAME;90年代;;;;;;;;;;X
 TECH_APP_ARMOR_86_NAME;90年代坦克歼击车 ;;;;;;;;;;X
 TECH_CAT_ARMOR_2;中型坦克;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_103_NAME;MBT 75;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_103_NAME;准现代的;;;;;;;;;;X
 TECH_APP_ARMOR_103_NAME;75年型主戰坦克 ;;;;;;;;;;X
 TECH_APP_ARMOR_104_NAME;80年型主戰坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_104_NAME;MBT 80;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_104_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_104_DESC;TECH_APP_ARMOR_103_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_104_1_NAME;TECH_CMP_ARMOR_103_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_104_2_NAME;TECH_CMP_ARMOR_103_2_NAME;;;;;;;;;;X
@@ -6439,7 +6439,7 @@ TECH_CMP_ARMOR_104_3_NAME;TECH_CMP_ARMOR_103_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_104_4_NAME;TECH_CMP_ARMOR_103_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_104_5_NAME;TECH_CMP_ARMOR_103_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_105_NAME;85年型主戰坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_105_NAME;MBT 85;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_105_NAME;准现代的;;;;;;;;;;X
 TECH_APP_ARMOR_105_DESC;TECH_APP_ARMOR_103_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_105_1_NAME;TECH_CMP_ARMOR_103_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_105_2_NAME;TECH_CMP_ARMOR_103_2_NAME;;;;;;;;;;X
@@ -6447,7 +6447,7 @@ TECH_CMP_ARMOR_105_3_NAME;TECH_CMP_ARMOR_103_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_105_4_NAME;TECH_CMP_ARMOR_103_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_105_5_NAME;TECH_CMP_ARMOR_103_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_106_NAME;90年型主戰坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_106_NAME;MBT 90;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_106_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_106_DESC;TECH_APP_ARMOR_103_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_106_1_NAME;TECH_CMP_ARMOR_103_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_106_2_NAME;TECH_CMP_ARMOR_103_2_NAME;;;;;;;;;;X
@@ -6455,7 +6455,7 @@ TECH_CMP_ARMOR_106_3_NAME;TECH_CMP_ARMOR_103_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_106_4_NAME;TECH_CMP_ARMOR_103_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_106_5_NAME;TECH_CMP_ARMOR_103_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_107_NAME;95年型主戰坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_107_NAME;MBT 95;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_107_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_107_DESC;TECH_APP_ARMOR_103_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_107_1_NAME;TECH_CMP_ARMOR_103_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_107_2_NAME;TECH_CMP_ARMOR_103_2_NAME;;;;;;;;;;X
@@ -6463,7 +6463,7 @@ TECH_CMP_ARMOR_107_3_NAME;TECH_CMP_ARMOR_103_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_107_4_NAME;TECH_CMP_ARMOR_103_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_107_5_NAME;TECH_CMP_ARMOR_103_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_108_NAME;2000年型主戰坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_108_NAME;MBT 00;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_108_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_108_DESC;TECH_APP_ARMOR_103_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_108_1_NAME;TECH_CMP_ARMOR_103_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_108_2_NAME;TECH_CMP_ARMOR_103_2_NAME;;;;;;;;;;X
@@ -6471,7 +6471,7 @@ TECH_CMP_ARMOR_108_3_NAME;TECH_CMP_ARMOR_103_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_108_4_NAME;TECH_CMP_ARMOR_103_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_108_5_NAME;TECH_CMP_ARMOR_103_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_109_NAME;90年坦歼;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_109_NAME;90年代;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_109_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_109_DESC;TECH_APP_ARMOR_86_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_109_1_NAME;TECH_CMP_ARMOR_86_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_109_2_NAME;TECH_CMP_ARMOR_86_2_NAME;;;;;;;;;;X
@@ -6479,15 +6479,15 @@ TECH_CMP_ARMOR_109_3_NAME;TECH_CMP_ARMOR_86_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_109_4_NAME;TECH_CMP_ARMOR_86_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_109_5_NAME;TECH_CMP_ARMOR_86_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_110_NAME;90年輪式坦克殲擊車;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_110_NAME;90年坦歼;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_110_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_110_DESC;TECH_APP_ARMOR_86_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_110_1_NAME;TECH_CMP_ARMOR_86_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_110_2_NAME;TECH_CMP_ARMOR_86_2_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_110_3_NAME;TECH_CMP_ARMOR_86_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_110_4_NAME;TECH_CMP_ARMOR_86_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_110_5_NAME;TECH_CMP_ARMOR_86_5_NAME;;;;;;;;;;X
-TECH_APP_ARMOR_111_NAME;76年坦克歼击车 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_111_NAME;76年坦歼;;;;;;;;;;X
+TECH_APP_ARMOR_111_NAME;Armored Reconnaissance Vehicle;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_111_NAME;Arm Recon Vehicle;;;;;;;;;;X
 TECH_APP_ARMOR_111_DESC;TECH_APP_ARMOR_86_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_111_1_NAME;TECH_CMP_ARMOR_86_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_111_2_NAME;TECH_CMP_ARMOR_86_2_NAME;;;;;;;;;;X
@@ -6499,9 +6499,9 @@ TECH_CAT_ARMOR_1;自行防空炮;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_97_NAME;65年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_98_NAME;70年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_99_NAME;75年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_100_NAME;80年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_101_NAME;85年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_102_NAME;90年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_100_NAME;MBT 47;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_101_NAME;MBT 51;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_102_NAME;现代的;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_LD_77_NAME;19世紀陸軍戰術;;;;;;;;;;X
 SHORT_TECH_APP_LD_77_NAME;19th;;;;;;;;;;X
@@ -6867,10 +6867,10 @@ SHORT_TECH_APP_ARMOR_87_NAME;65年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_117_NAME;70年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_118_NAME;75年型;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_119_NAME;80年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_121_NAME;90年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_120_NAME;85年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_122_NAME;95年型;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_123_NAME;89年野戰砲;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_121_NAME;MBT 66;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_120_NAME;MBT 59;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_122_NAME;准精英的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_123_NAME;精英的;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_AIRCRAFT_47_NAME;第三代截擊機 ;;;;;;;;;;X
@@ -6887,29 +6887,29 @@ SHORT_TECH_APP_AIRCRAFT_45_NAME;第四代戰鬥機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_45_NAME;第四代戰鬥機;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_58_NAME;先進喷气俯冲轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_58_NAME;先進喷气式俯冲轰炸机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_59_NAME;超音速俯冲轰炸机 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_59_NAME;Modern CAS;;;;;;;;;;X
 TECH_APP_AIRCRAFT_59_NAME;超音速俯冲轰炸机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_60_NAME;攻擊機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_60_NAME;Elite CAS;;;;;;;;;;X
 TECH_APP_AIRCRAFT_60_NAME;攻擊機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_61_NAME;改良攻擊機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_61_NAME;Gunship I;;;;;;;;;;X
 TECH_APP_AIRCRAFT_61_NAME;改良攻擊機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_62_NAME;Tank Killer Aircraft;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_62_NAME;Imp Turboprop;;;;;;;;;;X
 TECH_APP_AIRCRAFT_62_NAME;Tank Killer Aircraft;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_63_NAME;改良 Tank Killer Aircraft;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_63_NAME;Modern;;;;;;;;;;X
 TECH_APP_AIRCRAFT_63_NAME;改良 Tank Killer Aircraft;;;;;;;;;;X
 TECH_APP_AIRCRAFT_64_NAME;早期反潛機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_64_NAME;早期反潛機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_64_NAME;1968;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_65_NAME;基本反潛機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_65_NAME;基本反潛機;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_66_NAME;改良反潛機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_66_NAME;改良反潛機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_67_NAME;先進反潛機;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_67_NAME;先進反潛機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_51_NAME;先進喷气战略轰炸机 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_51_NAME;Generation 3;;;;;;;;;;X
 TECH_APP_AIRCRAFT_51_NAME;先進喷气战略轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_52_NAME;Deterrence 战略轰炸机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_52_NAME;Deterrence 战略轰炸机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_53_NAME;改良 Deterrence 战略轰炸机 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_53_NAME;Generation 3;;;;;;;;;;X
 TECH_APP_AIRCRAFT_53_NAME;改良 Deterrence 战略轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_54_NAME;超音速战略轰炸机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_54_NAME;超音速战略轰炸机 ;;;;;;;;;;X
@@ -6917,18 +6917,18 @@ SHORT_TECH_APP_AIRCRAFT_57_NAME;Mach 3战略轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_57_NAME;Mach 3 战略轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_56_NAME;Improved Mach 2 战略轰炸机 ;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_56_NAME;Improved Mach 2 战略轰炸机 ;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_55_NAME;Mach 2战略轰炸机 ;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_55_NAME;Suppression;;;;;;;;;;X
 TECH_APP_AIRCRAFT_55_NAME;Mach 2战略轰炸机 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_68_NAME;Basic Cargo Plane;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_68_NAME;Basic Cargo Plane;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_69_NAME;Improved Cargo Plane;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_69_NAME;Gunship II;;;;;;;;;;X
 TECH_APP_AIRCRAFT_69_NAME;Improved Cargo Plane;;;;;;;;;;X
 TECH_APP_AIRCRAFT_84_NAME;Early ECM and Jamming;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_84_NAME;Early ECM and Jamming;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_84_NAME;Gener 4 ADSF;;;;;;;;;;X
 TECH_APP_AIRCRAFT_85_NAME;Basic ECM and Jamming;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_85_NAME;Basic ECM and Jamming;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_85_NAME;Gen 4.5 ECM/TG;;;;;;;;;;X
 TECH_APP_AIRCRAFT_86_NAME;改良 ECM and Jamming;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_86_NAME;改良 ECM and Jamming;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_86_NAME;(MALD);;;;;;;;;;X
 TECH_APP_AIRCRAFT_87_NAME;先進 ECM and Jamming;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_87_NAME;先進 ECM and Jamming;;;;;;;;;;X
 TECH_APP_AIRCRAFT_79_NAME;早期反艦飛彈;;;;;;;;;;X
@@ -6940,25 +6940,25 @@ SHORT_TECH_APP_AIRCRAFT_81_NAME;改良反艦飛彈;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_82_NAME;先進反艦飛彈;;;;;;;;;;X
 TECH_APP_AIRCRAFT_82_NAME;先進反艦飛彈;;;;;;;;;;X
 TECH_APP_AIRCRAFT_83_NAME;Modern反艦飛彈;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_83_NAME;Modern反艦飛彈;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_76_NAME;Basic Air Launched Cruise Missile;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_83_NAME;Gen 3.5 ADSF;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_76_NAME;Generation 4;;;;;;;;;;X
 TECH_APP_AIRCRAFT_76_NAME;Basic Air Launched Cruise Missile;;;;;;;;;;X
 TECH_APP_AIRCRAFT_77_NAME;Improved Air Launched Cruise Missile;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_77_NAME;Improved Air Launched Cruise Missile;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_77_NAME;Generation 4.5;;;;;;;;;;X
 TECH_APP_AIRCRAFT_78_NAME;Advanced Air Launched Cruise Missile;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_78_NAME;Advanced Air Launched Cruise Missile;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_78_NAME;Generation 5;;;;;;;;;;X
 TECH_APP_AIRCRAFT_89_NAME;第三代艦載機;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_89_NAME;第三代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_90_NAME;改良第三代艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_90_NAME;1973;;;;;;;;;;X
 TECH_APP_AIRCRAFT_90_NAME;改良第三代艦載機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_91_NAME;第四代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_91_NAME;第四代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_92_NAME;改良第四代艦載機;;;;;;;;;;X
-TECH_APP_AIRCRAFT_92_NAME;改良第四代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_93_NAME;先進第四代艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_91_NAME;1995;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_92_NAME;2020;;;;;;;;;;X
+TECH_APP_AIRCRAFT_92_NAME;2020 Close Air Support;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_93_NAME;1976;;;;;;;;;;X
 TECH_APP_AIRCRAFT_93_NAME;先進第四代艦載機;;;;;;;;;;X
-TECH_APP_AIRCRAFT_94_NAME;Modern LCAG;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_94_NAME;Modern LCAG;;;;;;;;;;X
+TECH_APP_AIRCRAFT_94_NAME;2009 海军轰炸机;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_94_NAME;2009;;;;;;;;;;X
 TECH_APP_AIRCRAFT_95_NAME;Turbojet LCAG;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_95_NAME;Turbojet LCAG;;;;;;;;;;X
 TECH_APP_AIRCRAFT_96_NAME;Early Helicopter LCAG;;;;;;;;;;X
@@ -6971,10 +6971,10 @@ TECH_APP_AIRCRAFT_99_NAME;Improved Jump Jet LCAG;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_99_NAME;Improved Jump Jet LCAG;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_109_NAME;Advanced Jump Jet LCAG;;;;;;;;;;X
 TECH_APP_AIRCRAFT_109_NAME;Advanced Jump Jet LCAG;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_70_NAME;Stealth Strategic Bomber;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_70_NAME;Jet Transport;;;;;;;;;;X
 TECH_APP_AIRCRAFT_70_NAME;Stealth Strategic Bomber;;;;;;;;;;X
 TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_30_NAME;Imp. Supersonic;;;;;;;;;;X
 ;;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_9_NAME;基本轻巡洋舰 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_21_NAME;基本战列巡洋舰 ;;;;;;;;;;X
@@ -6988,22 +6988,22 @@ TECH_APP_NAVAL_47_NAME;改良重型潜艇 ;;;;;;;;;;X
 TECH_APP_NAVAL_123_NAME;先進潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_118_NAME;現代潛艇;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_118_NAME;現代潛艇;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_123_NAME;先進潛艇;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_123_NAME;Gen 3.5 CAG;;;;;;;;;;X
 TECH_APP_NAVAL_119_NAME;攻擊型潛艇;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_119_NAME;攻擊型潛艇;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_121_NAME;先進攻擊型潛艇;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_121_NAME;1947 CAG;;;;;;;;;;X
 TECH_APP_NAVAL_121_NAME;先進攻擊型潛艇;;;;;;;;;;X
 TECH_APP_NAVAL_122_NAME;現代攻擊型潛艇;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_122_NAME;現代攻擊型潛艇;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_122_NAME;Gen 3 CAG;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_15_NAME;基本重巡洋舰 ;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_27_NAME;基本战列舰 ;;;;;;;;;;X
 TECH_APP_NAVAL_117_NAME;飛彈战列舰;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_117_NAME;飛彈战列舰;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_34_NAME;基本航母 ;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_124_NAME;早期海軍直升機;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_124_NAME;Gen 4 CAG;;;;;;;;;;X
 TECH_APP_NAVAL_124_NAME;早期海軍直升機;;;;;;;;;;X
 TECH_APP_NAVAL_126_NAME;基本海軍直升機;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_126_NAME;基本海軍直升機;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_126_NAME;Gen 5 CAG;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_127_NAME;改良海軍直升機;;;;;;;;;;X
 TECH_APP_NAVAL_127_NAME;改良海軍直升機;;;;;;;;;;X
 TECH_APP_NAVAL_128_NAME;先進海軍直升機;;;;;;;;;;X
@@ -7012,14 +7012,14 @@ SHORT_TECH_APP_NAVAL_129_NAME;准现代海軍直升機;;;;;;;;;;X
 TECH_APP_NAVAL_129_NAME;准现代海軍直升機;;;;;;;;;;X
 TECH_APP_NAVAL_130_NAME;晚期海軍直升機;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_130_NAME;晚期海軍直升機;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_93_NAME;改良直升機航母;;;;;;;;;;X
-TECH_APP_NAVAL_93_NAME;改良直升機航空母艦;;;;;;;;;;X
-TECH_APP_NAVAL_94_NAME;兩棲突擊艦;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_94_NAME;兩棲突擊艦;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_95_NAME;早期艦載導彈系統;;;;;;;;;;X
-TECH_APP_NAVAL_95_NAME;早期艦載導彈系統;;;;;;;;;;X
-TECH_APP_NAVAL_96_NAME;基本艦載導彈系統;;;;;;;;;;X
-SHORT_TECH_APP_NAVAL_96_NAME;基本艦載導彈系統;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_93_NAME;Heavy Destroyer ;;;;;;;;;;X
+TECH_APP_NAVAL_93_NAME;Heavy Destroyer ;;;;;;;;;;X
+TECH_APP_NAVAL_94_NAME;Heavy Destroyer II;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_94_NAME;Heavy Destroyer II;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_95_NAME;Heavy Destroyer III;;;;;;;;;;X
+TECH_APP_NAVAL_95_NAME;Heavy Destroyer III;;;;;;;;;;X
+TECH_APP_NAVAL_96_NAME;2015 Heavy Destroyer;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_96_NAME;2015 Hvy Destroyer;;;;;;;;;;X
 SHORT_TECH_APP_NAVAL_97_NAME;改良艦載導彈系統;;;;;;;;;;X
 TECH_APP_NAVAL_97_NAME;改良艦載導彈系統;;;;;;;;;;X
 TECH_APP_NAVAL_98_NAME;先進艦載導彈系統;;;;;;;;;;X
@@ -7044,15 +7044,15 @@ SHORT_TECH_APP_SW_68_NAME;虛擬記憶體;;;;;;;;;;X
 TECH_APP_SW_68_NAME;虛擬記憶體;;;;;;;;;;X
 TECH_APP_SW_69_NAME;分時系統;;;;;;;;;;X
 SHORT_TECH_APP_SW_69_NAME;分時系統;;;;;;;;;;X
-SHORT_TECH_APP_SW_70_NAME;封包交換 (ARPANET);;;;;;;;;;X
-TECH_APP_SW_70_NAME;封包交換 (ARPANET);;;;;;;;;;X
+SHORT_TECH_APP_SW_70_NAME;36 MFLOPS;;;;;;;;;;X
+TECH_APP_SW_70_NAME;36 MFLOPS 超級電腦;;;;;;;;;;X
 TECH_APP_SW_71_NAME;微處理器;;;;;;;;;;X
-SHORT_TECH_APP_SW_71_NAME;微處理器;;;;;;;;;;X
-SHORT_TECH_APP_SW_72_NAME;乙太網路;;;;;;;;;;X
+SHORT_TECH_APP_SW_71_NAME;4 GFLOPS;;;;;;;;;;X
+SHORT_TECH_APP_SW_72_NAME;60 GFLOPS;;;;;;;;;;X
 TECH_APP_SW_72_NAME;乙太網路;;;;;;;;;;X
 TECH_APP_SW_73_NAME;超級電腦;;;;;;;;;;X
-SHORT_TECH_APP_SW_73_NAME;超級電腦;;;;;;;;;;X
-SHORT_TECH_APP_SW_75_NAME;雷射唱片;;;;;;;;;;X
+SHORT_TECH_APP_SW_73_NAME;36 TFLOPS;;;;;;;;;;X
+SHORT_TECH_APP_SW_75_NAME;2 EXAFLOPS;;;;;;;;;;X
 TECH_APP_SW_75_NAME;雷射唱片;;;;;;;;;;X
 TECH_APP_SW_76_NAME;大規模並行處理機;;;;;;;;;;X
 SHORT_TECH_APP_SW_76_NAME;大規模並行處理機;;;;;;;;;;X
@@ -7246,8 +7246,8 @@ SHORT_TECH_APP_ARMOR_92_NAME;70年型;;;;;;;;;;X
 TECH_APP_ARMOR_92_NAME;70型IFV;;;;;;;;;;X
 TECH_APP_ARMOR_91_NAME;65型IFV;;;;;;;;;;X
 TECH_APP_ARMOR_90_NAME;60型IFV;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_124_NAME;80年代;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_125_NAME;90年代;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_124_NAME;准精英的;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_125_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_124_NAME;80年代多管火箭炮;;;;;;;;;;X
 TECH_APP_ARMOR_125_NAME;90年代多管火箭炮;;;;;;;;;;X
 SHORT_TECH_APP_ARMOR_88_NAME;65年型;;;;;;;;;;X
@@ -7263,16 +7263,16 @@ TECH_APP_ARMOR_98_NAME;70年型防空營;;;;;;;;;;X
 TECH_APP_ARMOR_99_NAME;75年型防空營;;;;;;;;;;X
 TECH_APP_ARMOR_100_NAME;80年型防空營;;;;;;;;;;X
 TECH_APP_ARMOR_101_NAME;85年型防空營;;;;;;;;;;X
-TECH_APP_ARMOR_112_NAME;50年代轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_112_NAME;50年代轻坦 ;;;;;;;;;;X
+TECH_APP_ARMOR_112_NAME;Armored Recon Vehicle II;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_112_NAME;Arm Recon Veh II;;;;;;;;;;X
 TECH_APP_ARMOR_112_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_112_1_NAME;轻型倾斜装甲 ;;;;;;;;;;X
 TECH_CMP_ARMOR_112_2_NAME;37mm 坦克炮 ;;;;;;;;;;X
 TECH_CMP_ARMOR_112_3_NAME;改良轻型发动机 ;;;;;;;;;;X
 TECH_CMP_ARMOR_112_4_NAME;改良瞄准镜 ;;;;;;;;;;X
 TECH_CMP_ARMOR_112_5_NAME;改良轻型坦克原型测试 ;;;;;;;;;;X
-TECH_APP_ARMOR_113_NAME;60年代轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_113_NAME;60年代轻坦 ;;;;;;;;;;X
+TECH_APP_ARMOR_113_NAME;Armored Recon Vehicle III;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_113_NAME;Arm Recon Veh III;;;;;;;;;;X
 TECH_APP_ARMOR_113_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_113_1_NAME;轻型倾斜装甲 ;;;;;;;;;;X
 TECH_CMP_ARMOR_113_2_NAME;37mm 坦克炮 ;;;;;;;;;;X
@@ -7304,7 +7304,7 @@ TECH_CMP_ARMOR_116_3_NAME;改良轻型发动机 ;;;;;;;;;;X
 TECH_CMP_ARMOR_116_4_NAME;改良瞄准镜 ;;;;;;;;;;X
 TECH_CMP_ARMOR_116_5_NAME;改良轻型坦克原型测试 ;;;;;;;;;;X
 TECH_APP_ARMOR_126_NAME;改良轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_126_NAME;75年型轻坦 ;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_126_NAME;准精英的;;;;;;;;;;X
 TECH_APP_ARMOR_126_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_126_1_NAME;轻型倾斜装甲 ;;;;;;;;;;X
 TECH_CMP_ARMOR_126_2_NAME;37mm 坦克炮 ;;;;;;;;;;X
@@ -7312,7 +7312,7 @@ TECH_CMP_ARMOR_126_3_NAME;改良轻型发动机 ;;;;;;;;;;X
 TECH_CMP_ARMOR_126_4_NAME;改良瞄准镜 ;;;;;;;;;;X
 TECH_CMP_ARMOR_126_5_NAME;改良轻型坦克原型测试 ;;;;;;;;;;X
 TECH_APP_ARMOR_127_NAME;改良轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_127_NAME;80年型轻坦 ;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_127_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_127_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_127_1_NAME;轻型倾斜装甲 ;;;;;;;;;;X
 TECH_CMP_ARMOR_127_2_NAME;37mm 坦克炮 ;;;;;;;;;;X
@@ -7320,7 +7320,7 @@ TECH_CMP_ARMOR_127_3_NAME;改良轻型发动机 ;;;;;;;;;;X
 TECH_CMP_ARMOR_127_4_NAME;改良瞄准镜 ;;;;;;;;;;X
 TECH_CMP_ARMOR_127_5_NAME;改良轻型坦克原型测试 ;;;;;;;;;;X
 TECH_APP_ARMOR_128_NAME;改良轻型坦克 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_128_NAME;85年型轻坦 ;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_128_NAME;准精英的;;;;;;;;;;X
 TECH_APP_ARMOR_128_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_128_1_NAME;轻型倾斜装甲 ;;;;;;;;;;X
 TECH_CMP_ARMOR_128_2_NAME;37mm 坦克炮 ;;;;;;;;;;X
@@ -7332,7 +7332,7 @@ TECH_APP_ARMOR_95_NAME;80年型自行火炮 ;;;;;;;;;;X
 TECH_APP_ARMOR_94_NAME;75年型自行火炮 ;;;;;;;;;;X
 TECH_APP_ARMOR_93_NAME;70年型自行火炮 ;;;;;;;;;;X
 TECH_APP_ARMOR_129_NAME;70年型反坦克飛彈 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_129_NAME;70年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_129_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_129_DESC;TECH_APP_ARMOR_88_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_129_1_NAME;TECH_CMP_ARMOR_88_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_129_2_NAME;TECH_CMP_ARMOR_88_2_NAME;;;;;;;;;;X
@@ -7340,7 +7340,7 @@ TECH_CMP_ARMOR_129_3_NAME;TECH_CMP_ARMOR_88_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_129_4_NAME;TECH_CMP_ARMOR_88_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_129_5_NAME;TECH_CMP_ARMOR_88_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_130_NAME;75年型反坦克飛彈 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_130_NAME;75年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_130_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_130_DESC;TECH_APP_ARMOR_88_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_130_1_NAME;TECH_CMP_ARMOR_88_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_130_2_NAME;TECH_CMP_ARMOR_88_2_NAME;;;;;;;;;;X
@@ -7348,7 +7348,7 @@ TECH_CMP_ARMOR_130_3_NAME;TECH_CMP_ARMOR_88_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_130_4_NAME;TECH_CMP_ARMOR_88_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_130_5_NAME;TECH_CMP_ARMOR_88_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_131_NAME;80年型反坦克飛彈 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_131_NAME;80年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_131_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_131_DESC;TECH_APP_ARMOR_88_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_131_1_NAME;TECH_CMP_ARMOR_88_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_131_2_NAME;TECH_CMP_ARMOR_88_2_NAME;;;;;;;;;;X
@@ -7356,7 +7356,7 @@ TECH_CMP_ARMOR_131_3_NAME;TECH_CMP_ARMOR_88_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_131_4_NAME;TECH_CMP_ARMOR_88_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_131_5_NAME;TECH_CMP_ARMOR_88_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_132_NAME;85年型反坦克飛彈 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_132_NAME;85年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_132_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_132_DESC;TECH_APP_ARMOR_88_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_132_1_NAME;TECH_CMP_ARMOR_88_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_132_2_NAME;TECH_CMP_ARMOR_88_2_NAME;;;;;;;;;;X
@@ -7364,7 +7364,7 @@ TECH_CMP_ARMOR_132_3_NAME;TECH_CMP_ARMOR_88_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_132_4_NAME;TECH_CMP_ARMOR_88_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_132_5_NAME;TECH_CMP_ARMOR_88_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_133_NAME;90年型反坦克飛彈 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_133_NAME;90年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_133_NAME;现代的;;;;;;;;;;X
 TECH_APP_ARMOR_133_DESC;TECH_APP_ARMOR_88_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_133_1_NAME;TECH_CMP_ARMOR_88_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_133_2_NAME;TECH_CMP_ARMOR_88_2_NAME;;;;;;;;;;X
@@ -7372,7 +7372,7 @@ TECH_CMP_ARMOR_133_3_NAME;TECH_CMP_ARMOR_88_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_133_4_NAME;TECH_CMP_ARMOR_88_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_133_5_NAME;TECH_CMP_ARMOR_88_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_134_NAME;75型IFV;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_134_NAME;75年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_134_NAME;精英的;;;;;;;;;;X
 TECH_APP_ARMOR_134_DESC;TECH_APP_ARMOR_92_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_134_1_NAME;TECH_CMP_ARMOR_92_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_134_2_NAME;TECH_CMP_ARMOR_92_2_NAME;;;;;;;;;;X
@@ -7380,7 +7380,7 @@ TECH_CMP_ARMOR_134_3_NAME;TECH_CMP_ARMOR_92_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_134_4_NAME;TECH_CMP_ARMOR_92_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_134_5_NAME;TECH_CMP_ARMOR_92_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_135_NAME;80型IFV;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_135_NAME;80年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_135_NAME;Mobile SAM;;;;;;;;;;X
 TECH_APP_ARMOR_135_DESC;TECH_APP_ARMOR_92_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_135_1_NAME;TECH_CMP_ARMOR_92_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_135_2_NAME;TECH_CMP_ARMOR_92_2_NAME;;;;;;;;;;X
@@ -7388,15 +7388,15 @@ TECH_CMP_ARMOR_135_3_NAME;TECH_CMP_ARMOR_92_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_135_4_NAME;TECH_CMP_ARMOR_92_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_135_5_NAME;TECH_CMP_ARMOR_92_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_136_NAME;85型IFV;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_136_NAME;85年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_136_NAME;Tracked SAM;;;;;;;;;;X
 TECH_APP_ARMOR_136_DESC;TECH_APP_ARMOR_92_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_136_1_NAME;TECH_CMP_ARMOR_92_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_136_2_NAME;TECH_CMP_ARMOR_92_2_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_136_3_NAME;TECH_CMP_ARMOR_92_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_136_4_NAME;TECH_CMP_ARMOR_92_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_136_5_NAME;TECH_CMP_ARMOR_92_5_NAME;;;;;;;;;;X
-TECH_APP_ARMOR_137_NAME;90型IFV;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_137_NAME;90年型;;;;;;;;;;X
+TECH_APP_ARMOR_137_NAME;Amphibious Light Tank;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_137_NAME;Amphib Light Tank;;;;;;;;;;X
 TECH_APP_ARMOR_137_DESC;TECH_APP_ARMOR_92_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_137_1_NAME;TECH_CMP_ARMOR_92_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_137_2_NAME;TECH_CMP_ARMOR_92_2_NAME;;;;;;;;;;X
@@ -7404,7 +7404,7 @@ TECH_CMP_ARMOR_137_3_NAME;TECH_CMP_ARMOR_92_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_137_4_NAME;TECH_CMP_ARMOR_92_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_137_5_NAME;TECH_CMP_ARMOR_92_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_138_NAME;90年型自行火炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_138_NAME;90年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_138_NAME;MBT 70;;;;;;;;;;X
 TECH_APP_ARMOR_138_DESC;TECH_APP_ARMOR_96_DESC;;;;;;;;;;X
 TECH_CMP_ARMOR_138_1_NAME;TECH_CMP_ARMOR_96_1_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_138_2_NAME;TECH_CMP_ARMOR_96_2_NAME;;;;;;;;;;X
@@ -7412,7 +7412,7 @@ TECH_CMP_ARMOR_138_3_NAME;TECH_CMP_ARMOR_96_3_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_138_4_NAME;TECH_CMP_ARMOR_96_4_NAME;;;;;;;;;;X
 TECH_CMP_ARMOR_138_5_NAME;TECH_CMP_ARMOR_96_5_NAME;;;;;;;;;;X
 TECH_APP_ARMOR_139_NAME;80年型重型火炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_139_NAME;80年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_139_NAME;MBT 76;;;;;;;;;;X
 TECH_APP_ARMOR_139_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_139_1_NAME;240MM52倍径加农榴弹炮 ;;;;;;;;;;X
 TECH_CMP_ARMOR_139_2_NAME;炮口制退器 ;;;;;;;;;;X
@@ -7420,7 +7420,7 @@ TECH_CMP_ARMOR_139_3_NAME;多弹种适应性 ;;;;;;;;;;X
 TECH_CMP_ARMOR_139_4_NAME;综合信息指挥系统 ;;;;;;;;;;X
 TECH_CMP_ARMOR_139_5_NAME;多兵种合成打击训练 ;;;;;;;;;;X
 TECH_APP_ARMOR_140_NAME;90年型重型火炮 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_140_NAME;90年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_140_NAME;MBT 82;;;;;;;;;;X
 TECH_APP_ARMOR_140_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_140_1_NAME;240MM52倍径加农榴弹炮 ;;;;;;;;;;X
 TECH_CMP_ARMOR_140_2_NAME;炮口制退器 ;;;;;;;;;;X
@@ -7515,7 +7515,7 @@ TECH_CAT_SW_3;太空探索;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_ARMOR_141_NAME;40年型坦克歼击车 ;;;;;;;;;;X
-SHORT_TECH_APP_ARMOR_141_NAME;40年型;;;;;;;;;;X
+SHORT_TECH_APP_ARMOR_141_NAME;MBT 92;;;;;;;;;;X
 TECH_APP_ARMOR_141_DESC;;;;;;;;;;;X
 TECH_CMP_ARMOR_141_1_NAME;50mm 反坦克炮 ;;;;;;;;;;X
 TECH_CMP_ARMOR_141_2_NAME;早期坦克底盘 ;;;;;;;;;;X
@@ -7534,12 +7534,12 @@ TECH_CAT_AIRCRAFT_5;艦載機;;;;;;;;;;X
 TECH_CAT_INFANTRY_6;空中騎兵師;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_30_NAME;第二代艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_30_NAME;Imp. Supersonic;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_AIRCRAFT_88_NAME;第二代艦載機;;;;;;;;;;X
 SHORT_TECH_APP_AIRCRAFT_88_NAME;第二代艦載機;;;;;;;;;;X
 TECH_APP_AIRCRAFT_71_NAME;一戰艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_71_NAME;一戰艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_71_NAME;Generation 3.5;;;;;;;;;;X
 TECH_APP_AIRCRAFT_71_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_71_1_NAME;地月距离测定 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_71_2_NAME;天梯理论研究 ;;;;;;;;;;X
@@ -7547,7 +7547,7 @@ TECH_CMP_AIRCRAFT_71_3_NAME;碳纳米管合成缆绳研发 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_71_4_NAME;地月升降机 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_71_5_NAME;动力光束 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_72_NAME;基本艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_72_NAME;基本艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_72_NAME;Generation 4;;;;;;;;;;X
 TECH_APP_AIRCRAFT_72_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_72_1_NAME;地月距离测定 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_72_2_NAME;天梯理论研究 ;;;;;;;;;;X
@@ -7555,7 +7555,7 @@ TECH_CMP_AIRCRAFT_72_3_NAME;碳纳米管合成缆绳研发 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_72_4_NAME;地月升降机 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_72_5_NAME;动力光束 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_73_NAME;改良艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_73_NAME;改良艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_73_NAME;Generation 4.5;;;;;;;;;;X
 TECH_APP_AIRCRAFT_73_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_73_1_NAME;地月距离测定 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_73_2_NAME;天梯理论研究 ;;;;;;;;;;X
@@ -7563,7 +7563,7 @@ TECH_CMP_AIRCRAFT_73_3_NAME;碳纳米管合成缆绳研发 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_73_4_NAME;地月升降机 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_73_5_NAME;动力光束 ;;;;;;;;;;X
 TECH_APP_AIRCRAFT_74_NAME;先進艦載機;;;;;;;;;;X
-SHORT_TECH_APP_AIRCRAFT_74_NAME;先進艦載機;;;;;;;;;;X
+SHORT_TECH_APP_AIRCRAFT_74_NAME;Generation 5;;;;;;;;;;X
 TECH_APP_AIRCRAFT_74_DESC;;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_74_1_NAME;地月距离测定 ;;;;;;;;;;X
 TECH_CMP_AIRCRAFT_74_2_NAME;天梯理论研究 ;;;;;;;;;;X
@@ -7573,7 +7573,7 @@ TECH_CMP_AIRCRAFT_74_5_NAME;动力光束 ;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_INDUSTRY_77_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_77_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_77_NAME;Autom Man Tech III;;;;;;;;;;X
 TECH_APP_INDUSTRY_77_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_77_1_NAME;现代舰船火炮技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_77_2_NAME;现代舰船动力技术 ;;;;;;;;;;X
@@ -7581,7 +7581,7 @@ TECH_CMP_INDUSTRY_77_3_NAME;现代舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_77_4_NAME;现代舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_77_5_NAME;现代舰船模型研究 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_78_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_78_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_78_NAME;Early Recycling;;;;;;;;;;X
 TECH_APP_INDUSTRY_78_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_78_1_NAME;现代舰船火炮技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_78_2_NAME;现代舰船动力技术 ;;;;;;;;;;X
@@ -7589,7 +7589,7 @@ TECH_CMP_INDUSTRY_78_3_NAME;现代舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_78_4_NAME;现代舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_78_5_NAME;现代舰船模型研究 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_79_NAME;80年代造船工艺 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_79_NAME;80年代造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_79_NAME;Impr Recycling;;;;;;;;;;X
 TECH_APP_INDUSTRY_79_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_79_1_NAME;现代舰船火炮技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_79_2_NAME;现代舰船动力技术 ;;;;;;;;;;X
@@ -7597,7 +7597,7 @@ TECH_CMP_INDUSTRY_79_3_NAME;现代舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_79_4_NAME;现代舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_79_5_NAME;现代舰船模型研究 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_90_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_90_NAME;冷戰晚期造船工艺 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_90_NAME;IPV4 Internet;;;;;;;;;;X
 TECH_APP_INDUSTRY_90_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_90_1_NAME;现代舰船火炮技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_90_2_NAME;现代舰船动力技术 ;;;;;;;;;;X
@@ -7605,7 +7605,7 @@ TECH_CMP_INDUSTRY_90_3_NAME;现代舰船防护技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_90_4_NAME;现代舰船布局研究 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_90_5_NAME;现代舰船模型研究 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_91_NAME;80年代建筑技术 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_91_NAME;80年代年建筑技术 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_91_NAME;Wide Intern Access;;;;;;;;;;X
 TECH_APP_INDUSTRY_91_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_91_1_NAME;现代标准化 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_91_2_NAME;现代质量控制 ;;;;;;;;;;X
@@ -7613,7 +7613,7 @@ TECH_CMP_INDUSTRY_91_3_NAME;现代可靠性工程 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_91_4_NAME;现代测试计划 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_91_5_NAME;现代建筑工程学发展工艺 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_92_NAME;80年代机械制造业 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_92_NAME;80年代机械制造 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_92_NAME;Multimedia PCs;;;;;;;;;;X
 TECH_APP_INDUSTRY_92_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_92_1_NAME;阳极机械切割 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_92_2_NAME;电火花加工 ;;;;;;;;;;X
@@ -7621,7 +7621,7 @@ TECH_CMP_INDUSTRY_92_3_NAME;自动化机床 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_92_4_NAME;新材料应用 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_92_5_NAME;装配线工艺 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_93_NAME;1985年工业体系;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_93_NAME;1985年工业体系;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_93_NAME;Electr Commerce;;;;;;;;;;X
 TECH_APP_INDUSTRY_93_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_93_1_NAME;现代矿产冶炼 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_93_2_NAME;现代装备制造业 ;;;;;;;;;;X
@@ -7630,7 +7630,7 @@ TECH_CMP_INDUSTRY_93_4_NAME;立体交通路网 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_93_5_NAME;现代轻工业 ;;;;;;;;;;X
 ;;;;;;;;;;;X
 TECH_APP_INDUSTRY_94_NAME;1969年合成石油工厂 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_94_NAME;1969年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_94_NAME;Impr Bus Networks;;;;;;;;;;X
 TECH_APP_INDUSTRY_94_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_94_1_NAME;现代催化剂 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_94_2_NAME;现代反应器 ;;;;;;;;;;X
@@ -7638,7 +7638,7 @@ TECH_CMP_INDUSTRY_94_3_NAME;现代产品处理工艺 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_94_4_NAME;现代原料准备系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_94_5_NAME;现代炼油厂原型测试 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_95_NAME;1975年合成石油工厂 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_95_NAME;1975年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_95_NAME;64-bit PCs;;;;;;;;;;X
 TECH_APP_INDUSTRY_95_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_95_1_NAME;现代催化剂 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_95_2_NAME;现代反应器 ;;;;;;;;;;X
@@ -7646,7 +7646,7 @@ TECH_CMP_INDUSTRY_95_3_NAME;现代产品处理工艺 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_95_4_NAME;现代原料准备系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_95_5_NAME;现代炼油厂原型测试 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_96_NAME;1981年合成石油工厂 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_96_NAME;1981年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_96_NAME;Impr Elect Commerce;;;;;;;;;;X
 TECH_APP_INDUSTRY_96_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_96_1_NAME;现代催化剂 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_96_2_NAME;现代反应器 ;;;;;;;;;;X
@@ -7654,7 +7654,7 @@ TECH_CMP_INDUSTRY_96_3_NAME;现代产品处理工艺 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_96_4_NAME;现代原料准备系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_96_5_NAME;现代炼油厂原型测试 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_97_NAME;1987年合成石油工厂 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_97_NAME;1987年油料合成 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_97_NAME;Early Quant Computers;;;;;;;;;;X
 TECH_APP_INDUSTRY_97_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_97_1_NAME;现代催化剂 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_97_2_NAME;现代反应器 ;;;;;;;;;;X
@@ -7662,7 +7662,7 @@ TECH_CMP_INDUSTRY_97_3_NAME;现代产品处理工艺 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_97_4_NAME;现代原料准备系统 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_97_5_NAME;现代炼油厂原型测试 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_98_NAME;68年农业生产 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_98_NAME;68年农业 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_98_NAME;Intell Professionalism;;;;;;;;;;X
 TECH_APP_INDUSTRY_98_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_98_1_NAME;现代化机械轮作 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_98_2_NAME;现代仓储 ;;;;;;;;;;X
@@ -7670,7 +7670,7 @@ TECH_CMP_INDUSTRY_98_3_NAME;现代包装 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_98_4_NAME;授粉技术 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_98_5_NAME;现代农业生产工序 ;;;;;;;;;;X
 TECH_APP_INDUSTRY_99_NAME;73年农业生产 ;;;;;;;;;;X
-SHORT_TECH_APP_INDUSTRY_99_NAME;73年农业 ;;;;;;;;;;X
+SHORT_TECH_APP_INDUSTRY_99_NAME;Mod Intell Coordin;;;;;;;;;;X
 TECH_APP_INDUSTRY_99_DESC;;;;;;;;;;;X
 TECH_CMP_INDUSTRY_99_1_NAME;现代化机械轮作 ;;;;;;;;;;X
 TECH_CMP_INDUSTRY_99_2_NAME;现代仓储 ;;;;;;;;;;X
@@ -7758,4 +7758,11 @@ TECH_APP_AD_97_NAME;重视噴射截击机 ;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
 ;;;;;;;;;;;X
+;;;;;;;;;;;X
+SHORT_TECH_APP_NAVAL_3_NAME;基本驱逐舰 ;;;;;;;;;;X
+TECH_APP_NAVAL_3_NAME;基本驱逐舰 ;;;;;;;;;;X
+TECH_CAT_SYNTHETICOIL;炼油 / 油料合成;;;;;;;;;;X
+;;;;;;;;;;;X
+TECH_CAT_MEDIUMTANKS;中型坦克;;;;;;;;;;X
+TECH_CAT_SW_4;超級電腦;;;;;;;;;;X
 #EOF;;;;;;;;;;;X
